@@ -1,0 +1,154 @@
+---
+import { Image } from "astro:assets";
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import { destinations, packages } from "@/lib/site-data";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { destinationFaqItems } from "@/lib/site-data";
+import "../../styles/global.css";
+
+export function getStaticPaths() {
+  return destinations.map((destination) => ({
+    params: { slug: destination.slug },
+    props: { destination },
+  }));
+}
+
+const { destination } = Astro.props;
+
+const relatedPackages = packages.filter((tour) =>
+  destination.packages.includes(tour.slug),
+);
+---
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{destination.title} | Sungkar Group</title>
+    <meta name="description" content={destination.summary} />
+  </head>
+  <body>
+    <MainLayout>
+      <PageHeader
+        eyebrow="Detail Destinasi"
+        title={destination.title}
+        description={destination.summary}
+        breadcrumbs={[
+          { label: "Beranda", href: "/" },
+          { label: "Destinasi", href: "/destinasi" },
+          { label: destination.title },
+        ]}
+        image={destination.image}
+        imageAlt={destination.title}
+      />
+
+      <section class="bg-surface-soft">
+        <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+          <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+            <div class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]">
+              <Image src={destination.image} alt={destination.title} class="h-full w-full object-cover" />
+            </div>
+
+            <div class="grid gap-6">
+              <Card className="border-border bg-white">
+                <CardHeader>
+                  <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+                    {destination.region}
+                  </Badge>
+                  <CardTitle className="text-3xl leading-tight">Yang bisa dilakukan</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="grid gap-3">
+                    {destination.thingsToDo.map((item) => (
+                      <div class="rounded-2xl border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground">
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-border bg-brand-900 text-white">
+                <CardHeader>
+                  <CardTitle className="text-3xl leading-tight text-white">
+                    Paket terkait
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="grid gap-3">
+                    {relatedPackages.map((tour) => (
+                      <a
+                        href={`/paket-wisata/${tour.slug}`}
+                        class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10"
+                      >
+                        {tour.title}
+                      </a>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div class="mt-10 grid gap-6 lg:grid-cols-2">
+              <Card className="border-border bg-white">
+                <CardHeader>
+                  <CardTitle className="text-3xl leading-tight">Ringkasan</CardTitle>
+                </CardHeader>
+              <CardContent>
+                <p class="text-sm leading-7 text-text-muted">
+                  {destination.summary}
+                </p>
+              </CardContent>
+            </Card>
+
+              <Card className="border-border bg-white">
+                <CardHeader>
+                  <CardTitle className="text-3xl leading-tight">Transportasi</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="grid gap-3 text-sm leading-7 text-text-muted">
+                    <p>Titik penjemputan bisa disesuaikan dengan bandara, pelabuhan, atau koridor hotel terdekat.</p>
+                    <Separator />
+                    <p>Dukungan driver harian adalah opsi paling fleksibel untuk hari dengan beberapa destinasi.</p>
+                  </div>
+                  <div class="mt-6 flex flex-wrap gap-3">
+                    <Button variant="outline" asChild>
+                      <a href="/kontak">Cek Ketersediaan</a>
+                    </Button>
+                    <Button asChild>
+                      <a href="/kontak">Chat WhatsApp</a>
+                    </Button>
+                  </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div class="mt-10 grid gap-4">
+            <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+              FAQ Destinasi
+            </div>
+            {destinationFaqItems.map((item) => (
+              <details class="rounded-[1.5rem] border border-border bg-white p-6">
+                <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
+                  {item.question}
+                </summary>
+                <p class="mt-4 text-sm leading-7 text-text-muted">{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+    </MainLayout>
+  </body>
+</html>

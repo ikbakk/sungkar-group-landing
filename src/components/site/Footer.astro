@@ -1,0 +1,74 @@
+---
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+
+const isHome = Astro.url.pathname === "/" || Astro.url.pathname === "/home";
+---
+
+<footer class="bg-white">
+  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <Separator />
+
+    <div class="mt-10 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+      <div class="max-w-2xl">
+        <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+          Sungkar Group
+        </div>
+        <h2 class="mt-4 font-heading text-3xl leading-tight text-foreground sm:text-4xl">
+          Operator wisata Lombok berbasis lokal untuk tur, destinasi, dan transportasi.
+        </h2>
+        <p class="mt-4 max-w-xl text-sm leading-7 text-text-muted">
+          Tur pribadi, perencanaan rute, pusat destinasi, dan layanan transportasi
+          dibangun dengan sistem visual yang sama di seluruh situs.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-2">
+          <Badge variant="outline" className="rounded-full px-3 py-1 text-xs">
+            Instagram
+          </Badge>
+          <Badge variant="outline" className="rounded-full px-3 py-1 text-xs">
+            YouTube
+          </Badge>
+          <Badge variant="outline" className="rounded-full px-3 py-1 text-xs">
+            Lombok
+          </Badge>
+        </div>
+      </div>
+
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="rounded-3xl border border-border bg-surface-soft p-6">
+          <div class="text-sm font-medium text-foreground">Tautan cepat</div>
+          <div class="mt-4 grid gap-2 text-sm text-text-muted">
+            <a href="/paket-wisata" class="transition-colors hover:text-foreground">Paket Wisata</a>
+            <a href="/destinasi" class="transition-colors hover:text-foreground">Destinasi</a>
+            <a href="/ulasan" class="transition-colors hover:text-foreground">Ulasan</a>
+            <a href="/tentang-kami" class="transition-colors hover:text-foreground">Tentang Kami</a>
+            <a href="/kontak" class="transition-colors hover:text-foreground">Kontak</a>
+            <a href="/faq" class="transition-colors hover:text-foreground">FAQ</a>
+          </div>
+        </div>
+
+        {!isHome && (
+          <div class="rounded-3xl border border-border bg-brand-900 p-6 text-white">
+            <div class="text-sm font-medium uppercase tracking-[0.22em] text-brand-200">
+              Kontak
+            </div>
+            <p class="mt-3 text-sm leading-7 text-brand-100">
+              Gunakan halaman kontak untuk pertanyaan cepat, lalu lanjutkan ke paket,
+              ulasan, atau destinasi yang relevan.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-3">
+              <Button variant="secondary" size="sm" asChild>
+                <a href="/kontak">Cek Ketersediaan</a>
+              </Button>
+              <Button size="sm" asChild>
+                <a href="/kontak">Chat WhatsApp</a>
+              </Button>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</footer>

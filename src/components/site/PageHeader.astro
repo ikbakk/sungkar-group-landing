@@ -1,0 +1,117 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+
+type Crumb = {
+  label: string;
+  href?: string;
+};
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  description: string;
+  breadcrumbs: Crumb[];
+  image?: ImageMetadata;
+  imageAlt?: string;
+}
+
+const { eyebrow, title, description, breadcrumbs, image, imageAlt } =
+  Astro.props as Props;
+---
+{
+  image ? (
+    <section class="bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <div class="relative overflow-hidden rounded-[2.5rem] border border-border bg-surface-soft">
+          <div class="absolute inset-0">
+            <Image src={image} alt={imageAlt ?? title} class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.74)_42%,rgba(255,255,255,0.18)_100%)]" />
+          </div>
+
+          <div class="relative grid min-h-[26rem] gap-8 px-5 py-6 sm:px-8 sm:py-8 lg:grid-cols-[1fr_0.9fr] lg:items-end lg:px-10 lg:py-10">
+            <div class="max-w-3xl">
+              <Breadcrumb>
+                <BreadcrumbList>
+                  {
+                    breadcrumbs.map((crumb, index) => (
+                      <>
+                        <BreadcrumbItem>
+                          {crumb.href ? (
+                            <BreadcrumbLink href={crumb.href}>
+                              {crumb.label}
+                            </BreadcrumbLink>
+                          ) : (
+                            <BreadcrumbPage>{crumb.label}</BreadcrumbPage>
+                          )}
+                        </BreadcrumbItem>
+                        {index < breadcrumbs.length - 1 && <BreadcrumbSeparator />}
+                      </>
+                    ))
+                  }
+                </BreadcrumbList>
+              </Breadcrumb>
+
+              {eyebrow && (
+                <div class="mt-8 text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+                  {eyebrow}
+                </div>
+              )}
+              <h1 class="mt-4 max-w-4xl font-heading text-4xl leading-tight tracking-[-0.03em] text-foreground sm:text-5xl lg:text-6xl">
+                {title}
+              </h1>
+              <p class="mt-5 max-w-3xl text-base leading-8 text-text-muted sm:text-lg">
+                {description}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  ) : (
+    <section class="bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <Breadcrumb>
+          <BreadcrumbList>
+            {
+              breadcrumbs.map((crumb, index) => (
+                <>
+                  <BreadcrumbItem>
+                    {crumb.href ? (
+                      <BreadcrumbLink href={crumb.href}>
+                        {crumb.label}
+                      </BreadcrumbLink>
+                    ) : (
+                      <BreadcrumbPage>{crumb.label}</BreadcrumbPage>
+                    )}
+                  </BreadcrumbItem>
+                  {index < breadcrumbs.length - 1 && <BreadcrumbSeparator />}
+                </>
+              ))
+            }
+          </BreadcrumbList>
+        </Breadcrumb>
+
+        {eyebrow && (
+          <div class="mt-8 text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+            {eyebrow}
+          </div>
+        )}
+        <h1 class="mt-4 max-w-4xl font-heading text-4xl leading-tight tracking-[-0.03em] text-foreground sm:text-5xl lg:text-6xl">
+          {title}
+        </h1>
+        <p class="mt-5 max-w-3xl text-base leading-8 text-text-muted sm:text-lg">
+          {description}
+        </p>
+      </div>
+    </section>
+  )
+}
