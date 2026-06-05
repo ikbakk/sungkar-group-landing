@@ -8,7 +8,7 @@ const isHome = Astro.url.pathname === "/" || Astro.url.pathname === "/home";
 ---
 
 <header
-  class="sticky top-0 z-50 border-b border-border/80 bg-white/95 backdrop-blur"
+  class="sticky top-0 z-50 border-b border-border/80 bg-linear-to-b from-black/50 via-black/30 to-black/10 backdrop-blur-md"
 >
   <div
     class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8"
@@ -17,7 +17,7 @@ const isHome = Astro.url.pathname === "/" || Astro.url.pathname === "/home";
       <Image
         src={Logo}
         alt="Sungkar Group"
-        class="h-10 w-auto"
+        class="h-14 w-auto"
         loading="eager"
       />
     </a>
