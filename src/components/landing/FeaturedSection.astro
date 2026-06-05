@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+const { featuredTours, TourSnorkeling } = Astro.props;
+---
+
+<section class="bg-white">
+  <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+    <div class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <div class="order-2 lg:order-1">
+        <div
+          class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]"
+        >
+          <Image
+            src={TourSnorkeling}
+            alt="Tur snorkeling Lombok"
+            class="h-full w-full object-cover"
+          />
+        </div>
+      </div>
+      <div class="order-1 lg:order-2 lg:text-right">
+        <p
+          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
+        >
+          Paket unggulan
+        </p>
+        <h2
+          class="mt-4 font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl"
+        >
+          Pilihan paket yang paling sering dipilih
+        </h2>
+        <p class="mt-5 ml-auto max-w-xl text-base leading-8 text-text-muted">
+          Paket wisata dibuat jelas sejak awal agar wisatawan bisa memilih rute
+          yang sesuai tanpa perlu menebak-nebak.
+        </p>
+
+        <div class="mt-8 grid gap-4 sm:grid-cols-2">
+          {
+            featuredTours.map((tour, index) => (
+              <a
+                href={`/paket-wisata/${tour.slug}`}
+                class={
+                  index === 0
+                    ? "rounded-[1.75rem] border border-border bg-surface-soft p-5 text-left transition-colors hover:border-brand-200 hover:bg-brand-50"
+                    : "rounded-[1.75rem] border border-border bg-white p-5 text-left transition-colors hover:border-brand-200 hover:bg-brand-50"
+                }
+              >
+                <div class="font-heading text-2xl leading-tight text-foreground">
+                  {tour.title}
+                </div>
+                <p class="mt-3 text-sm leading-7 text-text-muted">
+                  {tour.description}
+                </p>
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

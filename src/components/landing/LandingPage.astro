@@ -1,6 +1,12 @@
 ---
-import { Image } from "astro:assets";
+import HeroSection from "./HeroSection.astro";
+import VideoSection from "./VideoSection.astro";
+import FeaturedSection from "./FeaturedSection.astro";
+import DestinationsSection from "./DestinationsSection.astro";
+import TransportSection from "./TransportSection.astro";
+
 import HeroLombok from "@/assets/images/hero-lombok.png";
+import Hero from "@/assets/images/hero.webp";
 import TourSnorkeling from "@/assets/images/tour-snorkeling.png";
 import TourCultural from "@/assets/images/tour-cultural.png";
 import DestinationLombok from "@/assets/images/destination-lombok.png";
@@ -37,283 +43,53 @@ const destinations = [
     slug: "kuta-lombok",
     title: "Lombok",
     image: DestinationLombok,
-    description: "Pantai selatan, desa pesisir, dan rute santai untuk perjalanan multi-hari.",
+    description:
+      "Pantai selatan, desa pesisir, dan rute santai untuk perjalanan multi-hari.",
   },
   {
     slug: "rinjani",
     title: "Rinjani",
     image: DestinationRinjani,
-    description: "Pegunungan, kabut pagi, dan panorama yang sering jadi alasan orang datang.",
+    description:
+      "Pegunungan, kabut pagi, dan panorama yang sering jadi alasan orang datang.",
   },
   {
     slug: "gili-trawangan",
     title: "Kepulauan Gili",
     image: DestinationGili,
-    description: "Snorkeling, jelajah pulau, dan suasana pulau yang mudah dinikmati.",
+    description:
+      "Snorkeling, jelajah pulau, dan suasana pulau yang mudah dinikmati.",
   },
   {
     slug: "sumbawa",
     title: "Sumbawa",
     image: DestinationSumbawa,
-    description: "Rute yang lebih sepi dengan karakter alam terbuka dan garis pantai yang kuat.",
+    description:
+      "Rute yang lebih sepi dengan karakter alam terbuka dan garis pantai yang kuat.",
   },
 ];
 
 const highlights = [
   {
     title: "Ritme perjalanan yang tenang",
-    text:
-      "Itinerary disusun supaya tamu tidak dipaksa mengejar terlalu banyak titik dalam satu hari.",
+    text: "Itinerary disusun supaya tamu tidak dipaksa mengejar terlalu banyak titik dalam satu hari.",
   },
   {
     title: "Transportasi yang rapi",
-    text:
-      "Antar-jemput bandara, driver lokal, dan mobil yang nyaman disusun dalam alur yang sederhana.",
+    text: "Antar-jemput bandara, driver lokal, dan mobil yang nyaman disusun dalam alur yang sederhana.",
   },
   {
     title: "Panduan lokal yang jelas",
-    text:
-      "Komunikasi dibuat cepat agar keputusan rute, jam berangkat, dan penyesuaian kecil tetap mudah.",
+    text: "Komunikasi dibuat cepat agar keputusan rute, jam berangkat, dan penyesuaian kecil tetap mudah.",
   },
 ];
 ---
 
-<section id="beranda" class="relative overflow-hidden bg-white">
-  <div class="absolute inset-0">
-    <Image
-      src={HeroLombok}
-      alt="Pemandangan Lombok saat matahari terbit"
-      class="h-full w-full object-cover"
-      loading="eager"
-    />
-    <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.08)_0%,rgba(255,255,255,0.22)_34%,rgba(255,255,255,0.88)_100%)]" />
-  </div>
-
-  <div class="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 pb-16 pt-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-24 lg:pt-20">
-    <div class="max-w-2xl">
-      <p class="text-sm font-medium uppercase tracking-[0.28em] text-brand-800">
-        Sungkar Group
-      </p>
-      <h1 class="mt-5 font-heading text-5xl leading-[0.92] tracking-[-0.03em] text-foreground sm:text-6xl lg:text-7xl">
-        Wisata Lombok yang disusun dari pengalaman lokal, bukan dari template
-      </h1>
-      <p class="mt-6 max-w-xl text-base leading-8 text-text-muted sm:text-lg">
-        Sungkar Group membantu Anda menjelajahi Lombok, Gili, Rinjani, dan
-        Sumbawa lewat tur pribadi, transportasi yang rapi, dan itinerary yang
-        terasa tenang sejak penjemputan pertama.
-      </p>
-
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a
-          href="/kontak"
-          class="inline-flex items-center justify-center rounded-full bg-brand-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-700"
-        >
-          Cek Ketersediaan
-        </a>
-        <a
-          href="/paket-wisata"
-          class="inline-flex items-center justify-center rounded-full border border-border bg-white px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-200 hover:bg-brand-50"
-        >
-          Lihat Itinerary
-        </a>
-      </div>
-
-      <div class="mt-10 grid gap-4 border-t border-border/70 pt-8 sm:grid-cols-3">
-        {highlights.map((item, index) => (
-          <div class={index === 1 ? "sm:text-center" : ""}>
-            <div class="text-sm font-medium text-foreground">{item.title}</div>
-            <p class="mt-2 text-sm leading-6 text-text-muted">{item.text}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    <div class="lg:pt-14">
-      <div class="overflow-hidden rounded-[2.25rem] border border-border bg-white shadow-[0_24px_70px_rgba(17,24,39,0.14)]">
-        <div class="grid gap-0 md:grid-cols-[0.95fr_1.05fr]">
-          <div class="bg-white px-6 py-8 sm:px-8 sm:py-10">
-            <div class="text-xs font-medium uppercase tracking-[0.24em] text-brand-700">
-              Sorotan singkat
-            </div>
-            <h2 class="mt-3 font-heading text-3xl leading-tight text-foreground">
-              Waktu, rute, dan suasana dibuat lebih gampang dipahami
-            </h2>
-            <p class="mt-4 text-sm leading-7 text-text-muted">
-              Halaman depan disusun untuk memberi gambaran cepat sebelum tamu
-              masuk ke detail paket, destinasi, atau transportasi.
-            </p>
-          </div>
-          <div class="min-h-[16rem] bg-brand-50">
-            <Image
-              src={HeroLombok}
-              alt="Lombok dari sudut pandang wisata"
-              class="h-full w-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-surface-soft">
-  <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-    <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-      <div>
-        <p class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
-          Video YouTube
-        </p>
-        <h2 class="mt-4 max-w-2xl font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl">
-          Ruang untuk video perjalanan dan cuplikan destinasi
-        </h2>
-        <p class="mt-5 max-w-xl text-base leading-8 text-text-muted">
-          Di bagian ini Anda bisa menempelkan embed video dari channel YouTube
-          Sungkar Group. Area ini disiapkan supaya halaman depan tetap punya
-          ruang visual tambahan tanpa menambah CTA berlebihan.
-        </p>
-        <a
-          href="https://www.youtube.com/"
-          class="mt-6 inline-flex text-sm font-medium text-brand-700 underline underline-offset-4 hover:text-brand-800"
-        >
-          Lihat kanal YouTube
-        </a>
-      </div>
-
-      <div class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]">
-        <div class="aspect-video bg-brand-900 p-4 sm:p-6">
-          <div class="flex h-full w-full flex-col justify-between rounded-[1.5rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08)_0%,rgba(255,255,255,0.03)_100%)] p-6 text-white">
-            <div class="text-xs font-medium uppercase tracking-[0.28em] text-brand-200">
-              Tempat embed video YouTube
-            </div>
-            <div>
-              <div class="font-heading text-3xl leading-tight">
-                Video sorotan perjalanan Lombok
-              </div>
-              <p class="mt-3 max-w-xl text-sm leading-7 text-brand-100">
-                Ganti blok ini dengan embed video resmi dari channel YouTube
-                Sungkar Group ketika URL channel tersedia.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-white">
-  <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-    <div class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-      <div class="order-2 lg:order-1">
-        <div class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]">
-          <Image src={TourSnorkeling} alt="Tur snorkeling Lombok" class="h-full w-full object-cover" />
-        </div>
-      </div>
-      <div class="order-1 lg:order-2 lg:text-right">
-        <p class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
-          Paket unggulan
-        </p>
-        <h2 class="mt-4 font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl">
-          Pilihan paket yang paling sering dipilih
-        </h2>
-        <p class="mt-5 ml-auto max-w-xl text-base leading-8 text-text-muted">
-          Paket wisata dibuat jelas sejak awal agar wisatawan bisa memilih rute
-          yang sesuai tanpa perlu menebak-nebak.
-        </p>
-
-        <div class="mt-8 grid gap-4 sm:grid-cols-2">
-          {featuredTours.map((tour, index) => (
-            <a
-              href={`/paket-wisata/${tour.slug}`}
-              class={index === 0
-                ? "rounded-[1.75rem] border border-border bg-surface-soft p-5 text-left transition-colors hover:border-brand-200 hover:bg-brand-50"
-                : "rounded-[1.75rem] border border-border bg-white p-5 text-left transition-colors hover:border-brand-200 hover:bg-brand-50"}
-            >
-              <div class="font-heading text-2xl leading-tight text-foreground">
-                {tour.title}
-              </div>
-              <p class="mt-3 text-sm leading-7 text-text-muted">
-                {tour.description}
-              </p>
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="border-y border-border bg-surface-soft">
-  <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-    <div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
-      <div>
-        <p class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
-          Destinasi utama
-        </p>
-        <h2 class="mt-4 font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl">
-          Destinasi dengan komposisi visual yang lebih seimbang
-        </h2>
-      </div>
-      <p class="max-w-2xl text-base leading-8 text-text-muted">
-        Bagian ini sengaja ditata dengan variasi kartu dan arah teks supaya
-        tidak terasa terlalu berat ke kiri.
-      </p>
-    </div>
-
-    <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
-      {destinations.map((destination, index) => (
-        <article
-          class={index % 2 === 0
-            ? "overflow-hidden rounded-[1.75rem] border border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
-            : "overflow-hidden rounded-[1.75rem] border border-border bg-surface-soft shadow-[0_16px_45px_rgba(17,24,39,0.05)]"}
-        >
-          <div class="aspect-[4/3] overflow-hidden">
-            <Image src={destination.image} alt={destination.title} class="h-full w-full object-cover" />
-          </div>
-          <div class="p-5">
-            <div class="text-xs font-medium uppercase tracking-[0.22em] text-brand-700">
-              {destination.title}
-            </div>
-            <p class="mt-2 text-sm leading-7 text-text-muted">
-              {destination.description}
-            </p>
-          </div>
-        </article>
-      ))}
-    </div>
-  </div>
-</section>
-
-<section class="bg-white">
-  <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-    <div class="grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-center">
-      <div>
-        <p class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
-          Transportasi
-        </p>
-        <h2 class="mt-4 max-w-2xl font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl">
-          Transportasi yang rapi untuk transfer dan perjalanan harian
-        </h2>
-      </div>
-      <div class="grid gap-4 sm:grid-cols-2">
-        <div class="rounded-[1.5rem] border border-border bg-surface-soft p-6">
-          <div class="font-heading text-2xl leading-tight text-foreground">
-            Antar-jemput bandara
-          </div>
-          <p class="mt-3 text-sm leading-7 text-text-muted">
-            Cocok untuk kedatangan pagi atau malam dengan koordinasi yang
-            sederhana.
-          </p>
-        </div>
-        <div class="rounded-[1.5rem] border border-border bg-white p-6">
-          <div class="font-heading text-2xl leading-tight text-foreground">
-            Driver harian
-          </div>
-          <p class="mt-3 text-sm leading-7 text-text-muted">
-            Fleksibel untuk tamu yang ingin menyesuaikan urutan destinasi.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<HeroSection Hero={Hero} HeroLombok={HeroLombok} highlights={highlights} />
+<VideoSection />
+<FeaturedSection
+  featuredTours={featuredTours}
+  TourSnorkeling={TourSnorkeling}
+/>
+<DestinationsSection destinations={destinations} />
+<TransportSection />
