@@ -27,13 +27,19 @@ interface Props {
 const { eyebrow, title, description, breadcrumbs, image, imageAlt } =
   Astro.props as Props;
 ---
+
 {
   image ? (
     <section class="bg-white">
       <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <div class="relative overflow-hidden rounded-[2.5rem] border border-border bg-surface-soft">
           <div class="absolute inset-0">
-            <Image src={image} alt={imageAlt ?? title} class="h-full w-full object-cover" />
+            <Image
+              src={image}
+              alt={imageAlt ?? title}
+              class="h-full w-full object-cover"
+              loading="eager"
+            />
             <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.74)_42%,rgba(255,255,255,0.18)_100%)]" />
           </div>
 
@@ -41,22 +47,22 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt } =
             <div class="max-w-3xl">
               <Breadcrumb>
                 <BreadcrumbList>
-                  {
-                    breadcrumbs.map((crumb, index) => (
-                      <>
-                        <BreadcrumbItem>
-                          {crumb.href ? (
-                            <BreadcrumbLink href={crumb.href}>
-                              {crumb.label}
-                            </BreadcrumbLink>
-                          ) : (
-                            <BreadcrumbPage>{crumb.label}</BreadcrumbPage>
-                          )}
-                        </BreadcrumbItem>
-                        {index < breadcrumbs.length - 1 && <BreadcrumbSeparator />}
-                      </>
-                    ))
-                  }
+                  {breadcrumbs.map((crumb, index) => (
+                    <>
+                      <BreadcrumbItem>
+                        {crumb.href ? (
+                          <BreadcrumbLink href={crumb.href}>
+                            {crumb.label}
+                          </BreadcrumbLink>
+                        ) : (
+                          <BreadcrumbPage>{crumb.label}</BreadcrumbPage>
+                        )}
+                      </BreadcrumbItem>
+                      {index < breadcrumbs.length - 1 && (
+                        <BreadcrumbSeparator />
+                      )}
+                    </>
+                  ))}
                 </BreadcrumbList>
               </Breadcrumb>
 
@@ -81,22 +87,20 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt } =
       <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <Breadcrumb>
           <BreadcrumbList>
-            {
-              breadcrumbs.map((crumb, index) => (
-                <>
-                  <BreadcrumbItem>
-                    {crumb.href ? (
-                      <BreadcrumbLink href={crumb.href}>
-                        {crumb.label}
-                      </BreadcrumbLink>
-                    ) : (
-                      <BreadcrumbPage>{crumb.label}</BreadcrumbPage>
-                    )}
-                  </BreadcrumbItem>
-                  {index < breadcrumbs.length - 1 && <BreadcrumbSeparator />}
-                </>
-              ))
-            }
+            {breadcrumbs.map((crumb, index) => (
+              <>
+                <BreadcrumbItem>
+                  {crumb.href ? (
+                    <BreadcrumbLink href={crumb.href}>
+                      {crumb.label}
+                    </BreadcrumbLink>
+                  ) : (
+                    <BreadcrumbPage>{crumb.label}</BreadcrumbPage>
+                  )}
+                </BreadcrumbItem>
+                {index < breadcrumbs.length - 1 && <BreadcrumbSeparator />}
+              </>
+            ))}
           </BreadcrumbList>
         </Breadcrumb>
 

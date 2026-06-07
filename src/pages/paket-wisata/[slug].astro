@@ -3,12 +3,7 @@ import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import { packages } from "@/lib/site-data";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -25,150 +20,177 @@ export function getStaticPaths() {
 const { tour } = Astro.props;
 ---
 
-<html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{tour.title} | Sungkar Group</title>
-    <meta name="description" content={tour.summary} />
-  </head>
-  <body>
-    <MainLayout>
-      <PageHeader
-        eyebrow="Detail Paket"
-        title={tour.title}
-        description={tour.summary}
-        breadcrumbs={[
-          { label: "Beranda", href: "/" },
-          { label: "Paket Wisata", href: "/paket-wisata" },
-          { label: tour.title },
-        ]}
-        image={tour.image}
-        imageAlt={tour.title}
-      />
+<MainLayout
+  title={tour.title}
+  description={tour.summary}
+  canonical={`/paket-wisata/${tour.slug}`}
+  image={tour.image}
+>
+  <PageHeader
+    eyebrow="Detail Paket"
+    title={tour.title}
+    description={tour.summary}
+    breadcrumbs={[
+      { label: "Beranda", href: "/" },
+      { label: "Paket Wisata", href: "/paket-wisata" },
+      { label: tour.title },
+    ]}
+    image={tour.image}
+    imageAlt={tour.title}
+  />
 
-      <section class="bg-surface-soft">
-        <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-          <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-            <div class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]">
-              <Image src={tour.image} alt={tour.title} class="h-full w-full object-cover" />
-            </div>
-
-            <div class="grid gap-6">
-              <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
-                <CardHeader>
-                  <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                    {tour.category}
-                  </Badge>
-                  <CardTitle className="text-3xl leading-tight">Fakta singkat</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="grid gap-3 text-sm">
-                    <div class="flex items-center justify-between gap-4">
-                      <span class="text-text-muted">Durasi</span>
-                      <span class="font-medium text-foreground">{tour.duration}</span>
-                    </div>
-                    <Separator />
-                    <div class="flex flex-wrap gap-2">
-                      {tour.highlights.map((item) => (
-                        <Badge variant="secondary" className="rounded-full px-3 py-1">
-                          {item}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-border bg-brand-900 text-white shadow-[0_16px_45px_rgba(17,24,39,0.1)]">
-                <CardHeader>
-                  <CardTitle className="text-3xl leading-tight text-white">
-                    Pesan paket ini
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p class="text-sm leading-7 text-brand-100">
-                    Hubungi tim untuk memastikan tanggal terbaik, titik penjemputan, dan tempo itinerary yang paling pas.
-                  </p>
-                </CardContent>
-                <CardContent className="flex flex-wrap gap-3">
-                  <Button variant="secondary" asChild>
-                    <a href="/kontak">Cek Ketersediaan</a>
-                  </Button>
-                  <Button asChild>
-                    <a href="/kontak">Chat WhatsApp</a>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          <div class="mt-10 grid gap-6 lg:grid-cols-2">
-              <Card className="border-border bg-white">
-                <CardHeader>
-                  <CardTitle className="text-3xl leading-tight">Itinerary</CardTitle>
-                </CardHeader>
-              <CardContent>
-                <ol class="grid gap-4">
-                  {tour.itinerary.map((item, index) => (
-                    <li class="rounded-2xl border border-border bg-surface-soft p-4 text-sm leading-7 text-text-muted">
-                      <div class="text-xs font-medium uppercase tracking-[0.22em] text-brand-700">
-                        Langkah {index + 1}
-                      </div>
-                      <div class="mt-2">{item}</div>
-                    </li>
-                  ))}
-                </ol>
-              </CardContent>
-            </Card>
-
-              <Card className="border-border bg-white">
-                <CardHeader>
-                  <CardTitle className="text-3xl leading-tight">Termasuk / Tidak termasuk</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="grid gap-3">
-                    <details class="rounded-2xl border border-border bg-surface-soft p-4">
-                      <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
-                      Yang termasuk
-                      </summary>
-                    <ul class="mt-4 grid gap-2 text-sm leading-7 text-text-muted">
-                      {tour.includes.map((item) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
-                  </details>
-                    <details class="rounded-2xl border border-border bg-surface-soft p-4">
-                      <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
-                      Yang tidak termasuk
-                      </summary>
-                    <ul class="mt-4 grid gap-2 text-sm leading-7 text-text-muted">
-                      {tour.excludes.map((item) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
-                  </details>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div class="mt-10 grid gap-4">
-            <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
-              FAQ Paket Wisata
-            </div>
-            {packageFaqItems.map((item) => (
-              <details class="rounded-[1.5rem] border border-border bg-white p-6">
-                <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
-                  {item.question}
-                </summary>
-                <p class="mt-4 text-sm leading-7 text-text-muted">{item.answer}</p>
-              </details>
-            ))}
-          </div>
+  <section class="bg-surface-soft">
+    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+        <div
+          class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]"
+        >
+          <Image
+            src={tour.image}
+            alt={tour.title}
+            class="h-full w-full object-cover"
+            loading="eager"
+          />
         </div>
-      </section>
-    </MainLayout>
-  </body>
-</html>
+
+        <div class="grid gap-6">
+          <Card
+            className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
+          >
+            <CardHeader>
+              <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+                {tour.category}
+              </Badge>
+              <CardTitle className="text-3xl leading-tight"
+                >Fakta singkat</CardTitle
+              >
+            </CardHeader>
+            <CardContent>
+              <div class="grid gap-3 text-sm">
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-text-muted">Durasi</span>
+                  <span class="font-medium text-foreground"
+                    >{tour.duration}</span
+                  >
+                </div>
+                <Separator />
+                <div class="flex flex-wrap gap-2">
+                  {
+                    tour.highlights.map((item) => (
+                      <Badge
+                        variant="secondary"
+                        className="rounded-full px-3 py-1"
+                      >
+                        {item}
+                      </Badge>
+                    ))
+                  }
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card
+            className="border-border bg-brand-900 text-white shadow-[0_16px_45px_rgba(17,24,39,0.1)]"
+          >
+            <CardHeader>
+              <CardTitle className="text-3xl leading-tight text-white">
+                Pesan paket ini
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm leading-7 text-brand-100">
+                Hubungi tim untuk memastikan tanggal terbaik, titik penjemputan,
+                dan tempo itinerary yang paling pas.
+              </p>
+            </CardContent>
+            <CardContent className="flex flex-wrap gap-3">
+              <Button href="/kontak" variant="secondary">
+                Cek Ketersediaan
+              </Button>
+              <Button href="/kontak">Chat WhatsApp</Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-2">
+        <Card className="border-border bg-white">
+          <CardHeader>
+            <CardTitle className="text-3xl leading-tight">Itinerary</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ol class="grid gap-4">
+              {
+                tour.itinerary.map((item, index) => (
+                  <li class="rounded-2xl border border-border bg-surface-soft p-4 text-sm leading-7 text-text-muted">
+                    <div class="text-xs font-medium uppercase tracking-[0.22em] text-brand-700">
+                      Langkah {index + 1}
+                    </div>
+                    <div class="mt-2">{item}</div>
+                  </li>
+                ))
+              }
+            </ol>
+          </CardContent>
+        </Card>
+
+        <Card className="border-border bg-white">
+          <CardHeader>
+            <CardTitle className="text-3xl leading-tight"
+              >Termasuk / Tidak termasuk</CardTitle
+            >
+          </CardHeader>
+          <CardContent>
+            <div class="grid gap-3">
+              <details
+                class="rounded-2xl border border-border bg-surface-soft p-4"
+              >
+                <summary
+                  class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden"
+                >
+                  Yang termasuk
+                </summary>
+                <ul class="mt-4 grid gap-2 text-sm leading-7 text-text-muted">
+                  {tour.includes.map((item) => <li>{item}</li>)}
+                </ul>
+              </details>
+              <details
+                class="rounded-2xl border border-border bg-surface-soft p-4"
+              >
+                <summary
+                  class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden"
+                >
+                  Yang tidak termasuk
+                </summary>
+                <ul class="mt-4 grid gap-2 text-sm leading-7 text-text-muted">
+                  {tour.excludes.map((item) => <li>{item}</li>)}
+                </ul>
+              </details>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div class="mt-10 grid gap-4">
+        <div
+          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
+        >
+          FAQ Paket Wisata
+        </div>
+        {
+          packageFaqItems.map((item) => (
+            <details class="rounded-[1.5rem] border border-border bg-white p-6">
+              <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
+                {item.question}
+              </summary>
+              <p class="mt-4 text-sm leading-7 text-text-muted">
+                {item.answer}
+              </p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</MainLayout>

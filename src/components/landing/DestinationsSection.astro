@@ -1,6 +1,18 @@
 ---
 import { Image } from "astro:assets";
-const { destinations } = Astro.props;
+import type { ImageMetadata } from "astro";
+
+interface DestinationCard {
+  title: string;
+  description: string;
+  image: ImageMetadata;
+}
+
+interface Props {
+  destinations: DestinationCard[];
+}
+
+const { destinations } = Astro.props as Props;
 ---
 
 <section class="border-y border-border bg-surface-soft">
@@ -39,6 +51,7 @@ const { destinations } = Astro.props;
                 src={destination.image}
                 alt={destination.title}
                 class="h-full w-full object-cover"
+                loading="eager"
               />
             </div>
             <div class="p-5">

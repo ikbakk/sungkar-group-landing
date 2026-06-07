@@ -6,124 +6,121 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import HeroLombok from "@/assets/images/hero-lombok.png";
-import "../styles/global.css";
 ---
 
-<html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
-    <title>FAQ | Sungkar Group</title>
-    <meta
-      name="description"
-      content="Pertanyaan yang sering ditanyakan tentang layanan, paket, destinasi, dan cara memulai pemesanan."
-    />
-  </head>
-  <body>
-    <MainLayout>
-      <PageHeader
-        eyebrow="FAQ"
-        title="Pertanyaan umum yang paling sering ditanyakan"
-        description="Halaman ini menjadi pusat pertanyaan umum. Untuk rincian paket, destinasi, dan tentang kami, buka FAQ pada masing-masing halaman terkait."
-        breadcrumbs={[
-          { label: "Beranda", href: "/" },
-          { label: "FAQ" },
-        ]}
-        image={HeroLombok}
-        imageAlt="Lombok saat matahari terbit"
-      />
+<MainLayout
+  title="FAQ"
+  description="Pertanyaan yang sering ditanyakan tentang layanan, paket, destinasi, dan cara memulai pemesanan."
+  canonical="/faq"
+  image={HeroLombok}
+>
+  <PageHeader
+    eyebrow="FAQ"
+    title="Pertanyaan umum yang paling sering ditanyakan"
+    description="Halaman ini menjadi pusat pertanyaan umum. Untuk rincian paket, destinasi, dan tentang kami, buka FAQ pada masing-masing halaman terkait."
+    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "FAQ" }]}
+    image={HeroLombok}
+    imageAlt="Lombok saat matahari terbit"
+  />
 
-      <section class="bg-surface-soft">
-        <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-          <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <Card className="border-border bg-white">
-              <CardHeader>
-                <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                  FAQ umum
-                </Badge>
-                <CardTitle className="text-3xl leading-tight">
-                  Ringkasan pertanyaan untuk memulai percakapan
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-sm leading-7 text-text-muted">
-                <p>
-                  Jika Anda baru pertama kali menghubungi tim, mulai dari FAQ
-                  umum ini. Setelah itu, buka halaman yang paling relevan agar
-                  informasi paket dan destinasi lebih terarah.
+  <section class="bg-surface-soft">
+    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+      <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+        <Card className="border-border bg-white">
+          <CardHeader>
+            <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+              FAQ umum
+            </Badge>
+            <CardTitle className="text-3xl leading-tight">
+              Ringkasan pertanyaan untuk memulai percakapan
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm leading-7 text-text-muted">
+            <p>
+              Jika Anda baru pertama kali menghubungi tim, mulai dari FAQ umum
+              ini. Setelah itu, buka halaman yang paling relevan agar informasi
+              paket dan destinasi lebih terarah.
+            </p>
+          </CardContent>
+        </Card>
+
+        <div class="grid gap-4">
+          {
+            generalFaqItems.map((item) => (
+              <details class="rounded-[1.5rem] border border-border bg-white p-6">
+                <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
+                  {item.question}
+                </summary>
+                <p class="mt-4 text-sm leading-7 text-text-muted">
+                  {item.answer}
                 </p>
-              </CardContent>
-            </Card>
-
-            <div class="grid gap-4">
-              {generalFaqItems.map((item) => (
-                <details class="rounded-[1.5rem] border border-border bg-white p-6">
-                  <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
-                    {item.question}
-                  </summary>
-                  <p class="mt-4 text-sm leading-7 text-text-muted">{item.answer}</p>
-                </details>
-              ))}
-            </div>
-          </div>
-
-          <div class="mt-12 grid gap-6 md:grid-cols-3">
-            <Card className="border-border bg-white">
-              <CardHeader>
-                <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                  Paket wisata
-                </Badge>
-                <CardTitle className="text-3xl leading-tight">FAQ paket wisata</CardTitle>
-              </CardHeader>
-              <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
-                <p>
-                  Pertanyaan tentang durasi, kendaraan, dan penyesuaian itinerary
-                  dibahas di halaman paket wisata.
-                </p>
-                <Button variant="outline" asChild>
-                  <a href="/paket-wisata">Buka paket wisata</a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border bg-white">
-              <CardHeader>
-                <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                  Destinasi
-                </Badge>
-                <CardTitle className="text-3xl leading-tight">FAQ destinasi</CardTitle>
-              </CardHeader>
-              <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
-                <p>
-                  Pertanyaan tentang apa yang bisa dilakukan di tiap destinasi
-                  tersedia pada halaman destinasi masing-masing.
-                </p>
-                <Button variant="outline" asChild>
-                  <a href="/destinasi">Buka destinasi</a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border bg-white">
-              <CardHeader>
-                <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                  Tentang kami
-                </Badge>
-                <CardTitle className="text-3xl leading-tight">FAQ tentang kami</CardTitle>
-              </CardHeader>
-              <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
-                <p>
-                  Jika Anda ingin memahami layanan, gaya koordinasi, dan alur
-                  pemesanan, buka halaman tentang kami.
-                </p>
-                <Button variant="outline" asChild>
-                  <a href="/tentang-kami">Buka tentang kami</a>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
+              </details>
+            ))
+          }
         </div>
-      </section>
-    </MainLayout>
-  </body>
-</html>
+      </div>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <Card className="border-border bg-white">
+          <CardHeader>
+            <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+              Paket wisata
+            </Badge>
+            <CardTitle className="text-3xl leading-tight"
+              >FAQ paket wisata</CardTitle
+            >
+          </CardHeader>
+          <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
+            <p>
+              Pertanyaan tentang durasi, kendaraan, dan penyesuaian itinerary
+              dibahas di halaman paket wisata.
+            </p>
+            <Button href="/paket-wisata" variant="outline">
+              Buka paket wisata
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card className="border-border bg-white">
+          <CardHeader>
+            <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+              Destinasi
+            </Badge>
+            <CardTitle className="text-3xl leading-tight"
+              >FAQ destinasi</CardTitle
+            >
+          </CardHeader>
+          <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
+            <p>
+              Pertanyaan tentang apa yang bisa dilakukan di tiap destinasi
+              tersedia pada halaman destinasi masing-masing.
+            </p>
+            <Button href="/destinasi" variant="outline">
+              Buka destinasi
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card className="border-border bg-white">
+          <CardHeader>
+            <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+              Tentang kami
+            </Badge>
+            <CardTitle className="text-3xl leading-tight"
+              >FAQ tentang kami</CardTitle
+            >
+          </CardHeader>
+          <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
+            <p>
+              Jika Anda ingin memahami layanan, gaya koordinasi, dan alur
+              pemesanan, buka halaman tentang kami.
+            </p>
+            <Button href="/tentang-kami" variant="outline">
+              Buka tentang kami
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+</MainLayout>

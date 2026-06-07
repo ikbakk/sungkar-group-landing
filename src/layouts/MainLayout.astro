@@ -1,10 +1,61 @@
 ---
 import Header from "@/components/header/Header.astro";
 import Footer from "@/components/site/Footer.astro";
+import "../styles/global.css";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  image?: ImageMetadata | string;
+  imageAlt?: string;
+  noIndex?: boolean;
+}
+
+const {
+  title = "Sungkar Group",
+  description = "Operator wisata Lombok berbasis lokal untuk tur pribadi, destinasi, transportasi, ulasan, dan panduan wisata.",
+  canonical,
+  image,
+  noIndex = false,
+} = Astro.props as Props;
+
+const siteTitle =
+  title === "Sungkar Group" ? title : `${title} | Sungkar Group`;
+const imageUrl = typeof image === "string" ? image : image?.src;
 ---
 
-<Header />
-<main id="content">
-  <slot />
-</main>
-<Footer />
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{siteTitle}</title>
+    <meta name="description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    {noIndex && <meta name="robots" content="noindex, nofollow" />}
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sungkar Group" />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={description} />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    <meta
+      name="twitter:card"
+      content={imageUrl ? "summary_large_image" : "summary"}
+    />
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={description} />
+    {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <Header />
+    <main id="content">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -21,111 +21,128 @@ import { Button } from "@/components/ui/button";
 import "../../styles/global.css";
 ---
 
-<html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Destinasi | Sungkar Group</title>
-    <meta
-      name="description"
-      content="Hub destinasi Lombok, Gili, Rinjani, dan Sumbawa dengan navigasi bertingkat."
-    />
-  </head>
-  <body>
-    <MainLayout>
-      <PageHeader
-        eyebrow="Destinasi"
-        title="Destinasi utama dengan navigasi bertingkat"
-        description="Gunakan kategori di header untuk masuk ke grup destinasi lalu buka halaman detail masing-masing untuk melihat apa yang bisa dilakukan dan paket yang terkait."
-        breadcrumbs={[
-          { label: "Beranda", href: "/" },
-          { label: "Destinasi" },
-        ]}
-        image={destinations[1].image}
-        imageAlt="Destinasi Lombok"
-      />
+<MainLayout
+  title="Destinasi"
+  description="Hub destinasi Lombok, Gili, Rinjani, dan Sumbawa dengan navigasi bertingkat."
+  canonical="/destinasi"
+  image={destinations[1].image}
+>
+  <PageHeader
+    eyebrow="Destinasi"
+    title="Destinasi utama dengan navigasi bertingkat"
+    description="Gunakan kategori di header untuk masuk ke grup destinasi lalu buka halaman detail masing-masing untuk melihat apa yang bisa dilakukan dan paket yang terkait."
+    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Destinasi" }]}
+    image={destinations[1].image}
+    imageAlt="Destinasi Lombok"
+  />
 
-      <section class="bg-surface-soft">
-        <div class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
-          <div class="grid gap-4 md:grid-cols-3">
-            {navDestinations.map((group) => (
-              <Card className="border-border bg-white">
-                <CardHeader>
-                  <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                    {group.group}
-                  </Badge>
-                  <CardTitle className="text-3xl leading-tight">Kelompok destinasi</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="grid gap-2">
-                    {group.items.map((item) => (
-                      <a
-                        href={item.href}
-                        class="rounded-2xl border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-200 hover:bg-brand-50"
-                      >
-                        {item.label}
-                      </a>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {destinations.map((destination) => (
-              <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
-                <div class="aspect-square overflow-hidden">
-                  <Image src={destination.image} alt={destination.title} class="h-full w-full object-cover" />
+  <section class="bg-surface-soft">
+    <div class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+      <div class="grid gap-4 md:grid-cols-3">
+        {
+          navDestinations.map((group) => (
+            <Card className="border-border bg-white">
+              <CardHeader>
+                <Badge
+                  variant="outline"
+                  className="w-fit rounded-full px-3 py-1"
+                >
+                  {group.group}
+                </Badge>
+                <CardTitle className="text-3xl leading-tight">
+                  Kelompok destinasi
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div class="grid gap-2">
+                  {group.items.map((item) => (
+                    <a
+                      href={item.href}
+                      class="rounded-2xl border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-200 hover:bg-brand-50"
+                    >
+                      {item.label}
+                    </a>
+                  ))}
                 </div>
-                <CardHeader>
-                  <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                    {destination.region}
-                  </Badge>
-                  <CardTitle className="text-3xl leading-tight">
-                    {destination.title}
-                  </CardTitle>
-                  <CardDescription className="text-sm leading-6 text-text-muted">
-                    {destination.summary}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div class="flex flex-wrap gap-2">
-                    {destination.thingsToDo.map((item) => (
-                      <Badge variant="secondary" className="rounded-full px-3 py-1">
-                        {item}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-                <CardFooter className="justify-between gap-3">
-                  <Button variant="outline" asChild>
-                    <a href={`/destinasi/${destination.slug}`}>Detail destinasi</a>
-                  </Button>
-                    <span class="text-xs uppercase tracking-[0.2em] text-text-muted">
-                      Halaman detail
-                    </span>
-                  </CardFooter>
-                </Card>
-              ))}
-          </div>
+              </CardContent>
+            </Card>
+          ))
+        }
+      </div>
 
-          <div class="mt-12 grid gap-4">
-            <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
-              FAQ Destinasi
-            </div>
-            {destinationFaqItems.map((item) => (
-              <details class="rounded-[1.5rem] border border-border bg-white p-6">
-                <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
-                  {item.question}
-                </summary>
-                <p class="mt-4 text-sm leading-7 text-text-muted">{item.answer}</p>
-              </details>
-            ))}
-          </div>
+      <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        {
+          destinations.map((destination) => (
+            <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
+              <div class="aspect-square overflow-hidden">
+                <Image
+                  src={destination.image}
+                  alt={destination.title}
+                  class="h-full w-full object-cover"
+                  loading="eager"
+                />
+              </div>
+              <CardHeader>
+                <Badge
+                  variant="outline"
+                  className="w-fit rounded-full px-3 py-1"
+                >
+                  {destination.region}
+                </Badge>
+                <CardTitle className="text-3xl leading-tight">
+                  {destination.title}
+                </CardTitle>
+                <CardDescription className="text-sm leading-6 text-text-muted">
+                  {destination.summary}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div class="flex flex-wrap gap-2">
+                  {destination.thingsToDo.map((item) => (
+                    <Badge
+                      variant="secondary"
+                      className="rounded-full px-3 py-1"
+                    >
+                      {item}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+              <CardFooter className="justify-between gap-3">
+                <Button
+                  href={`/destinasi/${destination.slug}`}
+                  variant="outline"
+                >
+                  Detail destinasi
+                </Button>
+                <span class="text-xs uppercase tracking-[0.2em] text-text-muted">
+                  Halaman detail
+                </span>
+              </CardFooter>
+            </Card>
+          ))
+        }
+      </div>
+
+      <div class="mt-12 grid gap-4">
+        <div
+          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
+        >
+          FAQ Destinasi
         </div>
-      </section>
-    </MainLayout>
-  </body>
-</html>
+        {
+          destinationFaqItems.map((item) => (
+            <details class="rounded-[1.5rem] border border-border bg-white p-6">
+              <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
+                {item.question}
+              </summary>
+              <p class="mt-4 text-sm leading-7 text-text-muted">
+                {item.answer}
+              </p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</MainLayout>

@@ -5,88 +5,91 @@ import { guides, destinations, packages } from "@/lib/site-data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import "../styles/global.css";
 ---
 
-<html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Panduan Wisata | Sungkar Group</title>
-    <meta
-      name="description"
-      content="Arsitektur klaster panduan untuk wisata Lombok."
-    />
-  </head>
-  <body>
-    <MainLayout>
-      <PageHeader
-        eyebrow="Panduan Wisata"
-        title="Panduan wisata untuk membantu orang memilih rute, waktu, dan paket"
-        description="Halaman ini mengumpulkan konten panduan SEO yang menjembatani paket wisata, destinasi, dan transportasi."
-        breadcrumbs={[
-          { label: "Beranda", href: "/" },
-          { label: "Panduan Wisata" },
-        ]}
-      />
+<MainLayout
+  title="Panduan Wisata"
+  description="Arsitektur klaster panduan untuk wisata Lombok."
+  canonical="/panduan-wisata"
+>
+  <PageHeader
+    eyebrow="Panduan Wisata"
+    title="Panduan wisata untuk membantu orang memilih rute, waktu, dan paket"
+    description="Halaman ini mengumpulkan konten panduan SEO yang menjembatani paket wisata, destinasi, dan transportasi."
+    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Panduan Wisata" }]}
+  />
 
-      <section class="bg-surface-soft">
-        <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-          <div class="grid gap-6 md:grid-cols-3">
-            {guides.map((guide) => (
-              <Card className="border-border bg-white">
-                <CardHeader>
-                  <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                    Klaster SEO
-                  </Badge>
-                  <CardTitle className="text-3xl leading-tight">{guide.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p class="text-sm leading-7 text-text-muted">{guide.text}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div class="mt-10 grid gap-6 lg:grid-cols-2">
+  <section class="bg-surface-soft">
+    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+      <div class="grid gap-6 md:grid-cols-3">
+        {
+          guides.map((guide) => (
             <Card className="border-border bg-white">
               <CardHeader>
-                <CardTitle className="text-3xl leading-tight">Destinasi terkait</CardTitle>
+                <Badge
+                  variant="outline"
+                  className="w-fit rounded-full px-3 py-1"
+                >
+                  Klaster SEO
+                </Badge>
+                <CardTitle className="text-3xl leading-tight">
+                  {guide.title}
+                </CardTitle>
               </CardHeader>
-              <CardContent className="grid gap-3">
-                {destinations.map((destination) => (
-                  <a href={`/destinasi/${destination.slug}`} class="rounded-2xl border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-200 hover:bg-brand-50">
-                    {destination.title}
-                  </a>
-                ))}
+              <CardContent>
+                <p class="text-sm leading-7 text-text-muted">{guide.text}</p>
               </CardContent>
             </Card>
+          ))
+        }
+      </div>
 
-            <Card className="border-border bg-brand-900 text-white">
-              <CardHeader>
-                <CardTitle className="text-3xl leading-tight text-white">Paket terkait</CardTitle>
-              </CardHeader>
-              <CardContent className="grid gap-3">
-                {packages.map((tour) => (
-                  <a href={`/paket-wisata/${tour.slug}`} class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10">
-                    {tour.title}
-                  </a>
-                ))}
-              </CardContent>
-            </Card>
-          </div>
+      <div class="mt-10 grid gap-6 lg:grid-cols-2">
+        <Card className="border-border bg-white">
+          <CardHeader>
+            <CardTitle className="text-3xl leading-tight"
+              >Destinasi terkait</CardTitle
+            >
+          </CardHeader>
+          <CardContent className="grid gap-3">
+            {
+              destinations.map((destination) => (
+                <a
+                  href={`/destinasi/${destination.slug}`}
+                  class="rounded-2xl border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-200 hover:bg-brand-50"
+                >
+                  {destination.title}
+                </a>
+              ))
+            }
+          </CardContent>
+        </Card>
 
-          <div class="mt-10 flex flex-wrap gap-3">
-            <Button variant="outline" asChild>
-              <a href="/destinasi">Lihat destinasi</a>
-            </Button>
-            <Button asChild>
-              <a href="/paket-wisata">Lihat paket wisata</a>
-            </Button>
-          </div>
-        </div>
-      </section>
-    </MainLayout>
-  </body>
-</html>
+        <Card className="border-border bg-brand-900 text-white">
+          <CardHeader>
+            <CardTitle className="text-3xl leading-tight text-white"
+              >Paket terkait</CardTitle
+            >
+          </CardHeader>
+          <CardContent className="grid gap-3">
+            {
+              packages.map((tour) => (
+                <a
+                  href={`/paket-wisata/${tour.slug}`}
+                  class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10"
+                >
+                  {tour.title}
+                </a>
+              ))
+            }
+          </CardContent>
+        </Card>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-3">
+        <Button href="/destinasi" variant="outline"> Lihat destinasi </Button>
+        <Button href="/paket-wisata">Lihat paket wisata</Button>
+      </div>
+    </div>
+  </section>
+</MainLayout>

@@ -4,6 +4,7 @@ import VideoSection from "./VideoSection.astro";
 import FeaturedSection from "./FeaturedSection.astro";
 import DestinationsSection from "./DestinationsSection.astro";
 import TransportSection from "./TransportSection.astro";
+import TestimonialSection from "./TestimonialSection.astro";
 
 import HeroLombok from "@/assets/images/hero-lombok.png";
 import Hero from "@/assets/images/hero.webp";
@@ -68,28 +69,14 @@ const destinations = [
       "Rute yang lebih sepi dengan karakter alam terbuka dan garis pantai yang kuat.",
   },
 ];
-
-const highlights = [
-  {
-    title: "Ritme perjalanan yang tenang",
-    text: "Itinerary disusun supaya tamu tidak dipaksa mengejar terlalu banyak titik dalam satu hari.",
-  },
-  {
-    title: "Transportasi yang rapi",
-    text: "Antar-jemput bandara, driver lokal, dan mobil yang nyaman disusun dalam alur yang sederhana.",
-  },
-  {
-    title: "Panduan lokal yang jelas",
-    text: "Komunikasi dibuat cepat agar keputusan rute, jam berangkat, dan penyesuaian kecil tetap mudah.",
-  },
-];
 ---
 
-<HeroSection Hero={Hero} HeroLombok={HeroLombok} highlights={highlights} />
-<VideoSection />
+<HeroSection HeroLombok={HeroLombok} />
 <FeaturedSection
   featuredTours={featuredTours}
   TourSnorkeling={TourSnorkeling}
 />
 <DestinationsSection destinations={destinations} />
+<TestimonialSection />
 <TransportSection />
+<VideoSection />
