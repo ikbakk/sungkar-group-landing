@@ -31,7 +31,7 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt } =
 {
   image ? (
     <section class="bg-background">
-      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:pt-32">
+      <div class="mx-auto max-w-7xl pt-32 px-4 py-14 sm:px-6 lg:px-8 lg:pt-32">
         <div class="relative overflow-hidden rounded-[2.5rem] border border-border bg-surface-soft">
           <div class="absolute inset-0">
             <Image
@@ -84,7 +84,7 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt } =
     </section>
   ) : (
     <section class="bg-white">
-      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:pt-32">
+      <div class="mx-auto max-w-7xl px-4 pt-32 py-14 sm:px-6 lg:px-8 lg:pt-32">
         <Breadcrumb>
           <BreadcrumbList>
             {breadcrumbs.map((crumb, index) => (

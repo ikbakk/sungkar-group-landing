@@ -53,7 +53,7 @@ const { eyebrow, title, description, destinations } = Astro.props as Props;
                 src={destination.image}
                 alt={destination.title}
                 class="h-full w-full object-cover"
-                loading="eager"
+                loading="lazy"
               />
             </div>
             <div class="p-5">

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 interface LandingAction {
   label: string;
   href: string;
-  variant: "default" | "outline";
+  variant: "default" | "outline" | "ghost" | "secondary";
 }
 
 interface LandingHeroCard {
@@ -70,19 +70,15 @@ const { eyebrow, title, description, primaryAction, secondaryAction, cards } =
       </p>
 
       <div class="mt-8 flex flex-col flex-wrap gap-3 sm:mt-10 sm:flex-row">
-        <Button
-          href={primaryAction.href}
-          variant={primaryAction.variant}
-          size="xl"
-        >
-          {primaryAction.label}
+        <Button variant={primaryAction.variant} size="xl">
+          <a href={primaryAction.href}>
+            {primaryAction.label}
+          </a>
         </Button>
-        <Button
-          href={secondaryAction.href}
-          variant={secondaryAction.variant}
-          size="xl"
-        >
-          {secondaryAction.label}
+        <Button variant={secondaryAction.variant} size="xl">
+          <a href={secondaryAction.href}>
+            {secondaryAction.label}
+          </a>
         </Button>
       </div>
     </div>
@@ -106,7 +102,7 @@ const { eyebrow, title, description, primaryAction, secondaryAction, cards } =
                   src={card.image}
                   alt={card.alt ?? card.title}
                   class="hero-card-image h-full w-full object-cover"
-                  loading="eager"
+                  loading="lazy"
                 />
               ) : (
                 <div class="hero-card-image flex h-full w-full flex-col items-center justify-center rounded-lg bg-linear-to-br from-brand-400/30 to-brand-600/40 p-3">

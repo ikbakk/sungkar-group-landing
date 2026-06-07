@@ -65,7 +65,7 @@ export const landingHero = {
   secondaryAction: {
     label: "Jelajahi Paket",
     href: "/paket-wisata",
-    variant: "outline" as const,
+    variant: "secondary" as const,
   },
   cards: [
     {
