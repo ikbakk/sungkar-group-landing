@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Logo from "@/assets/images/logo.webp";
 import CustomNavigationMenu from "./CustomNavigationMenu";
+import { navigation } from "@/lib/content/navigationData";
 import { Button } from "../ui/button";
 
 const isHome = Astro.url.pathname === "/" || Astro.url.pathname === "/home";
@@ -23,7 +24,7 @@ const isHome = Astro.url.pathname === "/" || Astro.url.pathname === "/home";
     </a>
 
     <nav class="hidden flex-1 justify-center lg:flex lg:max-w-5xl">
-      <CustomNavigationMenu client:load />
+      <CustomNavigationMenu items={navigation} client:load />
     </nav>
 
     <div class="hidden items-center gap-3 lg:flex">

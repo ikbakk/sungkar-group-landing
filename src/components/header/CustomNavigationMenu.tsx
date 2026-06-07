@@ -7,174 +7,23 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-type NavItem = {
-  label: string;
-  href?: string;
-  variant: "link" | "dropdown" | "mega";
+import type { NavItem } from "@/lib/content/navigationData";
 
-  children?: NavItem[];
-
-  groups?: {
-    title: string;
-    items: {
-      label: string;
-      href: string;
-    }[];
-  }[];
+type Props = {
+  items: NavItem[];
 };
 
-const navigation: NavItem[] = [
-  {
-    label: "Beranda",
-    href: "/",
-    variant: "link",
-  },
-
-  {
-    label: "Paket Wisata",
-    variant: "dropdown",
-    children: [
-      {
-        label: "Paket Lombok 3H2M",
-        href: "/paket-wisata/3d2n-lombok-signature",
-        variant: "link",
-      },
-      {
-        label: "Tur Snorkeling dan Gili",
-        href: "/paket-wisata/snorkeling-gili-escape",
-        variant: "link",
-      },
-      {
-        label: "Village & Culture Experience",
-        href: "/paket-wisata/village-culture-experience",
-        variant: "link",
-      },
-      {
-        label: "Paket 2 Hari",
-        href: "/paket-wisata/2-hari",
-        variant: "link",
-      },
-      {
-        label: "Paket 3 Hari",
-        href: "/paket-wisata/3-hari",
-        variant: "link",
-      },
-      {
-        label: "Paket 4 Hari",
-        href: "/paket-wisata/4-hari",
-        variant: "link",
-      },
-      {
-        label: "Snorkeling",
-        href: "/aktivitas/snorkeling",
-        variant: "link",
-      },
-      {
-        label: "Hiking",
-        href: "/aktivitas/hiking",
-        variant: "link",
-      },
-      {
-        label: "Budaya",
-        href: "/aktivitas/budaya",
-        variant: "link",
-      },
-    ],
-  },
-
-  {
-    label: "Destinasi",
-    variant: "mega",
-    groups: [
-      {
-        title: "Lombok",
-        items: [
-          {
-            label: "Kuta Lombok",
-            href: "/destinasi/kuta-lombok",
-          },
-          {
-            label: "Tetebatu",
-            href: "/destinasi/tetebatu",
-          },
-          {
-            label: "Sembalun",
-            href: "/destinasi/sembalun",
-          },
-        ],
-      },
-      {
-        title: "Kepulauan Gili",
-        items: [
-          {
-            label: "Gili Trawangan",
-            href: "/destinasi/gili-trawangan",
-          },
-          {
-            label: "Gili Air",
-            href: "/destinasi/gili-air",
-          },
-          {
-            label: "Gili Meno",
-            href: "/destinasi/gili-meno",
-          },
-        ],
-      },
-      {
-        title: "Rinjani",
-        items: [
-          {
-            label: "Senaru",
-            href: "/destinasi/senaru",
-          },
-          {
-            label: "Sembalun Trail",
-            href: "/destinasi/sembalun-trail",
-          },
-        ],
-      },
-    ],
-  },
-
-  {
-    label: "Tentang Kami",
-    href: "/tentang-kami",
-    variant: "link",
-  },
-
-  {
-    label: "Panduan Wisata",
-    href: "panduan-wisata",
-    variant: "link",
-  },
-
-  {
-    label: "Ulasan",
-    href: "/ulasan",
-    variant: "link",
-  },
-
-  {
-    label: "Kontak",
-    href: "/kontak",
-    variant: "link",
-  },
-];
-
-export default function CustomNavigationMenu() {
+export default function CustomNavigationMenu({ items }: Props) {
   const triggerClass =
     "group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground";
 
   return (
     <NavigationMenu className="hidden lg:flex">
       <NavigationMenuList className="items-center gap-1">
-        {navigation.map((item) => (
+        {items.map((item) => (
           <NavigationMenuItem key={item.label}>
             {item.variant === "link" && (
-              <NavigationMenuLink
-                href={item.href!}
-                className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
-              >
+              <NavigationMenuLink href={item.href!} className={triggerClass}>
                 {item.label}
               </NavigationMenuLink>
             )}
@@ -216,7 +65,7 @@ export default function CustomNavigationMenu() {
                     style={{
                       gridTemplateColumns: `repeat(${
                         item.groups?.length ?? 1
-                      }, minmax(220px, 1fr))`,
+                      }, minmax(240px, 1fr))`,
                     }}
                   >
                     {item.groups?.map((group) => (
@@ -233,7 +82,7 @@ export default function CustomNavigationMenu() {
                             <li key={subItem.href}>
                               <NavigationMenuLink
                                 href={subItem.href}
-                                className="block rounded-md px-3 py-2 text-sm transition-colors hover:bg-accent"
+                                className="block rounded-md px-3 py-2 text-sm hover:bg-accent"
                               >
                                 {subItem.label}
                               </NavigationMenuLink>

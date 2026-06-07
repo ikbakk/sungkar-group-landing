@@ -2,22 +2,43 @@
 import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
-import { packages } from "@/lib/site-data";
+
+import { packages } from "@/lib/content/tourPackages";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+
 import { packageFaqItems } from "@/lib/site-data";
+
 import "../../styles/global.css";
+import type { TourPackage } from "@/lib/content/tourPackages";
 
 export function getStaticPaths() {
-  return packages.map((tour) => ({
+  return packages.map((tour: TourPackage) => ({
     params: { slug: tour.slug },
     props: { tour },
   }));
 }
 
 const { tour } = Astro.props;
+
+const itineraryByDay = Object.entries(
+  tour.itinerary.reduce((acc: Record<string, string[]>, item: string) => {
+    const [day, ...rest] = item.split(" - ");
+
+    const description = rest.join(" - ");
+
+    if (!acc[day]) {
+      acc[day] = [];
+    }
+
+    acc[day].push(description);
+
+    return acc;
+  }, {}),
+);
 ---
 
 <MainLayout
@@ -62,23 +83,33 @@ const { tour } = Astro.props;
                 {tour.category}
               </Badge>
               <CardTitle className="text-3xl leading-tight"
-                >Fakta singkat</CardTitle
+                >Informasi Paket</CardTitle
               >
             </CardHeader>
             <CardContent>
-              <div class="grid gap-3 text-sm">
-                <div class="flex items-center justify-between gap-4">
+              <div class="grid gap-4 text-sm">
+                <div class="flex items-center justify-between">
                   <span class="text-text-muted">Durasi</span>
-                  <span class="font-medium text-foreground"
-                    >{tour.duration}</span
-                  >
+                  <span class="font-medium">{tour.duration}</span>
                 </div>
+
                 <Separator />
+
+                <div>
+                  <div class="mb-2 text-text-muted">Termasuk</div>
+
+                  <ul class="grid gap-1">
+                    {tour.includes.slice(0, 4).map((item) => <li>✓ {item}</li>)}
+                  </ul>
+                </div>
+
+                <Separator />
+
                 <div class="flex flex-wrap gap-2">
                   {
                     tour.highlights.map((item) => (
                       <Badge
-                        variant="secondary"
+                        variant="default"
                         className="rounded-full px-3 py-1"
                       >
                         {item}
@@ -120,18 +151,26 @@ const { tour } = Astro.props;
             <CardTitle className="text-3xl leading-tight">Itinerary</CardTitle>
           </CardHeader>
           <CardContent>
-            <ol class="grid gap-4">
+            <div class="grid gap-4">
               {
-                tour.itinerary.map((item, index) => (
-                  <li class="rounded-2xl border border-border bg-surface-soft p-4 text-sm leading-7 text-text-muted">
+                itineraryByDay.map(([day, activities]) => (
+                  <div class="rounded-2xl border border-border bg-surface-soft p-4">
                     <div class="text-xs font-medium uppercase tracking-[0.22em] text-brand-700">
-                      Langkah {index + 1}
+                      {day}
                     </div>
-                    <div class="mt-2">{item}</div>
-                  </li>
+
+                    <ul class="mt-3 grid gap-2 text-sm leading-7 text-text-muted">
+                      {activities.map((activity) => (
+                        <li class="flex gap-2">
+                          <span>•</span>
+                          <span>{activity}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))
               }
-            </ol>
+            </div>
           </CardContent>
         </Card>
 
