@@ -2,6 +2,7 @@
 import Header from "@/components/header/Header.astro";
 import Footer from "@/components/site/Footer.astro";
 import "../styles/global.css";
+import FadeInText from "@astroanimate/core/FadeInText";
 import type { ImageMetadata } from "astro";
 
 interface Props {
@@ -54,7 +55,9 @@ const imageUrl = typeof image === "string" ? image : image?.src;
   <body>
     <Header />
     <main id="content">
-      <slot />
+      <FadeInText enhance={true} duration={0.4}>
+        <slot />
+      </FadeInText>
     </main>
     <Footer />
   </body>

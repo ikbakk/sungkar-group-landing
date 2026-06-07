@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import { Button } from "@/components/ui/button";
+import FadeInText from "@astroanimate/core/FadeInText";
 
 interface LandingAction {
   label: string;
@@ -46,106 +47,108 @@ const { eyebrow, title, description, primaryAction, secondaryAction, cards } =
     </div>
   </div>
 
-  <div
-    class="relative mx-auto flex min-h-screen w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:gap-12 lg:px-8"
-  >
-    <div class="w-full lg:w-auto lg:max-w-2xl lg:flex-1">
-      <p
-        class="text-sm font-medium uppercase tracking-[0.28em] drop-shadow-lg"
-        style="color: var(--color-brand-50); text-shadow: 0 2px 8px rgba(0,0,0,0.3);"
-      >
-        {eyebrow}
-      </p>
-      <h1
-        class="mt-6 font-heading text-4xl leading-[0.92] tracking-[-0.03em] drop-shadow-xl sm:text-5xl lg:text-6xl xl:text-7xl"
-        style="color: var(--color-surface); text-shadow: 0 4px 12px rgba(0,0,0,0.4);"
-      >
-        {title}
-      </h1>
-      <p
-        class="mt-4 max-w-xl text-sm leading-7 drop-shadow-lg sm:mt-6 sm:text-base sm:leading-8 lg:text-lg"
-        style="color: var(--color-surface); text-shadow: 0 2px 8px rgba(0,0,0,0.3);"
-      >
-        {description}
-      </p>
-
-      <div class="mt-8 flex flex-col flex-wrap gap-3 sm:mt-10 sm:flex-row">
-        <Button variant={primaryAction.variant} size="xl">
-          <a href={primaryAction.href}>
-            {primaryAction.label}
-          </a>
-        </Button>
-        <Button variant={secondaryAction.variant} size="xl">
-          <a href={secondaryAction.href}>
-            {secondaryAction.label}
-          </a>
-        </Button>
-      </div>
-    </div>
-
+  <FadeInText enhance={true} duration={0.9}>
     <div
-      class="hero-cards-container relative hidden h-full flex-1 lg:block"
-      style="min-height: 600px;"
+      class="relative mx-auto flex min-h-screen w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:gap-12 lg:px-8"
     >
-      <div class="absolute inset-0 flex items-center justify-center">
-        {
-          cards.map((card, index) => (
-            <div
-              class:list={[
-                "hero-card absolute overflow-hidden cursor-pointer rounded-lg bg-card ring-1 ring-foreground/10 shadow-[0_18px_45px_rgba(17,24,39,0.08)]",
-                card.className,
-              ]}
-              style={card.style}
-            >
-              {card.image ? (
-                <Image
-                  src={card.image}
-                  alt={card.alt ?? card.title}
-                  class="hero-card-image h-full w-full object-cover"
-                  loading="lazy"
-                />
-              ) : (
-                <div class="hero-card-image flex h-full w-full flex-col items-center justify-center rounded-lg bg-linear-to-br from-brand-400/30 to-brand-600/40 p-3">
-                  <div class="mb-2 text-3xl">{card.emoji}</div>
-                  <p class="text-center font-heading text-sm text-white">
-                    {card.title}
-                  </p>
-                </div>
-              )}
+      <div class="w-full lg:w-auto lg:max-w-2xl lg:flex-1">
+        <p
+          class="text-sm font-medium uppercase tracking-[0.28em] drop-shadow-lg"
+          style="color: var(--color-brand-50); text-shadow: 0 2px 8px rgba(0,0,0,0.3);"
+        >
+          {eyebrow}
+        </p>
+        <h1
+          class="mt-6 font-heading text-4xl leading-[0.92] tracking-[-0.03em] drop-shadow-xl sm:text-5xl lg:text-6xl xl:text-7xl"
+          style="color: var(--color-surface); text-shadow: 0 4px 12px rgba(0,0,0,0.4);"
+        >
+          {title}
+        </h1>
+        <p
+          class="mt-4 max-w-xl text-sm leading-7 drop-shadow-lg sm:mt-6 sm:text-base sm:leading-8 lg:text-lg"
+          style="color: var(--color-surface); text-shadow: 0 2px 8px rgba(0,0,0,0.3);"
+        >
+          {description}
+        </p>
 
+        <div class="mt-8 flex flex-col flex-wrap gap-3 sm:mt-10 sm:flex-row">
+          <Button variant={primaryAction.variant} size="xl">
+            <a href={primaryAction.href}>
+              {primaryAction.label}
+            </a>
+          </Button>
+          <Button variant={secondaryAction.variant} size="xl">
+            <a href={secondaryAction.href}>
+              {secondaryAction.label}
+            </a>
+          </Button>
+        </div>
+      </div>
+
+      <div
+        class="hero-cards-container relative hidden h-full flex-1 lg:block"
+        style="min-height: 600px;"
+      >
+        <div class="absolute inset-0 flex items-center justify-center">
+          {
+            cards.map((card, index) => (
               <div
                 class:list={[
-                  "hero-card-overlay absolute inset-0 flex items-end rounded-lg bg-linear-to-t",
-                  index === 1 || index === 3
-                    ? "from-black/50 via-transparent to-transparent"
-                    : "from-black/60 via-transparent to-transparent",
+                  "hero-card absolute overflow-hidden cursor-pointer rounded-lg bg-card ring-1 ring-foreground/10 shadow-[0_18px_45px_rgba(17,24,39,0.08)]",
+                  card.className,
                 ]}
+                style={card.style}
               >
-                <div class={card.contentSizeClass + " w-full"}>
-                  {index === 0 ? (
-                    <>
-                      <h3 class="font-heading text-xl text-white">
-                        {card.title}
-                      </h3>
-                      {card.description ? (
-                        <p class="mt-2 text-sm text-brand-50">
-                          {card.description}
-                        </p>
-                      ) : null}
-                    </>
-                  ) : index === 4 ? (
-                    <p class="text-xs font-medium text-white">{card.title}</p>
-                  ) : (
-                    <p class="text-sm font-medium text-white">{card.title}</p>
-                  )}
+                {card.image ? (
+                  <Image
+                    src={card.image}
+                    alt={card.alt ?? card.title}
+                    class="hero-card-image h-full w-full object-cover"
+                    loading="eager"
+                  />
+                ) : (
+                  <div class="hero-card-image flex h-full w-full flex-col items-center justify-center rounded-lg bg-linear-to-br from-brand-400/30 to-brand-600/40 p-3">
+                    <div class="mb-2 text-3xl">{card.emoji}</div>
+                    <p class="text-center font-heading text-sm text-white">
+                      {card.title}
+                    </p>
+                  </div>
+                )}
+
+                <div
+                  class:list={[
+                    "hero-card-overlay absolute inset-0 flex items-end rounded-lg bg-linear-to-t",
+                    index === 1 || index === 3
+                      ? "from-black/50 via-transparent to-transparent"
+                      : "from-black/60 via-transparent to-transparent",
+                  ]}
+                >
+                  <div class={card.contentSizeClass + " w-full"}>
+                    {index === 0 ? (
+                      <>
+                        <h3 class="font-heading text-xl text-white">
+                          {card.title}
+                        </h3>
+                        {card.description ? (
+                          <p class="mt-2 text-sm text-brand-50">
+                            {card.description}
+                          </p>
+                        ) : null}
+                      </>
+                    ) : index === 4 ? (
+                      <p class="text-xs font-medium text-white">{card.title}</p>
+                    ) : (
+                      <p class="text-sm font-medium text-white">{card.title}</p>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
     </div>
-  </div>
+  </FadeInText>
 </section>
 
 <style>
