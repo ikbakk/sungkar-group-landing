@@ -1,12 +1,36 @@
 ---
 import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 import { Button } from "@/components/ui/button";
-import Hero from "@/assets/images/hero.webp";
-import Hero1 from "@/assets/images/hero1.webp";
-import DestinationGili from "@/assets/images/destination-gili.png";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.png";
 
-const { HeroLombok } = Astro.props;
+interface LandingAction {
+  label: string;
+  href: string;
+  variant: "default" | "outline";
+}
+
+interface LandingHeroCard {
+  className: string;
+  style: string;
+  image?: ImageMetadata;
+  alt?: string;
+  title: string;
+  description?: string;
+  emoji?: string;
+  contentSizeClass: string;
+}
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+  primaryAction: LandingAction;
+  secondaryAction: LandingAction;
+  cards: LandingHeroCard[];
+}
+
+const { eyebrow, title, description, primaryAction, secondaryAction, cards } =
+  Astro.props as Props;
 ---
 
 <section
@@ -14,12 +38,7 @@ const { HeroLombok } = Astro.props;
   class="relative min-h-screen overflow-hidden bg-background"
 >
   <div class="absolute inset-0">
-    <Image
-      src={Hero}
-      alt="Pemandangan Lombok saat matahari terbit"
-      class="h-full w-full object-top"
-      loading="eager"
-    />
+    <slot name="background" />
     <div
       class="absolute inset-0"
       style="background: linear-gradient(180deg, rgba(36,73,98,0.25) 0%, rgba(36,73,98,0.12) 40%, transparent 95%);"
@@ -28,147 +47,106 @@ const { HeroLombok } = Astro.props;
   </div>
 
   <div
-    class="relative mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-4 min-h-screen sm:px-6 lg:gap-12 lg:px-8"
+    class="relative mx-auto flex min-h-screen w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:gap-12 lg:px-8"
   >
-    <!-- Left Content -->
-    <div class="w-full lg:w-auto lg:flex-1 lg:max-w-2xl">
+    <div class="w-full lg:w-auto lg:max-w-2xl lg:flex-1">
       <p
         class="text-sm font-medium uppercase tracking-[0.28em] drop-shadow-lg"
         style="color: var(--color-brand-50); text-shadow: 0 2px 8px rgba(0,0,0,0.3);"
       >
-        Sungkar Group
+        {eyebrow}
       </p>
       <h1
-        class="mt-6 font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[0.92] tracking-[-0.03em] drop-shadow-xl"
+        class="mt-6 font-heading text-4xl leading-[0.92] tracking-[-0.03em] drop-shadow-xl sm:text-5xl lg:text-6xl xl:text-7xl"
         style="color: var(--color-surface); text-shadow: 0 4px 12px rgba(0,0,0,0.4);"
       >
-        Wisata Lombok yang disusun dari pengalaman lokal
+        {title}
       </h1>
       <p
-        class="mt-4 sm:mt-6 max-w-xl text-sm sm:text-base lg:text-lg leading-7 sm:leading-8 drop-shadow-lg"
+        class="mt-4 max-w-xl text-sm leading-7 drop-shadow-lg sm:mt-6 sm:text-base sm:leading-8 lg:text-lg"
         style="color: var(--color-surface); text-shadow: 0 2px 8px rgba(0,0,0,0.3);"
       >
-        Sungkar Group membantu Anda menjelajahi Lombok, Gili, Rinjani, dan
-        Sumbawa lewat tur pribadi, transportasi yang rapi, dan itinerary yang
-        terasa tenang sejak penjemputan pertama.
+        {description}
       </p>
 
-      <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3">
-        <Button href="/kontak" variant="default" size="xl">
-          Mulai Perjalanan Anda
+      <div class="mt-8 flex flex-col flex-wrap gap-3 sm:mt-10 sm:flex-row">
+        <Button
+          href={primaryAction.href}
+          variant={primaryAction.variant}
+          size="xl"
+        >
+          {primaryAction.label}
         </Button>
-        <Button href="/paket-wisata" variant="outline" size="xl">
-          Jelajahi Paket
+        <Button
+          href={secondaryAction.href}
+          variant={secondaryAction.variant}
+          size="xl"
+        >
+          {secondaryAction.label}
         </Button>
       </div>
     </div>
 
-    <!-- Right Side - Stacked Cards (Hidden on mobile, visible on lg) -->
     <div
-      class="hidden lg:block flex-1 h-full relative hero-cards-container"
+      class="hero-cards-container relative hidden h-full flex-1 lg:block"
       style="min-height: 600px;"
     >
       <div class="absolute inset-0 flex items-center justify-center">
-        <!-- Card 1 - Main featured image (Center, front) -->
-        <div
-          class="hero-card card-1 absolute overflow-hidden cursor-pointer rounded-lg bg-card ring-1 ring-foreground/10 shadow-[0_18px_45px_rgba(17,24,39,0.08)]"
-          style="width: 280px; height: 340px;"
-        >
-          <Image
-            src={Hero1}
-            alt="Destinasi wisata Lombok"
-            class="hero-card-image w-full h-full object-cover"
-            loading="eager"
-          />
-          <div
-            class="hero-card-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end rounded-lg"
-          >
-            <div class="p-6 w-full">
-              <h3 class="text-white font-heading text-xl">Destinasi Impian</h3>
-              <p class="text-brand-50 text-sm mt-2">Jelajahi keindahan alam</p>
-            </div>
-          </div>
-        </div>
+        {
+          cards.map((card, index) => (
+            <div
+              class:list={[
+                "hero-card absolute overflow-hidden cursor-pointer rounded-lg bg-card ring-1 ring-foreground/10 shadow-[0_18px_45px_rgba(17,24,39,0.08)]",
+                card.className,
+              ]}
+              style={card.style}
+            >
+              {card.image ? (
+                <Image
+                  src={card.image}
+                  alt={card.alt ?? card.title}
+                  class="hero-card-image h-full w-full object-cover"
+                  loading="eager"
+                />
+              ) : (
+                <div class="hero-card-image flex h-full w-full flex-col items-center justify-center rounded-lg bg-linear-to-br from-brand-400/30 to-brand-600/40 p-3">
+                  <div class="mb-2 text-3xl">{card.emoji}</div>
+                  <p class="text-center font-heading text-sm text-white">
+                    {card.title}
+                  </p>
+                </div>
+              )}
 
-        <!-- Card 2 - Secondary card (Right, back) -->
-        <div
-          class="hero-card card-2 absolute overflow-hidden cursor-pointer rounded-lg bg-card ring-1 ring-foreground/10 shadow-[0_18px_45px_rgba(17,24,39,0.08)]"
-          style="width: 240px; height: 280px; right: 20px; top: 80px;"
-        >
-          <Image
-            src={HeroLombok}
-            alt="Pantai Lombok"
-            class="hero-card-image w-full h-full object-cover"
-            loading="eager"
-          />
-          <div
-            class="hero-card-overlay absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end rounded-lg"
-          >
-            <div class="p-4 w-full">
-              <p class="text-white font-medium text-sm">Pantai Eksotis</p>
+              <div
+                class:list={[
+                  "hero-card-overlay absolute inset-0 flex items-end rounded-lg bg-linear-to-t",
+                  index === 1 || index === 3
+                    ? "from-black/50 via-transparent to-transparent"
+                    : "from-black/60 via-transparent to-transparent",
+                ]}
+              >
+                <div class={card.contentSizeClass + " w-full"}>
+                  {index === 0 ? (
+                    <>
+                      <h3 class="font-heading text-xl text-white">
+                        {card.title}
+                      </h3>
+                      {card.description ? (
+                        <p class="mt-2 text-sm text-brand-50">
+                          {card.description}
+                        </p>
+                      ) : null}
+                    </>
+                  ) : index === 4 ? (
+                    <p class="text-xs font-medium text-white">{card.title}</p>
+                  ) : (
+                    <p class="text-sm font-medium text-white">{card.title}</p>
+                  )}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Card 3 - Accent card (Left, back) -->
-        <div
-          class="hero-card card-3 absolute overflow-hidden cursor-pointer rounded-lg bg-card ring-1 ring-foreground/10 shadow-[0_18px_45px_rgba(17,24,39,0.08)]"
-          style="width: 220px; height: 260px; left: 40px; top: 120px;"
-        >
-          <Image
-            src={DestinationGili}
-            alt="Kepulauan Gili"
-            class="hero-card-image w-full h-full object-cover"
-            loading="eager"
-          />
-          <div
-            class="hero-card-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end rounded-lg"
-          >
-            <div class="p-4 w-full">
-              <p class="text-white font-medium text-sm">Kepulauan Gili</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 - New card (Right, further back) -->
-        <div
-          class="hero-card card-4 absolute overflow-hidden cursor-pointer rounded-lg bg-card ring-1 ring-foreground/10 shadow-[0_18px_45px_rgba(17,24,39,0.08)]"
-          style="width: 200px; height: 240px; right: -10px; top: 200px;"
-        >
-          <Image
-            src={TourSnorkeling}
-            alt="Tur Snorkeling"
-            class="hero-card-image w-full h-full object-cover"
-            loading="eager"
-          />
-          <div
-            class="hero-card-overlay absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end rounded-lg"
-          >
-            <div class="p-3 w-full">
-              <p class="text-white font-medium text-xs">Snorkeling</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 - New card (Left, further back) -->
-        <div
-          class="hero-card card-5 absolute overflow-hidden cursor-pointer rounded-lg bg-card ring-1 ring-foreground/10 shadow-[0_18px_45px_rgba(17,24,39,0.08)]"
-          style="width: 180px; height: 220px; left: -20px; top: 240px;"
-        >
-          <div
-            class="hero-card-image w-full h-full rounded-lg bg-gradient-to-br from-brand-400/30 to-brand-600/40 flex items-center justify-center flex-col p-3"
-          >
-            <div class="text-3xl mb-2">🏖️</div>
-            <p class="text-white font-heading text-center text-sm">Pantai</p>
-          </div>
-          <div
-            class="hero-card-overlay absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end rounded-lg"
-          >
-            <div class="p-3 w-full">
-              <p class="text-white font-medium text-xs">Pantai Santai</p>
-            </div>
-          </div>
-        </div>
+          ))
+        }
       </div>
     </div>
   </div>

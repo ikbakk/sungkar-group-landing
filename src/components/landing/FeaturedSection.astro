@@ -9,22 +9,26 @@ interface FeaturedTour {
 }
 
 interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
   featuredTours: FeaturedTour[];
-  TourSnorkeling: ImageMetadata;
+  image: ImageMetadata;
 }
 
-const { featuredTours, TourSnorkeling } = Astro.props as Props;
+const { eyebrow, title, description, featuredTours, image } =
+  Astro.props as Props;
 ---
 
 <section class="bg-white">
   <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
     <div class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
-      <div class="order-2 lg:order-1 flex">
+      <div class="order-2 flex lg:order-1">
         <div
           class="w-full overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]"
         >
           <Image
-            src={TourSnorkeling}
+            src={image}
             alt="Tur snorkeling Lombok"
             class="h-full w-full object-cover"
             loading="eager"
@@ -32,24 +36,23 @@ const { featuredTours, TourSnorkeling } = Astro.props as Props;
         </div>
       </div>
       <div
-        class="order-1 lg:order-2 lg:text-right flex flex-col justify-center"
+        class="order-1 flex flex-col justify-center lg:order-2 lg:text-right"
       >
         <p
           class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
         >
-          Paket unggulan
+          {eyebrow}
         </p>
         <h2
           class="mt-4 font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl"
         >
-          Pilihan paket yang paling sering dipilih
+          {title}
         </h2>
         <p class="mt-5 ml-auto max-w-xl text-base leading-8 text-text-muted">
-          Paket wisata dibuat jelas sejak awal agar wisatawan bisa memilih rute
-          yang sesuai tanpa perlu menebak-nebak.
+          {description}
         </p>
 
-        <div class="mt-8 grid gap-4 sm:grid-cols-2 auto-rows-max">
+        <div class="mt-8 grid auto-rows-max gap-4 sm:grid-cols-2">
           {
             featuredTours.map((tour, index) => (
               <a

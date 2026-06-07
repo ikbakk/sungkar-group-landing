@@ -1,5 +1,16 @@
 ---
-const { } = Astro.props;
+interface TransportService {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  services: TransportService[];
+}
+
+const { eyebrow, title, services } = Astro.props as Props;
 ---
 
 <section class="bg-white">
@@ -9,32 +20,33 @@ const { } = Astro.props;
         <p
           class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
         >
-          Transportasi
+          {eyebrow}
         </p>
         <h2
           class="mt-4 max-w-2xl font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl"
         >
-          Transportasi yang rapi untuk transfer dan perjalanan harian
+          {title}
         </h2>
       </div>
       <div class="grid gap-4 sm:grid-cols-2">
-        <div class="rounded-[1.5rem] border border-border bg-surface-soft p-6">
-          <div class="font-heading text-2xl leading-tight text-foreground">
-            Antar-jemput bandara
-          </div>
-          <p class="mt-3 text-sm leading-7 text-text-muted">
-            Cocok untuk kedatangan pagi atau malam dengan koordinasi yang
-            sederhana.
-          </p>
-        </div>
-        <div class="rounded-[1.5rem] border border-border bg-white p-6">
-          <div class="font-heading text-2xl leading-tight text-foreground">
-            Driver harian
-          </div>
-          <p class="mt-3 text-sm leading-7 text-text-muted">
-            Fleksibel untuk tamu yang ingin menyesuaikan urutan destinasi.
-          </p>
-        </div>
+        {
+          services.map((service, index) => (
+            <div
+              class={
+                index === 0
+                  ? "rounded-[1.5rem] border border-border bg-surface-soft p-6"
+                  : "rounded-[1.5rem] border border-border bg-white p-6"
+              }
+            >
+              <div class="font-heading text-2xl leading-tight text-foreground">
+                {service.title}
+              </div>
+              <p class="mt-3 text-sm leading-7 text-text-muted">
+                {service.description}
+              </p>
+            </div>
+          ))
+        }
       </div>
     </div>
   </div>

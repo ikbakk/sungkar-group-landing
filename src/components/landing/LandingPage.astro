@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import HeroSection from "./HeroSection.astro";
 import VideoSection from "./VideoSection.astro";
 import FeaturedSection from "./FeaturedSection.astro";
@@ -6,77 +7,64 @@ import DestinationsSection from "./DestinationsSection.astro";
 import TransportSection from "./TransportSection.astro";
 import TestimonialSection from "./TestimonialSection.astro";
 
-import HeroLombok from "@/assets/images/hero-lombok.png";
-import Hero from "@/assets/images/hero.webp";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.png";
-import TourCultural from "@/assets/images/tour-cultural.png";
-import DestinationLombok from "@/assets/images/destination-lombok.png";
-import DestinationRinjani from "@/assets/images/destination-rinjani.png";
-import DestinationGili from "@/assets/images/destination-gili.png";
-import DestinationSumbawa from "@/assets/images/destination-sumbawa.png";
-
-const featuredTours = [
-  {
-    slug: "3d2n-lombok-signature",
-    title: "Paket Lombok 3H2M",
-    image: HeroLombok,
-    description:
-      "Rangkaian pantai, matahari terbit, dan pengalaman lokal yang disusun untuk perjalanan pertama ke Lombok.",
-  },
-  {
-    slug: "snorkeling-gili-escape",
-    title: "Tur Snorkeling dan Gili",
-    image: TourSnorkeling,
-    description:
-      "Jelajah pulau singkat dengan fokus pada air jernih, perpindahan efisien, dan waktu santai di pulau.",
-  },
-  {
-    slug: "village-culture-experience",
-    title: "Pengalaman Desa dan Budaya",
-    image: TourCultural,
-    description:
-      "Menjelajahi desa tradisional, tenun, dan ritme lokal dengan pendekatan yang lebih dekat dan tenang.",
-  },
-];
-
-const destinations = [
-  {
-    slug: "kuta-lombok",
-    title: "Lombok",
-    image: DestinationLombok,
-    description:
-      "Pantai selatan, desa pesisir, dan rute santai untuk perjalanan multi-hari.",
-  },
-  {
-    slug: "rinjani",
-    title: "Rinjani",
-    image: DestinationRinjani,
-    description:
-      "Pegunungan, kabut pagi, dan panorama yang sering jadi alasan orang datang.",
-  },
-  {
-    slug: "gili-trawangan",
-    title: "Kepulauan Gili",
-    image: DestinationGili,
-    description:
-      "Snorkeling, jelajah pulau, dan suasana pulau yang mudah dinikmati.",
-  },
-  {
-    slug: "sumbawa",
-    title: "Sumbawa",
-    image: DestinationSumbawa,
-    description:
-      "Rute yang lebih sepi dengan karakter alam terbuka dan garis pantai yang kuat.",
-  },
-];
+import {
+  landingHero,
+  landingFeaturedTours,
+  landingDestinations,
+  landingTransport,
+  landingTestimonials,
+  landingVideo,
+  landingBackgroundImage,
+} from "@/lib/content/landing";
 ---
 
-<HeroSection HeroLombok={HeroLombok} />
+<HeroSection
+  eyebrow={landingHero.eyebrow}
+  title={landingHero.title}
+  description={landingHero.description}
+  primaryAction={landingHero.primaryAction}
+  secondaryAction={landingHero.secondaryAction}
+  cards={landingHero.cards}
+>
+  <Image
+    slot="background"
+    src={landingBackgroundImage}
+    alt="Pemandangan Lombok saat matahari terbit"
+    class="h-full w-full object-top"
+    loading="eager"
+  />
+</HeroSection>
 <FeaturedSection
-  featuredTours={featuredTours}
-  TourSnorkeling={TourSnorkeling}
+  eyebrow={landingFeaturedTours.eyebrow}
+  title={landingFeaturedTours.title}
+  description={landingFeaturedTours.description}
+  featuredTours={landingFeaturedTours.tours}
+  image={landingFeaturedTours.heroImage}
 />
-<DestinationsSection destinations={destinations} />
-<TestimonialSection />
-<TransportSection />
-<VideoSection />
+<DestinationsSection
+  eyebrow={landingDestinations.eyebrow}
+  title={landingDestinations.title}
+  description={landingDestinations.description}
+  destinations={landingDestinations.destinations}
+/>
+<TestimonialSection
+  eyebrow={landingTestimonials.eyebrow}
+  title={landingTestimonials.title}
+  description={landingTestimonials.description}
+  testimonials={landingTestimonials.testimonials}
+/>
+<TransportSection
+  eyebrow={landingTransport.eyebrow}
+  title={landingTransport.title}
+  services={landingTransport.services}
+/>
+<VideoSection
+  eyebrow={landingVideo.eyebrow}
+  title={landingVideo.title}
+  description={landingVideo.description}
+  ctaLabel={landingVideo.ctaLabel}
+  ctaHref={landingVideo.ctaHref}
+  panelEyebrow={landingVideo.panelEyebrow}
+  panelTitle={landingVideo.panelTitle}
+  panelDescription={landingVideo.panelDescription}
+/>

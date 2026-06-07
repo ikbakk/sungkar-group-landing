@@ -6,66 +6,45 @@ interface Testimonial {
   rating: number;
 }
 
-const testimonials: Testimonial[] = [
-  {
-    name: "Sarah Wijaya",
-    title: "Keluarga dari Jakarta",
-    content:
-      "Perjalanan ke Lombok bersama Sungkar Group adalah pengalaman terbaik kami. Semua sudah diatur dengan sempurna, driver ramah, dan itinerary yang santai membuat liburan jadi benar-benar rileks.",
-    rating: 5,
-  },
-  {
-    name: "Budi Santoso",
-    title: "Traveler Solo",
-    content:
-      "Tidak perlu repot urus transportasi dan rute. Sungkar Group handle semuanya dengan profesional. Saya bisa fokus menikmati keindahan Lombok dan berinteraksi dengan penduduk lokal.",
-    rating: 5,
-  },
-  {
-    name: "Ratna Dewi",
-    title: "Grup Teman dari Bandung",
-    content:
-      "Dokumentasi berjalan lancar, spot-spot yang dikunjungi bagus, dan guide yang informatif. Harga sesuai dengan kualitas layanan yang diberikan. Pasti akan balik lagi!",
-    rating: 5,
-  },
-];
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+  testimonials: Testimonial[];
+}
+
+const { eyebrow, title, description, testimonials } = Astro.props as Props;
 ---
 
 <section class="bg-surface-soft py-16 sm:py-20 lg:py-24">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <!-- Section Header -->
-    <div class="text-center mb-12 lg:mb-16">
+    <div class="mb-12 text-center lg:mb-16">
       <p
         class="text-sm font-medium uppercase tracking-[0.28em]"
         style="color: var(--color-brand-700);"
       >
-        Ulasan & Testimoni
+        {eyebrow}
       </p>
       <h2
         class="mt-4 font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl"
       >
-        Apa kata mereka tentang perjalanan bersama kami
+        {title}
       </h2>
-      <p class="mt-6 mx-auto max-w-2xl text-base leading-8 text-text-muted">
-        Ribuan wisatawan telah merasakan pengalaman yang tak terlupakan bersama
-        Sungkar Group. Dengarkan cerita mereka.
+      <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-text-muted">
+        {description}
       </p>
     </div>
 
-    <!-- Testimonials Grid -->
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {
         testimonials.map((testimonial) => (
-          <div
-            class="rounded-2xl border border-border bg-white p-6 sm:p-8 shadow-sm transition-all hover:shadow-md hover:border-brand-200"
-          >
-            <!-- Stars -->
+          <div class="rounded-2xl border border-border bg-white p-6 shadow-sm transition-all hover:border-brand-200 hover:shadow-md sm:p-8">
             <div class="flex gap-1">
               {Array(testimonial.rating)
                 .fill(0)
                 .map(() => (
                   <svg
-                    class="w-5 h-5"
+                    class="h-5 w-5"
                     style="color: var(--color-brand-600);"
                     fill="currentColor"
                     viewBox="0 0 20 20"
@@ -75,13 +54,11 @@ const testimonials: Testimonial[] = [
                 ))}
             </div>
 
-            <!-- Quote -->
             <p class="mt-5 text-base leading-7 text-foreground">
               "{testimonial.content}"
             </p>
 
-            <!-- Author -->
-            <div class="mt-6 pt-6 border-t border-border">
+            <div class="mt-6 border-t border-border pt-6">
               <p class="font-medium text-foreground">{testimonial.name}</p>
               <p class="text-sm text-text-muted">{testimonial.title}</p>
             </div>

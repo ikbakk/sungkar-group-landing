@@ -9,10 +9,13 @@ interface DestinationCard {
 }
 
 interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
   destinations: DestinationCard[];
 }
 
-const { destinations } = Astro.props as Props;
+const { eyebrow, title, description, destinations } = Astro.props as Props;
 ---
 
 <section class="border-y border-border bg-surface-soft">
@@ -22,17 +25,16 @@ const { destinations } = Astro.props as Props;
         <p
           class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
         >
-          Destinasi utama
+          {eyebrow}
         </p>
         <h2
           class="mt-4 font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl"
         >
-          Destinasi dengan komposisi visual yang lebih seimbang
+          {title}
         </h2>
       </div>
       <p class="max-w-2xl text-base leading-8 text-text-muted">
-        Bagian ini sengaja ditata dengan variasi kartu dan arah teks supaya
-        tidak terasa terlalu berat ke kiri.
+        {description}
       </p>
     </div>
 
@@ -46,7 +48,7 @@ const { destinations } = Astro.props as Props;
                 : "overflow-hidden rounded-[1.75rem] border border-border bg-surface-soft shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
             }
           >
-            <div class="aspect-[4/3] overflow-hidden">
+            <div class="aspect-4/3 overflow-hidden">
               <Image
                 src={destination.image}
                 alt={destination.title}
