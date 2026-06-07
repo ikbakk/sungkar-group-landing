@@ -31,7 +31,7 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt } =
 {
   image ? (
     <section class="bg-background">
-      <div class="mx-auto max-w-7xl pt-32 px-4 py-14 sm:px-6 lg:px-8 lg:pt-32">
+      <div class="mx-auto max-w-7xl pt-32 px-4 pb-8 sm:px-6 lg:px-8 lg:pt-32">
         <div class="relative overflow-hidden rounded-[2.5rem] border border-border bg-surface-soft">
           <div class="absolute inset-0">
             <Image
@@ -84,8 +84,8 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt } =
     </section>
   ) : (
     <section class="bg-white">
-      <div class="mx-auto max-w-7xl px-4 pt-32 py-14 sm:px-6 lg:px-8 lg:pt-32">
-        <Breadcrumb>
+      <div class="mx-auto max-w-7xl px-4 pt-32 pb-8 sm:px-6 lg:px-8 lg:pt-32">
+        <Breadcrumb className="font-sans">
           <BreadcrumbList>
             {breadcrumbs.map((crumb, index) => (
               <>
@@ -105,14 +105,14 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt } =
         </Breadcrumb>
 
         {eyebrow && (
-          <div class="mt-8 text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+          <div class="mt-8 text-sm font-sans font-medium uppercase tracking-[0.28em] text-brand-700">
             {eyebrow}
           </div>
         )}
         <h1 class="mt-4 max-w-4xl font-heading text-4xl leading-tight tracking-[-0.03em] text-foreground sm:text-5xl lg:text-6xl">
           {title}
         </h1>
-        <p class="mt-5 max-w-3xl text-base leading-8 text-text-muted sm:text-lg">
+        <p class="mt-5 max-w-3xl font-sans text-base leading-8 text-text-muted sm:text-lg">
           {description}
         </p>
       </div>

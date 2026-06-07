@@ -1,0 +1,35 @@
+---
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { aboutContent } from "@/lib/content/about";
+---
+
+<SectionContainer background="bg-background">
+  <Card className="border-border bg-white">
+    <CardHeader>
+      <CardTitle className="text-3xl leading-tight">
+        Apa yang kami kerjakan
+      </CardTitle>
+    </CardHeader>
+
+    <CardContent className="flex flex-col gap-4">
+      {
+        aboutContent.services.map((service, index) => (
+          <div
+            class={
+              index % 2 === 0
+                ? "rounded-lg border border-border bg-surface-soft px-4 py-3"
+                : "rounded-lg border border-border bg-white px-4 py-3"
+            }
+          >
+            <div class="font-medium text-foreground">{service.title}</div>
+
+            <div class="mt-2 text-sm leading-7 text-text-muted">
+              {service.description}
+            </div>
+          </div>
+        ))
+      }
+    </CardContent>
+  </Card>
+</SectionContainer>

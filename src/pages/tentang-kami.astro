@@ -1,147 +1,41 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { services, aboutFaqItems } from "@/lib/site-data";
-import { Image } from "astro:assets";
-import TourCultural from "@/assets/images/tour-cultural.png";
+import FaqSection from "@/components/site/Faq.astro";
+
+import StorySection from "@/components/about/StorySection.astro";
+import VisionMissionSection from "@/components/about/VisionMissionSection.astro";
+import ServicesSection from "@/components/about/ServicesSection.astro";
+import StrengthsSection from "@/components/about/StrengthsSection.astro";
+import ValuesSection from "@/components/about/ValuesSection.astro";
+import CommitmentSection from "@/components/about/CommitmentSection.astro";
+import CtaSection from "@/components/about/CtaSection.astro";
+
+import { aboutContent } from "@/lib/content/about";
+import { aboutFaq } from "@/lib/content/faqs/about";
 ---
 
 <MainLayout
   title="Tentang Kami"
-  description="Tentang Sungkar Group sebagai operator wisata Lombok berbasis lokal."
+  description="Tentang Sungkar Group Indonesia sebagai operator wisata lokal yang membantu wisatawan menikmati Lombok dengan lebih nyaman dan terencana."
   canonical="/tentang-kami"
-  image={TourCultural}
 >
   <PageHeader
-    eyebrow="Tentang Kami"
-    title="Operator lokal yang merancang perjalanan dengan ritme yang lebih tenang"
-    description="Sungkar Group dibangun untuk tamu yang ingin melihat Lombok secara lebih jernih: tur yang tertata, driver yang paham rute, dan destinasi yang saling terhubung dengan baik."
+    eyebrow={aboutContent.hero.eyebrow}
+    title={aboutContent.hero.title}
+    description={aboutContent.hero.description}
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Tentang Kami" }]}
-    image={TourCultural}
-    imageAlt="Aktivitas budaya Lombok"
   />
-
-  <section class="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-      <div class="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
-        <div
-          class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]"
-        >
-          <Image
-            src={TourCultural}
-            alt="Budaya Lombok"
-            class="h-full w-full object-cover"
-            loading="eager"
-          />
-        </div>
-
-        <div class="grid gap-4">
-          <Card className="border-border bg-white">
-            <CardHeader>
-              <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                Keahlian lokal
-              </Badge>
-              <CardTitle className="text-3xl leading-tight"
-                >Rute yang tahu kapan harus pelan</CardTitle
-              >
-            </CardHeader>
-            <CardContent>
-              <p class="text-sm leading-7 text-text-muted">
-                Perjalanan disusun supaya wisatawan tidak hanya berpindah
-                tempat, tetapi benar-benar menikmati tiap pemberhentian.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-border bg-white">
-            <CardHeader>
-              <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                Kejelasan layanan
-              </Badge>
-              <CardTitle className="text-3xl leading-tight"
-                >Layanan yang jelas dari awal</CardTitle
-              >
-            </CardHeader>
-            <CardContent>
-              <p class="text-sm leading-7 text-text-muted">
-                Setiap pertanyaan dijawab dengan opsi rute, durasi, dan
-                transportasi yang relevan, bukan penawaran acak.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-
-      <div class="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-        <Card className="border-border bg-white">
-          <CardHeader>
-            <CardTitle className="text-3xl leading-tight"
-              >Apa yang kami kerjakan</CardTitle
-            >
-          </CardHeader>
-          <CardContent className="grid gap-3">
-            {
-              services.map((service, index) => (
-                <div
-                  class={
-                    index % 2 === 0
-                      ? "rounded-2xl border border-border bg-surface-soft px-4 py-3"
-                      : "rounded-2xl border border-border bg-white px-4 py-3"
-                  }
-                >
-                  <div class="font-medium text-foreground">{service.title}</div>
-                  <div class="mt-2 text-sm leading-7 text-text-muted">
-                    {service.text}
-                  </div>
-                </div>
-              ))
-            }
-          </CardContent>
-        </Card>
-
-        <Card className="border-border bg-brand-900 text-white">
-          <CardHeader>
-            <CardTitle className="text-3xl leading-tight text-white"
-              >Alur pesan yang sederhana</CardTitle
-            >
-          </CardHeader>
-          <CardContent>
-            <p class="text-sm leading-7 text-brand-100">
-              Jika Anda ingin itinerary, transportasi, dan destinasi yang terasa
-              nyambung, mulailah dari halaman kontak.
-            </p>
-            <div class="mt-6 flex flex-wrap gap-3">
-              <Button href="/kontak" variant="secondary">
-                Cek Ketersediaan
-              </Button>
-              <Button href="/kontak">Chat WhatsApp</Button>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      <div class="mt-12 grid gap-4">
-        <div
-          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
-        >
-          FAQ Tentang Kami
-        </div>
-        {
-          aboutFaqItems.map((item) => (
-            <details class="rounded-[1.5rem] border border-border bg-white p-6">
-              <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
-                {item.question}
-              </summary>
-              <p class="mt-4 text-sm leading-7 text-text-muted">
-                {item.answer}
-              </p>
-            </details>
-          ))
-        }
-      </div>
-    </div>
-  </section>
+  <StorySection />
+  <VisionMissionSection />
+  <ServicesSection />
+  <StrengthsSection />
+  <ValuesSection />
+  <CommitmentSection />
+  <FaqSection
+    eyebrow="FAQ"
+    title="Pertanyaan Tentang Sungkar Group"
+    items={aboutFaq}
+  />
+  <CtaSection />
 </MainLayout>

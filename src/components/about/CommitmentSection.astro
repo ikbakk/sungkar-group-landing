@@ -1,0 +1,21 @@
+---
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { aboutContent } from "@/lib/content/about";
+---
+
+<SectionContainer background="bg-background">
+  <Card className="border-border bg-brand-900 text-white">
+    <CardHeader>
+      <CardTitle className="text-3xl leading-tight text-white">
+        {aboutContent.commitment.title}
+      </CardTitle>
+    </CardHeader>
+
+    <CardContent>
+      <p class="text-sm leading-7 text-brand-100">
+        {aboutContent.commitment.description}
+      </p>
+    </CardContent>
+  </Card>
+</SectionContainer>

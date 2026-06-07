@@ -1,0 +1,66 @@
+---
+import SectionContainer from "@/layouts/SectionContainer.astro";
+
+interface Props {
+  title?: string;
+  eyebrow?: string;
+  items: {
+    question: string;
+    answer: string;
+  }[];
+}
+
+const {
+  title = "Pertanyaan yang Sering Diajukan",
+  eyebrow = "FAQ",
+  items,
+} = Astro.props;
+---
+
+<SectionContainer background="bg-background">
+  <div class="mb-8">
+    <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+      {eyebrow}
+    </div>
+
+    <h2 class="mt-2 text-3xl leading-tight font-heading">
+      {title}
+    </h2>
+  </div>
+
+  <div class="flex flex-col font-sans">
+    {
+      items.map((item) => (
+        <details class="group border-b border-border py-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6">
+            <span class="pr-4 text-foreground transition-colors duration-300">
+              {item.question}
+            </span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="size-5 shrink-0 text-text-muted transition-transform duration-400 ease-out group-open:rotate-180"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </summary>
+
+          <div class="grid grid-rows-[0fr] transition-all duration-400 ease-out group-open:grid-rows-[1fr]">
+            <div class="overflow-hidden">
+              <p class="pt-4 pb-1 text-sm leading-7 text-text-muted">
+                {item.answer}
+              </p>
+            </div>
+          </div>
+        </details>
+      ))
+    }
+  </div>
+</SectionContainer>
