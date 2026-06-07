@@ -1,15 +1,20 @@
 ---
 import { Image } from "astro:assets";
+
 import Logo from "@/assets/images/logo.webp";
-import CustomNavigationMenu from "./CustomNavigationMenu";
+
+import NavigationDesktop from "./NavigationDesktop";
+import NavigationMobile from "./NavigationMobile";
+
 import { navigation } from "@/lib/content/navigationData";
+
 import { Button } from "../ui/button";
 
 const isHome = Astro.url.pathname === "/" || Astro.url.pathname === "/home";
 ---
 
 <header
-  class="fixed w-full top-0 z-50 text-background border-b border-border/80 bg-black/20 backdrop-blur-md"
+  class="fixed top-0 z-50 w-full text-background border-b border-border/80 bg-black/20 backdrop-blur-md"
 >
   <div
     class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8"
@@ -24,82 +29,15 @@ const isHome = Astro.url.pathname === "/" || Astro.url.pathname === "/home";
     </a>
 
     <nav class="hidden flex-1 justify-center lg:flex lg:max-w-5xl">
-      <CustomNavigationMenu items={navigation} client:load />
+      <NavigationDesktop items={navigation} client:load />
     </nav>
 
     <div class="hidden items-center gap-3 lg:flex">
       <Button size="lg">
-        <a href="/kontak">Chat WhatsApp</a>
+        <a href="/kontak"> Chat WhatsApp </a>
       </Button>
     </div>
 
-    <details class="relative lg:hidden">
-      <summary
-        class="flex list-none items-center justify-center rounded-full border border-border bg-white px-4 py-2 text-sm font-medium text-foreground shadow-sm transition-colors hover:bg-brand-50 [&::-webkit-details-marker]:hidden"
-      >
-        Menu
-      </summary>
-
-      <div
-        class="absolute right-0 mt-3 w-[min(20rem,calc(100vw-2rem))] overflow-hidden rounded-3xl border border-border bg-white p-4 shadow-[0_20px_50px_rgba(17,24,39,0.12)]"
-      >
-        <nav class="grid gap-1">
-          <a
-            href="/"
-            class="rounded-2xl px-3 py-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-brand-50 hover:text-foreground"
-            >Beranda</a
-          >
-          <a
-            href="/tentang-kami"
-            class="rounded-2xl px-3 py-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-brand-50 hover:text-foreground"
-            >Tentang Kami</a
-          >
-          <a
-            href="/paket-wisata"
-            class="rounded-2xl px-3 py-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-brand-50 hover:text-foreground"
-            >Paket Wisata</a
-          >
-          <a
-            href="/destinasi"
-            class="rounded-2xl px-3 py-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-brand-50 hover:text-foreground"
-            >Destinasi</a
-          >
-          <a
-            href="/ulasan"
-            class="rounded-2xl px-3 py-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-brand-50 hover:text-foreground"
-            >Ulasan</a
-          >
-          <a
-            href="/panduan-wisata"
-            class="rounded-2xl px-3 py-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-brand-50 hover:text-foreground"
-            >Panduan Wisata</a
-          >
-          <a
-            href="/kontak"
-            class="rounded-2xl px-3 py-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-brand-50 hover:text-foreground"
-            >Kontak</a
-          >
-        </nav>
-
-        {
-          !isHome && (
-            <div class="mt-4 grid gap-2">
-              <a
-                href="/kontak"
-                class="inline-flex items-center justify-center rounded-full border border-border bg-white px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-brand-200 hover:bg-brand-50"
-              >
-                Cek Ketersediaan
-              </a>
-              <a
-                href="/kontak"
-                class="inline-flex items-center justify-center rounded-full border border-[#25d366]/20 bg-[#25d366] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#1db157]"
-              >
-                Chat WhatsApp
-              </a>
-            </div>
-          )
-        }
-      </div>
-    </details>
+    <NavigationMobile items={navigation} isHome={isHome} client:load />
   </div>
 </header>

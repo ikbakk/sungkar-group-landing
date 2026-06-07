@@ -14,26 +14,13 @@ export type NavItem = {
   }[];
 };
 
-const lombokPackages = packages
-  .filter((pkg) => pkg.region === "lombok")
-  .map((pkg) => ({
-    label: pkg.title,
-    href: `/paket-wisata/${pkg.slug}`,
-  }));
-
-const sumbawaPackages = packages
-  .filter((pkg) => pkg.region === "sumbawa")
-  .map((pkg) => ({
-    label: pkg.title,
-    href: `/paket-wisata/${pkg.slug}`,
-  }));
-
-const labuanBajoPackages = packages
-  .filter((pkg) => pkg.region === "labuan-bajo")
-  .map((pkg) => ({
-    label: pkg.title,
-    href: `/paket-wisata/${pkg.slug}`,
-  }));
+const createPackageLinks = (region: "lombok" | "sumbawa" | "labuan-bajo") =>
+  packages
+    .filter((pkg) => pkg.region === region)
+    .map((pkg) => ({
+      label: pkg.title,
+      href: `/paket-wisata/${pkg.slug}`,
+    }));
 
 export const navigation: NavItem[] = [
   {
@@ -49,17 +36,17 @@ export const navigation: NavItem[] = [
     groups: [
       {
         title: "Paket Wisata Lombok",
-        items: lombokPackages,
+        items: createPackageLinks("lombok"),
       },
 
       {
         title: "Paket Wisata Sumbawa",
-        items: sumbawaPackages,
+        items: createPackageLinks("sumbawa"),
       },
 
       {
         title: "Paket Wisata Labuan Bajo",
-        items: labuanBajoPackages,
+        items: createPackageLinks("labuan-bajo"),
       },
     ],
   },
