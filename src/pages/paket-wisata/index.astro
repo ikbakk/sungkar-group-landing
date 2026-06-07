@@ -1,25 +1,21 @@
 ---
-import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 
 import { packages } from "@/lib/content/tourPackages";
-
 import { packageFaqItems } from "@/lib/site-data";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import PackagesCard from "@/components/cards/PackagesCard.astro";
 
 import "../../styles/global.css";
+
+const lombokPackages = packages.filter((pkg) => pkg.region === "lombok");
+
+const sumbawaPackages = packages.filter((pkg) => pkg.region === "sumbawa");
+
+const labuanBajoPackages = packages.filter(
+  (pkg) => pkg.region === "labuan-bajo",
+);
 ---
 
 <MainLayout
@@ -33,73 +29,146 @@ import "../../styles/global.css";
     title="Paket wisata yang punya halaman detail masing-masing"
     description="Setiap kartu tur mengarah ke halaman paket tersendiri agar itinerary, yang termasuk di dalamnya, dan detail perjalanan bisa dibaca tanpa menebak."
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Paket Wisata" }]}
-    image={packages[0].image}
-    imageAlt="Paket wisata Lombok"
   />
 
   <section class="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        {
-          packages.map((tour) => (
-            <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
-              <div class="aspect-[4/3] overflow-hidden">
-                <Image
-                  src={tour.image}
-                  alt={tour.title}
-                  class="h-full w-full object-cover"
-                  loading="eager"
-                />
-              </div>
-              <CardHeader>
-                <Badge
-                  variant="outline"
-                  className="w-fit rounded-full px-3 py-1"
-                >
-                  {tour.category}
-                </Badge>
-                <CardTitle className="text-3xl leading-tight">
-                  {tour.title}
-                </CardTitle>
-                <CardDescription className="text-sm leading-6 text-text-muted">
-                  {tour.duration}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p class="text-sm leading-7 text-text-muted">{tour.summary}</p>
-                <ul class="mt-4 flex flex-wrap gap-2">
-                  {tour.highlights.map((item) => (
-                    <li class="rounded-full border border-border bg-surface-soft px-3 py-1 text-xs font-medium text-foreground">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-              <CardFooter className="justify-between gap-3">
-                <Button href={`/paket-wisata/${tour.slug}`} variant="outline">
-                  Lihat detail
-                </Button>
-                <span class="text-xs uppercase tracking-[0.2em] text-text-muted">
-                  Halaman detail
-                </span>
-              </CardFooter>
-            </Card>
-          ))
-        }
-      </div>
+    <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <!-- Quick Filter -->
 
-      <div class="mt-12 grid gap-4">
+      <nav
+        class="top-28 sticky
+          z-20
+          mb-8
+          flex
+          gap-2
+          overflow-x-scroll
+          lg:overflow-visible
+          lg:justify-start
+          rounded-xl
+          border
+          border-border
+          bg-white
+          p-2"
+      >
+        <a
+          href="#lombok"
+          data-region-link
+          class="rounded-lg whitespace-nowrap border border-border px-4 py-2 text-sm font-medium transition"
+        >
+          Lombok ({lombokPackages.length})
+        </a>
+
+        <a
+          href="#sumbawa"
+          data-region-link
+          class="rounded-lg whitespace-nowrap border border-border px-4 py-2 text-sm font-medium transition"
+        >
+          Sumbawa ({sumbawaPackages.length})
+        </a>
+
+        <a
+          href="#labuan-bajo"
+          data-region-link
+          class="rounded-lg whitespace-nowrap border border-border px-4 py-2 text-sm font-medium transitionh"
+        >
+          Labuan Bajo ({labuanBajoPackages.length})
+        </a>
+      </nav>
+
+      <!-- Lombok -->
+
+      <section id="lombok" class="scroll-mt-48" data-region-section>
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold">Paket Wisata Lombok</h2>
+
+          <p class="mt-2 max-w-3xl text-text-muted">
+            Jelajahi destinasi terbaik Lombok mulai dari Pantai Kuta Mandalika,
+            Bukit Merese, Tetebatu, Sembalun, hingga Gili Trawangan.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {lombokPackages.map((tour) => <PackagesCard tour={tour} />)}
+        </div>
+
+        <div class="mt-8 flex justify-center">
+          <a
+            href="#top"
+            class="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium"
+          >
+            ↑ Kembali ke Atas
+          </a>
+        </div>
+      </section>
+
+      <!-- Sumbawa -->
+
+      <section id="sumbawa" class="mt-20 scroll-mt-48" data-region-section>
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold">Paket Wisata Sumbawa</h2>
+
+          <p class="mt-2 max-w-3xl text-text-muted">
+            Temukan pengalaman wisata bahari terbaik Sumbawa, termasuk whale
+            shark experience di Teluk Saleh.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {sumbawaPackages.map((tour) => <PackagesCard tour={tour} />)}
+        </div>
+
+        <div class="mt-8 flex justify-center">
+          <a
+            href="#"
+            class="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium"
+          >
+            ↑ Kembali ke Atas
+          </a>
+        </div>
+      </section>
+
+      <!-- Labuan Bajo -->
+
+      <section id="labuan-bajo" class="mt-20 scroll-mt-48" data-region-section>
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold">Paket Wisata Labuan Bajo</h2>
+
+          <p class="mt-2 max-w-3xl text-text-muted">
+            Sailing Komodo, Pink Beach, Pulau Padar, Manta Point, dan berbagai
+            destinasi ikonik Labuan Bajo.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {labuanBajoPackages.map((tour) => <PackagesCard tour={tour} />)}
+        </div>
+
+        <div class="mt-8 flex justify-center">
+          <a
+            href="#top"
+            class="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium"
+          >
+            ↑ Kembali ke Atas
+          </a>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+
+      <div class="mt-20 grid gap-4">
         <div
           class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
         >
           FAQ Paket Wisata
         </div>
+
         {
           packageFaqItems.map((item) => (
             <details class="rounded-[1.5rem] border border-border bg-white p-6">
               <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
                 {item.question}
               </summary>
+
               <p class="mt-4 text-sm leading-7 text-text-muted">
                 {item.answer}
               </p>
@@ -110,3 +179,32 @@ import "../../styles/global.css";
     </div>
   </section>
 </MainLayout>
+
+<script>
+  const links = document.querySelectorAll("[data-region-link]");
+  const sections = document.querySelectorAll("[data-region-section]");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const id = entry.target.id;
+
+        links.forEach((link) => {
+          const active = link.getAttribute("href") === `#${id}`;
+
+          link.classList.toggle("bg-brand-700", active);
+          link.classList.toggle("text-white", active);
+
+          link.classList.toggle("border-brand-700", active);
+        });
+      });
+    },
+    {
+      rootMargin: "-40% 0px -40% 0px",
+    },
+  );
+
+  sections.forEach((section) => observer.observe(section));
+</script>
