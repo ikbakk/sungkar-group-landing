@@ -19,17 +19,13 @@ const { eyebrow, title, description, destinations } = Astro.props as Props;
 ---
 
 <section class="border-y border-border bg-surface-soft">
-  <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-    <div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+  <div class="section-container section-padding">
+    <div class="grid-destinations">
       <div>
-        <p
-          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
-        >
+        <p class="section-eyebrow">
           {eyebrow}
         </p>
-        <h2
-          class="mt-4 font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl"
-        >
+        <h2 class="section-title">
           {title}
         </h2>
       </div>
@@ -42,11 +38,12 @@ const { eyebrow, title, description, destinations } = Astro.props as Props;
       {
         destinations.map((destination, index) => (
           <article
-            class={
+            class:list={[
+              "overflow-hidden section-card",
               index % 2 === 0
-                ? "overflow-hidden rounded-[1.75rem] border border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
-                : "overflow-hidden rounded-[1.75rem] border border-border bg-surface-soft shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
-            }
+                ? "section-card-white"
+                : "section-card-soft"
+            ]}
           >
             <div class="aspect-4/3 overflow-hidden">
               <Image

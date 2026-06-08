@@ -1,0 +1,119 @@
+@layer components {
+  /* Section Container Classes */
+  .section-container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 sm:py-24;
+  }
+
+  /* Eyebrow Styles */
+  .section-eyebrow {
+    @apply text-sm font-medium uppercase tracking-[0.28em] text-brand-700;
+  }
+
+  .section-eyebrow-light {
+    @apply text-sm font-medium uppercase tracking-[0.28em] text-brand-50;
+  }
+
+  /* Title Styles */
+  .section-title {
+    @apply mt-4 font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl;
+  }
+
+  .section-title-light {
+    @apply mt-6 font-heading text-4xl leading-[0.92] tracking-[-0.03em] text-surface sm:text-5xl lg:text-6xl xl:text-7xl;
+  }
+
+  /* Description Styles */
+  .section-description {
+    @apply mt-5 max-w-xl text-base leading-8 text-text-muted;
+  }
+
+  .section-description-light {
+    @apply mt-4 max-w-xl text-sm leading-7 sm:text-base sm:leading-8 lg:text-lg text-surface;
+  }
+
+  /* Card Utilities */
+  .section-card {
+    @apply rounded-[1.75rem] border border-border transition-all duration-300 ease-out;
+  }
+
+  .section-card-white {
+    @apply rounded-[1.75rem] border border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)] transition-all duration-300 ease-out;
+  }
+
+  .section-card-soft {
+    @apply rounded-[1.75rem] border border-border bg-surface-soft shadow-[0_16px_45px_rgba(17,24,39,0.05)] transition-all duration-300 ease-out;
+  }
+
+  .section-card-interactive {
+    @apply rounded-[1.75rem] border border-border bg-white transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(17,24,39,0.1)] hover:border-brand-200;
+  }
+
+  /* Info Box Styles */
+  .info-box {
+    @apply rounded-2xl border border-border bg-surface-soft px-4 py-3;
+  }
+
+  .info-box-title {
+    @apply text-sm font-medium text-foreground;
+  }
+
+  .info-box-description {
+    @apply mt-1 text-sm leading-7 text-text-muted;
+  }
+
+  /* Form Input Styles */
+  .form-input {
+    @apply rounded-2xl border border-border bg-white px-4 py-3 text-foreground outline-none placeholder:text-text-muted;
+  }
+
+  .form-input-dark {
+    @apply rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-brand-100/50;
+  }
+
+  .form-label {
+    @apply text-sm font-medium text-foreground;
+  }
+
+  .form-label-light {
+    @apply text-sm text-brand-100;
+  }
+
+  /* Section Grid Layouts */
+  .grid-2-col {
+    @apply grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center;
+  }
+
+  .grid-featured {
+    @apply grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch;
+  }
+
+  .grid-destinations {
+    @apply grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end;
+  }
+
+  .grid-form {
+    @apply grid gap-8 lg:grid-cols-[0.9fr_1.1fr];
+  }
+
+  /* Testimonial Grid */
+  .testimonial-grid {
+    @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  /* FAQ Accordion */
+  .faq-accordion {
+    @apply rounded-[1.5rem] border border-border bg-white p-6;
+  }
+
+  .faq-summary {
+    @apply cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden;
+  }
+
+  .faq-answer {
+    @apply mt-4 text-sm leading-7 text-text-muted;
+  }
+}

@@ -1,0 +1,53 @@
+---
+import { Card, CardContent } from "@/components/ui/card";
+import type { ContactMethod } from "@/lib/contact-data";
+
+interface Props {
+  method: ContactMethod;
+  variant?: "default" | "primary";
+}
+
+const { method, variant = "default" } = Astro.props;
+const isPrimary = variant === "primary";
+---
+
+<Card
+  className:list={[
+    "border-border",
+    isPrimary ? "bg-brand-900 text-white" : "bg-white",
+  ]}
+>
+  <CardContent className="pt-6">
+    <h3
+      className:list={[
+        "font-heading text-xl font-semibold leading-tight",
+        isPrimary ? "text-white" : "text-foreground",
+      ]}
+    >
+      {method.title}
+    </h3>
+    <p
+      className:list={[
+        "mt-2 text-sm leading-7",
+        isPrimary ? "text-brand-100" : "text-text-muted",
+      ]}
+    >
+      {method.description}
+    </p>
+    {
+      method.action && (
+        <a
+          href={method.action.href}
+          className:list={[
+            "mt-4 inline-block rounded-lg px-4 py-2 text-sm font-medium transition-colors",
+            isPrimary
+              ? "bg-white text-brand-900 hover:bg-brand-50"
+              : "bg-brand-50 text-brand-900 hover:bg-brand-100",
+          ]}
+        >
+          {method.action.label}
+        </a>
+      )
+    }
+  </CardContent>
+</Card>
