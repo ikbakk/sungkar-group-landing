@@ -5,7 +5,8 @@ import RelatedContent from "@/components/site/RelatedContent.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateHowToSchema } from "@/lib/schemas";
 import { guides } from "@/lib/content/guides";
-import { destinations, packages } from "@/lib/site-data";
+import { destinations } from "@/lib/content/destinationsData";
+import { packages } from "@/lib/content/tourPackages";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
 export async function getStaticPaths() {

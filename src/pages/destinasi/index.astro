@@ -3,12 +3,10 @@ import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import RelatedContent from "@/components/site/RelatedContent.astro";
-import {
-  destinations,
-  navDestinations,
-  packages,
-  destinationFaqItems,
-} from "@/lib/site-data";
+import { destinations } from "@/lib/content/destinationsData";
+import { navDestinations } from "@/lib/site-data";
+import { packages } from "@/lib/content/tourPackages";
+import { destinationFaqItems } from "@/lib/site-data";
 import {
   Card,
   CardContent,

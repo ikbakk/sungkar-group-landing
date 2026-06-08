@@ -1,5 +1,5 @@
 import { packages } from "@/lib/content/tourPackages";
-import { destinations } from "@/lib/site-data";
+import { destinations } from "@/lib/content/destinationsData";
 import { accommodations } from "@/lib/content/akomodasiData";
 import { vehicles } from "@/lib/content/sewaModilData";
 
