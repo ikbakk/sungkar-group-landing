@@ -5,7 +5,8 @@ export type SchemaType =
   | "FAQPage"
   | "TouristAttraction"
   | "Product"
-  | "HowTo";
+  | "HowTo"
+  | "ContactPage";
 
 export interface BreadcrumbItem {
   name: string;
@@ -243,6 +244,68 @@ export function generateWebsiteSchema(siteUrl: string) {
   };
 }
 
+// Contact Page Schema with LocalBusiness and ContactPoint
+export function generateContactPageSchema(
+  siteUrl: string,
+  businessInfo: {
+    name: string;
+    phone: string;
+    email: string;
+    whatsapp: string;
+    address: {
+      street: string;
+      city: string;
+      region: string;
+      postalCode: string;
+      country: string;
+    };
+    coordinates: {
+      latitude: number;
+      longitude: number;
+    };
+    socialLinks?: Record<string, string>;
+  }
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: businessInfo.name,
+    url: `${siteUrl}/kontak`,
+    telephone: businessInfo.phone,
+    email: businessInfo.email,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: businessInfo.address.street,
+      addressLocality: businessInfo.address.city,
+      addressRegion: businessInfo.address.region,
+      postalCode: businessInfo.address.postalCode,
+      addressCountry: businessInfo.address.country,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: businessInfo.coordinates.latitude,
+      longitude: businessInfo.coordinates.longitude,
+    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: businessInfo.phone,
+        contactType: "Customer Service",
+        areaServed: "ID",
+        availableLanguage: ["id", "en"],
+      },
+      {
+        "@type": "ContactPoint",
+        url: `https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}`,
+        contactType: "Customer Service",
+        areaServed: "ID",
+        availableLanguage: ["id", "en"],
+      },
+    ],
+    sameAs: Object.values(businessInfo.socialLinks || {}),
+  };
+}
+
 export type SchemaObject = ReturnType<
   | typeof generateOrganizationSchema
   | typeof generateLocalBusinessSchema
@@ -253,4 +316,5 @@ export type SchemaObject = ReturnType<
   | typeof generateHowToSchema
   | typeof generateArticleSchema
   | typeof generateWebsiteSchema
+  | typeof generateContactPageSchema
 >;

@@ -1,17 +1,30 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import ContactForm from "@/components/contact/ContactForm.astro";
+import ContactInfoSection from "@/components/contact/ContactInfoSection.astro";
+import EmbeddedMap from "@/components/contact/EmbeddedMap.astro";
 import { generalFaqItems } from "@/lib/site-data";
+import {
+  businessInfo,
+  contactFormFields,
+  geoLocation,
+} from "@/lib/contact-data";
+import { generateContactPageSchema, generateFAQPageSchema } from "@/lib/schemas";
+
+const siteUrl = Astro.site?.toString() || "https://sungkargroup.com";
+const contactSchema = generateContactPageSchema(siteUrl, businessInfo);
+const faqSchema = generateFAQPageSchema(generalFaqItems);
 ---
 
 <MainLayout
   title="Kontak"
-  description="Hubungi Sungkar Group untuk cek ketersediaan, itinerary, dan layanan WhatsApp."
+  description="Hubungi Sungkar Group untuk cek ketersediaan, itinerary, dan layanan WhatsApp. Tersedia via phone, email, WhatsApp, dan formulir online."
   canonical="/kontak"
 >
+  <StructuredData schema={contactSchema} />
+  <StructuredData schema={faqSchema} />
   <PageHeader
     eyebrow="Kontak"
     title="Hubungi Sungkar Group untuk itinerary, paket, atau transportasi"
@@ -19,103 +32,59 @@ import { generalFaqItems } from "@/lib/site-data";
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Kontak" }]}
   />
 
+  <!-- Contact Section with Map and Form -->
   <section class="bg-surface-soft">
-    <div class="section-container pb-20">
-      <div class="grid-form">
-        <Card className="border-border bg-white">
-          <CardHeader>
-            <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-              Metode kontak
-            </Badge>
-            <CardTitle className="text-3xl leading-tight"
-              >Cara menghubungi tim</CardTitle
-            >
-          </CardHeader>
-          <CardContent className="grid gap-3">
-            <div class="info-box">
-              <div class="info-box-title">
-                Cek Ketersediaan
-              </div>
-              <div class="info-box-description">
-                Gunakan alur pertanyaan untuk memastikan tanggal perjalanan dan
-                rute yang paling praktis.
-              </div>
-            </div>
-            <div class="info-box">
-              <div class="info-box-title">
-                Chat WhatsApp
-              </div>
-              <div class="info-box-description">
-                Paling cocok untuk pertanyaan cepat, konfirmasi pesan, dan
-                penyesuaian itinerary.
-              </div>
-            </div>
-            <div class="info-box">
-              <div class="info-box-title">
-                Saluran sosial
-              </div>
-              <div class="info-box-description">
-                Instagram dan YouTube ditampilkan di footer untuk pembaruan
-                perjalanan dan cerita destinasi.
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="border-border bg-brand-900 text-white">
-          <CardHeader>
-            <Badge variant="secondary" className="w-fit rounded-full px-3 py-1">
-              Formulir pertanyaan
-            </Badge>
-            <CardTitle className="text-3xl leading-tight text-white"
-              >Ceritakan rencana perjalanan Anda</CardTitle
-            >
-          </CardHeader>
-          <CardContent className="grid gap-4">
-            <label class="grid gap-2">
-              <span class="form-label-light">Tanggal perjalanan</span>
-              <input
-                class="form-input-dark"
-                placeholder="Contoh: 12 Agustus 2026"
-              />
-            </label>
-            <label class="grid gap-2">
-              <span class="form-label-light">Jumlah tamu</span>
-              <input
-                class="form-input-dark"
-                placeholder="Contoh: 4 dewasa"
-              />
-            </label>
-            <label class="grid gap-2">
-              <span class="form-label-light">Fokus destinasi</span>
-              <input
-                class="form-input-dark"
-                placeholder="Contoh: Gili dan Kuta"
-              />
-            </label>
-            <div class="flex flex-wrap gap-3 pt-2">
-              <Button href="/kontak" variant="secondary">
-                Cek Ketersediaan
-              </Button>
-              <Button href="/kontak">Chat WhatsApp</Button>
-            </div>
-          </CardContent>
-        </Card>
+    <div class="section-container section-padding">
+      <!-- Map Section -->
+      <div class="mb-12">
+        <EmbeddedMap
+          latitude={geoLocation.latitude}
+          longitude={geoLocation.longitude}
+          zoom={geoLocation.zoom}
+          businessName={businessInfo.name}
+          businessAddress={`${businessInfo.address.street}, ${businessInfo.address.city}`}
+        />
       </div>
 
-      <div class="mt-10 grid gap-4">
-        {
-          generalFaqItems.map((item) => (
-            <details class="faq-accordion">
-              <summary class="faq-summary">
-                {item.question}
-              </summary>
-              <p class="faq-answer">
-                {item.answer}
-              </p>
-            </details>
-          ))
-        }
+      <!-- Contact Form and Info Grid -->
+      <div class="grid-form">
+        <ContactInfoSection
+          businessInfo={businessInfo}
+          title="Informasi Kontak"
+          description="Berbagai cara untuk menghubungi tim kami"
+        />
+
+        <ContactForm
+          fields={contactFormFields}
+          businessInfo={businessInfo}
+          title="Ceritakan rencana perjalanan Anda"
+          description="Formulir pertanyaan"
+        />
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mt-16">
+        <div class="mb-8 text-center">
+          <h2 class="section-title text-left">Pertanyaan yang Sering Diajukan</h2>
+          <p class="section-description text-left">
+            Cari jawaban dari pertanyaan umum tentang layanan kami
+          </p>
+        </div>
+
+        <div class="grid gap-4">
+          {
+            generalFaqItems.map((item) => (
+              <details class="faq-accordion">
+                <summary class="faq-summary">
+                  {item.question}
+                </summary>
+                <p class="faq-answer">
+                  {item.answer}
+                </p>
+              </details>
+            ))
+          }
+        </div>
       </div>
     </div>
   </section>
