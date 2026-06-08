@@ -1,0 +1,91 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import FaqSection from "@/components/site/Faq.astro";
+
+import VehicleRegionSection from "@/components/vehicles/VehicleRegionSection.astro";
+import PackagePageCta from "@/components/packages/PackagePageCta.astro";
+
+import SectionContainer from "@/layouts/SectionContainer.astro";
+
+import { vehicles } from "@/lib/content/sewaModilData";
+import { packageFaq } from "@/lib/content/faqs/package";
+
+type Region = "lombok" | "sumbawa" | "labuan-bajo";
+
+const regionNames: Record<Region, string> = {
+  lombok: "Lombok",
+  sumbawa: "Sumbawa",
+  "labuan-bajo": "Labuan Bajo",
+};
+
+const regionDescriptions: Record<Region, string> = {
+  lombok:
+    "Armada kendaraan kami di Lombok siap mendampingi perjalanan Anda ke destinasi wisata terkenal dengan layanan driver profesional.",
+  sumbawa:
+    "Kendaraan berkualitas untuk menjelajahi keindahan Sumbawa, dari whale shark diving hingga pantai tersembunyi yang menakjubkan.",
+  "labuan-bajo":
+    "Rental kendaraan di Labuan Bajo adalah pilihan terbaik untuk tour Komodo National Park dengan kenyamanan dan keamanan terjamin.",
+};
+
+export async function getStaticPaths() {
+  const regions = ["lombok", "sumbawa", "labuan-bajo"] as const;
+
+  return regions
+    .map((region) => {
+      const regionVehicles = vehicles.filter((v) => v.region === region);
+      if (regionVehicles.length === 0) return null;
+
+      return {
+        params: { slug: region },
+        props: { region, vehicles: regionVehicles },
+      };
+    })
+    .filter((entry) => entry !== null);
+}
+
+interface Props {
+  region: Region;
+  vehicles: typeof vehicles;
+}
+
+const { region, vehicles: regionVehicles } = Astro.props;
+
+const regionName = regionNames[region];
+const regionDescription = regionDescriptions[region];
+---
+
+<MainLayout
+  title={`Sewa Mobil ${regionName}`}
+  description={regionDescription}
+  canonical={`/sewa-mobil/${region}`}
+  image={regionVehicles[0]?.image}
+>
+  <PageHeader
+    eyebrow={`Sewa Mobil ${regionName}`}
+    title={`Kendaraan Rental di ${regionName}`}
+    description={regionDescription}
+    breadcrumbs={[
+      { label: "Beranda", href: "/" },
+      { label: "Sewa Mobil", href: "/sewa-mobil" },
+      { label: regionName },
+    ]}
+  />
+
+  <SectionContainer background="bg-surface-soft">
+    <VehicleRegionSection
+      id={region}
+      title={`Pilihan Kendaraan ${regionName}`}
+      description={`Semua kendaraan di ${regionName} telah diperiksa kondisinya dan dilengkapi dengan asuransi komprehensif untuk keamanan perjalanan Anda.`}
+      vehicles={regionVehicles}
+    />
+  </SectionContainer>
+
+  <FaqSection
+    eyebrow="FAQ"
+    title={`Pertanyaan Seputar Sewa Mobil ${regionName}`}
+    items={packageFaq}
+  />
+
+  <PackagePageCta />
+</MainLayout>

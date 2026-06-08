@@ -40,7 +40,7 @@ const regions = [
     label: "Labuan Bajo",
     count: labuanBajoAccommodations.length,
   },
-];
+].filter((region) => region.count > 0);
 
 const pageContent = {
   hero: {
@@ -82,34 +82,40 @@ const pageContent = {
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Akomodasi" }]}
   />
 
-  <PackageRegionNav regions={regions} />
+  {regions.length > 0 && <PackageRegionNav regions={regions} />}
 
-  <SectionContainer background="bg-surface-soft">
-    <AccommodationRegionSection
-      id="lombok"
-      title={pageContent.regions.lombok.title}
-      description={pageContent.regions.lombok.description}
-      accommodations={lombokAccommodations}
-    />
-  </SectionContainer>
+  {lombokAccommodations.length > 0 && (
+    <SectionContainer background="bg-surface-soft">
+      <AccommodationRegionSection
+        id="lombok"
+        title={pageContent.regions.lombok.title}
+        description={pageContent.regions.lombok.description}
+        accommodations={lombokAccommodations}
+      />
+    </SectionContainer>
+  )}
 
-  <SectionContainer background="bg-background">
-    <AccommodationRegionSection
-      id="sumbawa"
-      title={pageContent.regions.sumbawa.title}
-      description={pageContent.regions.sumbawa.description}
-      accommodations={sumbawaAccommodations}
-    />
-  </SectionContainer>
+  {sumbawaAccommodations.length > 0 && (
+    <SectionContainer background="bg-background">
+      <AccommodationRegionSection
+        id="sumbawa"
+        title={pageContent.regions.sumbawa.title}
+        description={pageContent.regions.sumbawa.description}
+        accommodations={sumbawaAccommodations}
+      />
+    </SectionContainer>
+  )}
 
-  <SectionContainer background="bg-surface-soft">
-    <AccommodationRegionSection
-      id="labuan-bajo"
-      title={pageContent.regions.labuanBajo.title}
-      description={pageContent.regions.labuanBajo.description}
-      accommodations={labuanBajoAccommodations}
-    />
-  </SectionContainer>
+  {labuanBajoAccommodations.length > 0 && (
+    <SectionContainer background="bg-surface-soft">
+      <AccommodationRegionSection
+        id="labuan-bajo"
+        title={pageContent.regions.labuanBajo.title}
+        description={pageContent.regions.labuanBajo.description}
+        accommodations={labuanBajoAccommodations}
+      />
+    </SectionContainer>
+  )}
 
   <FaqSection
     eyebrow="FAQ"

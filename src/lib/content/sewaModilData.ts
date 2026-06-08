@@ -3,6 +3,7 @@ import type { ImageMetadata } from "astro";
 export type Vehicle = {
   slug: string;
   name: string;
+  region: "lombok" | "sumbawa" | "labuan-bajo";
   pricePerDay: string;
   seats: number;
   transmission: "Manual" | "Automatic";
@@ -16,8 +17,9 @@ import HeroLombok from "@/assets/images/hero-lombok.png";
 
 export const vehicles: Vehicle[] = [
   {
-    slug: "sedan-compact",
+    slug: "sedan-compact-lombok",
     name: "Sedan Kompak",
+    region: "lombok",
     pricePerDay: "Rp 400.000 - 500.000",
     seats: 5,
     transmission: "Automatic",
@@ -28,8 +30,9 @@ export const vehicles: Vehicle[] = [
     image: HeroLombok,
   },
   {
-    slug: "mpv-family",
+    slug: "mpv-family-lombok",
     name: "MPV 7 Penumpang",
+    region: "lombok",
     pricePerDay: "Rp 600.000 - 800.000",
     seats: 7,
     transmission: "Automatic",
@@ -45,8 +48,9 @@ export const vehicles: Vehicle[] = [
     image: HeroLombok,
   },
   {
-    slug: "suv-adventure",
+    slug: "suv-adventure-lombok",
     name: "SUV Petualangan",
+    region: "lombok",
     pricePerDay: "Rp 700.000 - 900.000",
     seats: 5,
     transmission: "Automatic",
@@ -62,8 +66,9 @@ export const vehicles: Vehicle[] = [
     image: HeroLombok,
   },
   {
-    slug: "pickup-truck",
+    slug: "pickup-truck-sumbawa",
     name: "Pickup Truck",
+    region: "sumbawa",
     pricePerDay: "Rp 600.000 - 750.000",
     seats: 5,
     transmission: "Manual",
@@ -74,8 +79,9 @@ export const vehicles: Vehicle[] = [
     image: HeroLombok,
   },
   {
-    slug: "van-luxury",
+    slug: "van-luxury-labuan-bajo",
     name: "Van Mewah",
+    region: "labuan-bajo",
     pricePerDay: "Rp 850.000 - 1.200.000",
     seats: 8,
     transmission: "Automatic",
@@ -91,8 +97,9 @@ export const vehicles: Vehicle[] = [
     image: HeroLombok,
   },
   {
-    slug: "minibus-group",
+    slug: "minibus-group-labuan-bajo",
     name: "Minibus 20 Penumpang",
+    region: "labuan-bajo",
     pricePerDay: "Rp 1.500.000 - 2.000.000",
     seats: 20,
     transmission: "Automatic",

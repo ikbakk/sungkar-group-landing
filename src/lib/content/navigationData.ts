@@ -1,4 +1,6 @@
 import { packages } from "./tourPackages";
+import { accommodations } from "./akomodasiData";
+import { vehicles } from "./sewaModilData";
 
 export type NavItem = {
   label: string;
@@ -20,6 +22,14 @@ const createPackageLinks = (region: "lombok" | "sumbawa" | "labuan-bajo") =>
     .map((pkg) => ({
       label: pkg.title,
       href: `/paket-wisata/${pkg.slug}`,
+    }));
+
+const createVehicleLinks = (region: "lombok" | "sumbawa" | "labuan-bajo") =>
+  vehicles
+    .filter((vehicle) => vehicle.region === region)
+    .map((vehicle) => ({
+      label: vehicle.name,
+      href: `/sewa-mobil/${region}`,
     }));
 
 export const navigation: NavItem[] = [
@@ -90,8 +100,24 @@ export const navigation: NavItem[] = [
 
   {
     label: "Sewa Mobil",
-    href: "/sewa-mobil",
-    variant: "link",
+    variant: "mega",
+
+    groups: [
+      {
+        title: "Kendaraan Lombok",
+        items: createVehicleLinks("lombok"),
+      },
+
+      {
+        title: "Kendaraan Sumbawa",
+        items: createVehicleLinks("sumbawa"),
+      },
+
+      {
+        title: "Kendaraan Labuan Bajo",
+        items: createVehicleLinks("labuan-bajo"),
+      },
+    ],
   },
 
   {

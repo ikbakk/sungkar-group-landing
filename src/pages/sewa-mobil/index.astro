@@ -1,22 +1,64 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
+import FaqSection from "@/components/site/Faq.astro";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import PackageRegionNav from "@/components/packages/PackageRegionNav.astro";
+import VehicleRegionSection from "@/components/vehicles/VehicleRegionSection.astro";
+import PackagePageCta from "@/components/packages/PackagePageCta.astro";
+
+import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { vehicles } from "@/lib/content/sewaModilData";
-import { Image } from "astro:assets";
+import { packageFaq } from "@/lib/content/faqs/package";
+
+const lombokVehicles = vehicles.filter((v) => v.region === "lombok");
+const sumbawaVehicles = vehicles.filter((v) => v.region === "sumbawa");
+const labuanBajoVehicles = vehicles.filter((v) => v.region === "labuan-bajo");
+
+const regions = [
+  {
+    id: "lombok",
+    label: "Lombok",
+    count: lombokVehicles.length,
+  },
+  {
+    id: "sumbawa",
+    label: "Sumbawa",
+    count: sumbawaVehicles.length,
+  },
+  {
+    id: "labuan-bajo",
+    label: "Labuan Bajo",
+    count: labuanBajoVehicles.length,
+  },
+].filter((region) => region.count > 0);
 
 const pageContent = {
   hero: {
     eyebrow: "Sewa Mobil",
     title: "Layanan sewa kendaraan terpercaya untuk perjalanan Anda",
     description:
-      "Dari kendaraan compact hingga minibus, kami menyediakan berbagai pilihan dengan harga kompetitif dan driver profesional.",
+      "Dari kendaraan compact hingga minibus, kami menyediakan berbagai pilihan dengan harga kompetitif dan driver profesional di setiap destinasi.",
   },
-};
+  regions: {
+    lombok: {
+      title: "Kendaraan Lombok",
+      description:
+        "Armada kendaraan di Lombok tersedia untuk perjalanan kota, tour pantai, dan petualangan off-road dengan harga kompetitif.",
+    },
+    sumbawa: {
+      title: "Kendaraan Sumbawa",
+      description:
+        "Kendaraan khusus untuk petualangan Sumbawa dengan akses mudah ke whale shark experience dan destinasi laut yang eksotis.",
+    },
+    labuanBajo: {
+      title: "Kendaraan Labuan Bajo",
+      description:
+        "Rental kendaraan di Labuan Bajo dirancang untuk perjalanan menuju Komodo National Park dan pulau-pulau sekitarnya.",
+    },
+  },
+} as const;
 ---
 
 <MainLayout
@@ -32,124 +74,74 @@ const pageContent = {
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Sewa Mobil" }]}
   />
 
-  <section class="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-      <div class="mb-12">
-        <h2 class="text-3xl leading-tight font-heading">Pilihan Kendaraan</h2>
-        <p class="mt-2 max-w-3xl text-sm leading-7 text-text-muted font-sans">
-          Setiap kendaraan telah diperiksa kondisinya dan dilengkapi dengan asuransi komprehensif untuk keamanan perjalanan Anda.
-        </p>
-      </div>
+  {regions.length > 0 && <PackageRegionNav regions={regions} />}
 
-      <div class="grid gap-8 md:grid-cols-2">
-        {
-          vehicles.map((vehicle) => (
-            <Card className="border-border overflow-hidden bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)] transition-all duration-300 hover:shadow-[0_18px_55px_rgba(17,24,39,0.1)]">
-              <div className="relative h-64 w-full overflow-hidden rounded-t-lg">
-                <Image
-                  src={vehicle.image}
-                  alt={vehicle.name}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
+  {lombokVehicles.length > 0 && (
+    <SectionContainer background="bg-surface-soft">
+      <VehicleRegionSection
+        id="lombok"
+        title={pageContent.regions.lombok.title}
+        description={pageContent.regions.lombok.description}
+        vehicles={lombokVehicles}
+      />
+    </SectionContainer>
+  )}
 
-              <CardHeader>
-                <div className="flex items-start justify-between gap-4">
-                  <CardTitle className="text-2xl leading-tight">
-                    {vehicle.name}
-                  </CardTitle>
-                  <Badge variant="default" className="rounded-full px-3 py-1 text-sm">
-                    {vehicle.seats} Tempat
-                  </Badge>
-                </div>
-              </CardHeader>
+  {sumbawaVehicles.length > 0 && (
+    <SectionContainer background="bg-background">
+      <VehicleRegionSection
+        id="sumbawa"
+        title={pageContent.regions.sumbawa.title}
+        description={pageContent.regions.sumbawa.description}
+        vehicles={sumbawaVehicles}
+      />
+    </SectionContainer>
+  )}
 
-              <CardContent className="space-y-4">
-                <div className="rounded-lg border border-border bg-surface-soft p-3">
-                  <div className="text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
-                    Tarif Per Hari
-                  </div>
-                  <div className="mt-1 text-lg font-heading">
-                    {vehicle.pricePerDay}
-                  </div>
-                </div>
+  {labuanBajoVehicles.length > 0 && (
+    <SectionContainer background="bg-surface-soft">
+      <VehicleRegionSection
+        id="labuan-bajo"
+        title={pageContent.regions.labuanBajo.title}
+        description={pageContent.regions.labuanBajo.description}
+        vehicles={labuanBajoVehicles}
+      />
+    </SectionContainer>
+  )}
 
-                <div>
-                  <div className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
-                    Spesifikasi
-                  </div>
-                  <div className="grid grid-cols-2 gap-2 text-sm">
-                    <div className="rounded border border-border p-2 text-center">
-                      <div className="text-xs text-text-muted">Transmisi</div>
-                      <div className="font-medium">{vehicle.transmission}</div>
-                    </div>
-                    <div className="rounded border border-border p-2 text-center">
-                      <div className="text-xs text-text-muted">Penumpang</div>
-                      <div className="font-medium">{vehicle.seats}</div>
-                    </div>
-                  </div>
-                </div>
+  <FaqSection
+    eyebrow="FAQ"
+    title="Pertanyaan Seputar Sewa Mobil"
+    items={packageFaq}
+  />
 
-                <div>
-                  <div className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
-                    Fitur Unggulan
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {vehicle.features.map((feature) => (
-                      <Badge variant="outline" className="rounded-full px-3 py-1 text-xs">
-                        {feature}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <div className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
-                    Cocok Untuk
-                  </div>
-                  <ul className="space-y-1 text-sm leading-7 text-text-muted">
-                    {vehicle.bestFor.map((use) => (
-                      <li className="flex gap-2">
-                        <span>•</span>
-                        <span>{use}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <p className="border-t border-border pt-4 text-sm leading-7 text-text-muted">
-                  {vehicle.description}
-                </p>
-
-                <div className="flex flex-wrap gap-3 pt-4">
-                  <Button href="/kontak" variant="outline" className="flex-1">
-                    Info Detail
-                  </Button>
-                  <Button href="/kontak" className="flex-1">
-                    Pesan Sekarang
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))
-        }
-      </div>
-
-      <div class="mt-12 rounded-2xl border border-border bg-white p-8 text-center shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
-        <h3 class="text-2xl font-heading leading-tight">
-          Paket Custom & Grup Diskon
-        </h3>
-        <p class="mt-2 text-text-muted">
-          Dapatkan penawaran spesial untuk penyewaan jangka panjang, rombongan, atau paket bundle dengan layanan driver profesional.
-        </p>
-        <div class="mt-6 flex flex-wrap justify-center gap-3">
-          <Button href="/kontak" variant="outline">
-            Tanya Penawaran
-          </Button>
-          <Button href="/kontak">Chat WhatsApp</Button>
-        </div>
-      </div>
-    </div>
-  </section>
+  <PackagePageCta />
 </MainLayout>
+
+<script>
+  const links = document.querySelectorAll("[data-region-link]");
+  const sections = document.querySelectorAll("[data-region-section]");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const id = entry.target.id;
+
+        links.forEach((link) => {
+          const active = link.getAttribute("href") === `#${id}`;
+
+          link.classList.toggle("bg-brand-700", active);
+          link.classList.toggle("text-white", active);
+          link.classList.toggle("border-brand-700", active);
+        });
+      });
+    },
+    {
+      rootMargin: "-40% 0px -40% 0px",
+    },
+  );
+
+  sections.forEach((section) => observer.observe(section));
+</script>
