@@ -52,6 +52,49 @@ export const navigation: NavItem[] = [
   },
 
   {
+    label: "Akomodasi",
+    variant: "mega",
+
+    groups: [
+      {
+        title: "Hotel Lombok",
+        items: [
+          {
+            label: "Semua Hotel Lombok",
+            href: "/akomodasi/lombok",
+          },
+        ],
+      },
+
+      {
+        title: "Hotel Sumbawa",
+        items: [
+          {
+            label: "Semua Hotel Sumbawa",
+            href: "/akomodasi/sumbawa",
+          },
+        ],
+      },
+
+      {
+        title: "Hotel Labuan Bajo",
+        items: [
+          {
+            label: "Semua Hotel Labuan Bajo",
+            href: "/akomodasi/labuan-bajo",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    label: "Sewa Mobil",
+    href: "/sewa-mobil",
+    variant: "link",
+  },
+
+  {
     label: "Tentang Kami",
     href: "/tentang-kami",
     variant: "link",
