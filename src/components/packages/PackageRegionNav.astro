@@ -1,0 +1,29 @@
+---
+interface Region {
+  id: string;
+  label: string;
+  count: number;
+}
+
+interface Props {
+  regions: Region[];
+}
+
+const { regions } = Astro.props;
+---
+
+<nav
+  class="sticky top-28 z-20 mb-8 flex gap-2 mx-auto max-w-7xl overflow-x-auto rounded-xl border border-border bg-white p-2"
+>
+  {
+    regions.map((region) => (
+      <a
+        href={`#${region.id}`}
+        data-region-link
+        class="rounded-lg border border-border px-4 py-2 text-sm font-medium whitespace-nowrap transition"
+      >
+        {region.label} ({region.count})
+      </a>
+    ))
+  }
+</nav>

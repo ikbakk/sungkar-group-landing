@@ -1,0 +1,33 @@
+---
+import PackagesCard from "@/components/cards/PackagesCard.astro";
+import type { TourPackage } from "@/lib/content/tourPackages";
+
+const { id, title, description, packages } = Astro.props as {
+  id: string;
+  title: string;
+  description: string;
+  packages: TourPackage[];
+};
+---
+
+<section id={id} class="scroll-mt-48" data-region-section>
+  <div class="mb-8">
+    <h2 class="text-3xl leading-tight font-heading">{title}</h2>
+    <p class="mt-2 max-w-3xl text-sm leading-7 text-text-muted font-sans">
+      {description}
+    </p>
+  </div>
+
+  <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+    {packages.map((tour) => <PackagesCard tour={tour} />)}
+  </div>
+
+  <div class="mt-8 flex justify-center">
+    <a
+      href="#top"
+      class="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium"
+    >
+      ↑ Kembali ke Atas
+    </a>
+  </div>
+</section>

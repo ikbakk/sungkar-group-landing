@@ -1,13 +1,17 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
+import FaqSection from "@/components/site/Faq.astro";
+
+import PackageRegionNav from "@/components/packages/PackageRegionNav.astro";
+import PackageRegionSection from "@/components/packages/PackageRegionSection.astro";
+import PackagePageCta from "@/components/packages/PackagePageCta.astro";
+
+import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { packages } from "@/lib/content/tourPackages";
-import { packageFaqItems } from "@/lib/site-data";
-
-import PackagesCard from "@/components/cards/PackagesCard.astro";
-
-import "../../styles/global.css";
+import { packagePageContent } from "@/lib/content/packagePage";
+import { packageFaq } from "@/lib/content/faqs/package";
 
 const lombokPackages = packages.filter((pkg) => pkg.region === "lombok");
 
@@ -16,168 +20,75 @@ const sumbawaPackages = packages.filter((pkg) => pkg.region === "sumbawa");
 const labuanBajoPackages = packages.filter(
   (pkg) => pkg.region === "labuan-bajo",
 );
+
+const regions = [
+  {
+    id: "lombok",
+    label: "Lombok",
+    count: lombokPackages.length,
+  },
+  {
+    id: "sumbawa",
+    label: "Sumbawa",
+    count: sumbawaPackages.length,
+  },
+  {
+    id: "labuan-bajo",
+    label: "Labuan Bajo",
+    count: labuanBajoPackages.length,
+  },
+];
 ---
 
 <MainLayout
   title="Paket Wisata"
-  description="Setiap kartu tur mengarah ke halaman paket tersendiri agar itinerary, yang termasuk di dalamnya, dan detail perjalanan bisa dibaca tanpa menebak."
+  description={packagePageContent.hero.description}
   canonical="/paket-wisata"
   image={packages[0].image}
 >
   <PageHeader
-    eyebrow="Paket Wisata"
-    title="Paket wisata yang punya halaman detail masing-masing"
-    description="Setiap kartu tur mengarah ke halaman paket tersendiri agar itinerary, yang termasuk di dalamnya, dan detail perjalanan bisa dibaca tanpa menebak."
+    eyebrow={packagePageContent.hero.eyebrow}
+    title={packagePageContent.hero.title}
+    description={packagePageContent.hero.description}
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Paket Wisata" }]}
   />
 
-  <section class="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-      <!-- Quick Filter -->
+  <PackageRegionNav regions={regions} />
 
-      <nav
-        class="top-28 sticky
-          z-20
-          mb-8
-          flex
-          gap-2
-          overflow-x-scroll
-          lg:overflow-visible
-          lg:justify-start
-          rounded-xl
-          border
-          border-border
-          bg-white
-          p-2"
-      >
-        <a
-          href="#lombok"
-          data-region-link
-          class="rounded-lg whitespace-nowrap border border-border px-4 py-2 text-sm font-medium transition"
-        >
-          Lombok ({lombokPackages.length})
-        </a>
+  <SectionContainer background="bg-surface-soft">
+    <PackageRegionSection
+      id="lombok"
+      title={packagePageContent.regions.lombok.title}
+      description={packagePageContent.regions.lombok.description}
+      packages={lombokPackages}
+    />
+  </SectionContainer>
 
-        <a
-          href="#sumbawa"
-          data-region-link
-          class="rounded-lg whitespace-nowrap border border-border px-4 py-2 text-sm font-medium transition"
-        >
-          Sumbawa ({sumbawaPackages.length})
-        </a>
+  <SectionContainer background="bg-background">
+    <PackageRegionSection
+      id="sumbawa"
+      title={packagePageContent.regions.sumbawa.title}
+      description={packagePageContent.regions.sumbawa.description}
+      packages={sumbawaPackages}
+    />
+  </SectionContainer>
 
-        <a
-          href="#labuan-bajo"
-          data-region-link
-          class="rounded-lg whitespace-nowrap border border-border px-4 py-2 text-sm font-medium transitionh"
-        >
-          Labuan Bajo ({labuanBajoPackages.length})
-        </a>
-      </nav>
+  <SectionContainer background="bg-surface-soft">
+    <PackageRegionSection
+      id="labuan-bajo"
+      title={packagePageContent.regions.labuanBajo.title}
+      description={packagePageContent.regions.labuanBajo.description}
+      packages={labuanBajoPackages}
+    />
+  </SectionContainer>
 
-      <!-- Lombok -->
+  <FaqSection
+    eyebrow="FAQ"
+    title="Pertanyaan Seputar Paket Wisata"
+    items={packageFaq}
+  />
 
-      <section id="lombok" class="scroll-mt-48" data-region-section>
-        <div class="mb-8">
-          <h2 class="text-3xl font-bold">Paket Wisata Lombok</h2>
-
-          <p class="mt-2 max-w-3xl text-text-muted">
-            Jelajahi destinasi terbaik Lombok mulai dari Pantai Kuta Mandalika,
-            Bukit Merese, Tetebatu, Sembalun, hingga Gili Trawangan.
-          </p>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {lombokPackages.map((tour) => <PackagesCard tour={tour} />)}
-        </div>
-
-        <div class="mt-8 flex justify-center">
-          <a
-            href="#top"
-            class="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium"
-          >
-            ↑ Kembali ke Atas
-          </a>
-        </div>
-      </section>
-
-      <!-- Sumbawa -->
-
-      <section id="sumbawa" class="mt-20 scroll-mt-48" data-region-section>
-        <div class="mb-8">
-          <h2 class="text-3xl font-bold">Paket Wisata Sumbawa</h2>
-
-          <p class="mt-2 max-w-3xl text-text-muted">
-            Temukan pengalaman wisata bahari terbaik Sumbawa, termasuk whale
-            shark experience di Teluk Saleh.
-          </p>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {sumbawaPackages.map((tour) => <PackagesCard tour={tour} />)}
-        </div>
-
-        <div class="mt-8 flex justify-center">
-          <a
-            href="#"
-            class="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium"
-          >
-            ↑ Kembali ke Atas
-          </a>
-        </div>
-      </section>
-
-      <!-- Labuan Bajo -->
-
-      <section id="labuan-bajo" class="mt-20 scroll-mt-48" data-region-section>
-        <div class="mb-8">
-          <h2 class="text-3xl font-bold">Paket Wisata Labuan Bajo</h2>
-
-          <p class="mt-2 max-w-3xl text-text-muted">
-            Sailing Komodo, Pink Beach, Pulau Padar, Manta Point, dan berbagai
-            destinasi ikonik Labuan Bajo.
-          </p>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {labuanBajoPackages.map((tour) => <PackagesCard tour={tour} />)}
-        </div>
-
-        <div class="mt-8 flex justify-center">
-          <a
-            href="#top"
-            class="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium"
-          >
-            ↑ Kembali ke Atas
-          </a>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-
-      <div class="mt-20 grid gap-4">
-        <div
-          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
-        >
-          FAQ Paket Wisata
-        </div>
-
-        {
-          packageFaqItems.map((item) => (
-            <details class="rounded-[1.5rem] border border-border bg-white p-6">
-              <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
-                {item.question}
-              </summary>
-
-              <p class="mt-4 text-sm leading-7 text-text-muted">
-                {item.answer}
-              </p>
-            </details>
-          ))
-        }
-      </div>
-    </div>
-  </section>
+  <PackagePageCta />
 </MainLayout>
 
 <script>
@@ -196,7 +107,6 @@ const labuanBajoPackages = packages.filter(
 
           link.classList.toggle("bg-brand-700", active);
           link.classList.toggle("text-white", active);
-
           link.classList.toggle("border-brand-700", active);
         });
       });
