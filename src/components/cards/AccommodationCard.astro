@@ -4,10 +4,10 @@ import { Image } from "astro:assets";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import type { TourPackage } from "@/lib/content/tourPackages";
+import type { Accommodation } from "@/lib/content/akomodasiData";
 
-const { tour } = Astro.props as {
-  tour: TourPackage;
+const { accommodation } = Astro.props as {
+  accommodation: Accommodation;
 };
 
 const regionMap = {
@@ -25,7 +25,7 @@ const regionMap = {
   },
 };
 
-const region = regionMap[tour.region];
+const region = regionMap[accommodation.region];
 ---
 
 <Card
@@ -41,8 +41,8 @@ const region = regionMap[tour.region];
 
   <div class="relative overflow-hidden">
     <Image
-      src={tour.image}
-      alt={tour.title}
+      src={accommodation.image}
+      alt={accommodation.name}
       class="aspect-4/3
         w-full
         object-cover
@@ -64,70 +64,58 @@ const region = regionMap[tour.region];
 
   <CardContent className="flex h-full flex-col gap-4 p-6">
     <div class="flex flex-wrap items-center gap-2">
-      <Badge
-        variant="outline"
-        className="
-          rounded-full
-          px-3
-          py-1
-          text-xs
-          font-medium
-        "
-      >
-        {tour.duration}
-      </Badge>
-    </div>
-
-    <div>
       <h3
-        class="text-xl
+        class="text-lg
           font-heading
           leading-tight
           text-foreground"
       >
-        {tour.title}
+        {accommodation.name}
       </h3>
-
-      <p
-        class="mt-3
-          font-sans
-          line-clamp-2
-          text-sm
-          leading-7
-          text-text-muted"
-      >
-        {tour.summary}
-      </p>
     </div>
 
-    <ul class="space-y-2 text-sm font-sans">
-      {
-        tour.highlights.slice(0, 3).map((item) => (
-          <li
-            class="
-              flex
-              items-center
-              gap-2
-              text-text-muted
-            "
-          >
-            <span class="font-semibold text-brand-700">✓</span>
+    <p
+      class="font-sans
+        text-sm
+        leading-7
+        text-text-muted"
+    >
+      {accommodation.description}
+    </p>
 
-            <span>{item}</span>
-          </li>
-        ))
-      }
-      {
-        tour.highlights.length > 3 && (
-          <li class="text-sm text-text-muted font-sans">
-            + {tour.highlights.length - 3} lainnya
-          </li>
-        )
-      }
-    </ul>
+    <div>
+      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+        Fasilitas Unggulan
+      </div>
+      <ul class="space-y-1 text-sm font-sans">
+        {
+          accommodation.perks.slice(0, 3).map((perk) => (
+            <li
+              class="
+                flex
+                items-center
+                gap-2
+                text-text-muted
+              "
+            >
+              <span class="font-semibold text-brand-700">✓</span>
+
+              <span>{perk}</span>
+            </li>
+          ))
+        }
+        {
+          accommodation.perks.length > 3 && (
+            <li class="text-sm text-text-muted font-sans">
+              + {accommodation.perks.length - 3} lainnya
+            </li>
+          )
+        }
+      </ul>
+    </div>
 
     <div class="mt-auto pt-2">
-      <a href={`/paket-wisata/${tour.slug}`}>
+      <a href={`/akomodasi/${accommodation.region}`}>
         <Button
           className="font-sans
           group/button
@@ -135,7 +123,7 @@ const region = regionMap[tour.region];
         "
           size={"lg"}
         >
-          <span>Cek Detail Paket</span>
+          <span>Lihat Akomodasi</span>
         </Button>
       </a>
     </div>

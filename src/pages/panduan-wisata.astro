@@ -1,62 +1,94 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
-import { guides, destinations, packages } from "@/lib/site-data";
+import RelatedContent from "@/components/site/RelatedContent.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateFAQPageSchema } from "@/lib/schemas";
+import { guides } from "@/lib/content/guides";
+import { destinations } from "@/lib/content/destinationsData";
+import { packages } from "@/lib/content/tourPackages";
+import { generalFaqItems } from "@/lib/site-data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+
+const faqSchema = generateFAQPageSchema(generalFaqItems);
 ---
 
 <MainLayout
   title="Panduan Wisata"
-  description="Arsitektur klaster panduan untuk wisata Lombok."
+  description="Panduan lengkap untuk merencanakan perjalanan wisata Anda ke Lombok dengan tips, trik, dan rekomendasi dari para ahli lokal."
   canonical="/panduan-wisata"
 >
+  <StructuredData schema={faqSchema} />
+
   <PageHeader
     eyebrow="Panduan Wisata"
-    title="Panduan wisata untuk membantu orang memilih rute, waktu, dan paket"
-    description="Halaman ini mengumpulkan konten panduan SEO yang menjembatani paket wisata, destinasi, dan transportasi."
+    title="Panduan wisata untuk merencanakan perjalanan sempurna"
+    description="Baca panduan mendalam kami yang mencakup waktu terbaik untuk berkunjung, cara memilih tur, dan tips transportasi lokal yang efisien."
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Panduan Wisata" }]}
   />
 
   <section class="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-foreground md:text-3xl">
+          Panduan Lengkap Kami
+        </h2>
+        <p class="mt-2 text-muted-foreground">
+          Pelajari segala yang perlu Anda ketahui untuk merencanakan perjalanan wisata yang sempurna
+        </p>
+      </div>
+
       <div class="grid gap-6 md:grid-cols-3">
         {
           guides.map((guide) => (
-            <Card className="border-border bg-white">
+            <Card className="card-interactive">
               <CardHeader>
                 <Badge
                   variant="outline"
                   className="w-fit rounded-full px-3 py-1"
                 >
-                  Klaster SEO
+                  {guide.readingTime} min baca
                 </Badge>
-                <CardTitle className="text-3xl leading-tight">
-                  {guide.title}
+                <CardTitle className="text-xl leading-tight">
+                  <a href={`/panduan-wisata/${guide.slug}`} class="hover:text-brand-600 transition-colors">
+                    {guide.title}
+                  </a>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p class="text-sm leading-7 text-text-muted">{guide.text}</p>
+                <p class="text-sm leading-6 text-muted-foreground mb-4">{guide.description}</p>
+                <div class="flex flex-wrap gap-2">
+                  {guide.bestFor.slice(0, 2).map((item) => (
+                    <Badge variant="secondary" className="text-xs rounded-full px-2 py-1">
+                      {item}
+                    </Badge>
+                  ))}
+                </div>
               </CardContent>
             </Card>
           ))
         }
       </div>
+    </div>
+  </section>
 
-      <div class="mt-10 grid gap-6 lg:grid-cols-2">
-        <Card className="border-border bg-white">
+  <section class="bg-background">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid gap-6 lg:grid-cols-2">
+        <Card className="card-base">
           <CardHeader>
-            <CardTitle className="text-3xl leading-tight"
-              >Destinasi terkait</CardTitle
-            >
+            <CardTitle className="text-3xl leading-tight">
+              Destinasi terkait
+            </CardTitle>
           </CardHeader>
           <CardContent className="grid gap-3">
             {
-              destinations.map((destination) => (
+              destinations.slice(0, 8).map((destination) => (
                 <a
                   href={`/destinasi/${destination.slug}`}
-                  class="rounded-2xl border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-200 hover:bg-brand-50"
+                  class="rounded-lg border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-300 hover:bg-brand-50"
                 >
                   {destination.title}
                 </a>
@@ -65,11 +97,11 @@ import { Button } from "@/components/ui/button";
           </CardContent>
         </Card>
 
-        <Card className="border-border bg-brand-900 text-white">
+        <Card className="card-base bg-brand-900 text-white">
           <CardHeader>
-            <CardTitle className="text-3xl leading-tight text-white"
-              >Paket terkait</CardTitle
-            >
+            <CardTitle className="text-3xl leading-tight text-white">
+              Paket terkait
+            </CardTitle>
           </CardHeader>
           <CardContent className="grid gap-3">
             {
@@ -85,11 +117,5 @@ import { Button } from "@/components/ui/button";
           </CardContent>
         </Card>
       </div>
-
-      <div class="mt-10 flex flex-wrap gap-3">
-        <Button href="/destinasi" variant="outline"> Lihat destinasi </Button>
-        <Button href="/paket-wisata">Lihat paket wisata</Button>
-      </div>
     </div>
   </section>
-</MainLayout>

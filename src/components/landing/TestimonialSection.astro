@@ -38,7 +38,7 @@ const { eyebrow, title, description, testimonials } = Astro.props as Props;
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {
         testimonials.map((testimonial) => (
-          <div class="rounded-2xl border border-border bg-white p-6 shadow-sm transition-all hover:border-brand-200 hover:shadow-md sm:p-8">
+          <div class="card-interactive p-6 sm:p-8">
             <div class="flex gap-1">
               {Array(testimonial.rating)
                 .fill(0)

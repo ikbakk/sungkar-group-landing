@@ -1,0 +1,202 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import RelatedContent from "@/components/site/RelatedContent.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateHowToSchema } from "@/lib/schemas";
+import { guides } from "@/lib/content/guides";
+import { destinations } from "@/lib/content/destinationsData";
+import { packages } from "@/lib/content/tourPackages";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+
+export async function getStaticPaths() {
+  return guides.map((guide) => ({
+    params: { slug: guide.slug },
+    props: { guide },
+  }));
+}
+
+interface Props {
+  guide: (typeof guides)[0];
+}
+
+const { guide } = Astro.props;
+
+const relatedDestinations = destinations.filter((d) =>
+  guide.relatedDestinations.includes(d.slug)
+);
+
+const relatedPackages = packages.filter((p) =>
+  guide.relatedPackages.includes(p.slug)
+);
+
+const breadcrumbs = [
+  { label: "Beranda", href: "/" },
+  { label: "Panduan Wisata", href: "/panduan-wisata" },
+  { label: guide.title },
+];
+
+// Generate HowTo schema for this guide
+const howToSteps = guide.keyTakeaways.map((takeaway, index) => ({
+  name: `Poin ${index + 1}`,
+  description: takeaway,
+}));
+
+const guideSchema = generateHowToSchema(guide.title, guide.description, howToSteps);
+---
+
+<MainLayout
+  title={guide.title}
+  description={guide.description}
+  canonical={`/panduan-wisata/${guide.slug}`}
+>
+  <StructuredData schema={guideSchema} />
+
+  <PageHeader
+    eyebrow="Panduan Wisata"
+    title={guide.title}
+    description={guide.description}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <SectionContainer background="bg-background">
+    <article class="prose-article max-w-4xl mx-auto">
+      <div class="mb-6 flex items-center gap-4 text-sm text-muted-foreground">
+        <span>{guide.readingTime} menit membaca</span>
+        <span>•</span>
+        <time datetime={guide.publishDate}>
+          {new Date(guide.publishDate).toLocaleDateString("id-ID")}
+        </time>
+      </div>
+
+      <div set:html={guide.content.trim()} class="space-y-6 text-foreground" />
+    </article>
+  </SectionContainer>
+
+  <SectionContainer background="bg-surface-soft">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-2xl font-bold text-foreground mb-6">Poin-Poin Kunci</h2>
+      <ul class="grid gap-3 md:grid-cols-2">
+        {
+          guide.keyTakeaways.map((takeaway) => (
+            <li class="flex items-start gap-3 rounded-lg border border-border bg-white p-4">
+              <span class="text-brand-600 font-bold text-lg">✓</span>
+              <span class="text-foreground">{takeaway}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </SectionContainer>
+
+  {relatedDestinations.length > 0 && (
+    <RelatedContent
+      title="Destinasi Terkait"
+      items={relatedDestinations.map((dest) => ({
+        title: dest.title,
+        href: `/destinasi/${dest.slug}`,
+        description: dest.summary,
+        icon: "📍",
+      }))}
+    />
+  )}
+
+  {relatedPackages.length > 0 && (
+    <RelatedContent
+      title="Paket Wisata Terkait"
+      items={relatedPackages.map((pkg) => ({
+        title: pkg.title,
+        href: `/paket-wisata/${pkg.slug}`,
+        description: pkg.summary,
+        icon: "🎫",
+      }))}
+    />
+  )}
+
+  <RelatedContent
+    title="Panduan Lainnya"
+    items={guides
+      .filter((g) => g.slug !== guide.slug)
+      .slice(0, 3)
+      .map((g) => ({
+        title: g.title,
+        href: `/panduan-wisata/${g.slug}`,
+        description: g.description,
+        icon: "📖",
+      }))}
+  />
+</MainLayout>
+
+<style is:global>
+  .prose-article h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: var(--color-foreground);
+    margin-bottom: 1rem;
+  }
+
+  .prose-article h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-foreground);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose-article h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--color-foreground);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .prose-article p {
+    color: var(--color-foreground);
+    line-height: 1.625;
+    margin-bottom: 1rem;
+  }
+
+  .prose-article ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: var(--color-foreground);
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+    display: grid;
+  }
+
+  .prose-article li {
+    margin-bottom: 0.5rem;
+  }
+
+  .prose-article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.875rem;
+  }
+
+  .prose-article th {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface-soft);
+    padding: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .prose-article td {
+    border: 1px solid var(--color-border);
+    padding: 0.5rem;
+  }
+
+  .prose-article strong {
+    font-weight: bold;
+    color: var(--color-foreground);
+  }
+
+  .prose-article em {
+    font-style: italic;
+    color: var(--color-foreground);
+  }
+</style>

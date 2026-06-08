@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schemas";
 
 import { packages } from "@/lib/content/tourPackages";
 
@@ -23,6 +25,27 @@ export function getStaticPaths() {
 }
 
 const { tour } = Astro.props;
+
+const siteUrl = new URL(Astro.url.origin).toString().replace(/\/$/, "");
+
+// Generate schemas
+const productSchema = generateProductSchema(
+  tour.title,
+  tour.summary,
+  "Hubungi untuk harga",
+  tour.image.src,
+  siteUrl,
+  tour.slug,
+  tour.duration
+);
+
+const breadcrumbItems = [
+  { name: "Beranda", url: "/" },
+  { name: "Paket Wisata", url: "/paket-wisata" },
+  { name: tour.title, url: `/paket-wisata/${tour.slug}` },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, siteUrl);
 
 const itineraryByDay = Object.entries(
   tour.itinerary.reduce((acc: Record<string, string[]>, item: string) => {
@@ -47,6 +70,8 @@ const itineraryByDay = Object.entries(
   canonical={`/paket-wisata/${tour.slug}`}
   image={tour.image}
 >
+  <StructuredData schema={productSchema} />
+  <StructuredData schema={breadcrumbSchema} />
   <PageHeader
     eyebrow="Detail Paket"
     title={tour.title}

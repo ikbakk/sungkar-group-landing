@@ -1,4 +1,6 @@
 import { packages } from "./tourPackages";
+import { accommodations } from "./akomodasiData";
+import { vehicles } from "./sewaModilData";
 
 export type NavItem = {
   label: string;
@@ -20,6 +22,14 @@ const createPackageLinks = (region: "lombok" | "sumbawa" | "labuan-bajo") =>
     .map((pkg) => ({
       label: pkg.title,
       href: `/paket-wisata/${pkg.slug}`,
+    }));
+
+const createVehicleLinks = (region: "lombok" | "sumbawa" | "labuan-bajo") =>
+  vehicles
+    .filter((vehicle) => vehicle.region === region)
+    .map((vehicle) => ({
+      label: vehicle.name,
+      href: `/sewa-mobil/${region}`,
     }));
 
 export const navigation: NavItem[] = [
@@ -47,6 +57,65 @@ export const navigation: NavItem[] = [
       {
         title: "Paket Wisata Labuan Bajo",
         items: createPackageLinks("labuan-bajo"),
+      },
+    ],
+  },
+
+  {
+    label: "Akomodasi",
+    variant: "mega",
+
+    groups: [
+      {
+        title: "Hotel Lombok",
+        items: [
+          {
+            label: "Semua Hotel Lombok",
+            href: "/akomodasi/lombok",
+          },
+        ],
+      },
+
+      {
+        title: "Hotel Sumbawa",
+        items: [
+          {
+            label: "Semua Hotel Sumbawa",
+            href: "/akomodasi/sumbawa",
+          },
+        ],
+      },
+
+      {
+        title: "Hotel Labuan Bajo",
+        items: [
+          {
+            label: "Semua Hotel Labuan Bajo",
+            href: "/akomodasi/labuan-bajo",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    label: "Sewa Mobil",
+    variant: "mega",
+
+    groups: [
+      {
+        title: "Kendaraan Lombok",
+        items: createVehicleLinks("lombok"),
+      },
+
+      {
+        title: "Kendaraan Sumbawa",
+        items: createVehicleLinks("sumbawa"),
+      },
+
+      {
+        title: "Kendaraan Labuan Bajo",
+        items: createVehicleLinks("labuan-bajo"),
       },
     ],
   },

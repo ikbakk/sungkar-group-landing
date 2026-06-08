@@ -2,12 +2,11 @@
 import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
-import {
-  destinations,
-  navDestinations,
-  packages,
-  destinationFaqItems,
-} from "@/lib/site-data";
+import RelatedContent from "@/components/site/RelatedContent.astro";
+import { destinations } from "@/lib/content/destinationsData";
+import { navDestinations } from "@/lib/site-data";
+import { packages } from "@/lib/content/tourPackages";
+import { destinationFaqItems } from "@/lib/site-data";
 import {
   Card,
   CardContent,
@@ -143,6 +142,27 @@ import "../../styles/global.css";
           ))
         }
       </div>
-    </div>
-  </section>
-</MainLayout>
+
+      <RelatedContent
+        title="Layanan Terkait"
+        items={[
+          {
+            title: "Paket Wisata",
+            href: "/paket-wisata",
+            description:
+              "Pilih dari berbagai paket wisata yang sudah direncanakan untuk setiap destinasi",
+          },
+          {
+            title: "Panduan Wisata",
+            href: "/panduan-wisata",
+            description:
+              "Dapatkan tips dan panduan untuk memaksimalkan pengalaman di setiap destinasi",
+          },
+          {
+            title: "Akomodasi",
+            href: "/akomodasi",
+            description:
+              "Temukan penginapan nyaman dan berkualitas di area destinasi pilihan Anda",
+          },
+        ]}
+      />

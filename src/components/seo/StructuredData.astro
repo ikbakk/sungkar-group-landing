@@ -1,0 +1,11 @@
+---
+import type { SchemaObject } from "@/lib/schemas";
+
+interface Props {
+  schema: SchemaObject;
+}
+
+const { schema } = Astro.props;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

@@ -1,0 +1,102 @@
+---
+import type { Vehicle } from "@/lib/content/sewaModilData";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Image } from "astro:assets";
+
+interface Props {
+  vehicle: Vehicle;
+}
+
+const { vehicle } = Astro.props;
+---
+
+<Card class="overflow-hidden py-0 card-interactive">
+  <div class="relative h-64 w-full overflow-hidden">
+    <Image
+      src={vehicle.image}
+      alt={vehicle.name}
+      class="h-full w-full object-cover"
+      loading="lazy"
+    />
+  </div>
+
+  <CardHeader>
+    <div class="flex items-start justify-between gap-4">
+      <CardTitle class="text-2xl leading-tight">
+        {vehicle.name}
+      </CardTitle>
+      <Badge variant="default" class="rounded-full px-3 py-1 text-sm">
+        {vehicle.seats} Tempat
+      </Badge>
+    </div>
+  </CardHeader>
+
+  <CardContent class="space-y-4">
+    <div class="rounded-lg border border-border bg-surface-soft p-3">
+      <div class="text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+        Tarif Per Hari
+      </div>
+      <div class="mt-1 text-lg font-heading">
+        {vehicle.pricePerDay}
+      </div>
+    </div>
+
+    <div>
+      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+        Spesifikasi
+      </div>
+      <div class="grid grid-cols-2 gap-2 text-sm">
+        <div class="rounded border border-border p-2 text-center">
+          <div class="text-xs text-text-muted">Transmisi</div>
+          <div class="font-medium">{vehicle.transmission}</div>
+        </div>
+        <div class="rounded border border-border p-2 text-center">
+          <div class="text-xs text-text-muted">Penumpang</div>
+          <div class="font-medium">{vehicle.seats}</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+        Fitur Unggulan
+      </div>
+      <div class="flex flex-wrap gap-2">
+        {vehicle.features.map((feature) => (
+          <Badge variant="outline" class="rounded-full px-3 py-1 text-xs">
+            {feature}
+          </Badge>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+        Cocok Untuk
+      </div>
+      <ul class="space-y-1 text-sm leading-7 text-text-muted">
+        {vehicle.bestFor.map((use) => (
+          <li class="flex gap-2">
+            <span>•</span>
+            <span>{use}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <p class="border-t border-border pt-4 text-sm leading-7 text-text-muted">
+      {vehicle.description}
+    </p>
+
+    <div class="flex flex-wrap gap-3 pt-4">
+      <Button href="/kontak" variant="outline" class="flex-1">
+        Info Detail
+      </Button>
+      <Button href="/kontak" class="flex-1">
+        Pesan Sekarang
+      </Button>
+    </div>
+  </CardContent>
+</Card>
