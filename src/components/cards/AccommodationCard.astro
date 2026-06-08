@@ -1,0 +1,137 @@
+---
+import { Image } from "astro:assets";
+
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import type { Accommodation } from "@/lib/content/akomodasiData";
+
+const { accommodation } = Astro.props as {
+  accommodation: Accommodation;
+};
+
+const regionMap = {
+  lombok: {
+    label: "Lombok",
+    className: "bg-brand-700 text-white border-brand-700",
+  },
+  sumbawa: {
+    label: "Sumbawa",
+    className: "bg-emerald-600 text-white border-emerald-600",
+  },
+  "labuan-bajo": {
+    label: "Labuan Bajo",
+    className: "bg-violet-600 text-white border-violet-600",
+  },
+};
+
+const region = regionMap[accommodation.region];
+---
+
+<Card
+  className="
+    group
+    h-fit
+    overflow-hidden
+    border-border
+    bg-white
+    py-0
+    transition-all
+    duration-300
+    ease-out
+    hover:-translate-y-2
+    hover:shadow-[0_24px_48px_rgba(17,24,39,0.12)]
+  "
+>
+  <!-- Image -->
+
+  <div class="relative overflow-hidden">
+    <Image
+      src={accommodation.image}
+      alt={accommodation.name}
+      class="aspect-4/3
+        w-full
+        object-cover
+        transition-transform
+        duration-700
+        ease-out
+        group-hover:scale-105"
+      loading="lazy"
+    />
+
+    <div class="absolute left-4 top-4 font-sans">
+      <Badge className={region.className}>
+        {region.label}
+      </Badge>
+    </div>
+  </div>
+
+  <!-- Content -->
+
+  <CardContent className="flex h-full flex-col gap-4 p-6">
+    <div class="flex flex-wrap items-center gap-2">
+      <h3
+        class="text-lg
+          font-heading
+          leading-tight
+          text-foreground"
+      >
+        {accommodation.name}
+      </h3>
+    </div>
+
+    <p
+      class="font-sans
+        text-sm
+        leading-7
+        text-text-muted"
+    >
+      {accommodation.description}
+    </p>
+
+    <div>
+      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+        Fasilitas Unggulan
+      </div>
+      <ul class="space-y-1 text-sm font-sans">
+        {
+          accommodation.perks.slice(0, 3).map((perk) => (
+            <li
+              class="
+                flex
+                items-center
+                gap-2
+                text-text-muted
+              "
+            >
+              <span class="font-semibold text-brand-700">✓</span>
+
+              <span>{perk}</span>
+            </li>
+          ))
+        }
+        {
+          accommodation.perks.length > 3 && (
+            <li class="text-sm text-text-muted font-sans">
+              + {accommodation.perks.length - 3} lainnya
+            </li>
+          )
+        }
+      </ul>
+    </div>
+
+    <div class="mt-auto pt-2">
+      <a href={`/akomodasi/${accommodation.region}`}>
+        <Button
+          className="font-sans
+          group/button
+          w-full
+        "
+          size={"lg"}
+        >
+          <span>Lihat Akomodasi</span>
+        </Button>
+      </a>
+    </div>
+  </CardContent>
+</Card>

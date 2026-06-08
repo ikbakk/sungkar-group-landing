@@ -1,0 +1,149 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import FaqSection from "@/components/site/Faq.astro";
+
+import PackageRegionNav from "@/components/packages/PackageRegionNav.astro";
+import AccommodationRegionSection from "@/components/accommodations/AccommodationRegionSection.astro";
+import PackagePageCta from "@/components/packages/PackagePageCta.astro";
+
+import SectionContainer from "@/layouts/SectionContainer.astro";
+
+import { accommodations } from "@/lib/content/akomodasiData";
+import { packageFaq } from "@/lib/content/faqs/package";
+
+const lombokAccommodations = accommodations.filter(
+  (acc) => acc.region === "lombok"
+);
+
+const sumbawaAccommodations = accommodations.filter(
+  (acc) => acc.region === "sumbawa"
+);
+
+const labuanBajoAccommodations = accommodations.filter(
+  (acc) => acc.region === "labuan-bajo"
+);
+
+const regions = [
+  {
+    id: "lombok",
+    label: "Lombok",
+    count: lombokAccommodations.length,
+  },
+  {
+    id: "sumbawa",
+    label: "Sumbawa",
+    count: sumbawaAccommodations.length,
+  },
+  {
+    id: "labuan-bajo",
+    label: "Labuan Bajo",
+    count: labuanBajoAccommodations.length,
+  },
+];
+
+const pageContent = {
+  hero: {
+    eyebrow: "Akomodasi",
+    title: "Pilihan akomodasi terbaik di setiap destinasi",
+    description:
+      "Temukan penginapan yang sempurna untuk setiap jenis perjalanan Anda, dari beachfront resort hingga mountain retreat.",
+  },
+  regions: {
+    lombok: {
+      title: "Akomodasi Lombok",
+      description:
+        "Hotel dan resort di Lombok menawarkan pengalaman beragam dari pantai eksotis hingga pegunungan yang sejuk dengan akses mudah ke destinasi wisata utama.",
+    },
+    sumbawa: {
+      title: "Akomodasi Sumbawa",
+      description:
+        "Penginapan di Sumbawa dirancang khusus untuk petualangan laut dengan akses langsung ke whale shark experience dan pulau-pulau indah.",
+    },
+    labuanBajo: {
+      title: "Akomodasi Labuan Bajo",
+      description:
+        "Resort dan liveaboard di Labuan Bajo adalah basecamp sempurna untuk menjelajahi Komodo National Park dengan kenyamanan maksimal.",
+    },
+  },
+} as const;
+---
+
+<MainLayout
+  title="Akomodasi"
+  description={pageContent.hero.description}
+  canonical="/akomodasi"
+  image={accommodations[0].image}
+>
+  <PageHeader
+    eyebrow={pageContent.hero.eyebrow}
+    title={pageContent.hero.title}
+    description={pageContent.hero.description}
+    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Akomodasi" }]}
+  />
+
+  <PackageRegionNav regions={regions} />
+
+  <SectionContainer background="bg-surface-soft">
+    <AccommodationRegionSection
+      id="lombok"
+      title={pageContent.regions.lombok.title}
+      description={pageContent.regions.lombok.description}
+      accommodations={lombokAccommodations}
+    />
+  </SectionContainer>
+
+  <SectionContainer background="bg-background">
+    <AccommodationRegionSection
+      id="sumbawa"
+      title={pageContent.regions.sumbawa.title}
+      description={pageContent.regions.sumbawa.description}
+      accommodations={sumbawaAccommodations}
+    />
+  </SectionContainer>
+
+  <SectionContainer background="bg-surface-soft">
+    <AccommodationRegionSection
+      id="labuan-bajo"
+      title={pageContent.regions.labuanBajo.title}
+      description={pageContent.regions.labuanBajo.description}
+      accommodations={labuanBajoAccommodations}
+    />
+  </SectionContainer>
+
+  <FaqSection
+    eyebrow="FAQ"
+    title="Pertanyaan Seputar Akomodasi"
+    items={packageFaq}
+  />
+
+  <PackagePageCta />
+</MainLayout>
+
+<script>
+  const links = document.querySelectorAll("[data-region-link]");
+  const sections = document.querySelectorAll("[data-region-section]");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const id = entry.target.id;
+
+        links.forEach((link) => {
+          const active = link.getAttribute("href") === `#${id}`;
+
+          link.classList.toggle("bg-brand-700", active);
+          link.classList.toggle("text-white", active);
+          link.classList.toggle("border-brand-700", active);
+        });
+      });
+    },
+    {
+      rootMargin: "-40% 0px -40% 0px",
+    },
+  );
+
+  sections.forEach((section) => observer.observe(section));
+</script>
