@@ -14,17 +14,13 @@ const { eyebrow, title, services } = Astro.props as Props;
 ---
 
 <section class="bg-white">
-  <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+  <div class="section-container section-padding">
     <div class="grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-center">
       <div>
-        <p
-          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
-        >
+        <p class="section-eyebrow">
           {eyebrow}
         </p>
-        <h2
-          class="mt-4 max-w-2xl font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl"
-        >
+        <h2 class="section-title">
           {title}
         </h2>
       </div>
@@ -32,11 +28,12 @@ const { eyebrow, title, services } = Astro.props as Props;
         {
           services.map((service, index) => (
             <div
-              class={
+              class:list={[
+                "rounded-[1.5rem] border border-border p-6",
                 index === 0
-                  ? "rounded-[1.5rem] border border-border bg-surface-soft p-6"
-                  : "rounded-[1.5rem] border border-border bg-white p-6"
-              }
+                  ? "bg-surface-soft"
+                  : "bg-white"
+              ]}
             >
               <div class="font-heading text-2xl leading-tight text-foreground">
                 {service.title}

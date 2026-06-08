@@ -16,18 +16,13 @@ interface Props {
 const { eyebrow, title, description, testimonials } = Astro.props as Props;
 ---
 
-<section class="bg-surface-soft py-16 sm:py-20 lg:py-24">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<section class="bg-surface-soft section-padding">
+  <div class="section-container">
     <div class="mb-12 text-center lg:mb-16">
-      <p
-        class="text-sm font-medium uppercase tracking-[0.28em]"
-        style="color: var(--color-brand-700);"
-      >
+      <p class="section-eyebrow">
         {eyebrow}
       </p>
-      <h2
-        class="mt-4 font-heading text-4xl leading-tight tracking-[-0.02em] text-foreground sm:text-5xl"
-      >
+      <h2 class="section-title">
         {title}
       </h2>
       <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-text-muted">
@@ -35,7 +30,7 @@ const { eyebrow, title, description, testimonials } = Astro.props as Props;
       </p>
     </div>
 
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div class="testimonial-grid">
       {
         testimonials.map((testimonial) => (
           <div class="card-interactive p-6 sm:p-8">

@@ -20,8 +20,8 @@ import { generalFaqItems } from "@/lib/site-data";
   />
 
   <section class="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-      <div class="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+    <div class="section-container pb-20">
+      <div class="grid-form">
         <Card className="border-border bg-white">
           <CardHeader>
             <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
@@ -32,35 +32,29 @@ import { generalFaqItems } from "@/lib/site-data";
             >
           </CardHeader>
           <CardContent className="grid gap-3">
-            <div
-              class="rounded-2xl border border-border bg-surface-soft px-4 py-3"
-            >
-              <div class="text-sm font-medium text-foreground">
+            <div class="info-box">
+              <div class="info-box-title">
                 Cek Ketersediaan
               </div>
-              <div class="mt-1 text-sm leading-7 text-text-muted">
+              <div class="info-box-description">
                 Gunakan alur pertanyaan untuk memastikan tanggal perjalanan dan
                 rute yang paling praktis.
               </div>
             </div>
-            <div
-              class="rounded-2xl border border-border bg-surface-soft px-4 py-3"
-            >
-              <div class="text-sm font-medium text-foreground">
+            <div class="info-box">
+              <div class="info-box-title">
                 Chat WhatsApp
               </div>
-              <div class="mt-1 text-sm leading-7 text-text-muted">
+              <div class="info-box-description">
                 Paling cocok untuk pertanyaan cepat, konfirmasi pesan, dan
                 penyesuaian itinerary.
               </div>
             </div>
-            <div
-              class="rounded-2xl border border-border bg-surface-soft px-4 py-3"
-            >
-              <div class="text-sm font-medium text-foreground">
+            <div class="info-box">
+              <div class="info-box-title">
                 Saluran sosial
               </div>
-              <div class="mt-1 text-sm leading-7 text-text-muted">
+              <div class="info-box-description">
                 Instagram dan YouTube ditampilkan di footer untuk pembaruan
                 perjalanan dan cerita destinasi.
               </div>
@@ -78,24 +72,24 @@ import { generalFaqItems } from "@/lib/site-data";
             >
           </CardHeader>
           <CardContent className="grid gap-4">
-            <label class="grid gap-2 text-sm">
-              <span class="text-brand-100">Tanggal perjalanan</span>
+            <label class="grid gap-2">
+              <span class="form-label-light">Tanggal perjalanan</span>
               <input
-                class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-brand-100/50"
+                class="form-input-dark"
                 placeholder="Contoh: 12 Agustus 2026"
               />
             </label>
-            <label class="grid gap-2 text-sm">
-              <span class="text-brand-100">Jumlah tamu</span>
+            <label class="grid gap-2">
+              <span class="form-label-light">Jumlah tamu</span>
               <input
-                class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-brand-100/50"
+                class="form-input-dark"
                 placeholder="Contoh: 4 dewasa"
               />
             </label>
-            <label class="grid gap-2 text-sm">
-              <span class="text-brand-100">Fokus destinasi</span>
+            <label class="grid gap-2">
+              <span class="form-label-light">Fokus destinasi</span>
               <input
-                class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-brand-100/50"
+                class="form-input-dark"
                 placeholder="Contoh: Gili dan Kuta"
               />
             </label>
@@ -112,11 +106,11 @@ import { generalFaqItems } from "@/lib/site-data";
       <div class="mt-10 grid gap-4">
         {
           generalFaqItems.map((item) => (
-            <details class="rounded-[1.5rem] border border-border bg-white p-6">
-              <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
+            <details class="faq-accordion">
+              <summary class="faq-summary">
                 {item.question}
               </summary>
-              <p class="mt-4 text-sm leading-7 text-text-muted">
+              <p class="faq-answer">
                 {item.answer}
               </p>
             </details>
