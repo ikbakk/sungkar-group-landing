@@ -12,8 +12,8 @@ interface Props {
 const { vehicle } = Astro.props;
 ---
 
-<Card class="border-border overflow-hidden bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)] transition-all duration-300 hover:shadow-[0_18px_55px_rgba(17,24,39,0.1)]">
-  <div class="relative h-64 w-full overflow-hidden rounded-t-lg">
+<Card class="overflow-hidden py-0 card-interactive">
+  <div class="relative h-64 w-full overflow-hidden">
     <Image
       src={vehicle.image}
       alt={vehicle.name}

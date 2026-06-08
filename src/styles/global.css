@@ -132,3 +132,26 @@
     scroll-behavior: smooth;
   }
 }
+
+@layer components {
+  /* Standardized Card Utilities */
+  .card-base {
+    @apply rounded-lg border border-border bg-card transition-all duration-300 ease-out;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(17,24,39,0.1)];
+  }
+
+  .card-interactive {
+    @apply rounded-lg border border-border bg-card transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(17,24,39,0.1)];
+  }
+
+  .card-hover-border {
+    @apply hover:border-brand-300;
+  }
+
+  .card-shadow-base {
+    @apply ring-1 ring-foreground/10;
+  }
+}
