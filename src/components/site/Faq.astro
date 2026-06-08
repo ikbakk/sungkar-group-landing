@@ -8,16 +8,18 @@ interface Props {
     question: string;
     answer: string;
   }[];
+  background?: string;
 }
 
 const {
   title = "Pertanyaan yang Sering Diajukan",
   eyebrow = "FAQ",
   items,
+  background = "bg-background",
 } = Astro.props;
 ---
 
-<SectionContainer background="bg-background">
+<SectionContainer background={background}>
   <div class="mb-8">
     <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
       {eyebrow}
