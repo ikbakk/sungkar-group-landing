@@ -2,6 +2,7 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import FaqSection from "@/components/site/Faq.astro";
+import RelatedContent from "@/components/site/RelatedContent.astro";
 
 import PackageRegionNav from "@/components/packages/PackageRegionNav.astro";
 import PackageRegionSection from "@/components/packages/PackageRegionSection.astro";
@@ -86,6 +87,47 @@ const regions = [
     eyebrow="FAQ"
     title="Pertanyaan Seputar Paket Wisata"
     items={packageFaq}
+  />
+
+  <RelatedContent
+    title="Jelajahi Layanan Kami"
+    items={[
+      {
+        title: "Destinasi Wisata",
+        href: "/destinasi",
+        description:
+          "Temukan tempat-tempat indah dan destinasi impian di Lombok, Sumbawa, dan Labuan Bajo",
+        icon: "📍",
+      },
+      {
+        title: "Panduan Wisata",
+        href: "/panduan-wisata",
+        description:
+          "Baca panduan lengkap untuk merencanakan perjalanan Anda dengan sempurna",
+        icon: "📖",
+      },
+      {
+        title: "Akomodasi",
+        href: "/akomodasi",
+        description:
+          "Pilih hotel dan penginapan terbaik di setiap destinasi wisata",
+        icon: "🏨",
+      },
+      {
+        title: "Sewa Mobil",
+        href: "/sewa-mobil",
+        description:
+          "Nikmati kenyamanan perjalanan dengan layanan sewa kendaraan kami",
+        icon: "🚗",
+      },
+      {
+        title: "Tentang Kami",
+        href: "/tentang-kami",
+        description:
+          "Ketahui lebih lanjut tentang Sungkar Group dan pengalaman kami",
+        icon: "ℹ️",
+      },
+    ]}
   />
 
   <PackagePageCta />

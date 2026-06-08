@@ -1,0 +1,24 @@
+# Robots.txt for Sungkar Group
+# Block robots from crawling unnecessary pages
+
+User-agent: *
+Allow: /
+
+# Block dev and admin pages (if they exist)
+Disallow: /admin/
+Disallow: /dev/
+Disallow: /.env
+Disallow: /private/
+
+# Allow search engines to crawl sitemap
+Sitemap: https://www.sungkargroup.com/sitemap.xml
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay to prevent server overload
+Request-rate: 10/1s
