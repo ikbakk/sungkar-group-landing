@@ -1,3 +1,88 @@
+/**
+ * OpenGraph Metadata Configuration
+ *
+ * This module provides a centralized, data-driven approach to managing OpenGraph (OG) meta tags
+ * and Twitter Card data across the Sungkar Group website.
+ *
+ * Usage Guide:
+ * ============
+ *
+ * 1. AUTOMATIC OG TAGS (Static Pages):
+ *    Pages like home (/), /kontak, /paket-wisata automatically get OG tags from pageOGMetadata.
+ *    No additional configuration needed - the MainLayout handles it automatically.
+ *
+ *    Example in kontak.astro:
+ *    <MainLayout title="Kontak" description="...">
+ *      <!-- OG tags are automatically generated from pageOGMetadata["/kontak"] -->
+ *    </MainLayout>
+ *
+ * 2. CUSTOM OG TAGS (Individual Pages):
+ *    To override OG data for a specific page, pass custom props to MainLayout:
+ *
+ *    ---
+ *    import type { ImageMetadata } from "astro";
+ *    import CustomImage from "@/assets/images/custom.png";
+ *
+ *    const title = "My Custom Page";
+ *    const description = "Custom description for sharing";
+ *    const image = CustomImage as ImageMetadata;
+ *    const imageAlt = "Description of image";
+ *    ---
+ *
+ *    <MainLayout
+ *      title={title}
+ *      description={description}
+ *      image={image}
+ *      imageAlt={imageAlt}
+ *    >
+ *      <!-- Content -->
+ *    </MainLayout>
+ *
+ * 3. DYNAMIC OG TAGS (Packages/Destinations):
+ *    For dynamic detail pages, use helper functions:
+ *
+ *    ---
+ *    import { getPackageOGMetadata } from "@/lib/og-metadata";
+ *    import { packages } from "@/lib/site-data";
+ *
+ *    const pkg = packages[0];
+ *    const ogMeta = getPackageOGMetadata(
+ *      pkg.title,
+ *      pkg.summary,
+ *      pkg.image,
+ *      `Paket: ${pkg.title}`
+ *    );
+ *    ---
+ *
+ *    <MainLayout
+ *      title={pkg.title}
+ *      description={pkg.summary}
+ *      image={ogMeta.image}
+ *      imageAlt={ogMeta.imageAlt}
+ *    >
+ *      <!-- Content -->
+ *    </MainLayout>
+ *
+ * 4. IMAGE BEST PRACTICES:
+ *    - Use ImageMetadata type from astro for all images
+ *    - Images are automatically converted to WebP (80% quality)
+ *    - OG image standard: 1200x630px (aspect ratio 1.91:1)
+ *    - Twitter card: 16:9 or 1:1 aspect ratios work best
+ *    - Keep file size < 2MB for social media compliance
+ *
+ * 5. TO ADD A NEW STATIC PAGE:
+ *    1. Import the image at the top
+ *    2. Add entry to pageOGMetadata object with path as key
+ *    3. That's it! MainLayout will handle the rest
+ *
+ * Generated Meta Tags:
+ * ====================
+ * - og:title, og:description, og:image (with width/height)
+ * - twitter:card, twitter:title, twitter:description, twitter:image
+ * - Standard: title, description, canonical URL
+ * - Plus: theme-color, apple-mobile-web-app settings
+ */
+
 import type { ImageMetadata } from "astro";
 import HeroLombok from "@/assets/images/hero-lombok.png";
 import TourSnorkeling from "@/assets/images/tour-snorkeling.png";
@@ -17,6 +102,7 @@ export interface OGMetadata {
 /**
  * OG metadata configuration for all pages
  * Each page has a corresponding OG image and metadata
+ * Key = page path, Value = OG metadata object
  */
 export const pageOGMetadata: Record<string, OGMetadata> = {
   "/": {
