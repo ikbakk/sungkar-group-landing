@@ -1,17 +1,20 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
-import { reviews } from "@/lib/site-data";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import ReviewsGridSection from "@/components/reviews/ReviewsGridSection.astro";
+import ReviewStatsSection from "@/components/reviews/ReviewStatsSection.astro";
+import ReviewsCtaSection from "@/components/reviews/ReviesCtraSection.astro";
+import ReviewGallerySection from "@/components/reviews/ReviewGallerySection.astro";
+import TrustSignalSection from "@/components/reviews/TrustSignalsSection.astro";
+import FaqSection from "@/components/site/Faq.astro";
 
-const photos = [
-  "Nada layanan dan panduan lokal",
-  "Irama jelajah pulau",
-  "Alur perjalanan keluarga",
-];
+import { reviewsFaq } from "@/lib/content/faqs/reviews";
+import {
+  reviewsPageContent,
+  reviews,
+  reviewStats,
+} from "@/lib/content/reviewPage";
 ---
 
 <MainLayout
@@ -27,99 +30,38 @@ const photos = [
     transition:animate={"slide"}
   />
 
-  <section class="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-      <div class="grid gap-6 md:grid-cols-3">
-        {
-          reviews.map((review) => (
-            <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
-              <CardHeader>
-                <Badge
-                  variant="outline"
-                  className="w-fit rounded-full px-3 py-1"
-                >
-                  Ulasan Google
-                </Badge>
-                <CardTitle className="text-3xl leading-tight">★★★★★</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p class="text-sm leading-7 text-text-muted">{review.text}</p>
-              </CardContent>
-              <CardContent>
-                <Separator />
-                <div class="mt-4 text-sm font-medium text-foreground">
-                  {review.location}
-                </div>
-              </CardContent>
-            </Card>
-          ))
-        }
-      </div>
+  <SectionContainer background="bg-surface-soft">
+    <ReviewStatsSection
+      rating={reviewStats.rating}
+      totalReviews={reviewStats.totalReviews}
+    />
+  </SectionContainer>
 
-      <div class="mt-10 grid gap-6 lg:grid-cols-[1fr_1fr]">
-        <Card className="border-border bg-white">
-          <CardHeader>
-            <CardTitle className="text-3xl leading-tight"
-              >Petunjuk foto</CardTitle
-            >
-          </CardHeader>
-          <CardContent className="grid gap-3">
-            {
-              photos.map((item) => (
-                <div class="rounded-2xl border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground">
-                  {item}
-                </div>
-              ))
-            }
-          </CardContent>
-        </Card>
+  <SectionContainer background="bg-surface-soft">
+    <ReviewsGridSection reviews={reviews} />
+  </SectionContainer>
 
-        <Card className="border-border bg-brand-900 text-white">
-          <CardHeader>
-            <CardTitle className="text-3xl leading-tight text-white">
-              Ingin ritme perjalanan yang sama?
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p class="text-sm leading-7 text-brand-100">
-              Gunakan halaman kontak untuk memesan perjalanan dengan panduan
-              lokal dan tempo yang rapi seperti yang muncul di ulasan.
-            </p>
-            <div class="mt-6 flex flex-wrap gap-3">
-              <Button href="/kontak" variant="secondary">
-                Cek Ketersediaan
-              </Button>
-              <Button href="/kontak">Chat WhatsApp</Button>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
+  <SectionContainer background="bg-background">
+    <!-- <TrustSignalSection
+      title={reviewsPageContent.trust.title}
+      items={reviewsPageContent.trust.description}
+    /> -->
+  </SectionContainer>
 
-      <div class="mt-10 grid gap-4">
-        <details class="rounded-[1.5rem] border border-border bg-white p-6">
-          <summary
-            class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden"
-          >
-            Apa yang paling dulu dirasakan tamu?
-          </summary>
-          <p class="mt-4 text-sm leading-7 text-text-muted">
-            Sinyal yang paling sering disebut adalah kejelasan komunikasi,
-            fleksibilitas rute, dan tempo lokal yang menjaga perjalanan tetap
-            tenang.
-          </p>
-        </details>
-        <details class="rounded-[1.5rem] border border-border bg-white p-6">
-          <summary
-            class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden"
-          >
-            Kenapa foto ditampilkan di sini?
-          </summary>
-          <p class="mt-4 text-sm leading-7 text-text-muted">
-            Foto membantu menegaskan suasana perjalanan dan membuat calon tamu
-            lebih mudah membayangkan tonenya sebelum bertanya.
-          </p>
-        </details>
-      </div>
-    </div>
-  </section>
+  <SectionContainer background="bg-surface-soft">
+    <ReviewGallerySection />
+  </SectionContainer>
+
+  <FaqSection
+    eyebrow="FAQ"
+    title="Pertanyaan Seputar Ulasan"
+    items={reviewsFaq}
+  />
+
+  <SectionContainer background="bg-surface-soft">
+    <ReviewsCtaSection
+      title={reviewsPageContent.cta.title}
+      description={reviewsPageContent.cta.description}
+    />
+  </SectionContainer>
 </MainLayout>

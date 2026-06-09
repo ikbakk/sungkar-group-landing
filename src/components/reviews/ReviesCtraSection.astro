@@ -1,0 +1,29 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<Card className="border-border bg-brand-900 text-white">
+  <CardHeader>
+    <CardTitle className="text-3xl leading-tight text-white">
+      {title}
+    </CardTitle>
+  </CardHeader>
+
+  <CardContent>
+    <p class="text-sm leading-7 text-brand-100">
+      {description}
+    </p>
+
+    <div class="mt-6">
+      <Button href="/kontak" variant="secondary"> Hubungi Kami </Button>
+    </div>
+  </CardContent>
+</Card>

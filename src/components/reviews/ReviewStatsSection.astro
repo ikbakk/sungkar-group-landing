@@ -1,0 +1,42 @@
+---
+import { Card, CardContent } from "@/components/ui/card";
+
+interface Props {
+  rating: number;
+  totalReviews: number;
+}
+
+const { rating, totalReviews } = Astro.props;
+---
+
+<div class="grid gap-6 md:grid-cols-3">
+  <Card className="border-border bg-white">
+    <CardContent className="flex flex-col gap-2 py-8">
+      <div class="text-5xl font-heading text-foreground">
+        {rating}
+      </div>
+
+      <div class="text-amber-500 text-xl">★★★★★</div>
+
+      <p class="text-sm text-text-muted">Rating rata-rata pelanggan</p>
+    </CardContent>
+  </Card>
+
+  <Card className="border-border bg-white">
+    <CardContent className="py-8">
+      <div class="text-5xl font-heading">
+        {totalReviews}+
+      </div>
+
+      <p class="mt-2 text-sm text-text-muted">Ulasan pelanggan</p>
+    </CardContent>
+  </Card>
+
+  <Card className="border-border bg-white">
+    <CardContent className="py-8">
+      <div class="text-5xl font-heading">100%</div>
+
+      <p class="mt-2 text-sm text-text-muted">Fokus pada pengalaman lokal</p>
+    </CardContent>
+  </Card>
+</div>
