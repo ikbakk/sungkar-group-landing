@@ -16,6 +16,7 @@
 - `npm run build` creates the production build in `dist/`.
 - `npm run preview` serves the production build locally for verification.
 - `npm run astro -- <command>` runs Astro CLI utilities, such as `npm run astro -- --help`.
+- Use `rg` for text search and `rg --files` for file discovery; do not use `grep` for searching files.
 
 ## Coding Style & Naming Conventions
 - Use TypeScript, Astro components, and React components where appropriate.
@@ -57,6 +58,7 @@
 - `npm run build` creates the production build in `dist/`.
 - `npm run preview` serves the production build locally for verification.
 - `npm run astro -- <command>` runs Astro CLI utilities, such as `npm run astro -- --help`.
+- Use `rg` for text search and `rg --files` for file discovery; do not use `grep` for searching files.
 
 ## Coding Style & Naming Conventions
 - Use TypeScript, Astro, and React only where interactivity is needed.

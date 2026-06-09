@@ -1,14 +1,13 @@
 import type { ImageMetadata } from "astro";
 
+import { businessInfo } from "@/lib/contact-data";
+import { destinations } from "@/lib/content/destinationsData";
+import { packages } from "@/lib/content/tourPackages";
+import { reviewStats, reviews } from "@/lib/content/reviewPage";
 import Hero from "@/assets/images/hero.webp";
 import HeroLombok from "@/assets/images/hero-lombok.png";
 import Hero1 from "@/assets/images/hero1.webp";
 import TourSnorkeling from "@/assets/images/tour-snorkeling.png";
-
-import DestinationLombok from "@/assets/images/destination-lombok.png";
-import DestinationRinjani from "@/assets/images/destination-rinjani.png";
-import DestinationGili from "@/assets/images/destination-gili.png";
-import DestinationSumbawa from "@/assets/images/destination-sumbawa.png";
 
 export interface LandingAction {
   label: string;
@@ -88,7 +87,7 @@ export const landingHero = {
     {
       className: "card-3",
       style: "width: 220px; height: 260px; left: 40px; top: 120px;",
-      image: DestinationGili,
+      image: HeroLombok,
       alt: "Kepulauan Gili",
       title: "Kepulauan Gili",
       contentSizeClass: "p-4",
@@ -117,26 +116,13 @@ export const landingFeaturedTours = {
   description:
     "Paket wisata dibuat jelas sejak awal agar wisatawan bisa memilih rute yang sesuai tanpa perlu menebak-nebak.",
   heroImage: TourSnorkeling,
-  tours: [
-    {
-      slug: "3d2n-lombok-signature",
-      title: "Paket Lombok 3H2M",
-      description:
-        "Rangkaian pantai, matahari terbit, dan pengalaman lokal yang disusun untuk perjalanan pertama ke Lombok.",
-    },
-    {
-      slug: "snorkeling-gili-escape",
-      title: "Tur Snorkeling dan Gili",
-      description:
-        "Jelajah pulau singkat dengan fokus pada air jernih, perpindahan efisien, dan waktu santai di pulau.",
-    },
-    {
-      slug: "village-culture-experience",
-      title: "Pengalaman Desa dan Budaya",
-      description:
-        "Menjelajahi desa tradisional, tenun, dan ritme lokal dengan pendekatan yang lebih dekat dan tenang.",
-    },
-  ] satisfies LandingTourCard[],
+  tours: packages
+    .filter((tour) => tour.featured)
+    .map((tour): LandingTourCard => ({
+      slug: tour.slug,
+      title: tour.title,
+      description: tour.summary,
+    })),
 };
 
 export const landingDestinations = {
@@ -144,36 +130,12 @@ export const landingDestinations = {
   title: "Destinasi dengan komposisi visual yang lebih seimbang",
   description:
     "Bagian ini sengaja ditata dengan variasi kartu dan arah teks supaya tidak terasa terlalu berat ke kiri.",
-  destinations: [
-    {
-      slug: "kuta-lombok",
-      title: "Lombok",
-      image: DestinationLombok,
-      description:
-        "Pantai selatan, desa pesisir, dan rute santai untuk perjalanan multi-hari.",
-    },
-    {
-      slug: "rinjani",
-      title: "Rinjani",
-      image: DestinationRinjani,
-      description:
-        "Pegunungan, kabut pagi, dan panorama yang sering jadi alasan orang datang.",
-    },
-    {
-      slug: "gili-trawangan",
-      title: "Kepulauan Gili",
-      image: DestinationGili,
-      description:
-        "Snorkeling, jelajah pulau, dan suasana pulau yang mudah dinikmati.",
-    },
-    {
-      slug: "sumbawa",
-      title: "Sumbawa",
-      image: DestinationSumbawa,
-      description:
-        "Rute yang lebih sepi dengan karakter alam terbuka dan garis pantai yang kuat.",
-    },
-  ] satisfies LandingDestinationCard[],
+  destinations: destinations.slice(0, 4).map((destination): LandingDestinationCard => ({
+    slug: destination.slug,
+    title: destination.title,
+    image: destination.image,
+    description: destination.summary,
+  })),
 };
 
 export const landingTransport = {
@@ -197,43 +159,29 @@ export const landingTestimonials = {
   eyebrow: "Ulasan & Testimoni",
   title: "Apa kata mereka tentang perjalanan bersama kami",
   description:
-    "Ribuan wisatawan telah merasakan pengalaman yang tak terlupakan bersama Sungkar Group. Dengarkan cerita mereka.",
-  testimonials: [
-    {
-      name: "Sarah Wijaya",
-      title: "Keluarga dari Jakarta",
-      content:
-        "Perjalanan ke Lombok bersama Sungkar Group adalah pengalaman terbaik kami. Semua sudah diatur dengan sempurna, driver ramah, dan itinerary yang santai membuat liburan jadi benar-benar rileks.",
-      rating: 5,
-    },
-    {
-      name: "Budi Santoso",
-      title: "Traveler Solo",
-      content:
-        "Tidak perlu repot urus transportasi dan rute. Sungkar Group handle semuanya dengan profesional. Saya bisa fokus menikmati keindahan Lombok dan berinteraksi dengan penduduk lokal.",
-      rating: 5,
-    },
-    {
-      name: "Ratna Dewi",
-      title: "Grup Teman dari Bandung",
-      content:
-        "Dokumentasi berjalan lancar, spot-spot yang dikunjungi bagus, dan guide yang informatif. Harga sesuai dengan kualitas layanan yang diberikan. Pasti akan balik lagi!",
-      rating: 5,
-    },
-  ] satisfies LandingTestimonial[],
+    "Ulasan ringkas ini diambil dari data ulasan yang sudah dipakai di halaman ulasan agar homepage tidak punya sumber data terpisah.",
+  testimonials: reviews.slice(0, 3).map(
+    (review): LandingTestimonial => ({
+      name: review.author,
+      title: review.source,
+      content: review.text,
+      rating: review.rating,
+    }),
+  ),
+  stats: reviewStats,
 };
 
 export const landingVideo = {
   eyebrow: "Video YouTube",
   title: "Ruang untuk video perjalanan dan cuplikan destinasi",
   description:
-    "Di bagian ini Anda bisa menempelkan embed video dari channel YouTube Sungkar Group. Area ini disiapkan supaya halaman depan tetap punya ruang visual tambahan tanpa menambah CTA berlebihan.",
+    "Tautan video sekarang diarahkan ke kanal resmi yang dipakai di halaman kontak, supaya homepage dan kontak tetap konsisten.",
   ctaLabel: "Lihat kanal YouTube",
-  ctaHref: "https://www.youtube.com/",
+  ctaHref: businessInfo.socialLinks.youtube ?? "https://www.youtube.com/",
   panelEyebrow: "Tempat embed video YouTube",
   panelTitle: "Video sorotan perjalanan Lombok",
   panelDescription:
-    "Ganti blok ini dengan embed video resmi dari channel YouTube Sungkar Group ketika URL channel tersedia.",
+    "Ganti blok ini dengan embed video resmi dari channel YouTube Sungkar Group ketika URL embed sudah dipilih.",
 };
 
 export const landingBackgroundImage = Hero;

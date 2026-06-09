@@ -4,6 +4,7 @@ export type TourPackage = {
   slug: string;
   title: string;
   region: "lombok" | "sumbawa" | "labuan-bajo";
+  featured?: boolean;
 
   category: string;
   duration: string;
@@ -28,6 +29,7 @@ export const packages: TourPackage[] = [
     slug: "paket-1-hari-full",
     title: "Paket 1 Hari Full",
     region: "lombok",
+    featured: true,
 
     category: "Paket Wisata Lombok",
     duration: "1 Hari",
@@ -66,6 +68,7 @@ export const packages: TourPackage[] = [
     slug: "paket-2-hari-1-malam",
     title: "Paket 2 Hari 1 Malam",
     region: "lombok",
+    featured: true,
 
     category: "Paket Wisata Lombok",
     duration: "2 Hari 1 Malam",
@@ -98,6 +101,7 @@ export const packages: TourPackage[] = [
     slug: "paket-3-hari-2-malam",
     title: "Paket 3 Hari 2 Malam",
     region: "lombok",
+    featured: true,
 
     category: "Paket Wisata Lombok",
     duration: "3 Hari 2 Malam",

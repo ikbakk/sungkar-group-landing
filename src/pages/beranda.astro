@@ -1,0 +1,14 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import LandingPage from "@/components/landing/LandingPage.astro";
+import Hero from "@/assets/images/hero.webp";
+---
+
+<MainLayout
+  title="Sungkar Group"
+  description="Operator wisata Lombok berbasis lokal untuk tur pribadi, destinasi, transportasi, ulasan, dan panduan wisata."
+  canonical="/beranda"
+  image={Hero}
+>
+  <LandingPage />
+</MainLayout>

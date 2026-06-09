@@ -9,6 +9,7 @@ interface Props {
     answer: string;
   }[];
   background?: string;
+  variant?: "divider" | "card";
 }
 
 const {
@@ -16,6 +17,7 @@ const {
   eyebrow = "FAQ",
   items,
   background = "bg-background",
+  variant = "divider",
 } = Astro.props;
 ---
 
@@ -33,7 +35,14 @@ const {
   <div class="flex flex-col font-sans">
     {
       items.map((item) => (
-        <details class="group border-b border-border py-5">
+        <details
+          class:list={[
+            "group",
+            variant === "card"
+              ? "mb-4 overflow-hidden rounded-lg border border-border bg-white px-6 py-5"
+              : "border-b border-border py-5",
+          ]}
+        >
           <summary class="flex cursor-pointer list-none items-center justify-between gap-6">
             <span class="pr-4 text-foreground transition-colors duration-300">
               {item.question}
@@ -54,7 +63,14 @@ const {
             </svg>
           </summary>
 
-          <div class="grid grid-rows-[0fr] transition-all duration-400 ease-out group-open:grid-rows-[1fr]">
+          <div
+            class:list={[
+              "transition-all duration-400 ease-out",
+              variant === "card"
+                ? "grid grid-rows-[0fr] group-open:grid-rows-[1fr]"
+                : "grid grid-rows-[0fr] group-open:grid-rows-[1fr]",
+            ]}
+          >
             <div class="overflow-hidden">
               <p class="pt-4 pb-1 text-sm leading-7 text-text-muted">
                 {item.answer}

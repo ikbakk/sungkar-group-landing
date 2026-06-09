@@ -43,7 +43,7 @@
  *
  *    ---
  *    import { getPackageOGMetadata } from "@/lib/og-metadata";
- *    import { packages } from "@/lib/site-data";
+ *    import { packages } from "@/lib/content/tourPackages";
  *
  *    const pkg = packages[0];
  *    const ogMeta = getPackageOGMetadata(

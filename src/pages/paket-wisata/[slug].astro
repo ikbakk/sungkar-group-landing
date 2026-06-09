@@ -11,8 +11,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import FaqSection from "@/components/site/Faq.astro";
 
-import { packageFaqItems } from "@/lib/site-data";
+import { packageFaq } from "@/lib/content/faqs/package";
 
 import "../../styles/global.css";
 import type { TourPackage } from "@/lib/content/tourPackages";
@@ -36,7 +37,7 @@ const productSchema = generateProductSchema(
   tour.image.src,
   siteUrl,
   tour.slug,
-  tour.duration
+  tour.duration,
 );
 
 const breadcrumbItems = [
@@ -236,25 +237,12 @@ const itineraryByDay = Object.entries(
         </Card>
       </div>
 
-      <div class="mt-10 grid gap-4">
-        <div
-          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
-        >
-          FAQ Paket Wisata
-        </div>
-        {
-          packageFaqItems.map((item) => (
-            <details class="rounded-[1.5rem] border border-border bg-white p-6">
-              <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
-                {item.question}
-              </summary>
-              <p class="mt-4 text-sm leading-7 text-text-muted">
-                {item.answer}
-              </p>
-            </details>
-          ))
-        }
-      </div>
+      <FaqSection
+        eyebrow="FAQ"
+        title="FAQ Paket Wisata"
+        items={packageFaq}
+        background="bg-surface-soft"
+      />
     </div>
   </section>
 </MainLayout>
