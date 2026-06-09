@@ -84,13 +84,9 @@ const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
     </form>
 
     <div class="">
-      <a
-        href={`https://wa.me/${whatsappNumber}?text=Halo%20Sungkar%20Group%2C%20saya%20ingin%20berkonsultasi%20mengenai%20rencana%20perjalanan%20saya.`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button size="lg" variant={"secondary"}> Chat WhatsApp </Button>
-      </a>
+      <Button id="contact-whatsapp" size="lg" variant="secondary" type="button">
+        Chat WhatsApp
+      </Button>
     </div>
 
     <div class="rounded-lg border border-white/10 bg-white/5 p-4">
@@ -102,3 +98,34 @@ const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
     </div>
   </CardContent>
 </Card>
+
+<script define:vars={{ whatsappNumber }}>
+  const button = document.getElementById("contact-whatsapp");
+
+  button?.addEventListener("click", () => {
+    const travelDate = document.getElementById("travelDate")?.value ?? "";
+
+    const guests = document.getElementById("guests")?.value ?? "";
+
+    const destination = document.getElementById("destination")?.value ?? "";
+
+    const message = document.getElementById("message")?.value ?? "";
+
+    const whatsappMessage = `
+Halo Sungkar Group,
+
+Tanggal perjalanan: ${travelDate}
+Jumlah tamu: ${guests}
+Fokus destinasi: ${destination}
+Pesan tambahan: ${message}
+
+Mohon informasi paket yang sesuai.
+`.trim();
+
+    const url =
+      `https://wa.me/${whatsappNumber}?text=` +
+      encodeURIComponent(whatsappMessage);
+
+    window.open(url, "_blank");
+  });
+</script>
