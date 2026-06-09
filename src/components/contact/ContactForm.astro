@@ -1,6 +1,5 @@
 ---
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import type { FormField, BusinessInfo } from "@/lib/contact-data";
 
@@ -15,7 +14,7 @@ const {
   fields,
   businessInfo,
   title = "Ceritakan rencana perjalanan Anda",
-  description = "Formulir pertanyaan",
+  description = "Berikan informasi dasar perjalanan agar tim kami dapat memberikan rekomendasi yang lebih relevan.",
 } = Astro.props;
 
 const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
@@ -23,14 +22,16 @@ const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
 
 <Card className="border-border bg-brand-900 text-white">
   <CardHeader>
-    <Badge variant="secondary" className="w-fit rounded-full px-3 py-1">
-      {description}
-    </Badge>
     <CardTitle className="text-3xl leading-tight text-white">
       {title}
     </CardTitle>
+
+    <p class="text-sm leading-7 text-brand-100">
+      {description}
+    </p>
   </CardHeader>
-  <CardContent className="grid gap-4">
+
+  <CardContent className="grid gap-6">
     <form id="availability-form" class="grid gap-4">
       {
         fields.map((field) =>
@@ -38,6 +39,7 @@ const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
             <label class="grid gap-2">
               <span class="form-label-light">
                 {field.label}
+
                 {!field.required && (
                   <span class="text-xs font-normal text-brand-200">
                     {" "}
@@ -45,11 +47,12 @@ const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
                   </span>
                 )}
               </span>
+
               <textarea
                 id={field.id}
                 name={field.id}
                 placeholder={field.placeholder}
-                class="form-input-dark min-h-24 resize-none"
+                class="form-input-dark min-h-24 resize-none rounded-lg"
                 required={field.required}
               />
             </label>
@@ -57,6 +60,7 @@ const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
             <label class="grid gap-2">
               <span class="form-label-light">
                 {field.label}
+
                 {!field.required && (
                   <span class="text-xs font-normal text-brand-200">
                     {" "}
@@ -64,37 +68,64 @@ const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
                   </span>
                 )}
               </span>
+
               <input
                 id={field.id}
                 type={field.type}
                 name={field.id}
                 placeholder={field.placeholder}
-                class="form-input-dark"
+                class="form-input-dark rounded-lg"
                 required={field.required}
               />
             </label>
-          )
+          ),
         )
       }
     </form>
 
-    <div class="flex flex-wrap gap-3 border-t border-white/10 pt-4">
-      <Button href="#availability-form" variant="secondary">
-        Cek Ketersediaan
-      </Button>
-      <Button
-        href={`https://wa.me/${whatsappNumber}?text=Halo%20Sungkar%20Group%2C%20saya%20tertarik%20untuk%20booking%20tur.`}
-        target="_blank"
-      >
+    <div class="">
+      <Button id="contact-whatsapp" size="lg" variant="secondary" type="button">
         Chat WhatsApp
       </Button>
     </div>
 
-    <div class="mt-2 rounded-lg border border-white/10 bg-white/5 p-3">
-      <p class="text-xs text-brand-100">
-        <strong>💡 Tip:</strong> Isi formulir untuk prioritas lebih cepat, atau langsung
-        chat WhatsApp untuk pertanyaan yang lebih fleksibel.
+    <div class="rounded-lg border border-white/10 bg-white/5 p-4">
+      <p class="text-sm leading-6 text-brand-100">
+        Semakin lengkap informasi yang Anda berikan, semakin mudah bagi tim kami
+        untuk merekomendasikan itinerary, transportasi, dan paket wisata yang
+        sesuai dengan kebutuhan perjalanan Anda.
       </p>
     </div>
   </CardContent>
 </Card>
+
+<script define:vars={{ whatsappNumber }}>
+  const button = document.getElementById("contact-whatsapp");
+
+  button?.addEventListener("click", () => {
+    const travelDate = document.getElementById("travelDate")?.value ?? "";
+
+    const guests = document.getElementById("guests")?.value ?? "";
+
+    const destination = document.getElementById("destination")?.value ?? "";
+
+    const message = document.getElementById("message")?.value ?? "";
+
+    const whatsappMessage = `
+Halo Sungkar Group,
+
+Tanggal perjalanan: ${travelDate}
+Jumlah tamu: ${guests}
+Fokus destinasi: ${destination}
+Pesan tambahan: ${message}
+
+Mohon informasi paket yang sesuai.
+`.trim();
+
+    const url =
+      `https://wa.me/${whatsappNumber}?text=` +
+      encodeURIComponent(whatsappMessage);
+
+    window.open(url, "_blank");
+  });
+</script>

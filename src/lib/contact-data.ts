@@ -45,28 +45,26 @@ export interface FormField {
 }
 
 export const businessInfo: BusinessInfo = {
-  name: "Sungkar Group",
+  name: "Sungkar Group Indonesia",
   description:
     "Operator wisata Lombok berbasis lokal dengan layanan tur pribadi, transportasi, dan panduan wisata.",
-  phone: "+62-370-XXXXXXX",
-  email: "info@sungkargroup.com",
-  whatsapp: "+62-8XX-XXX-XXXX",
+  phone: "+62 81236128629",
+  email: "",
+  whatsapp: "+62 81236128629",
   address: {
-    street: "Kuta",
-    city: "Lombok",
+    street: "Adi sucipto residence No.blok D12, Ampenan Utara, Kec. Ampenan",
+    city: "Mataram",
     region: "Nusa Tenggara Barat",
-    postalCode: "83612",
+    postalCode: "83123",
     country: "Indonesia",
   },
   coordinates: {
-    latitude: -8.7667,
-    longitude: 116.35,
+    latitude: -8.5645579,
+    longitude: 116.0815306,
   },
   socialLinks: {
     instagram: "https://www.instagram.com/sungkargroup",
-    facebook: "https://www.facebook.com/sungkargroup",
-    tiktok: "https://www.tiktok.com/@sungkargroup",
-    youtube: "https://www.youtube.com/@sungkargroup",
+    youtube: "https://www.youtube.com/@sungkargroup1",
   },
 };
 

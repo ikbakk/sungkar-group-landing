@@ -1,6 +1,7 @@
 ---
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { BusinessInfo } from "@/lib/contact-data";
+import { Separator } from "../ui/separator";
 
 interface Props {
   businessInfo: BusinessInfo;
@@ -15,151 +16,103 @@ const {
 } = Astro.props;
 ---
 
-<Card className="border-border bg-white">
+<Card className="border-border justify-center">
   <CardHeader>
-    <CardTitle className="text-2xl leading-tight">
+    <CardTitle className="text-3xl leading-tight">
       {title}
     </CardTitle>
-    {description && (
-      <p class="mt-2 text-sm text-text-muted">
-        {description}
-      </p>
-    )}
+    {description && <p class="text-sm text-text-muted">{description}</p>}
   </CardHeader>
-  <CardContent className="grid gap-6">
+  <CardContent className="flex flex-col gap-2">
     <!-- Contact Methods -->
-    <div class="space-y-4">
-      <h3 class="font-heading text-sm font-semibold uppercase tracking-[0.1em] text-foreground">
-        Hubungi Kami
-      </h3>
+    <a
+      href={`tel:${businessInfo.phone}`}
+      class="flex flex-col items-start rounded-lg border border-border p-4 bg-surface-soft transition-colors hover:border-brand-200 hover:bg-brand-50"
+    >
+      <div class="text-sm font-medium text-foreground mb-2">
+        Telepon / Whatsapp
+      </div>
+      <div class="text-sm text-text-muted">
+        {businessInfo.phone}
+      </div>
+    </a>
 
-      <!-- Phone -->
-      <a
-        href={`tel:${businessInfo.phone}`}
-        class="info-box flex items-start gap-3 transition-colors hover:border-brand-200 hover:bg-brand-50"
-      >
-        <div class="text-lg">📞</div>
-        <div>
-          <div class="text-sm font-medium text-foreground">
-            Telepon
-          </div>
-          <div class="mt-1 text-sm text-text-muted">
-            {businessInfo.phone}
-          </div>
-        </div>
-      </a>
-
-      <!-- Email -->
-      <a
-        href={`mailto:${businessInfo.email}`}
-        class="info-box flex items-start gap-3 transition-colors hover:border-brand-200 hover:bg-brand-50"
-      >
-        <div class="text-lg">✉️</div>
-        <div>
-          <div class="text-sm font-medium text-foreground">
-            Email
-          </div>
-          <div class="mt-1 text-sm text-text-muted">
-            {businessInfo.email}
-          </div>
-        </div>
-      </a>
-
-      <!-- WhatsApp -->
-      <a
-        href={`https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}?text=Halo%20Sungkar%20Group`}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="info-box flex items-start gap-3 transition-colors hover:border-brand-200 hover:bg-brand-50"
-      >
-        <div class="text-lg">💬</div>
-        <div>
-          <div class="text-sm font-medium text-foreground">
-            WhatsApp
-          </div>
-          <div class="mt-1 text-sm text-text-muted">
-            {businessInfo.whatsapp}
-          </div>
-        </div>
-      </a>
-    </div>
+    <Separator />
 
     <!-- Address -->
-    <div class="space-y-3 border-t border-border pt-6">
-      <h3 class="font-heading text-sm font-semibold uppercase tracking-[0.1em] text-foreground">
-        Alamat
-      </h3>
-      <address class="not-italic">
-        <p class="text-sm font-medium text-foreground">
-          {businessInfo.name}
+    <address
+      class="not-italic flex flex-col items-start rounded-lg border border-border p-4 bg-surface-soft transition-colors hover:border-brand-200 hover:bg-brand-50"
+    >
+      <p class="text-sm font-medium text-foreground mb-2">
+        {businessInfo.name}
+      </p>
+      <div class="space-y-1 text-sm text-text-muted">
+        <p>{businessInfo.address.street}</p>
+        <p>
+          {businessInfo.address.city}, {businessInfo.address.region}
+          {businessInfo.address.postalCode}
         </p>
-        <div class="mt-2 space-y-1 text-sm text-text-muted">
-          <p>{businessInfo.address.street}</p>
-          <p>
-            {businessInfo.address.city}, {businessInfo.address.region} {businessInfo.address.postalCode}
-          </p>
-          <p>{businessInfo.address.country}</p>
-        </div>
-      </address>
-    </div>
+        <p>{businessInfo.address.country}</p>
+      </div>
+    </address>
+
+    <Separator />
 
     <!-- Social Links -->
-    {Object.values(businessInfo.socialLinks).filter(Boolean).length > 0 && (
-      <div class="space-y-3 border-t border-border pt-6">
-        <h3 class="font-heading text-sm font-semibold uppercase tracking-[0.1em] text-foreground">
-          Ikuti Kami
-        </h3>
-        <div class="flex flex-wrap gap-2">
-          {businessInfo.socialLinks.instagram && (
-            <a
-              href={businessInfo.socialLinks.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 rounded-lg border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
-              aria-label="Follow on Instagram"
-            >
-              <span>📷</span>
-              Instagram
-            </a>
-          )}
-          {businessInfo.socialLinks.facebook && (
-            <a
-              href={businessInfo.socialLinks.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 rounded-lg border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
-              aria-label="Follow on Facebook"
-            >
-              <span>f</span>
-              Facebook
-            </a>
-          )}
-          {businessInfo.socialLinks.youtube && (
-            <a
-              href={businessInfo.socialLinks.youtube}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 rounded-lg border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
-              aria-label="Subscribe on YouTube"
-            >
-              <span>📺</span>
-              YouTube
-            </a>
-          )}
-          {businessInfo.socialLinks.tiktok && (
-            <a
-              href={businessInfo.socialLinks.tiktok}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 rounded-lg border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
-              aria-label="Follow on TikTok"
-            >
-              <span>🎵</span>
-              TikTok
-            </a>
-          )}
+    {
+      Object.values(businessInfo.socialLinks).filter(Boolean).length > 0 && (
+        <div class="flex flex-col items-start rounded-lg border border-border p-4 bg-surface-soft transition-colors hover:border-brand-200 hover:bg-brand-50">
+          <h3 class="font-sans font-medium text-sm text-foreground mb-2">
+            Ikuti Kami
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            {businessInfo.socialLinks.instagram && (
+              <a
+                href={businessInfo.socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-md border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
+                aria-label="Follow on Instagram"
+              >
+                Instagram
+              </a>
+            )}
+            {businessInfo.socialLinks.facebook && (
+              <a
+                href={businessInfo.socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-md border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
+                aria-label="Follow on Facebook"
+              >
+                Facebook
+              </a>
+            )}
+            {businessInfo.socialLinks.youtube && (
+              <a
+                href={businessInfo.socialLinks.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-md border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
+                aria-label="Subscribe on YouTube"
+              >
+                YouTube
+              </a>
+            )}
+            {businessInfo.socialLinks.tiktok && (
+              <a
+                href={businessInfo.socialLinks.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-md border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
+                aria-label="Follow on TikTok"
+              >
+                TikTok
+              </a>
+            )}
+          </div>
         </div>
-      </div>
-    )}
+      )
+    }
   </CardContent>
 </Card>

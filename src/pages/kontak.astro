@@ -2,20 +2,29 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
+
 import ContactForm from "@/components/contact/ContactForm.astro";
 import ContactInfoSection from "@/components/contact/ContactInfoSection.astro";
 import EmbeddedMap from "@/components/contact/EmbeddedMap.astro";
-import { generalFaqItems } from "@/lib/site-data";
-import {
-  businessInfo,
-  contactFormFields,
-  geoLocation,
-} from "@/lib/contact-data";
-import { generateContactPageSchema, generateFAQPageSchema } from "@/lib/schemas";
 
-const siteUrl = Astro.site?.toString() || "https://sungkargroup.com";
+import FaqSection from "@/components/site/Faq.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+
+import { businessInfo, contactFormFields } from "@/lib/contact-data";
+
+import { contactPageContent } from "@/lib/content/contactPage";
+import { contactFaq } from "@/lib/content/faqs/contact";
+
+import {
+  generateContactPageSchema,
+  generateFAQPageSchema,
+} from "@/lib/schemas";
+
+const siteUrl = Astro.site?.toString() ?? "https://sungkargroup.id";
+
 const contactSchema = generateContactPageSchema(siteUrl, businessInfo);
-const faqSchema = generateFAQPageSchema(generalFaqItems);
+
+const faqSchema = generateFAQPageSchema(contactFaq);
 ---
 
 <MainLayout
@@ -26,66 +35,46 @@ const faqSchema = generateFAQPageSchema(generalFaqItems);
   <StructuredData schema={contactSchema} />
   <StructuredData schema={faqSchema} />
   <PageHeader
-    eyebrow="Kontak"
-    title="Hubungi Sungkar Group untuk itinerary, paket, atau transportasi"
-    description="Sampaikan tanggal perjalanan, jumlah tamu, titik penjemputan, dan prioritas destinasi. Dari situ kami bisa menyusun opsi yang paling masuk akal."
+    eyebrow={contactPageContent.hero.eyebrow}
+    title={contactPageContent.hero.title}
+    description={contactPageContent.hero.description}
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Kontak" }]}
   />
 
-  <!-- Contact Section with Map and Form -->
-  <section class="bg-surface-soft">
-    <div class="section-container section-padding">
-      <!-- Map Section -->
-      <div class="mb-12">
-        <EmbeddedMap
-          latitude={geoLocation.latitude}
-          longitude={geoLocation.longitude}
-          zoom={geoLocation.zoom}
-          businessName={businessInfo.name}
-          businessAddress={`${businessInfo.address.street}, ${businessInfo.address.city}`}
-        />
-      </div>
+  <SectionContainer background="bg-surface-soft">
+    <EmbeddedMap
+      title={contactPageContent.map.title}
+      description={contactPageContent.map.description}
+      embedUrl={contactPageContent.map.embedUrl}
+      googleMapsUrl={contactPageContent.map.googleMapsUrl}
+      businessName={businessInfo.name}
+      businessAddress={`${businessInfo.address.street}, ${businessInfo.address.city}`}
+    />
+  </SectionContainer>
 
-      <!-- Contact Form and Info Grid -->
-      <div class="grid-form">
-        <ContactInfoSection
-          businessInfo={businessInfo}
-          title="Informasi Kontak"
-          description="Berbagai cara untuk menghubungi tim kami"
-        />
+  <SectionContainer background="bg-background">
+    <div class="grid-form">
+      <ContactInfoSection
+        businessInfo={businessInfo}
+        title={contactPageContent.info.title}
+        description={contactPageContent.info.description}
+      />
 
-        <ContactForm
-          fields={contactFormFields}
-          businessInfo={businessInfo}
-          title="Ceritakan rencana perjalanan Anda"
-          description="Formulir pertanyaan"
-        />
-      </div>
-
-      <!-- FAQ Section -->
-      <div class="mt-16">
-        <div class="mb-8 text-center">
-          <h2 class="section-title text-left">Pertanyaan yang Sering Diajukan</h2>
-          <p class="section-description text-left">
-            Cari jawaban dari pertanyaan umum tentang layanan kami
-          </p>
-        </div>
-
-        <div class="grid gap-4">
-          {
-            generalFaqItems.map((item) => (
-              <details class="faq-accordion">
-                <summary class="faq-summary">
-                  {item.question}
-                </summary>
-                <p class="faq-answer">
-                  {item.answer}
-                </p>
-              </details>
-            ))
-          }
-        </div>
-      </div>
+      <ContactForm
+        fields={contactFormFields}
+        businessInfo={businessInfo}
+        title={contactPageContent.form.title}
+        description={contactPageContent.form.description}
+      />
     </div>
-  </section>
+  </SectionContainer>
+
+  <SectionContainer background="bg-surface-soft">
+    <FaqSection
+      eyebrow="FAQ"
+      title="Pertanyaan Seputar Kontak dan Pemesanan"
+      items={contactFaq}
+      background="bg-surface-soft"
+    />
+  </SectionContainer>
 </MainLayout>
