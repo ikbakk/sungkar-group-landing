@@ -1,168 +1,69 @@
 ---
-import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
+import FaqSection from "@/components/site/Faq.astro";
 import RelatedContent from "@/components/site/RelatedContent.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import DestinationGroupNav from "@/components/destinations/DestinationGroupNav.astro";
+import DestinationGroupSection from "@/components/destinations/DestinationGroupSection.astro";
 import { destinations } from "@/lib/content/destinationsData";
-import { navDestinations } from "@/lib/site-data";
-import { packages } from "@/lib/content/tourPackages";
-import { destinationFaqItems } from "@/lib/site-data";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { destinationsPageContent } from "@/lib/content/destinationsPage";
+
 import "../../styles/global.css";
+
+const destinationBySlug = new Map(
+  destinations.map((destination) => [destination.slug, destination]),
+);
+
+const groups = destinationsPageContent.groups.map((group) => ({
+  ...group,
+  count: group.destinationSlugs.length,
+  destinations: group.destinationSlugs
+    .map((slug) => destinationBySlug.get(slug))
+    .filter((destination): destination is (typeof destinations)[number] => Boolean(destination)),
+}));
 ---
 
 <MainLayout
   title="Destinasi"
-  description="Hub destinasi Lombok, Gili, Rinjani, dan Sumbawa dengan navigasi bertingkat."
+  description={destinationsPageContent.hero.description}
   canonical="/destinasi"
-  image={destinations[1].image}
+  image={destinationsPageContent.spotlightImage}
 >
+  <div id="top" />
+
   <PageHeader
-    eyebrow="Destinasi"
-    title="Destinasi utama dengan navigasi bertingkat"
-    description="Gunakan kategori di header untuk masuk ke grup destinasi lalu buka halaman detail masing-masing untuk melihat apa yang bisa dilakukan dan paket yang terkait."
+    eyebrow={destinationsPageContent.hero.eyebrow}
+    title={destinationsPageContent.hero.title}
+    description={destinationsPageContent.hero.description}
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Destinasi" }]}
-    image={destinations[1].image}
+    image={destinationsPageContent.spotlightImage}
     imageAlt="Destinasi Lombok"
   />
 
-  <section class="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
-      <div class="grid gap-4 md:grid-cols-3">
-        {
-          navDestinations.map((group) => (
-            <Card className="border-border bg-white">
-              <CardHeader>
-                <Badge
-                  variant="outline"
-                  className="w-fit rounded-full px-3 py-1"
-                >
-                  {group.group}
-                </Badge>
-                <CardTitle className="text-3xl leading-tight">
-                  Kelompok destinasi
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div class="grid gap-2">
-                  {group.items.map((item) => (
-                    <a
-                      href={item.href}
-                      class="rounded-2xl border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-200 hover:bg-brand-50"
-                    >
-                      {item.label}
-                    </a>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))
-        }
-      </div>
+  <DestinationGroupNav
+    groups={groups.map(({ id, label, count }) => ({ id, label, count }))}
+  />
 
-      <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        {
-          destinations.map((destination) => (
-            <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
-              <div class="aspect-square overflow-hidden">
-                <Image
-                  src={destination.image}
-                  alt={destination.title}
-                  class="h-full w-full object-cover"
-                  loading="eager"
-                />
-              </div>
-              <CardHeader>
-                <Badge
-                  variant="outline"
-                  className="w-fit rounded-full px-3 py-1"
-                >
-                  {destination.region}
-                </Badge>
-                <CardTitle className="text-3xl leading-tight">
-                  {destination.title}
-                </CardTitle>
-                <CardDescription className="text-sm leading-6 text-text-muted">
-                  {destination.summary}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div class="flex flex-wrap gap-2">
-                  {destination.thingsToDo.map((item) => (
-                    <Badge
-                      variant="secondary"
-                      className="rounded-full px-3 py-1"
-                    >
-                      {item}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-              <CardFooter className="justify-between gap-3">
-                <Button
-                  href={`/destinasi/${destination.slug}`}
-                  variant="outline"
-                >
-                  Detail destinasi
-                </Button>
-                <span class="text-xs uppercase tracking-[0.2em] text-text-muted">
-                  Halaman detail
-                </span>
-              </CardFooter>
-            </Card>
-          ))
-        }
-      </div>
-
-      <div class="mt-12 grid gap-4">
-        <div
-          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
-        >
-          FAQ Destinasi
-        </div>
-        {
-          destinationFaqItems.map((item) => (
-            <details class="rounded-[1.5rem] border border-border bg-white p-6">
-              <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
-                {item.question}
-              </summary>
-              <p class="mt-4 text-sm leading-7 text-text-muted">
-                {item.answer}
-              </p>
-            </details>
-          ))
-        }
-      </div>
-
-      <RelatedContent
-        title="Layanan Terkait"
-        items={[
-          {
-            title: "Paket Wisata",
-            href: "/paket-wisata",
-            description:
-              "Pilih dari berbagai paket wisata yang sudah direncanakan untuk setiap destinasi",
-          },
-          {
-            title: "Panduan Wisata",
-            href: "/panduan-wisata",
-            description:
-              "Dapatkan tips dan panduan untuk memaksimalkan pengalaman di setiap destinasi",
-          },
-          {
-            title: "Akomodasi",
-            href: "/akomodasi",
-            description:
-              "Temukan penginapan nyaman dan berkualitas di area destinasi pilihan Anda",
-          },
-        ]}
+  {groups.map((group, index) => (
+    <SectionContainer background={index % 2 === 0 ? "bg-surface-soft" : "bg-background"}>
+      <DestinationGroupSection
+        id={group.id}
+        title={group.title}
+        description={group.description}
+        destinations={group.destinations}
       />
+    </SectionContainer>
+  ))}
+
+  <FaqSection
+    eyebrow="FAQ"
+    title={destinationsPageContent.detail.faqTitle}
+    items={destinationsPageContent.faq}
+  />
+
+  <RelatedContent
+    title="Layanan Terkait"
+    items={destinationsPageContent.relatedContent}
+  />
+</MainLayout>

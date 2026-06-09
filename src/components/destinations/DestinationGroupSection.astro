@@ -1,0 +1,40 @@
+---
+import DestinationCard from "@/components/cards/DestinationCard.astro";
+import type { Destination } from "@/lib/content/destinationsData";
+
+const {
+  id,
+  title,
+  description,
+  destinations,
+} = Astro.props as {
+  id: string;
+  title: string;
+  description: string;
+  destinations: Destination[];
+};
+---
+
+<section id={id} class="scroll-mt-48" data-destination-group-section>
+  <div class="mb-8">
+    <h2 class="font-heading text-3xl leading-tight">{title}</h2>
+    <p class="mt-2 max-w-3xl font-sans text-sm leading-7 text-text-muted">
+      {description}
+    </p>
+  </div>
+
+  <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+    {destinations.map((destination) => (
+      <DestinationCard destination={destination} />
+    ))}
+  </div>
+
+  <div class="mt-8 flex justify-center">
+    <a
+      href="#top"
+      class="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium"
+    >
+      ↑ Kembali ke Atas
+    </a>
+  </div>
+</section>
