@@ -2,6 +2,7 @@
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Image } from "astro:assets";
+import OGImageAstroComponent from "../seo/OGImage.astro";
 
 import Logo from "@/assets/images/logo.webp";
 import { aboutContent } from "@/lib/content/about";
@@ -12,10 +13,11 @@ import { aboutContent } from "@/lib/content/about";
     <div
       class="overflow-hidden rounded-xl h-full border border-border bg-brand-900"
     >
-      <Image
-        src={Logo}
+      <OGImageAstroComponent
+        image={Logo}
         alt="Budaya Lombok"
-        class="h-full w-full object-cover"
+        class="h-full w-full object-contain py-4"
+        loading="eager"
       />
     </div>
 
