@@ -1,0 +1,40 @@
+---
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+
+interface Review {
+  author: string;
+  source: string;
+  rating: number;
+  text: string;
+}
+
+interface Props {
+  reviews: Review[];
+}
+
+const { reviews } = Astro.props;
+---
+
+<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+  {
+    reviews.map((review) => (
+      <Card className="border-border bg-white">
+        <CardHeader>
+          <div class="flex items-center justify-between">
+            <div>
+              <div class="font-medium text-foreground">{review.author}</div>
+
+              <div class="text-sm text-text-muted">{review.source}</div>
+            </div>
+
+            <div class="text-amber-500">{"★".repeat(review.rating)}</div>
+          </div>
+        </CardHeader>
+
+        <CardContent>
+          <p class="text-sm leading-7 text-text-muted">{review.text}</p>
+        </CardContent>
+      </Card>
+    ))
+  }
+</div>

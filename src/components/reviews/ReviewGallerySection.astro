@@ -1,0 +1,28 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+const photos = [
+  "Momen perjalanan keluarga",
+  "Eksplorasi pantai dan pulau",
+  "Pendampingan guide lokal",
+  "Perjalanan kelompok dan komunitas",
+];
+---
+
+<Card className="border-border bg-white">
+  <CardHeader>
+    <CardTitle className="text-3xl leading-tight">
+      Galeri Pengalaman Wisatawan
+    </CardTitle>
+  </CardHeader>
+
+  <CardContent className="grid gap-4 md:grid-cols-2">
+    {
+      photos.map((item) => (
+        <div class="aspect-[4/3] rounded-xl border border-border bg-surface-soft flex items-center justify-center text-center text-sm font-medium text-text-muted">
+          {item}
+        </div>
+      ))
+    }
+  </CardContent>
+</Card>
