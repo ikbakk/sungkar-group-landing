@@ -11,7 +11,7 @@ Disallow: /.env
 Disallow: /private/
 
 # Allow search engines to crawl sitemap
-Sitemap: https://www.sungkargroup.com/sitemap.xml
+Sitemap: https://www.sungkargroup.id/sitemap.xml
 
 # Specific rules for major search engines
 User-agent: Googlebot

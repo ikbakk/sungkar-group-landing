@@ -4,7 +4,7 @@ import { accommodations } from "@/lib/content/akomodasiData";
 import { vehicles } from "@/lib/content/sewaModilData";
 
 export async function GET() {
-  const siteUrl = "https://www.sungkargroup.com";
+  const siteUrl = "https://www.sungkargroup.id";
 
   // Static pages
   const staticPages = [
@@ -23,11 +23,15 @@ export async function GET() {
   const packagePages = packages.map((pkg) => `/paket-wisata/${pkg.slug}`);
 
   // Dynamic destination pages
-  const destinationPages = destinations.map((dest) => `/destinasi/${dest.slug}`);
+  const destinationPages = destinations.map(
+    (dest) => `/destinasi/${dest.slug}`,
+  );
 
   // Dynamic accommodation region pages
   const accommodationRegions = ["lombok", "sumbawa", "labuan-bajo"];
-  const accommodationPages = accommodationRegions.map((region) => `/akomodasi/${region}`);
+  const accommodationPages = accommodationRegions.map(
+    (region) => `/akomodasi/${region}`,
+  );
 
   // Dynamic vehicle region pages
   const vehicleRegions = Array.from(new Set(vehicles.map((v) => v.region)));
@@ -69,7 +73,8 @@ export async function GET() {
 function getPriority(page: string): number {
   if (page === "/") return 1.0;
   if (page === "/paket-wisata" || page === "/destinasi") return 0.9;
-  if (page.includes("/paket-wisata/") || page.includes("/destinasi/")) return 0.8;
+  if (page.includes("/paket-wisata/") || page.includes("/destinasi/"))
+    return 0.8;
   if (page === "/akomodasi" || page === "/sewa-mobil") return 0.8;
   if (page.includes("/akomodasi/") || page.includes("/sewa-mobil/")) return 0.7;
   if (page === "/panduan-wisata" || page === "/tentang-kami") return 0.7;
