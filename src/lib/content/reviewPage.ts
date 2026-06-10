@@ -86,7 +86,7 @@ export interface Review {
 }
 
 export const reviewStats = {
-  rating: 4.9,
+  rating: 5,
   totalReviews: 140,
 };
 

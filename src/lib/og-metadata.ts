@@ -84,12 +84,10 @@
  */
 
 import type { ImageMetadata } from "astro";
-import HeroLombok from "@/assets/images/hero-lombok.png";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.png";
-import TourCultural from "@/assets/images/tour-cultural.png";
-import DestinationGili from "@/assets/images/destination-gili.png";
-import DestinationLombok from "@/assets/images/destination-lombok.png";
-import DestinationRinjani from "@/assets/images/destination-rinjani.png";
+import HeroLombok from "@/assets/images/hero-lombok.webp";
+import TourCultural from "@/assets/images/tour-cultural.webp";
+import DestinationLombok from "@/assets/images/destination-lombok.webp";
+import DestinationRinjani from "@/assets/images/destination-rinjani.webp";
 
 export interface OGMetadata {
   title: string;

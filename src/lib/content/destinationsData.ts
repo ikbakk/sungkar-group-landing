@@ -10,10 +10,10 @@ export type Destination = {
   packages: string[];
 };
 
-import DestinationLombok from "@/assets/images/destination-lombok.png";
-import DestinationRinjani from "@/assets/images/destination-rinjani.png";
-import DestinationGili from "@/assets/images/destination-gili.png";
-import DestinationSumbawa from "@/assets/images/destination-sumbawa.png";
+import DestinationLombok from "@/assets/images/destination-lombok.webp";
+import DestinationRinjani from "@/assets/images/destination-rinjani.webp";
+import DestinationGili from "@/assets/images/destination-gili.webp";
+import DestinationSumbawa from "@/assets/images/destination-sumbawa.webp";
 
 export const destinations: Destination[] = [
   {
@@ -23,11 +23,7 @@ export const destinations: Destination[] = [
     image: DestinationLombok,
     summary:
       "Garis pantai yang luas, akses ke banyak singgah pantai, dan tempo liburan yang santai.",
-    thingsToDo: [
-      "Jelajah pantai",
-      "Titik matahari terbenam",
-      "Kafe lokal",
-    ],
+    thingsToDo: ["Jelajah pantai", "Titik matahari terbenam", "Kafe lokal"],
     packages: ["3d2n-lombok-signature", "village-culture-experience"],
   },
   {
@@ -47,7 +43,11 @@ export const destinations: Destination[] = [
     image: DestinationRinjani,
     summary:
       "Koridor pegunungan yang sering dipakai sebagai titik awal menuju pengalaman Rinjani.",
-    thingsToDo: ["Pemandangan dataran tinggi", "Perjalanan matahari terbit", "Singgah kebun lokal"],
+    thingsToDo: [
+      "Pemandangan dataran tinggi",
+      "Perjalanan matahari terbit",
+      "Singgah kebun lokal",
+    ],
     packages: ["3d2n-lombok-signature"],
   },
   {
@@ -57,7 +57,11 @@ export const destinations: Destination[] = [
     image: DestinationRinjani,
     summary:
       "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang jadi alasan banyak tamu datang.",
-    thingsToDo: ["Titik pandang indah", "Dukungan trekking", "Rute matahari terbit"],
+    thingsToDo: [
+      "Titik pandang indah",
+      "Dukungan trekking",
+      "Rute matahari terbit",
+    ],
     packages: ["3d2n-lombok-signature"],
   },
   {

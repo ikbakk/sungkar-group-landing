@@ -13,7 +13,7 @@ export type Vehicle = {
   image: ImageMetadata;
 };
 
-import HeroLombok from "@/assets/images/hero-lombok.png";
+import HeroLombok from "@/assets/images/hero-lombok.webp";
 
 export const vehicles: Vehicle[] = [
   {
@@ -60,24 +60,16 @@ export const vehicles: Vehicle[] = [
       "High Ground Clearance",
       "Adventure Ready",
     ],
-    bestFor: ["Off-road adventure", "Destinasi terpencil", "Petualangan outdoor"],
+    bestFor: [
+      "Off-road adventure",
+      "Destinasi terpencil",
+      "Petualangan outdoor",
+    ],
     description:
       "SUV tangguh dengan ground clearance tinggi dan sistem 4WD untuk menjangkau destinasi adventure yang menantang.",
     image: HeroLombok,
   },
-  {
-    slug: "pickup-truck-sumbawa",
-    name: "Pickup Truck",
-    region: "sumbawa",
-    pricePerDay: "Rp 600.000 - 750.000",
-    seats: 5,
-    transmission: "Manual",
-    features: ["Cargo Bed", "Heavy Duty", "Towing Capable", "Durabel"],
-    bestFor: ["Barang bawaan banyak", "Grup besar", "Cargo transport"],
-    description:
-      "Kendaraan pickup dengan kapasitas bak luas cocok untuk perjalanan grup dengan banyak perlengkapan adventure.",
-    image: HeroLombok,
-  },
+
   {
     slug: "van-luxury-labuan-bajo",
     name: "Van Mewah",

@@ -17,6 +17,7 @@ import { packageFaq } from "@/lib/content/faqs/package";
 
 import "../../styles/global.css";
 import type { TourPackage } from "@/lib/content/tourPackages";
+import SectionContainer from "@/layouts/SectionContainer.astro";
 
 export function getStaticPaths() {
   return packages.map((tour: TourPackage) => ({
@@ -73,6 +74,7 @@ const itineraryByDay = Object.entries(
 >
   <StructuredData schema={productSchema} />
   <StructuredData schema={breadcrumbSchema} />
+
   <PageHeader
     eyebrow="Detail Paket"
     title={tour.title}
@@ -86,32 +88,41 @@ const itineraryByDay = Object.entries(
     imageAlt={tour.title}
   />
 
-  <section class="bg-surface-soft">
+  <SectionContainer background="bg-surface-soft">
     <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-      <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+      <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-stretch">
         <div
-          class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]"
+          class="relative min-h-[420px] overflow-hidden rounded-lg border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)] lg:min-h-[720px]"
         >
-          <Image
-            src={tour.image}
-            alt={tour.title}
-            class="h-full w-full object-cover"
-            loading="eager"
-          />
+          <button
+            type="button"
+            id="open-image-preview"
+            class="absolute inset-0 block h-full w-full cursor-zoom-in"
+            aria-label={`Preview ${tour.title}`}
+          >
+            <Image
+              src={tour.image}
+              alt={tour.title}
+              class="h-full w-full object-cover transition-transform duration-300 hover:scale-[1.02]"
+              loading="eager"
+            />
+          </button>
         </div>
 
-        <div class="grid gap-6">
+        <div class="flex h-full flex-col gap-6">
           <Card
-            className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
+            className="flex-1 border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
           >
             <CardHeader>
-              <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+              <Badge variant="outline" className="w-fit rounded-lg px-3 py-1">
                 {tour.category}
               </Badge>
-              <CardTitle className="text-3xl leading-tight"
-                >Informasi Paket</CardTitle
-              >
+
+              <CardTitle className="text-3xl leading-tight">
+                Informasi Paket
+              </CardTitle>
             </CardHeader>
+
             <CardContent>
               <div class="grid gap-4 text-sm">
                 <div class="flex items-center justify-between">
@@ -134,10 +145,7 @@ const itineraryByDay = Object.entries(
                 <div class="flex flex-wrap gap-2">
                   {
                     tour.highlights.map((item) => (
-                      <Badge
-                        variant="default"
-                        className="rounded-full px-3 py-1"
-                      >
+                      <Badge variant="default" className="rounded-lg px-3 py-1">
                         {item}
                       </Badge>
                     ))
@@ -155,17 +163,18 @@ const itineraryByDay = Object.entries(
                 Pesan paket ini
               </CardTitle>
             </CardHeader>
+
             <CardContent>
               <p class="text-sm leading-7 text-brand-100">
                 Hubungi tim untuk memastikan tanggal terbaik, titik penjemputan,
                 dan tempo itinerary yang paling pas.
               </p>
             </CardContent>
+
             <CardContent className="flex flex-wrap gap-3">
-              <Button href="/kontak" variant="secondary">
-                Cek Ketersediaan
-              </Button>
-              <Button href="/kontak">Chat WhatsApp</Button>
+              <a href="/kontak">
+                <Button size={"lg"} variant={"secondary"}>Hubungi Kami</Button>
+              </a>
             </CardContent>
           </Card>
         </div>
@@ -174,13 +183,16 @@ const itineraryByDay = Object.entries(
       <div class="mt-10 grid gap-6 lg:grid-cols-2">
         <Card className="border-border bg-white">
           <CardHeader>
-            <CardTitle className="text-3xl leading-tight">Itinerary</CardTitle>
+            <CardTitle className="text-3xl leading-tight">
+              Itinerary
+            </CardTitle>
           </CardHeader>
+
           <CardContent>
             <div class="grid gap-4">
               {
                 itineraryByDay.map(([day, activities]) => (
-                  <div class="rounded-2xl border border-border bg-surface-soft p-4">
+                  <div class="rounded-lg border border-border bg-surface-soft p-4">
                     <div class="text-xs font-medium uppercase tracking-[0.22em] text-brand-700">
                       {day}
                     </div>
@@ -202,32 +214,36 @@ const itineraryByDay = Object.entries(
 
         <Card className="border-border bg-white">
           <CardHeader>
-            <CardTitle className="text-3xl leading-tight"
-              >Termasuk / Tidak termasuk</CardTitle
-            >
+            <CardTitle className="text-3xl leading-tight">
+              Termasuk / Tidak termasuk
+            </CardTitle>
           </CardHeader>
+
           <CardContent>
             <div class="grid gap-3">
               <details
-                class="rounded-2xl border border-border bg-surface-soft p-4"
+                class="rounded-lg border border-border bg-surface-soft p-4"
               >
                 <summary
                   class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden"
                 >
                   Yang termasuk
                 </summary>
+
                 <ul class="mt-4 grid gap-2 text-sm leading-7 text-text-muted">
                   {tour.includes.map((item) => <li>{item}</li>)}
                 </ul>
               </details>
+
               <details
-                class="rounded-2xl border border-border bg-surface-soft p-4"
+                class="rounded-lg border border-border bg-surface-soft p-4"
               >
                 <summary
                   class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden"
                 >
                   Yang tidak termasuk
                 </summary>
+
                 <ul class="mt-4 grid gap-2 text-sm leading-7 text-text-muted">
                   {tour.excludes.map((item) => <li>{item}</li>)}
                 </ul>
@@ -244,5 +260,5 @@ const itineraryByDay = Object.entries(
         background="bg-surface-soft"
       />
     </div>
-  </section>
+  </SectionContainer>
 </MainLayout>

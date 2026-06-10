@@ -1,4 +1,5 @@
-import HeroLombok from "@/assets/images/hero-lombok.png";
+import HeroLombok from "@/assets/images/hero-lombok.webp";
+import WhaleShark from "@/assets/images/whaleshark.webp";
 
 export type TourPackage = {
   slug: string;
@@ -247,7 +248,7 @@ export const packages: TourPackage[] = [
     duration: "2 Hari 1 Malam",
     featured: true,
 
-    image: HeroLombok,
+    image: WhaleShark,
 
     summary:
       "Open trip menuju Teluk Saleh untuk menikmati pengalaman berenang bersama whale shark di habitat alaminya.",

@@ -8,6 +8,7 @@ export type NavItem = {
   variant: "link" | "mega";
 
   groups?: {
+    href?: string;
     title: string;
     items: {
       label: string;
@@ -45,6 +46,7 @@ export const navigation: NavItem[] = [
 
     groups: [
       {
+        href: "/paket-wisata",
         title: "Paket Wisata Lombok",
         items: createPackageLinks("lombok"),
       },
@@ -67,20 +69,20 @@ export const navigation: NavItem[] = [
 
     groups: [
       {
-        title: "Hotel Lombok",
+        title: "Lombok",
         items: [
           {
-            label: "Semua Hotel Lombok",
+            label: "Akomodasi Hotel di Lombok",
             href: "/akomodasi/lombok",
           },
         ],
       },
 
       {
-        title: "Hotel Labuan Bajo",
+        title: "Labuan Bajo",
         items: [
           {
-            label: "Semua Hotel Labuan Bajo",
+            label: "Akomodasi Hotel di Labuan Bajo",
             href: "/akomodasi/labuan-bajo",
           },
         ],
@@ -94,13 +96,23 @@ export const navigation: NavItem[] = [
 
     groups: [
       {
-        title: "Kendaraan Lombok",
-        items: createVehicleLinks("lombok"),
+        title: "Lombok",
+        items: [
+          {
+            label: "Daftar Mobil yang Tersedia",
+            href: "/sewa-mobil/lombok",
+          },
+        ],
       },
 
       {
-        title: "Kendaraan Labuan Bajo",
-        items: createVehicleLinks("labuan-bajo"),
+        title: "Labuan Bajo",
+        items: [
+          {
+            label: "Daftar Mobil yang Tersedia",
+            href: "/sewa-mobil/labuan-bajo",
+          },
+        ],
       },
     ],
   },

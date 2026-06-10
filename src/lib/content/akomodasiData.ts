@@ -10,7 +10,7 @@ export type Accommodation = {
   image: ImageMetadata;
 };
 
-import HeroLombok from "@/assets/images/hero-lombok.png";
+import HeroLombok from "@/assets/images/hero-lombok.webp";
 
 export const accommodations: Accommodation[] = [
   // =========================

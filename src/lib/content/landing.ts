@@ -5,9 +5,11 @@ import { destinations } from "@/lib/content/destinationsData";
 import { packages } from "@/lib/content/tourPackages";
 import { reviewStats, reviews } from "@/lib/content/reviewPage";
 import Hero from "@/assets/images/hero.webp";
-import HeroLombok from "@/assets/images/hero-lombok.png";
-import Hero1 from "@/assets/images/hero1.webp";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.png";
+import HeroLombok from "@/assets/images/hero-lombok.webp";
+import KutaBeach from "@/assets/images/kuta-beach.webp";
+import KutaBeach2 from "@/assets/images/kuta-beach-2.webp";
+import GiliMeno from "@/assets/images/gili-meno.webp";
+import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
 
 export interface LandingAction {
   label: string;
@@ -53,9 +55,9 @@ export interface LandingTestimonial {
 
 export const landingHero = {
   eyebrow: "Sungkar Group",
-  title: "Liburan ke Lombok, Sumbawa, dan Labuan Bajo yang disusun rapi",
+  title: "Perjalanan Nyaman ke Lombok, Sumbawa & Labuan Bajo",
   description:
-    "Sungkar Group merancang private tour, open trip, dan transportasi yang sesuai ritme perjalanan Anda—dari pantai Lombok, petualangan Sumbawa, sampai pesona laut Labuan Bajo.",
+    "Sungkar Group merancang private tour, open trip, dan transportasi yang sesuai ritme perjalanan Anda. Dari pantai Lombok, petualangan Sumbawa, sampai pesona laut Labuan Bajo.",
   primaryAction: {
     label: "Konsultasi Trip",
     href: "/kontak",
@@ -70,7 +72,7 @@ export const landingHero = {
     {
       className: "card-1",
       style: "width: 280px; height: 340px;",
-      image: Hero1,
+      image: KutaBeach,
       alt: "Rencana perjalanan wisata yang tersusun dengan jelas",
       title: "Trip yang Tertata",
       description: "Detail perjalanan disiapkan sejak awal",
@@ -79,7 +81,7 @@ export const landingHero = {
     {
       className: "card-2",
       style: "width: 240px; height: 280px; right: 20px; top: 80px;",
-      image: HeroLombok,
+      image: KutaBeach2,
       alt: "Pantai tropis di Lombok",
       title: "Pantai & Pulau",
       contentSizeClass: "p-4",
@@ -95,16 +97,9 @@ export const landingHero = {
     {
       className: "card-4",
       style: "width: 200px; height: 240px; right: -10px; top: 200px;",
-      image: TourSnorkeling,
+      image: GiliMeno,
       alt: "Aktivitas snorkeling di laut tropis",
       title: "Snorkeling & Laut",
-      contentSizeClass: "p-3",
-    },
-    {
-      className: "card-5",
-      style: "width: 180px; height: 220px; left: -20px; top: 240px;",
-      emoji: "🌅",
-      title: "Sunset Favorit",
       contentSizeClass: "p-3",
     },
   ] satisfies LandingHeroCard[],

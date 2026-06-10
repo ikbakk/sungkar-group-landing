@@ -67,6 +67,13 @@ export default function NavigationDesktop({ items }: Props) {
                       </div>
                     ))}
                   </div>
+                  <NavigationMenuLink
+                    className={
+                      "w-fit px-4 py-2 bg-brand-700 text-background hover:bg-brand-500 mb-2 text-sm cursor-pointer self-center mx-auto"
+                    }
+                  >
+                    Lihat Semua {item.label} yang tersedia
+                  </NavigationMenuLink>
                 </NavigationMenuContent>
               </>
             )}
