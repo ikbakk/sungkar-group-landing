@@ -14,19 +14,20 @@ import type { Accommodation } from "@/lib/content/akomodasiData";
 
 export function getStaticPaths() {
   const regions = ["lombok", "sumbawa", "labuan-bajo"];
-  
+
   return regions.map((region) => ({
     params: { slug: region },
-    props: { 
+    props: {
       region,
-      regionName: region.charAt(0).toUpperCase() + region.slice(1).replace("-", " ")
+      regionName:
+        region.charAt(0).toUpperCase() + region.slice(1).replace("-", " "),
     },
   }));
 }
 
 const { region, regionName } = Astro.props;
 const regionAccommodations = accommodations.filter(
-  (acc) => acc.region === region
+  (acc) => acc.region === region,
 );
 
 // Format region name for breadcrumb
@@ -59,11 +60,11 @@ const regionDisplay =
         {
           regionAccommodations.map((accommodation) => (
             <Card className="border-border overflow-hidden bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)] transition-all duration-300 hover:shadow-[0_18px_55px_rgba(17,24,39,0.1)]">
-              <div className="relative h-64 w-full overflow-hidden rounded-t-lg">
+              <div class="relative h-64 w-full overflow-hidden rounded-t-lg">
                 <Image
                   src={accommodation.image}
                   alt={accommodation.name}
-                  className="h-full w-full object-cover"
+                  class="h-full w-full object-cover"
                   loading="lazy"
                 />
               </div>
@@ -75,17 +76,20 @@ const regionDisplay =
               </CardHeader>
 
               <CardContent className="space-y-4">
-                <p className="text-sm leading-7 text-text-muted">
+                <p class="text-sm leading-7 text-text-muted">
                   {accommodation.description}
                 </p>
 
                 <div>
-                  <div className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+                  <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
                     Fasilitas & Layanan
                   </div>
-                  <div className="flex flex-wrap gap-2">
+                  <div class="flex flex-wrap gap-2">
                     {accommodation.perks.map((perk) => (
-                      <Badge variant="outline" className="rounded-full px-3 py-1">
+                      <Badge
+                        variant="outline"
+                        className="rounded-full px-3 py-1"
+                      >
                         {perk}
                       </Badge>
                     ))}
@@ -95,28 +99,17 @@ const regionDisplay =
                 <Separator />
 
                 <div>
-                  <div className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+                  <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
                     Keunggulan Lokasi
                   </div>
-                  <ul className="space-y-1 text-sm leading-7 text-text-muted">
+                  <ul class="space-y-1 text-sm leading-7 text-text-muted">
                     {accommodation.regionalHighlights.map((highlight) => (
-                      <li className="flex gap-2">
+                      <li class="flex gap-2">
                         <span>✓</span>
                         <span>{highlight}</span>
                       </li>
                     ))}
                   </ul>
-                </div>
-
-                <Separator />
-
-                <div className="flex flex-wrap gap-3">
-                  <Button href="/kontak" variant="outline" className="flex-1">
-                    Tanyakan
-                  </Button>
-                  <Button href="/kontak" className="flex-1">
-                    Hubungi
-                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -124,18 +117,20 @@ const regionDisplay =
         }
       </div>
 
-      <div class="mt-12 rounded-2xl border border-border bg-white p-8 text-center shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
+      <div
+        class="mt-12 rounded-2xl border border-border bg-white p-8 text-center shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
+      >
         <h3 class="text-2xl font-heading leading-tight">
           Tidak menemukan akomodasi yang cocok?
         </h3>
         <p class="mt-2 text-text-muted">
-          Tim kami siap membantu Anda menemukan penginapan sempurna sesuai budget dan preferensi Anda.
+          Tim kami siap membantu Anda menemukan penginapan sempurna sesuai
+          budget dan preferensi Anda.
         </p>
         <div class="mt-6 flex flex-wrap justify-center gap-3">
-          <Button href="/kontak" variant="outline">
-            Konsultasi Gratis
-          </Button>
-          <Button href="/kontak">Chat WhatsApp</Button>
+          <a href="/kontak">
+            <Button size={"lg"}>Chat WhatsApp</Button>
+          </a>
         </div>
       </div>
     </div>

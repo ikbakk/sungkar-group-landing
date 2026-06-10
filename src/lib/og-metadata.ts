@@ -2,7 +2,7 @@
  * OpenGraph Metadata Configuration
  *
  * This module provides a centralized, data-driven approach to managing OpenGraph (OG) meta tags
- * and Twitter Card data across the Sungkar Group website.
+ * and Twitter Card data across the Sungkar Group - Tour and Travel website.
  *
  * Usage Guide:
  * ============
@@ -106,70 +106,71 @@ export interface OGMetadata {
  */
 export const pageOGMetadata: Record<string, OGMetadata> = {
   "/": {
-    title: "Sungkar Group",
+    title: "Sungkar Group - Tour and Travel - Tour and Travel",
     description:
       "Operator wisata Lombok berbasis lokal untuk tur pribadi, destinasi, transportasi, ulasan, dan panduan wisata.",
     image: HeroLombok,
     imageAlt: "Pemandangan pantai Lombok dengan matahari terbenam",
   },
   "/tentang-kami": {
-    title: "Tentang Kami | Sungkar Group",
+    title: "Tentang Kami | Sungkar Group - Tour and Travel",
     description:
-      "Pelajari lebih lanjut tentang Sungkar Group, tim lokal kami, dan pendekatan wisata yang berkelanjutan.",
+      "Pelajari lebih lanjut tentang Sungkar Group - Tour and Travel, tim lokal kami, dan pendekatan wisata yang berkelanjutan.",
     image: TourCultural,
-    imageAlt: "Pengalaman budaya lokal bersama tim Sungkar Group",
+    imageAlt:
+      "Pengalaman budaya lokal bersama tim Sungkar Group - Tour and Travel",
   },
   "/paket-wisata": {
-    title: "Paket Wisata | Sungkar Group",
+    title: "Paket Wisata | Sungkar Group - Tour and Travel",
     description:
       "Jelajahi paket wisata lengkap Lombok mulai dari tur 3 hari hingga pengalaman budaya lokal.",
     image: HeroLombok,
     imageAlt: "Paket wisata Lombok dengan pelayanan lokal terbaik",
   },
   "/destinasi": {
-    title: "Destinasi | Sungkar Group",
+    title: "Destinasi | Sungkar Group - Tour and Travel",
     description:
       "Temukan destinasi terbaik di Lombok, Gili Islands, dan pegunungan Rinjani untuk petualangan Anda.",
     image: DestinationLombok,
     imageAlt: "Destinasi wisata terbaik di Lombok",
   },
   "/ulasan": {
-    title: "Ulasan | Sungkar Group",
+    title: "Ulasan | Sungkar Group - Tour and Travel",
     description:
-      "Baca ulasan dari wisatawan yang telah mengalami tur bersama Sungkar Group.",
+      "Baca ulasan dari wisatawan yang telah mengalami tur bersama Sungkar Group - Tour and Travel.",
     image: HeroLombok,
-    imageAlt: "Ulasan positif dari pengunjung Sungkar Group",
+    imageAlt: "Ulasan positif dari pengunjung Sungkar Group - Tour and Travel",
   },
   "/panduan-wisata": {
-    title: "Panduan Wisata | Sungkar Group",
+    title: "Panduan Wisata | Sungkar Group - Tour and Travel",
     description:
       "Panduan lengkap untuk merencanakan liburan ke Lombok, dari cuaca hingga transportasi lokal.",
     image: DestinationRinjani,
     imageAlt: "Panduan wisata lengkap untuk Lombok",
   },
   "/kontak": {
-    title: "Kontak | Sungkar Group",
+    title: "Kontak | Sungkar Group - Tour and Travel",
     description:
-      "Hubungi Sungkar Group melalui WhatsApp, email, atau formulir online untuk cek ketersediaan.",
+      "Hubungi Sungkar Group - Tour and Travel melalui WhatsApp, email, atau formulir online untuk cek ketersediaan.",
     image: HeroLombok,
-    imageAlt: "Hubungi Sungkar Group untuk konsultasi gratis",
+    imageAlt: "Hubungi Sungkar Group - Tour and Travel untuk konsultasi gratis",
   },
   "/faq": {
-    title: "FAQ | Sungkar Group",
+    title: "FAQ | Sungkar Group - Tour and Travel",
     description:
-      "Jawaban lengkap untuk pertanyaan umum tentang paket wisata dan layanan Sungkar Group.",
+      "Jawaban lengkap untuk pertanyaan umum tentang paket wisata dan layanan Sungkar Group - Tour and Travel.",
     image: HeroLombok,
     imageAlt: "Pertanyaan yang sering diajukan tentang wisata Lombok",
   },
   "/akomodasi": {
-    title: "Akomodasi | Sungkar Group",
+    title: "Akomodasi | Sungkar Group - Tour and Travel",
     description:
       "Rekomendasi akomodasi terbaik di Lombok dengan harga terjangkau dan fasilitas lengkap.",
     image: DestinationLombok,
     imageAlt: "Rekomendasi akomodasi di Lombok",
   },
   "/sewa-mobil": {
-    title: "Sewa Mobil | Sungkar Group",
+    title: "Sewa Mobil | Sungkar Group - Tour and Travel",
     description:
       "Sewa kendaraan lokal dengan driver berpengalaman untuk perjalanan yang nyaman dan fleksibel.",
     image: HeroLombok,
@@ -183,9 +184,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
  */
 export function getPageOGMetadata(pathname: string): OGMetadata {
   const normalizedPath = pathname.replace(/\/$/, "") || "/";
-  return (
-    pageOGMetadata[normalizedPath] || pageOGMetadata["/"]
-  );
+  return pageOGMetadata[normalizedPath] || pageOGMetadata["/"];
 }
 
 /**
@@ -195,10 +194,10 @@ export function getPackageOGMetadata(
   title: string,
   description: string,
   image: ImageMetadata,
-  imageAlt: string
+  imageAlt: string,
 ): OGMetadata {
   return {
-    title: `${title} | Sungkar Group`,
+    title: `${title} | Sungkar Group - Tour and Travel`,
     description,
     image,
     imageAlt,
@@ -213,10 +212,10 @@ export function getDestinationOGMetadata(
   title: string,
   description: string,
   image: ImageMetadata,
-  imageAlt: string
+  imageAlt: string,
 ): OGMetadata {
   return {
-    title: `${title} | Sungkar Group`,
+    title: `${title} | Sungkar Group - Tour and Travel`,
     description,
     image,
     imageAlt,

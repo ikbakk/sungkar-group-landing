@@ -20,7 +20,12 @@ export const accommodations: Accommodation[] = [
     slug: "lombok-beachfront",
     name: "Lombok Beachfront Hotels",
     region: "lombok",
-    perks: ["Pantai Pribadi", "Water Sports", "Infinity Pool", "Spa & Wellness"],
+    perks: [
+      "Pantai Pribadi",
+      "Water Sports",
+      "Infinity Pool",
+      "Spa & Wellness",
+    ],
     regionalHighlights: [
       "Akses langsung ke Pantai Kuta Mandalika",
       "Dekat dengan Bukit Merese untuk sunset",
@@ -34,7 +39,12 @@ export const accommodations: Accommodation[] = [
     slug: "lombok-mountain-retreat",
     name: "Lombok Mountain Retreat",
     region: "lombok",
-    perks: ["Pemandangan Gunung", "Trekking Guide", "Farm to Table", "Tradisional"],
+    perks: [
+      "Pemandangan Gunung",
+      "Trekking Guide",
+      "Farm to Table",
+      "Tradisional",
+    ],
     regionalHighlights: [
       "Lokasi di Tetebatu dengan view pegunungan",
       "Dekat dengan sawah terasering",
@@ -48,7 +58,12 @@ export const accommodations: Accommodation[] = [
     slug: "lombok-gili-gateway",
     name: "Lombok Gili Gateway",
     region: "lombok",
-    perks: ["Akses Gili Islands", "Boat Trips", "Diving Center", "Island Tours"],
+    perks: [
+      "Akses Gili Islands",
+      "Boat Trips",
+      "Diving Center",
+      "Island Tours",
+    ],
     regionalHighlights: [
       "Pelabuhan cepat ke Gili Trawangan",
       "Island hopping packages tersedia",
@@ -60,45 +75,18 @@ export const accommodations: Accommodation[] = [
   },
 
   // =========================
-  // SUMBAWA
-  // =========================
-  {
-    slug: "sumbawa-whale-shark-lodge",
-    name: "Sumbawa Whale Shark Lodge",
-    region: "sumbawa",
-    perks: ["Whale Shark Tours", "Teluk Saleh Access", "Marine Biology", "Photography"],
-    regionalHighlights: [
-      "Lokasi ideal untuk whale shark season",
-      "Teluk Saleh adventure base",
-      "Sunset cruise package",
-    ],
-    description:
-      "Lodge khusus untuk petualang laut yang ingin mengalami keajaiban whale shark dan keindahan Teluk Saleh.",
-    image: HeroLombok,
-  },
-  {
-    slug: "sumbawa-island-explorer",
-    name: "Sumbawa Island Explorer",
-    region: "sumbawa",
-    perks: ["Island Tours", "Snorkeling", "Local Culture", "Adventure Activities"],
-    regionalHighlights: [
-      "Jelajahi pulau-pulau tersembunyi",
-      "Spot snorkeling dengan coral indah",
-      "Budaya lokal Sumbawa yang kaya",
-    ],
-    description:
-      "Poin singgah ideal untuk eksplorasi kepulauan Sumbawa dengan aktivitas snorkeling dan perkenalan budaya lokal.",
-    image: HeroLombok,
-  },
-
-  // =========================
   // LABUAN BAJO
   // =========================
   {
     slug: "labuan-bajo-komodo-base",
     name: "Labuan Bajo Komodo Base",
     region: "labuan-bajo",
-    perks: ["Komodo Access", "Trekking Guide", "Park Services", "Photography Tours"],
+    perks: [
+      "Komodo Access",
+      "Trekking Guide",
+      "Park Services",
+      "Photography Tours",
+    ],
     regionalHighlights: [
       "Gate masuk Taman Nasional Komodo",
       "Ranger briefing dan safety gear",
@@ -112,7 +100,12 @@ export const accommodations: Accommodation[] = [
     slug: "labuan-bajo-liveaboard-hub",
     name: "Labuan Bajo Liveaboard Hub",
     region: "labuan-bajo",
-    perks: ["Liveaboard Boats", "Diving Equipment", "Sailing Trips", "Crew Services"],
+    perks: [
+      "Liveaboard Boats",
+      "Diving Equipment",
+      "Sailing Trips",
+      "Crew Services",
+    ],
     regionalHighlights: [
       "Armada kapal paling lengkap",
       "Paket sailing multi-hari tersedia",

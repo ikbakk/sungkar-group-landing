@@ -77,16 +77,6 @@ export const navigation: NavItem[] = [
       },
 
       {
-        title: "Hotel Sumbawa",
-        items: [
-          {
-            label: "Semua Hotel Sumbawa",
-            href: "/akomodasi/sumbawa",
-          },
-        ],
-      },
-
-      {
         title: "Hotel Labuan Bajo",
         items: [
           {
@@ -106,11 +96,6 @@ export const navigation: NavItem[] = [
       {
         title: "Kendaraan Lombok",
         items: createVehicleLinks("lombok"),
-      },
-
-      {
-        title: "Kendaraan Sumbawa",
-        items: createVehicleLinks("sumbawa"),
       },
 
       {

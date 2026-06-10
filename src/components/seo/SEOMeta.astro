@@ -65,16 +65,18 @@ const {
   description,
   canonical,
   ogImage,
-  ogImageAlt = "Sungkar Group",
+  ogImageAlt = "Sungkar Group - Tour and Travel",
   ogType = "website",
   twitterCard: twitterCardType,
   noIndex = false,
-  siteUrl = "https://sungkargroup.com",
+  siteUrl = "https://sungkargroup.id",
   locale = "id_ID",
 } = Astro.props;
 
 const siteTitle =
-  title === "Sungkar Group" ? title : `${title} | Sungkar Group`;
+  title === "Sungkar Group"
+    ? title
+    : `${title} | Sungkar Group - Tour and Travel`;
 
 // Generate OG image URL from metadata
 let ogImageUrl: OGImageUrl | null = null;
@@ -89,7 +91,8 @@ if (ogImage) {
 }
 
 // Determine twitter card type
-const twitterCard = twitterCardType || (ogImageUrl ? "summary_large_image" : "summary");
+const twitterCard =
+  twitterCardType || (ogImageUrl ? "summary_large_image" : "summary");
 ---
 
 <meta charset="utf-8" />
@@ -131,4 +134,7 @@ const twitterCard = twitterCardType || (ogImageUrl ? "summary_large_image" : "su
 <!-- Additional SEO Meta Tags -->
 <meta name="theme-color" content="#0f766e" />
 <meta name="apple-mobile-web-app-capable" content="true" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta
+  name="apple-mobile-web-app-status-bar-style"
+  content="black-translucent"
+/>
