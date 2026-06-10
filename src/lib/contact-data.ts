@@ -47,7 +47,7 @@ export interface FormField {
 export const businessInfo: BusinessInfo = {
   name: "Sungkar Group Indonesia",
   description:
-    "Operator wisata Lombok berbasis lokal dengan layanan tur pribadi, transportasi, dan panduan wisata.",
+    "Operator wisata lokal untuk Lombok, Sumbawa, dan Labuan Bajo dengan layanan private tour, open trip, transportasi, dan panduan perjalanan.",
   phone: "+62 81236128629",
   email: "",
   whatsapp: "+62 81236128629",

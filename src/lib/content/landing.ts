@@ -53,16 +53,16 @@ export interface LandingTestimonial {
 
 export const landingHero = {
   eyebrow: "Sungkar Group",
-  title: "Wisata Lombok yang disusun dari pengalaman lokal",
+  title: "Liburan ke Lombok, Sumbawa, dan Labuan Bajo yang disusun rapi",
   description:
-    "Sungkar Group membantu Anda menjelajahi Lombok, Gili, Rinjani, dan Sumbawa lewat tur pribadi, transportasi yang rapi, dan itinerary yang terasa tenang sejak penjemputan pertama.",
+    "Sungkar Group merancang private tour, open trip, dan transportasi yang sesuai ritme perjalanan Anda—dari pantai Lombok, petualangan Sumbawa, sampai pesona laut Labuan Bajo.",
   primaryAction: {
-    label: "Mulai Perjalanan Anda",
+    label: "Konsultasi Trip",
     href: "/kontak",
     variant: "default" as const,
   },
   secondaryAction: {
-    label: "Jelajahi Paket",
+    label: "Lihat Paket",
     href: "/paket-wisata",
     variant: "secondary" as const,
   },
@@ -71,40 +71,40 @@ export const landingHero = {
       className: "card-1",
       style: "width: 280px; height: 340px;",
       image: Hero1,
-      alt: "Destinasi wisata Lombok",
-      title: "Destinasi Impian",
-      description: "Jelajahi keindahan alam",
+      alt: "Rencana perjalanan wisata yang tersusun dengan jelas",
+      title: "Trip yang Tertata",
+      description: "Detail perjalanan disiapkan sejak awal",
       contentSizeClass: "p-6",
     },
     {
       className: "card-2",
       style: "width: 240px; height: 280px; right: 20px; top: 80px;",
       image: HeroLombok,
-      alt: "Pantai Lombok",
-      title: "Pantai Eksotis",
+      alt: "Pantai tropis di Lombok",
+      title: "Pantai & Pulau",
       contentSizeClass: "p-4",
     },
     {
       className: "card-3",
       style: "width: 220px; height: 260px; left: 40px; top: 120px;",
       image: HeroLombok,
-      alt: "Kepulauan Gili",
-      title: "Kepulauan Gili",
+      alt: "Lanskap alam tropis untuk petualangan wisata",
+      title: "Petualangan Alam",
       contentSizeClass: "p-4",
     },
     {
       className: "card-4",
       style: "width: 200px; height: 240px; right: -10px; top: 200px;",
       image: TourSnorkeling,
-      alt: "Tur Snorkeling",
-      title: "Snorkeling",
+      alt: "Aktivitas snorkeling di laut tropis",
+      title: "Snorkeling & Laut",
       contentSizeClass: "p-3",
     },
     {
       className: "card-5",
       style: "width: 180px; height: 220px; left: -20px; top: 240px;",
-      emoji: "🏖️",
-      title: "Pantai Santai",
+      emoji: "🌅",
+      title: "Sunset Favorit",
       contentSizeClass: "p-3",
     },
   ] satisfies LandingHeroCard[],
@@ -112,54 +112,58 @@ export const landingHero = {
 
 export const landingFeaturedTours = {
   eyebrow: "Paket unggulan",
-  title: "Pilihan paket yang paling sering dipilih",
+  title: "Paket paling populer untuk liburan tanpa ribet",
   description:
-    "Paket wisata dibuat jelas sejak awal agar wisatawan bisa memilih rute yang sesuai tanpa perlu menebak-nebak.",
+    "Mulai dari trip singkat sampai perjalanan beberapa hari, paket kami dirancang agar Anda tinggal memilih, berangkat, dan menikmati momen.",
   heroImage: TourSnorkeling,
   tours: packages
     .filter((tour) => tour.featured)
-    .map((tour): LandingTourCard => ({
-      slug: tour.slug,
-      title: tour.title,
-      description: tour.summary,
-    })),
+    .map(
+      (tour): LandingTourCard => ({
+        slug: tour.slug,
+        title: tour.title,
+        description: tour.summary,
+      }),
+    ),
 };
 
 export const landingDestinations = {
-  eyebrow: "Destinasi utama",
-  title: "Destinasi dengan komposisi visual yang lebih seimbang",
+  eyebrow: "Destinasi favorit",
+  title: "Destinasi yang paling sering masuk itinerary",
   description:
-    "Bagian ini sengaja ditata dengan variasi kartu dan arah teks supaya tidak terasa terlalu berat ke kiri.",
-  destinations: destinations.slice(0, 4).map((destination): LandingDestinationCard => ({
-    slug: destination.slug,
-    title: destination.title,
-    image: destination.image,
-    description: destination.summary,
-  })),
+    "Kami membantu Anda memilih rute terbaik di Lombok dan Sumbawa, sekaligus menyiapkan trip lanjutan ke Labuan Bajo bila Anda ingin perjalanan yang lebih besar.",
+  destinations: destinations.slice(0, 4).map(
+    (destination): LandingDestinationCard => ({
+      slug: destination.slug,
+      title: destination.title,
+      image: destination.image,
+      description: destination.summary,
+    }),
+  ),
 };
 
 export const landingTransport = {
   eyebrow: "Transportasi",
-  title: "Transportasi yang rapi untuk transfer dan perjalanan harian",
+  title: "Transportasi nyaman untuk perjalanan yang tetap fleksibel",
   services: [
     {
       title: "Antar-jemput bandara",
       description:
-        "Cocok untuk kedatangan pagi atau malam dengan koordinasi yang sederhana.",
+        "Penjemputan tepat waktu untuk kedatangan pagi, malam, atau jadwal yang berubah.",
     },
     {
-      title: "Driver harian",
+      title: "Driver harian pribadi",
       description:
-        "Fleksibel untuk tamu yang ingin menyesuaikan urutan destinasi.",
+        "Cocok untuk tamu yang ingin bebas menyesuaikan destinasi dan durasi singgah.",
     },
   ] satisfies LandingTransportCard[],
 };
 
 export const landingTestimonials = {
-  eyebrow: "Ulasan & Testimoni",
-  title: "Apa kata mereka tentang perjalanan bersama kami",
+  eyebrow: "Ulasan tamu",
+  title: "Dipercaya untuk perjalanan yang nyaman dan terorganisir",
   description:
-    "Ulasan ringkas ini diambil dari data ulasan yang sudah dipakai di halaman ulasan agar homepage tidak punya sumber data terpisah.",
+    "Dari keluarga, pasangan, hingga rombongan, ulasan berikut menunjukkan pengalaman perjalanan yang berkesan bersama tim lokal kami.",
   testimonials: reviews.slice(0, 3).map(
     (review): LandingTestimonial => ({
       name: review.author,
@@ -172,16 +176,16 @@ export const landingTestimonials = {
 };
 
 export const landingVideo = {
-  eyebrow: "Video YouTube",
-  title: "Ruang untuk video perjalanan dan cuplikan destinasi",
+  eyebrow: "Cerita perjalanan",
+  title: "Lihat suasana trip sebelum Anda berangkat",
   description:
-    "Tautan video sekarang diarahkan ke kanal resmi yang dipakai di halaman kontak, supaya homepage dan kontak tetap konsisten.",
-  ctaLabel: "Lihat kanal YouTube",
+    "Video singkat membantu Anda membayangkan rute, destinasi, dan suasana layanan yang kami siapkan di setiap perjalanan.",
+  ctaLabel: "Tonton di YouTube",
   ctaHref: businessInfo.socialLinks.youtube ?? "https://www.youtube.com/",
-  panelEyebrow: "Tempat embed video YouTube",
-  panelTitle: "Video sorotan perjalanan Lombok",
+  panelEyebrow: "Preview perjalanan",
+  panelTitle: "Cuplikan wisata Lombok, Sumbawa, dan Labuan Bajo",
   panelDescription:
-    "Ganti blok ini dengan embed video resmi dari channel YouTube Sungkar Group ketika URL embed sudah dipilih.",
+    "Ruang ini ideal untuk menampilkan video resmi Sungkar Group: dari penjemputan, aktivitas di destinasi, sampai momen terbaik selama trip.",
 };
 
 export const landingBackgroundImage = Hero;
