@@ -23,11 +23,6 @@ const regions = [
     count: lombokVehicles.length,
   },
   {
-    id: "sumbawa",
-    label: "Sumbawa",
-    count: sumbawaVehicles.length,
-  },
-  {
     id: "labuan-bajo",
     label: "Labuan Bajo",
     count: labuanBajoVehicles.length,
@@ -76,38 +71,44 @@ const pageContent = {
 
   {regions.length > 0 && <PackageRegionNav regions={regions} />}
 
-  {lombokVehicles.length > 0 && (
-    <SectionContainer background="bg-surface-soft">
-      <VehicleRegionSection
-        id="lombok"
-        title={pageContent.regions.lombok.title}
-        description={pageContent.regions.lombok.description}
-        vehicles={lombokVehicles}
-      />
-    </SectionContainer>
-  )}
+  {
+    lombokVehicles.length > 0 && (
+      <SectionContainer background="bg-surface-soft">
+        <VehicleRegionSection
+          id="lombok"
+          title={pageContent.regions.lombok.title}
+          description={pageContent.regions.lombok.description}
+          vehicles={lombokVehicles}
+        />
+      </SectionContainer>
+    )
+  }
 
-  {sumbawaVehicles.length > 0 && (
-    <SectionContainer background="bg-background">
-      <VehicleRegionSection
-        id="sumbawa"
-        title={pageContent.regions.sumbawa.title}
-        description={pageContent.regions.sumbawa.description}
-        vehicles={sumbawaVehicles}
-      />
-    </SectionContainer>
-  )}
+  {
+    sumbawaVehicles.length > 0 && (
+      <SectionContainer background="bg-background">
+        <VehicleRegionSection
+          id="sumbawa"
+          title={pageContent.regions.sumbawa.title}
+          description={pageContent.regions.sumbawa.description}
+          vehicles={sumbawaVehicles}
+        />
+      </SectionContainer>
+    )
+  }
 
-  {labuanBajoVehicles.length > 0 && (
-    <SectionContainer background="bg-surface-soft">
-      <VehicleRegionSection
-        id="labuan-bajo"
-        title={pageContent.regions.labuanBajo.title}
-        description={pageContent.regions.labuanBajo.description}
-        vehicles={labuanBajoVehicles}
-      />
-    </SectionContainer>
-  )}
+  {
+    labuanBajoVehicles.length > 0 && (
+      <SectionContainer background="bg-surface-soft">
+        <VehicleRegionSection
+          id="labuan-bajo"
+          title={pageContent.regions.labuanBajo.title}
+          description={pageContent.regions.labuanBajo.description}
+          vehicles={labuanBajoVehicles}
+        />
+      </SectionContainer>
+    )
+  }
 
   <FaqSection
     eyebrow="FAQ"

@@ -245,6 +245,7 @@ export const packages: TourPackage[] = [
 
     category: "Open Trip Sumbawa",
     duration: "2 Hari 1 Malam",
+    featured: true,
 
     image: HeroLombok,
 

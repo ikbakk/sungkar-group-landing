@@ -1,6 +1,12 @@
 ---
 import type { Vehicle } from "@/lib/content/sewaModilData";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Image } from "astro:assets";
@@ -12,7 +18,7 @@ interface Props {
 const { vehicle } = Astro.props;
 ---
 
-<Card class="overflow-hidden py-0 card-interactive">
+<Card className="overflow-hidden card-interactive">
   <div class="relative h-64 w-full overflow-hidden">
     <Image
       src={vehicle.image}
@@ -24,27 +30,20 @@ const { vehicle } = Astro.props;
 
   <CardHeader>
     <div class="flex items-start justify-between gap-4">
-      <CardTitle class="text-2xl leading-tight">
+      <CardTitle className="text-2xl leading-tight">
         {vehicle.name}
       </CardTitle>
-      <Badge variant="default" class="rounded-full px-3 py-1 text-sm">
-        {vehicle.seats} Tempat
+      <Badge variant="default" className="rounded-full px-3 py-1 text-sm">
+        {vehicle.seats} Seat
       </Badge>
     </div>
   </CardHeader>
 
-  <CardContent class="space-y-4">
-    <div class="rounded-lg border border-border bg-surface-soft p-3">
-      <div class="text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
-        Tarif Per Hari
-      </div>
-      <div class="mt-1 text-lg font-heading">
-        {vehicle.pricePerDay}
-      </div>
-    </div>
-
+  <CardContent className="space-y-4">
     <div>
-      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+      <div
+        class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700"
+      >
         Spesifikasi
       </div>
       <div class="grid grid-cols-2 gap-2 text-sm">
@@ -60,43 +59,48 @@ const { vehicle } = Astro.props;
     </div>
 
     <div>
-      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+      <div
+        class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700"
+      >
         Fitur Unggulan
       </div>
       <div class="flex flex-wrap gap-2">
-        {vehicle.features.map((feature) => (
-          <Badge variant="outline" class="rounded-full px-3 py-1 text-xs">
-            {feature}
-          </Badge>
-        ))}
+        {
+          vehicle.features.map((feature) => (
+            <Badge variant="outline" className="rounded-full px-3 py-1 text-xs">
+              {feature}
+            </Badge>
+          ))
+        }
       </div>
     </div>
 
     <div>
-      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+      <div
+        class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700"
+      >
         Cocok Untuk
       </div>
       <ul class="space-y-1 text-sm leading-7 text-text-muted">
-        {vehicle.bestFor.map((use) => (
-          <li class="flex gap-2">
-            <span>•</span>
-            <span>{use}</span>
-          </li>
-        ))}
+        {
+          vehicle.bestFor.map((use) => (
+            <li class="flex gap-2">
+              <span>•</span>
+              <span>{use}</span>
+            </li>
+          ))
+        }
       </ul>
     </div>
 
     <p class="border-t border-border pt-4 text-sm leading-7 text-text-muted">
       {vehicle.description}
     </p>
-
-    <div class="flex flex-wrap gap-3 pt-4">
-      <Button href="/kontak" variant="outline" class="flex-1">
-        Info Detail
-      </Button>
-      <Button href="/kontak" class="flex-1">
-        Pesan Sekarang
-      </Button>
-    </div>
   </CardContent>
+
+  <CardFooter>
+    <a href="/kontak">
+      <Button size={"lg"} className="flex-1"> Pesan Sekarang </Button>
+    </a>
+  </CardFooter>
 </Card>
