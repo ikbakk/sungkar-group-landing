@@ -176,16 +176,20 @@ export const landingTestimonials = {
 };
 
 export const landingVideo = {
-  eyebrow: "Cerita perjalanan",
+  eyebrow: "Cerita Perjalanan",
+
   title: "Lihat suasana trip sebelum Anda berangkat",
+
   description:
     "Video singkat membantu Anda membayangkan rute, destinasi, dan suasana layanan yang kami siapkan di setiap perjalanan.",
-  ctaLabel: "Tonton di YouTube",
-  ctaHref: businessInfo.socialLinks.youtube ?? "https://www.youtube.com/",
-  panelEyebrow: "Preview perjalanan",
-  panelTitle: "Cuplikan wisata Lombok, Sumbawa, dan Labuan Bajo",
-  panelDescription:
-    "Ruang ini ideal untuk menampilkan video resmi Sungkar Group: dari penjemputan, aktivitas di destinasi, sampai momen terbaik selama trip.",
-};
+
+  ctaLabel: "Kunjungi Channel YouTube",
+
+  ctaHref:
+    businessInfo.socialLinks.youtube ??
+    "https://www.youtube.com/@sungkargroup1",
+
+  embedUrl: "https://www.youtube.com/embed/HgicK9YpopU?si=m7IlfX-QXJVB0mVC",
+} as const;
 
 export const landingBackgroundImage = Hero;
