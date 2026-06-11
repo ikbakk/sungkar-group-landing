@@ -14,6 +14,7 @@
   "dependencies": {
     "@astroanimate/core": "^0.1.2",
     "@astrojs/react": "^5.0.7",
+    "@astrojs/sitemap": "^3.7.3",
     "@base-ui/react": "^1.5.0",
     "@fontsource-variable/cormorant-garamond": "^5.2.6",
     "@fontsource-variable/inter": "^5.2.8",
@@ -25,6 +26,7 @@
     "@types/react-dom": "^19.2.3",
     "@vercel/speed-insights": "^2.0.0",
     "astro": "^6.4.4",
+    "astro-robots-txt": "^1.0.0",
     "astro-tunnel": "^0.1.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
