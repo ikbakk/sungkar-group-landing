@@ -26,6 +26,8 @@ export interface LandingHeroCard {
   description?: string;
   emoji?: string;
   contentSizeClass: string;
+  width?: number;
+  height?: number;
 }
 
 export interface LandingTourCard {
