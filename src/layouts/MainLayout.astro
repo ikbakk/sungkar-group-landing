@@ -3,21 +3,26 @@ import Header from "@/components/header/Header.astro";
 import Footer from "@/components/site/Footer.astro";
 import SEOMeta from "@/components/seo/SEOMeta.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
+
 import {
   generateOrganizationSchema,
   generateWebsiteSchema,
 } from "@/lib/schemas";
+
 import { getPageOGMetadata } from "@/lib/og-metadata";
-import "../styles/global.css";
+
 import FadeInText from "@astroanimate/core/FadeInText";
 import SpeedInsights from "@vercel/speed-insights/astro";
+
 import type { ImageMetadata } from "astro";
+
+import "../styles/global.css";
 
 interface Props {
   title?: string;
   description?: string;
   canonical?: string;
-  image?: ImageMetadata | string;
+  image?: ImageMetadata;
   imageAlt?: string;
   noIndex?: boolean;
 }
@@ -31,22 +36,33 @@ const {
   noIndex = false,
 } = Astro.props as Props;
 
-// Get OG metadata from page configuration if not provided
 const pathOGMetadata = getPageOGMetadata(Astro.url.pathname);
-const pageTitle = title || pathOGMetadata.title;
-const pageDescription = description || pathOGMetadata.description;
-const pageImage = (image as ImageMetadata) || pathOGMetadata.image;
-const pageImageAlt = imageAlt || pathOGMetadata.imageAlt;
 
-const siteUrl = new URL(Astro.url.origin).toString().replace(/\/$/, "");
-const canonicalUrl = canonical || Astro.url.toString();
+const pageTitle = title ?? pathOGMetadata.title;
+
+const pageDescription = description ?? pathOGMetadata.description;
+
+const pageImage = image ?? pathOGMetadata.image;
+
+const pageImageAlt = imageAlt ?? pathOGMetadata.imageAlt;
+
+/**
+ * Single source of truth.
+ * Use WWW or non-WWW consistently everywhere.
+ */
+const siteUrl = Astro.url.origin
+  ? Astro.url.origin
+  : "https://www.sungkargroup.id";
+
+const canonicalUrl = canonical ?? `${siteUrl}${Astro.url.pathname}`;
+
 const organizationSchema = generateOrganizationSchema(siteUrl);
+
 const websiteSchema = generateWebsiteSchema(siteUrl);
 ---
 
 <html lang="id">
   <head>
-    <!-- SEO Meta Tags with OG Image Support -->
     <SEOMeta
       title={pageTitle}
       description={pageDescription}
@@ -59,20 +75,24 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
+
     <link rel="sitemap" href="/sitemap-index.xml" />
 
-    <!-- Global Structured Data -->
     <StructuredData schema={organizationSchema} />
     <StructuredData schema={websiteSchema} />
   </head>
+
   <body>
     <Header />
+
     <main id="content">
       <FadeInText duration={0.4}>
         <slot />
       </FadeInText>
     </main>
+
     <Footer />
+
     <SpeedInsights />
   </body>
 </html>
