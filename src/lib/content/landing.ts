@@ -31,6 +31,7 @@ export interface LandingHeroCard {
 }
 
 export interface LandingTourCard {
+  duration: string;
   slug: string;
   title: string;
   description: string;
@@ -119,6 +120,7 @@ export const landingFeaturedTours = {
     .filter((tour) => tour.featured)
     .map(
       (tour): LandingTourCard => ({
+        duration: tour.duration,
         region: tour.region,
         collectionSlug: tour.collectionSlug,
         slug: tour.slug,

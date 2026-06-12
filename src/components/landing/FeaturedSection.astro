@@ -1,5 +1,7 @@
 ---
 import { Image } from "astro:assets";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import type { ImageMetadata } from "astro";
 import type { LandingTourCard as FeaturedTour } from "@/lib/content/landing";
 
@@ -45,21 +47,66 @@ const { eyebrow, title, description, featuredTours, image } =
 
         <div class="mt-8 grid auto-rows-max gap-4 sm:grid-cols-2">
           {
-            featuredTours.map((tour, index) => (
+            featuredTours.map((tour) => (
               <a
                 href={`/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`}
-                class:list={[
-                  "section-card",
-                  "p-5 text-left transition-colors hover:border-brand-200 hover:bg-brand-50",
-                  index === 0 ? "bg-surface-soft" : "bg-white",
-                ]}
+                class="group block"
               >
-                <div class="font-heading text-2xl leading-tight text-foreground">
-                  {tour.title}
-                </div>
-                <p class="mt-3 text-sm leading-7 text-text-muted">
-                  {tour.description}
-                </p>
+                <Card
+                  className="
+                    h-full
+                    transition-all
+                    hover:-translate-y-1
+                    hover:border-brand-200
+                    hover:bg-brand-50
+                    hover:shadow-lg
+                  "
+                >
+                  <CardHeader className="gap-3">
+                    <div class="flex flex-wrap gap-2">
+                      {tour.region && (
+                        <Badge variant="outline">{tour.region}</Badge>
+                      )}
+
+                      {tour.duration && (
+                        <Badge variant="secondary">{tour.duration}</Badge>
+                      )}
+                    </div>
+
+                    <CardTitle className="line-clamp-2 text-xl leading-tight">
+                      {tour.title}
+                    </CardTitle>
+                  </CardHeader>
+
+                  <CardContent>
+                    <div class="relative">
+                      <p
+                        class="
+                          line-clamp-4
+                          text-sm
+                          leading-7
+                          text-text-muted
+                        "
+                      >
+                        {tour.description}
+                      </p>
+
+                      <div
+                        class="
+                          pointer-events-none
+                          absolute
+                          bottom-0
+                          left-0
+                          h-8
+                          w-full
+                          bg-gradient-to-t
+                          from-background
+                          to-transparent
+                        "
+                      />
+                    </div>
+                  </CardContent>
+                </Card>
               </a>
             ))
           }
