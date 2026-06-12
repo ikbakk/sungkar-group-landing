@@ -1,4 +1,4 @@
-import { packages } from "./tourPackages";
+import { packages } from "./tourPackages/index";
 
 export type NavCollection = {
   title: string;
@@ -15,6 +15,11 @@ export type NavGroup = {
   href?: string;
 
   collections?: NavCollection[];
+
+  items?: {
+    label: string;
+    href: string;
+  }[];
 };
 
 export type NavItem = {
@@ -96,22 +101,17 @@ export const navigation: NavItem[] = [
 
   {
     label: "Akomodasi",
+    href: "/akomodasi",
     variant: "mega",
 
     groups: [
       {
         title: "Lombok",
 
-        collections: [
+        items: [
           {
-            title: "Hotel",
-
-            items: [
-              {
-                label: "Akomodasi Hotel di Lombok",
-                href: "/akomodasi/lombok",
-              },
-            ],
+            label: "Akomodasi Hotel di Lombok",
+            href: "/akomodasi/lombok",
           },
         ],
       },
@@ -119,16 +119,10 @@ export const navigation: NavItem[] = [
       {
         title: "Labuan Bajo",
 
-        collections: [
+        items: [
           {
-            title: "Hotel",
-
-            items: [
-              {
-                label: "Akomodasi Hotel di Labuan Bajo",
-                href: "/akomodasi/labuan-bajo",
-              },
-            ],
+            label: "Akomodasi Hotel di Labuan Bajo",
+            href: "/akomodasi/labuan-bajo",
           },
         ],
       },
@@ -137,22 +131,17 @@ export const navigation: NavItem[] = [
 
   {
     label: "Sewa Mobil",
+    href: "/sewa-mobil",
     variant: "mega",
 
     groups: [
       {
         title: "Lombok",
 
-        collections: [
+        items: [
           {
-            title: "Armada",
-
-            items: [
-              {
-                label: "Daftar Mobil yang Tersedia",
-                href: "/sewa-mobil/lombok",
-              },
-            ],
+            label: "Daftar Mobil yang Tersedia",
+            href: "/sewa-mobil/lombok",
           },
         ],
       },
@@ -160,16 +149,10 @@ export const navigation: NavItem[] = [
       {
         title: "Labuan Bajo",
 
-        collections: [
+        items: [
           {
-            title: "Armada",
-
-            items: [
-              {
-                label: "Daftar Mobil yang Tersedia",
-                href: "/sewa-mobil/labuan-bajo",
-              },
-            ],
+            label: "Daftar Mobil yang Tersedia",
+            href: "/sewa-mobil/labuan-bajo",
           },
         ],
       },

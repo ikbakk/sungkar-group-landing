@@ -134,45 +134,78 @@ export default function NavigationMobile({ items, isHome }: Props) {
                                       <span>{shortTitle}</span>
 
                                       <Badge className="px-4 py-2 pt-2.5">
-                                        {group.collections?.reduce(
-                                          (acc, collection) =>
-                                            acc + collection.items.length,
-                                          0,
-                                        ) ?? 0}
+                                        {group.collections?.length
+                                          ? group.collections.reduce(
+                                              (acc, collection) =>
+                                                acc + collection.items.length,
+                                              0,
+                                            )
+                                          : (group.items?.length ?? 0)}
                                       </Badge>
                                     </div>
                                   </AccordionTrigger>
 
-                                  <AccordionContent
-                                    className={" bg-background"}
-                                  >
-                                    <div className="space-y-4 pl-4">
-                                      {group.collections?.map((collection) => (
-                                        <div key={collection.title}>
-                                          <div className="mb-2 text-xs font-medium uppercase tracking-wide text-brand-700">
-                                            {collection.title}
-                                          </div>
+                                  <AccordionContent className="bg-background">
+                                    {group.collections?.length ? (
+                                      <div className="space-y-4 pl-4">
+                                        {group.collections.map((collection) => (
+                                          <div key={collection.title}>
+                                            <a
+                                              href={collection.href}
+                                              className="
+                                                mb-2
+                                                block
+                                                text-xs
+                                                font-medium
+                                                uppercase
+                                                tracking-wide
+                                                text-brand-700
+                                              "
+                                            >
+                                              {collection.title}
+                                            </a>
 
-                                          <div className="grid gap-1">
-                                            {collection.items.map((subItem) => (
-                                              <a
-                                                key={subItem.href}
-                                                href={subItem.href}
-                                                className="
-                                                  py-2
-                                                  text-sm
-                                                  text-muted-foreground
-                                                  transition-colors
-                                                  hover:text-foreground
-                                                "
-                                              >
-                                                {subItem.label}
-                                              </a>
-                                            ))}
+                                            <div className="grid gap-1">
+                                              {collection.items.map(
+                                                (subItem) => (
+                                                  <a
+                                                    key={subItem.href}
+                                                    href={subItem.href}
+                                                    className="
+                                                    py-2
+                                                    text-sm
+                                                    text-muted-foreground
+                                                    transition-colors
+                                                    hover:text-foreground
+                                                  "
+                                                  >
+                                                    {subItem.label}
+                                                  </a>
+                                                ),
+                                              )}
+                                            </div>
                                           </div>
-                                        </div>
-                                      ))}
-                                    </div>
+                                        ))}
+                                      </div>
+                                    ) : (
+                                      <div className="grid gap-1 pl-4">
+                                        {group.items?.map((subItem) => (
+                                          <a
+                                            key={subItem.href}
+                                            href={subItem.href}
+                                            className="
+                                              py-2
+                                              text-sm
+                                              text-muted-foreground
+                                              transition-colors
+                                              hover:text-foreground
+                                            "
+                                          >
+                                            {subItem.label}
+                                          </a>
+                                        ))}
+                                      </div>
+                                    )}
                                   </AccordionContent>
                                 </AccordionItem>
                               );

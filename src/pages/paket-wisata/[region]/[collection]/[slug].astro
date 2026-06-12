@@ -5,7 +5,7 @@ import PageHeader from "@/components/site/PageHeader.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schemas";
 
-import { packages } from "@/lib/content/tourPackages";
+import { packages } from "@/lib/content/tourPackages/index";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,7 +15,7 @@ import FaqSection from "@/components/site/Faq.astro";
 
 import { packageFaq } from "@/lib/content/faqs/package";
 
-import type { TourPackage } from "@/lib/content/tourPackages";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
 export function getStaticPaths() {

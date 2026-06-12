@@ -35,58 +35,104 @@ export default function NavigationDesktop({ items }: Props) {
                 </NavigationMenuTrigger>
 
                 <NavigationMenuContent>
-                  <div className="grid gap-4 p-4 lg:grid-cols-3">
+                  <div
+                    className="grid gap-3 p-3"
+                    style={{
+                      gridTemplateColumns: `repeat(${
+                        item.groups?.length ?? 1
+                      }, minmax(220px, 1fr))`,
+                    }}
+                  >
                     {item.groups?.map((group) => (
                       <div
                         key={group.title}
-                        className="rounded-xl border border-border bg-background p-4"
+                        className="rounded-lg border border-border bg-background p-2"
                       >
-                        <div className="mb-4">
-                          <NavigationMenuLink
-                            href={group.href}
-                            className="text-xs font-medium uppercase tracking-[0.2em] text-brand-700"
-                          >
-                            {group.title}
-                          </NavigationMenuLink>
+                        <div className="mb-2">
+                          {group.href ? (
+                            <NavigationMenuLink
+                              href={group.href}
+                              className="text-sm font-semibold text-brand-700 hover:underline"
+                            >
+                              {group.title}
+                            </NavigationMenuLink>
+                          ) : (
+                            <div className="text-sm font-semibold text-brand-700">
+                              {group.title}
+                            </div>
+                          )}
                         </div>
 
-                        <div className="grid gap-4 md:grid-cols-2">
-                          {group.collections?.map((collection) => (
-                            <div key={collection.title}>
-                              <div className="mb-2">
+                        {group.collections ? (
+                          <ul className="space-y-1">
+                            {group.collections.map((collection) => (
+                              <li key={collection.href}>
                                 <NavigationMenuLink
                                   href={collection.href}
-                                  className="text-sm font-semibold"
+                                  className="
+                                    block
+                                    rounded-md
+                                    px-2
+                                    py-2
+                                    text-sm
+                                    text-muted-foreground
+                                    hover:bg-accent
+                                    hover:text-foreground
+                                  "
                                 >
                                   {collection.title}
                                 </NavigationMenuLink>
-                              </div>
-
-                              <ul className="space-y-1">
-                                {collection.items.map((subItem) => (
-                                  <li key={subItem.href}>
-                                    <NavigationMenuLink
-                                      href={subItem.href}
-                                      className="block rounded-md px-2 py-1 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
-                                    >
-                                      {subItem.label}
-                                    </NavigationMenuLink>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          ))}
-                        </div>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <ul className="space-y-1">
+                            {group.items?.map((subItem: any) => (
+                              <li key={subItem.href}>
+                                <NavigationMenuLink
+                                  href={subItem.href}
+                                  className="
+                                    block
+                                    rounded-md
+                                    px-2
+                                    py-2
+                                    text-sm
+                                    text-muted-foreground
+                                    hover:bg-accent
+                                    hover:text-foreground
+                                  "
+                                >
+                                  {subItem.label}
+                                </NavigationMenuLink>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
                       </div>
                     ))}
                   </div>
-                  <NavigationMenuLink
-                    className={
-                      "w-fit px-4 py-2 bg-brand-700 text-background hover:bg-brand-500 mb-2 text-sm cursor-pointer self-center mx-auto"
-                    }
-                  >
-                    Lihat Semua {item.label} yang tersedia
-                  </NavigationMenuLink>
+
+                  {item.href && (
+                    <div className="flex justify-center pb-3">
+                      <NavigationMenuLink
+                        href={item.href}
+                        className="
+                          inline-flex
+                          items-center
+                          rounded-md
+                          bg-brand-700
+                          px-4
+                          py-2
+                          text-sm
+                          text-background
+                          transition-colors
+                          hover:bg-brand-500
+                        "
+                      >
+                        Lihat Semua {item.label}
+                      </NavigationMenuLink>
+                    </div>
+                  )}
                 </NavigationMenuContent>
               </>
             )}
