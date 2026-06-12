@@ -35,35 +35,48 @@ export default function NavigationDesktop({ items }: Props) {
                 </NavigationMenuTrigger>
 
                 <NavigationMenuContent>
-                  <div
-                    className="grid gap-4 p-4"
-                    style={{
-                      gridTemplateColumns: `repeat(${
-                        item.groups?.length ?? 1
-                      }, minmax(240px, 1fr))`,
-                    }}
-                  >
+                  <div className="grid gap-4 p-4 lg:grid-cols-3">
                     {item.groups?.map((group) => (
                       <div
                         key={group.title}
                         className="rounded-xl border border-border bg-background p-4"
                       >
-                        <div className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
-                          {group.title}
+                        <div className="mb-4">
+                          <NavigationMenuLink
+                            href={group.href}
+                            className="text-xs font-medium uppercase tracking-[0.2em] text-brand-700"
+                          >
+                            {group.title}
+                          </NavigationMenuLink>
                         </div>
 
-                        <ul className="space-y-1">
-                          {group.items.map((subItem) => (
-                            <li key={subItem.href}>
-                              <NavigationMenuLink
-                                href={subItem.href}
-                                className="block rounded-md px-3 py-2 text-sm hover:bg-accent"
-                              >
-                                {subItem.label}
-                              </NavigationMenuLink>
-                            </li>
+                        <div className="grid gap-4 md:grid-cols-2">
+                          {group.collections?.map((collection) => (
+                            <div key={collection.title}>
+                              <div className="mb-2">
+                                <NavigationMenuLink
+                                  href={collection.href}
+                                  className="text-sm font-semibold"
+                                >
+                                  {collection.title}
+                                </NavigationMenuLink>
+                              </div>
+
+                              <ul className="space-y-1">
+                                {collection.items.map((subItem) => (
+                                  <li key={subItem.href}>
+                                    <NavigationMenuLink
+                                      href={subItem.href}
+                                      className="block rounded-md px-2 py-1 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+                                    >
+                                      {subItem.label}
+                                    </NavigationMenuLink>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
                           ))}
-                        </ul>
+                        </div>
                       </div>
                     ))}
                   </div>

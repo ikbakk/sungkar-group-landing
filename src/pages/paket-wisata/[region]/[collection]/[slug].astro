@@ -15,13 +15,17 @@ import FaqSection from "@/components/site/Faq.astro";
 
 import { packageFaq } from "@/lib/content/faqs/package";
 
-import "../../styles/global.css";
 import type { TourPackage } from "@/lib/content/tourPackages";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
 export function getStaticPaths() {
   return packages.map((tour: TourPackage) => ({
-    params: { slug: tour.slug },
+    params: {
+      region: tour.region,
+      collection: tour.collectionSlug,
+      slug: tour.slug,
+    },
+
     props: { tour },
   }));
 }
@@ -31,23 +35,41 @@ const { tour } = Astro.props;
 const siteUrl = new URL(Astro.url.origin).toString().replace(/\/$/, "");
 
 // Generate schemas
+const packageUrl = `${siteUrl}/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
+
 const productSchema = generateProductSchema(
   tour.title,
   tour.summary,
   "Hubungi untuk harga",
   tour.image.src,
-  siteUrl,
-  tour.slug,
+  packageUrl,
   tour.duration,
 );
 
 const breadcrumbItems = [
   { name: "Beranda", url: "/" },
   { name: "Paket Wisata", url: "/paket-wisata" },
-  { name: tour.title, url: `/paket-wisata/${tour.slug}` },
+  {
+    name: tour.region,
+    url: `/paket-wisata/${tour.region}`,
+  },
+  {
+    name: tour.collectionTitle,
+    url: `/paket-wisata/${tour.region}/${tour.collectionSlug}`,
+  },
+  {
+    name: tour.title,
+    url: `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`,
+  },
 ];
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, siteUrl);
+
+const regionTitleMap = {
+  lombok: "Lombok",
+  sumbawa: "Sumbawa",
+  "labuan-bajo": "Labuan Bajo",
+} as const;
 
 const itineraryByDay = Object.entries(
   tour.itinerary.reduce((acc: Record<string, string[]>, item: string) => {
@@ -69,7 +91,7 @@ const itineraryByDay = Object.entries(
 <MainLayout
   title={tour.title}
   description={tour.summary}
-  canonical={`/paket-wisata/${tour.slug}`}
+  canonical={`/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`}
   image={tour.image}
 >
   <StructuredData schema={productSchema} />
@@ -80,9 +102,25 @@ const itineraryByDay = Object.entries(
     title={tour.title}
     description={tour.summary}
     breadcrumbs={[
-      { label: "Beranda", href: "/" },
-      { label: "Paket Wisata", href: "/paket-wisata" },
-      { label: tour.title },
+      {
+        label: "Beranda",
+        href: "/",
+      },
+      {
+        label: "Paket Wisata",
+        href: "/paket-wisata",
+      },
+      {
+        label: regionTitleMap[tour.region],
+        href: `/paket-wisata/${tour.region}`,
+      },
+      {
+        label: tour.collectionTitle,
+        href: `/paket-wisata/${tour.region}/${tour.collectionSlug}`,
+      },
+      {
+        label: tour.title,
+      },
     ]}
     image={tour.image}
     imageAlt={tour.title}
@@ -92,7 +130,7 @@ const itineraryByDay = Object.entries(
     <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
       <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-stretch">
         <div
-          class="relative min-h-[420px] overflow-hidden rounded-lg border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)] lg:min-h-[720px]"
+          class="relative min-h-105 overflow-hidden rounded-lg border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)] lg:min-h-180"
         >
           <button
             type="button"

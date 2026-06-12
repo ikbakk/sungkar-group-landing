@@ -1,37 +1,63 @@
 import { packages } from "./tourPackages";
-import { accommodations } from "./akomodasiData";
-import { vehicles } from "./sewaModilData";
+
+export type NavCollection = {
+  title: string;
+  href?: string;
+
+  items: {
+    label: string;
+    href: string;
+  }[];
+};
+
+export type NavGroup = {
+  title: string;
+  href?: string;
+
+  collections?: NavCollection[];
+};
 
 export type NavItem = {
   label: string;
   href?: string;
+
   variant: "link" | "mega";
 
-  groups?: {
-    href?: string;
-    title: string;
-    items: {
-      label: string;
-      href: string;
-    }[];
-  }[];
+  groups?: NavGroup[];
 };
 
-const createPackageLinks = (region: "lombok" | "sumbawa" | "labuan-bajo") =>
-  packages
-    .filter((pkg) => pkg.region === region)
-    .map((pkg) => ({
-      label: pkg.title,
-      href: `/paket-wisata/${pkg.slug}`,
-    }));
+const createPackageCollections = (
+  region: "lombok" | "sumbawa" | "labuan-bajo",
+): NavCollection[] => {
+  const regionPackages = packages.filter((pkg) => pkg.region === region);
 
-const createVehicleLinks = (region: "lombok" | "sumbawa" | "labuan-bajo") =>
-  vehicles
-    .filter((vehicle) => vehicle.region === region)
-    .map((vehicle) => ({
-      label: vehicle.name,
-      href: `/sewa-mobil/${region}`,
-    }));
+  const grouped = Object.values(
+    regionPackages.reduce(
+      (acc, pkg) => {
+        if (!acc[pkg.collectionSlug]) {
+          acc[pkg.collectionSlug] = {
+            title: pkg.collectionTitle,
+
+            href: `/paket-wisata/${region}/${pkg.collectionSlug}`,
+
+            items: [],
+          };
+        }
+
+        acc[pkg.collectionSlug].items.push({
+          label: pkg.title,
+
+          href: `/paket-wisata/${region}/${pkg.collectionSlug}/${pkg.slug}`,
+        });
+
+        return acc;
+      },
+      {} as Record<string, NavCollection>,
+    ),
+  );
+
+  return grouped;
+};
 
 export const navigation: NavItem[] = [
   {
@@ -46,19 +72,24 @@ export const navigation: NavItem[] = [
 
     groups: [
       {
-        href: "/paket-wisata",
-        title: "Paket Wisata Lombok",
-        items: createPackageLinks("lombok"),
+        title: "Lombok",
+        href: "/paket-wisata/lombok",
+
+        collections: createPackageCollections("lombok"),
       },
 
       {
-        title: "Paket Wisata Sumbawa",
-        items: createPackageLinks("sumbawa"),
+        title: "Sumbawa",
+        href: "/paket-wisata/sumbawa",
+
+        collections: createPackageCollections("sumbawa"),
       },
 
       {
-        title: "Paket Wisata Labuan Bajo",
-        items: createPackageLinks("labuan-bajo"),
+        title: "Labuan Bajo",
+        href: "/paket-wisata/labuan-bajo",
+
+        collections: createPackageCollections("labuan-bajo"),
       },
     ],
   },
@@ -70,20 +101,34 @@ export const navigation: NavItem[] = [
     groups: [
       {
         title: "Lombok",
-        items: [
+
+        collections: [
           {
-            label: "Akomodasi Hotel di Lombok",
-            href: "/akomodasi/lombok",
+            title: "Hotel",
+
+            items: [
+              {
+                label: "Akomodasi Hotel di Lombok",
+                href: "/akomodasi/lombok",
+              },
+            ],
           },
         ],
       },
 
       {
         title: "Labuan Bajo",
-        items: [
+
+        collections: [
           {
-            label: "Akomodasi Hotel di Labuan Bajo",
-            href: "/akomodasi/labuan-bajo",
+            title: "Hotel",
+
+            items: [
+              {
+                label: "Akomodasi Hotel di Labuan Bajo",
+                href: "/akomodasi/labuan-bajo",
+              },
+            ],
           },
         ],
       },
@@ -97,20 +142,34 @@ export const navigation: NavItem[] = [
     groups: [
       {
         title: "Lombok",
-        items: [
+
+        collections: [
           {
-            label: "Daftar Mobil yang Tersedia",
-            href: "/sewa-mobil/lombok",
+            title: "Armada",
+
+            items: [
+              {
+                label: "Daftar Mobil yang Tersedia",
+                href: "/sewa-mobil/lombok",
+              },
+            ],
           },
         ],
       },
 
       {
         title: "Labuan Bajo",
-        items: [
+
+        collections: [
           {
-            label: "Daftar Mobil yang Tersedia",
-            href: "/sewa-mobil/labuan-bajo",
+            title: "Armada",
+
+            items: [
+              {
+                label: "Daftar Mobil yang Tersedia",
+                href: "/sewa-mobil/labuan-bajo",
+              },
+            ],
           },
         ],
       },

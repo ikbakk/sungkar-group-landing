@@ -4,8 +4,12 @@ import WhaleShark from "@/assets/images/whaleshark.webp";
 export type TourPackage = {
   slug: string;
   title: string;
+
   region: "lombok" | "sumbawa" | "labuan-bajo";
   featured?: boolean;
+
+  collectionSlug: string;
+  collectionTitle: string;
 
   category: string;
   duration: string;
@@ -21,6 +25,9 @@ export type TourPackage = {
   excludes: string[];
 };
 
+export const getPackageUrl = (pkg: TourPackage) =>
+  `/paket-wisata/${pkg.region}/${pkg.collectionSlug}/${pkg.slug}`;
+
 export const packages: TourPackage[] = [
   // =========================
   // LOMBOK
@@ -34,6 +41,9 @@ export const packages: TourPackage[] = [
 
     category: "Paket Wisata Lombok",
     duration: "1 Hari",
+
+    collectionSlug: "tour-harian",
+    collectionTitle: "Tour Harian",
 
     image: HeroLombok,
 
@@ -66,6 +76,62 @@ export const packages: TourPackage[] = [
   },
 
   {
+    slug: "tour-sendang-gile-tiu-kelep",
+    title: "Tour Air Terjun Sendang Gile & Tiu Kelep",
+    region: "lombok",
+    featured: false,
+
+    category: "Paket Wisata Lombok",
+    duration: "1 Hari",
+
+    collectionSlug: "tour-harian",
+    collectionTitle: "Tour Harian",
+
+    image: HeroLombok,
+
+    summary:
+      "Paket wisata sehari menuju kawasan wisata Senaru untuk menikmati keindahan Air Terjun Sendang Gile dan Tiu Kelep, mengunjungi Masjid Bayan Beleq, Desa Senaru, serta berburu oleh-oleh khas Lombok.",
+
+    highlights: [
+      "Air Terjun Sendang Gile",
+      "Air Terjun Tiu Kelep",
+      "Desa Senaru",
+      "Masjid Bayan Beleq",
+      "Hutan Wisata Baun Pusuk",
+      "Souvenir Khas Lombok",
+    ],
+
+    itinerary: [
+      "Hari 1 - Sarapan di hotel dan penjemputan peserta tour.",
+      "Hari 1 - Perjalanan menuju Hutan Wisata Baun Pusuk untuk melihat dan memberi makan kera liar yang ramah.",
+      "Hari 1 - Mengunjungi Masjid Bayan Beleq, masjid tertua dan bersejarah di Lombok.",
+      "Hari 1 - Trekking menuju Air Terjun Sendang Gile dan Air Terjun Tiu Kelep di kawasan kaki Gunung Rinjani.",
+      "Hari 1 - Menikmati keindahan alam dan bermain air di kawasan air terjun.",
+      "Hari 1 - Makan siang di restoran lokal sekitar Senaru.",
+      "Hari 1 - Mengunjungi Desa Senaru dan melihat kehidupan masyarakat Suku Sasak serta rumah adat yang masih lestari.",
+      "Hari 1 - Berbelanja oleh-oleh khas Lombok seperti mutiara, madu Lombok, telur asin, dan kerajinan lokal lainnya.",
+      "Hari 1 - Menikmati makan malam khas Lombok.",
+      "Hari 1 - Kembali ke hotel dan acara selesai.",
+    ],
+
+    includes: [
+      "Transportasi wisata",
+      "Driver merangkap guide",
+      "Makan siang",
+      "Makan malam",
+      "Air mineral",
+      "BBM dan parkir",
+    ],
+
+    excludes: [
+      "Tiket masuk objek wisata",
+      "Pengeluaran pribadi",
+      "Tip guide atau driver",
+      "Keperluan pribadi lainnya",
+    ],
+  },
+
+  {
     slug: "paket-2-hari-1-malam",
     title: "Paket 2 Hari 1 Malam",
     region: "lombok",
@@ -73,6 +139,9 @@ export const packages: TourPackage[] = [
 
     category: "Paket Wisata Lombok",
     duration: "2 Hari 1 Malam",
+
+    collectionSlug: "2-hari-1-malam",
+    collectionTitle: "2 Hari 1 Malam",
 
     image: HeroLombok,
 
@@ -107,6 +176,9 @@ export const packages: TourPackage[] = [
     category: "Paket Wisata Lombok",
     duration: "3 Hari 2 Malam",
 
+    collectionSlug: "3-hari-2-malam",
+    collectionTitle: "3 Hari 2 Malam",
+
     image: HeroLombok,
 
     summary:
@@ -135,6 +207,9 @@ export const packages: TourPackage[] = [
     slug: "paket-4-hari-3-malam",
     title: "Paket 4 Hari 3 Malam",
     region: "lombok",
+
+    collectionSlug: "4-hari-3-malam",
+    collectionTitle: "4 Hari 3 Malam",
 
     category: "Paket Wisata Lombok",
     duration: "4 Hari 3 Malam",
@@ -167,6 +242,9 @@ export const packages: TourPackage[] = [
     slug: "paket-5-hari-4-malam",
     title: "Paket 5 Hari 4 Malam",
     region: "lombok",
+
+    collectionSlug: "5-hari-4-malam",
+    collectionTitle: "5 Hari 4 Malam",
 
     category: "Paket Wisata Lombok",
     duration: "5 Hari 4 Malam",
@@ -207,6 +285,9 @@ export const packages: TourPackage[] = [
     title: "Paket Tour 3 Gili Lombok",
     region: "lombok",
 
+    collectionSlug: "tour-harian",
+    collectionTitle: "Tour Harian",
+
     category: "Paket Wisata Lombok",
     duration: "1 Hari",
 
@@ -243,6 +324,9 @@ export const packages: TourPackage[] = [
     slug: "open-trip-whale-shark-sumbawa",
     title: "Open Trip Whale Shark Sumbawa",
     region: "sumbawa",
+
+    collectionSlug: "open-trip",
+    collectionTitle: "Open Trip",
 
     category: "Open Trip Sumbawa",
     duration: "2 Hari 1 Malam",
@@ -286,6 +370,9 @@ export const packages: TourPackage[] = [
     title: "Paket 1 Hari Full Labuan Bajo",
     region: "labuan-bajo",
 
+    collectionSlug: "tour-harian",
+    collectionTitle: "Tour Harian",
+
     category: "Paket Wisata Labuan Bajo",
     duration: "1 Hari",
 
@@ -322,6 +409,9 @@ export const packages: TourPackage[] = [
     slug: "overnight-komodo-adventure",
     title: "Overnight Komodo Adventure",
     region: "labuan-bajo",
+
+    collectionSlug: "2-hari-1-malam",
+    collectionTitle: "2 Hari 1 Malam",
 
     category: "Paket Wisata Labuan Bajo",
     duration: "2 Hari 1 Malam",
@@ -360,6 +450,9 @@ export const packages: TourPackage[] = [
     slug: "sailing-komodo-3d2n",
     title: "Sailing Komodo 3 Hari 2 Malam",
     region: "labuan-bajo",
+
+    collectionSlug: "3-hari-2-malam",
+    collectionTitle: "3 Hari 2 Malam",
 
     category: "Paket Wisata Labuan Bajo",
     duration: "3 Hari 2 Malam",

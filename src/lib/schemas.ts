@@ -79,7 +79,10 @@ export function generateLocalBusinessSchema(siteUrl: string) {
 }
 
 // Breadcrumb List Schema
-export function generateBreadcrumbSchema(items: BreadcrumbItem[], siteUrl: string) {
+export function generateBreadcrumbSchema(
+  items: BreadcrumbItem[],
+  siteUrl: string,
+) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -115,7 +118,7 @@ export function generateTouristAttractionSchema(
   image: string,
   siteUrl: string,
   slug: string,
-  region?: string
+  region?: string,
 ) {
   return {
     "@context": "https://schema.org",
@@ -143,29 +146,33 @@ export function generateProductSchema(
   description: string,
   price: string,
   image: string,
-  siteUrl: string,
-  slug: string,
-  duration?: string
+  url: string,
+  duration?: string,
 ) {
   return {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: name,
-    description: description,
-    image: image,
-    url: `${siteUrl}/paket-wisata/${slug}`,
+
+    name,
+    description,
+    image,
+
+    url,
+
     offers: {
       "@type": "Offer",
-      price: price,
+      price,
       priceCurrency: "IDR",
       availability: "https://schema.org/InStock",
     },
+
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.8",
       reviewCount: "156",
     },
-    ...(duration && { duration: duration }),
+
+    ...(duration && { duration }),
   };
 }
 
@@ -173,7 +180,7 @@ export function generateProductSchema(
 export function generateHowToSchema(
   title: string,
   description: string,
-  steps: Array<{ name: string; description: string; image?: string }>
+  steps: Array<{ name: string; description: string; image?: string }>,
 ) {
   return {
     "@context": "https://schema.org",
@@ -198,7 +205,7 @@ export function generateArticleSchema(
   siteUrl: string,
   slug: string,
   datePublished: string,
-  dateModified?: string
+  dateModified?: string,
 ) {
   return {
     "@context": "https://schema.org",
@@ -264,7 +271,7 @@ export function generateContactPageSchema(
       longitude: number;
     };
     socialLinks?: Record<string, string>;
-  }
+  },
 ) {
   return {
     "@context": "https://schema.org",

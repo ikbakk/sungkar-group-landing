@@ -76,6 +76,19 @@ const region = regionMap[tour.region];
       >
         {tour.duration}
       </Badge>
+
+      <Badge
+        variant="secondary"
+        className="
+          rounded-full
+          px-3
+          py-1
+          text-xs
+          font-medium
+        "
+      >
+        {tour.collectionTitle}
+      </Badge>
     </div>
 
     <div>
@@ -127,7 +140,9 @@ const region = regionMap[tour.region];
     </ul>
 
     <div class="mt-auto pt-2">
-      <a href={`/paket-wisata/${tour.slug}`}>
+      <a
+        href={`/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`}
+      >
         <Button
           className="font-sans
           group/button

@@ -26,7 +26,8 @@ type Props = {
 export default function NavigationMobile({ items, isHome }: Props) {
   const totalPackages = items
     .flatMap((item) => item.groups ?? [])
-    .flatMap((group) => group.items).length;
+    .flatMap((group) => group.collections ?? [])
+    .flatMap((collection) => collection.items).length;
 
   return (
     <div className="lg:hidden">
@@ -133,7 +134,11 @@ export default function NavigationMobile({ items, isHome }: Props) {
                                       <span>{shortTitle}</span>
 
                                       <Badge className="px-4 py-2 pt-2.5">
-                                        {group.items.length}
+                                        {group.collections?.reduce(
+                                          (acc, collection) =>
+                                            acc + collection.items.length,
+                                          0,
+                                        ) ?? 0}
                                       </Badge>
                                     </div>
                                   </AccordionTrigger>
@@ -141,21 +146,31 @@ export default function NavigationMobile({ items, isHome }: Props) {
                                   <AccordionContent
                                     className={" bg-background"}
                                   >
-                                    <div className="grid gap-1 pl-4">
-                                      {group.items.map((subItem) => (
-                                        <a
-                                          key={subItem.href}
-                                          href={subItem.href}
-                                          className="
-                                            py-2
-                                            text-sm
-                                            text-muted-foreground
-                                            transition-colors
-                                            hover:text-foreground
-                                          "
-                                        >
-                                          {subItem.label}
-                                        </a>
+                                    <div className="space-y-4 pl-4">
+                                      {group.collections?.map((collection) => (
+                                        <div key={collection.title}>
+                                          <div className="mb-2 text-xs font-medium uppercase tracking-wide text-brand-700">
+                                            {collection.title}
+                                          </div>
+
+                                          <div className="grid gap-1">
+                                            {collection.items.map((subItem) => (
+                                              <a
+                                                key={subItem.href}
+                                                href={subItem.href}
+                                                className="
+                                                  py-2
+                                                  text-sm
+                                                  text-muted-foreground
+                                                  transition-colors
+                                                  hover:text-foreground
+                                                "
+                                              >
+                                                {subItem.label}
+                                              </a>
+                                            ))}
+                                          </div>
+                                        </div>
                                       ))}
                                     </div>
                                   </AccordionContent>

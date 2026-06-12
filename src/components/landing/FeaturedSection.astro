@@ -1,12 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
-
-interface FeaturedTour {
-  slug: string;
-  title: string;
-  description: string;
-}
+import type { LandingTourCard as FeaturedTour } from "@/lib/content/landing";
 
 interface Props {
   eyebrow: string;
@@ -52,7 +47,7 @@ const { eyebrow, title, description, featuredTours, image } =
           {
             featuredTours.map((tour, index) => (
               <a
-                href={`/paket-wisata/${tour.slug}`}
+                href={`/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`}
                 class:list={[
                   "section-card",
                   "p-5 text-left transition-colors hover:border-brand-200 hover:bg-brand-50",
