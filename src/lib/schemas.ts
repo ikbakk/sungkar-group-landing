@@ -19,6 +19,7 @@ export interface FAQItem {
 }
 
 // Organization Schema
+// NOTE: Image URLs (logo) should be absolute. If using a CDN, replace siteUrl with CDN_ORIGIN for image fields.
 export function generateOrganizationSchema(siteUrl: string) {
   return {
     "@context": "https://schema.org",
@@ -51,6 +52,7 @@ export function generateOrganizationSchema(siteUrl: string) {
 }
 
 // LocalBusiness Schema
+// NOTE: Image URLs (logo) should be absolute. If using a CDN, replace siteUrl with CDN_ORIGIN for image fields.
 export function generateLocalBusinessSchema(siteUrl: string) {
   return {
     "@context": "https://schema.org",
@@ -112,6 +114,8 @@ export function generateFAQPageSchema(faqs: FAQItem[]) {
 }
 
 // Tourist Attraction Schema
+// NOTE: Image URL should be absolute. Callers must pass absolute URL (e.g., new URL(image.src, SITE_URL).toString())
+// If using a CDN, replace siteUrl with CDN_ORIGIN for image fields.
 export function generateTouristAttractionSchema(
   title: string,
   description: string,
@@ -141,6 +145,8 @@ export function generateTouristAttractionSchema(
 }
 
 // Product/Tour Package Schema
+// NOTE: Image URL should be absolute. Callers must pass absolute URL (e.g., new URL(image.src, SITE_URL).toString())
+// If using a CDN, replace siteUrl with CDN_ORIGIN for image fields.
 export function generateProductSchema(
   name: string,
   description: string,
@@ -198,6 +204,7 @@ export function generateHowToSchema(
 }
 
 // Article Schema for Blog Posts
+// NOTE: Image URLs (logo, article image) should be absolute. If using a CDN, replace siteUrl with CDN_ORIGIN for image fields.
 export function generateArticleSchema(
   title: string,
   description: string,

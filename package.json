@@ -28,7 +28,6 @@
     "astro": "^6.4.4",
     "astro-robots-txt": "^1.0.0",
     "astro-tunnel": "^0.1.9",
-    "biome": "^0.3.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "react": "^19.2.7",
@@ -41,6 +40,8 @@
     "vaul": "^1.1.2"
   },
   "devDependencies": {
-    "playwright": "^1.60.0"
+    "playwright": "^1.60.0",
+    "prettier": "^3.8.4",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }
