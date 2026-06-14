@@ -3,7 +3,8 @@ import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
-import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schemas";
+import { generateProductSchema, generateBreadcrumbSchema, generateFAQPageSchema } from "@/lib/schemas";
+import { SITE_URL } from "@/lib/site-config";
 
 import { packages } from "@/lib/content/tourPackages/index";
 
@@ -32,19 +33,20 @@ export function getStaticPaths() {
 
 const { tour } = Astro.props;
 
-const siteUrl = new URL(Astro.url.origin).toString().replace(/\/$/, "");
-
 // Generate schemas
-const packageUrl = `${siteUrl}/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
+const packageUrl = `${SITE_URL}/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
+const absoluteImageUrl = new URL(tour.image.src, SITE_URL).toString();
 
 const productSchema = generateProductSchema(
   tour.title,
   tour.summary,
   "Hubungi untuk harga",
-  tour.image.src,
+  absoluteImageUrl,
   packageUrl,
   tour.duration,
 );
+
+const faqSchema = generateFAQPageSchema(packageFaq);
 
 const breadcrumbItems = [
   { name: "Beranda", url: "/" },
@@ -63,7 +65,7 @@ const breadcrumbItems = [
   },
 ];
 
-const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, siteUrl);
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
 
 const regionTitleMap = {
   lombok: "Lombok",
@@ -96,6 +98,7 @@ const itineraryByDay = Object.entries(
 >
   <StructuredData schema={productSchema} />
   <StructuredData schema={breadcrumbSchema} />
+  <StructuredData schema={faqSchema} />
 
   <PageHeader
     eyebrow="Detail Paket"
@@ -143,6 +146,7 @@ const itineraryByDay = Object.entries(
               alt={tour.title}
               class="h-full w-full object-cover transition-transform duration-300 hover:scale-[1.02]"
               loading="eager"
+              fetchpriority="high"
             />
           </button>
         </div>

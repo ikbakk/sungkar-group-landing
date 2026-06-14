@@ -2,6 +2,13 @@
 import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import {
+  generateTouristAttractionSchema,
+  generateBreadcrumbSchema,
+  generateFAQPageSchema,
+} from "@/lib/schemas";
+import { SITE_URL } from "@/lib/site-config";
 import { destinations } from "@/lib/content/destinationsData";
 import { packages } from "@/lib/content/tourPackages";
 import { destinationsPageContent } from "@/lib/content/destinationsPage";
@@ -30,6 +37,28 @@ const { destination } = Astro.props;
 const relatedPackages = packages.filter((tour) =>
   destination.packages.includes(tour.slug),
 );
+
+// Generate structured data schemas
+const absoluteImageUrl = new URL(destination.image.src, SITE_URL).toString();
+
+const touristAttractionSchema = generateTouristAttractionSchema(
+  destination.title,
+  destination.summary,
+  absoluteImageUrl,
+  SITE_URL,
+  destination.slug,
+  destination.region,
+);
+
+const breadcrumbItems = [
+  { name: "Beranda", url: "/" },
+  { name: "Destinasi", url: "/destinasi" },
+  { name: destination.title, url: `/destinasi/${destination.slug}` },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
+
+const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
 ---
 
 <MainLayout
@@ -38,6 +67,9 @@ const relatedPackages = packages.filter((tour) =>
   canonical={`/destinasi/${destination.slug}`}
   image={destination.image}
 >
+  <StructuredData schema={touristAttractionSchema} />
+  <StructuredData schema={breadcrumbSchema} />
+  <StructuredData schema={faqSchema} />
   <PageHeader
     eyebrow={destinationsPageContent.detail.headline}
     title={destination.title}
@@ -62,6 +94,7 @@ const relatedPackages = packages.filter((tour) =>
             alt={destination.title}
             class="h-full w-full object-cover"
             loading="eager"
+            fetchpriority="high"
           />
         </div>
 
