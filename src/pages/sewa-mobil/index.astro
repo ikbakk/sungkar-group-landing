@@ -5,13 +5,15 @@ import FaqSection from "@/components/site/Faq.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 
-import PackageRegionNav from "@/components/packages/PackageRegionNav.astro";
+import StickyNav from "@/components/ui/StickyNav.astro";
+import RegionObserver from "@/components/ui/RegionObserver.astro";
 import VehicleRegionSection from "@/components/vehicles/VehicleRegionSection.astro";
 import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { vehicles } from "@/lib/content/sewaModilData";
+import { sewaPageContent } from "@/lib/content/sewaPage";
 import { packageFaq } from "@/lib/content/faqs/package";
 
 const faqSchema = generateFAQPageSchema(packageFaq);
@@ -32,57 +34,31 @@ const regions = [
     count: labuanBajoVehicles.length,
   },
 ].filter((region) => region.count > 0);
-
-const pageContent = {
-  hero: {
-    eyebrow: "Sewa Mobil",
-    title: "Layanan sewa kendaraan terpercaya untuk perjalanan Anda",
-    description:
-      "Dari kendaraan compact hingga minibus, kami menyediakan berbagai pilihan dengan harga kompetitif dan driver profesional di setiap destinasi.",
-  },
-  regions: {
-    lombok: {
-      title: "Kendaraan Lombok",
-      description:
-        "Armada kendaraan di Lombok tersedia untuk perjalanan kota, tour pantai, dan petualangan off-road dengan harga kompetitif.",
-    },
-    sumbawa: {
-      title: "Kendaraan Sumbawa",
-      description:
-        "Kendaraan khusus untuk petualangan Sumbawa dengan akses mudah ke whale shark experience dan destinasi laut yang eksotis.",
-    },
-    labuanBajo: {
-      title: "Kendaraan Labuan Bajo",
-      description:
-        "Rental kendaraan di Labuan Bajo dirancang untuk perjalanan menuju Komodo National Park dan pulau-pulau sekitarnya.",
-    },
-  },
-} as const;
 ---
 
 <MainLayout
   title="Sewa Mobil"
-  description={pageContent.hero.description}
+  description={sewaPageContent.hero.description}
   canonical="/sewa-mobil"
   image={vehicles[0].image}
 >
   <StructuredData schema={faqSchema} />
   <PageHeader
-    eyebrow={pageContent.hero.eyebrow}
-    title={pageContent.hero.title}
-    description={pageContent.hero.description}
+    eyebrow={sewaPageContent.hero.eyebrow}
+    title={sewaPageContent.hero.title}
+    description={sewaPageContent.hero.description}
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Sewa Mobil" }]}
   />
 
-  {regions.length > 0 && <PackageRegionNav regions={regions} />}
+  {regions.length > 0 && <StickyNav items={regions} />}
 
   {
     lombokVehicles.length > 0 && (
       <SectionContainer background="bg-surface-soft">
         <VehicleRegionSection
           id="lombok"
-          title={pageContent.regions.lombok.title}
-          description={pageContent.regions.lombok.description}
+          title={sewaPageContent.regions.lombok.title}
+          description={sewaPageContent.regions.lombok.description}
           vehicles={lombokVehicles}
         />
       </SectionContainer>
@@ -94,8 +70,8 @@ const pageContent = {
       <SectionContainer background="bg-background">
         <VehicleRegionSection
           id="sumbawa"
-          title={pageContent.regions.sumbawa.title}
-          description={pageContent.regions.sumbawa.description}
+          title={sewaPageContent.regions.sumbawa.title}
+          description={sewaPageContent.regions.sumbawa.description}
           vehicles={sumbawaVehicles}
         />
       </SectionContainer>
@@ -107,8 +83,8 @@ const pageContent = {
       <SectionContainer background="bg-surface-soft">
         <VehicleRegionSection
           id="labuan-bajo"
-          title={pageContent.regions.labuanBajo.title}
-          description={pageContent.regions.labuanBajo.description}
+          title={sewaPageContent.regions.labuanBajo.title}
+          description={sewaPageContent.regions.labuanBajo.description}
           vehicles={labuanBajoVehicles}
         />
       </SectionContainer>
@@ -124,30 +100,4 @@ const pageContent = {
   <PackagePageCta />
 </MainLayout>
 
-<script>
-  const links = document.querySelectorAll("[data-region-link]");
-  const sections = document.querySelectorAll("[data-region-section]");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-
-        const id = entry.target.id;
-
-        links.forEach((link) => {
-          const active = link.getAttribute("href") === `#${id}`;
-
-          link.classList.toggle("bg-brand-700", active);
-          link.classList.toggle("text-white", active);
-          link.classList.toggle("border-brand-700", active);
-        });
-      });
-    },
-    {
-      rootMargin: "-40% 0px -40% 0px",
-    },
-  );
-
-  sections.forEach((section) => observer.observe(section));
-</script>
+<RegionObserver />

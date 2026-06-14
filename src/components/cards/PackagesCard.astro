@@ -4,27 +4,16 @@ import { Image } from "astro:assets";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { TourPackage } from "@/lib/content/tourPackages";
+import { REGION_MAP } from "@/lib/regions";
+import { CTA_CLASS } from "@/lib/card-styles";
 
-const { tour } = Astro.props as {
+interface Props {
   tour: TourPackage;
-};
+}
 
-const regionMap = {
-  lombok: {
-    label: "Lombok",
-    className: "bg-brand-700 text-white border-brand-700",
-  },
-  sumbawa: {
-    label: "Sumbawa",
-    className: "bg-emerald-600 text-white border-emerald-600",
-  },
-  "labuan-bajo": {
-    label: "Labuan Bajo",
-    className: "bg-violet-600 text-white border-violet-600",
-  },
-};
+const { tour } = Astro.props;
 
-const region = regionMap[tour.region];
+const region = REGION_MAP[tour.region];
 
 const cardHref = `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
 ---
@@ -142,7 +131,7 @@ const cardHref = `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slu
       </ul>
 
       <div class="mt-auto pt-2">
-        <span class="font-sans group/button w-full inline-flex items-center justify-center rounded-md bg-brand-700 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-brand-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-700 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 lg:px-8 lg:py-3.5 lg:text-lg">
+        <span class={CTA_CLASS}>
           Cek Detail Paket
         </span>
       </div>

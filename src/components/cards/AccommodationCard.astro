@@ -4,27 +4,16 @@ import { Image } from "astro:assets";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { Accommodation } from "@/lib/content/akomodasiData";
+import { REGION_MAP } from "@/lib/regions";
+import { CTA_CLASS } from "@/lib/card-styles";
 
-const { accommodation } = Astro.props as {
+interface Props {
   accommodation: Accommodation;
-};
+}
 
-const regionMap = {
-  lombok: {
-    label: "Lombok",
-    className: "bg-brand-700 text-white border-brand-700",
-  },
-  sumbawa: {
-    label: "Sumbawa",
-    className: "bg-emerald-600 text-white border-emerald-600",
-  },
-  "labuan-bajo": {
-    label: "Labuan Bajo",
-    className: "bg-violet-600 text-white border-violet-600",
-  },
-};
+const { accommodation } = Astro.props;
 
-const region = regionMap[accommodation.region];
+const region = REGION_MAP[accommodation.region];
 
 const cardHref = `/akomodasi/${accommodation.region}`;
 ---
@@ -117,7 +106,7 @@ const cardHref = `/akomodasi/${accommodation.region}`;
       </div>
 
       <div class="mt-auto pt-2">
-        <span class="font-sans group/button w-full inline-flex items-center justify-center rounded-md bg-brand-700 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-brand-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-700 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 lg:px-8 lg:py-3.5 lg:text-lg">
+        <span class={CTA_CLASS}>
           Lihat Akomodasi
         </span>
       </div>

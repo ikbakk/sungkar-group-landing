@@ -1,0 +1,30 @@
+---
+interface NavItem {
+  id: string;
+  label: string;
+  count: number;
+}
+
+interface Props {
+  items: NavItem[];
+  dataAttr?: string;
+}
+
+const { items, dataAttr = "region-link" } = Astro.props;
+---
+
+<nav
+  class="sticky top-28 z-20 mx-auto mb-8 flex max-w-7xl gap-2 overflow-x-auto rounded-xl border border-border bg-white p-2"
+>
+  {
+    items.map((item) => (
+      <a
+        href={`#${item.id}`}
+        {...{ [`data-${dataAttr}`]: "" }}
+        class="rounded-lg border border-border px-4 py-2 text-sm font-medium whitespace-nowrap transition"
+      >
+        {item.label} ({item.count})
+      </a>
+    ))
+  }
+</nav>

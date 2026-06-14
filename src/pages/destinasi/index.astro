@@ -6,7 +6,7 @@ import RelatedContent from "@/components/site/RelatedContent.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import DestinationGroupNav from "@/components/destinations/DestinationGroupNav.astro";
+import StickyNav from "@/components/ui/StickyNav.astro";
 import DestinationGroupSection from "@/components/destinations/DestinationGroupSection.astro";
 import { destinations } from "@/lib/content/destinationsData";
 import { destinationsPageContent } from "@/lib/content/destinationsPage";
@@ -46,8 +46,9 @@ const groups = destinationsPageContent.groups.map((group) => ({
     imageAlt="Destinasi Lombok"
   />
 
-  <DestinationGroupNav
-    groups={groups.map(({ id, label, count }) => ({ id, label, count }))}
+  <StickyNav
+    items={groups.map(({ id, label, count }) => ({ id, label, count }))}
+    dataAttr="destination-group-link"
   />
 
   {groups.map((group, index) => (

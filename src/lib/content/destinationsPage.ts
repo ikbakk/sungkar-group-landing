@@ -88,4 +88,4 @@ export const destinationsPageContent = {
     faqTitle: "FAQ Destinasi",
   },
   spotlightImage: destinations[1].image,
-};
+} as const;

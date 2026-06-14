@@ -1,0 +1,41 @@
+---
+interface Props {
+  linkAttr?: string;
+  sectionAttr?: string;
+  rootMargin?: string;
+}
+
+const {
+  linkAttr = "region-link",
+  sectionAttr = "region-section",
+  rootMargin = "-40% 0px -40% 0px",
+} = Astro.props;
+---
+
+<script define:vars={{ linkAttr, sectionAttr, rootMargin }}>
+  const links = document.querySelectorAll(`[data-${linkAttr}]`);
+  const sections = document.querySelectorAll(`[data-${sectionAttr}]`);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const id = entry.target.id;
+
+        links.forEach((link) => {
+          const active = link.getAttribute("href") === `#${id}`;
+
+          link.classList.toggle("bg-brand-700", active);
+          link.classList.toggle("text-white", active);
+          link.classList.toggle("border-brand-700", active);
+        });
+      });
+    },
+    {
+      rootMargin,
+    },
+  );
+
+  sections.forEach((section) => observer.observe(section));
+</script>

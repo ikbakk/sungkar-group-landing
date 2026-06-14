@@ -1,14 +1,3 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro";
-import LandingPage from "@/components/landing/LandingPage.astro";
-import Hero from "@/assets/images/hero.webp";
+return Astro.redirect("/", 301);
 ---
-
-<MainLayout
-  title="Tour Agency Lombok, Sumbawa & Labuan Bajo"
-  description="Operator wisata lokal untuk private tour, open trip, transportasi, dan itinerary di Lombok, Sumbawa, serta Labuan Bajo."
-  canonical="/beranda"
-  image={Hero}
->
-  <LandingPage />
-</MainLayout>

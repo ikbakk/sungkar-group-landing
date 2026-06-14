@@ -6,7 +6,8 @@ import RelatedContent from "@/components/site/RelatedContent.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 
-import PackageRegionNav from "@/components/packages/PackageRegionNav.astro";
+import StickyNav from "@/components/ui/StickyNav.astro";
+import RegionObserver from "@/components/ui/RegionObserver.astro";
 import PackageRegionSection from "@/components/packages/PackageRegionSection.astro";
 import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 
@@ -59,7 +60,7 @@ const regions = [
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Paket Wisata" }]}
   />
 
-  <PackageRegionNav regions={regions} />
+  <StickyNav items={regions} />
 
   <SectionContainer background="bg-surface-soft">
     <PackageRegionSection
@@ -133,30 +134,4 @@ const regions = [
   <PackagePageCta />
 </MainLayout>
 
-<script>
-  const links = document.querySelectorAll("[data-region-link]");
-  const sections = document.querySelectorAll("[data-region-section]");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-
-        const id = entry.target.id;
-
-        links.forEach((link) => {
-          const active = link.getAttribute("href") === `#${id}`;
-
-          link.classList.toggle("bg-brand-700", active);
-          link.classList.toggle("text-white", active);
-          link.classList.toggle("border-brand-700", active);
-        });
-      });
-    },
-    {
-      rootMargin: "-40% 0px -40% 0px",
-    },
-  );
-
-  sections.forEach((section) => observer.observe(section));
-</script>
+<RegionObserver />
