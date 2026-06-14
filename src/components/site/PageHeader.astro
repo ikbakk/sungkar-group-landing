@@ -39,6 +39,7 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt } =
               alt={imageAlt ?? title}
               class="h-full w-full object-cover"
               loading="eager"
+              fetchpriority="high"
             />
             <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.74)_42%,rgba(255,255,255,0.18)_100%)]" />
           </div>
