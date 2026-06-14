@@ -16,7 +16,7 @@ export const sewaPageContent = {
       description:
         "Kendaraan khusus untuk petualangan Sumbawa dengan akses mudah ke whale shark experience dan destinasi laut yang eksotis.",
     },
-    labuanBajo: {
+    "labuan-bajo": {
       title: "Kendaraan Labuan Bajo",
       description:
         "Rental kendaraan di Labuan Bajo dirancang untuk perjalanan menuju Komodo National Park dan pulau-pulau sekitarnya.",

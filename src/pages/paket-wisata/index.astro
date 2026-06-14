@@ -15,35 +15,27 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { packages } from "@/lib/content/tourPackages/index";
 import { packagePageContent } from "@/lib/content/packagePage";
+import { REGIONS } from "@/lib/regions";
 import { packageFaq } from "@/lib/content/faqs/package";
 
 const faqSchema = generateFAQPageSchema(packageFaq);
 
 const lombokPackages = packages.filter((pkg) => pkg.region === "lombok");
-
 const sumbawaPackages = packages.filter((pkg) => pkg.region === "sumbawa");
-
 const labuanBajoPackages = packages.filter(
   (pkg) => pkg.region === "labuan-bajo",
 );
 
-const regions = [
-  {
-    id: "lombok",
-    label: "Lombok",
-    count: lombokPackages.length,
-  },
-  {
-    id: "sumbawa",
-    label: "Sumbawa",
-    count: sumbawaPackages.length,
-  },
-  {
-    id: "labuan-bajo",
-    label: "Labuan Bajo",
-    count: labuanBajoPackages.length,
-  },
-];
+const regions = REGIONS.map((id) => ({
+  id,
+  label: id === "labuan-bajo" ? "Labuan Bajo" : id.charAt(0).toUpperCase() + id.slice(1),
+  count:
+    id === "lombok"
+      ? lombokPackages.length
+      : id === "sumbawa"
+        ? sumbawaPackages.length
+        : labuanBajoPackages.length,
+}));
 ---
 
 <MainLayout
@@ -83,8 +75,8 @@ const regions = [
   <SectionContainer background="bg-surface-soft">
     <PackageRegionSection
       id="labuan-bajo"
-      title={packagePageContent.regions.labuanBajo.title}
-      description={packagePageContent.regions.labuanBajo.description}
+      title={packagePageContent.regions["labuan-bajo"].title}
+      description={packagePageContent.regions["labuan-bajo"].description}
       packages={labuanBajoPackages}
     />
   </SectionContainer>
@@ -98,38 +90,7 @@ const regions = [
   <RelatedContent
     background="bg-surface-soft"
     title="Jelajahi Layanan Kami"
-    items={[
-      {
-        title: "Destinasi Wisata",
-        href: "/destinasi",
-        description:
-          "Temukan tempat-tempat indah dan destinasi impian di Lombok, Sumbawa, dan Labuan Bajo",
-      },
-      {
-        title: "Panduan Wisata",
-        href: "/panduan-wisata",
-        description:
-          "Baca panduan lengkap untuk merencanakan perjalanan Anda dengan sempurna",
-      },
-      {
-        title: "Akomodasi",
-        href: "/akomodasi",
-        description:
-          "Pilih hotel dan penginapan terbaik di setiap destinasi wisata",
-      },
-      {
-        title: "Sewa Mobil",
-        href: "/sewa-mobil",
-        description:
-          "Nikmati kenyamanan perjalanan dengan layanan sewa kendaraan kami",
-      },
-      {
-        title: "Tentang Kami",
-        href: "/tentang-kami",
-        description:
-          "Ketahui lebih lanjut tentang Sungkar Group dan pengalaman kami",
-      },
-    ]}
+    items={packagePageContent.relatedContent}
   />
 
   <PackagePageCta />

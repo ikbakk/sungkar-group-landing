@@ -12,7 +12,7 @@ import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
-import { vehicles } from "@/lib/content/sewaModilData";
+import { vehicles } from "@/lib/content/sewaMobilData";
 import { sewaPageContent } from "@/lib/content/sewaPage";
 import { packageFaq } from "@/lib/content/faqs/package";
 
@@ -83,8 +83,8 @@ const regions = [
       <SectionContainer background="bg-surface-soft">
         <VehicleRegionSection
           id="labuan-bajo"
-          title={sewaPageContent.regions.labuanBajo.title}
-          description={sewaPageContent.regions.labuanBajo.description}
+          title={sewaPageContent.regions["labuan-bajo"].title}
+          description={sewaPageContent.regions["labuan-bajo"].description}
           vehicles={labuanBajoVehicles}
         />
       </SectionContainer>

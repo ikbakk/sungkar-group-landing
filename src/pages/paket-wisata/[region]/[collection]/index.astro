@@ -2,11 +2,10 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import PackagesCard from "@/components/cards/PackagesCard.astro";
+import PackageCard from "@/components/cards/PackageCard.astro";
 
 import { packages } from "@/lib/content/tourPackages";
-
-type Region = "lombok" | "sumbawa" | "labuan-bajo";
+import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
 export function getStaticPaths() {
   return packages
@@ -31,12 +30,6 @@ export function getStaticPaths() {
 const region = Astro.params.region as Region;
 const collection = Astro.params.collection!;
 
-const regionTitleMap: Record<Region, string> = {
-  lombok: "Lombok",
-  sumbawa: "Sumbawa",
-  "labuan-bajo": "Labuan Bajo",
-};
-
 const collectionPackages = packages.filter(
   (pkg) => pkg.region === region && pkg.collectionSlug === collection,
 );
@@ -46,13 +39,13 @@ const collectionTitle = collectionPackages[0]?.collectionTitle ?? "";
 
 <MainLayout
   title={collectionTitle}
-  description={`Pilihan paket wisata ${collectionTitle} di ${regionTitleMap[region]}.`}
+  description={`Pilihan paket wisata ${collectionTitle} di ${REGION_LABEL[region]}.`}
   canonical={`/paket-wisata/${region}/${collection}`}
 >
   <PageHeader
     eyebrow="Paket Wisata"
-    title={`Pilihan paket wisata ${collectionTitle} di ${regionTitleMap[region]}`}
-    description={`Pilih kategori paket wisata ${collectionTitle} di ${regionTitleMap[region]}.`}
+    title={`Pilihan paket wisata ${collectionTitle} di ${REGION_LABEL[region]}`}
+    description={`Pilih kategori paket wisata ${collectionTitle} di ${REGION_LABEL[region]}.`}
     breadcrumbs={[
       {
         label: "Beranda",
@@ -63,7 +56,7 @@ const collectionTitle = collectionPackages[0]?.collectionTitle ?? "";
         href: "/paket-wisata",
       },
       {
-        label: regionTitleMap[region],
+        label: REGION_LABEL[region],
         href: `/paket-wisata/${region}`,
       },
       {
@@ -74,7 +67,7 @@ const collectionTitle = collectionPackages[0]?.collectionTitle ?? "";
 
   <SectionContainer background="bg-surface-soft">
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {collectionPackages.map((tour) => <PackagesCard tour={tour} />)}
+      {collectionPackages.map((tour) => <PackageCard tour={tour} />)}
     </div>
   </SectionContainer>
 </MainLayout>

@@ -1,5 +1,5 @@
 ---
-import PackagesCard from "@/components/cards/PackagesCard.astro";
+import PackageCard from "@/components/cards/PackageCard.astro";
 import type { TourPackage } from "@/lib/content/tourPackages";
 
 const { id, title, description, packages } = Astro.props as {
@@ -19,7 +19,7 @@ const { id, title, description, packages } = Astro.props as {
   </div>
 
   <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-    {packages.map((tour) => <PackagesCard tour={tour} />)}
+    {packages.map((tour) => <PackageCard tour={tour} />)}
   </div>
 
   <div class="mt-8 flex justify-center">

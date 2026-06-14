@@ -21,7 +21,7 @@ export const packagePageContent = {
       intro: "Eksplorasi destinasi bahari terbaik Sumbawa untuk pengalaman laut yang autentik.",
     },
 
-    labuanBajo: {
+    "labuan-bajo": {
       title: "Paket Wisata Labuan Bajo",
       description:
         "Sailing 1–3 hari menjelajahi Komodo National Park: Pulau Padar, Pink Beach, Manta Point, Taka Makassar, dan Rinca. Termasuk snorkeling gear, makan, dan guide lokal.",
@@ -38,4 +38,37 @@ export const packagePageContent = {
       href: "/kontak",
     },
   },
+
+  relatedContent: [
+    {
+      title: "Destinasi Wisata",
+      href: "/destinasi",
+      description:
+        "Temukan tempat-tempat indah dan destinasi impian di Lombok, Sumbawa, dan Labuan Bajo",
+    },
+    {
+      title: "Panduan Wisata",
+      href: "/panduan-wisata",
+      description:
+        "Baca panduan lengkap untuk merencanakan perjalanan Anda dengan sempurna",
+    },
+    {
+      title: "Akomodasi",
+      href: "/akomodasi",
+      description:
+        "Pilih hotel dan penginapan terbaik di setiap destinasi wisata",
+    },
+    {
+      title: "Sewa Mobil",
+      href: "/sewa-mobil",
+      description:
+        "Nikmati kenyamanan perjalanan dengan layanan sewa kendaraan kami",
+    },
+    {
+      title: "Tentang Kami",
+      href: "/tentang-kami",
+      description:
+        "Ketahui lebih lanjut tentang Sungkar Group dan pengalaman kami",
+    },
+  ],
 } as const;

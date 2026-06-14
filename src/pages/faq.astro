@@ -5,6 +5,7 @@ import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 
 import { generalFaqItems } from "@/lib/content/faqs/general";
+import { faqPageContent } from "@/lib/content/faqPage";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -22,9 +23,9 @@ const faqSchema = generateFAQPageSchema(generalFaqItems);
 >
   <StructuredData schema={faqSchema} />
   <PageHeader
-    eyebrow="FAQ"
-    title="Pertanyaan umum yang paling sering ditanyakan"
-    description="Halaman ini menjadi pusat pertanyaan umum. Untuk rincian paket, destinasi, dan tentang kami, buka FAQ pada masing-masing halaman terkait."
+    eyebrow={faqPageContent.hero.eyebrow}
+    title={faqPageContent.hero.title}
+    description={faqPageContent.hero.description}
     breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "FAQ" }]}
     image={HeroLombok}
     imageAlt="Lombok saat matahari terbit"
@@ -35,18 +36,14 @@ const faqSchema = generateFAQPageSchema(generalFaqItems);
         <Card className="border-border bg-white">
           <CardHeader>
             <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-              FAQ umum
+              {faqPageContent.introCard.badge}
             </Badge>
             <CardTitle className="text-3xl leading-tight">
-              Ringkasan pertanyaan untuk memulai percakapan
+              {faqPageContent.introCard.title}
             </CardTitle>
           </CardHeader>
           <CardContent className="text-sm leading-7 text-text-muted">
-            <p>
-              Jika Anda baru pertama kali menghubungi tim, mulai dari FAQ umum
-              ini. Setelah itu, buka halaman yang paling relevan agar informasi
-              paket dan destinasi lebih terarah.
-            </p>
+            <p>{faqPageContent.introCard.description}</p>
           </CardContent>
         </Card>
 
@@ -67,65 +64,22 @@ const faqSchema = generateFAQPageSchema(generalFaqItems);
       </div>
 
       <div class="mt-12 grid gap-6 md:grid-cols-3">
-        <Card className="border-border bg-white">
-          <CardHeader>
-            <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-              Paket wisata
-            </Badge>
-            <CardTitle className="text-3xl leading-tight"
-              >FAQ paket wisata</CardTitle
-            >
-          </CardHeader>
-          <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
-            <p>
-              Pertanyaan tentang durasi, kendaraan, dan penyesuaian itinerary
-              dibahas di halaman paket wisata.
-            </p>
-            <Button href="/paket-wisata" variant="outline">
-              Buka paket wisata
-            </Button>
-          </CardContent>
-        </Card>
-
-        <Card className="border-border bg-white">
-          <CardHeader>
-            <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-              Destinasi
-            </Badge>
-            <CardTitle className="text-3xl leading-tight"
-              >FAQ destinasi</CardTitle
-            >
-          </CardHeader>
-          <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
-            <p>
-              Pertanyaan tentang apa yang bisa dilakukan di tiap destinasi
-              tersedia pada halaman destinasi masing-masing.
-            </p>
-            <Button href="/destinasi" variant="outline">
-              Buka destinasi
-            </Button>
-          </CardContent>
-        </Card>
-
-        <Card className="border-border bg-white">
-          <CardHeader>
-            <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-              Tentang kami
-            </Badge>
-            <CardTitle className="text-3xl leading-tight"
-              >FAQ tentang kami</CardTitle
-            >
-          </CardHeader>
-          <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
-            <p>
-              Jika Anda ingin memahami layanan, gaya koordinasi, dan alur
-              pemesanan, buka halaman tentang kami.
-            </p>
-            <Button href="/tentang-kami" variant="outline">
-              Buka tentang kami
-            </Button>
-          </CardContent>
-        </Card>
+        {faqPageContent.relatedCards.map((card) => (
+          <Card className="border-border bg-white">
+            <CardHeader>
+              <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+                {card.badge}
+              </Badge>
+              <CardTitle className="text-3xl leading-tight">{card.title}</CardTitle>
+            </CardHeader>
+            <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
+              <p>{card.description}</p>
+              <Button href={card.buttonHref} variant="outline">
+                {card.buttonLabel}
+              </Button>
+            </CardContent>
+          </Card>
+        ))}
       </div>
   </SectionContainer>
 </MainLayout>

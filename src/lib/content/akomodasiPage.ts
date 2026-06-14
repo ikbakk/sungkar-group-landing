@@ -16,10 +16,17 @@ export const akomodasiPageContent = {
       description:
         "Penginapan di Sumbawa dirancang khusus untuk petualangan laut dengan akses langsung ke whale shark experience dan pulau-pulau indah.",
     },
-    labuanBajo: {
+    "labuan-bajo": {
       title: "Akomodasi Labuan Bajo",
       description:
         "Resort dan liveaboard di Labuan Bajo adalah basecamp sempurna untuk menjelajahi Komodo National Park dengan kenyamanan maksimal.",
     },
+  },
+  cta: {
+    title: "Tidak menemukan akomodasi yang cocok?",
+    description:
+      "Tim kami siap membantu Anda menemukan penginapan sempurna sesuai budget dan preferensi Anda.",
+    buttonLabel: "Hubungi Kami",
+    buttonHref: "/kontak",
   },
 } as const;

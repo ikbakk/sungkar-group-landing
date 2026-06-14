@@ -1,136 +1,72 @@
 ---
-import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { accommodations } from "@/lib/content/akomodasiData";
+import { akomodasiPageContent } from "@/lib/content/akomodasiPage";
+import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import AccommodationDetailCard from "@/components/accommodations/AccommodationDetailCard.astro";
 
 import type { Accommodation } from "@/lib/content/akomodasiData";
 
 export function getStaticPaths() {
-  const regions = ["lombok", "sumbawa", "labuan-bajo"];
+  const regions: Region[] = ["lombok", "sumbawa", "labuan-bajo"];
 
   return regions.map((region) => ({
     params: { slug: region },
-    props: {
-      region,
-      regionName:
-        region.charAt(0).toUpperCase() + region.slice(1).replace("-", " "),
-    },
+    props: { region },
   }));
 }
 
-const { region, regionName } = Astro.props;
+const { region } = Astro.props as { region: Region };
 const regionAccommodations = accommodations.filter(
   (acc) => acc.region === region,
 );
 
-// Format region name for breadcrumb
-const regionDisplay =
-  region === "labuan-bajo"
-    ? "Labuan Bajo"
-    : region.charAt(0).toUpperCase() + region.slice(1);
+const regionName = REGION_LABEL[region];
 ---
 
 <MainLayout
-  title={`Akomodasi ${regionDisplay}`}
-  description={`Temukan akomodasi terbaik di ${regionDisplay} untuk pengalaman menginap yang sempurna`}
+  title={`Akomodasi ${regionName}`}
+    description={`Temukan akomodasi terbaik di ${regionName} untuk pengalaman menginap yang sempurna`}
   canonical={`/akomodasi/${region}`}
   image={regionAccommodations[0]?.image}
 >
   <PageHeader
     eyebrow="Pilihan Akomodasi"
-    title={`Akomodasi ${regionDisplay}`}
-    description={`Jelajahi berbagai pilihan penginapan berkualitas di ${regionDisplay} yang disesuaikan dengan kebutuhan dan preferensi perjalanan Anda.`}
+    title={`Akomodasi ${regionName}`}
+    description={`Jelajahi berbagai pilihan penginapan berkualitas di ${regionName} yang disesuaikan dengan kebutuhan dan preferensi perjalanan Anda.`}
     breadcrumbs={[
       { label: "Beranda", href: "/" },
       { label: "Akomodasi", href: "/akomodasi" },
-      { label: regionDisplay },
+      { label: regionName },
     ]}
   />
 
   <SectionContainer background="bg-surface-soft" padding="pb-20">
-      <div class="grid gap-8 md:grid-cols-2">
-        {
-          regionAccommodations.map((accommodation) => (
-            <Card className="border-border overflow-hidden bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)] transition-all duration-300 hover:shadow-[0_18px_55px_rgba(17,24,39,0.1)]">
-              <div class="relative h-64 w-full overflow-hidden rounded-t-lg">
-                <Image
-                  src={accommodation.image}
-                  alt={accommodation.name}
-                  class="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
+    <div class="grid gap-8 md:grid-cols-2">
+      {regionAccommodations.map((accommodation) => (
+        <AccommodationDetailCard accommodation={accommodation} />
+      ))}
+    </div>
 
-              <CardHeader>
-                <CardTitle className="text-2xl leading-tight">
-                  {accommodation.name}
-                </CardTitle>
-              </CardHeader>
-
-              <CardContent className="space-y-4">
-                <p class="text-sm leading-7 text-text-muted">
-                  {accommodation.description}
-                </p>
-
-                <div>
-                  <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
-                    Fasilitas & Layanan
-                  </div>
-                  <div class="flex flex-wrap gap-2">
-                    {accommodation.perks.map((perk) => (
-                      <Badge
-                        variant="outline"
-                        className="rounded-full px-3 py-1"
-                      >
-                        {perk}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                <Separator />
-
-                <div>
-                  <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
-                    Keunggulan Lokasi
-                  </div>
-                  <ul class="space-y-1 text-sm leading-7 text-text-muted">
-                    {accommodation.regionalHighlights.map((highlight) => (
-                      <li class="flex gap-2">
-                        <span>✓</span>
-                        <span>{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-          ))
-        }
+    <div
+      class="mt-12 rounded-2xl border border-border bg-white p-8 text-center shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
+    >
+      <h3 class="text-2xl font-heading leading-tight">
+        {akomodasiPageContent.cta.title}
+      </h3>
+      <p class="mt-2 text-text-muted">
+        {akomodasiPageContent.cta.description}
+      </p>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href={akomodasiPageContent.cta.buttonHref}>
+          <Button size={"lg"}>{akomodasiPageContent.cta.buttonLabel}</Button>
+        </a>
       </div>
-
-      <div
-        class="mt-12 rounded-2xl border border-border bg-white p-8 text-center shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
-      >
-        <h3 class="text-2xl font-heading leading-tight">
-          Tidak menemukan akomodasi yang cocok?
-        </h3>
-        <p class="mt-2 text-text-muted">
-          Tim kami siap membantu Anda menemukan penginapan sempurna sesuai
-          budget dan preferensi Anda.
-        </p>
-        <div class="mt-6 flex flex-wrap justify-center gap-3">
-          <a href="/kontak">
-            <Button size={"lg"}>Hubungi Kami</Button>
-          </a>
-        </div>
+    </div>
   </SectionContainer>
 </MainLayout>

@@ -1,12 +1,13 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import LandingPage from "@/components/landing/LandingPage.astro";
+import { landingHero } from "@/lib/content/landing";
 import OGImage from "@/assets/images/og-home.jpg";
 ---
 
 <MainLayout
-  title="Tour & Travel Lombok, Sumbawa, dan Labuan Bajo"
-  description="Sungkar Group menyediakan paket wisata, open trip, sewa mobil, akomodasi, dan itinerary perjalanan di Lombok, Sumbawa, dan Labuan Bajo dengan layanan operator wisata lokal berpengalaman."
+  title={landingHero.title}
+  description={landingHero.description}
   canonical="/"
   image={OGImage}
   imageAlt="Pemandangan pantai Lombok dengan matahari terbenam"
