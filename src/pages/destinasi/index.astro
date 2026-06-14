@@ -3,6 +3,8 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import FaqSection from "@/components/site/Faq.astro";
 import RelatedContent from "@/components/site/RelatedContent.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateFAQPageSchema } from "@/lib/schemas";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import DestinationGroupNav from "@/components/destinations/DestinationGroupNav.astro";
 import DestinationGroupSection from "@/components/destinations/DestinationGroupSection.astro";
@@ -10,6 +12,8 @@ import { destinations } from "@/lib/content/destinationsData";
 import { destinationsPageContent } from "@/lib/content/destinationsPage";
 
 import "../../styles/global.css";
+
+const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
 
 const destinationBySlug = new Map(
   destinations.map((destination) => [destination.slug, destination]),
@@ -30,6 +34,7 @@ const groups = destinationsPageContent.groups.map((group) => ({
   canonical="/destinasi"
   image={destinationsPageContent.spotlightImage}
 >
+  <StructuredData schema={faqSchema} />
   <div id="top" />
 
   <PageHeader

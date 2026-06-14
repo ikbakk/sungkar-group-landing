@@ -1,11 +1,16 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateFAQPageSchema } from "@/lib/schemas";
+
 import { generalFaqItems } from "@/lib/content/faqs/general";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import HeroLombok from "@/assets/images/hero-lombok.webp";
+
+const faqSchema = generateFAQPageSchema(generalFaqItems);
 ---
 
 <MainLayout
@@ -14,6 +19,7 @@ import HeroLombok from "@/assets/images/hero-lombok.webp";
   canonical="/faq"
   image={HeroLombok}
 >
+  <StructuredData schema={faqSchema} />
   <PageHeader
     eyebrow="FAQ"
     title="Pertanyaan umum yang paling sering ditanyakan"

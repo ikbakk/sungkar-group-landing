@@ -2,6 +2,8 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import FaqSection from "@/components/site/Faq.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateFAQPageSchema } from "@/lib/schemas";
 
 import StorySection from "@/components/about/StorySection.astro";
 import VisionMissionSection from "@/components/about/VisionMissionSection.astro";
@@ -13,6 +15,8 @@ import CtaSection from "@/components/about/CtaSection.astro";
 
 import { aboutContent } from "@/lib/content/about";
 import { aboutFaq } from "@/lib/content/faqs/about";
+
+const faqSchema = generateFAQPageSchema(aboutFaq);
 ---
 
 <MainLayout
@@ -20,6 +24,7 @@ import { aboutFaq } from "@/lib/content/faqs/about";
   description="Tentang Sungkar Group Indonesia sebagai operator wisata lokal yang membantu wisatawan menikmati Lombok dengan lebih nyaman dan terencana."
   canonical="/tentang-kami"
 >
+  <StructuredData schema={faqSchema} />
   <PageHeader
     eyebrow={aboutContent.hero.eyebrow}
     title={aboutContent.hero.title}

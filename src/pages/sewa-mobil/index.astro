@@ -2,6 +2,8 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import FaqSection from "@/components/site/Faq.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateFAQPageSchema } from "@/lib/schemas";
 
 import PackageRegionNav from "@/components/packages/PackageRegionNav.astro";
 import VehicleRegionSection from "@/components/vehicles/VehicleRegionSection.astro";
@@ -11,6 +13,8 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { vehicles } from "@/lib/content/sewaModilData";
 import { packageFaq } from "@/lib/content/faqs/package";
+
+const faqSchema = generateFAQPageSchema(packageFaq);
 
 const lombokVehicles = vehicles.filter((v) => v.region === "lombok");
 const sumbawaVehicles = vehicles.filter((v) => v.region === "sumbawa");
@@ -62,6 +66,7 @@ const pageContent = {
   canonical="/sewa-mobil"
   image={vehicles[0].image}
 >
+  <StructuredData schema={faqSchema} />
   <PageHeader
     eyebrow={pageContent.hero.eyebrow}
     title={pageContent.hero.title}
