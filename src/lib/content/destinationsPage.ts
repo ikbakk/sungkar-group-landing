@@ -2,35 +2,38 @@ import { destinations } from "@/lib/content/destinationsData";
 
 export const destinationsPageContent = {
   hero: {
-    eyebrow: "Destinasi",
-    title: "Destinasi utama dengan navigasi bertingkat",
+    eyebrow: "Destinasi Wisata",
+    title: "Destinasi Wisata Lombok, Gili, Rinjani, dan Sumbawa",
     description:
-      "Gunakan navigasi di atas untuk masuk ke grup destinasi lalu buka halaman detail masing-masing untuk melihat aktivitas utama dan paket yang terkait.",
+      "Temukan pantai, desa budaya, dan area pegunungan terbaik untuk liburan di Lombok, Gili, Rinjani, dan Sumbawa. Dari pantai Kuta hingga gunung Rinjani, setiap destinasi menawarkan pengalaman unik.",
   },
   groups: [
     {
       id: "lombok",
       label: "Lombok",
-      title: "Jelajahi Lombok",
+      title: "Destinasi Wisata Lombok",
       description:
-        "Pilihan destinasi di Lombok yang paling sering dipakai untuk kombinasi pantai, budaya, dan rute harian.",
+        "Pantai pasir putih, desa Sasak tradisional, dan air terjun tersembunyi. Kuta Lombok menjadi basecamp populer untuk akses mudah ke pantai selatan dan budaya lokal.",
       destinationSlugs: ["kuta-lombok", "tetebatu"],
+      intro: "Pilih destinasi di Lombok untuk kombinasi pantai, budaya, dan rute harian yang fleksibel.",
     },
     {
       id: "gili",
       label: "Kepulauan Gili",
-      title: "Kepulauan Gili",
+      title: "Kepulauan Gili: Trawangan, Air, Meno",
       description:
-        "Rute pulau yang cocok untuk snorkeling, island hopping, dan tempo liburan yang lebih santai.",
+        "Tiga pulau tropis dengan air jernih untuk snorkeling, diving, dan island hopping. Gili Trawangan untuk nightlife, Gili Air untuk keseimbangan, Gili Meno untuk kedamaian total.",
       destinationSlugs: ["gili-trawangan", "gili-air", "gili-meno"],
+      intro: "Rute pulau yang cocok untuk snorkeling, island hopping, dan tempo liburan yang lebih santai.",
     },
     {
       id: "pegunungan",
       label: "Pegunungan",
-      title: "Koridor Pegunungan",
+      title: "Gunung Rinjani & Area Pegunungan",
       description:
-        "Destinasi dengan nuansa dataran tinggi dan akses ke pengalaman alam yang lebih dramatis.",
+        "Pendakian Rinjani via Sembalun atau Senaru, mata air panas, dan pemandangan kawah segara anak. Cocok untuk petualangan multi-hari dan pengalaman alam dramatis.",
       destinationSlugs: ["sembalun", "rinjani", "senaru"],
+      intro: "Destinasi dengan nuansa dataran tinggi dan akses ke pengalaman alam yang lebih dramatis.",
     },
   ],
   faq: [

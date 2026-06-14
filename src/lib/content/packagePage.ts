@@ -1,28 +1,31 @@
 export const packagePageContent = {
   hero: {
     eyebrow: "Paket Wisata",
-    title: "Temukan paket wisata sesuai destinasi dan gaya perjalanan Anda",
+    title: "Paket Wisata Lombok, Sumbawa & Labuan Bajo — Open Trip & Private Tour",
     description:
-      "Setiap paket memiliki halaman detail tersendiri sehingga itinerary, fasilitas, dan informasi perjalanan dapat dipelajari dengan jelas sebelum melakukan pemesanan.",
+      "Pilih paket wisata terstruktur untuk Lombok (pantai, budaya, gunung), Sumbawa (whale shark, pulau tersembunyi), dan Labuan Bajo (Komodo, Padar, Pink Beach). Tersedia open trip hemat biaya dan private tour fleksibel dengan driver lokal berpengalaman.",
   },
 
   regions: {
     lombok: {
       title: "Paket Wisata Lombok",
       description:
-        "Mulai dari Pantai Kuta Mandalika, Bukit Merese, Tetebatu, Sembalun, hingga Gili Trawangan untuk pengalaman Lombok yang lengkap.",
+        "Paket 1–4 hari mencakup Kuta Mandalika, Tanjung Aan, Bukit Merese, Gili Trawangan, air terjun Tetebatu, dan pendakian Rinjani via Sembalun. Cocok untuk liburan santai maupun petualangan.",
+      intro: "Pilih durasi dan gaya perjalanan: open trip bergabung grup atau private tour custom itinerary.",
     },
 
     sumbawa: {
       title: "Paket Wisata Sumbawa",
       description:
-        "Eksplorasi destinasi bahari terbaik Sumbawa termasuk whale shark experience di Teluk Saleh dan keindahan pulau-pulau sekitarnya.",
+        "Whale shark experience di Teluk Saleh, island hopping ke Pulau Moyo, Sangiang, dan Kenawa. Paket 2–3 hari dengan akses mudah dari Lombok via ferry.",
+      intro: "Eksplorasi destinasi bahari terbaik Sumbawa untuk pengalaman laut yang autentik.",
     },
 
     labuanBajo: {
       title: "Paket Wisata Labuan Bajo",
       description:
-        "Jelajahi Komodo National Park, Pulau Padar, Pink Beach, Manta Point, dan berbagai ikon wisata Labuan Bajo.",
+        "Sailing 1–3 hari menjelajahi Komodo National Park: Pulau Padar, Pink Beach, Manta Point, Taka Makassar, dan Rinca. Termasuk snorkeling gear, makan, dan guide lokal.",
+      intro: "Jelajahi ikon wisata Labuan Bajo dengan paket sailing nyaman dan terjangkau.",
     },
   },
 
