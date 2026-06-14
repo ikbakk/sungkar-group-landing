@@ -1,0 +1,46 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
+
+interface Props {
+  tour: TourPackage;
+}
+
+const { tour } = Astro.props;
+---
+
+<Card className="border-border bg-white">
+  <CardHeader>
+    <CardTitle className="text-3xl leading-tight">
+      Termasuk / Tidak termasuk
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <div class="grid gap-3">
+      <details
+        class="rounded-lg border border-border bg-surface-soft p-4"
+      >
+        <summary
+          class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden"
+        >
+          Yang termasuk
+        </summary>
+        <ul class="mt-4 grid gap-2 text-sm leading-7 text-text-muted">
+          {tour.includes.map((item) => <li>{item}</li>)}
+        </ul>
+      </details>
+      <details
+        class="rounded-lg border border-border bg-surface-soft p-4"
+      >
+        <summary
+          class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden"
+        >
+          Yang tidak termasuk
+        </summary>
+        <ul class="mt-4 grid gap-2 text-sm leading-7 text-text-muted">
+          {tour.excludes.map((item) => <li>{item}</li>)}
+        </ul>
+      </details>
+    </div>
+  </CardContent>
+</Card>

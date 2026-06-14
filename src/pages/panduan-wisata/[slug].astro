@@ -8,6 +8,7 @@ import { guides } from "@/lib/content/guides";
 import { destinations } from "@/lib/content/destinationsData";
 import { packages } from "@/lib/content/tourPackages";
 import SectionContainer from "@/layouts/SectionContainer.astro";
+import KeyTakeaways from "@/components/guides/KeyTakeaways.astro";
 
 export async function getStaticPaths() {
   return guides.map((guide) => ({
@@ -74,19 +75,7 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
   </SectionContainer>
 
   <SectionContainer background="bg-surface-soft">
-    <div class="mx-auto max-w-4xl">
-      <h2 class="text-2xl font-bold text-foreground mb-6">Poin-Poin Kunci</h2>
-      <ul class="grid gap-3 md:grid-cols-2">
-        {
-          guide.keyTakeaways.map((takeaway) => (
-            <li class="flex items-start gap-3 rounded-lg border border-border bg-white p-4">
-              <span class="text-brand-600 font-bold text-lg">✓</span>
-              <span class="text-foreground">{takeaway}</span>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
+    <KeyTakeaways takeaways={guide.keyTakeaways} />
   </SectionContainer>
 
   {relatedDestinations.length > 0 && (

@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
@@ -7,12 +6,13 @@ import { generateProductSchema, generateBreadcrumbSchema, generateFAQPageSchema 
 import { SITE_URL } from "@/lib/site-config";
 
 import { packages } from "@/lib/content/tourPackages/index";
+import { REGION_LABEL } from "@/lib/regions";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import FaqSection from "@/components/site/Faq.astro";
+import PackageImagePreview from "@/components/packages/PackageImagePreview.astro";
+import PackageDetailPanel from "@/components/packages/PackageDetailPanel.astro";
+import PackageItinerary from "@/components/packages/PackageItinerary.astro";
+import PackageIncludesExcludes from "@/components/packages/PackageIncludesExcludes.astro";
 
 import { packageFaq } from "@/lib/content/faqs/package";
 
@@ -26,7 +26,6 @@ export function getStaticPaths() {
       collection: tour.collectionSlug,
       slug: tour.slug,
     },
-
     props: { tour },
   }));
 }
@@ -67,24 +66,14 @@ const breadcrumbItems = [
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
 
-const regionTitleMap = {
-  lombok: "Lombok",
-  sumbawa: "Sumbawa",
-  "labuan-bajo": "Labuan Bajo",
-} as const;
-
 const itineraryByDay = Object.entries(
   tour.itinerary.reduce((acc: Record<string, string[]>, item: string) => {
     const [day, ...rest] = item.split(" - ");
-
     const description = rest.join(" - ");
-
     if (!acc[day]) {
       acc[day] = [];
     }
-
     acc[day].push(description);
-
     return acc;
   }, {}),
 );
@@ -114,7 +103,7 @@ const itineraryByDay = Object.entries(
         href: "/paket-wisata",
       },
       {
-        label: regionTitleMap[tour.region],
+        label: REGION_LABEL[tour.region],
         href: `/paket-wisata/${tour.region}`,
       },
       {
@@ -132,167 +121,13 @@ const itineraryByDay = Object.entries(
   <SectionContainer background="bg-surface-soft">
     <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
       <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-stretch">
-        <div
-          class="relative min-h-105 overflow-hidden rounded-lg border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)] lg:min-h-180"
-        >
-          <button
-            type="button"
-            id="open-image-preview"
-            class="absolute inset-0 block h-full w-full cursor-zoom-in"
-            aria-label={`Preview ${tour.title}`}
-          >
-            <Image
-              src={tour.image}
-              alt={tour.title}
-              class="h-full w-full object-cover transition-transform duration-300 hover:scale-[1.02]"
-              loading="eager"
-              fetchpriority="high"
-            />
-          </button>
-        </div>
-
-        <div class="flex h-full flex-col gap-6">
-          <Card
-            className="flex-1 border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
-          >
-            <CardHeader>
-              <Badge variant="outline" className="w-fit rounded-lg px-3 py-1">
-                {tour.category}
-              </Badge>
-
-              <CardTitle className="text-3xl leading-tight">
-                Informasi Paket
-              </CardTitle>
-            </CardHeader>
-
-            <CardContent>
-              <div class="grid gap-4 text-sm">
-                <div class="flex items-center justify-between">
-                  <span class="text-text-muted">Durasi</span>
-                  <span class="font-medium">{tour.duration}</span>
-                </div>
-
-                <Separator />
-
-                <div>
-                  <div class="mb-2 text-text-muted">Termasuk</div>
-
-                  <ul class="grid gap-1">
-                    {tour.includes.slice(0, 4).map((item) => <li>✓ {item}</li>)}
-                  </ul>
-                </div>
-
-                <Separator />
-
-                <div class="flex flex-wrap gap-2">
-                  {
-                    tour.highlights.map((item) => (
-                      <Badge variant="default" className="rounded-lg px-3 py-1">
-                        {item}
-                      </Badge>
-                    ))
-                  }
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card
-            className="border-border bg-brand-900 text-white shadow-[0_16px_45px_rgba(17,24,39,0.1)]"
-          >
-            <CardHeader>
-              <CardTitle className="text-3xl leading-tight text-white">
-                Pesan paket ini
-              </CardTitle>
-            </CardHeader>
-
-            <CardContent>
-              <p class="text-sm leading-7 text-brand-100">
-                Hubungi tim untuk memastikan tanggal terbaik, titik penjemputan,
-                dan tempo itinerary yang paling pas.
-              </p>
-            </CardContent>
-
-            <CardContent className="flex flex-wrap gap-3">
-              <a href="/kontak">
-                <Button size={"lg"} variant={"secondary"}>Hubungi Kami</Button>
-              </a>
-            </CardContent>
-          </Card>
-        </div>
+        <PackageImagePreview {tour} />
+        <PackageDetailPanel {tour} />
       </div>
 
       <div class="mt-10 grid gap-6 lg:grid-cols-2">
-        <Card className="border-border bg-white">
-          <CardHeader>
-            <CardTitle className="text-3xl leading-tight">
-              Itinerary
-            </CardTitle>
-          </CardHeader>
-
-          <CardContent>
-            <div class="grid gap-4">
-              {
-                itineraryByDay.map(([day, activities]) => (
-                  <div class="rounded-lg border border-border bg-surface-soft p-4">
-                    <div class="text-xs font-medium uppercase tracking-[0.22em] text-brand-700">
-                      {day}
-                    </div>
-
-                    <ul class="mt-3 grid gap-2 text-sm leading-7 text-text-muted">
-                      {activities.map((activity) => (
-                        <li class="flex gap-2">
-                          <span>•</span>
-                          <span>{activity}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))
-              }
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="border-border bg-white">
-          <CardHeader>
-            <CardTitle className="text-3xl leading-tight">
-              Termasuk / Tidak termasuk
-            </CardTitle>
-          </CardHeader>
-
-          <CardContent>
-            <div class="grid gap-3">
-              <details
-                class="rounded-lg border border-border bg-surface-soft p-4"
-              >
-                <summary
-                  class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden"
-                >
-                  Yang termasuk
-                </summary>
-
-                <ul class="mt-4 grid gap-2 text-sm leading-7 text-text-muted">
-                  {tour.includes.map((item) => <li>{item}</li>)}
-                </ul>
-              </details>
-
-              <details
-                class="rounded-lg border border-border bg-surface-soft p-4"
-              >
-                <summary
-                  class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden"
-                >
-                  Yang tidak termasuk
-                </summary>
-
-                <ul class="mt-4 grid gap-2 text-sm leading-7 text-text-muted">
-                  {tour.excludes.map((item) => <li>{item}</li>)}
-                </ul>
-              </details>
-            </div>
-          </CardContent>
-        </Card>
+        <PackageItinerary {itineraryByDay} />
+        <PackageIncludesExcludes {tour} />
       </div>
 
       <FaqSection

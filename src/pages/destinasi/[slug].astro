@@ -13,16 +13,9 @@ import { destinations } from "@/lib/content/destinationsData";
 import { packages } from "@/lib/content/tourPackages";
 import { destinationsPageContent } from "@/lib/content/destinationsPage";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import FaqSection from "@/components/site/Faq.astro";
+import DestinationDetailPanel from "@/components/destinations/DestinationDetailPanel.astro";
+import DestinationInfoCards from "@/components/destinations/DestinationInfoCards.astro";
 
 import "../../styles/global.css";
 
@@ -85,114 +78,23 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
   />
 
   <SectionContainer background="bg-surface-soft" padding="pb-20">
-      <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-        <div
-          class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]"
-        >
-          <Image
-            src={destination.image}
-            alt={destination.title}
-            class="h-full w-full object-cover"
-            loading="eager"
-            fetchpriority="high"
-          />
-        </div>
+    <DestinationDetailPanel
+      destination={destination}
+      relatedPackages={relatedPackages}
+      content={destinationsPageContent.detail}
+    />
 
-        <div class="grid gap-6">
-          <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
-            <CardHeader>
-              <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-                {destination.region}
-              </Badge>
-              <CardTitle className="text-3xl leading-tight">
-                {destinationsPageContent.detail.activitiesTitle}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div class="grid gap-3">
-                {
-                  destination.thingsToDo.map((item) => (
-                    <div class="rounded-2xl border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground">
-                      {item}
-                    </div>
-                  ))
-                }
-              </div>
-            </CardContent>
-          </Card>
+    <DestinationInfoCards
+      summary={destination.summary}
+      content={destinationsPageContent.detail}
+    />
 
-          <Card className="border-border bg-brand-900 text-white shadow-[0_16px_45px_rgba(17,24,39,0.1)]">
-            <CardHeader>
-              <CardTitle className="text-3xl leading-tight text-white">
-                {destinationsPageContent.detail.relatedPackagesTitle}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              {relatedPackages.length > 0 ? (
-                <div class="grid gap-3">
-                  {
-                    relatedPackages.map((tour) => (
-                      <a
-                        href={`/paket-wisata/${tour.slug}`}
-                        class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10"
-                      >
-                        {tour.title}
-                      </a>
-                    ))
-                  }
-                </div>
-              ) : (
-                <p class="text-sm leading-7 text-brand-100">
-                  {destinationsPageContent.detail.emptyRelatedPackages}
-                </p>
-              )}
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-
-      <div class="mt-10 grid gap-6 lg:grid-cols-2">
-        <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
-          <CardHeader>
-            <CardTitle className="text-3xl leading-tight">
-              {destinationsPageContent.detail.summaryTitle}
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p class="text-sm leading-7 text-text-muted">
-              {destination.summary}
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
-          <CardHeader>
-            <CardTitle className="text-3xl leading-tight">
-              {destinationsPageContent.detail.transportTitle}
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div class="grid gap-3 text-sm leading-7 text-text-muted">
-              <p>{destinationsPageContent.detail.transportDescription}</p>
-              <Separator />
-              <p>{destinationsPageContent.detail.transportNote}</p>
-            </div>
-            <div class="mt-6 flex flex-wrap gap-3">
-              <Button href="/kontak" variant="outline">
-                Cek Ketersediaan
-              </Button>
-              <Button href="/kontak">Chat WhatsApp</Button>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      <FaqSection
-        eyebrow="FAQ"
-        title={destinationsPageContent.detail.faqTitle}
-        items={destinationsPageContent.faq}
-        variant="card"
-        background="bg-surface-soft"
-      />
+    <FaqSection
+      eyebrow="FAQ"
+      title={destinationsPageContent.detail.faqTitle}
+      items={destinationsPageContent.faq}
+      variant="card"
+      background="bg-surface-soft"
+    />
   </SectionContainer>
 </MainLayout>

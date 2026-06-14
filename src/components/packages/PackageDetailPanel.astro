@@ -1,0 +1,72 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
+
+interface Props {
+  tour: TourPackage;
+}
+
+const { tour } = Astro.props;
+---
+
+<div class="flex h-full flex-col gap-6">
+  <Card
+    className="flex-1 border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
+  >
+    <CardHeader>
+      <Badge variant="outline" className="w-fit rounded-lg px-3 py-1">
+        {tour.category}
+      </Badge>
+      <CardTitle className="text-3xl leading-tight">
+        Informasi Paket
+      </CardTitle>
+    </CardHeader>
+    <CardContent>
+      <div class="grid gap-4 text-sm">
+        <div class="flex items-center justify-between">
+          <span class="text-text-muted">Durasi</span>
+          <span class="font-medium">{tour.duration}</span>
+        </div>
+        <Separator />
+        <div>
+          <div class="mb-2 text-text-muted">Termasuk</div>
+          <ul class="grid gap-1">
+            {tour.includes.slice(0, 4).map((item) => <li>✓ {item}</li>)}
+          </ul>
+        </div>
+        <Separator />
+        <div class="flex flex-wrap gap-2">
+          {tour.highlights.map((item) => (
+            <Badge variant="default" className="rounded-lg px-3 py-1">
+              {item}
+            </Badge>
+          ))}
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+
+  <Card
+    className="border-border bg-brand-900 text-white shadow-[0_16px_45px_rgba(17,24,39,0.1)]"
+  >
+    <CardHeader>
+      <CardTitle className="text-3xl leading-tight text-white">
+        Pesan paket ini
+      </CardTitle>
+    </CardHeader>
+    <CardContent>
+      <p class="text-sm leading-7 text-brand-100">
+        Hubungi tim untuk memastikan tanggal terbaik, titik penjemputan,
+        dan tempo itinerary yang paling pas.
+      </p>
+    </CardContent>
+    <CardContent className="flex flex-wrap gap-3">
+      <a href="/kontak">
+        <Button size={"lg"} variant={"secondary"}>Hubungi Kami</Button>
+      </a>
+    </CardContent>
+  </Card>
+</div>

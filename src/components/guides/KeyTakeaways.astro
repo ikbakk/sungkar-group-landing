@@ -1,0 +1,21 @@
+---
+interface Props {
+  takeaways: string[];
+}
+
+const { takeaways } = Astro.props;
+---
+
+<div class="mx-auto max-w-4xl">
+  <h2 class="text-2xl font-bold text-foreground mb-6">Poin-Poin Kunci</h2>
+  <ul class="grid gap-3 md:grid-cols-2">
+    {
+      takeaways.map((takeaway) => (
+        <li class="flex items-start gap-3 rounded-lg border border-border bg-white p-4">
+          <span class="text-brand-600 font-bold text-lg">✓</span>
+          <span class="text-foreground">{takeaway}</span>
+        </li>
+      ))
+    }
+  </ul>
+</div>

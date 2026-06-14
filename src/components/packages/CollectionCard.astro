@@ -1,0 +1,47 @@
+---
+import { Card, CardContent } from "@/components/ui/card";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
+
+interface Props {
+  collection: {
+    slug: string;
+    title: string;
+    packages: TourPackage[];
+  };
+  region: string;
+}
+
+const { collection, region } = Astro.props;
+---
+
+<a href={`/paket-wisata/${region}/${collection.slug}`}>
+  <Card
+    className="
+      h-full
+      transition-all
+      hover:-translate-y-1
+      hover:shadow-lg
+      cursor-pointer
+    "
+  >
+    <CardContent className="p-6">
+      <h2 class="text-xl font-heading">{collection.title}</h2>
+      <p class="mt-2 text-sm text-text-muted">
+        {collection.packages.length} paket tersedia
+      </p>
+      <ul class="mt-4 space-y-2 text-sm text-text-muted">
+        {collection.packages.slice(0, 3).map((pkg) => (
+          <li class="flex gap-2">
+            <span>•</span>
+            <span>{pkg.title}</span>
+          </li>
+        ))}
+        {collection.packages.length > 3 && (
+          <li class="font-medium text-brand-700">
+            +{collection.packages.length - 3} paket lainnya
+          </li>
+        )}
+      </ul>
+    </CardContent>
+  </Card>
+</a>

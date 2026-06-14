@@ -2,11 +2,11 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import { Card, CardContent } from "@/components/ui/card";
 
 import { packages } from "@/lib/content/tourPackages/index";
+import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
-type Region = "lombok" | "sumbawa" | "labuan-bajo";
+import CollectionCard from "@/components/packages/CollectionCard.astro";
 
 type CollectionCard = {
   slug: string;
@@ -16,31 +16,13 @@ type CollectionCard = {
 
 export function getStaticPaths() {
   return [
-    {
-      params: {
-        region: "lombok",
-      },
-    },
-    {
-      params: {
-        region: "sumbawa",
-      },
-    },
-    {
-      params: {
-        region: "labuan-bajo",
-      },
-    },
+    { params: { region: "lombok" } },
+    { params: { region: "sumbawa" } },
+    { params: { region: "labuan-bajo" } },
   ];
 }
 
 const region = Astro.params.region as Region;
-
-const regionTitleMap: Record<Region, string> = {
-  lombok: "Lombok",
-  sumbawa: "Sumbawa",
-  "labuan-bajo": "Labuan Bajo",
-};
 
 const regionPackages = packages.filter((pkg) => pkg.region === region);
 
@@ -53,79 +35,34 @@ const collections = Object.values(
         packages: [],
       };
     }
-
     acc[pkg.collectionSlug].packages.push(pkg);
-
     return acc;
   }, {}),
 );
 ---
 
 <MainLayout
-  title={`Paket Wisata ${regionTitleMap[region]}`}
-  description={`Pilihan paket wisata ${regionTitleMap[region]}`}
+  title={`Paket Wisata ${REGION_LABEL[region]}`}
+  description={`Pilihan paket wisata ${REGION_LABEL[region]}`}
   canonical={`/paket-wisata/${region}`}
   image={regionPackages[0]?.image}
 >
   <PageHeader
     eyebrow="Paket Wisata"
-    title={`Paket Wisata ${regionTitleMap[region]}`}
-    description={`Pilih kategori paket wisata yang tersedia di ${regionTitleMap[region]}.`}
+    title={`Paket Wisata ${REGION_LABEL[region]}`}
+    description={`Pilih kategori paket wisata yang tersedia di ${REGION_LABEL[region]}.`}
     breadcrumbs={[
-      {
-        label: "Beranda",
-        href: "/",
-      },
-      {
-        label: "Paket Wisata",
-        href: "/paket-wisata",
-      },
-      {
-        label: regionTitleMap[region],
-      },
+      { label: "Beranda", href: "/" },
+      { label: "Paket Wisata", href: "/paket-wisata" },
+      { label: REGION_LABEL[region] },
     ]}
   />
 
   <SectionContainer background="bg-surface-soft">
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {
-        collections.map((collection) => (
-          <a href={`/paket-wisata/${region}/${collection.slug}`}>
-            <Card
-              className="
-                h-full
-                transition-all
-                hover:-translate-y-1
-                hover:shadow-lg
-                cursor-pointer
-              "
-            >
-              <CardContent className="p-6">
-                <h2 class="text-xl font-heading">{collection.title}</h2>
-
-                <p class="mt-2 text-sm text-text-muted">
-                  {collection.packages.length} paket tersedia
-                </p>
-
-                <ul class="mt-4 space-y-2 text-sm text-text-muted">
-                  {collection.packages.slice(0, 3).map((pkg) => (
-                    <li class="flex gap-2">
-                      <span>•</span>
-                      <span>{pkg.title}</span>
-                    </li>
-                  ))}
-
-                  {collection.packages.length > 3 && (
-                    <li class="font-medium text-brand-700">
-                      +{collection.packages.length - 3} paket lainnya
-                    </li>
-                  )}
-                </ul>
-              </CardContent>
-            </Card>
-          </a>
-        ))
-      }
+      {collections.map((collection) => (
+        <CollectionCard collection={collection} region={region} />
+      ))}
     </div>
   </SectionContainer>
 </MainLayout>

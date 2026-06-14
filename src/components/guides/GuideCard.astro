@@ -1,0 +1,34 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import type { Guide } from "@/lib/content/guides";
+
+interface Props {
+  guide: Guide;
+}
+
+const { guide } = Astro.props;
+---
+
+<Card className="card-interactive">
+  <CardHeader>
+    <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+      {guide.readingTime} min baca
+    </Badge>
+    <CardTitle className="text-xl leading-tight">
+      <a href={`/panduan-wisata/${guide.slug}`} class="hover:text-brand-600 transition-colors">
+        {guide.title}
+      </a>
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p class="text-sm leading-6 text-muted-foreground mb-4">{guide.description}</p>
+    <div class="flex flex-wrap gap-2">
+      {guide.bestFor.slice(0, 2).map((item) => (
+        <Badge variant="secondary" className="text-xs rounded-full px-2 py-1">
+          {item}
+        </Badge>
+      ))}
+    </div>
+  </CardContent>
+</Card>

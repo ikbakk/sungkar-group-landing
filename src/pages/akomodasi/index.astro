@@ -7,6 +7,7 @@ import { generateFAQPageSchema } from "@/lib/schemas";
 
 import StickyNav from "@/components/ui/StickyNav.astro";
 import RegionObserver from "@/components/ui/RegionObserver.astro";
+import RegionNavCard from "@/components/ui/RegionNavCard.astro";
 import AccommodationRegionSection from "@/components/accommodations/AccommodationRegionSection.astro";
 import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 
@@ -69,8 +70,8 @@ const regions = [
     <SectionContainer background="bg-surface-soft">
       <AccommodationRegionSection
         id="lombok"
-          title={akomodasiPageContent.regions.lombok.title}
-          description={akomodasiPageContent.regions.lombok.description}
+        title={akomodasiPageContent.regions.lombok.title}
+        description={akomodasiPageContent.regions.lombok.description}
         accommodations={lombokAccommodations}
       />
     </SectionContainer>
@@ -80,8 +81,8 @@ const regions = [
     <SectionContainer background="bg-background">
       <AccommodationRegionSection
         id="sumbawa"
-          title={akomodasiPageContent.regions.sumbawa.title}
-          description={akomodasiPageContent.regions.sumbawa.description}
+        title={akomodasiPageContent.regions.sumbawa.title}
+        description={akomodasiPageContent.regions.sumbawa.description}
         accommodations={sumbawaAccommodations}
       />
     </SectionContainer>
@@ -91,8 +92,8 @@ const regions = [
     <SectionContainer background="bg-surface-soft">
       <AccommodationRegionSection
         id="labuan-bajo"
-          title={akomodasiPageContent.regions.labuanBajo.title}
-          description={akomodasiPageContent.regions.labuanBajo.description}
+        title={akomodasiPageContent.regions["labuan-bajo"].title}
+        description={akomodasiPageContent.regions["labuan-bajo"].description}
         accommodations={labuanBajoAccommodations}
       />
     </SectionContainer>

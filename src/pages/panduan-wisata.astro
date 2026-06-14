@@ -9,9 +9,8 @@ import { guides } from "@/lib/content/guides";
 import { destinations } from "@/lib/content/destinationsData";
 import { packages } from "@/lib/content/tourPackages";
 import { generalFaqItems } from "@/lib/content/faqs/general";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import GuideCard from "@/components/guides/GuideCard.astro";
+import LinkCardList from "@/components/site/LinkCardList.astro";
 
 const faqSchema = generateFAQPageSchema(generalFaqItems);
 ---
@@ -31,89 +30,37 @@ const faqSchema = generateFAQPageSchema(generalFaqItems);
   />
 
   <SectionContainer background="bg-surface-soft" padding="py-16">
-      <div class="mb-12">
-        <h2 class="text-2xl font-bold text-foreground md:text-3xl">
-          Panduan Lengkap Kami
-        </h2>
-        <p class="mt-2 text-muted-foreground">
-          Pelajari segala yang perlu Anda ketahui untuk merencanakan perjalanan wisata yang sempurna
-        </p>
-      </div>
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">
+        Panduan Lengkap Kami
+      </h2>
+      <p class="mt-2 text-muted-foreground">
+        Pelajari segala yang perlu Anda ketahui untuk merencanakan perjalanan wisata yang sempurna
+      </p>
+    </div>
 
-      <div class="grid gap-6 md:grid-cols-3">
-        {
-          guides.map((guide) => (
-            <Card className="card-interactive">
-              <CardHeader>
-                <Badge
-                  variant="outline"
-                  className="w-fit rounded-full px-3 py-1"
-                >
-                  {guide.readingTime} min baca
-                </Badge>
-                <CardTitle className="text-xl leading-tight">
-                  <a href={`/panduan-wisata/${guide.slug}`} class="hover:text-brand-600 transition-colors">
-                    {guide.title}
-                  </a>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p class="text-sm leading-6 text-muted-foreground mb-4">{guide.description}</p>
-                <div class="flex flex-wrap gap-2">
-                  {guide.bestFor.slice(0, 2).map((item) => (
-                    <Badge variant="secondary" className="text-xs rounded-full px-2 py-1">
-                      {item}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))
-        }
-      </div>
+    <div class="grid gap-6 md:grid-cols-3">
+      {guides.map((guide) => <GuideCard {guide} />)}
+    </div>
   </SectionContainer>
 
   <SectionContainer background="bg-background" padding="py-16">
-      <div class="grid gap-6 lg:grid-cols-2">
-        <Card className="card-base">
-          <CardHeader>
-            <CardTitle className="text-3xl leading-tight">
-              Destinasi terkait
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="grid gap-3">
-            {
-              destinations.slice(0, 8).map((destination) => (
-                <a
-                  href={`/destinasi/${destination.slug}`}
-                  class="rounded-lg border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-300 hover:bg-brand-50"
-                >
-                  {destination.title}
-                </a>
-              ))
-            }
-          </CardContent>
-        </Card>
-
-        <Card className="card-base bg-brand-900 text-white">
-          <CardHeader>
-            <CardTitle className="text-3xl leading-tight text-white">
-              Paket terkait
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="grid gap-3">
-            {
-              packages.map((tour) => (
-                <a
-                  href={`/paket-wisata/${tour.slug}`}
-                  class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10"
-                >
-                  {tour.title}
-                </a>
-              ))
-            }
-          </CardContent>
-        </Card>
+    <div class="grid gap-6 lg:grid-cols-2">
+      <LinkCardList
+        title="Destinasi terkait"
+        items={destinations.slice(0, 8).map((d) => ({
+          title: d.title,
+          href: `/destinasi/${d.slug}`,
+        }))}
+      />
+      <LinkCardList
+        title="Paket terkait"
+        items={packages.map((p) => ({
+          title: p.title,
+          href: `/paket-wisata/${p.slug}`,
+        }))}
+        variant="branded"
+      />
+    </div>
   </SectionContainer>
-
 </MainLayout>
