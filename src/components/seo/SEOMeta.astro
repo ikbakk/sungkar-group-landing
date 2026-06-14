@@ -1,5 +1,6 @@
 ---
 import type { ImageMetadata } from "astro";
+import { SITE_URL } from "@/lib/site-config";
 
 interface Props {
   title: string;
@@ -16,8 +17,6 @@ interface Props {
   twitterCard?: "summary" | "summary_large_image";
 
   noIndex?: boolean;
-
-  siteUrl?: string;
 
   locale?: string;
 }
@@ -38,8 +37,6 @@ const {
 
   noIndex = false,
 
-  siteUrl = "https://www.sungkargroup.id",
-
   locale = "id_ID",
 } = Astro.props as Props;
 
@@ -47,9 +44,9 @@ const pageTitle = title.endsWith(" | Sungkar Group")
   ? title
   : `${title} | Sungkar Group`;
 
-const pageUrl = canonical || Astro.url.toString();
+const canonicalUrl = new URL(canonical ?? Astro.url.pathname, SITE_URL).toString();
 
-const ogImageUrl = ogImage ? `${siteUrl}${ogImage.src}` : undefined;
+const ogImageUrl = ogImage ? `${SITE_URL}${ogImage.src}` : undefined;
 
 const twitterCard =
   twitterCardOverride || (ogImageUrl ? "summary_large_image" : "summary");
@@ -63,7 +60,7 @@ const twitterCard =
 
 <meta name="description" content={description} />
 
-<link rel="canonical" href={pageUrl} />
+<link rel="canonical" href={canonicalUrl} />
 
 <meta name="robots" content={noIndex ? "noindex,nofollow" : "index,follow"} />
 
@@ -85,7 +82,7 @@ const twitterCard =
 
 <meta property="og:description" content={description} />
 
-<meta property="og:url" content={pageUrl} />
+<meta property="og:url" content={canonicalUrl} />
 
 {
   ogImage && ogImageUrl && (
