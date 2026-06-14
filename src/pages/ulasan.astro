@@ -41,15 +41,8 @@ const faqSchema = generateFAQPageSchema(reviewsFaq);
     />
   </SectionContainer>
 
-  <SectionContainer background="bg-surface-soft">
-    <ReviewsGridSection reviews={reviews} />
-  </SectionContainer>
-
   <SectionContainer background="bg-background">
-    <!-- <TrustSignalSection
-      title={reviewsPageContent.trust.title}
-      items={reviewsPageContent.trust.description}
-    /> -->
+    <ReviewsGridSection reviews={reviews} />
   </SectionContainer>
 
   <SectionContainer background="bg-surface-soft">

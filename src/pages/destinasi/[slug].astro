@@ -12,6 +12,7 @@ import { SITE_URL } from "@/lib/site-config";
 import { destinations } from "@/lib/content/destinationsData";
 import { packages } from "@/lib/content/tourPackages";
 import { destinationsPageContent } from "@/lib/content/destinationsPage";
+import SectionContainer from "@/layouts/SectionContainer.astro";
 import {
   Card,
   CardContent,
@@ -83,8 +84,7 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
     imageAlt={destination.title}
   />
 
-  <section class="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+  <SectionContainer background="bg-surface-soft" padding="pb-20">
       <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
         <div
           class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]"
@@ -194,6 +194,5 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
         variant="card"
         background="bg-surface-soft"
       />
-    </div>
-  </section>
+  </SectionContainer>
 </MainLayout>

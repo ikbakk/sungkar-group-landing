@@ -1,13 +1,17 @@
 ---
+import { cn } from "@/lib/utils";
+
 interface Props {
   background?: string;
+  padding?: string;
+  className?: string;
 }
 
-const { background = "bg-background" } = Astro.props;
+const { background = "bg-background", className = "", padding = "py-8" } = Astro.props;
 ---
 
-<section class={background}>
-  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+<section class={cn(background, className)}>
+  <div class={cn("mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", padding)}>
     <slot />
   </div>
 </section>

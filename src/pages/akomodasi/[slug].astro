@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { accommodations } from "@/lib/content/akomodasiData";
 
@@ -54,8 +55,7 @@ const regionDisplay =
     ]}
   />
 
-  <section class="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+  <SectionContainer background="bg-surface-soft" padding="pb-20">
       <div class="grid gap-8 md:grid-cols-2">
         {
           regionAccommodations.map((accommodation) => (
@@ -132,7 +132,5 @@ const regionDisplay =
             <Button size={"lg"}>Hubungi Kami</Button>
           </a>
         </div>
-      </div>
-    </div>
-  </section>
+  </SectionContainer>
 </MainLayout>

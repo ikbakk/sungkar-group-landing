@@ -1,4 +1,6 @@
 ---
+import SectionContainer from "@/layouts/SectionContainer.astro";
+
 interface RelatedItem {
   title: string;
   href: string;
@@ -8,35 +10,34 @@ interface RelatedItem {
 interface Props {
   title: string;
   items: RelatedItem[];
+  background?: string;
 }
 
-const { title, items } = Astro.props;
+const { title, items, background = "bg-background" } = Astro.props;
 ---
 
-<section class="py-16 lg:py-24">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="mb-12">
-      <h2 class="font-heading text-3xl leading-tight text-foreground">
-        {title}
-      </h2>
-    </div>
-
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {
-        items.map((item) => (
-          <a
-            href={item.href}
-            class="group card-interactive p-6"
-          >
-            <h3 class="font-heading text-xl text-foreground group-hover:text-brand-600 transition-colors">
-              {item.title}
-            </h3>
-            <p class="mt-2 text-sm leading-6 text-text-muted font-sans">
-              {item.description}
-            </p>
-          </a>
-        ))
-      }
-    </div>
+<SectionContainer background={background} padding="py-16 lg:py-24">
+  <div class="mb-12">
+    <h2 class="font-heading text-3xl leading-tight text-foreground">
+      {title}
+    </h2>
   </div>
-</section>
+
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {
+      items.map((item) => (
+        <a
+          href={item.href}
+          class="group card-interactive p-6"
+        >
+          <h3 class="font-heading text-xl text-foreground group-hover:text-brand-600 transition-colors">
+            {item.title}
+          </h3>
+          <p class="mt-2 text-sm leading-6 text-text-muted font-sans">
+            {item.description}
+          </p>
+        </a>
+      ))
+    }
+  </div>
+</SectionContainer>
