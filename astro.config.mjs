@@ -9,9 +9,11 @@ import react from "@astrojs/react";
 
 import sitemap from "@astrojs/sitemap";
 
+import { SITE_URL } from "./src/lib/site-config";
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sungkargroup.id",
+  site: SITE_URL,
   vite: {
     plugins: [tailwindcss()],
   },
