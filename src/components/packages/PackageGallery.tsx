@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { Dialog } from "@base-ui/react/dialog";
 import type { ImageMetadata } from "astro";
 
@@ -10,6 +10,7 @@ interface Props {
 export default function PackageGallery({ images, initialIndex = 0 }: Props) {
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState(initialIndex);
+  const touchStartX = useRef(0);
 
   const prev = useCallback(() => {
     setCurrent((c) => (c === 0 ? images.length - 1 : c - 1));
@@ -52,11 +53,23 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
     };
   }, []);
 
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const onTouchEnd = (e: React.TouchEvent) => {
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) next();
+      else prev();
+    }
+  };
+
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Portal>
         <Dialog.Backdrop className="fixed inset-0 z-[60] bg-black/90 data-open:animate-fade-in data-close:animate-fade-out" />
-        <Dialog.Popup className="fixed inset-0 z-[61] flex flex-col items-center justify-center p-4 outline-none">
+        <Dialog.Popup className="fixed inset-0 z-[61] flex flex-col items-center justify-center outline-none">
           {/* Top bar */}
           <div className="absolute right-4 top-4 z-10 flex items-center gap-3">
             {images.length > 1 && (
@@ -85,7 +98,11 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
           )}
 
           {/* Image */}
-          <div className="flex max-h-[70vh] max-w-[90vw] items-center justify-center">
+          <div
+            className="flex max-h-[70vh] max-w-[90vw] items-center justify-center"
+            onTouchStart={onTouchStart}
+            onTouchEnd={onTouchEnd}
+          >
             <img
               src={images[current].src}
               alt={`${current + 1} of ${images.length}`}
@@ -97,7 +114,7 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
           {images.length > 1 && (
             <button
               onClick={next}
-              className="absolute right-20 top-1/2 z-10 flex size-12 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
+              className="absolute right-4 top-1/2 z-10 flex size-12 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 md:right-20"
               aria-label="Next image"
             >
               <svg className="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
@@ -108,12 +125,12 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
 
           {/* Thumbnails */}
           {images.length > 1 && (
-            <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+            <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2 overflow-x-auto px-4">
               {images.map((img, i) => (
                 <button
                   key={i}
                   onClick={() => goTo(i)}
-                  className={`size-14 overflow-hidden rounded-md border-2 transition-all focus-visible:outline-none ${
+                  className={`shrink-0 size-14 overflow-hidden rounded-md border-2 transition-all focus-visible:outline-none ${
                     i === current ? "border-white opacity-100" : "border-transparent opacity-50 hover:opacity-80"
                   }`}
                 >

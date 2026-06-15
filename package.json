@@ -31,6 +31,7 @@
     "astro-tunnel": "^0.1.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "embla-carousel": "^8.6.0",
     "lucide-static": "^1.18.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
