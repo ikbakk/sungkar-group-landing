@@ -47,19 +47,29 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt, stats } =
       />
       <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/20" />
 
-      <div class="relative z-10 mx-auto w-full max-w-7xl px-4 pb-10 pt-16 sm:px-6 sm:pt-24 lg:pb-14 lg:pt-0 lg:px-8">
-        <Breadcrumb className="mb-8 text-white/80">
-          <BreadcrumbList>
+      <div class="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-4 pb-10 pt-32 sm:px-6 md:pt-32 lg:pb-14 lg:px-8">
+        <Breadcrumb className="mb-8">
+          <BreadcrumbList className="flex-wrap">
             {breadcrumbs.map((crumb, index) => (
-              <BreadcrumbItem key={index}>
+              <BreadcrumbItem
+                key={index}
+                className="shrink-0 whitespace-nowrap"
+              >
                 {crumb.href ? (
-                  <BreadcrumbLink href={crumb.href} class="text-white/80 transition-colors hover:text-white">
+                  <BreadcrumbLink
+                    href={crumb.href}
+                    className="text-white/70 transition-colors hover:text-white"
+                  >
                     {crumb.label}
                   </BreadcrumbLink>
                 ) : (
-                  <BreadcrumbPage class="text-white/90">{crumb.label}</BreadcrumbPage>
+                  <BreadcrumbPage className="font-semibold text-white">
+                    {crumb.label}
+                  </BreadcrumbPage>
                 )}
-                {index < breadcrumbs.length - 1 && <BreadcrumbSeparator class="text-white/50" />}
+                {index < breadcrumbs.length - 1 && (
+                  <BreadcrumbSeparator className="text-white/30" />
+                )}
               </BreadcrumbItem>
             ))}
           </BreadcrumbList>
@@ -107,7 +117,9 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt, stats } =
                     {crumb.label}
                   </BreadcrumbLink>
                 ) : (
-                  <BreadcrumbPage>{crumb.label}</BreadcrumbPage>
+                  <BreadcrumbPage className="font-semibold">
+                    {crumb.label}
+                  </BreadcrumbPage>
                 )}
                 {index < breadcrumbs.length - 1 && <BreadcrumbSeparator />}
               </BreadcrumbItem>
