@@ -1,5 +1,6 @@
 ---
 import Header from "@/components/header/Header.astro";
+import FadeInText from "@astroanimate/core/FadeInText";
 import Footer from "@/components/site/Footer.astro";
 import SEOMeta from "@/components/seo/SEOMeta.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
@@ -78,7 +79,9 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
     <Header />
 
     <main id="content">
-      <slot />
+      <FadeInText duration={0.2}>
+        <slot />
+      </FadeInText>
     </main>
 
     <Footer />
