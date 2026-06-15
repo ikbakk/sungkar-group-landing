@@ -1,9 +1,11 @@
 ---
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
+import { paketWisataFormFields } from "@/lib/contact-data";
 import type { TourPackage } from "@/lib/content/tourPackages/types";
+import { REGION_LABEL } from "@/lib/regions";
 
 interface Props {
   tour: TourPackage;
@@ -49,24 +51,11 @@ const { tour } = Astro.props;
     </CardContent>
   </Card>
 
-  <Card
-    className="border-border bg-brand-900 text-white shadow-[0_16px_45px_rgba(17,24,39,0.1)]"
-  >
-    <CardHeader>
-      <CardTitle className="text-3xl leading-tight text-white">
-        Pesan paket ini
-      </CardTitle>
-    </CardHeader>
-    <CardContent>
-      <p class="text-sm leading-7 text-brand-100">
-        Hubungi tim untuk memastikan tanggal terbaik, titik penjemputan,
-        dan tempo itinerary yang paling pas.
-      </p>
-    </CardContent>
-    <CardContent className="flex flex-wrap gap-3">
-      <a href="/kontak">
-        <Button size={"lg"} variant={"secondary"}>Hubungi Kami</Button>
-      </a>
-    </CardContent>
-  </Card>
+  <WhatsAppForm
+    context="paket-wisata"
+    fields={paketWisataFormFields}
+    mode="sidebar"
+    itemName={tour.title}
+    region={REGION_LABEL[tour.region]}
+  />
 </div>

@@ -14,7 +14,7 @@ export const labuanBajoPackages: TourPackage[] = [
     category: "Paket Wisata Labuan Bajo",
     duration: "1 Hari",
 
-    image: HeroLombok,
+    images: [HeroLombok],
 
     summary:
       "Wisata satu hari menggunakan speedboat ke destinasi utama Taman Nasional Komodo.",
@@ -39,7 +39,7 @@ export const labuanBajoPackages: TourPackage[] = [
     category: "Paket Wisata Labuan Bajo",
     duration: "2 Hari 1 Malam",
 
-    image: HeroLombok,
+    images: [HeroLombok],
 
     summary: "Liveaboard singkat dengan pengalaman menginap di kapal.",
 
@@ -68,7 +68,7 @@ export const labuanBajoPackages: TourPackage[] = [
     category: "Paket Wisata Labuan Bajo",
     duration: "3 Hari 2 Malam",
 
-    image: HeroLombok,
+    images: [HeroLombok],
 
     summary: "Program sailing paling populer di kawasan Komodo.",
 

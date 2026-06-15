@@ -5,7 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { Accommodation } from "@/lib/content/akomodasiData";
 import { REGION_MAP } from "@/lib/regions";
-import { CTA_CLASS } from "@/lib/card-styles";
 
 interface Props {
   accommodation: Accommodation;
@@ -14,18 +13,14 @@ interface Props {
 const { accommodation } = Astro.props;
 
 const region = REGION_MAP[accommodation.region];
-
-const cardHref = `/akomodasi/${accommodation.region}`;
 ---
 
-<a href={cardHref} class="block">
   <Card
     className="
       group
       h-fit
       overflow-hidden
       py-0
-      card-interactive
     "
   >
     <!-- Image -->
@@ -105,11 +100,5 @@ const cardHref = `/akomodasi/${accommodation.region}`;
         </ul>
       </div>
 
-      <div class="mt-auto pt-2">
-        <span class={CTA_CLASS}>
-          Lihat Akomodasi
-        </span>
-      </div>
     </CardContent>
   </Card>
-</a>

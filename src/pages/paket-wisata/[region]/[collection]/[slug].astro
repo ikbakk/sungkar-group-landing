@@ -34,7 +34,7 @@ const { tour } = Astro.props;
 
 // Generate schemas
 const packageUrl = `${SITE_URL}/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
-const absoluteImageUrl = new URL(tour.image.src, SITE_URL).toString();
+const absoluteImageUrl = new URL(tour.images[0].src, SITE_URL).toString();
 
 const productSchema = generateProductSchema(
   tour.title,
@@ -83,7 +83,7 @@ const itineraryByDay = Object.entries(
   title={tour.title}
   description={tour.summary}
   canonical={`/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`}
-  image={tour.image}
+  image={tour.images[0]}
 >
   <StructuredData schema={productSchema} />
   <StructuredData schema={breadcrumbSchema} />
@@ -114,7 +114,7 @@ const itineraryByDay = Object.entries(
         label: tour.title,
       },
     ]}
-    image={tour.image}
+    image={tour.images[0]}
     imageAlt={tour.title}
   />
 
@@ -122,7 +122,9 @@ const itineraryByDay = Object.entries(
     <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
       <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-stretch">
         <PackageImagePreview {tour} />
-        <PackageDetailPanel {tour} />
+        <div class="lg:sticky lg:top-24">
+          <PackageDetailPanel {tour} />
+        </div>
       </div>
 
       <div class="mt-10 grid gap-6 lg:grid-cols-2">

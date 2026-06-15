@@ -17,14 +17,13 @@ interface Props {
 
 const { vehicle } = Astro.props;
 
-const cardHref = "/kontak";
+const cardHref = `/sewa-mobil/${vehicle.region}/${vehicle.slug}`;
 ---
 
-<a href={cardHref} class="block">
-  <Card className="overflow-hidden card-interactive">
+  <Card className="overflow-hidden">
     <div class="relative h-64 w-full overflow-hidden">
       <Image
-        src={vehicle.image}
+        src={vehicle.imageTop}
         alt={vehicle.name}
         class="h-full w-full object-cover"
         loading="lazy"
@@ -102,9 +101,8 @@ const cardHref = "/kontak";
     </CardContent>
 
     <CardFooter>
-      <span class={CTA_CLASS}>
-        Pesan Sekarang
-      </span>
+      <a href={cardHref} class={CTA_CLASS}>
+        Lihat Detail & Sewa
+      </a>
     </CardFooter>
   </Card>
-</a>

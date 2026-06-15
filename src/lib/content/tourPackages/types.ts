@@ -17,7 +17,7 @@ export type TourPackage = {
   category: string;
   duration: string;
 
-  image: ImageMetadata;
+  images: ImageMetadata[];
 
   summary: string;
 

@@ -15,7 +15,7 @@ export const sumbawaPackages: TourPackage[] = [
     duration: "2 Hari 1 Malam",
     featured: true,
 
-    image: WhaleShark,
+    images: [WhaleShark],
 
     summary:
       "Open trip menuju Teluk Saleh untuk menikmati pengalaman berenang bersama whale shark.",

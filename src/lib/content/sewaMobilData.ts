@@ -10,7 +10,8 @@ export type Vehicle = {
   features: string[];
   bestFor: string[];
   description: string;
-  image: ImageMetadata;
+  imageTop: ImageMetadata;
+  imageBottom: ImageMetadata;
 };
 
 import HeroLombok from "@/assets/images/hero-lombok.webp";
@@ -27,7 +28,8 @@ export const vehicles: Vehicle[] = [
     bestFor: ["Perjalanan kota", "Couple travelers", "City tour"],
     description:
       "Kendaraan hemat bahan bakar yang nyaman untuk perjalanan kota dengan konsumsi BBM yang efisien dan performa stabil.",
-    image: HeroLombok,
+    imageTop: HeroLombok,
+    imageBottom: HeroLombok,
   },
   {
     slug: "mpv-family-lombok",
@@ -45,7 +47,8 @@ export const vehicles: Vehicle[] = [
     bestFor: ["Rombongan keluarga", "Group tour", "Kenyamanan maksimal"],
     description:
       "Kendaraan ideal untuk keluarga besar dengan interior yang luas dan fitur kenyamanan modern untuk perjalanan jarak jauh.",
-    image: HeroLombok,
+    imageTop: HeroLombok,
+    imageBottom: HeroLombok,
   },
   {
     slug: "suv-adventure-lombok",
@@ -67,7 +70,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "SUV tangguh dengan ground clearance tinggi dan sistem 4WD untuk menjangkau destinasi adventure yang menantang.",
-    image: HeroLombok,
+    imageTop: HeroLombok,
+    imageBottom: HeroLombok,
   },
 
   {
@@ -86,7 +90,8 @@ export const vehicles: Vehicle[] = [
     bestFor: ["Perjalanan VIP", "Comfort priority", "Bisnis travel"],
     description:
       "Van premium dengan interior mewah dan fasilitas hiburan lengkap untuk pengalaman perjalanan yang berkesan.",
-    image: HeroLombok,
+    imageTop: HeroLombok,
+    imageBottom: HeroLombok,
   },
   {
     slug: "minibus-group-labuan-bajo",
@@ -104,6 +109,7 @@ export const vehicles: Vehicle[] = [
     bestFor: ["Rombongan besar", "Acara keluarga", "Bus tour"],
     description:
       "Bus mini dengan kapasitas besar cocok untuk rombongan dan acara keluarga dengan kenyamanan maksimal seluruh penumpang.",
-    image: HeroLombok,
+    imageTop: HeroLombok,
+    imageBottom: HeroLombok,
   },
 ];

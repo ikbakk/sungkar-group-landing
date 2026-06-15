@@ -1,32 +1,32 @@
 export const akomodasiPageContent = {
   hero: {
-    eyebrow: "Akomodasi",
-    title: "Pilihan akomodasi terbaik di setiap destinasi",
+    eyebrow: "Rekomendasi Penginapan",
+    title: "Hotel rekomendasi untuk perjalanan Anda",
     description:
-      "Temukan penginapan yang sempurna untuk setiap jenis perjalanan Anda, dari beachfront resort hingga mountain retreat.",
+      "Setiap paket wisata kami sudah termasuk penginapan terpilih yang menjamin kenyamanan dan kemudahan akses ke destinasi terbaik.",
   },
   regions: {
     lombok: {
-      title: "Akomodasi Lombok",
+      title: "Hotel di Lombok",
       description:
-        "Hotel dan resort di Lombok menawarkan pengalaman beragam dari pantai eksotis hingga pegunungan yang sejuk dengan akses mudah ke destinasi wisata utama.",
+        "Hotel terbaik di Lombok — dari resort tepi pantai hingga penginapan di kaki Gunung Rinjani — untuk pengalaman menginap yang nyaman selama tour Anda.",
     },
     sumbawa: {
-      title: "Akomodasi Sumbawa",
+      title: "Hotel di Sumbawa",
       description:
-        "Penginapan di Sumbawa dirancang khusus untuk petualangan laut dengan akses langsung ke whale shark experience dan pulau-pulau indah.",
+        "Penginapan di Sumbawa untuk petualangan laut bersama whale shark, dengan akses langsung ke destinasi wisata bahari.",
     },
     "labuan-bajo": {
-      title: "Akomodasi Labuan Bajo",
+      title: "Hotel di Labuan Bajo",
       description:
-        "Resort dan liveaboard di Labuan Bajo adalah basecamp sempurna untuk menjelajahi Komodo National Park dengan kenyamanan maksimal.",
+        "Resort dan hotel di Labuan Bajo sebagai basecamp eksplorasi Komodo National Park dengan standar kenyamanan tinggi.",
     },
   },
   cta: {
-    title: "Tidak menemukan akomodasi yang cocok?",
+    title: "Ingin rekomendasi hotel spesifik?",
     description:
-      "Tim kami siap membantu Anda menemukan penginapan sempurna sesuai budget dan preferensi Anda.",
-    buttonLabel: "Hubungi Kami",
+      "Kami siap merekomendasikan penginapan yang paling sesuai dengan rencana perjalanan Anda.",
+    buttonLabel: "Tanya Kami",
     buttonHref: "/kontak",
   },
 } as const;

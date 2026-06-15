@@ -67,11 +67,11 @@
 
   /* Form Input Styles */
   .form-input {
-    @apply rounded-2xl border border-border bg-white px-4 py-3 text-foreground outline-none placeholder:text-text-muted;
+    @apply rounded-lg border border-border bg-white px-4 py-3 text-foreground outline-none placeholder:text-text-muted;
   }
 
   .form-input-dark {
-    @apply rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-brand-100/50;
+    @apply rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-brand-100/50;
   }
 
   .form-label {
