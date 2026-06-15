@@ -1,0 +1,110 @@
+---
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+
+import type { NavItem } from "@/lib/content/navigationData";
+
+interface Props {
+  items: NavItem[];
+}
+
+const { items } = Astro.props as Props;
+---
+
+<NavigationMenu delayOpen={100}>
+  <NavigationMenuList class="items-center gap-1">
+    {
+      items.map((item) => (
+        <NavigationMenuItem value={item.label}>
+          {item.variant === "link" && (
+            <NavigationMenuLink
+              href={item.href!}
+              class="inline-flex h-10 w-max items-center justify-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+            >
+              {item.label}
+            </NavigationMenuLink>
+          )}
+          {item.variant === "mega" && (
+            <>
+              <NavigationMenuTrigger class="inline-flex h-10 w-max items-center justify-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
+                {item.label}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div
+                  class="grid gap-3 p-3"
+                  style={{
+                    gridTemplateColumns: `repeat(${
+                      item.groups?.length ?? 1
+                    }, minmax(220px, 1fr))`,
+                  }}
+                >
+                  {item.groups?.map((group) => (
+                    <div class="rounded-lg border border-border bg-background p-2">
+                      <div class="mb-2">
+                        {group.href ? (
+                          <NavigationMenuLink
+                            href={group.href}
+                            class="text-sm font-semibold text-brand-700 hover:underline"
+                          >
+                            {group.title}
+                          </NavigationMenuLink>
+                        ) : (
+                          <div class="text-sm font-semibold text-brand-700">
+                            {group.title}
+                          </div>
+                        )}
+                      </div>
+                      {group.collections ? (
+                        <ul class="space-y-1">
+                          {group.collections.map((collection) => (
+                            <li>
+                              <NavigationMenuLink
+                                href={collection.href!}
+                                class="block rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+                              >
+                                {collection.title}
+                              </NavigationMenuLink>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <ul class="space-y-1">
+                          {group.items?.map((subItem) => (
+                            <li>
+                              <NavigationMenuLink
+                                href={subItem.href}
+                                class="block rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+                              >
+                                {subItem.label}
+                              </NavigationMenuLink>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  ))}
+                </div>
+                {item.href && (
+                  <div class="flex justify-center pb-3">
+                    <NavigationMenuLink
+                      href={item.href}
+                      class="inline-flex items-center rounded-md bg-brand-700 px-4 py-2 text-sm text-background transition-colors hover:bg-brand-500"
+                    >
+                      Lihat Semua {item.label}
+                    </NavigationMenuLink>
+                  </div>
+                )}
+              </NavigationMenuContent>
+            </>
+          )}
+        </NavigationMenuItem>
+      ))
+    }
+  </NavigationMenuList>
+</NavigationMenu>
