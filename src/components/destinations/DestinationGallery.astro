@@ -1,0 +1,59 @@
+---
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
+import { cn } from "@/lib/utils"
+
+interface Props {
+  class?: string
+  title: string
+  images: string[]
+  emptyText: string
+}
+
+const { class: className, title, images, emptyText } = Astro.props
+---
+
+<section class={cn("", className)}>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+    <div class="mb-10 flex items-end justify-between">
+      <h2 class="text-3xl font-heading leading-tight tracking-tight sm:text-4xl">
+        {title}
+      </h2>
+    </div>
+
+    {
+      images.length > 0 ? (
+        <Carousel
+          opts={{
+            loop: true,
+            align: "center",
+            skipSnaps: false,
+          }}
+          class="w-full"
+        >
+          <CarouselContent>
+            {
+              images.map((src, i) => (
+                <CarouselItem class="basis-full md:basis-1/2 lg:basis-1/3">
+                  <div class="overflow-hidden rounded-2xl border border-border bg-surface-soft">
+                    <img
+                      src={src}
+                      alt={`${title} - ${i + 1}`}
+                      class="aspect-4/3 w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                </CarouselItem>
+              ))
+            }
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      ) : (
+        <div class="flex h-48 items-center justify-center rounded-2xl border border-dashed border-border bg-surface-soft">
+          <p class="text-sm text-text-muted">{emptyText}</p>
+        </div>
+      )
+    }
+  </div>
+</section>

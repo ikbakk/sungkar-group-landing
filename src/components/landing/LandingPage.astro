@@ -1,10 +1,9 @@
 ---
-import { Image } from "astro:assets";
+import HeroSection from "./HeroSection.astro";
 import VideoSection from "./VideoSection.astro";
 import FeaturedSection from "./FeaturedSection.astro";
 import DestinationsSection from "./DestinationsSection.astro";
 import TransportSection from "./TransportSection.astro";
-import Hero11Block from "@/components/blocks/hero-11.astro";
 import Reviews5Block from "@/components/blocks/reviews-5.astro";
 
 import {
@@ -18,19 +17,14 @@ import {
 } from "@/lib/content/landing";
 ---
 
-<Hero11Block
+<HeroSection
+  eyebrow={landingHero.eyebrow}
   title={landingHero.title}
   description={landingHero.description}
-  buttons={[
-    { label: landingHero.primaryAction.label, href: landingHero.primaryAction.href, variant: "default" },
-    { label: landingHero.secondaryAction.label, href: landingHero.secondaryAction.href, variant: "secondary" },
-  ]}
-  socialProof={{
-    avatars: [],
-    rating: 5,
-    text: "Dipercaya wisatawan Indonesia",
-  }}
-  image={{ src: landingBackgroundImage, alt: "Pemandangan alam Lombok yang menenangkan" }}
+  primaryAction={landingHero.primaryAction}
+  secondaryAction={landingHero.secondaryAction}
+  image={landingBackgroundImage}
+  imageAlt="Pemandangan alam Lombok yang menenangkan"
 />
 <FeaturedSection
   eyebrow={landingFeaturedTours.eyebrow}

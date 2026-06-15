@@ -1,8 +1,12 @@
 ---
-import { Image } from "astro:assets";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import FaqSection from "@/components/site/Faq.astro";
+import DestinationDetailPanel from "@/components/destinations/DestinationDetailPanel.astro";
+import DestinationGallery from "@/components/destinations/DestinationGallery.astro";
+import PackageCard from "@/components/cards/PackageCard.astro";
 import {
   generateTouristAttractionSchema,
   generateBreadcrumbSchema,
@@ -12,10 +16,6 @@ import { SITE_URL } from "@/lib/site-config";
 import { destinations } from "@/lib/content/destinationsData";
 import { packages } from "@/lib/content/tourPackages";
 import { destinationsPageContent } from "@/lib/content/destinationsPage";
-import SectionContainer from "@/layouts/SectionContainer.astro";
-import FaqSection from "@/components/site/Faq.astro";
-import DestinationDetailPanel from "@/components/destinations/DestinationDetailPanel.astro";
-import DestinationInfoCards from "@/components/destinations/DestinationInfoCards.astro";
 
 import "../../styles/global.css";
 
@@ -32,7 +32,6 @@ const relatedPackages = packages.filter((tour) =>
   destination.packages.includes(tour.slug),
 );
 
-// Generate structured data schemas
 const absoluteImageUrl = new URL(destination.image.src, SITE_URL).toString();
 
 const touristAttractionSchema = generateTouristAttractionSchema(
@@ -64,6 +63,7 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
   <StructuredData schema={touristAttractionSchema} />
   <StructuredData schema={breadcrumbSchema} />
   <StructuredData schema={faqSchema} />
+
   <PageHeader
     eyebrow={destinationsPageContent.detail.headline}
     title={destination.title}
@@ -77,24 +77,43 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
     imageAlt={destination.title}
   />
 
-  <SectionContainer background="bg-surface-soft" padding="pb-20">
+  <SectionContainer background="bg-surface-soft" padding="py-16 lg:py-24">
     <DestinationDetailPanel
       destination={destination}
-      relatedPackages={relatedPackages}
       content={destinationsPageContent.detail}
     />
+  </SectionContainer>
 
-    <DestinationInfoCards
-      summary={destination.summary}
-      content={destinationsPageContent.detail}
-    />
+  {
+    relatedPackages.length > 0 && (
+      <SectionContainer background="bg-background" padding="py-16 lg:py-24">
+        <h2 class="text-3xl font-heading leading-tight tracking-tight sm:text-4xl">
+          {destinationsPageContent.detail.relatedPackagesTitle}
+        </h2>
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {
+            relatedPackages.map((tour) => (
+              <PackageCard tour={tour} />
+            ))
+          }
+        </div>
+      </SectionContainer>
+    )
+  }
 
+  <DestinationGallery
+    class="bg-surface-soft"
+    title={destinationsPageContent.detail.galleryTitle}
+    images={destination.gallery}
+    emptyText={destinationsPageContent.detail.emptyGallery}
+  />
+
+  <SectionContainer background="bg-background" padding="py-16 lg:py-24">
     <FaqSection
       eyebrow="FAQ"
       title={destinationsPageContent.detail.faqTitle}
       items={destinationsPageContent.faq}
       variant="card"
-      background="bg-surface-soft"
     />
   </SectionContainer>
 </MainLayout>

@@ -5,6 +5,7 @@ export type Destination = {
   title: string;
   region: string;
   image: ImageMetadata;
+  gallery: string[];
   summary: string;
   thingsToDo: string[];
   packages: string[];
@@ -14,6 +15,13 @@ import DestinationLombok from "@/assets/images/destination-lombok.webp";
 import DestinationRinjani from "@/assets/images/destination-rinjani.webp";
 import DestinationGili from "@/assets/images/destination-gili.webp";
 import DestinationSumbawa from "@/assets/images/destination-sumbawa.webp";
+import KutaBeach from "@/assets/images/kuta-beach.webp";
+import KutaBeach2 from "@/assets/images/kuta-beach-2.webp";
+import GiliMeno from "@/assets/images/gili-meno.webp";
+import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
+import TourCultural from "@/assets/images/tour-cultural.webp";
+import HeroLombok from "@/assets/images/hero-lombok.webp";
+import WhaleShark from "@/assets/images/whaleshark.webp";
 
 export const destinations: Destination[] = [
   {
@@ -21,6 +29,11 @@ export const destinations: Destination[] = [
     title: "Kuta Lombok",
     region: "Selatan Lombok",
     image: DestinationLombok,
+    gallery: [
+      "https://picsum.photos/seed/kuta-lombok-1/800/600",
+      "https://picsum.photos/seed/kuta-lombok-2/800/600",
+      "https://picsum.photos/seed/kuta-lombok-3/800/600",
+    ],
     summary:
       "Garis pantai yang luas, akses ke banyak singgah pantai, dan tempo liburan yang santai.",
     thingsToDo: ["Jelajah pantai", "Titik matahari terbenam", "Kafe lokal"],
@@ -31,6 +44,11 @@ export const destinations: Destination[] = [
     title: "Tetebatu",
     region: "Timur Lombok",
     image: DestinationLombok,
+    gallery: [
+      "https://picsum.photos/seed/tetebatu-1/800/600",
+      "https://picsum.photos/seed/tetebatu-2/800/600",
+      "https://picsum.photos/seed/tetebatu-3/800/600",
+    ],
     summary:
       "Desa pegunungan yang lebih tenang dengan lanskap hijau dan ritme kunjungan yang pelan.",
     thingsToDo: ["Jalan desa", "Terasering padi", "Singgah air terjun"],
@@ -41,6 +59,11 @@ export const destinations: Destination[] = [
     title: "Sembalun",
     region: "Koridor pegunungan",
     image: DestinationRinjani,
+    gallery: [
+      "https://picsum.photos/seed/sembalun-1/800/600",
+      "https://picsum.photos/seed/sembalun-2/800/600",
+      "https://picsum.photos/seed/sembalun-3/800/600",
+    ],
     summary:
       "Koridor pegunungan yang sering dipakai sebagai titik awal menuju pengalaman Rinjani.",
     thingsToDo: [
@@ -55,6 +78,11 @@ export const destinations: Destination[] = [
     title: "Rinjani",
     region: "Area pegunungan",
     image: DestinationRinjani,
+    gallery: [
+      "https://picsum.photos/seed/rinjani-1/800/600",
+      "https://picsum.photos/seed/rinjani-2/800/600",
+      "https://picsum.photos/seed/rinjani-3/800/600",
+    ],
     summary:
       "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang jadi alasan banyak tamu datang.",
     thingsToDo: [
@@ -69,6 +97,11 @@ export const destinations: Destination[] = [
     title: "Senaru",
     region: "Akses Rinjani",
     image: DestinationRinjani,
+    gallery: [
+      "https://picsum.photos/seed/senaru-1/800/600",
+      "https://picsum.photos/seed/senaru-2/800/600",
+      "https://picsum.photos/seed/senaru-3/800/600",
+    ],
     summary:
       "Gerbang yang dekat dengan air terjun, jalur trekking, dan atmosfer pegunungan yang khas.",
     thingsToDo: ["Air terjun", "Dukungan trek", "Menginap di dataran tinggi"],
@@ -79,6 +112,11 @@ export const destinations: Destination[] = [
     title: "Gili Trawangan",
     region: "Kepulauan Gili",
     image: DestinationGili,
+    gallery: [
+      "https://picsum.photos/seed/gili-trawangan-1/800/600",
+      "https://picsum.photos/seed/gili-trawangan-2/800/600",
+      "https://picsum.photos/seed/gili-trawangan-3/800/600",
+    ],
     summary:
       "Pulau yang paling mudah untuk jelajah pulau, snorkeling, dan ritme liburan pantai.",
     thingsToDo: ["Snorkeling", "Jelajah pulau", "Waktu pantai"],
@@ -89,6 +127,11 @@ export const destinations: Destination[] = [
     title: "Gili Air",
     region: "Kepulauan Gili",
     image: DestinationGili,
+    gallery: [
+      "https://picsum.photos/seed/gili-air-1/800/600",
+      "https://picsum.photos/seed/gili-air-2/800/600",
+      "https://picsum.photos/seed/gili-air-3/800/600",
+    ],
     summary:
       "Versi yang lebih tenang dari Gili dengan banyak ruang untuk berjalan santai dan snorkeling singkat.",
     thingsToDo: ["Waktu pantai tenang", "Snorkeling", "Singgah sunset"],
@@ -99,6 +142,11 @@ export const destinations: Destination[] = [
     title: "Gili Meno",
     region: "Kepulauan Gili",
     image: DestinationGili,
+    gallery: [
+      "https://picsum.photos/seed/gili-meno-1/800/600",
+      "https://picsum.photos/seed/gili-meno-2/800/600",
+      "https://picsum.photos/seed/gili-meno-3/800/600",
+    ],
     summary:
       "Pulau paling sunyi untuk traveler yang ingin suasana privat dan sederhana.",
     thingsToDo: ["Pantai tenang", "Snorkeling", "Tempo santai"],
@@ -109,6 +157,11 @@ export const destinations: Destination[] = [
     title: "Sumbawa",
     region: "Pulau luar",
     image: DestinationSumbawa,
+    gallery: [
+      "https://picsum.photos/seed/sumbawa-1/800/600",
+      "https://picsum.photos/seed/sumbawa-2/800/600",
+      "https://picsum.photos/seed/sumbawa-3/800/600",
+    ],
     summary:
       "Pilihan destinasi yang lebih sepi dengan karakter alam terbuka dan garis pantai yang kuat.",
     thingsToDo: ["Pantai tenang", "Rute perjalanan", "Singgah lanskap"],

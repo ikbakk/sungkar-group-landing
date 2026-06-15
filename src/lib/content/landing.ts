@@ -63,7 +63,7 @@ export const landingHero = {
   eyebrow: "Sungkar Group",
   title: "Perjalanan Nyaman ke Lombok, Sumbawa & Labuan Bajo",
   description:
-    "Sungkar Group merancang private tour, open trip, dan transportasi yang sesuai ritme perjalanan Anda. Dari pantai Lombok, petualangan Sumbawa, sampai pesona laut Labuan Bajo.",
+    "Private tour, open trip, dan transportasi sesuai ritme perjalanan Anda di Lombok, Sumbawa, dan Labuan Bajo.",
   primaryAction: {
     label: "Konsultasi Trip",
     href: "/kontak",

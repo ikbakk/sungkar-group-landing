@@ -1,82 +1,54 @@
 ---
 import { Image } from "astro:assets";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import type { Destination } from "@/lib/content/destinationsData";
 
 interface Props {
   destination: Destination;
-  relatedPackages: { title: string; slug: string }[];
   content: {
     activitiesTitle: string;
-    relatedPackagesTitle: string;
-    emptyRelatedPackages: string;
+    summaryTitle: string;
   };
 }
 
-const { destination, relatedPackages, content } = Astro.props;
+const { destination, content } = Astro.props;
 ---
 
-<div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-  <div
-    class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]"
-  >
+<div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+  <div class="overflow-hidden rounded-2xl border border-border">
     <Image
       src={destination.image}
       alt={destination.title}
-      class="h-full w-full object-cover"
+      class="aspect-4/3 w-full object-cover"
       loading="eager"
       fetchpriority="high"
     />
   </div>
 
-  <div class="grid gap-6">
-    <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
-      <CardHeader>
-        <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
-          {destination.region}
-        </Badge>
-        <CardTitle className="text-3xl leading-tight">
-          {content.activitiesTitle}
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div class="grid gap-3">
-          {destination.thingsToDo.map((item) => (
-            <div class="rounded-2xl border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground">
+  <div class="flex flex-col gap-8">
+    <div>
+      <h2 class="text-2xl font-heading leading-tight tracking-tight sm:text-3xl">
+        {content.activitiesTitle}
+      </h2>
+      <ul class="mt-5 flex flex-wrap gap-3">
+        {
+          destination.thingsToDo.map((item) => (
+            <li class="rounded-xl border border-border bg-surface-soft px-4 py-2.5 text-sm font-medium text-foreground">
               {item}
-            </div>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
 
-    <Card className="border-border bg-brand-900 text-white shadow-[0_16px_45px_rgba(17,24,39,0.1)]">
-      <CardHeader>
-        <CardTitle className="text-3xl leading-tight text-white">
-          {content.relatedPackagesTitle}
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        {relatedPackages.length > 0 ? (
-          <div class="grid gap-3">
-            {relatedPackages.map((tour) => (
-              <a
-                href={`/paket-wisata/${tour.slug}`}
-                class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10"
-              >
-                {tour.title}
-              </a>
-            ))}
-          </div>
-        ) : (
-          <p class="text-sm leading-7 text-brand-100">
-            {content.emptyRelatedPackages}
-          </p>
-        )}
-      </CardContent>
-    </Card>
+    <div class="h-px w-16 bg-brand-600" />
+
+    <div>
+      <h2 class="text-2xl font-heading leading-tight tracking-tight sm:text-3xl">
+        {content.summaryTitle}
+      </h2>
+      <p class="mt-4 text-sm leading-7 text-text-muted sm:text-base">
+        {destination.summary}
+      </p>
+    </div>
   </div>
 </div>

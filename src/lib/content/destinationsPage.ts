@@ -85,6 +85,8 @@ export const destinationsPageContent = {
       "Dukungan driver harian adalah opsi paling fleksibel untuk hari dengan beberapa destinasi.",
     emptyRelatedPackages:
       "Belum ada paket yang ditautkan ke destinasi ini. Tim bisa membantu mencocokkan itinerary yang paling pas.",
+    galleryTitle: "Galeri",
+    emptyGallery: "Gambar destinasi akan ditambahkan segera.",
     faqTitle: "FAQ Destinasi",
   },
   spotlightImage: destinations[1].image,
