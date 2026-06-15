@@ -2,6 +2,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Tick02Icon } from "@hugeicons/core-free-icons";
 import type { Vehicle } from "@/lib/content/sewaMobilData";
 
 interface Props {
@@ -14,7 +16,7 @@ const { vehicle } = Astro.props;
 <Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
   <CardHeader>
     <Badge variant="outline" className="w-fit rounded-lg px-3 py-1">
-      {vehicle.seats} Seat · {vehicle.transmission}
+      {vehicle.seats} Seat | {vehicle.transmission}
     </Badge>
     <CardTitle className="text-3xl leading-tight">
       {vehicle.name}
@@ -41,7 +43,7 @@ const { vehicle } = Astro.props;
     <Separator class="my-4" />
 
     <div>
-      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+      <div class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700">
         Fitur Unggulan
       </div>
       <div class="flex flex-wrap gap-2">
@@ -54,12 +56,15 @@ const { vehicle } = Astro.props;
     </div>
     <Separator class="my-4" />
     <div>
-      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+      <div class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700">
         Cocok Untuk
       </div>
       <ul class="space-y-1">
         {vehicle.bestFor.map((use) => (
-          <li class="flex gap-2">✓ {use}</li>
+          <li class="flex gap-2">
+            <HugeiconsIcon icon={Tick02Icon} size={16} class="shrink-0 text-brand-700" />
+            <span>{use}</span>
+          </li>
         ))}
       </ul>
     </div>

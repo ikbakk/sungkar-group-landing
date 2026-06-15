@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 
 import { Card, CardContent } from "@/components/ui/card";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Tick02Icon } from "@hugeicons/core-free-icons";
 import { Badge } from "@/components/ui/badge";
 import type { Destination } from "@/lib/content/destinationsData";
 import { CTA_CLASS } from "@/lib/card-styles";
@@ -48,7 +50,7 @@ const cardHref = `/destinasi/${destination.slug}`;
       <ul class="space-y-2 text-sm font-sans">
         {destination.thingsToDo.slice(0, 3).map((item) => (
           <li class="flex items-center gap-2 text-text-muted">
-            <span class="font-semibold text-brand-700">✓</span>
+            <HugeiconsIcon icon={Tick02Icon} size={16} class="shrink-0 text-brand-700" />
             <span>{item}</span>
           </li>
         ))}

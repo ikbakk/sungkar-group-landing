@@ -1,4 +1,6 @@
 ---
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Tick02Icon, Cancel01Icon } from "@hugeicons/core-free-icons";
 import type { TourPackage } from "@/lib/content/tourPackages/types";
 
 interface Props {
@@ -30,9 +32,10 @@ const { tour } = Astro.props;
       class="mb-5 flex items-center gap-2 font-heading text-lg leading-tight text-emerald-700"
     >
       <span
-        class="flex size-6 items-center justify-center rounded-full bg-emerald-100 text-sm text-emerald-600"
-        >✓</span
+        class="flex size-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600"
       >
+        <HugeiconsIcon icon={Tick02Icon} size={14} />
+      </span>
       Termasuk
     </h3>
 
@@ -55,9 +58,10 @@ const { tour } = Astro.props;
       class="mb-5 flex items-center gap-2 font-heading text-lg leading-tight text-red-600"
     >
       <span
-        class="flex size-6 items-center justify-center rounded-full bg-red-100 text-sm text-red-500"
-        >✕</span
+        class="flex size-6 items-center justify-center rounded-full bg-red-100 text-red-500"
       >
+        <HugeiconsIcon icon={Cancel01Icon} size={14} />
+      </span>
       Tidak Termasuk
     </h3>
 

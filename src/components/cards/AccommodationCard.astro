@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Tick02Icon } from "@hugeicons/core-free-icons";
 import type { Accommodation } from "@/lib/content/akomodasiData";
 import { REGION_MAP } from "@/lib/regions";
 
@@ -70,7 +72,7 @@ const region = REGION_MAP[accommodation.region];
       </p>
 
       <div>
-        <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+        <div class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700">
           Fasilitas Unggulan
         </div>
         <ul class="space-y-1 text-sm font-sans">
@@ -84,7 +86,7 @@ const region = REGION_MAP[accommodation.region];
                   text-text-muted
                 "
               >
-                <span class="font-semibold text-brand-700">✓</span>
+                <HugeiconsIcon icon={Tick02Icon} size={16} class="shrink-0 text-brand-700" />
 
                 <span>{perk}</span>
               </li>

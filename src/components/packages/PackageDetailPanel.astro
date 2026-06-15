@@ -2,6 +2,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Tick02Icon } from "@hugeicons/core-free-icons";
 import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 import { paketWisataFormFields } from "@/lib/contact-data";
 import type { TourPackage } from "@/lib/content/tourPackages/types";
@@ -36,7 +38,7 @@ const { tour } = Astro.props;
         <div>
           <div class="mb-2 text-text-muted">Termasuk</div>
           <ul class="grid gap-1">
-            {tour.includes.slice(0, 4).map((item) => <li>✓ {item}</li>)}
+            {tour.includes.slice(0, 4).map((item) => <li class="flex gap-2"><HugeiconsIcon icon={Tick02Icon} size={16} class="shrink-0 text-brand-700" /><span>{item}</span></li>)}
           </ul>
         </div>
         <Separator />

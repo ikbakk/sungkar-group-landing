@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Tick02Icon } from "@hugeicons/core-free-icons";
 import type { TourPackage } from "@/lib/content/tourPackages";
 import { REGION_MAP } from "@/lib/regions";
 import { CTA_CLASS } from "@/lib/card-styles";
@@ -113,7 +115,7 @@ const cardHref = `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slu
                 text-text-muted
               "
             >
-              <span class="font-semibold text-brand-700">✓</span>
+              <HugeiconsIcon icon={Tick02Icon} size={16} class="shrink-0 text-brand-700" />
 
               <span>{item}</span>
             </li>
