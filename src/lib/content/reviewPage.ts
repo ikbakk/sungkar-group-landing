@@ -1,15 +1,9 @@
 export const reviewsPageContent = {
   hero: {
     eyebrow: "Ulasan",
-    title: "Cerita dan pengalaman wisatawan bersama Sungkar Group",
+    title: "Apa Kata Mereka Tentang Sungkar Group?",
     description:
-      "Ulasan pelanggan membantu menggambarkan kualitas layanan, pengalaman perjalanan, dan alasan banyak wisatawan memilih Sungkar Group saat menjelajahi Lombok.",
-  },
-
-  stats: {
-    title: "Kepercayaan yang Dibangun dari Pengalaman Nyata",
-    description:
-      "Setiap ulasan berasal dari pengalaman wisatawan yang pernah menggunakan layanan Sungkar Group di Lombok dan sekitarnya.",
+      "Ulasan asli dari wisatawan yang telah merasakan langsung layanan kami. Setiap cerita mencerminkan pengalaman nyata — tanpa diedit, tanpa diterjemahkan.",
   },
 
   insights: {
@@ -60,12 +54,6 @@ export const reviewsPageContent = {
       "Beberapa dokumentasi perjalanan yang menggambarkan suasana layanan dan pengalaman wisata bersama Sungkar Group.",
   },
 
-  trust: {
-    title: "Mengapa Ulasan Penting?",
-    description:
-      "Ulasan membantu calon wisatawan memahami pengalaman nyata pelanggan sebelumnya sebelum memutuskan perjalanan mereka.",
-  },
-
   cta: {
     title: "Siap Merencanakan Perjalanan Anda?",
     description:
@@ -81,55 +69,101 @@ export interface Review {
   author: string;
   source: "Google";
   rating: number;
-  date?: string;
+  date: string;
   text: string;
 }
 
 export const reviewStats = {
   rating: 5,
-  totalReviews: 140,
+  totalReviews: 146,
 };
 
 export const reviews: Review[] = [
   {
-    author: "Nordiana Ahyad",
+    author: "Hilkia Tiento",
     source: "Google",
     rating: 5,
-    text: "Pelayanan sangat baik dan perjalanan berjalan lancar. Tim sangat membantu sejak proses pemesanan hingga perjalanan selesai.",
+    date: "24 Maret 2026",
+    text: "Pengalaman tour yg menyenangkan dan berkesan dgn Sungkar Group, driver #Mas Imam sangat membantu kelancaran tour bahkan merangkap fotographer. Menu makan dan restoran yg dituju mantaff, wisata alam Lombok memang luar biasa👍👍👍👍",
+  },
+
+  {
+    author: "lilis susanti",
+    source: "Google",
+    rating: 5,
+    date: "23 Maret 2026",
+    text: "Nice trip to Lombok. Friendly guide. Thank you.",
+  },
+
+  {
+    author: "Luna aulia",
+    source: "Google",
+    rating: 5,
+    date: "25 Februari 2026",
+    text: "Bagus pelayanannya ramah. Tepat waktu dan kekeluargaan",
+  },
+
+  {
+    author: "azhar mohamed",
+    source: "Google",
+    rating: 5,
+    date: "19 Februari 2026",
+    text: "Just returned from Lombok and I'm still in awe! The nature is raw and untouched, from the base of Mt. Rinjani to the pristine beaches. But what really stole my heart was the incredible hospitality of the Sasak people and the spicy, delicious food (Ayam Taliwang is a must!). A perfect mix of culture and relaxation. Highly recommend adding Lombok to your bucket list with Sungkar Group Indonesia",
+  },
+
+  {
+    author: "NORDIANA AHYAD",
+    source: "Google",
+    rating: 5,
+    date: "15 Februari 2026",
+    text: "Excellent service from the tourist guide. Very friendly, knowledgeable, and well-organized. The trip was smooth and enjoyable. Highly recommended!",
+  },
+
+  {
+    author: "izza NIMY",
+    source: "Google",
+    rating: 5,
+    date: "19 Januari 2026",
+    text: "Best experience in Lombok 3 days 2 night🧡",
   },
 
   {
     author: "Dr Syuhada Dan Adnan",
     source: "Google",
     rating: 5,
-    text: "Sangat direkomendasikan. Guide ramah, jadwal tertata dengan baik, dan pengalaman selama di Lombok sangat menyenangkan.",
+    date: "17 Januari 2026",
+    text: "Great and best experience. Our tour guide Zakir and Imam are great, friendly and very helpful and cater all our needs.",
   },
 
   {
-    author: "Izza Nimy",
+    author: "Azrianna Nurfizan Azmi",
     source: "Google",
     rating: 5,
-    text: "Salah satu pengalaman terbaik selama liburan di Lombok. Tim profesional dan selalu siap membantu.",
+    date: "17 Januari 2026",
+    text: "en.zakir & en.imam sangat efisien, menepati masa dan sangat membantu. Trip yang pendek 2 hari dapat cover tempat menarik di sembalun dan dapat shopping barang2 penting di Mataram termasuk perhiasan mutiara. Syabas team, dan insyaAllah akan repeat lagi!",
   },
 
   {
-    author: "Siti Nurhaliza",
+    author: "Humam Sungkar",
     source: "Google",
     rating: 5,
-    text: "Perjalanan keluarga kami berjalan sangat nyaman. Anak-anak juga menikmati seluruh rangkaian wisata.",
+    date: "16 Januari 2026",
+    text: "Pelayanan tournya luarbiasa. Dokumentasinya gratis dan bagus banget. Rekom banget buat yg cari tour di lombok",
   },
 
   {
-    author: "Ahmad Rizki",
+    author: "Rony Trans",
     source: "Google",
     rating: 5,
-    text: "Kendaraan bersih, komunikasi mudah, dan itinerary dapat menyesuaikan kebutuhan rombongan.",
+    date: "16 Januari 2026",
+    text: "Mau liburan group jangan lupa bareng sungkar group, spesialis tour group se Indonesia",
   },
 
   {
-    author: "Yusuf Hidayat",
+    author: "Najah Humairah",
     source: "Google",
     rating: 5,
-    text: "Terima kasih kepada tim Sungkar Group yang telah membantu perjalanan kami dari awal hingga akhir dengan sangat baik.",
+    date: "16 Januari 2026",
+    text: "Tour travel terbaik se lombok, terpercaya, pelayanan nya ramah",
   },
 ];

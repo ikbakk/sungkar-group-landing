@@ -179,7 +179,7 @@ export const landingTestimonials = {
   title: "Dipercaya untuk perjalanan yang nyaman dan terorganisir",
   description:
     "Dari keluarga, pasangan, hingga rombongan, ulasan berikut menunjukkan pengalaman perjalanan yang berkesan bersama tim lokal kami.",
-  testimonials: reviews.slice(0, 3).map(
+  testimonials: reviews.map(
     (review): LandingTestimonial => ({
       name: review.author,
       title: review.source,
