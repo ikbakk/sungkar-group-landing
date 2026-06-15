@@ -15,9 +15,9 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { accommodations } from "@/lib/content/akomodasiData";
 import { akomodasiPageContent } from "@/lib/content/akomodasiPage";
-import { packageFaq } from "@/lib/content/faqs/package";
+import { akomodasiFaq } from "@/lib/content/faqs/akomodasi";
 
-const faqSchema = generateFAQPageSchema(packageFaq);
+const faqSchema = generateFAQPageSchema(akomodasiFaq);
 
 const lombokAccommodations = accommodations.filter(
   (acc) => acc.region === "lombok"
@@ -102,7 +102,7 @@ const regions = [
   <FaqSection
     eyebrow="FAQ"
     title="Pertanyaan Seputar Akomodasi"
-    items={packageFaq}
+    items={akomodasiFaq}
     background="bg-surface-soft"
   />
 

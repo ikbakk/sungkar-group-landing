@@ -11,10 +11,10 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { vehicles } from "@/lib/content/sewaMobilData";
 import { sewaPageContent } from "@/lib/content/sewaPage";
-import { packageFaq } from "@/lib/content/faqs/package";
+import { sewaMobilFaq } from "@/lib/content/faqs/sewa-mobil";
 import { REGION_LABEL, REGIONS, type RegionKey as Region } from "@/lib/regions";
 
-const faqSchema = generateFAQPageSchema(packageFaq);
+const faqSchema = generateFAQPageSchema(sewaMobilFaq);
 
 export async function getStaticPaths() {
   const regions = REGIONS;
@@ -73,7 +73,7 @@ const regionDescription = sewaPageContent.regions[region].title;
   <FaqSection
     eyebrow="FAQ"
     title={`Pertanyaan Seputar Sewa Mobil ${regionName}`}
-    items={packageFaq}
+    items={sewaMobilFaq}
     background="bg-surface-soft"
   />
 </MainLayout>

@@ -14,9 +14,9 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { vehicles } from "@/lib/content/sewaMobilData";
 import { sewaPageContent } from "@/lib/content/sewaPage";
-import { packageFaq } from "@/lib/content/faqs/package";
+import { sewaMobilFaq } from "@/lib/content/faqs/sewa-mobil";
 
-const faqSchema = generateFAQPageSchema(packageFaq);
+const faqSchema = generateFAQPageSchema(sewaMobilFaq);
 
 const lombokVehicles = vehicles.filter((v) => v.region === "lombok");
 const sumbawaVehicles = vehicles.filter((v) => v.region === "sumbawa");
@@ -94,7 +94,7 @@ const regions = [
   <FaqSection
     eyebrow="FAQ"
     title="Pertanyaan Seputar Sewa Mobil"
-    items={packageFaq}
+    items={sewaMobilFaq}
     background="bg-surface-soft"
   />
 
