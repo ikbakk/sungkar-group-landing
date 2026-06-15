@@ -1,33 +1,33 @@
 ---
-import { cn } from "@/lib/utils"
-import { Icon } from "@/components/ui/icon"
-import { Logo, LogoText } from "@/components/ui/logo"
-import { Section, SectionContainer } from "@/components/ui/section"
-import { Separator } from "@/components/ui/separator"
+import { cn } from "@/lib/utils";
+import { Icon } from "@/components/ui/icon";
+import { Logo, LogoText } from "@/components/ui/logo";
+import { Section, SectionContainer } from "@/components/ui/section";
+import { Separator } from "@/components/ui/separator";
 
 type Props = {
-  class?: string
-  brandName: string
-  brandHref: string
-  description: string
+  class?: string;
+  brandName: string;
+  brandHref: string;
+  description: string;
   socials?: {
-    label: string
-    href: string
-    icon: string
-  }[]
+    label: string;
+    href: string;
+    icon: string;
+  }[];
   columns: {
-    title: string
+    title: string;
     links: {
-      label: string
-      href: string
-    }[]
-  }[]
-  copyright: string
+      label: string;
+      href: string;
+    }[];
+  }[];
+  copyright: string;
   bottomLinks?: {
-    label: string
-    href: string
-  }[]
-}
+    label: string;
+    href: string;
+  }[];
+};
 
 const {
   class: className,
@@ -38,7 +38,7 @@ const {
   columns,
   copyright,
   bottomLinks,
-} = Astro.props
+} = Astro.props;
 ---
 
 <footer class={cn("", className)}>
@@ -47,7 +47,9 @@ const {
       <div class="grid gap-10 lg:grid-cols-[1fr_2fr]">
         <div class="flex flex-col gap-5">
           <Logo href={brandHref}>
-            <LogoText>{brandName}</LogoText>
+            <LogoText class={"font-heading text-2xl font-normal"}
+              >{brandName}</LogoText
+            >
           </Logo>
           <p class="text-muted-foreground max-w-xs text-sm leading-relaxed">
             {description}
@@ -74,8 +76,8 @@ const {
           {
             columns.map((column) => (
               <div class="flex flex-col gap-3">
-                <p class="text-sm font-medium">{column.title}</p>
-                <ul class="flex flex-col gap-2.5">
+                <p class="text-lg font-heading ">{column.title}</p>
+                <ul class="flex flex-col gap-2.5 font-sans">
                   {column.links.map((link) => (
                     <li>
                       <a
