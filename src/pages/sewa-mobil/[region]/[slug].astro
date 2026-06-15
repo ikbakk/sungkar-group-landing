@@ -1,0 +1,107 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { Image } from "astro:assets";
+import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schemas";
+import { SITE_URL } from "@/lib/site-config";
+
+import { vehicles } from "@/lib/content/sewaMobilData";
+import { REGION_LABEL } from "@/lib/regions";
+import { sewaMobilFormFields } from "@/lib/contact-data";
+
+import VehicleDetailPanel from "@/components/vehicles/VehicleDetailPanel.astro";
+import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
+
+import type { Vehicle } from "@/lib/content/sewaMobilData";
+
+export function getStaticPaths() {
+  return vehicles.map((v: Vehicle) => ({
+    params: {
+      region: v.region,
+      slug: v.slug,
+    },
+    props: { vehicle: v },
+  }));
+}
+
+const { vehicle } = Astro.props;
+
+const vehicleUrl = `${SITE_URL}/sewa-mobil/${vehicle.region}/${vehicle.slug}`;
+const absoluteImageUrl = new URL(vehicle.imageTop.src, SITE_URL).toString();
+
+const productSchema = generateProductSchema(
+  vehicle.name,
+  vehicle.description,
+  vehicle.pricePerDay,
+  absoluteImageUrl,
+  vehicleUrl,
+);
+
+const breadcrumbItems = [
+  { name: "Beranda", url: "/" },
+  { name: "Sewa Mobil", url: "/sewa-mobil" },
+  { name: REGION_LABEL[vehicle.region], url: `/sewa-mobil/${vehicle.region}` },
+  { name: vehicle.name, url: vehicleUrl },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
+---
+
+<MainLayout
+  title={`${vehicle.name} - Sewa Mobil ${REGION_LABEL[vehicle.region]}`}
+  description={vehicle.description}
+  canonical={`/sewa-mobil/${vehicle.region}/${vehicle.slug}`}
+  image={vehicle.imageTop}
+>
+  <StructuredData schema={productSchema} />
+  <StructuredData schema={breadcrumbSchema} />
+
+  <PageHeader
+    eyebrow="Detail Kendaraan"
+    title={vehicle.name}
+    description={vehicle.description}
+    breadcrumbs={[
+      { label: "Beranda", href: "/" },
+      { label: "Sewa Mobil", href: "/sewa-mobil" },
+      {
+        label: REGION_LABEL[vehicle.region],
+        href: `/sewa-mobil/${vehicle.region}`,
+      },
+      { label: vehicle.name },
+    ]}
+  />
+
+  <SectionContainer background="bg-surface-soft">
+    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+      <div class="space-y-8">
+        <div class="grid gap-8 lg:grid-cols-[1fr_auto]">
+          <VehicleDetailPanel {vehicle} />
+          <div class="w-full lg:w-96 overflow-hidden flex lg:flex-col gap-8">
+            <Image
+              src={vehicle.imageTop}
+              alt={vehicle.name}
+              class="aspect-4/3 w-full object-cover rounded-lg"
+              loading="lazy"
+            />
+
+            <Image
+              src={vehicle.imageBottom}
+              alt={vehicle.name}
+              class="aspect-4/3 w-full object-cover rounded-lg"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <WhatsAppForm
+          context="sewa-mobil"
+          fields={sewaMobilFormFields}
+          mode="sidebar"
+          itemName={vehicle.name}
+          region={REGION_LABEL[vehicle.region]}
+        />
+      </div>
+    </div>
+  </SectionContainer>
+</MainLayout>

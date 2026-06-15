@@ -6,7 +6,6 @@ import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 
 import VehicleRegionSection from "@/components/vehicles/VehicleRegionSection.astro";
-import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
@@ -26,7 +25,7 @@ export async function getStaticPaths() {
       if (regionVehicles.length === 0) return null;
 
       return {
-        params: { slug: region },
+        params: { region },
         props: { region, vehicles: regionVehicles },
       };
     })
@@ -48,7 +47,7 @@ const regionDescription = sewaPageContent.regions[region].title;
   title={`Sewa Mobil ${regionName}`}
   description={regionDescription}
   canonical={`/sewa-mobil/${region}`}
-  image={regionVehicles[0]?.image}
+  image={regionVehicles[0]?.imageTop}
 >
   <StructuredData schema={faqSchema} />
   <PageHeader
@@ -77,6 +76,4 @@ const regionDescription = sewaPageContent.regions[region].title;
     items={packageFaq}
     background="bg-surface-soft"
   />
-
-  <PackagePageCta />
 </MainLayout>

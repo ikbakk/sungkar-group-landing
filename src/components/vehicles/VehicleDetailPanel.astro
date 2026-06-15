@@ -1,0 +1,71 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import type { Vehicle } from "@/lib/content/sewaMobilData";
+
+interface Props {
+  vehicle: Vehicle;
+}
+
+const { vehicle } = Astro.props;
+---
+
+<Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
+  <CardHeader>
+    <Badge variant="outline" className="w-fit rounded-lg px-3 py-1">
+      {vehicle.seats} Seat · {vehicle.transmission}
+    </Badge>
+    <CardTitle className="text-3xl leading-tight">
+      {vehicle.name}
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <div class="grid gap-4 text-sm">
+      <div class="flex items-center justify-between">
+        <span class="text-text-muted">Harga per hari</span>
+        <span class="font-medium">{vehicle.pricePerDay}</span>
+      </div>
+      <Separator />
+      <div class="flex items-center justify-between">
+        <span class="text-text-muted">Transmisi</span>
+        <span class="font-medium">{vehicle.transmission}</span>
+      </div>
+      <Separator />
+      <div class="flex items-center justify-between">
+        <span class="text-text-muted">Kapasitas</span>
+        <span class="font-medium">{vehicle.seats} penumpang</span>
+      </div>
+    </div>
+
+    <Separator class="my-4" />
+
+    <div>
+      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+        Fitur Unggulan
+      </div>
+      <div class="flex flex-wrap gap-2">
+        {vehicle.features.map((feature) => (
+          <Badge variant="default" className="rounded-lg px-3 py-1">
+            {feature}
+          </Badge>
+        ))}
+      </div>
+    </div>
+    <Separator class="my-4" />
+    <div>
+      <div class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-700">
+        Cocok Untuk
+      </div>
+      <ul class="space-y-1">
+        {vehicle.bestFor.map((use) => (
+          <li class="flex gap-2">✓ {use}</li>
+        ))}
+      </ul>
+    </div>
+    <Separator class="my-4" />
+    <p class="text-sm leading-7 text-text-muted">
+      {vehicle.description}
+    </p>
+  </CardContent>
+</Card>
