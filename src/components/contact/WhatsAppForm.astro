@@ -1,260 +1,112 @@
 ---
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import type { FormField, FormContext } from "@/lib/contact-data";
+import { cn } from "@/lib/utils";
+import FormField from "./FormField.astro";
+import type { FormField as FormFieldType, FormContext } from "@/lib/contact-data";
 import { businessInfo } from "@/lib/contact-data";
 
 interface Props {
   context: FormContext;
-  fields: FormField[];
+  fields: FormFieldType[];
   mode: "sidebar" | "section";
   itemName?: string;
   region?: string;
 }
 
-const {
-  context,
-  fields,
-  mode,
-  itemName,
-  region,
-} = Astro.props;
+const { context, fields, mode, itemName, region } = Astro.props;
 
 const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
 const formId = `whatsapp-form-${context}-${Math.random().toString(36).slice(2, 8)}`;
 
 const contextLabel = context === "sewa-mobil" ? "Pilihan Kendaraan" : "Pilihan Paket";
+
+const isSidebar = mode === "sidebar";
+
+const cardClass = isSidebar
+  ? "border-border bg-brand-900 text-white shadow-[0_16px_45px_rgba(17,24,39,0.1)]"
+  : "border-border bg-white";
+
+const titleText = context === "sewa-mobil"
+  ? (isSidebar ? "Sewa kendaraan ini" : "Sewa Mobil di Sungkar Group")
+  : (isSidebar ? "Pesan paket ini" : "Pesan Paket Wisata");
+
+const descClass = isSidebar ? "text-sm leading-7 text-brand-100" : "text-sm leading-7 text-text-muted";
+const formClass = isSidebar ? "grid gap-4" : "grid gap-4 md:grid-cols-2";
+const btnClass = isSidebar
+  ? "inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)]"
+  : "inline-flex items-center justify-center rounded-md bg-brand-900 text-white text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-brand-800";
 ---
 
-{
-  mode === "sidebar" && (
-    <Card className="border-border bg-brand-900 text-white shadow-[0_16px_45px_rgba(17,24,39,0.1)]">
-      <CardHeader>
-        <CardTitle class="text-3xl leading-tight text-white">
-          {context === "sewa-mobil" ? "Sewa kendaraan ini" : "Pesan paket ini"}
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <p class="mb-6 text-sm leading-7 text-brand-100">
-          Isi form di bawah dan tim kami akan merespon via WhatsApp.
-        </p>
+<Card className={cardClass}>
+  <CardHeader>
+    <CardTitle class={cn("text-3xl leading-tight", isSidebar && "text-white")}>
+      {titleText}
+    </CardTitle>
+    {!isSidebar && (
+      <p class={descClass}>
+        Isi form di bawah, tim kami akan merespon via WhatsApp dalam waktu singkat.
+      </p>
+    )}
+  </CardHeader>
 
-        <form id={formId} class="grid gap-4">
-          {itemName && (
-            <label class="grid gap-2">
-              <span class="form-label-light">{contextLabel}</span>
-              <input
-                type="text"
-                value={itemName}
-                disabled
-                class="form-input-dark w-full rounded-lg opacity-70 cursor-not-allowed"
-              />
-            </label>
-          )}
+  <CardContent>
+    {isSidebar && (
+      <p class="mb-6 text-sm leading-7 text-brand-100">
+        Isi form di bawah dan tim kami akan merespon via WhatsApp.
+      </p>
+    )}
 
-          {region && (
-            <label class="grid gap-2">
-              <span class="form-label-light">Lokasi</span>
-              <input
-                type="text"
-                value={region}
-                disabled
-                class="form-input-dark w-full rounded-lg opacity-70 cursor-not-allowed"
-              />
-            </label>
-          )}
+    <form id={formId} class={formClass}>
+      {itemName && (
+        <label class="grid gap-2">
+          <span class={isSidebar ? "form-label-light" : "form-label"}>{contextLabel}</span>
+          <input
+            type="text"
+            value={itemName}
+            disabled
+            class={isSidebar ? "form-input-dark w-full rounded-lg opacity-70 cursor-not-allowed" : "form-input w-full rounded-lg opacity-60 cursor-not-allowed"}
+          />
+        </label>
+      )}
 
-          {
-            fields.map((field) =>
-              field.type === "textarea" ? (
-                <label class="grid gap-2">
-                  <span class="form-label-light">
-                    {field.label}
-                    {!field.required && (
-                      <span class="text-xs font-normal text-brand-200"> — opsional</span>
-                    )}
-                  </span>
-                  <Textarea
-                    id={field.id}
-                    name={field.id}
-                    placeholder={field.placeholder}
-                    class="rounded-lg border-white/10 bg-white/5 text-white placeholder:text-brand-100/50 min-h-20"
-                    required={field.required}
-                  />
-                </label>
-              ) : field.type === "select" ? (
-                <label class="grid gap-2">
-                  <span class="form-label-light">{field.label}</span>
-                  <Select
-                    name={field.id}
-                    placeholder={field.placeholder}
-                    required={field.required}
-                  >
-                    <SelectTrigger class="rounded-lg border-white/10 bg-white/5 text-white hover:bg-white/10 [&>svg]:text-white/50 h-auto py-3 px-4">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {field.options!.map((opt) => (
-                        <SelectItem value={opt}>{opt}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </label>
-              ) : (
-                <label class="grid gap-2">
-                  <span class="form-label-light">
-                    {field.label}
-                    {!field.required && (
-                      <span class="text-xs font-normal text-brand-200"> — opsional</span>
-                    )}
-                  </span>
-                  <Input
-                    id={field.id}
-                    type={field.type}
-                    name={field.id}
-                    placeholder={field.placeholder}
-                    class="rounded-lg border-white/10 bg-white/5 text-white placeholder:text-brand-100/50 h-auto py-3 px-4"
-                    required={field.required}
-                  />
-                </label>
-              ),
-            )
-          }
-        </form>
-      </CardContent>
+      {region && (
+        <label class="grid gap-2">
+          <span class={isSidebar ? "form-label-light" : "form-label"}>Lokasi</span>
+          <input
+            type="text"
+            value={region}
+            disabled
+            class={isSidebar ? "form-input-dark w-full rounded-lg opacity-70 cursor-not-allowed" : "form-input w-full rounded-lg opacity-60 cursor-not-allowed"}
+          />
+        </label>
+      )}
 
-      <CardContent class="flex flex-wrap gap-3">
-        <button
-          id={"btn-submit-" + formId}
-          type="button"
-          class="inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)]"
-        >
-          Chat WhatsApp
-        </button>
-      </CardContent>
-    </Card>
-  )
-}
+      {
+        fields.map((field) => (
+          <FormField
+            field={field}
+            mode={mode}
+            spanFull={!isSidebar && field.type === "textarea"}
+          />
+        ))
+      }
+    </form>
+  </CardContent>
 
-{
-  mode === "section" && (
-    <Card className="border-border bg-white">
-      <CardHeader>
-        <CardTitle class="text-3xl leading-tight">
-          {context === "sewa-mobil"
-            ? "Sewa Mobil di Sungkar Group"
-            : "Pesan Paket Wisata"}
-        </CardTitle>
-        <p class="text-sm leading-7 text-text-muted">
-          Isi form di bawah, tim kami akan merespon via WhatsApp dalam waktu singkat.
-        </p>
-      </CardHeader>
-      <CardContent>
-        <form id={formId} class="grid gap-4 md:grid-cols-2">
-          {itemName && (
-            <label class="grid gap-2">
-              <span class="form-label">{contextLabel}</span>
-              <input
-                type="text"
-                value={itemName}
-                disabled
-                class="form-input w-full rounded-lg opacity-60 cursor-not-allowed"
-              />
-            </label>
-          )}
-
-          {region && (
-            <label class="grid gap-2">
-              <span class="form-label">Lokasi</span>
-              <input
-                type="text"
-                value={region}
-                disabled
-                class="form-input w-full rounded-lg opacity-60 cursor-not-allowed"
-              />
-            </label>
-          )}
-
-          {
-            fields.map((field) =>
-              field.type === "textarea" ? (
-                <label class="grid gap-2 md:col-span-2">
-                  <span class="form-label">
-                    {field.label}
-                    {!field.required && (
-                      <span class="text-xs font-normal text-text-muted"> — opsional</span>
-                    )}
-                  </span>
-                  <Textarea
-                    id={field.id}
-                    name={field.id}
-                    placeholder={field.placeholder}
-                    class="rounded-lg border-border bg-white text-foreground placeholder:text-text-muted min-h-24"
-                    required={field.required}
-                  />
-                </label>
-              ) : field.type === "select" ? (
-                <label class="grid gap-2">
-                  <span class="form-label">{field.label}</span>
-                  <Select
-                    name={field.id}
-                    placeholder={field.placeholder}
-                    required={field.required}
-                  >
-                    <SelectTrigger class="rounded-lg border-border bg-white text-foreground hover:bg-surface-soft [&>svg]:text-text-muted h-auto py-3 px-4">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {field.options!.map((opt) => (
-                        <SelectItem value={opt}>{opt}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </label>
-              ) : (
-                <label class="grid gap-2">
-                  <span class="form-label">
-                    {field.label}
-                    {!field.required && (
-                      <span class="text-xs font-normal text-text-muted"> — opsional</span>
-                    )}
-                  </span>
-                  <Input
-                    id={field.id}
-                    type={field.type}
-                    name={field.id}
-                    placeholder={field.placeholder}
-                    class="rounded-lg border-border bg-white text-foreground placeholder:text-text-muted h-auto py-3 px-4"
-                    required={field.required}
-                  />
-                </label>
-              ),
-            )
-          }
-        </form>
-      </CardContent>
-      <CardContent class="flex flex-wrap gap-3">
-        <button
-          id={"btn-submit-" + formId}
-          type="button"
-          class="inline-flex items-center justify-center rounded-md bg-brand-900 text-white text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-brand-800"
-        >
-          Chat WhatsApp
-        </button>
-      </CardContent>
-    </Card>
-  )
-}
+  <CardContent class="flex flex-wrap gap-3">
+    <button
+      id={"btn-submit-" + formId}
+      type="button"
+      class={btnClass}
+    >
+      Chat WhatsApp
+    </button>
+  </CardContent>
+</Card>
 
 <script define:vars={{ formId, whatsappNumber, context, itemName, region }}>
+  import { buildWhatsappMessage } from "@/lib/contact-data";
+
   document.getElementById("btn-submit-" + formId).addEventListener("click", function() {
     var fieldIds = ["name", "travelDate", "duration", "passengers", "guests", "rentalReason", "message"];
 
@@ -266,46 +118,7 @@ const contextLabel = context === "sewa-mobil" ? "Pilihan Kendaraan" : "Pilihan P
       }
     }
 
-    var lines = ["Halo Sungkar Group,"];
-
-    if (itemName) {
-      lines.push("");
-      if (context === "sewa-mobil") {
-        lines.push("Saya ingin sewa: " + itemName);
-      } else {
-        lines.push("Saya tertarik dengan paket: " + itemName);
-      }
-    }
-
-    if (region) {
-      lines.push("Lokasi: " + region);
-    }
-
-    lines.push("");
-
-    var labelMap = {
-      name: "Nama",
-      travelDate: context === "sewa-mobil" ? "Tanggal sewa" : "Tanggal perjalanan",
-      duration: "Durasi sewa",
-      guests: "Jumlah tamu",
-      passengers: "Jumlah penumpang",
-      rentalReason: "Keperluan sewa",
-      message: "Pesan tambahan"
-    };
-
-    var keys = Object.keys(values);
-    for (var i = 0; i < keys.length; i++) {
-      var val = values[keys[i]];
-      if (val) {
-        var label = labelMap[keys[i]] || keys[i];
-        lines.push(label + ": " + val);
-      }
-    }
-
-    lines.push("");
-    lines.push("Mohon informasi lebih lanjut.");
-
-    var msg = lines.join("\n");
+    var msg = buildWhatsappMessage(context, values, itemName, region);
     var url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(msg);
     window.open(url, "_blank");
   });

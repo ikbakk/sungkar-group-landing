@@ -1,0 +1,101 @@
+---
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import type { FormField } from "@/lib/contact-data";
+import { cn } from "@/lib/utils";
+
+interface Props {
+  field: FormField;
+  mode: "sidebar" | "section";
+  spanFull?: boolean;
+}
+
+const { field, mode, spanFull } = Astro.props;
+
+const isSidebar = mode === "sidebar";
+
+const labelClass = isSidebar ? "form-label-light" : "form-label";
+const optionalClass = isSidebar
+  ? "text-xs font-normal text-brand-200"
+  : "text-xs font-normal text-text-muted";
+
+const wrapperClass = cn("grid gap-2", spanFull && "md:col-span-2");
+
+const disabledInputClass = isSidebar
+  ? "form-input-dark w-full rounded-lg opacity-70 cursor-not-allowed"
+  : "form-input w-full rounded-lg opacity-60 cursor-not-allowed";
+
+const textareaClass = isSidebar
+  ? "rounded-lg border-white/10 bg-white/5 text-white placeholder:text-brand-100/50 min-h-20"
+  : "rounded-lg border-border bg-white text-foreground placeholder:text-text-muted min-h-24";
+
+const inputClass = isSidebar
+  ? "rounded-lg border-white/10 bg-white/5 text-white placeholder:text-brand-100/50 h-auto py-3 px-4"
+  : "rounded-lg border-border bg-white text-foreground placeholder:text-text-muted h-auto py-3 px-4";
+
+const selectTriggerClass = isSidebar
+  ? "rounded-lg border-white/10 bg-white/5 text-white hover:bg-white/10 [&>svg]:text-white/50 h-auto py-3 px-4"
+  : "rounded-lg border-border bg-white text-foreground hover:bg-surface-soft [&>svg]:text-text-muted h-auto py-3 px-4";
+---
+
+{
+  field.type === "textarea" ? (
+    <label class={wrapperClass}>
+      <span class={labelClass}>
+        {field.label}
+        {!field.required && (
+          <span class={optionalClass}> — opsional</span>
+        )}
+      </span>
+      <Textarea
+        id={field.id}
+        name={field.id}
+        placeholder={field.placeholder}
+        class={textareaClass}
+        required={field.required}
+      />
+    </label>
+  ) : field.type === "select" ? (
+    <label class="grid gap-2">
+      <span class={labelClass}>{field.label}</span>
+      <Select
+        name={field.id}
+        placeholder={field.placeholder}
+        required={field.required}
+      >
+        <SelectTrigger class={selectTriggerClass}>
+          <SelectValue />
+        </SelectTrigger>
+        <SelectContent>
+          {field.options!.map((opt) => (
+            <SelectItem value={opt}>{opt}</SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
+    </label>
+  ) : (
+    <label class="grid gap-2">
+      <span class={labelClass}>
+        {field.label}
+        {!field.required && (
+          <span class={optionalClass}> — opsional</span>
+        )}
+      </span>
+      <Input
+        id={field.id}
+        type={field.type}
+        name={field.id}
+        placeholder={field.placeholder}
+        class={inputClass}
+        required={field.required}
+      />
+    </label>
+  )
+}
