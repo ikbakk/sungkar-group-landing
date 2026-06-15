@@ -2,9 +2,11 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import RelatedContent from "@/components/site/RelatedContent.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import KeyTakeaways from "@/components/guides/KeyTakeaways.astro";
+import GuideCard from "@/components/guides/GuideCard.astro";
+import DestinationCard from "@/components/cards/DestinationCard.astro";
+import PackageCard from "@/components/cards/PackageCard.astro";
 import { generateHowToSchema } from "@/lib/schemas";
 import { guides } from "@/lib/content/guides";
 import { destinations } from "@/lib/content/destinationsData";
@@ -96,41 +98,59 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
   </SectionContainer>
 
   {relatedDestinations.length > 0 && (
-    <RelatedContent
-      title="Destinasi Terkait"
-      items={relatedDestinations.map((dest) => ({
-        title: dest.title,
-        href: `/destinasi/${dest.slug}`,
-        description: dest.summary,
-      }))}
-      background="bg-surface-soft"
-    />
+    <SectionContainer background="bg-surface-soft">
+      <div class="mb-8">
+        <h2 class="font-heading text-3xl leading-tight text-foreground">
+          Destinasi Terkait
+        </h2>
+        <p class="mt-3 max-w-2xl text-base leading-7 text-text-muted">
+          Tempat-tempat yang direkomendasikan berdasarkan panduan ini
+        </p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {relatedDestinations.map((dest) => (
+          <DestinationCard destination={dest} />
+        ))}
+      </div>
+    </SectionContainer>
   )}
 
   {relatedPackages.length > 0 && (
-    <RelatedContent
-      title="Paket Wisata Terkait"
-      items={relatedPackages.map((pkg) => ({
-        title: pkg.title,
-        href: `/paket-wisata/${pkg.slug}`,
-        description: pkg.summary,
-      }))}
-      background="bg-background"
-    />
+    <SectionContainer background="bg-background">
+      <div class="mb-8">
+        <h2 class="font-heading text-3xl leading-tight text-foreground">
+          Paket Wisata Terkait
+        </h2>
+        <p class="mt-3 max-w-2xl text-base leading-7 text-text-muted">
+          Paket wisata yang sesuai dengan panduan ini
+        </p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {relatedPackages.map((pkg) => (
+          <PackageCard tour={pkg} />
+        ))}
+      </div>
+    </SectionContainer>
   )}
 
-  <RelatedContent
-    title="Panduan Lainnya"
-    items={guides
-      .filter((g) => g.slug !== guide.slug)
-      .slice(0, 3)
-      .map((g) => ({
-        title: g.title,
-        href: `/panduan-wisata/${g.slug}`,
-        description: g.description,
-      }))}
-    background="bg-surface-soft"
-  />
+  <SectionContainer background="bg-surface-soft">
+    <div class="mb-8">
+      <h2 class="font-heading text-3xl leading-tight text-foreground">
+        Panduan Lainnya
+      </h2>
+      <p class="mt-3 max-w-2xl text-base leading-7 text-text-muted">
+        Baca panduan wisata lainnya untuk perjalanan yang lebih lengkap
+      </p>
+    </div>
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {guides
+        .filter((g) => g.slug !== guide.slug)
+        .slice(0, 3)
+        .map((g) => (
+          <GuideCard guide={g} />
+        ))}
+    </div>
+  </SectionContainer>
 </MainLayout>
 
 <style is:global>
