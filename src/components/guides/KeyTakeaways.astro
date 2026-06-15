@@ -7,15 +7,25 @@ const { takeaways } = Astro.props;
 ---
 
 <div class="mx-auto max-w-4xl">
-  <h2 class="text-2xl font-bold text-foreground mb-6">Poin-Poin Kunci</h2>
-  <ul class="grid gap-3 md:grid-cols-2">
+  <h2 class="font-heading text-3xl leading-tight text-foreground">
+    Poin-Poin Kunci
+  </h2>
+  <p class="mt-2 text-base leading-7 text-text-muted">
+    Hal penting yang perlu Anda ketahui dari panduan ini
+  </p>
+
+  <div class="mt-8 grid gap-4 md:grid-cols-2">
     {
       takeaways.map((takeaway) => (
-        <li class="flex items-start gap-3 rounded-lg border border-border bg-white p-4">
-          <span class="text-brand-600 font-bold text-lg">✓</span>
-          <span class="text-foreground">{takeaway}</span>
-        </li>
+        <div class="flex items-start gap-4 rounded-[1.25rem] border border-border bg-white p-5">
+          <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-sm text-brand-700">
+            &#10003;
+          </span>
+          <span class="text-sm leading-6 text-foreground">
+            {takeaway}
+          </span>
+        </div>
       ))
     }
-  </ul>
+  </div>
 </div>
