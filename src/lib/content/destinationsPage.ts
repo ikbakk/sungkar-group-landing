@@ -40,17 +40,17 @@ export const destinationsPageContent = {
     {
       question: "Apa yang paling cocok dilakukan di destinasi ini?",
       answer:
-        "Setiap destinasi menampilkan aktivitas utama yang paling relevan untuk rute wisata harian atau gabungan.",
+        "Di pantai seperti Kuta Mandalika dan Gili Trawangan, aktivitas utama adalah snorkeling, island hopping, dan bersantai. Untuk area pegunungan seperti Rinjani dan Sembalun, trekking dan camping jadi pilihan. Setiap destinasi punya rekomendasi aktivitas yang bisa dipadukan dalam paket wisata harian.",
     },
     {
       question: "Apakah destinasi ini bisa digabung dengan paket lain?",
       answer:
-        "Bisa. Halaman destinasi menampilkan paket yang paling masuk akal untuk dikombinasikan.",
+        "Bisa. Misalnya, Anda bisa menggabungkan wisata pantai Kuta Lombok dengan kunjungan ke Gili, atau Rinjani dengan air terjun Tetebatu. Halaman ini menampilkan paket wisata yang sudah dirancang untuk kombinasi destinasi yang paling efisien.",
     },
     {
       question: "Apakah transportasi harian tersedia untuk destinasi ini?",
       answer:
-        "Ya. Anda bisa memesan driver harian atau transfer agar perpindahan antar titik lebih sederhana.",
+        "Ya. Tersedia driver harian dan layanan sewa mobil di Lombok, Sumbawa, dan Labuan Bajo agar perpindahan antar destinasi lebih nyaman. Anda juga bisa memesan transfer dari bandara atau pelabuhan ke hotel.",
     },
   ],
   relatedContent: [

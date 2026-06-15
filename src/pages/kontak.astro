@@ -19,8 +19,9 @@ import {
   generateContactPageSchema,
   generateFAQPageSchema,
 } from "@/lib/schemas";
+import { SITE_URL } from "@/lib/site-config";
 
-const siteUrl = Astro.site?.toString() ?? "https://sungkargroup.id";
+const siteUrl = Astro.site?.toString() ?? SITE_URL;
 
 const contactSchema = generateContactPageSchema(siteUrl, businessInfo);
 
