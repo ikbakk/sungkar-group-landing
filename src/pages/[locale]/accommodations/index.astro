@@ -14,8 +14,22 @@ import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { accommodations } from "@/lib/content/akomodasiData";
-import { akomodasiPageContent } from "@/lib/content/akomodasiPage";
-import { akomodasiFaq } from "@/lib/content/faqs/akomodasi";
+
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { t, LOCALES } from "@/lib/i18n";
+
+export async function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
+
+const pageModule = await loadContent(locale!, "akomodasiPage");
+const { akomodasiPageContent } = pageModule;
+
+const faqModule = await loadFaq(locale!, "akomodasi");
+const { akomodasiFaq } = faqModule;
 
 const faqSchema = generateFAQPageSchema(akomodasiFaq);
 
@@ -32,36 +46,30 @@ const labuanBajoAccommodations = accommodations.filter(
 );
 
 const regions = [
-  {
-    id: "lombok",
-    label: "Lombok",
-    count: lombokAccommodations.length,
-  },
-  {
-    id: "sumbawa",
-    label: "Sumbawa",
-    count: sumbawaAccommodations.length,
-  },
-  {
-    id: "labuan-bajo",
-    label: "Labuan Bajo",
-    count: labuanBajoAccommodations.length,
-  },
+  { id: "lombok", label: "Lombok", count: lombokAccommodations.length },
+  { id: "sumbawa", label: "Sumbawa", count: sumbawaAccommodations.length },
+  { id: "labuan-bajo", label: "Labuan Bajo", count: labuanBajoAccommodations.length },
 ].filter((region) => region.count > 0);
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.accommodations },
+];
 ---
 
 <MainLayout
-  title="Akomodasi"
+  title={uiStrings.akomodasi.title}
   description={akomodasiPageContent.hero.description}
-  canonical="/akomodasi"
-  image={accommodations[0].image}
+  canonical={`/${locale}/accommodations`}
+  image={accommodations[0]?.image}
+  locale={locale}
 >
   <StructuredData schema={faqSchema} />
   <PageHeader
     eyebrow={akomodasiPageContent.hero.eyebrow}
     title={akomodasiPageContent.hero.title}
     description={akomodasiPageContent.hero.description}
-    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Akomodasi" }]}
+    breadcrumbs={breadcrumbs}
   />
 
   {regions.length > 0 && <StickyNav items={regions} />}
@@ -101,7 +109,7 @@ const regions = [
 
   <FaqSection
     eyebrow="FAQ"
-    title="Pertanyaan Seputar Akomodasi"
+    title={uiStrings.faq.sectionAccommodations}
     items={akomodasiFaq}
     background="bg-surface-soft"
   />

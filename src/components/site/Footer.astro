@@ -1,13 +1,21 @@
 ---
 import FooterBlock from "@/components/blocks/FooterBlock.astro"
+import { t } from "@/lib/i18n";
 
+interface Props {
+  locale?: string;
+}
+
+const { locale = "id" } = Astro.props as Props;
 const currentYear = new Date().getFullYear();
+const uiStrings = t(locale);
 ---
 
 <FooterBlock
-  brandName="Sungkar Group"
-  brandHref="/"
-  description="Operator wisata lokal untuk Lombok, Sumbawa, dan Labuan Bajo."
+  locale={locale}
+  brandName={uiStrings.footer.brandName}
+  brandHref={"/" + locale}
+  description={uiStrings.footer.description}
   socials={[
     {
       label: "Instagram",
@@ -22,35 +30,35 @@ const currentYear = new Date().getFullYear();
   ]}
   columns={[
     {
-      title: "Navigasi",
+      title: uiStrings.footer.navigation,
       links: [
-        { label: "Paket Wisata", href: "/paket-wisata" },
-        { label: "Akomodasi", href: "/akomodasi" },
-        { label: "Sewa Mobil", href: "/sewa-mobil" },
-        { label: "Destinasi", href: "/destinasi" },
-        { label: "Panduan Wisata", href: "/panduan-wisata" },
+        { label: uiStrings.breadcrumb.tourPackages, href: "/tour-packages" },
+        { label: uiStrings.breadcrumb.accommodations, href: "/accommodations" },
+        { label: uiStrings.breadcrumb.carRental, href: "/car-rental" },
+        { label: uiStrings.breadcrumb.destinations, href: "/destinations" },
+        { label: uiStrings.breadcrumb.travelGuides, href: "/travel-guides" },
       ],
     },
     {
-      title: "Destinasi",
+      title: uiStrings.footer.destinations,
       links: [
-        { label: "Lombok", href: "/paket-wisata/lombok" },
-        { label: "Sumbawa", href: "/paket-wisata/sumbawa" },
-        { label: "Labuan Bajo", href: "/paket-wisata/labuan-bajo" },
+        { label: "Lombok", href: "/tour-packages/lombok" },
+        { label: "Sumbawa", href: "/tour-packages/sumbawa" },
+        { label: "Labuan Bajo", href: "/tour-packages/labuan-bajo" },
       ],
     },
     {
-      title: "Perusahaan",
+      title: uiStrings.footer.company,
       links: [
-        { label: "Ulasan", href: "/ulasan" },
-        { label: "Tentang Kami", href: "/tentang-kami" },
-        { label: "Kontak", href: "/kontak" },
+        { label: uiStrings.breadcrumb.reviews, href: "/reviews" },
+        { label: uiStrings.breadcrumb.about, href: "/about" },
+        { label: uiStrings.breadcrumb.contact, href: "/contact" },
       ],
     },
   ]}
-  copyright={`\u00A9 ${currentYear} Sungkar Group. All rights reserved.`}
+  copyright={uiStrings.footer.copyright.replace("{year}", String(currentYear))}
   bottomLinks={[
-    { label: "Kebijakan Privasi", href: "/" },
-    { label: "Syarat & Ketentuan", href: "/" },
+    { label: uiStrings.footer.privacy, href: "/" + locale },
+    { label: uiStrings.footer.terms, href: "/" + locale },
   ]}
 />

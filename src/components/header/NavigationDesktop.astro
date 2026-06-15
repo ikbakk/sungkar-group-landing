@@ -9,12 +9,18 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import type { NavItem } from "@/lib/content/navigationData";
+import { localizeHref } from "@/lib/i18n/localize";
 
 interface Props {
   items: NavItem[];
+  locale?: string;
 }
 
-const { items } = Astro.props as Props;
+const { items, locale = "id" } = Astro.props as Props;
+
+function lh(href: string | undefined): string | undefined {
+  return localizeHref(href, locale);
+}
 ---
 
 <NavigationMenu delayOpen={100}>
@@ -24,7 +30,7 @@ const { items } = Astro.props as Props;
         <NavigationMenuItem value={item.label}>
           {item.variant === "link" && (
             <NavigationMenuLink
-              href={item.href!}
+              href={lh(item.href!)}
               class="inline-flex h-10 w-max items-center justify-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
             >
               {item.label}
@@ -49,7 +55,7 @@ const { items } = Astro.props as Props;
                       <div class="mb-2">
                         {group.href ? (
                           <NavigationMenuLink
-                            href={group.href}
+                            href={lh(group.href)}
                             class="text-sm font-semibold text-brand-700 hover:underline"
                           >
                             {group.title}
@@ -65,7 +71,7 @@ const { items } = Astro.props as Props;
                           {group.collections.map((collection) => (
                             <li>
                               <NavigationMenuLink
-                                href={collection.href!}
+                                href={lh(collection.href!)}
                                 class="block rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
                               >
                                 {collection.title}
@@ -78,7 +84,7 @@ const { items } = Astro.props as Props;
                           {group.items?.map((subItem) => (
                             <li>
                               <NavigationMenuLink
-                                href={subItem.href}
+                                href={lh(subItem.href)}
                                 class="block rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
                               >
                                 {subItem.label}
@@ -93,7 +99,7 @@ const { items } = Astro.props as Props;
                 {item.href && (
                   <div class="flex justify-center pb-3">
                     <NavigationMenuLink
-                      href={item.href}
+                      href={lh(item.href)}
                       class="inline-flex items-center rounded-md bg-brand-700 px-4 py-2 text-sm text-background transition-colors hover:bg-brand-500"
                     >
                       Lihat Semua {item.label}

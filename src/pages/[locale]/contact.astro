@@ -12,8 +12,8 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { businessInfo, contactFormFields } from "@/lib/contact-data";
 
-import { contactPageContent } from "@/lib/content/contactPage";
-import { contactFaq } from "@/lib/content/faqs/contact";
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { t, LOCALES } from "@/lib/i18n";
 
 import {
   generateContactPageSchema,
@@ -21,17 +21,37 @@ import {
 } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 
+export async function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
+
+const pageModule = await loadContent(locale!, "contactPage");
+const { contactPageContent } = pageModule;
+
+const faqModule = await loadFaq(locale!, "contact");
+const { contactFaq } = faqModule;
+
 const siteUrl = Astro.site?.toString() ?? SITE_URL;
 
 const contactSchema = generateContactPageSchema(siteUrl, businessInfo);
 
 const faqSchema = generateFAQPageSchema(contactFaq);
+
+const pageTitle = uiStrings.page.contact;
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.contact },
+];
 ---
 
 <MainLayout
-  title="Kontak"
-  description="Hubungi Sungkar Group untuk cek ketersediaan, itinerary, dan layanan WhatsApp. Tersedia via phone, email, WhatsApp, dan formulir online."
-  canonical="/kontak"
+  title={pageTitle}
+  description={contactPageContent.hero.description}
+  canonical={`/${locale}/contact`}
+  locale={locale}
 >
   <StructuredData schema={contactSchema} />
   <StructuredData schema={faqSchema} />
@@ -39,7 +59,7 @@ const faqSchema = generateFAQPageSchema(contactFaq);
     eyebrow={contactPageContent.hero.eyebrow}
     title={contactPageContent.hero.title}
     description={contactPageContent.hero.description}
-    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Kontak" }]}
+    breadcrumbs={breadcrumbs}
   />
 
   <SectionContainer background="bg-surface-soft">
@@ -73,7 +93,7 @@ const faqSchema = generateFAQPageSchema(contactFaq);
   <SectionContainer background="bg-surface-soft">
     <FaqSection
       eyebrow="FAQ"
-      title="Pertanyaan Seputar Kontak dan Pemesanan"
+      title={uiStrings.faq.sectionContact}
       items={contactFaq}
       background="bg-surface-soft"
     />

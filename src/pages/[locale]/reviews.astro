@@ -10,20 +10,39 @@ import FaqSection from "@/components/site/Faq.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 
-import { reviewsFaq } from "@/lib/content/faqs/reviews";
-import {
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { t, LOCALES } from "@/lib/i18n";
+
+export async function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
+
+const faqModule = await loadFaq(locale!, "reviews");
+const { reviewsFaq } = faqModule;
+
+const pageModule = await loadContent(locale!, "reviewPage");
+const {
   reviewsPageContent,
   reviews,
   reviewStats,
-} from "@/lib/content/reviewPage";
+} = pageModule;
 
 const faqSchema = generateFAQPageSchema(reviewsFaq);
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.reviews },
+];
 ---
 
 <MainLayout
-  title="Ulasan"
-  description="Ulasan asli pelanggan Sungkar Group di Google. Baca pengalaman wisatawan tentang tour Lombok, guide, dan layanan kami."
-  canonical="/ulasan"
+  title={uiStrings.page.reviews}
+  description={reviewsPageContent.hero.description}
+  canonical={`/${locale}/reviews`}
+  locale={locale}
 >
   <StructuredData schema={faqSchema} />
 
@@ -31,7 +50,7 @@ const faqSchema = generateFAQPageSchema(reviewsFaq);
     eyebrow={reviewsPageContent.hero.eyebrow}
     title={reviewsPageContent.hero.title}
     description={reviewsPageContent.hero.description}
-    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Ulasan" }]}
+    breadcrumbs={breadcrumbs}
     transition:animate={"slide"}
   />
 
@@ -76,7 +95,7 @@ const faqSchema = generateFAQPageSchema(reviewsFaq);
         <div
           class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
         >
-          Lihat di Google Maps
+          {uiStrings.reviews.seeOnGoogleMaps}
         </div>
 
         <div class="overflow-hidden rounded-xl border border-border">
@@ -97,7 +116,7 @@ const faqSchema = generateFAQPageSchema(reviewsFaq);
           rel="noopener noreferrer"
           class="text-sm font-medium text-brand-700 underline-offset-2 hover:underline"
         >
-          Lihat semua ulasan di Google &rarr;
+          {uiStrings.reviews.seeAllReviews} &rarr;
         </a>
       </div>
     </div>
@@ -109,7 +128,7 @@ const faqSchema = generateFAQPageSchema(reviewsFaq);
 
   <FaqSection
     eyebrow="FAQ"
-    title="Pertanyaan Seputar Ulasan"
+    title={uiStrings.faq.sectionReviews}
     items={reviewsFaq}
   />
 </MainLayout>

@@ -14,13 +14,16 @@ import {
 } from "@/components/ui/accordion";
 
 import type { NavItem } from "@/lib/content/navigationData";
+import { localizeHref } from "@/lib/i18n/localize";
 
 type Props = {
   items: NavItem[];
   isHome?: boolean;
+  locale?: string;
 };
 
-export default function NavigationMobile({ items, isHome }: Props) {
+export default function NavigationMobile({ items, isHome, locale = "id" }: Props) {
+  const lh = (href: string | undefined) => localizeHref(href, locale);
   const totalPackages = items
     .flatMap((item) => item.groups ?? [])
     .flatMap((group) => group.collections ?? [])
@@ -71,7 +74,7 @@ export default function NavigationMobile({ items, isHome }: Props) {
                     return (
                       <a
                         key={item.label}
-                        href={item.href}
+                        href={lh(item.href)}
                         className="
                           py-4
                           text-base
@@ -148,7 +151,7 @@ export default function NavigationMobile({ items, isHome }: Props) {
                                         {group.collections.map((collection) => (
                                           <div key={collection.title}>
                                             <a
-                                              href={collection.href}
+                                              href={lh(collection.href)}
                                               className="
                                                 mb-2
                                                 block
@@ -167,7 +170,7 @@ export default function NavigationMobile({ items, isHome }: Props) {
                                                 (subItem) => (
                                                   <a
                                                     key={subItem.href}
-                                                    href={subItem.href}
+                                                    href={lh(subItem.href)}
                                                     className="
                                                     py-2
                                                     text-sm
@@ -189,7 +192,7 @@ export default function NavigationMobile({ items, isHome }: Props) {
                                         {group.items?.map((subItem) => (
                                           <a
                                             key={subItem.href}
-                                            href={subItem.href}
+                                            href={lh(subItem.href)}
                                             className="
                                               py-2
                                               text-sm

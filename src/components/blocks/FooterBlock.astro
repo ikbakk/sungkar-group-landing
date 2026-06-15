@@ -4,9 +4,11 @@ import { Icon } from "@/components/ui/icon";
 import { Logo, LogoText } from "@/components/ui/logo";
 import { Section, SectionContainer } from "@/components/ui/section";
 import { Separator } from "@/components/ui/separator";
+import { localizeHref } from "@/lib/i18n/localize";
 
 type Props = {
   class?: string;
+  locale?: string;
   brandName: string;
   brandHref: string;
   description: string;
@@ -31,6 +33,7 @@ type Props = {
 
 const {
   class: className,
+  locale = "id",
   brandName,
   brandHref,
   description,
@@ -39,6 +42,10 @@ const {
   copyright,
   bottomLinks,
 } = Astro.props;
+
+function lh(href: string): string {
+  return localizeHref(href, locale) || href;
+}
 ---
 
 <footer class={cn("", className)}>
@@ -46,7 +53,7 @@ const {
     <SectionContainer>
       <div class="grid gap-10 lg:grid-cols-[1fr_2fr]">
         <div class="flex flex-col gap-5">
-          <Logo href={brandHref}>
+          <Logo href={lh(brandHref)}>
             <LogoText class={"font-heading text-2xl font-normal"}
               >{brandName}</LogoText
             >
@@ -81,7 +88,7 @@ const {
                   {column.links.map((link) => (
                     <li>
                       <a
-                        href={link.href}
+                        href={lh(link.href)}
                         class="text-muted-foreground hover:text-foreground text-sm transition-colors"
                       >
                         {link.label}
@@ -104,7 +111,7 @@ const {
             <nav class="flex flex-wrap items-center gap-x-5 gap-y-2">
               {bottomLinks.map((link) => (
                 <a
-                  href={link.href}
+                  href={lh(link.href)}
                   class="text-muted-foreground hover:text-foreground text-sm transition-colors"
                 >
                   {link.label}

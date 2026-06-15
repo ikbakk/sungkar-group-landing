@@ -14,9 +14,23 @@ import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { packages } from "@/lib/content/tourPackages/index";
-import { packagePageContent } from "@/lib/content/packagePage";
 import { REGIONS } from "@/lib/regions";
-import { packageFaq } from "@/lib/content/faqs/package";
+
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { t, LOCALES } from "@/lib/i18n";
+
+export async function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
+
+const pageModule = await loadContent(locale!, "packagePage");
+const { packagePageContent } = pageModule;
+
+const faqModule = await loadFaq(locale!, "package");
+const { packageFaq } = faqModule;
 
 const faqSchema = generateFAQPageSchema(packageFaq);
 
@@ -36,20 +50,26 @@ const regions = REGIONS.map((id) => ({
         ? sumbawaPackages.length
         : labuanBajoPackages.length,
 }));
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.tourPackages },
+];
 ---
 
 <MainLayout
-  title="Paket Wisata"
+  title={uiStrings.paketWisata.title}
   description={packagePageContent.hero.description}
-  canonical="/paket-wisata"
-  image={packages[0].images[0]}
+  canonical={`/${locale}/tour-packages`}
+  image={packages[0]?.images[0]}
+  locale={locale}
 >
   <StructuredData schema={faqSchema} />
   <PageHeader
     eyebrow={packagePageContent.hero.eyebrow}
     title={packagePageContent.hero.title}
     description={packagePageContent.hero.description}
-    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Paket Wisata" }]}
+    breadcrumbs={breadcrumbs}
   />
 
   <StickyNav items={regions} />
@@ -83,13 +103,13 @@ const regions = REGIONS.map((id) => ({
 
   <FaqSection
     eyebrow="FAQ"
-    title="Pertanyaan Seputar Paket Wisata"
+    title={uiStrings.faq.sectionPackages}
     items={packageFaq}
   />
 
   <RelatedContent
     background="bg-surface-soft"
-    title="Jelajahi Layanan Kami"
+    title={uiStrings.paketWisata.exploreServices}
     items={packagePageContent.relatedContent}
   />
 

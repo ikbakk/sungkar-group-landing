@@ -13,8 +13,22 @@ import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { vehicles } from "@/lib/content/sewaMobilData";
-import { sewaPageContent } from "@/lib/content/sewaPage";
-import { sewaMobilFaq } from "@/lib/content/faqs/sewa-mobil";
+
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { t, LOCALES } from "@/lib/i18n";
+
+export async function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
+
+const pageModule = await loadContent(locale!, "sewaPage");
+const { sewaPageContent } = pageModule;
+
+const faqModule = await loadFaq(locale!, "sewa-mobil");
+const { sewaMobilFaq } = faqModule;
 
 const faqSchema = generateFAQPageSchema(sewaMobilFaq);
 
@@ -23,31 +37,30 @@ const sumbawaVehicles = vehicles.filter((v) => v.region === "sumbawa");
 const labuanBajoVehicles = vehicles.filter((v) => v.region === "labuan-bajo");
 
 const regions = [
-  {
-    id: "lombok",
-    label: "Lombok",
-    count: lombokVehicles.length,
-  },
-  {
-    id: "labuan-bajo",
-    label: "Labuan Bajo",
-    count: labuanBajoVehicles.length,
-  },
+  { id: "lombok", label: "Lombok", count: lombokVehicles.length },
+  { id: "sumbawa", label: "Sumbawa", count: sumbawaVehicles.length },
+  { id: "labuan-bajo", label: "Labuan Bajo", count: labuanBajoVehicles.length },
 ].filter((region) => region.count > 0);
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.carRental },
+];
 ---
 
 <MainLayout
-  title="Sewa Mobil"
+  title={uiStrings.sewaMobil.title}
   description={sewaPageContent.hero.description}
-  canonical="/sewa-mobil"
-  image={vehicles[0].imageTop}
+  canonical={`/${locale}/car-rental`}
+  image={vehicles[0]?.imageTop}
+  locale={locale}
 >
   <StructuredData schema={faqSchema} />
   <PageHeader
     eyebrow={sewaPageContent.hero.eyebrow}
     title={sewaPageContent.hero.title}
     description={sewaPageContent.hero.description}
-    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Sewa Mobil" }]}
+    breadcrumbs={breadcrumbs}
   />
 
   {regions.length > 0 && <StickyNav items={regions} />}
@@ -93,7 +106,7 @@ const regions = [
 
   <FaqSection
     eyebrow="FAQ"
-    title="Pertanyaan Seputar Sewa Mobil"
+    title={uiStrings.faq.sectionCarRental}
     items={sewaMobilFaq}
     background="bg-surface-soft"
   />

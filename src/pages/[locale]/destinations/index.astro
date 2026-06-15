@@ -8,10 +8,20 @@ import { generateFAQPageSchema } from "@/lib/schemas";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import StickyNav from "@/components/ui/StickyNav.astro";
 import DestinationGroupSection from "@/components/destinations/DestinationGroupSection.astro";
-import { destinations } from "@/lib/content/destinationsData";
-import { destinationsPageContent } from "@/lib/content/destinationsPage";
 
-import "../../styles/global.css";
+import { loadContent } from "@/lib/i18n/loader";
+import { t, LOCALES } from "@/lib/i18n";
+import { destinations } from "@/lib/content/destinationsData";
+
+export async function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
+
+const pageModule = await loadContent(locale!, "destinationsPage");
+const { destinationsPageContent } = pageModule;
 
 const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
 
@@ -23,16 +33,22 @@ const groups = destinationsPageContent.groups.map((group) => ({
   ...group,
   count: group.destinationSlugs.length,
   destinations: group.destinationSlugs
-    .map((slug) => destinationBySlug.get(slug))
-    .filter((destination): destination is (typeof destinations)[number] => Boolean(destination)),
+    .map((slug: string) => destinationBySlug.get(slug))
+    .filter(Boolean),
 }));
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.destinations },
+];
 ---
 
 <MainLayout
-  title="Destinasi"
+  title={uiStrings.page.destinations}
   description={destinationsPageContent.hero.description}
-  canonical="/destinasi"
+  canonical={`/${locale}/destinations`}
   image={destinationsPageContent.spotlightImage}
+  locale={locale}
 >
   <StructuredData schema={faqSchema} />
   <div id="top" />
@@ -41,17 +57,17 @@ const groups = destinationsPageContent.groups.map((group) => ({
     eyebrow={destinationsPageContent.hero.eyebrow}
     title={destinationsPageContent.hero.title}
     description={destinationsPageContent.hero.description}
-    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Destinasi" }]}
+    breadcrumbs={breadcrumbs}
     image={destinationsPageContent.spotlightImage}
     imageAlt="Destinasi Lombok"
   />
 
   <StickyNav
-    items={groups.map(({ id, label, count }) => ({ id, label, count }))}
+    items={groups.map(({ id, label, count }: { id: string; label: string; count: number }) => ({ id, label, count }))}
     dataAttr="destination-group-link"
   />
 
-  {groups.map((group, index) => (
+  {groups.map((group: any, index: number) => (
     <SectionContainer background={index % 2 === 0 ? "bg-surface-soft" : "bg-background"}>
       <DestinationGroupSection
         id={group.id}
@@ -69,7 +85,7 @@ const groups = destinationsPageContent.groups.map((group) => ({
   />
 
   <RelatedContent
-    title="Layanan Terkait"
+    title={uiStrings.paketWisata.exploreServices}
     items={destinationsPageContent.relatedContent}
     background="bg-surface-soft"
   />

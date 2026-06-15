@@ -14,18 +14,21 @@ import { guides } from "@/lib/content/guides";
 import { destinations } from "@/lib/content/destinationsData";
 import { packages } from "@/lib/content/tourPackages";
 
+import { t, LOCALES } from "@/lib/i18n";
+
 export async function getStaticPaths() {
-  return guides.map((guide) => ({
-    params: { slug: guide.slug },
-    props: { guide },
-  }));
+  const paths = [];
+  for (const locale of LOCALES) {
+    for (const guide of guides) {
+      paths.push({ params: { locale, slug: guide.slug }, props: { guide } });
+    }
+  }
+  return paths;
 }
 
-interface Props {
-  guide: (typeof guides)[0];
-}
-
+const { locale } = Astro.params;
 const { guide } = Astro.props;
+const uiStrings = t(locale!);
 
 const relatedDestinations = destinations.filter((d) =>
   guide.relatedDestinations.includes(d.slug)
@@ -36,12 +39,12 @@ const relatedPackages = packages.filter((p) =>
 );
 
 const breadcrumbs = [
-  { label: "Beranda", href: "/" },
-  { label: "Panduan Wisata", href: "/panduan-wisata" },
+  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.travelGuides, href: `/${locale}/travel-guides` },
   { label: guide.title },
 ];
 
-const howToSteps = guide.keyTakeaways.map((takeaway, index) => ({
+const howToSteps = guide.keyTakeaways.map((takeaway: string, index: number) => ({
   name: `Poin ${index + 1}`,
   description: takeaway,
 }));
@@ -53,11 +56,12 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
   title={guide.title}
   description={guide.description}
   canonical={`/panduan-wisata/${guide.slug}`}
+  locale={locale}
 >
   <StructuredData schema={guideSchema} />
 
   <PageHeader
-    eyebrow="Panduan Wisata"
+    eyebrow={uiStrings.page.travelGuides}
     title={guide.title}
     description={guide.description}
     breadcrumbs={breadcrumbs}
@@ -68,7 +72,7 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
       <div class="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-text-muted">
         <span class="inline-flex items-center gap-2">
           <HugeiconsIcon icon={AlarmClockIcon} size={16} />
-          {guide.readingTime} menit membaca
+          {guide.readingTime} {uiStrings.guides.readingTime}
         </span>
         <span class="hidden sm:inline text-border">&#47;</span>
         <span class="inline-flex items-center gap-2">
@@ -95,10 +99,10 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
     <SectionContainer background="bg-surface-soft">
       <div class="mb-8">
         <h2 class="font-heading text-3xl leading-tight text-foreground">
-          Destinasi Terkait
+          {uiStrings.guides.destinationRelated}
         </h2>
         <p class="mt-3 max-w-2xl text-base leading-7 text-text-muted">
-          Tempat-tempat yang direkomendasikan berdasarkan panduan ini
+          {uiStrings.guides.relatedDestinationsDesc}
         </p>
       </div>
       <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -113,10 +117,10 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
     <SectionContainer background="bg-background">
       <div class="mb-8">
         <h2 class="font-heading text-3xl leading-tight text-foreground">
-          Paket Wisata Terkait
+          {uiStrings.guides.packageRelated}
         </h2>
         <p class="mt-3 max-w-2xl text-base leading-7 text-text-muted">
-          Paket wisata yang sesuai dengan panduan ini
+          {uiStrings.guides.relatedPackagesDesc}
         </p>
       </div>
       <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -130,14 +134,14 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
   <SectionContainer background="bg-background">
     <div class="mb-8">
       <h2 class="font-heading text-3xl leading-tight text-foreground">
-        Panduan Lainnya
+        {uiStrings.guides.otherGuides}
       </h2>
     </div>
     <div class="-mx-4 flex gap-6 overflow-x-auto px-4 snap-x snap-mandatory sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
       {guides
-        .filter((g) => g.slug !== guide.slug)
+        .filter((g: any) => g.slug !== guide.slug)
         .slice(0, 5)
-        .map((g) => (
+        .map((g: any) => (
           <div class="w-[85vw] shrink-0 snap-start sm:w-[380px]">
             <GuideCard guide={g} />
           </div>

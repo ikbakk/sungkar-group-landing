@@ -15,18 +15,27 @@ import {
 import { SITE_URL } from "@/lib/site-config";
 import { destinations } from "@/lib/content/destinationsData";
 import { packages } from "@/lib/content/tourPackages";
-import { destinationsPageContent } from "@/lib/content/destinationsPage";
 
-import "../../styles/global.css";
+import { loadContent } from "@/lib/i18n/loader";
+import { t, LOCALES } from "@/lib/i18n";
 
-export function getStaticPaths() {
-  return destinations.map((destination) => ({
-    params: { slug: destination.slug },
-    props: { destination },
-  }));
+export async function getStaticPaths() {
+  const paths = [];
+  for (const locale of LOCALES) {
+    for (const destination of destinations) {
+      paths.push({ params: { locale, slug: destination.slug } });
+    }
+  }
+  return paths;
 }
 
-const { destination } = Astro.props;
+const { locale, slug } = Astro.params;
+const uiStrings = t(locale!);
+
+const pageModule = await loadContent(locale!, "destinationsPage");
+const { destinationsPageContent } = pageModule;
+
+const destination = destinations.find((d) => d.slug === slug)!;
 
 const relatedPackages = packages.filter((tour) =>
   destination.packages.includes(tour.slug),
@@ -44,8 +53,8 @@ const touristAttractionSchema = generateTouristAttractionSchema(
 );
 
 const breadcrumbItems = [
-  { name: "Beranda", url: "/" },
-  { name: "Destinasi", url: "/destinasi" },
+  { name: uiStrings.breadcrumb.home, url: "/" },
+  { name: uiStrings.breadcrumb.destinations, url: "/destinasi" },
   { name: destination.title, url: `/destinasi/${destination.slug}` },
 ];
 
@@ -59,6 +68,7 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
   description={destination.summary}
   canonical={`/destinasi/${destination.slug}`}
   image={destination.image}
+  locale={locale}
 >
   <StructuredData schema={touristAttractionSchema} />
   <StructuredData schema={breadcrumbSchema} />
@@ -69,8 +79,8 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
     title={destination.title}
     description={destination.summary}
     breadcrumbs={[
-      { label: "Beranda", href: "/" },
-      { label: "Destinasi", href: "/destinasi" },
+      { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+      { label: uiStrings.breadcrumb.destinations, href: `/${locale}/destinations` },
       { label: destination.title },
     ]}
     image={destination.image}

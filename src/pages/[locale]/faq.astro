@@ -4,29 +4,48 @@ import PageHeader from "@/components/site/PageHeader.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 
-import { generalFaqItems } from "@/lib/content/faqs/general";
-import { faqPageContent } from "@/lib/content/faqPage";
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { t, LOCALES } from "@/lib/i18n";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import HeroLombok from "@/assets/images/hero-lombok.webp";
 
+export async function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
+
+const faqModule = await loadFaq(locale!, "general");
+const { generalFaqItems } = faqModule;
+
+const pageModule = await loadContent(locale!, "faqPage");
+const { faqPageContent } = pageModule;
+
 const faqSchema = generateFAQPageSchema(generalFaqItems);
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.faq },
+];
 ---
 
 <MainLayout
   title="FAQ"
-  description="Pertanyaan yang sering ditanyakan tentang layanan, paket, destinasi, dan cara memulai pemesanan."
-  canonical="/faq"
+  description={faqPageContent.hero.description}
+  canonical={`/${locale}/faq`}
   image={HeroLombok}
+  locale={locale}
 >
   <StructuredData schema={faqSchema} />
   <PageHeader
     eyebrow={faqPageContent.hero.eyebrow}
     title={faqPageContent.hero.title}
     description={faqPageContent.hero.description}
-    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "FAQ" }]}
+    breadcrumbs={breadcrumbs}
     image={HeroLombok}
     imageAlt="Lombok saat matahari terbit"
   />

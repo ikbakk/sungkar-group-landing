@@ -13,23 +13,44 @@ import ValuesSection from "@/components/about/ValuesSection.astro";
 import CommitmentSection from "@/components/about/CommitmentSection.astro";
 import CtaSection from "@/components/about/CtaSection.astro";
 
-import { aboutContent } from "@/lib/content/about";
-import { aboutFaq } from "@/lib/content/faqs/about";
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { t } from "@/lib/i18n/ui-strings";
+import { LOCALES } from "@/lib/i18n";
+
+export async function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
+
+const aboutModule = await loadContent(locale!, "about");
+const { aboutContent } = aboutModule;
+
+const faqModule = await loadFaq(locale!, "about");
+const { aboutFaq } = faqModule;
 
 const faqSchema = generateFAQPageSchema(aboutFaq);
+
+const pageTitle = uiStrings.page.about;
+const pageDescription = aboutContent.hero.description;
 ---
 
 <MainLayout
-  title="Tentang Kami"
-  description="Tentang Sungkar Group Indonesia sebagai operator wisata lokal yang membantu wisatawan menikmati Lombok dengan lebih nyaman dan terencana."
-  canonical="/tentang-kami"
+  title={pageTitle}
+  description={pageDescription}
+  canonical={`/${locale}/about`}
+  locale={locale}
 >
   <StructuredData schema={faqSchema} />
   <PageHeader
     eyebrow={aboutContent.hero.eyebrow}
     title={aboutContent.hero.title}
     description={aboutContent.hero.description}
-    breadcrumbs={[{ label: "Beranda", href: "/" }, { label: "Tentang Kami" }]}
+    breadcrumbs={[
+      { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+      { label: uiStrings.breadcrumb.about },
+    ]}
   />
   <StorySection />
   <VisionMissionSection />
@@ -39,7 +60,7 @@ const faqSchema = generateFAQPageSchema(aboutFaq);
   <CommitmentSection />
   <FaqSection
     eyebrow="FAQ"
-    title="Pertanyaan Tentang Sungkar Group"
+    title={uiStrings.faq.sectionAbout}
     items={aboutFaq}
     background="bg-surface-soft"
   />

@@ -8,25 +8,32 @@ import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 
 import { vehicles } from "@/lib/content/sewaMobilData";
-import { REGION_LABEL } from "@/lib/regions";
+import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 import { sewaMobilFormFields } from "@/lib/contact-data";
 
 import VehicleDetailPanel from "@/components/vehicles/VehicleDetailPanel.astro";
 import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 
+import { t, LOCALES } from "@/lib/i18n";
+
 import type { Vehicle } from "@/lib/content/sewaMobilData";
 
 export function getStaticPaths() {
-  return vehicles.map((v: Vehicle) => ({
-    params: {
-      region: v.region,
-      slug: v.slug,
-    },
-    props: { vehicle: v },
-  }));
+  const paths = [];
+  for (const locale of LOCALES) {
+    for (const vehicle of vehicles) {
+      paths.push({
+        params: { locale, region: vehicle.region, slug: vehicle.slug },
+        props: { vehicle },
+      });
+    }
+  }
+  return paths;
 }
 
+const { locale } = Astro.params;
 const { vehicle } = Astro.props;
+const uiStrings = t(locale!);
 
 const vehicleUrl = `${SITE_URL}/sewa-mobil/${vehicle.region}/${vehicle.slug}`;
 const absoluteImageUrl = new URL(vehicle.imageTop.src, SITE_URL).toString();
@@ -40,35 +47,35 @@ const productSchema = generateProductSchema(
 );
 
 const breadcrumbItems = [
-  { name: "Beranda", url: "/" },
-  { name: "Sewa Mobil", url: "/sewa-mobil" },
+  { name: uiStrings.breadcrumb.home, url: "/" },
+  { name: uiStrings.breadcrumb.carRental, url: "/sewa-mobil" },
   { name: REGION_LABEL[vehicle.region], url: `/sewa-mobil/${vehicle.region}` },
   { name: vehicle.name, url: vehicleUrl },
 ];
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
+
+const r = vehicle.region as Region;
 ---
 
 <MainLayout
-  title={`${vehicle.name} - Sewa Mobil ${REGION_LABEL[vehicle.region]}`}
+  title={`${vehicle.name} - ${uiStrings.sewaMobil.title} ${REGION_LABEL[r]}`}
   description={vehicle.description}
   canonical={`/sewa-mobil/${vehicle.region}/${vehicle.slug}`}
   image={vehicle.imageTop}
+  locale={locale}
 >
   <StructuredData schema={productSchema} />
   <StructuredData schema={breadcrumbSchema} />
 
   <PageHeader
-    eyebrow="Detail Kendaraan"
+    eyebrow={uiStrings.sewaMobil.vehicleDetail}
     title={vehicle.name}
     description={vehicle.description}
     breadcrumbs={[
-      { label: "Beranda", href: "/" },
-      { label: "Sewa Mobil", href: "/sewa-mobil" },
-      {
-        label: REGION_LABEL[vehicle.region],
-        href: `/sewa-mobil/${vehicle.region}`,
-      },
+      { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+      { label: uiStrings.breadcrumb.carRental, href: `/${locale}/car-rental` },
+      { label: REGION_LABEL[r], href: `/${locale}/car-rental/${vehicle.region}` },
       { label: vehicle.name },
     ]}
   />
@@ -99,7 +106,7 @@ const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
           fields={sewaMobilFormFields}
           mode="sidebar"
           itemName={vehicle.name}
-          region={REGION_LABEL[vehicle.region]}
+          region={REGION_LABEL[r]}
         />
       </div>
     </div>
