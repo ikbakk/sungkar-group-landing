@@ -45,13 +45,7 @@ import {
   title={landingTestimonials.title}
   description={landingTestimonials.description}
   alignment="center"
-  reviews={landingTestimonials.testimonials.map((t) => ({
-    quote: t.content,
-    initials: t.name.split(" ").map((n) => n[0]).join("").slice(0, 2).toUpperCase(),
-    name: t.name,
-    role: t.title,
-    rating: t.rating,
-  }))}
+  reviews={landingTestimonials.testimonials}
 />
 <TransportSection
   class="bg-surface-soft"

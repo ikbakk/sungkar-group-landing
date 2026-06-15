@@ -3,7 +3,7 @@ import type { ImageMetadata } from "astro";
 import { businessInfo } from "@/lib/contact-data";
 import { destinations } from "@/lib/content/destinationsData";
 import { packages } from "@/lib/content/tourPackages";
-import { reviewStats, reviews } from "@/lib/content/reviewPage";
+import { toMarqueeReviews, reviewStats } from "@/lib/content/reviewPage";
 import Hero from "@/assets/images/hero.webp";
 import HeroLombok from "@/assets/images/hero-lombok.webp";
 import KutaBeach from "@/assets/images/kuta-beach.webp";
@@ -47,16 +47,32 @@ export interface LandingDestinationCard {
   image: ImageMetadata;
 }
 
+function toLandingTourCard(tour: (typeof packages)[number]): LandingTourCard {
+  return {
+    image: tour.images[0],
+    duration: tour.duration,
+    region: tour.region,
+    collectionSlug: tour.collectionSlug,
+    slug: tour.slug,
+    title: tour.title,
+    description: tour.summary,
+  };
+}
+
+function toLandingDestinationCard(
+  dest: (typeof destinations)[number],
+): LandingDestinationCard {
+  return {
+    slug: dest.slug,
+    title: dest.title,
+    image: dest.image,
+    description: dest.summary,
+  };
+}
+
 export interface LandingTransportCard {
   title: string;
   description: string;
-}
-
-export interface LandingTestimonial {
-  name: string;
-  title: string;
-  content: string;
-  rating: number;
 }
 
 export const landingHero = {
@@ -117,19 +133,7 @@ export const landingFeaturedTours = {
   description:
     "Mulai dari trip singkat sampai perjalanan beberapa hari, paket kami dirancang agar Anda tinggal memilih, berangkat, dan menikmati momen.",
   heroImage: TourSnorkeling,
-  tours: packages
-    .filter((tour) => tour.featured)
-    .map(
-      (tour): LandingTourCard => ({
-        image: tour.images[0],
-        duration: tour.duration,
-        region: tour.region,
-        collectionSlug: tour.collectionSlug,
-        slug: tour.slug,
-        title: tour.title,
-        description: tour.summary,
-      }),
-    ),
+  tours: packages.filter((tour) => tour.featured).map(toLandingTourCard),
 };
 
 export const landingDestinations = {
@@ -137,14 +141,7 @@ export const landingDestinations = {
   title: "Destinasi yang paling sering masuk itinerary",
   description:
     "Kami membantu Anda memilih rute terbaik di Lombok dan Sumbawa, sekaligus menyiapkan trip lanjutan ke Labuan Bajo bila Anda ingin perjalanan yang lebih besar.",
-  destinations: destinations.slice(0, 4).map(
-    (destination): LandingDestinationCard => ({
-      slug: destination.slug,
-      title: destination.title,
-      image: destination.image,
-      description: destination.summary,
-    }),
-  ),
+  destinations: destinations.slice(0, 4).map(toLandingDestinationCard),
 };
 
 export const landingTransport = {
@@ -179,14 +176,7 @@ export const landingTestimonials = {
   title: "Dipercaya untuk perjalanan yang nyaman dan terorganisir",
   description:
     "Dari keluarga, pasangan, hingga rombongan, ulasan berikut menunjukkan pengalaman perjalanan yang berkesan bersama tim lokal kami.",
-  testimonials: reviews.map(
-    (review): LandingTestimonial => ({
-      name: review.author,
-      title: review.source,
-      content: review.text,
-      rating: review.rating,
-    }),
-  ),
+  testimonials: toMarqueeReviews(),
   stats: reviewStats,
 };
 
