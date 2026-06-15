@@ -28,31 +28,6 @@ export default function CustomNavigationMenu({ items }: Props) {
               </NavigationMenuLink>
             )}
 
-            {item.variant === "dropdown" && (
-              <>
-                <NavigationMenuTrigger className={triggerClass}>
-                  {item.label}
-                </NavigationMenuTrigger>
-
-                <NavigationMenuContent>
-                  <div className="w-72 p-2">
-                    <ul className="space-y-1">
-                      {item.children?.map((child) => (
-                        <li key={child.href}>
-                          <NavigationMenuLink
-                            href={child.href}
-                            className="block rounded-md px-3 py-2 text-sm hover:bg-accent"
-                          >
-                            {child.label}
-                          </NavigationMenuLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </NavigationMenuContent>
-              </>
-            )}
-
             {item.variant === "mega" && (
               <>
                 <NavigationMenuTrigger className={triggerClass}>
@@ -78,7 +53,7 @@ export default function CustomNavigationMenu({ items }: Props) {
                         </div>
 
                         <ul className="space-y-1">
-                          {group.items.map((subItem) => (
+                          {group.items?.map((subItem) => (
                             <li key={subItem.href}>
                               <NavigationMenuLink
                                 href={subItem.href}
