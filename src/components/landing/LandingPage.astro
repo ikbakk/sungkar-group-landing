@@ -1,11 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import HeroSection from "./HeroSection.astro";
 import VideoSection from "./VideoSection.astro";
 import FeaturedSection from "./FeaturedSection.astro";
 import DestinationsSection from "./DestinationsSection.astro";
 import TransportSection from "./TransportSection.astro";
-import TestimonialSection from "./TestimonialSection.astro";
+import Hero11Block from "@/components/blocks/hero-11.astro";
+import Reviews5Block from "@/components/blocks/reviews-5.astro";
 
 import {
   landingHero,
@@ -18,22 +18,20 @@ import {
 } from "@/lib/content/landing";
 ---
 
-<HeroSection
-  eyebrow={landingHero.eyebrow}
+<Hero11Block
   title={landingHero.title}
   description={landingHero.description}
-  primaryAction={landingHero.primaryAction}
-  secondaryAction={landingHero.secondaryAction}
-  cards={landingHero.cards}
->
-  <Image
-    slot="background"
-    src={landingBackgroundImage}
-    alt="Pemandangan alam Lombok yang menenangkan"
-    class="h-full w-full object-cover object-left"
-    loading="eager"
-  />
-</HeroSection>
+  buttons={[
+    { label: landingHero.primaryAction.label, href: landingHero.primaryAction.href, variant: "default" },
+    { label: landingHero.secondaryAction.label, href: landingHero.secondaryAction.href, variant: "secondary" },
+  ]}
+  socialProof={{
+    avatars: [],
+    rating: 5,
+    text: "Dipercaya wisatawan Indonesia",
+  }}
+  image={{ src: landingBackgroundImage, alt: "Pemandangan alam Lombok yang menenangkan" }}
+/>
 <FeaturedSection
   eyebrow={landingFeaturedTours.eyebrow}
   title={landingFeaturedTours.title}
@@ -47,11 +45,16 @@ import {
   description={landingDestinations.description}
   destinations={landingDestinations.destinations}
 />
-<TestimonialSection
-  eyebrow={landingTestimonials.eyebrow}
+<Reviews5Block
   title={landingTestimonials.title}
   description={landingTestimonials.description}
-  testimonials={landingTestimonials.testimonials}
+  reviews={landingTestimonials.testimonials.map((t) => ({
+    quote: t.content,
+    initials: t.name.split(" ").map((n) => n[0]).join("").slice(0, 2).toUpperCase(),
+    name: t.name,
+    role: t.title,
+    rating: t.rating,
+  }))}
 />
 <TransportSection
   eyebrow={landingTransport.eyebrow}
