@@ -1,4 +1,3 @@
-import HeroLombok from "@/assets/images/hero-lombok.webp";
 import { oneDay } from "./1d";
 
 import type { TourPackage } from "../types";
