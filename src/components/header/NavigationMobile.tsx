@@ -13,10 +13,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { Button } from "@/components/ui/button";
-
 import type { NavItem } from "@/lib/content/navigationData";
-import { Badge } from "../ui/badge";
 
 type Props = {
   items: NavItem[];
@@ -133,7 +130,7 @@ export default function NavigationMobile({ items, isHome }: Props) {
                                     <div className="flex items-center w-full justify-between gap-2">
                                       <span>{shortTitle}</span>
 
-                                      <Badge className="px-4 py-2 pt-2.5">
+                                      <span className="inline-flex items-center justify-center rounded-full border border-transparent bg-primary text-primary-foreground text-xs font-medium px-4 py-1 ">
                                         {group.collections?.length
                                           ? group.collections.reduce(
                                               (acc, collection) =>
@@ -141,7 +138,7 @@ export default function NavigationMobile({ items, isHome }: Props) {
                                               0,
                                             )
                                           : (group.items?.length ?? 0)}
-                                      </Badge>
+                                      </span>
                                     </div>
                                   </AccordionTrigger>
 
@@ -230,14 +227,20 @@ export default function NavigationMobile({ items, isHome }: Props) {
             >
               <div className="grid gap-3">
                 {!isHome && (
-                  <Button variant="outline">
-                    <a href="/kontak">Cek Ketersediaan</a>
-                  </Button>
+                  <a
+                    href="/kontak"
+                    className="inline-flex shrink-0 items-center justify-center rounded-md border border-border bg-background text-sm font-medium whitespace-nowrap transition-colors hover:bg-muted hover:text-foreground h-9 px-2.5"
+                  >
+                    Cek Ketersediaan
+                  </a>
                 )}
 
-                <Button size="lg">
-                  <a href="/kontak">Chat WhatsApp</a>
-                </Button>
+                <a
+                  href="/kontak"
+                  className="inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-primary text-primary-foreground text-sm font-medium whitespace-nowrap transition-colors hover:bg-primary/80 h-10 px-2.5"
+                >
+                  Chat WhatsApp
+                </a>
               </div>
             </div>
           </div>
