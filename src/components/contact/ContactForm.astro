@@ -1,7 +1,12 @@
 ---
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import {
+  NativeSelect,
+  NativeSelectOption,
+  NativeSelectOptGroup,
+} from "@/components/ui/native-select";
 import type { FormField, BusinessInfo } from "@/lib/contact-data";
+import { packages } from "@/lib/content/tourPackages";
 
 interface Props {
   fields: FormField[];
@@ -18,6 +23,26 @@ const {
 } = Astro.props;
 
 const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
+
+const packagesData = packages.map((pkg) => ({
+  title: pkg.title,
+  slug: pkg.slug,
+  region: pkg.region,
+  collectionSlug: pkg.collectionSlug,
+  collectionTitle: pkg.collectionTitle,
+}));
+
+const formFields = fields.filter((f) => f.id !== "location");
+
+const regions = Array.from(
+  new Set(packagesData.map((p) => p.region)),
+).map((r) => ({
+  key: r,
+  label:
+    r === "labuan-bajo"
+      ? "Labuan Bajo"
+      : r.charAt(0).toUpperCase() + r.slice(1),
+}));
 ---
 
 <Card className="border-border bg-brand-900 text-white">
@@ -33,60 +58,94 @@ const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
 
   <CardContent className="grid gap-6">
     <form id="availability-form" class="grid gap-4">
-      {
-        fields.map((field) =>
-          field.type === "textarea" ? (
-            <label class="grid gap-2">
-              <span class="form-label-light">
-                {field.label}
+      <div class="grid gap-4 sm:grid-cols-2">
+        {
+          formFields.map((field) =>
+            field.type === "textarea" ? (
+              <label class="grid gap-2 sm:col-span-2">
+                <span class="form-label-light">
+                  {field.label}
+                  {!field.required && (
+                    <span class="text-xs font-normal text-brand-200">
+                      {" "}
+                      — opsional
+                    </span>
+                  )}
+                </span>
+                <textarea
+                  id={field.id}
+                  name={field.id}
+                  placeholder={field.placeholder}
+                  class="form-input-dark w-full min-h-24 resize-none rounded-lg"
+                  required={field.required}
+                />
+              </label>
+            ) : (
+              <label class="grid gap-2">
+                <span class="form-label-light">
+                  {field.label}
+                  {!field.required && (
+                    <span class="text-xs font-normal text-brand-200">
+                      {" "}
+                      — opsional
+                    </span>
+                  )}
+                </span>
+                <input
+                  id={field.id}
+                  type={field.type}
+                  name={field.id}
+                  placeholder={field.placeholder}
+                  class="form-input-dark w-full rounded-lg"
+                  required={field.required}
+                />
+              </label>
+            ),
+          )
+        }
 
-                {!field.required && (
-                  <span class="text-xs font-normal text-brand-200">
-                    {" "}
-                    — opsional
-                  </span>
-                )}
-              </span>
+        <div class="grid gap-4 sm:col-span-2 sm:grid-cols-2">
+          <label class="grid gap-2">
+            <span class="form-label-light">Pilih lokasi</span>
+            <NativeSelect
+              name="location"
+              class="w-full rounded-lg border-white/10 bg-white/5 text-white hover:bg-white/10 [&_select]:text-white [&_select]:placeholder:text-brand-100/50 [&_select]:bg-transparent"
+            >
+              <NativeSelectOption value="">Pilih lokasi</NativeSelectOption>
+              {regions.map((r) => (
+                <NativeSelectOption value={r.key}>
+                  {r.label}
+                </NativeSelectOption>
+              ))}
+            </NativeSelect>
+          </label>
 
-              <textarea
-                id={field.id}
-                name={field.id}
-                placeholder={field.placeholder}
-                class="form-input-dark min-h-24 resize-none rounded-lg"
-                required={field.required}
-              />
-            </label>
-          ) : (
-            <label class="grid gap-2">
-              <span class="form-label-light">
-                {field.label}
-
-                {!field.required && (
-                  <span class="text-xs font-normal text-brand-200">
-                    {" "}
-                    — opsional
-                  </span>
-                )}
-              </span>
-
-              <input
-                id={field.id}
-                type={field.type}
-                name={field.id}
-                placeholder={field.placeholder}
-                class="form-input-dark rounded-lg"
-                required={field.required}
-              />
-            </label>
-          ),
-        )
-      }
+          <label class="grid gap-2">
+            <span class="form-label-light">Pilih paket</span>
+            <NativeSelect
+              name="package"
+              id="package-select"
+              disabled
+              class="w-full rounded-lg border-white/10 bg-white/5 text-white hover:bg-white/10 [&_select]:text-white [&_select]:placeholder:text-brand-100/50 [&_select]:bg-transparent"
+            >
+              <NativeSelectOption value="">
+                Pilih lokasi terlebih dahulu
+              </NativeSelectOption>
+            </NativeSelect>
+          </label>
+        </div>
+      </div>
     </form>
 
     <div class="">
-      <Button id="contact-whatsapp" size="lg" variant="secondary" type="button">
+      <button
+        id="contact-whatsapp"
+        type="button"
+        disabled
+        class="inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] disabled:opacity-50 disabled:pointer-events-none"
+      >
         Chat WhatsApp
-      </Button>
+      </button>
     </div>
 
     <div class="rounded-lg border border-white/10 bg-white/5 p-4">
@@ -99,33 +158,135 @@ const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
   </CardContent>
 </Card>
 
-<script define:vars={{ whatsappNumber }}>
-  const button = document.getElementById("contact-whatsapp");
+<script define:vars={{ whatsappNumber, packagesData }}>
+  var locationSelect = document.querySelector('[name="location"]');
+  var packageSelect = document.querySelector('[name="package"]');
+  var submitBtn = document.getElementById("contact-whatsapp");
 
-  button?.addEventListener("click", () => {
-    const travelDate = document.getElementById("travelDate")?.value ?? "";
+  function updateButton() {
+    var travelDate = document.getElementById("travelDate")
+      ? document.getElementById("travelDate").value
+      : "";
+    var guests = document.getElementById("guests")
+      ? document.getElementById("guests").value
+      : "";
+    var location = locationSelect ? locationSelect.value : "";
+    var pkg = packageSelect ? packageSelect.value : "";
 
-    const guests = document.getElementById("guests")?.value ?? "";
+    if (submitBtn) {
+      submitBtn.disabled = !(travelDate && guests && location && pkg);
+    }
+  }
 
-    const destination = document.getElementById("destination")?.value ?? "";
+  function updatePackages() {
+    var region = locationSelect ? locationSelect.value : "";
+    if (!region) {
+      packageSelect.innerHTML =
+        '<option value="">Pilih lokasi terlebih dahulu</option>';
+      packageSelect.disabled = true;
+      updateButton();
+      return;
+    }
 
-    const message = document.getElementById("message")?.value ?? "";
+    var filtered = packagesData.filter(function (p) {
+      return p.region === region;
+    });
 
-    const whatsappMessage = `
-Halo Sungkar Group,
+    var groups = {};
+    for (var i = 0; i < filtered.length; i++) {
+      var p = filtered[i];
+      if (!groups[p.collectionSlug]) {
+        groups[p.collectionSlug] = {
+          title: p.collectionTitle,
+          packages: [],
+        };
+      }
+      groups[p.collectionSlug].packages.push(p);
+    }
 
-Tanggal perjalanan: ${travelDate}
-Jumlah tamu: ${guests}
-Fokus destinasi: ${destination}
-Pesan tambahan: ${message}
+    var html = '<option value="">Pilih paket</option>';
+    var groupKeys = Object.keys(groups);
+    for (var g = 0; g < groupKeys.length; g++) {
+      var group = groups[groupKeys[g]];
+      html += '<optgroup label="' + group.title + '">';
+      for (var k = 0; k < group.packages.length; k++) {
+        var pkg = group.packages[k];
+        html +=
+          '<option value="' +
+          pkg.title.replace(/"/g, "&quot;") +
+          '">' +
+          pkg.title +
+          "</option>";
+      }
+      html += "</optgroup>";
+    }
 
-Mohon informasi paket yang sesuai.
-`.trim();
+    packageSelect.innerHTML = html;
+    packageSelect.value = "";
+    packageSelect.disabled = false;
+    updateButton();
+  }
 
-    const url =
-      `https://wa.me/${whatsappNumber}?text=` +
+  locationSelect.addEventListener("change", updatePackages);
+  packageSelect.addEventListener("change", updateButton);
+
+  var travelDateInput = document.getElementById("travelDate");
+  var guestsInput = document.getElementById("guests");
+
+  if (travelDateInput) {
+    travelDateInput.addEventListener("input", updateButton);
+  }
+  if (guestsInput) {
+    guestsInput.addEventListener("input", updateButton);
+  }
+
+  submitBtn.addEventListener("click", function () {
+    var travelDate = document.getElementById("travelDate")
+      ? document.getElementById("travelDate").value
+      : "";
+    var guests = document.getElementById("guests")
+      ? document.getElementById("guests").value
+      : "";
+    var location = locationSelect ? locationSelect.value : "";
+    var packageName = packageSelect ? packageSelect.value : "";
+    var message = document.getElementById("message")
+      ? document.getElementById("message").value
+      : "";
+
+    var lines = ["Halo Sungkar Group,", ""];
+
+    if (location) {
+      var regionLabels = {
+        lombok: "Lombok",
+        sumbawa: "Sumbawa",
+        "labuan-bajo": "Labuan Bajo",
+      };
+      lines.push("Lokasi: " + (regionLabels[location] || location));
+    }
+
+    if (packageName) {
+      lines.push("Paket: " + packageName);
+    }
+
+    lines.push("");
+    lines.push("Tanggal perjalanan: " + travelDate);
+    lines.push("Jumlah tamu: " + guests);
+
+    if (message) {
+      lines.push("Pesan tambahan: " + message);
+    }
+
+    lines.push("");
+    lines.push("Mohon informasi paket yang sesuai.");
+
+    var whatsappMessage = lines.join("\n");
+    var url =
+      "https://wa.me/" +
+      whatsappNumber +
+      "?text=" +
       encodeURIComponent(whatsappMessage);
-
     window.open(url, "_blank");
   });
+
+  updateButton();
 </script>
