@@ -18,6 +18,24 @@ import * as idFaqSewaMobil from "@/lib/content/faqs/sewa-mobil";
 import * as idFaqReviews from "@/lib/content/faqs/reviews";
 import * as idFaqAkomodasi from "@/lib/content/faqs/akomodasi";
 
+import * as enLanding from "@/lib/i18n/en/landing";
+import * as enAbout from "@/lib/i18n/en/about";
+import * as enContactPage from "@/lib/i18n/en/contactPage";
+import * as enDestinationsPage from "@/lib/i18n/en/destinationsPage";
+import * as enPackagePage from "@/lib/i18n/en/packagePage";
+import * as enSewaPage from "@/lib/i18n/en/sewaPage";
+import * as enAkomodasiPage from "@/lib/i18n/en/akomodasiPage";
+import * as enReviewPage from "@/lib/i18n/en/reviewPage";
+import * as enFaqPage from "@/lib/i18n/en/faqPage";
+
+import * as enFaqGeneral from "@/lib/i18n/en/faqs/general";
+import * as enFaqAbout from "@/lib/i18n/en/faqs/about";
+import * as enFaqContact from "@/lib/i18n/en/faqs/contact";
+import * as enFaqPackage from "@/lib/i18n/en/faqs/package";
+import * as enFaqSewaMobil from "@/lib/i18n/en/faqs/sewa-mobil";
+import * as enFaqReviews from "@/lib/i18n/en/faqs/reviews";
+import * as enFaqAkomodasi from "@/lib/i18n/en/faqs/akomodasi";
+
 const contentModules: Record<string, Record<string, any>> = {
   id: {
     landing: idLanding,
@@ -30,7 +48,17 @@ const contentModules: Record<string, Record<string, any>> = {
     reviewPage: idReviewPage,
     faqPage: idFaqPage,
   },
-  en: {},
+  en: {
+    landing: enLanding,
+    about: enAbout,
+    contactPage: enContactPage,
+    destinationsPage: enDestinationsPage,
+    packagePage: enPackagePage,
+    sewaPage: enSewaPage,
+    akomodasiPage: enAkomodasiPage,
+    reviewPage: enReviewPage,
+    faqPage: enFaqPage,
+  },
   ar: {},
   ms: {},
   zh: {},
@@ -46,7 +74,15 @@ const faqModules: Record<string, Record<string, any>> = {
     reviews: idFaqReviews,
     akomodasi: idFaqAkomodasi,
   },
-  en: {},
+  en: {
+    general: enFaqGeneral,
+    about: enFaqAbout,
+    contact: enFaqContact,
+    package: enFaqPackage,
+    "sewa-mobil": enFaqSewaMobil,
+    reviews: enFaqReviews,
+    akomodasi: enFaqAkomodasi,
+  },
   ar: {},
   ms: {},
   zh: {},
