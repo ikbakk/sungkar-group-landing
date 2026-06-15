@@ -7,8 +7,7 @@ import { accommodations } from "@/lib/content/akomodasiData";
 import { akomodasiPageContent } from "@/lib/content/akomodasiPage";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
-import { Button } from "@/components/ui/button";
-import AccommodationDetailCard from "@/components/accommodations/AccommodationDetailCard.astro";
+import AccommodationCard from "@/components/cards/AccommodationCard.astro";
 
 import type { Accommodation } from "@/lib/content/akomodasiData";
 
@@ -47,26 +46,10 @@ const regionName = REGION_LABEL[region];
   />
 
   <SectionContainer background="bg-surface-soft" padding="pb-20">
-    <div class="grid gap-8 md:grid-cols-2">
+    <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
       {regionAccommodations.map((accommodation) => (
-        <AccommodationDetailCard accommodation={accommodation} />
+        <AccommodationCard accommodation={accommodation} />
       ))}
-    </div>
-
-    <div
-      class="mt-12 rounded-2xl border border-border bg-white p-8 text-center shadow-[0_16px_45px_rgba(17,24,39,0.05)]"
-    >
-      <h3 class="text-2xl font-heading leading-tight">
-        {akomodasiPageContent.cta.title}
-      </h3>
-      <p class="mt-2 text-text-muted">
-        {akomodasiPageContent.cta.description}
-      </p>
-      <div class="mt-6 flex flex-wrap justify-center gap-3">
-        <a href={akomodasiPageContent.cta.buttonHref}>
-          <Button size={"lg"}>{akomodasiPageContent.cta.buttonLabel}</Button>
-        </a>
-      </div>
     </div>
   </SectionContainer>
 </MainLayout>
