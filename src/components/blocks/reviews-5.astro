@@ -10,8 +10,10 @@ import { Section, SectionContainer } from "@/components/ui/section"
 
 type Props = {
   class?: string
+  eyebrow?: string
   title?: string
   description?: string
+  alignment?: "left" | "center" | "right"
   reviews: {
     quote: string
     image?: ImageMetadata
@@ -22,7 +24,7 @@ type Props = {
   }[]
 }
 
-const { class: className, title, description, reviews } = Astro.props
+const { class: className, eyebrow, title, description, alignment = "center", reviews } = Astro.props
 
 const third = Math.ceil(reviews.length / 3)
 const row1 = reviews.slice(0, third)
@@ -32,15 +34,16 @@ const row3 = reviews.slice(third * 2)
 
 <Section class={cn("", className)}>
   {
-    (title || description) && (
-      <SectionContainer class="items-center gap-4 text-center">
+    (eyebrow || title || description) && (
+      <SectionContainer class={cn("items-center gap-4", alignment === "left" && "items-start text-left", alignment === "right" && "items-end text-right", alignment === "center" && "text-center")}>
+        {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
         {title && (
-          <h2 class="text-foreground text-3xl font-heading tracking-tight text-balance sm:text-4xl">
+          <h2 class="text-4xl font-heading leading-tight tracking-tight sm:text-5xl">
             {title}
           </h2>
         )}
         {description && (
-          <p class="text-muted-foreground max-w-2xl text-lg leading-relaxed text-balance">
+          <p class={cn("text-muted-foreground max-w-2xl text-lg leading-relaxed text-balance", alignment === "center" && "mx-auto")}>
             {description}
           </p>
         )}

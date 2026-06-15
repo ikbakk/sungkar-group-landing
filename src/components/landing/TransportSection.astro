@@ -1,50 +1,30 @@
 ---
+import Services5Block from "@/components/blocks/services-5.astro";
+
 interface TransportService {
   title: string;
   description: string;
 }
 
 interface Props {
+  class?: string;
   eyebrow: string;
   title: string;
   services: TransportService[];
+  alignment?: "left" | "center" | "right";
 }
 
-const { eyebrow, title, services } = Astro.props as Props;
+const { class: className, eyebrow, title, services, alignment = "right" } = Astro.props as Props;
 ---
 
-<section class="bg-white">
-  <div class="section-container section-padding">
-    <div class="grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-center">
-      <div>
-        <p class="section-eyebrow">
-          {eyebrow}
-        </p>
-        <h2 class="section-title">
-          {title}
-        </h2>
-      </div>
-      <div class="grid gap-4 sm:grid-cols-2">
-        {
-          services.map((service, index) => (
-            <div
-              class:list={[
-                "rounded-[1.5rem] border border-border p-6",
-                index === 0
-                  ? "bg-surface-soft"
-                  : "bg-white"
-              ]}
-            >
-              <div class="font-heading text-2xl leading-tight text-foreground">
-                {service.title}
-              </div>
-              <p class="mt-3 text-sm leading-7 text-text-muted">
-                {service.description}
-              </p>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </div>
-</section>
+<Services5Block
+  class={className}
+  eyebrow={eyebrow}
+  title={title}
+  alignment={alignment}
+  services={services.map((s) => ({
+    icon: s.title.toLowerCase().includes("antar-jemput") ? "plane" : "car",
+    title: s.title,
+    description: s.description,
+  }))}
+/>

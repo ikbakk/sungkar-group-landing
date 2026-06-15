@@ -31,6 +31,7 @@ export interface LandingHeroCard {
 }
 
 export interface LandingTourCard {
+  image: ImageMetadata;
   duration: string;
   slug: string;
   title: string;
@@ -120,6 +121,7 @@ export const landingFeaturedTours = {
     .filter((tour) => tour.featured)
     .map(
       (tour): LandingTourCard => ({
+        image: tour.images[0],
         duration: tour.duration,
         region: tour.region,
         collectionSlug: tour.collectionSlug,
@@ -158,6 +160,16 @@ export const landingTransport = {
       title: "Driver harian pribadi",
       description:
         "Cocok untuk tamu yang ingin bebas menyesuaikan destinasi dan durasi singgah.",
+    },
+    {
+      title: "Sewa mobil lepas kunci",
+      description:
+        "Kebebasan penuh menjelajahi Lombok dan Sumbawa dengan mobil sewaan tanpa driver.",
+    },
+    {
+      title: "Paket perjalanan multi-kota",
+      description:
+        "Kombinasi transportasi Lombok - Sumbawa - Labuan Bajo dalam satu paket hemat.",
     },
   ] satisfies LandingTransportCard[],
 };

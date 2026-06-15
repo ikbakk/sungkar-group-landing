@@ -1,69 +1,43 @@
 ---
-import { Image } from "astro:assets";
+import Features1Block from "@/components/blocks/features-1.astro";
 import type { ImageMetadata } from "astro";
 
 interface DestinationCard {
   title: string;
   description: string;
   image: ImageMetadata;
+  slug: string;
 }
 
 interface Props {
+  class?: string;
   eyebrow: string;
   title: string;
   description: string;
   destinations: DestinationCard[];
 }
 
-const { eyebrow, title, description, destinations } = Astro.props as Props;
+const { class: className, eyebrow, title, description, destinations } = Astro.props as Props;
+
+const icons = [
+  "map-pin",
+  "waves",
+  "mountain",
+  "compass",
+];
 ---
 
-<section class="border-y border-border bg-surface-soft">
-  <div class="section-container section-padding">
-    <div class="grid-destinations">
-      <div>
-        <p class="section-eyebrow">
-          {eyebrow}
-        </p>
-        <h2 class="section-title">
-          {title}
-        </h2>
-      </div>
-      <p class="max-w-2xl text-base leading-8 text-text-muted">
-        {description}
-      </p>
-    </div>
-
-    <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
-      {
-        destinations.map((destination, index) => (
-          <article
-            class:list={[
-              "overflow-hidden section-card",
-              index % 2 === 0
-                ? "section-card-white"
-                : "section-card-soft"
-            ]}
-          >
-            <div class="aspect-4/3 overflow-hidden">
-              <Image
-                src={destination.image}
-                alt={destination.title}
-                class="h-full w-full object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div class="p-5">
-              <div class="text-xs font-medium uppercase tracking-[0.22em] text-brand-700">
-                {destination.title}
-              </div>
-              <p class="mt-2 text-sm leading-7 text-text-muted">
-                {destination.description}
-              </p>
-            </div>
-          </article>
-        ))
-      }
-    </div>
-  </div>
-</section>
+<Features1Block
+  class={className}
+  eyebrow={eyebrow}
+  title={title}
+  description={description}
+  alignment="right"
+  features={destinations.slice(0, 4).map((d, i) => ({
+    icon: icons[i] ?? "map-pin",
+    title: d.title,
+    description: d.description,
+    href: `/destinasi/${d.slug}`,
+    linkText: "Jelajahi",
+  }))}
+/>

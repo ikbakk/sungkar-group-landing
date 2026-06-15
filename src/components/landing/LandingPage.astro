@@ -40,14 +40,17 @@ import {
   image={landingFeaturedTours.heroImage}
 />
 <DestinationsSection
+  class="bg-surface-soft"
   eyebrow={landingDestinations.eyebrow}
   title={landingDestinations.title}
   description={landingDestinations.description}
   destinations={landingDestinations.destinations}
 />
 <Reviews5Block
+  eyebrow={landingTestimonials.eyebrow}
   title={landingTestimonials.title}
   description={landingTestimonials.description}
+  alignment="center"
   reviews={landingTestimonials.testimonials.map((t) => ({
     quote: t.content,
     initials: t.name.split(" ").map((n) => n[0]).join("").slice(0, 2).toUpperCase(),
@@ -57,9 +60,11 @@ import {
   }))}
 />
 <TransportSection
+  class="bg-surface-soft"
   eyebrow={landingTransport.eyebrow}
   title={landingTransport.title}
   services={landingTransport.services}
+  alignment="right"
 />
 <VideoSection
   eyebrow={landingVideo.eyebrow}
@@ -68,4 +73,5 @@ import {
   ctaLabel={landingVideo.ctaLabel}
   ctaHref={landingVideo.ctaHref}
   embedUrl={landingVideo.embedUrl}
+  alignment="left"
 />

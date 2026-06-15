@@ -1,58 +1,52 @@
 ---
-import SectionContainer from "@/layouts/SectionContainer.astro";
+import { cn } from "@/lib/utils";
+import { Section, SectionContainer } from "@/components/ui/section";
 
 interface Props {
+  class?: string;
   eyebrow: string;
   title: string;
   description: string;
   ctaLabel: string;
   ctaHref: string;
   embedUrl: string;
+  alignment?: "left" | "center" | "right";
 }
 
-const { eyebrow, title, description, ctaLabel, ctaHref, embedUrl } =
+const { class: className, eyebrow, title, description, ctaLabel, ctaHref, embedUrl, alignment = "left" } =
   Astro.props;
 ---
 
-<SectionContainer background="bg-surface-soft">
-  <div class="section-container section-padding">
-    <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-      <div>
-        <p class="section-eyebrow">
-          {eyebrow}
-        </p>
-
-        <h2 class="section-title">
+<Section class={cn("", className)}>
+  <SectionContainer class="grid gap-12 lg:grid-cols-2 lg:items-center">
+    <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-4">
+        <p class="section-eyebrow">{eyebrow}</p>
+        <h2 class="text-4xl font-heading leading-tight tracking-tight sm:text-5xl">
           {title}
         </h2>
-
-        <p class="section-description">
+        <p class="text-muted-foreground text-lg leading-relaxed text-balance">
           {description}
         </p>
-
-        <a
-          href={ctaHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="mt-6 inline-flex text-sm font-medium text-brand-700 underline underline-offset-4"
-        >
-          {ctaLabel}
-        </a>
       </div>
-
-      <div
-        class="overflow-hidden rounded-[2rem] border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)]"
+      <a
+        href={ctaHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mt-2 inline-flex text-sm font-medium text-brand-700 underline underline-offset-4"
       >
-        <div class="aspect-video">
-          <iframe
-            src={embedUrl}
-            class="h-full w-full"
-            title="Video Sungkar Group"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-      </div>
+        {ctaLabel}
+      </a>
     </div>
-  </div>
-</SectionContainer>
+    <div class="aspect-4/3 w-full overflow-hidden rounded-xl border">
+      <iframe
+        src={embedUrl}
+        class="h-full w-full"
+        title={title}
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      />
+    </div>
+  </SectionContainer>
+</Section>
