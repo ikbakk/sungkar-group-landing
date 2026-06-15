@@ -1,6 +1,6 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
-import PageHeader from "@/components/site/PageHeader.astro";
+import { Image } from "astro:assets";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateProductSchema, generateBreadcrumbSchema, generateFAQPageSchema } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
@@ -8,16 +8,18 @@ import { SITE_URL } from "@/lib/site-config";
 import { packages } from "@/lib/content/tourPackages/index";
 import { REGION_LABEL } from "@/lib/regions";
 
-import FaqSection from "@/components/site/Faq.astro";
-import PackageImagePreview from "@/components/packages/PackageImagePreview.astro";
-import PackageDetailPanel from "@/components/packages/PackageDetailPanel.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
 import PackageItinerary from "@/components/packages/PackageItinerary.astro";
 import PackageIncludesExcludes from "@/components/packages/PackageIncludesExcludes.astro";
+import PackageGallery from "@/components/packages/PackageGallery";
+import FaqSection from "@/components/site/Faq.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
+import { paketWisataFormFields } from "@/lib/contact-data";
 
 import { packageFaq } from "@/lib/content/faqs/package";
 
 import type { TourPackage } from "@/lib/content/tourPackages/types";
-import SectionContainer from "@/layouts/SectionContainer.astro";
 
 export function getStaticPaths() {
   return packages.map((tour: TourPackage) => ({
@@ -32,7 +34,6 @@ export function getStaticPaths() {
 
 const { tour } = Astro.props;
 
-// Generate schemas
 const packageUrl = `${SITE_URL}/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
 const absoluteImageUrl = new URL(tour.images[0].src, SITE_URL).toString();
 
@@ -50,18 +51,9 @@ const faqSchema = generateFAQPageSchema(packageFaq);
 const breadcrumbItems = [
   { name: "Beranda", url: "/" },
   { name: "Paket Wisata", url: "/paket-wisata" },
-  {
-    name: tour.region,
-    url: `/paket-wisata/${tour.region}`,
-  },
-  {
-    name: tour.collectionTitle,
-    url: `/paket-wisata/${tour.region}/${tour.collectionSlug}`,
-  },
-  {
-    name: tour.title,
-    url: `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`,
-  },
+  { name: REGION_LABEL[tour.region], url: `/paket-wisata/${tour.region}` },
+  { name: tour.collectionTitle, url: `/paket-wisata/${tour.region}/${tour.collectionSlug}` },
+  { name: tour.title, url: packageUrl },
 ];
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
@@ -90,54 +82,109 @@ const itineraryByDay = Object.entries(
   <StructuredData schema={faqSchema} />
 
   <PageHeader
-    eyebrow="Detail Paket"
     title={tour.title}
     description={tour.summary}
     breadcrumbs={[
-      {
-        label: "Beranda",
-        href: "/",
-      },
-      {
-        label: "Paket Wisata",
-        href: "/paket-wisata",
-      },
-      {
-        label: REGION_LABEL[tour.region],
-        href: `/paket-wisata/${tour.region}`,
-      },
-      {
-        label: tour.collectionTitle,
-        href: `/paket-wisata/${tour.region}/${tour.collectionSlug}`,
-      },
-      {
-        label: tour.title,
-      },
+      { label: "Beranda", href: "/" },
+      { label: "Paket Wisata", href: "/paket-wisata" },
+      { label: REGION_LABEL[tour.region], href: `/paket-wisata/${tour.region}` },
+      { label: tour.collectionTitle, href: `/paket-wisata/${tour.region}/${tour.collectionSlug}` },
+      { label: tour.title },
     ]}
     image={tour.images[0]}
     imageAlt={tour.title}
+    stats={[
+      { label: "Durasi", value: tour.duration },
+      { label: "Kategori", value: tour.category },
+      { label: "Lokasi", value: REGION_LABEL[tour.region] },
+    ]}
   />
 
-  <SectionContainer background="bg-surface-soft">
-    <div class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-      <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-stretch">
-        <PackageImagePreview {tour} />
-        <div class="lg:sticky lg:top-24">
-          <PackageDetailPanel {tour} />
+  <!-- Itinerary -->
+  <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+    <PackageItinerary itineraryByDay={itineraryByDay} />
+  </SectionContainer>
+
+  <!-- Includes / Excludes -->
+  <SectionContainer background="bg-white" padding="py-16 sm:py-20">
+    <PackageIncludesExcludes tour={tour} />
+  </SectionContainer>
+
+  <!-- Gallery -->
+  <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+    <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+      Galeri
+    </div>
+    <h2 class="mt-2 font-heading text-3xl leading-tight sm:text-4xl">
+      Foto Perjalanan
+    </h2>
+
+    <div class="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+      {
+        tour.images.slice(0, 5).map((img, i) => (
+          <button
+            type="button"
+            data-image-index={i}
+            class:list={[
+              "group overflow-hidden cursor-zoom-in",
+              i === 0 ? "sm:col-span-2 sm:row-span-2 rounded-t-xl sm:rounded-xl" : "rounded-xl",
+            ]}
+          >
+            <div class={i === 0 ? "min-h-[300px] sm:min-h-full" : "aspect-square"}>
+              <Image
+                src={img}
+                alt=""
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+          </button>
+        ))
+      }
+    </div>
+
+    <PackageGallery images={tour.images} client:load />
+  </SectionContainer>
+
+  <!-- Form + FAQ -->
+  <SectionContainer background="bg-white" padding="py-16 sm:py-20">
+    <div class="grid gap-12 lg:grid-cols-2 lg:items-start">
+      <div class="pt-8">
+        <div class="mb-8">
+          <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+            Pesan
+          </div>
+          <h2 class="mt-2 text-3xl leading-tight font-heading">
+            Siap Memulai Perjalanan?
+          </h2>
         </div>
+        <WhatsAppForm
+          context="paket-wisata"
+          fields={paketWisataFormFields}
+          mode="section"
+          itemName={tour.title}
+          region={REGION_LABEL[tour.region]}
+        />
       </div>
-
-      <div class="mt-10 grid gap-6 lg:grid-cols-2">
-        <PackageItinerary {itineraryByDay} />
-        <PackageIncludesExcludes {tour} />
-      </div>
-
       <FaqSection
         eyebrow="FAQ"
-        title="FAQ Paket Wisata"
+        title="Pertanyaan Umum"
         items={packageFaq}
-        background="bg-surface-soft"
+        variant="card"
       />
+    </div>
+  </SectionContainer>
+
+  <!-- Highlights -->
+  <SectionContainer background="bg-surface-soft" padding="py-12">
+    <div class="flex flex-wrap justify-center gap-2">
+      {
+        tour.highlights.map((item) => (
+          <span class="inline-flex items-center rounded-full border border-brand-200 bg-brand-50 px-3.5 py-1.5 text-sm font-medium text-brand-700">
+            {item}
+          </span>
+        ))
+      }
     </div>
   </SectionContainer>
 </MainLayout>

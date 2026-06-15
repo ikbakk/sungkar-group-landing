@@ -1,6 +1,4 @@
 ---
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 interface Props {
   itineraryByDay: [string, string[]][];
 }
@@ -8,27 +6,42 @@ interface Props {
 const { itineraryByDay } = Astro.props;
 ---
 
-<Card className="border-border bg-white">
-  <CardHeader>
-    <CardTitle className="text-3xl leading-tight">Itinerary</CardTitle>
-  </CardHeader>
-  <CardContent>
-    <div class="grid gap-4">
-      {itineraryByDay.map(([day, activities]) => (
-        <div class="rounded-lg border border-border bg-surface-soft p-4">
-          <div class="text-xs font-medium uppercase tracking-[0.22em] text-brand-700">
-            {day}
-          </div>
-          <ul class="mt-3 grid gap-2 text-sm leading-7 text-text-muted">
-            {activities.map((activity) => (
-              <li class="flex gap-2">
-                <span>•</span>
-                <span>{activity}</span>
-              </li>
-            ))}
-          </ul>
+<div class="w-full">
+  <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+    Perjalanan
+  </div>
+  <h2 class="mt-2 font-heading text-3xl leading-tight sm:text-4xl">
+    Jalur Perjalanan
+  </h2>
+  <p class="mt-3 text-sm leading-7 text-text-muted">
+    Setiap hari dirancang untuk memberikan pengalaman terbaik selama perjalanan
+    Anda.
+  </p>
+</div>
+
+<div class="relative mx-auto mt-14">
+  <div class="absolute left-[11px] top-3 bottom-3 w-px bg-brand-200/50"></div>
+
+  {
+    itineraryByDay.map(([day, activities]) => (
+      <div class="relative pl-11 pb-14 last:pb-0">
+        <div class="absolute left-0 top-2 z-10 flex size-6 items-center justify-center rounded-full border-2 border-brand-500 bg-white">
+          <span class="size-2 rounded-full bg-brand-500" />
         </div>
-      ))}
-    </div>
-  </CardContent>
-</Card>
+
+        <h3 class="font-heading text-xl leading-tight text-foreground">
+          {day}
+        </h3>
+
+        <ul class="mt-4 space-y-3">
+          {activities.map((activity) => (
+            <li class="flex gap-3 text-sm leading-6 text-text-muted">
+              <span class="mt-[7px] size-1 shrink-0 rounded-full bg-brand-300/60" />
+              <span>{activity}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</div>

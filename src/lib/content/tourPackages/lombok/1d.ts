@@ -1,4 +1,8 @@
 import HeroLombok from "@/assets/images/hero-lombok.webp";
+import DestinationRinjani from "@/assets/images/destination-rinjani.webp";
+import KutaBeach from "@/assets/images/kuta-beach.webp";
+import KutaBeach2 from "@/assets/images/kuta-beach-2.webp";
+import TourCultural from "@/assets/images/tour-cultural.webp";
 
 import type { TourPackage } from "../types";
 
@@ -12,7 +16,7 @@ export const oneDay: TourPackage[] = [
     featured: true,
     category: "Paket Wisata Lombok",
     duration: "1 Hari",
-    images: [HeroLombok],
+    images: [HeroLombok, DestinationRinjani],
 
     summary:
       "Paket wisata Air Terjun Sendang Gile dan Tiu Kelep yang mengajak Anda menjelajahi keindahan alam Lombok Utara di kaki Gunung Rinjani. Nikmati suasana Hutan Wisata Baun Pusuk, wisata budaya Desa Senaru, Masjid Kuno Bayan Beleq, serta kesegaran dua air terjun paling populer di Lombok dalam satu perjalanan yang nyaman dan berkesan.",
@@ -64,7 +68,7 @@ export const oneDay: TourPackage[] = [
     featured: true,
     category: "Paket Wisata Lombok",
     duration: "1 Hari",
-    images: [HeroLombok],
+    images: [HeroLombok, KutaBeach, KutaBeach2, TourCultural],
 
     summary:
       "Paket wisata Pantai Kuta Lombok yang menggabungkan keindahan pantai pasir putih dengan wisata budaya Suku Sasak. Jelajahi Desa Banyumulek, Desa Sukarara, Desa Sade, Pantai Kuta Lombok, dan Pantai Tanjung Aan dalam satu hari penuh bersama layanan private tour yang nyaman.",

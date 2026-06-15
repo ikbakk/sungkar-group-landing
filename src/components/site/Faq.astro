@@ -1,5 +1,6 @@
 ---
 import SectionContainer from "@/layouts/SectionContainer.astro";
+import FaqAccordion from "./FaqAccordion";
 
 interface Props {
   title?: string;
@@ -32,53 +33,5 @@ const {
     </h2>
   </div>
 
-  <div class="flex flex-col font-sans">
-    {
-      items.map((item) => (
-        <details
-          class:list={[
-            "group",
-            variant === "card"
-              ? "mb-4 overflow-hidden rounded-lg border border-border bg-white px-6 py-5"
-              : "border-b border-border py-5",
-          ]}
-        >
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-6">
-            <span class="pr-4 text-foreground transition-colors duration-300">
-              {item.question}
-            </span>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="size-5 shrink-0 text-text-muted transition-transform duration-400 ease-out group-open:rotate-180"
-              aria-hidden="true"
-            >
-              <path d="m6 9 6 6 6-6" />
-            </svg>
-          </summary>
-
-          <div
-            class:list={[
-              "transition-all duration-400 ease-out",
-              variant === "card"
-                ? "grid grid-rows-[0fr] group-open:grid-rows-[1fr]"
-                : "grid grid-rows-[0fr] group-open:grid-rows-[1fr]",
-            ]}
-          >
-            <div class="overflow-hidden">
-              <p class="pt-4 pb-1 text-sm leading-7 text-text-muted">
-                {item.answer}
-              </p>
-            </div>
-          </div>
-        </details>
-      ))
-    }
-  </div>
+  <FaqAccordion items={items} variant={variant} client:load />
 </SectionContainer>

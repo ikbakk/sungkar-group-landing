@@ -34,11 +34,22 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
   }, [open, prev, next]);
 
   useEffect(() => {
-    const trigger = document.getElementById("open-image-preview");
-    if (!trigger) return;
-    const handleClick = () => { setOpen(true); setCurrent(0); };
-    trigger.addEventListener("click", handleClick);
-    return () => trigger.removeEventListener("click", handleClick);
+    const triggers = document.querySelectorAll("[data-image-index]");
+    const handlers: Array<() => void> = [];
+    triggers.forEach((el) => {
+      const handler = () => {
+        const index = parseInt(el.getAttribute("data-image-index") || "0", 10);
+        setCurrent(index);
+        setOpen(true);
+      };
+      el.addEventListener("click", handler);
+      handlers.push(handler);
+    });
+    return () => {
+      triggers.forEach((el, i) => {
+        el.removeEventListener("click", handlers[i]);
+      });
+    };
   }, []);
 
   return (

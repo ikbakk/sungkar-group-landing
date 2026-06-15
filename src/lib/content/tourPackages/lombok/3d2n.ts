@@ -1,4 +1,9 @@
 import HeroLombok from "@/assets/images/hero-lombok.webp";
+import DestinationGili from "@/assets/images/destination-gili.webp";
+import GiliMeno from "@/assets/images/gili-meno.webp";
+import KutaBeach from "@/assets/images/kuta-beach.webp";
+import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
+import DestinationLombok from "@/assets/images/destination-lombok.webp";
 
 import type { TourPackage } from "../types";
 
@@ -13,7 +18,7 @@ export const threeDays: TourPackage[] = [
       region: "lombok",
       category: "Paket Wisata Lombok",
       duration: "3 Hari 2 Malam",
-      images: [HeroLombok],
+      images: [HeroLombok, DestinationGili, KutaBeach, GiliMeno],
 
       summary:
         "Paket wisata Lombok 3 hari 2 malam yang menggabungkan keindahan Pantai Kuta Mandalika, Pantai Tanjung Aan, Bukit Merese, budaya Suku Sasak, serta pengalaman berlibur di Gili Trawangan. Cocok untuk pasangan, keluarga, maupun rombongan yang ingin menikmati wisata pantai, budaya, kuliner, dan island escape dalam satu perjalanan yang nyaman dan private.",
@@ -97,7 +102,7 @@ export const threeDays: TourPackage[] = [
       region: "lombok",
       category: "Paket Wisata Lombok",
       duration: "3 Hari 2 Malam",
-      images: [HeroLombok],
+      images: [HeroLombok, TourSnorkeling, DestinationGili, GiliMeno],
 
       summary:
         "Paket wisata Lombok 3 hari 2 malam yang menggabungkan keindahan Pantai Kuta Mandalika, Pantai Tanjung Aan, Bukit Merese, budaya Suku Sasak, serta pengalaman snorkeling di perairan 3 Gili yang terkenal dengan terumbu karang, patung bawah laut, dan habitat penyu. Cocok untuk pasangan, keluarga, maupun rombongan yang ingin menikmati wisata darat dan bahari Lombok dalam satu perjalanan yang lengkap.",
@@ -186,7 +191,7 @@ export const threeDays: TourPackage[] = [
     region: "lombok",
     category: "Paket Wisata Lombok",
     duration: "3 Hari 2 Malam",
-    images: [HeroLombok],
+    images: [HeroLombok, DestinationLombok, TourSnorkeling, KutaBeach],
 
     summary:
       "Paket wisata Lombok 3 hari 2 malam yang menggabungkan keindahan kawasan Mandalika dengan petualangan bahari ke Pantai Pink Lombok. Jelajahi Desa Adat Sasak, Pantai Kuta Mandalika, Bukit Merese, Sirkuit Mandalika, Pulau Pasir, Gili Petelu, Pantai Pink, serta menikmati snorkeling di perairan Lombok Timur yang terkenal dengan terumbu karangnya yang indah.",
@@ -271,7 +276,7 @@ export const threeDays: TourPackage[] = [
     region: "lombok",
     category: "Paket Wisata Lombok",
     duration: "3 Hari 2 Malam",
-    images: [HeroLombok],
+    images: [HeroLombok, DestinationGili, TourSnorkeling],
 
     summary:
       "Paket wisata Lombok 3 hari 2 malam yang menggabungkan keindahan Pantai Kuta Mandalika, Pantai Tanjung Aan, budaya Suku Sasak, serta island hopping ke Gili Nanggu, Gili Sudak, Gili Tangkong, dan Gili Kedis. Nikmati pengalaman snorkeling di perairan jernih Lombok Barat, wisata pantai eksotis, serta kuliner khas Lombok dalam perjalanan private yang nyaman dan fleksibel.",
