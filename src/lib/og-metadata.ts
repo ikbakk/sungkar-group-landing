@@ -171,6 +171,20 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     image: HERO.lombok,
     imageAlt: "Layanan sewa mobil dengan driver profesional",
   },
+  "/kebijakan-privasi": {
+    title: "Kebijakan Privasi | Sungkar Group - Tour and Travel",
+    description:
+      "Kebijakan privasi Sungkar Group - bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda.",
+    image: HERO.lombok,
+    imageAlt: "Kebijakan privasi Sungkar Group",
+  },
+  "/syarat-ketentuan": {
+    title: "Syarat & Ketentuan | Sungkar Group - Tour and Travel",
+    description:
+      "Syarat dan ketentuan layanan Sungkar Group - tour operator Lombok, Sumbawa, dan Labuan Bajo.",
+    image: HERO.lombok,
+    imageAlt: "Syarat dan ketentuan Sungkar Group",
+  },
 };
 
 /**

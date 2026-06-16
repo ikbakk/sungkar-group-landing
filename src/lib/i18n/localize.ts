@@ -16,6 +16,8 @@ const PATH_MAP: Record<string, string> = {
   "/tentang-kami": "/about",
   "/kontak": "/contact",
   "/ulasan": "/reviews",
+  "/kebijakan-privasi": "/privacy-policy",
+  "/syarat-ketentuan": "/terms-conditions",
 };
 
 export { PATH_MAP };

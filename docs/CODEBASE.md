@@ -120,6 +120,8 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 | `/blog/[slug]` | `src/pages/blog/[slug].astro` | `BlogPostLayout` (`<Content/>` from rendered MDX), `StructuredData` (Article schema) |
 | `/panduan-wisata` | `src/pages/panduan-wisata/index.astro` | `PageHeader`, `GuideCard` listing (from MDX content collections, grouped by region) |
 | `/panduan-wisata/[slug]` | `src/pages/panduan-wisata/[slug].astro` | `KeyTakeaways`, `GuideCard`, `DestinationCard`, `PackageCard`, `StructuredData` (HowTo schema) |
+| `/kebijakan-privasi` | `src/pages/kebijakan-privasi.astro` | `PageHeader`, static prose content |
+| `/syarat-ketentuan` | `src/pages/syarat-ketentuan.astro` | `PageHeader`, static prose content |
 | **Non-default locale pages** (en, ar, ms, zh) | `src/pages/[locale]/*.astro` | Same components as ID root pages, but with locale prefix + English paths in URLs |
 | `/en\|ar\|ms\|zh/blog` | `src/pages/[locale]/blog/index.astro` | `PageHeader`, `BlogCard` grid (locale-filtered MDX) |
 | `/en\|ar\|ms\|zh/blog/[slug]` | `src/pages/[locale]/blog/[slug].astro` | `BlogPostLayout`, `StructuredData` (Article schema) |
