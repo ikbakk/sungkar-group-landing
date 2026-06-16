@@ -112,10 +112,3 @@ export async function loadFaq(locale: string, module: string): Promise<any> {
   return faqModules[loc][module] || faqModules.id[module] || {};
 }
 
-export async function loadTourPackage(locale: string, module: string): Promise<any> {
-  const loc = getLocaleModule(locale);
-  if (loc === "id") {
-    return import(`@/lib/content/tourPackages/${module}`);
-  }
-  return import(`@/lib/i18n/${loc}/tourPackages/${module}`);
-}
