@@ -139,7 +139,7 @@ const articleSchema = generateArticleSchema(title, description, articleImage, SI
   </SectionContainer>
 </MainLayout>
 
-<script define:vars={{ uiStrings }}>
+<script is:inline define:vars={{ uiStrings }}>
   document.getElementById("copy-link-btn")?.addEventListener("click", async () => {
     const url = window.location.href;
     try {

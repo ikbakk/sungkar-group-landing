@@ -12,7 +12,7 @@ const {
 } = Astro.props;
 ---
 
-<script define:vars={{ linkAttr, sectionAttr, rootMargin }}>
+<script is:inline define:vars={{ linkAttr, sectionAttr, rootMargin }}>
   const links = document.querySelectorAll(`[data-${linkAttr}]`);
   const sections = document.querySelectorAll(`[data-${sectionAttr}]`);
 
