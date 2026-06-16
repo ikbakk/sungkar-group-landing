@@ -74,7 +74,9 @@ src/
     ├── hero/             # hero.webp, hero-lombok.webp
     ├── brand/            # logo.webp, og-home.jpg
     ├── accommodations/   # lombok.webp
-    └── vehicles/         # rental.webp
+    ├── vehicles/         # rental.webp
+    └── og/               # OG image placeholders (1200×630px WebP per page type)
+tests/                    # Vitest test files
 public/
 ├── favicon.ico
 └── images/              # Static images (accommodation-lombok.png, rental-vehicle.png)
@@ -310,6 +312,7 @@ Standalone React (.tsx) components:
 - `.tsx` files for interactive React components
 - Each component folder has `index.ts` barrel export
 - Props typed with `interface Props {}` in Astro frontmatter
+- **Attribute naming**: `.astro` files use `class` (native HTML), `.tsx` files use `className` (JSX convention). Do NOT use `className` in `.astro` files or `class` in `.tsx` files.
 
 ### Data Pattern
 - Content files export typed arrays/objects
@@ -339,6 +342,8 @@ Standalone React (.tsx) components:
 | **Change review data** | `src/lib/content/reviews/index.ts` |
 | **Add image** | Place WebP in correct subdirectory under `src/assets/images/{destinations,gallery,hero,brand,accommodations,vehicles}/`, add import + export to `src/assets/images/index.ts`, then import from `@/assets/images` via the barrel |
 | **Add/modify i18n locale** | `src/lib/i18n/index.ts` (update `LOCALES`, `NON_DEFAULT_LOCALES`, locale-specific formatters), `src/lib/i18n/ui-strings.ts` (UI translations), `src/lib/i18n/localize.ts` (path mapping), `src/lib/i18n/loader.ts` (content modules) |
+| **Add UI label to a component** | First add the key to `src/lib/i18n/ui-strings.ts` (interface + translations for all 5 locales), then use `const uiStrings = t(locale)` in the component and reference `{uiStrings.section.key}` |
+| **Fix component consistency** | Use `Button` from `@/components/ui/button` instead of raw `<a>` CTAs; use `HugeiconsIcon` with `Tick02Icon` from `@/hugeicons/core-free-icons` for checkmark icons |
 | **Translate page content** | `src/lib/i18n/{locale}/` — copy structure from `src/lib/i18n/en/`, translate all strings, keep exports/types identical |
 | **Add locale switcher** | `src/components/header/LocaleSwitcher.astro` + `NavigationMobile.tsx` (inline switcher) — uses `LOCALES`, `LOCALE_LABELS`, `getLocalizedPath` from `@/lib/i18n` |
 | **Fix navigation links per locale** | `src/lib/i18n/localize.ts` — `localizeHref()` handles locale-aware `href` generation, skips prefix for default locale |
@@ -347,3 +352,7 @@ Standalone React (.tsx) components:
 | **Change footer** | `src/components/site/Footer.astro` (uses `FooterBlock`) |
 | **Change header/nav** | `src/components/header/Header.astro`, `NavigationDesktop.astro`, `NavigationMobile.tsx` |
 | **Add UI primitive** | `src/components/ui/{name}/` |
+| **Run tests** | `npm test` (vitest) — config: `vitest.config.ts`; test files in `tests/` |
+| **Run type check** | `npm run check` (astro check) |
+| **Validate data files** | `npm test` includes runtime Zod validation for packages, destinations, accommodations, vehicles — see `tests/data.test.ts` |
+| **404 page** | `src/pages/404.astro` — custom error page |

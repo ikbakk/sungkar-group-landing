@@ -22,6 +22,7 @@ Keep the route → component table, directory layout, and "Key Files by Task" ta
 - `npm run build` creates the production build in `dist/`.
 - `npm run preview` serves the production build locally for verification.
 - `npm run astro -- <command>` runs Astro CLI utilities, such as `npm run astro -- --help`.
+- `npm test` runs vitest (config: `vitest.config.ts`; tests in `tests/`).
 - Use `rg` for text search and `rg --files` for file discovery; do not use `grep` for searching files.
 
 ## Coding Style & Naming Conventions
@@ -32,9 +33,11 @@ Keep the route → component table, directory layout, and "Key Files by Task" ta
 - Tailwind utility classes are used heavily; keep class lists readable and grouped by layout, spacing, and state.
 
 ## Testing Guidelines
-- No automated test runner is currently configured in `package.json`.
-- Before opening a PR, at minimum run `npm run build` and `npm run preview` to catch type, import, and rendering issues.
-- If tests are added later, place them near the feature or under a dedicated `tests/` or `src/__tests__/` directory and use descriptive names such as `header.spec.tsx`.
+- Use `npm test` to run vitest (config: `vitest.config.ts`; test files in `tests/`).
+- Use `npm run check` for Astro type checking.
+- Before committing: `npm test && npm run build` — pre-commit hook runs `npm test` automatically (husky).
+- Tests use `@/` path alias via vitest config — same as app code.
+- Test files in `tests/` — use descriptive names like `schemas.test.ts`, `data.test.ts`.
 
 ## Commit & Pull Request Guidelines
 - The git history uses Conventional Commit style, for example `feat: add tailwindcss`.
