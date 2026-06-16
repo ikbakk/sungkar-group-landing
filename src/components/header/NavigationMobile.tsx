@@ -15,6 +15,13 @@ import {
 
 import type { NavItem } from "@/lib/content/navigationData";
 import { localizeHref } from "@/lib/i18n/localize";
+import {
+  LOCALE_LABELS,
+  LOCALE_SHORT_LABELS,
+  LOCALES,
+  getLocalizedPath,
+  type Locale,
+} from "@/lib/i18n";
 
 type Props = {
   items: NavItem[];
@@ -24,6 +31,7 @@ type Props = {
 
 export default function NavigationMobile({ items, isHome, locale = "id" }: Props) {
   const lh = (href: string | undefined) => localizeHref(href, locale);
+  const otherLocales = LOCALES.filter((l) => l !== locale);
   const totalPackages = items
     .flatMap((item) => item.groups ?? [])
     .flatMap((group) => group.collections ?? [])
@@ -68,6 +76,33 @@ export default function NavigationMobile({ items, isHome, locale = "id" }: Props
 
           <div className="flex h-full flex-col">
             <div className="flex-1 overflow-y-auto px-6">
+              <div className="mb-4 border-b border-border pb-4">
+                <p className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                  Language
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {LOCALES.map((l) => {
+                    const isCurrent = l === locale;
+                    return (
+                      <a
+                        key={l}
+                        href={isCurrent ? undefined : getLocalizedPath(
+                          typeof window !== "undefined" ? window.location.pathname : "/",
+                          l,
+                        )}
+                        className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium transition-colors ${
+                          isCurrent
+                            ? "bg-primary text-primary-foreground"
+                            : "bg-muted text-muted-foreground hover:bg-accent hover:text-foreground"
+                        }`}
+                      >
+                        <span>{LOCALE_SHORT_LABELS[l as Locale]}</span>
+                        <span className="hidden sm:inline">{LOCALE_LABELS[l as Locale]}</span>
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
               <nav className="flex flex-col">
                 {items.map((item) => {
                   if (item.variant === "link") {
@@ -231,7 +266,7 @@ export default function NavigationMobile({ items, isHome, locale = "id" }: Props
               <div className="grid gap-3">
                 {!isHome && (
                   <a
-                    href="/kontak"
+                    href={lh("/kontak")}
                     className="inline-flex shrink-0 items-center justify-center rounded-md border border-border bg-background text-sm font-medium whitespace-nowrap transition-colors hover:bg-muted hover:text-foreground h-9 px-2.5"
                   >
                     Cek Ketersediaan
@@ -239,7 +274,7 @@ export default function NavigationMobile({ items, isHome, locale = "id" }: Props
                 )}
 
                 <a
-                  href="/kontak"
+                  href={lh("/kontak")}
                   className="inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-primary text-primary-foreground text-sm font-medium whitespace-nowrap transition-colors hover:bg-primary/80 h-10 px-2.5"
                 >
                   Chat WhatsApp

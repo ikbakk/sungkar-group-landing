@@ -1,5 +1,7 @@
 import type { Locale } from "./index";
 
+const DEFAULT_LOCALE: Locale = "id";
+
 const PATH_MAP: Record<string, string> = {
   "/destinasi": "/destinations",
   "/destinasi/": "/destinations/",
@@ -21,7 +23,6 @@ export function localizeHref(href: string | undefined, locale: string): string |
   if (href.startsWith("http") || href.startsWith("#") || href.startsWith("tel:") || href.startsWith("mailto:")) {
     return href;
   }
-  if (href === "/") return "/" + locale;
 
   let canonicalPath = href;
   for (const [oldPath, newPath] of Object.entries(PATH_MAP)) {
@@ -31,5 +32,6 @@ export function localizeHref(href: string | undefined, locale: string): string |
     }
   }
 
+  if (locale === DEFAULT_LOCALE) return canonicalPath;
   return "/" + locale + canonicalPath;
 }

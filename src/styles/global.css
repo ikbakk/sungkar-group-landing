@@ -3,6 +3,7 @@
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/inter";
 @import "@fontsource/playfair-display";
+@import "@fontsource-variable/cairo";
 @import "./sections.css";
 
 @custom-variant dark (&:is(.dark *));
@@ -136,6 +137,11 @@
   html {
     @apply font-sans;
     scroll-behavior: smooth;
+  }
+
+  [dir="rtl"] {
+    --font-sans: "Cairo Variable", sans-serif;
+    --font-heading: "Cairo Variable", sans-serif;
   }
 
   .bg-popover {

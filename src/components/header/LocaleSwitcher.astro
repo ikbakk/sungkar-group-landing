@@ -1,0 +1,52 @@
+---
+import {
+  LOCALE_LABELS,
+  LOCALE_SHORT_LABELS,
+  LOCALES,
+  getLocalizedPath,
+  type Locale,
+} from "@/lib/i18n";
+
+interface Props {
+  locale?: string;
+}
+
+const { locale = "id" } = Astro.props as Props;
+const currentPath = Astro.url.pathname;
+const otherLocales = LOCALES.filter((l) => l !== locale);
+---
+
+<div class="relative group">
+  <button
+    class="flex items-center gap-1 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-sm font-medium text-white backdrop-blur-md transition-colors hover:bg-white/20"
+    aria-label="Switch language"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      class="h-4 w-4"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M2 12h20" />
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    </svg>
+    <span>{LOCALE_SHORT_LABELS[locale as Locale]}</span>
+  </button>
+
+  <div
+    class="absolute end-0 top-full z-50 mt-1 hidden w-44 rounded-lg border border-border bg-white p-1 shadow-lg group-hover:block"
+  >
+    {otherLocales.map((l) => (
+      <a
+        href={getLocalizedPath(currentPath, l)}
+        class="block rounded-md px-3 py-2 text-sm text-foreground transition-colors hover:bg-accent"
+      >
+        <span class="font-medium">{LOCALE_SHORT_LABELS[l as Locale]}</span>
+        <span class="ml-2 text-muted-foreground">{LOCALE_LABELS[l as Locale]}</span>
+      </a>
+    ))}
+  </div>
+</div>
