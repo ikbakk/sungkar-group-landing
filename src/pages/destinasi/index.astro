@@ -1,0 +1,88 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import FaqSection from "@/components/site/Faq.astro";
+import RelatedContent from "@/components/site/RelatedContent.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateFAQPageSchema } from "@/lib/schemas";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import StickyNav from "@/components/ui/StickyNav.astro";
+import DestinationGroupSection from "@/components/destinations/DestinationGroupSection.astro";
+
+import { loadContent } from "@/lib/i18n/loader";
+import { t } from "@/lib/i18n";
+import { destinations } from "@/lib/content/destinations";
+
+const locale = "id";
+const uiStrings = t(locale);
+
+const pageModule = await loadContent(locale, "destinationsPage");
+const { destinationsPageContent } = pageModule;
+
+const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
+
+const destinationBySlug = new Map(
+  destinations.map((destination) => [destination.slug, destination]),
+);
+
+const groups = destinationsPageContent.groups.map((group) => ({
+  ...group,
+  count: group.destinationSlugs.length,
+  destinations: group.destinationSlugs
+    .map((slug: string) => destinationBySlug.get(slug))
+    .filter(Boolean),
+}));
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: "/" },
+  { label: uiStrings.breadcrumb.destinations },
+];
+---
+
+<MainLayout
+  title={uiStrings.page.destinations}
+  description={destinationsPageContent.hero.description}
+  canonical="/destinasi"
+  image={destinationsPageContent.spotlightImage}
+  locale={locale}
+>
+  <StructuredData schema={faqSchema} />
+  <div id="top" />
+
+  <PageHeader
+    eyebrow={destinationsPageContent.hero.eyebrow}
+    title={destinationsPageContent.hero.title}
+    description={destinationsPageContent.hero.description}
+    breadcrumbs={breadcrumbs}
+    image={destinationsPageContent.spotlightImage}
+    imageAlt="Destinasi Lombok"
+  />
+
+  <StickyNav
+    items={groups.map(({ id, label, count }: { id: string; label: string; count: number }) => ({ id, label, count }))}
+    dataAttr="destination-group-link"
+  />
+
+  {groups.map((group: any, index: number) => (
+    <SectionContainer background={index % 2 === 0 ? "bg-surface-soft" : "bg-background"}>
+      <DestinationGroupSection
+        id={group.id}
+        title={group.title}
+        description={group.description}
+        destinations={group.destinations}
+      />
+    </SectionContainer>
+  ))}
+
+  <FaqSection
+    eyebrow="FAQ"
+    title={destinationsPageContent.detail.faqTitle}
+    items={destinationsPageContent.faq}
+  />
+
+  <RelatedContent
+    title={uiStrings.paketWisata.exploreServices}
+    items={destinationsPageContent.relatedContent}
+    background="bg-surface-soft"
+  />
+</MainLayout>

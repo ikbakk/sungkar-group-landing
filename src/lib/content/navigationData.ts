@@ -172,6 +172,12 @@ export const navigation: NavItem[] = [
   },
 
   {
+    label: "Blog",
+    href: "/blog",
+    variant: "link",
+  },
+
+  {
     label: "Ulasan",
     href: "/ulasan",
     variant: "link",

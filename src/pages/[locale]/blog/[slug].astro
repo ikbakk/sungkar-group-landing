@@ -1,0 +1,131 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { BlogPostLayout } from "@/components/blog";
+import { getBlogPosts, getBlogPost } from "@/lib/content/blog";
+import { generateArticleSchema } from "@/lib/schemas";
+import { SITE_URL } from "@/lib/site-config";
+
+import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const locale of NON_DEFAULT_LOCALES) {
+    const posts = await getBlogPosts(locale);
+    for (const post of posts) {
+      paths.push({ params: { locale, slug: post.slug }, props: { slug: post.slug } });
+    }
+  }
+  return paths;
+}
+
+const { locale } = Astro.params;
+const { slug } = Astro.props;
+const uiStrings = t(locale!);
+const post = await getBlogPost(locale!, slug);
+
+if (!post) {
+  return Astro.redirect(`/${locale}/blog`, 404);
+}
+
+const { Content, title, description, publishDate, readingTime, tags, author } = post;
+
+const homeHref = `/${locale}`;
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: homeHref },
+  { label: "Blog", href: `/${locale}/blog` },
+  { label: title },
+];
+
+const articleSchema = generateArticleSchema(title, description, "", SITE_URL, `${locale}/blog/${slug}`, publishDate.toISOString());
+---
+
+<MainLayout
+  title={`${title} - Blog Sungkar Group`}
+  description={description}
+  canonical={`/${locale}/blog/${slug}`}
+  locale={locale}
+>
+  <StructuredData schema={articleSchema} />
+
+  <PageHeader
+    eyebrow="Blog"
+    title={title}
+    description={description}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <BlogPostLayout
+    title={title}
+    description={description}
+    publishDate={publishDate}
+    readingTime={readingTime}
+    readingTimeLabel={uiStrings.guides.readingTime}
+    tags={tags}
+    locale={locale!}
+  >
+    <Content />
+  </BlogPostLayout>
+</MainLayout>
+
+<style is:global>
+  .article-content h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-foreground);
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+
+  .article-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-foreground);
+    letter-spacing: -0.02em;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .article-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-foreground);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .article-content p {
+    color: var(--color-foreground);
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .article-content ul,
+  .article-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.25rem;
+  }
+
+  .article-content ul {
+    list-style-type: disc;
+  }
+
+  .article-content ol {
+    list-style-type: decimal;
+  }
+
+  .article-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.75;
+    color: var(--color-foreground);
+  }
+
+  .article-content strong {
+    font-weight: 600;
+    color: var(--color-foreground);
+  }
+</style>

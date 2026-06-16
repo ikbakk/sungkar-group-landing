@@ -1,3 +1,5 @@
+import { localizeHref, englishToIndonesian } from "./localize";
+
 export type Locale = "id" | "en" | "ar" | "ms" | "zh";
 
 export const LOCALES: Locale[] = ["id", "en", "ar", "ms", "zh"];
@@ -41,14 +43,21 @@ export function getLocalizedPath(pathname: string, targetLocale: string): string
   const isCurrentDefault = currentLocale === DEFAULT_LOCALE;
   const isTargetDefault = targetLocale === DEFAULT_LOCALE;
 
-  if (isCurrentDefault) {
-    return isTargetDefault ? pathname : `/${targetLocale}${pathname === "/" ? "" : pathname}`;
+  if (isCurrentDefault && !isTargetDefault) {
+    return localizeHref(pathname, targetLocale) || pathname;
   }
 
-  const pathWithoutLocale = pathname.replace(`/${currentLocale}`, "") || "/";
-  return isTargetDefault
-    ? pathWithoutLocale
-    : `/${targetLocale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`;
+  if (!isCurrentDefault && isTargetDefault) {
+    const pathWithoutLocale = pathname.replace(`/${currentLocale}`, "") || "/";
+    return englishToIndonesian(pathWithoutLocale);
+  }
+
+  if (!isCurrentDefault && !isTargetDefault) {
+    const pathWithoutLocale = pathname.replace(`/${currentLocale}`, "") || "/";
+    return `/${targetLocale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`;
+  }
+
+  return pathname;
 }
 
 export function formatDate(date: Date, locale: string, options?: Intl.DateTimeFormatOptions): string {

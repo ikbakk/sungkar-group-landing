@@ -172,6 +172,12 @@ export const navigation: NavItem[] = [
   },
 
   {
+    label: "المدونة",
+    href: "/blog",
+    variant: "link",
+  },
+
+  {
     label: "التقييمات",
     href: "/ulasan",
     variant: "link",

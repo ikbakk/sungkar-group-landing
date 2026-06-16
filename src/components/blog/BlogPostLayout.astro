@@ -1,0 +1,50 @@
+---
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { AlarmClockIcon, Calendar03Icon } from "@hugeicons/core-free-icons";
+import { formatDate } from "@/lib/i18n";
+
+interface Props {
+  title: string;
+  description: string;
+  publishDate: Date;
+  readingTime: number;
+  readingTimeLabel: string;
+  tags: string[];
+  locale: string;
+}
+
+const { title, description, publishDate, readingTime, readingTimeLabel, tags, locale } = Astro.props;
+---
+
+<SectionContainer background="bg-surface-soft">
+  <article class="article-content mx-auto max-w-4xl">
+    <div class="mb-6 flex flex-wrap items-center gap-2">
+      {tags.map((tag) => (
+        <span class="rounded-full bg-brand-100 px-3 py-1 text-xs font-medium text-brand-700">
+          {tag}
+        </span>
+      ))}
+    </div>
+
+    <div class="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-text-muted">
+      <span class="inline-flex items-center gap-2">
+        <HugeiconsIcon icon={AlarmClockIcon} size={16} />
+        {readingTime} {readingTimeLabel}
+      </span>
+      <span class="hidden sm:inline text-border">/</span>
+      <span class="inline-flex items-center gap-2">
+        <HugeiconsIcon icon={Calendar03Icon} size={16} />
+        <time datetime={publishDate.toISOString()}>
+          {formatDate(publishDate, locale, {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })}
+        </time>
+      </span>
+    </div>
+
+    <slot />
+  </article>
+</SectionContainer>

@@ -1,0 +1,128 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import FaqSection from "@/components/site/Faq.astro";
+import DestinationDetailPanel from "@/components/destinations/DestinationDetailPanel.astro";
+import DestinationGallery from "@/components/destinations/DestinationGallery.astro";
+import PackageCard from "@/components/cards/PackageCard.astro";
+import {
+  generateTouristAttractionSchema,
+  generateBreadcrumbSchema,
+  generateFAQPageSchema,
+} from "@/lib/schemas";
+import { SITE_URL } from "@/lib/site-config";
+import { destinations } from "@/lib/content/destinations";
+import { packages } from "@/lib/content/tourPackages";
+
+import { loadContent } from "@/lib/i18n/loader";
+import { t } from "@/lib/i18n";
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const destination of destinations) {
+    paths.push({ params: { slug: destination.slug } });
+  }
+  return paths;
+}
+
+const locale = "id";
+const { slug } = Astro.params;
+const uiStrings = t(locale);
+
+const pageModule = await loadContent(locale, "destinationsPage");
+const { destinationsPageContent } = pageModule;
+
+const destination = destinations.find((d) => d.slug === slug)!;
+
+const relatedPackages = packages.filter((tour) =>
+  destination.packages.includes(tour.slug),
+);
+
+const absoluteImageUrl = new URL(destination.image.src, SITE_URL).toString();
+
+const touristAttractionSchema = generateTouristAttractionSchema(
+  destination.title,
+  destination.summary,
+  absoluteImageUrl,
+  SITE_URL,
+  destination.slug,
+  destination.region,
+);
+
+const breadcrumbItems = [
+  { name: uiStrings.breadcrumb.home, url: "/" },
+  { name: uiStrings.breadcrumb.destinations, url: "/destinasi" },
+  { name: destination.title, url: `/destinasi/${destination.slug}` },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
+
+const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
+---
+
+<MainLayout
+  title={destination.title}
+  description={destination.summary}
+  canonical={`/destinasi/${destination.slug}`}
+  image={destination.image}
+  locale={locale}
+>
+  <StructuredData schema={touristAttractionSchema} />
+  <StructuredData schema={breadcrumbSchema} />
+  <StructuredData schema={faqSchema} />
+
+  <PageHeader
+    eyebrow={destinationsPageContent.detail.headline}
+    title={destination.title}
+    description={destination.summary}
+    breadcrumbs={[
+      { label: uiStrings.breadcrumb.home, href: "/" },
+      { label: uiStrings.breadcrumb.destinations, href: "/destinations" },
+      { label: destination.title },
+    ]}
+    image={destination.image}
+    imageAlt={destination.title}
+  />
+
+  <SectionContainer background="bg-surface-soft" padding="py-16 lg:py-24">
+    <DestinationDetailPanel
+      destination={destination}
+      content={destinationsPageContent.detail}
+    />
+  </SectionContainer>
+
+  {
+    relatedPackages.length > 0 && (
+      <SectionContainer background="bg-background" padding="py-16 lg:py-24">
+        <h2 class="text-3xl leading-tight tracking-tight sm:text-4xl">
+          {destinationsPageContent.detail.relatedPackagesTitle}
+        </h2>
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {
+            relatedPackages.map((tour) => (
+              <PackageCard tour={tour} locale={locale} />
+            ))
+          }
+        </div>
+      </SectionContainer>
+    )
+  }
+
+  <DestinationGallery
+    class="bg-surface-soft"
+    title={destinationsPageContent.detail.galleryTitle}
+    images={destination.gallery}
+    emptyText={destinationsPageContent.detail.emptyGallery}
+  />
+
+  <SectionContainer background="bg-background" padding="py-16 lg:py-24">
+    <FaqSection
+      eyebrow="FAQ"
+      title={destinationsPageContent.detail.faqTitle}
+      items={destinationsPageContent.faq}
+      variant="card"
+    />
+  </SectionContainer>
+</MainLayout>

@@ -10,7 +10,7 @@ import PackageCard from "@/components/cards/PackageCard.astro";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { AlarmClockIcon, Calendar03Icon } from "@hugeicons/core-free-icons";
 import { generateHowToSchema } from "@/lib/schemas";
-import { guides } from "@/lib/content/travel-guides";
+import { getGuides, getGuide } from "@/lib/content/guides";
 import { destinations } from "@/lib/content/destinations";
 import { packages } from "@/lib/content/tourPackages";
 
@@ -19,51 +19,59 @@ import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 export async function getStaticPaths() {
   const paths = [];
   for (const locale of NON_DEFAULT_LOCALES) {
+    const guides = await getGuides(locale);
     for (const guide of guides) {
-      paths.push({ params: { locale, slug: guide.slug }, props: { guide } });
+      paths.push({ params: { locale, slug: guide.slug }, props: { slug: guide.slug } });
     }
   }
   return paths;
 }
 
 const { locale } = Astro.params;
-const { guide } = Astro.props;
+const { slug } = Astro.props;
 const uiStrings = t(locale!);
+const guide = await getGuide(locale!, slug);
+
+if (!guide) {
+  return Astro.redirect(`/${locale}/travel-guides`, 404);
+}
+
+const { Content, title, description, readingTime, publishDate, keyTakeaways, relatedDestinations: relatedDestSlugs, relatedPackages: relatedPkgSlugs } = guide;
 
 const relatedDestinations = destinations.filter((d) =>
-  guide.relatedDestinations.includes(d.slug)
+  relatedDestSlugs.includes(d.slug)
 );
 
 const relatedPackages = packages.filter((p) =>
-  guide.relatedPackages.includes(p.slug)
+  relatedPkgSlugs.includes(p.slug)
 );
 
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: `/${locale}` },
   { label: uiStrings.breadcrumb.travelGuides, href: `/${locale}/travel-guides` },
-  { label: guide.title },
+  { label: title },
 ];
 
-const howToSteps = guide.keyTakeaways.map((takeaway: string, index: number) => ({
+const howToSteps = keyTakeaways.map((takeaway: string, index: number) => ({
   name: `Poin ${index + 1}`,
   description: takeaway,
 }));
 
-const guideSchema = generateHowToSchema(guide.title, guide.description, howToSteps);
+const guideSchema = generateHowToSchema(title, description, howToSteps);
 ---
 
 <MainLayout
-  title={guide.title}
-  description={guide.description}
-  canonical={`/${locale}/travel-guides/${guide.slug}`}
+  title={title}
+  description={description}
+  canonical={`/${locale}/travel-guides/${slug}`}
   locale={locale}
 >
   <StructuredData schema={guideSchema} />
 
   <PageHeader
     eyebrow={uiStrings.page.travelGuides}
-    title={guide.title}
-    description={guide.description}
+    title={title}
+    description={description}
     breadcrumbs={breadcrumbs}
   />
 
@@ -72,13 +80,13 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
       <div class="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-text-muted">
         <span class="inline-flex items-center gap-2">
           <HugeiconsIcon icon={AlarmClockIcon} size={16} />
-          {guide.readingTime} {uiStrings.guides.readingTime}
+          {readingTime} {uiStrings.guides.readingTime}
         </span>
-        <span class="hidden sm:inline text-border">&#47;</span>
+        <span class="hidden sm:inline text-border">/</span>
         <span class="inline-flex items-center gap-2">
           <HugeiconsIcon icon={Calendar03Icon} size={16} />
-          <time datetime={guide.publishDate}>
-            {new Date(guide.publishDate).toLocaleDateString(locale === "id" ? "id-ID" : locale === "en" ? "en-US" : locale === "ar" ? "ar-SA" : locale === "ms" ? "ms-MY" : "zh-CN", {
+          <time datetime={publishDate}>
+            {new Date(publishDate).toLocaleDateString(locale === "id" ? "id-ID" : locale === "en" ? "en-US" : locale === "ar" ? "ar-SA" : locale === "ms" ? "ms-MY" : "zh-CN", {
               day: "numeric",
               month: "long",
               year: "numeric",
@@ -87,12 +95,12 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
         </span>
       </div>
 
-      <div set:html={guide.content.trim()} class="article-body" />
+      <Content />
     </article>
   </SectionContainer>
 
   <SectionContainer background="bg-background">
-    <KeyTakeaways takeaways={guide.keyTakeaways} />
+    <KeyTakeaways takeaways={keyTakeaways} />
   </SectionContainer>
 
   {relatedDestinations.length > 0 && (
@@ -107,7 +115,7 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
       </div>
       <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {relatedDestinations.map((dest) => (
-          <DestinationCard destination={dest} />
+          <DestinationCard destination={dest} locale={locale} />
         ))}
       </div>
     </SectionContainer>
@@ -125,7 +133,7 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
       </div>
       <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {relatedPackages.map((pkg) => (
-          <PackageCard tour={pkg} />
+          <PackageCard tour={pkg} locale={locale} />
         ))}
       </div>
     </SectionContainer>
@@ -138,20 +146,22 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
       </h2>
     </div>
     <div class="-mx-4 flex gap-6 overflow-x-auto px-4 snap-x snap-mandatory sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
-      {guides
-        .filter((g: any) => g.slug !== guide.slug)
-        .slice(0, 5)
-        .map((g: any) => (
-          <div class="w-[85vw] shrink-0 snap-start sm:w-[380px]">
-            <GuideCard guide={g} />
-          </div>
-        ))}
+      {
+        (await getGuides(locale!))
+          .filter((g) => g.slug !== slug)
+          .slice(0, 5)
+          .map((g) => (
+            <div class="w-[85vw] shrink-0 snap-start sm:w-[380px]">
+              <GuideCard guide={g} locale={locale} />
+            </div>
+          ))
+      }
     </div>
   </SectionContainer>
 </MainLayout>
 
 <style is:global>
-  .article-body h1 {
+  .article-content h1 {
     font-size: 1.875rem;
     font-weight: 700;
     color: var(--color-foreground);
@@ -159,7 +169,7 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
     margin-bottom: 1rem;
   }
 
-  .article-body h2 {
+  .article-content h2 {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-foreground);
@@ -170,7 +180,7 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
     border-bottom: 1px solid var(--color-border);
   }
 
-  .article-body h3 {
+  .article-content h3 {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-foreground);
@@ -178,39 +188,39 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
     margin-bottom: 0.75rem;
   }
 
-  .article-body p {
+  .article-content p {
     color: var(--color-foreground);
     line-height: 1.75;
     margin-bottom: 1.25rem;
     font-size: 1rem;
   }
 
-  .article-body ul,
-  .article-body ol {
+  .article-content ul,
+  .article-content ol {
     margin-bottom: 1.5rem;
     padding-left: 1.25rem;
   }
 
-  .article-body ul {
+  .article-content ul {
     list-style-type: disc;
   }
 
-  .article-body ol {
+  .article-content ol {
     list-style-type: decimal;
   }
 
-  .article-body li {
+  .article-content li {
     margin-bottom: 0.5rem;
     line-height: 1.75;
     color: var(--color-foreground);
   }
 
-  .article-body strong {
+  .article-content strong {
     font-weight: 600;
     color: var(--color-foreground);
   }
 
-  .article-body table {
+  .article-content table {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
@@ -219,7 +229,7 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
     overflow: hidden;
   }
 
-  .article-body th {
+  .article-content th {
     border: 1px solid var(--color-border);
     background-color: var(--color-surface-soft);
     padding: 0.75rem;
@@ -227,7 +237,7 @@ const guideSchema = generateHowToSchema(guide.title, guide.description, howToSte
     text-align: left;
   }
 
-  .article-body td {
+  .article-content td {
     border: 1px solid var(--color-border);
     padding: 0.75rem;
   }

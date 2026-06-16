@@ -1,0 +1,130 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import ReviewsGridSection from "@/components/reviews/ReviewsGridSection.astro";
+import ReviewStatsSection from "@/components/reviews/ReviewStatsSection.astro";
+import ReviewsCtaSection from "@/components/reviews/ReviewsCtaSection.astro";
+import ReviewGallerySection from "@/components/reviews/ReviewGallerySection.astro";
+import FaqSection from "@/components/site/Faq.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateFAQPageSchema } from "@/lib/schemas";
+
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { t } from "@/lib/i18n";
+
+const locale = "id";
+const uiStrings = t(locale);
+
+const faqModule = await loadFaq(locale, "reviews");
+const { reviewsFaq } = faqModule;
+
+const pageModule = await loadContent(locale, "reviewPage");
+const {
+  reviewsPageContent,
+  reviews,
+  reviewStats,
+} = pageModule;
+
+const faqSchema = generateFAQPageSchema(reviewsFaq);
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: "/" },
+  { label: uiStrings.breadcrumb.reviews },
+];
+---
+
+<MainLayout
+  title={uiStrings.page.reviews}
+  description={reviewsPageContent.hero.description}
+  canonical="/ulasan"
+  locale={locale}
+>
+  <StructuredData schema={faqSchema} />
+
+  <PageHeader
+    eyebrow={reviewsPageContent.hero.eyebrow}
+    title={reviewsPageContent.hero.title}
+    description={reviewsPageContent.hero.description}
+    breadcrumbs={breadcrumbs}
+    transition:animate={"slide"}
+  />
+
+  <SectionContainer background="bg-white">
+    <ReviewStatsSection
+      rating={reviewStats.rating}
+      totalReviews={reviewStats.totalReviews}
+    />
+  </SectionContainer>
+
+  <SectionContainer background="bg-surface-soft">
+    <ReviewsGridSection reviews={reviews} />
+  </SectionContainer>
+
+  <SectionContainer background="bg-white">
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="flex flex-col gap-4">
+        <div
+          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
+        >
+          {reviewsPageContent.insights.title}
+        </div>
+
+        <ul class="flex flex-col gap-3">
+          {
+            reviewsPageContent.insights.items.map((item) => (
+              <li class="flex items-start gap-3 rounded-xl border border-border bg-surface-soft p-4">
+                <div class="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-brand-700" />
+                <div>
+                  <div class="font-medium text-foreground">{item.title}</div>
+                  <p class="mt-0.5 text-sm text-text-muted">
+                    {item.description}
+                  </p>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <div
+          class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
+        >
+          {uiStrings.reviews.seeOnGoogleMaps}
+        </div>
+
+        <div class="overflow-hidden rounded-xl border border-border">
+          <iframe
+            src="https://maps.google.com/maps?q=Sungkar+Group+Indonesia+Lombok&output=embed"
+            width="100%"
+            height="280"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Sungkar Group Indonesia di Google Maps"></iframe>
+        </div>
+
+        <a
+          href="https://www.google.com/maps/place/Sungkar+Group+Indonesia+-+(+Paket+Tour+Lombok+%7C+Paket+Group+Lombok+%7C+Tour+Lombok+%7C+Sewa+Mobil+Lombok+)/@-8.5645526,116.0789557,17z"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm font-medium text-brand-700 underline-offset-2 hover:underline"
+        >
+          {uiStrings.reviews.seeAllReviews} &rarr;
+        </a>
+      </div>
+    </div>
+  </SectionContainer>
+
+  <SectionContainer background="bg-surface-soft">
+    <ReviewGallerySection />
+  </SectionContainer>
+
+  <FaqSection
+    eyebrow="FAQ"
+    title={uiStrings.faq.sectionReviews}
+    items={reviewsFaq}
+  />
+</MainLayout>

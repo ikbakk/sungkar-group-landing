@@ -1,0 +1,115 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import FaqSection from "@/components/site/Faq.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import { generateFAQPageSchema } from "@/lib/schemas";
+
+import StickyNav from "@/components/ui/StickyNav.astro";
+import RegionObserver from "@/components/ui/RegionObserver.astro";
+import VehicleRegionSection from "@/components/vehicles/VehicleRegionSection.astro";
+import PackagePageCta from "@/components/packages/PackagePageCta.astro";
+
+import SectionContainer from "@/layouts/SectionContainer.astro";
+
+import { vehicles } from "@/lib/content/car-rental";
+
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { t } from "@/lib/i18n";
+
+import { packagePageContent } from "@/lib/content/tour-packages";
+
+const locale = "id";
+const uiStrings = t(locale);
+
+const pageModule = await loadContent(locale, "sewaPage");
+const { sewaPageContent } = pageModule;
+
+const faqModule = await loadFaq(locale, "sewa-mobil");
+const { sewaMobilFaq } = faqModule;
+
+const faqSchema = generateFAQPageSchema(sewaMobilFaq);
+
+const lombokVehicles = vehicles.filter((v) => v.region === "lombok");
+const sumbawaVehicles = vehicles.filter((v) => v.region === "sumbawa");
+const labuanBajoVehicles = vehicles.filter((v) => v.region === "labuan-bajo");
+
+const regions = [
+  { id: "lombok", label: "Lombok", count: lombokVehicles.length },
+  { id: "sumbawa", label: "Sumbawa", count: sumbawaVehicles.length },
+  { id: "labuan-bajo", label: "Labuan Bajo", count: labuanBajoVehicles.length },
+].filter((region) => region.count > 0);
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: "/" },
+  { label: uiStrings.breadcrumb.carRental },
+];
+---
+
+<MainLayout
+  title={uiStrings.sewaMobil.title}
+  description={sewaPageContent.hero.description}
+  canonical="/sewa-mobil"
+  image={vehicles[0]?.imageTop}
+  locale={locale}
+>
+  <StructuredData schema={faqSchema} />
+  <PageHeader
+    eyebrow={sewaPageContent.hero.eyebrow}
+    title={sewaPageContent.hero.title}
+    description={sewaPageContent.hero.description}
+    breadcrumbs={breadcrumbs}
+  />
+
+  {regions.length > 0 && <StickyNav items={regions} />}
+
+  {
+    lombokVehicles.length > 0 && (
+      <SectionContainer background="bg-surface-soft">
+        <VehicleRegionSection
+          id="lombok"
+          title={sewaPageContent.regions.lombok.title}
+          description={sewaPageContent.regions.lombok.description}
+          vehicles={lombokVehicles}
+        />
+      </SectionContainer>
+    )
+  }
+
+  {
+    sumbawaVehicles.length > 0 && (
+      <SectionContainer background="bg-background">
+        <VehicleRegionSection
+          id="sumbawa"
+          title={sewaPageContent.regions.sumbawa.title}
+          description={sewaPageContent.regions.sumbawa.description}
+          vehicles={sumbawaVehicles}
+        />
+      </SectionContainer>
+    )
+  }
+
+  {
+    labuanBajoVehicles.length > 0 && (
+      <SectionContainer background="bg-surface-soft">
+        <VehicleRegionSection
+          id="labuan-bajo"
+          title={sewaPageContent.regions["labuan-bajo"].title}
+          description={sewaPageContent.regions["labuan-bajo"].description}
+          vehicles={labuanBajoVehicles}
+        />
+      </SectionContainer>
+    )
+  }
+
+  <FaqSection
+    eyebrow="FAQ"
+    title={uiStrings.faq.sectionCarRental}
+    items={sewaMobilFaq}
+    background="bg-surface-soft"
+  />
+
+  <PackagePageCta cta={packagePageContent.cta} />
+</MainLayout>
+
+<RegionObserver />

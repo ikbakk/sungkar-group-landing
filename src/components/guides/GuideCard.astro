@@ -1,17 +1,18 @@
 ---
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { Guide } from "@/lib/content/travel-guides";
 import { REGION_LABEL, REGION_MAP } from "@/lib/regions";
+import type { GuideMeta } from "@/lib/content/guides";
+import { localizeHref } from "@/lib/i18n/localize";
 
 interface Props {
-  guide: Guide;
+  guide: GuideMeta;
+  locale?: string;
 }
 
-const { guide } = Astro.props;
+const { guide, locale = "id" } = Astro.props;
 
-const href = `/panduan-wisata/${guide.slug}`;
+const href = localizeHref("/panduan-wisata/" + guide.slug, locale);
 
 const region = guide.region === "general"
   ? { label: "Umum", className: "bg-gray-100 text-gray-700 border-gray-200" }

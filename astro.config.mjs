@@ -11,6 +11,8 @@ import sitemap from "@astrojs/sitemap";
 
 import { SITE_URL } from "./src/lib/site-config";
 
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE_URL,
@@ -27,5 +29,5 @@ export default defineConfig({
     },
   },
 
-  integrations: [react(), sitemap(), robotsTxt()],
+  integrations: [react(), sitemap(), robotsTxt(), mdx()],
 });

@@ -7,16 +7,18 @@ import { Tick02Icon } from "@hugeicons/core-free-icons";
 import { Badge } from "@/components/ui/badge";
 import type { Destination } from "@/lib/content/destinations";
 import { CTA_CLASS } from "@/lib/card-styles";
+import { localizeHref } from "@/lib/i18n/localize";
 
 interface Props {
   destination: Destination;
+  locale?: string;
 }
 
-const { destination } = Astro.props;
+const { destination, locale = "id" } = Astro.props;
 
 const highlightCount = Math.max(destination.thingsToDo.length - 3, 0);
 
-const cardHref = `/destinasi/${destination.slug}`;
+const cardHref = localizeHref("/destinasi/" + destination.slug, locale);
 ---
 
 <a href={cardHref} class="block">

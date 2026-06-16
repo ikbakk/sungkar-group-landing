@@ -3,9 +3,8 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import GuideCard from "@/components/guides/GuideCard.astro";
-import { REGION_LABEL, type RegionKey } from "@/lib/regions";
-import { guides } from "@/lib/content/travel-guides";
-import type { Guide } from "@/lib/content/travel-guides";
+import { REGION_LABEL } from "@/lib/regions";
+import { getGuides } from "@/lib/content/guides";
 
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
@@ -15,10 +14,11 @@ export async function getStaticPaths() {
 
 const { locale } = Astro.params;
 const uiStrings = t(locale!);
+const guides = await getGuides(locale!);
 
 const regions = ["lombok", "sumbawa", "labuan-bajo", "general"] as const;
 
-function guidesByRegion(region: string): Guide[] {
+function guidesByRegion(region: string) {
   return guides.filter((g) => g.region === region);
 }
 
@@ -75,7 +75,7 @@ const breadcrumbs = [
 
           <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {regionGuides.map((guide) => (
-              <GuideCard guide={guide} />
+              <GuideCard guide={guide} locale={locale} />
             ))}
           </div>
         </SectionContainer>

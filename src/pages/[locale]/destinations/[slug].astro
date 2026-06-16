@@ -103,7 +103,7 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
         <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {
             relatedPackages.map((tour) => (
-              <PackageCard tour={tour} />
+              <PackageCard tour={tour} locale={locale} />
             ))
           }
         </div>

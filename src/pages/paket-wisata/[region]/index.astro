@@ -1,0 +1,77 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+
+import { packages } from "@/lib/content/tourPackages/index";
+import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
+
+import { t } from "@/lib/i18n";
+
+import CollectionCard from "@/components/packages/CollectionCard.astro";
+
+type CCard = {
+  slug: string;
+  title: string;
+  packages: typeof regionPackages;
+};
+
+export function getStaticPaths() {
+  const regions: Region[] = ["lombok", "sumbawa", "labuan-bajo"];
+  const paths = [];
+  for (const region of regions) {
+    paths.push({ params: { region } });
+  }
+  return paths;
+}
+
+const locale = "id";
+const { region } = Astro.params;
+const r = region as Region;
+const uiStrings = t(locale);
+
+const regionPackages = packages.filter((pkg) => pkg.region === r);
+
+const collections = Object.values(
+  regionPackages.reduce<Record<string, CCard>>((acc, pkg) => {
+    if (!acc[pkg.collectionSlug]) {
+      acc[pkg.collectionSlug] = {
+        slug: pkg.collectionSlug,
+        title: pkg.collectionTitle,
+        packages: [],
+      };
+    }
+    acc[pkg.collectionSlug].packages.push(pkg);
+    return acc;
+  }, {}),
+);
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: "/" },
+  { label: uiStrings.breadcrumb.tourPackages, href: "/paket-wisata" },
+  { label: REGION_LABEL[r] },
+];
+---
+
+<MainLayout
+  title={`${uiStrings.paketWisata.packagesFor.replace("{region}", REGION_LABEL[r])}`}
+  description={`Pilihan paket wisata ${REGION_LABEL[r]}`}
+  canonical={`/paket-wisata/${r}`}
+  image={regionPackages[0]?.image}
+  locale={locale}
+>
+  <PageHeader
+    eyebrow={uiStrings.paketWisata.eyebrow}
+    title={uiStrings.paketWisata.packagesFor.replace("{region}", REGION_LABEL[r])}
+    description={uiStrings.paketWisata.chooseCategory.replace("{region}", REGION_LABEL[r])}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <SectionContainer background="bg-surface-soft">
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {collections.map((collection) => (
+        <CollectionCard collection={collection} region={r} />
+      ))}
+    </div>
+  </SectionContainer>
+</MainLayout>

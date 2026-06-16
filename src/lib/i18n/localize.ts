@@ -18,11 +18,29 @@ const PATH_MAP: Record<string, string> = {
   "/ulasan": "/reviews",
 };
 
+export { PATH_MAP };
+
+const REVERSE_PATH_MAP: Record<string, string> = {};
+for (const [idPath, enPath] of Object.entries(PATH_MAP)) {
+  REVERSE_PATH_MAP[enPath] = idPath;
+}
+
+export function englishToIndonesian(path: string): string {
+  for (const [enPath, idPath] of Object.entries(REVERSE_PATH_MAP)) {
+    if (path.startsWith(enPath)) {
+      return path.replace(enPath, idPath);
+    }
+  }
+  return path;
+}
+
 export function localizeHref(href: string | undefined, locale: string): string | undefined {
   if (!href) return href;
   if (href.startsWith("http") || href.startsWith("#") || href.startsWith("tel:") || href.startsWith("mailto:")) {
     return href;
   }
+
+  if (locale === DEFAULT_LOCALE) return href;
 
   let canonicalPath = href;
   for (const [oldPath, newPath] of Object.entries(PATH_MAP)) {
@@ -31,7 +49,5 @@ export function localizeHref(href: string | undefined, locale: string): string |
       break;
     }
   }
-
-  if (locale === DEFAULT_LOCALE) return canonicalPath;
   return "/" + locale + canonicalPath;
 }

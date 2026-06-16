@@ -32,6 +32,7 @@ export interface UIStrings {
     carRental: string;
     accommodations: string;
     travelGuides: string;
+    blog: string;
   };
   gallery: {
     title: string;
@@ -110,6 +111,7 @@ export interface UIStrings {
     accommodations: string;
     travelGuides: string;
     faq: string;
+    blog: string;
   };
   common: {
     readMore: string;
@@ -161,6 +163,7 @@ export const translations: Record<Locale, UIStrings> = {
       carRental: "Sewa Mobil",
       accommodations: "Akomodasi",
       travelGuides: "Panduan Wisata",
+      blog: "Blog",
     },
     gallery: {
       title: "Galeri",
@@ -238,6 +241,7 @@ export const translations: Record<Locale, UIStrings> = {
       carRental: "Sewa Mobil",
       accommodations: "Akomodasi",
       travelGuides: "Panduan Wisata",
+      blog: "Blog",
       faq: "FAQ",
     },
     common: {
@@ -288,6 +292,7 @@ export const translations: Record<Locale, UIStrings> = {
       carRental: "Car Rental",
       accommodations: "Accommodations",
       travelGuides: "Travel Guides",
+      blog: "Blog",
     },
     gallery: {
       title: "Gallery",
@@ -365,6 +370,7 @@ export const translations: Record<Locale, UIStrings> = {
       carRental: "Car Rental",
       accommodations: "Accommodations",
       travelGuides: "Travel Guides",
+      blog: "Blog",
       faq: "FAQ",
     },
     common: {
@@ -415,6 +421,7 @@ export const translations: Record<Locale, UIStrings> = {
       carRental: "\u062A\u0623\u062C\u064A\u0631 \u0627\u0644\u0633\u064A\u0627\u0631\u0627\u062A",
       accommodations: "\u0627\u0644\u0625\u0642\u0627\u0645\u0629",
       travelGuides: "\u0623\u062F\u0644\u0629 \u0627\u0644\u0633\u0641\u0631",
+      blog: "Blog",
     },
     gallery: {
       title: "\u0645\u0639\u0631\u0636 \u0627\u0644\u0635\u0648\u0631",
@@ -492,6 +499,7 @@ export const translations: Record<Locale, UIStrings> = {
       carRental: "\u062A\u0623\u062C\u064A\u0631 \u0627\u0644\u0633\u064A\u0627\u0631\u0627\u062A",
       accommodations: "\u0627\u0644\u0625\u0642\u0627\u0645\u0629",
       travelGuides: "\u0623\u062F\u0644\u0629 \u0627\u0644\u0633\u0641\u0631",
+      blog: "Blog",
       faq: "\u0627\u0644\u0623\u0633\u0626\u0644\u0629 \u0627\u0644\u0634\u0627\u0626\u0639\u0629",
     },
     common: {
@@ -542,6 +550,7 @@ export const translations: Record<Locale, UIStrings> = {
       carRental: "Sewa Kereta",
       accommodations: "Penginapan",
       travelGuides: "Panduan Pelancongan",
+      blog: "Blog",
     },
     gallery: {
       title: "Galeri",
@@ -619,6 +628,7 @@ export const translations: Record<Locale, UIStrings> = {
       carRental: "Sewa Kereta",
       accommodations: "Penginapan",
       travelGuides: "Panduan Pelancongan",
+      blog: "Blog",
       faq: "FAQ",
     },
     common: {
@@ -669,6 +679,7 @@ export const translations: Record<Locale, UIStrings> = {
       carRental: "\u6C7D\u8F66\u79DF\u8D41",
       accommodations: "\u4F4F\u5BBF",
       travelGuides: "\u65C5\u6E38\u6307\u5357",
+      blog: "Blog",
     },
     gallery: {
       title: "\u7535\u5B50\u76F8\u518C",
@@ -746,6 +757,7 @@ export const translations: Record<Locale, UIStrings> = {
       carRental: "\u6C7D\u8F66\u79DF\u8D41",
       accommodations: "\u4F4F\u5BBF",
       travelGuides: "\u65C5\u6E38\u6307\u5357",
+      blog: "Blog",
       faq: "\u5E38\u89C1\u95EE\u9898",
     },
     common: {

@@ -10,14 +10,16 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Image } from "astro:assets";
 import { CTA_CLASS } from "@/lib/card-styles";
+import { localizeHref } from "@/lib/i18n/localize";
 
 interface Props {
   vehicle: Vehicle;
+  locale?: string;
 }
 
-const { vehicle } = Astro.props;
+const { vehicle, locale = "id" } = Astro.props;
 
-const cardHref = `/sewa-mobil/${vehicle.region}/${vehicle.slug}`;
+const cardHref = localizeHref(`/sewa-mobil/${vehicle.region}/${vehicle.slug}`, locale);
 ---
 
   <Card className="overflow-hidden">

@@ -66,7 +66,7 @@ const breadcrumbs = [
 
   <SectionContainer background="bg-surface-soft">
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {collectionPackages.map((tour) => <PackageCard tour={tour} />)}
+      {collectionPackages.map((tour) => <PackageCard tour={tour} locale={locale} />)}
     </div>
   </SectionContainer>
 </MainLayout>

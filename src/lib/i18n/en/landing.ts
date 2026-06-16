@@ -82,7 +82,7 @@ export const landingHero = {
     "Private tour, open trip, and transportation at your own pace in Lombok, Sumbawa, and Labuan Bajo.",
   primaryAction: {
     label: "Consult Your Trip",
-    href: "/kontak",
+    href: "/en/contact",
     variant: "default" as const,
   },
   secondaryAction: {

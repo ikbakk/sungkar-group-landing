@@ -8,16 +8,23 @@
 
 ```
 src/
+├── content.config.ts   # Astro v6 content collections config (loaders + Zod schemas)
+├── content/            # MDX content collections (loaded via glob() in content.config.ts)
+│   ├── blog/           # Blog posts — folder-per-slug, locale files inside
+│   │   └── {slug}/{locale}.mdx
+│   └── guides/         # Travel guides — same structure as blog
+│       └── {slug}/{locale}.mdx
 ├── pages/              # Astro routes (file-based routing)
 ├── layouts/            # Page shells
 ├── components/
 │   ├── about/          # About page sections
 │   ├── accommodations/ # Accommodation listing/detail
 │   ├── blocks/         # Reusable section layouts
+│   ├── blog/           # Blog components (BlogCard, BlogPostLayout)
 │   ├── cards/          # Card components (Package, Destination, Vehicle, Accommodation)
 │   ├── contact/        # Contact page (form, info, map, WhatsApp)
 │   ├── destinations/   # Destination detail panels, galleries
-│   ├── guides/         # Travel guide cards
+│   ├── guides/         # Travel guide components (GuideCard, KeyTakeaways)
 │   ├── header/         # Header + nav (desktop & mobile)
 │   ├── landing/        # Homepage sections
 │   ├── packages/       # Tour package components
@@ -28,14 +35,15 @@ src/
 ├── lib/
 │   ├── content/        # ALL data/content definitions (folder-based barrel exports)
 │   │   ├── about/       # aboutContent
+│   │   ├── blog/        # getBlogPosts(), getBlogPost() loader helpers using astro:content
 │   │   ├── contact/     # contactPageContent
 │   │   ├── faq/         # faqPageContent + faqItems (from ./data)
 │   │   ├── reviews/     # reviewsPageContent, reviews, reviewStats, toMarqueeReviews
+│   │   ├── guides/      # getGuides(), getGuide() loader helpers using astro:content
 │   │   ├── destinations/# destinationsPageContent + destinations (from ./data)
 │   │   ├── accommodations/ # akomodasiPageContent + accommodations (from ./data)
 │   │   ├── car-rental/  # sewaPageContent + vehicles (from ./data)
 │   │   ├── tour-packages/# packagePageContent + packages (from tourPackages/)
-│   │   ├── travel-guides/ # guides (from ./data)
 │   │   ├── landing/     # landingHero, landingFeaturedTours, landingDestinations, etc.
 │   │   ├── shared/      # types, contact-data, navigation, og-metadata, schemas, regions
 │   │   ├── faqs/        # FAQ items by topic
@@ -77,41 +85,54 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 - `getStaticPaths()` in `src/pages/[locale]/*.astro` uses `NON_DEFAULT_LOCALES` from `@/lib/i18n` (not `LOCALES`) to exclude `"id"`
 - Root-level pages in `src/pages/*.astro` hardcode `locale = "id"` and serve the Indonesian version
 - `getLocaleFromPath()` in `@/lib/i18n` correctly returns `DEFAULT_LOCALE` for unprefixed paths
-- `localizeHref()` in `@/lib/i18n/localize` skips the locale prefix when `locale === "id"` (default)
+- `localizeHref()` in `@/lib/i18n/localize` returns the href as-is for ID locale (Indonesian paths match file names); for non-ID locales it maps Indonesian→English paths via `PATH_MAP` then prepends the locale
 - `getLocalizedPath()` in `@/lib/i18n` generates correct locale-switching URLs for the LocaleSwitcher
 - **Locale Switcher**: `LocaleSwitcher.astro` in header (desktop) + inline in `NavigationMobile.tsx` (mobile) — shows all 5 locales with short labels, uses `getLocalizedPath()` for navigation
 - **RTL Support**: Arabic (`ar`) uses `dir="rtl"` on `<html>`, Cairo Variable font for both body and headings, LTR locales use Inter + Playfair Display
 
 | URL | Page File | Components Used |
-|---|---|---|
+|---|---|---|---|
 | `/` | `src/pages/index.astro` | `LandingPage` (composes HeroSection, VideoSection, FeaturedSection, DestinationsSection, TransportSection) |
-| `/about` | `src/pages/about.astro` | `PageHeader`, `StorySection`, `VisionMissionSection`, `ServicesSection`, `StrengthsSection`, `ValuesSection`, `CommitmentSection`, `Faq`, `CtaSection` |
-| `/contact` | `src/pages/contact.astro` | `PageHeader`, `ContactForm`, `ContactInfoSection`, `EmbeddedMap`, `Faq` |
-| `/reviews` | `src/pages/reviews.astro` | `PageHeader`, `ReviewsGridSection`, `ReviewStatsSection`, `ReviewsCtaSection`, `ReviewGallerySection`, `Faq` |
+| `/tentang-kami` | `src/pages/tentang-kami.astro` | `PageHeader`, `StorySection`, `VisionMissionSection`, `ServicesSection`, `StrengthsSection`, `ValuesSection`, `CommitmentSection`, `Faq`, `CtaSection` |
+| `/kontak` | `src/pages/kontak.astro` | `PageHeader`, `ContactForm`, `ContactInfoSection`, `EmbeddedMap`, `Faq` |
+| `/ulasan` | `src/pages/ulasan.astro` | `PageHeader`, `ReviewsGridSection`, `ReviewStatsSection`, `ReviewsCtaSection`, `ReviewGallerySection`, `Faq` |
 | `/faq` | `src/pages/faq.astro` | `PageHeader`, `Faq` |
-| `/destinations` | `src/pages/destinations/index.astro` | `PageHeader`, `DestinationGroupSection`, `RelatedContent`, `Faq` |
-| `/destinations/[slug]` | `src/pages/destinations/[slug].astro` | `DestinationDetailPanel`, `DestinationGallery`, `PackageCard` |
-| `/tour-packages` | `src/pages/tour-packages/index.astro` | `PageHeader`, `PackageRegionSection` (×3), `PackagePageCta`, `Faq`, `RelatedContent` |
-| `/tour-packages/[region]` | `src/pages/tour-packages/[region]/index.astro` | `CollectionCard` listing |
-| `/tour-packages/[region]/[collection]` | `src/pages/tour-packages/[region]/[collection]/index.astro` | `PackageCard` listing |
-| `/tour-packages/[region]/[collection]/[slug]` | `src/pages/tour-packages/[region]/[collection]/[slug].astro` | `PackageImagePreview`, `PackageDetailPanel`, `PackageItinerary`, `PackageIncludesExcludes`, `PackageGallery`, `Faq`, `Carousel` |
-| `/car-rental` | `src/pages/car-rental/index.astro` | `StickyNav`, `RegionObserver`, `VehicleRegionSection`, `PackagePageCta`, `Faq` |
-| `/car-rental/[region]` | `src/pages/car-rental/[region]/index.astro` | `VehicleRegionSection` (region-filtered) |
-| `/car-rental/[region]/[slug]` | `src/pages/car-rental/[region]/[slug].astro` | `VehicleDetailPanel`, `WhatsAppForm` |
-| `/accommodations` | `src/pages/accommodations/index.astro` | `StickyNav`, `RegionObserver`, `RegionNavCard`, `AccommodationRegionSection`, `PackagePageCta`, `Faq` |
-| `/accommodations/[slug]` | `src/pages/accommodations/[slug].astro` | `AccommodationCard` listing (region-filtered) |
-| `/travel-guides` | `src/pages/travel-guides/index.astro` | `GuideCard` listing (grouped by region) |
-| `/travel-guides/[slug]` | `src/pages/travel-guides/[slug].astro` | `KeyTakeaways`, `GuideCard`, `DestinationCard`, `PackageCard` |
-| **Non-default locale pages** (en, ar, ms, zh) | `src/pages/[locale]/*.astro` | Same components as ID root pages, but with locale prefix in URLs |
+| `/destinasi` | `src/pages/destinasi/index.astro` | `PageHeader`, `DestinationGroupSection`, `RelatedContent`, `Faq` |
+| `/destinasi/[slug]` | `src/pages/destinasi/[slug].astro` | `DestinationDetailPanel`, `DestinationGallery`, `PackageCard` |
+| `/paket-wisata` | `src/pages/paket-wisata/index.astro` | `PageHeader`, `PackageRegionSection` (×3), `PackagePageCta`, `Faq`, `RelatedContent` |
+| `/paket-wisata/[region]` | `src/pages/paket-wisata/[region]/index.astro` | `CollectionCard` listing |
+| `/paket-wisata/[region]/[collection]` | `src/pages/paket-wisata/[region]/[collection]/index.astro` | `PackageCard` listing |
+| `/paket-wisata/[region]/[collection]/[slug]` | `src/pages/paket-wisata/[region]/[collection]/[slug].astro` | `PackageImagePreview`, `PackageDetailPanel`, `PackageItinerary`, `PackageIncludesExcludes`, `PackageGallery`, `Faq`, `Carousel` |
+| `/sewa-mobil` | `src/pages/sewa-mobil/index.astro` | `StickyNav`, `RegionObserver`, `VehicleRegionSection`, `PackagePageCta`, `Faq` |
+| `/sewa-mobil/[region]` | `src/pages/sewa-mobil/[region]/index.astro` | `VehicleRegionSection` (region-filtered) |
+| `/sewa-mobil/[region]/[slug]` | `src/pages/sewa-mobil/[region]/[slug].astro` | `VehicleDetailPanel`, `WhatsAppForm` |
+| `/akomodasi` | `src/pages/akomodasi/index.astro` | `StickyNav`, `RegionObserver`, `RegionNavCard`, `AccommodationRegionSection`, `PackagePageCta`, `Faq` |
+| `/akomodasi/[slug]` | `src/pages/akomodasi/[slug].astro` | `AccommodationCard` listing (region-filtered) |
+| `/blog` | `src/pages/blog/index.astro` | `PageHeader`, `BlogCard` grid (MDX content from content collections) |
+| `/blog/[slug]` | `src/pages/blog/[slug].astro` | `BlogPostLayout` (`<Content/>` from rendered MDX), `StructuredData` (Article schema) |
+| `/panduan-wisata` | `src/pages/panduan-wisata/index.astro` | `PageHeader`, `GuideCard` listing (from MDX content collections, grouped by region) |
+| `/panduan-wisata/[slug]` | `src/pages/panduan-wisata/[slug].astro` | `KeyTakeaways`, `GuideCard`, `DestinationCard`, `PackageCard`, `StructuredData` (HowTo schema) |
+| **Non-default locale pages** (en, ar, ms, zh) | `src/pages/[locale]/*.astro` | Same components as ID root pages, but with locale prefix + English paths in URLs |
+| `/en\|ar\|ms\|zh/blog` | `src/pages/[locale]/blog/index.astro` | `PageHeader`, `BlogCard` grid (locale-filtered MDX) |
+| `/en\|ar\|ms\|zh/blog/[slug]` | `src/pages/[locale]/blog/[slug].astro` | `BlogPostLayout`, `StructuredData` (Article schema) |
+| `/en\|ar\|ms\|zh/travel-guides` | `src/pages/[locale]/travel-guides/index.astro` | `PageHeader`, `GuideCard` grid (locale-filtered MDX) |
+| `/en\|ar\|ms\|zh/travel-guides/[slug]` | `src/pages/[locale]/travel-guides/[slug].astro` | MDX detail with HowTo schema |
 
 ---
 
 ## 3. Data Architecture
 
-### Content Types (all in `src/lib/content/`)
+### Content Types (all in `src/lib/content/`, plus `src/content.config.ts` + `src/content/`)
 
 | File | Exports | Type |
 |---|---|---|---|---|
+| `content.config.ts` (root) | `blog`, `guides` content collection definitions | Astro v6 `defineCollection({ loader: glob(), schema: z.object() })` |
+| `content/blog/{slug}/{locale}.mdx` | MDX frontmatter + body | Blog post with `{ title, description, image, publishDate, tags, locale, slug }` |
+| `content/guides/{slug}/{locale}.mdx` | MDX frontmatter + body | Travel guide with `{ title, description, image, region, locale, slug }` |
+| `lib/content/blog/loader.ts` | `getBlogPosts(locale)`, `getBlogPost(locale, slug)` | Locale-aware blog data loader using `render(entry)` from `astro:content` |
+| `lib/content/blog/index.ts` | Barrel re-export | Re-exports loader functions |
+| `lib/content/guides/loader.ts` | `getGuides(locale)`, `getGuide(locale, slug)` | Locale-aware guide data loader using `render(entry)` from `astro:content` |
+| `lib/content/guides/index.ts` | Barrel re-export | Re-exports loader functions |
 | `about/index.ts` | `aboutContent` object | About page content (hero, story, vision, mission, services, strengths, values, commitment, cta sections) |
 | `landing/index.ts` | `landingHero`, `landingFeaturedTours`, `landingDestinations`, `landingTransport`, `landingTestimonials`, `landingVideo`, `landingBackgroundImage` | Homepage content |
 | `destinations/index.ts` | `destinationsPageContent` + `destinations` (from `./data`) | `{ slug, title, region, image, gallery[], summary, thingsToDo[], packages[] }` |
@@ -125,8 +146,6 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 | `accommodations/data.ts` | `accommodations: Accommodation[]`, `Accommodation` type | Data array + type |
 | `car-rental/index.ts` | `sewaPageContent` + `vehicles` (from `./data`) | `{ slug, name, region, pricePerDay, seats, transmission, features[], bestFor[], description, imageTop, imageBottom }` |
 | `car-rental/data.ts` | `vehicles: Vehicle[]`, `Vehicle` type | Data array + type |
-| `travel-guides/index.ts` | `guides` (from `./data`) | Travel guide content |
-| `travel-guides/data.ts` | `guides: Guide[]`, `Guide` type | Data array + type |
 | `reviews/index.ts` | `reviewsPageContent`, `reviews`, `reviewStats`, `toMarqueeReviews`, `Review`, `MarqueeReview` | Google review data + photos |
 | `faq/index.ts` | `faqPageContent` + `faqItems` (from `./data`) | Aggregated FAQ data |
 | `faq/data.ts` | `faqItems` | FAQ items combined from per-topic files |
@@ -299,7 +318,8 @@ Standalone React (.tsx) components:
 | **Add/change vehicle** | `src/lib/content/car-rental/data.ts`, `src/lib/content/car-rental/index.ts` |
 | **Add/change accommodation** | `src/lib/content/accommodations/data.ts` |
 | **Add/change FAQ** | `src/lib/content/faqs/{topic}.ts` |
-| **Add/change guide** | `src/lib/content/travel-guides/data.ts` |
+| **Add/change blog post** | `src/content/blog/{slug}/{locale}.mdx` |
+| **Add/change guide** | `src/content/guides/{slug}/{locale}.mdx` |
 | **Change review data** | `src/lib/content/reviews/index.ts` |
 | **Add image** | Place in `src/assets/images/`, import via `@/assets/images/` |
 | **Add/modify i18n locale** | `src/lib/i18n/index.ts` (update `LOCALES`, `NON_DEFAULT_LOCALES`, locale-specific formatters), `src/lib/i18n/ui-strings.ts` (UI translations), `src/lib/i18n/localize.ts` (path mapping), `src/lib/i18n/loader.ts` (content modules) |

@@ -1,0 +1,50 @@
+---
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import type { BlogPostMeta } from "@/lib/content/blog";
+import { localizeHref } from "@/lib/i18n/localize";
+
+interface Props {
+  post: BlogPostMeta;
+  locale?: string;
+}
+
+const { post, locale = "id" } = Astro.props;
+const href = localizeHref("/blog/" + post.slug, locale);
+---
+
+<a href={href} class="block group">
+  <Card className="h-fit overflow-hidden py-0 transition-all duration-300 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_20px_40px_rgba(17,24,39,0.1)]">
+    <CardContent className="flex h-full flex-col gap-4 p-6">
+      <div class="flex flex-wrap items-center gap-2">
+        <Badge variant="outline" className="rounded-full px-3 py-1 text-xs font-medium">
+          {post.readingTime} menit baca
+        </Badge>
+        {post.tags.slice(0, 2).map((tag) => (
+          <Badge variant="secondary" className="rounded-full px-3 py-1 text-xs">
+            {tag}
+          </Badge>
+        ))}
+      </div>
+
+      <div>
+        <h3 class="text-xl leading-tight text-foreground group-hover:text-brand-600 transition-colors">
+          {post.title}
+        </h3>
+        <p class="mt-3 line-clamp-2 font-sans text-sm leading-7 text-text-muted">
+          {post.description}
+        </p>
+      </div>
+
+      <div class="mt-auto text-xs text-text-muted">
+        <time datetime={post.publishDate.toISOString()}>
+          {post.publishDate.toLocaleDateString("id-ID", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })}
+        </time>
+      </div>
+    </CardContent>
+  </Card>
+</a>

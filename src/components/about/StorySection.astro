@@ -33,16 +33,16 @@ const { story } = Astro.props;
       />
     </div>
 
-    <Card className="border-border bg-white">
+    <Card class="border-border bg-white">
       <CardHeader>
         <p class="text-brand-700 text-lg">Perjalanan Kami</p>
 
-        <CardTitle className="text-3xl leading-tight">
+        <CardTitle class="text-3xl leading-tight">
           {story.title}
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="flex flex-col gap-4">
+      <CardContent class="flex flex-col gap-4">
         {
           story.paragraphs.map((paragraph) => (
             <p class="text-sm leading-7 text-text-muted">{paragraph}</p>

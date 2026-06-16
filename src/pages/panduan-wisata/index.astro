@@ -1,0 +1,80 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import GuideCard from "@/components/guides/GuideCard.astro";
+import { REGION_LABEL } from "@/lib/regions";
+import { getGuides } from "@/lib/content/guides";
+
+import { t } from "@/lib/i18n";
+
+const locale = "id";
+const uiStrings = t(locale);
+const guides = await getGuides(locale);
+
+const regions = ["lombok", "sumbawa", "labuan-bajo", "general"] as const;
+
+function guidesByRegion(region: string) {
+  return guides.filter((g) => g.region === region);
+}
+
+const breadcrumbs = [
+  { label: uiStrings.breadcrumb.home, href: "/" },
+  { label: uiStrings.breadcrumb.travelGuides },
+];
+---
+
+<MainLayout
+  title={uiStrings.page.travelGuides}
+  description="Panduan lengkap untuk merencanakan perjalanan Anda ke Lombok, Sumbawa, dan Labuan Bajo"
+  canonical="/panduan-wisata"
+  locale={locale}
+>
+  <PageHeader
+    eyebrow={uiStrings.page.travelGuides}
+    title={uiStrings.guides.general}
+    description="Panduan lengkap untuk merencanakan perjalanan Anda ke Lombok, Sumbawa, dan Labuan Bajo"
+    breadcrumbs={breadcrumbs}
+  />
+
+  {
+    regions.map((region) => {
+      const regionGuides = guidesByRegion(region);
+      if (regionGuides.length === 0) return null;
+
+      const label = region === "general"
+        ? uiStrings.guides.general
+        : uiStrings.guides.guideFor.replace("{region}", REGION_LABEL[region as keyof typeof REGION_LABEL]);
+
+      const regionDesc =
+        region === "lombok"
+          ? "Tips dan panduan wisata untuk liburan Anda di Lombok."
+          : region === "sumbawa"
+            ? "Informasi wisata untuk petualangan di Sumbawa."
+            : region === "labuan-bajo"
+              ? "Semua yang perlu Anda tahu sebelum ke Labuan Bajo."
+              : "Panduan umum untuk perjalanan Anda.";
+
+      return (
+        <SectionContainer
+          background={region === "lombok" ? "bg-surface-soft" : "bg-background"}
+        >
+          <div class="mb-12">
+            <h2 class="text-3xl leading-tight text-foreground">
+              {label}
+            </h2>
+            <p class="mt-3 max-w-2xl text-base leading-7 text-text-muted">
+              {regionDesc}
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {regionGuides.map((guide) => (
+              <GuideCard guide={guide} locale={locale} />
+            ))}
+          </div>
+        </SectionContainer>
+      );
+    })
+  }
+</MainLayout>
