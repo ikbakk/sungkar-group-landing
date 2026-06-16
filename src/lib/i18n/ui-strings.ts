@@ -5,6 +5,7 @@ export interface UIStrings {
     chatWhatsapp: string;
     menu: string;
     exploreDestinations: string;
+    language: string;
   };
   nav: {
     availablePackages: string;
@@ -143,6 +144,7 @@ export const translations: Record<Locale, UIStrings> = {
       chatWhatsapp: "Chat WhatsApp",
       menu: "Menu",
       exploreDestinations: "Jelajahi Destinasi",
+      language: "Bahasa",
     },
     nav: {
       availablePackages: "Paket Wisata Tersedia",
@@ -279,6 +281,7 @@ export const translations: Record<Locale, UIStrings> = {
       chatWhatsapp: "Chat on WhatsApp",
       menu: "Menu",
       exploreDestinations: "Explore Destinations",
+      language: "Language",
     },
     nav: {
       availablePackages: "Tour Packages Available",
@@ -415,6 +418,7 @@ export const translations: Record<Locale, UIStrings> = {
       chatWhatsapp: "\u0627\u0644\u062F\u0631\u062F\u0634\u0629 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628",
       menu: "\u0627\u0644\u0642\u0627\u0626\u0645\u0629",
       exploreDestinations: "\u0627\u0633\u062A\u0643\u0634\u0641 \u0627\u0644\u0648\u062C\u0647\u0627\u062A",
+      language: "\u0627\u0644\u0644\u063A\u0629",
     },
     nav: {
       availablePackages: "\u0628\u0627\u0642\u0627\u062A \u0627\u0644\u0633\u064A\u0627\u062D\u0629 \u0627\u0644\u0645\u062A\u0627\u062D\u0629",
@@ -551,6 +555,7 @@ export const translations: Record<Locale, UIStrings> = {
       chatWhatsapp: "Chat WhatsApp",
       menu: "Menu",
       exploreDestinations: "Terokai Destinasi",
+      language: "Bahasa",
     },
     nav: {
       availablePackages: "Pakej Pelancongan Tersedia",
@@ -687,6 +692,7 @@ export const translations: Record<Locale, UIStrings> = {
       chatWhatsapp: "WhatsApp\u804A\u5929",
       menu: "\u83DC\u5355",
       exploreDestinations: "\u63A2\u7D22\u76EE\u7684\u5730",
+      language: "\u8BED\u8A00",
     },
     nav: {
       availablePackages: "\u53EF\u7528\u65C5\u6E38\u5957\u9910",

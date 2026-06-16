@@ -26,17 +26,19 @@ import { t } from "@/lib/i18n/ui-strings";
 
 type Props = {
   items: NavItem[];
-  isHome?: boolean;
   locale?: string;
 };
 
-export default function NavigationMobile({ items, isHome, locale = "id" }: Props) {
+const FLAGS: Record<string, string> = {
+  id: "\uD83C\uDDEE\uD83C\uDDE9",
+  en: "\uD83C\uDDEC\uD83C\uDDE7",
+  ar: "\uD83C\uDDF8\uD83C\uDDE6",
+  ms: "\uD83C\uDDF2\uD83C\uDDFE",
+  zh: "\uD83C\uDDE8\uD83C\uDDF3",
+};
+
+export default function NavigationMobile({ items, locale = "id" }: Props) {
   const lh = (href: string | undefined) => localizeHref(href, locale);
-  const otherLocales = LOCALES.filter((l) => l !== locale);
-  const totalPackages = items
-    .flatMap((item) => item.groups ?? [])
-    .flatMap((group) => group.collections ?? [])
-    .flatMap((collection) => collection.items).length;
 
   return (
     <div className="lg:hidden">
@@ -56,30 +58,26 @@ export default function NavigationMobile({ items, isHome, locale = "id" }: Props
               backdrop-blur-md
             "
           >
-            Menu
+            {t(locale).header.menu}
           </button>
         </DrawerTrigger>
 
         <DrawerContent className="h-[85vh]">
           <DrawerHeader className="space-y-2 pb-2">
-            <DrawerTitle className="text-center text-xl font-medium">
+            <DrawerTitle className="text-center text-xl font-medium font-sans">
               {t(locale).header.exploreDestinations}
             </DrawerTitle>
 
             <p className="text-center text-sm text-muted-foreground">
               Lombok • Sumbawa • Labuan Bajo
             </p>
-
-            <p className="text-center text-xs text-muted-foreground">
-              {t(locale).nav.availablePackages}
-            </p>
           </DrawerHeader>
 
-          <div className="flex h-full flex-col">
-            <div className="flex-1 overflow-y-auto px-6">
+          <div className="flex flex-1 flex-col font-sans overflow-hidden">
+            <div className="flex-1 overflow-y-auto px-6 min-h-0">
               <div className="mb-4 border-b border-border pb-4">
                 <p className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                  Language
+                  {t(locale).header.language}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {LOCALES.map((l) => {
@@ -91,12 +89,13 @@ export default function NavigationMobile({ items, isHome, locale = "id" }: Props
                           typeof window !== "undefined" ? window.location.pathname : "/",
                           l,
                         )}
-                        className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium transition-colors ${
+                        className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium transition-colors ${
                           isCurrent
                             ? "bg-primary text-primary-foreground"
                             : "bg-muted text-muted-foreground hover:bg-accent hover:text-foreground"
                         }`}
                       >
+                        <span className="text-base leading-none">{FLAGS[l]}</span>
                         <span>{LOCALE_SHORT_LABELS[l as Locale]}</span>
                         <span className="hidden sm:inline">{LOCALE_LABELS[l as Locale]}</span>
                       </a>
@@ -104,7 +103,7 @@ export default function NavigationMobile({ items, isHome, locale = "id" }: Props
                   })}
                 </div>
               </div>
-              <nav className="flex flex-col">
+              <nav className="flex flex-col [&_h3]:font-sans">
                 {items.map((item) => {
                   if (item.variant === "link") {
                     return (
@@ -253,34 +252,6 @@ export default function NavigationMobile({ items, isHome, locale = "id" }: Props
                   );
                 })}
               </nav>
-            </div>
-
-            <div
-              className="
-                sticky
-                bottom-0
-                border-t
-                bg-background
-                p-4
-              "
-            >
-              <div className="grid gap-3">
-                {!isHome && (
-                  <a
-                    href={lh("/kontak")}
-                    className="inline-flex shrink-0 items-center justify-center rounded-md border border-border bg-background text-sm font-medium whitespace-nowrap transition-colors hover:bg-muted hover:text-foreground h-9 px-2.5"
-                  >
-                    {t(locale).nav.checkAvailability}
-                  </a>
-                )}
-
-                <a
-                  href={lh("/kontak")}
-                  className="inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-primary text-primary-foreground text-sm font-medium whitespace-nowrap transition-colors hover:bg-primary/80 h-10 px-2.5"
-                >
-                  Chat WhatsApp
-                </a>
-              </div>
             </div>
           </div>
         </DrawerContent>
