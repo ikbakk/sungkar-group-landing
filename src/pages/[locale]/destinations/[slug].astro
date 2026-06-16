@@ -18,6 +18,7 @@ import { packages } from "@/lib/content/tourPackages";
 
 import { loadContent } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { getImageSrc } from "@/lib/images";
 
 export async function getStaticPaths() {
   const paths = [];
@@ -41,7 +42,7 @@ const relatedPackages = packages.filter((tour) =>
   destination.packages.includes(tour.slug),
 );
 
-const absoluteImageUrl = new URL(destination.image.src, SITE_URL).toString();
+const absoluteImageUrl = new URL(getImageSrc(destination.image), SITE_URL).toString();
 
 const touristAttractionSchema = generateTouristAttractionSchema(
   destination.title,

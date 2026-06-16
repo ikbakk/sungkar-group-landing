@@ -10,6 +10,7 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import type { FAQItem } from "@/lib/content/shared/types";
 import { HERO } from "@/assets/images";
 
 export async function getStaticPaths() {
@@ -68,7 +69,7 @@ const breadcrumbs = [
 
         <div class="grid gap-4">
           {
-            generalFaqItems.map((item) => (
+            generalFaqItems.map((item: FAQItem) => (
               <details class="rounded-[1.5rem] border border-border bg-white p-6">
                 <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
                   {item.question}
@@ -83,7 +84,7 @@ const breadcrumbs = [
       </div>
 
       <div class="mt-12 grid gap-6 md:grid-cols-3">
-        {faqPageContent.relatedCards.map((card) => (
+        {faqPageContent.relatedCards.map((card: { badge: string; title: string; description: string; buttonLabel: string; buttonHref: string }) => (
           <Card class="border-border bg-white">
             <CardHeader>
               <Badge variant="outline" class="w-fit rounded-full px-3 py-1">
@@ -93,7 +94,7 @@ const breadcrumbs = [
             </CardHeader>
             <CardContent class="grid gap-3 text-sm leading-7 text-text-muted">
               <p>{card.description}</p>
-              <Button href={card.buttonHref} variant="outline">
+              <Button as="a" href={card.buttonHref} variant="outline">
                 {card.buttonLabel}
               </Button>
             </CardContent>

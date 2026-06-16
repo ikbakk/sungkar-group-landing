@@ -75,7 +75,7 @@ const breadcrumbs = [
 
         <ul class="flex flex-col gap-3">
           {
-            reviewsPageContent.insights.items.map((item) => (
+            reviewsPageContent.insights.items.map((item: { title: string; description: string }) => (
               <li class="flex items-start gap-3 rounded-xl border border-border bg-surface-soft p-4">
                 <div class="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-brand-700" />
                 <div>

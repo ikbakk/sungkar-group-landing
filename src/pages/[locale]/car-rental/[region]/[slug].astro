@@ -15,8 +15,7 @@ import VehicleDetailPanel from "@/components/vehicles/VehicleDetailPanel.astro";
 import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
-
-import type { Vehicle } from "@/lib/content/car-rental";
+import { getImageSrc } from "@/lib/images";
 
 export function getStaticPaths() {
   const paths = [];
@@ -36,7 +35,7 @@ const { vehicle } = Astro.props;
 const uiStrings = t(locale!);
 
 const vehicleUrl = `${SITE_URL}/${locale}/car-rental/${vehicle.region}/${vehicle.slug}`;
-const absoluteImageUrl = new URL(vehicle.imageTop.src, SITE_URL).toString();
+const absoluteImageUrl = new URL(getImageSrc(vehicle.imageTop), SITE_URL).toString();
 
 const productSchema = generateProductSchema(
   vehicle.name,

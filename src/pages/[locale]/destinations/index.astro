@@ -29,7 +29,7 @@ const destinationBySlug = new Map(
   destinations.map((destination) => [destination.slug, destination]),
 );
 
-const groups = destinationsPageContent.groups.map((group) => ({
+const groups = destinationsPageContent.groups.map((group: { id: string; label: string; title: string; description: string; destinationSlugs: readonly string[]; intro: string }) => ({
   ...group,
   count: group.destinationSlugs.length,
   destinations: group.destinationSlugs

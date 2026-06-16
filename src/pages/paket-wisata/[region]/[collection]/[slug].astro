@@ -26,8 +26,8 @@ import { paketWisataFormFields } from "@/lib/contact-data";
 
 import { loadFaq } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n";
+import { getImageSrc } from "@/lib/images";
 
-import type { TourPackage } from "@/lib/content/tourPackages/types";
 
 export function getStaticPaths() {
   const paths = [];
@@ -51,7 +51,7 @@ const uiStrings = t(locale);
 const r = tour.region as Region;
 
 const packageUrl = `${SITE_URL}/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
-const absoluteImageUrl = new URL(tour.images[0].src, SITE_URL).toString();
+const absoluteImageUrl = new URL(getImageSrc(tour.images[0]), SITE_URL).toString();
 
 const productSchema = generateProductSchema(
   tour.title,

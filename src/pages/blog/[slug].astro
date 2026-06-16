@@ -28,7 +28,7 @@ if (!post) {
   return Astro.redirect("/blog", 404);
 }
 
-const { Content, title, description, publishDate, readingTime, tags, author, featuredImage } = post;
+const { Content, title, description, publishDate, readingTime, tags, featuredImage } = post;
 
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: "/" },
@@ -135,7 +135,7 @@ const articleSchema = generateArticleSchema(title, description, articleImage, SI
   </SectionContainer>
 </MainLayout>
 
-<script>
+<script define:vars={{ uiStrings }}>
   document.getElementById("copy-link-btn")?.addEventListener("click", async () => {
     const url = window.location.href;
     try {

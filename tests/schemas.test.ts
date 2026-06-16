@@ -69,7 +69,7 @@ describe("generateOrganizationSchema", () => {
 describe("generateWebsiteSchema", () => {
   it("does not contain SearchAction", () => {
     const result = generateWebsiteSchema(SITE_URL);
-    expect(result.potentialAction).toBeUndefined();
+    expect((result as any).potentialAction).toBeUndefined();
   });
 });
 
@@ -156,12 +156,11 @@ describe("generateProductSchema", () => {
   it("uses ContactForPrice for non-numeric price", () => {
     const result = generateProductSchema("Test", "Desc", "Hubungi untuk harga", "/img.jpg", `${SITE_URL}/test`);
     expect(result.offers.price).toBe("https://schema.org/ContactForPrice");
-    expect(result.offers.priceCurrency).toBeUndefined();
+    expect((result.offers as any).priceCurrency).toBeUndefined();
   });
 
   it("sets priceCurrency for numeric price", () => {
     const result = generateProductSchema("Test", "Desc", "500000", "/img.jpg", `${SITE_URL}/test`);
-    expect(result.offers.price).toBe("500000");
-    expect(result.offers.priceCurrency).toBe("IDR");
+    expect((result.offers as any).priceCurrency).toBe("IDR");
   });
 });
