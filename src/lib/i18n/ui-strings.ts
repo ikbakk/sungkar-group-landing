@@ -124,6 +124,13 @@ export interface UIStrings {
     seeMore: string;
     viewAll: string;
   };
+  blogSection: {
+    share: string;
+    relatedPosts: string;
+    relatedPostsDesc: string;
+    copyLink: string;
+    linkCopied: string;
+  };
   seo: {
     keywords: string;
     siteName: string;
@@ -259,6 +266,13 @@ export const translations: Record<Locale, UIStrings> = {
       keywords: "paket wisata lombok, tour lombok, open trip lombok, wisata sumbawa, whale shark sumbawa, wisata labuan bajo, tour komodo, sewa mobil lombok, sungkar group",
       siteName: "Sungkar Group",
     },
+    blogSection: {
+      share: "Bagikan artikel ini",
+      relatedPosts: "Artikel Terkait",
+      relatedPostsDesc: "Baca artikel lainnya dari kami",
+      copyLink: "Salin tautan",
+      linkCopied: "Tautan disalin!",
+    },
   },
   en: {
     header: {
@@ -387,6 +401,13 @@ export const translations: Record<Locale, UIStrings> = {
     seo: {
       keywords: "lombok tour packages, lombok tour, open trip lombok, sumbawa tours, whale shark sumbawa, labuan bajo tours, komodo tour, car rental lombok, sungkar group",
       siteName: "Sungkar Group",
+    },
+    blogSection: {
+      share: "Share this article",
+      relatedPosts: "Related Articles",
+      relatedPostsDesc: "Read more articles from us",
+      copyLink: "Copy link",
+      linkCopied: "Link copied!",
     },
   },
   ar: {
@@ -517,6 +538,13 @@ export const translations: Record<Locale, UIStrings> = {
       keywords: "\u0628\u0627\u0642\u0627\u062A \u0633\u064A\u0627\u062D\u064A\u0629 \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u062C\u0648\u0644\u0627\u062A \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u0631\u062D\u0644\u0627\u062A \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u0633\u064A\u0627\u062D\u0629 \u0633\u0648\u0645\u0628\u0627\u0648\u0627\u060C \u062D\u0648\u062A \u0627\u0644\u062D\u0648\u062A \u0633\u0648\u0645\u0628\u0627\u0648\u0627\u060C \u0644\u0627\u0628\u0648\u0627\u0646 \u0628\u0627\u062C\u0648\u060C \u0631\u062D\u0644\u0629 \u0643\u0648\u0645\u0648\u062F\u0648\u060C \u062A\u0623\u062C\u064A\u0631 \u0633\u064A\u0627\u0631\u0627\u062A \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u0633\u0648\u0646\u062C\u0627\u0631 \u062C\u0631\u0648\u0628",
       siteName: "\u0633\u0648\u0646\u062C\u0627\u0631 \u062C\u0631\u0648\u0628",
     },
+    blogSection: {
+      share: "\u0634\u0627\u0631\u0643 \u0647\u0630\u0627 \u0627\u0644\u0645\u0642\u0627\u0644",
+      relatedPosts: "\u0645\u0642\u0627\u0644\u0627\u062A \u0630\u0627\u062A \u0635\u0644\u0629",
+      relatedPostsDesc: "\u0627\u0642\u0631\u0623 \u0645\u0642\u0627\u0644\u0627\u062A \u0623\u062E\u0631\u0649 \u0645\u0646\u0627",
+      copyLink: "\u0646\u0633\u062E \u0627\u0644\u0631\u0627\u0628\u0637",
+      linkCopied: "\u062A\u0645 \u0646\u0633\u062E \u0627\u0644\u0631\u0627\u0628\u0637!",
+    },
   },
   ms: {
     header: {
@@ -646,6 +674,13 @@ export const translations: Record<Locale, UIStrings> = {
       keywords: "pakej pelancongan lombok, tour lombok, open trip lombok, wisata sumbawa, whale shark sumbawa, wisata labuan bajo, tour komodo, sewa kereta lombok, sungkar group",
       siteName: "Sungkar Group",
     },
+    blogSection: {
+      share: "Kongsi artikel ini",
+      relatedPosts: "Artikel Berkaitan",
+      relatedPostsDesc: "Baca artikel lain daripada kami",
+      copyLink: "Salin pautan",
+      linkCopied: "Pautan disalin!",
+    },
   },
   zh: {
     header: {
@@ -774,6 +809,13 @@ export const translations: Record<Locale, UIStrings> = {
     seo: {
       keywords: "\u9F99\u6728\u5C9B\u65C5\u6E38\u5957\u9910, \u9F99\u6728\u5C9B\u4E00\u65E5\u6E38, \u9F99\u6728\u5C9B\u62FC\u56E2\u6E38, \u68EE\u5DF4\u74E6\u65C5\u6E38, \u68EE\u5DF4\u74E6\u9CA8\u9C7C, \u62C9\u5E03\u5B89\u5DF4\u7126\u65C5\u6E38, \u79D1\u6469\u591A\u65C5\u6E38, \u9F99\u6728\u5C9B\u6C7D\u8F66\u79DF\u8D41, Sungkar Group",
       siteName: "Sungkar Group",
+    },
+    blogSection: {
+      share: "\u5206\u4EAB\u6B64\u6587\u7AE0",
+      relatedPosts: "\u76F8\u5173\u6587\u7AE0",
+      relatedPostsDesc: "\u9605\u8BFB\u66F4\u591A\u6587\u7AE0",
+      copyLink: "\u590D\u5236\u94FE\u63A5",
+      linkCopied: "\u94FE\u63A5\u5DF2\u590D\u5236!",
     },
   },
 };
