@@ -1,3 +1,6 @@
+import { businessInfo } from "@/lib/contact-data";
+import { reviewStats } from "@/lib/content/reviews";
+
 export type SchemaType =
   | "Organization"
   | "LocalBusiness"
@@ -27,23 +30,20 @@ export function generateOrganizationSchema(siteUrl: string) {
     logo: `${siteUrl}/logo.png`,
     description:
       "Local Lombok-based tour operator for private tours, destinations, transportation, reviews, and travel guides.",
-    sameAs: [
-      "https://www.facebook.com/sungkargroup",
-      "https://www.instagram.com/sungkargroup",
-      "https://www.tiktok.com/sungkargroup",
-    ],
+    sameAs: Object.values(businessInfo.socialLinks),
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+62-370-XXX-XXXX",
+      telephone: businessInfo.phone,
       contactType: "Customer Service",
       areaServed: "ID",
-      availableLanguage: ["id", "en"],
+      availableLanguage: ["id", "en", "ar", "ms", "zh"],
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Kuta, Lombok",
-      addressLocality: "Lombok",
-      postalCode: "83612",
+      streetAddress: businessInfo.address.street,
+      addressLocality: businessInfo.address.city,
+      addressRegion: businessInfo.address.region,
+      postalCode: businessInfo.address.postalCode,
       addressCountry: "ID",
     },
   };
@@ -59,18 +59,18 @@ export function generateLocalBusinessSchema(siteUrl: string) {
       "Lombok tour operator with private tour, transportation, and local travel guide services.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Kuta, Lombok",
-      addressLocality: "Lombok",
-      postalCode: "83612",
+      streetAddress: businessInfo.address.street,
+      addressLocality: businessInfo.address.city,
+      addressRegion: businessInfo.address.region,
+      postalCode: businessInfo.address.postalCode,
       addressCountry: "ID",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "-8.7667",
-      longitude: "116.3500",
+      ...businessInfo.coordinates,
     },
     url: siteUrl,
-    telephone: "+62-370-XXX-XXXX",
+    telephone: businessInfo.phone,
     priceRange: "$$",
     servesCuisine: "Local Indonesian",
   };
@@ -155,15 +155,16 @@ export function generateProductSchema(
 
     offers: {
       "@type": "Offer",
-      price,
-      priceCurrency: "IDR",
+      ...(/^\d+$/.test(price)
+        ? { price, priceCurrency: "IDR" }
+        : { price: "https://schema.org/ContactForPrice" }),
       availability: "https://schema.org/InStock",
     },
 
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "156",
+      ratingValue: String(reviewStats.rating),
+      reviewCount: String(reviewStats.totalReviews),
     },
 
     ...(duration && { duration }),
@@ -210,7 +211,7 @@ export function generateArticleSchema(
     dateModified: dateModified || datePublished,
     author: {
       "@type": "Organization",
-      name: "Sungkar Group",
+      name: businessInfo.name,
     },
     publisher: {
       "@type": "Organization",
@@ -231,14 +232,6 @@ export function generateWebsiteSchema(siteUrl: string) {
     name: "Sungkar Group",
     description:
       "Local Lombok-based tour operator for private tours, destinations, transportation, reviews, and travel guides.",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${siteUrl}/search?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 

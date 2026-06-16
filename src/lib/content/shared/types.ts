@@ -217,3 +217,60 @@ export interface OGMetadata {
   imageAlt: string;
   type?: "website" | "article" | "profile";
 }
+
+// ─── Zod Schemas for Runtime Validation ────────────────────────────────
+import { z } from "zod";
+
+const regionSchema = z.enum(["lombok", "sumbawa", "labuan-bajo"]);
+
+export const TourPackageSchema = z.object({
+  slug: z.string().min(1),
+  title: z.string().min(1),
+  region: regionSchema,
+  featured: z.boolean().optional(),
+  collectionSlug: z.string().min(1),
+  collectionTitle: z.string().min(1),
+  category: z.string().min(1),
+  duration: z.string().min(1),
+  images: z.array(z.object({ src: z.string() }).or(z.string())).min(1),
+  summary: z.string().min(1),
+  highlights: z.array(z.string()),
+  itinerary: z.array(z.string()).min(1),
+  includes: z.array(z.string()),
+  excludes: z.array(z.string()),
+});
+
+export const DestinationSchema = z.object({
+  slug: z.string().min(1),
+  title: z.string().min(1),
+  region: z.string().min(1),
+  image: z.object({ src: z.string() }).or(z.string()),
+  gallery: z.array(z.object({ src: z.string() }).or(z.string())),
+  summary: z.string().min(1),
+  thingsToDo: z.array(z.string()),
+  packages: z.array(z.string()),
+});
+
+export const AccommodationSchema = z.object({
+  slug: z.string().min(1),
+  name: z.string().min(1),
+  region: regionSchema,
+  perks: z.array(z.string()),
+  regionalHighlights: z.array(z.string()),
+  description: z.string().min(1),
+  image: z.object({ src: z.string() }).or(z.string()),
+});
+
+export const VehicleSchema = z.object({
+  slug: z.string().min(1),
+  name: z.string().min(1),
+  region: regionSchema,
+  pricePerDay: z.string().min(1),
+  seats: z.number().int().positive(),
+  transmission: z.enum(["Manual", "Automatic"]),
+  features: z.array(z.string()),
+  bestFor: z.array(z.string()),
+  description: z.string().min(1),
+  imageTop: z.object({ src: z.string() }).or(z.string()),
+  imageBottom: z.object({ src: z.string() }).or(z.string()),
+});

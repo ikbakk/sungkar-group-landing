@@ -101,7 +101,7 @@ export interface OGMetadata {
  */
 export const pageOGMetadata: Record<string, OGMetadata> = {
   "/": {
-    title: "Sungkar Group - Tour and Travel - Tour and Travel",
+    title: "Sungkar Group - Tour and Travel",
     description:
       "Operator wisata Lombok berbasis lokal untuk tur pribadi, destinasi, transportasi, ulasan, dan panduan wisata.",
     image: HERO.lombok,
@@ -193,7 +193,17 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
  */
 export function getPageOGMetadata(pathname: string): OGMetadata {
   const normalizedPath = pathname.replace(/\/$/, "") || "/";
-  return pageOGMetadata[normalizedPath] || pageOGMetadata["/"];
+  if (pageOGMetadata[normalizedPath]) return pageOGMetadata[normalizedPath];
+
+  const segments = normalizedPath.split("/").filter(Boolean);
+  segments.pop();
+  while (segments.length > 0) {
+    const parentPath = "/" + segments.join("/");
+    if (pageOGMetadata[parentPath]) return pageOGMetadata[parentPath];
+    segments.pop();
+  }
+
+  return pageOGMetadata["/"];
 }
 
 /**

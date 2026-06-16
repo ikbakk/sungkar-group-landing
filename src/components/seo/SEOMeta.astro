@@ -74,6 +74,11 @@ const localeMap: Record<string, string> = {
 const ogLocale = localeMap[locale] || "id_ID";
 
 const uiStrings = t(locale);
+
+const basePath = locale === "id"
+  ? canonicalPath
+  : canonicalPath.replace(new RegExp("^/" + locale), "") || "/";
+const defaultUrl = new URL(basePath, SITE_URL).toString();
 ---
 
 <meta charset="utf-8" />
@@ -87,12 +92,12 @@ const uiStrings = t(locale);
 <link rel="canonical" href={canonicalUrl} />
 
 <link rel="alternate" href={canonicalUrl} hreflang={locale} />
+<link rel="alternate" href={defaultUrl} hreflang="x-default" />
 {
   LOCALES.filter((l) => l !== locale).map((l) => {
-    const altUrl = new URL(
-      l === "id" ? canonicalPath : `/${l}${canonicalPath}`,
-      SITE_URL,
-    ).toString();
+    const altUrl = l === "id"
+      ? defaultUrl
+      : new URL(`/${l}${basePath}`, SITE_URL).toString();
     return <link rel="alternate" href={altUrl} hreflang={l} />;
   })
 }
