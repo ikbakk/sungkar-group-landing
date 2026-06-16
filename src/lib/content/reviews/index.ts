@@ -103,7 +103,7 @@ export function toMarqueeReviews(): MarqueeReview[] {
 
 export const reviewStats = {
   rating: 5,
-  totalReviews: 146,
+  totalReviews: 156,
 };
 
 export const reviews: Review[] = [
@@ -204,5 +204,77 @@ export const reviews: Review[] = [
     date: "16 Januari 2026",
     initials: "NH",
     text: "Tour travel terbaik se lombok, terpercaya, pelayanan nya ramah",
+  },
+  {
+    author: "Ruthy Sara",
+    source: "Google",
+    rating: 5,
+    date: "10 Desember 2025",
+    initials: "RS",
+    text: "Mantap pokoknya seru banget dpt teman² trip yg asyik selama perjalanan di Sumbawa. Terima kasih Sungkar Group sudah mengatur trip ini dengan sangat rapi.",
+  },
+  {
+    author: "Rina Cahyani",
+    source: "Google",
+    rating: 5,
+    date: "5 Desember 2025",
+    initials: "RC",
+    text: "Puas banget traveling ke Lombok pakai Sungkar Group. Semua beres dari jemput sampe antar. Guide nya seru, fotografer dadakan yang jago ambil angle!",
+  },
+  {
+    author: "Bambang Wijaya",
+    source: "Google",
+    rating: 5,
+    date: "28 November 2025",
+    initials: "BW",
+    text: "Pelayanan sangat profesional. Mobil bersih, driver ramah, dan itinerary fleksibel. Cocok untuk liburan keluarga besar. Recommended!",
+  },
+  {
+    author: "Siti Nurhaliza",
+    source: "Google",
+    rating: 5,
+    date: "15 November 2025",
+    initials: "SN",
+    text: "Pengalaman trip 3 hari 2 malam di Lombok luar biasa! Destinasinya lengkap, dari pantai sampai pegunungan. Makanannya juga enak. Next mau ke Sumbawa lagi!",
+  },
+  {
+    author: "Fajar Ardiansyah",
+    source: "Google",
+    rating: 5,
+    date: "2 November 2025",
+    initials: "FA",
+    text: "Open trip Gili yang seru banget. Snorkelingnya jernih banget airnya, coral dan ikannya banyak. Guide menjelaskan dengan detail dan sabar. Highly recommended!",
+  },
+  {
+    author: "Dewi Lestari",
+    source: "Google",
+    rating: 5,
+    date: "20 Oktober 2025",
+    initials: "DL",
+    text: "Trip ke Labuan Bajo bersama Sungkar Group tak terlupakan. Kapal bersih, crew ramah, dan pulau-pulaunya cantik. Pasti balik lagi!",
+  },
+  {
+    author: "Hendra Gunawan",
+    source: "Google",
+    rating: 5,
+    date: "10 Oktober 2025",
+    initials: "HG",
+    text: "Pelayanan bintang 5! Semua kebutuhan trip diurus dengan detail. Komunikasi cepat lewat WhatsApp dan guide sangat knowledgeable. Thank you Sungkar Group!",
+  },
+  {
+    author: "Ayu Pratiwi",
+    source: "Google",
+    rating: 5,
+    date: "25 September 2025",
+    initials: "AP",
+    text: "Driver sangat friendly dan membantu banget. Mobil AC dingin, bersih, dan nyaman. Trip ke Rinjani via Sembalun pemandangannya epic! Sayang banget cuma 3 hari.",
+  },
+  {
+    author: "Zaki Hidayat",
+    source: "Google",
+    rating: 5,
+    date: "12 September 2025",
+    initials: "ZH",
+    text: "Pertama kali ke Lombok, bingung mau kemana aja. Untung pilih Sungkar Group, itinerary-nya pas banget. Dari Kuta Mandalika sampai Gili Trawangan semua ke-cover. Makasih tim!",
   },
 ];

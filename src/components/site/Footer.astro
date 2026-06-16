@@ -20,12 +20,12 @@ const uiStrings = t(locale);
   socials={[
     {
       label: "Instagram",
-      href: "https://www.instagram.com/",
+      href: "https://www.instagram.com/tour_lombok/reels/",
       icon: "instagram",
     },
     {
       label: "YouTube",
-      href: "https://www.youtube.com/",
+      href: "https://www.youtube.com/@sungkargroup1",
       icon: "youtube",
     },
   ]}
@@ -38,19 +38,21 @@ const uiStrings = t(locale);
         { label: uiStrings.breadcrumb.carRental, href: "/sewa-mobil" },
         { label: uiStrings.breadcrumb.destinations, href: "/destinasi" },
         { label: uiStrings.breadcrumb.travelGuides, href: "/panduan-wisata" },
+        { label: uiStrings.breadcrumb.blog, href: "/blog" },
       ],
     },
     {
       title: uiStrings.footer.destinations,
       links: [
-        { label: "Lombok", href: "/tour-packages/lombok" },
-        { label: "Sumbawa", href: "/tour-packages/sumbawa" },
-        { label: "Labuan Bajo", href: "/tour-packages/labuan-bajo" },
+        { label: "Lombok", href: "/destinasi" },
+        { label: "Sumbawa", href: "/destinasi" },
+        { label: "Labuan Bajo", href: "/destinasi" },
       ],
     },
     {
       title: uiStrings.footer.company,
       links: [
+        { label: uiStrings.breadcrumb.faq, href: "/faq" },
         { label: uiStrings.breadcrumb.reviews, href: "/ulasan" },
         { label: uiStrings.breadcrumb.about, href: "/tentang-kami" },
         { label: uiStrings.breadcrumb.contact, href: "/kontak" },
@@ -59,7 +61,7 @@ const uiStrings = t(locale);
   ]}
   copyright={uiStrings.footer.copyright.replace("{year}", String(currentYear))}
   bottomLinks={[
-    { label: uiStrings.footer.privacy, href: localizeHref("/", locale) },
-    { label: uiStrings.footer.terms, href: localizeHref("/", locale) },
+    { label: uiStrings.footer.privacy, href: localizeHref("/kebijakan-privasi", locale) },
+    { label: uiStrings.footer.terms, href: localizeHref("/syarat-ketentuan", locale) },
   ]}
 />

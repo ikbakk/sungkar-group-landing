@@ -64,7 +64,7 @@ export const businessInfo: BusinessInfo = {
     longitude: 116.0815306,
   },
   socialLinks: {
-    instagram: "https://www.instagram.com/sungkargroup",
+    instagram: "https://www.instagram.com/tour_lombok/reels/",
     youtube: "https://www.youtube.com/@sungkargroup1",
   },
 };
