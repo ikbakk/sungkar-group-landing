@@ -1,5 +1,5 @@
 ---
-import type { ImageMetadata } from "astro"
+import type { ImageSource } from "@/lib/images"
 
 import { cn } from "@/lib/utils"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -16,7 +16,7 @@ type Props = {
   alignment?: "left" | "center" | "right"
   reviews: {
     quote: string
-    image?: ImageMetadata
+    image?: ImageSource
     initials: string
     name: string
     role: string

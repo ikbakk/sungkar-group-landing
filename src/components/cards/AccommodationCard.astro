@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -28,7 +28,7 @@ const region = REGION_MAP[accommodation.region];
     <!-- Image -->
 
     <div class="relative overflow-hidden">
-      <Image
+      <OptimizedImage
         src={accommodation.image}
         alt={accommodation.name}
         class="aspect-4/3

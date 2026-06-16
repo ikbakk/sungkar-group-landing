@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit — Sungkar Group</title>
+<style>
+  :root {
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+    --red-100: #fee2e2;
+    --red-600: #dc2626;
+    --red-700: #b91c1c;
+    --orange-100: #ffedd5;
+    --orange-600: #ea580c;
+    --yellow-100: #fef9c3;
+    --yellow-700: #a16207;
+    --emerald-100: #d1fae5;
+    --emerald-600: #059669;
+    --blue-100: #dbeafe;
+    --blue-600: #2563eb;
+    --blue-700: #1d4ed8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--slate-800);
+    background: var(--slate-50);
+  }
+  .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+  /* Header */
+  .report-header {
+    background: linear-gradient(135deg, var(--slate-900), var(--slate-700));
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  .report-header h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .report-header p { color: var(--slate-300); font-size: 0.95rem; }
+  .report-header .meta { margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; font-size: 0.85rem; color: var(--slate-300); }
+
+  /* Summary cards */
+  .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+  .summary-card { background: white; border-radius: 10px; padding: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); text-align: center; }
+  .summary-card .count { font-size: 2rem; font-weight: 700; line-height: 1.2; }
+  .summary-card .label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--slate-600); margin-top: 0.25rem; }
+  .summary-card.high .count { color: var(--red-600); }
+  .summary-card.medium .count { color: var(--orange-600); }
+  .summary-card.low .count { color: var(--yellow-700); }
+  .summary-card.pages .count { color: var(--blue-600); }
+  .summary-card.schemas .count { color: var(--emerald-600); }
+
+  /* Sections */
+  section { margin-bottom: 2.5rem; }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--slate-900);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--slate-200);
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--slate-700);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Issue cards */
+  .issue { background: white; border-radius: 10px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 4px solid var(--slate-300); }
+  .issue.high { border-left-color: var(--red-600); }
+  .issue.medium { border-left-color: var(--orange-600); }
+  .issue.low { border-left-color: var(--yellow-700); }
+  .issue-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.5rem; }
+  .issue-title { font-weight: 600; font-size: 0.95rem; }
+  .badge {
+    display: inline-block; font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
+    padding: 0.2rem 0.6rem; border-radius: 999px; white-space: nowrap; flex-shrink: 0;
+  }
+  .badge.high { background: var(--red-100); color: var(--red-700); }
+  .badge.medium { background: var(--orange-100); color: var(--orange-600); }
+  .badge.low { background: var(--yellow-100); color: var(--yellow-700); }
+  .issue-desc { font-size: 0.88rem; color: var(--slate-600); }
+  .issue-desc code { font-size: 0.82rem; background: var(--slate-100); padding: 0.1rem 0.35rem; border-radius: 4px; color: var(--slate-800); }
+  .issue-desc ul { margin-top: 0.4rem; padding-left: 1.25rem; }
+  .issue-desc li { margin-bottom: 0.25rem; }
+  .fix { margin-top: 0.6rem; padding: 0.6rem 0.8rem; background: var(--emerald-100); border-radius: 6px; font-size: 0.85rem; color: var(--slate-700); }
+  .fix strong { color: var(--emerald-600); }
+
+  /* Tables */
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 0.75rem; }
+  th { text-align: left; padding: 0.6rem 0.75rem; background: var(--slate-100); font-weight: 600; color: var(--slate-700); border-bottom: 2px solid var(--slate-200); }
+  td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--slate-200); color: var(--slate-600); vertical-align: top; }
+  tr:hover td { background: var(--slate-50); }
+  .check { color: var(--emerald-600); font-weight: 700; }
+  .cross { color: var(--red-600); }
+
+  /* Findings grid */
+  .finding { margin-bottom: 0.5rem; }
+  .finding-label { font-weight: 600; font-size: 0.85rem; color: var(--slate-700); }
+  .finding-value { font-size: 0.85rem; color: var(--slate-600); }
+
+  /* Code */
+  pre { background: var(--slate-800); color: #e2e8f0; padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.8rem; overflow-x: auto; margin: 0.5rem 0; }
+  code { font-family: 'JetBrains Mono', 'Consolas', monospace; font-size: 0.82rem; }
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <h1>SEO Audit Report</h1>
+  <p>Sungkar Group — Tour &amp; Travel Agency (Lombok, Sumbawa, Labuan Bajo)</p>
+  <div class="meta">
+    <span>Audit Date: June 2026</span>
+    <span>Pages Audited: 310</span>
+    <span>Data Source: On-page signals, content structure, code analysis</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Summary -->
+  <div class="summary">
+    <div class="summary-card high">
+      <div class="count">7</div>
+      <div class="label">High Priority</div>
+    </div>
+    <div class="summary-card medium">
+      <div class="count">9</div>
+      <div class="label">Medium Priority</div>
+    </div>
+    <div class="summary-card low">
+      <div class="count">6</div>
+      <div class="label">Low Priority</div>
+    </div>
+    <div class="summary-card pages">
+      <div class="count">310</div>
+      <div class="label">Total Pages Built</div>
+    </div>
+    <div class="summary-card schemas">
+      <div class="count">10</div>
+      <div class="label">Schema Types</div>
+    </div>
+  </div>
+
+  <!-- Quick Wins -->
+  <section>
+    <h2>Quick Wins (Fix in &lt; 30 minutes)</h2>
+
+    <div class="issue high">
+      <div class="issue-header">
+        <span class="issue-title">1. Blog &amp; guide posts missing OG images</span>
+        <span class="badge high">HIGH</span>
+      </div>
+      <div class="issue-desc">
+        Blog detail pages (<code>blog/[slug]</code>) and guide detail pages (<code>panduan-wisata/[slug]</code>) do not pass an <code>ogImage</code> prop to <code>MainLayout</code>. Social shares of these pages will show no image or a fallback.
+      </div>
+      <div class="fix"><strong>Fix:</strong> Pass <code>ogImage</code> from the content's <code>featuredImage</code> field (or a default) to <code>MainLayout</code> in both page templates.</div>
+    </div>
+
+    <div class="issue medium">
+      <div class="issue-header">
+        <span class="issue-title">2. Social media links point to generic URLs</span>
+        <span class="badge medium">MEDIUM</span>
+      </div>
+      <div class="issue-desc">
+        Instagram and YouTube footer links target <code>instagram.com/</code> and <code>youtube.com/</code> (homepages) instead of the actual Sungkar Group profiles.
+      </div>
+      <div class="fix"><strong>Fix:</strong> Update <code>Footer.astro</code> social link hrefs to the real profile URLs.</div>
+    </div>
+
+    <div class="issue high">
+      <div class="issue-header">
+        <span class="issue-title">3. Privacy policy &amp; terms pages are missing</span>
+        <span class="badge high">HIGH</span>
+      </div>
+      <div class="issue-desc">
+        Footer links for "Kebijakan Privasi" and "Syarat &amp; Ketentuan" both point to <code>/</code> (homepage). No actual privacy or terms pages exist. This is a trust signal gap and may affect legal compliance.
+      </div>
+      <div class="fix"><strong>Fix:</strong> Create <code>kebijakan-privasi</code> and <code>syarat-ketentuan</code> pages (or route them to real content).</div>
+    </div>
+
+    <div class="issue high">
+      <div class="issue-header">
+        <span class="issue-title">4. Homepage OG title has duplicated text</span>
+        <span class="badge high">HIGH</span>
+      </div>
+      <div class="issue-desc">
+        OG metadata title resolves to "Sungkar Group - Tour and Travel - Tour and Travel" (the suffix is appended twice). Check <code>SEOMeta.astro</code> title suffix logic.
+      </div>
+      <div class="fix"><strong>Fix:</strong> Ensure the title deduplication check in <code>SEOMeta.astro</code> handles the homepage correctly.</div>
+    </div>
+  </section>
+
+  <!-- Full Findings -->
+  <section>
+    <h2>All Findings by Priority</h2>
+
+    <h3>🔴 High Priority (7 issues)</h3>
+
+    <div class="issue high">
+      <div class="issue-header">
+        <span class="issue-title">H1. Hreflang double-prefix bug on locale pages</span>
+        <span class="badge high">HIGH</span>
+      </div>
+      <div class="issue-desc">
+        On non-Indonesian locale pages (e.g. <code>/en/destinations</code>), alternate links for other non-default locales get double-prefixed: <code>/ar/en/destinations</code> instead of <code>/ar/destinations</code>. This causes incorrect language targeting. The bug is in <code>SEOMeta.astro</code> lines ~80-89 — the <code>canonicalPath</code> still includes the current locale prefix, and the code unconditionally prepends <code>/${l}</code>.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Strip the current locale prefix from <code>canonicalPath</code> before generating alternate URLs. Use the <code>DEFAULT_LOCALE</code> constant instead of hardcoded <code>"id"</code>. Consider using <code>getLocalizedPath()</code> from <code>@/lib/i18n</code>.
+      </div>
+    </div>
+
+    <div class="issue high">
+      <div class="issue-header">
+        <span class="issue-title">H2. Missing <code>x-default</code> hreflang tag</span>
+        <span class="badge high">HIGH</span>
+      </div>
+      <div class="issue-desc">
+        No <code>&lt;link rel="alternate" hreflang="x-default"&gt;</code> is generated. This tag tells Google which page to show when no language matches the user's preference. Without it, language targeting may be inconsistent in international search results.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Add <code>&lt;link rel="alternate" href="..." hreflang="x-default" /&gt;</code> pointing to the Indonesian (default locale) version, since that's the most complete content set.
+      </div>
+    </div>
+
+    <div class="issue high">
+      <div class="issue-header">
+        <span class="issue-title">H3. Fake / placeholder business data in schemas</span>
+        <span class="badge high">HIGH</span>
+      </div>
+      <div class="issue-desc">
+        <ul>
+          <li><code>Organization</code> schema uses <code>+62-370-XXX-XXXX</code> — this is a placeholder, not a real phone number</li>
+          <li><code>sameAs</code> URLs are mock links, not the actual social profiles</li>
+        </ul>
+        Google may flag this as inaccurate data and lose trust in the site's structured data.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Update <code>schemas.ts</code> with real phone number and actual social profile URLs.
+      </div>
+    </div>
+
+    <div class="issue high">
+      <div class="issue-header">
+        <span class="issue-title">H4. Static coordinates in TouristAttraction schema</span>
+        <span class="badge high">HIGH</span>
+      </div>
+      <div class="issue-desc">
+        All destination pages use the same lat/lng (<code>-8.7667, 116.3500</code>) in their <code>TouristAttraction</code> schema. This means every destination looks like it's at the same location to Google. The <code>destinations</code> data already has per-destination coordinates (check <code>latitude</code>/<code>longitude</code> fields in the data files), but the schema generator doesn't use them.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Pass per-destination coordinates to <code>generateTouristAttractionSchema()</code> and update the function to accept dynamic lat/lng.
+      </div>
+    </div>
+
+    <div class="issue high">
+      <div class="issue-header">
+        <span class="issue-title">H5. Hardcoded aggregate rating in Product schema</span>
+        <span class="badge high">HIGH</span>
+      </div>
+      <div class="issue-desc">
+        All tour packages and vehicles use the same <code>aggregateRating</code>: <code>ratingValue: 4.8</code>, <code>reviewCount: 156</code>. This is the same across all packages regardless of actual reviews. Google may penalize inauthentic structured data.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Remove <code>aggregateRating</code> from packages that don't have actual review data, or implement per-package ratings from a real reviews source.
+      </div>
+    </div>
+
+    <div class="issue high">
+      <div class="issue-header">
+        <span class="issue-title">H6. Blog post layout: empty image in NewsArticle schema</span>
+        <span class="badge high">HIGH</span>
+      </div>
+      <div class="issue-desc">
+        <code>generateArticleSchema()</code> is called with an empty string <code>""</code> for the image parameter on blog posts that have no featured image. Google requires a valid image URL for <code>NewsArticle</code> schema.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Fall back to a default OG image when <code>featuredImage</code> is not set, or omit the <code>image</code> field from the schema.
+      </div>
+    </div>
+
+    <div class="issue high">
+      <div class="issue-header">
+        <span class="issue-title">H7. Orphan pages: privacy &amp; terms don't exist</span>
+        <span class="badge high">HIGH</span>
+      </div>
+      <div class="issue-desc">
+        Already listed in Quick Wins (#3). Footer links navigate to <code>/</code>, providing a poor user experience and missing a trust signal for conversions.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Create dedicated pages for Kebijakan Privasi and Syarat &amp; Ketentuan.
+      </div>
+    </div>
+
+    <h3>🟠 Medium Priority (9 issues)</h3>
+
+    <div class="issue medium">
+      <div class="issue-header">
+        <span class="issue-title">M1. Breadcrumb home URL on locale detail pages is absolute <code>/</code> instead of locale-prefixed</span>
+        <span class="badge medium">MEDIUM</span>
+      </div>
+      <div class="issue-desc">
+        On locale detail pages (e.g., <code>/en/destinations/[slug]</code>), the breadcrumb home link points to <code>"/"</code> instead of <code>"/en"</code>. This sends users to the Indonesian homepage when they expected their locale's homepage.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Use <code>homeHref</code> variable (already defined in some locale pages) in breadcrumb instead of hardcoded <code>"/"</code>.
+      </div>
+    </div>
+
+    <div class="issue medium">
+      <div class="issue-header">
+        <span class="issue-title">M2. No Search page (WebSite schema targets nonexistent <code>/search</code>)</span>
+        <span class="badge medium">MEDIUM</span>
+      </div>
+      <div class="issue-desc">
+        The <code>WebSite</code> schema includes a <code>SearchAction</code> pointing to <code>/search?q={search_term_string}</code>, but no search page or functionality exists. This is technically misleading structured data.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Either implement a search page (even a simple client-side filter), or remove the <code>SearchAction</code> from the <code>WebSite</code> schema.
+      </div>
+    </div>
+
+    <div class="issue medium">
+      <div class="issue-header">
+        <span class="issue-title">M3. Duplicate OG image across 6 page types</span>
+        <span class="badge medium">MEDIUM</span>
+      </div>
+      <div class="issue-desc">
+        <code>hero-lombok.webp</code> is reused for: <code>/</code>, <code>/paket-wisata</code>, <code>/ulasan</code>, <code>/kontak</code>, <code>/faq</code>, <code>/sewa-mobil</code>. Distinct OG images per page type improve social share performance.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Use more specific OG images for each page type (e.g., tour packages image for <code>/paket-wisata</code>, vehicle image for <code>/sewa-mobil</code>).
+      </div>
+    </div>
+
+    <div class="issue medium">
+      <div class="issue-header">
+        <span class="issue-title">M4. Accommodation region pages missing explicit OG image</span>
+        <span class="badge medium">MEDIUM</span>
+      </div>
+      <div class="issue-desc">
+        <code>/akomodasi/[slug]</code> and its locale variants don't pass an <code>ogImage</code> prop, falling back to generic defaults.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Pass a region-appropriate accommodation image as <code>ogImage</code> to <code>MainLayout</code>.
+      </div>
+    </div>
+
+    <div class="issue medium">
+      <div class="issue-header">
+        <span class="issue-title">M5. Blog list page (<code>/blog</code> and locale variants) missing description/keyword optimization</span>
+        <span class="badge medium">MEDIUM</span>
+      </div>
+      <div class="issue-desc">
+        The blog lists use hardcoded Indonesian descriptions in the PageHeader. Locale variants in <code>/[locale]/blog/index.astro</code> also hardcode Indonesian text for the eyebrow/title/description. The meta description uses the hardcoded Indonesian string regardless of locale.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Use locale-aware strings (<code>uiStrings.page.blog</code> etc.) for blog list page content and meta descriptions across all locales.
+      </div>
+    </div>
+
+    <div class="issue medium">
+      <div class="issue-header">
+        <span class="issue-title">M6. No <code>public/robots.txt</code> static fallback</span>
+        <span class="badge medium">MEDIUM</span>
+      </div>
+      <div class="issue-desc">
+        <code>robots.txt</code> is generated only at build time by the <code>astro-robots-txt</code> integration. There's no static fallback in <code>public/</code>. If the build integration fails silently, there's no robots.txt at all.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Add a minimal <code>public/robots.txt</code> as fallback (the build output will override it).
+      </div>
+    </div>
+
+    <div class="issue medium">
+      <div class="issue-header">
+        <span class="issue-title">M7. Sitemap lacks i18n configuration</span>
+        <span class="badge medium">MEDIUM</span>
+      </div>
+      <div class="issue-desc">
+        The <code>@astrojs/sitemap</code> integration uses default settings. There's no <code>i18n</code> config for the sitemap to indicate locale variants of the same page. The sitemap also has no custom <code>filter</code> to exclude any unwanted URLs.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Add sitemap <code>i18n</code> configuration with locales and default locale, and consider a <code>filter</code> to exclude any test/staging URLs.
+      </div>
+    </div>
+
+    <div class="issue medium">
+      <div class="issue-header">
+        <span class="issue-title">M8. Non-default locale pages use Indonesian strings in PageHeader</span>
+        <span class="badge medium">MEDIUM</span>
+      </div>
+      <div class="issue-desc">
+        Several locale page variants hardcode Indonesian eyebrow, title, and description text in the <code>PageHeader</code> component instead of using locale-aware strings. For example, <code>/en/destinations/index.astro</code> shows "Destinasi" (Indonesian) as the eyebrow.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Use <code>uiStrings.page.destinations</code> etc. in all locale page templates instead of hardcoded Indonesian text.
+      </div>
+    </div>
+
+    <div class="issue medium">
+      <div class="issue-header">
+        <span class="issue-title">M9. Guide detail pages missing OG image</span>
+        <span class="badge medium">MEDIUM</span>
+      </div>
+      <div class="issue-desc">
+        Both <code>/panduan-wisata/[slug]</code> and <code>/[locale]/travel-guides/[slug]</code> do not pass an <code>ogImage</code> to <code>MainLayout</code>. Social shares of guide content lack images.
+      </div>
+      <div class="fix">
+        <strong>Fix:</strong> Pass a default guide OG image (or region-specific image) to <code>MainLayout</code> in guide detail page templates.
+      </div>
+    </div>
+
+    <h3>🟡 Low Priority (6 issues)</h3>
+
+    <div class="issue low">
+      <div class="issue-header">
+        <span class="issue-title">L1. Canonical for locale homepage lacks trailing slash</span>
+        <span class="badge low">LOW</span>
+      </div>
+      <div class="issue-desc">
+        Locale homepage canonical is set to <code>"/en"</code> instead of <code>"/en/"</code>. Astro typically normalizes trailing slashes, but inconsistency could cause minor canonical confusion.
+      </div>
+      <div class="fix"><strong>Fix:</strong> Normalize to <code>${locale}/</code> with trailing slash.</div>
+    </div>
+
+    <div class="issue low">
+      <div class="issue-header">
+        <span class="issue-title">L2. Hardcoded <code>"id"</code> string instead of <code>DEFAULT_LOCALE</code> constant</span>
+        <span class="badge low">LOW</span>
+      </div>
+      <div class="issue-desc">
+        In <code>SEOMeta.astro</code>, the default locale check uses <code>l === "id"</code> instead of the <code>DEFAULT_LOCALE</code> constant from <code>@/lib/i18n</code>. If the default locale ever changes, this will break.
+      </div>
+      <div class="fix"><strong>Fix:</strong> Import and use <code>DEFAULT_LOCALE</code> from <code>@/lib/i18n</code>.</div>
+    </div>
+
+    <div class="issue low">
+      <div class="issue-header">
+        <span class="issue-title">L3. No image CDN configured</span>
+        <span class="badge low">LOW</span>
+      </div>
+      <div class="issue-desc">
+        <code>site-config.ts</code> has a TODO comment about adding a CDN origin. Images are served from the same domain. For a travel site with many photos, a CDN would improve load times.
+      </div>
+      <div class="fix"><strong>Fix:</strong> Implement image CDN (Cloudinary, Cloudflare Images, etc.) and update <code>CDN_ORIGIN</code>.</div>
+    </div>
+
+    <div class="issue low">
+      <div class="issue-header">
+        <span class="issue-title">L4. MS and ZH blog/guide content uses English stubs</span>
+        <span class="badge low">LOW</span>
+      </div>
+      <div class="issue-desc">
+        Malay and Chinese locale content for blog posts and guides uses English text. While this doesn't break SEO, it provides a poor user experience for native speakers and may increase bounce rate.
+      </div>
+      <div class="fix"><strong>Fix:</strong> Provide proper Malay and Chinese translations when available.</div>
+    </div>
+
+    <div class="issue low">
+      <div class="issue-header">
+        <span class="issue-title">L5. <code>author</code> varies by locale in blog frontmatter but not set in NewsArticle schema</span>
+        <span class="badge low">LOW</span>
+      </div>
+      <div class="issue-desc">
+        The <code>author</code> field in blog frontmatter differs by locale (e.g., "Tim Sungkar Group" vs "Sungkar Group Team"), but the <code>NewsArticle</code> schema doesn't include an <code>author</code> property.
+      </div>
+      <div class="fix"><strong>Fix:</strong> Add <code>author</code> to <code>generateArticleSchema()</code> and pass it from the blog post data.</div>
+    </div>
+
+    <div class="issue low">
+      <div class="issue-header">
+        <span class="issue-title">L6. Only Instagram and YouTube in social links — no Facebook, TikTok, or X</span>
+        <span class="badge low">LOW</span>
+      </div>
+      <div class="issue-desc">
+        The footer only links Instagram and YouTube. For a travel agency in Indonesia, Facebook and TikTok are commonly used platforms that could drive additional traffic and serve as positive trust signals.
+      </div>
+      <div class="fix"><strong>Fix:</strong> Add Facebook and TikTok links if the agency has active profiles on those platforms.</div>
+    </div>
+  </section>
+
+  <!-- On-Page Audit Summary -->
+  <section>
+    <h2>On-Page SEO Audit Summary</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Signal</th>
+            <th>Status</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Title tags</td>
+            <td class="check">✅ GOOD</td>
+            <td>Unique per page, locale-aware, brand suffix consistent</td>
+          </tr>
+          <tr>
+            <td>Meta descriptions</td>
+            <td class="check">✅ GOOD</td>
+            <td>Present on all pages, descriptive, locale-aware</td>
+          </tr>
+          <tr>
+            <td>Canonical URLs</td>
+            <td class="check">✅ GOOD</td>
+            <td>Self-referencing canonical on every page</td>
+          </tr>
+          <tr>
+            <td>Hreflang</td>
+            <td class="cross">⚠️ BUG</td>
+            <td>Double-prefix bug on locale pages; missing <code>x-default</code></td>
+          </tr>
+          <tr>
+            <td>Heading hierarchy</td>
+            <td class="check">✅ GOOD</td>
+            <td>Single H1 per page, logical H2/H3 nesting</td>
+          </tr>
+          <tr>
+            <td>Structured data</td>
+            <td class="check">✅ GOOD (with caveats)</td>
+            <td>10 schema types used; placeholder data in several (see High issues H3-H6)</td>
+          </tr>
+          <tr>
+            <td>OG tags</td>
+            <td class="cross">⚠️ PARTIAL</td>
+            <td>Present but missing images on blog, guides, some accommodation pages</td>
+          </tr>
+          <tr>
+            <td>Twitter cards</td>
+            <td class="check">✅ GOOD</td>
+            <td>Present when OG image exists; <code>summary_large_image</code> for image pages</td>
+          </tr>
+          <tr>
+            <td>Image alt text</td>
+            <td class="check">✅ GOOD</td>
+            <td>Astro Image component optimizes; alt text present where needed</td>
+          </tr>
+          <tr>
+            <td>Internal linking</td>
+            <td class="check">✅ GOOD</td>
+            <td>Nav links all locale-aware via <code>localizeHref()</code>; breadcrumbs present on detail pages</td>
+          </tr>
+          <tr>
+            <td>URL structure</td>
+            <td class="check">✅ GOOD</td>
+            <td>Clean, descriptive, hierarchical (akomodasi/lombok, paket-wisata/lombok/3-hari-2-malam)</td>
+          </tr>
+          <tr>
+            <td>Sitemap</td>
+            <td class="check">✅ GOOD</td>
+            <td>Generated automatically; linked in <code>&lt;head&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Robots.txt</td>
+            <td class="check">✅ GOOD</td>
+            <td>Generated automatically at build time</td>
+          </tr>
+          <tr>
+            <td>Page load hints</td>
+            <td class="cross">⚠️ PARTIAL</td>
+            <td>No explicit preload/preconnect for critical assets; relies on Vercel edge</td>
+          </tr>
+          <tr>
+            <td>Mobile responsiveness</td>
+            <td class="check">✅ GOOD</td>
+            <td>Tailwind responsive classes, mobile nav drawer, viewport meta set</td>
+          </tr>
+          <tr>
+            <td>RTL support</td>
+            <td class="check">✅ GOOD</td>
+            <td>Arabic locale sets <code>dir="rtl"</code>, Cairo font, RTL-aware layout</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Content & Keyword Alignment -->
+  <section>
+    <h2>Content &amp; Keyword Alignment</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Page / Section</th>
+            <th>Target Keywords (Implied)</th>
+            <th>Content Quality</th>
+            <th>Gap</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Homepage</td>
+            <td><code>paket wisata lombok, tour lombok, sungkar group</code></td>
+            <td>✅ Strong hero, CTA, destination cards, package highlights</td>
+            <td>No explicit H1 targeting main keyword; generic "Jelajahi Destinasi"</td>
+          </tr>
+          <tr>
+            <td>Destinasi pages</td>
+            <td><code>wisata [destinasi], [destinasi] lombok</code></td>
+            <td>✅ Per-destination content with descriptions, galleries</td>
+            <td>Coordinates missing from schema; some destinations have thin content</td>
+          </tr>
+          <tr>
+            <td>Tour packages</td>
+            <td><code>paket wisata lombok [durasi], tour lombok murah</code></td>
+            <td>✅ Detailed itineraries, inclusions, pricing</td>
+            <td>No user reviews / ratings linked to each package; <code>aggregateRating</code> is fake</td>
+          </tr>
+          <tr>
+            <td>Blog</td>
+            <td><code>tips liburan lombok, persiapan liburan, panduan wisata</code></td>
+            <td>✅ Good short-form content</td>
+            <td>Only 2 posts — need more volume for topical authority</td>
+          </tr>
+          <tr>
+            <td>Travel guides</td>
+            <td><code>panduan wisata lombok, waktu terbaik lombok</code></td>
+            <td>✅ In-depth, well structured with key takeaways</td>
+            <td>3 guides is a good start; add guides for Sumbawa and Labuan Bajo</td>
+          </tr>
+          <tr>
+            <td>Car rental</td>
+            <td><code>sewa mobil lombok, rental mobil lombok</code></td>
+            <td>✅ Vehicle list with specs, pricing</td>
+            <td>No comparison content, no "why rent with us" section</td>
+          </tr>
+          <tr>
+            <td>Accommodations</td>
+            <td><code>hotel lombok, penginapan lombok</code></td>
+            <td>⚠️ Thin — just a list with links</td>
+            <td>No actual accommodation data; links to external booking</td>
+          </tr>
+          <tr>
+            <td>About / Contact / FAQ</td>
+            <td><code>sungkar group, kontak travel lombok</code></td>
+            <td>✅ Information-complete</td>
+            <td>Add FAQ schema improvements with Q&A pairs</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Structured Data Inventory -->
+  <section>
+    <h2>Structured Data Inventory</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Schema Type</th>
+            <th>Used On</th>
+            <th>Correctness</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Organization</td>
+            <td>All pages (global)</td>
+            <td class="cross">⚠️ Placeholder phone &amp; social URLs</td>
+          </tr>
+          <tr>
+            <td>WebSite + SearchAction</td>
+            <td>All pages (global)</td>
+            <td class="cross">⚠️ SearchAction targets nonexistent <code>/search</code></td>
+          </tr>
+          <tr>
+            <td>BreadcrumbList</td>
+            <td>Destinations, packages, vehicles</td>
+            <td class="cross">⚠️ Home breadcrumb on locale pages uses absolute <code>/</code></td>
+          </tr>
+          <tr>
+            <td>FAQPage</td>
+            <td>Multiple pages (destinations, packages, etc.)</td>
+            <td class="check">✅ Present on all relevant pages</td>
+          </tr>
+          <tr>
+            <td>TouristAttraction</td>
+            <td>Destination detail pages</td>
+            <td class="cross">⚠️ Static coordinates for all destinations</td>
+          </tr>
+          <tr>
+            <td>Product</td>
+            <td>Tour packages, vehicle detail</td>
+            <td class="cross">⚠️ Fake aggregateRating on all items</td>
+          </tr>
+          <tr>
+            <td>HowTo</td>
+            <td>Guide detail pages</td>
+            <td class="check">✅ Good</td>
+          </tr>
+          <tr>
+            <td>NewsArticle</td>
+            <td>Blog post pages</td>
+            <td class="cross">⚠️ Missing image when no featuredImage set</td>
+          </tr>
+          <tr>
+            <td>LocalBusiness (ContactPage)</td>
+            <td>Contact page</td>
+            <td class="check">✅ Good</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section>
+    <h2>Recommended Action Plan</h2>
+
+    <h3>Phase 1 — Critical Fixes (immediate)</h3>
+    <ul style="margin-left:1.25rem;margin-bottom:1rem;color:var(--slate-600);font-size:0.9rem;">
+      <li><strong>H1</strong> — Fix hreflang double-prefix bug in <code>SEOMeta.astro</code></li>
+      <li><strong>H2</strong> — Add <code>x-default</code> hreflang tag</li>
+      <li><strong>H3</strong> — Replace placeholder business data with real phone/social URLs</li>
+      <li><strong>H5</strong> — Remove fake <code>aggregateRating</code> from Product schemas</li>
+      <li><strong>H6</strong> — Fix empty image in <code>NewsArticle</code> schema</li>
+      <li><strong>Quick Win 1</strong> — Add OG images to blog &amp; guide pages</li>
+      <li><strong>Quick Win 3</strong> — Create privacy policy &amp; terms pages</li>
+    </ul>
+
+    <h3>Phase 2 — Medium Impact (this sprint)</h3>
+    <ul style="margin-left:1.25rem;margin-bottom:1rem;color:var(--slate-600);font-size:0.9rem;">
+      <li><strong>H4</strong> — Pass per-destination coordinates to TouristAttraction schema</li>
+      <li><strong>M1</strong> — Fix breadcrumb home URL on locale pages</li>
+      <li><strong>M2</strong> — Either add search page or remove SearchAction from schema</li>
+      <li><strong>M5, M8</strong> — Fix hardcoded Indonesian strings in locale page templates</li>
+      <li><strong>M3, M4, M9</strong> — Add distinct OG images per page type</li>
+      <li><strong>Quick Win 2</strong> — Update social media links to real profiles</li>
+    </ul>
+
+    <h3>Phase 3 — Polish</h3>
+    <ul style="margin-left:1.25rem;color:var(--slate-600);font-size:0.9rem;">
+      <li><strong>M7</strong> — Configure sitemap i18n</li>
+      <li><strong>L1-L5</strong> — Address low-priority consistency issues</li>
+      <li>Add more blog posts and guides (especially for Sumbawa &amp; Labuan Bajo)</li>
+      <li>Implement real user reviews with per-package ratings</li>
+      <li>Add actual accommodation content instead of just external links</li>
+      <li>Consider Facebook &amp; TikTok social profiles (L6)</li>
+    </ul>
+  </section>
+
+  <hr style="border:none;border-top:1px solid var(--slate-200);margin:2rem 0;">
+
+  <p style="text-align:center;font-size:0.8rem;color:var(--slate-600);">
+    Audit generated by OpenSEO Coach — June 2026<br>
+    310 pages across 5 locales (id, en, ar, ms, zh)<br>
+    Stack: Astro 6 + React + Tailwind + shadcn/ui
+  </p>
+
+</div>
+
+</body>
+</html>

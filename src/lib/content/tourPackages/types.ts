@@ -1,3 +1,4 @@
+import type { ImageSource } from "@/lib/images";
 import type { COLLECTIONS } from "./collections";
 
 export type PackageCollection = (typeof COLLECTIONS)[keyof typeof COLLECTIONS];
@@ -17,7 +18,7 @@ export type TourPackage = {
   category: string;
   duration: string;
 
-  images: ImageMetadata[];
+  images: ImageSource[];
 
   summary: string;
 

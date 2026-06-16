@@ -1,4 +1,4 @@
-import type { ImageMetadata } from "astro";
+import type { ImageSource } from "@/lib/images";
 
 export type Vehicle = {
   slug: string;
@@ -10,8 +10,8 @@ export type Vehicle = {
   features: string[];
   bestFor: string[];
   description: string;
-  imageTop: ImageMetadata;
-  imageBottom: ImageMetadata;
+  imageTop: ImageSource;
+  imageBottom: ImageSource;
 };
 
 import HeroLombok from "@/assets/images/hero-lombok.webp";

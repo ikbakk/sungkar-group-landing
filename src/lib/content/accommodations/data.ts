@@ -1,4 +1,4 @@
-import type { ImageMetadata } from "astro";
+import type { ImageSource } from "@/lib/images";
 
 export type Accommodation = {
   slug: string;
@@ -7,7 +7,7 @@ export type Accommodation = {
   perks: string[];
   regionalHighlights: string[];
   description: string;
-  image: ImageMetadata;
+  image: ImageSource;
 };
 
 import HeroLombok from "@/assets/images/hero-lombok.webp";

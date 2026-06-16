@@ -1,4 +1,4 @@
-import type { ImageMetadata } from "astro";
+import type { ImageSource } from "@/lib/images";
 
 import { businessInfo } from "@/lib/contact-data";
 import { destinations } from "@/lib/content/destinations";
@@ -20,7 +20,7 @@ export interface LandingAction {
 export interface LandingHeroCard {
   className: string;
   style: string;
-  image?: ImageMetadata;
+  image?: ImageSource;
   alt?: string;
   title: string;
   description?: string;
@@ -31,7 +31,7 @@ export interface LandingHeroCard {
 }
 
 export interface LandingTourCard {
-  image: ImageMetadata;
+  image: ImageSource;
   duration: string;
   slug: string;
   title: string;
@@ -44,7 +44,7 @@ export interface LandingDestinationCard {
   slug: string;
   title: string;
   description: string;
-  image: ImageMetadata;
+  image: ImageSource;
 }
 
 function toLandingTourCard(tour: (typeof packages)[number]): LandingTourCard {

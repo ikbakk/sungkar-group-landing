@@ -1,6 +1,6 @@
 ---
 import Services6Block from "@/components/blocks/services-6.astro";
-import type { ImageMetadata } from "astro";
+import type { ImageSource } from "@/lib/images";
 import type { LandingTourCard as FeaturedTour } from "@/lib/content/landing";
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
   title: string;
   description: string;
   featuredTours: FeaturedTour[];
-  image: ImageMetadata;
+  image: ImageSource;
 }
 
 const { class: className, eyebrow, title, description, featuredTours } = Astro.props as Props;

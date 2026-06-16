@@ -1,12 +1,12 @@
 ---
 import Features1Block from "@/components/blocks/features-1.astro";
-import type { ImageMetadata } from "astro";
+import type { ImageSource } from "@/lib/images";
 import { localizeHref } from "@/lib/i18n/localize";
 
 interface DestinationCard {
   title: string;
   description: string;
-  image: ImageMetadata;
+  image: ImageSource;
   slug: string;
 }
 

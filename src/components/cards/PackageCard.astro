@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -33,7 +33,7 @@ const cardHref = localizeHref(`/paket-wisata/${tour.region}/${tour.collectionSlu
     <!-- Image -->
 
     <div class="relative overflow-hidden">
-      <Image
+      <OptimizedImage
         src={tour.images[0]}
         alt={tour.title}
         class="aspect-4/3

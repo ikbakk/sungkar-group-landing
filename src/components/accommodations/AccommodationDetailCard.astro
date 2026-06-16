@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -19,7 +19,7 @@ const waMessage = encodeURIComponent(
 
 <Card className="group border-border overflow-hidden bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)] transition-all duration-300 hover:shadow-[0_18px_55px_rgba(17,24,39,0.1)]">
   <div class="relative h-80 w-full overflow-hidden">
-    <Image
+    <OptimizedImage
       src={accommodation.image}
       alt={accommodation.name}
       class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"

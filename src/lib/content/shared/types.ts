@@ -1,4 +1,4 @@
-import type { ImageMetadata } from "astro";
+import type { ImageSource } from "@/lib/images";
 
 // ─── Regions ──────────────────────────────────────────────────────────
 export type RegionKey = "lombok" | "sumbawa" | "labuan-bajo";
@@ -36,7 +36,7 @@ export type TourPackage = {
   collectionTitle: string;
   category: string;
   duration: string;
-  images: ImageMetadata[];
+  images: ImageSource[];
   summary: string;
   highlights: string[];
   itinerary: string[];
@@ -49,8 +49,8 @@ export type Destination = {
   slug: string;
   title: string;
   region: string;
-  image: ImageMetadata;
-  gallery: ImageMetadata[];
+  image: ImageSource;
+  gallery: ImageSource[];
   summary: string;
   thingsToDo: string[];
   packages: string[];
@@ -64,7 +64,7 @@ export type Accommodation = {
   perks: string[];
   regionalHighlights: string[];
   description: string;
-  image: ImageMetadata;
+  image: ImageSource;
 };
 
 // ─── Vehicle / Car Rental ─────────────────────────────────────────────
@@ -78,8 +78,8 @@ export type Vehicle = {
   features: string[];
   bestFor: string[];
   description: string;
-  imageTop: ImageMetadata;
-  imageBottom: ImageMetadata;
+  imageTop: ImageSource;
+  imageBottom: ImageSource;
 };
 
 // ─── Guides ────────────────────────────────────────────────────────────
@@ -123,7 +123,7 @@ export interface LandingAction {
 export interface LandingHeroCard {
   className: string;
   style: string;
-  image?: ImageMetadata;
+  image?: ImageSource;
   alt?: string;
   title: string;
   description?: string;
@@ -133,7 +133,7 @@ export interface LandingHeroCard {
   height?: number;
 }
 export interface LandingTourCard {
-  image: ImageMetadata;
+  image: ImageSource;
   duration: string;
   slug: string;
   title: string;
@@ -145,7 +145,7 @@ export interface LandingDestinationCard {
   slug: string;
   title: string;
   description: string;
-  image: ImageMetadata;
+  image: ImageSource;
 }
 export interface LandingTransportCard {
   title: string;
@@ -213,7 +213,7 @@ export interface FAQItem {
 export interface OGMetadata {
   title: string;
   description: string;
-  image: ImageMetadata;
+  image: ImageSource;
   imageAlt: string;
   type?: "website" | "article" | "profile";
 }

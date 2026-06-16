@@ -1,4 +1,4 @@
-import type { ImageMetadata } from "astro";
+import type { ImageSource } from "@/lib/images";
 import HeroLombok from "@/assets/images/hero-lombok.webp";
 import TourCultural from "@/assets/images/tour-cultural.webp";
 import DestinationLombok from "@/assets/images/destination-lombok.webp";
@@ -7,7 +7,7 @@ import DestinationRinjani from "@/assets/images/destination-rinjani.webp";
 export interface OGMetadata {
   title: string;
   description: string;
-  image: ImageMetadata;
+  image: ImageSource;
   imageAlt: string;
   type?: "website" | "article" | "profile";
 }
@@ -94,7 +94,7 @@ export function getPageOGMetadata(pathname: string): OGMetadata {
 export function getPackageOGMetadata(
   title: string,
   description: string,
-  image: ImageMetadata,
+  image: ImageSource,
   imageAlt: string,
 ): OGMetadata {
   return {
@@ -109,7 +109,7 @@ export function getPackageOGMetadata(
 export function getDestinationOGMetadata(
   title: string,
   description: string,
-  image: ImageMetadata,
+  image: ImageSource,
   imageAlt: string,
 ): OGMetadata {
   return {

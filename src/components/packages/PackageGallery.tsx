@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Dialog } from "@base-ui/react/dialog";
-import type { ImageMetadata } from "astro";
+import { getImageSrc, type ImageSource } from "@/lib/images";
 
 interface Props {
-  images: ImageMetadata[];
+  images: ImageSource[];
   initialIndex?: number;
 }
 
@@ -104,7 +104,7 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
             onTouchEnd={onTouchEnd}
           >
             <img
-              src={images[current].src}
+              src={getImageSrc(images[current])}
               alt={`${current + 1} of ${images.length}`}
               className="max-h-[70vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
             />
@@ -134,7 +134,7 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
                     i === current ? "border-white opacity-100" : "border-transparent opacity-50 hover:opacity-80"
                   }`}
                 >
-                  <img src={img.src} alt="" className="h-full w-full object-cover" />
+                  <img src={getImageSrc(img)} alt="" className="h-full w-full object-cover" />
                 </button>
               ))}
             </div>

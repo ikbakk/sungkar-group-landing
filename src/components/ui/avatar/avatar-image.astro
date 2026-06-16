@@ -1,10 +1,19 @@
 ---
-import { Image } from "astro:assets"
-import type { ComponentProps } from "astro/types"
+import OptimizedImage from "@/components/ui/OptimizedImage.astro"
+import type { ImageSource } from "@/lib/images"
 
 import { cn } from "@/lib/utils"
 
-type Props = Partial<ComponentProps<typeof Image>>
+type Props = {
+  src: ImageSource | undefined | null;
+  alt?: string;
+  class?: string;
+  width?: number;
+  height?: number;
+  sizes?: string;
+  widths?: number[];
+  loading?: "lazy" | "eager";
+}
 
 const {
   class: className,
@@ -19,18 +28,17 @@ const {
 
 {
   props.src && (
-    <Image
-      data-slot="avatar-image"
+    <OptimizedImage
+      src={props.src}
+      alt={alt}
       class={cn(
         "absolute inset-0 z-10 aspect-square size-full rounded-full object-cover",
         className
       )}
-      alt={alt}
       width={width}
       height={height}
       sizes={sizes}
       widths={widths}
-      {...(props as any)}
     />
   )
 }

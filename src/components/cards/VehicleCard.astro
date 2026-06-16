@@ -8,7 +8,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Image } from "astro:assets";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import { CTA_CLASS } from "@/lib/card-styles";
 import { localizeHref } from "@/lib/i18n/localize";
 
@@ -24,7 +24,7 @@ const cardHref = localizeHref(`/sewa-mobil/${vehicle.region}/${vehicle.slug}`, l
 
   <Card className="overflow-hidden">
     <div class="relative h-64 w-full overflow-hidden">
-      <Image
+      <OptimizedImage
         src={vehicle.imageTop}
         alt={vehicle.name}
         class="h-full w-full object-cover"

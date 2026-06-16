@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import type { Destination } from "@/lib/content/destinations";
 
 interface Props {
@@ -15,7 +15,7 @@ const { destination, content } = Astro.props;
 
 <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
   <div class="overflow-hidden rounded-2xl border border-border">
-    <Image
+    <OptimizedImage
       src={destination.image}
       alt={destination.title}
       class="aspect-4/3 w-full object-cover"

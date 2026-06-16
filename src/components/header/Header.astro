@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 
 import Logo from "@/assets/images/logo.webp";
 
@@ -29,7 +29,7 @@ const isHome = Astro.url.pathname === rootPath || Astro.url.pathname === rootPat
     class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8"
   >
     <a href={localizeHref("/", locale)} class="flex items-center gap-3">
-      <Image
+      <OptimizedImage
         src={Logo}
         alt="Sungkar Group"
         class="h-14 w-auto"

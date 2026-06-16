@@ -3,7 +3,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
-import { Image } from "astro:assets";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 
@@ -84,14 +84,14 @@ const r = vehicle.region as Region;
         <div class="grid gap-8 lg:grid-cols-[1fr_auto]">
           <VehicleDetailPanel {vehicle} />
           <div class="w-full lg:w-96 overflow-hidden flex lg:flex-col gap-8">
-            <Image
+            <OptimizedImage
               src={vehicle.imageTop}
               alt={vehicle.name}
               class="aspect-4/3 w-full object-cover rounded-lg"
               loading="lazy"
             />
 
-            <Image
+            <OptimizedImage
               src={vehicle.imageBottom}
               alt={vehicle.name}
               class="aspect-4/3 w-full object-cover rounded-lg"

@@ -33,6 +33,7 @@ src/
 │   ├── site/           # Shared site pieces (Footer, Faq, PageHeader)
 │   └── ui/             # Primitives (button, card, select, nav-menu, etc.)
 ├── lib/
+│   ├── images.ts       # ImageSource type (ImageMetadata | string) + helpers (isRemoteImage, getImageSrc, getImageWidth, getImageHeight)
 │   ├── content/        # ALL data/content definitions (folder-based barrel exports)
 │   │   ├── about/       # aboutContent
 │   │   ├── blog/        # getBlogPosts(), getBlogPost() loader helpers using astro:content
@@ -250,6 +251,12 @@ Reusable section layouts that accept data as props:
 | `OGImage.astro` | Optimized OG image with gradient overlay + optional caption |
 | `StructuredData.astro` | Generic `<script type="application/ld+json">` injector |
 
+### Image Architecture (`components/ui/`, `lib/`)
+| File | Purpose |
+|---|---|
+| `lib/images.ts` | `ImageSource` type (= `ImageMetadata \| string`), `isRemoteImage()`, `getImageSrc()`, `getImageWidth()`, `getImageHeight()` helpers |
+| `components/ui/OptimizedImage.astro` | Unified image component — if `src` is `ImageMetadata` uses Astro `<Image>` with optimization; if `string` (remote URL) renders `<img>` |
+
 ### UI Primitives (`components/ui/`)
 Organized as folders with `index.ts` barrel exports:
 - `button/` — `button.astro` + `button-variants.ts` (CVA)
@@ -321,7 +328,7 @@ Standalone React (.tsx) components:
 | **Add/change blog post** | `src/content/blog/{slug}/{locale}.mdx` |
 | **Add/change guide** | `src/content/guides/{slug}/{locale}.mdx` |
 | **Change review data** | `src/lib/content/reviews/index.ts` |
-| **Add image** | Place in `src/assets/images/`, import via `@/assets/images/` |
+| **Add image** | Place in `src/assets/images/`, import via `@/assets/images/`; use `ImageSource` type (from `@/lib/images`) for image fields, `<OptimizedImage>` (from `@/components/ui/OptimizedImage.astro`) for rendering |
 | **Add/modify i18n locale** | `src/lib/i18n/index.ts` (update `LOCALES`, `NON_DEFAULT_LOCALES`, locale-specific formatters), `src/lib/i18n/ui-strings.ts` (UI translations), `src/lib/i18n/localize.ts` (path mapping), `src/lib/i18n/loader.ts` (content modules) |
 | **Translate page content** | `src/lib/i18n/{locale}/` — copy structure from `src/lib/i18n/en/`, translate all strings, keep exports/types identical |
 | **Add locale switcher** | `src/components/header/LocaleSwitcher.astro` + `NavigationMobile.tsx` (inline switcher) — uses `LOCALES`, `LOCALE_LABELS`, `getLocalizedPath` from `@/lib/i18n` |

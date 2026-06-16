@@ -1,6 +1,6 @@
 ---
-import type { ImageMetadata } from "astro";
-import { Image } from "astro:assets";
+import type { ImageSource } from "@/lib/images";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -25,7 +25,7 @@ interface Props {
   title: string;
   description: string;
   breadcrumbs: Crumb[];
-  image?: ImageMetadata;
+  image?: ImageSource;
   imageAlt?: string;
   stats?: Stat[];
 }
@@ -37,7 +37,7 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt, stats } =
 {
   image ? (
     <section class="relative flex min-h-[70vh] flex-col justify-end bg-gray-900 lg:min-h-[80vh]">
-      <Image
+      <OptimizedImage
         src={image}
         alt={imageAlt ?? title}
         class="absolute inset-0 h-full w-full object-cover"
