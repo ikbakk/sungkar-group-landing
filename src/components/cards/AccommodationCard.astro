@@ -17,89 +17,90 @@ const { accommodation } = Astro.props;
 const region = REGION_MAP[accommodation.region];
 ---
 
-  <Card
-    className="
-      group
+<Card class="group
       h-fit
       overflow-hidden
-      py-0
-    "
-  >
-    <!-- Image -->
+      py-0">
+  <!-- Image -->
 
-    <div class="relative overflow-hidden">
-      <OptimizedImage
-        src={accommodation.image}
-        alt={accommodation.name}
-        class="aspect-4/3
+  <div class="relative overflow-hidden">
+    <OptimizedImage
+      src={accommodation.image}
+      alt={accommodation.name}
+      class="aspect-4/3
           w-full
           object-cover
           transition-transform
           duration-700
           ease-out
           group-hover:scale-105"
-        loading="lazy"
-      />
+      loading="lazy"
+    />
 
-      <div class="absolute left-4 top-4 font-sans">
-        <Badge className={region.className}>
-          {region.label}
-        </Badge>
-      </div>
+    <div class="absolute left-4 top-4 font-sans">
+      <Badge class={region.className}>
+        {region.label}
+      </Badge>
+    </div>
+  </div>
+
+  <!-- Content -->
+
+  <CardContent class="flex h-full flex-col gap-4 p-6">
+    <div class="flex flex-wrap items-center gap-2">
+      <h3 class="text-lg
+            leading-tight
+            text-foreground">
+        {accommodation.name}
+      </h3>
     </div>
 
-    <!-- Content -->
-
-    <CardContent className="flex h-full flex-col gap-4 p-6">
-      <div class="flex flex-wrap items-center gap-2">
-        <h3
-          class="text-lg
-            leading-tight
-            text-foreground"
-        >
-          {accommodation.name}
-        </h3>
-      </div>
-
-      <p
-        class="font-sans
+    <p
+      class="font-sans
           text-sm
           leading-7
           text-text-muted"
-      >
-        {accommodation.description}
-      </p>
+    >
+      {accommodation.description}
+    </p>
 
-      <div>
-        <div class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700">
-          Fasilitas Unggulan
-        </div>
-        <ul class="space-y-1 text-sm font-sans">
-          {
-            accommodation.perks.slice(0, 3).map((perk) => (
-              <li
-                class="
+    <div>
+      <div
+        class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
+      >
+        <!-- TODO: need localization -->
+        Fasilitas Unggulan
+      </div>
+      <ul class="space-y-1 text-sm font-sans">
+        {
+          accommodation.perks.slice(0, 3).map((perk) => (
+            <li
+              class="
                   flex
                   items-center
                   gap-2
                   text-text-muted
                 "
-              >
-                <HugeiconsIcon icon={Tick02Icon} size={16} class="shrink-0 text-brand-700" />
+            >
+              <HugeiconsIcon
+                icon={Tick02Icon}
+                size={16}
+                className="shrink-0 text-brand-700"
+              />
 
-                <span>{perk}</span>
-              </li>
-            ))
-          }
-          {
-            accommodation.perks.length > 3 && (
-              <li class="text-sm text-text-muted font-sans">
-                + {accommodation.perks.length - 3} lainnya
-              </li>
-            )
-          }
-        </ul>
-      </div>
-
-    </CardContent>
-  </Card>
+              <span>{perk}</span>
+            </li>
+          ))
+        }
+        {
+          accommodation.perks.length > 3 && (
+            <li class="text-sm text-text-muted font-sans">
+          <!-- TODO: need localization for lainnya -->
+              + {accommodation.perks.length - 3} lainnya
+            </li>
+          )
+        }
+      </ul>
+    </div>
+  </CardContent>
+</Card>

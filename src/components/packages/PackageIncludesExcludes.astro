@@ -10,6 +10,7 @@ interface Props {
 const { tour } = Astro.props;
 ---
 
+<!-- TODO: hardcoded need localization -->
 <div class="mx-auto">
   <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
     Fasilitas
@@ -43,7 +44,7 @@ const { tour } = Astro.props;
       {
         tour.includes.map((item) => (
           <li class="flex gap-3 text-sm leading-6 text-text-muted">
-            <span class="mt-[7px] size-1 shrink-0 rounded-full bg-emerald-400/60" />
+            <span class="mt-1.75 size-1 shrink-0 rounded-full bg-emerald-400/60" />
             <span>{item}</span>
           </li>
         ))
@@ -54,9 +55,7 @@ const { tour } = Astro.props;
   <div
     class="rounded-xl border border-border bg-white p-6 shadow-[0_8px_30px_rgba(17,24,39,0.04)]"
   >
-    <h3
-      class="mb-5 flex items-center gap-2 text-lg leading-tight text-red-600"
-    >
+    <h3 class="mb-5 flex items-center gap-2 text-lg leading-tight text-red-600">
       <span
         class="flex size-6 items-center justify-center rounded-full bg-red-100 text-red-500"
       >
@@ -69,7 +68,7 @@ const { tour } = Astro.props;
       {
         tour.excludes.map((item) => (
           <li class="flex gap-3 text-sm leading-6 text-text-muted">
-            <span class="mt-[7px] size-1 shrink-0 rounded-full bg-red-300/60" />
+            <span class="mt-1.75 size-1 shrink-0 rounded-full bg-red-300/60" />
             <span>{item}</span>
           </li>
         ))

@@ -18,7 +18,7 @@ import type { ImageSource } from "@/lib/images";
 
 import { SITE_URL } from "@/lib/site-config";
 
-import { isRTL, type Locale } from "@/lib/i18n";
+import { isRTL } from "@/lib/i18n";
 
 import "../styles/global.css";
 
@@ -61,10 +61,7 @@ const organizationSchema = generateOrganizationSchema(siteUrl);
 const websiteSchema = generateWebsiteSchema(siteUrl);
 ---
 
-<html
-  lang={currentLocale}
-  dir={isRTL(currentLocale) ? "rtl" : "ltr"}
->
+<html lang={currentLocale} dir={isRTL(currentLocale) ? "rtl" : "ltr"}>
   <head>
     <SEOMeta
       title={pageTitle}

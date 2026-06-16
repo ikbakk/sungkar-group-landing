@@ -6,6 +6,7 @@ import DestinationsSection from "./DestinationsSection.astro";
 import TransportSection from "./TransportSection.astro";
 import Reviews5Block from "@/components/blocks/reviews-5.astro";
 
+// TODO: dont use any Types
 interface Props {
   locale?: string;
   hero: any;
@@ -17,7 +18,16 @@ interface Props {
   backgroundImage: any;
 }
 
-const { locale = "id", hero, featuredTours, destinations, transport, testimonials, video, backgroundImage } = Astro.props;
+const {
+  locale = "id",
+  hero,
+  featuredTours,
+  destinations,
+  transport,
+  testimonials,
+  video,
+  backgroundImage,
+} = Astro.props;
 ---
 
 <HeroSection

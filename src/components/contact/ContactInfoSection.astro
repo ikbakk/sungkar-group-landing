@@ -16,14 +16,14 @@ const {
 } = Astro.props;
 ---
 
-<Card className="border-border justify-center bg-white">
+<Card class="border-border justify-center bg-white">
   <CardHeader>
-    <CardTitle className="text-3xl leading-tight">
+    <CardTitle class="text-3xl leading-tight">
       {title}
     </CardTitle>
     {description && <p class="text-sm text-text-muted">{description}</p>}
   </CardHeader>
-  <CardContent className="flex flex-col gap-2">
+  <CardContent class="flex flex-col gap-2">
     <!-- Contact Methods -->
     <a
       href={`tel:${businessInfo.phone}`}

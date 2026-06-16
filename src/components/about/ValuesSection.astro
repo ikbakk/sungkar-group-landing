@@ -10,14 +10,13 @@ const { values } = Astro.props;
 ---
 
 <SectionContainer background="bg-surface-soft">
-  <Card className="border-border bg-white">
+  <Card class="border-border bg-white">
     <CardHeader>
-      <CardTitle className="text-3xl leading-tight">
-        Nilai-Nilai Kami
-      </CardTitle>
+      <!-- TODO: This need to be localized -->
+      <CardTitle class="text-3xl leading-tight"> Nilai-Nilai Kami </CardTitle>
     </CardHeader>
 
-    <CardContent className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <CardContent class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {
         values.map((value) => (
           <div class="rounded-2xl border border-border bg-surface-soft p-4">

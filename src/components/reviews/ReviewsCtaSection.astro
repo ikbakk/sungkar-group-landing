@@ -10,9 +10,9 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
-<Card className="border-border bg-brand-900 text-white">
+<Card class="border-border bg-brand-900 text-white">
   <CardHeader>
-    <CardTitle className="text-3xl leading-tight text-white">
+    <CardTitle class="text-3xl leading-tight text-white">
       {title}
     </CardTitle>
   </CardHeader>
@@ -23,6 +23,7 @@ const { title, description } = Astro.props;
     </p>
 
     <div class="mt-6">
+      <!-- TODO: need localization. Prepare CTA labels on data layer. Every Button CTA that has href should wrapped with <a> -->
       <Button href="/kontak" variant="secondary"> Hubungi Kami </Button>
     </div>
   </CardContent>

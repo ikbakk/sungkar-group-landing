@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   NativeSelect,
   NativeSelectOption,
-  NativeSelectOptGroup,
 } from "@/components/ui/native-select";
 import type { FormField, BusinessInfo } from "@/lib/contact-data";
 
@@ -52,6 +51,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
 );
 ---
 
+<!-- TODO: Still have some chunks still hardcoded, do localization -->
 <Card class="border-border bg-brand-900 text-white">
   <CardHeader>
     <CardTitle class="text-3xl leading-tight text-white">
@@ -192,7 +192,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
   </CardContent>
 </Card>
 
-<script define:vars={{ whatsappNumber, packagesData }}>
+<script is:inline define:vars={{ whatsappNumber, packagesData }}>
   var locationSelect = document.querySelector('[name="location"]');
   var packageSelect = document.querySelector('[name="package"]');
   var submitBtn = document.getElementById("contact-whatsapp");

@@ -28,10 +28,6 @@ const optionalClass = isSidebar
 
 const wrapperClass = cn("grid gap-2", spanFull && "md:col-span-2");
 
-const disabledInputClass = isSidebar
-  ? "form-input-dark w-full rounded-lg opacity-70 cursor-not-allowed"
-  : "form-input w-full rounded-lg opacity-60 cursor-not-allowed";
-
 const textareaClass = isSidebar
   ? "rounded-lg border-white/10 bg-white/5 text-white placeholder:text-brand-100/50 min-h-20"
   : "rounded-lg border-border bg-white text-foreground placeholder:text-text-muted min-h-24";
@@ -50,9 +46,7 @@ const selectTriggerClass = isSidebar
     <label class={wrapperClass}>
       <span class={labelClass}>
         {field.label}
-        {!field.required && (
-          <span class={optionalClass}> — opsional</span>
-        )}
+        {!field.required && <span class={optionalClass}> — opsional</span>}
       </span>
       <Textarea
         id={field.id}
@@ -84,9 +78,7 @@ const selectTriggerClass = isSidebar
     <label class="grid gap-2">
       <span class={labelClass}>
         {field.label}
-        {!field.required && (
-          <span class={optionalClass}> — opsional</span>
-        )}
+        {!field.required && <span class={optionalClass}> — opsional</span>}
       </span>
       <Input
         id={field.id}
@@ -99,3 +91,5 @@ const selectTriggerClass = isSidebar
     </label>
   )
 }
+
+<!-- TODO: opsional need localization -->

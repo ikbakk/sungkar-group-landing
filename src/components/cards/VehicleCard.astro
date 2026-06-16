@@ -19,92 +19,94 @@ interface Props {
 
 const { vehicle, locale = "id" } = Astro.props;
 
-const cardHref = localizeHref(`/sewa-mobil/${vehicle.region}/${vehicle.slug}`, locale);
+const cardHref = localizeHref(
+  `/sewa-mobil/${vehicle.region}/${vehicle.slug}`,
+  locale,
+);
 ---
 
-  <Card className="overflow-hidden">
-    <div class="relative h-64 w-full overflow-hidden">
-      <OptimizedImage
-        src={vehicle.imageTop}
-        alt={vehicle.name}
-        class="h-full w-full object-cover"
-        loading="lazy"
-      />
+<!-- TODO: still some chunks still hardcoded, need localization. for something small chunks like this should follow pattern on flutter that use arb then list of words, but idk how it is in astro ecosystem. i will not write same todos for same issue -->
+<Card class="overflow-hidden">
+  <div class="relative h-64 w-full overflow-hidden">
+    <OptimizedImage
+      src={vehicle.imageTop}
+      alt={vehicle.name}
+      class="h-full w-full object-cover"
+      loading="lazy"
+    />
+  </div>
+
+  <CardHeader>
+    <div class="flex items-start justify-between gap-4">
+      <CardTitle class="text-2xl leading-tight">
+        {vehicle.name}
+      </CardTitle>
+      <Badge variant="default" class="rounded-full px-3 py-1 text-sm">
+        {vehicle.seats} Seat
+      </Badge>
+    </div>
+  </CardHeader>
+
+  <CardContent class="space-y-4">
+    <div>
+      <div
+        class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
+      >
+        Spesifikasi
+      </div>
+      <div class="grid grid-cols-2 gap-2 text-sm">
+        <div class="rounded border border-border p-2 text-center">
+          <div class="text-xs text-text-muted">Transmisi</div>
+          <div class="font-medium">{vehicle.transmission}</div>
+        </div>
+        <div class="rounded border border-border p-2 text-center">
+          <div class="text-xs text-text-muted">Penumpang</div>
+          <div class="font-medium">{vehicle.seats}</div>
+        </div>
+      </div>
     </div>
 
-    <CardHeader>
-      <div class="flex items-start justify-between gap-4">
-        <CardTitle className="text-2xl leading-tight">
-          {vehicle.name}
-        </CardTitle>
-        <Badge variant="default" className="rounded-full px-3 py-1 text-sm">
-          {vehicle.seats} Seat
-        </Badge>
+    <div>
+      <div
+        class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
+      >
+        Fitur Unggulan
       </div>
-    </CardHeader>
-
-    <CardContent className="space-y-4">
-      <div>
-        <div
-          class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
-        >
-          Spesifikasi
-        </div>
-        <div class="grid grid-cols-2 gap-2 text-sm">
-          <div class="rounded border border-border p-2 text-center">
-            <div class="text-xs text-text-muted">Transmisi</div>
-            <div class="font-medium">{vehicle.transmission}</div>
-          </div>
-          <div class="rounded border border-border p-2 text-center">
-            <div class="text-xs text-text-muted">Penumpang</div>
-            <div class="font-medium">{vehicle.seats}</div>
-          </div>
-        </div>
+      <div class="flex flex-wrap gap-2">
+        {
+          vehicle.features.map((feature) => (
+            <Badge variant="outline" class="rounded-full px-3 py-1 text-xs">
+              {feature}
+            </Badge>
+          ))
+        }
       </div>
+    </div>
 
-      <div>
-        <div
-          class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
-        >
-          Fitur Unggulan
-        </div>
-        <div class="flex flex-wrap gap-2">
-          {
-            vehicle.features.map((feature) => (
-              <Badge variant="outline" className="rounded-full px-3 py-1 text-xs">
-                {feature}
-              </Badge>
-            ))
-          }
-        </div>
+    <div>
+      <div
+        class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
+      >
+        Cocok Untuk
       </div>
+      <ul class="space-y-1 text-sm leading-7 text-text-muted">
+        {
+          vehicle.bestFor.map((use) => (
+            <li class="flex gap-2">
+              <span>•</span>
+              <span>{use}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
 
-      <div>
-        <div
-          class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
-        >
-          Cocok Untuk
-        </div>
-        <ul class="space-y-1 text-sm leading-7 text-text-muted">
-          {
-            vehicle.bestFor.map((use) => (
-              <li class="flex gap-2">
-                <span>•</span>
-                <span>{use}</span>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
+    <p class="border-t border-border pt-4 text-sm leading-7 text-text-muted">
+      {vehicle.description}
+    </p>
+  </CardContent>
 
-      <p class="border-t border-border pt-4 text-sm leading-7 text-text-muted">
-        {vehicle.description}
-      </p>
-    </CardContent>
-
-    <CardFooter>
-      <a href={cardHref} class={CTA_CLASS}>
-        Lihat Detail & Sewa
-      </a>
-    </CardFooter>
-  </Card>
+  <CardFooter>
+    <a href={cardHref} class={CTA_CLASS}> Lihat Detail & Sewa </a>
+  </CardFooter>
+</Card>

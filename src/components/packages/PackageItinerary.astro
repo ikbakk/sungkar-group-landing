@@ -6,13 +6,12 @@ interface Props {
 const { itineraryByDay } = Astro.props;
 ---
 
+TODO: hardcoded need localization
 <div class="w-full">
   <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
     Perjalanan
   </div>
-  <h2 class="mt-2 text-3xl leading-tight sm:text-4xl">
-    Jalur Perjalanan
-  </h2>
+  <h2 class="mt-2 text-3xl leading-tight sm:text-4xl">Jalur Perjalanan</h2>
   <p class="mt-3 text-sm leading-7 text-text-muted">
     Setiap hari dirancang untuk memberikan pengalaman terbaik selama perjalanan
     Anda.
@@ -20,7 +19,7 @@ const { itineraryByDay } = Astro.props;
 </div>
 
 <div class="relative mx-auto mt-14">
-  <div class="absolute left-[11px] top-3 bottom-3 w-px bg-brand-200/50"></div>
+  <div class="absolute left-2.75 top-3 bottom-3 w-px bg-brand-200/50"></div>
 
   {
     itineraryByDay.map(([day, activities]) => (
@@ -29,14 +28,12 @@ const { itineraryByDay } = Astro.props;
           <span class="size-2 rounded-full bg-brand-500" />
         </div>
 
-        <h3 class="text-xl leading-tight text-foreground">
-          {day}
-        </h3>
+        <h3 class="text-xl leading-tight text-foreground">{day}</h3>
 
         <ul class="mt-4 space-y-3">
           {activities.map((activity) => (
             <li class="flex gap-3 text-sm leading-6 text-text-muted">
-              <span class="mt-[7px] size-1 shrink-0 rounded-full bg-brand-300/60" />
+              <span class="mt-1.75 size-1 shrink-0 rounded-full bg-brand-300/60" />
               <span>{activity}</span>
             </li>
           ))}

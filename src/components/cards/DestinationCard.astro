@@ -22,7 +22,7 @@ const cardHref = localizeHref("/destinasi/" + destination.slug, locale);
 ---
 
 <a href={cardHref} class="block">
-  <Card className="group h-fit overflow-hidden py-0 card-interactive">
+  <Card class="group h-fit overflow-hidden py-0 card-interactive">
     <div class="relative overflow-hidden">
       <OptimizedImage
         src={destination.image}
@@ -32,13 +32,13 @@ const cardHref = localizeHref("/destinasi/" + destination.slug, locale);
       />
 
       <div class="absolute left-4 top-4">
-        <Badge variant="outline" className="rounded-full bg-white/90 px-3 py-1">
+        <Badge variant="outline" class="rounded-full bg-white/90 px-3 py-1">
           {destination.region}
         </Badge>
       </div>
     </div>
 
-    <CardContent className="flex h-full flex-col gap-4 p-6">
+    <CardContent class="flex h-full flex-col gap-4 p-6">
       <div>
         <h3 class="text-xl leading-tight text-foreground">
           {destination.title}
@@ -52,19 +52,22 @@ const cardHref = localizeHref("/destinasi/" + destination.slug, locale);
       <ul class="space-y-2 text-sm font-sans">
         {destination.thingsToDo.slice(0, 3).map((item) => (
           <li class="flex items-center gap-2 text-text-muted">
-            <HugeiconsIcon icon={Tick02Icon} size={16} class="shrink-0 text-brand-700" />
+            <HugeiconsIcon icon={Tick02Icon} size={16} className="shrink-0 text-brand-700" />
             <span>{item}</span>
           </li>
         ))}
         {highlightCount > 0 && (
           <li class="text-sm text-text-muted font-sans">
             + {highlightCount} lainnya
+          <!-- TODO: need localization -->
           </li>
         )}
       </ul>
 
+      <!-- TODO: every button cta like below, or any button use existing button @/components/ui/Button -->
       <div class="mt-auto pt-2">
         <span class={CTA_CLASS}>
+          <!-- TODO: need localization -->
           Lihat Detail
         </span>
       </div>

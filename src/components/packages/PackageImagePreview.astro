@@ -39,6 +39,7 @@ const extraCount = images.length - 1;
           "grid-cols-2": extraCount >= 3,
         }}
       >
+    <!-- TODO: button should use Button component -->
         {images.slice(1, 5).map((img, i) => (
           <button
             type="button"
@@ -46,6 +47,7 @@ const extraCount = images.length - 1;
             class="overflow-hidden rounded-lg border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)] cursor-zoom-in"
             aria-label={`View image ${i + 2}`}
           >
+      <!-- TODO: OptimizedImage need to have alt, so for every data that have image need to have alt based on locale -->
             <OptimizedImage
               src={img}
               alt=""

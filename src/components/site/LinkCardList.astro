@@ -9,24 +9,29 @@ interface Props {
 
 const { title, items, variant = "default" } = Astro.props;
 
-const cardClass = variant === "branded"
-  ? "card-base bg-brand-900 text-white"
-  : "card-base";
-const titleClass = variant === "branded"
-  ? "text-3xl leading-tight text-white"
-  : "text-3xl leading-tight";
-const linkClass = variant === "branded"
-  ? "rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10"
-  : "rounded-lg border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-300 hover:bg-brand-50";
+const cardClass =
+  variant === "branded" ? "card-base bg-brand-900 text-white" : "card-base";
+const titleClass =
+  variant === "branded"
+    ? "text-3xl leading-tight text-white"
+    : "text-3xl leading-tight";
+const linkClass =
+  variant === "branded"
+    ? "rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10"
+    : "rounded-lg border border-border bg-surface-soft px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand-300 hover:bg-brand-50";
 ---
 
-<Card className={cardClass}>
+<Card class={cardClass}>
   <CardHeader>
-    <CardTitle className={titleClass}>{title}</CardTitle>
+    <CardTitle class={titleClass}>{title}</CardTitle>
   </CardHeader>
-  <CardContent className="grid gap-3">
-    {items.map((item) => (
-      <a href={item.href} class={linkClass}>{item.title}</a>
-    ))}
+  <CardContent class="grid gap-3">
+    {
+      items.map((item) => (
+        <a href={item.href} class={linkClass}>
+          {item.title}
+        </a>
+      ))
+    }
   </CardContent>
 </Card>

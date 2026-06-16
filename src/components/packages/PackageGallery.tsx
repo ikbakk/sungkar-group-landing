@@ -27,8 +27,11 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
   useEffect(() => {
     if (!open) return;
     const handler = (e: KeyboardEvent) => {
-      if (e.key === "ArrowLeft") { prev(); }
-      else if (e.key === "ArrowRight") { next(); }
+      if (e.key === "ArrowLeft") {
+        prev();
+      } else if (e.key === "ArrowRight") {
+        next();
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
@@ -68,8 +71,8 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Portal>
-        <Dialog.Backdrop className="fixed inset-0 z-[60] bg-black/90 data-open:animate-fade-in data-close:animate-fade-out" />
-        <Dialog.Popup className="fixed inset-0 z-[61] flex flex-col items-center justify-center outline-none">
+        <Dialog.Backdrop className="fixed inset-0 z-60 bg-black/90 data-open:animate-fade-in data-close:animate-fade-out" />
+        <Dialog.Popup className="fixed inset-0 z-61 flex flex-col items-center justify-center outline-none">
           {/* Top bar */}
           <div className="absolute right-4 top-4 z-10 flex items-center gap-3">
             {images.length > 1 && (
@@ -78,8 +81,17 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
               </span>
             )}
             <Dialog.Close className="flex size-10 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50">
-              <svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 6 6 18" /><path d="m6 6 12 12" />
+              <svg
+                className="size-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
               </svg>
             </Dialog.Close>
           </div>
@@ -91,7 +103,15 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
               className="absolute left-4 top-1/2 z-10 flex size-12 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
               aria-label="Previous image"
             >
-              <svg className="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                className="size-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <path d="m15 18-6-6 6-6" />
               </svg>
             </button>
@@ -117,7 +137,15 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
               className="absolute right-4 top-1/2 z-10 flex size-12 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 md:right-20"
               aria-label="Next image"
             >
-              <svg className="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                className="size-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <path d="m9 18 6-6-6-6" />
               </svg>
             </button>
@@ -131,10 +159,16 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
                   key={i}
                   onClick={() => goTo(i)}
                   className={`shrink-0 size-14 overflow-hidden rounded-md border-2 transition-all focus-visible:outline-none ${
-                    i === current ? "border-white opacity-100" : "border-transparent opacity-50 hover:opacity-80"
+                    i === current
+                      ? "border-white opacity-100"
+                      : "border-transparent opacity-50 hover:opacity-80"
                   }`}
                 >
-                  <img src={getImageSrc(img)} alt="" className="h-full w-full object-cover" />
+                  <img
+                    src={getImageSrc(img)}
+                    alt=""
+                    className="h-full w-full object-cover"
+                  />
                 </button>
               ))}
             </div>

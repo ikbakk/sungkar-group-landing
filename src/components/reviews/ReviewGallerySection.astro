@@ -9,17 +9,18 @@ const photos = [
 ];
 ---
 
-<Card className="border-border bg-white">
+<Card class="border-border bg-white">
   <CardHeader>
-    <CardTitle className="text-3xl leading-tight">
+    <CardTitle class="text-3xl leading-tight">
+      <!-- TODO: need localization -->
       Galeri Pengalaman Wisatawan
     </CardTitle>
   </CardHeader>
 
-  <CardContent className="grid gap-4 md:grid-cols-2">
+  <CardContent class="grid gap-4 md:grid-cols-2">
     {
       photos.map((item) => (
-        <div class="aspect-[4/3] rounded-xl border border-border bg-surface-soft flex items-center justify-center text-center text-sm font-medium text-text-muted">
+        <div class="aspect-4/3 rounded-xl border border-border bg-surface-soft flex items-center justify-center text-center text-sm font-medium text-text-muted">
           {item}
         </div>
       ))

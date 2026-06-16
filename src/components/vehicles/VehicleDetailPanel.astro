@@ -13,12 +13,13 @@ interface Props {
 const { vehicle } = Astro.props;
 ---
 
-<Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
+<!-- TODO : need localization for harcoded -->
+<Card class="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
   <CardHeader>
-    <Badge variant="outline" className="w-fit rounded-lg px-3 py-1">
+    <Badge variant="outline" class="w-fit rounded-lg px-3 py-1">
       {vehicle.seats} Seat | {vehicle.transmission}
     </Badge>
-    <CardTitle className="text-3xl leading-tight">
+    <CardTitle class="text-3xl leading-tight">
       {vehicle.name}
     </CardTitle>
   </CardHeader>
@@ -43,29 +44,41 @@ const { vehicle } = Astro.props;
     <Separator class="my-4" />
 
     <div>
-      <div class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700">
+      <div
+        class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
+      >
         Fitur Unggulan
       </div>
       <div class="flex flex-wrap gap-2">
-        {vehicle.features.map((feature) => (
-          <Badge variant="default" className="rounded-lg px-3 py-1">
-            {feature}
-          </Badge>
-        ))}
+        {
+          vehicle.features.map((feature) => (
+            <Badge variant="default" class="rounded-lg px-3 py-1">
+              {feature}
+            </Badge>
+          ))
+        }
       </div>
     </div>
     <Separator class="my-4" />
     <div>
-      <div class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700">
+      <div
+        class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
+      >
         Cocok Untuk
       </div>
       <ul class="space-y-1">
-        {vehicle.bestFor.map((use) => (
-          <li class="flex gap-2">
-            <HugeiconsIcon icon={Tick02Icon} size={16} class="shrink-0 text-brand-700" />
-            <span>{use}</span>
-          </li>
-        ))}
+        {
+          vehicle.bestFor.map((use) => (
+            <li class="flex gap-2">
+              <HugeiconsIcon
+                icon={Tick02Icon}
+                size={16}
+                className="shrink-0 text-brand-700"
+              />
+              <span>{use}</span>
+            </li>
+          ))
+        }
       </ul>
     </div>
     <Separator class="my-4" />
@@ -74,3 +87,4 @@ const { vehicle } = Astro.props;
     </p>
   </CardContent>
 </Card>
+

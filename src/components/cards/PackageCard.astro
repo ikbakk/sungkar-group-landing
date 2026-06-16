@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Tick02Icon } from "@hugeicons/core-free-icons";
-import type { TourPackage } from "@/lib/content/tourPackages";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 import { REGION_MAP } from "@/lib/regions";
 import { CTA_CLASS } from "@/lib/card-styles";
 import { localizeHref } from "@/lib/i18n/localize";
@@ -23,7 +23,7 @@ const cardHref = localizeHref(`/paket-wisata/${tour.region}/${tour.collectionSlu
 ---
 
   <Card
-    className="
+    class="
       group
       h-fit
       overflow-hidden
@@ -47,7 +47,7 @@ const cardHref = localizeHref(`/paket-wisata/${tour.region}/${tour.collectionSlu
       />
 
       <div class="absolute left-4 top-4 font-sans">
-        <Badge className={region.className}>
+        <Badge class={region.className}>
           {region.label}
         </Badge>
       </div>
@@ -55,11 +55,11 @@ const cardHref = localizeHref(`/paket-wisata/${tour.region}/${tour.collectionSlu
 
     <!-- Content -->
 
-    <CardContent className="flex h-full flex-col gap-4 p-6">
+    <CardContent class="flex h-full flex-col gap-4 p-6">
       <div class="flex flex-wrap items-center gap-2">
         <Badge
           variant="outline"
-          className="
+          class="
             rounded-full
             px-3
             py-1
@@ -72,7 +72,7 @@ const cardHref = localizeHref(`/paket-wisata/${tour.region}/${tour.collectionSlu
 
         <Badge
           variant="secondary"
-          className="
+          class="
             rounded-full
             px-3
             py-1
@@ -117,7 +117,7 @@ const cardHref = localizeHref(`/paket-wisata/${tour.region}/${tour.collectionSlu
                 text-text-muted
               "
             >
-              <HugeiconsIcon icon={Tick02Icon} size={16} class="shrink-0 text-brand-700" />
+              <HugeiconsIcon icon={Tick02Icon} size={16} className="shrink-0 text-brand-700" />
 
               <span>{item}</span>
             </li>
@@ -127,11 +127,13 @@ const cardHref = localizeHref(`/paket-wisata/${tour.region}/${tour.collectionSlu
           tour.highlights.length > 3 && (
             <li class="text-sm text-text-muted font-sans">
               + {tour.highlights.length - 3} lainnya
+        <!-- TODO: lainnya need localization -->
             </li>
           )
         }
       </ul>
 
+    <!-- TODO: every cta need localization and use existing button @/components/ui/Button do check for similar code in codebase. i will not write same todos -->
       <div class="mt-auto pt-2">
         <a href={cardHref} class={CTA_CLASS}>
           Cek Detail Paket

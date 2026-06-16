@@ -9,5 +9,5 @@ export const packages: TourPackage[] = [
   ...labuanBajoPackages,
 ];
 
-export const getPackageUrl = (pkg: any) =>
+export const getPackageUrl = (pkg: TourPackage) =>
   `/paket-wisata/${pkg.region}/${pkg.collectionSlug}/${pkg.slug}`;

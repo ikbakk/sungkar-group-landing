@@ -13,8 +13,15 @@ interface Props {
   alignment?: "left" | "center" | "right";
 }
 
-const { class: className, eyebrow, title, description, ctaLabel, ctaHref, embedUrl, alignment = "left" } =
-  Astro.props;
+const {
+  class: className,
+  eyebrow,
+  title,
+  description,
+  ctaLabel,
+  ctaHref,
+  embedUrl = "left",
+} = Astro.props;
 ---
 
 <Section class={cn("", className)}>
@@ -45,8 +52,7 @@ const { class: className, eyebrow, title, description, ctaLabel, ctaHref, embedU
         title={title}
         loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      />
+        allowfullscreen></iframe>
     </div>
   </SectionContainer>
 </Section>

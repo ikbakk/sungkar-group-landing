@@ -37,7 +37,8 @@ const { eyebrow, title, description, primaryAction, secondaryAction, image } =
     }
 
     @keyframes scroll-hint {
-      0%, 100% {
+      0%,
+      100% {
         opacity: 0.35;
         transform: translateY(0);
       }
@@ -51,13 +52,13 @@ const { eyebrow, title, description, primaryAction, secondaryAction, image } =
 
 <section
   aria-label="Hero"
-  class="relative flex min-h-[100dvh] items-end overflow-hidden bg-brand-900 pt-24"
+  class="relative flex min-h-dvh items-end overflow-hidden bg-brand-900 pt-24"
 >
   <div class="absolute inset-0 overflow-hidden">
     <OptimizedImage
       src={image}
       alt=""
-      class="parallax-bg h-[130%] w-full -top-[15%] object-cover will-change-transform"
+      class="parallax-bg h-[130%] w-full top-[-15%] object-cover will-change-transform"
       loading="eager"
       fetchpriority="high"
       quality={85}
@@ -65,17 +66,29 @@ const { eyebrow, title, description, primaryAction, secondaryAction, image } =
       sizes="100vw"
     />
   </div>
-  <div class="absolute inset-0 bg-gradient-to-t from-brand-900/85 via-brand-800/35 to-transparent" />
-  <div class="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 sm:pb-20 lg:pb-28 lg:px-8">
+  <div
+    class="absolute inset-0 bg-linear-to-t from-brand-900/85 via-brand-800/35 to-transparent"
+  >
+  </div>
+  <div
+    class="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 sm:pb-20 lg:pb-28 lg:px-8"
+  >
     <div class="max-w-2xl hero-content">
-      <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-brand-200 sm:text-sm">
-        <span class="size-1.5 rounded-full bg-amber-400" aria-hidden="true" />
+      <p
+        class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-brand-200 sm:text-sm"
+      >
+        <span class="size-1.5 rounded-full bg-amber-400" aria-hidden="true"
+        ></span>
         {eyebrow}
       </p>
-      <h1 class="mt-4 text-4xl leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+      <h1
+        class="mt-4 text-4xl leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl"
+      >
         {title}
       </h1>
-      <p class="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+      <p
+        class="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg"
+      >
         {description}
       </p>
       <div class="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -99,13 +112,17 @@ const { eyebrow, title, description, primaryAction, secondaryAction, image } =
     aria-hidden="true"
   >
     <svg
-      width="24" height="24" viewBox="0 0 24 24"
-      fill="none" stroke="currentColor"
-      stroke-width="2" stroke-linecap="round"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
       stroke-linejoin="round"
       class="size-5 text-white/40"
     >
-      <path d="M6 9l6 6 6-6" />
+      <path d="M6 9l6 6 6-6"></path>
     </svg>
   </div>
 </section>
@@ -121,7 +138,8 @@ const { eyebrow, title, description, primaryAction, secondaryAction, image } =
         function () {
           if (!ticking) {
             window.requestAnimationFrame(function () {
-              bg.style.transform = "translateY(" + window.scrollY * 0.15 + "px)";
+              bg.style.transform =
+                "translateY(" + window.scrollY * 0.15 + "px)";
               ticking = false;
             });
             ticking = true;

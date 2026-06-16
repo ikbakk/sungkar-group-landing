@@ -2,7 +2,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import FormField from "./FormField.astro";
-import type { FormField as FormFieldType, FormContext } from "@/lib/contact-data";
+import type {
+  FormField as FormFieldType,
+  FormContext,
+} from "@/lib/contact-data";
 import { businessInfo } from "@/lib/contact-data";
 
 interface Props {
@@ -18,7 +21,8 @@ const { context, fields, mode, itemName, region } = Astro.props;
 const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
 const formId = `whatsapp-form-${context}-${Math.random().toString(36).slice(2, 8)}`;
 
-const contextLabel = context === "sewa-mobil" ? "Pilihan Kendaraan" : "Pilihan Paket";
+const contextLabel =
+  context === "sewa-mobil" ? "Pilihan Kendaraan" : "Pilihan Paket";
 
 const isSidebar = mode === "sidebar";
 
@@ -26,60 +30,89 @@ const cardClass = isSidebar
   ? "border-border bg-brand-900 text-white shadow-[0_16px_45px_rgba(17,24,39,0.1)]"
   : "border-border bg-white";
 
-const titleText = context === "sewa-mobil"
-  ? (isSidebar ? "Sewa kendaraan ini" : "Sewa Mobil di Sungkar Group")
-  : (isSidebar ? "Pesan paket ini" : "Pesan Paket Wisata");
+const titleText =
+  context === "sewa-mobil"
+    ? isSidebar
+      ? "Sewa kendaraan ini"
+      : "Sewa Mobil di Sungkar Group"
+    : isSidebar
+      ? "Pesan paket ini"
+      : "Pesan Paket Wisata";
 
-const descClass = isSidebar ? "text-sm leading-7 text-brand-100" : "text-sm leading-7 text-text-muted";
+const descClass = isSidebar
+  ? "text-sm leading-7 text-brand-100"
+  : "text-sm leading-7 text-text-muted";
 const formClass = isSidebar ? "grid gap-4" : "grid gap-4 md:grid-cols-2";
 const btnClass = isSidebar
   ? "inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)]"
   : "inline-flex items-center justify-center rounded-md bg-brand-900 text-white text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-brand-800";
 ---
 
-<Card className={cardClass}>
+<!-- TODO: need localization for hardcoded -->
+<Card class={cardClass}>
   <CardHeader>
     <CardTitle class={cn("text-3xl leading-tight", isSidebar && "text-white")}>
       {titleText}
     </CardTitle>
-    {!isSidebar && (
-      <p class={descClass}>
-        Isi form di bawah, tim kami akan merespon via WhatsApp dalam waktu singkat.
-      </p>
-    )}
+    {
+      !isSidebar && (
+        <p class={descClass}>
+          Isi form di bawah, tim kami akan merespon via WhatsApp dalam waktu
+          singkat.
+        </p>
+      )
+    }
   </CardHeader>
 
   <CardContent>
-    {isSidebar && (
-      <p class="mb-6 text-sm leading-7 text-brand-100">
-        Isi form di bawah dan tim kami akan merespon via WhatsApp.
-      </p>
-    )}
+    {
+      isSidebar && (
+        <p class="mb-6 text-sm leading-7 text-brand-100">
+          Isi form di bawah dan tim kami akan merespon via WhatsApp.
+        </p>
+      )
+    }
 
     <form id={formId} class={formClass}>
-      {itemName && (
-        <label class="grid gap-2">
-          <span class={isSidebar ? "form-label-light" : "form-label"}>{contextLabel}</span>
-          <input
-            type="text"
-            value={itemName}
-            disabled
-            class={isSidebar ? "form-input-dark w-full rounded-lg opacity-70 cursor-not-allowed" : "form-input w-full rounded-lg opacity-60 cursor-not-allowed"}
-          />
-        </label>
-      )}
+      {
+        itemName && (
+          <label class="grid gap-2">
+            <span class={isSidebar ? "form-label-light" : "form-label"}>
+              {contextLabel}
+            </span>
+            <input
+              type="text"
+              value={itemName}
+              disabled
+              class={
+                isSidebar
+                  ? "form-input-dark w-full rounded-lg opacity-70 cursor-not-allowed"
+                  : "form-input w-full rounded-lg opacity-60 cursor-not-allowed"
+              }
+            />
+          </label>
+        )
+      }
 
-      {region && (
-        <label class="grid gap-2">
-          <span class={isSidebar ? "form-label-light" : "form-label"}>Lokasi</span>
-          <input
-            type="text"
-            value={region}
-            disabled
-            class={isSidebar ? "form-input-dark w-full rounded-lg opacity-70 cursor-not-allowed" : "form-input w-full rounded-lg opacity-60 cursor-not-allowed"}
-          />
-        </label>
-      )}
+      {
+        region && (
+          <label class="grid gap-2">
+            <span class={isSidebar ? "form-label-light" : "form-label"}>
+              Lokasi
+            </span>
+            <input
+              type="text"
+              value={region}
+              disabled
+              class={
+                isSidebar
+                  ? "form-input-dark w-full rounded-lg opacity-70 cursor-not-allowed"
+                  : "form-input w-full rounded-lg opacity-60 cursor-not-allowed"
+              }
+            />
+          </label>
+        )
+      }
 
       {
         fields.map((field) => (
@@ -94,32 +127,42 @@ const btnClass = isSidebar
   </CardContent>
 
   <CardContent class="flex flex-wrap gap-3">
-    <button
-      id={"btn-submit-" + formId}
-      type="button"
-      class={btnClass}
-    >
+    <button id={"btn-submit-" + formId} type="button" class={btnClass}>
       Chat WhatsApp
     </button>
   </CardContent>
 </Card>
 
-<script define:vars={{ formId, whatsappNumber, context, itemName, region }}>
+<script
+  is:inline
+  define:vars={{ formId, whatsappNumber, context, itemName, region }}
+>
   import { buildWhatsappMessage } from "@/lib/contact-data";
 
-  document.getElementById("btn-submit-" + formId).addEventListener("click", function() {
-    var fieldIds = ["name", "travelDate", "duration", "passengers", "guests", "rentalReason", "message"];
+  document
+    .getElementById("btn-submit-" + formId)
+    .addEventListener("click", function () {
+      var fieldIds = [
+        "name",
+        "travelDate",
+        "duration",
+        "passengers",
+        "guests",
+        "rentalReason",
+        "message",
+      ];
 
-    var values = {};
-    for (var i = 0; i < fieldIds.length; i++) {
-      var el = document.querySelector('[name="' + fieldIds[i] + '"]');
-      if (el) {
-        values[fieldIds[i]] = el.value || "";
+      var values = {};
+      for (var i = 0; i < fieldIds.length; i++) {
+        var el = document.querySelector('[name="' + fieldIds[i] + '"]');
+        if (el) {
+          values[fieldIds[i]] = el.value || "";
+        }
       }
-    }
 
-    var msg = buildWhatsappMessage(context, values, itemName, region);
-    var url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(msg);
-    window.open(url, "_blank");
-  });
+      var msg = buildWhatsappMessage(context, values, itemName, region);
+      var url =
+        "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(msg);
+      window.open(url, "_blank");
+    });
 </script>

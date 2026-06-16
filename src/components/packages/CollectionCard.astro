@@ -16,31 +16,35 @@ const { collection, region } = Astro.props;
 
 <a href={`/paket-wisata/${region}/${collection.slug}`}>
   <Card
-    className="
-      h-full
+    class="h-full
       transition-all
       hover:-translate-y-1
       hover:shadow-lg
-      cursor-pointer
-    "
+      cursor-pointer"
   >
-    <CardContent className="p-6">
+    <CardContent class="p-6">
       <h2 class="text-xl">{collection.title}</h2>
       <p class="mt-2 text-sm text-text-muted">
+        <!-- TODO: need localization -->
         {collection.packages.length} paket tersedia
       </p>
       <ul class="mt-4 space-y-2 text-sm text-text-muted">
-        {collection.packages.slice(0, 3).map((pkg) => (
-          <li class="flex gap-2">
-            <span>•</span>
-            <span>{pkg.title}</span>
-          </li>
-        ))}
-        {collection.packages.length > 3 && (
-          <li class="font-medium text-brand-700">
-            +{collection.packages.length - 3} paket lainnya
-          </li>
-        )}
+        {
+          collection.packages.slice(0, 3).map((pkg) => (
+            <li class="flex gap-2">
+              <span>•</span>
+              <span>{pkg.title}</span>
+            </li>
+          ))
+        }
+        {
+          collection.packages.length > 3 && (
+            <li class="font-medium text-brand-700">
+          <!-- TODO: need localization -->
+              +{collection.packages.length - 3} paket lainnya
+            </li>
+          )
+        }
       </ul>
     </CardContent>
   </Card>

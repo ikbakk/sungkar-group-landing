@@ -14,50 +14,57 @@ const { guide, locale = "id" } = Astro.props;
 
 const href = localizeHref("/panduan-wisata/" + guide.slug, locale);
 
-const region = guide.region === "general"
-  ? { label: "Umum", className: "bg-gray-100 text-gray-700 border-gray-200" }
-  : REGION_MAP[guide.region as keyof typeof REGION_MAP];
+const region =
+  guide.region === "general"
+    ? { label: "Umum", className: "bg-gray-100 text-gray-700 border-gray-200" }
+    : REGION_MAP[guide.region as keyof typeof REGION_MAP];
 
-const regionLabel = guide.region === "general"
-  ? "Umum"
-  : (REGION_LABEL[guide.region as keyof typeof REGION_LABEL] ?? "Umum");
+const regionLabel =
+  guide.region === "general"
+    ? "Umum"
+    : (REGION_LABEL[guide.region as keyof typeof REGION_LABEL] ?? "Umum");
 ---
 
 <a href={href} class="block group">
-  <Card className="h-fit overflow-hidden py-0 transition-all duration-300 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_20px_40px_rgba(17,24,39,0.1)]">
-    <CardContent className="flex h-full flex-col gap-4 p-6">
+  <Card
+    class="h-fit overflow-hidden py-0 transition-all duration-300 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_20px_40px_rgba(17,24,39,0.1)]"
+  >
+    <CardContent class="flex h-full flex-col gap-4 p-6">
       <div class="flex flex-wrap items-center gap-2">
         <Badge
           variant="outline"
-          className="rounded-full px-3 py-1 text-xs font-medium"
+          class="rounded-full px-3 py-1 text-xs font-medium"
         >
           {guide.readingTime} menit baca
+          <!-- TODO: this should use lozalization for the "menit baca" -->
         </Badge>
 
-        {region && (
-          <Badge className={region.className}>
-            {regionLabel}
-          </Badge>
-        )}
+        {region && <Badge class={region.className}>{regionLabel}</Badge>}
       </div>
 
       <div>
-        <h3 class="text-xl leading-tight text-foreground group-hover:text-brand-600 transition-colors">
+        <h3
+          class="text-xl leading-tight text-foreground group-hover:text-brand-600 transition-colors"
+        >
           {guide.title}
         </h3>
 
-        <p class="mt-3 line-clamp-2 font-sans text-sm leading-7 text-text-muted">
+        <p
+          class="mt-3 line-clamp-2 font-sans text-sm leading-7 text-text-muted"
+        >
           {guide.description}
         </p>
       </div>
 
       <ul class="space-y-2 text-sm font-sans">
-        {guide.bestFor.slice(0, 3).map((item) => (
-          <li class="flex items-center gap-2 text-text-muted">
-            <span class="font-semibold text-brand-700">&#10003;</span>
-            <span>{item}</span>
-          </li>
-        ))}
+        {
+          guide.bestFor.slice(0, 3).map((item) => (
+            <li class="flex items-center gap-2 text-text-muted">
+              <span class="font-semibold text-brand-700">&#10003;</span>
+              <span>{item}</span>
+            </li>
+          ))
+        }
       </ul>
     </CardContent>
   </Card>

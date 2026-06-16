@@ -1,10 +1,10 @@
 ---
-import FooterBlock from "@/components/blocks/FooterBlock.astro"
+import FooterBlock from "@/components/blocks/FooterBlock.astro";
 import { t } from "@/lib/i18n";
 import { localizeHref } from "@/lib/i18n/localize";
 
 interface Props {
-  locale?: string;
+  locale?: string | undefined;
 }
 
 const { locale = "id" } = Astro.props as Props;
@@ -12,6 +12,7 @@ const currentYear = new Date().getFullYear();
 const uiStrings = t(locale);
 ---
 
+<!-- TODO: there is an error here in brandHref, and href at bottom type error -->
 <FooterBlock
   locale={locale}
   brandName={uiStrings.footer.brandName}
@@ -61,7 +62,13 @@ const uiStrings = t(locale);
   ]}
   copyright={uiStrings.footer.copyright.replace("{year}", String(currentYear))}
   bottomLinks={[
-    { label: uiStrings.footer.privacy, href: localizeHref("/kebijakan-privasi", locale) },
-    { label: uiStrings.footer.terms, href: localizeHref("/syarat-ketentuan", locale) },
+    {
+      label: uiStrings.footer.privacy,
+      href: localizeHref("/kebijakan-privasi", locale),
+    },
+    {
+      label: uiStrings.footer.terms,
+      href: localizeHref("/syarat-ketentuan", locale),
+    },
   ]}
 />

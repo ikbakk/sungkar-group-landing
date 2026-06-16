@@ -1,6 +1,6 @@
 ---
 import PackageCard from "@/components/cards/PackageCard.astro";
-import type { TourPackage } from "@/lib/content/tourPackages";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 
 const { id, title, description, packages } = Astro.props as {
   id: string;
@@ -27,6 +27,7 @@ const { id, title, description, packages } = Astro.props as {
       href="#top"
       class="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium"
     >
+      <!-- TODO: need localization -->
       ↑ Kembali ke Atas
     </a>
   </div>

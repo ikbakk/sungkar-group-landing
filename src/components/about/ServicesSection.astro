@@ -10,14 +10,15 @@ const { services } = Astro.props;
 ---
 
 <SectionContainer background="bg-surface-soft">
-  <Card className="border-border bg-white">
+  <Card class="border-border bg-white">
     <CardHeader>
-      <CardTitle className="text-3xl leading-tight">
+      <CardTitle class="text-3xl leading-tight">
+        <!-- TODO:This need to be localized -->
         Apa yang kami kerjakan
       </CardTitle>
     </CardHeader>
 
-    <CardContent className="flex flex-col gap-4">
+    <CardContent class="flex flex-col gap-4">
       {
         services.map((service, index) => (
           <div

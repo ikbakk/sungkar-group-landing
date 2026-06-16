@@ -85,19 +85,29 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
                     return (
                       <a
                         key={l}
-                        href={isCurrent ? undefined : getLocalizedPath(
-                          typeof window !== "undefined" ? window.location.pathname : "/",
-                          l,
-                        )}
+                        href={
+                          isCurrent
+                            ? undefined
+                            : getLocalizedPath(
+                                typeof window !== "undefined"
+                                  ? window.location.pathname
+                                  : "/",
+                                l,
+                              )
+                        }
                         className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium transition-colors ${
                           isCurrent
                             ? "bg-primary text-primary-foreground"
                             : "bg-muted text-muted-foreground hover:bg-accent hover:text-foreground"
                         }`}
                       >
-                        <span className="text-base leading-none">{FLAGS[l]}</span>
+                        <span className="text-base leading-none">
+                          {FLAGS[l]}
+                        </span>
                         <span>{LOCALE_SHORT_LABELS[l as Locale]}</span>
-                        <span className="hidden sm:inline">{LOCALE_LABELS[l as Locale]}</span>
+                        <span className="hidden sm:inline">
+                          {LOCALE_LABELS[l as Locale]}
+                        </span>
                       </a>
                     );
                   })}

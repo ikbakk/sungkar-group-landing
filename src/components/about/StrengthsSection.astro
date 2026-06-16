@@ -10,14 +10,15 @@ const { strengths } = Astro.props;
 ---
 
 <SectionContainer background="bg-background">
-  <Card className="border-border bg-white">
+  <Card class="border-border bg-white">
     <CardHeader>
-      <CardTitle className="text-3xl leading-tight">
+      <CardTitle class="text-3xl leading-tight">
+        <!-- TODO: need localized too -->
         Mengapa wisatawan memilih Sungkar Group
       </CardTitle>
     </CardHeader>
 
-    <CardContent className="grid gap-4 md:grid-cols-2">
+    <CardContent class="grid gap-4 md:grid-cols-2">
       {
         strengths.map((item) => (
           <div class="rounded-lg border border-border bg-surface-soft p-4">

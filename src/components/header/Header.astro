@@ -18,8 +18,6 @@ interface Props {
 const { locale = "id" } = Astro.props as Props;
 const navModule = await loadContent(locale, "navigation");
 const { navigation } = navModule;
-const rootPath = localizeHref("/", locale);
-const isHome = Astro.url.pathname === rootPath || Astro.url.pathname === rootPath + "/";
 ---
 
 <header
@@ -45,6 +43,6 @@ const isHome = Astro.url.pathname === rootPath || Astro.url.pathname === rootPat
       <LocaleSwitcher locale={locale} />
     </div>
 
-    <NavigationMobile items={navigation} isHome={isHome} locale={locale} client:load />
+    <NavigationMobile items={navigation} locale={locale} client:load />
   </div>
 </header>
