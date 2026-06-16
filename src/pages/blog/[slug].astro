@@ -28,7 +28,7 @@ if (!post) {
   return Astro.redirect("/blog", 404);
 }
 
-const { Content, title, description, publishDate, readingTime, tags, author } = post;
+const { Content, title, description, publishDate, readingTime, tags, author, featuredImage } = post;
 
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: "/" },
@@ -36,13 +36,16 @@ const breadcrumbs = [
   { label: title },
 ];
 
-const articleSchema = generateArticleSchema(title, description, "", SITE_URL, `blog/${slug}`, publishDate.toISOString());
+const articleImage = featuredImage || "";
+const articleSchema = generateArticleSchema(title, description, articleImage, SITE_URL, `blog/${slug}`, publishDate.toISOString());
 ---
 
 <MainLayout
   title={`${title} - Blog Sungkar Group`}
   description={description}
   canonical={`/blog/${slug}`}
+  image={featuredImage}
+  imageAlt={title}
   locale={locale}
 >
   <StructuredData schema={articleSchema} />

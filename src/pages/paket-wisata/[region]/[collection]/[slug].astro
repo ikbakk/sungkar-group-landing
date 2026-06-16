@@ -72,7 +72,7 @@ const breadcrumbItems = [
   { name: uiStrings.breadcrumb.tourPackages, url: "/paket-wisata" },
   { name: REGION_LABEL[r], url: `/paket-wisata/${tour.region}` },
   { name: tour.collectionTitle, url: `/paket-wisata/${tour.region}/${tour.collectionSlug}` },
-  { name: tour.title, url: packageUrl },
+  { name: tour.title, url: `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}` },
 ];
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);

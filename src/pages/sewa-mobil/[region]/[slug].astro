@@ -48,7 +48,7 @@ const breadcrumbItems = [
   { name: uiStrings.breadcrumb.home, url: "/" },
   { name: uiStrings.breadcrumb.carRental, url: "/sewa-mobil" },
   { name: REGION_LABEL[vehicle.region], url: `/sewa-mobil/${vehicle.region}` },
-  { name: vehicle.name, url: vehicleUrl },
+  { name: vehicle.name, url: `/sewa-mobil/${vehicle.region}/${vehicle.slug}` },
 ];
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);

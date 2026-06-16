@@ -75,7 +75,7 @@ const breadcrumbItems = [
   { name: uiStrings.breadcrumb.tourPackages, url: `/${locale}/tour-packages` },
   { name: REGION_LABEL[r], url: `/${locale}/tour-packages/${tour.region}` },
   { name: tour.collectionTitle, url: `/${locale}/tour-packages/${tour.region}/${tour.collectionSlug}` },
-  { name: tour.title, url: packageUrl },
+  { name: tour.title, url: `/${locale}/tour-packages/${tour.region}/${tour.collectionSlug}/${tour.slug}` },
 ];
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);

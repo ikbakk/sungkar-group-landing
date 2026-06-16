@@ -9,9 +9,10 @@ type Props = Omit<HTMLAttributes<"img">, "src"> & {
   src?: ImageSource
   srcLight?: ImageSource
   srcDark?: ImageSource
+  alt?: string
 }
 
-const { class: className, src, srcLight, srcDark } = Astro.props
+const { class: className, src, srcLight, srcDark, alt = "Sungkar Group" } = Astro.props
 
 const baseClasses = "w-auto shrink-0 h-6 object-contain"
 ---
@@ -23,6 +24,7 @@ const baseClasses = "w-auto shrink-0 h-6 object-contain"
         class={cn(baseClasses, "dark:hidden", className)}
         data-slot="logo-image"
         src={srcLight}
+        alt={alt}
         sizes="200px"
         widths={[200]}
       />
@@ -30,6 +32,7 @@ const baseClasses = "w-auto shrink-0 h-6 object-contain"
         class={cn(baseClasses, "hidden dark:block", className)}
         data-slot="logo-image"
         src={srcDark}
+        alt={alt}
         sizes="200px"
         widths={[200]}
       />
@@ -39,6 +42,7 @@ const baseClasses = "w-auto shrink-0 h-6 object-contain"
       class={cn(baseClasses, className)}
       data-slot="logo-image"
       src={src}
+      alt={alt}
       sizes="200px"
       widths={[200]}
     />

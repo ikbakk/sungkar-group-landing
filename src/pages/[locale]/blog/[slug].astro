@@ -31,7 +31,7 @@ if (!post) {
   return Astro.redirect(`/${locale}/blog`, 404);
 }
 
-const { Content, title, description, publishDate, readingTime, tags, author } = post;
+const { Content, title, description, publishDate, readingTime, tags, author, featuredImage } = post;
 
 const homeHref = `/${locale}`;
 const breadcrumbs = [
@@ -40,13 +40,16 @@ const breadcrumbs = [
   { label: title },
 ];
 
-const articleSchema = generateArticleSchema(title, description, "", SITE_URL, `${locale}/blog/${slug}`, publishDate.toISOString());
+const articleImage = featuredImage || "";
+const articleSchema = generateArticleSchema(title, description, articleImage, SITE_URL, `${locale}/blog/${slug}`, publishDate.toISOString());
 ---
 
 <MainLayout
   title={`${title} - Blog Sungkar Group`}
   description={description}
   canonical={`/${locale}/blog/${slug}`}
+  image={featuredImage}
+  imageAlt={title}
   locale={locale}
 >
   <StructuredData schema={articleSchema} />
