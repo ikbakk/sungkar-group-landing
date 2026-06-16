@@ -2,7 +2,7 @@ import HeroLombok from "@/assets/images/hero-lombok.webp";
 import DestinationSumbawa from "@/assets/images/destination-sumbawa.webp";
 import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
 
-import type { TourPackage } from "../../../content/tourPackages/types";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 
 export const labuanBajoPackages: TourPackage[] = [
   {

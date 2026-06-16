@@ -15,6 +15,8 @@ import { businessInfo, contactFormFields } from "@/lib/contact-data";
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
+import { packages } from "@/lib/content/tourPackages";
+
 import {
   generateContactPageSchema,
   generateFAQPageSchema,
@@ -86,6 +88,7 @@ const breadcrumbs = [
         businessInfo={businessInfo}
         title={contactPageContent.form.title}
         description={contactPageContent.form.description}
+        packages={packages}
       />
     </div>
   </SectionContainer>

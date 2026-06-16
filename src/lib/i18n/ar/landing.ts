@@ -1,9 +1,9 @@
 import type { ImageMetadata } from "astro";
 
 import { businessInfo } from "@/lib/contact-data";
-import { destinations } from "@/lib/content/destinationsData";
+import { destinations } from "@/lib/content/destinations";
 import { packages } from "@/lib/content/tourPackages";
-import { toMarqueeReviews, reviewStats } from "@/lib/content/reviewPage";
+import { toMarqueeReviews, reviewStats } from "@/lib/content/reviews";
 import Hero from "@/assets/images/hero.webp";
 import HeroLombok from "@/assets/images/hero-lombok.webp";
 import KutaBeach from "@/assets/images/kuta-beach.webp";

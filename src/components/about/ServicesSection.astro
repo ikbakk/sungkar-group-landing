@@ -1,7 +1,12 @@
 ---
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { aboutContent } from "@/lib/content/about";
+
+interface Props {
+  services: Array<{ title: string; description: string }>;
+}
+
+const { services } = Astro.props;
 ---
 
 <SectionContainer background="bg-surface-soft">
@@ -14,7 +19,7 @@ import { aboutContent } from "@/lib/content/about";
 
     <CardContent className="flex flex-col gap-4">
       {
-        aboutContent.services.map((service, index) => (
+        services.map((service, index) => (
           <div
             class={
               index % 2 === 0

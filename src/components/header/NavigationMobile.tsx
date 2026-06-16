@@ -13,7 +13,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import type { NavItem } from "@/lib/content/navigationData";
+import type { NavItem } from "@/lib/content/shared/types";
 import { localizeHref } from "@/lib/i18n/localize";
 import {
   LOCALE_LABELS,
@@ -22,6 +22,7 @@ import {
   getLocalizedPath,
   type Locale,
 } from "@/lib/i18n";
+import { t } from "@/lib/i18n/ui-strings";
 
 type Props = {
   items: NavItem[];
@@ -62,7 +63,7 @@ export default function NavigationMobile({ items, isHome, locale = "id" }: Props
         <DrawerContent className="h-[85vh]">
           <DrawerHeader className="space-y-2 pb-2">
             <DrawerTitle className="text-center text-xl font-medium">
-              Jelajahi Destinasi
+              {t(locale).header.exploreDestinations}
             </DrawerTitle>
 
             <p className="text-center text-sm text-muted-foreground">
@@ -70,7 +71,7 @@ export default function NavigationMobile({ items, isHome, locale = "id" }: Props
             </p>
 
             <p className="text-center text-xs text-muted-foreground">
-              {totalPackages} Paket Wisata Tersedia
+              {t(locale).nav.availablePackages}
             </p>
           </DrawerHeader>
 
@@ -269,7 +270,7 @@ export default function NavigationMobile({ items, isHome, locale = "id" }: Props
                     href={lh("/kontak")}
                     className="inline-flex shrink-0 items-center justify-center rounded-md border border-border bg-background text-sm font-medium whitespace-nowrap transition-colors hover:bg-muted hover:text-foreground h-9 px-2.5"
                   >
-                    Cek Ketersediaan
+                    {t(locale).nav.checkAvailability}
                   </a>
                 )}
 

@@ -1,4 +1,4 @@
-import { destinations } from "@/lib/content/destinationsData";
+import { destinations } from "./destinations/data";
 
 export const destinationsPageContent = {
   hero: {

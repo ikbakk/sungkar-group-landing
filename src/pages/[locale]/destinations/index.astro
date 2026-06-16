@@ -11,7 +11,7 @@ import DestinationGroupSection from "@/components/destinations/DestinationGroupS
 
 import { loadContent } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
-import { destinations } from "@/lib/content/destinationsData";
+import { destinations } from "@/lib/content/destinations";
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));

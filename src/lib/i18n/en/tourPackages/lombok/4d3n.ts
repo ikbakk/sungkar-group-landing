@@ -3,10 +3,10 @@ import DestinationGili from "@/assets/images/destination-gili.webp";
 import GiliMeno from "@/assets/images/gili-meno.webp";
 import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
 
-import type { TourPackage } from "../../../content/tourPackages/types";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 
-import { COLLECTIONS } from "../../../content/tourPackages/collections";
-import { createPackage } from "../../../content/tourPackages/utils";
+import { COLLECTIONS } from "@/lib/content/tourPackages/collections";
+import { createPackage } from "@/lib/content/tourPackages/utils";
 
 export const fourDays: TourPackage[] = [
   createPackage(COLLECTIONS.FOUR_DAYS_THREE_NIGHTS, {

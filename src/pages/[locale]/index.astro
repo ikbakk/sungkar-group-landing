@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 
 const { locale } = Astro.params;
 const landingModule = await loadContent(locale!, "landing");
-const { landingHero } = landingModule;
+const { landingHero, landingFeaturedTours, landingDestinations, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
 ---
 
 <MainLayout
@@ -22,5 +22,13 @@ const { landingHero } = landingModule;
   imageAlt="Pemandangan pantai Lombok dengan matahari terbenam"
   locale={locale}
 >
-  <LandingPage />
+  <LandingPage
+    hero={landingHero}
+    featuredTours={landingFeaturedTours}
+    destinations={landingDestinations}
+    transport={landingTransport}
+    testimonials={landingTestimonials}
+    video={landingVideo}
+    backgroundImage={landingBackgroundImage}
+  />
 </MainLayout>

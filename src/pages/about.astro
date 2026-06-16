@@ -47,17 +47,17 @@ const pageDescription = aboutContent.hero.description;
       { label: uiStrings.breadcrumb.about },
     ]}
   />
-  <StorySection />
-  <VisionMissionSection />
-  <ServicesSection />
-  <StrengthsSection />
-  <ValuesSection />
-  <CommitmentSection />
+  <StorySection story={aboutContent.story} />
+  <VisionMissionSection vision={aboutContent.vision} mission={aboutContent.mission} />
+  <ServicesSection services={aboutContent.services} />
+  <StrengthsSection strengths={aboutContent.strengths} />
+  <ValuesSection values={aboutContent.values} />
+  <CommitmentSection commitment={aboutContent.commitment} />
   <FaqSection
     eyebrow="FAQ"
     title={uiStrings.faq.sectionAbout}
     items={aboutFaq}
     background="bg-surface-soft"
   />
-  <CtaSection />
+  <CtaSection cta={aboutContent.cta} />
 </MainLayout>

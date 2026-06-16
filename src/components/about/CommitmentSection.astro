@@ -1,20 +1,25 @@
 ---
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { aboutContent } from "@/lib/content/about";
+
+interface Props {
+  commitment: { title: string; description: string };
+}
+
+const { commitment } = Astro.props;
 ---
 
 <SectionContainer background="bg-background">
   <Card className="border-border bg-brand-900 text-white">
     <CardHeader>
       <CardTitle className="text-3xl leading-tight text-white">
-        {aboutContent.commitment.title}
+        {commitment.title}
       </CardTitle>
     </CardHeader>
 
     <CardContent>
       <p class="text-sm leading-7 text-brand-100">
-        {aboutContent.commitment.description}
+        {commitment.description}
       </p>
     </CardContent>
   </Card>

@@ -1,7 +1,13 @@
 ---
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { aboutContent } from "@/lib/content/about";
+
+interface Props {
+  vision: { description: string };
+  mission: { items: string[] };
+}
+
+const { vision, mission } = Astro.props;
 ---
 
 <SectionContainer background="bg-background">
@@ -13,7 +19,7 @@ import { aboutContent } from "@/lib/content/about";
 
       <CardContent>
         <p class="text-sm leading-7 text-text-muted">
-          {aboutContent.vision.description}
+          {vision.description}
         </p>
       </CardContent>
     </Card>
@@ -25,7 +31,7 @@ import { aboutContent } from "@/lib/content/about";
 
       <CardContent className="flex flex-col gap-4">
         {
-          aboutContent.mission.items.map((item) => (
+          mission.items.map((item) => (
             <div class="flex gap-3">
               <span class="text-brand-700">•</span>
 

@@ -4,10 +4,10 @@ import KutaBeach from "@/assets/images/kuta-beach.webp";
 import KutaBeach2 from "@/assets/images/kuta-beach-2.webp";
 import TourCultural from "@/assets/images/tour-cultural.webp";
 
-import type { TourPackage } from "../../../content/tourPackages/types";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 
-import { COLLECTIONS } from "../../../content/tourPackages/collections";
-import { createPackage } from "../../../content/tourPackages/utils";
+import { COLLECTIONS } from "@/lib/content/tourPackages/collections";
+import { createPackage } from "@/lib/content/tourPackages/utils";
 
 export const oneDay: TourPackage[] = [
   createPackage(COLLECTIONS.ONE_DAY, {

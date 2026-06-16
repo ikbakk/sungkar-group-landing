@@ -120,6 +120,7 @@ export interface UIStrings {
     send: string;
     back: string;
     seeMore: string;
+    viewAll: string;
   };
   seo: {
     keywords: string;
@@ -248,6 +249,7 @@ export const translations: Record<Locale, UIStrings> = {
       send: "Kirim",
       back: "Kembali",
       seeMore: "Lihat Lainnya",
+      viewAll: "Lihat Semua",
     },
     seo: {
       keywords: "paket wisata lombok, tour lombok, open trip lombok, wisata sumbawa, whale shark sumbawa, wisata labuan bajo, tour komodo, sewa mobil lombok, sungkar group",
@@ -374,6 +376,7 @@ export const translations: Record<Locale, UIStrings> = {
       send: "Send",
       back: "Back",
       seeMore: "See More",
+      viewAll: "View All",
     },
     seo: {
       keywords: "lombok tour packages, lombok tour, open trip lombok, sumbawa tours, whale shark sumbawa, labuan bajo tours, komodo tour, car rental lombok, sungkar group",
@@ -500,6 +503,7 @@ export const translations: Record<Locale, UIStrings> = {
       send: "\u0625\u0631\u0633\u0627\u0644",
       back: "\u0631\u062C\u0648\u0639",
       seeMore: "\u0639\u0631\u0636 \u0627\u0644\u0645\u0632\u064A\u062F",
+      viewAll: "\u0639\u0631\u0636 \u0627\u0644\u0643\u0644",
     },
     seo: {
       keywords: "\u0628\u0627\u0642\u0627\u062A \u0633\u064A\u0627\u062D\u064A\u0629 \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u062C\u0648\u0644\u0627\u062A \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u0631\u062D\u0644\u0627\u062A \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u0633\u064A\u0627\u062D\u0629 \u0633\u0648\u0645\u0628\u0627\u0648\u0627\u060C \u062D\u0648\u062A \u0627\u0644\u062D\u0648\u062A \u0633\u0648\u0645\u0628\u0627\u0648\u0627\u060C \u0644\u0627\u0628\u0648\u0627\u0646 \u0628\u0627\u062C\u0648\u060C \u0631\u062D\u0644\u0629 \u0643\u0648\u0645\u0648\u062F\u0648\u060C \u062A\u0623\u062C\u064A\u0631 \u0633\u064A\u0627\u0631\u0627\u062A \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u0633\u0648\u0646\u062C\u0627\u0631 \u062C\u0631\u0648\u0628",
@@ -626,6 +630,7 @@ export const translations: Record<Locale, UIStrings> = {
       send: "Hantar",
       back: "Kembali",
       seeMore: "Lihat Lagi",
+      viewAll: "Lihat Semua",
     },
     seo: {
       keywords: "pakej pelancongan lombok, tour lombok, open trip lombok, wisata sumbawa, whale shark sumbawa, wisata labuan bajo, tour komodo, sewa kereta lombok, sungkar group",
@@ -752,6 +757,7 @@ export const translations: Record<Locale, UIStrings> = {
       send: "\u53D1\u9001",
       back: "\u8FD4\u56DE",
       seeMore: "\u67E5\u770B\u66F4\u591A",
+      viewAll: "\u67E5\u770B\u5168\u90E8",
     },
     seo: {
       keywords: "\u9F99\u6728\u5C9B\u65C5\u6E38\u5957\u9910, \u9F99\u6728\u5C9B\u4E00\u65E5\u6E38, \u9F99\u6728\u5C9B\u62FC\u56E2\u6E38, \u68EE\u5DF4\u74E6\u65C5\u6E38, \u68EE\u5DF4\u74E6\u9CA8\u9C7C, \u62C9\u5E03\u5B89\u5DF4\u7126\u65C5\u6E38, \u79D1\u6469\u591A\u65C5\u6E38, \u9F99\u6728\u5C9B\u6C7D\u8F66\u79DF\u8D41, Sungkar Group",

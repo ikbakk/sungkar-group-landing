@@ -38,3 +38,5 @@ export const faqPageContent = {
     },
   ],
 } as const;
+
+export { faqItems } from "./data";

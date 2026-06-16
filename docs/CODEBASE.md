@@ -26,13 +26,22 @@ src/
 │   ├── site/           # Shared site pieces (Footer, Faq, PageHeader)
 │   └── ui/             # Primitives (button, card, select, nav-menu, etc.)
 ├── lib/
-│   ├── content/        # ALL data/content definitions
-│   │   ├── about.ts, landing.ts, guides.ts
-│   │   ├── akomodasiData.ts, sewaMobilData.ts, destinationsData.ts
-│   │   ├── akomodasiPage.ts, sewaPage.ts, packagePage.ts, reviewPage.ts, contactPage.ts
-│   │   ├── navigationData.ts, faqPage.ts, contact-data.ts
+│   ├── content/        # ALL data/content definitions (folder-based barrel exports)
+│   │   ├── about/       # aboutContent
+│   │   ├── contact/     # contactPageContent
+│   │   ├── faq/         # faqPageContent + faqItems (from ./data)
+│   │   ├── reviews/     # reviewsPageContent, reviews, reviewStats, toMarqueeReviews
+│   │   ├── destinations/# destinationsPageContent + destinations (from ./data)
+│   │   ├── accommodations/ # akomodasiPageContent + accommodations (from ./data)
+│   │   ├── car-rental/  # sewaPageContent + vehicles (from ./data)
+│   │   ├── tour-packages/# packagePageContent + packages (from tourPackages/)
+│   │   ├── travel-guides/ # guides (from ./data)
+│   │   ├── landing/     # landingHero, landingTourCards, etc.
+│   │   ├── shared/      # contact-data, og-metadata, schemas, regions, navigation
 │   │   ├── faqs/        # FAQ items by topic
-│   │   └── tourPackages/ # Package data (lombok/, sumbawa/, labuan-bajo/)
+│   │   ├── tourPackages/ # Package data (lombok/, sumbawa/, labuan-bajo/)
+│   │   ├── navigationData.ts, landing.ts, destinationsPage.ts
+│   │   └── each folder has index.ts (barrel) + data.ts (data arrays)
 │   ├── schemas.ts       # JSON-LD structured data generators
 │   ├── site-config.ts   # SITE_URL = "https://www.sungkargroup.com"
 │   ├── regions.ts       # Region keys, labels, CSS classes
@@ -103,24 +112,34 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 ### Content Types (all in `src/lib/content/`)
 
 | File | Exports | Type |
-|---|---|---|
-| `about.ts` | `aboutContent` object | About page content (hero, story, vision, mission, services, strengths, values, commitment, cta sections) |
+|---|---|---|---|
+| `about/index.ts` | `aboutContent` object | About page content (hero, story, vision, mission, services, strengths, values, commitment, cta sections) |
 | `landing.ts` | `landingHero`, `landingTourCards`, `landingDestinationCards` | Homepage content |
-| `destinationsData.ts` | `destinations: Destination[]` | `{ slug, title, region, image, gallery[], summary, thingsToDo[], packages[] }` |
+| `destinations/index.ts` | `destinationsPageContent` + `destinations` (from `./data`) | `{ slug, title, region, image, gallery[], summary, thingsToDo[], packages[] }` |
+| `destinations/data.ts` | `destinations: Destination[]`, `Destination` type | Data array + type |
 | `tourPackages/index.ts` | `packages: TourPackage[]` | `{ slug, title, region, collectionSlug, category, duration, images[], summary, highlights[], itinerary[], includes[], excludes[] }` |
 | `tourPackages/*.ts` | Region-specific package data | Re-exported through `index.ts` |
 | `tourPackages/collections.ts` | `COLLECTIONS` | Duration-based slugs (1-hari, 2-hari-1-malam, etc.) |
 | `tourPackages/types.ts` | `TourPackage`, `Region`, `PackageCollection` | Type definitions |
 | `tourPackages/utils.ts` | Utility helpers | Package data utilities |
-| `akomodasiData.ts` | `accommodations: Accommodation[]` | `{ slug, name, region, perks[], regionalHighlights[], description, image }` |
-| `sewaMobilData.ts` | `vehicles: Vehicle[]` | `{ slug, name, region, pricePerDay, seats, transmission, features[], bestFor[], description, imageTop, imageBottom }` |
-| `guides.ts` | `guides` array | Travel guide content |
-| `reviewPage.ts` | `reviews`, `reviewStats`, `touristPhotos` | Google review data + photos |
-| `faqPage.ts` | FAQ content | Aggregated FAQ data |
+| `accommodations/index.ts` | `akomodasiPageContent` + `accommodations` (from `./data`) | `{ slug, name, region, perks[], regionalHighlights[], description, image }` |
+| `accommodations/data.ts` | `accommodations: Accommodation[]`, `Accommodation` type | Data array + type |
+| `car-rental/index.ts` | `sewaPageContent` + `vehicles` (from `./data`) | `{ slug, name, region, pricePerDay, seats, transmission, features[], bestFor[], description, imageTop, imageBottom }` |
+| `car-rental/data.ts` | `vehicles: Vehicle[]`, `Vehicle` type | Data array + type |
+| `travel-guides/index.ts` | `guides` (from `./data`) | Travel guide content |
+| `travel-guides/data.ts` | `guides: Guide[]`, `Guide` type | Data array + type |
+| `reviews/index.ts` | `reviewsPageContent`, `reviews`, `reviewStats`, `toMarqueeReviews`, `Review`, `MarqueeReview` | Google review data + photos |
+| `faq/index.ts` | `faqPageContent` + `faqItems` (from `./data`) | Aggregated FAQ data |
+| `faq/data.ts` | `faqItems` | FAQ items combined from per-topic files |
+| `contact/index.ts` | `contactPageContent` | Contact page content (hero, info, form, map) |
 | `faqs/*.ts` | Per-topic FAQ arrays | `about`, `akomodasi`, `contact`, `general`, `package`, `reviews`, `sewa-mobil` |
 | `navigationData.ts` | `headerNav: NavItem[]` | Navigation menu structure (mega menu) |
-| `contact-data.ts` | `businessInfo` | Business contact details |
-| `contactPage.ts`, `akomodasiPage.ts`, `destinationsPage.ts`, `packagePage.ts`, `sewaPage.ts` | Page-specific content objects | Eyebrow, title, description, hero images for each page header |
+| `shared/contact-data.ts` | `businessInfo` | Business contact details |
+| `shared/og-metadata.ts` | OG metadata helpers | Shared across pages |
+| `shared/schemas.ts` | JSON-LD schema helpers | Shared across pages |
+| `shared/regions.ts` | Region key/label maps | Shared across pages |
+| `shared/navigation.ts` | Navigation utilities | Shared across pages |
+| `destinationsPage.ts` | `destinationsPageContent` | Destination page content (hero, groups, FAQ, related content) |
 
 ### Shared Data (`src/lib/`)
 
@@ -139,43 +158,47 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 
 ```
 Page (src/pages/xxx.astro)
-  ├── imports content from src/lib/content/xxx.ts
-  ├── passes data as props to components
+  ├── loads locale-aware content via loadContent(locale, "pageModule") from lib/i18n/loader.ts
+  ├── passes localized data slices as props to child components
   ├── imports layout: MainLayout
   │     ├── provides SEO, Header, Footer
   │     └── <slot/> renders page content
   ├── imports StructuredData from src/components/seo/
   │     └── uses schema generators from src/lib/schemas.ts
   └── composes page-specific components from src/components/
+         └── all components receive data via props (no direct imports from lib/content/)
 ```
 
-Example — `tentang-kami.astro`:
+Example — `about.astro`:
 ```
 Page
-  └── imports aboutContent from lib/content/about.ts
-  └── components/about/StorySection — renders aboutContent.story
-  └── components/about/VisionMissionSection — renders aboutContent.vision/mission
-  └── components/about/ServicesSection — maps aboutContent.services[]
-  └── components/about/StrengthsSection — maps aboutContent.strengths[]
-  └── components/about/ValuesSection — maps aboutContent.values[]
-  └── components/about/CommitmentSection — renders aboutContent.commitment
-  └── components/about/CtaSection — renders aboutContent.cta
+  └── loadContent(locale, "about") → aboutContent
+  └── <StorySection story={aboutContent.story} />
+  └── <VisionMissionSection vision={aboutContent.vision} mission={aboutContent.mission} />
+  └── <ServicesSection services={aboutContent.services} />
+  └── <StrengthsSection strengths={aboutContent.strengths} />
+  └── <ValuesSection values={aboutContent.values} />
+  └── <CommitmentSection commitment={aboutContent.commitment} />
+  └── <CtaSection cta={aboutContent.cta} />
 ```
+
+Root-level pages (`src/pages/*.astro`) hardcode `locale = "id"` and call `loadContent("id", module)`.
+Locale-prefixed pages (`src/pages/[locale]/*.astro`) use the dynamic `locale` param.
 
 ---
 
 ## 5. Component Organization By Feature
 
 ### About (`components/about/`)
-| File | Content Source |
+| File | Props |
 |---|---|
-| `StorySection.astro` | `aboutContent.story` |
-| `VisionMissionSection.astro` | `aboutContent.vision`, `aboutContent.mission` |
-| `ServicesSection.astro` | `aboutContent.services[]` |
-| `StrengthsSection.astro` | `aboutContent.strengths[]` |
-| `ValuesSection.astro` | `aboutContent.values[]` |
-| `CommitmentSection.astro` | `aboutContent.commitment` |
-| `CtaSection.astro` | `aboutContent.cta` |
+| `StorySection.astro` | `story: { title, paragraphs[] }` |
+| `VisionMissionSection.astro` | `vision: { description }`, `mission: { items[] }` |
+| `ServicesSection.astro` | `services: Array<{ title, description }>` |
+| `StrengthsSection.astro` | `strengths: Array<{ title, description }>` |
+| `ValuesSection.astro` | `values: Array<{ title, description }>` |
+| `CommitmentSection.astro` | `commitment: { title, description }` |
+| `CtaSection.astro` | `cta: { title, description, primaryButton: { label, href } }` |
 
 ### Cards (`components/cards/`)
 | File | Renders | Used By |
@@ -257,7 +280,10 @@ Standalone React (.tsx) components:
 
 ### Data Pattern
 - Content files export typed arrays/objects
-- Components receive content via imports (not fetched)
+- Pages load locale-aware content via `loadContent()` from `@/lib/i18n/loader`
+- Pages pass content slices as props to child components
+- Components **never** import directly from `@/lib/content/` — they receive data via props
+- This enables i18n: the same component renders different locale content based on props
 - Pages compose sections in order (PageHeader → sections → Faq → CTA)
 
 ---
@@ -266,17 +292,17 @@ Standalone React (.tsx) components:
 
 | Task | Files |
 |---|---|
-| **Add/modify a page** | `src/pages/...`, `src/lib/content/xxxPage.ts`, maybe `src/lib/og-metadata.ts` |
-| **Add a new section to a page** | `src/components/{feature}/`, `src/lib/content/xxx.ts` |
+| **Add/modify a page** | `src/pages/...`, `src/lib/content/{page}/index.ts`, maybe `src/lib/og-metadata.ts` |
+| **Add a new section to a page** | `src/components/{feature}/`, `src/lib/content/{page}/index.ts` |
 | **Change navigation links** | `src/lib/content/navigationData.ts` |
 | **Change SEO / structured data** | `src/components/seo/`, `src/lib/schemas.ts` |
-| **Add/change tour package** | `src/lib/content/tourPackages/{region}/`, `src/lib/content/packagePage.ts` |
-| **Add/change destination** | `src/lib/content/destinationsData.ts`, `src/lib/content/destinationsPage.ts` |
-| **Add/change vehicle** | `src/lib/content/sewaMobilData.ts`, `src/lib/content/sewaPage.ts` |
-| **Add/change accommodation** | `src/lib/content/akomodasiData.ts` |
+| **Add/change tour package** | `src/lib/content/tourPackages/{region}/`, `src/lib/content/tour-packages/index.ts` |
+| **Add/change destination** | `src/lib/content/destinations/data.ts`, `src/lib/content/destinationsPage.ts` |
+| **Add/change vehicle** | `src/lib/content/car-rental/data.ts`, `src/lib/content/car-rental/index.ts` |
+| **Add/change accommodation** | `src/lib/content/accommodations/data.ts` |
 | **Add/change FAQ** | `src/lib/content/faqs/{topic}.ts` |
-| **Add/change guide** | `src/lib/content/guides.ts` |
-| **Change review data** | `src/lib/content/reviewPage.ts` |
+| **Add/change guide** | `src/lib/content/travel-guides/data.ts` |
+| **Change review data** | `src/lib/content/reviews/index.ts` |
 | **Add image** | Place in `src/assets/images/`, import via `@/assets/images/` |
 | **Add/modify i18n locale** | `src/lib/i18n/index.ts` (update `LOCALES`, `NON_DEFAULT_LOCALES`, locale-specific formatters), `src/lib/i18n/ui-strings.ts` (UI translations), `src/lib/i18n/localize.ts` (path mapping), `src/lib/i18n/loader.ts` (content modules) |
 | **Translate page content** | `src/lib/i18n/{locale}/` — copy structure from `src/lib/i18n/en/`, translate all strings, keep exports/types identical |

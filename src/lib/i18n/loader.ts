@@ -2,13 +2,13 @@ import type { Locale } from "./index";
 
 import * as idLanding from "@/lib/content/landing";
 import * as idAbout from "@/lib/content/about";
-import * as idContactPage from "@/lib/content/contactPage";
-import * as idDestinationsPage from "@/lib/content/destinationsPage";
-import * as idPackagePage from "@/lib/content/packagePage";
-import * as idSewaPage from "@/lib/content/sewaPage";
-import * as idAkomodasiPage from "@/lib/content/akomodasiPage";
-import * as idReviewPage from "@/lib/content/reviewPage";
-import * as idFaqPage from "@/lib/content/faqPage";
+import * as idContactPage from "@/lib/content/contact";
+import * as idDestinationsPage from "@/lib/content/destinations";
+import * as idPackagePage from "@/lib/content/tour-packages";
+import * as idSewaPage from "@/lib/content/car-rental";
+import * as idAkomodasiPage from "@/lib/content/accommodations";
+import * as idReviewPage from "@/lib/content/reviews";
+import * as idFaqPage from "@/lib/content/faq";
 
 import * as idFaqGeneral from "@/lib/content/faqs/general";
 import * as idFaqAbout from "@/lib/content/faqs/about";
@@ -20,13 +20,13 @@ import * as idFaqAkomodasi from "@/lib/content/faqs/akomodasi";
 
 import * as enLanding from "@/lib/i18n/en/landing";
 import * as enAbout from "@/lib/i18n/en/about";
-import * as enContactPage from "@/lib/i18n/en/contactPage";
-import * as enDestinationsPage from "@/lib/i18n/en/destinationsPage";
-import * as enPackagePage from "@/lib/i18n/en/packagePage";
-import * as enSewaPage from "@/lib/i18n/en/sewaPage";
-import * as enAkomodasiPage from "@/lib/i18n/en/akomodasiPage";
-import * as enReviewPage from "@/lib/i18n/en/reviewPage";
-import * as enFaqPage from "@/lib/i18n/en/faqPage";
+import * as enContactPage from "@/lib/i18n/en/contact";
+import * as enDestinationsPage from "@/lib/i18n/en/destinations";
+import * as enPackagePage from "@/lib/i18n/en/tour-packages";
+import * as enSewaPage from "@/lib/i18n/en/car-rental";
+import * as enAkomodasiPage from "@/lib/i18n/en/accommodations";
+import * as enReviewPage from "@/lib/i18n/en/reviews";
+import * as enFaqPage from "@/lib/i18n/en/faq";
 
 import * as enFaqGeneral from "@/lib/i18n/en/faqs/general";
 import * as enFaqAbout from "@/lib/i18n/en/faqs/about";
@@ -35,6 +35,9 @@ import * as enFaqPackage from "@/lib/i18n/en/faqs/package";
 import * as enFaqSewaMobil from "@/lib/i18n/en/faqs/sewa-mobil";
 import * as enFaqReviews from "@/lib/i18n/en/faqs/reviews";
 import * as enFaqAkomodasi from "@/lib/i18n/en/faqs/akomodasi";
+
+import * as idNavigation from "@/lib/content/navigationData";
+import * as enNavigation from "@/lib/i18n/en/navigationData";
 
 const contentModules: Record<string, Record<string, any>> = {
   id: {
@@ -47,6 +50,7 @@ const contentModules: Record<string, Record<string, any>> = {
     akomodasiPage: idAkomodasiPage,
     reviewPage: idReviewPage,
     faqPage: idFaqPage,
+    navigation: idNavigation,
   },
   en: {
     landing: enLanding,
@@ -58,6 +62,7 @@ const contentModules: Record<string, Record<string, any>> = {
     akomodasiPage: enAkomodasiPage,
     reviewPage: enReviewPage,
     faqPage: enFaqPage,
+    navigation: enNavigation,
   },
   ar: {},
   ms: {},

@@ -7,7 +7,7 @@ import { Image } from "astro:assets";
 import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 
-import { vehicles } from "@/lib/content/sewaMobilData";
+import { vehicles } from "@/lib/content/car-rental";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 import { sewaMobilFormFields } from "@/lib/contact-data";
 
@@ -16,7 +16,7 @@ import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
-import type { Vehicle } from "@/lib/content/sewaMobilData";
+import type { Vehicle } from "@/lib/content/car-rental";
 
 export function getStaticPaths() {
   const paths = [];

@@ -3,26 +3,30 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import { packagePageContent } from "@/lib/content/packagePage";
+interface Props {
+  cta: { title: string; description: string; button: { label: string; href: string } };
+}
+
+const { cta } = Astro.props;
 ---
 
 <SectionContainer background="bg-background">
   <Card className="border-border bg-white">
     <CardHeader>
       <CardTitle className="text-3xl leading-tight">
-        {packagePageContent.cta.title}
+        {cta.title}
       </CardTitle>
     </CardHeader>
     <CardContent
       className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between"
     >
       <p class="mt-2 text-sm leading-7 text-text-muted">
-        {packagePageContent.cta.description}
+        {cta.description}
       </p>
 
-      <a href={packagePageContent.cta.button.href} rel="canonical">
+      <a href={cta.button.href} rel="canonical">
         <Button size={"lg"} className={"bg-brand-900"}>
-          {packagePageContent.cta.button.label}
+          {cta.button.label}
         </Button>
       </a>
     </CardContent>

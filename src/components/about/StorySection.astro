@@ -4,7 +4,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OGImageAstroComponent from "../seo/OGImage.astro";
 
 import Logo from "@/assets/images/logo.webp";
-import { aboutContent } from "@/lib/content/about";
+
+interface Props {
+  story: { title: string; paragraphs: string[] };
+}
+
+const { story } = Astro.props;
 ---
 
 <SectionContainer background="bg-surface-soft">
@@ -33,13 +38,13 @@ import { aboutContent } from "@/lib/content/about";
         <p class="text-brand-700 text-lg">Perjalanan Kami</p>
 
         <CardTitle className="text-3xl leading-tight">
-          {aboutContent.story.title}
+          {story.title}
         </CardTitle>
       </CardHeader>
 
       <CardContent className="flex flex-col gap-4">
         {
-          aboutContent.story.paragraphs.map((paragraph) => (
+          story.paragraphs.map((paragraph) => (
             <p class="text-sm leading-7 text-text-muted">{paragraph}</p>
           ))
         }

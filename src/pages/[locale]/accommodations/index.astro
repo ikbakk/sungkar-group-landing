@@ -13,10 +13,12 @@ import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
-import { accommodations } from "@/lib/content/akomodasiData";
+import { accommodations } from "@/lib/content/accommodations";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+
+import { packagePageContent } from "@/lib/content/tour-packages";
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
@@ -114,7 +116,7 @@ const breadcrumbs = [
     background="bg-surface-soft"
   />
 
-  <PackagePageCta />
+  <PackagePageCta cta={packagePageContent.cta} />
 </MainLayout>
 
 <RegionObserver />

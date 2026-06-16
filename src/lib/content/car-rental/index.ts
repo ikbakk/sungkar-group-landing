@@ -23,3 +23,6 @@ export const sewaPageContent = {
     },
   },
 } as const;
+
+export { vehicles } from "./data";
+export type { Vehicle } from "./data";

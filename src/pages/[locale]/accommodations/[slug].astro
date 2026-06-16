@@ -3,14 +3,14 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
-import { accommodations } from "@/lib/content/akomodasiData";
+import { accommodations } from "@/lib/content/accommodations";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
 import AccommodationCard from "@/components/cards/AccommodationCard.astro";
 
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
-import type { Accommodation } from "@/lib/content/akomodasiData";
+import type { Accommodation } from "@/lib/content/accommodations";
 
 export function getStaticPaths() {
   const paths = [];

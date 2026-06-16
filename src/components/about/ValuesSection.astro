@@ -1,7 +1,12 @@
 ---
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { aboutContent } from "@/lib/content/about";
+
+interface Props {
+  values: Array<{ title: string; description: string }>;
+}
+
+const { values } = Astro.props;
 ---
 
 <SectionContainer background="bg-surface-soft">
@@ -14,7 +19,7 @@ import { aboutContent } from "@/lib/content/about";
 
     <CardContent className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {
-        aboutContent.values.map((value) => (
+        values.map((value) => (
           <div class="rounded-2xl border border-border bg-surface-soft p-4">
             <div class="font-medium text-foreground">{value.title}</div>
 

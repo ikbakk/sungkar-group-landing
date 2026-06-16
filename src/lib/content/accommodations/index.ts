@@ -30,3 +30,6 @@ export const akomodasiPageContent = {
     buttonHref: "/kontak",
   },
 } as const;
+
+export { accommodations } from "./data";
+export type { Accommodation } from "./data";

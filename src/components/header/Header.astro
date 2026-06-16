@@ -6,7 +6,7 @@ import Logo from "@/assets/images/logo.webp";
 import NavigationDesktop from "./NavigationDesktop.astro";
 import NavigationMobile from "./NavigationMobile";
 
-import { navigation } from "@/lib/content/navigationData";
+import { loadContent } from "@/lib/i18n/loader";
 
 import LocaleSwitcher from "./LocaleSwitcher.astro";
 import { Button } from "../ui/button";
@@ -17,6 +17,8 @@ interface Props {
 }
 
 const { locale = "id" } = Astro.props as Props;
+const navModule = await loadContent(locale, "navigation");
+const { navigation } = navModule;
 const rootPath = localizeHref("/", locale);
 const isHome = Astro.url.pathname === rootPath || Astro.url.pathname === rootPath + "/";
 ---

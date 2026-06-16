@@ -6,59 +6,61 @@ import DestinationsSection from "./DestinationsSection.astro";
 import TransportSection from "./TransportSection.astro";
 import Reviews5Block from "@/components/blocks/reviews-5.astro";
 
-import {
-  landingHero,
-  landingFeaturedTours,
-  landingDestinations,
-  landingTransport,
-  landingTestimonials,
-  landingVideo,
-  landingBackgroundImage,
-} from "@/lib/content/landing";
+interface Props {
+  hero: any;
+  featuredTours: any;
+  destinations: any;
+  transport: any;
+  testimonials: any;
+  video: any;
+  backgroundImage: any;
+}
+
+const { hero, featuredTours, destinations, transport, testimonials, video, backgroundImage } = Astro.props;
 ---
 
 <HeroSection
-  eyebrow={landingHero.eyebrow}
-  title={landingHero.title}
-  description={landingHero.description}
-  primaryAction={landingHero.primaryAction}
-  secondaryAction={landingHero.secondaryAction}
-  image={landingBackgroundImage}
+  eyebrow={hero.eyebrow}
+  title={hero.title}
+  description={hero.description}
+  primaryAction={hero.primaryAction}
+  secondaryAction={hero.secondaryAction}
+  image={backgroundImage}
 />
 <FeaturedSection
-  eyebrow={landingFeaturedTours.eyebrow}
-  title={landingFeaturedTours.title}
-  description={landingFeaturedTours.description}
-  featuredTours={landingFeaturedTours.tours}
-  image={landingFeaturedTours.heroImage}
+  eyebrow={featuredTours.eyebrow}
+  title={featuredTours.title}
+  description={featuredTours.description}
+  featuredTours={featuredTours.tours}
+  image={featuredTours.heroImage}
 />
 <DestinationsSection
   class="bg-surface-soft"
-  eyebrow={landingDestinations.eyebrow}
-  title={landingDestinations.title}
-  description={landingDestinations.description}
-  destinations={landingDestinations.destinations}
+  eyebrow={destinations.eyebrow}
+  title={destinations.title}
+  description={destinations.description}
+  destinations={destinations.destinations}
 />
 <Reviews5Block
-  eyebrow={landingTestimonials.eyebrow}
-  title={landingTestimonials.title}
-  description={landingTestimonials.description}
+  eyebrow={testimonials.eyebrow}
+  title={testimonials.title}
+  description={testimonials.description}
   alignment="center"
-  reviews={landingTestimonials.testimonials}
+  reviews={testimonials.testimonials}
 />
 <TransportSection
   class="bg-surface-soft"
-  eyebrow={landingTransport.eyebrow}
-  title={landingTransport.title}
-  services={landingTransport.services}
+  eyebrow={transport.eyebrow}
+  title={transport.title}
+  services={transport.services}
   alignment="right"
 />
 <VideoSection
-  eyebrow={landingVideo.eyebrow}
-  title={landingVideo.title}
-  description={landingVideo.description}
-  ctaLabel={landingVideo.ctaLabel}
-  ctaHref={landingVideo.ctaHref}
-  embedUrl={landingVideo.embedUrl}
+  eyebrow={video.eyebrow}
+  title={video.title}
+  description={video.description}
+  ctaLabel={video.ctaLabel}
+  ctaHref={video.ctaHref}
+  embedUrl={video.embedUrl}
   alignment="left"
 />
