@@ -2,14 +2,17 @@
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import OGImageAstroComponent from "../seo/OGImage.astro";
+import { t } from "@/lib/i18n";
 
 import { BRAND } from "@/assets/images";
 
 interface Props {
   story: { title: string; paragraphs: string[] };
+  locale?: string;
 }
 
-const { story } = Astro.props;
+const { story, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 ---
 
 <SectionContainer background="bg-surface-soft">
@@ -35,8 +38,7 @@ const { story } = Astro.props;
 
     <Card class="border-border bg-white">
       <CardHeader>
-        <!-- TODO: this need to be localized -->
-        <p class="text-brand-700 text-lg">Perjalanan Kami</p>
+        <p class="text-brand-700 text-lg">{uiStrings.about.ourJourney}</p>
 
         <CardTitle class="text-3xl leading-tight">
           {story.title}

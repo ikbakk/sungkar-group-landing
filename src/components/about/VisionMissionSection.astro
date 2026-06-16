@@ -1,21 +1,23 @@
 ---
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { t } from "@/lib/i18n";
 
 interface Props {
   vision: { description: string };
   mission: { items: string[] };
+  locale?: string;
 }
 
-const { vision, mission } = Astro.props;
+const { vision, mission, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 ---
 
-<!-- TODO: both <cardTitle> need localization -->
 <SectionContainer background="bg-background">
   <div class="grid gap-8 lg:grid-cols-2">
     <Card class="border-border bg-white">
       <CardHeader>
-        <CardTitle class="text-3xl leading-tight"> Visi </CardTitle>
+        <CardTitle class="text-3xl leading-tight">{uiStrings.about.vision}</CardTitle>
       </CardHeader>
 
       <CardContent>
@@ -27,7 +29,7 @@ const { vision, mission } = Astro.props;
 
     <Card class="border-border bg-white">
       <CardHeader>
-        <CardTitle class="text-3xl leading-tight">Misi</CardTitle>
+        <CardTitle class="text-3xl leading-tight">{uiStrings.about.mission}</CardTitle>
       </CardHeader>
 
       <CardContent class="flex flex-col gap-4">

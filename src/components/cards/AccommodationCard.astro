@@ -8,11 +8,15 @@ import { Tick02Icon } from "@hugeicons/core-free-icons";
 import type { Accommodation } from "@/lib/content/accommodations";
 import { REGION_MAP } from "@/lib/regions";
 
+import { t } from "@/lib/i18n";
+
 interface Props {
   accommodation: Accommodation;
+  locale?: string;
 }
 
-const { accommodation } = Astro.props;
+const { accommodation, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 
 const region = REGION_MAP[accommodation.region];
 ---
@@ -68,8 +72,7 @@ const region = REGION_MAP[accommodation.region];
       <div
         class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
       >
-        <!-- TODO: need localization -->
-        Fasilitas Unggulan
+        {uiStrings.akomodasi.features}
       </div>
       <ul class="space-y-1 text-sm font-sans">
         {
@@ -95,8 +98,7 @@ const region = REGION_MAP[accommodation.region];
         {
           accommodation.perks.length > 3 && (
             <li class="text-sm text-text-muted font-sans">
-          <!-- TODO: need localization for lainnya -->
-              + {accommodation.perks.length - 3} lainnya
+              {uiStrings.akomodasi.morePerks.replace("{n}", String(accommodation.perks.length - 3))}
             </li>
           )
         }

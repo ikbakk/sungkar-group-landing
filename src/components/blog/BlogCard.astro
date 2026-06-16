@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { BlogPostMeta } from "@/lib/content/blog";
 import { localizeHref } from "@/lib/i18n/localize";
+import { t } from "@/lib/i18n";
 
 interface Props {
   post: BlogPostMeta;
@@ -10,6 +11,7 @@ interface Props {
 }
 
 const { post, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 const href = localizeHref("/blog/" + post.slug, locale);
 ---
 
@@ -23,8 +25,7 @@ const href = localizeHref("/blog/" + post.slug, locale);
           variant="outline"
           class="rounded-full px-3 py-1 text-xs font-medium"
         >
-          <!-- TODO: this should use lozalization for the "menit baca" -->
-          {post.readingTime} menit baca
+          {post.readingTime} {uiStrings.guides.readingTime}
         </Badge>
         {
           post.tags.slice(0, 2).map((tag) => (
@@ -50,9 +51,8 @@ const href = localizeHref("/blog/" + post.slug, locale);
 
       <div class="mt-auto text-xs text-text-muted">
         <time datetime={post.publishDate.toISOString()}>
-          <!-- TODO: this should be follow localization -->
           {
-            post.publishDate.toLocaleDateString("id-ID", {
+            post.publishDate.toLocaleDateString(locale === "id" ? "id-ID" : locale, {
               day: "numeric",
               month: "long",
               year: "numeric",

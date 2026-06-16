@@ -49,6 +49,8 @@ export interface UIStrings {
   reviews: {
     seeOnGoogleMaps: string;
     seeAllReviews: string;
+    galleryTitle: string;
+    galleryPhotoCaptions: string[];
   };
   faq: {
     sectionTitle: string;
@@ -64,6 +66,8 @@ export interface UIStrings {
     general: string;
     guideFor: string;
     readingTime: string;
+    keyTakeaways: string;
+    keyTakeawaysDesc: string;
     relatedDestinations: string;
     relatedDestinationsDesc: string;
     relatedPackages: string;
@@ -75,6 +79,12 @@ export interface UIStrings {
   sewaMobil: {
     title: string;
     vehicleDetail: string;
+    specifications: string;
+    transmission: string;
+    passengers: string;
+    features: string;
+    suitableFor: string;
+    viewDetailRent: string;
     vehicleFor: string;
     rentalVehicles: string;
     allVehicles: string;
@@ -94,6 +104,17 @@ export interface UIStrings {
     category: string;
     location: string;
     statsLabel: string;
+    viewPackageDetail: string;
+    packagesAvailable: string;
+    morePackages: string;
+    itineraryLabel: string;
+    itinerary: string;
+    itineraryDesc: string;
+    facilitiesLabel: string;
+    includedExcluded: string;
+    includedExcludedDesc: string;
+    included: string;
+    excluded: string;
   };
   akomodasi: {
     title: string;
@@ -101,6 +122,38 @@ export interface UIStrings {
     accommodationChoice: string;
     exploreAccommodation: string;
     faqTitle: string;
+    features: string;
+    morePerks: string;
+  };
+  common: {
+    readMore: string;
+    learnMore: string;
+    contactUs: string;
+    bookNow: string;
+    submit: string;
+    send: string;
+    back: string;
+    seeMore: string;
+    viewAll: string;
+    backToTop: string;
+    viewDetail: string;
+    moreCount: string;
+  };
+  about: {
+    vision: string;
+    mission: string;
+    ourValues: string;
+    whyChooseUs: string;
+    ourJourney: string;
+    whatWeDo: string;
+  };
+  contact: {
+    formDesc: string;
+    formDescSidebar: string;
+    chooseLocation: string;
+    choosePackage: string;
+    selectLocationFirst: string;
+    optional: string;
   };
   page: {
     about: string;
@@ -188,6 +241,13 @@ export const translations: Record<Locale, UIStrings> = {
     reviews: {
       seeOnGoogleMaps: "Lihat di Google Maps",
       seeAllReviews: "Lihat semua ulasan di Google",
+      galleryTitle: "Galeri Pengalaman Wisatawan",
+      galleryPhotoCaptions: [
+        "Momen perjalanan keluarga",
+        "Eksplorasi pantai dan pulau",
+        "Pendampingan guide lokal",
+        "Perjalanan kelompok dan komunitas",
+      ],
     },
     faq: {
       sectionTitle: "Pertanyaan Umum",
@@ -203,6 +263,8 @@ export const translations: Record<Locale, UIStrings> = {
       general: "Panduan Umum",
       guideFor: "Panduan {region}",
       readingTime: "menit membaca",
+      keyTakeaways: "Poin-Poin Kunci",
+      keyTakeawaysDesc: "Hal penting yang perlu Anda ketahui dari panduan ini",
       relatedDestinations: "Destinasi Terkait",
       relatedDestinationsDesc: "Tempat-tempat yang direkomendasikan berdasarkan panduan ini",
       relatedPackages: "Paket Wisata Terkait",
@@ -214,6 +276,12 @@ export const translations: Record<Locale, UIStrings> = {
     sewaMobil: {
       title: "Sewa Mobil",
       vehicleDetail: "Detail Kendaraan",
+      specifications: "Spesifikasi",
+      transmission: "Transmisi",
+      passengers: "Penumpang",
+      features: "Fitur Unggulan",
+      suitableFor: "Cocok Untuk",
+      viewDetailRent: "Lihat Detail & Sewa",
       vehicleFor: "Kendaraan Rental di {region}",
       rentalVehicles: "Pilihan Kendaraan {region}",
       allVehicles: "Semua kendaraan di {region} telah diperiksa kondisinya dan dilengkapi dengan asuransi komprehensif untuk keamanan perjalanan Anda.",
@@ -233,6 +301,17 @@ export const translations: Record<Locale, UIStrings> = {
       category: "Kategori",
       location: "Lokasi",
       statsLabel: "Statistik",
+      viewPackageDetail: "Cek Detail Paket",
+      packagesAvailable: "{n} paket tersedia",
+      morePackages: "+{n} paket lainnya",
+      itineraryLabel: "Perjalanan",
+      itinerary: "Jalur Perjalanan",
+      itineraryDesc: "Setiap hari dirancang untuk memberikan pengalaman terbaik selama perjalanan Anda.",
+      facilitiesLabel: "Fasilitas",
+      includedExcluded: "Yang Termasuk & Tidak Termasuk",
+      includedExcludedDesc: "Semua fasilitas tercantum untuk membantu Anda mempersiapkan perjalanan.",
+      included: "Termasuk",
+      excluded: "Tidak Termasuk",
     },
     akomodasi: {
       title: "Akomodasi",
@@ -240,6 +319,8 @@ export const translations: Record<Locale, UIStrings> = {
       accommodationChoice: "Akomodasi {region}",
       exploreAccommodation: "Jelajahi berbagai pilihan penginapan berkualitas di {region} yang disesuaikan dengan kebutuhan dan preferensi perjalanan Anda.",
       faqTitle: "Pertanyaan Seputar Akomodasi",
+      features: "Fasilitas Unggulan",
+      morePerks: "+{n} lainnya",
     },
     page: {
       about: "Tentang Kami",
@@ -263,6 +344,25 @@ export const translations: Record<Locale, UIStrings> = {
       back: "Kembali",
       seeMore: "Lihat Lainnya",
       viewAll: "Lihat Semua",
+      backToTop: "↑ Kembali ke Atas",
+      viewDetail: "Lihat Detail",
+      moreCount: "+{n} lainnya",
+    },
+    about: {
+      vision: "Visi",
+      mission: "Misi",
+      ourValues: "Nilai-Nilai Kami",
+      whyChooseUs: "Mengapa wisatawan memilih Sungkar Group",
+      ourJourney: "Perjalanan Kami",
+      whatWeDo: "Apa yang kami kerjakan",
+    },
+    contact: {
+      formDesc: "Isi form di bawah, tim kami akan merespon via WhatsApp dalam waktu singkat.",
+      formDescSidebar: "Isi form di bawah dan tim kami akan merespon via WhatsApp.",
+      chooseLocation: "Pilih lokasi",
+      choosePackage: "Pilih paket",
+      selectLocationFirst: "Pilih lokasi terlebih dahulu",
+      optional: "opsional",
     },
     seo: {
       keywords: "paket wisata lombok, tour lombok, open trip lombok, wisata sumbawa, whale shark sumbawa, wisata labuan bajo, tour komodo, sewa mobil lombok, sungkar group",
@@ -325,6 +425,13 @@ export const translations: Record<Locale, UIStrings> = {
     reviews: {
       seeOnGoogleMaps: "See on Google Maps",
       seeAllReviews: "See all reviews on Google",
+      galleryTitle: "Traveler Experience Gallery",
+      galleryPhotoCaptions: [
+        "Family travel moments",
+        "Beach and island exploration",
+        "Local guide assistance",
+        "Group and community trips",
+      ],
     },
     faq: {
       sectionTitle: "General Questions",
@@ -340,6 +447,8 @@ export const translations: Record<Locale, UIStrings> = {
       general: "General Guide",
       guideFor: "{region} Guide",
       readingTime: "min read",
+      keyTakeaways: "Key Takeaways",
+      keyTakeawaysDesc: "Important things you need to know from this guide",
       relatedDestinations: "Related Destinations",
       relatedDestinationsDesc: "Recommended places based on this guide",
       relatedPackages: "Related Tour Packages",
@@ -351,6 +460,12 @@ export const translations: Record<Locale, UIStrings> = {
     sewaMobil: {
       title: "Car Rental",
       vehicleDetail: "Vehicle Details",
+      specifications: "Specifications",
+      transmission: "Transmission",
+      passengers: "Passengers",
+      features: "Key Features",
+      suitableFor: "Suitable For",
+      viewDetailRent: "View Details & Rent",
       vehicleFor: "Rental Vehicles in {region}",
       rentalVehicles: "Vehicle Options in {region}",
       allVehicles: "All vehicles in {region} have been inspected and come with comprehensive insurance for your travel safety.",
@@ -370,6 +485,17 @@ export const translations: Record<Locale, UIStrings> = {
       category: "Category",
       location: "Location",
       statsLabel: "Statistics",
+      viewPackageDetail: "View Package Details",
+      packagesAvailable: "{n} packages available",
+      morePackages: "+{n} more packages",
+      itineraryLabel: "Journey",
+      itinerary: "Trip Itinerary",
+      itineraryDesc: "Each day is designed to give you the best experience during your trip.",
+      facilitiesLabel: "Facilities",
+      includedExcluded: "What's Included & Excluded",
+      includedExcludedDesc: "All listed facilities to help you prepare for your trip.",
+      included: "Included",
+      excluded: "Not Included",
     },
     akomodasi: {
       title: "Accommodations",
@@ -377,6 +503,8 @@ export const translations: Record<Locale, UIStrings> = {
       accommodationChoice: "Accommodations in {region}",
       exploreAccommodation: "Explore various quality accommodation options in {region} tailored to your travel needs and preferences.",
       faqTitle: "Questions About Accommodations",
+      features: "Key Amenities",
+      morePerks: "+{n} more",
     },
     page: {
       about: "About Us",
@@ -400,6 +528,25 @@ export const translations: Record<Locale, UIStrings> = {
       back: "Back",
       seeMore: "See More",
       viewAll: "View All",
+      backToTop: "↑ Back to Top",
+      viewDetail: "View Details",
+      moreCount: "+{n} more",
+    },
+    about: {
+      vision: "Vision",
+      mission: "Mission",
+      ourValues: "Our Values",
+      whyChooseUs: "Why Travelers Choose Sungkar Group",
+      ourJourney: "Our Journey",
+      whatWeDo: "What We Do",
+    },
+    contact: {
+      formDesc: "Fill out the form below and our team will respond via WhatsApp shortly.",
+      formDescSidebar: "Fill out the form and our team will get back to you on WhatsApp.",
+      chooseLocation: "Choose location",
+      choosePackage: "Choose package",
+      selectLocationFirst: "Select location first",
+      optional: "optional",
     },
     seo: {
       keywords: "lombok tour packages, lombok tour, open trip lombok, sumbawa tours, whale shark sumbawa, labuan bajo tours, komodo tour, car rental lombok, sungkar group",
@@ -462,6 +609,13 @@ export const translations: Record<Locale, UIStrings> = {
     reviews: {
       seeOnGoogleMaps: "\u0634\u0627\u0647\u062F \u0639\u0644\u0649 \u062E\u0631\u0627\u0626\u0637 \u062C\u0648\u062C\u0644",
       seeAllReviews: "\u0634\u0627\u0647\u062F \u062C\u0645\u064A\u0639 \u0627\u0644\u062A\u0642\u064A\u064A\u0645\u0627\u062A \u0639\u0644\u0649 \u062C\u0648\u062C\u0644",
+      galleryTitle: "\u0645\u0639\u0631\u0636 \u062A\u062C\u0627\u0631\u0628 \u0627\u0644\u0645\u0633\u0627\u0641\u0631\u064A\u0646",
+      galleryPhotoCaptions: [
+        "\u0644\u062D\u0638\u0627\u062A \u0627\u0644\u0633\u0641\u0631 \u0627\u0644\u0639\u0627\u0626\u0644\u064A\u0629",
+        "\u0627\u0633\u062A\u0643\u0634\u0627\u0641 \u0627\u0644\u0634\u0648\u0627\u0637\u0626 \u0648\u0627\u0644\u062C\u0632\u0631",
+        "\u0645\u0633\u0627\u0639\u062F\u0629 \u0627\u0644\u0645\u0631\u0634\u062F \u0627\u0644\u0645\u062D\u0644\u064A",
+        "\u0631\u062D\u0644\u0627\u062A \u062C\u0645\u0627\u0639\u064A\u0629 \u0648\u0645\u062C\u062A\u0645\u0639\u064A\u0629",
+      ],
     },
     faq: {
       sectionTitle: "\u0623\u0633\u0626\u0644\u0629 \u0639\u0627\u0645\u0629",
@@ -477,6 +631,8 @@ export const translations: Record<Locale, UIStrings> = {
       general: "\u062F\u0644\u064A\u0644 \u0639\u0627\u0645",
       guideFor: "\u062F\u0644\u064A\u0644 {region}",
       readingTime: "\u062F\u0642\u0627\u0626\u0642 \u0644\u0644\u0642\u0631\u0627\u0621\u0629",
+      keyTakeaways: "\u0627\u0644\u0646\u0642\u0627\u0637 \u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629",
+      keyTakeawaysDesc: "\u0623\u0634\u064A\u0627\u0621 \u0645\u0647\u0645\u0629 \u064A\u062C\u0628 \u0645\u0639\u0631\u0641\u062A\u0647\u0627 \u0645\u0646 \u0647\u0630\u0627 \u0627\u0644\u062F\u0644\u064A\u0644",
       relatedDestinations: "\u0648\u062C\u0647\u0627\u062A \u0630\u0627\u062A \u0635\u0644\u0629",
       relatedDestinationsDesc: "\u0623\u0645\u0627\u0643\u0646 \u0645\u0648\u0635\u0649 \u0628\u0647\u0627 \u0628\u0646\u0627\u0621\u064B \u0639\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u062F\u0644\u064A\u0644",
       relatedPackages: "\u0628\u0627\u0642\u0627\u062A \u0633\u064A\u0627\u062D\u064A\u0629 \u0630\u0627\u062A \u0635\u0644\u0629",
@@ -488,6 +644,12 @@ export const translations: Record<Locale, UIStrings> = {
     sewaMobil: {
       title: "\u062A\u0623\u062C\u064A\u0631 \u0627\u0644\u0633\u064A\u0627\u0631\u0627\u062A",
       vehicleDetail: "\u062A\u0641\u0627\u0635\u064A\u0644 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",
+      specifications: "\u0627\u0644\u0645\u0648\u0627\u0635\u0641\u0627\u062A",
+      transmission: "\u0646\u0627\u0642\u0644 \u0627\u0644\u062D\u0631\u0643\u0629",
+      passengers: "\u0627\u0644\u0631\u0643\u0627\u0628",
+      features: "\u0627\u0644\u0645\u064A\u0632\u0627\u062A \u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629",
+      suitableFor: "\u0645\u0646\u0627\u0633\u0628 \u0644\u0640",
+      viewDetailRent: "\u0639\u0631\u0636 \u0627\u0644\u062A\u0641\u0627\u0635\u064A\u0644 \u0648\u0627\u0644\u0627\u0633\u062A\u0626\u062C\u0627\u0631",
       vehicleFor: "\u0645\u0631\u0643\u0628\u0627\u062A \u0644\u0644\u0625\u064A\u062C\u0627\u0631 \u0641\u064A {region}",
       rentalVehicles: "\u062E\u064A\u0627\u0631\u0627\u062A \u0627\u0644\u0645\u0631\u0643\u0628\u0627\u062A \u0641\u064A {region}",
       allVehicles: "\u062C\u0645\u064A\u0639 \u0627\u0644\u0645\u0631\u0643\u0628\u0627\u062A \u0641\u064A {region} \u062A\u0645 \u0641\u062D\u0635\u0647\u0627 \u0648\u062A\u0623\u062A\u064A \u0645\u0639 \u062A\u0623\u0645\u064A\u0646 \u0634\u0627\u0645\u0644 \u0644\u0633\u0644\u0627\u0645\u0629 \u0633\u0641\u0631\u0643.",
@@ -507,6 +669,17 @@ export const translations: Record<Locale, UIStrings> = {
       category: "\u0627\u0644\u0641\u0626\u0629",
       location: "\u0627\u0644\u0645\u0648\u0642\u0639",
       statsLabel: "\u0625\u062D\u0635\u0627\u0621\u064A\u0627\u062A",
+      viewPackageDetail: "\u0639\u0631\u0636 \u062A\u0641\u0627\u0635\u064A\u0644 \u0627\u0644\u0628\u0627\u0642\u0629",
+      packagesAvailable: "{n} \u0628\u0627\u0642\u0629 \u0645\u062A\u0627\u062D\u0629",
+      morePackages: "+{n} \u0628\u0627\u0642\u0627\u062A \u0625\u0636\u0627\u0641\u064A\u0629",
+      itineraryLabel: "\u0631\u062D\u0644\u0629",
+      itinerary: "\u062E\u0637 \u0633\u064A\u0631 \u0627\u0644\u0631\u062D\u0644\u0629",
+      itineraryDesc: "\u062A\u0645 \u062A\u0635\u0645\u064A\u0645 \u0643\u0644 \u064A\u0648\u0645 \u0644\u0645\u0646\u062D\u0643 \u0623\u0641\u0636\u0644 \u062A\u062C\u0631\u0628\u0629 \u062E\u0644\u0627\u0644 \u0631\u062D\u0644\u062A\u0643.",
+      facilitiesLabel: "\u0627\u0644\u0645\u0631\u0627\u0641\u0642",
+      includedExcluded: "\u0627\u0644\u0645\u0634\u0645\u0648\u0644 \u0648\u063A\u064A\u0631 \u0627\u0644\u0645\u0634\u0645\u0648\u0644",
+      includedExcludedDesc: "\u062C\u0645\u064A\u0639 \u0627\u0644\u0645\u0631\u0627\u0641\u0642 \u0627\u0644\u0645\u062F\u0631\u062C\u0629 \u0644\u0645\u0633\u0627\u0639\u062F\u062A\u0643 \u0641\u064A \u0627\u0644\u062A\u062D\u0636\u064A\u0631 \u0644\u0631\u062D\u0644\u062A\u0643.",
+      included: "\u0645\u0634\u0645\u0648\u0644",
+      excluded: "\u063A\u064A\u0631 \u0645\u0634\u0645\u0648\u0644",
     },
     akomodasi: {
       title: "\u0627\u0644\u0625\u0642\u0627\u0645\u0629",
@@ -514,6 +687,8 @@ export const translations: Record<Locale, UIStrings> = {
       accommodationChoice: "\u0627\u0644\u0625\u0642\u0627\u0645\u0629 \u0641\u064A {region}",
       exploreAccommodation: "\u0627\u0633\u062A\u0643\u0634\u0641 \u062E\u064A\u0627\u0631\u0627\u062A \u0627\u0644\u0625\u0642\u0627\u0645\u0629 \u0627\u0644\u0645\u062A\u0646\u0648\u0639\u0629 \u0641\u064A {region} \u0627\u0644\u0645\u0635\u0645\u0645\u0629 \u062D\u0633\u0628 \u0627\u062D\u062A\u064A\u0627\u062C\u0627\u062A \u0633\u0641\u0631\u0643 \u0648\u062A\u0641\u0636\u064A\u0644\u0627\u062A\u0643.",
       faqTitle: "\u0623\u0633\u0626\u0644\u0629 \u062D\u0648\u0644 \u0627\u0644\u0625\u0642\u0627\u0645\u0629",
+      features: "\u0648\u0633\u0627\u0626\u0644 \u0627\u0644\u0631\u0627\u062D\u0629 \u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629",
+      morePerks: "+{n} \u0627\u0644\u0645\u0632\u064A\u062F",
     },
     page: {
       about: "\u0639\u0646 \u0633\u0648\u0646\u062C\u0627\u0631 \u062C\u0631\u0648\u0628",
@@ -537,6 +712,25 @@ export const translations: Record<Locale, UIStrings> = {
       back: "\u0631\u062C\u0648\u0639",
       seeMore: "\u0639\u0631\u0636 \u0627\u0644\u0645\u0632\u064A\u062F",
       viewAll: "\u0639\u0631\u0636 \u0627\u0644\u0643\u0644",
+      backToTop: "\u2191 \u0627\u0644\u0639\u0648\u062F\u0629 \u0625\u0644\u0649 \u0627\u0644\u0623\u0639\u0644\u0649",
+      viewDetail: "\u0639\u0631\u0636 \u0627\u0644\u062A\u0641\u0627\u0635\u064A\u0644",
+      moreCount: "+{n} \u0627\u0644\u0645\u0632\u064A\u062F",
+    },
+    about: {
+      vision: "\u0627\u0644\u0631\u0624\u064A\u0629",
+      mission: "\u0627\u0644\u0631\u0633\u0627\u0644\u0629",
+      ourValues: "\u0642\u064A\u0645\u0646\u0627",
+      whyChooseUs: "\u0644\u0645\u0627\u0630\u0627 \u064A\u062E\u062A\u0627\u0631 \u0627\u0644\u0645\u0633\u0627\u0641\u0631\u0648\u0646 Sungkar Group",
+      ourJourney: "\u0631\u062D\u0644\u062A\u0646\u0627",
+      whatWeDo: "\u0645\u0627 \u0646\u0642\u0648\u0645 \u0628\u0647",
+    },
+    contact: {
+      formDesc: "\u0627\u0645\u0644\u0623 \u0627\u0644\u0646\u0645\u0648\u0630\u062C \u0623\u062F\u0646\u0627\u0647 \u0648\u0633\u064A\u0642\u0648\u0645 \u0641\u0631\u064A\u0642\u0646\u0627 \u0628\u0627\u0644\u0631\u062F \u0639\u0628\u0631 WhatsApp \u0642\u0631\u064A\u0628\u064B\u0627.",
+      formDescSidebar: "\u0627\u0645\u0644\u0623 \u0627\u0644\u0646\u0645\u0648\u0630\u062C \u0648\u0633\u064A\u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0643 \u0641\u0631\u064A\u0642\u0646\u0627 \u0639\u0628\u0631 WhatsApp.",
+      chooseLocation: "\u0627\u062E\u062A\u0631 \u0627\u0644\u0645\u0648\u0642\u0639",
+      choosePackage: "\u0627\u062E\u062A\u0631 \u0627\u0644\u0628\u0627\u0642\u0629",
+      selectLocationFirst: "\u0627\u062E\u062A\u0631 \u0627\u0644\u0645\u0648\u0642\u0639 \u0623\u0648\u0644\u0627\u064B",
+      optional: "\u0627\u062E\u062A\u064A\u0627\u0631\u064A",
     },
     seo: {
       keywords: "\u0628\u0627\u0642\u0627\u062A \u0633\u064A\u0627\u062D\u064A\u0629 \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u062C\u0648\u0644\u0627\u062A \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u0631\u062D\u0644\u0627\u062A \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u0633\u064A\u0627\u062D\u0629 \u0633\u0648\u0645\u0628\u0627\u0648\u0627\u060C \u062D\u0648\u062A \u0627\u0644\u062D\u0648\u062A \u0633\u0648\u0645\u0628\u0627\u0648\u0627\u060C \u0644\u0627\u0628\u0648\u0627\u0646 \u0628\u0627\u062C\u0648\u060C \u0631\u062D\u0644\u0629 \u0643\u0648\u0645\u0648\u062F\u0648\u060C \u062A\u0623\u062C\u064A\u0631 \u0633\u064A\u0627\u0631\u0627\u062A \u0644\u0648\u0645\u0628\u0648\u0643\u060C \u0633\u0648\u0646\u062C\u0627\u0631 \u062C\u0631\u0648\u0628",
@@ -599,6 +793,13 @@ export const translations: Record<Locale, UIStrings> = {
     reviews: {
       seeOnGoogleMaps: "Lihat di Google Maps",
       seeAllReviews: "Lihat semua ulasan di Google",
+      galleryTitle: "Galeri Pengalaman Pengembara",
+      galleryPhotoCaptions: [
+        "Momen perjalanan keluarga",
+        "Eksplorasi pantai dan pulau",
+        "Bantuan pemandu tempatan",
+        "Perjalanan kumpulan dan komuniti",
+      ],
     },
     faq: {
       sectionTitle: "Soalan Umum",
@@ -614,6 +815,8 @@ export const translations: Record<Locale, UIStrings> = {
       general: "Panduan Umum",
       guideFor: "Panduan {region}",
       readingTime: "minit bacaan",
+      keyTakeaways: "Poin-Poin Utama",
+      keyTakeawaysDesc: "Perkara penting yang perlu anda ketahui dari panduan ini",
       relatedDestinations: "Destinasi Berkaitan",
       relatedDestinationsDesc: "Tempat yang disyorkan berdasarkan panduan ini",
       relatedPackages: "Pakej Pelancongan Berkaitan",
@@ -625,6 +828,12 @@ export const translations: Record<Locale, UIStrings> = {
     sewaMobil: {
       title: "Sewa Kereta",
       vehicleDetail: "Butiran Kenderaan",
+      specifications: "Spesifikasi",
+      transmission: "Transmisi",
+      passengers: "Penumpang",
+      features: "Ciri Utama",
+      suitableFor: "Sesuai Untuk",
+      viewDetailRent: "Lihat Butiran & Sewa",
       vehicleFor: "Kenderaan Sewa di {region}",
       rentalVehicles: "Pilihan Kenderaan {region}",
       allVehicles: "Semua kenderaan di {region} telah diperiksa dan disertakan dengan insurans komprehensif untuk keselamatan perjalanan anda.",
@@ -644,6 +853,17 @@ export const translations: Record<Locale, UIStrings> = {
       category: "Kategori",
       location: "Lokasi",
       statsLabel: "Statistik",
+      viewPackageDetail: "Lihat Butiran Pakej",
+      packagesAvailable: "{n} pakej tersedia",
+      morePackages: "+{n} lagi pakej",
+      itineraryLabel: "Perjalanan",
+      itinerary: "Jadual Perjalanan",
+      itineraryDesc: "Setiap hari dirancang untuk memberikan pengalaman terbaik semasa perjalanan anda.",
+      facilitiesLabel: "Kemudahan",
+      includedExcluded: "Yang Termasuk & Tidak Termasuk",
+      includedExcludedDesc: "Semua kemudahan yang disenaraikan untuk membantu anda membuat persediaan perjalanan.",
+      included: "Termasuk",
+      excluded: "Tidak Termasuk",
     },
     akomodasi: {
       title: "Penginapan",
@@ -651,6 +871,8 @@ export const translations: Record<Locale, UIStrings> = {
       accommodationChoice: "Penginapan di {region}",
       exploreAccommodation: "Terokai pelbagai pilihan penginapan berkualiti di {region} yang disesuaikan dengan keperluan dan keutamaan perjalanan anda.",
       faqTitle: "Soalan Tentang Penginapan",
+      features: "Kemudahan Utama",
+      morePerks: "+{n} lagi",
     },
     page: {
       about: "Tentang Kami",
@@ -674,6 +896,25 @@ export const translations: Record<Locale, UIStrings> = {
       back: "Kembali",
       seeMore: "Lihat Lagi",
       viewAll: "Lihat Semua",
+      backToTop: "↑ Kembali ke Atas",
+      viewDetail: "Lihat Butiran",
+      moreCount: "+{n} lagi",
+    },
+    about: {
+      vision: "Visi",
+      mission: "Misi",
+      ourValues: "Nilai-Nilai Kami",
+      whyChooseUs: "Mengapa pelancong memilih Sungkar Group",
+      ourJourney: "Perjalanan Kami",
+      whatWeDo: "Apa yang Kami Lakukan",
+    },
+    contact: {
+      formDesc: "Isi borang di bawah, pasukan kami akan membalas melalui WhatsApp dalam masa terdekat.",
+      formDescSidebar: "Isi borang di bawah dan pasukan kami akan membalas melalui WhatsApp.",
+      chooseLocation: "Pilih lokasi",
+      choosePackage: "Pilih pakej",
+      selectLocationFirst: "Pilih lokasi terlebih dahulu",
+      optional: "opsyenal",
     },
     seo: {
       keywords: "pakej pelancongan lombok, tour lombok, open trip lombok, wisata sumbawa, whale shark sumbawa, wisata labuan bajo, tour komodo, sewa kereta lombok, sungkar group",
@@ -736,6 +977,13 @@ export const translations: Record<Locale, UIStrings> = {
     reviews: {
       seeOnGoogleMaps: "\u5728Google\u5730\u56FE\u4E0A\u67E5\u770B",
       seeAllReviews: "\u67E5\u770BGoogle\u4E0A\u7684\u6240\u6709\u8BC4\u4EF7",
+      galleryTitle: "\u65C5\u884C\u8005\u4F53\u9A8C\u753B\u5ECA",
+      galleryPhotoCaptions: [
+        "\u5BB6\u5EAD\u65C5\u884C\u65F6\u5149",
+        "\u6D77\u6EE9\u548C\u5C9B\u5C7F\u63A2\u7D22",
+        "\u5F53\u5730\u5BFC\u6E38\u534F\u52A9",
+        "\u56E2\u4F53\u548C\u793E\u533A\u65C5\u884C",
+      ],
     },
     faq: {
       sectionTitle: "\u5E38\u89C1\u95EE\u9898",
@@ -751,6 +999,8 @@ export const translations: Record<Locale, UIStrings> = {
       general: "\u901A\u7528\u6307\u5357",
       guideFor: "{region}\u6307\u5357",
       readingTime: "\u5206\u949F\u9605\u8BFB",
+      keyTakeaways: "\u5173\u952E\u8981\u70B9",
+      keyTakeawaysDesc: "\u60A8\u9700\u8981\u4ECE\u672C\u6307\u5357\u4E2D\u4E86\u89E3\u7684\u91CD\u8981\u4E8B\u9879",
       relatedDestinations: "\u76F8\u5173\u76EE\u7684\u5730",
       relatedDestinationsDesc: "\u6839\u636E\u6B64\u6307\u5357\u63A8\u8350\u7684\u5730\u70B9",
       relatedPackages: "\u76F8\u5173\u65C5\u6E38\u5957\u9910",
@@ -762,6 +1012,12 @@ export const translations: Record<Locale, UIStrings> = {
     sewaMobil: {
       title: "\u6C7D\u8F66\u79DF\u8D41",
       vehicleDetail: "\u8F66\u8F86\u8BE6\u60C5",
+      specifications: "\u89C4\u683C",
+      transmission: "\u53D8\u901F\u7BB1",
+      passengers: "\u4E58\u5BA2",
+      features: "\u4E3B\u8981\u7279\u70B9",
+      suitableFor: "\u9002\u5408",
+      viewDetailRent: "\u67E5\u770B\u8BE6\u60C5\u5E76\u79DF\u8D41",
       vehicleFor: "{region}\u7684\u79DF\u8D41\u8F66\u8F86",
       rentalVehicles: "{region}\u7684\u8F66\u8F86\u9009\u9879",
       allVehicles: "{region}\u7684\u6240\u6709\u8F66\u8F86\u5747\u5DF2\u68C0\u67E5\u5E76\u9644\u6709\u7EFC\u5408\u4FDD\u9669\uFF0C\u786E\u4FDD\u60A8\u7684\u65C5\u884C\u5B89\u5168\u3002",
@@ -781,6 +1037,17 @@ export const translations: Record<Locale, UIStrings> = {
       category: "\u7C7B\u522B",
       location: "\u5730\u70B9",
       statsLabel: "\u7EDF\u8BA1",
+      viewPackageDetail: "\u67E5\u770B\u5957\u9910\u8BE6\u60C5",
+      packagesAvailable: "\u6709{n}\u4E2A\u5957\u9910",
+      morePackages: "+{n}\u4E2A\u66F4\u591A\u5957\u9910",
+      itineraryLabel: "\u884C\u7A0B",
+      itinerary: "\u884C\u7A0B\u5B89\u6392",
+      itineraryDesc: "\u6BCF\u4E00\u5929\u90FD\u65E8\u5728\u4E3A\u60A8\u5728\u65C5\u9014\u4E2D\u63D0\u4F9B\u6700\u4F73\u4F53\u9A8C\u3002",
+      facilitiesLabel: "\u8BBE\u65BD",
+      includedExcluded: "\u5305\u542B\u4E0E\u4E0D\u5305\u542B",
+      includedExcludedDesc: "\u5217\u51FA\u6240\u6709\u8BBE\u65BD\u4EE5\u5E2E\u52A9\u60A8\u51C6\u5907\u65C5\u884C\u3002",
+      included: "\u5305\u542B",
+      excluded: "\u4E0D\u5305\u542B",
     },
     akomodasi: {
       title: "\u4F4F\u5BBF",
@@ -788,6 +1055,8 @@ export const translations: Record<Locale, UIStrings> = {
       accommodationChoice: "{region}\u7684\u4F4F\u5BBF",
       exploreAccommodation: "\u63A2\u7D22{region}\u7684\u5404\u79CD\u4F18\u8D28\u4F4F\u5BBF\u9009\u62E9\uFF0C\u6EE1\u8DB3\u60A8\u7684\u65C5\u884C\u9700\u6C42\u548C\u504F\u597D\u3002",
       faqTitle: "\u5173\u4E8E\u4F4F\u5BBF\u7684\u95EE\u9898",
+      features: "\u4E3B\u8981\u8BBE\u65BD",
+      morePerks: "+{n}\u66F4\u591A",
     },
     page: {
       about: "\u5173\u4E8E\u6211\u4EEC",
@@ -811,6 +1080,25 @@ export const translations: Record<Locale, UIStrings> = {
       back: "\u8FD4\u56DE",
       seeMore: "\u67E5\u770B\u66F4\u591A",
       viewAll: "\u67E5\u770B\u5168\u90E8",
+      backToTop: "\u2191\u8FD4\u56DE\u9876\u90E8",
+      viewDetail: "\u67E5\u770B\u8BE6\u60C5",
+      moreCount: "+{n}\u66F4\u591A",
+    },
+    about: {
+      vision: "\u613F\u666F",
+      mission: "\u4F7F\u547D",
+      ourValues: "\u6211\u4EEC\u7684\u4EF7\u503C\u89C2",
+      whyChooseUs: "\u4E3A\u4EC0\u4E48\u65C5\u884C\u8005\u9009\u62E9Sungkar Group",
+      ourJourney: "\u6211\u4EEC\u7684\u65C5\u7A0B",
+      whatWeDo: "\u6211\u4EEC\u7684\u5DE5\u4F5C",
+    },
+    contact: {
+      formDesc: "\u586B\u5199\u4EE5\u4E0B\u8868\u683C\uFF0C\u6211\u4EEC\u7684\u56E2\u961F\u5C06\u5F88\u5FEB\u901A\u8FC7WhatsApp\u56DE\u590D\u3002",
+      formDescSidebar: "\u586B\u5199\u8868\u683C\uFF0C\u6211\u4EEC\u7684\u56E2\u961F\u5C06\u901A\u8FC7WhatsApp\u4E0E\u60A8\u8054\u7CFB\u3002",
+      chooseLocation: "\u9009\u62E9\u5730\u70B9",
+      choosePackage: "\u9009\u62E9\u5957\u9910",
+      selectLocationFirst: "\u8BF7\u5148\u9009\u62E9\u5730\u70B9",
+      optional: "\u53EF\u9009",
     },
     seo: {
       keywords: "\u9F99\u6728\u5C9B\u65C5\u6E38\u5957\u9910, \u9F99\u6728\u5C9B\u4E00\u65E5\u6E38, \u9F99\u6728\u5C9B\u62FC\u56E2\u6E38, \u68EE\u5DF4\u74E6\u65C5\u6E38, \u68EE\u5DF4\u74E6\u9CA8\u9C7C, \u62C9\u5E03\u5B89\u5DF4\u7126\u65C5\u6E38, \u79D1\u6469\u591A\u65C5\u6E38, \u9F99\u6728\u5C9B\u6C7D\u8F66\u79DF\u8D41, Sungkar Group",

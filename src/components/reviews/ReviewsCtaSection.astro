@@ -1,13 +1,16 @@
 ---
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { t } from "@/lib/i18n";
 
 interface Props {
   title: string;
   description: string;
+  locale?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 ---
 
 <Card class="border-border bg-brand-900 text-white">
@@ -23,8 +26,7 @@ const { title, description } = Astro.props;
     </p>
 
     <div class="mt-6">
-      <!-- TODO: need localization. Prepare CTA labels on data layer. Every Button CTA that has href should wrapped with <a> -->
-      <Button href="/kontak" variant="secondary"> Hubungi Kami </Button>
+      <Button href="/kontak" variant="secondary"> {uiStrings.common.contactUs} </Button>
     </div>
   </CardContent>
 </Card>

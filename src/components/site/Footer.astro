@@ -12,11 +12,10 @@ const currentYear = new Date().getFullYear();
 const uiStrings = t(locale);
 ---
 
-<!-- TODO: there is an error here in brandHref, and href at bottom type error -->
 <FooterBlock
   locale={locale}
   brandName={uiStrings.footer.brandName}
-  brandHref={localizeHref("/", locale)}
+  brandHref="/"
   description={uiStrings.footer.description}
   socials={[
     {
@@ -64,11 +63,11 @@ const uiStrings = t(locale);
   bottomLinks={[
     {
       label: uiStrings.footer.privacy,
-      href: localizeHref("/kebijakan-privasi", locale),
+      href: "/kebijakan-privasi",
     },
     {
       label: uiStrings.footer.terms,
-      href: localizeHref("/syarat-ketentuan", locale),
+      href: "/syarat-ketentuan",
     },
   ]}
 />

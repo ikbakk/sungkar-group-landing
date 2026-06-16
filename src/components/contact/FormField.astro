@@ -8,6 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { t } from "@/lib/i18n";
 import type { FormField } from "@/lib/contact-data";
 import { cn } from "@/lib/utils";
 
@@ -15,9 +16,11 @@ interface Props {
   field: FormField;
   mode: "sidebar" | "section";
   spanFull?: boolean;
+  locale?: string;
 }
 
-const { field, mode, spanFull } = Astro.props;
+const { field, mode, spanFull, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 
 const isSidebar = mode === "sidebar";
 
@@ -46,7 +49,7 @@ const selectTriggerClass = isSidebar
     <label class={wrapperClass}>
       <span class={labelClass}>
         {field.label}
-        {!field.required && <span class={optionalClass}> — opsional</span>}
+        {!field.required && <span class={optionalClass}> — {uiStrings.contact.optional}</span>}
       </span>
       <Textarea
         id={field.id}
@@ -78,7 +81,7 @@ const selectTriggerClass = isSidebar
     <label class="grid gap-2">
       <span class={labelClass}>
         {field.label}
-        {!field.required && <span class={optionalClass}> — opsional</span>}
+        {!field.required && <span class={optionalClass}> — {uiStrings.contact.optional}</span>}
       </span>
       <Input
         id={field.id}
@@ -92,4 +95,4 @@ const selectTriggerClass = isSidebar
   )
 }
 
-<!-- TODO: opsional need localization -->
+

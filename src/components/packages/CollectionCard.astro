@@ -1,6 +1,7 @@
 ---
 import { Card, CardContent } from "@/components/ui/card";
 import type { TourPackage } from "@/lib/content/tourPackages/types";
+import { t } from "@/lib/i18n";
 
 interface Props {
   collection: {
@@ -9,9 +10,11 @@ interface Props {
     packages: TourPackage[];
   };
   region: string;
+  locale?: string;
 }
 
-const { collection, region } = Astro.props;
+const { collection, region, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 ---
 
 <a href={`/paket-wisata/${region}/${collection.slug}`}>
@@ -25,8 +28,7 @@ const { collection, region } = Astro.props;
     <CardContent class="p-6">
       <h2 class="text-xl">{collection.title}</h2>
       <p class="mt-2 text-sm text-text-muted">
-        <!-- TODO: need localization -->
-        {collection.packages.length} paket tersedia
+        {uiStrings.paketWisata.packagesAvailable.replace("{n}", String(collection.packages.length))}
       </p>
       <ul class="mt-4 space-y-2 text-sm text-text-muted">
         {
@@ -40,8 +42,7 @@ const { collection, region } = Astro.props;
         {
           collection.packages.length > 3 && (
             <li class="font-medium text-brand-700">
-          <!-- TODO: need localization -->
-              +{collection.packages.length - 3} paket lainnya
+              {uiStrings.paketWisata.morePackages.replace("{n}", String(collection.packages.length - 3))}
             </li>
           )
         }

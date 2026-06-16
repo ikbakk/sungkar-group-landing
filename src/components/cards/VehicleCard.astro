@@ -11,6 +11,8 @@ import { Badge } from "@/components/ui/badge";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import { CTA_CLASS } from "@/lib/card-styles";
 import { localizeHref } from "@/lib/i18n/localize";
+import { t } from "@/lib/i18n";
+import { Button } from "@/components/ui/button";
 
 interface Props {
   vehicle: Vehicle;
@@ -18,6 +20,7 @@ interface Props {
 }
 
 const { vehicle, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 
 const cardHref = localizeHref(
   `/sewa-mobil/${vehicle.region}/${vehicle.slug}`,
@@ -25,7 +28,6 @@ const cardHref = localizeHref(
 );
 ---
 
-<!-- TODO: still some chunks still hardcoded, need localization. for something small chunks like this should follow pattern on flutter that use arb then list of words, but idk how it is in astro ecosystem. i will not write same todos for same issue -->
 <Card class="overflow-hidden">
   <div class="relative h-64 w-full overflow-hidden">
     <OptimizedImage
@@ -52,15 +54,15 @@ const cardHref = localizeHref(
       <div
         class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
       >
-        Spesifikasi
+        {uiStrings.sewaMobil.specifications}
       </div>
       <div class="grid grid-cols-2 gap-2 text-sm">
         <div class="rounded border border-border p-2 text-center">
-          <div class="text-xs text-text-muted">Transmisi</div>
+          <div class="text-xs text-text-muted">{uiStrings.sewaMobil.transmission}</div>
           <div class="font-medium">{vehicle.transmission}</div>
         </div>
         <div class="rounded border border-border p-2 text-center">
-          <div class="text-xs text-text-muted">Penumpang</div>
+          <div class="text-xs text-text-muted">{uiStrings.sewaMobil.passengers}</div>
           <div class="font-medium">{vehicle.seats}</div>
         </div>
       </div>
@@ -70,7 +72,7 @@ const cardHref = localizeHref(
       <div
         class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
       >
-        Fitur Unggulan
+        {uiStrings.sewaMobil.features}
       </div>
       <div class="flex flex-wrap gap-2">
         {
@@ -87,7 +89,7 @@ const cardHref = localizeHref(
       <div
         class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
       >
-        Cocok Untuk
+        {uiStrings.sewaMobil.suitableFor}
       </div>
       <ul class="space-y-1 text-sm leading-7 text-text-muted">
         {
@@ -107,6 +109,8 @@ const cardHref = localizeHref(
   </CardContent>
 
   <CardFooter>
-    <a href={cardHref} class={CTA_CLASS}> Lihat Detail & Sewa </a>
+    <a href={cardHref}>
+      <Button size="lg" class="w-full">{uiStrings.sewaMobil.viewDetailRent}</Button>
+    </a>
   </CardFooter>
 </Card>

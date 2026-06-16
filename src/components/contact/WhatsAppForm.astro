@@ -1,6 +1,7 @@
 ---
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { t } from "@/lib/i18n";
 import FormField from "./FormField.astro";
 import type {
   FormField as FormFieldType,
@@ -14,9 +15,11 @@ interface Props {
   mode: "sidebar" | "section";
   itemName?: string;
   region?: string;
+  locale?: string;
 }
 
-const { context, fields, mode, itemName, region } = Astro.props;
+const { context, fields, mode, itemName, region, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 
 const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
 const formId = `whatsapp-form-${context}-${Math.random().toString(36).slice(2, 8)}`;
@@ -48,7 +51,6 @@ const btnClass = isSidebar
   : "inline-flex items-center justify-center rounded-md bg-brand-900 text-white text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-brand-800";
 ---
 
-<!-- TODO: need localization for hardcoded -->
 <Card class={cardClass}>
   <CardHeader>
     <CardTitle class={cn("text-3xl leading-tight", isSidebar && "text-white")}>
@@ -57,8 +59,7 @@ const btnClass = isSidebar
     {
       !isSidebar && (
         <p class={descClass}>
-          Isi form di bawah, tim kami akan merespon via WhatsApp dalam waktu
-          singkat.
+          {uiStrings.contact.formDesc}
         </p>
       )
     }
@@ -68,7 +69,7 @@ const btnClass = isSidebar
     {
       isSidebar && (
         <p class="mb-6 text-sm leading-7 text-brand-100">
-          Isi form di bawah dan tim kami akan merespon via WhatsApp.
+          {uiStrings.contact.formDescSidebar}
         </p>
       )
     }
@@ -98,7 +99,7 @@ const btnClass = isSidebar
         region && (
           <label class="grid gap-2">
             <span class={isSidebar ? "form-label-light" : "form-label"}>
-              Lokasi
+              {uiStrings.contact.chooseLocation}
             </span>
             <input
               type="text"
@@ -128,7 +129,7 @@ const btnClass = isSidebar
 
   <CardContent class="flex flex-wrap gap-3">
     <button id={"btn-submit-" + formId} type="button" class={btnClass}>
-      Chat WhatsApp
+      {uiStrings.common.contactUs}
     </button>
   </CardContent>
 </Card>

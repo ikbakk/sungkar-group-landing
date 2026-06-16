@@ -21,6 +21,7 @@ interface Stat {
 }
 
 interface Props {
+  locale?: string;
   eyebrow?: string;
   title: string;
   description: string;
@@ -30,14 +31,13 @@ interface Props {
   stats?: Stat[];
 }
 
-const { eyebrow, title, description, breadcrumbs, image, imageAlt, stats } =
+const { locale = "id", eyebrow, title, description, breadcrumbs, image, imageAlt, stats } =
   Astro.props as Props;
 ---
 
 {
   image ? (
     <section class="relative flex min-h-[70vh] flex-col justify-end bg-gray-900 lg:min-h-[80vh]">
-      <!-- TODO: very important to have alt based on locale -->
       <OptimizedImage
         src={image}
         alt={imageAlt ?? title}

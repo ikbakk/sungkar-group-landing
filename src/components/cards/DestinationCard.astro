@@ -8,6 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import type { Destination } from "@/lib/content/destinations";
 import { CTA_CLASS } from "@/lib/card-styles";
 import { localizeHref } from "@/lib/i18n/localize";
+import { t } from "@/lib/i18n";
+import { Button } from "@/components/ui/button";
 
 interface Props {
   destination: Destination;
@@ -15,6 +17,7 @@ interface Props {
 }
 
 const { destination, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 
 const highlightCount = Math.max(destination.thingsToDo.length - 3, 0);
 
@@ -58,18 +61,13 @@ const cardHref = localizeHref("/destinasi/" + destination.slug, locale);
         ))}
         {highlightCount > 0 && (
           <li class="text-sm text-text-muted font-sans">
-            + {highlightCount} lainnya
-          <!-- TODO: need localization -->
+            {uiStrings.common.moreCount.replace("{n}", String(highlightCount))}
           </li>
         )}
       </ul>
 
-      <!-- TODO: every button cta like below, or any button use existing button @/components/ui/Button -->
       <div class="mt-auto pt-2">
-        <span class={CTA_CLASS}>
-          <!-- TODO: need localization -->
-          Lihat Detail
-        </span>
+        <Button size="lg" class="w-full">{uiStrings.common.viewDetail}</Button>
       </div>
     </CardContent>
   </Card>

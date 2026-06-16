@@ -4,6 +4,7 @@ import {
   NativeSelect,
   NativeSelectOption,
 } from "@/components/ui/native-select";
+import { t } from "@/lib/i18n";
 import type { FormField, BusinessInfo } from "@/lib/contact-data";
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
   businessInfo: BusinessInfo;
   title?: string;
   description?: string;
+  locale?: string;
   packages: Array<{
     title: string;
     slug: string;
@@ -25,8 +27,10 @@ const {
   businessInfo,
   title = "Ceritakan rencana perjalanan Anda",
   description = "Berikan informasi dasar perjalanan agar tim kami dapat memberikan rekomendasi yang lebih relevan.",
+  locale = "id",
   packages,
 } = Astro.props;
+const uiStrings = t(locale);
 
 const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
 
@@ -51,7 +55,6 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
 );
 ---
 
-<!-- TODO: Still have some chunks still hardcoded, do localization -->
 <Card class="border-border bg-brand-900 text-white">
   <CardHeader>
     <CardTitle class="text-3xl leading-tight text-white">
@@ -75,7 +78,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
                   {!field.required && (
                     <span class="text-xs font-normal text-brand-200">
                       {" "}
-                      — opsional
+                      — {uiStrings.contact.optional}
                     </span>
                   )}
                 </span>
@@ -94,7 +97,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
                   {!field.required && (
                     <span class="text-xs font-normal text-brand-200">
                       {" "}
-                      — opsional
+                      — {uiStrings.contact.optional}
                     </span>
                   )}
                 </span>
@@ -119,7 +122,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
                   {!field.required && (
                     <span class="text-xs font-normal text-brand-200">
                       {" "}
-                      — opsional
+                      — {uiStrings.contact.optional}
                     </span>
                   )}
                 </span>
@@ -138,12 +141,12 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
 
         <div class="grid gap-4 sm:col-span-2 sm:grid-cols-2">
           <label class="grid gap-2">
-            <span class="form-label-light">Pilih lokasi</span>
+            <span class="form-label-light">{uiStrings.contact.chooseLocation}</span>
             <NativeSelect
               name="location"
               class="w-full rounded-lg border-white/10 bg-white/5 text-white hover:bg-white/10 [&_select]:text-white [&_select]:placeholder:text-brand-100/50 [&_select]:bg-transparent"
             >
-              <NativeSelectOption value="">Pilih lokasi</NativeSelectOption>
+              <NativeSelectOption value="">{uiStrings.contact.chooseLocation}</NativeSelectOption>
               {
                 regions.map((r) => (
                   <NativeSelectOption value={r.key}>
@@ -155,7 +158,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
           </label>
 
           <label class="grid gap-2">
-            <span class="form-label-light">Pilih paket</span>
+            <span class="form-label-light">{uiStrings.contact.choosePackage}</span>
             <NativeSelect
               name="package"
               id="package-select"
@@ -163,7 +166,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
               class="w-full rounded-lg border-white/10 bg-white/5 text-white hover:bg-white/10 [&_select]:text-white [&_select]:placeholder:text-brand-100/50 [&_select]:bg-transparent"
             >
               <NativeSelectOption value="">
-                Pilih lokasi terlebih dahulu
+                {uiStrings.contact.selectLocationFirst}
               </NativeSelectOption>
             </NativeSelect>
           </label>
@@ -178,21 +181,19 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
         disabled
         class="inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] disabled:opacity-50 disabled:pointer-events-none"
       >
-        Chat WhatsApp
+        {uiStrings.common.contactUs}
       </button>
     </div>
 
     <div class="rounded-lg border border-white/10 bg-white/5 p-4">
       <p class="text-sm leading-6 text-brand-100">
-        Semakin lengkap informasi yang Anda berikan, semakin mudah bagi tim kami
-        untuk merekomendasikan itinerary, transportasi, dan paket wisata yang
-        sesuai dengan kebutuhan perjalanan Anda.
+        {uiStrings.contact.formDesc}
       </p>
     </div>
   </CardContent>
 </Card>
 
-<script is:inline define:vars={{ whatsappNumber, packagesData }}>
+<script is:inline define:vars={{ whatsappNumber, packagesData, choosePackageLabel: uiStrings.contact.choosePackage, selectLocationFirstLabel: uiStrings.contact.selectLocationFirst }}>
   var locationSelect = document.querySelector('[name="location"]');
   var packageSelect = document.querySelector('[name="package"]');
   var submitBtn = document.getElementById("contact-whatsapp");
@@ -216,7 +217,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
     var region = locationSelect ? locationSelect.value : "";
     if (!region) {
       packageSelect.innerHTML =
-        '<option value="">Pilih lokasi terlebih dahulu</option>';
+        '<option value="">' + selectLocationFirstLabel + '</option>';
       packageSelect.disabled = true;
       updateButton();
       return;
@@ -238,7 +239,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
       groups[p.collectionSlug].packages.push(p);
     }
 
-    var html = '<option value="">Pilih paket</option>';
+    var html = '<option value="">' + choosePackageLabel + '</option>';
     var groupKeys = Object.keys(groups);
     for (var g = 0; g < groupKeys.length; g++) {
       var group = groups[groupKeys[g]];

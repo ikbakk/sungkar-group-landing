@@ -5,15 +5,17 @@ import { Separator } from "@/components/ui/separator";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Tick02Icon } from "@hugeicons/core-free-icons";
 import type { Vehicle } from "@/lib/content/car-rental";
+import { t } from "@/lib/i18n";
 
 interface Props {
   vehicle: Vehicle;
+  locale?: string;
 }
 
-const { vehicle } = Astro.props;
+const { vehicle, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 ---
 
-<!-- TODO : need localization for harcoded -->
 <Card class="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
   <CardHeader>
     <Badge variant="outline" class="w-fit rounded-lg px-3 py-1">
@@ -31,13 +33,13 @@ const { vehicle } = Astro.props;
       </div>
       <Separator />
       <div class="flex items-center justify-between">
-        <span class="text-text-muted">Transmisi</span>
+        <span class="text-text-muted">{uiStrings.sewaMobil.transmission}</span>
         <span class="font-medium">{vehicle.transmission}</span>
       </div>
       <Separator />
       <div class="flex items-center justify-between">
         <span class="text-text-muted">Kapasitas</span>
-        <span class="font-medium">{vehicle.seats} penumpang</span>
+        <span class="font-medium">{vehicle.seats} {uiStrings.sewaMobil.passengers.toLowerCase()}</span>
       </div>
     </div>
 
@@ -47,7 +49,7 @@ const { vehicle } = Astro.props;
       <div
         class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
       >
-        Fitur Unggulan
+        {uiStrings.sewaMobil.features}
       </div>
       <div class="flex flex-wrap gap-2">
         {
@@ -64,7 +66,7 @@ const { vehicle } = Astro.props;
       <div
         class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
       >
-        Cocok Untuk
+        {uiStrings.sewaMobil.suitableFor}
       </div>
       <ul class="space-y-1">
         {

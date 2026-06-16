@@ -5,14 +5,38 @@ import FeaturedSection from "./FeaturedSection.astro";
 import DestinationsSection from "./DestinationsSection.astro";
 import TransportSection from "./TransportSection.astro";
 import Reviews5Block from "@/components/blocks/reviews-5.astro";
+import type { LandingAction, LandingHeroCard, LandingTourCard, LandingDestinationCard, LandingTransportCard } from "@/lib/content/landing";
+import type { ImageSource } from "@/lib/images";
 
-// TODO: dont use any Types
 interface Props {
   locale?: string;
-  hero: any;
-  featuredTours: any;
-  destinations: any;
-  transport: any;
+  hero: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    primaryAction: LandingAction;
+    secondaryAction: LandingAction;
+    cards: LandingHeroCard[];
+  };
+  featuredTours: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    tours: LandingTourCard[];
+    heroImage: ImageSource;
+  };
+  destinations: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    destinations: LandingDestinationCard[];
+  };
+  transport: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    services: LandingTransportCard[];
+  };
   testimonials: any;
   video: any;
   backgroundImage: any;
