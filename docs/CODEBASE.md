@@ -163,9 +163,9 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 | `faq/data.ts` | `faqItems` | FAQ items combined from per-topic files |
 | `contact/index.ts` | `contactPageContent` | Contact page content (hero, info, form, map) |
 | `faqs/*.ts` | Per-topic FAQ arrays | `about`, `akomodasi`, `contact`, `general`, `package`, `reviews`, `sewa-mobil` |
-| `shared/types.ts` | All domain types (Destination, TourPackage, Accommodation, Vehicle, Guide, Review, NavItem, BusinessInfo, etc.) | TypeScript interfaces/types |
+| `shared/types.ts` | All domain types (Destination, TourPackage, Accommodation, Vehicle, Guide, Review, NavItem, BusinessInfo, etc.) | TypeScript interfaces/types — `NavItem.variant: "link" \| "mega" \| "dropdown"` |
 | `shared/contact-data.ts` | `businessInfo` | Business contact details |
-| `shared/navigation.ts` | `headerNav: NavItem[]` | Navigation menu structure (mega menu) |
+| `shared/navigation.ts` | `headerNav: NavItem[]` | Navigation menu structure (mega + dropdown + link variants) |
 | `shared/og-metadata.ts` | OG metadata helpers | Shared across pages |
 | `shared/schemas.ts` | JSON-LD schema helpers | Shared across pages |
 | `shared/regions.ts` | Region key/label maps | Shared across pages |
@@ -274,7 +274,7 @@ Organized as folders with `index.ts` barrel exports:
 - `card/` — `card.astro`, `card-header`, `card-content`, `card-footer`, etc.
 - `badge/` — `badge.astro` + `badge-variants.ts`
 - `avatar/` — `avatar.astro`, `avatar-image`, `avatar-fallback`, `avatar-group`, `avatar-badge`
-- `navigation-menu/` — Full mega-menu system (menu, list, item, link, trigger, content, indicator, positioner)
+- `navigation-menu/` — Full mega-menu system (menu, list, item, link, trigger, content, indicator, positioner) — positioner uses `before:` bridge to prevent hover gap
 - `select/` — `select.astro`, `select-trigger`, `select-content`, `select-item`, etc.
 - `carousel/` — `carousel.astro`, `carousel-content`, `carousel-item`, `carousel-next`, `carousel-previous`
 - `logo/` — `logo.astro`, `logo-image.astro`, `logo-text.astro`
@@ -330,7 +330,8 @@ Standalone React (.tsx) components:
 |---|---|
 | **Add/modify a page** | `src/pages/...`, `src/lib/content/{page}/index.ts`, maybe `src/lib/og-metadata.ts` |
 | **Add a new section to a page** | `src/components/{feature}/`, `src/lib/content/{page}/index.ts` |
-| **Change navigation links** | `src/lib/content/shared/navigation.ts` |
+| **Change navigation links** | `src/lib/content/shared/navigation.ts` — also update locale copies: `src/lib/i18n/{ms,en,ar,zh}/navigationData.ts` |
+| **Add nav variant** | `src/lib/content/shared/types.ts` (`NavItem.variant` union), `src/components/header/NavigationDesktop.astro`, `src/components/header/NavigationMobile.tsx` — then update all 5 `navigationData.ts` files with the variant data |
 | **Change SEO / structured data** | `src/components/seo/`, `src/lib/schemas.ts` |
 | **Add/change tour package** | `src/lib/content/tourPackages/{region}/`, `src/lib/content/tour-packages/index.ts` |
 | **Add/change destination** | `src/lib/content/destinations/data.ts`, `src/lib/content/destinations/index.ts` |
@@ -350,7 +351,7 @@ Standalone React (.tsx) components:
 | **Change color/brand tokens** | `src/styles/global.css` (`@theme inline`, `:root`) |
 | **Change layout shell** | `src/layouts/MainLayout.astro` |
 | **Change footer** | `src/components/site/Footer.astro` (uses `FooterBlock`) |
-| **Change header/nav** | `src/components/header/Header.astro`, `NavigationDesktop.astro`, `NavigationMobile.tsx` |
+| **Change header/nav** | `src/components/header/Header.astro`, `NavigationDesktop.astro`, `NavigationMobile.tsx` — `NavigationDesktop` handles `link`, `mega`, `dropdown` variants; `NavigationMobile` handles `link`, `mega`, `dropdown` variants | |
 | **Add UI primitive** | `src/components/ui/{name}/` |
 | **Run tests** | `npm test` (vitest) — config: `vitest.config.ts`; test files in `tests/` |
 | **Run type check** | `npm run check` (astro check) |
