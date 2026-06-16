@@ -9,7 +9,10 @@
     "dev": "astro dev --host 0.0.0.0",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "vitest run",
+    "check": "astro check",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astroanimate/core": "^0.1.2",
@@ -46,9 +49,15 @@
     "tw-animate-css": "^1.4.0",
     "vaul": "^1.1.2"
   },
+
   "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.7",
     "playwright": "^1.60.0",
     "prettier": "^3.8.4",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
   }
 }
