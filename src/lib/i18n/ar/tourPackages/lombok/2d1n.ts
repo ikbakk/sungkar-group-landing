@@ -5,10 +5,10 @@ import TourCultural from "@/assets/images/tour-cultural.webp";
 import DestinationLombok from "@/assets/images/destination-lombok.webp";
 import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
 
-import type { TourPackage } from "../../../content/tourPackages/types";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 
-import { COLLECTIONS } from "../../../content/tourPackages/collections";
-import { createPackage } from "../../../content/tourPackages/utils";
+import { COLLECTIONS } from "@/lib/content/tourPackages/collections";
+import { createPackage } from "@/lib/content/tourPackages/utils";
 
 export const twoDays: TourPackage[] = [
   createPackage(COLLECTIONS.TWO_DAYS_ONE_NIGHT, {

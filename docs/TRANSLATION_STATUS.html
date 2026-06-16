@@ -24,6 +24,7 @@
   .done { background: #d1fae5; color: #065f46; }
   .partial { background: #fef3c7; color: #92400e; }
   .stub { background: #fee2e2; color: #991b1b; }
+  .en-copy { background: #e0e7ff; color: #3730a3; }
   .missing { background: #fecaca; color: #7f1d1d; }
   .pct { font-weight: 700; }
   .pct-100 { color: #059669; }
@@ -35,7 +36,10 @@
 <body>
 
 <h1>Translation Status</h1>
-<p class="subtitle">Locale content coverage across all 32 content files per locale</p>
+<p class="subtitle">
+  Locale content coverage — folder-based structure, 49 source files per locale.
+  <br>Stubs = EN copy (needs native translation). Preserved original translations shown as ✓.
+</p>
 
 <table>
 <thead>
@@ -54,7 +58,7 @@
   <td colspan="5"></td>
 </tr>
 <tr>
-  <td>about.ts</td>
+  <td>about/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
@@ -62,148 +66,160 @@
   <td><span class="badge done">✓</span></td>
 </tr>
 <tr>
-  <td>landing.ts</td>
+  <td>landing/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>contactPage.ts</td>
+  <td>contact/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>destinationsPage.ts</td>
+  <td>destinations/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>packagePage.ts</td>
+  <td>tour-packages/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>sewaPage.ts</td>
+  <td>car-rental/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>akomodasiPage.ts</td>
+  <td>accommodations/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>reviewPage.ts</td>
+  <td>reviews/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge missing">missing</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>faqPage.ts</td>
+  <td>faq/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge missing">missing</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
   <td><strong>Data</strong></td>
   <td colspan="5"></td>
 </tr>
 <tr>
-  <td>destinationsData.ts</td>
+  <td>shared/types.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge done">✓</span></td>
 </tr>
 <tr>
-  <td>akomodasiData.ts</td>
+  <td>shared/navigation.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>sewaMobilData.ts</td>
+  <td>shared/contact-data.ts</td>
+  <td><span class="badge done">source</span></td>
+  <td><span class="badge done">✓</span></td>
+  <td><span class="badge done">✓</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+</tr>
+<tr>
+  <td>shared/regions.ts</td>
+  <td><span class="badge done">source</span></td>
+  <td><span class="badge done">✓</span></td>
+  <td><span class="badge done">✓</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+</tr>
+<tr>
+  <td>shared/og-metadata.ts</td>
+  <td><span class="badge done">source</span></td>
+  <td><span class="badge done">✓</span></td>
+  <td><span class="badge done">✓</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+</tr>
+<tr>
+  <td>shared/schemas.ts</td>
+  <td><span class="badge done">source</span></td>
+  <td><span class="badge done">✓</span></td>
+  <td><span class="badge done">✓</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+</tr>
+<tr>
+  <td>destinations/data.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>guides.ts</td>
-  <td><span class="badge done">source</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-</tr>
-<tr>
-  <td>navigationData.ts</td>
+  <td>accommodations/data.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td><strong>i18n-specific</strong></td>
-  <td colspan="5"></td>
-</tr>
-<tr>
-  <td>contact-data.ts</td>
+  <td>car-rental/data.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge done">✓</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>regions.ts</td>
+  <td>travel-guides/data.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
-  <td>og-metadata.ts</td>
+  <td>faq/data.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-</tr>
-<tr>
-  <td>schemas.ts</td>
-  <td><span class="badge done">source</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
   <td><strong>Tour Packages</strong></td>
@@ -214,116 +230,56 @@
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
   <td>lombok/1d.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
   <td>lombok/2d1n.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
   <td>lombok/3d2n.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
   <td>lombok/4d3n.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
   <td>sumbawa/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 <tr>
   <td>labuan-bajo/index.ts</td>
   <td><span class="badge done">source</span></td>
   <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-</tr>
-<tr>
-  <td><strong>FAQs</strong></td>
-  <td colspan="5"></td>
-</tr>
-<tr>
-  <td>faqs/general.ts</td>
-  <td><span class="badge done">source</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-</tr>
-<tr>
-  <td>faqs/about.ts</td>
-  <td><span class="badge done">source</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-</tr>
-<tr>
-  <td>faqs/contact.ts</td>
-  <td><span class="badge done">source</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-</tr>
-<tr>
-  <td>faqs/package.ts</td>
-  <td><span class="badge done">source</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-</tr>
-<tr>
-  <td>faqs/sewa-mobil.ts</td>
-  <td><span class="badge done">source</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-</tr>
-<tr>
-  <td>faqs/reviews.ts</td>
-  <td><span class="badge done">source</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
-</tr>
-<tr>
-  <td>faqs/akomodasi.ts</td>
-  <td><span class="badge done">source</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge done">✓</span></td>
-  <td><span class="badge stub">✗</span></td>
-  <td><span class="badge stub">✗</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
+  <td><span class="badge en-copy">EN copy</span></td>
 </tr>
 </tbody>
 </table>
@@ -333,51 +289,55 @@
 <thead>
 <tr>
   <th>Locale</th>
-  <th>Total</th>
+  <th>Total Files</th>
   <th>Translated</th>
-  <th>Stubs</th>
-  <th>Missing</th>
-  <th>%</th>
+  <th>EN Copy (needs translation)</th>
+  <th>% Translated</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td class="loc loc-en">en (English)</td>
-  <td>32</td>
-  <td>32</td>
-  <td>0</td>
+  <td>49</td>
+  <td>49</td>
   <td>0</td>
   <td class="pct pct-100">100%</td>
 </tr>
 <tr>
   <td class="loc loc-ar">ar (Arabic)</td>
-  <td>32</td>
-  <td>28</td>
-  <td>4</td>
-  <td>0</td>
-  <td class="pct pct-80">87.5%</td>
+  <td>49</td>
+  <td>31</td>
+  <td>18</td>
+  <td class="pct pct-80">63.3%</td>
 </tr>
 <tr>
   <td class="loc loc-ms">ms (Malay)</td>
-  <td>32</td>
-  <td>11</td>
-  <td>19</td>
-  <td>2</td>
-  <td class="pct pct-50">34.4%</td>
+  <td>49</td>
+  <td>14</td>
+  <td>35</td>
+  <td class="pct pct-50">28.6%</td>
 </tr>
 <tr>
   <td class="loc loc-zh">zh (Chinese)</td>
-  <td>32</td>
+  <td>49</td>
   <td>1</td>
-  <td>31</td>
-  <td>0</td>
-  <td class="pct pct-0">3.1%</td>
+  <td>48</td>
+  <td class="pct pct-0">2.0%</td>
 </tr>
 </tbody>
 </table>
 
+<h3 style="margin-top: 1.5rem;">Missing from status table above</h3>
+<p style="font-size: 0.875rem; color: #6b7280;">
+  The following files exist in all locales but are not individually listed here:<br>
+  <code>tourPackages/*</code> (aggregator index.ts), <code>tourPackages/collections.ts</code>, <code>tourPackages/types.ts</code>, <code>tourPackages/utils.ts</code>,<br>
+  <code>faqs/*.ts</code> (7 per-topic FAQ files: general, about, contact, package, sewa-mobil, reviews, akomodasi),<br>
+  <code>faq/data.ts</code> (aggregated FAQ data), <code>travel-guides/data.ts</code>, <code>travel-guides/index.ts</code>.<br>
+  All locales have the same 49-file structure. Missing translations are filled with EN copies.
+</p>
+
 <p style="margin-top: 2rem; color: #6b7280; font-size: 0.875rem;">
-  Generated from actual file contents. ✓ = has real translated content, ✗ = empty stub, "missing" = file does not exist.
+  Generated from folder structure audit. ✓ = has real translated content, "EN copy" = copied from English (placeholder).
 </p>
 
 </body>

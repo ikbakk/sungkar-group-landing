@@ -36,11 +36,10 @@ src/
 │   │   ├── car-rental/  # sewaPageContent + vehicles (from ./data)
 │   │   ├── tour-packages/# packagePageContent + packages (from tourPackages/)
 │   │   ├── travel-guides/ # guides (from ./data)
-│   │   ├── landing/     # landingHero, landingTourCards, etc.
-│   │   ├── shared/      # contact-data, og-metadata, schemas, regions, navigation
+│   │   ├── landing/     # landingHero, landingFeaturedTours, landingDestinations, etc.
+│   │   ├── shared/      # types, contact-data, navigation, og-metadata, schemas, regions
 │   │   ├── faqs/        # FAQ items by topic
 │   │   ├── tourPackages/ # Package data (lombok/, sumbawa/, labuan-bajo/)
-│   │   ├── navigationData.ts, landing.ts, destinationsPage.ts
 │   │   └── each folder has index.ts (barrel) + data.ts (data arrays)
 │   ├── schemas.ts       # JSON-LD structured data generators
 │   ├── site-config.ts   # SITE_URL = "https://www.sungkargroup.com"
@@ -52,10 +51,10 @@ src/
 │   ├── loader.ts        # Content loader with static import map + ID fallback
 │   ├── localize.ts      # localizeHref() — maps IDs paths to canonical and prepends locale
 │   ├── ui-strings.ts    # UI string translations for all 5 locales
-│   ├── en/              # English translations (32 files, fully translated)
-│   ├── ar/              # Arabic (file structure only, needs native translation)
-│   ├── ms/              # Malay (file structure only, needs native translation)
-│   └── zh/              # Chinese (file structure only, needs native translation)
+│   ├── en/              # English — folder structure mirrors lib/content/ (fully translated)
+│   ├── ar/              # Arabic — folder structure mirrors lib/content/ (mostly translated)
+│   ├── ms/              # Malay — folder structure mirrors lib/content/ (partially translated)
+│   └── zh/              # Chinese — folder structure mirrors lib/content/ (mostly stubs)
 ├── styles/
 │   ├── global.css       # Tailwind v4 + shadcn + design tokens + RTL font support
 │   └── sections.css     # Section layout utilities
@@ -112,13 +111,13 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 ### Content Types (all in `src/lib/content/`)
 
 | File | Exports | Type |
-|---|---|---|---|
+|---|---|---|---|---|
 | `about/index.ts` | `aboutContent` object | About page content (hero, story, vision, mission, services, strengths, values, commitment, cta sections) |
-| `landing.ts` | `landingHero`, `landingTourCards`, `landingDestinationCards` | Homepage content |
+| `landing/index.ts` | `landingHero`, `landingFeaturedTours`, `landingDestinations`, `landingTransport`, `landingTestimonials`, `landingVideo`, `landingBackgroundImage` | Homepage content |
 | `destinations/index.ts` | `destinationsPageContent` + `destinations` (from `./data`) | `{ slug, title, region, image, gallery[], summary, thingsToDo[], packages[] }` |
 | `destinations/data.ts` | `destinations: Destination[]`, `Destination` type | Data array + type |
-| `tourPackages/index.ts` | `packages: TourPackage[]` | `{ slug, title, region, collectionSlug, category, duration, images[], summary, highlights[], itinerary[], includes[], excludes[] }` |
-| `tourPackages/*.ts` | Region-specific package data | Re-exported through `index.ts` |
+| `tour-packages/index.ts` | `packagePageContent`, `packages: TourPackage[]` | Tour package listing page content + data |
+| `tourPackages/` | Region-specific package data | Package data files organized by region |
 | `tourPackages/collections.ts` | `COLLECTIONS` | Duration-based slugs (1-hari, 2-hari-1-malam, etc.) |
 | `tourPackages/types.ts` | `TourPackage`, `Region`, `PackageCollection` | Type definitions |
 | `tourPackages/utils.ts` | Utility helpers | Package data utilities |
@@ -133,13 +132,12 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 | `faq/data.ts` | `faqItems` | FAQ items combined from per-topic files |
 | `contact/index.ts` | `contactPageContent` | Contact page content (hero, info, form, map) |
 | `faqs/*.ts` | Per-topic FAQ arrays | `about`, `akomodasi`, `contact`, `general`, `package`, `reviews`, `sewa-mobil` |
-| `navigationData.ts` | `headerNav: NavItem[]` | Navigation menu structure (mega menu) |
+| `shared/types.ts` | All domain types (Destination, TourPackage, Accommodation, Vehicle, Guide, Review, NavItem, BusinessInfo, etc.) | TypeScript interfaces/types |
 | `shared/contact-data.ts` | `businessInfo` | Business contact details |
+| `shared/navigation.ts` | `headerNav: NavItem[]` | Navigation menu structure (mega menu) |
 | `shared/og-metadata.ts` | OG metadata helpers | Shared across pages |
 | `shared/schemas.ts` | JSON-LD schema helpers | Shared across pages |
 | `shared/regions.ts` | Region key/label maps | Shared across pages |
-| `shared/navigation.ts` | Navigation utilities | Shared across pages |
-| `destinationsPage.ts` | `destinationsPageContent` | Destination page content (hero, groups, FAQ, related content) |
 
 ### Shared Data (`src/lib/`)
 
@@ -294,10 +292,10 @@ Standalone React (.tsx) components:
 |---|---|
 | **Add/modify a page** | `src/pages/...`, `src/lib/content/{page}/index.ts`, maybe `src/lib/og-metadata.ts` |
 | **Add a new section to a page** | `src/components/{feature}/`, `src/lib/content/{page}/index.ts` |
-| **Change navigation links** | `src/lib/content/navigationData.ts` |
+| **Change navigation links** | `src/lib/content/shared/navigation.ts` |
 | **Change SEO / structured data** | `src/components/seo/`, `src/lib/schemas.ts` |
 | **Add/change tour package** | `src/lib/content/tourPackages/{region}/`, `src/lib/content/tour-packages/index.ts` |
-| **Add/change destination** | `src/lib/content/destinations/data.ts`, `src/lib/content/destinationsPage.ts` |
+| **Add/change destination** | `src/lib/content/destinations/data.ts`, `src/lib/content/destinations/index.ts` |
 | **Add/change vehicle** | `src/lib/content/car-rental/data.ts`, `src/lib/content/car-rental/index.ts` |
 | **Add/change accommodation** | `src/lib/content/accommodations/data.ts` |
 | **Add/change FAQ** | `src/lib/content/faqs/{topic}.ts` |
