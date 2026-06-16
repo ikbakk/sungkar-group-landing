@@ -31,7 +31,7 @@ const { class: className, title, description, eyebrow, alignment = "center", but
   <SectionContainer class={cn("gap-6", alignment === "left" && "items-start text-left", alignment === "right" && "items-end text-right", alignment === "center" && "items-center text-center")}>
     <div class={cn("flex flex-col gap-4", alignment === "center" && "items-center max-w-2xl")}>
       {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
-      <h2 class="text-4xl font-heading leading-tight tracking-tight sm:text-5xl">
+      <h2 class="text-4xl leading-tight tracking-tight sm:text-5xl">
         {title}
       </h2>
       <p class={cn("text-muted-foreground text-lg leading-relaxed text-balance line-clamp-2", alignment === "center" && "max-w-2xl")}>
@@ -64,7 +64,7 @@ const { class: className, title, description, eyebrow, alignment = "center", but
               <Icon name={feature.icon} class="size-5" />
             </div>
             <div class="flex flex-col gap-1.5">
-              <h3 class="text-foreground text-base font-heading">
+              <h3 class="text-foreground text-base">
                 {feature.title}
               </h3>
               <p class="text-muted-foreground text-sm leading-relaxed">

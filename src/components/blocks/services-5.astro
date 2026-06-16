@@ -39,7 +39,7 @@ const {
     <div class={cn(alignment === "center" && "mx-auto max-w-2xl text-center", alignment === "left" && "text-left", alignment === "right" && "text-right ml-auto")}>
       {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
       <h2
-        class="mt-4 text-4xl font-heading leading-tight tracking-tight sm:text-5xl"
+        class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl"
       >
         {title}
       </h2>
@@ -71,7 +71,7 @@ const {
             <div class="bg-primary/10 text-primary ring-primary/15 flex size-10 items-center justify-center rounded-lg ring-1 transition-transform ring-inset group-hover/service:scale-105">
               <Icon name={service.icon ?? "layout-grid"} class="size-5" />
             </div>
-            <h3 class="text-base font-heading tracking-tight">
+            <h3 class="text-base tracking-tight">
               {service.title}
             </h3>
             <p class="text-muted-foreground text-sm leading-relaxed">

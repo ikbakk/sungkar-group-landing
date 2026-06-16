@@ -45,7 +45,7 @@ const {
   >
     <div class={cn("lg:sticky lg:top-28", alignment === "center" && "text-center", alignment === "right" && "text-right")}>
       {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
-      <h2 class="mt-4 text-4xl font-heading leading-tight tracking-tight sm:text-5xl">
+      <h2 class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl">
         {title}
       </h2>
       {
@@ -82,7 +82,7 @@ const {
               <div class="absolute inset-0 -z-10 bg-linear-to-t from-black/70 to-transparent" />
               <div class="flex items-end justify-between gap-4 p-5 text-white">
                 <div class="flex flex-col gap-1">
-                  <h3 class="text-xl font-heading">{service.title}</h3>
+                  <h3 class="text-xl">{service.title}</h3>
                   <p class="text-sm leading-relaxed text-white/75 line-clamp-4">
                     {service.description}
                   </p>
