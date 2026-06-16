@@ -14,28 +14,26 @@ import { sewaMobilFormFields } from "@/lib/contact-data";
 import VehicleDetailPanel from "@/components/vehicles/VehicleDetailPanel.astro";
 import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { t } from "@/lib/i18n";
 
 import type { Vehicle } from "@/lib/content/sewaMobilData";
 
 export function getStaticPaths() {
   const paths = [];
-  for (const locale of NON_DEFAULT_LOCALES) {
-    for (const vehicle of vehicles) {
-      paths.push({
-        params: { locale, region: vehicle.region, slug: vehicle.slug },
-        props: { vehicle },
-      });
-    }
+  for (const vehicle of vehicles) {
+    paths.push({
+      params: { region: vehicle.region, slug: vehicle.slug },
+      props: { vehicle },
+    });
   }
   return paths;
 }
 
-const { locale } = Astro.params;
+const locale = "id";
 const { vehicle } = Astro.props;
-const uiStrings = t(locale!);
+const uiStrings = t(locale);
 
-const vehicleUrl = `${SITE_URL}/${locale}/car-rental/${vehicle.region}/${vehicle.slug}`;
+const vehicleUrl = `${SITE_URL}/car-rental/${vehicle.region}/${vehicle.slug}`;
 const absoluteImageUrl = new URL(vehicle.imageTop.src, SITE_URL).toString();
 
 const productSchema = generateProductSchema(
@@ -48,8 +46,8 @@ const productSchema = generateProductSchema(
 
 const breadcrumbItems = [
   { name: uiStrings.breadcrumb.home, url: "/" },
-  { name: uiStrings.breadcrumb.carRental, url: `/${locale}/car-rental` },
-  { name: REGION_LABEL[vehicle.region], url: `/${locale}/car-rental/${vehicle.region}` },
+  { name: uiStrings.breadcrumb.carRental, url: "/car-rental" },
+  { name: REGION_LABEL[vehicle.region], url: `/car-rental/${vehicle.region}` },
   { name: vehicle.name, url: vehicleUrl },
 ];
 
@@ -61,7 +59,7 @@ const r = vehicle.region as Region;
 <MainLayout
   title={`${vehicle.name} - ${uiStrings.sewaMobil.title} ${REGION_LABEL[r]}`}
   description={vehicle.description}
-  canonical={`/${locale}/car-rental/${vehicle.region}/${vehicle.slug}`}
+  canonical={`/car-rental/${vehicle.region}/${vehicle.slug}`}
   image={vehicle.imageTop}
   locale={locale}
 >
@@ -73,9 +71,9 @@ const r = vehicle.region as Region;
     title={vehicle.name}
     description={vehicle.description}
     breadcrumbs={[
-      { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-      { label: uiStrings.breadcrumb.carRental, href: `/${locale}/car-rental` },
-      { label: REGION_LABEL[r], href: `/${locale}/car-rental/${vehicle.region}` },
+      { label: uiStrings.breadcrumb.home, href: "/" },
+      { label: uiStrings.breadcrumb.carRental, href: "/car-rental" },
+      { label: REGION_LABEL[r], href: `/car-rental/${vehicle.region}` },
       { label: vehicle.name },
     ]}
   />

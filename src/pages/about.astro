@@ -15,19 +15,14 @@ import CtaSection from "@/components/about/CtaSection.astro";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n/ui-strings";
-import { NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
-export async function getStaticPaths() {
-  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
-}
+const locale = "id";
+const uiStrings = t(locale);
 
-const { locale } = Astro.params;
-const uiStrings = t(locale!);
-
-const aboutModule = await loadContent(locale!, "about");
+const aboutModule = await loadContent(locale, "about");
 const { aboutContent } = aboutModule;
 
-const faqModule = await loadFaq(locale!, "about");
+const faqModule = await loadFaq(locale, "about");
 const { aboutFaq } = faqModule;
 
 const faqSchema = generateFAQPageSchema(aboutFaq);
@@ -39,7 +34,7 @@ const pageDescription = aboutContent.hero.description;
 <MainLayout
   title={pageTitle}
   description={pageDescription}
-  canonical={`/${locale}/about`}
+  canonical="/about"
   locale={locale}
 >
   <StructuredData schema={faqSchema} />
@@ -48,7 +43,7 @@ const pageDescription = aboutContent.hero.description;
     title={aboutContent.hero.title}
     description={aboutContent.hero.description}
     breadcrumbs={[
-      { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+      { label: uiStrings.breadcrumb.home, href: "/" },
       { label: uiStrings.breadcrumb.about },
     ]}
   />

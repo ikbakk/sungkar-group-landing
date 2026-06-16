@@ -25,35 +25,32 @@ import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 import { paketWisataFormFields } from "@/lib/contact-data";
 
 import { loadFaq } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { t } from "@/lib/i18n";
 
 import type { TourPackage } from "@/lib/content/tourPackages/types";
 
 export function getStaticPaths() {
   const paths = [];
-  for (const locale of NON_DEFAULT_LOCALES) {
-    for (const tour of packages) {
-      paths.push({
-        params: {
-          locale,
-          region: tour.region,
-          collection: tour.collectionSlug,
-          slug: tour.slug,
-        },
-        props: { tour },
-      });
-    }
+  for (const tour of packages) {
+    paths.push({
+      params: {
+        region: tour.region,
+        collection: tour.collectionSlug,
+        slug: tour.slug,
+      },
+      props: { tour },
+    });
   }
   return paths;
 }
 
-const { locale } = Astro.params;
+const locale = "id";
 const { tour } = Astro.props;
-const uiStrings = t(locale!);
+const uiStrings = t(locale);
 
 const r = tour.region as Region;
 
-const packageUrl = `${SITE_URL}/${locale}/tour-packages/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
+const packageUrl = `${SITE_URL}/tour-packages/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
 const absoluteImageUrl = new URL(tour.images[0].src, SITE_URL).toString();
 
 const productSchema = generateProductSchema(
@@ -65,16 +62,16 @@ const productSchema = generateProductSchema(
   tour.duration,
 );
 
-const faqModule = await loadFaq(locale!, "package");
+const faqModule = await loadFaq(locale, "package");
 const { packageFaq } = faqModule;
 
 const faqSchema = generateFAQPageSchema(packageFaq);
 
 const breadcrumbItems = [
   { name: uiStrings.breadcrumb.home, url: "/" },
-  { name: uiStrings.breadcrumb.tourPackages, url: `/${locale}/tour-packages` },
-  { name: REGION_LABEL[r], url: `/${locale}/tour-packages/${tour.region}` },
-  { name: tour.collectionTitle, url: `/${locale}/tour-packages/${tour.region}/${tour.collectionSlug}` },
+  { name: uiStrings.breadcrumb.tourPackages, url: "/tour-packages" },
+  { name: REGION_LABEL[r], url: `/tour-packages/${tour.region}` },
+  { name: tour.collectionTitle, url: `/tour-packages/${tour.region}/${tour.collectionSlug}` },
   { name: tour.title, url: packageUrl },
 ];
 
@@ -96,7 +93,7 @@ const itineraryByDay = Object.entries(
 <MainLayout
   title={tour.title}
   description={tour.summary}
-  canonical={`/${locale}/tour-packages/${tour.region}/${tour.collectionSlug}/${tour.slug}`}
+  canonical={`/tour-packages/${tour.region}/${tour.collectionSlug}/${tour.slug}`}
   image={tour.images[0]}
   locale={locale}
 >
@@ -108,10 +105,10 @@ const itineraryByDay = Object.entries(
     title={tour.title}
     description={tour.summary}
     breadcrumbs={[
-      { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-      { label: uiStrings.breadcrumb.tourPackages, href: `/${locale}/tour-packages` },
-      { label: REGION_LABEL[r], href: `/${locale}/tour-packages/${tour.region}` },
-      { label: tour.collectionTitle, href: `/${locale}/tour-packages/${tour.region}/${tour.collectionSlug}` },
+      { label: uiStrings.breadcrumb.home, href: "/" },
+      { label: uiStrings.breadcrumb.tourPackages, href: "/tour-packages" },
+      { label: REGION_LABEL[r], href: `/tour-packages/${tour.region}` },
+      { label: tour.collectionTitle, href: `/tour-packages/${tour.region}/${tour.collectionSlug}` },
       { label: tour.title },
     ]}
     image={tour.images[0]}

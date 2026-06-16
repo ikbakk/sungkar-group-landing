@@ -10,17 +10,13 @@ import StickyNav from "@/components/ui/StickyNav.astro";
 import DestinationGroupSection from "@/components/destinations/DestinationGroupSection.astro";
 
 import { loadContent } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { t } from "@/lib/i18n";
 import { destinations } from "@/lib/content/destinationsData";
 
-export async function getStaticPaths() {
-  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
-}
+const locale = "id";
+const uiStrings = t(locale);
 
-const { locale } = Astro.params;
-const uiStrings = t(locale!);
-
-const pageModule = await loadContent(locale!, "destinationsPage");
+const pageModule = await loadContent(locale, "destinationsPage");
 const { destinationsPageContent } = pageModule;
 
 const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
@@ -38,7 +34,7 @@ const groups = destinationsPageContent.groups.map((group) => ({
 }));
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.home, href: "/" },
   { label: uiStrings.breadcrumb.destinations },
 ];
 ---
@@ -46,7 +42,7 @@ const breadcrumbs = [
 <MainLayout
   title={uiStrings.page.destinations}
   description={destinationsPageContent.hero.description}
-  canonical={`/${locale}/destinations`}
+  canonical="/destinations"
   image={destinationsPageContent.spotlightImage}
   locale={locale}
 >

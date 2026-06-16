@@ -2,25 +2,19 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import LandingPage from "@/components/landing/LandingPage.astro";
 import { loadContent } from "@/lib/i18n/loader";
-import { NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import OGImage from "@/assets/images/og-home.jpg";
 
-export async function getStaticPaths() {
-  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
-}
-
-const { locale } = Astro.params;
-const landingModule = await loadContent(locale!, "landing");
+const landingModule = await loadContent("id", "landing");
 const { landingHero } = landingModule;
 ---
 
 <MainLayout
   title={landingHero.title}
   description={landingHero.description}
-  canonical={"/" + locale}
+  canonical="/"
   image={OGImage}
   imageAlt="Pemandangan pantai Lombok dengan matahari terbenam"
-  locale={locale}
+  locale="id"
 >
   <LandingPage />
 </MainLayout>

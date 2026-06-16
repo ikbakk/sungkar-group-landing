@@ -2,6 +2,8 @@ export type Locale = "id" | "en" | "ar" | "ms" | "zh";
 
 export const LOCALES: Locale[] = ["id", "en", "ar", "ms", "zh"];
 
+export const NON_DEFAULT_LOCALES: Locale[] = ["en", "ar", "ms", "zh"];
+
 export const LOCALE_LABELS: Record<Locale, string> = {
   id: "Bahasa Indonesia",
   en: "English",

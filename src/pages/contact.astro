@@ -13,7 +13,7 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { businessInfo, contactFormFields } from "@/lib/contact-data";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { t } from "@/lib/i18n";
 
 import {
   generateContactPageSchema,
@@ -21,17 +21,13 @@ import {
 } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 
-export async function getStaticPaths() {
-  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
-}
+const locale = "id";
+const uiStrings = t(locale);
 
-const { locale } = Astro.params;
-const uiStrings = t(locale!);
-
-const pageModule = await loadContent(locale!, "contactPage");
+const pageModule = await loadContent(locale, "contactPage");
 const { contactPageContent } = pageModule;
 
-const faqModule = await loadFaq(locale!, "contact");
+const faqModule = await loadFaq(locale, "contact");
 const { contactFaq } = faqModule;
 
 const siteUrl = Astro.site?.toString() ?? SITE_URL;
@@ -42,7 +38,7 @@ const faqSchema = generateFAQPageSchema(contactFaq);
 
 const pageTitle = uiStrings.page.contact;
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.home, href: "/" },
   { label: uiStrings.breadcrumb.contact },
 ];
 ---
@@ -50,7 +46,7 @@ const breadcrumbs = [
 <MainLayout
   title={pageTitle}
   description={contactPageContent.hero.description}
-  canonical={`/${locale}/contact`}
+  canonical="/contact"
   locale={locale}
 >
   <StructuredData schema={contactSchema} />

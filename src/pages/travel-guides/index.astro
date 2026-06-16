@@ -7,14 +7,10 @@ import { REGION_LABEL, type RegionKey } from "@/lib/regions";
 import { guides } from "@/lib/content/guides";
 import type { Guide } from "@/lib/content/guides";
 
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { t } from "@/lib/i18n";
 
-export async function getStaticPaths() {
-  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
-}
-
-const { locale } = Astro.params;
-const uiStrings = t(locale!);
+const locale = "id";
+const uiStrings = t(locale);
 
 const regions = ["lombok", "sumbawa", "labuan-bajo", "general"] as const;
 
@@ -22,9 +18,8 @@ function guidesByRegion(region: string): Guide[] {
   return guides.filter((g) => g.region === region);
 }
 
-const homeHref = `/${locale}`;
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: homeHref },
+  { label: uiStrings.breadcrumb.home, href: "/" },
   { label: uiStrings.breadcrumb.travelGuides },
 ];
 ---
@@ -32,7 +27,7 @@ const breadcrumbs = [
 <MainLayout
   title={uiStrings.page.travelGuides}
   description="Panduan lengkap untuk merencanakan perjalanan Anda ke Lombok, Sumbawa, dan Labuan Bajo"
-  canonical={`/${locale}/travel-guides`}
+  canonical="/travel-guides"
   locale={locale}
 >
   <PageHeader

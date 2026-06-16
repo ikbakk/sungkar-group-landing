@@ -53,27 +53,35 @@ public/
 
 All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header, SEO meta, StructuredData (Organization + WebSite), FadeInText wrapper, Footer, SpeedInsights.
 
+### i18n Routing
+
+- **Default locale `id`** → served at the root URL without a prefix (e.g., `/`, `/about`, `/destinations/...`)
+- **Non-default locales** (`en`, `ar`, `ms`, `zh`) → served under `/${locale}/` (e.g., `/en/about`, `/ar/destinations/...`)
+- `getStaticPaths()` in `src/pages/[locale]/*.astro` uses `NON_DEFAULT_LOCALES` from `@/lib/i18n` (not `LOCALES`) to exclude `"id"`
+- Root-level pages in `src/pages/*.astro` hardcode `locale = "id"` and serve the Indonesian version
+- `getLocaleFromPath()` in `@/lib/i18n` correctly returns `DEFAULT_LOCALE` for unprefixed paths
+
 | URL | Page File | Components Used |
 |---|---|---|
 | `/` | `src/pages/index.astro` | `LandingPage` (composes HeroSection, VideoSection, FeaturedSection, DestinationsSection, TransportSection) |
-| `/beranda` | `src/pages/beranda.astro` | Redirect → `/` |
-| `/tentang-kami` | `src/pages/tentang-kami.astro` | `PageHeader`, `StorySection`, `VisionMissionSection`, `ServicesSection`, `StrengthsSection`, `ValuesSection`, `CommitmentSection`, `Faq`, `CtaSection` |
-| `/kontak` | `src/pages/kontak.astro` | `PageHeader`, `ContactForm`, `ContactInfoSection`, `EmbeddedMap`, `Faq` |
-| `/ulasan` | `src/pages/ulasan.astro` | `PageHeader`, `ReviewsGridSection`, `ReviewStatsSection`, `ReviewsCtaSection`, `ReviewGallerySection`, `Faq` |
+| `/about` | `src/pages/about.astro` | `PageHeader`, `StorySection`, `VisionMissionSection`, `ServicesSection`, `StrengthsSection`, `ValuesSection`, `CommitmentSection`, `Faq`, `CtaSection` |
+| `/contact` | `src/pages/contact.astro` | `PageHeader`, `ContactForm`, `ContactInfoSection`, `EmbeddedMap`, `Faq` |
+| `/reviews` | `src/pages/reviews.astro` | `PageHeader`, `ReviewsGridSection`, `ReviewStatsSection`, `ReviewsCtaSection`, `ReviewGallerySection`, `Faq` |
 | `/faq` | `src/pages/faq.astro` | `PageHeader`, `Faq` |
-| `/destinasi` | `src/pages/destinasi/index.astro` | `PageHeader`, `DestinationGroupSection`, `RelatedContent`, `Faq` |
-| `/destinasi/[slug]` | `src/pages/destinasi/[slug].astro` | `DestinationDetailPanel`, `DestinationGallery`, `PackageCard` |
-| `/paket-wisata` | `src/pages/paket-wisata/index.astro` | `PageHeader`, `PackageRegionSection` (×3), `PackagePageCta`, `Faq`, `RelatedContent` |
-| `/paket-wisata/[region]` | `src/pages/paket-wisata/[region]/index.astro` | `CollectionCard` listing |
-| `/paket-wisata/[region]/[collection]` | `src/pages/paket-wisata/[region]/[collection]/index.astro` | `PackageCard` listing |
-| `/paket-wisata/[region]/[collection]/[slug]` | `src/pages/paket-wisata/[region]/[collection]/[slug].astro` | `PackageImagePreview`, `PackageDetailPanel`, `PackageItinerary`, `PackageIncludesExcludes`, `PackageGallery`, `Faq`, `Carousel` |
-| `/sewa-mobil` | `src/pages/sewa-mobil/index.astro` | `StickyNav`, `RegionObserver`, `VehicleRegionSection`, `PackagePageCta`, `Faq` |
-| `/sewa-mobil/[region]` | `src/pages/sewa-mobil/[region]/index.astro` | `VehicleRegionSection` (region-filtered) |
-| `/sewa-mobil/[region]/[slug]` | `src/pages/sewa-mobil/[region]/[slug].astro` | `VehicleDetailPanel`, `WhatsAppForm` |
-| `/akomodasi` | `src/pages/akomodasi/index.astro` | `StickyNav`, `RegionObserver`, `RegionNavCard`, `AccommodationRegionSection`, `PackagePageCta`, `Faq` |
-| `/akomodasi/[slug]` | `src/pages/akomodasi/[slug].astro` | `AccommodationCard` listing (region-filtered) |
-| `/panduan-wisata` | `src/pages/panduan-wisata/index.astro` | `GuideCard` listing (grouped by region) |
-| `/panduan-wisata/[slug]` | `src/pages/panduan-wisata/[slug].astro` | `KeyTakeaways`, `GuideCard`, `DestinationCard`, `PackageCard` |
+| `/destinations` | `src/pages/destinations/index.astro` | `PageHeader`, `DestinationGroupSection`, `RelatedContent`, `Faq` |
+| `/destinations/[slug]` | `src/pages/destinations/[slug].astro` | `DestinationDetailPanel`, `DestinationGallery`, `PackageCard` |
+| `/tour-packages` | `src/pages/tour-packages/index.astro` | `PageHeader`, `PackageRegionSection` (×3), `PackagePageCta`, `Faq`, `RelatedContent` |
+| `/tour-packages/[region]` | `src/pages/tour-packages/[region]/index.astro` | `CollectionCard` listing |
+| `/tour-packages/[region]/[collection]` | `src/pages/tour-packages/[region]/[collection]/index.astro` | `PackageCard` listing |
+| `/tour-packages/[region]/[collection]/[slug]` | `src/pages/tour-packages/[region]/[collection]/[slug].astro` | `PackageImagePreview`, `PackageDetailPanel`, `PackageItinerary`, `PackageIncludesExcludes`, `PackageGallery`, `Faq`, `Carousel` |
+| `/car-rental` | `src/pages/car-rental/index.astro` | `StickyNav`, `RegionObserver`, `VehicleRegionSection`, `PackagePageCta`, `Faq` |
+| `/car-rental/[region]` | `src/pages/car-rental/[region]/index.astro` | `VehicleRegionSection` (region-filtered) |
+| `/car-rental/[region]/[slug]` | `src/pages/car-rental/[region]/[slug].astro` | `VehicleDetailPanel`, `WhatsAppForm` |
+| `/accommodations` | `src/pages/accommodations/index.astro` | `StickyNav`, `RegionObserver`, `RegionNavCard`, `AccommodationRegionSection`, `PackagePageCta`, `Faq` |
+| `/accommodations/[slug]` | `src/pages/accommodations/[slug].astro` | `AccommodationCard` listing (region-filtered) |
+| `/travel-guides` | `src/pages/travel-guides/index.astro` | `GuideCard` listing (grouped by region) |
+| `/travel-guides/[slug]` | `src/pages/travel-guides/[slug].astro` | `KeyTakeaways`, `GuideCard`, `DestinationCard`, `PackageCard` |
+| **Non-default locale pages** (en, ar, ms, zh) | `src/pages/[locale]/*.astro` | Same components as ID root pages, but with locale prefix in URLs |
 
 ---
 
@@ -257,6 +265,7 @@ Standalone React (.tsx) components:
 | **Add/change guide** | `src/lib/content/guides.ts` |
 | **Change review data** | `src/lib/content/reviewPage.ts` |
 | **Add image** | Place in `src/assets/images/`, import via `@/assets/images/` |
+| **Add/modify i18n locale** | `src/lib/i18n/index.ts` (update `LOCALES`, `NON_DEFAULT_LOCALES`, locale-specific formatters) |
 | **Change color/brand tokens** | `src/styles/global.css` (`@theme inline`, `:root`) |
 | **Change layout shell** | `src/layouts/MainLayout.astro` |
 | **Change footer** | `src/components/site/Footer.astro` (uses `FooterBlock`) |

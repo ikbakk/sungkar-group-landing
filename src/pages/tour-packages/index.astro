@@ -17,19 +17,15 @@ import { packages } from "@/lib/content/tourPackages/index";
 import { REGIONS } from "@/lib/regions";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { t } from "@/lib/i18n";
 
-export async function getStaticPaths() {
-  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
-}
+const locale = "id";
+const uiStrings = t(locale);
 
-const { locale } = Astro.params;
-const uiStrings = t(locale!);
-
-const pageModule = await loadContent(locale!, "packagePage");
+const pageModule = await loadContent(locale, "packagePage");
 const { packagePageContent } = pageModule;
 
-const faqModule = await loadFaq(locale!, "package");
+const faqModule = await loadFaq(locale, "package");
 const { packageFaq } = faqModule;
 
 const faqSchema = generateFAQPageSchema(packageFaq);
@@ -52,7 +48,7 @@ const regions = REGIONS.map((id) => ({
 }));
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.breadcrumb.home, href: "/" },
   { label: uiStrings.breadcrumb.tourPackages },
 ];
 ---
@@ -60,7 +56,7 @@ const breadcrumbs = [
 <MainLayout
   title={uiStrings.paketWisata.title}
   description={packagePageContent.hero.description}
-  canonical={`/${locale}/tour-packages`}
+  canonical="/tour-packages"
   image={packages[0]?.images[0]}
   locale={locale}
 >

@@ -6,7 +6,7 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { packages } from "@/lib/content/tourPackages/index";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { t } from "@/lib/i18n";
 
 import CollectionCard from "@/components/packages/CollectionCard.astro";
 
@@ -19,17 +19,16 @@ type CCard = {
 export function getStaticPaths() {
   const regions: Region[] = ["lombok", "sumbawa", "labuan-bajo"];
   const paths = [];
-  for (const locale of NON_DEFAULT_LOCALES) {
-    for (const region of regions) {
-      paths.push({ params: { locale, region } });
-    }
+  for (const region of regions) {
+    paths.push({ params: { region } });
   }
   return paths;
 }
 
-const { locale, region } = Astro.params;
+const locale = "id";
+const { region } = Astro.params;
 const r = region as Region;
-const uiStrings = t(locale!);
+const uiStrings = t(locale);
 
 const regionPackages = packages.filter((pkg) => pkg.region === r);
 
@@ -48,8 +47,8 @@ const collections = Object.values(
 );
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-  { label: uiStrings.breadcrumb.tourPackages, href: `/${locale}/tour-packages` },
+  { label: uiStrings.breadcrumb.home, href: "/" },
+  { label: uiStrings.breadcrumb.tourPackages, href: "/tour-packages" },
   { label: REGION_LABEL[r] },
 ];
 ---
@@ -57,7 +56,7 @@ const breadcrumbs = [
 <MainLayout
   title={`${uiStrings.paketWisata.packagesFor.replace("{region}", REGION_LABEL[r])}`}
   description={`Pilihan paket wisata ${REGION_LABEL[r]}`}
-  canonical={`/${locale}/tour-packages/${r}`}
+  canonical={`/tour-packages/${r}`}
   image={regionPackages[0]?.image}
   locale={locale}
 >
