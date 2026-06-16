@@ -167,17 +167,6 @@ export interface UIStrings {
     faq: string;
     blog: string;
   };
-  common: {
-    readMore: string;
-    learnMore: string;
-    contactUs: string;
-    bookNow: string;
-    submit: string;
-    send: string;
-    back: string;
-    seeMore: string;
-    viewAll: string;
-  };
   blogSection: {
     share: string;
     relatedPosts: string;

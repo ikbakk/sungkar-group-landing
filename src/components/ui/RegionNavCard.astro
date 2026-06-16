@@ -5,11 +5,13 @@ interface Props {
   title: string;
   items: { id: string; label: string; count: number }[];
 }
+
+const { title, items } = Astro.props as Props;
 ---
 
-<Card className="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
+<Card class="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
   <CardHeader>
-    <CardTitle className="text-3xl leading-tight">{title}</CardTitle>
+    <CardTitle class="text-3xl leading-tight">{title}</CardTitle>
   </CardHeader>
   <CardContent class="grid gap-3">
     {items.map((item) => (

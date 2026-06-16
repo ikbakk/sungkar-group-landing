@@ -54,7 +54,7 @@ export const accommodations: Accommodation[] = [
   {
     slug: "lombok-gili-gateway",
     name: "بوابة لومبوك لجزر جيلي",
-    region: "lomok",
+    region: "lombok",
     perks: [
       "وصول لجزر جيلي",
       "رحلات بالقارب",

@@ -74,15 +74,6 @@ export interface Review {
   initials: string;
 }
 
-function deriveInitials(name: string): string {
-  return name
-    .split(" ")
-    .map((n) => n[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase();
-}
-
 export interface MarqueeReview {
   quote: string;
   initials: string;

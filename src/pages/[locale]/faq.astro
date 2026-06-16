@@ -52,16 +52,16 @@ const breadcrumbs = [
 
   <SectionContainer background="bg-surface-soft" padding="pb-20">
       <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-        <Card className="border-border bg-white">
+        <Card class="border-border bg-white">
           <CardHeader>
-            <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+            <Badge variant="outline" class="w-fit rounded-full px-3 py-1">
               {faqPageContent.introCard.badge}
             </Badge>
-            <CardTitle className="text-3xl leading-tight">
+            <CardTitle class="text-3xl leading-tight">
               {faqPageContent.introCard.title}
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-sm leading-7 text-text-muted">
+          <CardContent class="text-sm leading-7 text-text-muted">
             <p>{faqPageContent.introCard.description}</p>
           </CardContent>
         </Card>
@@ -84,14 +84,14 @@ const breadcrumbs = [
 
       <div class="mt-12 grid gap-6 md:grid-cols-3">
         {faqPageContent.relatedCards.map((card) => (
-          <Card className="border-border bg-white">
+          <Card class="border-border bg-white">
             <CardHeader>
-              <Badge variant="outline" className="w-fit rounded-full px-3 py-1">
+              <Badge variant="outline" class="w-fit rounded-full px-3 py-1">
                 {card.badge}
               </Badge>
-              <CardTitle className="text-3xl leading-tight">{card.title}</CardTitle>
+              <CardTitle class="text-3xl leading-tight">{card.title}</CardTitle>
             </CardHeader>
-            <CardContent className="grid gap-3 text-sm leading-7 text-text-muted">
+            <CardContent class="grid gap-3 text-sm leading-7 text-text-muted">
               <p>{card.description}</p>
               <Button href={card.buttonHref} variant="outline">
                 {card.buttonLabel}
