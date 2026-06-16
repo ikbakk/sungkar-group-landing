@@ -38,8 +38,17 @@ src/
 │   ├── regions.ts       # Region keys, labels, CSS classes
 │   ├── utils.ts         # cn() helper
 │   └── og-metadata.ts   # Per-route OG metadata
+├── lib/i18n/            # i18n framework
+│   ├── index.ts         # Types, helpers, LOCALES, NON_DEFAULT_LOCALES, isRTL(), formatDate()
+│   ├── loader.ts        # Content loader with static import map + ID fallback
+│   ├── localize.ts      # localizeHref() — maps IDs paths to canonical and prepends locale
+│   ├── ui-strings.ts    # UI string translations for all 5 locales
+│   ├── en/              # English translations (32 files, fully translated)
+│   ├── ar/              # Arabic (file structure only, needs native translation)
+│   ├── ms/              # Malay (file structure only, needs native translation)
+│   └── zh/              # Chinese (file structure only, needs native translation)
 ├── styles/
-│   ├── global.css       # Tailwind v4 + shadcn + design tokens
+│   ├── global.css       # Tailwind v4 + shadcn + design tokens + RTL font support
 │   └── sections.css     # Section layout utilities
 └── assets/images/       # All imported images (webp/jpg)
 public/
@@ -60,6 +69,10 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 - `getStaticPaths()` in `src/pages/[locale]/*.astro` uses `NON_DEFAULT_LOCALES` from `@/lib/i18n` (not `LOCALES`) to exclude `"id"`
 - Root-level pages in `src/pages/*.astro` hardcode `locale = "id"` and serve the Indonesian version
 - `getLocaleFromPath()` in `@/lib/i18n` correctly returns `DEFAULT_LOCALE` for unprefixed paths
+- `localizeHref()` in `@/lib/i18n/localize` skips the locale prefix when `locale === "id"` (default)
+- `getLocalizedPath()` in `@/lib/i18n` generates correct locale-switching URLs for the LocaleSwitcher
+- **Locale Switcher**: `LocaleSwitcher.astro` in header (desktop) + inline in `NavigationMobile.tsx` (mobile) — shows all 5 locales with short labels, uses `getLocalizedPath()` for navigation
+- **RTL Support**: Arabic (`ar`) uses `dir="rtl"` on `<html>`, Cairo Variable font for both body and headings, LTR locales use Inter + Playfair Display
 
 | URL | Page File | Components Used |
 |---|---|---|
@@ -234,7 +247,7 @@ Standalone React (.tsx) components:
 - Design tokens: `brand-50` through `brand-900` (blue/teal), `surface`, `surface-soft`, `text`, `text-muted`, `whatsapp`
 - `@layer components` utilities: `.card-base`, `.card-hover`, `.card-interactive`, `.card-hover-border`, `.card-shadow-base`
 - Radius scale: `--radius-sm` through `--radius-4xl` (base `0.75rem`)
-- Fonts: `Playfair Display` (headings), `Inter Variable` (body)
+- Fonts: `Playfair Display` (headings), `Inter Variable` (body) for LTR locales; `Cairo Variable` (both) for Arabic RTL
 
 ### Components Convention
 - `.astro` files for static/SSR rendering
@@ -265,7 +278,10 @@ Standalone React (.tsx) components:
 | **Add/change guide** | `src/lib/content/guides.ts` |
 | **Change review data** | `src/lib/content/reviewPage.ts` |
 | **Add image** | Place in `src/assets/images/`, import via `@/assets/images/` |
-| **Add/modify i18n locale** | `src/lib/i18n/index.ts` (update `LOCALES`, `NON_DEFAULT_LOCALES`, locale-specific formatters) |
+| **Add/modify i18n locale** | `src/lib/i18n/index.ts` (update `LOCALES`, `NON_DEFAULT_LOCALES`, locale-specific formatters), `src/lib/i18n/ui-strings.ts` (UI translations), `src/lib/i18n/localize.ts` (path mapping), `src/lib/i18n/loader.ts` (content modules) |
+| **Translate page content** | `src/lib/i18n/{locale}/` — copy structure from `src/lib/i18n/en/`, translate all strings, keep exports/types identical |
+| **Add locale switcher** | `src/components/header/LocaleSwitcher.astro` + `NavigationMobile.tsx` (inline switcher) — uses `LOCALES`, `LOCALE_LABELS`, `getLocalizedPath` from `@/lib/i18n` |
+| **Fix navigation links per locale** | `src/lib/i18n/localize.ts` — `localizeHref()` handles locale-aware `href` generation, skips prefix for default locale |
 | **Change color/brand tokens** | `src/styles/global.css` (`@theme inline`, `:root`) |
 | **Change layout shell** | `src/layouts/MainLayout.astro` |
 | **Change footer** | `src/components/site/Footer.astro` (uses `FooterBlock`) |
