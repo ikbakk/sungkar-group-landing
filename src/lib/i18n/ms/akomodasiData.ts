@@ -10,7 +10,7 @@ export type Accommodation = {
   image: ImageSource;
 };
 
-import HeroLombok from "@/assets/images/hero-lombok.webp";
+import { HERO } from "@/assets/images";
 
 export const accommodations: Accommodation[] = [
   {
@@ -30,7 +30,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Hotel tepi pantai dengan pemandangan laut eksotik dan akses eksklusif ke destinasi pantai terbaik Lombok.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
   {
     slug: "lombok-mountain-retreat",
@@ -49,7 +49,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Penginapan pegunungan yang menawarkan pengalaman Lombok autentik dengan kehidupan tempatan dan persekitaran semula jadi.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
   {
     slug: "lombok-gili-gateway",
@@ -68,7 +68,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Penginapan strategik untuk akses mudah ke Kepulauan Gili dengan pakej island hopping dan aktiviti marin.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
 
   {
@@ -88,7 +88,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Basecamp utama untuk petualangan Komodo dengan akses penuh ke Taman Negara dan pemandu berpengalaman.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
   {
     slug: "labuan-bajo-liveaboard-hub",
@@ -107,7 +107,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Hab pelayaran Labuan Bajo dengan koleksi liveaboard terbaik untuk petualangan Komodo yang tak terlupakan.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
   {
     slug: "labuan-bajo-beach-resort",
@@ -121,6 +121,6 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Resort tepi pantai mewah untuk menginap selesa dengan akses mudah ke semua destinasi pelancongan Komodo.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
 ];

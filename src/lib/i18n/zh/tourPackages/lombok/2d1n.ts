@@ -1,9 +1,4 @@
-import HeroLombok from "@/assets/images/hero-lombok.webp";
-import KutaBeach from "@/assets/images/kuta-beach.webp";
-import KutaBeach2 from "@/assets/images/kuta-beach-2.webp";
-import TourCultural from "@/assets/images/tour-cultural.webp";
-import DestinationLombok from "@/assets/images/destination-lombok.webp";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
+import { HERO, GALLERY, DESTINATIONS } from "@/assets/images";
 
 import type { TourPackage } from "@/lib/content/tourPackages/types";
 
@@ -16,7 +11,7 @@ export const twoDays: TourPackage[] = [
     region: "lombok",
     category: "Lombok Tour Packages",
     duration: "2 Days 1 Night",
-    images: [HeroLombok, KutaBeach, KutaBeach2, TourCultural],
+    images: [HERO.lombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
 
     summary:
       "A 2-day 1-night Lombok tour package combining the beauty of Kuta Mandalika Beach, Tanjung Aan Beach, Sasak cultural tour, and historical and religious tours in Mataram City. Suitable for travelers who want to enjoy beaches, culture, cuisine, and Lombok's iconic attractions in a short time.",
@@ -79,7 +74,7 @@ export const twoDays: TourPackage[] = [
     region: "lombok",
     category: "Lombok Tour Packages",
     duration: "2 Days 1 Night",
-    images: [HeroLombok, DestinationLombok, TourSnorkeling],
+    images: [HERO.lombok, DESTINATIONS.lombok, GALLERY.tourSnorkeling],
 
     summary:
       "A 2-day 1-night tour package to Pink Beach Lombok and Tanjung Ringgit featuring island hopping, snorkeling, and spectacular sea cliff panoramas. Explore Pasir Island, Pink Beach 2, Pink Beach 3, Pink Beach, and Tanjung Ringgit, then enjoy a comfortable night at your chosen hotel.",

@@ -1,9 +1,4 @@
-import HeroLombok from "@/assets/images/hero-lombok.webp";
-import DestinationGili from "@/assets/images/destination-gili.webp";
-import GiliMeno from "@/assets/images/gili-meno.webp";
-import KutaBeach from "@/assets/images/kuta-beach.webp";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
-import DestinationLombok from "@/assets/images/destination-lombok.webp";
+import { HERO, DESTINATIONS, GALLERY } from "@/assets/images";
 
 import type { TourPackage } from "@/lib/content/tourPackages/types";
 
@@ -18,7 +13,7 @@ export const threeDays: TourPackage[] = [
       region: "lombok",
       category: "Lombok Tour Packages",
       duration: "3 Days 2 Nights",
-      images: [HeroLombok, DestinationGili, KutaBeach, GiliMeno],
+      images: [HERO.lombok, DESTINATIONS.gili, GALLERY.kutaBeach, GALLERY.giliMeno],
 
       summary:
         "A 3-day 2-night Lombok tour package combining the beauty of Kuta Mandalika Beach, Tanjung Aan Beach, Bukit Merese, Sasak culture, and a vacation experience on Gili Trawangan. Suitable for couples, families, and groups who want to enjoy beach tours, culture, cuisine, and island escape in one comfortable private trip.",
@@ -102,7 +97,7 @@ export const threeDays: TourPackage[] = [
       region: "lombok",
       category: "Lombok Tour Packages",
       duration: "3 Days 2 Nights",
-      images: [HeroLombok, TourSnorkeling, DestinationGili, GiliMeno],
+      images: [HERO.lombok, GALLERY.tourSnorkeling, DESTINATIONS.gili, GALLERY.giliMeno],
 
       summary:
         "A 3-day 2-night Lombok tour package combining the beauty of Kuta Mandalika Beach, Tanjung Aan Beach, Bukit Merese, Sasak culture, and a snorkeling experience in the 3 Gili waters famous for coral reefs, underwater statues, and sea turtle habitats. Suitable for couples, families, and groups who want to enjoy both land and marine tours in one complete trip.",
@@ -191,7 +186,7 @@ export const threeDays: TourPackage[] = [
     region: "lombok",
     category: "Lombok Tour Packages",
     duration: "3 Days 2 Nights",
-    images: [HeroLombok, DestinationLombok, TourSnorkeling, KutaBeach],
+    images: [HERO.lombok, DESTINATIONS.lombok, GALLERY.tourSnorkeling, GALLERY.kutaBeach],
 
     summary:
       "A 3-day 2-night Lombok tour package combining the beauty of the Mandalika area with a marine adventure to Pink Beach Lombok. Explore Sasak Traditional Villages, Kuta Mandalika Beach, Bukit Merese, Mandalika Circuit, Pasir Island, Gili Petelu, Pink Beach, and enjoy snorkeling in East Lombok waters famous for their beautiful coral reefs.",
@@ -276,7 +271,7 @@ export const threeDays: TourPackage[] = [
     region: "lombok",
     category: "Lombok Tour Packages",
     duration: "3 Days 2 Nights",
-    images: [HeroLombok, DestinationGili, TourSnorkeling],
+    images: [HERO.lombok, DESTINATIONS.gili, GALLERY.tourSnorkeling],
 
     summary:
       "A 3-day 2-night Lombok tour package combining the beauty of Kuta Mandalika Beach, Tanjung Aan Beach, Sasak culture, and island hopping to Gili Nanggu, Gili Sudak, Gili Tangkong, and Gili Kedis. Enjoy snorkeling in the clear waters of West Lombok, exotic beach tours, and Lombok's signature cuisine in a comfortable and flexible private trip.",

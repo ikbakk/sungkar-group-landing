@@ -1,9 +1,4 @@
-import HeroLombok from "@/assets/images/hero-lombok.webp";
-import KutaBeach from "@/assets/images/kuta-beach.webp";
-import KutaBeach2 from "@/assets/images/kuta-beach-2.webp";
-import TourCultural from "@/assets/images/tour-cultural.webp";
-import DestinationLombok from "@/assets/images/destination-lombok.webp";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
+import { HERO, GALLERY, DESTINATIONS } from "@/assets/images";
 
 import type { TourPackage } from "@/lib/content/tourPackages/types";
 
@@ -16,7 +11,7 @@ export const twoDays: TourPackage[] = [
     region: "lombok",
     category: "Lombok Tour Packages",
     duration: "2 Days 1 Night",
-    images: [HeroLombok, KutaBeach, KutaBeach2, TourCultural],
+    images: [HERO.lombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
 
     summary:
       "برنامج سياحة لومبوك 2 يوم 1 ليلة يجمع بين جمال شاطئ كوتا مانداليكا، شاطئ تانجونغ آن، جولة ثقافة الساساك، والجولات التاريخية والدينية في مدينة ماتارام. مناسب للمسافرين الذين يريدون الاستمتاع بالشواطئ، الثقافة، المأكولات، ومعالم لومبوك الشهيرة في وقت قصير.",
@@ -79,7 +74,7 @@ export const twoDays: TourPackage[] = [
     region: "lombok",
     category: "Lombok Tour Packages",
     duration: "2 Days 1 Night",
-    images: [HeroLombok, DestinationLombok, TourSnorkeling],
+    images: [HERO.lombok, DESTINATIONS.lombok, GALLERY.tourSnorkeling],
 
     summary:
       "برنامج سياحة 2 يوم 1 ليلة إلى الشاطئ الوردي لومبوك وتانجونغ رينجيت يتميز بقفز الجزر، الغطس، ومناظر المنحدرات البحرية المذهلة. استكشف جزيرة باسير، الشاطئ الوردي 2، الشاطئ الوردي 3، الشاطئ الوردي، وتانجونغ رينجيت، ثم استمتع بليلة مريحة في فندقك المختار.",

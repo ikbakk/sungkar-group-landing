@@ -1,8 +1,4 @@
-import HeroLombok from "@/assets/images/hero-lombok.webp";
-import DestinationRinjani from "@/assets/images/destination-rinjani.webp";
-import KutaBeach from "@/assets/images/kuta-beach.webp";
-import KutaBeach2 from "@/assets/images/kuta-beach-2.webp";
-import TourCultural from "@/assets/images/tour-cultural.webp";
+import { HERO, DESTINATIONS, GALLERY } from "@/assets/images";
 
 import type { TourPackage } from "@/lib/content/tourPackages/types";
 
@@ -16,7 +12,7 @@ export const oneDay: TourPackage[] = [
     featured: true,
     category: "Lombok Tour Packages",
     duration: "1 Day",
-    images: [HeroLombok, DestinationRinjani],
+    images: [HERO.lombok, DESTINATIONS.rinjani],
 
     summary:
       "برنامج سياحة شلالاتاندانغ جيلي و تيو كيليب يأخذك لاستكشاف الجمال الطبيعي لشمال لومبوك عند سفح جبل رينجاني. استمتع بأجواء غابة باون بوسوك السياحية، الجولة الثقافية في قرية سينارو، المسجد العتيق بايان بيليك، وانتعاش أشهر شلالين في لومبوك في رحلة مريحة ولا تُنسى.",
@@ -68,7 +64,7 @@ export const oneDay: TourPackage[] = [
     featured: true,
     category: "Lombok Tour Packages",
     duration: "1 Day",
-    images: [HeroLombok, KutaBeach, KutaBeach2, TourCultural],
+    images: [HERO.lombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
 
     summary:
       "برنامج سياحة شاطئ كوتا لومبوك يجمع بين جمال الشاطئ الرملي الأبيض والجولة الثقافية للساساك. استكشف قرية بانيوموليك، قرية سوكارارا، قرية سادي، شاطئ كوتا لومبوك، وشاطئ تانجونغ آن في يوم كامل مع خدمة جولة خاصة مريحة.",

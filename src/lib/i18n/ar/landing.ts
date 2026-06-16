@@ -1,15 +1,10 @@
 import type { ImageSource } from "@/lib/images";
+import { HERO, GALLERY } from "@/assets/images";
 
 import { businessInfo } from "@/lib/contact-data";
 import { destinations } from "@/lib/content/destinations";
 import { packages } from "@/lib/content/tourPackages";
 import { toMarqueeReviews, reviewStats } from "@/lib/content/reviews";
-import Hero from "@/assets/images/hero.webp";
-import HeroLombok from "@/assets/images/hero-lombok.webp";
-import KutaBeach from "@/assets/images/kuta-beach.webp";
-import KutaBeach2 from "@/assets/images/kuta-beach-2.webp";
-import GiliMeno from "@/assets/images/gili-meno.webp";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
 
 export interface LandingAction {
   label: string;
@@ -94,7 +89,7 @@ export const landingHero = {
     {
       className: "card-1",
       style: "width: 280px; height: 340px;",
-      image: KutaBeach,
+      image: GALLERY.kutaBeach,
       alt: "برنامج سفر منظم بشكل جيد",
       title: "رحلات مدروسة جيداً",
       description: "تفاصيل الرحلة معدة من البداية",
@@ -103,7 +98,7 @@ export const landingHero = {
     {
       className: "card-2",
       style: "width: 240px; height: 280px; right: 20px; top: 80px;",
-      image: KutaBeach2,
+      image: GALLERY.kutaBeach2,
       alt: "شاطئ استوائي في لومبوك",
       title: "شواطئ وجزر",
       contentSizeClass: "p-4",
@@ -111,7 +106,7 @@ export const landingHero = {
     {
       className: "card-3",
       style: "width: 220px; height: 260px; left: 40px; top: 120px;",
-      image: HeroLombok,
+      image: HERO.lombok,
       alt: "منظر طبيعي استوائي للسفر المغامر",
       title: "مغامرة الطبيعة",
       contentSizeClass: "p-4",
@@ -119,7 +114,7 @@ export const landingHero = {
     {
       className: "card-4",
       style: "width: 200px; height: 240px; right: -10px; top: 200px;",
-      image: GiliMeno,
+      image: GALLERY.giliMeno,
       alt: "أنشطة الغطس في المياه الاستوائية",
       title: "الغطس والبحر",
       contentSizeClass: "p-3",
@@ -132,7 +127,7 @@ export const landingFeaturedTours = {
   title: "أكثر البرامج شعبية لعطلة خالية من المتاعب",
   description:
     "من الرحلات القصيرة إلى الرحلات متعددة الأيام، برامجنا مصممة بحيث يمكنك فقط الاختيار، والذهاب، والاستمتاع باللحظة.",
-  heroImage: TourSnorkeling,
+  heroImage: GALLERY.tourSnorkeling,
   tours: packages.filter((tour) => tour.featured).map(toLandingTourCard),
 };
 
@@ -197,4 +192,4 @@ export const landingVideo = {
   embedUrl: "https://www.youtube.com/embed/HgicK9YpopU?si=m7IlfX-QXJVB0mVC",
 } as const;
 
-export const landingBackgroundImage = Hero;
+export const landingBackgroundImage = HERO.main;

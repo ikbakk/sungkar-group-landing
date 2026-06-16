@@ -2,7 +2,7 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import LandingPage from "@/components/landing/LandingPage.astro";
 import { loadContent } from "@/lib/i18n/loader";
-import OGImage from "@/assets/images/og-home.jpg";
+import { BRAND } from "@/assets/images";
 
 const landingModule = await loadContent("id", "landing");
 const { landingHero, landingFeaturedTours, landingDestinations, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
@@ -12,7 +12,7 @@ const { landingHero, landingFeaturedTours, landingDestinations, landingTransport
   title={landingHero.title}
   description={landingHero.description}
   canonical="/"
-  image={OGImage}
+  image={BRAND.ogHome}
   imageAlt="Pemandangan pantai Lombok dengan matahari terbenam"
   locale="id"
 >

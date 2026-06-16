@@ -1,4 +1,5 @@
 import type { ImageSource } from "@/lib/images";
+import { DESTINATIONS, GALLERY, HERO } from "@/assets/images";
 
 export type Destination = {
   slug: string;
@@ -11,25 +12,13 @@ export type Destination = {
   packages: string[];
 };
 
-import DestinationLombok from "@/assets/images/destination-lombok.webp";
-import DestinationRinjani from "@/assets/images/destination-rinjani.webp";
-import DestinationGili from "@/assets/images/destination-gili.webp";
-import DestinationSumbawa from "@/assets/images/destination-sumbawa.webp";
-import KutaBeach from "@/assets/images/kuta-beach.webp";
-import KutaBeach2 from "@/assets/images/kuta-beach-2.webp";
-import GiliMeno from "@/assets/images/gili-meno.webp";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
-import TourCultural from "@/assets/images/tour-cultural.webp";
-import HeroLombok from "@/assets/images/hero-lombok.webp";
-import WhaleShark from "@/assets/images/whaleshark.webp";
-
 export const destinations: Destination[] = [
   {
     slug: "kuta-lombok",
     title: "كوتا لومبوك",
     region: "جنوب لومبوك",
-    image: DestinationLombok,
-    gallery: [KutaBeach, KutaBeach2, HeroLombok],
+    image: DESTINATIONS.lombok,
+    gallery: [GALLERY.kutaBeach, GALLERY.kutaBeach2, HERO.lombok],
     summary:
       "ساحل واسع، وصول إلى العديد من محطات الشاطئ، ووتيرة عطلة مريحة.",
     thingsToDo: ["استكشاف الشاطئ", "مواقع الغروب", "مقاهي محلية"],
@@ -39,8 +28,8 @@ export const destinations: Destination[] = [
     slug: "tetebatu",
     title: "تيتابتو",
     region: "شرق لومبوك",
-    image: DestinationLombok,
-    gallery: [TourCultural, HeroLombok, KutaBeach],
+    image: DESTINATIONS.lombok,
+    gallery: [GALLERY.tourCultural, HERO.lombok, GALLERY.kutaBeach],
     summary:
       "قرية جبلية أكثر هدوءاً مع مناظر خضراء ووتيرة زيارة بطيئة.",
     thingsToDo: ["جولة في القرية", "مدرجات الأرز", "محطات الشلالات"],
@@ -50,8 +39,8 @@ export const destinations: Destination[] = [
     slug: "sembalun",
     title: "سيمبالون",
     region: "ممر الجبال",
-    image: DestinationRinjani,
-    gallery: [DestinationRinjani, HeroLombok, TourSnorkeling],
+    image: DESTINATIONS.rinjani,
+    gallery: [DESTINATIONS.rinjani, HERO.lombok, GALLERY.tourSnorkeling],
     summary:
       "ممر جبلي يستخدم عادة كنقطة انطلاق لتجربة رينجاني.",
     thingsToDo: [
@@ -65,8 +54,8 @@ export const destinations: Destination[] = [
     slug: "rinjani",
     title: "رينجاني",
     region: "منطقة جبلية",
-    image: DestinationRinjani,
-    gallery: [DestinationRinjani, TourSnorkeling, KutaBeach],
+    image: DESTINATIONS.rinjani,
+    gallery: [DESTINATIONS.rinjani, GALLERY.tourSnorkeling, GALLERY.kutaBeach],
     summary:
       "قمة درامية، هواء جبلي، وتجارب شروق تجلب العديد من الضيوف إلى هنا.",
     thingsToDo: [
@@ -80,8 +69,8 @@ export const destinations: Destination[] = [
     slug: "senaru",
     title: "سينارو",
     region: "وصول رينجاني",
-    image: DestinationRinjani,
-    gallery: [DestinationRinjani, TourCultural, KutaBeach2],
+    image: DESTINATIONS.rinjani,
+    gallery: [DESTINATIONS.rinjani, GALLERY.tourCultural, GALLERY.kutaBeach2],
     summary:
       "بوابة قريبة من الشلالات، ممرات التخييم، وأجواء جبلية مميزة.",
     thingsToDo: ["الشلالات", "دعم التخييم", "إقامة في المرتفعات"],
@@ -91,8 +80,8 @@ export const destinations: Destination[] = [
     slug: "gili-trawangan",
     title: "غيلي تراوانغان",
     region: "جزر جيلي",
-    image: DestinationGili,
-    gallery: [DestinationGili, GiliMeno, TourSnorkeling],
+    image: DESTINATIONS.gili,
+    gallery: [DESTINATIONS.gili, GALLERY.giliMeno, GALLERY.tourSnorkeling],
     summary:
       "الجزيرة الأسهل لاستكشاف الجزر، الغطس، وإيقاع عطلة الشاطئ.",
     thingsToDo: ["الغطس", "استكشاف الجزر", "وقت الشاطئ"],
@@ -102,8 +91,8 @@ export const destinations: Destination[] = [
     slug: "gili-air",
     title: "غيلي إير",
     region: "جزر جيلي",
-    image: DestinationGili,
-    gallery: [DestinationGili, GiliMeno, KutaBeach],
+    image: DESTINATIONS.gili,
+    gallery: [DESTINATIONS.gili, GALLERY.giliMeno, GALLERY.kutaBeach],
     summary:
       "نسخة أكثر هدوءاً من جيلي مع مساحة كبيرة للمشي الترفيهي والغطس القصير.",
     thingsToDo: ["وقت شاطئ مريح", "الغطس", "محطة الغروب"],
@@ -113,8 +102,8 @@ export const destinations: Destination[] = [
     slug: "gili-meno",
     title: "غيلي مينو",
     region: "جزر جيلي",
-    image: DestinationGili,
-    gallery: [DestinationGili, GiliMeno, KutaBeach2],
+    image: DESTINATIONS.gili,
+    gallery: [DESTINATIONS.gili, GALLERY.giliMeno, GALLERY.kutaBeach2],
     summary:
       "أهدأ جزيرة للمسافرين الباحثين عن أجواء خاصة وبسيطة.",
     thingsToDo: ["شاطئ هادئ", "الغطس", "وتيرة مريحة"],
@@ -124,8 +113,8 @@ export const destinations: Destination[] = [
     slug: "sumbawa",
     title: "سومباوا",
     region: "جزيرة خارجية",
-    image: DestinationSumbawa,
-    gallery: [DestinationSumbawa, WhaleShark, TourSnorkeling],
+    image: DESTINATIONS.sumbawa,
+    gallery: [DESTINATIONS.sumbawa, GALLERY.whaleshark, GALLERY.tourSnorkeling],
     summary:
       "خيار وجهة أكثر هدوءاً بطبيعة مفتوحة وسواحل قوية.",
     thingsToDo: ["شاطئ هادئ", "مسارات السفر", "محطات المناظر"],

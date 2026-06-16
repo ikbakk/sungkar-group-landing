@@ -67,7 +67,14 @@ src/
 ├── styles/
 │   ├── global.css       # Tailwind v4 + shadcn + design tokens + RTL font support
 │   └── sections.css     # Section layout utilities
-└── assets/images/       # All imported images (webp/jpg)
+└── assets/images/       # Organized by topic; barrel file (index.ts) exports DESTINATIONS, GALLERY, HERO, BRAND, ACCOMMODATIONS, VEHICLES
+    ├── index.ts          # Barrel — import { DESTINATIONS, HERO, ... } from "@/assets/images"
+    ├── destinations/     # gili.webp, lombok.webp, rinjani.webp, sumbawa.webp
+    ├── gallery/          # gili-meno.webp, kuta-beach.webp, ...
+    ├── hero/             # hero.webp, hero-lombok.webp
+    ├── brand/            # logo.webp, og-home.jpg
+    ├── accommodations/   # lombok.webp
+    └── vehicles/         # rental.webp
 public/
 ├── favicon.ico
 └── images/              # Static images (accommodation-lombok.png, rental-vehicle.png)
@@ -328,7 +335,7 @@ Standalone React (.tsx) components:
 | **Add/change blog post** | `src/content/blog/{slug}/{locale}.mdx` |
 | **Add/change guide** | `src/content/guides/{slug}/{locale}.mdx` |
 | **Change review data** | `src/lib/content/reviews/index.ts` |
-| **Add image** | Place in `src/assets/images/`, import via `@/assets/images/`; use `ImageSource` type (from `@/lib/images`) for image fields, `<OptimizedImage>` (from `@/components/ui/OptimizedImage.astro`) for rendering |
+| **Add image** | Place WebP in correct subdirectory under `src/assets/images/{destinations,gallery,hero,brand,accommodations,vehicles}/`, add import + export to `src/assets/images/index.ts`, then import from `@/assets/images` via the barrel |
 | **Add/modify i18n locale** | `src/lib/i18n/index.ts` (update `LOCALES`, `NON_DEFAULT_LOCALES`, locale-specific formatters), `src/lib/i18n/ui-strings.ts` (UI translations), `src/lib/i18n/localize.ts` (path mapping), `src/lib/i18n/loader.ts` (content modules) |
 | **Translate page content** | `src/lib/i18n/{locale}/` — copy structure from `src/lib/i18n/en/`, translate all strings, keep exports/types identical |
 | **Add locale switcher** | `src/components/header/LocaleSwitcher.astro` + `NavigationMobile.tsx` (inline switcher) — uses `LOCALES`, `LOCALE_LABELS`, `getLocalizedPath` from `@/lib/i18n` |

@@ -1,4 +1,5 @@
 import type { ImageSource } from "@/lib/images";
+import { DESTINATIONS, GALLERY, HERO } from "@/assets/images";
 
 export type Destination = {
   slug: string;
@@ -11,25 +12,13 @@ export type Destination = {
   packages: string[];
 };
 
-import DestinationLombok from "@/assets/images/destination-lombok.webp";
-import DestinationRinjani from "@/assets/images/destination-rinjani.webp";
-import DestinationGili from "@/assets/images/destination-gili.webp";
-import DestinationSumbawa from "@/assets/images/destination-sumbawa.webp";
-import KutaBeach from "@/assets/images/kuta-beach.webp";
-import KutaBeach2 from "@/assets/images/kuta-beach-2.webp";
-import GiliMeno from "@/assets/images/gili-meno.webp";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
-import TourCultural from "@/assets/images/tour-cultural.webp";
-import HeroLombok from "@/assets/images/hero-lombok.webp";
-import WhaleShark from "@/assets/images/whaleshark.webp";
-
 export const destinations: Destination[] = [
   {
     slug: "kuta-lombok",
     title: "Kuta Lombok",
     region: "Selatan Lombok",
-    image: DestinationLombok,
-    gallery: [KutaBeach, KutaBeach2, HeroLombok],
+    image: DESTINATIONS.lombok,
+    gallery: [GALLERY.kutaBeach, GALLERY.kutaBeach2, HERO.lombok],
     summary:
       "Pesisir luas, akses ke banyak pantai, dan tempo pelancongan yang santai.",
     thingsToDo: ["Jelajah pantai", "Titik matahari terbenam", "Kedai tempatan"],
@@ -39,8 +28,8 @@ export const destinations: Destination[] = [
     slug: "tetebatu",
     title: "Tetebatu",
     region: "Timur Lombok",
-    image: DestinationLombok,
-    gallery: [TourCultural, HeroLombok, KutaBeach],
+    image: DESTINATIONS.lombok,
+    gallery: [GALLERY.tourCultural, HERO.lombok, GALLERY.kutaBeach],
     summary:
       "Desa pegunungan yang tenang dengan lanskap hijau dan tempo lawatan yang perlahan.",
     thingsToDo: ["Jalan kampung", "Sawah terasering", "Air terjun"],
@@ -50,8 +39,8 @@ export const destinations: Destination[] = [
     slug: "sembalun",
     title: "Sembalun",
     region: "Koridor pegunungan",
-    image: DestinationRinjani,
-    gallery: [DestinationRinjani, HeroLombok, TourSnorkeling],
+    image: DESTINATIONS.rinjani,
+    gallery: [DESTINATIONS.rinjani, HERO.lombok, GALLERY.tourSnorkeling],
     summary:
       "Koridor pegunungan yang biasa digunakan sebagai titik permulaan pengalaman Rinjani.",
     thingsToDo: [
@@ -65,8 +54,8 @@ export const destinations: Destination[] = [
     slug: "rinjani",
     title: "Rinjani",
     region: "Area pegunungan",
-    image: DestinationRinjani,
-    gallery: [DestinationRinjani, TourSnorkeling, KutaBeach],
+    image: DESTINATIONS.rinjani,
+    gallery: [DESTINATIONS.rinjani, GALLERY.tourSnorkeling, GALLERY.kutaBeach],
     summary:
       "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang menarik ramai pelancong.",
     thingsToDo: [
@@ -80,8 +69,8 @@ export const destinations: Destination[] = [
     slug: "senaru",
     title: "Senaru",
     region: "Akses Rinjani",
-    image: DestinationRinjani,
-    gallery: [DestinationRinjani, TourCultural, KutaBeach2],
+    image: DESTINATIONS.rinjani,
+    gallery: [DESTINATIONS.rinjani, GALLERY.tourCultural, GALLERY.kutaBeach2],
     summary:
       "Gerbang dekat air terjun, laluan mendaki, dan suasana pegunungan yang khas.",
     thingsToDo: ["Air terjun", "Sokongan mendaki", "Menginap di pegunungan"],
@@ -91,8 +80,8 @@ export const destinations: Destination[] = [
     slug: "gili-trawangan",
     title: "Gili Trawangan",
     region: "Kepulauan Gili",
-    image: DestinationGili,
-    gallery: [DestinationGili, GiliMeno, TourSnorkeling],
+    image: DESTINATIONS.gili,
+    gallery: [DESTINATIONS.gili, GALLERY.giliMeno, GALLERY.tourSnorkeling],
     summary:
       "Pulau paling mudah untuk menjelajah pulau, snorkeling, dan ritma pelancongan pantai.",
     thingsToDo: ["Snorkeling", "Jelajah pulau", "Masa pantai"],
@@ -102,8 +91,8 @@ export const destinations: Destination[] = [
     slug: "gili-air",
     title: "Gili Air",
     region: "Kepulauan Gili",
-    image: DestinationGili,
-    gallery: [DestinationGili, GiliMeno, KutaBeach],
+    image: DESTINATIONS.gili,
+    gallery: [DESTINATIONS.gili, GALLERY.giliMeno, GALLERY.kutaBeach],
     summary:
       "Versi lebih tenang Gili dengan ruang yang banyak untuk berjalan santai dan snorkeling ringkas.",
     thingsToDo: ["Masa pantai santai", "Snorkeling", "Titik matahari terbenam"],
@@ -113,8 +102,8 @@ export const destinations: Destination[] = [
     slug: "gili-meno",
     title: "Gili Meno",
     region: "Kepulauan Gili",
-    image: DestinationGili,
-    gallery: [DestinationGili, GiliMeno, KutaBeach2],
+    image: DESTINATIONS.gili,
+    gallery: [DESTINATIONS.gili, GALLERY.giliMeno, GALLERY.kutaBeach2],
     summary:
       "Pulau paling tenang untuk pelancong yang mencari suasana persendirian dan sederhana.",
     thingsToDo: ["Pantai sepi", "Snorkeling", "Tempo santai"],
@@ -124,8 +113,8 @@ export const destinations: Destination[] = [
     slug: "sumbawa",
     title: "Sumbawa",
     region: "Pulau luar",
-    image: DestinationSumbawa,
-    gallery: [DestinationSumbawa, WhaleShark, TourSnorkeling],
+    image: DESTINATIONS.sumbawa,
+    gallery: [DESTINATIONS.sumbawa, GALLERY.whaleshark, GALLERY.tourSnorkeling],
     summary:
       "Pilihan destinasi yang lebih tenang dengan watak alam terbuka dan garis pantai yang kukuh.",
     thingsToDo: ["Pantai sepi", "Laluan perjalanan", "Titik lanskap"],

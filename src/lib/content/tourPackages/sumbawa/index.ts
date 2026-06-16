@@ -1,5 +1,4 @@
-import WhaleShark from "@/assets/images/whaleshark.webp";
-import DestinationSumbawa from "@/assets/images/destination-sumbawa.webp";
+import { GALLERY, DESTINATIONS } from "@/assets/images";
 
 import type { TourPackage } from "../types";
 
@@ -16,7 +15,7 @@ export const sumbawaPackages: TourPackage[] = [
     duration: "2 Hari 1 Malam",
     featured: true,
 
-    images: [WhaleShark, DestinationSumbawa],
+    images: [GALLERY.whaleshark, DESTINATIONS.sumbawa],
 
     summary:
       "Open trip menuju Teluk Saleh untuk menikmati pengalaman berenang bersama whale shark.",

@@ -1,6 +1,4 @@
-import HeroLombok from "@/assets/images/hero-lombok.webp";
-import DestinationSumbawa from "@/assets/images/destination-sumbawa.webp";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
+import { HERO, DESTINATIONS, GALLERY } from "@/assets/images";
 
 import type { TourPackage } from "@/lib/content/tourPackages/types";
 
@@ -16,7 +14,7 @@ export const labuanBajoPackages: TourPackage[] = [
     category: "Labuan Bajo Tour Packages",
     duration: "1 Day",
 
-    images: [HeroLombok, DestinationSumbawa, TourSnorkeling],
+    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary:
       "A one-day speedboat tour to the main destinations of Komodo National Park.",
@@ -41,7 +39,7 @@ export const labuanBajoPackages: TourPackage[] = [
     category: "Labuan Bajo Tour Packages",
     duration: "2 Days 1 Night",
 
-    images: [HeroLombok, DestinationSumbawa, TourSnorkeling],
+    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary: "A short liveaboard experience with overnight stay on the boat.",
 
@@ -70,7 +68,7 @@ export const labuanBajoPackages: TourPackage[] = [
     category: "Labuan Bajo Tour Packages",
     duration: "3 Days 2 Nights",
 
-    images: [HeroLombok, DestinationSumbawa, TourSnorkeling],
+    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary: "The most popular sailing program in the Komodo region.",
 

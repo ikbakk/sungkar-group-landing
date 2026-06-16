@@ -10,7 +10,7 @@ export type Accommodation = {
   image: ImageSource;
 };
 
-import HeroLombok from "@/assets/images/hero-lombok.webp";
+import { HERO } from "@/assets/images";
 
 export const accommodations: Accommodation[] = [
   // =========================
@@ -33,7 +33,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Hotel-hotel tepi pantai dengan pemandangan laut eksotis dan akses eksklusif ke destinasi pantai terbaik Lombok.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
   {
     slug: "lombok-mountain-retreat",
@@ -52,7 +52,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Penginapan pegunungan yang menawarkan pengalaman autentik Lombok dengan kehidupan lokal dan alam yang asri.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
   {
     slug: "lombok-gili-gateway",
@@ -71,7 +71,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Penginapan strategis untuk akses mudah ke Gili Islands dengan paket wisata island hopping dan aktivitas laut.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
 
   // =========================
@@ -94,7 +94,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Basecamp utama untuk petualangan Komodo dengan akses penuh ke Taman Nasional dan pemandu berpengalaman.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
   {
     slug: "labuan-bajo-liveaboard-hub",
@@ -113,7 +113,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Pusat pelayaran Labuan Bajo dengan koleksi liveaboard terbaik untuk petualangan Komodo yang tak terlupakan.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
   {
     slug: "labuan-bajo-beach-resort",
@@ -127,6 +127,6 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Resort mewah tepi pantai untuk istirahat nyaman dengan akses mudah ke semua destinasi wisata Komodo.",
-    image: HeroLombok,
+    image: HERO.lombok,
   },
 ];

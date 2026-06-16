@@ -1,7 +1,4 @@
-import HeroLombok from "@/assets/images/hero-lombok.webp";
-import DestinationGili from "@/assets/images/destination-gili.webp";
-import GiliMeno from "@/assets/images/gili-meno.webp";
-import TourSnorkeling from "@/assets/images/tour-snorkeling.webp";
+import { HERO, DESTINATIONS, GALLERY } from "@/assets/images";
 
 import type { TourPackage } from "../types";
 
@@ -15,7 +12,7 @@ export const fourDays: TourPackage[] = [
     featured: true,
     category: "Paket Wisata Lombok",
     duration: "4 Hari 3 Malam",
-    images: [HeroLombok, DestinationGili, GiliMeno, TourSnorkeling],
+    images: [HERO.lombok, DESTINATIONS.gili, GALLERY.giliMeno, GALLERY.tourSnorkeling],
 
     summary:
       "Paket wisata Lombok 4 hari 3 malam yang menggabungkan wisata budaya Suku Sasak, keindahan Pantai Kuta Mandalika, Bukit Merese, Gili Nanggu, Gili Sudak, Gili Kedis, dan Gili Trawangan. Cocok untuk pasangan, keluarga, maupun rombongan yang ingin menikmati pengalaman lengkap wisata Lombok dengan private tour, island hopping, dan kuliner khas Lombok.",

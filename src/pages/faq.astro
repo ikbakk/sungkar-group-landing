@@ -10,7 +10,7 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import HeroLombok from "@/assets/images/hero-lombok.webp";
+import { HERO } from "@/assets/images";
 
 const locale = "id";
 const uiStrings = t(locale);
@@ -33,7 +33,7 @@ const breadcrumbs = [
   title="FAQ"
   description={faqPageContent.hero.description}
   canonical="/faq"
-  image={HeroLombok}
+  image={HERO.lombok}
   locale={locale}
 >
   <StructuredData schema={faqSchema} />
@@ -42,7 +42,7 @@ const breadcrumbs = [
     title={faqPageContent.hero.title}
     description={faqPageContent.hero.description}
     breadcrumbs={breadcrumbs}
-    image={HeroLombok}
+    image={HERO.lombok}
     imageAlt="Lombok saat matahari terbit"
   />
 
