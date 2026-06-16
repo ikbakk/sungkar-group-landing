@@ -131,6 +131,53 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
                     );
                   }
 
+                  if (item.variant === "dropdown") {
+                    return (
+                      <Accordion
+                        key={item.label}
+                        className="border-none bg-background"
+                      >
+                        <AccordionItem
+                          value={item.label}
+                          className="border-none bg-background"
+                        >
+                          <AccordionTrigger
+                            className="
+                              bg-background
+                              py-4
+                              text-base
+                              pl-0
+                              font-normal
+                              hover:no-underline
+                            "
+                          >
+                            {item.label}
+                          </AccordionTrigger>
+
+                          <AccordionContent>
+                            <div className="grid gap-1 pl-4 pb-2">
+                              {item.items?.map((subItem) => (
+                                <a
+                                  key={subItem.href}
+                                  href={lh(subItem.href)}
+                                  className="
+                                    py-2
+                                    text-sm
+                                    text-muted-foreground
+                                    transition-colors
+                                    hover:text-foreground
+                                  "
+                                >
+                                  {subItem.label}
+                                </a>
+                              ))}
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    );
+                  }
+
                   return (
                     <Accordion
                       key={item.label}

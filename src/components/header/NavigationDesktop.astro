@@ -37,6 +37,27 @@ function lh(href: string | undefined): string | undefined {
               {item.label}
             </NavigationMenuLink>
           )}
+          {item.variant === "dropdown" && (
+            <>
+              <NavigationMenuTrigger class="inline-flex h-10 w-max items-center justify-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
+                {item.label}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul class="w-56 p-1">
+                  {item.items?.map((subItem) => (
+                    <li>
+                      <NavigationMenuLink
+                        href={lh(subItem.href)!}
+                        class="flex w-full select-none items-center rounded-md px-3 py-2 text-sm leading-none text-muted-foreground hover:bg-accent hover:text-foreground"
+                      >
+                        {subItem.label}
+                      </NavigationMenuLink>
+                    </li>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </>
+          )}
           {item.variant === "mega" && (
             <>
               <NavigationMenuTrigger class="inline-flex h-10 w-max items-center justify-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
