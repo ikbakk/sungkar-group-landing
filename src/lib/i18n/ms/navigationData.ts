@@ -26,9 +26,10 @@ export type NavItem = {
   label: string;
   href?: string;
 
-  variant: "link" | "mega";
+  variant: "link" | "mega" | "dropdown";
 
   groups?: NavGroup[];
+  items?: { label: string; href: string }[];
 };
 
 const createPackageCollections = (
@@ -160,32 +161,21 @@ export const navigation: NavItem[] = [
   },
 
   {
-    label: "Tentang Kami",
-    href: "/tentang-kami",
-    variant: "link",
-  },
-
-  {
-    label: "Panduan Pelancongan",
-    href: "/panduan-wisata",
-    variant: "link",
-  },
-
-  {
     label: "Blog",
     href: "/blog",
     variant: "link",
   },
 
   {
-    label: "Ulasan",
-    href: "/ulasan",
-    variant: "link",
-  },
-
-  {
-    label: "Hubungi Kami",
-    href: "/kontak",
-    variant: "link",
+    label: "Maklumat",
+    variant: "dropdown",
+    items: [
+      { label: "Tentang Kami", href: "/tentang-kami" },
+      { label: "Panduan Pelancongan", href: "/panduan-wisata" },
+      { label: "Destinasi", href: "/destinasi" },
+      { label: "Ulasan", href: "/ulasan" },
+      { label: "Hubungi Kami", href: "/kontak" },
+      { label: "FAQ", href: "/faq" },
+    ],
   },
 ];

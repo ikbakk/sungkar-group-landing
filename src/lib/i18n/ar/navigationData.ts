@@ -26,9 +26,10 @@ export type NavItem = {
   label: string;
   href?: string;
 
-  variant: "link" | "mega";
+  variant: "link" | "mega" | "dropdown";
 
   groups?: NavGroup[];
+  items?: { label: string; href: string }[];
 };
 
 const createPackageCollections = (
@@ -160,32 +161,21 @@ export const navigation: NavItem[] = [
   },
 
   {
-    label: "من نحن",
-    href: "/tentang-kami",
-    variant: "link",
-  },
-
-  {
-    label: "أدلة السفر",
-    href: "/panduan-wisata",
-    variant: "link",
-  },
-
-  {
     label: "المدونة",
     href: "/blog",
     variant: "link",
   },
 
   {
-    label: "التقييمات",
-    href: "/ulasan",
-    variant: "link",
-  },
-
-  {
-    label: "اتصل بنا",
-    href: "/kontak",
-    variant: "link",
+    label: "معلومات",
+    variant: "dropdown",
+    items: [
+      { label: "من نحن", href: "/tentang-kami" },
+      { label: "أدلة السفر", href: "/panduan-wisata" },
+      { label: "الوجهات", href: "/destinasi" },
+      { label: "التقييمات", href: "/ulasan" },
+      { label: "اتصل بنا", href: "/kontak" },
+      { label: "الأسئلة الشائعة", href: "/faq" },
+    ],
   },
 ];

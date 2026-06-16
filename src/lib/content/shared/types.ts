@@ -22,8 +22,9 @@ export type NavGroup = {
 export type NavItem = {
   label: string;
   href?: string;
-  variant: "link" | "mega";
+  variant: "link" | "mega" | "dropdown";
   groups?: NavGroup[];
+  items?: { label: string; href: string }[];
 };
 
 // ─── Tour Packages ─────────────────────────────────────────────────────
