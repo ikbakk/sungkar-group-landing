@@ -17,6 +17,9 @@ pnpm-debug.log*
 .env
 .env.production
 
+# pi agent session logs
+.pi/sessions/
+
 # macOS-specific files
 .DS_Store
 
