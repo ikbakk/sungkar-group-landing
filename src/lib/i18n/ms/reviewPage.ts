@@ -1,65 +1,65 @@
 export const reviewsPageContent = {
   hero: {
-    eyebrow: "Reviews",
-    title: "What They Say About Sungkar Group?",
+    eyebrow: "Ulasan",
+    title: "Apa Kata Mereka Tentang Sungkar Group?",
     description:
-      "Real reviews from travelers who have experienced our service firsthand. Every story reflects a real experience — unedited, untranslated.",
+      "Ulasan sebenar daripada pengembara yang telah merasai perkhidmatan kami secara langsung. Setiap cerita mencerminkan pengalaman sebenar — tidak diedit, tidak diterjemah.",
   },
 
   insights: {
-    title: "What Travelers Mention Most Often",
+    title: "Apa yang Paling Kerap Disebut oleh Pengembara",
 
     items: [
       {
-        title: "Fast Communication",
+        title: "Komunikasi Pantas",
         description:
-          "Many guests appreciate the quick responses both before and during the trip.",
+          "Ramai tetamu menghargai respons cepat baik sebelum mahupun semasa perjalanan.",
       },
 
       {
-        title: "Friendly Guide",
+        title: "Pemandu Mesra",
         description:
-          "A communicative travel companion who knows the destinations is one of the most frequently mentioned highlights.",
+          "Rakan perjalanan yang komunikatif dan memahami destinasi adalah antara sorotan yang paling kerap disebut.",
       },
 
       {
-        title: "Flexible Itinerary",
+        title: "Jadual Perjalanan Fleksibel",
         description:
-          "The trip can be adjusted according to weather conditions, guest preferences, and group needs.",
+          "Perjalanan boleh disesuaikan mengikut keadaan cuaca, keutamaan tetamu, dan keperluan kumpulan.",
       },
 
       {
-        title: "Local Experience",
+        title: "Pengalaman Tempatan",
         description:
-          "Travelers enjoy the combination of popular destinations and more authentic local recommendations.",
+          "Pengembara menikmati gabungan destinasi popular dan cadangan tempatan yang lebih autentik.",
       },
 
       {
-        title: "Comfortable Transportation",
+        title: "Pengangkutan Selesa",
         description:
-          "Vehicle cleanliness and comfort during the journey are often positive points in reviews.",
+          "Kebersihan dan keselesaan kenderaan semasa perjalanan sering menjadi perkara positif dalam ulasan.",
       },
 
       {
-        title: "Well-Organized Service",
+        title: "Perkhidmatan Teratur",
         description:
-          "From pickup to the end of the trip, guests feel the process runs smoothly and purposefully.",
+          "Dari penjemputan hingga ke akhir perjalanan, tetamu merasakan proses berjalan lancar dan terancang.",
       },
     ],
   },
 
   gallery: {
-    title: "Journey Moments with Travelers",
+    title: "Detik Perjalanan Bersama Pengembara",
     description:
-      "Some travel documentation that captures the atmosphere of service and travel experience with Sungkar Group.",
+      "Dokumentasi perjalanan yang menangkap suasana perkhidmatan dan pengalaman pelancongan bersama Sungkar Group.",
   },
 
   cta: {
-    title: "Ready to Plan Your Trip?",
+    title: "Sedia Merancang Perjalanan Anda?",
     description:
-      "Discuss your travel needs with our team and find an itinerary that suits your travel style, duration, and group size.",
+      "Bincangkan keperluan perjalanan anda dengan pasukan kami dan cari jadual perjalanan yang sesuai dengan gaya, tempoh, dan saiz kumpulan anda.",
     primaryButton: {
-      label: "Contact Us",
+      label: "Hubungi Kami",
       href: "/kontak",
     },
   },
