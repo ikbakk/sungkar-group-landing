@@ -9,10 +9,10 @@ export const threeDays: TourPackage[] = [
   createPackage(
     COLLECTIONS.THREE_DAYS_TWO_NIGHTS,
     createPackage(COLLECTIONS.THREE_DAYS_TWO_NIGHTS, {
-      title: "Lombok 3 Days 2 Nights Gili Trawangan & Mandalika",
+      title: "لومبوك 3 أيام وليلتان جيلي تراوانجان ومانداليكا",
       region: "lombok",
-      category: "Lombok Tour Packages",
-      duration: "3 Days 2 Nights",
+      category: "باكيجات سياحة لومبوك",
+      duration: "3 أيام وليلتان",
       images: [HERO.lombok, DESTINATIONS.gili, GALLERY.kutaBeach, GALLERY.giliMeno],
 
       summary:
@@ -93,10 +93,10 @@ export const threeDays: TourPackage[] = [
   createPackage(
     COLLECTIONS.THREE_DAYS_TWO_NIGHTS,
     createPackage(COLLECTIONS.THREE_DAYS_TWO_NIGHTS, {
-      title: "Lombok 3 Days 2 Nights Snorkeling 3 Gili & Mandalika",
+      title: "لومبوك 3 أيام وليلتان غطس جيلي 3 ومانداليكا",
       region: "lombok",
-      category: "Lombok Tour Packages",
-      duration: "3 Days 2 Nights",
+      category: "باكيجات سياحة لومبوك",
+      duration: "3 أيام وليلتان",
       images: [HERO.lombok, GALLERY.tourSnorkeling, DESTINATIONS.gili, GALLERY.giliMeno],
 
       summary:
@@ -182,10 +182,10 @@ export const threeDays: TourPackage[] = [
   ),
 
   createPackage(COLLECTIONS.THREE_DAYS_TWO_NIGHTS, {
-    title: "Lombok 3 Days 2 Nights Pink Beach & Mandalika",
+    title: "لومبوك 3 أيام وليلتان الشاطئ الوردي ومانداليكا",
     region: "lombok",
-    category: "Lombok Tour Packages",
-    duration: "3 Days 2 Nights",
+    category: "باكيجات سياحة لومبوك",
+    duration: "3 أيام وليلتان",
     images: [HERO.lombok, DESTINATIONS.lombok, GALLERY.tourSnorkeling, GALLERY.kutaBeach],
 
     summary:
@@ -267,10 +267,10 @@ export const threeDays: TourPackage[] = [
   }),
 
   createPackage(COLLECTIONS.THREE_DAYS_TWO_NIGHTS, {
-    title: "Lombok 3 Days 2 Nights Gili Nanggu & Mandalika",
+    title: "لومبوك 3 أيام وليلتان جيلي نانغو ومانداليكا",
     region: "lombok",
-    category: "Lombok Tour Packages",
-    duration: "3 Days 2 Nights",
+    category: "باكيجات سياحة لومبوك",
+    duration: "3 أيام وليلتان",
     images: [HERO.lombok, DESTINATIONS.gili, GALLERY.tourSnorkeling],
 
     summary:

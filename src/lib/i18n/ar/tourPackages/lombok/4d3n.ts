@@ -10,8 +10,8 @@ export const fourDays: TourPackage[] = [
     title: "Lombok 4 Days 3 Nights Gili Trawangan & Gili Nanggu",
     region: "lombok",
     featured: true,
-    category: "Lombok Tour Packages",
-    duration: "4 Days 3 Nights",
+    category: "باكيجات سياحة لومبوك",
+    duration: "4 أيام و3 ليال",
     images: [HERO.lombok, DESTINATIONS.gili, GALLERY.giliMeno, GALLERY.tourSnorkeling],
 
     summary:
