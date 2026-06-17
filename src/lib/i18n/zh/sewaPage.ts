@@ -1,25 +1,25 @@
 export const sewaPageContent = {
   hero: {
-    eyebrow: "Car Rental",
-    title: "Trusted vehicle rental service for your journey",
+    eyebrow: "租车服务",
+    title: "值得信赖的车辆租赁服务，伴您出行",
     description:
-      "From compact vehicles to minibuses, we provide various options at competitive prices with professional drivers at every destination.",
+      "从紧凑型车辆到小型巴士，我们提供多种选择，价格具有竞争力，每个目的地均有专业司机。",
   },
   regions: {
     lombok: {
-      title: "Lombok Vehicles",
+      title: "龙目岛车辆",
       description:
-        "Vehicle fleet in Lombok available for city travel, beach tours, and off-road adventures at competitive prices.",
+        "龙目岛车队可供城市旅行、海滩游览和越野探险，价格实惠。",
     },
     sumbawa: {
-      title: "Sumbawa Vehicles",
+      title: "松巴哇岛车辆",
       description:
-        "Special vehicles for Sumbawa adventures with easy access to whale shark experiences and exotic marine destinations.",
+        "松巴哇岛探险专用车辆，方便前往体验鲸鲨和迷人的海洋目的地。",
     },
     "labuan-bajo": {
-      title: "Labuan Bajo Vehicles",
+      title: "纳闽巴霍车辆",
       description:
-        "Vehicle rental in Labuan Bajo designed for trips to Komodo National Park and the surrounding islands.",
+        "纳闽巴霍租车服务，专为前往科莫多国家公园及周边岛屿的旅程设计。",
     },
   },
 } as const;

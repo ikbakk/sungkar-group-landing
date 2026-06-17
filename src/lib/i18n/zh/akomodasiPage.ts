@@ -1,32 +1,32 @@
 export const akomodasiPageContent = {
   hero: {
-    eyebrow: "Accommodation Recommendations",
-    title: "Recommended hotels for your journey",
+    eyebrow: "住宿推荐",
+    title: "为您推荐精选酒店",
     description:
-      "Each of our tour packages includes selected accommodations that guarantee comfort and easy access to the best destinations.",
+      "我们的每个旅游套餐均包含精选住宿，确保舒适便捷，轻松前往最佳目的地。",
   },
   regions: {
     lombok: {
-      title: "Hotels in Lombok",
+      title: "龙目岛酒店",
       description:
-        "The best hotels in Lombok — from beachfront resorts to lodging at the foot of Mount Rinjani — for a comfortable stay during your tour.",
+        "龙目岛最佳酒店——从海滨度假村到林贾尼山脚下住宿——让您在旅途中享受舒适入住。",
     },
     sumbawa: {
-      title: "Hotels in Sumbawa",
+      title: "松巴哇岛酒店",
       description:
-        "Accommodation in Sumbawa for marine adventures with whale sharks, with direct access to maritime tourism destinations.",
+        "松巴哇岛住宿，适合鲸鲨海洋探险之旅，可直达海上旅游目的地。",
     },
     "labuan-bajo": {
-      title: "Hotels in Labuan Bajo",
+      title: "纳闽巴霍酒店",
       description:
-        "Resorts and hotels in Labuan Bajo as a basecamp for Komodo National Park exploration with high comfort standards.",
+        "纳闽巴霍的度假村和酒店，作为探索科莫多国家公园的大本营，提供高标准的舒适体验。",
     },
   },
   cta: {
-    title: "Need specific hotel recommendations?",
+    title: "需要特定酒店推荐？",
     description:
-      "We are ready to recommend the most suitable accommodation for your travel plans.",
-    buttonLabel: "Ask Us",
+      "我们乐意为您的旅行计划推荐最合适的住宿。",
+    buttonLabel: "咨询我们",
     buttonHref: "/kontak",
   },
 } as const;
