@@ -29,7 +29,7 @@ export function generateOrganizationSchema(siteUrl: string) {
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
     description:
-      "Local Lombok-based tour operator for private tours, destinations, transportation, reviews, and travel guides.",
+      "Pengendali pelancongan tempatan Lombok untuk lawatan peribadi, destinasi, pengangkutan, ulasan, dan panduan perjalanan.",
     sameAs: Object.values(businessInfo.socialLinks),
     contactPoint: {
       "@type": "ContactPoint",
@@ -56,7 +56,7 @@ export function generateLocalBusinessSchema(siteUrl: string) {
     name: "Sungkar Group",
     image: `${siteUrl}/logo.png`,
     description:
-      "Lombok tour operator with private tour, transportation, and local travel guide services.",
+      "Pengendali pelancongan Lombok dengan perkhidmatan lawatan peribadi, pengangkutan, dan pemandu pelancong tempatan.",
     address: {
       "@type": "PostalAddress",
       streetAddress: businessInfo.address.street,
@@ -72,7 +72,7 @@ export function generateLocalBusinessSchema(siteUrl: string) {
     url: siteUrl,
     telephone: businessInfo.phone,
     priceRange: "$$",
-    servesCuisine: "Local Indonesian",
+    servesCuisine: "Makanan Tempatan Indonesia",
   };
 }
 
@@ -231,7 +231,7 @@ export function generateWebsiteSchema(siteUrl: string) {
     url: siteUrl,
     name: "Sungkar Group",
     description:
-      "Local Lombok-based tour operator for private tours, destinations, transportation, reviews, and travel guides.",
+      "Pengendali pelancongan tempatan Lombok untuk lawatan peribadi, destinasi, pengangkutan, ulasan, dan panduan perjalanan.",
   };
 }
 
