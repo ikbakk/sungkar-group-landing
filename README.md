@@ -1,6 +1,6 @@
 # Sungkar Group Landing
 
-Situs landing multi-bahasa untuk Sungkar Group — operator wisata Lombok. 312 halaman, 5 bahasa (id/en/ar/ms/zh), static site.
+Multi-language landing site for Sungkar Group — Lombok tour operator. 312 pages, 5 languages (id/en/ar/ms/zh), static site.
 
 ## Commands
 
@@ -8,19 +8,19 @@ Situs landing multi-bahasa untuk Sungkar Group — operator wisata Lombok. 312 h
 |---|---|
 | `npm install` | Install dependencies |
 | `npm run dev` | Dev server at `localhost:4321` |
-| `npm run build` | Build ke `dist/` |
+| `npm run build` | Build to `dist/` |
 | `npm run preview` | Preview production build |
-| `npm test` | Jalankan vitest |
+| `npm test` | Run vitest |
 | `npm run astro ...` | Astro CLI |
 
 ## Adding Content
 
-Semua jenis konten di bawah ini sudah punya template halaman — cukup tambah data, halaman + schema ikut otomatis via `getStaticPaths()`.
+All content types below already have page templates — just add data, and pages + schemas are auto-generated via `getStaticPaths()`.
 
-### Paket Wisata Baru
+### New Tour Package
 
 ```ts
-// src/lib/content/tourPackages/lombok/data.ts — tambah object ke array `lombokPackages`
+// src/lib/content/tourPackages/lombok/data.ts — add object to `lombokPackages` array
 {
   slug: "paket-wisata-3-hari-2-malam-gili-trawangan",
   title: "Paket Wisata Lombok 3 Hari 2 Malam Gili Trawangan",
@@ -42,9 +42,9 @@ Semua jenis konten di bawah ini sudah punya template halaman — cukup tambah da
 }
 ```
 
-Tambahkan juga entry di koleksi yang sesuai (`src/lib/content/tourPackages/collections.ts` kalau durasi belum terdaftar).
+Also register the entry in the appropriate collection (`src/lib/content/tourPackages/collections.ts` if the duration isn't registered yet).
 
-### Destinasi Baru
+### New Destination
 
 ```ts
 // src/lib/content/destinations/data.ts
@@ -60,7 +60,7 @@ Tambahkan juga entry di koleksi yang sesuai (`src/lib/content/tourPackages/colle
 }
 ```
 
-### Kendaraan Baru (Sewa Mobil)
+### New Vehicle (Car Rental)
 
 ```ts
 // src/lib/content/car-rental/data.ts
@@ -79,9 +79,9 @@ Tambahkan juga entry di koleksi yang sesuai (`src/lib/content/tourPackages/colle
 }
 ```
 
-### Blog Post Baru
+### New Blog Post
 
-Buat file MDX:
+Create an MDX file:
 
 ```mdx
 ---
@@ -95,10 +95,10 @@ author: "Tim Sungkar Group"
 featuredImage: "/images/blog/tips-memilih-tour.webp"
 ---
 
-Konten blog dalam markdown...
+Blog content in markdown...
 ```
 
-Untuk locale lain, copy file ke `{slug}/{locale}.mdx` dan translate kontennya.
+For other locales, copy the file to `{slug}/{locale}.mdx` and translate the content.
 
 #### Blog Frontmatter Schema
 
@@ -114,9 +114,9 @@ Untuk locale lain, copy file ke `{slug}/{locale}.mdx` dan translate kontennya.
 | `relatedDestinations` | `string[]` | ❌ | Destination slugs |
 | `relatedPackages` | `string[]` | ❌ | Tour package slugs |
 
-**Do not** add `locale` or `slug` in frontmatter — locale is derived from the filename (`id.mdx`, `en.mdx`), slug is derived from the directory name.
+**Do not** add `locale` or `slug` in frontmatter — locale is derived from the filename (`id.mdx`, `en.mdx`), slug from the directory name.
 
-### Panduan Wisata Baru
+### New Travel Guide
 
 ```mdx
 ---
@@ -132,7 +132,7 @@ relatedPackages: ["paket-wisata-3-hari-2-malam"]
 publishDate: "2026-01-15"
 ---
 
-Konten panduan dalam markdown...
+Guide content in markdown...
 ```
 
 #### Guides Frontmatter Schema
@@ -151,7 +151,7 @@ Konten panduan dalam markdown...
 
 **Do not** add `locale` or `slug` in frontmatter — locale is derived from the filename, slug from the directory name. Unlike blog where `publishDate` is a bare date, guides use a quoted string.
 
-### Akomodasi Baru
+### New Accommodation
 
 ```ts
 // src/lib/content/accommodations/data.ts
@@ -168,9 +168,9 @@ Konten panduan dalam markdown...
 
 ### i18n Translation
 
-Untuk konten **MDX** (blog/guides): copy file ke `{slug}/{locale}.mdx` dan translate.
+For **MDX content** (blog/guides): copy file to `{slug}/{locale}.mdx` and translate.
 
-Untuk konten **data** (paket, destinasi, dll): lihat file i18n di `src/lib/i18n/{locale}/` yang mirror struktur `src/lib/content/`. Belum semua locale memiliki terjemahan konten — hubungi tim untuk prioritas.
+For **data content** (packages, destinations, etc.): see i18n files in `src/lib/i18n/{locale}/` which mirror the structure of `src/lib/content/`. Not all locales have content translations yet — contact the team for priorities.
 
 ## Manual Workflow (without AI agents)
 
@@ -263,9 +263,9 @@ src/content/guides/{slug}/{locale}.mdx
 
 ### Static Page (e.g., `/promo`)
 
-1. Buat file `src/pages/promo.astro`
-2. Bungkus dengan `<MainLayout>` — OG title, description, image otomatis fallback ke homepage kalau belum didaftarkan
-3. Daftarkan OG spesifik di `src/lib/og-metadata.ts`:
+1. Create file `src/pages/promo.astro`
+2. Wrap with `<MainLayout>` — OG title, description, image fall back to homepage defaults if not registered
+3. Register specific OG in `src/lib/og-metadata.ts`:
 
 ```ts
 "/promo": {
@@ -276,13 +276,13 @@ src/content/guides/{slug}/{locale}.mdx
 }
 ```
 
-4. Kalau perlu FAQ schema, panggil `generateFAQPageSchema()` di frontmatter.
+4. If FAQ schema is needed, call `generateFAQPageSchema()` in frontmatter.
 
-### Dynamic Template Page (e.g., category baru)
+### Dynamic Template Page (e.g., new category)
 
-1. Buat folder di `src/pages/` dengan `[slug].astro`
-2. Implement `getStaticPaths()` — return params dari data kamu
-3. Load data di frontmatter, inject schema yang relevan via `StructuredData`
+1. Create a folder in `src/pages/` with `[slug].astro`
+2. Implement `getStaticPaths()` — return params from your data
+3. Load data in frontmatter, inject relevant schema via `StructuredData`
 
 ## Image Management
 
@@ -307,11 +307,11 @@ type ImageSource = ImageMetadata | string;
 
 ```
 src/assets/images/
-├── destinations/     # Destinasi thumbnails
+├── destinations/     # Destination thumbnails
 ├── gallery/          # Gallery photos
 ├── hero/             # Hero section backgrounds
 ├── brand/            # Logo, OG default
-├── accommodations/   # Accomodation placeholders
+├── accommodations/   # Accommodation placeholders
 ├── vehicles/         # Vehicle placeholders
 └── og/               # OG images (1200×630px WebP)
 ```
@@ -357,7 +357,7 @@ OG images (1200×630px WebP) go in `src/assets/images/og/`. Placeholder specific
 
 ## i18n Architecture
 
-| Konsep | File |
+| Concept | File |
 |---|---|
 | Locale list + helpers | `src/lib/i18n/index.ts` |
 | UI string translations | `src/lib/i18n/ui-strings.ts` |
@@ -366,38 +366,38 @@ OG images (1200×630px WebP) go in `src/assets/images/og/`. Placeholder specific
 | Content translation files | `src/lib/i18n/{locale}/` |
 
 - `id` = default locale (no prefix in URL)
-- `en, ar, ms, zh` = prefixed (`/en/about`, `/ar/about`, dll)
+- `en, ar, ms, zh` = prefixed (`/en/about`, `/ar/about`, etc.)
 - RTL support for Arabic via `<html dir="rtl">` + Cairo Variable font
 
 ## Structured Data (JSON-LD)
 
-Schema di-generate oleh `src/lib/schemas.ts`:
+Schemas are generated by `src/lib/schemas.ts`:
 
-| Halaman | Schema | Auto? |
+| Page | Schema | Auto? |
 |---|---|---|
-| Home, About, Contact, FAQ, dll | `Organization` + `WebSite` | ✅ lewat `MainLayout` |
-| Paket wisata detail | `Product`, `BreadcrumbList`, `FAQPage` | ✅ lewat template |
-| Destinasi detail | `TouristAttraction`, `BreadcrumbList`, `FAQPage` | ✅ |
-| Sewa mobil detail | `Product`, `BreadcrumbList` | ✅ |
-| Blog post | `NewsArticle` | ✅ lewat template |
-| Panduan wisata | `HowTo` | ✅ |
+| Home, About, Contact, FAQ, etc. | `Organization` + `WebSite` | ✅ via `MainLayout` |
+| Tour package detail | `Product`, `BreadcrumbList`, `FAQPage` | ✅ via template |
+| Destination detail | `TouristAttraction`, `BreadcrumbList`, `FAQPage` | ✅ |
+| Car rental detail | `Product`, `BreadcrumbList` | ✅ |
+| Blog post | `NewsArticle` | ✅ via template |
+| Travel guide | `HowTo` | ✅ |
 
-Cek hasilnya di [Google Rich Results Test](https://search.google.com/test/rich-results).
+Verify output with [Google Rich Results Test](https://search.google.com/test/rich-results).
 
 ## Pre-deployment Checklist
 
-- [ ] `npm test` — semua passing
-- [ ] `npm run build` — 0 errors, semua halaman tergenerate
-- [ ] Cek `dist/sitemap-index.xml` — semua URL yang diharapkan ada
-- [ ] Cek `dist/robots.txt` — tidak memblokir halaman penting
-- [ ] Preview: `npm run preview` + buka beberapa halaman representatif
+- [ ] `npm test` — all passing
+- [ ] `npm run build` — 0 errors, all pages generated
+- [ ] Check `dist/sitemap-index.xml` — all expected URLs present
+- [ ] Check `dist/robots.txt` — not blocking important pages
+- [ ] Preview: `npm run preview` + open several representative pages
 
 ## Testing
 
-Vitest dengan file di `tests/`. Contoh:
+Vitest with test files in `tests/`. Example:
 
 ```
 npm test
 ```
 
-Config: `vitest.config.ts` — alias `@/` ke `src/`.
+Config: `vitest.config.ts` — alias `@/` to `src/`.
