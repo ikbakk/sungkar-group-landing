@@ -88,6 +88,7 @@ tests/                          # Vitest: data.test.ts, schemas.test.ts
 | `lib/content/{about,landing,contact,faq,reviews}/` | Plain objects/arrays | Direct import + i18n copy |
 | `lib/content/{destinations,tour-packages,accommodations,car-rental}/` | Typed data arrays + `*PageContent` | Direct import + i18n copy |
 | `lib/content/tourPackages/{lombok,sumbawa,labuan-bajo}/` | `TourPackage[]` per region | Barrel export |
+| `lib/i18n/{en,ar,ms,zh}/tourPackages/{lombok,sumbawa,labuan-bajo}/` | `TourPackage[]` locale copies (1d,2d1n,3d2n,4d3n,openTrip, index) | Each locale barrel; loaded via `loadContent()` |
 | `lib/content/faqs/{about,akomodasi,contact,general,package,reviews,sewa-mobil}.ts` | Per-topic `FaqItem[]` | Combined in `faq/data.ts` |
 
 ### Key Types (all in `lib/content/shared/types.ts`)
@@ -145,10 +146,11 @@ tests/                          # Vitest: data.test.ts, schemas.test.ts
 |---|---|
 | **Add/modify page** | `pages/...` + `lib/content/{page}/index.ts` + maybe `lib/og-metadata.ts` |
 | **Add page section** | `components/{feature}/` + `lib/content/{page}/index.ts` |
-| **Change nav** | `lib/content/shared/navigation.ts` + each locale copy `lib/i18n/{en,ar,ms,zh}/navigationData.ts` |
-| **Add nav variant** | `shared/types.ts` (`NavItem.variant` union) + `NavigationDesktop.astro` + `NavigationMobile.tsx` + all 5 locale nav data files |
+| **Change nav** | `lib/content/shared/navigation.ts` + source `lib/content/navigationData.ts` + each locale copy `lib/i18n/{en,ar,ms,zh}/navigationData.ts` |
+| **Add nav variant** | `shared/types.ts` (`NavItem.variant` union) + `NavigationDesktop.astro` + `NavigationMobile.tsx` + source + all 4 locale nav data files |
+| **Nav optimisation (single-item collections)** | `createPackageCollections()` in `lib/content/navigationData.ts` + 4 locale copies returns `{collections, items}`; single-item → direct link, multi-item → submenu |
 | **Change SEO** | `components/seo/` + `lib/schemas.ts` |
-| **Add tour pkg** | `lib/content/tourPackages/{region}/` + `lib/content/tour-packages/index.ts` |
+| **Add tour pkg** | `lib/content/tourPackages/{region}/` + `lib/content/tour-packages/index.ts` + each locale copy `lib/i18n/{en,ar,ms,zh}/tourPackages/{region}/` |
 | **Add destination / vehicle / accommodation** | `lib/content/{destinations,car-rental,accommodations}/data.ts` + `index.ts` |
 | **Add FAQ** | `lib/content/faqs/{topic}.ts` |
 | **Add blog/guide post** | `content/{blog,guides}/{slug}/{locale}.mdx` |
