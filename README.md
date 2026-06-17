@@ -254,10 +254,74 @@ src/content/guides/{slug}/{locale}.mdx
 
 ## Image Management
 
-- **Source images**: `src/assets/images/` — barrel export di `src/assets/images/index.ts`
-- **OG images** (1200×630px WebP): `src/assets/images/og/` — placeholder spesifikasi ada di README dalam folder tersebut
-- Import via `import { DESTINATIONS, HERO, GALLERY, BRAND } from "@/assets/images"`
-- Untuk OG fallback, `MainLayout` otomatis pake `pageOGMetadata[path]` kalau tidak di-prop
+### Image Source Types
+
+The project uses `ImageSource` (`src/lib/images.ts`), a union type:
+
+```ts
+type ImageSource = ImageMetadata | string;
+```
+
+- `ImageMetadata` — imported from `src/assets/images/` (build-time optimized by Astro)
+- `string` — raw URL path (for remote images or images in `public/`)
+
+### Adding New Images
+
+**Option A — Astro-optimized (recommended for local images):**
+
+1. Place the WebP file in the appropriate subdirectory under `src/assets/images/`
+2. Import it in `src/assets/images/index.ts` and add it to the relevant barrel export
+3. Import via `import { CATEGORY } from "@/assets/images"` wherever needed
+
+```
+src/assets/images/
+├── destinations/     # Destinasi thumbnails
+├── gallery/          # Gallery photos
+├── hero/             # Hero section backgrounds
+├── brand/            # Logo, OG default
+├── accommodations/   # Accomodation placeholders
+├── vehicles/         # Vehicle placeholders
+└── og/               # OG images (1200×630px WebP)
+```
+
+**Option B — Remote / string URL:**
+
+Use a full URL or absolute path string:
+
+```ts
+image: "/images/guides/my-guide.webp"  // if placed in public/
+image: "https://example.com/photo.jpg" // remote URL
+```
+
+### Helper Functions (`src/lib/images.ts`)
+
+These handle both branches of `ImageSource` so you don't need manual type checks:
+
+| Function | Returns | When to use |
+|---|---|---|
+| `getImageSrc(src)` | `string` | Get the actual URL/path — use instead of `.src` on `ImageSource` |
+| `getImageWidth(src)` | `number \| undefined` | Get width (only for `ImageMetadata`) |
+| `getImageHeight(src)` | `number \| undefined` | Get height (only for `ImageMetadata`) |
+| `isRemoteImage(src)` | `boolean` | Type guard — returns `true` if `src` is a string |
+
+**Always use `getImageSrc()` instead of `.src` access** — `ImageMetadata` objects use `.src` but `string` values don't have it, causing type errors.
+
+```ts
+import { getImageSrc, type ImageSource } from "@/lib/images";
+
+// ❌ Wrong — type error on ImageSource:
+// const url = image.src;
+
+// ✅ Correct — works for both ImageMetadata and string:
+const url = getImageSrc(image);
+```
+
+### OG Images
+
+OG images (1200×630px WebP) go in `src/assets/images/og/`. Placeholder specification is in the README inside that folder.
+
+- Import via `import { DESTINATIONS, HERO, GALLERY, BRAND, ACCOMMODATIONS, VEHICLES } from "@/assets/images"`
+- For OG fallback, `MainLayout` automatically uses `pageOGMetadata[path]` if not passed as prop
 
 ## i18n Architecture
 
