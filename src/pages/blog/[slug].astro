@@ -32,7 +32,7 @@ const { Content, title, description, publishDate, readingTime, tags, featuredIma
 
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: "/" },
-  { label: "Blog", href: "/blog" },
+  { label: uiStrings.breadcrumb.blog, href: "/blog" },
   { label: title },
 ];
 
@@ -51,7 +51,7 @@ const articleSchema = generateArticleSchema(title, description, articleImage, SI
   <StructuredData schema={articleSchema} />
 
   <PageHeader
-    eyebrow="Blog"
+    eyebrow={uiStrings.page.blog}
     title={title}
     description={description}
     breadcrumbs={breadcrumbs}

@@ -11,6 +11,7 @@ export interface GuideMeta {
   relatedDestinations: string[];
   relatedPackages: string[];
   publishDate: string;
+  featuredImage?: string;
 }
 
 function entryToGuideMeta(entry: CollectionEntry<"guides">): GuideMeta {
@@ -26,6 +27,7 @@ function entryToGuideMeta(entry: CollectionEntry<"guides">): GuideMeta {
     relatedDestinations: entry.data.relatedDestinations,
     relatedPackages: entry.data.relatedPackages,
     publishDate: entry.data.publishDate,
+    featuredImage: entry.data.featuredImage,
   };
 }
 

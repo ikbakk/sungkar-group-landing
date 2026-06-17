@@ -1,0 +1,38 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import { Button } from "@/components/ui/button";
+import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+
+export async function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
+const homeHref = `/${locale}`;
+---
+
+<MainLayout
+  title={`404 - ${uiStrings.common.pageNotFound}`}
+  description={uiStrings.common.pageNotFoundDesc}
+  noIndex={true}
+  locale={locale}
+>
+  <SectionContainer background="bg-surface-soft" padding="py-24 sm:py-32">
+    <div class="mx-auto max-w-xl text-center">
+      <p class="text-8xl font-bold text-brand-600">404</p>
+      <h1 class="mt-4 text-3xl leading-tight sm:text-4xl">
+        {uiStrings.common.pageNotFound}
+      </h1>
+      <p class="mt-4 text-base leading-7 text-text-muted">
+        {uiStrings.common.pageNotFoundDesc}
+      </p>
+      <div class="mt-8">
+        <Button as="a" href={homeHref} variant="default" size="lg">
+          {uiStrings.common.back}
+        </Button>
+      </div>
+    </div>
+  </SectionContainer>
+</MainLayout>

@@ -21,6 +21,10 @@ export interface UIStrings {
     copyright: string;
     privacy: string;
     terms: string;
+    instagram: string;
+    youtube: string;
+    facebook: string;
+    tiktok: string;
   };
   breadcrumb: {
     home: string;
@@ -75,6 +79,12 @@ export interface UIStrings {
     otherGuides: string;
     destinationRelated: string;
     packageRelated: string;
+    regionLombok: string;
+    regionSumbawa: string;
+    regionLabuanBajo: string;
+    regionGeneral: string;
+    stepName: string;
+    guidesIndexDesc: string;
   };
   sewaMobil: {
     title: string;
@@ -138,6 +148,12 @@ export interface UIStrings {
     backToTop: string;
     viewDetail: string;
     moreCount: string;
+    contactForPrice: string;
+    imageAltSunrise: string;
+    imageAltSunset: string;
+    imageAltDestinations: string;
+    pageNotFound: string;
+    pageNotFoundDesc: string;
   };
   about: {
     vision: string;
@@ -173,6 +189,8 @@ export interface UIStrings {
     relatedPostsDesc: string;
     copyLink: string;
     linkCopied: string;
+    emptyState: string;
+    description: string;
   };
   seo: {
     keywords: string;
@@ -202,6 +220,10 @@ export const translations: Record<Locale, UIStrings> = {
       copyright: "\u00A9 {year} Sungkar Group. All rights reserved.",
       privacy: "Kebijakan Privasi",
       terms: "Syarat & Ketentuan",
+      instagram: "Instagram",
+      youtube: "YouTube",
+      facebook: "Facebook",
+      tiktok: "TikTok",
     },
     breadcrumb: {
       home: "Beranda",
@@ -261,6 +283,12 @@ export const translations: Record<Locale, UIStrings> = {
       otherGuides: "Panduan Lainnya",
       destinationRelated: "Destinasi Terkait",
       packageRelated: "Paket Wisata Terkait",
+      regionLombok: "Tips dan panduan wisata untuk liburan Anda di Lombok.",
+      regionSumbawa: "Informasi wisata untuk petualangan di Sumbawa.",
+      regionLabuanBajo: "Semua yang perlu Anda tahu sebelum ke Labuan Bajo.",
+      regionGeneral: "Panduan umum untuk perjalanan Anda.",
+      stepName: "Poin {n}",
+      guidesIndexDesc: "Panduan lengkap untuk merencanakan perjalanan Anda ke Lombok, Sumbawa, dan Labuan Bajo.",
     },
     sewaMobil: {
       title: "Sewa Mobil",
@@ -333,9 +361,15 @@ export const translations: Record<Locale, UIStrings> = {
       back: "Kembali",
       seeMore: "Lihat Lainnya",
       viewAll: "Lihat Semua",
-      backToTop: "↑ Kembali ke Atas",
+      backToTop: "\u2191 Kembali ke Atas",
       viewDetail: "Lihat Detail",
       moreCount: "+{n} lainnya",
+      contactForPrice: "Hubungi untuk harga",
+      imageAltSunrise: "Lombok saat matahari terbit",
+      imageAltSunset: "Pemandangan pantai Lombok dengan matahari terbenam",
+      imageAltDestinations: "Destinasi Lombok",
+      pageNotFound: "Halaman Tidak Ditemukan",
+      pageNotFoundDesc: "Halaman yang Anda cari mungkin telah dipindahkan, dihapus, atau tidak pernah ada.",
     },
     about: {
       vision: "Visi",
@@ -363,6 +397,8 @@ export const translations: Record<Locale, UIStrings> = {
       relatedPostsDesc: "Baca artikel lainnya dari kami",
       copyLink: "Salin tautan",
       linkCopied: "Tautan disalin!",
+      emptyState: "Belum ada artikel. Segera hadir!",
+      description: "Tips, inspirasi, dan informasi terbaru seputar wisata Lombok, Sumbawa, dan Labuan Bajo.",
     },
   },
   en: {
@@ -386,6 +422,10 @@ export const translations: Record<Locale, UIStrings> = {
       copyright: "\u00A9 {year} Sungkar Group. All rights reserved.",
       privacy: "Privacy Policy",
       terms: "Terms & Conditions",
+      instagram: "Instagram",
+      youtube: "YouTube",
+      facebook: "Facebook",
+      tiktok: "TikTok",
     },
     breadcrumb: {
       home: "Home",
@@ -445,6 +485,12 @@ export const translations: Record<Locale, UIStrings> = {
       otherGuides: "Other Guides",
       destinationRelated: "Related Destinations",
       packageRelated: "Related Tour Packages",
+      regionLombok: "Travel tips and guides for your holiday in Lombok.",
+      regionSumbawa: "Travel information for adventures in Sumbawa.",
+      regionLabuanBajo: "Everything you need to know before visiting Labuan Bajo.",
+      regionGeneral: "General guide for your trip.",
+      stepName: "Step {n}",
+      guidesIndexDesc: "Complete guide to planning your trip to Lombok, Sumbawa, and Labuan Bajo.",
     },
     sewaMobil: {
       title: "Car Rental",
@@ -517,9 +563,15 @@ export const translations: Record<Locale, UIStrings> = {
       back: "Back",
       seeMore: "See More",
       viewAll: "View All",
-      backToTop: "↑ Back to Top",
+      backToTop: "\u2191 Back to Top",
       viewDetail: "View Details",
       moreCount: "+{n} more",
+      contactForPrice: "Contact for price",
+      imageAltSunrise: "Lombok at sunrise",
+      imageAltSunset: "Lombok beach with sunset view",
+      imageAltDestinations: "Lombok Destinations",
+      pageNotFound: "Page Not Found",
+      pageNotFoundDesc: "The page you are looking for may have been moved, deleted, or never existed.",
     },
     about: {
       vision: "Vision",
@@ -547,6 +599,8 @@ export const translations: Record<Locale, UIStrings> = {
       relatedPostsDesc: "Read more articles from us",
       copyLink: "Copy link",
       linkCopied: "Link copied!",
+      emptyState: "No articles yet. Coming soon!",
+      description: "Tips, inspiration, and latest information about tourism in Lombok, Sumbawa, and Labuan Bajo.",
     },
   },
   ar: {
@@ -570,6 +624,10 @@ export const translations: Record<Locale, UIStrings> = {
       copyright: "\u00A9 {year} \u0633\u0648\u0646\u062C\u0627\u0631 \u062C\u0631\u0648\u0628. \u062C\u0645\u064A\u0639 \u0627\u0644\u062D\u0642\u0648\u0642 \u0645\u062D\u0641\u0648\u0638\u0629.",
       privacy: "\u0633\u064A\u0627\u0633\u0629 \u0627\u0644\u062E\u0635\u0648\u0635\u064A\u0629",
       terms: "\u0627\u0644\u0634\u0631\u0648\u0637 \u0648\u0627\u0644\u0623\u062D\u0643\u0627\u0645",
+      instagram: "\u0625\u0646\u0633\u062A\u063A\u0631\u0627\u0645",
+      youtube: "\u064A\u0648\u062A\u064A\u0648\u0628",
+      facebook: "\u0641\u064A\u0633\u0628\u0648\u0643",
+      tiktok: "\u062A\u064A\u0643 \u062A\u0648\u0643",
     },
     breadcrumb: {
       home: "\u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629",
@@ -629,6 +687,12 @@ export const translations: Record<Locale, UIStrings> = {
       otherGuides: "\u0623\u062F\u0644\u0629 \u0623\u062E\u0631\u0649",
       destinationRelated: "\u0648\u062C\u0647\u0627\u062A \u0630\u0627\u062A \u0635\u0644\u0629",
       packageRelated: "\u0628\u0627\u0642\u0627\u062A \u0633\u064A\u0627\u062D\u064A\u0629 \u0630\u0627\u062A \u0635\u0644\u0629",
+      regionLombok: "\u0646\u0635\u0627\u0626\u062D \u0648\u0623\u062F\u0644\u0629 \u0627\u0644\u0633\u0641\u0631 \u0644\u0639\u0637\u0644\u062A\u0643 \u0641\u064A \u0644\u0648\u0645\u0628\u0648\u0643.",
+      regionSumbawa: "\u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u0633\u0641\u0631 \u0644\u0644\u0645\u063A\u0627\u0645\u0631\u0627\u062A \u0641\u064A \u0633\u0648\u0645\u0628\u0627\u0648\u0627.",
+      regionLabuanBajo: "\u0643\u0644 \u0645\u0627 \u062A\u062D\u062A\u0627\u062C \u0645\u0639\u0631\u0641\u062A\u0647 \u0642\u0628\u0644 \u0632\u064A\u0627\u0631\u0629 \u0644\u0627\u0628\u0648\u0627\u0646 \u0628\u0627\u062C\u0648.",
+      regionGeneral: "\u062F\u0644\u064A\u0644 \u0639\u0627\u0645 \u0644\u0631\u062D\u0644\u062A\u0643.",
+      stepName: "\u0627\u0644\u062E\u0637\u0648\u0629 {n}",
+      guidesIndexDesc: "\u062F\u0644\u064A\u0644 \u0643\u0627\u0645\u0644 \u0644\u062A\u062E\u0637\u064A\u0637 \u0631\u062D\u0644\u062A\u0643 \u0625\u0644\u0649 \u0644\u0648\u0645\u0628\u0648\u0643 \u0648\u0633\u0648\u0645\u0628\u0627\u0648\u0627 \u0648\u0644\u0627\u0628\u0648\u0627\u0646 \u0628\u0627\u062C\u0648.",
     },
     sewaMobil: {
       title: "\u062A\u0623\u062C\u064A\u0631 \u0627\u0644\u0633\u064A\u0627\u0631\u0627\u062A",
@@ -704,6 +768,12 @@ export const translations: Record<Locale, UIStrings> = {
       backToTop: "\u2191 \u0627\u0644\u0639\u0648\u062F\u0629 \u0625\u0644\u0649 \u0627\u0644\u0623\u0639\u0644\u0649",
       viewDetail: "\u0639\u0631\u0636 \u0627\u0644\u062A\u0641\u0627\u0635\u064A\u0644",
       moreCount: "+{n} \u0627\u0644\u0645\u0632\u064A\u062F",
+      contactForPrice: "\u0627\u062A\u0635\u0644 \u0644\u0644\u0633\u0639\u0631",
+      imageAltSunrise: "\u0644\u0648\u0645\u0628\u0648\u0643 \u0639\u0646\u062F \u0634\u0631\u0648\u0642 \u0627\u0644\u0634\u0645\u0633",
+      imageAltSunset: "\u0634\u0627\u0637\u0626 \u0644\u0648\u0645\u0628\u0648\u0643 \u0639\u0646\u062F \u063A\u0631\u0648\u0628 \u0627\u0644\u0634\u0645\u0633",
+      imageAltDestinations: "\u0648\u062C\u0647\u0627\u062A \u0644\u0648\u0645\u0628\u0648\u0643",
+      pageNotFound: "\u0635\u0641\u062D\u0629 \u063A\u064A\u0631 \u0645\u0648\u062C\u0648\u062F\u0629",
+      pageNotFoundDesc: "\u0627\u0644\u0635\u0641\u062D\u0629 \u0627\u0644\u062A\u064A \u062A\u0628\u062D\u062B \u0639\u0646\u0647\u0627 \u0642\u062F \u062A\u0643\u0648\u0646 \u0642\u062F \u062A\u0645 \u0646\u0642\u0644\u0647\u0627 \u0623\u0648 \u062D\u0630\u0641\u0647\u0627 \u0623\u0648 \u0644\u0645 \u062A\u0648\u062C\u062F \u0623\u0628\u062F\u064B\u0627.",
     },
     about: {
       vision: "\u0627\u0644\u0631\u0624\u064A\u0629",
@@ -731,6 +801,8 @@ export const translations: Record<Locale, UIStrings> = {
       relatedPostsDesc: "\u0627\u0642\u0631\u0623 \u0645\u0642\u0627\u0644\u0627\u062A \u0623\u062E\u0631\u0649 \u0645\u0646\u0627",
       copyLink: "\u0646\u0633\u062E \u0627\u0644\u0631\u0627\u0628\u0637",
       linkCopied: "\u062A\u0645 \u0646\u0633\u062E \u0627\u0644\u0631\u0627\u0628\u0637!",
+      emptyState: "\u0644\u0627 \u062A\u0648\u062C\u062F \u0645\u0642\u0627\u0644\u0627\u062A \u0628\u0639\u062F. \u0642\u0631\u064A\u0628\u064B\u0627!",
+      description: "\u0646\u0635\u0627\u0626\u062D \u0648\u0625\u0644\u0647\u0627\u0645 \u0648\u0623\u062D\u062F\u062B \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062A \u062D\u0648\u0644 \u0627\u0644\u0633\u064A\u0627\u062D\u0629 \u0641\u064A \u0644\u0648\u0645\u0628\u0648\u0643 \u0648\u0633\u0648\u0645\u0628\u0627\u0648\u0627 \u0648\u0644\u0627\u0628\u0648\u0627\u0646 \u0628\u0627\u062C\u0648.",
     },
   },
   ms: {
@@ -754,6 +826,10 @@ export const translations: Record<Locale, UIStrings> = {
       copyright: "\u00A9 {year} Sungkar Group. Hak cipta terpelihara.",
       privacy: "Dasar Privasi",
       terms: "Syarat & Ketentuan",
+      instagram: "Instagram",
+      youtube: "YouTube",
+      facebook: "Facebook",
+      tiktok: "TikTok",
     },
     breadcrumb: {
       home: "Laman Utama",
@@ -813,6 +889,12 @@ export const translations: Record<Locale, UIStrings> = {
       otherGuides: "Panduan Lain",
       destinationRelated: "Destinasi Berkaitan",
       packageRelated: "Pakej Pelancongan Berkaitan",
+      regionLombok: "Tips dan panduan pelancongan untuk percutian anda di Lombok.",
+      regionSumbawa: "Informasi pelancongan untuk pengembaraan di Sumbawa.",
+      regionLabuanBajo: "Semua yang perlu anda tahu sebelum ke Labuan Bajo.",
+      regionGeneral: "Panduan umum untuk perjalanan anda.",
+      stepName: "Langkah {n}",
+      guidesIndexDesc: "Panduan lengkap untuk merancang perjalanan anda ke Lombok, Sumbawa, dan Labuan Bajo.",
     },
     sewaMobil: {
       title: "Sewa Kereta",
@@ -885,9 +967,15 @@ export const translations: Record<Locale, UIStrings> = {
       back: "Kembali",
       seeMore: "Lihat Lagi",
       viewAll: "Lihat Semua",
-      backToTop: "↑ Kembali ke Atas",
+      backToTop: "\u2191 Kembali ke Atas",
       viewDetail: "Lihat Butiran",
       moreCount: "+{n} lagi",
+      contactForPrice: "Hubungi untuk harga",
+      imageAltSunrise: "Lombok ketika matahari terbit",
+      imageAltSunset: "Pemandangan pantai Lombok dengan matahari terbenam",
+      imageAltDestinations: "Destinasi Lombok",
+      pageNotFound: "Halaman Tidak Ditemui",
+      pageNotFoundDesc: "Halaman yang anda cari mungkin telah dipindahkan, dipadam, atau tidak pernah wujud.",
     },
     about: {
       vision: "Visi",
@@ -915,6 +1003,8 @@ export const translations: Record<Locale, UIStrings> = {
       relatedPostsDesc: "Baca artikel lain daripada kami",
       copyLink: "Salin pautan",
       linkCopied: "Pautan disalin!",
+      emptyState: "Belum ada artikel. Akan datang!",
+      description: "Tips, inspirasi, dan maklumat terkini tentang pelancongan di Lombok, Sumbawa, dan Labuan Bajo.",
     },
   },
   zh: {
@@ -938,6 +1028,10 @@ export const translations: Record<Locale, UIStrings> = {
       copyright: "\u00A9 {year} Sungkar Group\u3002\u4FDD\u7559\u6240\u6709\u6743\u5229\u3002",
       privacy: "\u9690\u79C1\u653F\u7B56",
       terms: "\u6761\u6B3E\u548C\u6761\u4EF6",
+      instagram: "Instagram",
+      youtube: "YouTube",
+      facebook: "Facebook",
+      tiktok: "TikTok",
     },
     breadcrumb: {
       home: "\u9996\u9875",
@@ -997,6 +1091,12 @@ export const translations: Record<Locale, UIStrings> = {
       otherGuides: "\u5176\u4ED6\u6307\u5357",
       destinationRelated: "\u76F8\u5173\u76EE\u7684\u5730",
       packageRelated: "\u76F8\u5173\u65C5\u6E38\u5957\u9910",
+      regionLombok: "\u9F99\u6728\u5C9B\u5047\u671F\u7684\u65C5\u884C\u5C0F\u8D34\u58EB\u548C\u6307\u5357\u3002",
+      regionSumbawa: "\u677E\u5DF4\u74E6\u63A2\u9669\u7684\u65C5\u884C\u4FE1\u606F\u3002",
+      regionLabuanBajo: "\u524D\u5F80\u62C9\u5E03\u5B89\u5DF4\u7126\u524D\u9700\u8981\u4E86\u89E3\u7684\u4E00\u5207\u3002",
+      regionGeneral: "\u65C5\u884C\u901A\u7528\u6307\u5357\u3002",
+      stepName: "\u6B65\u9AA4{n}",
+      guidesIndexDesc: "\u89C4\u5212\u60A8\u7684\u9F99\u6728\u5C9B\u3001\u68EE\u5DF4\u74E6\u548C\u62C9\u5E03\u5B89\u5DF4\u7126\u4E4B\u65C5\u7684\u5B8C\u6574\u6307\u5357\u3002",
     },
     sewaMobil: {
       title: "\u6C7D\u8F66\u79DF\u8D41",
@@ -1072,6 +1172,12 @@ export const translations: Record<Locale, UIStrings> = {
       backToTop: "\u2191\u8FD4\u56DE\u9876\u90E8",
       viewDetail: "\u67E5\u770B\u8BE6\u60C5",
       moreCount: "+{n}\u66F4\u591A",
+      contactForPrice: "\u8054\u7CFB\u83B7\u53D6\u4EF7\u683C",
+      imageAltSunrise: "\u65E5\u51FA\u65F6\u7684\u9F99\u6728\u5C9B",
+      imageAltSunset: "\u65E5\u843D\u65F6\u7684\u9F99\u6728\u5C9B\u6D77\u6EE9\u7F8E\u666F",
+      imageAltDestinations: "\u9F99\u6728\u5C9B\u76EE\u7684\u5730",
+      pageNotFound: "\u9875\u9762\u672A\u627E\u5230",
+      pageNotFoundDesc: "\u60A8\u5BFB\u627E\u7684\u9875\u9762\u53EF\u80FD\u5DF2\u88AB\u79FB\u52A8\u3001\u5220\u9664\u6216\u4ECE\u672A\u5B58\u5728\u8FC7\u3002",
     },
     about: {
       vision: "\u613F\u666F",
@@ -1099,6 +1205,8 @@ export const translations: Record<Locale, UIStrings> = {
       relatedPostsDesc: "\u9605\u8BFB\u66F4\u591A\u6587\u7AE0",
       copyLink: "\u590D\u5236\u94FE\u63A5",
       linkCopied: "\u94FE\u63A5\u5DF2\u590D\u5236!",
+      emptyState: "\u6682\u65E0\u6587\u7AE0\u3002\u5373\u5C06\u4E0A\u7EBF!",
+      description: "\u5173\u4E8E\u9F99\u6728\u5C9B\u3001\u68EE\u5DF4\u74E6\u548C\u62C9\u5E03\u5B89\u5DF4\u7126\u65C5\u6E38\u7684\u5C0F\u8D34\u58EB\u3001\u7075\u611F\u548C\u6700\u65B0\u4FE1\u606F\u3002",
     },
   },
 };

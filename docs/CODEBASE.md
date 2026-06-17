@@ -76,6 +76,9 @@ src/
     ├── accommodations/   # lombok.webp
     ├── vehicles/         # rental.webp
     └── og/               # OG image placeholders (1200×630px WebP per page type)
+scripts/                  # Build & validation scripts
+├── validate.mjs          # Validates all blog/guide MDX frontmatter
+└── check-images.mjs      # Checks that all referenced images exist
 tests/                    # Vitest test files
 public/
 ├── favicon.ico
@@ -99,6 +102,7 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 - `getLocalizedPath()` in `@/lib/i18n` generates correct locale-switching URLs for the LocaleSwitcher
 - **Locale Switcher**: `LocaleSwitcher.astro` in header (desktop) + inline in `NavigationMobile.tsx` (mobile) — shows all 5 locales with short labels, uses `getLocalizedPath()` for navigation
 - **RTL Support**: Arabic (`ar`) uses `dir="rtl"` on `<html>`, Cairo Variable font for both body and headings, LTR locales use Inter + Playfair Display
+- **Sitemap**: `astro.config.mjs` includes i18n sitemap configuration (`i18n` + `sitemap` integration) — generates per-locale sitemap entries automatically
 
 | URL | Page File | Components Used |
 |---|---|---|---|
@@ -129,6 +133,9 @@ All pages use `MainLayout` (src/layouts/MainLayout.astro) which provides: Header
 | `/en\|ar\|ms\|zh/blog/[slug]` | `src/pages/[locale]/blog/[slug].astro` | `BlogPostLayout`, `StructuredData` (Article schema) |
 | `/en\|ar\|ms\|zh/travel-guides` | `src/pages/[locale]/travel-guides/index.astro` | `PageHeader`, `GuideCard` grid (locale-filtered MDX) |
 | `/en\|ar\|ms\|zh/travel-guides/[slug]` | `src/pages/[locale]/travel-guides/[slug].astro` | MDX detail with HowTo schema |
+| `/en\|ar\|ms\|zh/privacy-policy` | `src/pages/[locale]/privacy-policy.astro` | Privacy policy page |
+| `/en\|ar\|ms\|zh/terms-conditions` | `src/pages/[locale]/terms-conditions.astro` | Terms and conditions page |
+| Any unmatched locale route | `src/pages/[locale]/404.astro` | 404 error page |
 
 ---
 
@@ -356,4 +363,21 @@ Standalone React (.tsx) components:
 | **Run tests** | `npm test` (vitest) — config: `vitest.config.ts`; test files in `tests/` |
 | **Run type check** | `npm run check` (astro check) |
 | **Validate data files** | `npm test` includes runtime Zod validation for packages, destinations, accommodations, vehicles — see `tests/data.test.ts` |
+| **Validate frontmatter** | `npm run validate` — validates all blog/guide MDX frontmatter via `scripts/validate.mjs` |
+| **Check images** | `npm run check:images` — verifies all referenced images exist via `scripts/check-images.mjs` |
 | **404 page** | `src/pages/404.astro` — custom error page |
+
+---
+
+## 8. Build Commands
+
+| Command | Purpose |
+|---|---|
+| `npm run dev` | Start local Astro dev server on `localhost:4321` |
+| `npm run build` | Create production build in `dist/` |
+| `npm run preview` | Serve production build locally |
+| `npm test` | Run vitest tests (config: `vitest.config.ts`) |
+| `npm run check` | Run Astro type check (`astro check`) |
+| `npm run validate` | Validate all blog/guide MDX frontmatter (`scripts/validate.mjs`) |
+| `npm run check:images` | Check that all referenced images exist (`scripts/check-images.mjs`) |
+| `npm run astro -- <cmd>` | Run Astro CLI commands |

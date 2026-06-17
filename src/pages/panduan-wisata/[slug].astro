@@ -31,7 +31,7 @@ if (!guide) {
   return Astro.redirect("/panduan-wisata", 404);
 }
 
-const { Content, title, description, readingTime, publishDate, keyTakeaways, relatedPackages: relatedPkgSlugs } = guide;
+const { Content, title, description, readingTime, publishDate, keyTakeaways, featuredImage, relatedPackages: relatedPkgSlugs } = guide;
 
 const relatedPackages = packages.filter((p) =>
   relatedPkgSlugs.includes(p.slug)
@@ -44,7 +44,7 @@ const breadcrumbs = [
 ];
 
 const howToSteps = keyTakeaways.map((takeaway: string, index: number) => ({
-  name: `Poin ${index + 1}`,
+  name: uiStrings.guides.stepName.replace("{n}", String(index + 1)),
   description: takeaway,
 }));
 
@@ -55,6 +55,8 @@ const guideSchema = generateHowToSchema(title, description, howToSteps);
   title={title}
   description={description}
   canonical={`/panduan-wisata/${slug}`}
+  image={featuredImage}
+  imageAlt={title}
   locale={locale}
 >
   <StructuredData schema={guideSchema} />

@@ -31,14 +31,14 @@ const breadcrumbs = [
 
 <MainLayout
   title={uiStrings.page.travelGuides}
-  description="Panduan lengkap untuk merencanakan perjalanan Anda ke Lombok, Sumbawa, dan Labuan Bajo"
+  description={uiStrings.guides.guidesIndexDesc}
   canonical={`/${locale}/travel-guides`}
   locale={locale}
 >
   <PageHeader
     eyebrow={uiStrings.page.travelGuides}
     title={uiStrings.guides.general}
-    description="Panduan lengkap untuk merencanakan perjalanan Anda ke Lombok, Sumbawa, dan Labuan Bajo"
+    description={uiStrings.guides.guidesIndexDesc}
     breadcrumbs={breadcrumbs}
   />
 
@@ -53,12 +53,12 @@ const breadcrumbs = [
 
       const regionDesc =
         region === "lombok"
-          ? "Tips dan panduan wisata untuk liburan Anda di Lombok."
+          ? uiStrings.guides.regionLombok
           : region === "sumbawa"
-            ? "Informasi wisata untuk petualangan di Sumbawa."
+            ? uiStrings.guides.regionSumbawa
             : region === "labuan-bajo"
-              ? "Semua yang perlu Anda tahu sebelum ke Labuan Bajo."
-              : "Panduan umum untuk perjalanan Anda.";
+              ? uiStrings.guides.regionLabuanBajo
+              : uiStrings.guides.regionGeneral;
 
       return (
         <SectionContainer

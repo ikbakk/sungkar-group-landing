@@ -18,6 +18,8 @@ const PATH_MAP: Record<string, string> = {
   "/ulasan": "/reviews",
   "/kebijakan-privasi": "/privacy-policy",
   "/syarat-ketentuan": "/terms-conditions",
+  "/blog": "/blog",
+  "/blog/": "/blog/",
 };
 
 export { PATH_MAP };

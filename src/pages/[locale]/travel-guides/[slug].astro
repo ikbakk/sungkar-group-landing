@@ -36,7 +36,7 @@ if (!guide) {
   return Astro.redirect(`/${locale}/travel-guides`, 404);
 }
 
-const { Content, title, description, readingTime, publishDate, keyTakeaways, relatedDestinations: relatedDestSlugs, relatedPackages: relatedPkgSlugs } = guide;
+const { Content, title, description, readingTime, publishDate, keyTakeaways, relatedDestinations: relatedDestSlugs, relatedPackages: relatedPkgSlugs, featuredImage } = guide;
 
 const relatedDestinations = destinations.filter((d) =>
   relatedDestSlugs.includes(d.slug)
@@ -53,7 +53,7 @@ const breadcrumbs = [
 ];
 
 const howToSteps = keyTakeaways.map((takeaway: string, index: number) => ({
-  name: `Poin ${index + 1}`,
+  name: uiStrings.guides.stepName.replace("{n}", String(index + 1)),
   description: takeaway,
 }));
 
@@ -64,6 +64,8 @@ const guideSchema = generateHowToSchema(title, description, howToSteps);
   title={title}
   description={description}
   canonical={`/${locale}/travel-guides/${slug}`}
+  image={featuredImage}
+  imageAlt={title}
   locale={locale}
 >
   <StructuredData schema={guideSchema} />

@@ -12,6 +12,8 @@
     "astro": "astro",
     "test": "vitest run",
     "check": "astro check",
+    "validate": "node scripts/validate.mjs",
+    "check:images": "node scripts/check-images.mjs",
     "prepare": "husky"
   },
   "dependencies": {

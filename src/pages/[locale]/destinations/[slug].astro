@@ -121,7 +121,7 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
 
   <SectionContainer background="bg-background" padding="py-16 lg:py-24">
     <FaqSection
-      eyebrow="FAQ"
+      eyebrow={uiStrings.faq.sectionTitle}
       title={destinationsPageContent.detail.faqTitle}
       items={destinationsPageContent.faq}
       variant="card"

@@ -2,29 +2,33 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import { t } from "@/lib/i18n";
+import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import { HERO } from "@/assets/images";
 
-const locale = "id";
-const uiStrings = t(locale);
+export async function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: "/" },
-  { label: "Kebijakan Privasi" },
+  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.footer.privacy },
 ];
 ---
 
 <MainLayout
-  title="Kebijakan Privasi"
-  description="Kebijakan privasi Sungkar Group - bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda."
-  canonical="/kebijakan-privasi"
+  title={uiStrings.footer.privacy}
+  description={uiStrings.footer.privacy}
+  canonical={`/${locale}/privacy-policy`}
   image={HERO.lombok}
   locale={locale}
 >
   <PageHeader
-    eyebrow="Privasi"
-    title="Kebijakan Privasi"
-    description="Bagaimana Sungkar Group mengelola dan melindungi data pribadi Anda."
+    eyebrow={uiStrings.footer.privacy}
+    title={uiStrings.footer.privacy}
+    description={uiStrings.footer.privacy}
     breadcrumbs={breadcrumbs}
     image={HERO.lombok}
     imageAlt={uiStrings.common.imageAltSunrise}

@@ -29,6 +29,7 @@ const guides = defineCollection({
     relatedDestinations: z.array(z.string()),
     relatedPackages: z.array(z.string()),
     publishDate: z.string(),
+    featuredImage: z.string().optional(),
   }),
 });
 

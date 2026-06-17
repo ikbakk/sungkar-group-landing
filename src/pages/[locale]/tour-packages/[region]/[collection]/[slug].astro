@@ -59,7 +59,7 @@ const absoluteImageUrl = new URL(getImageSrc(tour.images[0]), SITE_URL).toString
 const productSchema = generateProductSchema(
   tour.title,
   tour.summary,
-  "Hubungi untuk harga",
+  uiStrings.common.contactForPrice,
   absoluteImageUrl,
   packageUrl,
   tour.duration,
@@ -191,7 +191,7 @@ const itineraryByDay = Object.entries(
         />
       </div>
       <FaqSection
-        eyebrow="FAQ"
+        eyebrow={uiStrings.faq.sectionTitle}
         title={uiStrings.faq.sectionTitle}
         items={packageFaq}
         variant="card"

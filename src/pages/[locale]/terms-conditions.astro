@@ -2,29 +2,33 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import { t } from "@/lib/i18n";
+import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import { HERO } from "@/assets/images";
 
-const locale = "id";
-const uiStrings = t(locale);
+export async function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const uiStrings = t(locale!);
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: "/" },
-  { label: "Syarat & Ketentuan" },
+  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: uiStrings.footer.terms },
 ];
 ---
 
 <MainLayout
-  title="Syarat & Ketentuan"
-  description="Syarat dan ketentuan layanan Sungkar Group - tour operator Lombok, Sumbawa, dan Labuan Bajo."
-  canonical="/syarat-ketentuan"
+  title={uiStrings.footer.terms}
+  description={uiStrings.footer.terms}
+  canonical={`/${locale}/terms-conditions`}
   image={HERO.lombok}
   locale={locale}
 >
   <PageHeader
-    eyebrow="Ketentuan"
-    title="Syarat & Ketentuan"
-    description="Ketentuan layanan yang berlaku bagi pengguna jasa Sungkar Group."
+    eyebrow={uiStrings.footer.terms}
+    title={uiStrings.footer.terms}
+    description={uiStrings.footer.terms}
     breadcrumbs={breadcrumbs}
     image={HERO.lombok}
     imageAlt={uiStrings.common.imageAltSunrise}
