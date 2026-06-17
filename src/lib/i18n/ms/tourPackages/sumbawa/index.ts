@@ -12,7 +12,7 @@ export const sumbawaPackages: TourPackage[] = [
     collectionTitle: "Open Trip",
 
     category: "Sumbawa Open Trip",
-    duration: "2 Days 1 Night",
+    duration: "2 Hari 1 Malam",
     featured: true,
 
     images: [GALLERY.whaleshark, DESTINATIONS.sumbawa],
@@ -34,8 +34,8 @@ export const sumbawaPackages: TourPackage[] = [
       "Hari 2 - Kembali.",
     ],
 
-    includes: ["Transportasi lokal", "Boat trip", "Guide lokal"],
+    includes: ["Transportasi lokal", "Trip bot", "Guide lokal"],
 
-    excludes: ["Tiket menuju Sumbawa", "Pengeluaran pribadi"],
+    excludes: ["Tiket menuju Sumbawa", "Perbelanjaan peribadi"],
   },
 ];

@@ -10,8 +10,8 @@ export const oneDay: TourPackage[] = [
     title: "Sendang Gile & Tiu Kelep Waterfall Tour Package",
     region: "lombok",
     featured: true,
-    category: "Lombok Tour Packages",
-    duration: "1 Day",
+    category: "Pakej Pelancongan Lombok",
+    duration: "1 Hari",
     images: [HERO.lombok, DESTINATIONS.rinjani],
 
     summary:
@@ -23,7 +23,7 @@ export const oneDay: TourPackage[] = [
       "Desa Adat Senaru",
       "Masjid Kuno Bayan Beleq",
       "Hutan Wisata Baun Pusuk",
-      "Private Tour Lombok Utara",
+      "Lawatan Peribadi Lombok Utara",
     ],
 
     itinerary: [
@@ -40,21 +40,21 @@ export const oneDay: TourPackage[] = [
     ],
 
     includes: [
-      "Transportasi wisata ber-AC",
-      "Driver profesional",
-      "Makan siang",
+      "Pengangkutan pelancongan ber-AC",
+      "Pemandu profesional",
+      "Makan tengah hari",
       "Makan malam",
       "Air mineral",
-      "BBM dan biaya parkir",
-      "Penjemputan dan pengantaran hotel",
+      "BBM dan yuran parkir",
+      "Penjemputan dan penghantaran hotel",
     ],
 
     excludes: [
-      "Tiket masuk objek wisata",
-      "Guide lokal trekking",
-      "Keperluan pribadi",
-      "Asuransi perjalanan",
-      "Tip driver dan guide",
+      "Tiket masuk tempat tarikan pelancong",
+      "Pemandu trekking tempatan",
+      "Keperluan peribadi",
+      "Insurans perjalanan",
+      "Tip pemandu dan pemandu pelancong",
     ],
   }),
 
@@ -62,8 +62,8 @@ export const oneDay: TourPackage[] = [
     title: "Kuta Lombok Beach & Sasak Village Tour Package",
     region: "lombok",
     featured: true,
-    category: "Lombok Tour Packages",
-    duration: "1 Day",
+    category: "Pakej Pelancongan Lombok",
+    duration: "1 Hari",
     images: [HERO.lombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
 
     summary:
@@ -75,7 +75,7 @@ export const oneDay: TourPackage[] = [
       "Desa Adat Sade",
       "Desa Tenun Sukarara",
       "Desa Gerabah Banyumulek",
-      "Private Tour",
+      "Lawatan Peribadi",
     ],
 
     itinerary: [
@@ -92,21 +92,21 @@ export const oneDay: TourPackage[] = [
     ],
 
     includes: [
-      "Transportasi wisata ber-AC",
-      "Driver profesional",
-      "Makan siang",
+      "Pengangkutan pelancongan ber-AC",
+      "Pemandu profesional",
+      "Makan tengah hari",
       "Makan malam",
       "Air mineral",
-      "BBM dan biaya parkir",
-      "Penjemputan dan pengantaran hotel",
+      "BBM dan yuran parkir",
+      "Penjemputan dan penghantaran hotel",
     ],
 
     excludes: [
-      "Tiket masuk objek wisata",
-      "Pengeluaran pribadi",
-      "Asuransi perjalanan",
-      "Tip driver dan guide",
-      "Aktivitas tambahan di pantai",
+      "Tiket masuk tempat tarikan pelancong",
+      "Perbelanjaan peribadi",
+      "Insurans perjalanan",
+      "Tip pemandu dan pemandu pelancong",
+      "Aktiviti tambahan di pantai",
     ],
   }),
 ];

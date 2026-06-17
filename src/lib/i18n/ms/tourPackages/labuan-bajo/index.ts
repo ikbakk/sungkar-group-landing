@@ -5,45 +5,45 @@ import type { TourPackage } from "@/lib/content/tourPackages/types";
 export const labuanBajoPackages: TourPackage[] = [
   {
     slug: "paket-1-hari-full-labuan-bajo",
-    title: "1 Day Full Labuan Bajo Package",
+    title: "Pakej 1 Hari Penuh Labuan Bajo",
     region: "labuan-bajo",
 
     collectionSlug: "1-hari",
     collectionTitle: "1 Day Package",
 
-    category: "Labuan Bajo Tour Packages",
-    duration: "1 Day",
+    category: "Pakej Pelancongan Labuan Bajo",
+    duration: "1 Hari",
 
     images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary:
       "A one-day speedboat tour to the main destinations of Komodo National Park.",
 
-    highlights: ["Pulau Padar", "Pink Beach", "Pulau Komodo", "Manta Point"],
+    highlights: ["Pulau Padar", "Pantai Pink", "Pulau Komodo", "Manta Point"],
 
-    itinerary: ["Padar", "Pink Beach", "Komodo", "Manta Point"],
+    itinerary: ["Padar", "Pantai Pink", "Komodo", "Manta Point"],
 
-    includes: ["Speedboat", "Guide lokal", "Snorkeling"],
+    includes: ["Bot laju", "Guide lokal", "Snorkeling"],
 
-    excludes: ["Tiket Taman Nasional Komodo", "Pengeluaran pribadi"],
+    excludes: ["Tiket Taman Nasional Komodo", "Perbelanjaan peribadi"],
   },
 
   {
     slug: "overnight-komodo-adventure",
-    title: "Overnight Komodo Adventure",
+    title: "Pengembaraan Komodo Semalaman",
     region: "labuan-bajo",
 
     collectionSlug: "paket-2-hari-1-malam",
     collectionTitle: "2 Days 1 Night Package",
 
-    category: "Labuan Bajo Tour Packages",
-    duration: "2 Days 1 Night",
+    category: "Pakej Pelancongan Labuan Bajo",
+    duration: "2 Hari 1 Malam",
 
     images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary: "A short liveaboard experience with overnight stay on the boat.",
 
-    highlights: ["Liveaboard", "Padar", "Pink Beach"],
+    highlights: ["Liveaboard", "Padar", "Pantai Pink"],
 
     itinerary: [
       "Hari 1 - Kelor.",
@@ -52,27 +52,27 @@ export const labuanBajoPackages: TourPackage[] = [
       "Hari 2 - Komodo.",
     ],
 
-    includes: ["Kabin kapal", "Makan", "Guide"],
+    includes: ["Kabin kapal", "Makan", "Pemandu pelancong"],
 
-    excludes: ["Tiket Komodo", "Pengeluaran pribadi"],
+    excludes: ["Tiket Komodo", "Perbelanjaan peribadi"],
   },
 
   {
     slug: "sailing-komodo-3d2n",
-    title: "Sailing Komodo 3 Days 2 Nights",
+    title: "Sailing Komodo 3 Hari 2 Malam",
     region: "labuan-bajo",
 
     collectionSlug: "paket-3-hari-2-malam",
     collectionTitle: "3 Days 2 Nights Package",
 
-    category: "Labuan Bajo Tour Packages",
-    duration: "3 Days 2 Nights",
+    category: "Pakej Pelancongan Labuan Bajo",
+    duration: "3 Hari 2 Malam",
 
     images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary: "The most popular sailing program in the Komodo region.",
 
-    highlights: ["Padar", "Pink Beach", "Komodo", "Manta Point"],
+    highlights: ["Padar", "Pantai Pink", "Komodo", "Manta Point"],
 
     itinerary: [
       "Hari 1 - Kelor.",
@@ -81,8 +81,8 @@ export const labuanBajoPackages: TourPackage[] = [
       "Hari 3 - Kanawa.",
     ],
 
-    includes: ["Kabin kapal", "Makan", "Guide"],
+    includes: ["Kabin kapal", "Makan", "Pemandu pelancong"],
 
-    excludes: ["Tiket Komodo", "Pengeluaran pribadi"],
+    excludes: ["Tiket Komodo", "Perbelanjaan peribadi"],
   },
 ];

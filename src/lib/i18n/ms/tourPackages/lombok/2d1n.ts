@@ -9,8 +9,8 @@ export const twoDays: TourPackage[] = [
   createPackage(COLLECTIONS.TWO_DAYS_ONE_NIGHT, {
     title: "Kuta Lombok Beach & City Tour Package",
     region: "lombok",
-    category: "Lombok Tour Packages",
-    duration: "2 Days 1 Night",
+    category: "Pakej Pelancongan Lombok",
+    duration: "2 Hari 1 Malam",
     images: [HERO.lombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
 
     summary:
@@ -48,32 +48,32 @@ export const twoDays: TourPackage[] = [
     ],
 
     includes: [
-      "Hotel 1 malam sesuai pilihan",
-      "Transportasi wisata ber-AC",
-      "Driver profesional",
-      "Sarapan pagi di hotel",
-      "Makan siang sesuai program",
-      "Makan malam sesuai program",
+      "Hotel 1 malam mengikut pilihan",
+      "Pengangkutan pelancongan ber-AC",
+      "Pemandu profesional",
+      "Sarapan di hotel",
+      "Makan tengah hari mengikut program",
+      "Makan malam mengikut program",
       "Air mineral",
-      "BBM dan biaya parkir",
-      "Penjemputan bandara",
-      "Pengantaran ke bandara",
+      "BBM dan yuran parkir",
+      "Penjemputan lapangan terbang",
+      "Penghantaran ke lapangan terbang",
     ],
 
     excludes: [
       "Tiket pesawat",
-      "Tiket masuk objek wisata",
-      "Pengeluaran pribadi",
-      "Asuransi perjalanan",
-      "Tip driver dan guide",
+      "Tiket masuk tempat tarikan pelancong",
+      "Perbelanjaan peribadi",
+      "Insurans perjalanan",
+      "Tip pemandu dan pemandu pelancong",
     ],
   }),
 
   createPackage(COLLECTIONS.TWO_DAYS_ONE_NIGHT, {
     title: "Pink Beach & Tanjung Ringgit 2 Days 1 Night Tour Package",
     region: "lombok",
-    category: "Lombok Tour Packages",
-    duration: "2 Days 1 Night",
+    category: "Pakej Pelancongan Lombok",
+    duration: "2 Hari 1 Malam",
     images: [HERO.lombok, DESTINATIONS.lombok, GALLERY.tourSnorkeling],
 
     summary:
@@ -114,24 +114,24 @@ export const twoDays: TourPackage[] = [
     ],
 
     includes: [
-      "Hotel 1 malam sesuai pilihan",
-      "Transportasi wisata ber-AC",
-      "Driver profesional",
-      "Sarapan pagi 1x",
-      "Makan siang 1x",
+      "Hotel 1 malam mengikut pilihan",
+      "Pengangkutan pelancongan ber-AC",
+      "Pemandu profesional",
+      "Sarapan 1x",
+      "Makan tengah hari 1x",
       "Makan malam 1x",
       "Perahu tradisional sesuai program",
       "Air mineral",
       "BBM dan parkir",
-      "Penjemputan dan pengantaran",
+      "Penjemputan dan penghantaran",
     ],
 
     excludes: [
-      "Tiket masuk objek wisata",
+      "Tiket masuk tempat tarikan pelancong",
       "Peralatan snorkeling",
       "Tiket pesawat",
-      "Pengeluaran pribadi",
-      "Asuransi perjalanan",
+      "Perbelanjaan peribadi",
+      "Insurans perjalanan",
       "Tip driver dan crew",
     ],
   }),
