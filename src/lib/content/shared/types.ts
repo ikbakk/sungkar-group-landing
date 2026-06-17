@@ -1,11 +1,7 @@
-import type { ImageSource } from "@/lib/images";
+import type { ImageSource } from "@/lib/images/types";
 
 // ─── Regions ──────────────────────────────────────────────────────────
-export type RegionKey = "lombok" | "sumbawa" | "labuan-bajo";
-export interface RegionInfo {
-  label: string;
-  className: string;
-}
+import type { RegionKey } from "@/lib/constants/regions";
 
 // ─── Navigation ────────────────────────────────────────────────────────
 export type NavCollection = {
@@ -28,12 +24,14 @@ export type NavItem = {
 };
 
 // ─── Tour Packages ─────────────────────────────────────────────────────
+import type { CollectionSlug } from "@/lib/constants/tourPackages";
+
 export type TourPackage = {
   slug: string;
   title: string;
   region: RegionKey;
   featured?: boolean;
-  collectionSlug: string;
+  collectionSlug: CollectionSlug;
   collectionTitle: string;
   category: string;
   duration: string;
@@ -69,18 +67,21 @@ export type Accommodation = {
 };
 
 // ─── Vehicle / Car Rental ─────────────────────────────────────────────
+import type { VehicleSlug, TransmissionType } from "@/lib/constants/vehicles";
+
 export type Vehicle = {
   slug: string;
   name: string;
   region: RegionKey;
   pricePerDay: string;
   seats: number;
-  transmission: "Manual" | "Automatic";
+  transmission: TransmissionType;
   features: string[];
   bestFor: string[];
   description: string;
   imageTop: ImageSource;
   imageBottom: ImageSource;
+  vehicleType?: VehicleSlug;
 };
 
 // ─── Guides ────────────────────────────────────────────────────────────

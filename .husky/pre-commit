@@ -1,1 +1,28 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run tests before commit
+echo "🔍 Running tests..."
 npm test
+if [ $? -ne 0 ]; then
+  echo "❌ Tests failed. Please fix errors before committing."
+  exit 1
+fi
+
+# Run type checking
+echo "🔍 Running type checking..."
+npm run check
+if [ $? -ne 0 ]; then
+  echo "❌ Type errors found. Please fix before committing."
+  exit 1
+fi
+
+# Run image validation
+echo "🔍 Validating images..."
+npm run validate:images
+if [ $? -ne 0 ]; then
+  echo "❌ Image validation failed. Please fix before committing."
+  exit 1
+fi
+
+echo "✅ All checks passed!"

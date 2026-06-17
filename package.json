@@ -13,6 +13,7 @@
     "test": "vitest run",
     "check": "astro check",
     "validate": "node scripts/validate.mjs",
+    "validate:images": "node scripts/validate-images.mjs",
     "check:images": "node scripts/check-images.mjs",
     "prepare": "husky",
     "images:barrel": "node scripts/generate-image-barrel.mjs"
