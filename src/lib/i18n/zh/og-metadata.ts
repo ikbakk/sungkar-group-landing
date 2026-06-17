@@ -11,75 +11,75 @@ export interface OGMetadata {
 
 export const pageOGMetadata: Record<string, OGMetadata> = {
   "/": {
-    title: "Sungkar Group - Tour and Travel",
+    title: "Sungkar Group - 旅游与旅行",
     description:
-      "Local Lombok-based tour operator for private tours, destinations, transportation, reviews, and travel guides.",
+      "龙目岛本地旅行社，提供私人团、目的地游、交通、评价和旅行指南。",
     image: HERO.lombok,
-    imageAlt: "Lombok beach view at sunset",
+    imageAlt: "龙目岛日落海滩景观",
   },
   "/tentang-kami": {
-    title: "About Us | Sungkar Group - Tour and Travel",
+    title: "关于我们 | Sungkar Group - 旅游与旅行",
     description:
-      "Learn more about Sungkar Group, our local team, and our sustainable travel approach.",
+      "了解Sungkar Group、我们本地团队和可持续旅行方式。",
     image: GALLERY.tourCultural,
     imageAlt:
-      "Local cultural experience with the Sungkar Group team",
+      "与Sungkar Group团队一起体验当地文化",
   },
   "/paket-wisata": {
-    title: "Tour Packages | Sungkar Group - Tour and Travel",
+    title: "旅游套餐 | Sungkar Group - 旅游与旅行",
     description:
-      "Explore complete Lombok tour packages from 3-day tours to local cultural experiences.",
+      "探索完整的龙目岛旅游套餐，从3日游到当地文化体验。",
     image: HERO.lombok,
-    imageAlt: "Lombok tour packages with the best local service",
+    imageAlt: "龙目岛旅游套餐，提供最佳本地服务",
   },
   "/destinasi": {
-    title: "Destinations | Sungkar Group - Tour and Travel",
+    title: "目的地 | Sungkar Group - 旅游与旅行",
     description:
-      "Discover the best destinations in Lombok, Gili Islands, and Rinjani mountains for your adventure.",
+      "发现龙目岛、吉利群岛和林贾尼山的最佳目的地，开启您的冒险之旅。",
     image: DESTINATIONS.lombok,
-    imageAlt: "Best travel destinations in Lombok",
+    imageAlt: "龙目岛最佳旅游目的地",
   },
   "/ulasan": {
-    title: "Reviews | Sungkar Group - Tour and Travel",
+    title: "客户评价 | Sungkar Group - 旅游与旅行",
     description:
-      "Read reviews from travelers who have experienced tours with Sungkar Group.",
+      "阅读旅行者们对Sungkar Group服务的真实评价。",
     image: HERO.lombok,
-    imageAlt: "Positive reviews from Sungkar Group visitors",
+    imageAlt: "Sungkar Group客户的积极评价",
   },
   "/panduan-wisata": {
-    title: "Travel Guides | Sungkar Group - Tour and Travel",
+    title: "旅行指南 | Sungkar Group - 旅游与旅行",
     description:
-      "Complete guides for planning your trip to Lombok, from weather to local transportation.",
+      "规划龙目岛之行的完整指南，从天气到当地交通。",
     image: DESTINATIONS.rinjani,
-    imageAlt: "Complete travel guide for Lombok",
+    imageAlt: "龙目岛完整旅行指南",
   },
   "/kontak": {
-    title: "Contact | Sungkar Group - Tour and Travel",
+    title: "联系我们 | Sungkar Group - 旅游与旅行",
     description:
-      "Contact Sungkar Group via WhatsApp, email, or online form to check availability.",
+      "通过WhatsApp、电子邮件或在线表格联系Sungkar Group咨询可用性。",
     image: HERO.lombok,
-    imageAlt: "Contact Sungkar Group for a free consultation",
+    imageAlt: "联系Sungkar Group获取免费咨询",
   },
   "/faq": {
-    title: "FAQ | Sungkar Group - Tour and Travel",
+    title: "常见问题 | Sungkar Group - 旅游与旅行",
     description:
-      "Complete answers to common questions about tour packages and Sungkar Group services.",
+      "关于旅游套餐和Sungkar Group服务的常见问题完整解答。",
     image: HERO.lombok,
-    imageAlt: "Frequently asked questions about Lombok tours",
+    imageAlt: "龙目岛旅游常见问题解答",
   },
   "/akomodasi": {
-    title: "Accommodations | Sungkar Group - Tour and Travel",
+    title: "住宿推荐 | Sungkar Group - 旅游与旅行",
     description:
-      "Best accommodation recommendations in Lombok at affordable prices with complete facilities.",
+      "龙目岛最佳住宿推荐，价格实惠，设施齐全。",
     image: DESTINATIONS.lombok,
-    imageAlt: "Accommodation recommendations in Lombok",
+    imageAlt: "龙目岛住宿推荐",
   },
   "/sewa-mobil": {
-    title: "Car Rental | Sungkar Group - Tour and Travel",
+    title: "租车服务 | Sungkar Group - 旅游与旅行",
     description:
-      "Rent local vehicles with experienced drivers for a comfortable and flexible journey.",
+      "租用本地车辆，配备经验丰富的司机，享受舒适灵活的旅程。",
     image: HERO.lombok,
-    imageAlt: "Car rental service with professional drivers",
+    imageAlt: "专业司机租车服务",
   },
 };
 
@@ -95,7 +95,7 @@ export function getPackageOGMetadata(
   imageAlt: string,
 ): OGMetadata {
   return {
-    title: `${title} | Sungkar Group - Tour and Travel`,
+    title: `${title} | Sungkar Group - 旅游与旅行`,
     description,
     image,
     imageAlt,
@@ -110,7 +110,7 @@ export function getDestinationOGMetadata(
   imageAlt: string,
 ): OGMetadata {
   return {
-    title: `${title} | Sungkar Group - Tour and Travel`,
+    title: `${title} | Sungkar Group - 旅游与旅行`,
     description,
     image,
     imageAlt,
