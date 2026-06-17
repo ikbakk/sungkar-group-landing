@@ -1,65 +1,65 @@
 export const reviewsPageContent = {
   hero: {
-    eyebrow: "Reviews",
-    title: "What They Say About Sungkar Group?",
+    eyebrow: "客户评价",
+    title: "客户对Sungkar Group的评价",
     description:
-      "Real reviews from travelers who have experienced our service firsthand. Every story reflects a real experience — unedited, untranslated.",
+      "来自亲身体验过我们服务旅行者的真实评价。每一个故事都反映了真实体验——未经编辑，原汁原味。",
   },
 
   insights: {
-    title: "What Travelers Mention Most Often",
+    title: "旅行者最常提及的内容",
 
     items: [
       {
-        title: "Fast Communication",
+        title: "快速沟通",
         description:
-          "Many guests appreciate the quick responses both before and during the trip.",
+          "许多客人赞赏我们在旅行前和旅行期间的快速回复。",
       },
 
       {
-        title: "Friendly Guide",
+        title: "友善的导游",
         description:
-          "A communicative travel companion who knows the destinations is one of the most frequently mentioned highlights.",
+          "熟悉目的地的沟通型旅伴是最常被提及的亮点之一。",
       },
 
       {
-        title: "Flexible Itinerary",
+        title: "灵活的行程",
         description:
-          "The trip can be adjusted according to weather conditions, guest preferences, and group needs.",
+          "行程可根据天气状况、客人偏好和团体需求进行调整。",
       },
 
       {
-        title: "Local Experience",
+        title: "本地体验",
         description:
-          "Travelers enjoy the combination of popular destinations and more authentic local recommendations.",
+          "旅行者喜欢热门目的地与更地道本地推荐的完美结合。",
       },
 
       {
-        title: "Comfortable Transportation",
+        title: "舒适的交通",
         description:
-          "Vehicle cleanliness and comfort during the journey are often positive points in reviews.",
+          "车辆清洁度和旅途舒适度是评价中经常提到的优点。",
       },
 
       {
-        title: "Well-Organized Service",
+        title: "井然有序的服务",
         description:
-          "From pickup to the end of the trip, guests feel the process runs smoothly and purposefully.",
+          "从接送到行程结束，客人感受到整个过程顺畅有序。",
       },
     ],
   },
 
   gallery: {
-    title: "Journey Moments with Travelers",
+    title: "与旅行者的旅程时刻",
     description:
-      "Some travel documentation that captures the atmosphere of service and travel experience with Sungkar Group.",
+      "一些旅行记录，捕捉了与Sungkar Group一起的服务氛围和旅行体验。",
   },
 
   cta: {
-    title: "Ready to Plan Your Trip?",
+    title: "准备规划您的行程？",
     description:
-      "Discuss your travel needs with our team and find an itinerary that suits your travel style, duration, and group size.",
+      "与我们的团队讨论您的旅行需求，找到适合您旅行风格、时长和团体规模的行程方案。",
     primaryButton: {
-      label: "Contact Us",
+      label: "联系我们",
       href: "/kontak",
     },
   },
