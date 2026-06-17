@@ -1,21 +1,21 @@
 export const generalFaqItems = [
   {
-    question: "Can the itinerary be customized?",
+    question: "Bolehkah jadual perjalanan disesuaikan?",
     answer:
       "Yes. The itinerary is arranged flexibly according to duration, pickup point, and destination priorities.",
   },
   {
-    question: "Is transportation-only service available?",
+    question: "Adakah perkhidmatan pengangkutan sahaja tersedia?",
     answer:
-      "Yes. You can book airport transfers, daily drivers, or rental cars without a full tour package.",
+      "Ya. Anda boleh menempah pemindahan lapangan terbang, pemandu harian, atau kereta sewa tanpa pakej pelancongan penuh.",
   },
   {
-    question: "Is it suitable for families?",
+    question: "Adakah ia sesuai untuk keluarga?",
     answer:
-      "Yes. Routes can be adjusted to make the travel pace more relaxed and not too packed.",
+      "Ya. Laluan boleh disesuaikan untuk menjadikan rentak perjalanan lebih santai dan tidak terlalu padat.",
   },
   {
-    question: "How do I start booking?",
+    question: "Bagaimana saya mula menempah?",
     answer:
       "Use the Check Availability button or Chat on WhatsApp to send your dates, number of guests, and travel destinations.",
   },

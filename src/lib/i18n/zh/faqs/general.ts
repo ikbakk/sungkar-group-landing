@@ -1,21 +1,21 @@
 export const generalFaqItems = [
   {
-    question: "Can the itinerary be customized?",
+    question: "行程可以定制吗？",
     answer:
       "Yes. The itinerary is arranged flexibly according to duration, pickup point, and destination priorities.",
   },
   {
-    question: "Is transportation-only service available?",
+    question: "是否提供仅交通服务？",
     answer:
-      "Yes. You can book airport transfers, daily drivers, or rental cars without a full tour package.",
+      "是的。您可以预订机场接送、日租司机或租车，无需全套旅游套餐。",
   },
   {
-    question: "Is it suitable for families?",
+    question: "适合家庭吗？",
     answer:
-      "Yes. Routes can be adjusted to make the travel pace more relaxed and not too packed.",
+      "是的。路线可以调整，使旅行节奏更轻松，不那么紧凑。",
   },
   {
-    question: "How do I start booking?",
+    question: "如何开始预订？",
     answer:
       "Use the Check Availability button or Chat on WhatsApp to send your dates, number of guests, and travel destinations.",
   },

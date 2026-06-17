@@ -72,59 +72,59 @@ export const businessInfo: BusinessInfo = {
 export const contactMethods: ContactMethod[] = [
   {
     id: "availability",
-    title: "Check Availability",
+    title: "查询可用性",
     description:
-      "Use the inquiry flow to check travel dates and the most practical route.",
+      "使用咨询流程查询旅行日期和最实用的路线。",
     action: {
-      label: "Check Availability",
+      label: "查询可用性",
       href: "#availability-form",
     },
   },
   {
     id: "whatsapp",
-    title: "Chat on WhatsApp",
+    title: "通过WhatsApp聊天",
     description:
-      "Best for quick questions, booking confirmations, and itinerary adjustments.",
+      "最适合快速提问、确认预订和调整行程。",
     action: {
-      label: "Chat on WhatsApp",
+      label: "通过WhatsApp聊天",
       href: `https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}?text=Halo%20Sungkar%20Group`,
     },
   },
   {
     id: "social",
-    title: "Social Channels",
+    title: "社交媒体",
     description:
-      "Instagram and YouTube are displayed in the footer for travel updates and destination stories.",
+      "Instagram和YouTube显示在页脚，提供旅行更新和目的地故事。",
   },
 ];
 
 export const contactFormFields: FormField[] = [
   {
     id: "travelDate",
-    label: "Travel date",
-    placeholder: "e.g. August 12, 2026",
+    label: "旅行日期",
+    placeholder: "例如：2026年8月12日",
     type: "text",
     required: true,
   },
   {
     id: "guests",
-    label: "Number of guests",
-    placeholder: "e.g. 4 adults, 2 children",
+    label: "人数",
+    placeholder: "例如：4位成人，2位儿童",
     type: "text",
     required: true,
   },
   {
     id: "location",
-    label: "Select location",
-    placeholder: "Select destination location...",
+    label: "选择地点",
+    placeholder: "选择目的地...",
     type: "select",
     required: true,
-    options: ["Lombok", "Sumbawa", "Labuan Bajo"],
+    options: ["龙目岛", "松巴哇岛", "纳闽巴霍"],
   },
   {
     id: "message",
-    label: "Additional message (optional)",
-    placeholder: "Tell us about your preferences or special requirements",
+    label: "附加信息（可选）",
+    placeholder: "告诉我们您的偏好或特殊要求",
     type: "textarea",
     required: false,
   },
@@ -135,47 +135,47 @@ export type FormContext = "sewa-mobil" | "paket-wisata";
 export const sewaMobilFormFields: FormField[] = [
   {
     id: "name",
-    label: "Full Name",
-    placeholder: "e.g. Budi Santoso",
+    label: "姓名",
+    placeholder: "例如：张三",
     type: "text",
     required: true,
   },
   {
     id: "travelDate",
-    label: "Rental date",
-    placeholder: "e.g. August 12, 2026",
+    label: "租车日期",
+    placeholder: "例如：2026年8月12日",
     type: "text",
     required: true,
   },
   {
     id: "duration",
-    label: "Rental duration",
-    placeholder: "e.g. 3 days",
+    label: "租车时长",
+    placeholder: "例如：3天",
     type: "text",
     required: true,
   },
   {
     id: "passengers",
-    label: "Number of passengers",
-    placeholder: "e.g. 4 people",
+    label: "乘客人数",
+    placeholder: "例如：4人",
     type: "text",
     required: true,
   },
   {
     id: "rentalReason",
-    label: "Rental purpose",
-    placeholder: "Select purpose...",
+    label: "租车目的",
+    placeholder: "选择目的...",
     type: "select",
     required: true,
     options: [
-      "With driver as guide",
-      "With driver service",
+      "司机兼导游",
+      "仅司机服务",
     ],
   },
   {
     id: "message",
-    label: "Additional message (optional)",
-    placeholder: "Tell us about your specific needs",
+    label: "附加信息（可选）",
+    placeholder: "告诉我们您的具体需求",
     type: "textarea",
     required: false,
   },
@@ -184,29 +184,29 @@ export const sewaMobilFormFields: FormField[] = [
 export const paketWisataFormFields: FormField[] = [
   {
     id: "name",
-    label: "Full Name",
-    placeholder: "e.g. Budi Santoso",
+    label: "姓名",
+    placeholder: "例如：张三",
     type: "text",
     required: true,
   },
   {
     id: "travelDate",
-    label: "Travel date",
-    placeholder: "e.g. August 12, 2026",
+    label: "旅行日期",
+    placeholder: "例如：2026年8月12日",
     type: "text",
     required: true,
   },
   {
     id: "guests",
-    label: "Number of guests",
-    placeholder: "e.g. 4 adults, 2 children",
+    label: "人数",
+    placeholder: "例如：4位成人，2位儿童",
     type: "text",
     required: true,
   },
   {
     id: "message",
-    label: "Additional message (optional)",
-    placeholder: "Tell us about your travel preferences",
+    label: "附加信息（可选）",
+    placeholder: "告诉我们您的旅行偏好",
     type: "textarea",
     required: false,
   },
@@ -219,19 +219,19 @@ export function buildWhatsappMessage(
   region?: string,
 ): string {
   const parts: string[] = [];
-  parts.push(`Hello Sungkar Group,`);
+  parts.push(`您好，Sungkar Group，`);
 
   if (itemName) {
     parts.push(``);
     if (context === "sewa-mobil") {
-      parts.push(`I want to rent: ${itemName}`);
+      parts.push(`我想租车：${itemName}`);
     } else {
-      parts.push(`I am interested in the package: ${itemName}`);
+      parts.push(`我对以下套餐感兴趣：${itemName}`);
     }
   }
 
   if (region) {
-    parts.push(`Location: ${region}`);
+    parts.push(`地点：${region}`);
   }
 
   parts.push(``);
@@ -239,25 +239,25 @@ export function buildWhatsappMessage(
   for (const [key, value] of Object.entries(values)) {
     if (!value) continue;
     const label = getFieldLabel(context, key);
-    parts.push(`${label}: ${value}`);
+    parts.push(`${label}：${value}`);
   }
 
   parts.push(``);
-  parts.push("Please provide more information.");
+  parts.push("请提供更多信息。");
 
   return parts.join("\n");
 }
 
 function getFieldLabel(context: FormContext, fieldId: string): string {
   const fieldMap: Record<string, string> = {
-    name: "Name",
+    name: "姓名",
     travelDate:
-      context === "sewa-mobil" ? "Rental date" : "Travel date",
-    duration: "Rental duration",
-    guests: "Number of guests",
-    passengers: "Number of passengers",
-    rentalReason: "Rental purpose",
-    message: "Additional message",
+      context === "sewa-mobil" ? "租车日期" : "旅行日期",
+    duration: "租车时长",
+    guests: "人数",
+    passengers: "乘客人数",
+    rentalReason: "租车目的",
+    message: "附加信息",
   };
   return fieldMap[fieldId] ?? fieldId;
 }

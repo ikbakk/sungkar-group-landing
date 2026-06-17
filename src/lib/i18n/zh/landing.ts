@@ -72,16 +72,16 @@ export interface LandingTransportCard {
 
 export const landingHero = {
   eyebrow: "Sungkar Group",
-  title: "Comfortable Travel to Lombok, Sumbawa & Labuan Bajo",
+  title: "舒适旅程：龙目岛、松巴哇岛和纳闽巴霍",
   description:
-    "Private tour, open trip, and transportation at your own pace in Lombok, Sumbawa, and Labuan Bajo.",
+    "在龙目岛、松巴哇岛和纳闽巴霍享受私人团、拼团游和交通服务，随心所欲。",
   primaryAction: {
-    label: "Consult Your Trip",
+    label: "咨询您的旅行",
     href: "/kontak",
     variant: "default" as const,
   },
   secondaryAction: {
-    label: "View Packages",
+    label: "查看套餐",
     href: "/paket-wisata",
     variant: "secondary" as const,
   },
@@ -90,100 +90,100 @@ export const landingHero = {
       className: "card-1",
       style: "width: 280px; height: 340px;",
       image: GALLERY.kutaBeach,
-      alt: "Well-organized travel itinerary",
-      title: "Well-Planned Trips",
-      description: "Trip details prepared from the start",
+      alt: "精心组织的旅行行程",
+      title: "精心规划的旅行",
+      description: "从开始就做好行程细节准备",
       contentSizeClass: "p-6",
     },
     {
       className: "card-2",
       style: "width: 240px; height: 280px; right: 20px; top: 80px;",
       image: GALLERY.kutaBeach2,
-      alt: "Tropical beach in Lombok",
-      title: "Beaches & Islands",
+      alt: "龙目岛热带海滩",
+      title: "海滩与岛屿",
       contentSizeClass: "p-4",
     },
     {
       className: "card-3",
       style: "width: 220px; height: 260px; left: 40px; top: 120px;",
       image: HERO.lombok,
-      alt: "Tropical natural landscape for adventure travel",
-      title: "Nature Adventure",
+      alt: "适合探险旅行的热带自然风光",
+      title: "自然探险",
       contentSizeClass: "p-4",
     },
     {
       className: "card-4",
       style: "width: 200px; height: 240px; right: -10px; top: 200px;",
       image: GALLERY.giliMeno,
-      alt: "Snorkeling activities in tropical waters",
-      title: "Snorkeling & Sea",
+      alt: "热带水域浮潜活动",
+      title: "浮潜与海洋",
       contentSizeClass: "p-3",
     },
   ] satisfies LandingHeroCard[],
 };
 
 export const landingFeaturedTours = {
-  eyebrow: "Featured packages",
-  title: "Most popular packages for a hassle-free vacation",
+  eyebrow: "精选套餐",
+  title: "最受欢迎的轻松度假套餐",
   description:
-    "From short trips to multi-day journeys, our packages are designed so you can just pick, go, and enjoy the moment.",
+    "从短途旅行到多日行程，我们的套餐让您只需选择、出发、享受当下。",
   heroImage: GALLERY.tourSnorkeling,
   tours: packages.filter((tour) => tour.featured).map(toLandingTourCard),
 };
 
 export const landingDestinations = {
-  eyebrow: "Favorite destinations",
-  title: "Destinations that most frequently make the itinerary",
+  eyebrow: "热门目的地",
+  title: "最常出现在行程中的目的地",
   description:
-    "We help you choose the best routes in Lombok and Sumbawa, while also preparing onward trips to Labuan Bajo if you want a bigger adventure.",
+    "我们帮助您选择龙目岛和松巴哇岛的最佳路线，如果您想要更大的冒险，还可以准备前往纳闽巴霍的行程。",
   destinations: destinations.slice(0, 4).map(toLandingDestinationCard),
 };
 
 export const landingTransport = {
-  eyebrow: "Transportation",
-  title: "Comfortable transportation for a flexible journey",
+  eyebrow: "交通服务",
+  title: "舒适交通，灵活出行",
   services: [
     {
-      title: "Airport Transfer",
+      title: "机场接送",
       description:
-        "On-time pickup for morning, evening, or changing schedules.",
+        "准时接送，适应早班、晚班或变化的行程安排。",
     },
     {
-      title: "Private Daily Driver",
+      title: "私人日租司机",
       description:
-        "Perfect for guests who want the freedom to adjust destinations and stop durations.",
+        "适合希望自由调整目的地和停留时间的客人。",
     },
     {
-      title: "Lease Car Rental",
+      title: "长期租车",
       description:
-        "Full freedom to explore Lombok and Sumbawa with a rental car without a driver.",
+        "租车不带司机，完全自由探索龙目岛和松巴哇岛。",
     },
     {
-      title: "Multi-City Travel Package",
+      title: "多城市旅行套餐",
       description:
-        "Combined Lombok - Sumbawa - Labuan Bajo transportation in one cost-effective package.",
+        "龙目岛 - 松巴哇岛 - 纳闽巴霍一站式交通，经济实惠。",
     },
   ] satisfies LandingTransportCard[],
 };
 
 export const landingTestimonials = {
-  eyebrow: "Guest reviews",
-  title: "Trusted for comfortable and well-organized travel",
+  eyebrow: "客人评价",
+  title: "值得信赖的舒适、有序旅行",
   description:
-    "From families, couples, to groups, the following reviews show memorable travel experiences with our local team.",
+    "从家庭、情侣到团体，以下评价展示了与我们的当地团队一起留下的难忘旅行经历。",
   testimonials: toMarqueeReviews(),
   stats: reviewStats,
 };
 
 export const landingVideo = {
-  eyebrow: "Journey Stories",
+  eyebrow: "旅行故事",
 
-  title: "See the trip atmosphere before you go",
+  title: "出发前感受旅行氛围",
 
   description:
-    "Short videos help you imagine the routes, destinations, and service atmosphere we prepare for every journey.",
+    "短视频帮助您想象我们为每次旅程准备的路线、目的地的服务氛围。",
 
-  ctaLabel: "Visit YouTube Channel",
+  ctaLabel: "访问YouTube频道",
 
   ctaHref:
     businessInfo.socialLinks.youtube ??

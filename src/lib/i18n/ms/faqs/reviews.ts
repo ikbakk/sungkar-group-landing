@@ -1,22 +1,22 @@
 export const reviewsFaq = [
   {
-    question: "Where do the displayed reviews come from?",
+    question: "Dari manakah ulasan yang dipaparkan berasal?",
     answer:
       "Reviews come from customers who have used Sungkar Group services through public platforms such as Google Business Profile.",
   },
   {
-    question: "Are all reviews displayed?",
+    question: "Adakah semua ulasan dipaparkan?",
     answer:
       "We display a selection of reviews that represent various types of customer experiences.",
   },
   {
-    question: "How can I see more reviews?",
+    question: "Bagaimana saya boleh melihat lebih banyak ulasan?",
     answer:
       "You can visit the Sungkar Group Google Business profile to see complete reviews from customers.",
   },
   {
-    question: "Can I leave a review after the trip is complete?",
+    question: "Bolehkah saya meninggalkan ulasan selepas perjalanan selesai?",
     answer:
-      "Yes. We greatly appreciate customer feedback and encourage every guest to share their experience.",
+      "Ya. Kami sangat menghargai maklum balas pelanggan dan menggalakkan setiap tetamu untuk berkongsi pengalaman mereka.",
   },
 ];

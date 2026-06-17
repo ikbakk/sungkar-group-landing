@@ -1,31 +1,31 @@
 export const contactFaq = [
   {
-    question: "How long does it take for Sungkar Group to respond?",
+    question: "Sungkar Group多久回复？",
     answer:
-      "Most inquiries received via WhatsApp will be responded to on the same day, especially during business hours.",
+      "通过WhatsApp收到的大多数咨询将在当天回复，尤其是在工作时间。",
   },
   {
-    question: "What information should I prepare before contacting?",
+    question: "联系前需要准备哪些信息？",
     answer:
       "It is best to prepare your travel dates, number of participants, destinations you wish to visit, and any special requirements.",
   },
   {
-    question: "Can I consult before booking?",
+    question: "我可以在预订前咨询吗？",
     answer:
       "Yes. Our team can help provide recommendations for itineraries, transportation, and tour packages that suit your needs.",
   },
   {
-    question: "Does Sungkar Group serve large groups?",
+    question: "Sungkar Group接待大型团体吗？",
     answer:
       "Yes. We serve extended family trips, communities, schools, government agencies, and corporate events.",
   },
   {
-    question: "Is consultation free of charge?",
+    question: "咨询免费吗？",
     answer:
-      "Yes. Initial consultation regarding travel plans can be done at no cost.",
+      "是的。关于旅行计划的初步咨询免费。",
   },
   {
-    question: "What is the fastest way to contact the Sungkar Group team?",
+    question: "联系Sungkar Group团队最快的方式是什么？",
     answer:
       "WhatsApp is the fastest communication channel for availability information and travel consultation.",
   },

@@ -1,31 +1,31 @@
 export const aboutFaq = [
   {
-    question: "What is Sungkar Group Indonesia?",
+    question: "什么是Sungkar Group Indonesia？",
     answer:
-      "Sungkar Group Indonesia is a local tour operator based in Lombok, focused on providing comfortable, well-planned, and memorable travel experiences.",
+      "Sungkar Group Indonesia 是一家总部位于龙目岛的当地旅行社，专注于提供舒适、精心规划且令人难忘的旅行体验。",
   },
   {
-    question: "Where does Sungkar Group operate?",
+    question: "Sungkar Group 在哪些地方运营？",
     answer:
-      "We are based in Lombok and serve various destinations on Lombok Island, the Gili Islands, and other tourism areas in West Nusa Tenggara.",
+      "我们总部设在龙目岛，服务于龙目岛、吉利群岛以及西努沙登加拉省的其他旅游目的地。",
   },
   {
-    question: "Who typically uses Sungkar Group services?",
+    question: "谁通常使用Sungkar Group的服务？",
     answer:
-      "Our services are used by individual travelers, couples, families, communities, schools, and companies looking to arrange trips or group activities.",
+      "我们的服务被个人旅行者、情侣、家庭、社区、学校以及需要安排旅行或团体活动的公司使用。",
   },
   {
-    question: "What sets Sungkar Group apart from other tour operators?",
+    question: "Sungkar Group与其他旅行社有何不同？",
     answer:
       "We combine local knowledge, responsive service, and structured travel planning so guests can enjoy Lombok more comfortably and efficiently.",
   },
   {
-    question: "Does Sungkar Group provide customizable travel?",
+    question: "Sungkar Group是否提供可定制的旅行？",
     answer:
       "Yes. We can help arrange itineraries tailored to group size, travel duration, tourism interests, and other specific needs.",
   },
   {
-    question: "How can I contact Sungkar Group?",
+    question: "如何联系Sungkar Group？",
     answer:
       "You can reach our team via WhatsApp or the contact page to discuss your travel plans and tourism needs.",
   },
