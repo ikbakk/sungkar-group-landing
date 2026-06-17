@@ -1,26 +1,26 @@
 export const contactPageContent = {
   hero: {
-    eyebrow: "Contact",
-    title: "Contact Sungkar Group for itinerary, packages, or transportation",
+    eyebrow: "联系我们",
+    title: "联系Sungkar Group咨询行程、套餐或交通",
     description:
-      "Share your travel dates, number of guests, pickup point, and destinations you wish to visit. Our team will help arrange suitable travel options.",
+      "请分享您的出行日期、人数、接载地点和希望游览的目的地。我们的团队将协助安排合适的旅行方案。",
   },
 
   info: {
-    title: "Contact Information",
-    description: "Choose the communication channel most convenient for you.",
+    title: "联系信息",
+    description: "选择最方便的沟通渠道。",
   },
 
   form: {
-    title: "Discuss Your Travel Plans",
+    title: "讨论您的旅行计划",
     description:
-      "Provide basic travel information so our team can give more relevant recommendations.",
+      "提供基本的旅行信息，以便我们的团队给出更相关的建议。",
   },
 
   map: {
-    title: "Our Location",
+    title: "我们的位置",
     description:
-      "Visit the Sungkar Group Indonesia office or contact our team for travel consultation.",
+      "访问Sungkar Group Indonesia办公室或联系我们的团队进行旅行咨询。",
     embedUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.326681066729!2d116.07895567597933!3d-8.564552586874651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc16a444a7c21%3A0x36bcf88354b9350a!2sSungkar%20Group%20Indonesia%20-%20(%20Paket%20Tour%20Lombok%20%7C%20Paket%20Group%20Lombok%20%7C%20Tour%20Lombok%20%7C%20Sewa%20Mobil%20Lombok%20)!5e0!3m2!1sen!2sus!4v1780935004955!5m2!1sen!2sus",
     googleMapsUrl:
