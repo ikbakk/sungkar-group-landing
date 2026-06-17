@@ -1,74 +1,74 @@
 export const packagePageContent = {
   hero: {
-    eyebrow: "Tour Packages",
-    title: "Lombok, Sumbawa & Labuan Bajo Tour Packages — Open Trip & Private Tour",
+    eyebrow: "旅游套餐",
+    title: "龙目岛、松巴哇岛和纳闽巴霍旅游套餐 — 拼团游和私人团",
     description:
-      "Choose structured tour packages for Lombok (beaches, culture, mountains), Sumbawa (whale shark, hidden islands), and Labuan Bajo (Komodo, Padar, Pink Beach). Available as budget-friendly open trips and flexible private tours with experienced local drivers.",
+      "选择结构化旅游套餐，覆盖龙目岛（海滩、文化、山脉）、松巴哇岛（鲸鲨、隐秘岛屿）和纳闽巴霍（科莫多、帕达尔、粉色海滩）。提供经济实惠的拼团游和灵活的私人团，配备经验丰富的本地司机。",
   },
 
   regions: {
     lombok: {
-      title: "Lombok Tour Packages",
+      title: "龙目岛旅游套餐",
       description:
-        "1–4 day packages covering Kuta Mandalika, Tanjung Aan, Bukit Merese, Gili Trawangan, Tetebatu waterfalls, and Rinjani trekking via Sembalun. Suitable for relaxing vacations or adventures.",
-      intro: "Choose duration and travel style: open trip joining a group or private tour with custom itinerary.",
+        "1至4日套餐，涵盖库塔曼达利卡、丹戎安、梅雷塞山、吉利特拉旺安、特特巴图瀑布和森巴伦林贾尼徒步。适合休闲度假或探险之旅。",
+      intro: "选择行程时长和旅行方式：加入团体的拼团游，或定制行程的私人团。",
     },
 
     sumbawa: {
-      title: "Sumbawa Tour Packages",
+      title: "松巴哇岛旅游套餐",
       description:
-        "Whale shark experience in Teluk Saleh, island hopping to Moyo Island, Sangiang, and Kenawa. 2–3 day packages with easy access from Lombok via ferry.",
-      intro: "Explore Sumbawa's best marine destinations for an authentic sea experience.",
+        "萨勒湾鲸鲨体验、跳岛游前往莫约岛、桑吉昂岛和凯纳瓦岛。2至3日套餐，从龙目岛乘渡轮即可轻松抵达。",
+      intro: "探索松巴哇岛最佳海洋目的地，体验纯正的海上之旅。",
     },
 
     "labuan-bajo": {
-      title: "Labuan Bajo Tour Packages",
+      title: "纳闽巴霍旅游套餐",
       description:
-        "1–3 day sailing exploring Komodo National Park: Padar Island, Pink Beach, Manta Point, Taka Makassar, and Rinca. Includes snorkeling gear, meals, and local guide.",
-      intro: "Explore Labuan Bajo's iconic attractions with comfortable and affordable sailing packages.",
+        "1至3日帆船之旅，探索科莫多国家公园：帕达尔岛、粉色海滩、曼塔角、塔卡马卡萨和林卡岛。包含浮潜装备、餐食和本地导游。",
+      intro: "以舒适实惠的帆船套餐探索纳闽巴霍的标志性景点。",
     },
   },
 
   cta: {
-    title: "Haven't found the right package?",
+    title: "还没找到合适的套餐？",
     description:
-      "Our team can help recommend itineraries based on group size, travel duration, and destinations you wish to visit.",
+      "我们的团队可以根据人数、旅行时长和您希望游览的目的地为您推荐行程。",
     button: {
-      label: "Consult Your Trip",
+      label: "咨询您的行程",
       href: "/kontak",
     },
   },
 
   relatedContent: [
     {
-      title: "Destinations",
+      title: "目的地",
       href: "/destinasi",
       description:
-        "Discover beautiful places and dream destinations in Lombok, Sumbawa, and Labuan Bajo",
+        "发现龙目岛、松巴哇岛和纳闽巴霍的美丽景点和梦想目的地",
     },
     {
-      title: "Travel Guides",
+      title: "旅行指南",
       href: "/panduan-wisata",
       description:
-        "Read complete guides to perfectly plan your trip",
+        "阅读完整指南，完美规划您的行程",
     },
     {
-      title: "Accommodations",
+      title: "住宿推荐",
       href: "/akomodasi",
       description:
-        "Choose the best hotels and lodging at every travel destination",
+        "在每个旅游目的地选择最佳酒店和住宿",
     },
     {
-      title: "Car Rental",
+      title: "租车服务",
       href: "/sewa-mobil",
       description:
-        "Enjoy travel comfort with our vehicle rental service",
+        "使用我们的租车服务，享受舒适的旅行",
     },
     {
-      title: "About Us",
+      title: "关于我们",
       href: "/tentang-kami",
       description:
-        "Learn more about Sungkar Group and our experience",
+        "进一步了解Sungkar Group和我们的经验",
     },
   ],
 } as const;
