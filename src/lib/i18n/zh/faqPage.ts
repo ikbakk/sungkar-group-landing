@@ -1,39 +1,39 @@
 export const faqPageContent = {
   hero: {
-    eyebrow: "FAQ",
-    title: "Frequently asked questions",
+    eyebrow: "常见问题",
+    title: "常见问题解答",
     description:
-      "This page is the central hub for common questions. For details on packages, destinations, and about us, open the FAQ on each respective page.",
+      "此页面是常见问题的中心枢纽。有关套餐、目的地的详细信息，请打开相应页面的常见问题。",
   },
   introCard: {
-    badge: "General FAQ",
-    title: "Summary of questions to start the conversation",
+    badge: "常规常见问题",
+    title: "入门问题摘要",
     description:
-      "If you are contacting the team for the first time, start with this general FAQ. After that, open the most relevant page for more targeted package and destination information.",
+      "如果您是第一次联系团队，请从这份常规常见问题开始。之后，打开最相关的页面以获取更有针对性的套餐和目的地信息。",
   },
   relatedCards: [
     {
-      badge: "Tour packages",
-      title: "Tour package FAQ",
+      badge: "旅游套餐",
+      title: "旅游套餐常见问题",
       description:
-        "Questions about duration, vehicles, and itinerary adjustments are covered on the tour packages page.",
-      buttonLabel: "Open tour packages",
+        "关于行程时长、车辆和行程调整的问题，请查看旅游套餐页面。",
+      buttonLabel: "查看旅游套餐",
       buttonHref: "/paket-wisata",
     },
     {
-      badge: "Destinations",
-      title: "Destination FAQ",
+      badge: "目的地",
+      title: "目的地常见问题",
       description:
-        "Questions about what to do at each destination are available on each destination page.",
-      buttonLabel: "Open destinations",
+        "关于每个目的地可参与活动的问题，请查看各目的地页面。",
+      buttonLabel: "查看目的地",
       buttonHref: "/destinasi",
     },
     {
-      badge: "About us",
-      title: "About us FAQ",
+      badge: "关于我们",
+      title: "关于我们常见问题",
       description:
-        "If you want to understand our services, coordination style, and booking process, open the about us page.",
-      buttonLabel: "Open about us",
+        "如果您想了解我们的服务、协调方式和预订流程，请打开关于我们页面。",
+      buttonLabel: "查看关于我们",
       buttonHref: "/tentang-kami",
     },
   ],
