@@ -5,84 +5,86 @@ import type { TourPackage } from "@/lib/content/tourPackages/types";
 export const labuanBajoPackages: TourPackage[] = [
   {
     slug: "paket-1-hari-full-labuan-bajo",
-    title: "1 Day Full Labuan Bajo Package",
+    title: "纳闽巴霍一日游",
     region: "labuan-bajo",
 
     collectionSlug: "1-hari",
-    collectionTitle: "1 Day Package",
+    collectionTitle: "1日套餐",
 
-    category: "Labuan Bajo Tour Packages",
-    duration: "1 Day",
-
+    category: "纳闽巴霍旅游套餐",
+    duration: "1天",
     images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary:
-      "A one-day speedboat tour to the main destinations of Komodo National Park.",
+      "快艇一日游，前往科莫多国家公园主要景点。",
 
-    highlights: ["Pulau Padar", "Pink Beach", "Pulau Komodo", "Manta Point"],
+    highlights: ["帕达尔岛", "粉色海滩", "科莫多岛", "蝠鲼角"],
 
-    itinerary: ["Padar", "Pink Beach", "Komodo", "Manta Point"],
+    itinerary: [
+      "第1天 - 帕达尔岛。",
+      "第1天 - 粉色海滩。",
+      "第1天 - 科莫多岛。",
+      "第1天 - 蝠鲼角。",
+    ],
 
-    includes: ["Speedboat", "Guide lokal", "Snorkeling"],
+    includes: ["快艇", "当地导游", "浮潜"],
 
-    excludes: ["Tiket Taman Nasional Komodo", "Pengeluaran pribadi"],
+    excludes: ["科莫多国家公园门票", "个人消费"],
   },
 
   {
     slug: "overnight-komodo-adventure",
-    title: "Overnight Komodo Adventure",
+    title: "科莫多过夜探险之旅",
     region: "labuan-bajo",
 
     collectionSlug: "paket-2-hari-1-malam",
-    collectionTitle: "2 Days 1 Night Package",
+    collectionTitle: "2天1夜套餐",
 
-    category: "Labuan Bajo Tour Packages",
-    duration: "2 Days 1 Night",
-
+    category: "纳闽巴霍旅游套餐",
+    duration: "2天1夜",
     images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
-    summary: "A short liveaboard experience with overnight stay on the boat.",
+    summary: "短途船宿体验，在船上过夜。",
 
-    highlights: ["Liveaboard", "Padar", "Pink Beach"],
+    highlights: ["船宿体验", "帕达尔岛", "粉色海滩"],
 
     itinerary: [
-      "Hari 1 - Kelor.",
-      "Hari 1 - Kalong.",
-      "Hari 2 - Padar.",
-      "Hari 2 - Komodo.",
+      "第1天 - 凯洛尔岛。",
+      "第1天 - 卡隆岛。",
+      "第2天 - 帕达尔岛。",
+      "第2天 - 科莫多岛。",
     ],
 
-    includes: ["Kabin kapal", "Makan", "Guide"],
+    includes: ["船上舱位", "餐食", "导游"],
 
-    excludes: ["Tiket Komodo", "Pengeluaran pribadi"],
+    excludes: ["科莫多门票", "个人消费"],
   },
 
   {
     slug: "sailing-komodo-3d2n",
-    title: "Sailing Komodo 3 Days 2 Nights",
+    title: "科莫多帆船之旅3天2夜",
     region: "labuan-bajo",
 
     collectionSlug: "paket-3-hari-2-malam",
-    collectionTitle: "3 Days 2 Nights Package",
+    collectionTitle: "3天2夜套餐",
 
-    category: "Labuan Bajo Tour Packages",
-    duration: "3 Days 2 Nights",
-
+    category: "纳闽巴霍旅游套餐",
+    duration: "3天2夜",
     images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
-    summary: "The most popular sailing program in the Komodo region.",
+    summary: "科莫多地区最受欢迎的帆船之旅。",
 
-    highlights: ["Padar", "Pink Beach", "Komodo", "Manta Point"],
+    highlights: ["帕达尔岛", "粉色海滩", "科莫多岛", "蝠鲼角"],
 
     itinerary: [
-      "Hari 1 - Kelor.",
-      "Hari 2 - Padar.",
-      "Hari 2 - Komodo.",
-      "Hari 3 - Kanawa.",
+      "第1天 - 凯洛尔岛。",
+      "第2天 - 帕达尔岛。",
+      "第2天 - 科莫多岛。",
+      "第3天 - 卡纳瓦岛。",
     ],
 
-    includes: ["Kabin kapal", "Makan", "Guide"],
+    includes: ["船上舱位", "餐食", "导游"],
 
-    excludes: ["Tiket Komodo", "Pengeluaran pribadi"],
+    excludes: ["科莫多门票", "个人消费"],
   },
 ];
