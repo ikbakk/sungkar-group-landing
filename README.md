@@ -100,6 +100,22 @@ Konten blog dalam markdown...
 
 Untuk locale lain, copy file ke `{slug}/{locale}.mdx` dan translate kontennya.
 
+#### Blog Frontmatter Schema
+
+| Field | Type | Required | Notes |
+|---|---|---|---|
+| `title` | `string` | ✅ | |
+| `description` | `string` | ✅ | |
+| `publishDate` | `YYYY-MM-DD` | ✅ | Bare date, no quotes |
+| `tags` | `string[]` | ✅ | YAML list or inline array |
+| `readingTime` | `number` | ✅ | Minutes |
+| `author` | `string` | ❌ | Default: "Tim Sungkar Group" |
+| `featuredImage` | `string` | ❌ | Path or URL |
+| `relatedDestinations` | `string[]` | ❌ | Destination slugs |
+| `relatedPackages` | `string[]` | ❌ | Tour package slugs |
+
+**Do not** add `locale` or `slug` in frontmatter — locale is derived from the filename (`id.mdx`, `en.mdx`), slug is derived from the directory name.
+
 ### Panduan Wisata Baru
 
 ```mdx
@@ -118,6 +134,22 @@ publishDate: "2026-01-15"
 
 Konten panduan dalam markdown...
 ```
+
+#### Guides Frontmatter Schema
+
+| Field | Type | Required | Notes |
+|---|---|---|---|
+| `title` | `string` | ✅ | |
+| `description` | `string` | ✅ | |
+| `region` | `"lombok" \| "sumbawa" \| "labuan-bajo" \| "general"` | ✅ | |
+| `readingTime` | `number` | ✅ | Minutes |
+| `keyTakeaways` | `string[]` | ✅ | |
+| `bestFor` | `string[]` | ✅ | |
+| `relatedDestinations` | `string[]` | ✅ | Destination slugs |
+| `relatedPackages` | `string[]` | ✅ | Tour package slugs |
+| `publishDate` | `string` | ✅ | ISO date in quotes: `"2026-01-15"` |
+
+**Do not** add `locale` or `slug` in frontmatter — locale is derived from the filename, slug from the directory name. Unlike blog where `publishDate` is a bare date, guides use a quoted string.
 
 ### Akomodasi Baru
 
