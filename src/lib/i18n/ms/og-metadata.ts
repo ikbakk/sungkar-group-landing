@@ -11,75 +11,75 @@ export interface OGMetadata {
 
 export const pageOGMetadata: Record<string, OGMetadata> = {
   "/": {
-    title: "Sungkar Group - Tour and Travel",
+    title: "Sungkar Group - Pelancongan & Pengembaraan",
     description:
-      "Local Lombok-based tour operator for private tours, destinations, transportation, reviews, and travel guides.",
+      "Pengendali pelancongan tempatan Lombok untuk lawatan peribadi, destinasi, pengangkutan, ulasan, dan panduan perjalanan.",
     image: HERO.lombok,
-    imageAlt: "Lombok beach view at sunset",
+    imageAlt: "Pemandangan pantai Lombok ketika matahari terbenam",
   },
   "/tentang-kami": {
-    title: "About Us | Sungkar Group - Tour and Travel",
+    title: "Tentang Kami | Sungkar Group - Pelancongan & Pengembaraan",
     description:
-      "Learn more about Sungkar Group, our local team, and our sustainable travel approach.",
+      "Ketahui lebih lanjut tentang Sungkar Group, pasukan tempatan kami, dan pendekatan perjalanan lestari kami.",
     image: GALLERY.tourCultural,
     imageAlt:
-      "Local cultural experience with the Sungkar Group team",
+      "Pengalaman budaya tempatan bersama pasukan Sungkar Group",
   },
   "/paket-wisata": {
-    title: "Tour Packages | Sungkar Group - Tour and Travel",
+    title: "Pakej Pelancongan | Sungkar Group - Pelancongan & Pengembaraan",
     description:
-      "Explore complete Lombok tour packages from 3-day tours to local cultural experiences.",
+      "Terokai pakej pelancongan Lombok yang lengkap dari lawatan 3 hari hingga pengalaman budaya tempatan.",
     image: HERO.lombok,
-    imageAlt: "Lombok tour packages with the best local service",
+    imageAlt: "Pakej pelancongan Lombok dengan perkhidmatan tempatan terbaik",
   },
   "/destinasi": {
-    title: "Destinations | Sungkar Group - Tour and Travel",
+    title: "Destinasi | Sungkar Group - Pelancongan & Pengembaraan",
     description:
-      "Discover the best destinations in Lombok, Gili Islands, and Rinjani mountains for your adventure.",
+      "Temui destinasi terbaik di Lombok, Kepulauan Gili, dan gunung Rinjani untuk pengembaraan anda.",
     image: DESTINATIONS.lombok,
-    imageAlt: "Best travel destinations in Lombok",
+    imageAlt: "Destinasi pelancongan terbaik di Lombok",
   },
   "/ulasan": {
-    title: "Reviews | Sungkar Group - Tour and Travel",
+    title: "Ulasan | Sungkar Group - Pelancongan & Pengembaraan",
     description:
-      "Read reviews from travelers who have experienced tours with Sungkar Group.",
+      "Baca ulasan daripada pengembara yang telah merasai perkhidmatan Sungkar Group.",
     image: HERO.lombok,
-    imageAlt: "Positive reviews from Sungkar Group visitors",
+    imageAlt: "Ulasan positif daripada pelawat Sungkar Group",
   },
   "/panduan-wisata": {
-    title: "Travel Guides | Sungkar Group - Tour and Travel",
+    title: "Panduan Perjalanan | Sungkar Group - Pelancongan & Pengembaraan",
     description:
-      "Complete guides for planning your trip to Lombok, from weather to local transportation.",
+      "Panduan lengkap untuk merancang perjalanan anda ke Lombok, dari cuaca hingga pengangkutan tempatan.",
     image: DESTINATIONS.rinjani,
-    imageAlt: "Complete travel guide for Lombok",
+    imageAlt: "Panduan perjalanan lengkap untuk Lombok",
   },
   "/kontak": {
-    title: "Contact | Sungkar Group - Tour and Travel",
+    title: "Hubungi Kami | Sungkar Group - Pelancongan & Pengembaraan",
     description:
-      "Contact Sungkar Group via WhatsApp, email, or online form to check availability.",
+      "Hubungi Sungkar Group melalui WhatsApp, e-mel, atau borang dalam talian untuk semak ketersediaan.",
     image: HERO.lombok,
-    imageAlt: "Contact Sungkar Group for a free consultation",
+    imageAlt: "Hubungi Sungkar Group untuk konsultasi percuma",
   },
   "/faq": {
-    title: "FAQ | Sungkar Group - Tour and Travel",
+    title: "Soalan Lazim | Sungkar Group - Pelancongan & Pengembaraan",
     description:
-      "Complete answers to common questions about tour packages and Sungkar Group services.",
+      "Jawapan lengkap kepada soalan lazim tentang pakej pelancongan dan perkhidmatan Sungkar Group.",
     image: HERO.lombok,
-    imageAlt: "Frequently asked questions about Lombok tours",
+    imageAlt: "Soalan lazim tentang pelancongan Lombok",
   },
   "/akomodasi": {
-    title: "Accommodations | Sungkar Group - Tour and Travel",
+    title: "Penginapan | Sungkar Group - Pelancongan & Pengembaraan",
     description:
-      "Best accommodation recommendations in Lombok at affordable prices with complete facilities.",
+      "Cadangan penginapan terbaik di Lombok dengan harga berpatutan dan kemudahan lengkap.",
     image: DESTINATIONS.lombok,
-    imageAlt: "Accommodation recommendations in Lombok",
+    imageAlt: "Cadangan penginapan di Lombok",
   },
   "/sewa-mobil": {
-    title: "Car Rental | Sungkar Group - Tour and Travel",
+    title: "Sewa Kereta | Sungkar Group - Pelancongan & Pengembaraan",
     description:
-      "Rent local vehicles with experienced drivers for a comfortable and flexible journey.",
+      "Sewa kenderaan tempatan dengan pemandu berpengalaman untuk perjalanan yang selesa dan fleksibel.",
     image: HERO.lombok,
-    imageAlt: "Car rental service with professional drivers",
+    imageAlt: "Perkhidmatan sewa kereta dengan pemandu profesional",
   },
 };
 
@@ -95,7 +95,7 @@ export function getPackageOGMetadata(
   imageAlt: string,
 ): OGMetadata {
   return {
-    title: `${title} | Sungkar Group - Tour and Travel`,
+    title: `${title} | Sungkar Group - Pelancongan & Pengembaraan`,
     description,
     image,
     imageAlt,
@@ -110,7 +110,7 @@ export function getDestinationOGMetadata(
   imageAlt: string,
 ): OGMetadata {
   return {
-    title: `${title} | Sungkar Group - Tour and Travel`,
+    title: `${title} | Sungkar Group - Pelancongan & Pengembaraan`,
     description,
     image,
     imageAlt,
