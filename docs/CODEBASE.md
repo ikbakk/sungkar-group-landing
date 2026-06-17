@@ -167,7 +167,28 @@ tests/                          # Vitest: data.test.ts, schemas.test.ts
 
 ---
 
-## 8. Build Commands
+## 8. Agent Skills (`.pi/skills/`)
+
+Project-specific skills for AI agents to handle specialized tasks:
+
+| Skill | Focus |
+|---|---|
+| `locale-ui-strings` | Navigation, footer, buttons, OG metadata, page titles, region labels — UI-level i18n |
+| `i18n-content-data` | Tour package itineraries, destinations, vehicles, FAQ, MDX content — data-level i18n |
+| `component-library` | UI primitives (shadcn-style), feature section components, Astro/React conventions |
+| `content-architecture` | Types, Zod schemas, data modules, feature module setup, barrel exports |
+| `page-routing-i18n` | New page/route creation with full 5-locale i18n setup |
+| `image-assets` | Image management, barrel exports, check-images, categories |
+| `schema-seo` | JSON-LD schemas, OG metadata, meta tags, structured data |
+| `content-collections` | Blog + travel guide MDX posts (Astro v6 content collections) |
+| `styling-theme` | Tailwind v4 tokens, CSS design system, card utilities, fonts |
+| `navigation` | Mega menu, mobile drawer, locale nav data, collection title maps |
+| `testing` | Vitest tests, schema validation, test patterns |
+| `deployment` | Build config, astro.config.mjs, sitemap, CI/CD, deployment |
+
+---
+
+## 9. Build Commands
 
 ```
 npm run dev          # Dev server :4321
