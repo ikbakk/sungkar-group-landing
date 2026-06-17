@@ -30,7 +30,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "فنادق شاطئية بإطلالات بحرية غريبة ووصول حصري إلى أفضل وجهات الشاطئ في لومبوك.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "lombok-mountain-retreat",
@@ -49,7 +49,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "أماكن إقامة جبلية تقدم تجربة لومبوك أصيلة مع الحياة المحلية والمحيط الطبيعي.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "lombok-gili-gateway",
@@ -68,7 +68,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "إقامة استراتيجية للوصول السهل إلى جزر جيلي مع برامج قفز الجزر والأنشطة البحرية.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
 
   {
@@ -88,7 +88,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "قاعدة رئيسية لمغامرات كومودو مع وصول كامل للحديقة الوطنية وأدلة ذوي خبرة.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "labuan-bajo-liveaboard-hub",
@@ -107,7 +107,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "مركز إبحار لابوان باجو مع أفضل مجموعة قوارب الإبحار المباشر لمغامرة كومودو لا تُنسى.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "labuan-bajo-beach-resort",
@@ -121,6 +121,6 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "منتجع شاطئي فاخر لإقامة مريحة مع وصول سهل لجميع وجهات جولات كومودو.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
 ];

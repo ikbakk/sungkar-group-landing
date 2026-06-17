@@ -9,11 +9,7 @@ const BLOG_DIR = "./src/content/blog";
 const GUIDES_DIR = "./src/content/guides";
 
 const REQUIRED_BLOG = ["title", "description", "publishDate", "tags", "readingTime"];
-const OPTIONAL_BLOG = ["featuredImage", "author", "relatedDestinations", "relatedPackages"];
-
 const REQUIRED_GUIDES = ["title", "description", "region", "readingTime", "keyTakeaways", "bestFor", "relatedDestinations", "relatedPackages", "publishDate"];
-const OPTIONAL_GUIDES = ["featuredImage"];
-
 const VALID_REGIONS = ["lombok", "sumbawa", "labuan-bajo", "general"];
 
 function findMdxFiles(dir) {

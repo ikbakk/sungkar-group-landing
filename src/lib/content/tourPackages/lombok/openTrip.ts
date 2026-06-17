@@ -9,7 +9,7 @@ export const motoGP = [
     category: "Open Trip Lombok",
     duration: "4 Hari 3 Malam",
     images: [
-      HERO.lombok,
+      HERO.heroLombok,
       GALLERY.kutaBeach,
       GALLERY.tourCultural,
       GALLERY.tourSnorkeling,

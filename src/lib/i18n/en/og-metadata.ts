@@ -14,7 +14,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Sungkar Group - Tour and Travel",
     description:
       "Local Lombok-based tour operator for private tours, destinations, transportation, reviews, and travel guides.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Lombok beach view at sunset",
   },
   "/tentang-kami": {
@@ -29,7 +29,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Tour Packages | Sungkar Group - Tour and Travel",
     description:
       "Explore complete Lombok tour packages from 3-day tours to local cultural experiences.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Lombok tour packages with the best local service",
   },
   "/destinasi": {
@@ -43,7 +43,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Reviews | Sungkar Group - Tour and Travel",
     description:
       "Read reviews from travelers who have experienced tours with Sungkar Group.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Positive reviews from Sungkar Group visitors",
   },
   "/panduan-wisata": {
@@ -57,14 +57,14 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Contact | Sungkar Group - Tour and Travel",
     description:
       "Contact Sungkar Group via WhatsApp, email, or online form to check availability.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Contact Sungkar Group for a free consultation",
   },
   "/faq": {
     title: "FAQ | Sungkar Group - Tour and Travel",
     description:
       "Complete answers to common questions about tour packages and Sungkar Group services.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Frequently asked questions about Lombok tours",
   },
   "/akomodasi": {
@@ -78,7 +78,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Car Rental | Sungkar Group - Tour and Travel",
     description:
       "Rent local vehicles with experienced drivers for a comfortable and flexible journey.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Car rental service with professional drivers",
   },
 };

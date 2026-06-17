@@ -14,7 +14,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Sungkar Group - 旅游与旅行",
     description:
       "龙目岛本地旅行社，提供私人团、目的地游、交通、评价和旅行指南。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "龙目岛日落海滩景观",
   },
   "/tentang-kami": {
@@ -29,7 +29,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "旅游套餐 | Sungkar Group - 旅游与旅行",
     description:
       "探索完整的龙目岛旅游套餐，从3日游到当地文化体验。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "龙目岛旅游套餐，提供最佳本地服务",
   },
   "/destinasi": {
@@ -43,7 +43,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "客户评价 | Sungkar Group - 旅游与旅行",
     description:
       "阅读旅行者们对Sungkar Group服务的真实评价。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Sungkar Group客户的积极评价",
   },
   "/panduan-wisata": {
@@ -57,14 +57,14 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "联系我们 | Sungkar Group - 旅游与旅行",
     description:
       "通过WhatsApp、电子邮件或在线表格联系Sungkar Group咨询可用性。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "联系Sungkar Group获取免费咨询",
   },
   "/faq": {
     title: "常见问题 | Sungkar Group - 旅游与旅行",
     description:
       "关于旅游套餐和Sungkar Group服务的常见问题完整解答。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "龙目岛旅游常见问题解答",
   },
   "/akomodasi": {
@@ -78,7 +78,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "租车服务 | Sungkar Group - 旅游与旅行",
     description:
       "租用本地车辆，配备经验丰富的司机，享受舒适灵活的旅程。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "专业司机租车服务",
   },
 };

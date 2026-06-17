@@ -18,7 +18,7 @@ export const destinations: Destination[] = [
     title: "Kuta Lombok",
     region: "Selatan Lombok",
     image: DESTINATIONS.lombok,
-    gallery: [GALLERY.kutaBeach, GALLERY.kutaBeach2, HERO.lombok],
+    gallery: [GALLERY.kutaBeach, GALLERY.kutaBeach2, HERO.heroLombok],
     summary:
       "Pesisir luas, akses ke banyak pantai, dan tempo pelancongan yang santai.",
     thingsToDo: ["Jelajah pantai", "Titik matahari terbenam", "Kedai tempatan"],
@@ -29,7 +29,7 @@ export const destinations: Destination[] = [
     title: "Tetebatu",
     region: "Timur Lombok",
     image: DESTINATIONS.lombok,
-    gallery: [GALLERY.tourCultural, HERO.lombok, GALLERY.kutaBeach],
+    gallery: [GALLERY.tourCultural, HERO.heroLombok, GALLERY.kutaBeach],
     summary:
       "Desa pegunungan yang tenang dengan lanskap hijau dan tempo lawatan yang perlahan.",
     thingsToDo: ["Jalan kampung", "Sawah terasering", "Air terjun"],
@@ -40,7 +40,7 @@ export const destinations: Destination[] = [
     title: "Sembalun",
     region: "Koridor pegunungan",
     image: DESTINATIONS.rinjani,
-    gallery: [DESTINATIONS.rinjani, HERO.lombok, GALLERY.tourSnorkeling],
+    gallery: [DESTINATIONS.rinjani, HERO.heroLombok, GALLERY.tourSnorkeling],
     summary:
       "Koridor pegunungan yang biasa digunakan sebagai titik permulaan pengalaman Rinjani.",
     thingsToDo: [

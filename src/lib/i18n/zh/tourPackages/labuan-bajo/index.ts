@@ -13,7 +13,7 @@ export const labuanBajoPackages: TourPackage[] = [
 
     category: "纳闽巴霍旅游套餐",
     duration: "1天",
-    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary:
       "快艇一日游，前往科莫多国家公园主要景点。",
@@ -42,7 +42,7 @@ export const labuanBajoPackages: TourPackage[] = [
 
     category: "纳闽巴霍旅游套餐",
     duration: "2天1夜",
-    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary: "短途船宿体验，在船上过夜。",
 
@@ -70,7 +70,7 @@ export const labuanBajoPackages: TourPackage[] = [
 
     category: "纳闽巴霍旅游套餐",
     duration: "3天2夜",
-    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary: "科莫多地区最受欢迎的帆船之旅。",
 

@@ -12,7 +12,7 @@ export const oneDay: TourPackage[] = [
     featured: true,
     category: "Pakej Pelancongan Lombok",
     duration: "1 Hari",
-    images: [HERO.lombok, DESTINATIONS.rinjani],
+    images: [HERO.heroLombok, DESTINATIONS.rinjani],
 
     summary:
       "Sendang Gile and Tiu Kelep Waterfall tour package that takes you to explore the natural beauty of North Lombok at the foot of Mount Rinjani. Enjoy the atmosphere of Baun Pusuk Tourist Forest, the cultural tour of Senaru Village, the ancient Bayan Beleq Mosque, and the freshness of Lombok's two most popular waterfalls in one comfortable and memorable journey.",
@@ -64,7 +64,7 @@ export const oneDay: TourPackage[] = [
     featured: true,
     category: "Pakej Pelancongan Lombok",
     duration: "1 Hari",
-    images: [HERO.lombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
+    images: [HERO.heroLombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
 
     summary:
       "Kuta Lombok beach tour package combining white sand beach beauty with Sasak cultural tour. Explore Banyumulek Village, Sukarara Village, Sade Village, Kuta Lombok Beach, and Tanjung Aan Beach in one full day with comfortable private tour service.",

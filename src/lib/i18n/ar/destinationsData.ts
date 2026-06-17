@@ -18,7 +18,7 @@ export const destinations: Destination[] = [
     title: "كوتا لومبوك",
     region: "جنوب لومبوك",
     image: DESTINATIONS.lombok,
-    gallery: [GALLERY.kutaBeach, GALLERY.kutaBeach2, HERO.lombok],
+    gallery: [GALLERY.kutaBeach, GALLERY.kutaBeach2, HERO.heroLombok],
     summary:
       "ساحل واسع، وصول إلى العديد من محطات الشاطئ، ووتيرة عطلة مريحة.",
     thingsToDo: ["استكشاف الشاطئ", "مواقع الغروب", "مقاهي محلية"],
@@ -29,7 +29,7 @@ export const destinations: Destination[] = [
     title: "تيتابتو",
     region: "شرق لومبوك",
     image: DESTINATIONS.lombok,
-    gallery: [GALLERY.tourCultural, HERO.lombok, GALLERY.kutaBeach],
+    gallery: [GALLERY.tourCultural, HERO.heroLombok, GALLERY.kutaBeach],
     summary:
       "قرية جبلية أكثر هدوءاً مع مناظر خضراء ووتيرة زيارة بطيئة.",
     thingsToDo: ["جولة في القرية", "مدرجات الأرز", "محطات الشلالات"],
@@ -40,7 +40,7 @@ export const destinations: Destination[] = [
     title: "سيمبالون",
     region: "ممر الجبال",
     image: DESTINATIONS.rinjani,
-    gallery: [DESTINATIONS.rinjani, HERO.lombok, GALLERY.tourSnorkeling],
+    gallery: [DESTINATIONS.rinjani, HERO.heroLombok, GALLERY.tourSnorkeling],
     summary:
       "ممر جبلي يستخدم عادة كنقطة انطلاق لتجربة رينجاني.",
     thingsToDo: [

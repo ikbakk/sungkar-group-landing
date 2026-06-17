@@ -9,7 +9,7 @@ export const motoGP = [
     category: "رحلة مفتوحة لومبوك",
     duration: "4 أيام و3 ليالٍ",
     images: [
-      HERO.lombok,
+      HERO.heroLombok,
       GALLERY.kutaBeach,
       GALLERY.tourCultural,
       GALLERY.tourSnorkeling,

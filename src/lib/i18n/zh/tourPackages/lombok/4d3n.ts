@@ -12,7 +12,7 @@ export const fourDays: TourPackage[] = [
     featured: true,
     category: "龙目岛旅游套餐",
     duration: "4天3夜",
-    images: [HERO.lombok, DESTINATIONS.gili, GALLERY.giliMeno, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.gili, GALLERY.giliMeno, GALLERY.tourSnorkeling],
 
     summary:
       "龙目岛4天3夜旅游套餐，结合萨萨克文化之旅、库塔曼达利卡海滩、梅雷塞山、吉利南古、吉利苏达克、吉利克迪斯和吉利特拉旺安。适合情侣、家庭或团体，包含私人团、跳岛游和龙目岛特色美食。",

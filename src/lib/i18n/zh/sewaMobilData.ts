@@ -37,8 +37,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "在龙目岛租用丰田Avanza，配备专业司机。适合家庭旅游、商务旅行、城市观光和机场接送，最多可容纳7名乘客。",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -61,8 +61,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "在龙目岛租用丰田Innova Reborn，车厢宽敞舒适。适合家庭出游、小团体和龙目岛高端旅行。",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -85,8 +85,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "在龙目岛租用丰田Innova Zenix，享受高级舒适、现代内饰和卓越性能，适合休闲和商务出行。",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -109,8 +109,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "在龙目岛租用丰田Fortuner GR，外观豪华，舒适高端。适合VIP客人、商务差旅和专属旅行。",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -133,8 +133,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "在龙目岛租用三菱帕杰罗运动版，享受舒适和优雅的旅程。VIP客人和高端旅行的理想选择。",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -157,8 +157,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "在龙目岛租用丰田Alphard，配备高级设施和豪华车厢。VIP客人、官员和专属交通需求的最佳选择。",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -181,8 +181,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "在龙目岛租用丰田Hiace Commuter，适合旅游团、公司聚会和团体出行，最多可容纳14名乘客。",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -205,8 +205,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "在龙目岛租用丰田Hiace Premio，内饰更舒适现代。适合注重舒适度的团体出行。",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -229,8 +229,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "在龙目岛租用中型巴士，适合旅游团、研学旅行、公司郊游和团体活动，最多可容纳30名乘客。",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -253,7 +253,7 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "在龙目岛租用大型旅游巴士，满足大型团体需求、研学旅行、公司聚会和龙目岛跨目的地旅行。",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 ];

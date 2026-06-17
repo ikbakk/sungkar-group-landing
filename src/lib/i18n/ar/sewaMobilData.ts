@@ -37,8 +37,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "استأجر تويوتا أڤانزا في لومبوك مع سائق محترف. مناسب للجولات العائلية، رحلات العمل، جولات المدينة، ونقل المطار بسعة تصل إلى 7 ركاب.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -61,8 +61,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "استأجر تويوتا إنوفا ريبورن في لومبوك مع مقصورة واسعة ومريحة. مثالي للرحلات العائلية، المجموعات الصغيرة، والجولات الفاخرة في جزيرة لومبوك.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -85,8 +85,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "استأجر تويوتا إنوفا زينيكس في لومبوك مع راحة فاخرة، مقصورة حديثة، وأداء عالٍ للسفر الترفيهي والعملية.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -109,8 +109,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "استأجر تويوتا فورتشنر GR في لومبوك بمظهر فاخر وراحة متميزة. مناسب للضيوف المميزين، رحلات العمل، والجولات الحصرية.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -133,8 +133,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "استأجر ميتسوبيشي باجيرو سبورت في لومبوك لرحلة مريحة وأنيقة. خيار مثالي للضيوف المميزين والجولات الفاخرة.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -157,8 +157,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "استأجر تويوتا ألفارد في لومبوك بمرافق متميزة ومقصورة فاخرة. الخيار الأفضل للضيوف المميزين، المسؤولين، واحتياجات النقل الحصرية.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -181,8 +181,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "استأجر تويوتا هيايس كوميوتر في لومبوك للجولات الجماعية، تجمعات الشركات، والسفر الجماعي بسعة تصل إلى 14 راكباً.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -205,8 +205,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "استأجر تويوتا هيايس بريميو في لومبوك بتصميم داخلي أكثر راحة وحداثة. مناسب للرحلات الجماعية التي تعطي الأولوية للراحة.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -229,8 +229,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "استأجر حافلة متوسطة في لومبوك للجولات الجماعية، الجولات الدراسية، تجمعات الشركات، والأنشطة الجماعية بسعة تصل إلى 30 راكباً.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -253,7 +253,7 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "استأجر حافلة سياحية كبيرة في لومبوك لاحتياجات المجموعات الكبيرة، الجولات الدراسية، تجمعات الشركات، والسفر بين الوجهات في جزيرة لومبوك.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 ];

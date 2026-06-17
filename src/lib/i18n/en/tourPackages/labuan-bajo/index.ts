@@ -14,7 +14,7 @@ export const labuanBajoPackages: TourPackage[] = [
     category: "Labuan Bajo Tour Packages",
     duration: "1 Day",
 
-    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary:
       "One-day speedboat tour to the main destinations of Komodo National Park.",
@@ -44,7 +44,7 @@ export const labuanBajoPackages: TourPackage[] = [
     category: "Labuan Bajo Tour Packages",
     duration: "2 Days 1 Night",
 
-    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary: "Short liveaboard experience with overnight stay on the boat.",
 
@@ -73,7 +73,7 @@ export const labuanBajoPackages: TourPackage[] = [
     category: "Labuan Bajo Tour Packages",
     duration: "3 Days 2 Nights",
 
-    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary: "The most popular sailing program in the Komodo region.",
 

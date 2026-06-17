@@ -37,8 +37,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Sewa Toyota Avanza di Lombok dengan pemandu profesional. Sesuai untuk pelancongan keluarga, perjalanan perniagaan, city tour, dan pertukaran lapangan terbang dengan kapasiti sehingga 7 penumpang.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -61,8 +61,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Sewa Toyota Innova Reborn di Lombok dengan kabin yang luas dan selesa. Ideal untuk perjalanan keluarga, kumpulan kecil, dan pelancongan premium di Pulau Lombok.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -85,8 +85,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Sewa Toyota Innova Zenix di Lombok dengan kesenangan premium, interior moden, dan prestasi terbaik untuk pelancongan rehat dan perniagaan.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -109,8 +109,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Sewa Toyota Fortuner GR di Lombok dengan penampilan mewah dan kesenangan premium. Sesuai untuk tetamu VIP, perjalanan perniagaan, dan pelancongan eksklusif.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -133,8 +133,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Sewa Mitsubishi Pajero Sport di Lombok untuk perjalanan yang selesa dan bergaya. Pilihan ideal untuk tetamu VIP dan pelancongan premium.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -157,8 +157,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Sewa Toyota Alphard di Lombok dengan kemudahan premium dan kabin mewah. Pilihan terbaik untuk tetamu VIP, pegawai, dan keperluan pengangkutan eksklusif.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -181,8 +181,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Sewa Toyota Hiace Commuter di Lombok untuk kumpulan pelancongan, berkumpul syarikat, dan perjalanan kumpulan dengan kapasiti sehingga 14 penumpang.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -205,8 +205,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Sewa Toyota Hiace Premio di Lombok dengan interior yang lebih selesa dan moden. Sesuai untuk perjalanan kumpulan yang mengutamakan kesenangan.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -229,8 +229,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Sewa Medium Bus di Lombok untuk kumpulan pelancongan, study tour, company outing, dan aktiviti kumpulan dengan kapasiti sehingga 30 penumpang.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -253,7 +253,7 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Sewa Big Bus Pariwisata di Lombok untuk keperluan kumpulan besar, study tour, company gathering, dan perjalanan antarabangsa di Pulau Lombok.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 ];

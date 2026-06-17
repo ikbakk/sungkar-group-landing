@@ -14,7 +14,8 @@
     "check": "astro check",
     "validate": "node scripts/validate.mjs",
     "check:images": "node scripts/check-images.mjs",
-    "prepare": "husky"
+    "prepare": "husky",
+    "images:barrel": "node scripts/generate-image-barrel.mjs"
   },
   "dependencies": {
     "@astroanimate/core": "^0.1.2",

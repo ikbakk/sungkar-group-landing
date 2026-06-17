@@ -12,7 +12,7 @@ export const oneDay: TourPackage[] = [
     featured: true,
     category: "龙目岛旅游套餐",
     duration: "1天",
-    images: [HERO.lombok, DESTINATIONS.rinjani],
+    images: [HERO.heroLombok, DESTINATIONS.rinjani],
 
     summary:
       "森当吉莱和蒂乌克勒普瀑布旅游套餐，带您探索林贾尼山脚下北龙目岛的自然美景。享受巴温普苏克旅游森林的氛围、塞纳鲁村的文化之旅、古老的巴扬贝莱克清真寺，以及龙目岛两个最受欢迎的瀑布。",
@@ -64,7 +64,7 @@ export const oneDay: TourPackage[] = [
     featured: true,
     category: "龙目岛旅游套餐",
     duration: "1天",
-    images: [HERO.lombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
+    images: [HERO.heroLombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
 
     summary:
       "库塔龙目岛海滩旅游套餐，结合白沙滩美景和萨萨克文化之旅。在舒适私人团服务中，一天内探索巴纽穆莱克村、苏卡拉腊村、萨德村、库塔龙目岛海滩和丹戎安海滩。",

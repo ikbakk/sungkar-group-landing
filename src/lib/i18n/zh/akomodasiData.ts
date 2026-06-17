@@ -30,7 +30,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "海滨酒店，享有迷人海景，可独家进入龙目岛最佳海滩目的地。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "lombok-mountain-retreat",
@@ -49,7 +49,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "山区住宿，提供地道的龙目岛体验，融入当地生活和自然环境。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "lombok-gili-gateway",
@@ -68,7 +68,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "战略位置的住宿，方便前往吉利群岛，提供跳岛游套餐和海上活动。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
 
   {
@@ -88,7 +88,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "科莫多探险的主要大本营，可全面进入国家公园，配备经验丰富的导游。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "labuan-bajo-liveaboard-hub",
@@ -107,7 +107,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "纳闽巴霍帆船中心，拥有最优质的船宿选择，开启难忘的科莫多探险之旅。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "labuan-bajo-beach-resort",
@@ -126,6 +126,6 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "豪华海滨度假村，提供舒适住宿，方便前往科莫多所有旅游目的地。",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
 ];

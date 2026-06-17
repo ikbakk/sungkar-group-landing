@@ -12,7 +12,7 @@ export const oneDay: TourPackage[] = [
     featured: true,
     category: "باكيجات سياحة لومبوك",
     duration: "1 يوم",
-    images: [HERO.lombok, DESTINATIONS.rinjani],
+    images: [HERO.heroLombok, DESTINATIONS.rinjani],
 
     summary:
       "برنامج سياحة شلالاتاندانغ جيلي و تيو كيليب يأخذك لاستكشاف الجمال الطبيعي لشمال لومبوك عند سفح جبل رينجاني. استمتع بأجواء غابة باون بوسوك السياحية، الجولة الثقافية في قرية سينارو، المسجد العتيق بايان بيليك، وانتعاش أشهر شلالين في لومبوك في رحلة مريحة ولا تُنسى.",
@@ -64,7 +64,7 @@ export const oneDay: TourPackage[] = [
     featured: true,
     category: "باكيجات سياحة لومبوك",
     duration: "1 يوم",
-    images: [HERO.lombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
+    images: [HERO.heroLombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
 
     summary:
       "برنامج سياحة شاطئ كوتا لومبوك يجمع بين جمال الشاطئ الرملي الأبيض وجولة ثقافية في قرى ساساك. استكشف قرية بانيوموليك وقرية سوكارارا وقرية سادي وشاطئ كوتا لومبوك وشاطئ تانجونغ آن في يوم كامل مع خدمة جولة خاصة مريحة.",

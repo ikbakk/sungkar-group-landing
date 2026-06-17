@@ -13,7 +13,7 @@ export const labuanBajoPackages: TourPackage[] = [
 
     category: "باكيجات سياحة لابوان باجو",
     duration: "يوم واحد",
-    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary:
       "رحلة يوم واحد بالقارب السريع إلى الوجهات الرئيسية في منتزه كومودو الوطني.",
@@ -42,7 +42,7 @@ export const labuanBajoPackages: TourPackage[] = [
 
     category: "باكيجات سياحة لابوان باجو",
     duration: "يومان وليلة",
-    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary: "رحلة إقامة قصيرة على متن القارب مع المبيت.",
 
@@ -70,7 +70,7 @@ export const labuanBajoPackages: TourPackage[] = [
 
     category: "باكيجات سياحة لابوان باجو",
     duration: "3 أيام وليلتان",
-    images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary: "برنامج الإبحار الأكثر شعبية في منطقة كومودو.",
 

@@ -67,7 +67,10 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
   </CardHeader>
 
   <CardContent class="grid gap-6">
-    <form id="availability-form" class="grid gap-4">
+    <form id="availability-form" class="grid gap-4" method="POST" action="https://api.web3forms.com/submit">
+      <input type="hidden" name="access_key" value="{import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY || ''}" />
+      <input type="hidden" name="subject" value="New Inquiry - Sungkar Group Website" />
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
       <div class="grid gap-4 sm:grid-cols-2">
         {
           formFields.map((field) =>
@@ -275,7 +278,28 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
     guestsInput.addEventListener("input", updateButton);
   }
 
-  submitBtn.addEventListener("click", function () {
+  async function submitForm() {
+    var form = document.getElementById("availability-form");
+    var accessKey = form.querySelector('[name="access_key"]').value;
+
+    // Submit to Web3Forms if access key is configured
+    if (accessKey) {
+      var formData = new FormData(form);
+      try {
+        await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData,
+        });
+      } catch (e) {
+        console.warn("Form backend unreachable, falling back to WhatsApp only");
+      }
+    }
+
+    // Always open WhatsApp
+    openWhatsApp();
+  }
+
+  function openWhatsApp() {
     var travelDate = document.getElementById("travelDate")
       ? document.getElementById("travelDate").value
       : "";
@@ -321,7 +345,9 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
       "?text=" +
       encodeURIComponent(whatsappMessage);
     window.open(url, "_blank");
-  });
+  }
+
+  submitBtn.addEventListener("click", submitForm);
 
   updateButton();
 </script>

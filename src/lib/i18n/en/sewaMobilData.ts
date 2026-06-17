@@ -37,8 +37,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Rent a Toyota Avanza in Lombok with a professional driver. Suitable for family tours, business trips, city tours, and airport transfers with capacity for up to 7 passengers.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -61,8 +61,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Rent a Toyota Innova Reborn in Lombok with a spacious and comfortable cabin. Ideal for family trips, small groups, and premium tours on Lombok Island.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -85,8 +85,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Rent a Toyota Innova Zenix in Lombok with premium comfort, modern interior, and top performance for both leisure and business travel.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -109,8 +109,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Rent a Toyota Fortuner GR in Lombok with a luxurious appearance and premium comfort. Suitable for VIP guests, business trips, and exclusive tours.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -133,8 +133,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Rent a Mitsubishi Pajero Sport in Lombok for a comfortable and classy journey. An ideal choice for VIP guests and premium tours.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -157,8 +157,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Rent a Toyota Alphard in Lombok with premium facilities and a luxurious cabin. The best choice for VIP guests, officials, and exclusive transportation needs.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -181,8 +181,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Rent a Toyota Hiace Commuter in Lombok for tour groups, company gatherings, and group travel with capacity for up to 14 passengers.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -205,8 +205,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Rent a Toyota Hiace Premio in Lombok with a more comfortable and modern interior. Suitable for group trips that prioritize comfort.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -229,8 +229,8 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Rent a Medium Bus in Lombok for tour groups, study tours, company outings, and group activities with capacity for up to 30 passengers.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 
   {
@@ -253,7 +253,7 @@ export const vehicles: Vehicle[] = [
     ],
     description:
       "Rent a Big Bus Pariwisata in Lombok for large group needs, study tours, company gatherings, and inter-destination travel on Lombok Island.",
-    imageTop: HERO.lombok,
-    imageBottom: HERO.lombok,
+    imageTop: HERO.heroLombok,
+    imageBottom: HERO.heroLombok,
   },
 ];

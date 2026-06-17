@@ -14,7 +14,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "مجموعة سونغكار - السياحة والسفر",
     description:
       "مشغل سياحي محلي مقره لومبوك للجولات الخاصة، الوجهات، النقل، التقييمات، وأدلة السفر.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "منظر شاطئ لومبوك عند الغروب",
   },
   "/tentang-kami": {
@@ -29,7 +29,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "برامج سياحية | مجموعة سونغكار - السياحة والسفر",
     description:
       "استكشف برامج سياحة لومبوك الكاملة من جولات 3 أيام إلى تجارب ثقافية محلية.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "برامج سياحة لومبوك مع أفضل خدمة محلية",
   },
   "/destinasi": {
@@ -43,7 +43,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "التقييمات | مجموعة سونغكار - السياحة والسفر",
     description:
       "اقرأ تقييمات المسافرين الذين خاضوا تجربة الجولات مع مجموعة سونغكار.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "تقييمات إيجابية من زوار مجموعة سونغكار",
   },
   "/panduan-wisata": {
@@ -57,14 +57,14 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "اتصل بنا | مجموعة سونغكار - السياحة والسفر",
     description:
       "تواصل مع مجموعة سونغكار عبر واتساب، البريد الإلكتروني، أو النموذج الإلكتروني للتحقق من التوافر.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "تواصل مع مجموعة سونغكار لاستشارة مجانية",
   },
   "/faq": {
     title: "الأسئلة الشائعة | مجموعة سونغكار - السياحة والسفر",
     description:
       "إجابات كاملة للأسئلة الشائعة حول برامج السياحة وخدمات مجموعة سونغكار.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "الأسئلة المتكررة حول جولات لومبوك",
   },
   "/akomodasi": {
@@ -78,7 +78,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "تأجير السيارات | مجموعة سونغكار - السياحة والسفر",
     description:
       "استأجر مركبات محلية مع سائقين ذوي خبرة لرحلة مريحة ومرنة.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "خدمة تأجير سيارات مع سائقين محترفين",
   },
 };

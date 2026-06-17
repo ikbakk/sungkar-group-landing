@@ -18,7 +18,7 @@ export const destinations: Destination[] = [
     title: "Kuta Lombok",
     region: "龙目岛南部",
     image: DESTINATIONS.lombok,
-    gallery: [GALLERY.kutaBeach, GALLERY.kutaBeach2, HERO.lombok],
+    gallery: [GALLERY.kutaBeach, GALLERY.kutaBeach2, HERO.heroLombok],
     summary:
       "广阔的海岸线，可前往多个海滩景点，享受轻松的度假节奏。",
     thingsToDo: ["探索海滩", "日落观赏点", "当地咖啡厅"],
@@ -29,7 +29,7 @@ export const destinations: Destination[] = [
     title: "Tetebatu",
     region: "龙目岛东部",
     image: DESTINATIONS.lombok,
-    gallery: [GALLERY.tourCultural, HERO.lombok, GALLERY.kutaBeach],
+    gallery: [GALLERY.tourCultural, HERO.heroLombok, GALLERY.kutaBeach],
     summary:
       "一个更安静的山区村庄，绿意盎然，节奏悠闲。",
     thingsToDo: ["村庄漫步", "梯田观光", "瀑布停留"],
@@ -40,7 +40,7 @@ export const destinations: Destination[] = [
     title: "Sembalun",
     region: "山区走廊",
     image: DESTINATIONS.rinjani,
-    gallery: [DESTINATIONS.rinjani, HERO.lombok, GALLERY.tourSnorkeling],
+    gallery: [DESTINATIONS.rinjani, HERO.heroLombok, GALLERY.tourSnorkeling],
     summary:
       "山区走廊，通常作为林贾尼体验的起点。",
     thingsToDo: [

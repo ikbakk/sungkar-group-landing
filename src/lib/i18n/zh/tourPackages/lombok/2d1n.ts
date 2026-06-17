@@ -11,7 +11,7 @@ export const twoDays: TourPackage[] = [
     region: "lombok",
     category: "龙目岛旅游套餐",
     duration: "2天1夜",
-    images: [HERO.lombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
+    images: [HERO.heroLombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
 
     summary:
       "2天1夜龙目岛旅游套餐，结合库塔曼达利卡海滩、丹戎安海滩的美景、萨萨克文化之旅以及马塔兰市的历史宗教观光。适合希望在短时间内享受海滩、文化、美食的旅行者。",
@@ -74,7 +74,7 @@ export const twoDays: TourPackage[] = [
     region: "lombok",
     category: "龙目岛旅游套餐",
     duration: "2天1夜",
-    images: [HERO.lombok, DESTINATIONS.lombok, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.lombok, GALLERY.tourSnorkeling],
 
     summary:
       "2天1夜龙目岛粉色海滩和丹戎林吉特旅游套餐，包含跳岛游、浮潜和壮观的海崖景观。探索帕西尔岛、粉色海滩2、粉色海滩3、粉色海滩和丹戎林吉特。",

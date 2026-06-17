@@ -54,7 +54,7 @@ function lh(href: string | undefined): string | undefined {
         if (
           m.type === "attributes" &&
           m.attributeName === "hidden" &&
-          !m.target.hidden
+          !(m.target as HTMLElement).hidden
         ) {
           requestAnimationFrame(checkOverflow);
         }

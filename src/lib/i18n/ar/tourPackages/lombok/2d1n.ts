@@ -11,7 +11,7 @@ export const twoDays: TourPackage[] = [
     region: "lombok",
     category: "باكيجات سياحة لومبوك",
     duration: "يومين وليلة",
-    images: [HERO.lombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
+    images: [HERO.heroLombok, GALLERY.kutaBeach, GALLERY.kutaBeach2, GALLERY.tourCultural],
 
     summary:
       "برنامج رحلة لومبوك لمدة يومين وليلة واحدة يجمع بين جمال شاطئ كوتا مانداليكا وشاطئ تانجونغ آن والجولة الثقافية لشعب ساساك والجولات التاريخية والدينية في مدينة ماتارام. مناسب للمسافرين الذين يرغبون في الاستمتاع بالشواطئ والثقافة والمأكولات في وقت قصير.",
@@ -74,7 +74,7 @@ export const twoDays: TourPackage[] = [
     region: "lombok",
     category: "باكيجات سياحة لومبوك",
     duration: "يومين وليلة",
-    images: [HERO.lombok, DESTINATIONS.lombok, GALLERY.tourSnorkeling],
+    images: [HERO.heroLombok, DESTINATIONS.lombok, GALLERY.tourSnorkeling],
 
     summary:
       "برنامج رحلة لمدة يومين وليلة واحدة إلى الشاطئ الوردي في لومبوك وتانجونغ رينغيت مع رحلات الجزر والغطس ومناظر cliffs. استكشف بولا باسير والشاطئ الوردي 2 و3 والشاطئ الوردي وتانجونغ رينغيت.",

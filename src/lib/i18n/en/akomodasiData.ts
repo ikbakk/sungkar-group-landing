@@ -30,7 +30,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Beachfront hotels with exotic sea views and exclusive access to Lombok's best beach destinations.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "lombok-mountain-retreat",
@@ -49,7 +49,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Mountain accommodations offering an authentic Lombok experience with local life and natural surroundings.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "lombok-gili-gateway",
@@ -68,7 +68,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Strategic accommodations for easy access to the Gili Islands with island hopping packages and marine activities.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
 
   {
@@ -88,7 +88,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Main basecamp for Komodo adventures with full access to the National Park and experienced guides.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "labuan-bajo-liveaboard-hub",
@@ -107,7 +107,7 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Labuan Bajo's sailing hub with the best collection of liveaboards for an unforgettable Komodo adventure.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
   {
     slug: "labuan-bajo-beach-resort",
@@ -121,6 +121,6 @@ export const accommodations: Accommodation[] = [
     ],
     description:
       "Luxury beachfront resort for a comfortable stay with easy access to all Komodo tour destinations.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
   },
 ];

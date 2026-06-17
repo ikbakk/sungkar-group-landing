@@ -9,7 +9,7 @@ export const motoGP = [
     category: "龙目岛拼团游",
     duration: "4天3夜",
     images: [
-      HERO.lombok,
+      HERO.heroLombok,
       GALLERY.kutaBeach,
       GALLERY.tourCultural,
       GALLERY.tourSnorkeling,

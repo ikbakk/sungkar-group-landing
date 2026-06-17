@@ -14,7 +14,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Sungkar Group - Pelancongan & Pengembaraan",
     description:
       "Pengendali pelancongan tempatan Lombok untuk lawatan peribadi, destinasi, pengangkutan, ulasan, dan panduan perjalanan.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Pemandangan pantai Lombok ketika matahari terbenam",
   },
   "/tentang-kami": {
@@ -29,7 +29,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Pakej Pelancongan | Sungkar Group - Pelancongan & Pengembaraan",
     description:
       "Terokai pakej pelancongan Lombok yang lengkap dari lawatan 3 hari hingga pengalaman budaya tempatan.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Pakej pelancongan Lombok dengan perkhidmatan tempatan terbaik",
   },
   "/destinasi": {
@@ -43,7 +43,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Ulasan | Sungkar Group - Pelancongan & Pengembaraan",
     description:
       "Baca ulasan daripada pengembara yang telah merasai perkhidmatan Sungkar Group.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Ulasan positif daripada pelawat Sungkar Group",
   },
   "/panduan-wisata": {
@@ -57,14 +57,14 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Hubungi Kami | Sungkar Group - Pelancongan & Pengembaraan",
     description:
       "Hubungi Sungkar Group melalui WhatsApp, e-mel, atau borang dalam talian untuk semak ketersediaan.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Hubungi Sungkar Group untuk konsultasi percuma",
   },
   "/faq": {
     title: "Soalan Lazim | Sungkar Group - Pelancongan & Pengembaraan",
     description:
       "Jawapan lengkap kepada soalan lazim tentang pakej pelancongan dan perkhidmatan Sungkar Group.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Soalan lazim tentang pelancongan Lombok",
   },
   "/akomodasi": {
@@ -78,7 +78,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     title: "Sewa Kereta | Sungkar Group - Pelancongan & Pengembaraan",
     description:
       "Sewa kenderaan tempatan dengan pemandu berpengalaman untuk perjalanan yang selesa dan fleksibel.",
-    image: HERO.lombok,
+    image: HERO.heroLombok,
     imageAlt: "Perkhidmatan sewa kereta dengan pemandu profesional",
   },
 };

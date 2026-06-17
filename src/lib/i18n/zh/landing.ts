@@ -106,7 +106,7 @@ export const landingHero = {
     {
       className: "card-3",
       style: "width: 220px; height: 260px; left: 40px; top: 120px;",
-      image: HERO.lombok,
+      image: HERO.heroLombok,
       alt: "适合探险旅行的热带自然风光",
       title: "自然探险",
       contentSizeClass: "p-4",
@@ -192,4 +192,4 @@ export const landingVideo = {
   embedUrl: "https://www.youtube.com/embed/HgicK9YpopU?si=m7IlfX-QXJVB0mVC",
 } as const;
 
-export const landingBackgroundImage = HERO.main;
+export const landingBackgroundImage = HERO.hero;
