@@ -31,6 +31,7 @@ function lh(href: string | undefined): string | undefined {
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 100%;
+    min-width: 0;
   }
 </style>
 
@@ -113,7 +114,7 @@ function lh(href: string | undefined): string | undefined {
                   style={{
                     gridTemplateColumns: `repeat(${
                       item.groups?.length ?? 1
-                    }, minmax(220px, 1fr))`,
+                    }, minmax(220px, 280px))`,
                   }}
                 >
                   {item.groups?.map((group) => (
