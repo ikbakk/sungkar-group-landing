@@ -24,6 +24,50 @@ function lh(href: string | undefined): string | undefined {
 }
 ---
 
+<style>
+  .nav-text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+</style>
+
+<script>
+  (() => {
+    const checkOverflow = () => {
+      document.querySelectorAll("[data-nav-text]").forEach((el) => {
+        const link = el.closest("[data-slot=\"navigation-menu-link\"]");
+        if (!link) return;
+        if (el.scrollWidth > el.clientWidth + 1) {
+          link.setAttribute("title", el.textContent || "");
+        } else {
+          link.removeAttribute("title");
+        }
+      });
+    };
+
+    const observer = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (
+          m.type === "attributes" &&
+          m.attributeName === "hidden" &&
+          !m.target.hidden
+        ) {
+          requestAnimationFrame(checkOverflow);
+        }
+      }
+    });
+
+    document
+      .querySelectorAll('[data-slot="navigation-menu-content"]')
+      .forEach((el) => {
+        observer.observe(el, { attributes: true, attributeFilter: ["hidden"] });
+      });
+  })();
+</script>
+
 <NavigationMenu delayOpen={100}>
   <NavigationMenuList class="items-center gap-1">
     {
@@ -47,7 +91,7 @@ function lh(href: string | undefined): string | undefined {
                   {item.items?.map((subItem) => (
                     <li>
                       <NavigationMenuLink
-                        href={lh(subItem.href)!}
+                        href={lh(subItem.href!)}
                         class="flex w-full select-none items-center rounded-md px-3 py-2 text-sm leading-none text-muted-foreground hover:bg-accent hover:text-foreground"
                       >
                         {subItem.label}
@@ -88,28 +132,35 @@ function lh(href: string | undefined): string | undefined {
                           </div>
                         )}
                       </div>
-                      {group.collections ? (
+                      {/* Single-package items linked directly */}
+                      {group.items && group.items.length > 0 && (
+                        <ul class="space-y-1">
+                          {group.items.map((subItem) => (
+                            <li>
+                              <NavigationMenuLink
+                                href={lh(subItem.href)}
+                                class="rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+                              >
+                                <span data-nav-text class="nav-text">
+                                  {subItem.label}
+                                </span>
+                              </NavigationMenuLink>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {/* Multi-package collections */}
+                      {group.collections && group.collections.length > 0 && (
                         <ul class="space-y-1">
                           {group.collections.map((collection) => (
                             <li>
                               <NavigationMenuLink
                                 href={lh(collection.href!)}
-                                class="block rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+                                class="rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
                               >
-                                {collection.title}
-                              </NavigationMenuLink>
-                            </li>
-                          ))}
-                        </ul>
-                      ) : (
-                        <ul class="space-y-1">
-                          {group.items?.map((subItem) => (
-                            <li>
-                              <NavigationMenuLink
-                                href={lh(subItem.href)}
-                                class="block rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
-                              >
-                                {subItem.label}
+                                <span data-nav-text class="nav-text">
+                                  {collection.title}
+                                </span>
                               </NavigationMenuLink>
                             </li>
                           ))}
