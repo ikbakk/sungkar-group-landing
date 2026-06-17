@@ -5,84 +5,86 @@ import type { TourPackage } from "@/lib/content/tourPackages/types";
 export const labuanBajoPackages: TourPackage[] = [
   {
     slug: "paket-1-hari-full-labuan-bajo",
-    title: "1 Day Full Labuan Bajo Package",
+    title: "رحلة يوم كامل لابوان باجو",
     region: "labuan-bajo",
 
     collectionSlug: "1-hari",
-    collectionTitle: "1 Day Package",
+    collectionTitle: "Paket 1 Hari",
 
-    category: "Labuan Bajo Tour Packages",
-    duration: "1 Day",
-
+    category: "باكيجات سياحة لابوان باجو",
+    duration: "يوم واحد",
     images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
     summary:
-      "A one-day speedboat tour to the main destinations of Komodo National Park.",
+      "رحلة يوم واحد بالقارب السريع إلى الوجهات الرئيسية في منتزه كومودو الوطني.",
 
-    highlights: ["Pulau Padar", "Pink Beach", "Pulau Komodo", "Manta Point"],
+    highlights: ["جزيرة بادار", "الشاطئ الوردي", "جزيرة كومودو", "مانتا بوينت"],
 
-    itinerary: ["Padar", "Pink Beach", "Komodo", "Manta Point"],
+    itinerary: [
+      "اليوم 1 - جزيرة بادار.",
+      "اليوم 1 - الشاطئ الوردي.",
+      "اليوم 1 - جزيرة كومودو.",
+      "اليوم 1 - مانتا بوينت.",
+    ],
 
-    includes: ["Speedboat", "Guide lokal", "Snorkeling"],
+    includes: ["قارب سريع", "مرشد محلي", "معدات الغطس"],
 
-    excludes: ["Tiket Taman Nasional Komodo", "Pengeluaran pribadi"],
+    excludes: ["تذكرة دخول منتزه كومودو الوطني", "المصروفات الشخصية"],
   },
 
   {
     slug: "overnight-komodo-adventure",
-    title: "Overnight Komodo Adventure",
+    title: "مغامرة كومودو ليلة واحدة",
     region: "labuan-bajo",
 
     collectionSlug: "paket-2-hari-1-malam",
-    collectionTitle: "2 Days 1 Night Package",
+    collectionTitle: "Paket 2 Hari 1 Malam",
 
-    category: "Labuan Bajo Tour Packages",
-    duration: "2 Days 1 Night",
-
+    category: "باكيجات سياحة لابوان باجو",
+    duration: "يومان وليلة",
     images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
-    summary: "A short liveaboard experience with overnight stay on the boat.",
+    summary: "رحلة إقامة قصيرة على متن القارب مع المبيت.",
 
-    highlights: ["Liveaboard", "Padar", "Pink Beach"],
+    highlights: ["إقامة على القارب", "جزيرة بادار", "الشاطئ الوردي"],
 
     itinerary: [
-      "Hari 1 - Kelor.",
-      "Hari 1 - Kalong.",
-      "Hari 2 - Padar.",
-      "Hari 2 - Komodo.",
+      "اليوم 1 - جزيرة كيلور.",
+      "اليوم 1 - جزيرة كالونغ.",
+      "اليوم 2 - جزيرة بادار.",
+      "اليوم 2 - جزيرة كومودو.",
     ],
 
-    includes: ["Kabin kapal", "Makan", "Guide"],
+    includes: ["مقصورة على القارب", "وجبات", "مرشد"],
 
-    excludes: ["Tiket Komodo", "Pengeluaran pribadi"],
+    excludes: ["تذكرة دخول كومودو", "المصروفات الشخصية"],
   },
 
   {
     slug: "sailing-komodo-3d2n",
-    title: "Sailing Komodo 3 Days 2 Nights",
+    title: "إبحار كومودو 3 أيام وليلتان",
     region: "labuan-bajo",
 
     collectionSlug: "paket-3-hari-2-malam",
-    collectionTitle: "3 Days 2 Nights Package",
+    collectionTitle: "Paket 3 Hari 2 Malam",
 
-    category: "Labuan Bajo Tour Packages",
-    duration: "3 Days 2 Nights",
-
+    category: "باكيجات سياحة لابوان باجو",
+    duration: "3 أيام وليلتان",
     images: [HERO.lombok, DESTINATIONS.sumbawa, GALLERY.tourSnorkeling],
 
-    summary: "The most popular sailing program in the Komodo region.",
+    summary: "برنامج الإبحار الأكثر شعبية في منطقة كومودو.",
 
-    highlights: ["Padar", "Pink Beach", "Komodo", "Manta Point"],
+    highlights: ["جزيرة بادار", "الشاطئ الوردي", "جزيرة كومودو", "مانتا بوينت"],
 
     itinerary: [
-      "Hari 1 - Kelor.",
-      "Hari 2 - Padar.",
-      "Hari 2 - Komodo.",
-      "Hari 3 - Kanawa.",
+      "اليوم 1 - جزيرة كيلور.",
+      "اليوم 2 - جزيرة بادار.",
+      "اليوم 2 - جزيرة كومودو.",
+      "اليوم 3 - جزيرة كاناوا.",
     ],
 
-    includes: ["Kabin kapal", "Makan", "Guide"],
+    includes: ["مقصورة على القارب", "وجبات", "مرشد"],
 
-    excludes: ["Tiket Komodo", "Pengeluaran pribadi"],
+    excludes: ["تذكرة دخول كومودو", "المصروفات الشخصية"],
   },
 ];

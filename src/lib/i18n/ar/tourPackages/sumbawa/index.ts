@@ -5,37 +5,37 @@ import type { TourPackage } from "@/lib/content/tourPackages/types";
 export const sumbawaPackages: TourPackage[] = [
   {
     slug: "open-trip-whale-shark-sumbawa",
-    title: "Open Trip Whale Shark Sumbawa",
+    title: "رحلة مفتوحة للحوت القرش سومباوا",
     region: "sumbawa",
 
     collectionSlug: "open-trip",
-    collectionTitle: "Open Trip",
+    collectionTitle: "رحلة مفتوحة",
 
-    category: "Sumbawa Open Trip",
-    duration: "2 Days 1 Night",
+    category: "رحلة مفتوحة سومباوا",
+    duration: "يومان وليلة",
     featured: true,
 
     images: [GALLERY.whaleshark, DESTINATIONS.sumbawa],
 
     summary:
-      "An open trip to Teluk Saleh to enjoy the experience of swimming alongside whale sharks.",
+      "رحلة مفتوحة إلى خليج صالح لتجربة لا تُنسى للسباحة مع الحوت القرش.",
 
     highlights: [
-      "Whale Shark",
-      "Teluk Saleh",
-      "Open Trip",
-      "Sunrise Experience",
+      "الحوت القرش",
+      "خليج صالح",
+      "رحلة مفتوحة",
+      "تجربة شروق الشمس",
     ],
 
     itinerary: [
-      "Hari 1 - Kedatangan peserta.",
-      "Hari 1 - Menuju Teluk Saleh.",
-      "Hari 2 - Whale shark experience.",
-      "Hari 2 - Kembali.",
+      "اليوم 1 - وصول المشاركين.",
+      "اليوم 1 - التوجه إلى خليج صالح.",
+      "اليوم 2 - تجربة الحوت القرش.",
+      "اليوم 2 - العودة.",
     ],
 
-    includes: ["Transportasi lokal", "Boat trip", "Guide lokal"],
+    includes: ["مواصلات محلية", "رحلة قارب", "مرشد محلي"],
 
-    excludes: ["Tiket menuju Sumbawa", "Pengeluaran pribadi"],
+    excludes: ["تذاكر إلى سومباوا", "المصروفات الشخصية"],
   },
 ];
