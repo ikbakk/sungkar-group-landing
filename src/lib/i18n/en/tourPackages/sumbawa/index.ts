@@ -11,14 +11,14 @@ export const sumbawaPackages: TourPackage[] = [
     collectionSlug: "open-trip",
     collectionTitle: "Open Trip",
 
-    category: "Sumbawa Open Trip",
+    category: "Open Trip Sumbawa",
     duration: "2 Days 1 Night",
     featured: true,
 
     images: [GALLERY.whaleshark, DESTINATIONS.sumbawa],
 
     summary:
-      "An open trip to Teluk Saleh to enjoy the experience of swimming alongside whale sharks.",
+      "Open trip to Teluk Saleh for an unforgettable experience swimming with whale sharks.",
 
     highlights: [
       "Whale Shark",
@@ -28,14 +28,14 @@ export const sumbawaPackages: TourPackage[] = [
     ],
 
     itinerary: [
-      "Hari 1 - Kedatangan peserta.",
-      "Hari 1 - Menuju Teluk Saleh.",
-      "Hari 2 - Whale shark experience.",
-      "Hari 2 - Kembali.",
+      "Day 1 - Participant arrival.",
+      "Day 1 - Proceed to Teluk Saleh.",
+      "Day 2 - Whale shark experience.",
+      "Day 2 - Return.",
     ],
 
-    includes: ["Transportasi lokal", "Boat trip", "Guide lokal"],
+    includes: ["Local transportation", "Boat trip", "Local guide"],
 
-    excludes: ["Tiket menuju Sumbawa", "Pengeluaran pribadi"],
+    excludes: ["Tickets to Sumbawa", "Personal expenses"],
   },
 ];
