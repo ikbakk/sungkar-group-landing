@@ -1,39 +1,39 @@
 export const faqPageContent = {
   hero: {
-    eyebrow: "FAQ",
-    title: "Frequently asked questions",
+    eyebrow: "Soalan Lazim",
+    title: "Soalan yang kerap ditanya",
     description:
-      "This page is the central hub for common questions. For details on packages, destinations, and about us, open the FAQ on each respective page.",
+      "Halaman ini adalah pusat utama untuk soalan lazim. Untuk butiran tentang pakej, destinasi, dan tentang kami, buka FAQ pada halaman masing-masing.",
   },
   introCard: {
-    badge: "General FAQ",
-    title: "Summary of questions to start the conversation",
+    badge: "FAQ Umum",
+    title: "Ringkasan soalan untuk memulakan perbualan",
     description:
-      "If you are contacting the team for the first time, start with this general FAQ. After that, open the most relevant page for more targeted package and destination information.",
+      "Jika anda menghubungi pasukan buat pertama kali, mulakan dengan FAQ umum ini. Selepas itu, buka halaman yang paling relevan untuk maklumat pakej dan destinasi yang lebih tepat.",
   },
   relatedCards: [
     {
-      badge: "Tour packages",
-      title: "Tour package FAQ",
+      badge: "Pakej pelancongan",
+      title: "FAQ Pakej Pelancongan",
       description:
-        "Questions about duration, vehicles, and itinerary adjustments are covered on the tour packages page.",
-      buttonLabel: "Open tour packages",
+        "Soalan tentang tempoh, kenderaan, dan pelarasan jadual perjalanan boleh didapati di halaman pakej pelancongan.",
+      buttonLabel: "Buka pakej pelancongan",
       buttonHref: "/paket-wisata",
     },
     {
-      badge: "Destinations",
-      title: "Destination FAQ",
+      badge: "Destinasi",
+      title: "FAQ Destinasi",
       description:
-        "Questions about what to do at each destination are available on each destination page.",
-      buttonLabel: "Open destinations",
+        "Soalan tentang aktiviti di setiap destinasi tersedia di halaman destinasi masing-masing.",
+      buttonLabel: "Buka destinasi",
       buttonHref: "/destinasi",
     },
     {
-      badge: "About us",
-      title: "About us FAQ",
+      badge: "Tentang kami",
+      title: "FAQ Tentang Kami",
       description:
-        "If you want to understand our services, coordination style, and booking process, open the about us page.",
-      buttonLabel: "Open about us",
+        "Jika anda ingin memahami perkhidmatan, gaya koordinasi, dan proses tempahan kami, buka halaman tentang kami.",
+      buttonLabel: "Buka tentang kami",
       buttonHref: "/tentang-kami",
     },
   ],
