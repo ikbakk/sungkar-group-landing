@@ -43,8 +43,17 @@ const createPackageCollections = (region: "lombok" | "sumbawa" | "labuan-bajo"):
   const grouped = regionPackages.reduce(
     (acc, pkg) => {
       if (!acc[pkg.collectionSlug]) {
+        const titleMap: Record<string, string> = {
+          "1-hari": "1 Day Package",
+          "2-hari-1-malam": "2 Days 1 Night Package",
+          "3-hari-2-malam": "3 Days 2 Nights Package",
+          "4-hari-3-malam": "4 Days 3 Nights Package",
+          "5-hari-4-malam": "5 Days 4 Nights Package",
+          "open-trip": "Open Trip",
+          "sailing": "Sailing",
+        };
         acc[pkg.collectionSlug] = {
-          title: pkg.collectionTitle,
+          title: titleMap[pkg.collectionSlug] ?? pkg.collectionTitle,
           href: `/paket-wisata/${region}/${pkg.collectionSlug}`,
           items: [],
         };

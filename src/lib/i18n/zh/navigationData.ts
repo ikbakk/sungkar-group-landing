@@ -43,8 +43,17 @@ const createPackageCollections = (region: "lombok" | "sumbawa" | "labuan-bajo"):
   const grouped = regionPackages.reduce(
     (acc, pkg) => {
       if (!acc[pkg.collectionSlug]) {
+        const titleMap: Record<string, string> = {
+          "1-hari": "1日套餐",
+          "2-hari-1-malam": "2天1夜套餐",
+          "3-hari-2-malam": "3天2夜套餐",
+          "4-hari-3-malam": "4天3夜套餐",
+          "5-hari-4-malam": "5天4夜套餐",
+          "open-trip": "拼团游",
+          "sailing": "帆船之旅",
+        };
         acc[pkg.collectionSlug] = {
-          title: pkg.collectionTitle,
+          title: titleMap[pkg.collectionSlug] ?? pkg.collectionTitle,
           href: `/paket-wisata/${region}/${pkg.collectionSlug}`,
           items: [],
         };
@@ -74,13 +83,13 @@ const createPackageCollections = (region: "lombok" | "sumbawa" | "labuan-bajo"):
 
 export const navigation: NavItem[] = [
   {
-    label: "Home",
+    label: "首页",
     href: "/",
     variant: "link",
   },
 
   {
-    label: "Tour Packages",
+    label: "旅游套餐",
     variant: "mega",
 
     groups: [
@@ -108,7 +117,7 @@ export const navigation: NavItem[] = [
   },
 
   {
-    label: "Accommodations",
+    label: "住宿",
     href: "/akomodasi",
     variant: "mega",
 
@@ -118,7 +127,7 @@ export const navigation: NavItem[] = [
 
         items: [
           {
-            label: "Hotels in Lombok",
+            label: "龙目岛酒店",
             href: "/akomodasi/lombok",
           },
         ],
@@ -129,7 +138,7 @@ export const navigation: NavItem[] = [
 
         items: [
           {
-            label: "Hotels in Labuan Bajo",
+            label: "纳闽巴霍酒店",
             href: "/akomodasi/labuan-bajo",
           },
         ],
@@ -138,7 +147,7 @@ export const navigation: NavItem[] = [
   },
 
   {
-    label: "Car Rental",
+    label: "汽车租赁",
     href: "/sewa-mobil",
     variant: "mega",
 
@@ -148,7 +157,7 @@ export const navigation: NavItem[] = [
 
         items: [
           {
-            label: "Available Vehicles",
+            label: "可租车辆",
             href: "/sewa-mobil/lombok",
           },
         ],
@@ -159,7 +168,7 @@ export const navigation: NavItem[] = [
 
         items: [
           {
-            label: "Available Vehicles",
+            label: "可租车辆",
             href: "/sewa-mobil/labuan-bajo",
           },
         ],
