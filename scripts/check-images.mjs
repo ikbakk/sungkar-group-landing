@@ -1,9 +1,10 @@
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, extname } from "node:path";
-import { createRequire } from "node:module";
 
-const require = createRequire(import.meta.url);
 const yaml = require("yaml");
+
+// Suppress deprecation warning
+process.removeAllListeners('deprecation');
 
 const CONTENT_DIRS = ["./src/content/blog", "./src/content/guides"];
 const ASSETS_DIR = "./src/assets";

@@ -9,28 +9,11 @@ import fs from 'fs/promises';
 import path from 'path';
 import { glob } from 'glob';
 
-const __dirname = new URL('.', import.meta.url).pathname;
-
 // Image directories to validate
 const IMAGE_DIRS = [
   'src/assets/images/**/*.{webp,jpeg,jpg,png}',
   'src/**/*.{ts,tsx,astro}',
 ];
-
-// Valid image extensions
-const VALID_EXTENSIONS = ['.webp', '.jpeg', '.jpg', '.png'];
-
-/**
- * Check if a file exists
- */
-async function fileExists(filePath) {
-  try {
-    await fs.access(filePath);
-    return true;
-  } catch {
-    return false;
-  }
-}
 
 /**
  * Extract image paths from source files

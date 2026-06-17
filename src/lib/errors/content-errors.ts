@@ -104,7 +104,7 @@ export function handleValidationError(error: unknown): never {
  * Safe parse with error handling
  */
 export function safeParse<T>(
-  schema: { safeParse: (data: unknown) => { success: boolean; error?: { issues: any[] } } },
+  schema: { safeParse: (data: unknown) => { success: boolean; data?: T; error?: { issues: any[] } } },
   data: unknown,
   context: string = "unknown"
 ): T {

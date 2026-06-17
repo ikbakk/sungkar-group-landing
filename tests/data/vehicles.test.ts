@@ -5,8 +5,8 @@
 import { describe, it, expect } from "vitest";
 import { VehicleSchema } from "@/lib/content/shared/types";
 import { vehicles } from "@/lib/content/car-rental";
-import { REGIONS } from "@/lib/constants/regions";
 import { VEHICLE_SEATS, TRANSMISSION_TYPES } from "@/lib/constants/vehicles";
+import { REGIONS } from "@/lib/constants/regions";
 
 describe("Vehicle Data Validation", () => {
   describe("All Vehicles", () => {
@@ -46,8 +46,8 @@ describe("Vehicle Data Validation", () => {
 
     it("should have seats matching predefined values", () => {
       vehicles.forEach((vehicle) => {
-        const expectedSeats = VEHICLE_SEATS[vehicle.slug as any];
-        if (expectedSeats) {
+        const expectedSeats = (VEHICLE_SEATS as Record<string, number>)[vehicle.slug];
+        if (expectedSeats !== undefined) {
           expect(vehicle.seats).toBe(expectedSeats);
         }
       });
