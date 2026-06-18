@@ -4,33 +4,38 @@ Multi-language landing site for Sungkar Group — Lombok tour operator. 268 page
 
 ## Commands
 
-| Command | Action |
-|---|---|
-| `npm install` | Install dependencies |
-| `npm run dev` | Dev server at `localhost:4321` |
-| `npm run build` | Build to `dist/` |
-| `npm run preview` | Preview production build |
-| `npm test` | Run vitest |
-| `npm run check` | Astro type checking |
-| `npm run astro ...` | Astro CLI |
+| Command                | Action                         |
+| ---------------------- | ------------------------------ |
+| `npm install`          | Install dependencies           |
+| `npm run dev`          | Dev server at `localhost:4321` |
+| `npm run build`        | Build to `dist/`               |
+| `npm run preview`      | Preview production build       |
+| `npm test`             | Run vitest                     |
+| `npm run check`        | Astro type checking            |
+| `npm run format`       | Auto-format all files          |
+| `npm run format:check` | Check formatting (CI)          |
+| `npm run astro ...`    | Astro CLI                      |
 
 ### Content Generation
 
-| Command | Action |
-|---|---|
-| `node scripts/generate-tour-mdx.mjs` | JSON in `scripts/data/*.json` → `src/content/tourPackages/{slug}/{locale}.mdx` |
-| `node scripts/generate-content-mdx.mjs` | JSON in `scripts/data/accommodations.json` / `car-rental.json` / `destinations.json` → `src/content/{type}/{slug}/{locale}.mdx` |
-| `node scripts/generate-image-barrel.mjs` | Regenerate `src/assets/images/index.ts` |
+| Command                      | Action                                                                                                          |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `npm run generate:tours`     | JSON in `scripts/data/*.json` → `src/content/tourPackages/{slug}/{locale}.mdx`                                  |
+| `npm run generate:content`   | JSON in `scripts/data/{accommodations,car-rental,destinations}.json` → `src/content/{type}/{slug}/{locale}.mdx` |
+| `npm run generate:all`       | Both of the above                                                                                               |
+| `npm run images:barrel`      | Regenerate `src/assets/images/index.ts`                                                                         |
+| `npm run generate:og-images` | Generate OG placeholder images for all page types                                                               |
 
-### Validation
+### Validation & Formatting
 
-| Command | Action |
-|---|---|
-| `npm test` | Vitest — validates all MDX frontmatter against Zod schemas |
-| `npm run check` | Astro type checking |
-| `npm run validate` | Validates blog + guide MDX frontmatter |
-| `npm run validate:images` | Validates barrel file image references |
-| `npm run check:images` | Checks blog/guide images exist on disk |
+| Command                   | Action                                                     |
+| ------------------------- | ---------------------------------------------------------- |
+| `npm test`                | Vitest — validates all MDX frontmatter against Zod schemas |
+| `npm run check`           | Astro type checking                                        |
+| `npm run validate`        | Validates blog + guide MDX frontmatter                     |
+| `npm run validate:images` | Validates barrel file image references                     |
+| `npm run check:images`    | Checks blog/guide images exist on disk                     |
+| `npm run format:check`    | Check Prettier formatting (CI gate)                        |
 
 ## Architecture
 
@@ -38,16 +43,17 @@ Multi-language landing site for Sungkar Group — Lombok tour operator. 268 page
 
 All structured content lives in `src/content/` as MDX files generated from JSON sources:
 
-| Content | Generator | JSON Source | MDX Location |
-|---|---|---|---|
-| Tour packages | `generate-tour-mdx.mjs` | `scripts/data/*.json` | `src/content/tourPackages/{slug}/{locale}.mdx` |
+| Content        | Generator                  | JSON Source                        | MDX Location                                     |
+| -------------- | -------------------------- | ---------------------------------- | ------------------------------------------------ |
+| Tour packages  | `generate-tour-mdx.mjs`    | `scripts/data/*.json`              | `src/content/tourPackages/{slug}/{locale}.mdx`   |
 | Accommodations | `generate-content-mdx.mjs` | `scripts/data/accommodations.json` | `src/content/accommodations/{slug}/{locale}.mdx` |
-| Car rental | `generate-content-mdx.mjs` | `scripts/data/car-rental.json` | `src/content/car-rental/{slug}/{locale}.mdx` |
-| Destinations | `generate-content-mdx.mjs` | `scripts/data/destinations.json` | `src/content/destinations/{slug}/{locale}.mdx` |
-| Blog posts | Write directly | — | `src/content/blog/{slug}/{locale}.mdx` |
-| Travel guides | Write directly | — | `src/content/guides/{slug}/{locale}.mdx` |
+| Car rental     | `generate-content-mdx.mjs` | `scripts/data/car-rental.json`     | `src/content/car-rental/{slug}/{locale}.mdx`     |
+| Destinations   | `generate-content-mdx.mjs` | `scripts/data/destinations.json`   | `src/content/destinations/{slug}/{locale}.mdx`   |
+| Blog posts     | Write directly             | —                                  | `src/content/blog/{slug}/{locale}.mdx`           |
+| Travel guides  | Write directly             | —                                  | `src/content/guides/{slug}/{locale}.mdx`         |
 
 Each content type has:
+
 - A Zod schema in `src/content.config.ts`
 - An async bridge function (`getPackages(locale)`, `getDestinations(locale)`, etc.) in `src/lib/content/{type}/collection.ts`
 - Locale-specific translations in the MDX frontmatter (one file per locale)
@@ -131,13 +137,13 @@ The project uses `ImageSource` (`src/lib/images.ts`), a union type of `ImageMeta
 
 ## i18n Architecture
 
-| Concept | File |
-|---|---|
-| Locale list + helpers | `src/lib/i18n/index.ts` |
-| UI string translations | `src/lib/i18n/ui-strings.ts` |
-| Path mapping (ID → EN routes) | `src/lib/i18n/localize.ts` |
-| Content loader with fallback | `src/lib/i18n/loader.ts` |
-| Content translation files | `src/lib/i18n/{locale}/` |
+| Concept                       | File                         |
+| ----------------------------- | ---------------------------- |
+| Locale list + helpers         | `src/lib/i18n/index.ts`      |
+| UI string translations        | `src/lib/i18n/ui-strings.ts` |
+| Path mapping (ID → EN routes) | `src/lib/i18n/localize.ts`   |
+| Content loader with fallback  | `src/lib/i18n/loader.ts`     |
+| Content translation files     | `src/lib/i18n/{locale}/`     |
 
 - `id` = default locale (no prefix in URL)
 - `en, ar, ms, zh` = prefixed (`/en/about`, `/ar/about`)
@@ -147,20 +153,20 @@ The project uses `ImageSource` (`src/lib/images.ts`), a union type of `ImageMeta
 
 Schemas are generated by `src/lib/schemas.ts`:
 
-| Page | Schema | Auto? |
-|---|---|---|
-| Home, About, Contact, FAQ | `Organization` + `WebSite` | ✅ via `MainLayout` |
-| Tour package detail | `Product`, `BreadcrumbList`, `FAQPage` | ✅ via template |
-| Destination detail | `TouristAttraction`, `BreadcrumbList`, `FAQPage` | ✅ |
-| Car rental detail | `Product`, `BreadcrumbList` | ✅ |
-| Blog post | `NewsArticle` | ✅ |
-| Travel guide | `HowTo` | ✅ |
+| Page                      | Schema                                           | Auto?               |
+| ------------------------- | ------------------------------------------------ | ------------------- |
+| Home, About, Contact, FAQ | `Organization` + `WebSite`                       | ✅ via `MainLayout` |
+| Tour package detail       | `Product`, `BreadcrumbList`, `FAQPage`           | ✅ via template     |
+| Destination detail        | `TouristAttraction`, `BreadcrumbList`, `FAQPage` | ✅                  |
+| Car rental detail         | `Product`, `BreadcrumbList`                      | ✅                  |
+| Blog post                 | `NewsArticle`                                    | ✅                  |
+| Travel guide              | `HowTo`                                          | ✅                  |
 
 Verify with [Google Rich Results Test](https://search.google.com/test/rich-results).
 
 ## Pre-deployment Checklist
 
-- [ ] `npm test` — all 383 passing
+- [ ] `npm test` — all 1,101 passing
 - [ ] `npm run check` — 0 type errors
 - [ ] `npm run validate:images` — all images referenced
 - [ ] `npm run build` — 0 errors, all pages generated
