@@ -1,7 +1,4 @@
 import type { ImageSource } from "@/lib/images";
-import type { COLLECTIONS } from "./collections";
-
-export type PackageCollection = (typeof COLLECTIONS)[keyof typeof COLLECTIONS];
 
 export type Region = "lombok" | "sumbawa" | "labuan-bajo";
 export type TourPackage = {

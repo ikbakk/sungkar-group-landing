@@ -73,5 +73,4 @@ export const packagePageContent = {
   ],
 } as const;
 
-export { packages } from "@/lib/content/tourPackages";
-export { getPackageUrl } from "@/lib/content/tourPackages";
+

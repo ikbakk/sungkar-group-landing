@@ -4,15 +4,16 @@ import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import PackageCard from "@/components/cards/PackageCard.astro";
 
-import { packages } from "@/lib/content/tourPackages";
+import { getPackages } from "@/lib/content/tourPackages/collection";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   const paths = [];
   for (const locale of NON_DEFAULT_LOCALES) {
-    const uniqueColl = packages
+    const localePackages = await getPackages(locale);
+    const uniqueColl = localePackages
       .map((pkg) => ({
         region: pkg.region,
         collection: pkg.collectionSlug,
@@ -37,6 +38,7 @@ const { locale, region, collection } = Astro.params;
 const r = region as Region;
 const uiStrings = t(locale!);
 
+const packages = await getPackages(locale!);
 const collectionPackages = packages.filter(
   (pkg) => pkg.region === r && pkg.collectionSlug === collection,
 );

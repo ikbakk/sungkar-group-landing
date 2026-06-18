@@ -1,4 +1,4 @@
-import { packages } from "@/lib/content/tourPackages/index";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 
 export type NavCollection = {
   title: string;
@@ -37,7 +37,7 @@ type CollectionResult = {
   items: { label: string; href: string }[];
 };
 
-const createPackageCollections = (region: "lombok" | "sumbawa" | "labuan-bajo"): CollectionResult => {
+const createPackageCollections = (packages: TourPackage[], region: "lombok" | "sumbawa" | "labuan-bajo"): CollectionResult => {
   const regionPackages = packages.filter((pkg) => pkg.region === region);
 
   const grouped = regionPackages.reduce(
@@ -81,117 +81,119 @@ const createPackageCollections = (region: "lombok" | "sumbawa" | "labuan-bajo"):
   return { collections, items };
 };
 
-export const navigation: NavItem[] = [
-  {
-    label: "首页",
-    href: "/",
-    variant: "link",
-  },
+export function createNavigation(packages: TourPackage[]): NavItem[] {
+  return [
+    {
+      label: "首页",
+      href: "/",
+      variant: "link",
+    },
 
-  {
-    label: "旅游套餐",
-    variant: "mega",
+    {
+      label: "旅游套餐",
+      variant: "mega",
 
-    groups: [
-      {
-        title: "Lombok",
-        href: "/paket-wisata/lombok",
+      groups: [
+        {
+          title: "Lombok",
+          href: "/paket-wisata/lombok",
 
-        ...createPackageCollections("lombok"),
-      },
+          ...createPackageCollections(packages, "lombok"),
+        },
 
-      {
-        title: "Sumbawa",
-        href: "/paket-wisata/sumbawa",
+        {
+          title: "Sumbawa",
+          href: "/paket-wisata/sumbawa",
 
-        ...createPackageCollections("sumbawa"),
-      },
+          ...createPackageCollections(packages, "sumbawa"),
+        },
 
-      {
-        title: "Labuan Bajo",
-        href: "/paket-wisata/labuan-bajo",
+        {
+          title: "Labuan Bajo",
+          href: "/paket-wisata/labuan-bajo",
 
-        ...createPackageCollections("labuan-bajo"),
-      },
-    ],
-  },
+          ...createPackageCollections(packages, "labuan-bajo"),
+        },
+      ],
+    },
 
-  {
-    label: "住宿",
-    href: "/akomodasi",
-    variant: "mega",
+    {
+      label: "住宿",
+      href: "/akomodasi",
+      variant: "mega",
 
-    groups: [
-      {
-        title: "Lombok",
+      groups: [
+        {
+          title: "Lombok",
 
-        items: [
-          {
-            label: "龙目岛酒店",
-            href: "/akomodasi/lombok",
-          },
-        ],
-      },
+          items: [
+            {
+              label: "龙目岛酒店",
+              href: "/akomodasi/lombok",
+            },
+          ],
+        },
 
-      {
-        title: "Labuan Bajo",
+        {
+          title: "Labuan Bajo",
 
-        items: [
-          {
-            label: "纳闽巴霍酒店",
-            href: "/akomodasi/labuan-bajo",
-          },
-        ],
-      },
-    ],
-  },
+          items: [
+            {
+              label: "纳闽巴霍酒店",
+              href: "/akomodasi/labuan-bajo",
+            },
+          ],
+        },
+      ],
+    },
 
-  {
-    label: "汽车租赁",
-    href: "/sewa-mobil",
-    variant: "mega",
+    {
+      label: "汽车租赁",
+      href: "/sewa-mobil",
+      variant: "mega",
 
-    groups: [
-      {
-        title: "Lombok",
+      groups: [
+        {
+          title: "Lombok",
 
-        items: [
-          {
-            label: "可租车辆",
-            href: "/sewa-mobil/lombok",
-          },
-        ],
-      },
+          items: [
+            {
+              label: "可租车辆",
+              href: "/sewa-mobil/lombok",
+            },
+          ],
+        },
 
-      {
-        title: "Labuan Bajo",
+        {
+          title: "Labuan Bajo",
 
-        items: [
-          {
-            label: "可租车辆",
-            href: "/sewa-mobil/labuan-bajo",
-          },
-        ],
-      },
-    ],
-  },
+          items: [
+            {
+              label: "可租车辆",
+              href: "/sewa-mobil/labuan-bajo",
+            },
+          ],
+        },
+      ],
+    },
 
-  {
-    label: "博客",
-    href: "/blog",
-    variant: "link",
-  },
+    {
+      label: "博客",
+      href: "/blog",
+      variant: "link",
+    },
 
-  {
-    label: "信息",
-    variant: "dropdown",
-    items: [
-      { label: "关于我们", href: "/tentang-kami" },
-      { label: "旅游指南", href: "/panduan-wisata" },
-      { label: "目的地", href: "/destinasi" },
-      { label: "评价", href: "/ulasan" },
-      { label: "联系我们", href: "/kontak" },
-      { label: "常见问题", href: "/faq" },
-    ],
-  },
-];
+    {
+      label: "信息",
+      variant: "dropdown",
+      items: [
+        { label: "关于我们", href: "/tentang-kami" },
+        { label: "旅游指南", href: "/panduan-wisata" },
+        { label: "目的地", href: "/destinasi" },
+        { label: "评价", href: "/ulasan" },
+        { label: "联系我们", href: "/kontak" },
+        { label: "常见问题", href: "/faq" },
+      ],
+    },
+  ];
+}

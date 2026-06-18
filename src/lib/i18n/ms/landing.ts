@@ -2,8 +2,8 @@ import type { ImageSource } from "@/lib/images";
 import { HERO, GALLERY } from "@/assets/images";
 
 import { businessInfo } from "@/lib/contact-data";
-import { packages } from "@/lib/content/tourPackages";
 import { toMarqueeReviews, reviewStats } from "@/lib/content/reviews";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 
 export interface LandingAction {
   label: string;
@@ -41,7 +41,7 @@ export interface LandingDestinationCard {
   image: ImageSource;
 }
 
-function toLandingTourCard(tour: (typeof packages)[number]): LandingTourCard {
+export function toLandingTourCard(tour: TourPackage): LandingTourCard {
   return {
     image: tour.images[0],
     duration: tour.duration,
@@ -110,13 +110,12 @@ export const landingHero = {
   ] satisfies LandingHeroCard[],
 };
 
-export const landingFeaturedTours = {
+export const landingFeaturedToursBase = {
   eyebrow: "Pakej pilihan",
   title: "Pakej paling popular untuk liburan tanpa susah payah",
   description:
     "Dari pelancongan ringkas hingga perjalanan berbilang hari, pakej kami direka bentuk supaya anda hanya perlu pilih, pergi, dan menikmati saat itu.",
   heroImage: GALLERY.tourSnorkeling,
-  tours: packages.filter((tour) => tour.featured).map(toLandingTourCard),
 };
 
 export const landingDestinationsBase = {

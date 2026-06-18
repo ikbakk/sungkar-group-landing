@@ -12,7 +12,7 @@ import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
-import { vehicles } from "@/lib/content/car-rental";
+import { getVehicles } from "@/lib/content/car-rental/collection";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n";
@@ -24,6 +24,8 @@ const uiStrings = t(locale);
 
 const pageModule = await loadContent(locale, "sewaPage");
 const { sewaPageContent } = pageModule;
+
+const vehicles = await getVehicles(locale);
 
 const faqModule = await loadFaq(locale, "sewa-mobil");
 const { sewaMobilFaq } = faqModule;

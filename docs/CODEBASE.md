@@ -8,8 +8,8 @@
 
 ```
 src/
-├── content.config.ts          # Astro v6 collections: blog + guides + destinations (glob loader, Zod)
-├── content/{blog,guides,destinations}/{slug}/{locale}.mdx
+├── content.config.ts          # Astro v6 collections: blog + guides + tourPackages + accommodations + carRental + destinations (glob loader, Zod)
+├── content/{blog,guides,tourPackages,accommodations,car-rental,destinations}/{slug}/{locale}.mdx
 ├── pages/                     # File-based routing
 │   ├── index.astro            # / (locale=id)
 │   ├── [locale]/              # en, ar, ms, zh — mirrors ID pages with locale prefix
@@ -26,18 +26,20 @@ src/
 │   ├── seo/                   # SEOMeta, OGImage, StructuredData
 │   └── ui/                    # Primitives: {button,card,badge,avatar,nav-menu,select,carousel,logo,marquee,icon,input,textarea,rating,section,breadcrumb,accordion,drawer}/
 ├── lib/
-│   ├── content/               # ALL page content (folder per feature, barrel exports)
-│   │   ├── shared/            # {types,navigation,contact-data,og-metadata,schemas,regions}
-│   │   ├── {about,landing,tour-packages,accommodations,car-rental,reviews,contact,faq}/  # index.ts + data.ts per feature
-│   │   ├── destinations/       # index.ts + {collection,images,types}.ts (async bridge via getDestinations(); no data.ts)
-│   │   └── {tourPackages,faqs}/  # Sub-data: region packages, topic FAQs
+│   ├── content/               # ALL page content + data bridges (folder per feature)
+│   │   ├── shared/            # {types,contact-data,og-metadata,schemas,regions}
+│   │   ├── {about,landing,destinations,tour-packages,reviews,contact,faq}/  # index.ts + data.ts per feature
+│   │   ├── tourPackages/        # Bridge: collection.ts + images.ts + types.ts
+│   │   ├── accommodations/      # Bridge: collection.ts (page content in index.ts)
+│   │   ├── car-rental/          # Bridge: collection.ts (page content in index.ts)
+│   │   ├── destinations/        # Bridge: collection.ts + images.ts + types.ts
+│   │   └── faqs/                # Topic FAQs: {general,about,package,...}.ts
 │   ├── i18n/                  # Framework: {index,loader,localize,ui-strings}.ts + {en,ar,ms,zh}/ (mirrors lib/content/)
-│   ├── {images,regions,schemas,site-config,og-metadata,utils,card-styles}.ts
 ├── styles/{global,sections}.css  # Tailwind v4 + tokens + shadcn
 └── assets/images/{destinations,gallery,hero,brand,accommodations,vehicles,og}/ + index.ts (barrel)
-scripts/{validate,check-images,generate-content-mdx}.mjs
-scripts/data/                    # Source JSON files (destinations.json, etc.) fed to generate-content-mdx.mjs
-tests/                          # Vitest: data.test.ts, data/destinations.test.ts, schemas.test.ts (uses `yaml` dep to parse MDX frontmatter)
+scripts/{generate-tour-mdx,generate-content-mdx,validate,check-images}.mjs
+scripts/data/{lombok-1d,lombok-2d1n,lombok-3d2n,lombok-4d3n,lombok-opentrip,sumbawa,labuan-bajo,pkg-pink-3d2n,pkg-nanggu-3d2n,accommodations,car-rental,destinations}.json
+tests/                          # Vitest: data.test.ts, schemas.test.ts
 ```
 
 ---
@@ -76,7 +78,9 @@ tests/                          # Vitest: data.test.ts, data/destinations.test.t
 | `/[locale]/...` | `[locale]/*.astro` | Same components as ID pages, locale-filtered content |
 | 404 | `404.astro` / `[locale]/404.astro` | Custom error page |
 
-**Data flow**: Page → `loadContent(locale, module)` → pass slices as props → child components (never import content directly, enabling i18n). Destinations use `getDestinations(locale)` async bridge from `astro:content` instead of sync imports.
+**MDX content data flow**: Page → `getPackages(locale)` / `getAccommodations(locale)` / `getVehicles(locale)` / `getDestinations(locale)` (async, from MDX content collections) → pass as props → child components. Tour packages use `resolveImages()` to map string paths to `ImageMetadata` imports for Astro image optimization.
+
+**Other data flow**: Page → `loadContent(locale, module)` → pass slices as props → child components (never import content directly, enabling i18n)
 
 ---
 
@@ -85,13 +89,18 @@ tests/                          # Vitest: data.test.ts, data/destinations.test.t
 ### Content Sources
 
 | Source | Schema Fields | Loaded By |
-|---|---|---|
-| `content/{blog,guides,destinations}/{slug}/{locale}.mdx` | `{title,description,image,publishDate,tags/region,locale,slug}` | `astro:content` + `content.config.ts` (destinations glob: `./src/content/destinations`) |
-| `lib/content/{about,landing,contact,faq,reviews}/` | Plain objects/arrays | Direct import + i18n copy |
-| `lib/content/{tour-packages,accommodations,car-rental}/` | Typed data arrays + `*PageContent` | Direct import + i18n copy |
-| `lib/content/tourPackages/{lombok,sumbawa,labuan-bajo}/` | `TourPackage[]` per region | Barrel export |
-| `lib/i18n/{en,ar,ms,zh}/tourPackages/{lombok,sumbawa,labuan-bajo}/` | `TourPackage[]` locale copies (1d,2d1n,3d2n,4d3n,openTrip, index) | Each locale barrel; loaded via `loadContent()` |
-| `lib/content/faqs/{about,akomodasi,contact,general,package,reviews,sewa-mobil}.ts` | Per-topic `FaqItem[]` | Combined in `faq/data.ts` |
+|---|---|---|---|
+| `content/{blog,guides}/{slug}/{locale}.mdx` | `{title,description,image,publishDate,tags/region,locale,slug}` | `astro:content` + `content.config.ts` |
+| `content/tourPackages/{slug}/{locale}.mdx` | `{title,region,collectionSlug,category,duration,images,summary,highlights,itinerary,includes,excludes}` | `astro:content` + `content.config.ts` |
+| `content/accommodations/{slug}/{locale}.mdx` | `{name,region,perks,regionalHighlights,description,image}` | `getAccommodations(locale)` bridge |
+| `content/car-rental/{slug}/{locale}.mdx` | `{name,region,pricePerDay,seats,transmission,features,bestFor,description,imageTop,imageBottom}` | `getVehicles(locale)` bridge |
+| `content/destinations/{slug}/{locale}.mdx` | `{title,region,image,gallery,summary,thingsToDo,packages}` | `getDestinations(locale)` bridge |
+| `lib/content/{about,landing,contact,faq,reviews,faqs}/` | Plain objects/arrays | Direct import + i18n copy |
+| `lib/content/{tour-packages,destinations}/` | Typed data arrays + `*PageContent` | Direct import + i18n copy |
+| `lib/content/tourPackages/{images,collection,types}.ts` | Bridge: `resolveImages()`, `getPackages(locale)`, `TourPackage` type | Pages importing collection |
+| `lib/content/accommodations/collection.ts` | Bridge: `getAccommodations(locale)` | Pages importing bridge |
+| `lib/content/car-rental/collection.ts` | Bridge: `getVehicles(locale)` | Pages importing bridge |
+| `lib/content/destinations/collection.ts` | Bridge: `getDestinations(locale)` | Pages importing bridge |
 
 ### Key Types (all in `lib/content/shared/types.ts`)
 
@@ -152,9 +161,13 @@ tests/                          # Vitest: data.test.ts, data/destinations.test.t
 | **Add nav variant** | `shared/types.ts` (`NavItem.variant` union) + `NavigationDesktop.astro` + `NavigationMobile.tsx` + source + all 4 locale nav data files |
 | **Nav optimisation (single-item collections)** | `createPackageCollections()` in `lib/content/navigationData.ts` + 4 locale copies returns `{collections, items}`; single-item → direct link, multi-item → submenu |
 | **Change SEO** | `components/seo/` + `lib/schemas.ts` |
-| **Add tour pkg** | `lib/content/tourPackages/{region}/` + `lib/content/tour-packages/index.ts` + each locale copy `lib/i18n/{en,ar,ms,zh}/tourPackages/{region}/` |
-| **Add destination** | `scripts/data/destinations.json` + `scripts/generate-content-mdx.mjs` + `src/lib/content/destinations/{collection,images,types}.ts` |
-| **Add vehicle / accommodation** | `lib/content/{car-rental,accommodations}/data.ts` + `index.ts` |
+| **Add tour pkg (MDX)** | Add JSON entry in `scripts/data/{region}.json` (see existing files), then `node scripts/generate-tour-mdx.mjs` — produces `content/tourPackages/{slug}/{locale}.mdx` |
+| **Regenerate all MDX** | `rm -rf src/content/tourPackages/*/ && node scripts/generate-tour-mdx.mjs` |
+| **Update collection bridge** | `lib/content/tourPackages/images.ts` (new image refs) + `collection.ts` if needed |
+| **Migrate page to MDX** | Replace `import { packages } from "@/lib/content/tourPackages"` with `import { getPackages } from "@/lib/content/tourPackages/collection"` + `const packages = await getPackages(locale)` |
+| **Add destination** | Add JSON entry in `scripts/data/destinations.json`, then `node scripts/generate-content-mdx.mjs` — produces `content/destinations/{slug}/{locale}.mdx` |
+| **Add accommodation** | Edit `scripts/data/accommodations.json`, then `node scripts/generate-content-mdx.mjs` |
+| **Add vehicle** | Edit `scripts/data/car-rental.json`, then `node scripts/generate-content-mdx.mjs` |
 | **Add FAQ** | `lib/content/faqs/{topic}.ts` |
 | **Add blog/guide/destination post** | `content/{blog,guides,destinations}/{slug}/{locale}.mdx` |
 | **Change reviews** | `lib/content/reviews/index.ts` |

@@ -12,7 +12,7 @@ import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
-import { vehicles } from "@/lib/content/car-rental";
+import { getVehicles } from "@/lib/content/car-rental/collection";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
@@ -24,6 +24,7 @@ export async function getStaticPaths() {
 }
 
 const { locale } = Astro.params;
+const vehicles = await getVehicles(locale!);
 const uiStrings = t(locale!);
 
 const pageModule = await loadContent(locale!, "sewaPage");

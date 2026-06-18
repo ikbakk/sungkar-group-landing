@@ -14,7 +14,7 @@ import {
 } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 import { getDestinations } from "@/lib/content/destinations/collection";
-import { packages } from "@/lib/content/tourPackages";
+import { getPackages } from "@/lib/content/tourPackages/collection";
 
 import { loadContent } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
@@ -40,6 +40,7 @@ const { destinationsPageContent } = pageModule;
 const allDestinationsLocal = await getDestinations(locale!);
 const destination = allDestinationsLocal.find((d) => d.slug === slug)!;
 
+const packages = await getPackages(locale!);
 const relatedPackages = packages.filter((tour) =>
   destination.packages.includes(tour.slug),
 );

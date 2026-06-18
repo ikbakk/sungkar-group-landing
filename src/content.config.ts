@@ -33,6 +33,53 @@ const guides = defineCollection({
   }),
 });
 
+const tourPackages = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/tourPackages" }),
+  schema: z.object({
+    title: z.string(),
+    region: z.enum(["lombok", "sumbawa", "labuan-bajo"]),
+    featured: z.boolean().optional(),
+    collectionSlug: z.string(),
+    collectionTitle: z.string(),
+    category: z.string(),
+    duration: z.string(),
+    images: z.array(z.string()),
+    summary: z.string(),
+    highlights: z.array(z.string()),
+    itinerary: z.array(z.string()),
+    includes: z.array(z.string()),
+    excludes: z.array(z.string()),
+  }),
+});
+
+const accommodations = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/accommodations" }),
+  schema: z.object({
+    name: z.string(),
+    region: z.enum(["lombok", "sumbawa", "labuan-bajo"]),
+    perks: z.array(z.string()),
+    regionalHighlights: z.array(z.string()),
+    description: z.string(),
+    image: z.string(),
+  }),
+});
+
+const carRental = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/car-rental" }),
+  schema: z.object({
+    name: z.string(),
+    region: z.enum(["lombok", "sumbawa", "labuan-bajo"]),
+    pricePerDay: z.string(),
+    seats: z.number(),
+    transmission: z.enum(["Manual", "Automatic"]),
+    features: z.array(z.string()),
+    bestFor: z.array(z.string()),
+    description: z.string(),
+    imageTop: z.string(),
+    imageBottom: z.string(),
+  }),
+});
+
 const destinations = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/destinations" }),
   schema: z.object({
@@ -46,4 +93,4 @@ const destinations = defineCollection({
   }),
 });
 
-export const collections = { blog, guides, destinations };
+export const collections = { blog, guides, tourPackages, accommodations, carRental, destinations };

@@ -6,6 +6,8 @@ import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import { BRAND } from "@/assets/images";
 import { getDestinations } from "@/lib/content/destinations/collection";
 import { toLandingDestinationCard } from "@/lib/content/landing";
+import { getPackages } from "@/lib/content/tourPackages/collection";
+import { toLandingTourCard } from "@/lib/content/landing";
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
@@ -14,8 +16,13 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const uiStrings = t(locale!);
 const landingModule = await loadContent(locale!, "landing");
-const { landingHero, landingFeaturedTours, landingDestinationsBase, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
+const { landingHero, landingFeaturedToursBase, landingDestinationsBase, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
+const packages = await getPackages(locale!);
 const allDestinations = await getDestinations(locale!);
+const landingFeaturedTours = {
+  ...landingFeaturedToursBase,
+  tours: packages.filter((p) => p.featured).map(toLandingTourCard),
+};
 const landingDestinations = {
   ...landingDestinationsBase,
   destinations: allDestinations.slice(0, 4).map(toLandingDestinationCard),
