@@ -24,5 +24,4 @@ export const sewaPageContent = {
   },
 } as const;
 
-export { vehicles } from "./data";
-export type { Vehicle } from "./data";
+export type { Vehicle } from "@/lib/content/shared/types";

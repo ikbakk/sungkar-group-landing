@@ -7,7 +7,7 @@ import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 
-import { vehicles } from "@/lib/content/car-rental";
+import { getVehicles } from "@/lib/content/car-rental/collection";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 import { sewaMobilFormFields } from "@/lib/contact-data";
 
@@ -17,7 +17,8 @@ import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 import { t } from "@/lib/i18n";
 import { getImageSrc } from "@/lib/images";
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
+  const vehicles = await getVehicles("id");
   const paths = [];
   for (const vehicle of vehicles) {
     paths.push({

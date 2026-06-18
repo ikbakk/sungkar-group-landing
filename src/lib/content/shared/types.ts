@@ -1,4 +1,4 @@
-import type { ImageSource } from "@/lib/images/types";
+import type { ImageSource } from "@/lib/images";
 
 // ─── Regions ──────────────────────────────────────────────────────────
 import type { RegionKey } from "@/lib/constants/regions";
