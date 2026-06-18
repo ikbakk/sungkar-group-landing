@@ -20,6 +20,7 @@
     "generate:tours": "node scripts/generate-tour-mdx.mjs",
     "generate:content": "node scripts/generate-content-mdx.mjs",
     "generate:all": "node scripts/generate-tour-mdx.mjs && node scripts/generate-content-mdx.mjs",
+    "generate:og-images": "node scripts/generate-og-images.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

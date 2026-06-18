@@ -42,6 +42,22 @@ import _hero_heroLombok from "./hero/hero-lombok.webp";
 import _hero_hero from "./hero/hero.webp";
 import _legality_nib from "./legality/nib.webp";
 import _legality_sk from "./legality/sk.webp";
+import _og_about from "./og/about.webp";
+import _og_accommodations from "./og/accommodations.webp";
+import _og_blog from "./og/blog.webp";
+import _og_carRental from "./og/car-rental.webp";
+import _og_contact from "./og/contact.webp";
+import _og_destinationDetail from "./og/destination-detail.webp";
+import _og_destinations from "./og/destinations.webp";
+import _og_faq from "./og/faq.webp";
+import _og_guides from "./og/guides.webp";
+import _og_home from "./og/home.webp";
+import _og_packageDetail from "./og/package-detail.webp";
+import _og_packages from "./og/packages.webp";
+import _og_privacy from "./og/privacy.webp";
+import _og_reviews from "./og/reviews.webp";
+import _og_terms from "./og/terms.webp";
+import _og_vehicleDetail from "./og/vehicle-detail.webp";
 import _vehicles_avanza from "./vehicles/avanza.webp";
 import _vehicles_bus1 from "./vehicles/bus-1.webp";
 import _vehicles_bus2 from "./vehicles/bus-2.webp";
@@ -116,7 +132,22 @@ export const LEGALITY = {
 
 
 export const OG = {
-
+  about: _og_about,
+  accommodations: _og_accommodations,
+  blog: _og_blog,
+  carRental: _og_carRental,
+  contact: _og_contact,
+  destinationDetail: _og_destinationDetail,
+  destinations: _og_destinations,
+  faq: _og_faq,
+  guides: _og_guides,
+  home: _og_home,
+  packageDetail: _og_packageDetail,
+  packages: _og_packages,
+  privacy: _og_privacy,
+  reviews: _og_reviews,
+  terms: _og_terms,
+  vehicleDetail: _og_vehicleDetail,
 };
 
 
