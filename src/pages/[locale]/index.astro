@@ -4,6 +4,8 @@ import LandingPage from "@/components/landing/LandingPage.astro";
 import { loadContent } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import { BRAND } from "@/assets/images";
+import { getPackages } from "@/lib/content/tourPackages/collection";
+import { toLandingTourCard } from "@/lib/content/landing";
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
@@ -12,7 +14,12 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const uiStrings = t(locale!);
 const landingModule = await loadContent(locale!, "landing");
-const { landingHero, landingFeaturedTours, landingDestinations, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
+const packages = await getPackages(locale!);
+const { landingHero, landingFeaturedToursBase, landingDestinations, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
+const landingFeaturedTours = {
+  ...landingFeaturedToursBase,
+  tours: packages.filter((p) => p.featured).map(toLandingTourCard),
+};
 ---
 
 <MainLayout

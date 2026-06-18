@@ -29,7 +29,8 @@ src/
 │   ├── content/               # ALL page content (folder per feature, barrel exports)
 │   │   ├── shared/            # {types,navigation,contact-data,og-metadata,schemas,regions}
 │   │   ├── {about,landing,destinations,tour-packages,accommodations,car-rental,reviews,contact,faq}/  # index.ts + data.ts per feature
-│   │   └── {tourPackages,faqs}/  # Sub-data: region packages, topic FAQs
+│   │   ├── tourPackages/        # Bridge only: collection.ts + images.ts + types.ts
+│   │   └── faqs/                # Topic FAQs: {general,about,package,...}.ts
 │   ├── i18n/                  # Framework: {index,loader,localize,ui-strings}.ts + {en,ar,ms,zh}/ (mirrors lib/content/)
 │   ├── {images,regions,schemas,site-config,og-metadata,utils,card-styles}.ts
 ├── styles/{global,sections}.css  # Tailwind v4 + tokens + shadcn
@@ -91,8 +92,7 @@ tests/                          # Vitest: data.test.ts, schemas.test.ts
 | `content/tourPackages/{slug}/{locale}.mdx` | `{title,region,collectionSlug,category,duration,images,summary,highlights,itinerary,includes,excludes}` | `astro:content` + `content.config.ts` |
 | `lib/content/{about,landing,contact,faq,reviews}/` | Plain objects/arrays | Direct import + i18n copy |
 | `lib/content/{destinations,tour-packages,accommodations,car-rental}/` | Typed data arrays + `*PageContent` | Direct import + i18n copy |
-| `lib/content/tourPackages/images.ts` | `ImageSource` registry (string→import map) | Imported by collection bridge |
-| `lib/content/tourPackages/collection.ts` | `getPackages(locale)` async bridge | Pages importing collection |
+| `lib/content/tourPackages/{images,collection,types}.ts` | Bridge: `resolveImages()`, `getPackages(locale)`, `TourPackage` type | Pages importing collection |
 | `lib/content/faqs/{about,akomodasi,contact,general,package,reviews,sewa-mobil}.ts` | Per-topic `FaqItem[]` | Combined in `faq/data.ts` |
 
 ### Key Types (all in `lib/content/shared/types.ts`)

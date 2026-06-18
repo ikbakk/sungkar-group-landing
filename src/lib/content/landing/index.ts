@@ -1,6 +1,6 @@
 export {
   landingHero,
-  landingFeaturedTours,
+  landingFeaturedToursBase,
   landingDestinations,
   landingTransport,
   landingTestimonials,
