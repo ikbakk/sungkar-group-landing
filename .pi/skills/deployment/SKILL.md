@@ -3,11 +3,12 @@ name: deployment
 description: >
   Manage build configuration, deployment, and DevOps for the Sungkar Group landing page.
   Trigger when the user asks to configure Astro settings, update build scripts, modify
-  sitemap/robots.txt, change site URL, configure i18n routing, set up deployment (Vercel,
-  Netlify, etc.), fix build errors, optimize build output, or add integrations. Also trigger
-  on "build is failing", "configure sitemap", "update robots.txt", "deploy to production",
-  "add a new integration", or "update astro.config". Does NOT handle page content
-  (use content-architecture), styling (use styling-theme), or images (use image-assets).
+  sitemap/robots.txt, change site URL, configure i18n routing, set up deployment (Netlify,
+  Cloudflare Pages, etc.), fix build errors, optimize build output, or add integrations. Also
+  trigger on "build is failing", "configure sitemap", "update robots.txt", "deploy to
+  production", "add a new integration", or "update astro.config". Does NOT handle page
+  content (use content-architecture), styling (use styling-theme), or images
+  (use image-assets).
 weight: 12
 compatibility:
   - required_tools:
@@ -188,35 +189,49 @@ After `npm run build`:
 
 The project is currently set up for static hosting. Common deployment targets:
 
-### Vercel
+### Netlify (Primary)
 
-The project includes `@vercel/speed-insights` for performance monitoring. For Vercel deployment:
+The project deploys to Netlify. Config is in `netlify.toml`:
+```toml
+[build]
+  command = "npm run build"
+  publish = "dist"
 
-1. Ensure `output: "static"` (default for Astro without adapter)
-2. Connect the GitHub repo to Vercel
-3. Set `FRAMEWORK` to `Astro`
-4. Build command: `npm run build`
-5. Output directory: `dist/`
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
-If SSR is needed, add `@astrojs/vercel`:
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+```
+
+1. Connect the GitHub repo to Netlify (or use the GitHub Actions workflow)
+2. Set build command: `npm run build`
+3. Publish directory: `dist/`
+4. Set `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` in GitHub secrets for CI
+
+If SSR is needed in the future, add `@astrojs/netlify`:
 ```bash
-npm install @astrojs/vercel
+npm install @astrojs/netlify
 ```
 And update `astro.config.mjs`:
 ```javascript
-import vercel from "@astrojs/vercel/static";  // or /server
+import netlify from "@astrojs/netlify";
 
 export default defineConfig({
-  output: "server",  // if SSR needed
-  adapter: vercel(),
+  output: "server",
+  adapter: netlify(),
 });
-```
-
-### Netlify
-
-Add `@astrojs/netlify`:
-```bash
-npm install @astrojs/netlify
 ```
 
 ### Cloudflare Pages
