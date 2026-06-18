@@ -11,7 +11,7 @@ import DestinationGroupSection from "@/components/destinations/DestinationGroupS
 
 import { loadContent } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
-import { destinations } from "@/lib/content/destinations";
+import { getDestinations } from "@/lib/content/destinations/collection";
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
@@ -25,8 +25,9 @@ const { destinationsPageContent } = pageModule;
 
 const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
 
+const allDestinations = await getDestinations(locale!);
 const destinationBySlug = new Map(
-  destinations.map((destination) => [destination.slug, destination]),
+  allDestinations.map((destination) => [destination.slug, destination]),
 );
 
 const groups = destinationsPageContent.groups.map((group: { id: string; label: string; title: string; description: string; destinationSlugs: readonly string[]; intro: string }) => ({

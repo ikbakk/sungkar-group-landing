@@ -80,4 +80,17 @@ const carRental = defineCollection({
   }),
 });
 
-export const collections = { blog, guides, tourPackages, accommodations, carRental };
+const destinations = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/destinations" }),
+  schema: z.object({
+    title: z.string(),
+    region: z.string(),
+    image: z.string(),
+    gallery: z.array(z.string()),
+    summary: z.string(),
+    thingsToDo: z.array(z.string()),
+    packages: z.array(z.string()),
+  }),
+});
+
+export const collections = { blog, guides, tourPackages, accommodations, carRental, destinations };

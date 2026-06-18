@@ -1,59 +1,108 @@
-import { mkdirSync, writeFileSync, readFileSync, readdirSync } from "fs";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
-import yaml from "yaml";
+#!/usr/bin/env node
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "data");
-const ROOT = join(__dirname, "..", "src/content");
+const CONTENT_DIR = join(__dirname, "..", "src", "content");
+
 const LOCALES = ["id", "en", "ar", "ms", "zh"];
 
-const TYPE_CONFIG = {
-  accommodations: {
-    dir: "accommodations",
-    rootFields: ["slug", "region", "image"],
-    localeFields: ["name", "perks", "regionalHighlights", "description"],
-  },
-  carRental: {
-    dir: "car-rental",
-    rootFields: ["slug", "region", "pricePerDay", "seats", "transmission", "imageTop", "imageBottom"],
-    localeFields: ["name", "features", "bestFor", "description"],
-  },
-};
-
-const files = readdirSync(DATA_DIR).filter(f => f.endsWith(".json"));
-
-let total = 0;
-for (const filename of files) {
-  const data = JSON.parse(readFileSync(join(DATA_DIR, filename), "utf-8"));
-
-  for (const entry of data) {
-    const type = entry._type;
-    if (!type || !TYPE_CONFIG[type]) continue;
-
-    const config = TYPE_CONFIG[type];
-    const outDir = join(ROOT, config.dir);
-    mkdirSync(outDir, { recursive: true });
-
-    for (const locale of LOCALES) {
-      const ordered = {};
-
-      for (const key of config.localeFields) {
-        ordered[key] = entry.locales[locale][key];
+function toFrontmatterYaml(obj, indent = 0) {
+  const pad = "  ".repeat(indent);
+  let out = "";
+  for (const [key, value] of Object.entries(obj)) {
+    if (value === null || value === undefined) continue;
+    if (Array.isArray(value)) {
+      if (value.length === 0) {
+        out += `${pad}${key}: []\n`;
+      } else {
+        out += `${pad}${key}:\n`;
+        for (const item of value) {
+          out += `${pad}  - ${JSON.stringify(item)}\n`;
+        }
       }
-
-      for (const key of config.rootFields) {
-        if (entry[key] !== undefined) ordered[key] = entry[key];
+    } else if (typeof value === "object") {
+      out += `${pad}${key}:\n${toFrontmatterYaml(value, indent + 1)}`;
+    } else if (typeof value === "string") {
+      if (value.includes("\n")) {
+        out += `${pad}${key}: |\n`;
+        for (const line of value.split("\n")) {
+          out += `${pad}  ${line}\n`;
+        }
+      } else {
+        out += `${pad}${key}: ${JSON.stringify(value)}\n`;
       }
-
-      const slugDir = join(outDir, entry.slug);
-      mkdirSync(slugDir, { recursive: true });
-      const path = join(slugDir, `${locale}.mdx`);
-      const y = yaml.stringify(ordered, { lineWidth: 0, quotingType: '"' });
-      writeFileSync(path, "---\n" + y + "\n---\n");
-      total++;
+    } else {
+      out += `${pad}${key}: ${value}\n`;
     }
   }
+  return out;
 }
 
-console.log(`\nDone. Generated ${total} files.`);
+function generateMdx(contentDir, entry, locale) {
+  const localeData = entry.locales[locale];
+  if (!localeData) return;
+
+  const slug = entry.slug;
+  const dirPath = join(contentDir, slug);
+  mkdirSync(dirPath, { recursive: true });
+
+  const frontmatter = {
+    title: localeData.title,
+    region: localeData.region,
+    image: entry.image,
+    gallery: entry.gallery,
+    summary: localeData.summary,
+    thingsToDo: localeData.thingsToDo,
+    packages: localeData.packages,
+  };
+
+  const yaml = toFrontmatterYaml(frontmatter);
+  const mdx = `---\n${yaml}---\n`;
+
+  const filePath = join(dirPath, `${locale}.mdx`);
+  writeFileSync(filePath, mdx, "utf-8");
+  console.log(`  Created: ${filePath.replace(process.cwd(), ".")}`);
+}
+
+function main() {
+  if (!existsSync(DATA_DIR)) {
+    console.error("No data directory found at", DATA_DIR);
+    process.exit(1);
+  }
+
+  const files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));
+
+  if (files.length === 0) {
+    console.log("No JSON data files found in", DATA_DIR);
+    return;
+  }
+
+  for (const file of files) {
+    const filePath = join(DATA_DIR, file);
+    console.log(`\nProcessing: ${file}`);
+    const raw = readFileSync(filePath, "utf-8");
+    const entries = JSON.parse(raw);
+
+    for (const entry of entries) {
+      const type = entry._type;
+      if (!type) {
+        console.warn(`  Skipping entry "${entry.slug}": no _type field`);
+        continue;
+      }
+
+      const contentDir = join(CONTENT_DIR, type);
+      mkdirSync(contentDir, { recursive: true });
+
+      for (const locale of LOCALES) {
+        generateMdx(contentDir, entry, locale);
+      }
+    }
+  }
+
+  console.log("\nDone!");
+}
+
+main();

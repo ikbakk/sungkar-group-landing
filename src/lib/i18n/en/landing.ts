@@ -2,7 +2,6 @@ import type { ImageSource } from "@/lib/images";
 import { HERO, GALLERY } from "@/assets/images";
 
 import { businessInfo } from "@/lib/contact-data";
-import { destinations } from "@/lib/content/destinations";
 import { toMarqueeReviews, reviewStats } from "@/lib/content/reviews";
 import type { TourPackage } from "@/lib/content/tourPackages/types";
 
@@ -51,17 +50,6 @@ export function toLandingTourCard(tour: TourPackage): LandingTourCard {
     slug: tour.slug,
     title: tour.title,
     description: tour.summary,
-  };
-}
-
-function toLandingDestinationCard(
-  dest: (typeof destinations)[number],
-): LandingDestinationCard {
-  return {
-    slug: dest.slug,
-    title: dest.title,
-    image: dest.image,
-    description: dest.summary,
   };
 }
 
@@ -130,12 +118,11 @@ export const landingFeaturedToursBase = {
   heroImage: GALLERY.tourSnorkeling,
 };
 
-export const landingDestinations = {
+export const landingDestinationsBase = {
   eyebrow: "Favorite destinations",
   title: "Destinations that most frequently make the itinerary",
   description:
     "We help you choose the best routes in Lombok and Sumbawa, while also preparing onward trips to Labuan Bajo if you want a bigger adventure.",
-  destinations: destinations.slice(0, 4).map(toLandingDestinationCard),
 };
 
 export const landingTransport = {

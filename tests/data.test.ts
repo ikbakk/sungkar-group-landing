@@ -9,7 +9,10 @@ import {
   VehicleSchema,
 } from "@/lib/content/shared/types";
 
-import { destinations } from "@/lib/content/destinations";
+const destinationsDir = join(import.meta.dirname, "..", "src", "content", "destinations");
+const destinationDirs = readdirSync(destinationsDir, { withFileTypes: true })
+  .filter((d) => d.isDirectory())
+  .map((d) => d.name);
 
 const TOUR_PACKAGES_DIR = "src/content/tourPackages";
 const ACCOMMODATIONS_DIR = "src/content/accommodations";
@@ -50,17 +53,24 @@ describe("TourPackage MDX frontmatter validation", () => {
 });
 
 describe("Destination data validation", () => {
-  destinations.forEach((dest) => {
-    it(`${dest.title} has valid data`, () => {
-      const result = DestinationSchema.safeParse(dest);
-      if (!result.success) {
-        const issues = result.error.issues.map(
-          (i) => `  ${i.path.join(".")}: ${i.message}`
-        );
-        expect.fail(`Invalid destination "${dest.title}":\n${issues.join("\n")}`);
-      }
-    });
-  });
+  for (const slug of destinationDirs) {
+    const dirPath = join(destinationsDir, slug);
+    const files = readdirSync(dirPath).filter((f) => f.endsWith(".mdx"));
+
+    for (const file of files) {
+      it(`${slug}/${file} has valid data`, () => {
+        const data = parseMdxFrontmatter(join(dirPath, file));
+        const entry = { slug, ...data };
+        const result = DestinationSchema.safeParse(entry);
+        if (!result.success) {
+          const issues = result.error.issues.map(
+            (i) => `  ${i.path.join(".")}: ${i.message}`
+          );
+          expect.fail(`Invalid destination "${slug}/${file}":\n${issues.join("\n")}`);
+        }
+      });
+    }
+  }
 });
 
 describe("Accommodation MDX frontmatter validation", () => {

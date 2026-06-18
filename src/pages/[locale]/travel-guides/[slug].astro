@@ -11,7 +11,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { AlarmClockIcon, Calendar03Icon } from "@hugeicons/core-free-icons";
 import { generateHowToSchema } from "@/lib/schemas";
 import { getGuides, getGuide } from "@/lib/content/guides";
-import { destinations } from "@/lib/content/destinations";
+import { getDestinations } from "@/lib/content/destinations/collection";
 import { getPackages } from "@/lib/content/tourPackages/collection";
 
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
@@ -38,7 +38,8 @@ if (!guide) {
 
 const { Content, title, description, readingTime, publishDate, keyTakeaways, relatedDestinations: relatedDestSlugs, relatedPackages: relatedPkgSlugs, featuredImage } = guide;
 
-const relatedDestinations = destinations.filter((d) =>
+const allDestinations = await getDestinations(locale!);
+const relatedDestinations = allDestinations.filter((d) =>
   relatedDestSlugs.includes(d.slug)
 );
 
