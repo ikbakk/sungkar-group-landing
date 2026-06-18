@@ -33,4 +33,23 @@ const guides = defineCollection({
   }),
 });
 
-export const collections = { blog, guides };
+const tourPackages = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/tourPackages" }),
+  schema: z.object({
+    title: z.string(),
+    region: z.enum(["lombok", "sumbawa", "labuan-bajo"]),
+    featured: z.boolean().optional(),
+    collectionSlug: z.string(),
+    collectionTitle: z.string(),
+    category: z.string(),
+    duration: z.string(),
+    images: z.array(z.string()),
+    summary: z.string(),
+    highlights: z.array(z.string()),
+    itinerary: z.array(z.string()),
+    includes: z.array(z.string()),
+    excludes: z.array(z.string()),
+  }),
+});
+
+export const collections = { blog, guides, tourPackages };
