@@ -12,8 +12,6 @@ import {
 
 import { getPageOGMetadata } from "@/lib/og-metadata";
 
-import SpeedInsights from "@vercel/speed-insights/astro";
-
 import type { ImageSource } from "@/lib/images";
 
 import { SITE_URL } from "@/lib/site-config";
@@ -92,7 +90,5 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
     </main>
 
     <Footer locale={currentLocale} />
-
-    <SpeedInsights />
   </body>
 </html>

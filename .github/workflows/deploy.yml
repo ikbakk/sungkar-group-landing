@@ -22,12 +22,10 @@ jobs:
       - run: npm run check:images
       - run: npm run build
 
-      # Deploy to Vercel (only on push to main)
-      - name: Deploy to Vercel
+      # Deploy to Netlify (only on push to main)
+      - name: Deploy to Netlify
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: "--prod"
+        run: npx netlify-cli deploy --prod --dir=dist --message="${{ github.event.head_commit.message }}"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
