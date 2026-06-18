@@ -2,7 +2,6 @@ import type { ImageSource } from "@/lib/images";
 import { HERO, GALLERY } from "@/assets/images";
 
 import { businessInfo } from "@/lib/contact-data";
-import { destinations } from "@/lib/content/destinations";
 import { packages } from "@/lib/content/tourPackages";
 import { toMarqueeReviews, reviewStats } from "@/lib/content/reviews";
 
@@ -51,17 +50,6 @@ function toLandingTourCard(tour: (typeof packages)[number]): LandingTourCard {
     slug: tour.slug,
     title: tour.title,
     description: tour.summary,
-  };
-}
-
-function toLandingDestinationCard(
-  dest: (typeof destinations)[number],
-): LandingDestinationCard {
-  return {
-    slug: dest.slug,
-    title: dest.title,
-    image: dest.image,
-    description: dest.summary,
   };
 }
 
@@ -131,12 +119,11 @@ export const landingFeaturedTours = {
   tours: packages.filter((tour) => tour.featured).map(toLandingTourCard),
 };
 
-export const landingDestinations = {
+export const landingDestinationsBase = {
   eyebrow: "Destinasi kegemaran",
   title: "Destinasi yang paling kerap masuk dalam pelancong",
   description:
     "Kami membantu anda memilih laluan terbaik di Lombok dan Sumbawa, sedia menyiarkan pelancongan seterusnya ke Labuan Bajo jika anda mahu petualangan yang lebih besar.",
-  destinations: destinations.slice(0, 4).map(toLandingDestinationCard),
 };
 
 export const landingTransport = {

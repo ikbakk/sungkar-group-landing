@@ -1,4 +1,7 @@
 import { describe, it, expect } from "vitest";
+import { readFileSync, readdirSync } from "node:fs";
+import { join } from "node:path";
+import yaml from "yaml";
 import {
   TourPackageSchema,
   DestinationSchema,
@@ -7,9 +10,20 @@ import {
 } from "@/lib/content/shared/types";
 
 import { packages } from "@/lib/content/tourPackages";
-import { destinations } from "@/lib/content/destinations";
 import { accommodations } from "@/lib/content/accommodations";
 import { vehicles } from "@/lib/content/car-rental";
+
+const destinationsDir = join(import.meta.dirname, "..", "src", "content", "destinations");
+const destinationDirs = readdirSync(destinationsDir, { withFileTypes: true })
+  .filter((d) => d.isDirectory())
+  .map((d) => d.name);
+
+function parseMdxFrontmatter(filePath: string) {
+  const content = readFileSync(filePath, "utf-8");
+  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!match) throw new Error(`No frontmatter in ${filePath}`);
+  return yaml.parse(match[1]);
+}
 
 describe("TourPackage data validation", () => {
   packages.forEach((pkg) => {
@@ -26,17 +40,24 @@ describe("TourPackage data validation", () => {
 });
 
 describe("Destination data validation", () => {
-  destinations.forEach((dest) => {
-    it(`${dest.title} has valid data`, () => {
-      const result = DestinationSchema.safeParse(dest);
-      if (!result.success) {
-        const issues = result.error.issues.map(
-          (i) => `  ${i.path.join(".")}: ${i.message}`
-        );
-        expect.fail(`Invalid destination "${dest.title}":\n${issues.join("\n")}`);
-      }
-    });
-  });
+  for (const slug of destinationDirs) {
+    const dirPath = join(destinationsDir, slug);
+    const files = readdirSync(dirPath).filter((f) => f.endsWith(".mdx"));
+
+    for (const file of files) {
+      it(`${slug}/${file} has valid data`, () => {
+        const data = parseMdxFrontmatter(join(dirPath, file));
+        const entry = { slug, ...data };
+        const result = DestinationSchema.safeParse(entry);
+        if (!result.success) {
+          const issues = result.error.issues.map(
+            (i) => `  ${i.path.join(".")}: ${i.message}`
+          );
+          expect.fail(`Invalid destination "${slug}/${file}":\n${issues.join("\n")}`);
+        }
+      });
+    }
+  }
 });
 
 describe("Accommodation data validation", () => {

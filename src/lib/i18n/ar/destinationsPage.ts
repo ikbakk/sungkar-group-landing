@@ -1,4 +1,4 @@
-import { destinations } from "@/lib/content/destinations";
+import { DESTINATIONS } from "@/assets/images";
 
 export const destinationsPageContent = {
   hero: {
@@ -89,5 +89,5 @@ export const destinationsPageContent = {
     emptyGallery: "ستتم إضافة صور الوجهة قريباً.",
     faqTitle: "الأسئلة الشائعة للوجهة",
   },
-  spotlightImage: destinations[1].image,
+  spotlightImage: DESTINATIONS.lombok,
 } as const;

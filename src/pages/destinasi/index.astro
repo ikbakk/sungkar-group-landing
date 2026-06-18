@@ -11,7 +11,7 @@ import DestinationGroupSection from "@/components/destinations/DestinationGroupS
 
 import { loadContent } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n";
-import { destinations } from "@/lib/content/destinations";
+import { getDestinations } from "@/lib/content/destinations/collection";
 
 const locale = "id";
 const uiStrings = t(locale);
@@ -21,8 +21,9 @@ const { destinationsPageContent } = pageModule;
 
 const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
 
+const allDestinations = await getDestinations(locale);
 const destinationBySlug = new Map(
-  destinations.map((destination) => [destination.slug, destination]),
+  allDestinations.map((destination) => [destination.slug, destination]),
 );
 
 const groups = destinationsPageContent.groups.map((group: { id: string; label: string; title: string; description: string; destinationSlugs: readonly string[]; intro: string }) => ({

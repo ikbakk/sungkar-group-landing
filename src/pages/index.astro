@@ -4,9 +4,16 @@ import LandingPage from "@/components/landing/LandingPage.astro";
 import { loadContent } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n";
 import { BRAND } from "@/assets/images";
+import { getDestinations } from "@/lib/content/destinations/collection";
+import { toLandingDestinationCard } from "@/lib/content/landing";
 
 const landingModule = await loadContent("id", "landing");
-const { landingHero, landingFeaturedTours, landingDestinations, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
+const { landingHero, landingFeaturedTours, landingDestinationsBase, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
+const allDestinations = await getDestinations("id");
+const landingDestinations = {
+  ...landingDestinationsBase,
+  destinations: allDestinations.slice(0, 4).map(toLandingDestinationCard),
+};
 const uiStrings = t("id");
 ---
 

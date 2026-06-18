@@ -13,16 +13,18 @@ import {
   generateFAQPageSchema,
 } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
-import { destinations } from "@/lib/content/destinations";
+import { getDestinations } from "@/lib/content/destinations/collection";
 import { packages } from "@/lib/content/tourPackages";
 
 import { loadContent } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n";
 import { getImageSrc } from "@/lib/images";
 
+const _allDestinations = await getDestinations("id");
+
 export async function getStaticPaths() {
   const paths = [];
-  for (const destination of destinations) {
+  for (const destination of await getDestinations("id")) {
     paths.push({ params: { slug: destination.slug } });
   }
   return paths;
@@ -35,7 +37,7 @@ const uiStrings = t(locale);
 const pageModule = await loadContent(locale, "destinationsPage");
 const { destinationsPageContent } = pageModule;
 
-const destination = destinations.find((d) => d.slug === slug)!;
+const destination = _allDestinations.find((d) => d.slug === slug)!;
 
 const relatedPackages = packages.filter((tour) =>
   destination.packages.includes(tour.slug),
