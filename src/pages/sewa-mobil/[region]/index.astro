@@ -77,7 +77,10 @@ const breadcrumbs = [
     <VehicleRegionSection
       id={region}
       title={uiStrings.sewaMobil.rentalVehicles.replace("{region}", regionName)}
-      description={uiStrings.sewaMobil.allVehicles.replace("{region}", regionName)}
+      description={uiStrings.sewaMobil.allVehicles.replace(
+        "{region}",
+        regionName,
+      )}
       vehicles={regionVehicles}
     />
   </SectionContainer>

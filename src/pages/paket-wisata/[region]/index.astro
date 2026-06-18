@@ -63,16 +63,24 @@ const breadcrumbs = [
 >
   <PageHeader
     eyebrow={uiStrings.paketWisata.eyebrow}
-    title={uiStrings.paketWisata.packagesFor.replace("{region}", REGION_LABEL[r])}
-    description={uiStrings.paketWisata.chooseCategory.replace("{region}", REGION_LABEL[r])}
+    title={uiStrings.paketWisata.packagesFor.replace(
+      "{region}",
+      REGION_LABEL[r],
+    )}
+    description={uiStrings.paketWisata.chooseCategory.replace(
+      "{region}",
+      REGION_LABEL[r],
+    )}
     breadcrumbs={breadcrumbs}
   />
 
   <SectionContainer background="bg-surface-soft">
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {collections.map((collection) => (
-        <CollectionCard collection={collection} region={r} />
-      ))}
+      {
+        collections.map((collection) => (
+          <CollectionCard collection={collection} region={r} />
+        ))
+      }
     </div>
   </SectionContainer>
 </MainLayout>

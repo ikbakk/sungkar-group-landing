@@ -73,8 +73,7 @@ export const contactMethods: ContactMethod[] = [
   {
     id: "availability",
     title: "查询可用性",
-    description:
-      "使用咨询流程查询旅行日期和最实用的路线。",
+    description: "使用咨询流程查询旅行日期和最实用的路线。",
     action: {
       label: "查询可用性",
       href: "#availability-form",
@@ -83,8 +82,7 @@ export const contactMethods: ContactMethod[] = [
   {
     id: "whatsapp",
     title: "通过WhatsApp聊天",
-    description:
-      "最适合快速提问、确认预订和调整行程。",
+    description: "最适合快速提问、确认预订和调整行程。",
     action: {
       label: "通过WhatsApp聊天",
       href: `https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}?text=Halo%20Sungkar%20Group`,
@@ -93,8 +91,7 @@ export const contactMethods: ContactMethod[] = [
   {
     id: "social",
     title: "社交媒体",
-    description:
-      "Instagram和YouTube显示在页脚，提供旅行更新和目的地故事。",
+    description: "Instagram和YouTube显示在页脚，提供旅行更新和目的地故事。",
   },
 ];
 
@@ -167,10 +164,7 @@ export const sewaMobilFormFields: FormField[] = [
     placeholder: "选择目的...",
     type: "select",
     required: true,
-    options: [
-      "司机兼导游",
-      "仅司机服务",
-    ],
+    options: ["司机兼导游", "仅司机服务"],
   },
   {
     id: "message",
@@ -251,8 +245,7 @@ export function buildWhatsappMessage(
 function getFieldLabel(context: FormContext, fieldId: string): string {
   const fieldMap: Record<string, string> = {
     name: "姓名",
-    travelDate:
-      context === "sewa-mobil" ? "租车日期" : "旅行日期",
+    travelDate: context === "sewa-mobil" ? "租车日期" : "旅行日期",
     duration: "租车时长",
     guests: "人数",
     passengers: "乘客人数",

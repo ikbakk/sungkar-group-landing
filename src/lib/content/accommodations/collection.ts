@@ -10,14 +10,20 @@ type EntryData = {
   image: string;
 };
 
-export async function getAccommodations(locale = "id"): Promise<Accommodation[]> {
+export async function getAccommodations(
+  locale = "id",
+): Promise<Accommodation[]> {
   const entries = await getCollection("accommodations");
 
   const results: Accommodation[] = [];
 
   for (const entry of entries) {
     const data = entry.data as EntryData;
-    const entryLocale = entry.id.split("/").pop()?.replace(/\.(md|mdx)$/, "") || "id";
+    const entryLocale =
+      entry.id
+        .split("/")
+        .pop()
+        ?.replace(/\.(md|mdx)$/, "") || "id";
 
     if (entryLocale !== locale) continue;
 

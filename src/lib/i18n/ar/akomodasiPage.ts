@@ -24,8 +24,7 @@ export const akomodasiPageContent = {
   },
   cta: {
     title: "تحتاج توصيات فندقية محددة؟",
-    description:
-      "نحن جاهزون للتوصية بأكثر أماكن الإقامة ملاءمة لخطط سفرك.",
+    description: "نحن جاهزون للتوصية بأكثر أماكن الإقامة ملاءمة لخطط سفرك.",
     buttonLabel: "اسألنا",
     buttonHref: "/kontak",
   },

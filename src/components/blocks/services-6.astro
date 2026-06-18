@@ -1,32 +1,32 @@
 ---
-import type { ImageSource } from "@/lib/images"
-import OptimizedImage from "@/components/ui/OptimizedImage.astro"
+import type { ImageSource } from "@/lib/images";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Section, SectionContainer } from "@/components/ui/section"
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Section, SectionContainer } from "@/components/ui/section";
 
 type Props = {
-  class?: string
-  eyebrow?: string
-  title: string
-  description?: string
-  alignment?: "left" | "center" | "right"
+  class?: string;
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  alignment?: "left" | "center" | "right";
   buttons?: {
-    label: string
-    href: string
-    variant?: "default" | "outline" | "secondary" | "ghost"
-  }[]
+    label: string;
+    href: string;
+    variant?: "default" | "outline" | "secondary" | "ghost";
+  }[];
   services: {
     image: {
-      src: ImageSource
-      alt: string
-    }
-    title: string
-    description: string
-    href?: string
-  }[]
-}
+      src: ImageSource;
+      alt: string;
+    };
+    title: string;
+    description: string;
+    href?: string;
+  }[];
+};
 
 const {
   class: className,
@@ -36,14 +36,20 @@ const {
   alignment = "left",
   buttons,
   services,
-} = Astro.props
+} = Astro.props;
 ---
 
 <Section class={cn("", className)}>
   <SectionContainer
     class="grid gap-8 lg:grid-cols-[20rem_minmax(0,1fr)] lg:items-start"
   >
-    <div class={cn("lg:sticky lg:top-28", alignment === "center" && "text-center", alignment === "right" && "text-right")}>
+    <div
+      class={cn(
+        "lg:sticky lg:top-28",
+        alignment === "center" && "text-center",
+        alignment === "right" && "text-right",
+      )}
+    >
       {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
       <h2 class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl">
         {title}
@@ -57,7 +63,13 @@ const {
       }
       {
         buttons?.length && (
-          <div class={cn("mt-6 flex flex-wrap gap-3", alignment === "center" && "justify-center", alignment === "right" && "justify-end")}>
+          <div
+            class={cn(
+              "mt-6 flex flex-wrap gap-3",
+              alignment === "center" && "justify-center",
+              alignment === "right" && "justify-end",
+            )}
+          >
             {buttons.map(({ href, label, ...button }) => (
               <Button as="a" href={href} variant={button.variant}>
                 {label}

@@ -15,7 +15,8 @@ export const destinationsPageContent = {
       description:
         "Pantai pasir putih, desa Sasak tradisional, dan air terjun tersembunyi. Kuta Lombok menjadi basecamp populer untuk akses mudah ke pantai selatan dan budaya lokal.",
       destinationSlugs: ["kuta-lombok", "tetebatu"],
-      intro: "Pilih destinasi di Lombok untuk kombinasi pantai, budaya, dan rute harian yang fleksibel.",
+      intro:
+        "Pilih destinasi di Lombok untuk kombinasi pantai, budaya, dan rute harian yang fleksibel.",
     },
     {
       id: "gili",
@@ -24,7 +25,8 @@ export const destinationsPageContent = {
       description:
         "Tiga pulau tropis dengan air jernih untuk snorkeling, diving, dan island hopping. Gili Trawangan untuk nightlife, Gili Air untuk keseimbangan, Gili Meno untuk kedamaian total.",
       destinationSlugs: ["gili-trawangan", "gili-air", "gili-meno"],
-      intro: "Rute pulau yang cocok untuk snorkeling, island hopping, dan tempo liburan yang lebih santai.",
+      intro:
+        "Rute pulau yang cocok untuk snorkeling, island hopping, dan tempo liburan yang lebih santai.",
     },
     {
       id: "pegunungan",
@@ -33,7 +35,8 @@ export const destinationsPageContent = {
       description:
         "Pendakian Rinjani via Sembalun atau Senaru, mata air panas, dan pemandangan kawah segara anak. Cocok untuk petualangan multi-hari dan pengalaman alam dramatis.",
       destinationSlugs: ["sembalun", "rinjani", "senaru"],
-      intro: "Destinasi dengan nuansa dataran tinggi dan akses ke pengalaman alam yang lebih dramatis.",
+      intro:
+        "Destinasi dengan nuansa dataran tinggi dan akses ke pengalaman alam yang lebih dramatis.",
     },
   ],
   faq: [

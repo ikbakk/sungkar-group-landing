@@ -22,18 +22,20 @@ interface Props {
 const { src, alt, ...rest } = Astro.props;
 ---
 
-{isRemoteImage(src) ? (
-  <img
-    src={src}
-    alt={alt}
-    class={rest.class}
-    loading={rest.loading}
-    decoding={rest.decoding}
-    fetchpriority={rest.fetchpriority}
-    style={rest.style}
-    width={rest.width}
-    height={rest.height}
-  />
-) : (
-  <Image src={src as ImageMetadata} alt={alt} {...rest} />
-)}
+{
+  isRemoteImage(src) ? (
+    <img
+      src={src}
+      alt={alt}
+      class={rest.class}
+      loading={rest.loading}
+      decoding={rest.decoding}
+      fetchpriority={rest.fetchpriority}
+      style={rest.style}
+      width={rest.width}
+      height={rest.height}
+    />
+  ) : (
+    <Image src={src as ImageMetadata} alt={alt} {...rest} />
+  )
+}

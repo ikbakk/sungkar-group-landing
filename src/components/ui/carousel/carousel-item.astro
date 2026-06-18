@@ -1,11 +1,11 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-type Props = HTMLAttributes<"div">
+type Props = HTMLAttributes<"div">;
 
-const { class: className, ...props } = Astro.props
+const { class: className, ...props } = Astro.props;
 ---
 
 <div
@@ -16,7 +16,7 @@ const { class: className, ...props } = Astro.props
     "min-w-0 shrink-0 grow-0 basis-full",
     "group-data-[orientation=horizontal]/carousel:pl-4",
     "group-data-[orientation=vertical]/carousel:pt-4",
-    className
+    className,
   )}
   {...props}
 >

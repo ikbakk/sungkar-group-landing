@@ -1,3 +1,3 @@
-export { buttonVariants, type ButtonVariantProps } from "./button-variants"
+export { buttonVariants, type ButtonVariantProps } from "./button-variants";
 
-export { default as Button } from "./button.astro"
+export { default as Button } from "./button.astro";

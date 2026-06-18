@@ -12,38 +12,32 @@ export const reviewsPageContent = {
     items: [
       {
         title: "快速沟通",
-        description:
-          "许多客人赞赏我们在旅行前和旅行期间的快速回复。",
+        description: "许多客人赞赏我们在旅行前和旅行期间的快速回复。",
       },
 
       {
         title: "友善的导游",
-        description:
-          "熟悉目的地的沟通型旅伴是最常被提及的亮点之一。",
+        description: "熟悉目的地的沟通型旅伴是最常被提及的亮点之一。",
       },
 
       {
         title: "灵活的行程",
-        description:
-          "行程可根据天气状况、客人偏好和团体需求进行调整。",
+        description: "行程可根据天气状况、客人偏好和团体需求进行调整。",
       },
 
       {
         title: "本地体验",
-        description:
-          "旅行者喜欢热门目的地与更地道本地推荐的完美结合。",
+        description: "旅行者喜欢热门目的地与更地道本地推荐的完美结合。",
       },
 
       {
         title: "舒适的交通",
-        description:
-          "车辆清洁度和旅途舒适度是评价中经常提到的优点。",
+        description: "车辆清洁度和旅途舒适度是评价中经常提到的优点。",
       },
 
       {
         title: "井然有序的服务",
-        description:
-          "从接送到行程结束，客人感受到整个过程顺畅有序。",
+        description: "从接送到行程结束，客人感受到整个过程顺畅有序。",
       },
     ],
   },

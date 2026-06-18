@@ -8,13 +8,11 @@ export const sewaPageContent = {
   regions: {
     lombok: {
       title: "龙目岛车辆",
-      description:
-        "龙目岛车队可供城市旅行、海滩游览和越野探险，价格实惠。",
+      description: "龙目岛车队可供城市旅行、海滩游览和越野探险，价格实惠。",
     },
     sumbawa: {
       title: "松巴哇岛车辆",
-      description:
-        "松巴哇岛探险专用车辆，方便前往体验鲸鲨和迷人的海洋目的地。",
+      description: "松巴哇岛探险专用车辆，方便前往体验鲸鲨和迷人的海洋目的地。",
     },
     "labuan-bajo": {
       title: "纳闽巴霍车辆",

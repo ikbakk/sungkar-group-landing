@@ -37,7 +37,10 @@ type CollectionResult = {
   items: { label: string; href: string }[];
 };
 
-const createPackageCollections = (packages: TourPackage[], region: "lombok" | "sumbawa" | "labuan-bajo"): CollectionResult => {
+const createPackageCollections = (
+  packages: TourPackage[],
+  region: "lombok" | "sumbawa" | "labuan-bajo",
+): CollectionResult => {
   const regionPackages = packages.filter((pkg) => pkg.region === region);
 
   const grouped = regionPackages.reduce(
@@ -50,7 +53,7 @@ const createPackageCollections = (packages: TourPackage[], region: "lombok" | "s
           "4-hari-3-malam": "رحلة 4 أيام و 3 ليال",
           "5-hari-4-malam": "رحلة 5 أيام و 4 ليال",
           "open-trip": "رحلة مفتوحة",
-          "sailing": "إبحار",
+          sailing: "إبحار",
         };
         acc[pkg.collectionSlug] = {
           title: titleMap[pkg.collectionSlug] ?? pkg.collectionTitle,

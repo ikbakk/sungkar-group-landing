@@ -1,1 +1,1 @@
-export { default as Input } from "./input.astro"
+export { default as Input } from "./input.astro";

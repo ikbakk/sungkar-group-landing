@@ -21,15 +21,18 @@ interface Props {
   linkText?: string;
 }
 
-const { class: className, locale = "id", eyebrow, title, description, destinations, linkText } = Astro.props as Props;
+const {
+  class: className,
+  locale = "id",
+  eyebrow,
+  title,
+  description,
+  destinations,
+  linkText,
+} = Astro.props as Props;
 const uiStrings = t(locale);
 
-const icons = [
-  "map-pin",
-  "waves",
-  "mountain",
-  "compass",
-];
+const icons = ["map-pin", "waves", "mountain", "compass"];
 ---
 
 <Features1Block

@@ -14,8 +14,9 @@ function parseMdxFrontmatter(filePath: string) {
 }
 
 describe("Tour Package MDX Data Validation", () => {
-  const packageDirs = readdirSync(TOUR_PACKAGES_DIR, { withFileTypes: true })
-    .filter((d) => d.isDirectory());
+  const packageDirs = readdirSync(TOUR_PACKAGES_DIR, {
+    withFileTypes: true,
+  }).filter((d) => d.isDirectory());
 
   it(`should have tour packages`, () => {
     expect(packageDirs.length).toBeGreaterThan(0);
@@ -32,11 +33,15 @@ describe("Tour Package MDX Data Validation", () => {
 
         it(`${slug} (${locale}) has valid frontmatter`, () => {
           const frontmatter = parseMdxFrontmatter(join(dirPath, file));
-          const pkg = { ...frontmatter, slug, featured: frontmatter.featured ?? false };
+          const pkg = {
+            ...frontmatter,
+            slug,
+            featured: frontmatter.featured ?? false,
+          };
           const result = TourPackageSchema.safeParse(pkg);
           if (!result.success) {
             const issues = result.error.issues.map(
-              (i) => `  ${i.path.join(".")}: ${i.message}`
+              (i) => `  ${i.path.join(".")}: ${i.message}`,
             );
             expect.fail(`Invalid package "${slug}":\n${issues.join("\n")}`);
           }

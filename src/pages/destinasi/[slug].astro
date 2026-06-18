@@ -44,7 +44,10 @@ const relatedPackages = packages.filter((tour) =>
   destination.packages.includes(tour.slug),
 );
 
-const absoluteImageUrl = new URL(getImageSrc(destination.image), SITE_URL).toString();
+const absoluteImageUrl = new URL(
+  getImageSrc(destination.image),
+  SITE_URL,
+).toString();
 
 const touristAttractionSchema = generateTouristAttractionSchema(
   destination.title,
@@ -104,11 +107,9 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
           {destinationsPageContent.detail.relatedPackagesTitle}
         </h2>
         <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {
-            relatedPackages.map((tour) => (
-              <PackageCard tour={tour} locale={locale} />
-            ))
-          }
+          {relatedPackages.map((tour) => (
+            <PackageCard tour={tour} locale={locale} />
+          ))}
         </div>
       </SectionContainer>
     )

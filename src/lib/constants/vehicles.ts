@@ -14,7 +14,7 @@ export const VEHICLE_TYPES = {
   BIG_BUS: "big-bus" as const,
 };
 
-export type VehicleSlug = typeof VEHICLE_TYPES[keyof typeof VEHICLE_TYPES];
+export type VehicleSlug = (typeof VEHICLE_TYPES)[keyof typeof VEHICLE_TYPES];
 
 /**
  * Vehicle seating capacity
@@ -40,4 +40,5 @@ export const TRANSMISSION_TYPES = {
   AUTOMATIC: "Automatic" as const,
 };
 
-export type TransmissionType = typeof TRANSMISSION_TYPES[keyof typeof TRANSMISSION_TYPES];
+export type TransmissionType =
+  (typeof TRANSMISSION_TYPES)[keyof typeof TRANSMISSION_TYPES];

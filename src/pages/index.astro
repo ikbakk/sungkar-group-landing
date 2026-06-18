@@ -10,7 +10,15 @@ import { getPackages } from "@/lib/content/tourPackages/collection";
 import { toLandingTourCard } from "@/lib/content/landing";
 
 const landingModule = await loadContent("id", "landing");
-const { landingHero, landingFeaturedToursBase, landingDestinationsBase, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
+const {
+  landingHero,
+  landingFeaturedToursBase,
+  landingDestinationsBase,
+  landingTransport,
+  landingTestimonials,
+  landingVideo,
+  landingBackgroundImage,
+} = landingModule;
 const packages = await getPackages("id");
 const allDestinations = await getDestinations("id");
 const landingFeaturedTours = {

@@ -15,7 +15,8 @@ export const destinationsPageContent = {
       description:
         "White sand beaches, traditional Sasak villages, and hidden waterfalls. Kuta Lombok is a popular basecamp for easy access to south coast beaches and local culture.",
       destinationSlugs: ["kuta-lombok", "tetebatu"],
-      intro: "Choose destinations in Lombok for a mix of beaches, culture, and flexible daily routes.",
+      intro:
+        "Choose destinations in Lombok for a mix of beaches, culture, and flexible daily routes.",
     },
     {
       id: "gili",
@@ -24,7 +25,8 @@ export const destinationsPageContent = {
       description:
         "Three tropical islands with clear waters for snorkeling, diving, and island hopping. Gili Trawangan for nightlife, Gili Air for balance, Gili Meno for total peace.",
       destinationSlugs: ["gili-trawangan", "gili-air", "gili-meno"],
-      intro: "Island routes perfect for snorkeling, island hopping, and a more relaxed vacation pace.",
+      intro:
+        "Island routes perfect for snorkeling, island hopping, and a more relaxed vacation pace.",
     },
     {
       id: "pegunungan",
@@ -33,7 +35,8 @@ export const destinationsPageContent = {
       description:
         "Rinjani trekking via Sembalun or Senaru, hot springs, and views of Segara Anak crater. Ideal for multi-day adventures and dramatic nature experiences.",
       destinationSlugs: ["sembalun", "rinjani", "senaru"],
-      intro: "Destinations with a highland atmosphere and access to more dramatic nature experiences.",
+      intro:
+        "Destinations with a highland atmosphere and access to more dramatic nature experiences.",
     },
   ],
   faq: [

@@ -23,8 +23,7 @@ export const faqPageContent = {
     {
       badge: "الوجهات",
       title: "أسئلة الوجهات",
-      description:
-        "الأسئلة حول ما يمكن فعله في كل وجهة متاحة في صفحة كل وجهة.",
+      description: "الأسئلة حول ما يمكن فعله في كل وجهة متاحة في صفحة كل وجهة.",
       buttonLabel: "افتح الوجهات",
       buttonHref: "/destinasi",
     },

@@ -25,7 +25,8 @@ const href = localizeHref("/blog/" + post.slug, locale);
           variant="outline"
           class="rounded-full px-3 py-1 text-xs font-medium"
         >
-          {post.readingTime} {uiStrings.guides.readingTime}
+          {post.readingTime}
+          {uiStrings.guides.readingTime}
         </Badge>
         {
           post.tags.slice(0, 2).map((tag) => (
@@ -52,11 +53,14 @@ const href = localizeHref("/blog/" + post.slug, locale);
       <div class="mt-auto text-xs text-text-muted">
         <time datetime={post.publishDate.toISOString()}>
           {
-            post.publishDate.toLocaleDateString(locale === "id" ? "id-ID" : locale, {
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            })
+            post.publishDate.toLocaleDateString(
+              locale === "id" ? "id-ID" : locale,
+              {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              },
+            )
           }
         </time>
       </div>

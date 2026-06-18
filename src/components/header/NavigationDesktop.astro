@@ -39,7 +39,7 @@ function lh(href: string | undefined): string | undefined {
   (() => {
     const checkOverflow = () => {
       document.querySelectorAll("[data-nav-text]").forEach((el) => {
-        const link = el.closest("[data-slot=\"navigation-menu-link\"]");
+        const link = el.closest('[data-slot="navigation-menu-link"]');
         if (!link) return;
         if (el.scrollWidth > el.clientWidth + 1) {
           link.setAttribute("title", el.textContent || "");

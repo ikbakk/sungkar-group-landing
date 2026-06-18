@@ -1,12 +1,12 @@
 ---
-import type { HTMLTag, Polymorphic } from "astro/types"
+import type { HTMLTag, Polymorphic } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-import { buttonVariants, type ButtonVariantProps } from "./button-variants"
+import { buttonVariants, type ButtonVariantProps } from "./button-variants";
 
 type Props<Tag extends HTMLTag = "button"> = Polymorphic<{ as: Tag }> &
-  ButtonVariantProps
+  ButtonVariantProps;
 
 const {
   as: Tag = "href" in Astro.props ? "a" : "button",
@@ -14,7 +14,7 @@ const {
   variant,
   size,
   ...props
-} = Astro.props
+} = Astro.props;
 ---
 
 <Tag

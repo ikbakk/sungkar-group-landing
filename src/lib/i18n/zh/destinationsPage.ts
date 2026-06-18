@@ -57,20 +57,17 @@ export const destinationsPageContent = {
     {
       title: "旅游套餐",
       href: "/paket-wisata",
-      description:
-        "从各种预先规划的旅游套餐中为每个目的地选择",
+      description: "从各种预先规划的旅游套餐中为每个目的地选择",
     },
     {
       title: "旅游指南",
       href: "/panduan-wisata",
-      description:
-        "获取提示和指南，最大化您在每个目的地的体验",
+      description: "获取提示和指南，最大化您在每个目的地的体验",
     },
     {
       title: "住宿",
       href: "/akomodasi",
-      description:
-        "在您选择的目的地地区找到舒适优质的住宿",
+      description: "在您选择的目的地地区找到舒适优质的住宿",
     },
   ],
   detail: {
@@ -79,10 +76,8 @@ export const destinationsPageContent = {
     relatedPackagesTitle: "相关套餐",
     summaryTitle: "简介",
     transportTitle: "交通",
-    transportDescription:
-      "接送点可调整至机场、港口或附近酒店区域。",
-    transportNote:
-      "对于有多目的地的行程，每日司机服务是最灵活的选择。",
+    transportDescription: "接送点可调整至机场、港口或附近酒店区域。",
+    transportNote: "对于有多目的地的行程，每日司机服务是最灵活的选择。",
     emptyRelatedPackages:
       "此目的地暂无关联套餐。我们的团队可帮助匹配最合适的行程。",
     galleryTitle: "图库",

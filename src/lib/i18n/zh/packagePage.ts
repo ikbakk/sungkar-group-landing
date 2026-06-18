@@ -43,32 +43,27 @@ export const packagePageContent = {
     {
       title: "目的地",
       href: "/destinasi",
-      description:
-        "发现龙目岛、松巴哇岛和纳闽巴霍的美丽景点和梦想目的地",
+      description: "发现龙目岛、松巴哇岛和纳闽巴霍的美丽景点和梦想目的地",
     },
     {
       title: "旅行指南",
       href: "/panduan-wisata",
-      description:
-        "阅读完整指南，完美规划您的行程",
+      description: "阅读完整指南，完美规划您的行程",
     },
     {
       title: "住宿推荐",
       href: "/akomodasi",
-      description:
-        "在每个旅游目的地选择最佳酒店和住宿",
+      description: "在每个旅游目的地选择最佳酒店和住宿",
     },
     {
       title: "租车服务",
       href: "/sewa-mobil",
-      description:
-        "使用我们的租车服务，享受舒适的旅行",
+      description: "使用我们的租车服务，享受舒适的旅行",
     },
     {
       title: "关于我们",
       href: "/tentang-kami",
-      description:
-        "进一步了解Sungkar Group和我们的经验",
+      description: "进一步了解Sungkar Group和我们的经验",
     },
   ],
 } as const;

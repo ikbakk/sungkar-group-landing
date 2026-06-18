@@ -9,14 +9,14 @@ export const COLLECTIONS = {
   THREE_DAYS_TWO_NIGHTS: "three-days-two-nights" as const,
   FOUR_DAYS_THREE_NIGHTS: "four-days-three-nights" as const,
   OPEN_TRIP: "open-trip" as const,
-  
+
   // Labuan Bajo Collections
   DAY_TRIP: "day-trip" as const,
   OVERNIGHT: "overnight" as const,
   THREE_DAYS_TWO_NIGHTS_LB: "three-days-two-nights-lb" as const,
 };
 
-export type CollectionSlug = typeof COLLECTIONS[keyof typeof COLLECTIONS];
+export type CollectionSlug = (typeof COLLECTIONS)[keyof typeof COLLECTIONS];
 
 /**
  * Collection titles for display
@@ -50,4 +50,4 @@ export const CATEGORIES = {
   KOMODO: "Open Trip Komodo" as const,
 };
 
-export type CategorySlug = typeof CATEGORIES[keyof typeof CATEGORIES];
+export type CategorySlug = (typeof CATEGORIES)[keyof typeof CATEGORIES];

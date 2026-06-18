@@ -1,14 +1,14 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
-import { Icon } from "@/components/ui/icon"
+import { cn } from "@/lib/utils";
+import { Icon } from "@/components/ui/icon";
 
-import navigationMenuTriggerStyle from "./navigation-menu-trigger-style"
+import navigationMenuTriggerStyle from "./navigation-menu-trigger-style";
 
-type Props = HTMLAttributes<"button">
+type Props = HTMLAttributes<"button">;
 
-const { class: className, type = "button", ...props } = Astro.props
+const { class: className, type = "button", ...props } = Astro.props;
 ---
 
 <button

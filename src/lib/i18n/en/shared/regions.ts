@@ -1,1 +1,6 @@
-export { REGIONS, REGION_MAP, REGION_LABEL, REGION_CONTENT_KEY } from "@/lib/i18n/en/regions";
+export {
+  REGIONS,
+  REGION_MAP,
+  REGION_LABEL,
+  REGION_CONTENT_KEY,
+} from "@/lib/i18n/en/regions";

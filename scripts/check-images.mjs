@@ -4,7 +4,7 @@ import { join, extname } from "node:path";
 import yaml from "yaml";
 
 // Suppress deprecation warning
-process.removeAllListeners('deprecation');
+process.removeAllListeners("deprecation");
 
 const CONTENT_DIRS = ["./src/content/blog", "./src/content/guides"];
 const ASSETS_DIR = "./src/assets";
@@ -79,7 +79,9 @@ for (const file of findMdxFiles(CONTENT_DIRS)) {
 
     const resolved = resolveImagePath(val);
     if (!resolved) {
-      console.log(`MISSING: ${file}: ${field} = "${val}" — file not found in assets`);
+      console.log(
+        `MISSING: ${file}: ${field} = "${val}" — file not found in assets`,
+      );
       missing++;
     }
   }

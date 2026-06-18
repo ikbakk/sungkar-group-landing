@@ -25,7 +25,11 @@ export async function getPackages(locale = "id"): Promise<TourPackage[]> {
 
   for (const entry of entries) {
     const data = entry.data as EntryData;
-    const entryLocale = entry.id.split("/").pop()?.replace(/\.(md|mdx)$/, "") || "id";
+    const entryLocale =
+      entry.id
+        .split("/")
+        .pop()
+        ?.replace(/\.(md|mdx)$/, "") || "id";
 
     if (entryLocale !== locale) continue;
 

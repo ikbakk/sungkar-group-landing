@@ -4,7 +4,14 @@ import { join } from "node:path";
 import yaml from "yaml";
 import { DestinationSchema } from "@/lib/content/shared/types";
 
-const contentDir = join(import.meta.dirname, "..", "..", "src", "content", "destinations");
+const contentDir = join(
+  import.meta.dirname,
+  "..",
+  "..",
+  "src",
+  "content",
+  "destinations",
+);
 const destinationDirs = readdirSync(contentDir, { withFileTypes: true })
   .filter((d) => d.isDirectory())
   .map((d) => d.name);
@@ -29,10 +36,10 @@ describe("Destination Data Validation", () => {
         const result = DestinationSchema.safeParse(entry);
         if (!result.success) {
           const issues = result.error.issues.map(
-            (i) => `  ${i.path.join(".")}: ${i.message}`
+            (i) => `  ${i.path.join(".")}: ${i.message}`,
           );
           expect.fail(
-            `Invalid destination "${slug}/${file}":\n${issues.join("\n")}`
+            `Invalid destination "${slug}/${file}":\n${issues.join("\n")}`,
           );
         }
 

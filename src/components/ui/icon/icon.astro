@@ -1,12 +1,12 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
 type Props = Omit<HTMLAttributes<"svg">, "name" | "href"> & {
-  href?: HTMLAttributes<"a">["href"]
-  name?: string | number | null
-}
+  href?: HTMLAttributes<"a">["href"];
+  name?: string | number | null;
+};
 
-const { name, href, ...props } = Astro.props
+const { name, href, ...props } = Astro.props;
 
 const hrefMap = {
   "x.com": "x",
@@ -35,40 +35,40 @@ const hrefMap = {
   "mailto:": "mail",
   "maps.app.goo.gl": "map-pin",
   linkedin: "linkedin",
-} as const
+} as const;
 
 const icons = import.meta.glob(
   [
     "/node_modules/lucide-static/icons/*.svg",
     "/node_modules/simple-icons/icons/*.svg",
   ],
-  { eager: true }
-) as Record<string, { default: any }>
+  { eager: true },
+) as Record<string, { default: any }>;
 
 const foundPath = () => {
-  let foundPath: string | undefined = undefined
+  let foundPath: string | undefined = undefined;
 
   // For x.com, use the Simple Icons X instead of Lucide's X icon.
   if (name === "x.com") {
-    foundPath = "/node_modules/simple-icons/icons/x.svg"
+    foundPath = "/node_modules/simple-icons/icons/x.svg";
   } else if (name) {
-    foundPath = Object.keys(icons).find((key) => key.includes(`/${name}.svg`))
+    foundPath = Object.keys(icons).find((key) => key.includes(`/${name}.svg`));
   } else if (href) {
     const hrefKey = Object.keys(hrefMap).find((key) =>
-      href.toString().includes(key)
-    )
-    const hrefValue = hrefMap[hrefKey as keyof typeof hrefMap]
+      href.toString().includes(key),
+    );
+    const hrefValue = hrefMap[hrefKey as keyof typeof hrefMap];
     foundPath = Object.keys(icons)
       .reverse()
-      .find((key) => key.includes(`/${hrefValue}.svg`))
+      .find((key) => key.includes(`/${hrefValue}.svg`));
   }
 
-  return foundPath
-}
+  return foundPath;
+};
 
-const iconPath = foundPath()
-const module = iconPath ? icons[iconPath] : undefined
-const Comp = module?.default
+const iconPath = foundPath();
+const module = iconPath ? icons[iconPath] : undefined;
+const Comp = module?.default;
 ---
 
 {

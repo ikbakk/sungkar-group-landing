@@ -4,13 +4,29 @@ import { join, extname } from "node:path";
 const yaml = require("yaml");
 
 // Suppress deprecation warning
-process.removeAllListeners('deprecation');
+process.removeAllListeners("deprecation");
 
 const BLOG_DIR = "./src/content/blog";
 const GUIDES_DIR = "./src/content/guides";
 
-const REQUIRED_BLOG = ["title", "description", "publishDate", "tags", "readingTime"];
-const REQUIRED_GUIDES = ["title", "description", "region", "readingTime", "keyTakeaways", "bestFor", "relatedDestinations", "relatedPackages", "publishDate"];
+const REQUIRED_BLOG = [
+  "title",
+  "description",
+  "publishDate",
+  "tags",
+  "readingTime",
+];
+const REQUIRED_GUIDES = [
+  "title",
+  "description",
+  "region",
+  "readingTime",
+  "keyTakeaways",
+  "bestFor",
+  "relatedDestinations",
+  "relatedPackages",
+  "publishDate",
+];
 const VALID_REGIONS = ["lombok", "sumbawa", "labuan-bajo", "general"];
 
 function findMdxFiles(dir) {
@@ -67,15 +83,25 @@ for (const file of findMdxFiles(BLOG_DIR)) {
     }
   }
 
-  if (frontmatter.publishDate && isNaN(new Date(frontmatter.publishDate).getTime())) {
-    report("ERROR", shortPath, `Invalid date in publishDate: ${frontmatter.publishDate}`);
+  if (
+    frontmatter.publishDate &&
+    isNaN(new Date(frontmatter.publishDate).getTime())
+  ) {
+    report(
+      "ERROR",
+      shortPath,
+      `Invalid date in publishDate: ${frontmatter.publishDate}`,
+    );
   }
 
   if (frontmatter.tags && !Array.isArray(frontmatter.tags)) {
     report("ERROR", shortPath, `tags must be an array`);
   }
 
-  if (frontmatter.readingTime !== undefined && typeof frontmatter.readingTime !== "number") {
+  if (
+    frontmatter.readingTime !== undefined &&
+    typeof frontmatter.readingTime !== "number"
+  ) {
     report("ERROR", shortPath, `readingTime must be a number`);
   }
 }
@@ -95,16 +121,31 @@ for (const file of findMdxFiles(GUIDES_DIR)) {
   }
 
   if (frontmatter.region && !VALID_REGIONS.includes(frontmatter.region)) {
-    report("ERROR", shortPath, `Invalid region: "${frontmatter.region}". Must be one of: ${VALID_REGIONS.join(", ")}`);
+    report(
+      "ERROR",
+      shortPath,
+      `Invalid region: "${frontmatter.region}". Must be one of: ${VALID_REGIONS.join(", ")}`,
+    );
   }
 
-  for (const arrField of ["keyTakeaways", "bestFor", "relatedDestinations", "relatedPackages"]) {
-    if (frontmatter[arrField] !== undefined && !Array.isArray(frontmatter[arrField])) {
+  for (const arrField of [
+    "keyTakeaways",
+    "bestFor",
+    "relatedDestinations",
+    "relatedPackages",
+  ]) {
+    if (
+      frontmatter[arrField] !== undefined &&
+      !Array.isArray(frontmatter[arrField])
+    ) {
       report("ERROR", shortPath, `${arrField} must be an array`);
     }
   }
 
-  if (frontmatter.readingTime !== undefined && typeof frontmatter.readingTime !== "number") {
+  if (
+    frontmatter.readingTime !== undefined &&
+    typeof frontmatter.readingTime !== "number"
+  ) {
     report("ERROR", shortPath, `readingTime must be a number`);
   }
 }

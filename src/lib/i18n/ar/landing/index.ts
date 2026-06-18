@@ -1,1 +1,9 @@
-export { landingHero, landingFeaturedToursBase, landingDestinationsBase, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } from "@/lib/i18n/ar/landing";
+export {
+  landingHero,
+  landingFeaturedToursBase,
+  landingDestinationsBase,
+  landingTransport,
+  landingTestimonials,
+  landingVideo,
+  landingBackgroundImage,
+} from "@/lib/i18n/ar/landing";

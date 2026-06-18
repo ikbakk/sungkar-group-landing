@@ -167,10 +167,7 @@ export const sewaMobilFormFields: FormField[] = [
     placeholder: "Pilih keperluan...",
     type: "select",
     required: true,
-    options: [
-      "Dengan supir sebagai guide",
-      "Dengan supir pelayanan",
-    ],
+    options: ["Dengan supir sebagai guide", "Dengan supir pelayanan"],
   },
   {
     id: "message",

@@ -31,7 +31,9 @@ function getValueByPath(obj: NestedRecord, path: string): unknown {
 }
 
 const referenceLocale = "id";
-const referenceKeys = getLeafPaths(translations[referenceLocale] as unknown as NestedRecord);
+const referenceKeys = getLeafPaths(
+  translations[referenceLocale] as unknown as NestedRecord,
+);
 const otherLocales = LOCALES.filter((l) => l !== referenceLocale);
 
 describe("i18n UI strings completeness", () => {
@@ -42,7 +44,10 @@ describe("i18n UI strings completeness", () => {
 
   describe.each(otherLocales)("locale %s", (locale) => {
     it.each(referenceKeys)("has key '%s' with non-empty value", (key) => {
-      const value = getValueByPath(translations[locale] as unknown as NestedRecord, key);
+      const value = getValueByPath(
+        translations[locale] as unknown as NestedRecord,
+        key,
+      );
       expect(value).toBeDefined();
       if (typeof value === "string") {
         expect(value.trim()).not.toBe("");
@@ -58,7 +63,10 @@ describe("i18n UI strings completeness", () => {
 
   it("reference locale id has all keys with non-empty values", () => {
     referenceKeys.forEach((key) => {
-      const value = getValueByPath(translations.id as unknown as NestedRecord, key);
+      const value = getValueByPath(
+        translations.id as unknown as NestedRecord,
+        key,
+      );
       expect(value).toBeDefined();
       if (typeof value === "string") {
         expect(value.trim()).not.toBe("");

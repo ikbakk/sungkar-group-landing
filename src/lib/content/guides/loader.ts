@@ -1,4 +1,9 @@
-import { getCollection, getEntry, render, type CollectionEntry } from "astro:content";
+import {
+  getCollection,
+  getEntry,
+  render,
+  type CollectionEntry,
+} from "astro:content";
 
 export interface GuideMeta {
   slug: string;

@@ -6,7 +6,8 @@
 export const SITE = {
   name: "Sungkar Group",
   title: "Sungkar Group - Wisata Lombok & Labuan Bajo Terpercaya",
-  description: "Paket wisata Lombok, Sumbawa, dan Labuan Bajo dengan pelayanan terbaik. Open Trip MotoGP, Komodo, dan paket wisata pribadi dengan harga terjangkau.",
+  description:
+    "Paket wisata Lombok, Sumbawa, dan Labuan Bajo dengan pelayanan terbaik. Open Trip MotoGP, Komodo, dan paket wisata pribadi dengan harga terjangkau.",
   url: "https://sungkar-group.com",
   locale: "id_ID",
   defaultLocale: "id",
@@ -22,7 +23,7 @@ export const SITE = {
     "travel lombok",
     "wisata pulau",
   ],
-  
+
   // Social media
   social: {
     facebook: "https://facebook.com/sungkargroup",
@@ -100,21 +101,23 @@ export const SEO = {
 /**
  * Get SEO metadata for a specific page
  */
-export function getPageMetadata(options: {
-  title?: string;
-  description?: string;
-  keywords?: string[];
-  image?: string;
-  url?: string;
-  type?: 'website' | 'article' | 'product' | 'tourist_attraction';
-} = {}) {
+export function getPageMetadata(
+  options: {
+    title?: string;
+    description?: string;
+    keywords?: string[];
+    image?: string;
+    url?: string;
+    type?: "website" | "article" | "product" | "tourist_attraction";
+  } = {},
+) {
   const {
     title = SITE.title,
     description = SITE.description,
     keywords = SITE.keywords,
     image = `${SITE.url}/og-image.jpg`,
     url = SITE.url,
-    type = 'website',
+    type = "website",
   } = options;
 
   return {
@@ -145,7 +148,7 @@ export function getTourPackageMetadata(
   packageTitle: string,
   region: string,
   duration: string,
-  image: string
+  image: string,
 ) {
   const title = `${packageTitle} - ${duration} di ${region} | ${SITE.name}`;
   const description = `Nikmati paket wisata ${packageTitle} selama ${duration} di ${region}. Termasuk akomodasi, transportasi, dan aktivitas menarik. Dijamin puas dengan pelayanan profesional.`;
@@ -171,7 +174,7 @@ export function getTourPackageMetadata(
 export function getDestinationMetadata(
   destinationName: string,
   region: string,
-  image: string
+  image: string,
 ) {
   const title = `${destinationName} - Wisata Populer di ${region} | ${SITE.name}`;
   const description = `Temukan keindahan ${destinationName} di ${region}. Panduan lengkap aktivitas, akomodasi, dan tips berwisata di ${destinationName}.`;
@@ -197,7 +200,7 @@ export function getVehicleMetadata(
   vehicleName: string,
   region: string,
   price: string,
-  image: string
+  image: string,
 ) {
   const title = `Sewa ${vehicleName} di ${region} - ${price}/hari | ${SITE.name}`;
   const description = `Sewa mobil ${vehicleName} di ${region} dengan harga terjangkau. Kapasitas ${price}, fasilitas lengkap, dan sopir profesional. Hubungi sekarang!`;

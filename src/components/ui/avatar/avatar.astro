@@ -1,13 +1,13 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = HTMLAttributes<"div"> & {
-  size?: "default" | "sm" | "lg"
-}
+  size?: "default" | "sm" | "lg";
+};
 
-const { class: className, size = "default", ...props } = Astro.props
+const { class: className, size = "default", ...props } = Astro.props;
 ---
 
 <div
@@ -15,7 +15,7 @@ const { class: className, size = "default", ...props } = Astro.props
   data-size={size}
   class={cn(
     "after:border-border group/avatar relative flex size-8 shrink-0 overflow-hidden rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten",
-    className
+    className,
   )}
   {...props}
 >

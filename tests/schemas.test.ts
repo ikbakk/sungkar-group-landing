@@ -32,7 +32,9 @@ describe("generateBreadcrumbSchema", () => {
       { name: "Package", url: `${SITE_URL}/paket-wisata/lombok/3d2n` },
     ];
     const result = generateBreadcrumbSchema(items, SITE_URL);
-    expect(result.itemListElement[1].item).toBe(`${SITE_URL}${SITE_URL}/paket-wisata/lombok/3d2n`);
+    expect(result.itemListElement[1].item).toBe(
+      `${SITE_URL}${SITE_URL}/paket-wisata/lombok/3d2n`,
+    );
   });
 
   it("assigns correct positions", () => {
@@ -56,12 +58,20 @@ describe("generateOrganizationSchema", () => {
 
   it("includes all available languages", () => {
     const result = generateOrganizationSchema(SITE_URL);
-    expect(result.contactPoint.availableLanguage).toEqual(["id", "en", "ar", "ms", "zh"]);
+    expect(result.contactPoint.availableLanguage).toEqual([
+      "id",
+      "en",
+      "ar",
+      "ms",
+      "zh",
+    ]);
   });
 
   it("uses real social links (no mock URLs)", () => {
     const result = generateOrganizationSchema(SITE_URL);
-    expect(result.sameAs).not.toContain("https://www.facebook.com/sungkargroup");
+    expect(result.sameAs).not.toContain(
+      "https://www.facebook.com/sungkargroup",
+    );
     expect(result.sameAs).not.toContain("https://www.tiktok.com/sungkargroup");
   });
 });
@@ -75,36 +85,78 @@ describe("generateWebsiteSchema", () => {
 
 describe("generateArticleSchema", () => {
   it("uses dynamic business name for author", () => {
-    const result = generateArticleSchema("Title", "Desc", "/img.jpg", SITE_URL, "blog/post", "2026-01-01");
+    const result = generateArticleSchema(
+      "Title",
+      "Desc",
+      "/img.jpg",
+      SITE_URL,
+      "blog/post",
+      "2026-01-01",
+    );
     expect(result.author.name).toBe("Sungkar Group Indonesia");
   });
 
   it("sets dateModified to datePublished when not provided", () => {
-    const result = generateArticleSchema("Title", "Desc", "/img.jpg", SITE_URL, "blog/post", "2026-01-01");
+    const result = generateArticleSchema(
+      "Title",
+      "Desc",
+      "/img.jpg",
+      SITE_URL,
+      "blog/post",
+      "2026-01-01",
+    );
     expect(result.dateModified).toBe("2026-01-01");
   });
 
   it("accepts custom dateModified", () => {
-    const result = generateArticleSchema("Title", "Desc", "/img.jpg", SITE_URL, "blog/post", "2026-01-01", "2026-06-01");
+    const result = generateArticleSchema(
+      "Title",
+      "Desc",
+      "/img.jpg",
+      SITE_URL,
+      "blog/post",
+      "2026-01-01",
+      "2026-06-01",
+    );
     expect(result.dateModified).toBe("2026-06-01");
   });
 
   it("constructs correct URL from siteUrl and slug", () => {
-    const result = generateArticleSchema("Title", "Desc", "/img.jpg", SITE_URL, "blog/post", "2026-01-01");
+    const result = generateArticleSchema(
+      "Title",
+      "Desc",
+      "/img.jpg",
+      SITE_URL,
+      "blog/post",
+      "2026-01-01",
+    );
     expect(result.url).toBe(`${SITE_URL}/blog/post`);
   });
 });
 
 describe("generateTouristAttractionSchema", () => {
   it("includes GeoCoordinates", () => {
-    const result = generateTouristAttractionSchema("Kuta Beach", "Beautiful beach", "/img.jpg", SITE_URL, "kuta-beach", "lombok");
+    const result = generateTouristAttractionSchema(
+      "Kuta Beach",
+      "Beautiful beach",
+      "/img.jpg",
+      SITE_URL,
+      "kuta-beach",
+      "lombok",
+    );
     expect(result.geo["@type"]).toBe("GeoCoordinates");
     expect(result.address.addressLocality).toBe("lombok");
     expect(result.address.addressCountry).toBe("ID");
   });
 
   it("falls back to Lombok for region", () => {
-    const result = generateTouristAttractionSchema("Place", "Desc", "/img.jpg", SITE_URL, "place");
+    const result = generateTouristAttractionSchema(
+      "Place",
+      "Desc",
+      "/img.jpg",
+      SITE_URL,
+      "place",
+    );
     expect(result.address.addressLocality).toBe("Lombok");
   });
 });
@@ -148,19 +200,37 @@ describe("generateHowToSchema", () => {
 
 describe("generateProductSchema", () => {
   it("uses real aggregate rating from reviews", () => {
-    const result = generateProductSchema("Test", "Desc", "500000", "/img.jpg", `${SITE_URL}/test`);
+    const result = generateProductSchema(
+      "Test",
+      "Desc",
+      "500000",
+      "/img.jpg",
+      `${SITE_URL}/test`,
+    );
     expect(result.aggregateRating.ratingValue).toBe("5");
     expect(result.aggregateRating.reviewCount).toBe("156");
   });
 
   it("uses ContactForPrice for non-numeric price", () => {
-    const result = generateProductSchema("Test", "Desc", "Hubungi untuk harga", "/img.jpg", `${SITE_URL}/test`);
+    const result = generateProductSchema(
+      "Test",
+      "Desc",
+      "Hubungi untuk harga",
+      "/img.jpg",
+      `${SITE_URL}/test`,
+    );
     expect(result.offers.price).toBe("https://schema.org/ContactForPrice");
     expect((result.offers as any).priceCurrency).toBeUndefined();
   });
 
   it("sets priceCurrency for numeric price", () => {
-    const result = generateProductSchema("Test", "Desc", "500000", "/img.jpg", `${SITE_URL}/test`);
+    const result = generateProductSchema(
+      "Test",
+      "Desc",
+      "500000",
+      "/img.jpg",
+      `${SITE_URL}/test`,
+    );
     expect((result.offers as any).priceCurrency).toBe("IDR");
   });
 });

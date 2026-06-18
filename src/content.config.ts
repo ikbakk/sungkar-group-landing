@@ -34,7 +34,10 @@ const guides = defineCollection({
 });
 
 const tourPackages = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/tourPackages" }),
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "./src/content/tourPackages",
+  }),
   schema: z.object({
     title: z.string(),
     region: z.enum(["lombok", "sumbawa", "labuan-bajo"]),
@@ -53,7 +56,10 @@ const tourPackages = defineCollection({
 });
 
 const accommodations = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/accommodations" }),
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "./src/content/accommodations",
+  }),
   schema: z.object({
     name: z.string(),
     region: z.enum(["lombok", "sumbawa", "labuan-bajo"]),
@@ -81,7 +87,10 @@ const carRental = defineCollection({
 });
 
 const destinations = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/destinations" }),
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "./src/content/destinations",
+  }),
   schema: z.object({
     title: z.string(),
     region: z.string(),
@@ -93,4 +102,11 @@ const destinations = defineCollection({
   }),
 });
 
-export const collections = { blog, guides, tourPackages, accommodations, carRental, destinations };
+export const collections = {
+  blog,
+  guides,
+  tourPackages,
+  accommodations,
+  carRental,
+  destinations,
+};

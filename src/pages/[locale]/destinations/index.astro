@@ -30,13 +30,22 @@ const destinationBySlug = new Map(
   allDestinations.map((destination) => [destination.slug, destination]),
 );
 
-const groups = destinationsPageContent.groups.map((group: { id: string; label: string; title: string; description: string; destinationSlugs: readonly string[]; intro: string }) => ({
-  ...group,
-  count: group.destinationSlugs.length,
-  destinations: group.destinationSlugs
-    .map((slug: string) => destinationBySlug.get(slug))
-    .filter(Boolean),
-}));
+const groups = destinationsPageContent.groups.map(
+  (group: {
+    id: string;
+    label: string;
+    title: string;
+    description: string;
+    destinationSlugs: readonly string[];
+    intro: string;
+  }) => ({
+    ...group,
+    count: group.destinationSlugs.length,
+    destinations: group.destinationSlugs
+      .map((slug: string) => destinationBySlug.get(slug))
+      .filter(Boolean),
+  }),
+);
 
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: `/${locale}` },
@@ -52,7 +61,7 @@ const breadcrumbs = [
   locale={locale}
 >
   <StructuredData schema={faqSchema} />
-  <div id="top" />
+  <div id="top"></div>
 
   <PageHeader
     eyebrow={destinationsPageContent.hero.eyebrow}
@@ -64,21 +73,31 @@ const breadcrumbs = [
   />
 
   <StickyNav
-    items={groups.map(({ id, label, count }: { id: string; label: string; count: number }) => ({ id, label, count }))}
+    items={groups.map(
+      ({ id, label, count }: { id: string; label: string; count: number }) => ({
+        id,
+        label,
+        count,
+      }),
+    )}
     dataAttr="destination-group-link"
   />
 
-  {groups.map((group: any, index: number) => (
-    <SectionContainer background={index % 2 === 0 ? "bg-surface-soft" : "bg-background"}>
-      <DestinationGroupSection
-        id={group.id}
-        locale={locale}
-        title={group.title}
-        description={group.description}
-        destinations={group.destinations}
-      />
-    </SectionContainer>
-  ))}
+  {
+    groups.map((group: any, index: number) => (
+      <SectionContainer
+        background={index % 2 === 0 ? "bg-surface-soft" : "bg-background"}
+      >
+        <DestinationGroupSection
+          id={group.id}
+          locale={locale}
+          title={group.title}
+          description={group.description}
+          destinations={group.destinations}
+        />
+      </SectionContainer>
+    ))
+  }
 
   <FaqSection
     eyebrow={uiStrings.faq.sectionTitle}

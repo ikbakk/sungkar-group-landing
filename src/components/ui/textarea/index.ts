@@ -1,1 +1,1 @@
-export { default as Textarea } from "./textarea.astro"
+export { default as Textarea } from "./textarea.astro";

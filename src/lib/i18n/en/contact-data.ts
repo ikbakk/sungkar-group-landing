@@ -167,10 +167,7 @@ export const sewaMobilFormFields: FormField[] = [
     placeholder: "Select purpose...",
     type: "select",
     required: true,
-    options: [
-      "With driver as guide",
-      "With driver service",
-    ],
+    options: ["With driver as guide", "With driver service"],
   },
   {
     id: "message",
@@ -251,8 +248,7 @@ export function buildWhatsappMessage(
 function getFieldLabel(context: FormContext, fieldId: string): string {
   const fieldMap: Record<string, string> = {
     name: "Name",
-    travelDate:
-      context === "sewa-mobil" ? "Rental date" : "Travel date",
+    travelDate: context === "sewa-mobil" ? "Rental date" : "Travel date",
     duration: "Rental duration",
     guests: "Number of guests",
     passengers: "Number of passengers",

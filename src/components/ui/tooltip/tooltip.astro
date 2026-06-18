@@ -1,20 +1,20 @@
 ---
-import type { HTMLAttributes } from "astro/types"
-import type { TooltipAlign, TooltipSide } from "@data-slot/tooltip"
+import type { HTMLAttributes } from "astro/types";
+import type { TooltipAlign, TooltipSide } from "@data-slot/tooltip";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = HTMLAttributes<"div"> & {
-  delay?: number
-  skipDelayDuration?: number
-  side?: TooltipSide
-  align?: TooltipAlign
-  sideOffset?: number
-  alignOffset?: number
-  avoidCollisions?: boolean
-  collisionPadding?: number
-  portal?: boolean
-}
+  delay?: number;
+  skipDelayDuration?: number;
+  side?: TooltipSide;
+  align?: TooltipAlign;
+  sideOffset?: number;
+  alignOffset?: number;
+  avoidCollisions?: boolean;
+  collisionPadding?: number;
+  portal?: boolean;
+};
 
 const {
   class: className,
@@ -28,7 +28,7 @@ const {
   collisionPadding = 8,
   portal = true,
   ...props
-} = Astro.props
+} = Astro.props;
 ---
 
 <div
@@ -49,7 +49,7 @@ const {
 </div>
 
 <script>
-  import { create } from "@data-slot/tooltip"
+  import { create } from "@data-slot/tooltip";
 
-  create()
+  create();
 </script>

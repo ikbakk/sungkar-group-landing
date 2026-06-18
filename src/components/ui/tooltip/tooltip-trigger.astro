@@ -1,19 +1,19 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = HTMLAttributes<"button"> &
   HTMLAttributes<"a"> &
   HTMLAttributes<"div"> &
   HTMLAttributes<"span"> & {
-    as?: "a" | "button" | "div" | "span"
-    href?: string
-  }
+    as?: "a" | "button" | "div" | "span";
+    href?: string;
+  };
 
-const { as: explicitTag, class: className, type, ...props } = Astro.props
+const { as: explicitTag, class: className, type, ...props } = Astro.props;
 
-const Tag = explicitTag || ("href" in Astro.props ? "a" : "button")
+const Tag = explicitTag || ("href" in Astro.props ? "a" : "button");
 ---
 
 <Tag

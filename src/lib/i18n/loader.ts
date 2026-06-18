@@ -212,7 +212,10 @@ function getLocaleModule(locale: string): Locale {
   return loc;
 }
 
-export async function loadContent(locale: string, module: string): Promise<any> {
+export async function loadContent(
+  locale: string,
+  module: string,
+): Promise<any> {
   const loc = getLocaleModule(locale);
   if (loc !== "id" && Object.keys(contentModules[loc]).length === 0) {
     return contentModules.id[module] || {};
@@ -227,4 +230,3 @@ export async function loadFaq(locale: string, module: string): Promise<any> {
   }
   return faqModules[loc][module] || faqModules.id[module] || {};
 }
-

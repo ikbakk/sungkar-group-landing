@@ -8,12 +8,15 @@ export const REGIONS = {
   LABUAN_BAJO: "labuan-bajo" as const,
 };
 
-export type RegionKey = typeof REGIONS[keyof typeof REGIONS];
+export type RegionKey = (typeof REGIONS)[keyof typeof REGIONS];
 
 /**
  * Region information with display labels and styling classes
  */
-export const REGION_INFO: Record<RegionKey, { label: string; className: string }> = {
+export const REGION_INFO: Record<
+  RegionKey,
+  { label: string; className: string }
+> = {
   [REGIONS.LOMBOK]: {
     label: "Lombok",
     className: "bg-blue-100 text-blue-800",

@@ -47,7 +47,10 @@ const collectionTitle = collectionPackages[0]?.collectionTitle ?? "";
 
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-  { label: uiStrings.breadcrumb.tourPackages, href: `/${locale}/tour-packages` },
+  {
+    label: uiStrings.breadcrumb.tourPackages,
+    href: `/${locale}/tour-packages`,
+  },
   { label: REGION_LABEL[r], href: `/${locale}/tour-packages/${r}` },
   { label: collectionTitle },
 ];
@@ -68,7 +71,11 @@ const breadcrumbs = [
 
   <SectionContainer background="bg-surface-soft">
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {collectionPackages.map((tour) => <PackageCard tour={tour} locale={locale} />)}
+      {
+        collectionPackages.map((tour) => (
+          <PackageCard tour={tour} locale={locale} />
+        ))
+      }
     </div>
   </SectionContainer>
 </MainLayout>

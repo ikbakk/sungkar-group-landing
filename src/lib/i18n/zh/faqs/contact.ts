@@ -1,8 +1,7 @@
 export const contactFaq = [
   {
     question: "Sungkar Group多久回复？",
-    answer:
-      "通过WhatsApp收到的大多数咨询将在当天回复，尤其是在工作时间。",
+    answer: "通过WhatsApp收到的大多数咨询将在当天回复，尤其是在工作时间。",
   },
   {
     question: "联系前需要准备哪些信息？",
@@ -21,8 +20,7 @@ export const contactFaq = [
   },
   {
     question: "咨询免费吗？",
-    answer:
-      "是的。关于旅行计划的初步咨询免费。",
+    answer: "是的。关于旅行计划的初步咨询免费。",
   },
   {
     question: "联系Sungkar Group团队最快的方式是什么？",

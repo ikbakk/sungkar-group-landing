@@ -55,8 +55,7 @@ export function generateLocalBusinessSchema(siteUrl: string) {
     "@type": "LocalBusiness",
     name: "Sungkar Group",
     image: `${siteUrl}/logo.png`,
-    description:
-      "龙目岛旅行社，提供私人团、交通和本地导游服务。",
+    description: "龙目岛旅行社，提供私人团、交通和本地导游服务。",
     address: {
       "@type": "PostalAddress",
       streetAddress: businessInfo.address.street,

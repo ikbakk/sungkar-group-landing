@@ -22,8 +22,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     description:
       "تعرف أكثر على مجموعة سونغكار، فريقنا المحلي، ونهجنا للسياحة المستدامة.",
     image: GALLERY.tourCultural,
-    imageAlt:
-      "تجربة ثقافية محلية مع فريق مجموعة سونغكار",
+    imageAlt: "تجربة ثقافية محلية مع فريق مجموعة سونغكار",
   },
   "/paket-wisata": {
     title: "برامج سياحية | مجموعة سونغكار - السياحة والسفر",
@@ -69,15 +68,13 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
   },
   "/akomodasi": {
     title: "الإقامة | مجموعة سونغكار - السياحة والسفر",
-    description:
-      "أفضل توصيات الإقامة في لومبوك بأسعار معقولة مع مرافق كاملة.",
+    description: "أفضل توصيات الإقامة في لومبوك بأسعار معقولة مع مرافق كاملة.",
     image: DESTINATIONS.lombok,
     imageAlt: "توصيات الإقامة في لومبوك",
   },
   "/sewa-mobil": {
     title: "تأجير السيارات | مجموعة سونغكار - السياحة والسفر",
-    description:
-      "استأجر مركبات محلية مع سائقين ذوي خبرة لرحلة مريحة ومرنة.",
+    description: "استأجر مركبات محلية مع سائقين ذوي خبرة لرحلة مريحة ومرنة.",
     image: HERO.heroLombok,
     imageAlt: "خدمة تأجير سيارات مع سائقين محترفين",
   },

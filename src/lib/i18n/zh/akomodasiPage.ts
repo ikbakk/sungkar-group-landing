@@ -13,8 +13,7 @@ export const akomodasiPageContent = {
     },
     sumbawa: {
       title: "松巴哇岛酒店",
-      description:
-        "松巴哇岛住宿，适合鲸鲨海洋探险之旅，可直达海上旅游目的地。",
+      description: "松巴哇岛住宿，适合鲸鲨海洋探险之旅，可直达海上旅游目的地。",
     },
     "labuan-bajo": {
       title: "纳闽巴霍酒店",
@@ -24,8 +23,7 @@ export const akomodasiPageContent = {
   },
   cta: {
     title: "需要特定酒店推荐？",
-    description:
-      "我们乐意为您的旅行计划推荐最合适的住宿。",
+    description: "我们乐意为您的旅行计划推荐最合适的住宿。",
     buttonLabel: "咨询我们",
     buttonHref: "/kontak",
   },

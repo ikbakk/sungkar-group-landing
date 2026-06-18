@@ -23,11 +23,7 @@ const faqModule = await loadFaq(locale!, "reviews");
 const { reviewsFaq } = faqModule;
 
 const pageModule = await loadContent(locale!, "reviewPage");
-const {
-  reviewsPageContent,
-  reviews,
-  reviewStats,
-} = pageModule;
+const { reviewsPageContent, reviews, reviewStats } = pageModule;
 
 const faqSchema = generateFAQPageSchema(reviewsFaq);
 
@@ -76,17 +72,19 @@ const breadcrumbs = [
 
         <ul class="flex flex-col gap-3">
           {
-            reviewsPageContent.insights.items.map((item: { title: string; description: string }) => (
-              <li class="flex items-start gap-3 rounded-xl border border-border bg-surface-soft p-4">
-                <div class="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-brand-700" />
-                <div>
-                  <div class="font-medium text-foreground">{item.title}</div>
-                  <p class="mt-0.5 text-sm text-text-muted">
-                    {item.description}
-                  </p>
-                </div>
-              </li>
-            ))
+            reviewsPageContent.insights.items.map(
+              (item: { title: string; description: string }) => (
+                <li class="flex items-start gap-3 rounded-xl border border-border bg-surface-soft p-4">
+                  <div class="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-brand-700" />
+                  <div>
+                    <div class="font-medium text-foreground">{item.title}</div>
+                    <p class="mt-0.5 text-sm text-text-muted">
+                      {item.description}
+                    </p>
+                  </div>
+                </li>
+              ),
+            )
           }
         </ul>
       </div>

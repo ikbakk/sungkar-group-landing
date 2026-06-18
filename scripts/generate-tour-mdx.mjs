@@ -1,4 +1,10 @@
-import { mkdirSync, writeFileSync, existsSync, readFileSync, readdirSync } from "fs";
+import {
+  mkdirSync,
+  writeFileSync,
+  existsSync,
+  readFileSync,
+  readdirSync,
+} from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import yaml from "yaml";
@@ -9,7 +15,7 @@ const ROOT = join(__dirname, "..", "src/content/tourPackages");
 const LOCALES = ["id", "en", "ar", "ms", "zh"];
 
 // Read all JSON data files
-const files = readdirSync(DATA_DIR).filter(f => f.endsWith(".json"));
+const files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));
 
 let PKGS = [];
 for (const f of files) {

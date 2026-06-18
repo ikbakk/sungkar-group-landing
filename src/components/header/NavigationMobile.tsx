@@ -238,7 +238,7 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
                                 (group.items?.length ?? 0) +
                                 (group.collections?.reduce(
                                   (acc, c) => acc + c.items.length,
-                                  0
+                                  0,
                                 ) ?? 0);
 
                               return (
@@ -268,27 +268,30 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
                                   <AccordionContent className="bg-background">
                                     <div className="space-y-4 pl-4">
                                       {/* Direct items (single-package collections) */}
-                                      {group.items && group.items.length > 0 && (
-                                        <div className="grid gap-1">
-                                          {group.items.map((subItem) => (
-                                            <TruncatedLink
-                                              key={subItem.href}
-                                              href={lh(subItem.href)!}
-                                              label={subItem.label}
-                                              className="py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                                            />
-                                          ))}
-                                        </div>
-                                      )}
+                                      {group.items &&
+                                        group.items.length > 0 && (
+                                          <div className="grid gap-1">
+                                            {group.items.map((subItem) => (
+                                              <TruncatedLink
+                                                key={subItem.href}
+                                                href={lh(subItem.href)!}
+                                                label={subItem.label}
+                                                className="py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                                              />
+                                            ))}
+                                          </div>
+                                        )}
 
                                       {/* Multi-package collections */}
-                                      {group.collections && group.collections.length > 0 && (
-                                        <div className="space-y-4">
-                                          {group.collections.map((collection) => (
-                                            <div key={collection.title}>
-                                              <a
-                                                href={lh(collection.href)}
-                                                className="
+                                      {group.collections &&
+                                        group.collections.length > 0 && (
+                                          <div className="space-y-4">
+                                            {group.collections.map(
+                                              (collection) => (
+                                                <div key={collection.title}>
+                                                  <a
+                                                    href={lh(collection.href)}
+                                                    className="
                                                   mb-2
                                                   block
                                                   text-xs
@@ -297,31 +300,36 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
                                                   tracking-wide
                                                   text-brand-700
                                                 "
-                                              >
-                                                {collection.title}
-                                              </a>
+                                                  >
+                                                    {collection.title}
+                                                  </a>
 
-                                              <div className="grid gap-1">
-                                                {collection.items.map((subItem) => (
-                                                  <a
-                                                    key={subItem.href}
-                                                    href={lh(subItem.href)}
-                                                    className="
+                                                  <div className="grid gap-1">
+                                                    {collection.items.map(
+                                                      (subItem) => (
+                                                        <a
+                                                          key={subItem.href}
+                                                          href={lh(
+                                                            subItem.href,
+                                                          )}
+                                                          className="
                                                       py-2
                                                       text-sm
                                                       text-muted-foreground
                                                       transition-colors
                                                       hover:text-foreground
                                                     "
-                                                  >
-                                                    {subItem.label}
-                                                  </a>
-                                                ))}
-                                              </div>
-                                            </div>
-                                          ))}
-                                        </div>
-                                      )}
+                                                        >
+                                                          {subItem.label}
+                                                        </a>
+                                                      ),
+                                                    )}
+                                                  </div>
+                                                </div>
+                                              ),
+                                            )}
+                                          </div>
+                                        )}
                                     </div>
                                   </AccordionContent>
                                 </AccordionItem>

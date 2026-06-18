@@ -67,10 +67,28 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
   </CardHeader>
 
   <CardContent class="grid gap-6">
-    <form id="availability-form" class="grid gap-4" method="POST" action="https://api.web3forms.com/submit">
-      <input type="hidden" name="access_key" value="{import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY || ''}" />
-      <input type="hidden" name="subject" value="New Inquiry - Sungkar Group Website" />
-      <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+    <form
+      id="availability-form"
+      class="grid gap-4"
+      method="POST"
+      action="https://api.web3forms.com/submit"
+    >
+      <input
+        type="hidden"
+        name="access_key"
+        value="{import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY || ''}"
+      />
+      <input
+        type="hidden"
+        name="subject"
+        value="New Inquiry - Sungkar Group Website"
+      />
+      <input
+        type="checkbox"
+        name="botcheck"
+        class="hidden"
+        style="display:none"
+      />
       <div class="grid gap-4 sm:grid-cols-2">
         {
           formFields.map((field) =>
@@ -144,12 +162,16 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
 
         <div class="grid gap-4 sm:col-span-2 sm:grid-cols-2">
           <label class="grid gap-2">
-            <span class="form-label-light">{uiStrings.contact.chooseLocation}</span>
+            <span class="form-label-light"
+              >{uiStrings.contact.chooseLocation}</span
+            >
             <NativeSelect
               name="location"
               class="w-full rounded-lg border-white/10 bg-white/5 text-white hover:bg-white/10 [&_select]:text-white [&_select]:placeholder:text-brand-100/50 [&_select]:bg-transparent"
             >
-              <NativeSelectOption value="">{uiStrings.contact.chooseLocation}</NativeSelectOption>
+              <NativeSelectOption value=""
+                >{uiStrings.contact.chooseLocation}</NativeSelectOption
+              >
               {
                 regions.map((r) => (
                   <NativeSelectOption value={r.key}>
@@ -161,7 +183,9 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
           </label>
 
           <label class="grid gap-2">
-            <span class="form-label-light">{uiStrings.contact.choosePackage}</span>
+            <span class="form-label-light"
+              >{uiStrings.contact.choosePackage}</span
+            >
             <NativeSelect
               name="package"
               id="package-select"
@@ -196,7 +220,15 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
   </CardContent>
 </Card>
 
-<script is:inline define:vars={{ whatsappNumber, packagesData, choosePackageLabel: uiStrings.contact.choosePackage, selectLocationFirstLabel: uiStrings.contact.selectLocationFirst }}>
+<script
+  is:inline
+  define:vars={{
+    whatsappNumber,
+    packagesData,
+    choosePackageLabel: uiStrings.contact.choosePackage,
+    selectLocationFirstLabel: uiStrings.contact.selectLocationFirst,
+  }}
+>
   var locationSelect = document.querySelector('[name="location"]');
   var packageSelect = document.querySelector('[name="package"]');
   var submitBtn = document.getElementById("contact-whatsapp");
@@ -220,7 +252,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
     var region = locationSelect ? locationSelect.value : "";
     if (!region) {
       packageSelect.innerHTML =
-        '<option value="">' + selectLocationFirstLabel + '</option>';
+        '<option value="">' + selectLocationFirstLabel + "</option>";
       packageSelect.disabled = true;
       updateButton();
       return;
@@ -242,7 +274,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
       groups[p.collectionSlug].packages.push(p);
     }
 
-    var html = '<option value="">' + choosePackageLabel + '</option>';
+    var html = '<option value="">' + choosePackageLabel + "</option>";
     var groupKeys = Object.keys(groups);
     for (var g = 0; g < groupKeys.length; g++) {
       var group = groups[groupKeys[g]];

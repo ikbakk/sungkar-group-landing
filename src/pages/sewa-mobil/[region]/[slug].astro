@@ -34,7 +34,10 @@ const { vehicle } = Astro.props;
 const uiStrings = t(locale);
 
 const vehicleUrl = `${SITE_URL}/sewa-mobil/${vehicle.region}/${vehicle.slug}`;
-const absoluteImageUrl = new URL(getImageSrc(vehicle.imageTop), SITE_URL).toString();
+const absoluteImageUrl = new URL(
+  getImageSrc(vehicle.imageTop),
+  SITE_URL,
+).toString();
 
 const productSchema = generateProductSchema(
   vehicle.name,

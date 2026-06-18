@@ -42,79 +42,65 @@ export const aboutContent = {
     },
     {
       title: "私人定制游",
-      description:
-        "可根据您的兴趣、团队规模和出行时间表量身定制的专属行程。",
+      description: "可根据您的兴趣、团队规模和出行时间表量身定制的专属行程。",
     },
     {
       title: "拼团游",
-      description:
-        "为大家庭、社团、学校、组织及各类团队提供的旅行解决方案。",
+      description: "为大家庭、社团、学校、组织及各类团队提供的旅行解决方案。",
     },
     {
       title: "企业团建",
-      description:
-        "以专业管理支持户外拓展、聚会、激励旅游及商务差旅。",
+      description: "以专业管理支持户外拓展、聚会、激励旅游及商务差旅。",
     },
     {
       title: "旅游交通",
-      description:
-        "提供舒适的交通服务，支持您在龙目岛期间的出行需求。",
+      description: "提供舒适的交通服务，支持您在龙目岛期间的出行需求。",
     },
     {
       title: "定制行程",
-      description:
-        "协助根据每位旅行者的需求和偏好设计旅游项目。",
+      description: "协助根据每位旅行者的需求和偏好设计旅游项目。",
     },
   ],
 
   strengths: [
     {
       title: "经验丰富的本地团队",
-      description:
-        "深谙龙目岛，从热门目的地到鲜为旅行者知晓的隐秘地点。",
+      description: "深谙龙目岛，从热门目的地到鲜为旅行者知晓的隐秘地点。",
     },
     {
       title: "行程规划周全",
-      description:
-        "每条行程的设计都旨在让旅途舒适、高效且不赶路。",
+      description: "每条行程的设计都旨在让旅途舒适、高效且不赶路。",
     },
     {
       title: "灵活多变",
-      description:
-        "旅游项目可根据每位客人的需求、时长和出行偏好进行调整。",
+      description: "旅游项目可根据每位客人的需求、时长和出行偏好进行调整。",
     },
     {
       title: "响应及时",
-      description:
-        "从咨询环节直到行程结束，全程提供协助。",
+      description: "从咨询环节直到行程结束，全程提供协助。",
     },
   ],
 
   values: [
     {
       title: "待客之道",
-      description:
-        "以热情、友好和细致的态度服务每一位客人。",
+      description: "以热情、友好和细致的态度服务每一位客人。",
     },
     {
       title: "诚信",
-      description:
-        "在每项服务中坚守诚实、透明和负责。",
+      description: "在每项服务中坚守诚实、透明和负责。",
     },
     {
       title: "专业",
-      description:
-        "以高标准服务为准则，专注于客户满意度。",
+      description: "以高标准服务为准则，专注于客户满意度。",
     },
     {
       title: "可靠",
-      description:
-        "提供一致、准时且值得信赖的服务。",
+      description: "提供一致、准时且值得信赖的服务。",
     },
     {
       title: "本地自豪感",
-      description:
-        "通过优质且负责任的旅行体验推广龙目岛。",
+      description: "通过优质且负责任的旅行体验推广龙目岛。",
     },
   ],
 
@@ -139,8 +125,7 @@ export const aboutContent = {
 
   cta: {
     title: "准备好与我们一起探索龙目岛了吗？",
-    description:
-      "与我们的团队讨论您的旅行需求，寻找最适合您龙目岛体验的行程。",
+    description: "与我们的团队讨论您的旅行需求，寻找最适合您龙目岛体验的行程。",
     primaryButton: {
       label: "联系我们",
       href: "/kontak",

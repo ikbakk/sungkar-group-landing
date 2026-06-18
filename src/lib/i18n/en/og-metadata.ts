@@ -22,8 +22,7 @@ export const pageOGMetadata: Record<string, OGMetadata> = {
     description:
       "Learn more about Sungkar Group, our local team, and our sustainable travel approach.",
     image: GALLERY.tourCultural,
-    imageAlt:
-      "Local cultural experience with the Sungkar Group team",
+    imageAlt: "Local cultural experience with the Sungkar Group team",
   },
   "/paket-wisata": {
     title: "Tour Packages | Sungkar Group - Tour and Travel",

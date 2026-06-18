@@ -1,1 +1,1 @@
-export { default as Marquee } from "./marquee.astro"
+export { default as Marquee } from "./marquee.astro";

@@ -21,123 +21,127 @@ const uiStrings = t(locale);
 
 const region = REGION_MAP[tour.region];
 
-const cardHref = localizeHref(`/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`, locale);
+const cardHref = localizeHref(
+  `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`,
+  locale,
+);
 ---
 
-  <Card
-    class="
-      group
+<Card class="group
       h-fit
       overflow-hidden
-      py-0
-    "
-  >
-    <!-- Image -->
+      py-0">
+  <!-- Image -->
 
-    <div class="relative overflow-hidden">
-      <OptimizedImage
-        src={tour.images[0]}
-        alt={tour.title}
-        class="aspect-4/3
+  <div class="relative overflow-hidden">
+    <OptimizedImage
+      src={tour.images[0]}
+      alt={tour.title}
+      class="aspect-4/3
           w-full
           object-cover
           transition-transform
           duration-700
           ease-out
           group-hover:scale-105"
-        loading="lazy"
-      />
+      loading="lazy"
+    />
 
-      <div class="absolute left-4 top-4 font-sans">
-        <Badge class={region.className}>
-          {region.label}
-        </Badge>
-      </div>
+    <div class="absolute left-4 top-4 font-sans">
+      <Badge class={region.className}>
+        {region.label}
+      </Badge>
+    </div>
+  </div>
+
+  <!-- Content -->
+
+  <CardContent class="flex h-full flex-col gap-4 p-6">
+    <div class="flex flex-wrap items-center gap-2">
+      <Badge
+        variant="outline"
+        class="rounded-full
+            px-3
+            py-1
+            text-xs
+            font-medium"
+      >
+        {tour.duration}
+      </Badge>
+
+      <Badge
+        variant="secondary"
+        class="rounded-full
+            px-3
+            py-1
+            text-xs
+            font-medium"
+      >
+        {tour.collectionTitle}
+      </Badge>
     </div>
 
-    <!-- Content -->
-
-    <CardContent class="flex h-full flex-col gap-4 p-6">
-      <div class="flex flex-wrap items-center gap-2">
-        <Badge
-          variant="outline"
-          class="
-            rounded-full
-            px-3
-            py-1
-            text-xs
-            font-medium
-          "
-        >
-          {tour.duration}
-        </Badge>
-
-        <Badge
-          variant="secondary"
-          class="
-            rounded-full
-            px-3
-            py-1
-            text-xs
-            font-medium
-          "
-        >
-          {tour.collectionTitle}
-        </Badge>
-      </div>
-
-      <div>
-        <h3
-          class="text-xl
+    <div>
+      <h3
+        class="text-xl
             
             leading-tight
             text-foreground"
-        >
-          {tour.title}
-        </h3>
+      >
+        {tour.title}
+      </h3>
 
-        <p
-          class="mt-3
+      <p
+        class="mt-3
             font-sans
             line-clamp-2
             text-sm
             leading-7
             text-text-muted"
-        >
-          {tour.summary}
-        </p>
-      </div>
+      >
+        {tour.summary}
+      </p>
+    </div>
 
-      <ul class="space-y-2 text-sm font-sans">
-        {
-          tour.highlights.slice(0, 3).map((item) => (
-            <li
-              class="
+    <ul class="space-y-2 text-sm font-sans">
+      {
+        tour.highlights.slice(0, 3).map((item) => (
+          <li
+            class="
                 flex
                 items-center
                 gap-2
                 text-text-muted
               "
-            >
-              <HugeiconsIcon icon={Tick02Icon} size={16} className="shrink-0 text-brand-700" />
+          >
+            <HugeiconsIcon
+              icon={Tick02Icon}
+              size={16}
+              className="shrink-0 text-brand-700"
+            />
 
-              <span>{item}</span>
-            </li>
-          ))
-        }
-        {
-          tour.highlights.length > 3 && (
-            <li class="text-sm text-text-muted font-sans">
-              {uiStrings.common.moreCount.replace("{n}", String(tour.highlights.length - 3))}
-            </li>
-          )
-        }
-      </ul>
+            <span>{item}</span>
+          </li>
+        ))
+      }
+      {
+        tour.highlights.length > 3 && (
+          <li class="text-sm text-text-muted font-sans">
+            {uiStrings.common.moreCount.replace(
+              "{n}",
+              String(tour.highlights.length - 3),
+            )}
+          </li>
+        )
+      }
+    </ul>
 
-      <div class="mt-auto pt-2">
-        <a href={cardHref}>
-          <Button size="lg" class="w-full">{uiStrings.paketWisata.viewPackageDetail}</Button>
-        </a>
-      </div>
-    </CardContent>
-  </Card>
+    <div class="mt-auto pt-2">
+      <a href={cardHref}>
+        <Button size="lg" class="w-full"
+          >{uiStrings.paketWisata.viewPackageDetail}</Button
+        >
+      </a>
+    </div>
+  </CardContent>
+</Card>

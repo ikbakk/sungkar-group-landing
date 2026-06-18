@@ -44,7 +44,11 @@ const uiStrings = t(locale);
       </div>
 
       <p class="text-sm text-text-muted mt-2">
-        <span class="font-semibold text-foreground">{uiStrings.reviews.totalOnGoogle.replace("{n}", String(totalReviews))}</span>
+        <span class="font-semibold text-foreground"
+          >{
+            uiStrings.reviews.totalOnGoogle.replace("{n}", String(totalReviews))
+          }</span
+        >
       </p>
     </div>
   </div>

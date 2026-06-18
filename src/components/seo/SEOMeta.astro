@@ -75,9 +75,10 @@ const ogLocale = localeMap[locale] || "id_ID";
 
 const uiStrings = t(locale);
 
-const basePath = locale === "id"
-  ? canonicalPath
-  : canonicalPath.replace(new RegExp("^/" + locale), "") || "/";
+const basePath =
+  locale === "id"
+    ? canonicalPath
+    : canonicalPath.replace(new RegExp("^/" + locale), "") || "/";
 const defaultUrl = new URL(basePath, SITE_URL).toString();
 ---
 
@@ -95,19 +96,17 @@ const defaultUrl = new URL(basePath, SITE_URL).toString();
 <link rel="alternate" href={defaultUrl} hreflang="x-default" />
 {
   LOCALES.filter((l) => l !== locale).map((l) => {
-    const altUrl = l === "id"
-      ? defaultUrl
-      : new URL(`/${l}${basePath}`, SITE_URL).toString();
+    const altUrl =
+      l === "id"
+        ? defaultUrl
+        : new URL(`/${l}${basePath}`, SITE_URL).toString();
     return <link rel="alternate" href={altUrl} hreflang={l} />;
   })
 }
 
 <meta name="robots" content={noIndex ? "noindex,nofollow" : "index,follow"} />
 
-<meta
-  name="keywords"
-  content={uiStrings.seo.keywords}
-/>
+<meta name="keywords" content={uiStrings.seo.keywords} />
 
 <meta name="theme-color" content="#0f766e" />
 
@@ -129,9 +128,13 @@ const defaultUrl = new URL(basePath, SITE_URL).toString();
     <>
       <meta property="og:image" content={ogImageUrl} />
 
-      {ogImageWidth && <meta property="og:image:width" content={String(ogImageWidth)} />}
+      {ogImageWidth && (
+        <meta property="og:image:width" content={String(ogImageWidth)} />
+      )}
 
-      {ogImageHeight && <meta property="og:image:height" content={String(ogImageHeight)} />}
+      {ogImageHeight && (
+        <meta property="og:image:height" content={String(ogImageHeight)} />
+      )}
 
       <meta property="og:image:alt" content={ogImageAlt} />
     </>

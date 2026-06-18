@@ -29,9 +29,11 @@ const uiStrings = t(locale);
   </div>
 
   <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-    {destinations.map((destination) => (
-      <DestinationCard destination={destination} />
-    ))}
+    {
+      destinations.map((destination) => (
+        <DestinationCard destination={destination} />
+      ))
+    }
   </div>
 
   <div class="mt-8 flex justify-center">

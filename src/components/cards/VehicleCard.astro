@@ -57,11 +57,15 @@ const cardHref = localizeHref(
       </div>
       <div class="grid grid-cols-2 gap-2 text-sm">
         <div class="rounded border border-border p-2 text-center">
-          <div class="text-xs text-text-muted">{uiStrings.sewaMobil.transmission}</div>
+          <div class="text-xs text-text-muted">
+            {uiStrings.sewaMobil.transmission}
+          </div>
           <div class="font-medium">{vehicle.transmission}</div>
         </div>
         <div class="rounded border border-border p-2 text-center">
-          <div class="text-xs text-text-muted">{uiStrings.sewaMobil.passengers}</div>
+          <div class="text-xs text-text-muted">
+            {uiStrings.sewaMobil.passengers}
+          </div>
           <div class="font-medium">{vehicle.seats}</div>
         </div>
       </div>
@@ -109,7 +113,9 @@ const cardHref = localizeHref(
 
   <CardFooter>
     <a href={cardHref}>
-      <Button size="lg" class="w-full">{uiStrings.sewaMobil.viewDetailRent}</Button>
+      <Button size="lg" class="w-full"
+        >{uiStrings.sewaMobil.viewDetailRent}</Button
+      >
     </a>
   </CardFooter>
 </Card>

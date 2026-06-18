@@ -10,5 +10,3 @@ export {
   generateWebsiteSchema,
   generateContactPageSchema,
 } from "@/lib/schemas";
-
-

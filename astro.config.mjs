@@ -29,16 +29,21 @@ export default defineConfig({
     },
   },
 
-  integrations: [react(), sitemap({
-    i18n: {
-      defaultLocale: "id",
-      locales: {
-        id: "id-ID",
-        en: "en-US",
-        ar: "ar-SA",
-        ms: "ms-MY",
-        zh: "zh-CN",
+  integrations: [
+    react(),
+    sitemap({
+      i18n: {
+        defaultLocale: "id",
+        locales: {
+          id: "id-ID",
+          en: "en-US",
+          ar: "ar-SA",
+          ms: "ms-MY",
+          zh: "zh-CN",
+        },
       },
-    },
-  }), robotsTxt(), mdx()],
+    }),
+    robotsTxt(),
+    mdx(),
+  ],
 });

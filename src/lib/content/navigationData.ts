@@ -37,7 +37,10 @@ type CollectionResult = {
   items: { label: string; href: string }[];
 };
 
-const createPackageCollections = (packages: TourPackage[], region: "lombok" | "sumbawa" | "labuan-bajo"): CollectionResult => {
+const createPackageCollections = (
+  packages: TourPackage[],
+  region: "lombok" | "sumbawa" | "labuan-bajo",
+): CollectionResult => {
   const regionPackages = packages.filter((pkg) => pkg.region === region);
 
   const grouped = regionPackages.reduce(

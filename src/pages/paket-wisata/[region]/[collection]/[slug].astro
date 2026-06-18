@@ -2,7 +2,11 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
-import { generateProductSchema, generateBreadcrumbSchema, generateFAQPageSchema } from "@/lib/schemas";
+import {
+  generateProductSchema,
+  generateBreadcrumbSchema,
+  generateFAQPageSchema,
+} from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 
 import { getPackages } from "@/lib/content/tourPackages/collection";
@@ -28,7 +32,6 @@ import { loadFaq } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n";
 import { getImageSrc } from "@/lib/images";
 
-
 export async function getStaticPaths() {
   const idPackages = await getPackages("id");
   const paths = [];
@@ -52,7 +55,10 @@ const uiStrings = t(locale);
 const r = tour.region as Region;
 
 const packageUrl = `${SITE_URL}/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
-const absoluteImageUrl = new URL(getImageSrc(tour.images[0]), SITE_URL).toString();
+const absoluteImageUrl = new URL(
+  getImageSrc(tour.images[0]),
+  SITE_URL,
+).toString();
 
 const productSchema = generateProductSchema(
   tour.title,
@@ -72,8 +78,14 @@ const breadcrumbItems = [
   { name: uiStrings.breadcrumb.home, url: "/" },
   { name: uiStrings.breadcrumb.tourPackages, url: "/paket-wisata" },
   { name: REGION_LABEL[r], url: `/paket-wisata/${tour.region}` },
-  { name: tour.collectionTitle, url: `/paket-wisata/${tour.region}/${tour.collectionSlug}` },
-  { name: tour.title, url: `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}` },
+  {
+    name: tour.collectionTitle,
+    url: `/paket-wisata/${tour.region}/${tour.collectionSlug}`,
+  },
+  {
+    name: tour.title,
+    url: `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`,
+  },
 ];
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
@@ -109,7 +121,10 @@ const itineraryByDay = Object.entries(
       { label: uiStrings.breadcrumb.home, href: "/" },
       { label: uiStrings.breadcrumb.tourPackages, href: "/paket-wisata" },
       { label: REGION_LABEL[r], href: `/paket-wisata/${tour.region}` },
-      { label: tour.collectionTitle, href: `/paket-wisata/${tour.region}/${tour.collectionSlug}` },
+      {
+        label: tour.collectionTitle,
+        href: `/paket-wisata/${tour.region}/${tour.collectionSlug}`,
+      },
       { label: tour.title },
     ]}
     image={tour.images[0]}
@@ -131,7 +146,9 @@ const itineraryByDay = Object.entries(
 
   <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
     <div class="mx-auto max-w-3xl text-center">
-      <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+      <div
+        class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
+      >
         {uiStrings.gallery.title}
       </div>
       <h2 class="mt-2 text-3xl leading-tight sm:text-4xl">
@@ -140,26 +157,31 @@ const itineraryByDay = Object.entries(
     </div>
 
     <div class="mt-10">
-      <Carousel opts={{ loop: true, align: "center" }} class="mx-auto max-w-3xl">
+      <Carousel
+        opts={{ loop: true, align: "center" }}
+        class="mx-auto max-w-3xl"
+      >
         <CarouselContent>
-          {tour.images.map((img, i) => (
-            <CarouselItem>
-              <button
-                type="button"
-                data-image-index={i}
-                class="group cursor-zoom-in overflow-hidden rounded-xl"
-              >
-                <div class="aspect-[4/3]">
-                  <OptimizedImage
-                    src={img}
-                    alt=""
-                    class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-              </button>
-            </CarouselItem>
-          ))}
+          {
+            tour.images.map((img, i) => (
+              <CarouselItem>
+                <button
+                  type="button"
+                  data-image-index={i}
+                  class="group cursor-zoom-in overflow-hidden rounded-xl"
+                >
+                  <div class="aspect-[4/3]">
+                    <OptimizedImage
+                      src={img}
+                      alt=""
+                      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                </button>
+              </CarouselItem>
+            ))
+          }
         </CarouselContent>
         <CarouselPrevious class="left-2 md:-left-12 bg-background" />
         <CarouselNext class="right-2 md:-right-12 bg-background" />
@@ -173,7 +195,9 @@ const itineraryByDay = Object.entries(
     <div class="grid gap-12 lg:grid-cols-2 lg:items-start">
       <div class="pt-8">
         <div class="mb-8">
-          <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+          <div
+            class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
+          >
             {uiStrings.cta.book}
           </div>
           <h2 class="mt-2 text-3xl leading-tight">

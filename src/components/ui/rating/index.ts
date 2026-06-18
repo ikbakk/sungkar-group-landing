@@ -1,1 +1,1 @@
-export { default as Rating } from "./rating.astro"
+export { default as Rating } from "./rating.astro";

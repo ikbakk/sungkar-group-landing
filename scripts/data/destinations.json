@@ -3,13 +3,21 @@
     "slug": "kuta-lombok",
     "_type": "destinations",
     "image": "destinations/lombok.webp",
-    "gallery": ["gallery/kuta-beach.webp", "gallery/kuta-beach-2.webp", "hero/hero-lombok.webp"],
+    "gallery": [
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "hero/hero-lombok.webp"
+    ],
     "locales": {
       "id": {
         "title": "Kuta Lombok",
         "region": "Selatan Lombok",
         "summary": "Garis pantai yang luas, akses ke banyak singgah pantai, dan tempo liburan yang santai.",
-        "thingsToDo": ["Jelajah pantai", "Titik matahari terbenam", "Kafe lokal"],
+        "thingsToDo": [
+          "Jelajah pantai",
+          "Titik matahari terbenam",
+          "Kafe lokal"
+        ],
         "packages": ["3d2n-lombok-signature", "village-culture-experience"]
       },
       "en": {
@@ -30,7 +38,11 @@
         "title": "Kuta Lombok",
         "region": "Selatan Lombok",
         "summary": "Pesisir luas, akses ke banyak pantai, dan tempo pelancongan yang santai.",
-        "thingsToDo": ["Jelajah pantai", "Titik matahari terbenam", "Kedai tempatan"],
+        "thingsToDo": [
+          "Jelajah pantai",
+          "Titik matahari terbenam",
+          "Kedai tempatan"
+        ],
         "packages": ["3d2n-lombok-signature", "village-culture-experience"]
       },
       "zh": {
@@ -46,7 +58,11 @@
     "slug": "tetebatu",
     "_type": "destinations",
     "image": "destinations/lombok.webp",
-    "gallery": ["gallery/tour-cultural.webp", "hero/hero-lombok.webp", "gallery/kuta-beach.webp"],
+    "gallery": [
+      "gallery/tour-cultural.webp",
+      "hero/hero-lombok.webp",
+      "gallery/kuta-beach.webp"
+    ],
     "locales": {
       "id": {
         "title": "Tetebatu",
@@ -89,13 +105,21 @@
     "slug": "sembalun",
     "_type": "destinations",
     "image": "destinations/rinjani.webp",
-    "gallery": ["destinations/rinjani.webp", "hero/hero-lombok.webp", "gallery/tour-snorkeling.webp"],
+    "gallery": [
+      "destinations/rinjani.webp",
+      "hero/hero-lombok.webp",
+      "gallery/tour-snorkeling.webp"
+    ],
     "locales": {
       "id": {
         "title": "Sembalun",
         "region": "Koridor pegunungan",
         "summary": "Koridor pegunungan yang sering dipakai sebagai titik awal menuju pengalaman Rinjani.",
-        "thingsToDo": ["Pemandangan dataran tinggi", "Perjalanan matahari terbit", "Singgah kebun lokal"],
+        "thingsToDo": [
+          "Pemandangan dataran tinggi",
+          "Perjalanan matahari terbit",
+          "Singgah kebun lokal"
+        ],
         "packages": ["3d2n-lombok-signature"]
       },
       "en": {
@@ -109,14 +133,22 @@
         "title": "سيمبالون",
         "region": "ممر الجبال",
         "summary": "ممر جبلي يستخدم عادة كنقطة انطلاق لتجربة رينجاني.",
-        "thingsToDo": ["مناظر المرتفعات", "رحلة الشروق", "محطات المزارع المحلية"],
+        "thingsToDo": [
+          "مناظر المرتفعات",
+          "رحلة الشروق",
+          "محطات المزارع المحلية"
+        ],
         "packages": ["3d2n-lombok-signature"]
       },
       "ms": {
         "title": "Sembalun",
         "region": "Koridor pegunungan",
         "summary": "Koridor pegunungan yang biasa digunakan sebagai titik permulaan pengalaman Rinjani.",
-        "thingsToDo": ["Pemandangan pegunungan", "Perjalanan matahari terbit", "Lawatan ladang tempatan"],
+        "thingsToDo": [
+          "Pemandangan pegunungan",
+          "Perjalanan matahari terbit",
+          "Lawatan ladang tempatan"
+        ],
         "packages": ["3d2n-lombok-signature"]
       },
       "zh": {
@@ -132,20 +164,32 @@
     "slug": "rinjani",
     "_type": "destinations",
     "image": "destinations/rinjani.webp",
-    "gallery": ["destinations/rinjani.webp", "gallery/tour-snorkeling.webp", "gallery/kuta-beach.webp"],
+    "gallery": [
+      "destinations/rinjani.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/kuta-beach.webp"
+    ],
     "locales": {
       "id": {
         "title": "Rinjani",
         "region": "Area pegunungan",
         "summary": "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang jadi alasan banyak tamu datang.",
-        "thingsToDo": ["Titik pandang indah", "Dukungan trekking", "Rute matahari terbit"],
+        "thingsToDo": [
+          "Titik pandang indah",
+          "Dukungan trekking",
+          "Rute matahari terbit"
+        ],
         "packages": ["3d2n-lombok-signature"]
       },
       "en": {
         "title": "Rinjani",
         "region": "Area pegunungan",
         "summary": "Dramatic peak, mountain air, and sunrise experiences that bring many guests here.",
-        "thingsToDo": ["Scenic viewpoints", "Trekking support", "Sunrise routes"],
+        "thingsToDo": [
+          "Scenic viewpoints",
+          "Trekking support",
+          "Sunrise routes"
+        ],
         "packages": ["3d2n-lombok-signature"]
       },
       "ar": {
@@ -159,7 +203,11 @@
         "title": "Rinjani",
         "region": "Area pegunungan",
         "summary": "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang menarik ramai pelancong.",
-        "thingsToDo": ["Titik pandang senja", "Sokongan mendaki", "Jalur matahari terbit"],
+        "thingsToDo": [
+          "Titik pandang senja",
+          "Sokongan mendaki",
+          "Jalur matahari terbit"
+        ],
         "packages": ["3d2n-lombok-signature"]
       },
       "zh": {
@@ -175,13 +223,21 @@
     "slug": "senaru",
     "_type": "destinations",
     "image": "destinations/rinjani.webp",
-    "gallery": ["destinations/rinjani.webp", "gallery/tour-cultural.webp", "gallery/kuta-beach-2.webp"],
+    "gallery": [
+      "destinations/rinjani.webp",
+      "gallery/tour-cultural.webp",
+      "gallery/kuta-beach-2.webp"
+    ],
     "locales": {
       "id": {
         "title": "Senaru",
         "region": "Akses Rinjani",
         "summary": "Gerbang yang dekat dengan air terjun, jalur trekking, dan atmosfer pegunungan yang khas.",
-        "thingsToDo": ["Air terjun", "Dukungan trek", "Menginap di dataran tinggi"],
+        "thingsToDo": [
+          "Air terjun",
+          "Dukungan trek",
+          "Menginap di dataran tinggi"
+        ],
         "packages": ["3d2n-lombok-signature"]
       },
       "en": {
@@ -202,7 +258,11 @@
         "title": "Senaru",
         "region": "Akses Rinjani",
         "summary": "Gerbang dekat air terjun, laluan mendaki, dan suasana pegunungan yang khas.",
-        "thingsToDo": ["Air terjun", "Sokongan mendaki", "Menginap di pegunungan"],
+        "thingsToDo": [
+          "Air terjun",
+          "Sokongan mendaki",
+          "Menginap di pegunungan"
+        ],
         "packages": ["3d2n-lombok-signature"]
       },
       "zh": {
@@ -218,7 +278,11 @@
     "slug": "gili-trawangan",
     "_type": "destinations",
     "image": "destinations/gili.webp",
-    "gallery": ["destinations/gili.webp", "gallery/gili-meno.webp", "gallery/tour-snorkeling.webp"],
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp"
+    ],
     "locales": {
       "id": {
         "title": "Gili Trawangan",
@@ -261,7 +325,11 @@
     "slug": "gili-air",
     "_type": "destinations",
     "image": "destinations/gili.webp",
-    "gallery": ["destinations/gili.webp", "gallery/gili-meno.webp", "gallery/kuta-beach.webp"],
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach.webp"
+    ],
     "locales": {
       "id": {
         "title": "Gili Air",
@@ -288,7 +356,11 @@
         "title": "Gili Air",
         "region": "Kepulauan Gili",
         "summary": "Versi lebih tenang Gili dengan ruang yang banyak untuk berjalan santai dan snorkeling ringkas.",
-        "thingsToDo": ["Masa pantai santai", "Snorkeling", "Titik matahari terbenam"],
+        "thingsToDo": [
+          "Masa pantai santai",
+          "Snorkeling",
+          "Titik matahari terbenam"
+        ],
         "packages": ["snorkeling-gili-escape"]
       },
       "zh": {
@@ -304,7 +376,11 @@
     "slug": "gili-meno",
     "_type": "destinations",
     "image": "destinations/gili.webp",
-    "gallery": ["destinations/gili.webp", "gallery/gili-meno.webp", "gallery/kuta-beach-2.webp"],
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach-2.webp"
+    ],
     "locales": {
       "id": {
         "title": "Gili Meno",
@@ -347,7 +423,11 @@
     "slug": "sumbawa",
     "_type": "destinations",
     "image": "destinations/sumbawa.webp",
-    "gallery": ["destinations/sumbawa.webp", "gallery/whaleshark.webp", "gallery/tour-snorkeling.webp"],
+    "gallery": [
+      "destinations/sumbawa.webp",
+      "gallery/whaleshark.webp",
+      "gallery/tour-snorkeling.webp"
+    ],
     "locales": {
       "id": {
         "title": "Sumbawa",

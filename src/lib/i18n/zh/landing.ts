@@ -113,8 +113,7 @@ export const landingHero = {
 export const landingFeaturedToursBase = {
   eyebrow: "精选套餐",
   title: "最受欢迎的轻松度假套餐",
-  description:
-    "从短途旅行到多日行程，我们的套餐让您只需选择、出发、享受当下。",
+  description: "从短途旅行到多日行程，我们的套餐让您只需选择、出发、享受当下。",
   heroImage: GALLERY.tourSnorkeling,
 };
 
@@ -131,23 +130,19 @@ export const landingTransport = {
   services: [
     {
       title: "机场接送",
-      description:
-        "准时接送，适应早班、晚班或变化的行程安排。",
+      description: "准时接送，适应早班、晚班或变化的行程安排。",
     },
     {
       title: "私人日租司机",
-      description:
-        "适合希望自由调整目的地和停留时间的客人。",
+      description: "适合希望自由调整目的地和停留时间的客人。",
     },
     {
       title: "长期租车",
-      description:
-        "租车不带司机，完全自由探索龙目岛和松巴哇岛。",
+      description: "租车不带司机，完全自由探索龙目岛和松巴哇岛。",
     },
     {
       title: "多城市旅行套餐",
-      description:
-        "龙目岛 - 松巴哇岛 - 纳闽巴霍一站式交通，经济实惠。",
+      description: "龙目岛 - 松巴哇岛 - 纳闽巴霍一站式交通，经济实惠。",
     },
   ] satisfies LandingTransportCard[],
 };
@@ -166,8 +161,7 @@ export const landingVideo = {
 
   title: "出发前感受旅行氛围",
 
-  description:
-    "短视频帮助您想象我们为每次旅程准备的路线、目的地的服务氛围。",
+  description: "短视频帮助您想象我们为每次旅程准备的路线、目的地的服务氛围。",
 
   ctaLabel: "访问YouTube频道",
 

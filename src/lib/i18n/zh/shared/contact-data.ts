@@ -1,4 +1,9 @@
 export {
-  businessInfo, contactMethods, contactFormFields,
-  sewaMobilFormFields, paketWisataFormFields, buildWhatsappMessage, geoLocation,
+  businessInfo,
+  contactMethods,
+  contactFormFields,
+  sewaMobilFormFields,
+  paketWisataFormFields,
+  buildWhatsappMessage,
+  geoLocation,
 } from "@/lib/i18n/zh/contact-data";

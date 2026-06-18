@@ -37,16 +37,18 @@ const breadcrumbs = [
   />
 
   <SectionContainer background="bg-background">
-    {posts.length > 0 ? (
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post) => (
-          <BlogCard post={post} locale={locale} />
-        ))}
-      </div>
-    ) : (
-      <div class="py-16 text-center">
-        <p class="text-text-muted">{uiStrings.blogSection.emptyState}</p>
-      </div>
-    )}
+    {
+      posts.length > 0 ? (
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post) => (
+            <BlogCard post={post} locale={locale} />
+          ))}
+        </div>
+      ) : (
+        <div class="py-16 text-center">
+          <p class="text-text-muted">{uiStrings.blogSection.emptyState}</p>
+        </div>
+      )
+    }
   </SectionContainer>
 </MainLayout>

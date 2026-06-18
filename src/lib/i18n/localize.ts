@@ -38,9 +38,17 @@ export function englishToIndonesian(path: string): string {
   return path;
 }
 
-export function localizeHref(href: string | undefined, locale: string): string | undefined {
+export function localizeHref(
+  href: string | undefined,
+  locale: string,
+): string | undefined {
   if (!href) return href;
-  if (href.startsWith("http") || href.startsWith("#") || href.startsWith("tel:") || href.startsWith("mailto:")) {
+  if (
+    href.startsWith("http") ||
+    href.startsWith("#") ||
+    href.startsWith("tel:") ||
+    href.startsWith("mailto:")
+  ) {
     return href;
   }
 

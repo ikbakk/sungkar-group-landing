@@ -1,31 +1,31 @@
 ---
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Icon } from "@/components/ui/icon"
-import { Section, SectionContainer } from "@/components/ui/section"
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Icon } from "@/components/ui/icon";
+import { Section, SectionContainer } from "@/components/ui/section";
 
-import { t } from "@/lib/i18n"
+import { t } from "@/lib/i18n";
 
 type Props = {
-  class?: string
-  locale?: string
-  eyebrow?: string
-  title: string
-  description?: string
-  alignment?: "left" | "center" | "right"
+  class?: string;
+  locale?: string;
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  alignment?: "left" | "center" | "right";
   buttons?: {
-    label: string
-    href: string
-    variant?: "default" | "outline" | "secondary" | "ghost"
-  }[]
+    label: string;
+    href: string;
+    variant?: "default" | "outline" | "secondary" | "ghost";
+  }[];
   services: {
-    icon?: string
-    title: string
-    description: string
-    href?: string
-  }[]
-  linkText?: string
-}
+    icon?: string;
+    title: string;
+    description: string;
+    href?: string;
+  }[];
+  linkText?: string;
+};
 
 const {
   class: className,
@@ -37,18 +37,22 @@ const {
   buttons,
   services,
   linkText,
-} = Astro.props
+} = Astro.props;
 
-const uiStrings = t(locale)
+const uiStrings = t(locale);
 ---
 
 <Section class={cn("", className)}>
   <SectionContainer class="gap-12">
-    <div class={cn(alignment === "center" && "mx-auto max-w-2xl text-center", alignment === "left" && "text-left", alignment === "right" && "text-right ml-auto")}>
+    <div
+      class={cn(
+        alignment === "center" && "mx-auto max-w-2xl text-center",
+        alignment === "left" && "text-left",
+        alignment === "right" && "text-right ml-auto",
+      )}
+    >
       {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
-      <h2
-        class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl"
-      >
+      <h2 class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl">
         {title}
       </h2>
       {
@@ -60,7 +64,14 @@ const uiStrings = t(locale)
       }
       {
         buttons?.length && (
-          <div class={cn("mt-6 flex flex-wrap gap-3", alignment === "center" && "justify-center", alignment === "left" && "justify-start", alignment === "right" && "justify-end")}>
+          <div
+            class={cn(
+              "mt-6 flex flex-wrap gap-3",
+              alignment === "center" && "justify-center",
+              alignment === "left" && "justify-start",
+              alignment === "right" && "justify-end",
+            )}
+          >
             {buttons.map(({ href, label, ...button }) => (
               <Button as="a" href={href} variant={button.variant}>
                 {label}
@@ -79,9 +90,7 @@ const uiStrings = t(locale)
             <div class="bg-primary/10 text-primary ring-primary/15 flex size-10 items-center justify-center rounded-lg ring-1 transition-transform ring-inset group-hover/service:scale-105">
               <Icon name={service.icon ?? "layout-grid"} class="size-5" />
             </div>
-            <h3 class="text-base tracking-tight">
-              {service.title}
-            </h3>
+            <h3 class="text-base tracking-tight">{service.title}</h3>
             <p class="text-muted-foreground text-sm leading-relaxed">
               {service.description}
             </p>

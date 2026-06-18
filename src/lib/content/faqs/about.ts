@@ -20,7 +20,8 @@ export const aboutFaq = [
       "Kami menggabungkan pengetahuan lokal, pelayanan yang responsif, dan perencanaan perjalanan yang terstruktur sehingga tamu dapat menikmati Lombok dengan lebih nyaman dan efisien.",
   },
   {
-    question: "Apakah Sungkar Group menyediakan perjalanan yang dapat disesuaikan?",
+    question:
+      "Apakah Sungkar Group menyediakan perjalanan yang dapat disesuaikan?",
     answer:
       "Ya. Kami dapat membantu menyusun itinerary yang disesuaikan dengan jumlah peserta, durasi perjalanan, minat wisata, dan kebutuhan khusus lainnya.",
   },

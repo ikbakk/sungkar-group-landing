@@ -32,14 +32,19 @@ for (const group of groups) {
   // Deduplicate: keep only highest priority extension per base name
   const seen = new Map();
   for (const file of files) {
-    const base = path.basename(file).replace(/\.[^.]+$/, "").toLowerCase();
+    const base = path
+      .basename(file)
+      .replace(/\.[^.]+$/, "")
+      .toLowerCase();
     const ext = path.extname(file).toLowerCase().replace(".", "");
     const priority = extPriority.indexOf(ext);
     if (!seen.has(base) || priority < seen.get(base).priority) {
       seen.set(base, { file, priority });
     }
   }
-  files = Array.from(seen.values()).map((v) => v.file).sort();
+  files = Array.from(seen.values())
+    .map((v) => v.file)
+    .sort();
 
   const entries = [];
 

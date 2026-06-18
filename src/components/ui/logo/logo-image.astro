@@ -1,20 +1,26 @@
 ---
-import OptimizedImage from "@/components/ui/OptimizedImage.astro"
-import type { ImageSource } from "@/lib/images"
-import type { HTMLAttributes } from "astro/types"
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
+import type { ImageSource } from "@/lib/images";
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = Omit<HTMLAttributes<"img">, "src"> & {
-  src?: ImageSource
-  srcLight?: ImageSource
-  srcDark?: ImageSource
-  alt?: string
-}
+  src?: ImageSource;
+  srcLight?: ImageSource;
+  srcDark?: ImageSource;
+  alt?: string;
+};
 
-const { class: className, src, srcLight, srcDark, alt = "Sungkar Group" } = Astro.props
+const {
+  class: className,
+  src,
+  srcLight,
+  srcDark,
+  alt = "Sungkar Group",
+} = Astro.props;
 
-const baseClasses = "w-auto shrink-0 h-6 object-contain"
+const baseClasses = "w-auto shrink-0 h-6 object-contain";
 ---
 
 {

@@ -38,7 +38,10 @@ export function getLocaleFromPath(pathname: string): Locale {
   return DEFAULT_LOCALE;
 }
 
-export function getLocalizedPath(pathname: string, targetLocale: string): string {
+export function getLocalizedPath(
+  pathname: string,
+  targetLocale: string,
+): string {
   const currentLocale = getLocaleFromPath(pathname);
   const isCurrentDefault = currentLocale === DEFAULT_LOCALE;
   const isTargetDefault = targetLocale === DEFAULT_LOCALE;
@@ -60,9 +63,21 @@ export function getLocalizedPath(pathname: string, targetLocale: string): string
   return pathname;
 }
 
-export function formatDate(date: Date, locale: string, options?: Intl.DateTimeFormatOptions): string {
+export function formatDate(
+  date: Date,
+  locale: string,
+  options?: Intl.DateTimeFormatOptions,
+): string {
   return date.toLocaleDateString(
-    locale === "id" ? "id-ID" : locale === "en" ? "en-US" : locale === "ar" ? "ar-SA" : locale === "ms" ? "ms-MY" : "zh-CN",
+    locale === "id"
+      ? "id-ID"
+      : locale === "en"
+        ? "en-US"
+        : locale === "ar"
+          ? "ar-SA"
+          : locale === "ms"
+            ? "ms-MY"
+            : "zh-CN",
     options,
   );
 }

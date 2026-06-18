@@ -53,9 +53,12 @@ export function toLandingTourCard(tour: TourPackage): LandingTourCard {
   };
 }
 
-export function toLandingDestinationCard(
-  dest: { slug: string; title: string; image: import("@/lib/images").ImageSource; summary: string },
-): LandingDestinationCard {
+export function toLandingDestinationCard(dest: {
+  slug: string;
+  title: string;
+  image: import("@/lib/images").ImageSource;
+  summary: string;
+}): LandingDestinationCard {
   return {
     slug: dest.slug,
     title: dest.title,

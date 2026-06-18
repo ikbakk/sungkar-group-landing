@@ -14,8 +14,9 @@ function parseMdxFrontmatter(filePath: string) {
 }
 
 describe("Accommodation MDX Data Validation", () => {
-  const accDirs = readdirSync(ACCOMMODATIONS_DIR, { withFileTypes: true })
-    .filter((d) => d.isDirectory());
+  const accDirs = readdirSync(ACCOMMODATIONS_DIR, {
+    withFileTypes: true,
+  }).filter((d) => d.isDirectory());
 
   it("should have accommodations", () => {
     expect(accDirs.length).toBeGreaterThan(0);
@@ -35,9 +36,11 @@ describe("Accommodation MDX Data Validation", () => {
           const result = AccommodationSchema.safeParse(frontmatter);
           if (!result.success) {
             const issues = result.error.issues.map(
-              (i) => `  ${i.path.join(".")}: ${i.message}`
+              (i) => `  ${i.path.join(".")}: ${i.message}`,
             );
-            expect.fail(`Invalid accommodation "${slug}":\n${issues.join("\n")}`);
+            expect.fail(
+              `Invalid accommodation "${slug}":\n${issues.join("\n")}`,
+            );
           }
         });
       }

@@ -108,8 +108,7 @@ export const aboutContent = {
     },
     {
       title: "Reliability",
-      description:
-        "Providing consistent, punctual, and trustworthy service.",
+      description: "Providing consistent, punctual, and trustworthy service.",
     },
     {
       title: "Local Pride",

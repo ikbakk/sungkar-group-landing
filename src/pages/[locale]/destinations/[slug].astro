@@ -45,7 +45,10 @@ const relatedPackages = packages.filter((tour) =>
   destination.packages.includes(tour.slug),
 );
 
-const absoluteImageUrl = new URL(getImageSrc(destination.image), SITE_URL).toString();
+const absoluteImageUrl = new URL(
+  getImageSrc(destination.image),
+  SITE_URL,
+).toString();
 
 const touristAttractionSchema = generateTouristAttractionSchema(
   destination.title,
@@ -59,7 +62,10 @@ const touristAttractionSchema = generateTouristAttractionSchema(
 const breadcrumbItems = [
   { name: uiStrings.breadcrumb.home, url: "/" },
   { name: uiStrings.breadcrumb.destinations, url: `/${locale}/destinations` },
-  { name: destination.title, url: `/${locale}/destinations/${destination.slug}` },
+  {
+    name: destination.title,
+    url: `/${locale}/destinations/${destination.slug}`,
+  },
 ];
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
@@ -84,7 +90,10 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
     description={destination.summary}
     breadcrumbs={[
       { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-      { label: uiStrings.breadcrumb.destinations, href: `/${locale}/destinations` },
+      {
+        label: uiStrings.breadcrumb.destinations,
+        href: `/${locale}/destinations`,
+      },
       { label: destination.title },
     ]}
     image={destination.image}
@@ -105,11 +114,9 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
           {destinationsPageContent.detail.relatedPackagesTitle}
         </h2>
         <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {
-            relatedPackages.map((tour) => (
-              <PackageCard tour={tour} locale={locale} />
-            ))
-          }
+          {relatedPackages.map((tour) => (
+            <PackageCard tour={tour} locale={locale} />
+          ))}
         </div>
       </SectionContainer>
     )

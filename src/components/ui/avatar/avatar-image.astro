@@ -1,8 +1,8 @@
 ---
-import OptimizedImage from "@/components/ui/OptimizedImage.astro"
-import type { ImageSource } from "@/lib/images"
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
+import type { ImageSource } from "@/lib/images";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = {
   src: ImageSource | undefined | null;
@@ -13,7 +13,7 @@ type Props = {
   sizes?: string;
   widths?: number[];
   loading?: "lazy" | "eager";
-}
+};
 
 const {
   class: className,
@@ -23,7 +23,7 @@ const {
   sizes = "44px",
   widths = [44, 88, 176],
   ...props
-} = Astro.props
+} = Astro.props;
 ---
 
 {
@@ -33,7 +33,7 @@ const {
       alt={alt}
       class={cn(
         "absolute inset-0 z-10 aspect-square size-full rounded-full object-cover",
-        className
+        className,
       )}
       width={width}
       height={height}

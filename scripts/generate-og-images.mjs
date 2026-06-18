@@ -31,7 +31,11 @@ if (!existsSync(OUTPUT_DIR)) {
 }
 
 function escapeXml(s) {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 async function generateOGImage({ file, label, color }) {
@@ -59,8 +63,12 @@ async function generateOGImage({ file, label, color }) {
   <text x="60" y="${H - 60}" font-family="system-ui, sans-serif" font-size="22" fill="rgba(255,255,255,0.6)">sungkargroup.com</text>
 </svg>`;
 
-  const result = await sharp(Buffer.from(svg)).webp({ quality: 85 }).toFile(join(OUTPUT_DIR, `${file}.webp`));
-  console.log(`  ${file}.webp ${result.width}x${result.height} ${result.size}B`);
+  const result = await sharp(Buffer.from(svg))
+    .webp({ quality: 85 })
+    .toFile(join(OUTPUT_DIR, `${file}.webp`));
+  console.log(
+    `  ${file}.webp ${result.width}x${result.height} ${result.size}B`,
+  );
   return result;
 }
 

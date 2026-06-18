@@ -61,7 +61,6 @@ const registry: Record<string, ImageSource> = {
   "brand/logo.webp": BRAND.logo,
   "brand/og-home.webp": BRAND.ogHome,
 
-
   "legality/nib.webp": LEGALITY.nib,
   "legality/sk.webp": LEGALITY.sk,
 };

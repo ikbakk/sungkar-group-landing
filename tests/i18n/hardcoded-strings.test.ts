@@ -11,7 +11,10 @@ function collectFiles(dir: string): string[] {
     const fullPath = join(dir, entry.name);
     if (entry.isDirectory()) {
       files.push(...collectFiles(fullPath));
-    } else if (entry.isFile() && (entry.name.endsWith(".astro") || entry.name.endsWith(".tsx"))) {
+    } else if (
+      entry.isFile() &&
+      (entry.name.endsWith(".astro") || entry.name.endsWith(".tsx"))
+    ) {
       files.push(fullPath);
     }
   }
@@ -19,7 +22,8 @@ function collectFiles(dir: string): string[] {
 }
 
 const usesTranslation = (content: string) =>
-  content.includes('from "@/lib/i18n"') || content.includes('from "@/lib/i18n/ui-strings"');
+  content.includes('from "@/lib/i18n"') ||
+  content.includes('from "@/lib/i18n/ui-strings"');
 
 const usesLoadContent = (content: string) => content.includes("loadContent(");
 
@@ -27,9 +31,12 @@ const usesAppInfra = (content: string) =>
   content.includes('from "@/lib/') || content.includes('from "@/components/');
 
 const hasAnyPropsString = (content: string) =>
-  /:\s*string\b/.test(content) || /:\s*string\[\]/.test(content) || /:\s*\{[^}]+\}/.test(content);
+  /:\s*string\b/.test(content) ||
+  /:\s*string\[\]/.test(content) ||
+  /:\s*\{[^}]+\}/.test(content);
 
-const usesSlot = (content: string) => content.includes("<slot") || content.includes("<slot/>");
+const usesSlot = (content: string) =>
+  content.includes("<slot") || content.includes("<slot/>");
 
 const isUiPrimitive = (relPath: string) =>
   relPath.startsWith("ui/") || relPath.startsWith("seo/");
@@ -37,21 +44,33 @@ const isUiPrimitive = (relPath: string) =>
 describe("component hardcoded strings", () => {
   const files = collectFiles(COMPONENTS_DIR);
 
-  it.each(
-    files.filter((f) => !isUiPrimitive(relative(COMPONENTS_DIR, f)))
-  )("%s uses t() or receives text as props", (filePath) => {
-    const content = readFileSync(filePath, "utf-8");
-    const allowed = usesTranslation(content) || usesLoadContent(content) || usesSlot(content) || usesAppInfra(content) || hasAnyPropsString(content);
-    if (!allowed) {
-      expect(allowed).toBe(true);
-    }
-  });
+  it.each(files.filter((f) => !isUiPrimitive(relative(COMPONENTS_DIR, f))))(
+    "%s uses t() or receives text as props",
+    (filePath) => {
+      const content = readFileSync(filePath, "utf-8");
+      const allowed =
+        usesTranslation(content) ||
+        usesLoadContent(content) ||
+        usesSlot(content) ||
+        usesAppInfra(content) ||
+        hasAnyPropsString(content);
+      if (!allowed) {
+        expect(allowed).toBe(true);
+      }
+    },
+  );
 
   const KNOWN_BAD_PATTERNS = [
     { pattern: "Kembali ke Atas", label: "backToTop hardcoded" },
     { pattern: "Selengkapnya", label: "learnMore hardcoded (services-5)" },
-    { pattern: "Switch language", label: "locale switcher aria-label hardcoded" },
-    { pattern: "Lombok • Sumbawa • Labuan Bajo", label: "destinations subtitle hardcoded" },
+    {
+      pattern: "Switch language",
+      label: "locale switcher aria-label hardcoded",
+    },
+    {
+      pattern: "Lombok • Sumbawa • Labuan Bajo",
+      label: "destinations subtitle hardcoded",
+    },
     { pattern: 'alt="Sungkar Group"', label: "logo alt hardcoded in Header" },
   ];
 

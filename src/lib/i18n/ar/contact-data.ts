@@ -83,8 +83,7 @@ export const contactMethods: ContactMethod[] = [
   {
     id: "whatsapp",
     title: "الدردشة على واتساب",
-    description:
-      "الأفضل للأسئلة السريعة، تأكيد الحجوزات، وتعديلات البرنامج.",
+    description: "الأفضل للأسئلة السريعة، تأكيد الحجوزات، وتعديلات البرنامج.",
     action: {
       label: "الدردشة على واتساب",
       href: `https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}?text=Halo%20Sungkar%20Group`,
@@ -167,10 +166,7 @@ export const sewaMobilFormFields: FormField[] = [
     placeholder: "اختر الغرض...",
     type: "select",
     required: true,
-    options: [
-      "مع سائق كدليل",
-      "مع خدمة سائق",
-    ],
+    options: ["مع سائق كدليل", "مع خدمة سائق"],
   },
   {
     id: "message",

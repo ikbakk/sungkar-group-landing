@@ -55,8 +55,7 @@ export function generateLocalBusinessSchema(siteUrl: string) {
     "@type": "LocalBusiness",
     name: "Sungkar Group",
     image: `${siteUrl}/logo.png`,
-    description:
-      "مشغل سياحي لومبوك مع جولات خاصة، نقل، وخدمات أدلة سفر محلية.",
+    description: "مشغل سياحي لومبوك مع جولات خاصة، نقل، وخدمات أدلة سفر محلية.",
     address: {
       "@type": "PostalAddress",
       streetAddress: businessInfo.address.street,

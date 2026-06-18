@@ -1,41 +1,55 @@
 ---
-import type { ImageSource } from "@/lib/images"
+import type { ImageSource } from "@/lib/images";
 
-import { cn } from "@/lib/utils"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Icon } from "@/components/ui/icon"
-import { Marquee } from "@/components/ui/marquee"
-import { Rating } from "@/components/ui/rating"
-import { Section, SectionContainer } from "@/components/ui/section"
+import { cn } from "@/lib/utils";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Icon } from "@/components/ui/icon";
+import { Marquee } from "@/components/ui/marquee";
+import { Rating } from "@/components/ui/rating";
+import { Section, SectionContainer } from "@/components/ui/section";
 
 type Props = {
-  class?: string
-  eyebrow?: string
-  title?: string
-  description?: string
-  alignment?: "left" | "center" | "right"
+  class?: string;
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  alignment?: "left" | "center" | "right";
   reviews: {
-    quote: string
-    image?: ImageSource
-    initials: string
-    name: string
-    role: string
-    rating: number
-  }[]
-}
+    quote: string;
+    image?: ImageSource;
+    initials: string;
+    name: string;
+    role: string;
+    rating: number;
+  }[];
+};
 
-const { class: className, eyebrow, title, description, alignment = "center", reviews } = Astro.props
+const {
+  class: className,
+  eyebrow,
+  title,
+  description,
+  alignment = "center",
+  reviews,
+} = Astro.props;
 
-const third = Math.ceil(reviews.length / 3)
-const row1 = reviews.slice(0, third)
-const row2 = reviews.slice(third, third * 2)
-const row3 = reviews.slice(third * 2)
+const third = Math.ceil(reviews.length / 3);
+const row1 = reviews.slice(0, third);
+const row2 = reviews.slice(third, third * 2);
+const row3 = reviews.slice(third * 2);
 ---
 
 <Section class={cn("", className)}>
   {
     (eyebrow || title || description) && (
-      <SectionContainer class={cn("items-center gap-4", alignment === "left" && "items-start text-left", alignment === "right" && "items-end text-right", alignment === "center" && "text-center")}>
+      <SectionContainer
+        class={cn(
+          "items-center gap-4",
+          alignment === "left" && "items-start text-left",
+          alignment === "right" && "items-end text-right",
+          alignment === "center" && "text-center",
+        )}
+      >
         {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
         {title && (
           <h2 class="text-4xl leading-tight tracking-tight sm:text-5xl">
@@ -43,7 +57,12 @@ const row3 = reviews.slice(third * 2)
           </h2>
         )}
         {description && (
-          <p class={cn("text-muted-foreground max-w-2xl text-lg leading-relaxed text-balance", alignment === "center" && "mx-auto")}>
+          <p
+            class={cn(
+              "text-muted-foreground max-w-2xl text-lg leading-relaxed text-balance",
+              alignment === "center" && "mx-auto",
+            )}
+          >
             {description}
           </p>
         )}

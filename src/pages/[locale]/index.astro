@@ -16,7 +16,15 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const uiStrings = t(locale!);
 const landingModule = await loadContent(locale!, "landing");
-const { landingHero, landingFeaturedToursBase, landingDestinationsBase, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
+const {
+  landingHero,
+  landingFeaturedToursBase,
+  landingDestinationsBase,
+  landingTransport,
+  landingTestimonials,
+  landingVideo,
+  landingBackgroundImage,
+} = landingModule;
 const packages = await getPackages(locale!);
 const allDestinations = await getDestinations(locale!);
 const landingFeaturedTours = {

@@ -15,16 +15,14 @@ export const faqPageContent = {
     {
       badge: "旅游套餐",
       title: "旅游套餐常见问题",
-      description:
-        "关于行程时长、车辆和行程调整的问题，请查看旅游套餐页面。",
+      description: "关于行程时长、车辆和行程调整的问题，请查看旅游套餐页面。",
       buttonLabel: "查看旅游套餐",
       buttonHref: "/paket-wisata",
     },
     {
       badge: "目的地",
       title: "目的地常见问题",
-      description:
-        "关于每个目的地可参与活动的问题，请查看各目的地页面。",
+      description: "关于每个目的地可参与活动的问题，请查看各目的地页面。",
       buttonLabel: "查看目的地",
       buttonHref: "/destinasi",
     },

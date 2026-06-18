@@ -13,8 +13,7 @@ export const contactPageContent = {
 
   form: {
     title: "讨论您的旅行计划",
-    description:
-      "提供基本的旅行信息，以便我们的团队给出更相关的建议。",
+    description: "提供基本的旅行信息，以便我们的团队给出更相关的建议。",
   },
 
   map: {

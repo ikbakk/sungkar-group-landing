@@ -37,21 +37,25 @@ const { akomodasiFaq } = faqModule;
 const faqSchema = generateFAQPageSchema(akomodasiFaq);
 
 const lombokAccommodations = accommodations.filter(
-  (acc) => acc.region === "lombok"
+  (acc) => acc.region === "lombok",
 );
 
 const sumbawaAccommodations = accommodations.filter(
-  (acc) => acc.region === "sumbawa"
+  (acc) => acc.region === "sumbawa",
 );
 
 const labuanBajoAccommodations = accommodations.filter(
-  (acc) => acc.region === "labuan-bajo"
+  (acc) => acc.region === "labuan-bajo",
 );
 
 const regions = [
   { id: "lombok", label: "Lombok", count: lombokAccommodations.length },
   { id: "sumbawa", label: "Sumbawa", count: sumbawaAccommodations.length },
-  { id: "labuan-bajo", label: "Labuan Bajo", count: labuanBajoAccommodations.length },
+  {
+    id: "labuan-bajo",
+    label: "Labuan Bajo",
+    count: labuanBajoAccommodations.length,
+  },
 ].filter((region) => region.count > 0);
 
 const breadcrumbs = [
@@ -77,41 +81,47 @@ const breadcrumbs = [
 
   {regions.length > 0 && <StickyNav items={regions} />}
 
-  {lombokAccommodations.length > 0 && (
-    <SectionContainer background="bg-surface-soft">
-      <AccommodationRegionSection
-        id="lombok"
-        locale={locale}
-        title={akomodasiPageContent.regions.lombok.title}
-        description={akomodasiPageContent.regions.lombok.description}
-        accommodations={lombokAccommodations}
-      />
-    </SectionContainer>
-  )}
+  {
+    lombokAccommodations.length > 0 && (
+      <SectionContainer background="bg-surface-soft">
+        <AccommodationRegionSection
+          id="lombok"
+          locale={locale}
+          title={akomodasiPageContent.regions.lombok.title}
+          description={akomodasiPageContent.regions.lombok.description}
+          accommodations={lombokAccommodations}
+        />
+      </SectionContainer>
+    )
+  }
 
-  {sumbawaAccommodations.length > 0 && (
-    <SectionContainer background="bg-background">
-      <AccommodationRegionSection
-        id="sumbawa"
-        locale={locale}
-        title={akomodasiPageContent.regions.sumbawa.title}
-        description={akomodasiPageContent.regions.sumbawa.description}
-        accommodations={sumbawaAccommodations}
-      />
-    </SectionContainer>
-  )}
+  {
+    sumbawaAccommodations.length > 0 && (
+      <SectionContainer background="bg-background">
+        <AccommodationRegionSection
+          id="sumbawa"
+          locale={locale}
+          title={akomodasiPageContent.regions.sumbawa.title}
+          description={akomodasiPageContent.regions.sumbawa.description}
+          accommodations={sumbawaAccommodations}
+        />
+      </SectionContainer>
+    )
+  }
 
-  {labuanBajoAccommodations.length > 0 && (
-    <SectionContainer background="bg-surface-soft">
-      <AccommodationRegionSection
-        id="labuan-bajo"
-        locale={locale}
-        title={akomodasiPageContent.regions["labuan-bajo"].title}
-        description={akomodasiPageContent.regions["labuan-bajo"].description}
-        accommodations={labuanBajoAccommodations}
-      />
-    </SectionContainer>
-  )}
+  {
+    labuanBajoAccommodations.length > 0 && (
+      <SectionContainer background="bg-surface-soft">
+        <AccommodationRegionSection
+          id="labuan-bajo"
+          locale={locale}
+          title={akomodasiPageContent.regions["labuan-bajo"].title}
+          description={akomodasiPageContent.regions["labuan-bajo"].description}
+          accommodations={labuanBajoAccommodations}
+        />
+      </SectionContainer>
+    )
+  }
 
   <FaqSection
     eyebrow={uiStrings.faq.sectionTitle}

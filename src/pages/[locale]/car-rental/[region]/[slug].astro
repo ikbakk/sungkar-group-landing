@@ -36,7 +36,10 @@ const { vehicle } = Astro.props;
 const uiStrings = t(locale!);
 
 const vehicleUrl = `${SITE_URL}/${locale}/car-rental/${vehicle.region}/${vehicle.slug}`;
-const absoluteImageUrl = new URL(getImageSrc(vehicle.imageTop), SITE_URL).toString();
+const absoluteImageUrl = new URL(
+  getImageSrc(vehicle.imageTop),
+  SITE_URL,
+).toString();
 
 const productSchema = generateProductSchema(
   vehicle.name,
@@ -49,8 +52,14 @@ const productSchema = generateProductSchema(
 const breadcrumbItems = [
   { name: uiStrings.breadcrumb.home, url: "/" },
   { name: uiStrings.breadcrumb.carRental, url: `/${locale}/car-rental` },
-  { name: REGION_LABEL[vehicle.region], url: `/${locale}/car-rental/${vehicle.region}` },
-  { name: vehicle.name, url: `/${locale}/car-rental/${vehicle.region}/${vehicle.slug}` },
+  {
+    name: REGION_LABEL[vehicle.region],
+    url: `/${locale}/car-rental/${vehicle.region}`,
+  },
+  {
+    name: vehicle.name,
+    url: `/${locale}/car-rental/${vehicle.region}/${vehicle.slug}`,
+  },
 ];
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
@@ -75,7 +84,10 @@ const r = vehicle.region as Region;
     breadcrumbs={[
       { label: uiStrings.breadcrumb.home, href: `/${locale}` },
       { label: uiStrings.breadcrumb.carRental, href: `/${locale}/car-rental` },
-      { label: REGION_LABEL[r], href: `/${locale}/car-rental/${vehicle.region}` },
+      {
+        label: REGION_LABEL[r],
+        href: `/${locale}/car-rental/${vehicle.region}`,
+      },
       { label: vehicle.name },
     ]}
   />

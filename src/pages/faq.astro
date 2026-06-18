@@ -48,54 +48,66 @@ const breadcrumbs = [
   />
 
   <SectionContainer background="bg-surface-soft" padding="pb-20">
-      <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-        <Card class="border-border bg-white">
-          <CardHeader>
-            <Badge variant="outline" class="w-fit rounded-full px-3 py-1">
-              {faqPageContent.introCard.badge}
-            </Badge>
-            <CardTitle class="text-3xl leading-tight">
-              {faqPageContent.introCard.title}
-            </CardTitle>
-          </CardHeader>
-          <CardContent class="text-sm leading-7 text-text-muted">
-            <p>{faqPageContent.introCard.description}</p>
-          </CardContent>
-        </Card>
+    <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+      <Card class="border-border bg-white">
+        <CardHeader>
+          <Badge variant="outline" class="w-fit rounded-full px-3 py-1">
+            {faqPageContent.introCard.badge}
+          </Badge>
+          <CardTitle class="text-3xl leading-tight">
+            {faqPageContent.introCard.title}
+          </CardTitle>
+        </CardHeader>
+        <CardContent class="text-sm leading-7 text-text-muted">
+          <p>{faqPageContent.introCard.description}</p>
+        </CardContent>
+      </Card>
 
-        <div class="grid gap-4">
-          {
-            generalFaqItems.map((item: FAQItem) => (
-              <details class="rounded-[1.5rem] border border-border bg-white p-6">
-                <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
-                  {item.question}
-                </summary>
-                <p class="mt-4 text-sm leading-7 text-text-muted">
-                  {item.answer}
-                </p>
-              </details>
-            ))
-          }
-        </div>
+      <div class="grid gap-4">
+        {
+          generalFaqItems.map((item: FAQItem) => (
+            <details class="rounded-[1.5rem] border border-border bg-white p-6">
+              <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
+                {item.question}
+              </summary>
+              <p class="mt-4 text-sm leading-7 text-text-muted">
+                {item.answer}
+              </p>
+            </details>
+          ))
+        }
       </div>
+    </div>
 
-      <div class="mt-12 grid gap-6 md:grid-cols-3">
-        {faqPageContent.relatedCards.map((card: { badge: string; title: string; description: string; buttonLabel: string; buttonHref: string }) => (
-          <Card class="border-border bg-white">
-            <CardHeader>
-              <Badge variant="outline" class="w-fit rounded-full px-3 py-1">
-                {card.badge}
-              </Badge>
-              <CardTitle class="text-3xl leading-tight">{card.title}</CardTitle>
-            </CardHeader>
-            <CardContent class="grid gap-3 text-sm leading-7 text-text-muted">
-              <p>{card.description}</p>
-              <Button as="a" href={card.buttonHref} variant="outline">
-                {card.buttonLabel}
-              </Button>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      {
+        faqPageContent.relatedCards.map(
+          (card: {
+            badge: string;
+            title: string;
+            description: string;
+            buttonLabel: string;
+            buttonHref: string;
+          }) => (
+            <Card class="border-border bg-white">
+              <CardHeader>
+                <Badge variant="outline" class="w-fit rounded-full px-3 py-1">
+                  {card.badge}
+                </Badge>
+                <CardTitle class="text-3xl leading-tight">
+                  {card.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent class="grid gap-3 text-sm leading-7 text-text-muted">
+                <p>{card.description}</p>
+                <Button as="a" href={card.buttonHref} variant="outline">
+                  {card.buttonLabel}
+                </Button>
+              </CardContent>
+            </Card>
+          ),
+        )
+      }
+    </div>
   </SectionContainer>
 </MainLayout>

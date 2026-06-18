@@ -98,7 +98,10 @@ const region = REGION_MAP[accommodation.region];
         {
           accommodation.perks.length > 3 && (
             <li class="text-sm text-text-muted font-sans">
-              {uiStrings.akomodasi.morePerks.replace("{n}", String(accommodation.perks.length - 3))}
+              {uiStrings.akomodasi.morePerks.replace(
+                "{n}",
+                String(accommodation.perks.length - 3),
+              )}
             </li>
           )
         }

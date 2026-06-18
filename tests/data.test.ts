@@ -9,7 +9,13 @@ import {
   VehicleSchema,
 } from "@/lib/content/shared/types";
 
-const destinationsDir = join(import.meta.dirname, "..", "src", "content", "destinations");
+const destinationsDir = join(
+  import.meta.dirname,
+  "..",
+  "src",
+  "content",
+  "destinations",
+);
 const destinationDirs = readdirSync(destinationsDir, { withFileTypes: true })
   .filter((d) => d.isDirectory())
   .map((d) => d.name);
@@ -26,8 +32,9 @@ function parseMdxFrontmatter(filePath: string) {
 }
 
 describe("TourPackage MDX frontmatter validation", () => {
-  const packageDirs = readdirSync(TOUR_PACKAGES_DIR, { withFileTypes: true })
-    .filter((d) => d.isDirectory());
+  const packageDirs = readdirSync(TOUR_PACKAGES_DIR, {
+    withFileTypes: true,
+  }).filter((d) => d.isDirectory());
 
   for (const dir of packageDirs) {
     const slug = dir.name;
@@ -39,13 +46,19 @@ describe("TourPackage MDX frontmatter validation", () => {
 
       it(`${slug} (${locale}) has valid data`, () => {
         const frontmatter = parseMdxFrontmatter(join(dirPath, file));
-        const pkg = { ...frontmatter, slug, featured: frontmatter.featured ?? false };
+        const pkg = {
+          ...frontmatter,
+          slug,
+          featured: frontmatter.featured ?? false,
+        };
         const result = TourPackageSchema.safeParse(pkg);
         if (!result.success) {
           const issues = result.error.issues.map(
-            (i) => `  ${i.path.join(".")}: ${i.message}`
+            (i) => `  ${i.path.join(".")}: ${i.message}`,
           );
-          expect.fail(`Invalid package "${slug}" (${locale}):\n${issues.join("\n")}`);
+          expect.fail(
+            `Invalid package "${slug}" (${locale}):\n${issues.join("\n")}`,
+          );
         }
       });
     }
@@ -64,9 +77,11 @@ describe("Destination data validation", () => {
         const result = DestinationSchema.safeParse(entry);
         if (!result.success) {
           const issues = result.error.issues.map(
-            (i) => `  ${i.path.join(".")}: ${i.message}`
+            (i) => `  ${i.path.join(".")}: ${i.message}`,
           );
-          expect.fail(`Invalid destination "${slug}/${file}":\n${issues.join("\n")}`);
+          expect.fail(
+            `Invalid destination "${slug}/${file}":\n${issues.join("\n")}`,
+          );
         }
       });
     }
@@ -74,8 +89,9 @@ describe("Destination data validation", () => {
 });
 
 describe("Accommodation MDX frontmatter validation", () => {
-  const accDirs = readdirSync(ACCOMMODATIONS_DIR, { withFileTypes: true })
-    .filter((d) => d.isDirectory());
+  const accDirs = readdirSync(ACCOMMODATIONS_DIR, {
+    withFileTypes: true,
+  }).filter((d) => d.isDirectory());
 
   for (const dir of accDirs) {
     const slug = dir.name;
@@ -90,9 +106,11 @@ describe("Accommodation MDX frontmatter validation", () => {
         const result = AccommodationSchema.safeParse(frontmatter);
         if (!result.success) {
           const issues = result.error.issues.map(
-            (i) => `  ${i.path.join(".")}: ${i.message}`
+            (i) => `  ${i.path.join(".")}: ${i.message}`,
           );
-          expect.fail(`Invalid accommodation "${slug}" (${locale}):\n${issues.join("\n")}`);
+          expect.fail(
+            `Invalid accommodation "${slug}" (${locale}):\n${issues.join("\n")}`,
+          );
         }
       });
     }
@@ -100,8 +118,9 @@ describe("Accommodation MDX frontmatter validation", () => {
 });
 
 describe("Vehicle MDX frontmatter validation", () => {
-  const vehicleDirs = readdirSync(VEHICLES_DIR, { withFileTypes: true })
-    .filter((d) => d.isDirectory());
+  const vehicleDirs = readdirSync(VEHICLES_DIR, { withFileTypes: true }).filter(
+    (d) => d.isDirectory(),
+  );
 
   for (const dir of vehicleDirs) {
     const slug = dir.name;
@@ -116,9 +135,11 @@ describe("Vehicle MDX frontmatter validation", () => {
         const result = VehicleSchema.safeParse(frontmatter);
         if (!result.success) {
           const issues = result.error.issues.map(
-            (i) => `  ${i.path.join(".")}: ${i.message}`
+            (i) => `  ${i.path.join(".")}: ${i.message}`,
           );
-          expect.fail(`Invalid vehicle "${slug}" (${locale}):\n${issues.join("\n")}`);
+          expect.fail(
+            `Invalid vehicle "${slug}" (${locale}):\n${issues.join("\n")}`,
+          );
         }
       });
     }

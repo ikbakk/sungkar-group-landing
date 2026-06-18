@@ -15,7 +15,8 @@ export const aboutFaq = [
       "Perkhidmatan kami digunakan oleh pengembara individu, pasangan, keluarga, komuniti, sekolah, dan syarikat yang ingin mengatur perjalanan atau aktiviti berkumpulan.",
   },
   {
-    question: "Apakah yang membezakan Sungkar Group dengan pengendali pelancongan lain?",
+    question:
+      "Apakah yang membezakan Sungkar Group dengan pengendali pelancongan lain?",
     answer:
       "We combine local knowledge, responsive service, and structured travel planning so guests can enjoy Lombok more comfortably and efficiently.",
   },

@@ -21,7 +21,11 @@ export async function getVehicles(locale = "id"): Promise<Vehicle[]> {
 
   for (const entry of entries) {
     const data = entry.data as EntryData;
-    const entryLocale = entry.id.split("/").pop()?.replace(/\.(md|mdx)$/, "") || "id";
+    const entryLocale =
+      entry.id
+        .split("/")
+        .pop()
+        ?.replace(/\.(md|mdx)$/, "") || "id";
 
     if (entryLocale !== locale) continue;
 

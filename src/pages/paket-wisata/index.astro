@@ -40,7 +40,10 @@ const labuanBajoPackages = packages.filter(
 
 const regions = REGIONS.map((id) => ({
   id,
-  label: id === "labuan-bajo" ? "Labuan Bajo" : id.charAt(0).toUpperCase() + id.slice(1),
+  label:
+    id === "labuan-bajo"
+      ? "Labuan Bajo"
+      : id.charAt(0).toUpperCase() + id.slice(1),
   count:
     id === "lombok"
       ? lombokPackages.length

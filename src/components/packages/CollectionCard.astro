@@ -28,7 +28,12 @@ const uiStrings = t(locale);
     <CardContent class="p-6">
       <h2 class="text-xl">{collection.title}</h2>
       <p class="mt-2 text-sm text-text-muted">
-        {uiStrings.paketWisata.packagesAvailable.replace("{n}", String(collection.packages.length))}
+        {
+          uiStrings.paketWisata.packagesAvailable.replace(
+            "{n}",
+            String(collection.packages.length),
+          )
+        }
       </p>
       <ul class="mt-4 space-y-2 text-sm text-text-muted">
         {
@@ -42,7 +47,10 @@ const uiStrings = t(locale);
         {
           collection.packages.length > 3 && (
             <li class="font-medium text-brand-700">
-              {uiStrings.paketWisata.morePackages.replace("{n}", String(collection.packages.length - 3))}
+              {uiStrings.paketWisata.morePackages.replace(
+                "{n}",
+                String(collection.packages.length - 3),
+              )}
             </li>
           )
         }
