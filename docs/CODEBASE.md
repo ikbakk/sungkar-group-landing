@@ -9,7 +9,7 @@
 ```
 src/
 ├── content.config.ts          # Astro v6 collections: blog + guides (glob loader, Zod)
-├── content/{blog,guides}/{slug}/{locale}.mdx
+├── content/{blog,guides,tourPackages}/{slug}/{locale}.mdx
 ├── pages/                     # File-based routing
 │   ├── index.astro            # / (locale=id)
 │   ├── [locale]/              # en, ar, ms, zh — mirrors ID pages with locale prefix
@@ -34,7 +34,8 @@ src/
 │   ├── {images,regions,schemas,site-config,og-metadata,utils,card-styles}.ts
 ├── styles/{global,sections}.css  # Tailwind v4 + tokens + shadcn
 └── assets/images/{destinations,gallery,hero,brand,accommodations,vehicles,og}/ + index.ts (barrel)
-scripts/{validate,check-images}.mjs
+scripts/{generate-tour-mdx,validate,check-images}.mjs
+scripts/data/{lombok-1d,lombok-2d1n,lombok-3d2n,lombok-4d3n,lombok-opentrip,sumbawa,labuan-bajo,pkg-pink-3d2n,pkg-nanggu-3d2n}.json
 tests/                          # Vitest: data.test.ts, schemas.test.ts
 ```
 
@@ -74,7 +75,9 @@ tests/                          # Vitest: data.test.ts, schemas.test.ts
 | `/[locale]/...` | `[locale]/*.astro` | Same components as ID pages, locale-filtered content |
 | 404 | `404.astro` / `[locale]/404.astro` | Custom error page |
 
-**Data flow**: Page → `loadContent(locale, module)` → pass slices as props → child components (never import content directly, enabling i18n)
+**Tour package data flow**: Page → `getPackages(locale)` (async, from MDX content collections) → pass as props → child components. Uses `resolveImages()` to map string paths to `ImageMetadata` imports for Astro image optimization.
+
+**Other data flow**: Page → `loadContent(locale, module)` → pass slices as props → child components (never import content directly, enabling i18n)
 
 ---
 
@@ -83,12 +86,13 @@ tests/                          # Vitest: data.test.ts, schemas.test.ts
 ### Content Sources
 
 | Source | Schema Fields | Loaded By |
-|---|---|---|
+|---|---|---|---|
 | `content/{blog,guides}/{slug}/{locale}.mdx` | `{title,description,image,publishDate,tags/region,locale,slug}` | `astro:content` + `content.config.ts` |
+| `content/tourPackages/{slug}/{locale}.mdx` | `{title,region,collectionSlug,category,duration,images,summary,highlights,itinerary,includes,excludes}` | `astro:content` + `content.config.ts` |
 | `lib/content/{about,landing,contact,faq,reviews}/` | Plain objects/arrays | Direct import + i18n copy |
 | `lib/content/{destinations,tour-packages,accommodations,car-rental}/` | Typed data arrays + `*PageContent` | Direct import + i18n copy |
-| `lib/content/tourPackages/{lombok,sumbawa,labuan-bajo}/` | `TourPackage[]` per region | Barrel export |
-| `lib/i18n/{en,ar,ms,zh}/tourPackages/{lombok,sumbawa,labuan-bajo}/` | `TourPackage[]` locale copies (1d,2d1n,3d2n,4d3n,openTrip, index) | Each locale barrel; loaded via `loadContent()` |
+| `lib/content/tourPackages/images.ts` | `ImageSource` registry (string→import map) | Imported by collection bridge |
+| `lib/content/tourPackages/collection.ts` | `getPackages(locale)` async bridge | Pages importing collection |
 | `lib/content/faqs/{about,akomodasi,contact,general,package,reviews,sewa-mobil}.ts` | Per-topic `FaqItem[]` | Combined in `faq/data.ts` |
 
 ### Key Types (all in `lib/content/shared/types.ts`)
@@ -150,7 +154,10 @@ tests/                          # Vitest: data.test.ts, schemas.test.ts
 | **Add nav variant** | `shared/types.ts` (`NavItem.variant` union) + `NavigationDesktop.astro` + `NavigationMobile.tsx` + source + all 4 locale nav data files |
 | **Nav optimisation (single-item collections)** | `createPackageCollections()` in `lib/content/navigationData.ts` + 4 locale copies returns `{collections, items}`; single-item → direct link, multi-item → submenu |
 | **Change SEO** | `components/seo/` + `lib/schemas.ts` |
-| **Add tour pkg** | `lib/content/tourPackages/{region}/` + `lib/content/tour-packages/index.ts` + each locale copy `lib/i18n/{en,ar,ms,zh}/tourPackages/{region}/` |
+| **Add tour pkg (MDX)** | Add JSON entry in `scripts/data/{region}.json` (see existing files), then `node scripts/generate-tour-mdx.mjs` — produces `content/tourPackages/{slug}/{locale}.mdx` |
+| **Regenerate all MDX** | `rm -rf src/content/tourPackages/*/ && node scripts/generate-tour-mdx.mjs` |
+| **Update collection bridge** | `lib/content/tourPackages/images.ts` (new image refs) + `collection.ts` if needed |
+| **Migrate page to MDX** | Replace `import { packages } from "@/lib/content/tourPackages"` with `import { getPackages } from "@/lib/content/tourPackages/collection"` + `const packages = await getPackages(locale)` |
 | **Add destination / vehicle / accommodation** | `lib/content/{destinations,car-rental,accommodations}/data.ts` + `index.ts` |
 | **Add FAQ** | `lib/content/faqs/{topic}.ts` |
 | **Add blog/guide post** | `content/{blog,guides}/{slug}/{locale}.mdx` |

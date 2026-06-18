@@ -48,3 +48,17 @@ Keep the route → component table, directory layout, and "Key Files by Task" ta
 ## Configuration Notes
 - This project expects Node.js `>=22.12.0`.
 - Keep changes consistent with the shared design tokens in `src/styles/global.css` and avoid introducing ad hoc colors or font stacks.
+
+## Migration: Remove Old Sync TypeScript Tour Package Data
+
+Tour packages now live in MDX content collections (`src/content/tourPackages/`) loaded via `getPackages(locale)` from `src/lib/content/tourPackages/collection.ts`. Pages have been migrated. Three consumers still use the old sync TypeScript data — migrate them to `getPackages()`:
+
+1. **Navigation mega menu** — `src/lib/i18n/{en,ar,ms,zh}/navigationData.ts` imports `packages` from `@/lib/content/tourPackages/index`. Replace with async `getPackages(locale)` to build the menu links from MDX data.
+2. **Landing page featured packages** — `src/lib/content/landing.ts` and `src/lib/i18n/{en,ar,ms,zh}/landing.ts` import `packages`. These are used by `src/components/landing/Featured.astro` and `src/pages/index.astro`. Migrate to await `getPackages()`.
+3. **Tests** — `tests/data/tourPackages.test.ts` and `tests/data.test.ts` validate the old sync data. Rewrite tests to validate the MDX content collection entries instead.
+
+After all three are done, delete these obsolete files:
+- `src/lib/content/tourPackages/` (except `collection.ts`, `images.ts`, `types.ts`)
+- `src/lib/content/tour-packages/`
+- `src/lib/i18n/{en,ar,ms,zh}/tourPackages/`
+- `src/lib/i18n/{en,ar,ms,zh}/tour-packages/`
