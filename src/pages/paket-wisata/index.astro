@@ -13,7 +13,7 @@ import PackagePageCta from "@/components/packages/PackagePageCta.astro";
 
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
-import { packages } from "@/lib/content/tourPackages/index";
+import { getPackages } from "@/lib/content/tourPackages/collection";
 import { REGIONS } from "@/lib/regions";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
@@ -29,6 +29,8 @@ const faqModule = await loadFaq(locale, "package");
 const { packageFaq } = faqModule;
 
 const faqSchema = generateFAQPageSchema(packageFaq);
+
+const packages = await getPackages(locale);
 
 const lombokPackages = packages.filter((pkg) => pkg.region === "lombok");
 const sumbawaPackages = packages.filter((pkg) => pkg.region === "sumbawa");

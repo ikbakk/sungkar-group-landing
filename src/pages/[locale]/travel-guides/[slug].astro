@@ -12,7 +12,7 @@ import { AlarmClockIcon, Calendar03Icon } from "@hugeicons/core-free-icons";
 import { generateHowToSchema } from "@/lib/schemas";
 import { getGuides, getGuide } from "@/lib/content/guides";
 import { destinations } from "@/lib/content/destinations";
-import { packages } from "@/lib/content/tourPackages";
+import { getPackages } from "@/lib/content/tourPackages/collection";
 
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
@@ -42,6 +42,7 @@ const relatedDestinations = destinations.filter((d) =>
   relatedDestSlugs.includes(d.slug)
 );
 
+const packages = await getPackages(locale!);
 const relatedPackages = packages.filter((p) =>
   relatedPkgSlugs.includes(p.slug)
 );
