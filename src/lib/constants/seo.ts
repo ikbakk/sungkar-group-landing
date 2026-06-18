@@ -106,7 +106,7 @@ export function getPageMetadata(options: {
   keywords?: string[];
   image?: string;
   url?: string;
-  type?: 'website' | 'article' | 'product';
+  type?: 'website' | 'article' | 'product' | 'tourist_attraction';
 } = {}) {
   const {
     title = SITE.title,

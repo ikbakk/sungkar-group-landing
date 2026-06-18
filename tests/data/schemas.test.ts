@@ -23,6 +23,7 @@ describe("Schema Validation", () => {
         duration: "1 Day",
         images: [{ src: "/test.jpg" }],
         summary: "Test summary",
+        highlights: [],
         itinerary: ["Day 1"],
         includes: [],
         excludes: [],
