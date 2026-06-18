@@ -16,7 +16,12 @@
     "validate:images": "node scripts/validate-images.mjs",
     "check:images": "node scripts/check-images.mjs",
     "prepare": "husky",
-    "images:barrel": "node scripts/generate-image-barrel.mjs"
+    "images:barrel": "node scripts/generate-image-barrel.mjs",
+    "generate:tours": "node scripts/generate-tour-mdx.mjs",
+    "generate:content": "node scripts/generate-content-mdx.mjs",
+    "generate:all": "node scripts/generate-tour-mdx.mjs && node scripts/generate-content-mdx.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@astroanimate/core": "^0.1.2",
