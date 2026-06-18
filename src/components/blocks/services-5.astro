@@ -4,8 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Icon } from "@/components/ui/icon"
 import { Section, SectionContainer } from "@/components/ui/section"
 
+import { t } from "@/lib/i18n"
+
 type Props = {
   class?: string
+  locale?: string
   eyebrow?: string
   title: string
   description?: string
@@ -21,17 +24,22 @@ type Props = {
     description: string
     href?: string
   }[]
+  linkText?: string
 }
 
 const {
   class: className,
+  locale = "id",
   eyebrow,
   title,
   description,
   alignment = "center",
   buttons,
   services,
+  linkText,
 } = Astro.props
+
+const uiStrings = t(locale)
 ---
 
 <Section class={cn("", className)}>
@@ -82,7 +90,7 @@ const {
                 href={service.href}
                 class="text-primary mt-auto inline-flex items-center gap-1.5 text-sm font-medium"
               >
-                Selengkapnya
+                {linkText || uiStrings.common.learnMore}
                 <Icon
                   name="arrow-right"
                   class="size-3.5 transition-transform group-hover/service:translate-x-1"

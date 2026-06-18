@@ -100,7 +100,7 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
             </DrawerTitle>
 
             <p className="text-center text-sm text-muted-foreground">
-              Lombok • Sumbawa • Labuan Bajo
+              {t(locale).header.destinationsSubtitle}
             </p>
           </DrawerHeader>
 

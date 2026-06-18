@@ -1,4 +1,5 @@
 ---
+import { t } from "@/lib/i18n";
 import Features1Block from "@/components/blocks/features-1.astro";
 import type { ImageSource } from "@/lib/images";
 import { localizeHref } from "@/lib/i18n/localize";
@@ -20,7 +21,8 @@ interface Props {
   linkText?: string;
 }
 
-const { class: className, locale = "id", eyebrow, title, description, destinations, linkText = "Jelajahi" } = Astro.props as Props;
+const { class: className, locale = "id", eyebrow, title, description, destinations, linkText } = Astro.props as Props;
+const uiStrings = t(locale);
 
 const icons = [
   "map-pin",
@@ -41,6 +43,6 @@ const icons = [
     title: d.title,
     description: d.description,
     href: localizeHref(`/destinasi/${d.slug}`, locale),
-    linkText,
+    linkText: linkText || uiStrings.common.explore,
   }))}
 />

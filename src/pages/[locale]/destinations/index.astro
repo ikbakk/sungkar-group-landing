@@ -72,6 +72,7 @@ const breadcrumbs = [
     <SectionContainer background={index % 2 === 0 ? "bg-surface-soft" : "bg-background"}>
       <DestinationGroupSection
         id={group.id}
+        locale={locale}
         title={group.title}
         description={group.description}
         destinations={group.destinations}
