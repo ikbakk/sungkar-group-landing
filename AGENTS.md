@@ -48,3 +48,19 @@ Keep the route → component table, directory layout, and "Key Files by Task" ta
 ## Configuration Notes
 - This project expects Node.js `>=22.12.0`.
 - Keep changes consistent with the shared design tokens in `src/styles/global.css` and avoid introducing ad hoc colors or font stacks.
+
+## Content Architecture (Post-Migration)
+
+All structured content now lives in MDX content collections under `src/content/{type}/{slug}/{locale}.mdx`. Loaded via async bridge functions. Old sync TypeScript data files have been deleted.
+
+| Content Type | Content Collection | Bridge Function | JSON Source | Generator |
+|---|---|---|---|---|
+| Tour Packages | `tourPackages` | `getPackages(locale)` from `src/lib/content/tourPackages/collection.ts` | `scripts/data/*.json` | `node scripts/generate-tour-mdx.mjs` |
+| Accommodations | `accommodations` | `getAccommodations(locale)` from `src/lib/content/accommodations/collection.ts` | `scripts/data/accommodations.json` | `node scripts/generate-content-mdx.mjs` |
+| Car Rental | `carRental` | `getVehicles(locale)` from `src/lib/content/car-rental/collection.ts` | `scripts/data/car-rental.json` | `node scripts/generate-content-mdx.mjs` |
+
+Navigation uses `createNavigation(packages)` factory functions in each locale's `navigationData.ts` called from `Header.astro`. Landing page computes `featuredTours` by merging locale base with `getPackages()` results in the page files. Tests validate MDX frontmatter directly via `yaml` parsing in vitest (no Astro runtime needed).
+
+### Adding content
+1. **Tour packages**: Add a JSON entry to an existing file in `scripts/data/`, then run `node scripts/generate-tour-mdx.mjs`.
+2. **Accommodations / Car rental**: Edit `scripts/data/accommodations.json` or `scripts/data/car-rental.json`, then run `node scripts/generate-content-mdx.mjs`.

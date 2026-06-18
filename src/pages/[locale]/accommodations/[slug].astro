@@ -3,7 +3,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
-import { accommodations } from "@/lib/content/accommodations";
+import { getAccommodations } from "@/lib/content/accommodations/collection";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
 import AccommodationCard from "@/components/cards/AccommodationCard.astro";
@@ -11,10 +11,11 @@ import AccommodationCard from "@/components/cards/AccommodationCard.astro";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   const paths = [];
   const regions: Region[] = ["lombok", "sumbawa", "labuan-bajo"];
   for (const locale of NON_DEFAULT_LOCALES) {
+    const accommodations = await getAccommodations(locale);
     for (const region of regions) {
       const regionAcc = accommodations.filter((acc) => acc.region === region);
       if (regionAcc.length === 0) continue;
@@ -32,6 +33,7 @@ interface Props {
 }
 
 const { region } = Astro.props as Props;
+const accommodations = await getAccommodations(locale!);
 const regionAccommodations = accommodations.filter(
   (acc) => acc.region === region,
 );

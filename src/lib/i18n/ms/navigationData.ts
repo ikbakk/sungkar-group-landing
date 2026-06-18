@@ -1,4 +1,4 @@
-import { packages } from "@/lib/content/tourPackages/index";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 
 export type NavCollection = {
   title: string;
@@ -37,7 +37,7 @@ type CollectionResult = {
   items: { label: string; href: string }[];
 };
 
-const createPackageCollections = (region: "lombok" | "sumbawa" | "labuan-bajo"): CollectionResult => {
+const createPackageCollections = (packages: TourPackage[], region: "lombok" | "sumbawa" | "labuan-bajo"): CollectionResult => {
   const regionPackages = packages.filter((pkg) => pkg.region === region);
 
   const grouped = regionPackages.reduce(
@@ -81,117 +81,119 @@ const createPackageCollections = (region: "lombok" | "sumbawa" | "labuan-bajo"):
   return { collections, items };
 };
 
-export const navigation: NavItem[] = [
-  {
-    label: "Laman Utama",
-    href: "/",
-    variant: "link",
-  },
+export function createNavigation(packages: TourPackage[]): NavItem[] {
+  return [
+    {
+      label: "Laman Utama",
+      href: "/",
+      variant: "link",
+    },
 
-  {
-    label: "Pakej Pelancongan",
-    variant: "mega",
+    {
+      label: "Pakej Pelancongan",
+      variant: "mega",
 
-    groups: [
-      {
-        title: "Lombok",
-        href: "/paket-wisata/lombok",
+      groups: [
+        {
+          title: "Lombok",
+          href: "/paket-wisata/lombok",
 
-        ...createPackageCollections("lombok"),
-      },
+          ...createPackageCollections(packages, "lombok"),
+        },
 
-      {
-        title: "Sumbawa",
-        href: "/paket-wisata/sumbawa",
+        {
+          title: "Sumbawa",
+          href: "/paket-wisata/sumbawa",
 
-        ...createPackageCollections("sumbawa"),
-      },
+          ...createPackageCollections(packages, "sumbawa"),
+        },
 
-      {
-        title: "Labuan Bajo",
-        href: "/paket-wisata/labuan-bajo",
+        {
+          title: "Labuan Bajo",
+          href: "/paket-wisata/labuan-bajo",
 
-        ...createPackageCollections("labuan-bajo"),
-      },
-    ],
-  },
+          ...createPackageCollections(packages, "labuan-bajo"),
+        },
+      ],
+    },
 
-  {
-    label: "Penginapan",
-    href: "/akomodasi",
-    variant: "mega",
+    {
+      label: "Penginapan",
+      href: "/akomodasi",
+      variant: "mega",
 
-    groups: [
-      {
-        title: "Lombok",
+      groups: [
+        {
+          title: "Lombok",
 
-        items: [
-          {
-            label: "Hotel di Lombok",
-            href: "/akomodasi/lombok",
-          },
-        ],
-      },
+          items: [
+            {
+              label: "Hotel di Lombok",
+              href: "/akomodasi/lombok",
+            },
+          ],
+        },
 
-      {
-        title: "Labuan Bajo",
+        {
+          title: "Labuan Bajo",
 
-        items: [
-          {
-            label: "Hotel di Labuan Bajo",
-            href: "/akomodasi/labuan-bajo",
-          },
-        ],
-      },
-    ],
-  },
+          items: [
+            {
+              label: "Hotel di Labuan Bajo",
+              href: "/akomodasi/labuan-bajo",
+            },
+          ],
+        },
+      ],
+    },
 
-  {
-    label: "Kereta Sewa",
-    href: "/sewa-mobil",
-    variant: "mega",
+    {
+      label: "Kereta Sewa",
+      href: "/sewa-mobil",
+      variant: "mega",
 
-    groups: [
-      {
-        title: "Lombok",
+      groups: [
+        {
+          title: "Lombok",
 
-        items: [
-          {
-            label: "Kereta Tersedia",
-            href: "/sewa-mobil/lombok",
-          },
-        ],
-      },
+          items: [
+            {
+              label: "Kereta Tersedia",
+              href: "/sewa-mobil/lombok",
+            },
+          ],
+        },
 
-      {
-        title: "Labuan Bajo",
+        {
+          title: "Labuan Bajo",
 
-        items: [
-          {
-            label: "Kereta Tersedia",
-            href: "/sewa-mobil/labuan-bajo",
-          },
-        ],
-      },
-    ],
-  },
+          items: [
+            {
+              label: "Kereta Tersedia",
+              href: "/sewa-mobil/labuan-bajo",
+            },
+          ],
+        },
+      ],
+    },
 
-  {
-    label: "Blog",
-    href: "/blog",
-    variant: "link",
-  },
+    {
+      label: "Blog",
+      href: "/blog",
+      variant: "link",
+    },
 
-  {
-    label: "Maklumat",
-    variant: "dropdown",
-    items: [
-      { label: "Tentang Kami", href: "/tentang-kami" },
-      { label: "Panduan Pelancongan", href: "/panduan-wisata" },
-      { label: "Destinasi", href: "/destinasi" },
-      { label: "Ulasan", href: "/ulasan" },
-      { label: "Hubungi Kami", href: "/kontak" },
-      { label: "FAQ", href: "/faq" },
-    ],
-  },
-];
+    {
+      label: "Maklumat",
+      variant: "dropdown",
+      items: [
+        { label: "Tentang Kami", href: "/tentang-kami" },
+        { label: "Panduan Pelancongan", href: "/panduan-wisata" },
+        { label: "Destinasi", href: "/destinasi" },
+        { label: "Ulasan", href: "/ulasan" },
+        { label: "Hubungi Kami", href: "/kontak" },
+        { label: "FAQ", href: "/faq" },
+      ],
+    },
+  ];
+}

@@ -10,6 +10,7 @@ import { loadContent } from "@/lib/i18n/loader";
 
 import LocaleSwitcher from "./LocaleSwitcher.astro";
 import { localizeHref } from "@/lib/i18n/localize";
+import { getPackages } from "@/lib/content/tourPackages/collection";
 
 interface Props {
   locale?: string;
@@ -17,7 +18,8 @@ interface Props {
 
 const { locale = "id" } = Astro.props as Props;
 const navModule = await loadContent(locale, "navigation");
-const { navigation } = navModule;
+const packages = await getPackages(locale);
+const navigation = navModule.createNavigation(packages);
 ---
 
 <header

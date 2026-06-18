@@ -5,7 +5,6 @@
 import { describe, it, expect } from "vitest";
 import { DestinationSchema } from "@/lib/content/shared/types";
 import { destinations } from "@/lib/content/destinations";
-import { REGIONS } from "@/lib/constants/regions";
 
 describe("Destination Data Validation", () => {
   describe("All Destinations", () => {

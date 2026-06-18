@@ -31,5 +31,4 @@ export const akomodasiPageContent = {
   },
 } as const;
 
-export { accommodations } from "./data";
-export type { Accommodation } from "./data";
+export type { Accommodation } from "@/lib/content/shared/types";

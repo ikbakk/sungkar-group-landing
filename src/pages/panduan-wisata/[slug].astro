@@ -10,7 +10,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { AlarmClockIcon, Calendar03Icon } from "@hugeicons/core-free-icons";
 import { generateHowToSchema } from "@/lib/schemas";
 import { getGuides, getGuide } from "@/lib/content/guides";
-import { packages } from "@/lib/content/tourPackages";
+import { getPackages } from "@/lib/content/tourPackages/collection";
 
 import { t } from "@/lib/i18n";
 
@@ -33,6 +33,7 @@ if (!guide) {
 
 const { Content, title, description, readingTime, publishDate, keyTakeaways, featuredImage, relatedPackages: relatedPkgSlugs } = guide;
 
+const packages = await getPackages(locale);
 const relatedPackages = packages.filter((p) =>
   relatedPkgSlugs.includes(p.slug)
 );

@@ -9,20 +9,21 @@ import VehicleRegionSection from "@/components/vehicles/VehicleRegionSection.ast
 
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
-import { vehicles } from "@/lib/content/car-rental";
+import { getVehicles } from "@/lib/content/car-rental/collection";
 import { REGION_LABEL, REGIONS, type RegionKey as Region } from "@/lib/regions";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n";
 
 export async function getStaticPaths() {
+  const vehicles = await getVehicles("id");
   const paths = [];
   for (const region of REGIONS) {
     const regionVehicles = vehicles.filter((v) => v.region === region);
     if (regionVehicles.length === 0) continue;
     paths.push({
       params: { region },
-      props: { region, vehicles: regionVehicles },
+      props: { region },
     });
   }
   return paths;
@@ -41,10 +42,11 @@ const faqSchema = generateFAQPageSchema(sewaMobilFaq);
 
 interface Props {
   region: Region;
-  vehicles: typeof vehicles;
 }
 
-const { region, vehicles: regionVehicles } = Astro.props;
+const { region } = Astro.props;
+const vehicles = await getVehicles(locale);
+const regionVehicles = vehicles.filter((v) => v.region === region);
 
 const regionName = REGION_LABEL[region];
 const regionDescription = sewaPageContent.regions[region].title;

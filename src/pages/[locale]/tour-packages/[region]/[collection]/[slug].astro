@@ -5,7 +5,7 @@ import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateProductSchema, generateBreadcrumbSchema, generateFAQPageSchema } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 
-import { packages } from "@/lib/content/tourPackages/index";
+import { getPackages } from "@/lib/content/tourPackages/collection";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
 import PageHeader from "@/components/site/PageHeader.astro";
@@ -29,10 +29,11 @@ import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import { getImageSrc } from "@/lib/images";
 
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   const paths = [];
   for (const locale of NON_DEFAULT_LOCALES) {
-    for (const tour of packages) {
+    const localePackages = await getPackages(locale);
+    for (const tour of localePackages) {
       paths.push({
         params: {
           locale,

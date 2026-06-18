@@ -3,7 +3,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
-import { packages } from "@/lib/content/tourPackages/index";
+import { getPackages } from "@/lib/content/tourPackages/collection";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
@@ -31,6 +31,7 @@ const { locale, region } = Astro.params;
 const r = region as Region;
 const uiStrings = t(locale!);
 
+const packages = await getPackages(locale!);
 const regionPackages = packages.filter((pkg) => pkg.region === r);
 
 const collections = Object.values(

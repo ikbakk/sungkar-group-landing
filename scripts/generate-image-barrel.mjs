@@ -17,14 +17,29 @@ const toCamel = (str) =>
 
 const toConstName = (str) => str.replace(/[- ]+/g, "_").toUpperCase();
 
+// Prefer webp over jpg/jpeg/png when same base name exists
+const extPriority = ["webp", "png", "jpg", "jpeg", "avif"];
+
 let imports = [];
 let exports_ = [];
 
 for (const group of groups) {
-  const files = fs
+  let files = fs
     .readdirSync(path.join(ROOT, group.name))
     .filter((file) => /\.(webp|png|jpg|jpeg|avif)$/i.test(file))
     .sort();
+
+  // Deduplicate: keep only highest priority extension per base name
+  const seen = new Map();
+  for (const file of files) {
+    const base = path.basename(file).replace(/\.[^.]+$/, "").toLowerCase();
+    const ext = path.extname(file).toLowerCase().replace(".", "");
+    const priority = extPriority.indexOf(ext);
+    if (!seen.has(base) || priority < seen.get(base).priority) {
+      seen.set(base, { file, priority });
+    }
+  }
+  files = Array.from(seen.values()).map((v) => v.file).sort();
 
   const entries = [];
 
@@ -37,10 +52,16 @@ for (const group of groups) {
     entries.push(`  ${key}: ${varName},`);
   }
 
+  let extra = "";
+  if (toConstName(group.name) === "HERO") {
+    extra = `  lombok: _hero_heroLombok,
+  main: _hero_hero,
+`;
+  }
   exports_.push(`
 export const ${toConstName(group.name)} = {
 ${entries.join("\n")}
-};
+${extra}};
 `);
 }
 

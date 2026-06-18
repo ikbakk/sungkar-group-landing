@@ -3,7 +3,6 @@
 
 import _accommodations_lombok from "./accommodations/lombok.webp";
 import _brand_logo from "./brand/logo.webp";
-import _brand_ogHomeJpg from "./brand/og-home.jpg";
 import _brand_ogHome from "./brand/og-home.webp";
 import _destinations_gili from "./destinations/gili.webp";
 import _destinations_lombok from "./destinations/lombok.webp";
@@ -57,7 +56,6 @@ export const ACCOMMODATIONS = {
 export const BRAND = {
   logo: _brand_logo,
   ogHome: _brand_ogHome,
-  ogHomeJpg: _brand_ogHomeJpg,
 };
 
 

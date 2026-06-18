@@ -3,8 +3,8 @@ import { HERO, GALLERY } from "@/assets/images";
 
 import { businessInfo } from "@/lib/contact-data";
 import { destinations } from "@/lib/content/destinations";
-import { packages } from "@/lib/content/tourPackages";
 import { toMarqueeReviews, reviewStats } from "@/lib/content/reviews";
+import type { TourPackage } from "@/lib/content/tourPackages/types";
 
 export interface LandingAction {
   label: string;
@@ -42,7 +42,7 @@ export interface LandingDestinationCard {
   image: ImageSource;
 }
 
-function toLandingTourCard(tour: (typeof packages)[number]): LandingTourCard {
+export function toLandingTourCard(tour: TourPackage): LandingTourCard {
   return {
     image: tour.images[0],
     duration: tour.duration,
@@ -122,13 +122,12 @@ export const landingHero = {
   ] satisfies LandingHeroCard[],
 };
 
-export const landingFeaturedTours = {
+export const landingFeaturedToursBase = {
   eyebrow: "精选套餐",
   title: "最受欢迎的轻松度假套餐",
   description:
     "从短途旅行到多日行程，我们的套餐让您只需选择、出发、享受当下。",
   heroImage: GALLERY.tourSnorkeling,
-  tours: packages.filter((tour) => tour.featured).map(toLandingTourCard),
 };
 
 export const landingDestinations = {

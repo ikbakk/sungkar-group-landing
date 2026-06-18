@@ -4,9 +4,16 @@ import LandingPage from "@/components/landing/LandingPage.astro";
 import { loadContent } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n";
 import { BRAND } from "@/assets/images";
+import { getPackages } from "@/lib/content/tourPackages/collection";
+import { toLandingTourCard } from "@/lib/content/landing";
 
 const landingModule = await loadContent("id", "landing");
-const { landingHero, landingFeaturedTours, landingDestinations, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
+const packages = await getPackages("id");
+const { landingHero, landingFeaturedToursBase, landingDestinations, landingTransport, landingTestimonials, landingVideo, landingBackgroundImage } = landingModule;
+const landingFeaturedTours = {
+  ...landingFeaturedToursBase,
+  tours: packages.filter((p) => p.featured).map(toLandingTourCard),
+};
 const uiStrings = t("id");
 ---
 

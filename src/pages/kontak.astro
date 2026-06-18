@@ -15,7 +15,7 @@ import { businessInfo, contactFormFields } from "@/lib/contact-data";
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n";
 
-import { packages } from "@/lib/content/tourPackages";
+import { getPackages } from "@/lib/content/tourPackages/collection";
 
 import {
   generateContactPageSchema,
@@ -31,6 +31,8 @@ const { contactPageContent } = pageModule;
 
 const faqModule = await loadFaq(locale, "contact");
 const { contactFaq } = faqModule;
+
+const packages = await getPackages(locale);
 
 const siteUrl = Astro.site?.toString() ?? SITE_URL;
 
