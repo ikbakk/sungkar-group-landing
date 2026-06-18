@@ -1,18 +1,23 @@
 ---
+import { t } from "@/lib/i18n";
 import DestinationCard from "@/components/cards/DestinationCard.astro";
 import type { Destination } from "@/lib/content/destinations";
 
 const {
   id,
+  locale = "id",
   title,
   description,
   destinations,
 } = Astro.props as {
   id: string;
+  locale?: string;
   title: string;
   description: string;
   destinations: Destination[];
 };
+
+const uiStrings = t(locale);
 ---
 
 <div id={id} class="scroll-mt-48" data-scroll-section>
@@ -34,7 +39,7 @@ const {
       href="#top"
       class="rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium"
     >
-      ↑ Kembali ke Atas
+      {uiStrings.common.backToTop}
     </a>
   </div>
 </div>

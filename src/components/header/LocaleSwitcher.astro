@@ -1,4 +1,5 @@
 ---
+import { t } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 import {
   LOCALE_LABELS,
@@ -13,6 +14,7 @@ interface Props {
 }
 
 const { locale = "id" } = Astro.props as Props;
+const uiStrings = t(locale);
 const currentPath = Astro.url.pathname;
 const otherLocales = LOCALES.filter((l) => l !== locale);
 ---
@@ -21,7 +23,7 @@ const otherLocales = LOCALES.filter((l) => l !== locale);
   <Button
     variant="ghost"
     class="flex items-center gap-1 rounded-lg border border-white/20 bg-white/10 px-3 py-1.5 text-sm font-medium text-white backdrop-blur-md transition-colors hover:bg-white/20"
-    aria-label="Switch language"
+    aria-label={uiStrings.header.language}
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

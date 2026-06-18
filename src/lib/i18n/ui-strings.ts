@@ -6,6 +6,7 @@ export interface UIStrings {
     menu: string;
     exploreDestinations: string;
     language: string;
+    destinationsSubtitle: string;
   };
   nav: {
     availablePackages: string;
@@ -55,6 +56,7 @@ export interface UIStrings {
     seeAllReviews: string;
     galleryTitle: string;
     galleryPhotoCaptions: string[];
+    totalOnGoogle: string;
   };
   faq: {
     sectionTitle: string;
@@ -152,6 +154,7 @@ export interface UIStrings {
     imageAltSunrise: string;
     imageAltSunset: string;
     imageAltDestinations: string;
+    explore: string;
     pageNotFound: string;
     pageNotFoundDesc: string;
   };
@@ -205,6 +208,7 @@ export const translations: Record<Locale, UIStrings> = {
       menu: "Menu",
       exploreDestinations: "Jelajahi Destinasi",
       language: "Bahasa",
+      destinationsSubtitle: "Lombok • Sumbawa • Labuan Bajo",
     },
     nav: {
       availablePackages: "Paket Wisata Tersedia",
@@ -253,6 +257,7 @@ export const translations: Record<Locale, UIStrings> = {
       seeOnGoogleMaps: "Lihat di Google Maps",
       seeAllReviews: "Lihat semua ulasan di Google",
       galleryTitle: "Galeri Pengalaman Wisatawan",
+      totalOnGoogle: "{n} ulasan di Google",
       galleryPhotoCaptions: [
         "Momen perjalanan keluarga",
         "Eksplorasi pantai dan pulau",
@@ -363,6 +368,7 @@ export const translations: Record<Locale, UIStrings> = {
       viewAll: "Lihat Semua",
       backToTop: "\u2191 Kembali ke Atas",
       viewDetail: "Lihat Detail",
+      explore: "Jelajahi",
       moreCount: "+{n} lainnya",
       contactForPrice: "Hubungi untuk harga",
       imageAltSunrise: "Lombok saat matahari terbit",
@@ -407,6 +413,7 @@ export const translations: Record<Locale, UIStrings> = {
       menu: "Menu",
       exploreDestinations: "Explore Destinations",
       language: "Language",
+      destinationsSubtitle: "Lombok • Sumbawa • Labuan Bajo",
     },
     nav: {
       availablePackages: "Tour Packages Available",
@@ -455,6 +462,7 @@ export const translations: Record<Locale, UIStrings> = {
       seeOnGoogleMaps: "See on Google Maps",
       seeAllReviews: "See all reviews on Google",
       galleryTitle: "Traveler Experience Gallery",
+      totalOnGoogle: "{n} reviews on Google",
       galleryPhotoCaptions: [
         "Family travel moments",
         "Beach and island exploration",
@@ -565,6 +573,7 @@ export const translations: Record<Locale, UIStrings> = {
       viewAll: "View All",
       backToTop: "\u2191 Back to Top",
       viewDetail: "View Details",
+      explore: "Explore",
       moreCount: "+{n} more",
       contactForPrice: "Contact for price",
       imageAltSunrise: "Lombok at sunrise",
@@ -609,6 +618,7 @@ export const translations: Record<Locale, UIStrings> = {
       menu: "\u0627\u0644\u0642\u0627\u0626\u0645\u0629",
       exploreDestinations: "\u0627\u0633\u062A\u0643\u0634\u0641 \u0627\u0644\u0648\u062C\u0647\u0627\u062A",
       language: "\u0627\u0644\u0644\u063A\u0629",
+      destinationsSubtitle: "\u0644\u0648\u0645\u0628\u0648\u0643 \u2022 \u0633\u0648\u0645\u0628\u0627\u0648\u0629 \u2022 \u0644\u0627\u0628\u0648\u0627\u0646 \u0628\u0627\u062C\u0648",
     },
     nav: {
       availablePackages: "\u0628\u0627\u0642\u0627\u062A \u0627\u0644\u0633\u064A\u0627\u062D\u0629 \u0627\u0644\u0645\u062A\u0627\u062D\u0629",
@@ -657,6 +667,7 @@ export const translations: Record<Locale, UIStrings> = {
       seeOnGoogleMaps: "\u0634\u0627\u0647\u062F \u0639\u0644\u0649 \u062E\u0631\u0627\u0626\u0637 \u062C\u0648\u062C\u0644",
       seeAllReviews: "\u0634\u0627\u0647\u062F \u062C\u0645\u064A\u0639 \u0627\u0644\u062A\u0642\u064A\u064A\u0645\u0627\u062A \u0639\u0644\u0649 \u062C\u0648\u062C\u0644",
       galleryTitle: "\u0645\u0639\u0631\u0636 \u062A\u062C\u0627\u0631\u0628 \u0627\u0644\u0645\u0633\u0627\u0641\u0631\u064A\u0646",
+      totalOnGoogle: "{n} \u062A\u0642\u064A\u064A\u0645\u0627\u062A \u0639\u0644\u0649 \u062C\u0648\u062C\u0644",
       galleryPhotoCaptions: [
         "\u0644\u062D\u0638\u0627\u062A \u0627\u0644\u0633\u0641\u0631 \u0627\u0644\u0639\u0627\u0626\u0644\u064A\u0629",
         "\u0627\u0633\u062A\u0643\u0634\u0627\u0641 \u0627\u0644\u0634\u0648\u0627\u0637\u0626 \u0648\u0627\u0644\u062C\u0632\u0631",
@@ -756,6 +767,7 @@ export const translations: Record<Locale, UIStrings> = {
       faq: "\u0627\u0644\u0623\u0633\u0626\u0644\u0629 \u0627\u0644\u0634\u0627\u0626\u0639\u0629",
     },
     common: {
+      explore: "\u0627\u0633\u062A\u0643\u0634\u0641",
       readMore: "\u0627\u0642\u0631\u0623 \u0627\u0644\u0645\u0632\u064A\u062F",
       learnMore: "\u0627\u0639\u0631\u0641 \u0627\u0644\u0645\u0632\u064A\u062F",
       contactUs: "\u0627\u062A\u0635\u0644 \u0628\u0646\u0627",
@@ -811,6 +823,7 @@ export const translations: Record<Locale, UIStrings> = {
       menu: "Menu",
       exploreDestinations: "Terokai Destinasi",
       language: "Bahasa",
+      destinationsSubtitle: "Lombok • Sumbawa • Labuan Bajo",
     },
     nav: {
       availablePackages: "Pakej Pelancongan Tersedia",
@@ -859,6 +872,7 @@ export const translations: Record<Locale, UIStrings> = {
       seeOnGoogleMaps: "Lihat di Google Maps",
       seeAllReviews: "Lihat semua ulasan di Google",
       galleryTitle: "Galeri Pengalaman Pengembara",
+      totalOnGoogle: "{n} ulasan di Google",
       galleryPhotoCaptions: [
         "Momen perjalanan keluarga",
         "Eksplorasi pantai dan pulau",
@@ -958,6 +972,7 @@ export const translations: Record<Locale, UIStrings> = {
       faq: "FAQ",
     },
     common: {
+      explore: "Terokai",
       readMore: "Baca Lagi",
       learnMore: "Ketahui Lebih Lanjut",
       contactUs: "Hubungi Kami",
@@ -1013,6 +1028,7 @@ export const translations: Record<Locale, UIStrings> = {
       menu: "\u83DC\u5355",
       exploreDestinations: "\u63A2\u7D22\u76EE\u7684\u5730",
       language: "\u8BED\u8A00",
+      destinationsSubtitle: "\u9F99\u6728\u5C9B \u2022 \u677E\u5DF4\u74E6 \u2022 \u62C9\u5E03\u5B89\u5DF4\u7126",
     },
     nav: {
       availablePackages: "\u53EF\u7528\u65C5\u6E38\u5957\u9910",
@@ -1061,6 +1077,7 @@ export const translations: Record<Locale, UIStrings> = {
       seeOnGoogleMaps: "\u5728Google\u5730\u56FE\u4E0A\u67E5\u770B",
       seeAllReviews: "\u67E5\u770BGoogle\u4E0A\u7684\u6240\u6709\u8BC4\u4EF7",
       galleryTitle: "\u65C5\u884C\u8005\u4F53\u9A8C\u753B\u5ECA",
+      totalOnGoogle: "\u5728Google\u4E0A\u6709{n}\u6761\u8BC4\u4EF7",
       galleryPhotoCaptions: [
         "\u5BB6\u5EAD\u65C5\u884C\u65F6\u5149",
         "\u6D77\u6EE9\u548C\u5C9B\u5C7F\u63A2\u7D22",
@@ -1160,6 +1177,7 @@ export const translations: Record<Locale, UIStrings> = {
       faq: "\u5E38\u89C1\u95EE\u9898",
     },
     common: {
+      explore: "\u63A2\u7D22",
       readMore: "\u9605\u8BFB\u66F4\u591A",
       learnMore: "\u4E86\u89E3\u66F4\u591A",
       contactUs: "\u8054\u7CFB\u6211\u4EEC",
