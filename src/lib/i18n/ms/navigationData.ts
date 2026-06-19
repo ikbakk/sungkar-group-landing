@@ -52,8 +52,8 @@ const createPackageCollections = (
           "3-hari-2-malam": "Pakej 3 Hari 2 Malam",
           "4-hari-3-malam": "Pakej 4 Hari 3 Malam",
           "5-hari-4-malam": "Pakej 5 Hari 4 Malam",
-          "open-trip": "Open Trip",
-          sailing: "Sailing",
+          "sailing-open-trip": "Sailing Open Trip",
+          "sailing-private-trip": "Sailing Private Trip",
         };
         acc[pkg.collectionSlug] = {
           title: titleMap[pkg.collectionSlug] ?? pkg.collectionTitle,

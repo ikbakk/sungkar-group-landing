@@ -1,0 +1,54 @@
+---
+import type { Cabin } from "@/lib/content/tourPackages/types";
+import { t } from "@/lib/i18n";
+import { getImageSrc } from "@/lib/images";
+
+interface Props {
+  cabins: Cabin[];
+  locale?: string;
+}
+
+const { cabins, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
+---
+
+<div class="w-full">
+  <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+    {uiStrings.paketWisata.cabins}
+  </div>
+
+  <h2 class="mt-2 text-3xl leading-tight sm:text-4xl">
+    {uiStrings.paketWisata.cabins}
+  </h2>
+
+  <div class="mt-8 grid gap-6 sm:grid-cols-2">
+    {cabins.map((cabin, i) => (
+      <div class="overflow-hidden rounded-xl border border-border bg-white shadow-[0_8px_30px_rgba(17,24,39,0.04)]">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img
+            src={getImageSrc(cabin.image)}
+            alt={cabin.name}
+            class="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+            loading={i < 2 ? "eager" : "lazy"}
+          />
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-semibold leading-tight">{cabin.name}</h3>
+          {cabin.description && (
+            <p class="mt-2 text-sm leading-6 text-text-muted">
+              {cabin.description}
+            </p>
+          )}
+          <div class="mt-4 flex items-baseline gap-1">
+            <span class="text-lg font-bold text-brand-700">
+              {cabin.price}
+            </span>
+            <span class="text-xs text-text-muted">
+              /{uiStrings.paketWisata.cabinPrice}
+            </span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

@@ -805,5 +805,602 @@
         ]
       }
     }
+  },
+  {
+    "slug": "open-trip-economy",
+    "region": "labuan-bajo",
+    "featured": false,
+    "collectionSlug": "sailing-open-trip",
+    "images": [
+      "hero/hero-labuan-bajo.webp",
+      "gallery/komodo.webp",
+      "gallery/pink-beach.webp",
+      "gallery/dragon.webp"
+    ],
+    "boatName": "Alfathran",
+    "boatType": "Phinisi",
+    "boatCapacity": 20,
+    "boatSpecs": [
+      { "label": "Panjang Kapal", "value": "30m" },
+      { "label": "Jumlah Kabin", "value": "5 Kamar" },
+      { "label": "Mesin", "value": "2x 300HP" },
+      { "label": "Crew", "value": "6 Orang" }
+    ],
+    "cabins": [
+      {
+        "name": "Cabin Economy (Kelas Bawah)",
+        "description": "Kabin ekonomi dengan 2 tempat tidur single, AC, dan jendela kecil. Cocok untuk backpacker.",
+        "price": "Rp 2.500.000/orang",
+        "image": "gallery/g-snorkel-2.webp"
+      },
+      {
+        "name": "Cabin Standard (Kelas Tengah)",
+        "description": "Kabin standar dengan 1 double bed atau 2 single bed, AC, dan jendela besar.",
+        "price": "Rp 3.500.000/orang",
+        "image": "gallery/g-snorkel-3.webp"
+      }
+    ],
+    "locales": {
+      "id": {
+        "title": "Open Trip Economy - Sailing Komodo 3D2N",
+        "collectionTitle": "Sailing Open Trip",
+        "category": "Paket Sailing Labuan Bajo",
+        "duration": "3 Hari 2 Malam",
+        "summary": "Paket open trip economy sailing Komodo 3 hari 2 malam dengan Kapal Phinisi Alfathran. Nikmati pengalaman live on board dengan harga terjangkau, kunjungi Pulau Rinca, Pink Beach, Manta Point, Gili Laba, dan Taka Makassar. Cocok untuk backpacker dan traveler budget.",
+        "highlights": [
+          "Pulau Rinca & Komodo",
+          "Pink Beach",
+          "Manta Point Snorkeling",
+          "Gili Laba Trekking",
+          "Taka Makassar",
+          "Live on Board",
+          "Snorkeling Gear",
+          "Makan 3x Sehari"
+        ],
+        "itinerary": [
+          "Hari 1 - Penjemputan di hotel Labuan Bajo.",
+          "Hari 1 - Naik ke Kapal Alfathran dan briefing kru.",
+          "Hari 1 - Menuju Pulau Rinca untuk trekking komodo.",
+          "Hari 1 - Makan siang di atas kapal.",
+          "Hari 1 - Snorkeling di Pink Beach.",
+          "Hari 1 - Mengunjungi Taka Makassar.",
+          "Hari 1 - Menikmati sunset di atas kapal.",
+          "Hari 1 - Makan malam di atas kapal.",
+          "Hari 1 - Menginap di Kabin Economy.",
+          "Hari 2 - Melihat sunrise di atas kapal.",
+          "Hari 2 - Sarapan pagi di kapal.",
+          "Hari 2 - Menuju Manta Point untuk snorkeling dengan ikan pari manta.",
+          "Hari 2 - Makan siang di atas kapal.",
+          "Hari 2 - Trekking di Gili Laba dan menikmati panorama bukit sabana.",
+          "Hari 2 - Makan malam di atas kapal.",
+          "Hari 2 - Menginap di Kabin Economy.",
+          "Hari 3 - Melihat sunrise dan sarapan pagi.",
+          "Hari 3 - Snorkeling di spot terakhir.",
+          "Hari 3 - Kembali ke Labuan Bajo.",
+          "Hari 3 - Transfer ke hotel dan tour selesai."
+        ],
+        "includes": [
+          "Kapal Phinisi Alfathran 2 malam",
+          "Kabin Economy AC",
+          "Makan 2x sarapan, 3x makan siang, 2x makan malam",
+          "Snorkeling equipment",
+          "Guide trekking komodo",
+          "Tiket masuk taman nasional",
+          "Air mineral",
+          "Penjemputan dan pengantaran hotel"
+        ],
+        "excludes": [
+          "Tiket pesawat PP",
+          "Pengeluaran pribadi",
+          "Tip crew",
+          "Minuman beralkohol",
+          "Asuransi perjalanan"
+        ],
+        "termsAndConditions": "Pembayaran DP 50% saat booking. Pelunasan 7 hari sebelum keberangkatan.\nPembatalan 14 hari sebelum keberangkatan: refund 50%.\nPembatalan 7 hari sebelum keberangkatan: non-refundable.\nHarga sudah termasuk pajak dan biaya pelabuhan.\nJadwal dapat berubah tergantung kondisi cuaca."
+      },
+      "en": {
+        "title": "Open Trip Economy - Komodo Sailing 3D2N",
+        "collectionTitle": "Sailing Open Trip",
+        "category": "Labuan Bajo Sailing Packages",
+        "duration": "3 Days 2 Nights",
+        "summary": "Open trip economy Komodo sailing 3 days 2 nights aboard Phinisi Alfathran. Enjoy live on board experience at an affordable price, visit Rinca Island, Pink Beach, Manta Point, Gili Laba, and Taka Makassar. Perfect for backpackers and budget travelers.",
+        "highlights": [
+          "Rinca Island & Komodo",
+          "Pink Beach",
+          "Manta Point Snorkeling",
+          "Gili Laba Trekking",
+          "Taka Makassar",
+          "Live on Board",
+          "Snorkeling Gear",
+          "Meals 3x Daily"
+        ],
+        "itinerary": [
+          "Day 1 - Pickup at Labuan Bajo hotel.",
+          "Day 1 - Board Alfathran boat and crew briefing.",
+          "Day 1 - Head to Rinca Island for Komodo trekking.",
+          "Day 1 - Lunch on the boat.",
+          "Day 1 - Snorkeling at Pink Beach.",
+          "Day 1 - Visit Taka Makassar.",
+          "Day 1 - Enjoy sunset on the boat.",
+          "Day 1 - Dinner on the boat.",
+          "Day 1 - Overnight in Economy Cabin.",
+          "Day 2 - Watch sunrise on the boat.",
+          "Day 2 - Breakfast on the boat.",
+          "Day 2 - Head to Manta Point for snorkeling with manta rays.",
+          "Day 2 - Lunch on the boat.",
+          "Day 2 - Trekking on Gili Laba and enjoy savanna hill panorama.",
+          "Day 2 - Dinner on the boat.",
+          "Day 2 - Overnight in Economy Cabin.",
+          "Day 3 - Watch sunrise and breakfast.",
+          "Day 3 - Snorkeling at last spot.",
+          "Day 3 - Return to Labuan Bajo.",
+          "Day 3 - Transfer to hotel and tour ends."
+        ],
+        "includes": [
+          "Phinisi Alfathran boat 2 nights",
+          "Economy AC Cabin",
+          "Meals 2 breakfast, 3 lunch, 2 dinner",
+          "Snorkeling equipment",
+          "Komodo trekking guide",
+          "National park entrance fee",
+          "Mineral water",
+          "Hotel pickup and drop-off"
+        ],
+        "excludes": [
+          "Round-trip airline tickets",
+          "Personal expenses",
+          "Crew tip",
+          "Alcoholic beverages",
+          "Travel insurance"
+        ],
+        "termsAndConditions": "50% down payment upon booking. Full payment 7 days before departure.\nCancellation 14 days before departure: 50% refund.\nCancellation 7 days before departure: non-refundable.\nPrice includes tax and port fees.\nSchedule may change depending on weather conditions."
+      },
+      "ms": {
+        "title": "Open Trip Ekonomi - Sailing Komodo 3H2M",
+        "collectionTitle": "Sailing Open Trip",
+        "category": "Pakej Sailing Labuan Bajo",
+        "duration": "3 Hari 2 Malam",
+        "summary": "Open trip ekonomi sailing Komodo 3 hari 2 malam dengan Kapal Phinisi Alfathran. Nikmati pengalaman live on board dengan harga berpatutan, kunjungi Pulau Rinca, Pink Beach, Manta Point, Gili Laba, dan Taka Makassar.",
+        "highlights": [
+          "Pulau Rinca & Komodo",
+          "Pantai Pink",
+          "Manta Point Snorkeling",
+          "Gili Laba Trekking",
+          "Taka Makassar",
+          "Live on Board"
+        ],
+        "itinerary": [
+          "Hari 1 - Penjemputan di hotel Labuan Bajo.",
+          "Hari 1 - Naik ke Kapal Alfathran.",
+          "Hari 1 - Pulau Rinca trekking komodo.",
+          "Hari 1 - Makan siang.",
+          "Hari 1 - Snorkeling Pink Beach.",
+          "Hari 1 - Taka Makassar.",
+          "Hari 1 - Sunset dan makan malam.",
+          "Hari 1 - Menginap di kabin.",
+          "Hari 2 - Sunrise dan sarapan.",
+          "Hari 2 - Manta Point snorkeling.",
+          "Hari 2 - Makan siang.",
+          "Hari 2 - Gili Laba trekking.",
+          "Hari 2 - Makan malam.",
+          "Hari 2 - Menginap di kabin.",
+          "Hari 3 - Sunrise dan sarapan.",
+          "Hari 3 - Snorkeling terakhir.",
+          "Hari 3 - Kembali ke Labuan Bajo."
+        ],
+        "includes": [
+          "Kapal Phinisi Alfathran 2 malam",
+          "Kabin Ekonomi AC",
+          "Makan 2x sarapan, 3x makan siang, 2x makan malam",
+          "Alat snorkeling",
+          "Panduan trekking komodo",
+          "Tiket taman nasional",
+          "Air mineral",
+          "Jemputan hotel"
+        ],
+        "excludes": [
+          "Tiket penerbangan",
+          "Perbelanjaan peribadi",
+          "Tip crew",
+          "Insurans perjalanan"
+        ],
+        "termsAndConditions": "Bayaran pendahuluan 50% semasa tempahan. Pembayaran penuh 7 hari sebelum berlepas."
+      },
+      "ar": {
+        "title": "رحلة اقتصادية مفتوحة - كومودو 3 أيام",
+        "collectionTitle": "Sailing Open Trip",
+        "category": "باكيجات الإبحار لابوان باجو",
+        "duration": "3 أيام وليلتان",
+        "summary": "رحلة الإبحار الاقتصادية المفتوحة في كومودو لمدة 3 أيام وليلتين على متن القارب الفينيسي ألفثران. استمتع بتجربة الإقامة على متن القارب بسعر معقول، قم بزيارة جزيرة رينكا والشاطئ الوردي ونقطة مانتا وجيلي لابا وتاكا ماكاسار.",
+        "highlights": [
+          "جزيرة رينكا وكومودو",
+          "الشاطئ الوردي",
+          "نقطة مانتا",
+          "جيلي لابا",
+          "تاكا ماكاسار",
+          "الإقامة على القارب"
+        ],
+        "itinerary": [
+          "اليوم 1 - الاستقبال من الفندق",
+          "اليوم 1 - الصعود إلى القارب",
+          "اليوم 1 - جزيرة رينكا",
+          "اليوم 1 - الغداء",
+          "اليوم 1 - الشاطئ الوردي",
+          "اليوم 1 - تاكا ماكاسار",
+          "اليوم 1 - العشاء",
+          "اليوم 1 - المبيت في المقصورة",
+          "اليوم 2 - الإفطار",
+          "اليوم 2 - نقطة مانتا",
+          "اليوم 2 - الغداء",
+          "اليوم 2 - جيلي لابا",
+          "اليوم 2 - العشاء",
+          "اليوم 2 - المبيت",
+          "اليوم 3 - الإفطار",
+          "اليوم 3 - العودة"
+        ],
+        "includes": [
+          "قارب الفينيسي ألفثران ليلتين",
+          "مقصورة اقتصادية",
+          "وجبات",
+          "معدات الغطس",
+          "مرشد كومودو",
+          "رسوم الحديقة",
+          "مياه معدنية",
+          "الاستقبال والتوصيل"
+        ],
+        "excludes": [
+          "تذاكر الطيران",
+          "المصروفات الشخصية",
+          "بقشيش الطاقم",
+          "تأمين السفر"
+        ],
+        "termsAndConditions": "دفعة أولى 50% عند الحجز. الدفع الكامل 7 أيام قبل المغادرة."
+      },
+      "zh": {
+        "title": "经济拼团游 - 科莫多帆船3天2晚",
+        "collectionTitle": "Sailing Open Trip",
+        "category": "拉布安巴焦帆船套餐",
+        "duration": "3天2晚",
+        "summary": "经济拼团科莫多帆船3天2晚，乘坐阿尔法特兰号菲尼西帆船。以实惠的价格享受船上住宿体验，参观林卡岛、粉色海滩、曼塔角、吉利拉巴和塔卡马卡萨。",
+        "highlights": [
+          "林卡岛和科莫多龙",
+          "粉色海滩",
+          "曼塔角浮潜",
+          "吉利拉巴徒步",
+          "塔卡马卡萨",
+          "船上住宿"
+        ],
+        "itinerary": [
+          "第1天 - 酒店接载",
+          "第1天 - 登上阿尔法特兰号",
+          "第1天 - 林卡岛徒步看科莫多龙",
+          "第1天 - 午餐",
+          "第1天 - 粉色海滩浮潜",
+          "第1天 - 塔卡马卡萨",
+          "第1天 - 晚餐过夜",
+          "第2天 - 早餐",
+          "第2天 - 曼塔角浮潜",
+          "第2天 - 午餐",
+          "第2天 - 吉利拉巴徒步",
+          "第2天 - 晚餐",
+          "第2天 - 过夜",
+          "第3天 - 早餐",
+          "第3天 - 返回拉布安巴焦"
+        ],
+        "includes": [
+          "阿尔法特兰号2晚",
+          "经济舱空调",
+          "餐食",
+          "浮潜装备",
+          "科莫多向导",
+          "国家公园门票",
+          "矿泉水",
+          "酒店接送"
+        ],
+        "excludes": [
+          "往返机票",
+          "个人消费",
+          "船员小费",
+          "旅行保险"
+        ],
+        "termsAndConditions": "预订时支付50%定金。出发前7天付清。"
+      }
+    }
+  },
+  {
+    "slug": "private-trip-standard",
+    "region": "labuan-bajo",
+    "featured": true,
+    "collectionSlug": "sailing-private-trip",
+    "images": [
+      "hero/hero-labuan-bajo.webp",
+      "destinations/labuan-bajo.webp",
+      "gallery/komodo.webp",
+      "gallery/pink-beach.webp",
+      "gallery/dragon.webp",
+      "gallery/g-snorkel.webp"
+    ],
+    "boatName": "Lautan Nesia",
+    "boatType": "Phinisi Premium",
+    "boatCapacity": 12,
+    "boatSpecs": [
+      { "label": "Panjang Kapal", "value": "35m" },
+      { "label": "Jumlah Kabin", "value": "4 Kamar" },
+      { "label": "Mesin", "value": "2x 400HP" },
+      { "label": "Crew", "value": "8 Orang" },
+      { "label": "Dibangun", "value": "2023" }
+    ],
+    "cabins": [
+      {
+        "name": "Cabin Standard (Kelas Utama)",
+        "description": "Kabin standar dengan double bed, AC, jendela panoramic, kamar mandi dalam, dan TV.",
+        "price": "Rp 7.500.000/orang",
+        "image": "gallery/g-snorkel-3.webp"
+      },
+      {
+        "name": "Cabin VIP (Kelas Suite)",
+        "description": "Kabin VIP dengan king bed, AC, kamar mandi dalam, balkon pribadi, TV, dan mini bar.",
+        "price": "Rp 12.000.000/orang",
+        "image": "gallery/g-snorkel-4.webp"
+      },
+      {
+        "name": "Cabin VIP Plus (Suite Keluarga)",
+        "description": "Kabin VIP Plus dengan 2 kamar terhubung, king bed + single bed, 2 kamar mandi, ruang tamu pribadi.",
+        "price": "Rp 18.000.000/kabin",
+        "image": "gallery/g-snorkel-5.webp"
+      }
+    ],
+    "locales": {
+      "id": {
+        "title": "Private Trip Standard - Sailing Komodo 4D3N",
+        "collectionTitle": "Sailing Private Trip",
+        "category": "Paket Sailing Labuan Bajo",
+        "duration": "4 Hari 3 Malam",
+        "summary": "Paket private trip sailing Komodo 4 hari 3 malam dengan Kapal Phinisi Premium Lautan Nesia. Pengalaman eksklusif live on board dengan pelayanan personal, kunjungi Pulau Rinca, Pink Beach, Manta Point, Gili Laba, Taka Makassar, Pulau Kalong, dan spot snorkeling tersembunyi.",
+        "highlights": [
+          "Private Trip Eksklusif",
+          "Pulau Rinca & Komodo",
+          "Pink Beach",
+          "Manta Point Snorkeling",
+          "Gili Laba Trekking",
+          "Taka Makassar",
+          "Pulau Kalong",
+          "Live on Board Premium",
+          "Spot Snorkeling Tersembunyi",
+          "Makan 3x Sehari"
+        ],
+        "itinerary": [
+          "Hari 1 - Penjemputan di hotel Labuan Bajo.",
+          "Hari 1 - Naik ke Kapal Lautan Nesia dan briefing kru.",
+          "Hari 1 - Menuju Pulau Rinca untuk trekking komodo.",
+          "Hari 1 - Makan siang di atas kapal.",
+          "Hari 1 - Snorkeling di Pink Beach.",
+          "Hari 1 - Mengunjungi Taka Makassar.",
+          "Hari 1 - Menikmati sunset di atas kapal.",
+          "Hari 1 - Makan malam dengan menu istimewa.",
+          "Hari 1 - Menginap di kabin pilihan.",
+          "Hari 2 - Melihat sunrise di atas kapal.",
+          "Hari 2 - Sarapan pagi di kapal.",
+          "Hari 2 - Menuju Manta Point untuk snorkeling.",
+          "Hari 2 - Snorkeling di spot-spot tersembunyi.",
+          "Hari 2 - Makan siang di atas kapal.",
+          "Hari 2 - Trekking di Gili Laba.",
+          "Hari 2 - Makan malam BBQ di atas kapal.",
+          "Hari 2 - Menginap di kabin pilihan.",
+          "Hari 3 - Sunrise dan sarapan.",
+          "Hari 3 - Mengunjungi Pulau Kalong.",
+          "Hari 3 - Snorkeling di spot terakhir.",
+          "Hari 3 - Makan siang di atas kapal.",
+          "Hari 3 - Waktu luang bersantai di kapal.",
+          "Hari 3 - Makan malam perpisahan.",
+          "Hari 3 - Menginap di kabin pilihan.",
+          "Hari 4 - Sarapan pagi.",
+          "Hari 4 - Kembali ke Labuan Bajo.",
+          "Hari 4 - Transfer ke hotel dan tour selesai."
+        ],
+        "includes": [
+          "Kapal Phinisi Premium Lautan Nesia 3 malam",
+          "Kabin standar/VIP/VIP Plus sesuai pilihan",
+          "Makan 3x sarapan, 4x makan siang, 3x makan malam",
+          "BBQ dinner malam ke-2",
+          "Snorkeling equipment premium",
+          "Guide trekking komodo pribadi",
+          "Tiket masuk taman nasional",
+          "Air mineral & soft drink",
+          "Dokumentasi foto",
+          "Penjemputan dan pengantaran hotel"
+        ],
+        "excludes": [
+          "Tiket pesawat PP",
+          "Pengeluaran pribadi",
+          "Tip crew",
+          "Minuman beralkohol",
+          "Asuransi perjalanan",
+          "Biaya dokumentasi video"
+        ],
+        "termsAndConditions": "Pembayaran DP 50% saat booking. Pelunasan 14 hari sebelum keberangkatan.\nPembatalan 21 hari sebelum keberangkatan: refund 75%.\nPembatalan 14 hari sebelum keberangkatan: refund 50%.\nPembatalan 7 hari sebelum keberangkatan: non-refundable.\nHarga sudah termasuk pajak dan biaya pelabuhan.\nPrivate trip minimal 4 orang.\nJadwal dapat berubah tergantung kondisi cuaca."
+      },
+      "en": {
+        "title": "Private Trip Standard - Komodo Sailing 4D3N",
+        "collectionTitle": "Sailing Private Trip",
+        "category": "Labuan Bajo Sailing Packages",
+        "duration": "4 Days 3 Nights",
+        "summary": "Private trip Komodo sailing 4 days 3 nights aboard Phinisi Premium Lautan Nesia. Exclusive live on board experience with personal service, visit Rinca Island, Pink Beach, Manta Point, Gili Laba, Taka Makassar, Kalong Island, and hidden snorkeling spots.",
+        "highlights": [
+          "Exclusive Private Trip",
+          "Rinca Island & Komodo",
+          "Pink Beach",
+          "Manta Point Snorkeling",
+          "Gili Laba Trekking",
+          "Taka Makassar",
+          "Kalong Island",
+          "Premium Live on Board",
+          "Hidden Snorkeling Spots"
+        ],
+        "itinerary": [
+          "Day 1 - Pickup at Labuan Bajo hotel.",
+          "Day 1 - Board Lautan Nesia boat and crew briefing.",
+          "Day 1 - Head to Rinca Island for Komodo trekking.",
+          "Day 1 - Lunch on the boat.",
+          "Day 1 - Snorkeling at Pink Beach.",
+          "Day 1 - Visit Taka Makassar.",
+          "Day 1 - Enjoy sunset on the boat.",
+          "Day 1 - Special dinner menu.",
+          "Day 1 - Overnight in chosen cabin.",
+          "Day 2 - Watch sunrise on the boat.",
+          "Day 2 - Breakfast on the boat.",
+          "Day 2 - Head to Manta Point for snorkeling.",
+          "Day 2 - Snorkeling at hidden spots.",
+          "Day 2 - Lunch on the boat.",
+          "Day 2 - Gili Laba trekking.",
+          "Day 2 - BBQ dinner on the boat.",
+          "Day 2 - Overnight in chosen cabin.",
+          "Day 3 - Sunrise and breakfast.",
+          "Day 3 - Visit Kalong Island.",
+          "Day 3 - Snorkeling at last spot.",
+          "Day 3 - Lunch on the boat.",
+          "Day 3 - Free time relaxing on the boat.",
+          "Day 3 - Farewell dinner.",
+          "Day 3 - Overnight in chosen cabin.",
+          "Day 4 - Breakfast.",
+          "Day 4 - Return to Labuan Bajo.",
+          "Day 4 - Transfer to hotel and tour ends."
+        ],
+        "includes": [
+          "Phinisi Premium Lautan Nesia 3 nights",
+          "Standard/VIP/VIP Plus cabin of choice",
+          "Meals 3 breakfast, 4 lunch, 3 dinner",
+          "BBQ dinner on night 2",
+          "Premium snorkeling equipment",
+          "Private Komodo trekking guide",
+          "National park entrance fee",
+          "Mineral water & soft drinks",
+          "Photo documentation",
+          "Hotel pickup and drop-off"
+        ],
+        "excludes": [
+          "Round-trip airline tickets",
+          "Personal expenses",
+          "Crew tip",
+          "Alcoholic beverages",
+          "Travel insurance",
+          "Video documentation fee"
+        ],
+        "termsAndConditions": "50% down payment upon booking. Full payment 14 days before departure.\nCancellation 21 days before departure: 75% refund.\nCancellation 14 days before departure: 50% refund.\nCancellation 7 days before departure: non-refundable.\nPrice includes tax and port fees.\nPrivate trip minimum 4 persons.\nSchedule may change depending on weather conditions."
+      },
+      "ms": {
+        "title": "Private Trip Standard - Sailing Komodo 4H3M",
+        "collectionTitle": "Sailing Private Trip",
+        "category": "Pakej Sailing Labuan Bajo",
+        "duration": "4 Hari 3 Malam",
+        "summary": "Private trip sailing Komodo 4 hari 3 malam dengan Kapal Phinisi Premium Lautan Nesia. Pengalaman eksklusif live on board dengan perkhidmatan personal.",
+        "highlights": [
+          "Private Trip Eksklusif",
+          "Pulau Rinca & Komodo",
+          "Pink Beach",
+          "Manta Point",
+          "Gili Laba",
+          "Pulau Kalong"
+        ],
+        "itinerary": [
+          "Hari 1 - Jemput hotel, naik kapal, Rinca, lunch, Pink Beach, Taka Makassar, dinner, menginap.",
+          "Hari 2 - Sunrise, breakfast, Manta Point, snorkeling, lunch, Gili Laba, BBQ dinner, menginap.",
+          "Hari 3 - Sunrise, breakfast, Kalong Island, snorkeling, lunch, bersantai, dinner perpisahan, menginap.",
+          "Hari 4 - Breakfast, kembali ke Labuan Bajo."
+        ],
+        "includes": [
+          "Kapal Lautan Nesia 3 malam",
+          "Kabin pilihan",
+          "Makan 3x sarapan, 4x lunch, 3x dinner",
+          "BBQ dinner",
+          "Alat snorkeling premium",
+          "Panduan peribadi",
+          "Tiket taman nasional",
+          "Air mineral & soft drink",
+          "Foto dokumentasi"
+        ],
+        "excludes": [
+          "Tiket penerbangan",
+          "Perbelanjaan peribadi",
+          "Tip crew",
+          "Insurans perjalanan"
+        ],
+        "termsAndConditions": "DP 50% semasa tempahan. Pelunasan 14 hari sebelum berlepas. Private trip minimum 4 orang."
+      },
+      "ar": {
+        "title": "رحلة خاصة - كومودو 4 أيام 3 ليال",
+        "collectionTitle": "Sailing Private Trip",
+        "category": "باكيجات الإبحار لابوان باجو",
+        "duration": "4 أيام و 3 ليال",
+        "summary": "رحلة خاصة للإبحار في كومودو لمدة 4 أيام و 3 ليال على متن القارب الفينيسي الفاخر لاوتان نيسيا. تجربة حصرية على متن القارب مع خدمة شخصية.",
+        "highlights": [
+          "رحلة خاصة",
+          "جزيرة رينكا",
+          "الشاطئ الوردي",
+          "نقطة مانتا",
+          "جيلي لابا",
+          "جزيرة كالونغ"
+        ],
+        "itinerary": [
+          "اليوم 1 - الاستقبال، الصعود، رينكا، الغداء، الشاطئ الوردي، العشاء، المبيت",
+          "اليوم 2 - الإفطار، نقطة مانتا، الغداء، جيلي لابا، العشاء، المبيت",
+          "اليوم 3 - الإفطار، كالونغ، الغداء، العشاء، المبيت",
+          "اليوم 4 - الإفطار، العودة"
+        ],
+        "includes": [
+          "قارب لاوتان نيسيا 3 ليال",
+          "مقصورة حسب الاختيار",
+          "وجبات كاملة",
+          "معدات الغطس الفاخرة",
+          "مرشد خاص",
+          "رسوم الحديقة",
+          "مياه ومشروبات غازية"
+        ],
+        "excludes": [
+          "تذاكر الطيران",
+          "المصروفات الشخصية",
+          "بقشيش الطاقم",
+          "تأمين السفر"
+        ],
+        "termsAndConditions": "دفعة أولى 50%. الدفع الكامل 14 يوم قبل المغادرة. الحد الأدنى 4 أشخاص."
+      },
+      "zh": {
+        "title": "标准私人游 - 科莫多帆船4天3晚",
+        "collectionTitle": "Sailing Private Trip",
+        "category": "拉布安巴焦帆船套餐",
+        "duration": "4天3晚",
+        "summary": "私人游科莫多帆船4天3晚，乘坐劳丹内西亚号菲尼西高级帆船。尊享船上住宿体验，提供个性化服务。",
+        "highlights": [
+          "专属私人游",
+          "林卡岛和科莫多龙",
+          "粉色海滩",
+          "曼塔角",
+          "吉利拉巴",
+          "卡隆岛"
+        ],
+        "itinerary": [
+          "第1天 - 接载，登船，林卡岛，午餐，粉色海滩，晚餐，过夜",
+          "第2天 - 早餐，曼塔角，午餐，吉利拉巴，烧烤晚餐，过夜",
+          "第3天 - 早餐，卡隆岛，午餐，欢送晚餐，过夜",
+          "第4天 - 早餐，返回拉布安巴焦"
+        ],
+        "includes": [
+          "劳丹内西亚号3晚",
+          "自选舱房",
+          "全程餐食",
+          "高级浮潜装备",
+          "私人向导",
+          "国家公园门票",
+          "矿泉水和软饮"
+        ],
+        "excludes": [
+          "往返机票",
+          "个人消费",
+          "船员小费",
+          "旅行保险"
+        ],
+        "termsAndConditions": "预订时支付50%定金。出发前14天付清。最少4人起订。"
+      }
+    }
   }
 ]

@@ -1,6 +1,19 @@
 import type { ImageSource } from "@/lib/images";
 
 export type Region = "lombok" | "sumbawa" | "labuan-bajo";
+
+export type BoatSpec = {
+  label: string;
+  value: string;
+};
+
+export type Cabin = {
+  name: string;
+  description?: string;
+  price: string;
+  image: ImageSource;
+};
+
 export type TourPackage = {
   slug: string;
   title: string;
@@ -24,4 +37,11 @@ export type TourPackage = {
 
   includes: string[];
   excludes: string[];
+
+  boatName?: string;
+  boatType?: string;
+  boatCapacity?: number;
+  boatSpecs?: BoatSpec[];
+  cabins?: Cabin[];
+  termsAndConditions?: string;
 };

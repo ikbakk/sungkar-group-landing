@@ -52,8 +52,8 @@ const createPackageCollections = (
           "3-hari-2-malam": "رحلة 3 أيام وليلتان",
           "4-hari-3-malam": "رحلة 4 أيام و 3 ليال",
           "5-hari-4-malam": "رحلة 5 أيام و 4 ليال",
-          "open-trip": "رحلة مفتوحة",
-          sailing: "إبحار",
+          "sailing-open-trip": "رحلة الإبحار المفتوحة",
+          "sailing-private-trip": "رحلة الإبحار الخاصة",
         };
         acc[pkg.collectionSlug] = {
           title: titleMap[pkg.collectionSlug] ?? pkg.collectionTitle,

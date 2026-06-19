@@ -127,6 +127,12 @@ export interface UIStrings {
     includedExcludedDesc: string;
     included: string;
     excluded: string;
+    boatSpecs: string;
+    boatType: string;
+    boatCapacity: string;
+    cabins: string;
+    cabinPrice: string;
+    termsAndConditions: string;
   };
   akomodasi: {
     title: string;
@@ -340,6 +346,12 @@ export const translations: Record<Locale, UIStrings> = {
         "Semua fasilitas tercantum untuk membantu Anda mempersiapkan perjalanan.",
       included: "Termasuk",
       excluded: "Tidak Termasuk",
+      boatSpecs: "Spesifikasi Kapal",
+      boatType: "Tipe Kapal",
+      boatCapacity: "Kapasitas",
+      cabins: "Kabin Kapal",
+      cabinPrice: "Harga Kabin",
+      termsAndConditions: "Syarat & Ketentuan",
     },
     akomodasi: {
       title: "Akomodasi",
@@ -556,6 +568,12 @@ export const translations: Record<Locale, UIStrings> = {
         "All listed facilities to help you prepare for your trip.",
       included: "Included",
       excluded: "Not Included",
+      boatSpecs: "Boat Specifications",
+      boatType: "Boat Type",
+      boatCapacity: "Capacity",
+      cabins: "Cabins",
+      cabinPrice: "Cabin Price",
+      termsAndConditions: "Terms & Conditions",
     },
     akomodasi: {
       title: "Accommodations",
@@ -834,6 +852,12 @@ export const translations: Record<Locale, UIStrings> = {
         "\u062C\u0645\u064A\u0639 \u0627\u0644\u0645\u0631\u0627\u0641\u0642 \u0627\u0644\u0645\u062F\u0631\u062C\u0629 \u0644\u0645\u0633\u0627\u0639\u062F\u062A\u0643 \u0641\u064A \u0627\u0644\u062A\u062D\u0636\u064A\u0631 \u0644\u0631\u062D\u0644\u062A\u0643.",
       included: "\u0645\u0634\u0645\u0648\u0644",
       excluded: "\u063A\u064A\u0631 \u0645\u0634\u0645\u0648\u0644",
+      boatSpecs: "\u0645\u0648\u0627\u0635\u0641\u0627\u062A \u0627\u0644\u0642\u0627\u0631\u0628",
+      boatType: "\u0646\u0648\u0639 \u0627\u0644\u0642\u0627\u0631\u0628",
+      boatCapacity: "\u0627\u0644\u0633\u0639\u0629",
+      cabins: "\u0627\u0644\u0645\u0642\u0627\u0635\u064A\u0631",
+      cabinPrice: "\u0633\u0639\u0631 \u0627\u0644\u0645\u0642\u0635\u0648\u0631\u0629",
+      termsAndConditions: "\u0627\u0644\u0634\u0631\u0648\u0637 \u0648\u0627\u0644\u0623\u062D\u0643\u0627\u0645",
     },
     akomodasi: {
       title: "\u0627\u0644\u0625\u0642\u0627\u0645\u0629",
@@ -1077,6 +1101,12 @@ export const translations: Record<Locale, UIStrings> = {
         "Semua kemudahan yang disenaraikan untuk membantu anda membuat persediaan perjalanan.",
       included: "Termasuk",
       excluded: "Tidak Termasuk",
+      boatSpecs: "Spesifikasi Bot",
+      boatType: "Jenis Bot",
+      boatCapacity: "Kapasiti",
+      cabins: "Kabin",
+      cabinPrice: "Harga Kabin",
+      termsAndConditions: "Syarat & Ketentuan",
     },
     akomodasi: {
       title: "Penginapan",
@@ -1307,6 +1337,12 @@ export const translations: Record<Locale, UIStrings> = {
         "\u5217\u51FA\u6240\u6709\u8BBE\u65BD\u4EE5\u5E2E\u52A9\u60A8\u51C6\u5907\u65C5\u884C\u3002",
       included: "\u5305\u542B",
       excluded: "\u4E0D\u5305\u542B",
+      boatSpecs: "\u8239\u53EA\u89C4\u683C",
+      boatType: "\u8239\u53EA\u7C7B\u578B",
+      boatCapacity: "\u5BB9\u91CF",
+      cabins: "\u8239\u8231",
+      cabinPrice: "\u8231\u623F\u4EF7\u683C",
+      termsAndConditions: "\u6761\u6B3E\u548C\u6761\u4EF6",
     },
     akomodasi: {
       title: "\u4F4F\u5BBF",
