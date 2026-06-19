@@ -1,0 +1,52 @@
+---
+import type { BoatSpec } from "@/lib/content/tourPackages/types";
+import { t } from "@/lib/i18n";
+
+interface Props {
+  boatName: string;
+  boatType?: string;
+  boatCapacity?: number;
+  specs?: BoatSpec[];
+  locale?: string;
+}
+
+const { boatName, boatType, boatCapacity, specs, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
+---
+
+<div class="w-full">
+  <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+    {uiStrings.paketWisata.boatSpecs}
+  </div>
+
+  <h2 class="mt-2 text-3xl leading-tight sm:text-4xl">{boatName}</h2>
+
+  <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {boatType && (
+      <div class="rounded-xl border border-border bg-white p-4 shadow-[0_8px_30px_rgba(17,24,39,0.04)]">
+        <div class="text-xs font-medium uppercase tracking-wider text-text-muted">
+          {uiStrings.paketWisata.boatType}
+        </div>
+        <div class="mt-1 text-base font-semibold">{boatType}</div>
+      </div>
+    )}
+
+    {boatCapacity && (
+      <div class="rounded-xl border border-border bg-white p-4 shadow-[0_8px_30px_rgba(17,24,39,0.04)]">
+        <div class="text-xs font-medium uppercase tracking-wider text-text-muted">
+          {uiStrings.paketWisata.boatCapacity}
+        </div>
+        <div class="mt-1 text-base font-semibold">{boatCapacity}</div>
+      </div>
+    )}
+
+    {specs?.map((spec) => (
+      <div class="rounded-xl border border-border bg-white p-4 shadow-[0_8px_30px_rgba(17,24,39,0.04)]">
+        <div class="text-xs font-medium uppercase tracking-wider text-text-muted">
+          {spec.label}
+        </div>
+        <div class="mt-1 text-base font-semibold">{spec.value}</div>
+      </div>
+    ))}
+  </div>
+</div>

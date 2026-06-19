@@ -1,5 +1,5 @@
 import { getCollection } from "astro:content";
-import type { TourPackage } from "./types";
+import type { TourPackage, Cabin } from "./types";
 import { resolveImages } from "./images";
 
 type EntryData = {
@@ -16,6 +16,17 @@ type EntryData = {
   itinerary: string[];
   includes: string[];
   excludes: string[];
+  boatName?: string;
+  boatType?: string;
+  boatCapacity?: number;
+  boatSpecs?: { label: string; value: string }[];
+  cabins?: {
+    name: string;
+    description?: string;
+    price: string;
+    image: string;
+  }[];
+  termsAndConditions?: string;
 };
 
 export async function getPackages(locale = "id"): Promise<TourPackage[]> {
@@ -29,8 +40,10 @@ export async function getPackages(locale = "id"): Promise<TourPackage[]> {
 
     if (entryLocale !== locale) continue;
 
+    const slug = entry.id.split("/")[0];
+
     results.push({
-      slug: entry.id.split("/")[0],
+      slug,
       title: data.title,
       region: data.region,
       featured: data.featured ?? false,
@@ -44,6 +57,17 @@ export async function getPackages(locale = "id"): Promise<TourPackage[]> {
       itinerary: data.itinerary,
       includes: data.includes,
       excludes: data.excludes,
+      boatName: data.boatName,
+      boatType: data.boatType,
+      boatCapacity: data.boatCapacity,
+      boatSpecs: data.boatSpecs,
+      cabins: data.cabins?.map(
+        (c): Cabin => ({
+          ...c,
+          image: resolveImages([c.image])[0],
+        }),
+      ),
+      termsAndConditions: data.termsAndConditions,
     });
   }
 

@@ -52,8 +52,8 @@ const createPackageCollections = (
           "3-hari-2-malam": "3天2夜套餐",
           "4-hari-3-malam": "4天3夜套餐",
           "5-hari-4-malam": "5天4夜套餐",
-          "open-trip": "拼团游",
-          sailing: "帆船之旅",
+          "sailing-open-trip": "帆船拼团游",
+          "sailing-private-trip": "帆船私人游",
         };
         acc[pkg.collectionSlug] = {
           title: titleMap[pkg.collectionSlug] ?? pkg.collectionTitle,

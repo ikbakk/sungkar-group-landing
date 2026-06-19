@@ -14,8 +14,9 @@ const DATA_DIR = join(__dirname, "data");
 const ROOT = join(__dirname, "..", "src/content/tourPackages");
 const LOCALES = ["id", "en", "ar", "ms", "zh"];
 
-// Read all JSON data files
-const files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));
+// Read all tour package JSON data files (exclude accommodation/car-rental/destination data)
+const EXCLUDED = new Set(["accommodations.json", "car-rental.json", "destinations.json"]);
+const files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json") && !EXCLUDED.has(f));
 
 let PKGS = [];
 for (const f of files) {
@@ -38,6 +39,12 @@ function yml(locale, pkg) {
   ordered.itinerary = locale.itinerary;
   ordered.includes = locale.includes;
   ordered.excludes = locale.excludes;
+  if (pkg.boatName) ordered.boatName = pkg.boatName;
+  if (pkg.boatType) ordered.boatType = pkg.boatType;
+  if (pkg.boatCapacity) ordered.boatCapacity = pkg.boatCapacity;
+  if (pkg.boatSpecs) ordered.boatSpecs = pkg.boatSpecs;
+  if (pkg.cabins) ordered.cabins = pkg.cabins;
+  if (locale.termsAndConditions) ordered.termsAndConditions = locale.termsAndConditions;
   const y = yaml.stringify(ordered, { lineWidth: 0, quotingType: '"' });
   return "---\n" + y + "\n---\n";
 }

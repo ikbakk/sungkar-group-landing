@@ -53,6 +53,23 @@ const tourPackages = defineCollection({
     itinerary: z.array(z.string()),
     includes: z.array(z.string()),
     excludes: z.array(z.string()),
+    boatName: z.string().optional(),
+    boatType: z.string().optional(),
+    boatCapacity: z.number().optional(),
+    boatSpecs: z
+      .array(z.object({ label: z.string(), value: z.string() }))
+      .optional(),
+    cabins: z
+      .array(
+        z.object({
+          name: z.string(),
+          description: z.string().optional(),
+          price: z.string(),
+          image: z.string(),
+        }),
+      )
+      .optional(),
+    termsAndConditions: z.string().optional(),
   }),
 });
 
