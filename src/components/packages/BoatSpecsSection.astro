@@ -1,6 +1,7 @@
 ---
 import type { BoatSpec } from "@/lib/content/tourPackages/types";
 import { t } from "@/lib/i18n";
+import { TypographyH2 } from "@/components/ui/typography";
 
 interface Props {
   boatName: string;
@@ -19,12 +20,12 @@ const uiStrings = t(locale);
     {uiStrings.paketWisata.boatSpecs}
   </div>
 
-  <h2 class="mt-2 text-3xl leading-tight sm:text-4xl">{boatName}</h2>
+  <TypographyH2 class="mt-2">{boatName}</TypographyH2>
 
   <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
     {boatType && (
-      <div class="rounded-xl border border-border bg-white p-4 shadow-[0_8px_30px_rgba(17,24,39,0.04)]">
-        <div class="text-xs font-medium uppercase tracking-wider text-text-muted">
+      <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
+        <div class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
           {uiStrings.paketWisata.boatType}
         </div>
         <div class="mt-1 text-base font-semibold">{boatType}</div>
@@ -32,8 +33,8 @@ const uiStrings = t(locale);
     )}
 
     {boatCapacity && (
-      <div class="rounded-xl border border-border bg-white p-4 shadow-[0_8px_30px_rgba(17,24,39,0.04)]">
-        <div class="text-xs font-medium uppercase tracking-wider text-text-muted">
+      <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
+        <div class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
           {uiStrings.paketWisata.boatCapacity}
         </div>
         <div class="mt-1 text-base font-semibold">{boatCapacity}</div>
@@ -41,8 +42,8 @@ const uiStrings = t(locale);
     )}
 
     {specs?.map((spec) => (
-      <div class="rounded-xl border border-border bg-white p-4 shadow-[0_8px_30px_rgba(17,24,39,0.04)]">
-        <div class="text-xs font-medium uppercase tracking-wider text-text-muted">
+      <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
+        <div class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
           {spec.label}
         </div>
         <div class="mt-1 text-base font-semibold">{spec.value}</div>

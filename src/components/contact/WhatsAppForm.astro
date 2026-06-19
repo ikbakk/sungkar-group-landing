@@ -25,7 +25,9 @@ const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
 const formId = `whatsapp-form-${context}-${Math.random().toString(36).slice(2, 8)}`;
 
 const contextLabel =
-  context === "sewa-mobil" ? "Pilihan Kendaraan" : "Pilihan Paket";
+  context === "sewa-mobil"
+    ? uiStrings.contact.contextLabelSewa
+    : uiStrings.contact.contextLabelPaket;
 
 const isSidebar = mode === "sidebar";
 
@@ -36,11 +38,11 @@ const cardClass = isSidebar
 const titleText =
   context === "sewa-mobil"
     ? isSidebar
-      ? "Sewa kendaraan ini"
-      : "Sewa Mobil di Sungkar Group"
+      ? uiStrings.contact.sidebarTitleSewa
+      : uiStrings.contact.sectionTitleSewa
     : isSidebar
-      ? "Pesan paket ini"
-      : "Pesan Paket Wisata";
+      ? uiStrings.contact.sidebarTitlePaket
+      : uiStrings.contact.sectionTitlePaket;
 
 const descClass = isSidebar
   ? "text-sm leading-7 text-brand-100"
@@ -130,7 +132,7 @@ const btnClass = isSidebar
 
 <script
   is:inline
-  define:vars={{ formId, whatsappNumber, context, itemName, region }}
+  define:vars={{ formId, whatsappNumber, context, itemName, region, locale }}
 >
   import { buildWhatsappMessage } from "@/lib/contact-data";
 
@@ -155,7 +157,7 @@ const btnClass = isSidebar
         }
       }
 
-      var msg = buildWhatsappMessage(context, values, itemName, region);
+      var msg = buildWhatsappMessage(context, values, itemName, region, locale);
       var url =
         "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(msg);
       window.open(url, "_blank");

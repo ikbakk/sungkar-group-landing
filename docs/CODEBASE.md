@@ -24,7 +24,7 @@ src/
 │   ├── landing/               # Homepage sections (Hero,Video,Featured,Destinations,Transport)
 │   ├── site/                  # Footer, Faq, PageHeader (shared shell pieces)
 │   ├── seo/                   # SEOMeta, OGImage, StructuredData
-│   └── ui/                    # Primitives: {button,card,badge,avatar,nav-menu,select,carousel,logo,marquee,icon,input,textarea,rating,section,breadcrumb,accordion,drawer}/
+│   └── ui/                    # Fulldev UI primitives: {button,card,badge,avatar,nav-menu,select,carousel,logo,marquee,icon,input,textarea,rating,section,breadcrumb,accordion,drawer,typography,price}/
 ├── lib/
 │   ├── content/               # ALL page content + data bridges (folder per feature)
 │   │   ├── shared/            # {types,contact-data,og-metadata,schemas,regions}
@@ -91,7 +91,7 @@ tests/                          # Vitest: 9 files — data.test.ts, schemas.test
 | Source                                                  | Schema Fields                                                                                           | Loaded By                             |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------- |
 | `content/{blog,guides}/{slug}/{locale}.mdx`             | `{title,description,image,publishDate,tags/region,locale,slug}`                                         | `astro:content` + `content.config.ts` |
-| `content/tourPackages/{slug}/{locale}.mdx`              | `{title,region,collectionSlug,category,duration,images,summary,highlights,itinerary,includes,excludes}` | `astro:content` + `content.config.ts` |
+| `content/tourPackages/{slug}/{locale}.mdx`              | `{title,region,collectionSlug,category,duration,images,summary,highlights,itinerary,includes,excludes,boatName,boatType,boatCapacity,boatSpecs,cabins,termsAndConditions}` | `astro:content` + `content.config.ts` |
 | `content/accommodations/{slug}/{locale}.mdx`            | `{name,region,perks,regionalHighlights,description,image}`                                              | `getAccommodations(locale)` bridge    |
 | `content/car-rental/{slug}/{locale}.mdx`                | `{name,region,pricePerDay,seats,transmission,features,bestFor,description,imageTop,imageBottom}`        | `getVehicles(locale)` bridge          |
 | `content/destinations/{slug}/{locale}.mdx`              | `{title,region,image,gallery,summary,thingsToDo,packages}`                                              | `getDestinations(locale)` bridge      |
@@ -110,7 +110,7 @@ tests/                          # Vitest: 9 files — data.test.ts, schemas.test
 
 | File                 | Export                                                                                                                                 |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `lib/site-config.ts` | `SITE_URL = "https://www.sungkargroup.com"`                                                                                            |
+| `lib/site-config.ts` | `SITE_URL` — env `PUBLIC_SITE_URL` or default `"https://www.sungkargroup.com"`                                                                                            |
 | `lib/regions.ts`     | `REGIONS`, `REGION_MAP`, labels — keys: lombok, sumbawa, labuan-bajo                                                                   |
 | `lib/schemas.ts`     | 10 JSON-LD generators (Organization, LocalBusiness, Breadcrumb, FAQ, Article, Product, HowTo, TouristAttraction, Website, ContactPage) |
 | `lib/images.ts`      | `ImageSource` type, `isRemoteImage()`, `getImageSrc()`/Width/Height helpers                                                            |
@@ -131,11 +131,11 @@ tests/                          # Vitest: 9 files — data.test.ts, schemas.test
 | **Guides**       | `guides/`       | GuideCard, KeyTakeaways                                                                                                                                                           | MDX + structured data                                             |
 | **Reviews**      | `reviews/`      | ReviewsGridSection, ReviewStatsSection, ReviewsCtaSection, ReviewGallerySection                                                                                                   | Google review data                                                |
 | **Destinations** | `destinations/` | DestinationDetailPanel, DestinationGallery                                                                                                                                        | Detail pages                                                      |
-| **Packages**     | `packages/`     | PackageDetailPanel, PackageItinerary, PackageIncludesExcludes, PackageGallery.tsx, PackageImagePreview                                                                            | Detail pages + gallery dialog                                     |
+| **Packages**     | `packages/`     | PackageDetailPanel, PackageItinerary, PackageIncludesExcludes, BoatSpecsSection, CabinsSection, PackageTandC, PackageGallery.tsx, PackageImagePreview                            | Detail pages + gallery dialog + sailing sections (fulldev UI)     |
 | **Blocks**       | `blocks/`       | features-1, services-5, services-6, reviews-5, FooterBlock                                                                                                                        | Data as props (no direct content imports)                         |
 | **SEO**          | `seo/`          | SEOMeta, OGImage, StructuredData                                                                                                                                                  | `<title>`, OG, JSON-LD                                            |
 | **Site**         | `site/`         | Footer, Faq, PageHeader                                                                                                                                                           | Shared shell pieces                                               |
-| **UI**           | `ui/`           | button, card, badge, avatar, nav-menu (mega menu), select, carousel, logo, marquee, icon (Hugeicons), input, textarea, rating, section, breadcrumb.tsx, accordion.tsx, drawer.tsx | Folder per primitive, barrel exports; React.tsx for interactivity |
+| **UI**           | `ui/`           | button, card, badge, avatar, nav-menu (mega menu), select, carousel, logo, marquee, icon (Hugeicons), input, textarea, rating, section, breadcrumb.tsx, accordion.tsx, drawer.tsx, typography (Fulldev), price (Fulldev) | Folder per primitive, barrel exports; Fulldev registry for typography/price |
 
 **Convention**: `.astro` = static/SSR (uses `class` attr), `.tsx` = interactive React (uses `className`). Each component has `index.ts` barrel.
 
@@ -162,6 +162,7 @@ tests/                          # Vitest: 9 files — data.test.ts, schemas.test
 | **Nav optimisation (single-item collections)** | `createPackageCollections()` in `lib/content/navigationData.ts` + 4 locale copies returns `{collections, items}`; single-item → direct link, multi-item → submenu                         |
 | **Change SEO**                                 | `components/seo/` + `lib/schemas.ts`                                                                                                                                                      |
 | **Add tour pkg (MDX)**                         | Add JSON entry in `scripts/data/{region}.json` (see existing files), then `node scripts/generate-tour-mdx.mjs` — produces `content/tourPackages/{slug}/{locale}.mdx`                      |
+| **Add sailing pkg**                            | Same as tour pkg, but add `boatName`, `boatType`, `boatCapacity`, `boatSpecs[]`, `cabins[]` at root + `termsAndConditions` per locale; use `sailing-open-trip` or `sailing-private-trip` as `collectionSlug` |
 | **Regenerate all MDX**                         | `rm -rf src/content/tourPackages/*/ && node scripts/generate-tour-mdx.mjs`                                                                                                                |
 | **Update collection bridge**                   | `lib/content/tourPackages/images.ts` (new image refs) + `collection.ts` if needed                                                                                                         |
 | **Migrate page to MDX**                        | Replace `import { packages } from "@/lib/content/tourPackages"` with `import { getPackages } from "@/lib/content/tourPackages/collection"` + `const packages = await getPackages(locale)` |

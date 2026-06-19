@@ -1,5 +1,6 @@
 ---
 import { t } from "@/lib/i18n";
+import { TypographyH2, TypographyP } from "@/components/ui/typography";
 
 interface Props {
   content: string;
@@ -15,13 +16,13 @@ const uiStrings = t(locale);
     {uiStrings.paketWisata.termsAndConditions}
   </div>
 
-  <h2 class="mt-2 text-3xl leading-tight sm:text-4xl">
+  <TypographyH2 class="mt-2">
     {uiStrings.paketWisata.termsAndConditions}
-  </h2>
+  </TypographyH2>
 
-  <div class="mt-6">
+  <div class="mt-6 grid gap-2">
     {content.split("\n").filter(Boolean).map((line) => (
-      <p class="text-sm leading-7 text-text-muted">{line}</p>
+      <TypographyP class="m-0 text-sm leading-7 text-muted-foreground">{line}</TypographyP>
     ))}
   </div>
 </div>

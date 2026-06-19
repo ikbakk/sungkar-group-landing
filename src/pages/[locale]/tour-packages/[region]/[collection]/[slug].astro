@@ -15,6 +15,9 @@ import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 import PageHeader from "@/components/site/PageHeader.astro";
 import PackageItinerary from "@/components/packages/PackageItinerary.astro";
 import PackageIncludesExcludes from "@/components/packages/PackageIncludesExcludes.astro";
+import BoatSpecsSection from "@/components/packages/BoatSpecsSection.astro";
+import CabinsSection from "@/components/packages/CabinsSection.astro";
+import PackageTandC from "@/components/packages/PackageTandC.astro";
 import PackageGallery from "@/components/packages/PackageGallery";
 import FaqSection from "@/components/site/Faq.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
@@ -149,9 +152,39 @@ const itineraryByDay = Object.entries(
     <PackageItinerary itineraryByDay={itineraryByDay} />
   </SectionContainer>
 
+  {
+    tour.boatName && (
+      <SectionContainer background="bg-white" padding="py-16 sm:py-20">
+        <BoatSpecsSection
+          boatName={tour.boatName}
+          boatType={tour.boatType}
+          boatCapacity={tour.boatCapacity}
+          specs={tour.boatSpecs}
+          locale={locale}
+        />
+      </SectionContainer>
+    )
+  }
+
+  {
+    tour.cabins && tour.cabins.length > 0 && (
+      <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+        <CabinsSection cabins={tour.cabins} locale={locale} />
+      </SectionContainer>
+    )
+  }
+
   <SectionContainer background="bg-white" padding="py-16 sm:py-20">
     <PackageIncludesExcludes tour={tour} />
   </SectionContainer>
+
+  {
+    tour.termsAndConditions && (
+      <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+        <PackageTandC content={tour.termsAndConditions} locale={locale} />
+      </SectionContainer>
+    )
+  }
 
   <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
     <div class="mx-auto max-w-3xl text-center">

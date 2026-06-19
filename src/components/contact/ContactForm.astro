@@ -25,8 +25,8 @@ interface Props {
 const {
   fields,
   businessInfo,
-  title = "Ceritakan rencana perjalanan Anda",
-  description = "Berikan informasi dasar perjalanan agar tim kami dapat memberikan rekomendasi yang lebih relevan.",
+  title,
+  description,
   locale = "id",
   packages,
 } = Astro.props;
@@ -58,11 +58,11 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
 <Card class="border-border bg-brand-900 text-white">
   <CardHeader>
     <CardTitle class="text-3xl leading-tight text-white">
-      {title}
+      {title ?? uiStrings.contact.formTitle}
     </CardTitle>
 
     <p class="text-sm leading-7 text-brand-100">
-      {description}
+      {description ?? uiStrings.contact.formDescription}
     </p>
   </CardHeader>
 
@@ -81,7 +81,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
       <input
         type="hidden"
         name="subject"
-        value="New Inquiry - Sungkar Group Website"
+        value={uiStrings.contact.formWhatsappSubject}
       />
       <input
         type="checkbox"
@@ -227,6 +227,13 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
     packagesData,
     choosePackageLabel: uiStrings.contact.choosePackage,
     selectLocationFirstLabel: uiStrings.contact.selectLocationFirst,
+    whatsappGreeting: uiStrings.contact.whatsappGreeting,
+    whatsappLocationLabel: uiStrings.contact.whatsappLocation,
+    whatsappFormDateLabel: uiStrings.contact.whatsappFormDate,
+    whatsappFormGuestsLabel: uiStrings.contact.whatsappFormGuests,
+    whatsappFormMessageLabel: uiStrings.contact.whatsappFormMessage,
+    whatsappFormPackageLabel: uiStrings.contact.whatsappFormPackage,
+    whatsappFollowUp: uiStrings.contact.whatsappFollowUp,
   }}
 >
   var locationSelect = document.querySelector('[name="location"]');
@@ -344,7 +351,7 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
       ? document.getElementById("message").value
       : "";
 
-    var lines = ["Halo Sungkar Group,", ""];
+    var lines = [whatsappGreeting, ""];
 
     if (location) {
       var regionLabels = {
@@ -352,23 +359,23 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
         sumbawa: "Sumbawa",
         "labuan-bajo": "Labuan Bajo",
       };
-      lines.push("Lokasi: " + (regionLabels[location] || location));
+      lines.push(whatsappLocationLabel.replace("{region}", regionLabels[location] || location));
     }
 
     if (packageName) {
-      lines.push("Paket: " + packageName);
+      lines.push(whatsappFormPackageLabel.replace("{package}", packageName));
     }
 
     lines.push("");
-    lines.push("Tanggal perjalanan: " + travelDate);
-    lines.push("Jumlah tamu: " + guests);
+    lines.push(whatsappFormDateLabel.replace("{date}", travelDate));
+    lines.push(whatsappFormGuestsLabel.replace("{guests}", guests));
 
     if (message) {
-      lines.push("Pesan tambahan: " + message);
+      lines.push(whatsappFormMessageLabel.replace("{message}", message));
     }
 
     lines.push("");
-    lines.push("Mohon informasi paket yang sesuai.");
+    lines.push(whatsappFollowUp);
 
     var whatsappMessage = lines.join("\n");
     var url =

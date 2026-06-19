@@ -3,15 +3,14 @@ import type { HTMLAttributes } from "astro/types"
 
 import { cn } from "@/lib/utils"
 
-type Props = HTMLAttributes<"div">
+type Props = HTMLAttributes<"span">
 
 const { class: className, ...props } = Astro.props
 ---
 
-<div
-  data-slot="card-description"
-  class={cn("text-muted-foreground text-sm", className)}
+<span
+  class={cn("text-muted-foreground text-sm leading-tight", className)}
   {...props}
 >
-  <slot />
-</div>
+  / <slot />
+</span>

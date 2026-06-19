@@ -28,7 +28,7 @@ const uiStrings = t(locale);
   <CardContent>
     <div class="grid gap-4 text-sm">
       <div class="flex items-center justify-between">
-        <span class="text-text-muted">Harga per hari</span>
+        <span class="text-text-muted">{uiStrings.sewaMobil.pricePerDay}</span>
         <span class="font-medium">{vehicle.pricePerDay}</span>
       </div>
       <Separator />
@@ -38,7 +38,7 @@ const uiStrings = t(locale);
       </div>
       <Separator />
       <div class="flex items-center justify-between">
-        <span class="text-text-muted">Kapasitas</span>
+        <span class="text-text-muted">{uiStrings.sewaMobil.passengers}</span>
         <span class="font-medium"
           >{vehicle.seats} {uiStrings.sewaMobil.passengers.toLowerCase()}</span
         >

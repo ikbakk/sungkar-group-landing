@@ -53,7 +53,7 @@ const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
 const ogImageUrl = ogImage
   ? typeof ogImage === "string"
     ? ogImage
-    : `${SITE_URL}${ogImage.src}`
+    : new URL(ogImage.src, SITE_URL).toString()
   : undefined;
 
 const ogImageWidth = ogImage ? getImageWidth(ogImage) : undefined;

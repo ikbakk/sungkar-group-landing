@@ -209,26 +209,30 @@ export const paketWisataFormFields: FormField[] = [
   },
 ];
 
+import { t } from "@/lib/i18n";
+
 export function buildWhatsappMessage(
   context: FormContext,
   values: Record<string, string>,
   itemName?: string,
   region?: string,
+  locale?: string,
 ): string {
+  const uiStrings = t(locale ?? "id");
   const parts: string[] = [];
-  parts.push(`Halo Sungkar Group,`);
+  parts.push(uiStrings.contact.whatsappGreeting);
 
   if (itemName) {
     parts.push(``);
     if (context === "sewa-mobil") {
-      parts.push(`Saya ingin sewa: ${itemName}`);
+      parts.push(uiStrings.contact.whatsappSewaIntro.replace("{item}", itemName));
     } else {
-      parts.push(`Saya tertarik dengan paket: ${itemName}`);
+      parts.push(uiStrings.contact.whatsappPaketIntro.replace("{item}", itemName));
     }
   }
 
   if (region) {
-    parts.push(`Lokasi: ${region}`);
+    parts.push(uiStrings.contact.whatsappLocation.replace("{region}", region));
   }
 
   parts.push(``);
@@ -240,7 +244,7 @@ export function buildWhatsappMessage(
   }
 
   parts.push(``);
-  parts.push("Mohon informasi lebih lanjut.");
+  parts.push(uiStrings.contact.whatsappFollowUp);
 
   return parts.join("\n");
 }

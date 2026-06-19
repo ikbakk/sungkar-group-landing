@@ -97,6 +97,7 @@ export interface UIStrings {
     features: string;
     suitableFor: string;
     viewDetailRent: string;
+    pricePerDay: string;
     vehicleFor: string;
     rentalVehicles: string;
     allVehicles: string;
@@ -179,6 +180,24 @@ export interface UIStrings {
     choosePackage: string;
     selectLocationFirst: string;
     optional: string;
+    formTitle: string;
+    formDescription: string;
+    formWhatsappSubject: string;
+    whatsappGreeting: string;
+    whatsappSewaIntro: string;
+    whatsappPaketIntro: string;
+    whatsappLocation: string;
+    whatsappFollowUp: string;
+    whatsappFormDate: string;
+    whatsappFormGuests: string;
+    whatsappFormMessage: string;
+    whatsappFormPackage: string;
+    sidebarTitleSewa: string;
+    sidebarTitlePaket: string;
+    sectionTitleSewa: string;
+    sectionTitlePaket: string;
+    contextLabelSewa: string;
+    contextLabelPaket: string;
   };
   page: {
     about: string;
@@ -313,6 +332,7 @@ export const translations: Record<Locale, UIStrings> = {
       features: "Fitur Unggulan",
       suitableFor: "Cocok Untuk",
       viewDetailRent: "Lihat Detail & Sewa",
+      pricePerDay: "Harga per hari",
       vehicleFor: "Kendaraan Rental di {region}",
       rentalVehicles: "Pilihan Kendaraan {region}",
       allVehicles:
@@ -414,6 +434,25 @@ export const translations: Record<Locale, UIStrings> = {
       choosePackage: "Pilih paket",
       selectLocationFirst: "Pilih lokasi terlebih dahulu",
       optional: "opsional",
+      formTitle: "Ceritakan rencana perjalanan Anda",
+      formDescription:
+        "Berikan informasi dasar perjalanan agar tim kami dapat memberikan rekomendasi yang lebih relevan.",
+      formWhatsappSubject: "Pertanyaan Baru - Sungkar Group Website",
+      whatsappGreeting: "Halo Sungkar Group,",
+      whatsappSewaIntro: "Saya ingin sewa: {item}",
+      whatsappPaketIntro: "Saya tertarik dengan paket: {item}",
+      whatsappLocation: "Lokasi: {region}",
+      whatsappFollowUp: "Mohon informasi lebih lanjut.",
+      whatsappFormDate: "Tanggal perjalanan: {date}",
+      whatsappFormGuests: "Jumlah tamu: {guests}",
+      whatsappFormMessage: "Pesan tambahan: {message}",
+      whatsappFormPackage: "Paket: {package}",
+      sidebarTitleSewa: "Sewa kendaraan ini",
+      sidebarTitlePaket: "Pesan paket ini",
+      sectionTitleSewa: "Sewa Mobil di Sungkar Group",
+      sectionTitlePaket: "Pesan Paket Wisata",
+      contextLabelSewa: "Pilihan Kendaraan",
+      contextLabelPaket: "Pilihan Paket",
     },
     seo: {
       keywords:
@@ -535,6 +574,7 @@ export const translations: Record<Locale, UIStrings> = {
       features: "Key Features",
       suitableFor: "Suitable For",
       viewDetailRent: "View Details & Rent",
+      pricePerDay: "Price per day",
       vehicleFor: "Rental Vehicles in {region}",
       rentalVehicles: "Vehicle Options in {region}",
       allVehicles:
@@ -636,6 +676,25 @@ export const translations: Record<Locale, UIStrings> = {
       choosePackage: "Choose package",
       selectLocationFirst: "Select location first",
       optional: "optional",
+      formTitle: "Tell us about your trip",
+      formDescription:
+        "Provide basic trip information so our team can give you the most relevant recommendations.",
+      formWhatsappSubject: "New Inquiry - Sungkar Group Website",
+      whatsappGreeting: "Hello Sungkar Group,",
+      whatsappSewaIntro: "I want to rent: {item}",
+      whatsappPaketIntro: "I'm interested in the package: {item}",
+      whatsappLocation: "Location: {region}",
+      whatsappFollowUp: "Please provide more information.",
+      whatsappFormDate: "Travel date: {date}",
+      whatsappFormGuests: "Number of guests: {guests}",
+      whatsappFormMessage: "Additional message: {message}",
+      whatsappFormPackage: "Package: {package}",
+      sidebarTitleSewa: "Rent this vehicle",
+      sidebarTitlePaket: "Book this package",
+      sectionTitleSewa: "Car Rental at Sungkar Group",
+      sectionTitlePaket: "Book a Tour Package",
+      contextLabelSewa: "Selected Vehicle",
+      contextLabelPaket: "Selected Package",
     },
     seo: {
       keywords:
@@ -802,6 +861,8 @@ export const translations: Record<Locale, UIStrings> = {
       suitableFor: "\u0645\u0646\u0627\u0633\u0628 \u0644\u0640",
       viewDetailRent:
         "\u0639\u0631\u0636 \u0627\u0644\u062A\u0641\u0627\u0635\u064A\u0644 \u0648\u0627\u0644\u0627\u0633\u062A\u0626\u062C\u0627\u0631",
+      pricePerDay:
+        "\u0627\u0644\u0633\u0639\u0631 \u0644\u0644\u064A\u0648\u0645",
       vehicleFor:
         "\u0645\u0631\u0643\u0628\u0627\u062A \u0644\u0644\u0625\u064A\u062C\u0627\u0631 \u0641\u064A {region}",
       rentalVehicles:
@@ -939,6 +1000,42 @@ export const translations: Record<Locale, UIStrings> = {
       selectLocationFirst:
         "\u0627\u062E\u062A\u0631 \u0627\u0644\u0645\u0648\u0642\u0639 \u0623\u0648\u0644\u0627\u064B",
       optional: "\u0627\u062E\u062A\u064A\u0627\u0631\u064A",
+      formTitle:
+        "\u0623\u062E\u0628\u0631\u0646\u0627 \u0639\u0646 \u0631\u062D\u0644\u062A\u0643",
+      formDescription:
+        "\u0642\u062F\u0645 \u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u0631\u062D\u0644\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064A\u0629 \u062D\u062A\u0649 \u064A\u062A\u0645\u0643\u0646 \u0641\u0631\u064A\u0642\u0646\u0627 \u0645\u0646 \u062A\u0642\u062F\u064A\u0645 \u062A\u0648\u0635\u064A\u0627\u062A \u0623\u0643\u062B\u0631 \u0635\u0644\u0629.",
+      formWhatsappSubject:
+        "\u0627\u0633\u062A\u0641\u0633\u0627\u0631 \u062C\u062F\u064A\u062F - \u0645\u0648\u0642\u0639 Sungkar Group",
+      whatsappGreeting:
+        "\u0645\u0631\u062D\u0628\u0627 Sungkar Group\u060C",
+      whatsappSewaIntro:
+        "\u0623\u0631\u063A\u0628 \u0641\u064A \u0627\u0633\u062A\u0626\u062C\u0627\u0631: {item}",
+      whatsappPaketIntro:
+        "\u0623\u0646\u0627 \u0645\u0647\u062A\u0645 \u0628\u0627\u0644\u0628\u0627\u0642\u0629: {item}",
+      whatsappLocation:
+        "\u0627\u0644\u0645\u0648\u0642\u0639: {region}",
+      whatsappFollowUp:
+        "\u064A\u0631\u062C\u0649 \u062A\u0642\u062F\u064A\u0645 \u0645\u0632\u064A\u062F \u0645\u0646 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062A.",
+      whatsappFormDate:
+        "\u062A\u0627\u0631\u064A\u062E \u0627\u0644\u0633\u0641\u0631: {date}",
+      whatsappFormGuests:
+        "\u0639\u062F\u062F \u0627\u0644\u0636\u064A\u0648\u0641: {guests}",
+      whatsappFormMessage:
+        "\u0631\u0633\u0627\u0644\u0629 \u0625\u0636\u0627\u0641\u064A\u0629: {message}",
+      whatsappFormPackage:
+        "\u0627\u0644\u0628\u0627\u0642\u0629: {package}",
+      sidebarTitleSewa:
+        "\u0627\u0633\u062A\u0626\u062C\u0627\u0631 \u0647\u0630\u0647 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",
+      sidebarTitlePaket:
+        "\u0627\u062D\u062C\u0632 \u0647\u0630\u0647 \u0627\u0644\u0628\u0627\u0642\u0629",
+      sectionTitleSewa:
+        "\u062A\u0623\u062C\u064A\u0631 \u0633\u064A\u0627\u0631\u0627\u062A \u0641\u064A Sungkar Group",
+      sectionTitlePaket:
+        "\u0627\u062D\u062C\u0632 \u0628\u0627\u0642\u0629 \u0633\u064A\u0627\u062D\u064A\u0629",
+      contextLabelSewa:
+        "\u0627\u0644\u0645\u0631\u0643\u0628\u0629 \u0627\u0644\u0645\u062E\u062A\u0627\u0631\u0629",
+      contextLabelPaket:
+        "\u0627\u0644\u0628\u0627\u0642\u0629 \u0627\u0644\u0645\u062E\u062A\u0627\u0631\u0629",
     },
     seo: {
       keywords:
@@ -1067,6 +1164,7 @@ export const translations: Record<Locale, UIStrings> = {
       features: "Ciri Utama",
       suitableFor: "Sesuai Untuk",
       viewDetailRent: "Lihat Butiran & Sewa",
+      pricePerDay: "Harga sehari",
       vehicleFor: "Kenderaan Sewa di {region}",
       rentalVehicles: "Pilihan Kenderaan {region}",
       allVehicles:
@@ -1169,6 +1267,25 @@ export const translations: Record<Locale, UIStrings> = {
       choosePackage: "Pilih pakej",
       selectLocationFirst: "Pilih lokasi terlebih dahulu",
       optional: "opsyenal",
+      formTitle: "Ceritakan rancangan perjalanan anda",
+      formDescription:
+        "Berikan maklumat asas perjalanan supaya pasukan kami dapat memberikan cadangan yang lebih relevan.",
+      formWhatsappSubject: "Pertanyaan Baru - Laman Web Sungkar Group",
+      whatsappGreeting: "Halo Sungkar Group,",
+      whatsappSewaIntro: "Saya ingin sewa: {item}",
+      whatsappPaketIntro: "Saya berminat dengan pakej: {item}",
+      whatsappLocation: "Lokasi: {region}",
+      whatsappFollowUp: "Sila berikan maklumat lanjut.",
+      whatsappFormDate: "Tarikh perjalanan: {date}",
+      whatsappFormGuests: "Jumlah tetamu: {guests}",
+      whatsappFormMessage: "Mesej tambahan: {message}",
+      whatsappFormPackage: "Pakej: {package}",
+      sidebarTitleSewa: "Sewa kenderaan ini",
+      sidebarTitlePaket: "Tempah pakej ini",
+      sectionTitleSewa: "Sewa Kereta di Sungkar Group",
+      sectionTitlePaket: "Tempah Pakej Pelancongan",
+      contextLabelSewa: "Kenderaan Dipilih",
+      contextLabelPaket: "Pakej Dipilih",
     },
     seo: {
       keywords:
@@ -1301,6 +1418,7 @@ export const translations: Record<Locale, UIStrings> = {
       features: "\u4E3B\u8981\u7279\u70B9",
       suitableFor: "\u9002\u5408",
       viewDetailRent: "\u67E5\u770B\u8BE6\u60C5\u5E76\u79DF\u8D41",
+      pricePerDay: "\u6BCF\u5929\u4EF7\u683C",
       vehicleFor: "{region}\u7684\u79DF\u8D41\u8F66\u8F86",
       rentalVehicles: "{region}\u7684\u8F66\u8F86\u9009\u9879",
       allVehicles:
@@ -1407,6 +1525,42 @@ export const translations: Record<Locale, UIStrings> = {
       choosePackage: "\u9009\u62E9\u5957\u9910",
       selectLocationFirst: "\u8BF7\u5148\u9009\u62E9\u5730\u70B9",
       optional: "\u53EF\u9009",
+      formTitle:
+        "\u544A\u8BC9\u6211\u4EEC\u60A8\u7684\u65C5\u884C\u8BA1\u5212",
+      formDescription:
+        "\u63D0\u4F9B\u57FA\u672C\u65C5\u884C\u4FE1\u606F\uFF0C\u8BA9\u6211\u4EEC\u7684\u56E2\u961F\u80FD\u4E3A\u60A8\u63D0\u4F9B\u66F4\u8D34\u5408\u7684\u5EFA\u8BAE\u3002",
+      formWhatsappSubject:
+        "\u65B0\u54A8\u8BE2 - Sungkar Group\u7F51\u7AD9",
+      whatsappGreeting:
+        "\u60A8\u597D Sungkar Group\uFF0C",
+      whatsappSewaIntro:
+        "\u6211\u60F3\u79DF\u8D41: {item}",
+      whatsappPaketIntro:
+        "\u6211\u5BF9\u5957\u9910\u611F\u5174\u8DA3: {item}",
+      whatsappLocation:
+        "\u4F4D\u7F6E: {region}",
+      whatsappFollowUp:
+        "\u8BF7\u63D0\u4F9B\u66F4\u591A\u4FE1\u606F\u3002",
+      whatsappFormDate:
+        "\u65C5\u884C\u65E5\u671F: {date}",
+      whatsappFormGuests:
+        "\u5BA2\u4EBA\u6570\u91CF: {guests}",
+      whatsappFormMessage:
+        "\u9644\u52A0\u4FE1\u606F: {message}",
+      whatsappFormPackage:
+        "\u5957\u9910: {package}",
+      sidebarTitleSewa:
+        "\u79DF\u8D41\u6B64\u8F66\u8F86",
+      sidebarTitlePaket:
+        "\u9884\u8BA2\u6B64\u5957\u9910",
+      sectionTitleSewa:
+        "\u5728Sungkar Group\u79DF\u8F66",
+      sectionTitlePaket:
+        "\u9884\u8BA2\u65C5\u6E38\u5957\u9910",
+      contextLabelSewa:
+        "\u5DF2\u9009\u8F66\u8F86",
+      contextLabelPaket:
+        "\u5DF2\u9009\u5957\u9910",
     },
     seo: {
       keywords:

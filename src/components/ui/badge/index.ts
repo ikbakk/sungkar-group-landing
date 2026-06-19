@@ -1,3 +1,3 @@
-export { badgeVariants, type BadgeVariantProps } from "./badge-variants";
+export { badgeVariants, type BadgeVariantProps } from "./badge-variants"
 
-export { default as Badge } from "./badge.astro";
+export { default as Badge } from "./badge.astro"

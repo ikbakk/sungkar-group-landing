@@ -2,6 +2,9 @@
 import type { Cabin } from "@/lib/content/tourPackages/types";
 import { t } from "@/lib/i18n";
 import { getImageSrc } from "@/lib/images";
+import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
+import { Card, CardContent } from "@/components/ui/card";
+import { Price } from "@/components/ui/price";
 
 interface Props {
   cabins: Cabin[];
@@ -17,13 +20,11 @@ const uiStrings = t(locale);
     {uiStrings.paketWisata.cabins}
   </div>
 
-  <h2 class="mt-2 text-3xl leading-tight sm:text-4xl">
-    {uiStrings.paketWisata.cabins}
-  </h2>
+  <TypographyH2 class="mt-2">{uiStrings.paketWisata.cabins}</TypographyH2>
 
   <div class="mt-8 grid gap-6 sm:grid-cols-2">
     {cabins.map((cabin, i) => (
-      <div class="overflow-hidden rounded-xl border border-border bg-white shadow-[0_8px_30px_rgba(17,24,39,0.04)]">
+      <Card size="sm" class="overflow-hidden">
         <div class="aspect-[4/3] overflow-hidden">
           <img
             src={getImageSrc(cabin.image)}
@@ -32,23 +33,23 @@ const uiStrings = t(locale);
             loading={i < 2 ? "eager" : "lazy"}
           />
         </div>
-        <div class="p-5">
-          <h3 class="text-xl font-semibold leading-tight">{cabin.name}</h3>
+        <CardContent>
+          <TypographyH3 class="!mt-0">{cabin.name}</TypographyH3>
           {cabin.description && (
-            <p class="mt-2 text-sm leading-6 text-text-muted">
+            <p class="mt-2 text-sm leading-6 text-muted-foreground">
               {cabin.description}
             </p>
           )}
-          <div class="mt-4 flex items-baseline gap-1">
+          <Price class="mt-4">
             <span class="text-lg font-bold text-brand-700">
               {cabin.price}
             </span>
-            <span class="text-xs text-text-muted">
+            <span class="text-xs text-muted-foreground">
               /{uiStrings.paketWisata.cabinPrice}
             </span>
-          </div>
-        </div>
-      </div>
+          </Price>
+        </CardContent>
+      </Card>
     ))}
   </div>
 </div>
