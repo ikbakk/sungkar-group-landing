@@ -1,13 +1,13 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = HTMLAttributes<"table"> & {
-  containerClass?: string
-}
+  containerClass?: string;
+};
 
-const { class: className, containerClass, ...props } = Astro.props
+const { class: className, containerClass, ...props } = Astro.props;
 ---
 
 <div data-slot="typography-table-container" class={cn(containerClass)}>

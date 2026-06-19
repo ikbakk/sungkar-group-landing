@@ -10,8 +10,6 @@ import EmbeddedMap from "@/components/contact/EmbeddedMap.astro";
 import FaqSection from "@/components/site/Faq.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
-import { businessInfo, contactFormFields } from "@/lib/contact-data";
-
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
@@ -22,6 +20,26 @@ import {
   generateFAQPageSchema,
 } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
+import {
+  businessInfo as idBusinessInfo,
+  contactFormFields as idContactFormFields,
+} from "@/lib/contact-data";
+import {
+  businessInfo as enBusinessInfo,
+  contactFormFields as enContactFormFields,
+} from "@/lib/i18n/en/shared/contact-data";
+import {
+  businessInfo as arBusinessInfo,
+  contactFormFields as arContactFormFields,
+} from "@/lib/i18n/ar/shared/contact-data";
+import {
+  businessInfo as msBusinessInfo,
+  contactFormFields as msContactFormFields,
+} from "@/lib/i18n/ms/shared/contact-data";
+import {
+  businessInfo as zhBusinessInfo,
+  contactFormFields as zhContactFormFields,
+} from "@/lib/i18n/zh/shared/contact-data";
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
@@ -29,6 +47,26 @@ export async function getStaticPaths() {
 
 const { locale } = Astro.params;
 const uiStrings = t(locale!);
+const businessInfo =
+  locale === "en"
+    ? enBusinessInfo
+    : locale === "ar"
+      ? arBusinessInfo
+      : locale === "ms"
+        ? msBusinessInfo
+        : locale === "zh"
+          ? zhBusinessInfo
+          : idBusinessInfo;
+const contactFormFields =
+  locale === "en"
+    ? enContactFormFields
+    : locale === "ar"
+      ? arContactFormFields
+      : locale === "ms"
+        ? msContactFormFields
+        : locale === "zh"
+          ? zhContactFormFields
+          : idContactFormFields;
 
 const pageModule = await loadContent(locale!, "contactPage");
 const { contactPageContent } = pageModule;
@@ -72,6 +110,7 @@ const breadcrumbs = [
       description={contactPageContent.map.description}
       embedUrl={contactPageContent.map.embedUrl}
       googleMapsUrl={contactPageContent.map.googleMapsUrl}
+      locale={locale}
       businessName={businessInfo.name}
       businessAddress={`${businessInfo.address.street}, ${businessInfo.address.city}`}
     />
@@ -83,6 +122,7 @@ const breadcrumbs = [
         businessInfo={businessInfo}
         title={contactPageContent.info.title}
         description={contactPageContent.info.description}
+        locale={locale}
       />
 
       <ContactForm
@@ -90,6 +130,7 @@ const breadcrumbs = [
         businessInfo={businessInfo}
         title={contactPageContent.form.title}
         description={contactPageContent.form.description}
+        locale={locale}
         packages={packages}
       />
     </div>

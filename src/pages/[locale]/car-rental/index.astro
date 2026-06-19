@@ -16,9 +16,6 @@ import { getVehicles } from "@/lib/content/car-rental/collection";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
-
-import { packagePageContent } from "@/lib/content/tour-packages";
-
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
 }
@@ -29,6 +26,8 @@ const uiStrings = t(locale!);
 
 const pageModule = await loadContent(locale!, "sewaPage");
 const { sewaPageContent } = pageModule;
+const packagePageModule = await loadContent(locale!, "packagePage");
+const { packagePageContent } = packagePageModule;
 
 const faqModule = await loadFaq(locale!, "sewa-mobil");
 const { sewaMobilFaq } = faqModule;
@@ -73,6 +72,7 @@ const breadcrumbs = [
       <SectionContainer background="bg-surface-soft">
         <VehicleRegionSection
           id="lombok"
+          locale={locale}
           title={sewaPageContent.regions.lombok.title}
           description={sewaPageContent.regions.lombok.description}
           vehicles={lombokVehicles}
@@ -86,6 +86,7 @@ const breadcrumbs = [
       <SectionContainer background="bg-background">
         <VehicleRegionSection
           id="sumbawa"
+          locale={locale}
           title={sewaPageContent.regions.sumbawa.title}
           description={sewaPageContent.regions.sumbawa.description}
           vehicles={sumbawaVehicles}
@@ -99,6 +100,7 @@ const breadcrumbs = [
       <SectionContainer background="bg-surface-soft">
         <VehicleRegionSection
           id="labuan-bajo"
+          locale={locale}
           title={sewaPageContent.regions["labuan-bajo"].title}
           description={sewaPageContent.regions["labuan-bajo"].description}
           vehicles={labuanBajoVehicles}

@@ -1,13 +1,20 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Dialog } from "@base-ui/react/dialog";
+import { t } from "@/lib/i18n";
 import { getImageSrc, type ImageSource } from "@/lib/images";
 
 interface Props {
   images: ImageSource[];
   initialIndex?: number;
+  locale?: string;
 }
 
-export default function PackageGallery({ images, initialIndex = 0 }: Props) {
+export default function PackageGallery({
+  images,
+  initialIndex = 0,
+  locale = "id",
+}: Props) {
+  const uiStrings = t(locale);
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState(initialIndex);
   const touchStartX = useRef(0);
@@ -98,10 +105,10 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
 
           {/* Prev button */}
           {images.length > 1 && (
-            <button
+              <button
               onClick={prev}
               className="absolute left-4 top-1/2 z-10 flex size-12 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
-              aria-label="Previous image"
+              aria-label={uiStrings.gallery.previousImage}
             >
               <svg
                 className="size-6"
@@ -125,7 +132,7 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
           >
             <img
               src={getImageSrc(images[current])}
-              alt={`${current + 1} of ${images.length}`}
+              alt={`${current + 1} / ${images.length}`}
               className="max-h-[70vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
             />
           </div>
@@ -135,7 +142,7 @@ export default function PackageGallery({ images, initialIndex = 0 }: Props) {
             <button
               onClick={next}
               className="absolute right-4 top-1/2 z-10 flex size-12 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 md:right-20"
-              aria-label="Next image"
+              aria-label={uiStrings.gallery.nextImage}
             >
               <svg
                 className="size-6"

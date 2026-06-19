@@ -1,7 +1,7 @@
 ---
 import type { BoatSpec } from "@/lib/content/tourPackages/types";
 import { t } from "@/lib/i18n";
-import { TypographyH2 } from "@/components/ui/typography";
+import { TypographyH2, TypographyP } from "@/components/ui/typography";
 
 interface Props {
   boatName: string;
@@ -14,40 +14,48 @@ interface Props {
 const { boatName, boatType, boatCapacity, specs, locale = "id" } = Astro.props;
 const uiStrings = t(locale);
 ---
-
+<!-- FIX: Check typography components -->
 <div class="w-full">
-  <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
+  <div class="text-sm uppercase tracking-[0.28em] text-brand-700">
     {uiStrings.paketWisata.boatSpecs}
   </div>
 
-  <TypographyH2 class="mt-2">{boatName}</TypographyH2>
+  <!-- TODO: Fix typography components, font-heading to not use bold, it is ugly -->
+  <TypographyH2 class="mt-2 font-normal">{boatName}</TypographyH2>
 
   <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-    {boatType && (
-      <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
-        <div class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          {uiStrings.paketWisata.boatType}
+    {
+      boatType && (
+        <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
+          <TypographyP class="text-xs uppercase tracking-wider text-muted-foreground">
+            {uiStrings.paketWisata.boatType}
+          </TypographyP>
+      <!-- TODO: make typographyP and other body use font-sans, typographyH and other heading use font-heading but no bold -->
+          <TypographyP class="mt-1 text-base ">{boatType}</TypographyP>
         </div>
-        <div class="mt-1 text-base font-semibold">{boatType}</div>
-      </div>
-    )}
+      )
+    }
 
-    {boatCapacity && (
-      <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
-        <div class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          {uiStrings.paketWisata.boatCapacity}
+    {
+      boatCapacity && (
+        <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
+          <div class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            {uiStrings.paketWisata.boatCapacity}
+          </div>
+          <div class="mt-1 text-base font-semibold">{boatCapacity}</div>
         </div>
-        <div class="mt-1 text-base font-semibold">{boatCapacity}</div>
-      </div>
-    )}
+      )
+    }
 
-    {specs?.map((spec) => (
-      <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
-        <div class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          {spec.label}
+    {
+      specs?.map((spec) => (
+        <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
+          <div class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            {spec.label}
+          </div>
+          <div class="mt-1 text-base font-semibold">{spec.value}</div>
         </div>
-        <div class="mt-1 text-base font-semibold">{spec.value}</div>
-      </div>
-    ))}
+      ))
+    }
   </div>
 </div>

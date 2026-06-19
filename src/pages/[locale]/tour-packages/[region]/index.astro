@@ -6,6 +6,7 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { getPackages } from "@/lib/content/tourPackages/collection";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
+import { loadContent } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
 import CollectionCard from "@/components/packages/CollectionCard.astro";
@@ -30,6 +31,8 @@ export function getStaticPaths() {
 const { locale, region } = Astro.params;
 const r = region as Region;
 const uiStrings = t(locale!);
+const pageModule = await loadContent(locale!, "packagePage");
+const { packagePageContent } = pageModule;
 
 const packages = await getPackages(locale!);
 const regionPackages = packages.filter((pkg) => pkg.region === r);
@@ -58,23 +61,18 @@ const breadcrumbs = [
 ];
 ---
 
+<!-- FIX: Description on main layout still use hardcode -->
 <MainLayout
-  title={`${uiStrings.paketWisata.packagesFor.replace("{region}", REGION_LABEL[r])}`}
-  description={`Pilihan paket wisata ${REGION_LABEL[r]}`}
+  title={packagePageContent.regions[r].title}
+  description={packagePageContent.regions[r].description}
   canonical={`/${locale}/tour-packages/${r}`}
   image={regionPackages[0]?.images[0]}
   locale={locale}
 >
   <PageHeader
-    eyebrow={uiStrings.paketWisata.eyebrow}
-    title={uiStrings.paketWisata.packagesFor.replace(
-      "{region}",
-      REGION_LABEL[r],
-    )}
-    description={uiStrings.paketWisata.chooseCategory.replace(
-      "{region}",
-      REGION_LABEL[r],
-    )}
+    eyebrow={packagePageContent.regions[r].title}
+    title={packagePageContent.regions[r].title}
+    description={packagePageContent.regions[r].description}
     breadcrumbs={breadcrumbs}
   />
 
@@ -82,7 +80,7 @@ const breadcrumbs = [
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       {
         collections.map((collection) => (
-          <CollectionCard collection={collection} region={r} />
+          <CollectionCard collection={collection} region={r} locale={locale} />
         ))
       }
     </div>

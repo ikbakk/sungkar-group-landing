@@ -1,27 +1,39 @@
 ---
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { BusinessInfo } from "@/lib/contact-data";
+import { t } from "@/lib/i18n";
 import { Separator } from "../ui/separator";
 
 interface Props {
   businessInfo: BusinessInfo;
   title?: string;
   description?: string;
+  locale?: string;
 }
 
-const {
-  businessInfo,
-  title = "Informasi Kontak",
-  description = "Hubungi kami melalui berbagai saluran yang tersedia",
-} = Astro.props;
+const { businessInfo, title, description, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
+
+const resolvedTitle =
+  title ||
+  uiStrings.contact.contactInfoTitle;
+const resolvedDescription =
+  description ||
+  uiStrings.contact.contactInfoDescription;
+const socialHeading = uiStrings.contact.followUs;
+const phoneLabel = uiStrings.contact.phoneWhatsapp;
 ---
 
 <Card class="border-border justify-center bg-white">
   <CardHeader>
     <CardTitle class="text-3xl leading-tight">
-      {title}
+      {resolvedTitle}
     </CardTitle>
-    {description && <p class="text-sm text-text-muted">{description}</p>}
+    {
+      resolvedDescription && (
+        <p class="text-sm text-text-muted">{resolvedDescription}</p>
+      )
+    }
   </CardHeader>
   <CardContent class="flex flex-col gap-2">
     <!-- Contact Methods -->
@@ -30,7 +42,7 @@ const {
       class="flex flex-col items-start rounded-lg border border-border p-4 bg-surface-soft transition-colors hover:border-brand-200 hover:bg-brand-50"
     >
       <div class="text-sm font-medium text-foreground mb-2">
-        Telepon / Whatsapp
+        {phoneLabel}
       </div>
       <div class="text-sm text-text-muted">
         {businessInfo.phone}
@@ -63,7 +75,7 @@ const {
       Object.values(businessInfo.socialLinks).filter(Boolean).length > 0 && (
         <div class="flex flex-col items-start rounded-lg border border-border p-4 bg-surface-soft transition-colors hover:border-brand-200 hover:bg-brand-50">
           <h3 class="font-sans font-medium text-sm text-foreground mb-2">
-            Ikuti Kami
+            {socialHeading}
           </h3>
           <div class="flex flex-wrap gap-2">
             {businessInfo.socialLinks.instagram && (
@@ -72,7 +84,7 @@ const {
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded-md border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
-                aria-label="Follow on Instagram"
+                aria-label={uiStrings.footer.instagram}
               >
                 Instagram
               </a>
@@ -83,7 +95,7 @@ const {
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded-md border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
-                aria-label="Follow on Facebook"
+                aria-label={uiStrings.footer.facebook}
               >
                 Facebook
               </a>
@@ -94,7 +106,7 @@ const {
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded-md border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
-                aria-label="Subscribe on YouTube"
+                aria-label={uiStrings.footer.youtube}
               >
                 YouTube
               </a>
@@ -105,7 +117,7 @@ const {
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded-md border border-border bg-white px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-soft"
-                aria-label="Follow on TikTok"
+                aria-label={uiStrings.footer.tiktok}
               >
                 TikTok
               </a>

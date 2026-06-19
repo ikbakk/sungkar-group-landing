@@ -359,7 +359,12 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
         sumbawa: "Sumbawa",
         "labuan-bajo": "Labuan Bajo",
       };
-      lines.push(whatsappLocationLabel.replace("{region}", regionLabels[location] || location));
+      lines.push(
+        whatsappLocationLabel.replace(
+          "{region}",
+          regionLabels[location] || location,
+        ),
+      );
     }
 
     if (packageName) {

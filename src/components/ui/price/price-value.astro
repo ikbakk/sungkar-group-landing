@@ -1,26 +1,26 @@
 ---
-import type { HTMLAttributes } from "astro/types"
-import { cva, type VariantProps } from "class-variance-authority"
+import type { HTMLAttributes } from "astro/types";
+import { cva, type VariantProps } from "class-variance-authority";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 import {
   formatPriceDiscount,
   formatPriceValue,
   type DiscountFormat,
   type PriceValue,
-} from "./format-price-value"
+} from "./format-price-value";
 
 type Props = VariantProps<typeof variants> &
   HTMLAttributes<"span"> & {
-    price?: PriceValue
-    compareAt?: PriceValue
-    currency?: string
-    locale?: string
-    variant?: "default" | "sale"
-    discountFormat?: DiscountFormat
-    showDiscount?: boolean
-  }
+    price?: PriceValue;
+    compareAt?: PriceValue;
+    currency?: string;
+    locale?: string;
+    variant?: "default" | "sale";
+    discountFormat?: DiscountFormat;
+    showDiscount?: boolean;
+  };
 
 const variants = cva("leading-tight", {
   variants: {
@@ -29,7 +29,7 @@ const variants = cva("leading-tight", {
       sale: "text-muted-foreground line-through",
     },
   },
-})
+});
 
 const {
   class: className,
@@ -41,10 +41,10 @@ const {
   discountFormat = "percentage",
   showDiscount = true,
   ...props
-} = Astro.props
+} = Astro.props;
 
-const formattedPrice = formatPriceValue(price, { currency, locale })
-const formattedCompareAt = formatPriceValue(compareAt, { currency, locale })
+const formattedPrice = formatPriceValue(price, { currency, locale });
+const formattedCompareAt = formatPriceValue(compareAt, { currency, locale });
 const formattedDiscount =
   showDiscount && compareAt
     ? formatPriceDiscount(price, compareAt, {
@@ -52,8 +52,8 @@ const formattedDiscount =
         locale,
         format: discountFormat,
       })
-    : null
-const hasDiscount = Boolean(formattedCompareAt && formattedDiscount)
+    : null;
+const hasDiscount = Boolean(formattedCompareAt && formattedDiscount);
 ---
 
 {
@@ -61,7 +61,7 @@ const hasDiscount = Boolean(formattedCompareAt && formattedDiscount)
     <span
       class={cn(
         "inline-flex flex-wrap items-center gap-x-2 gap-y-1",
-        className
+        className,
       )}
       {...props}
     >

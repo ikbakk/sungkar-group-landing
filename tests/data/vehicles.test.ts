@@ -52,13 +52,13 @@ describe("Vehicle MDX Data Validation", () => {
     });
 
     it("all vehicles have positive seat counts", () => {
-      for (const { slug, fm } of idFiles) {
+      for (const { fm } of idFiles) {
         expect(fm.seats).toBeGreaterThan(0);
       }
     });
 
     it("all vehicles have valid transmission types", () => {
-      for (const { slug, fm } of idFiles) {
+      for (const { fm } of idFiles) {
         expect(["Manual", "Automatic"]).toContain(fm.transmission);
       }
     });
@@ -86,7 +86,7 @@ describe("Vehicle MDX Data Validation", () => {
         {} as Record<string, typeof allItems>,
       );
 
-      for (const [slug, items] of Object.entries(bySlug)) {
+      for (const [, items] of Object.entries(bySlug)) {
         const regions = [...new Set(items.map((p) => p.fm.region))];
         expect(regions.length).toBe(1);
       }

@@ -1,4 +1,5 @@
 ---
+import { t } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 
 interface Props {
@@ -8,29 +9,40 @@ interface Props {
   googleMapsUrl: string;
   businessName?: string;
   businessAddress?: string;
+  locale?: string;
 }
 
 const {
-  title = "Lokasi Kami",
-  description = "Kunjungi kantor Sungkar Group Indonesia atau hubungi tim kami untuk konsultasi perjalanan.",
+  title,
+  description,
   embedUrl = "",
   googleMapsUrl = "",
   businessName = "Sungkar Group Indonesia",
+  locale = "id",
 } = Astro.props;
+const uiStrings = t(locale);
+const resolvedTitle =
+  title ||
+  uiStrings.contact.mapTitle;
+const resolvedDescription =
+  description ||
+  uiStrings.contact.mapDescription;
 ---
 
 <div class="grid lg:grid-cols-2 min-h-80">
   <div class="space-y-1 h-full flex flex-col justify-center">
     <h2 class="text-3xl leading-tight text-foreground">
-      {title}
+      {resolvedTitle}
     </h2>
     <p class="text-sm leading-7 text-text-muted">
-      {description}
+      {resolvedDescription}
     </p>
 
     <div class="w-full flex justify-center lg:justify-start">
       <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
-        <Button size={"lg"} variant={"default"}> Buka di Google Maps </Button>
+        <Button size={"lg"} variant={"default"}>
+          {uiStrings.reviews.seeOnGoogleMaps}
+        </Button>
       </a>
     </div>
   </div>
@@ -44,6 +56,6 @@ const {
       loading="eager"
       allowfullscreen
       referrerpolicy="no-referrer-when-downgrade"
-      title={`Peta lokasi ${businessName}`}></iframe>
+      title={`${uiStrings.contact.formTitle} ${businessName}`}></iframe>
   </div>
 </div>

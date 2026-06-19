@@ -3,12 +3,15 @@ import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import type { TourPackage } from "@/lib/content/tourPackages/types";
 import PackageGallery from "./PackageGallery";
 import { Button } from "@/components/ui/button";
+import { t } from "@/lib/i18n";
 
 interface Props {
   tour: TourPackage;
+  locale?: string;
 }
 
-const { tour } = Astro.props;
+const { tour, locale = "id" } = Astro.props;
+const uiStrings = t(locale);
 const images = tour.images;
 const extraCount = images.length - 1;
 ---
@@ -19,7 +22,7 @@ const extraCount = images.length - 1;
     data-image-index="0"
     variant="ghost"
     class="overflow-hidden rounded-lg border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)] cursor-zoom-in p-0"
-    aria-label={`Preview ${tour.title}`}
+    aria-label={`${uiStrings.common.viewDetail}: ${tour.title}`}
   >
     <OptimizedImage
       src={images[0]}
@@ -47,7 +50,7 @@ const extraCount = images.length - 1;
             data-image-index={i + 1}
             variant="ghost"
             class="overflow-hidden rounded-lg border border-border bg-white shadow-[0_18px_45px_rgba(17,24,39,0.05)] cursor-zoom-in p-0"
-            aria-label={`View image ${i + 2}`}
+            aria-label={`${uiStrings.gallery.photos} ${i + 2}`}
           >
             <OptimizedImage
               src={img}
@@ -63,4 +66,4 @@ const extraCount = images.length - 1;
   }
 </div>
 
-<PackageGallery images={images} client:load />
+<PackageGallery images={images} locale={locale} client:load />

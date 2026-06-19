@@ -1,13 +1,13 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = HTMLAttributes<"h4"> & {
-  size?: "sm" | "default" | "lg"
-}
+  size?: "sm" | "default" | "lg";
+};
 
-const { class: className, size = "default", ...props } = Astro.props
+const { class: className, size = "default", ...props } = Astro.props;
 ---
 
 <h4 data-slot="typography-h4" data-size={size} class={cn(className)} {...props}>

@@ -69,7 +69,7 @@ describe("Accommodation MDX Data Validation", () => {
         {} as Record<string, typeof allItems>,
       );
 
-      for (const [slug, items] of Object.entries(bySlug)) {
+      for (const [, items] of Object.entries(bySlug)) {
         const regions = [...new Set(items.map((p) => p.fm.region))];
         expect(regions.length).toBe(1);
       }

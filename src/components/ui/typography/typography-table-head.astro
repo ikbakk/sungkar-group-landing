@@ -1,11 +1,11 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-type Props = HTMLAttributes<"th">
+type Props = HTMLAttributes<"th">;
 
-const { class: className, ...props } = Astro.props
+const { class: className, ...props } = Astro.props;
 ---
 
 <th data-slot="typography-table-head" class={cn(className)} {...props}>

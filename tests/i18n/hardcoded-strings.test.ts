@@ -71,6 +71,24 @@ describe("component hardcoded strings", () => {
       pattern: "Lombok • Sumbawa • Labuan Bajo",
       label: "destinations subtitle hardcoded",
     },
+    { pattern: "Google Review", label: "google review label hardcoded" },
+    { pattern: "Previous image", label: "gallery previous label hardcoded" },
+    { pattern: "Next image", label: "gallery next label hardcoded" },
+    { pattern: "Preview ", label: "gallery preview label hardcoded" },
+    { pattern: "Ulasan Google", label: "google review Indonesian label leak" },
+    { pattern: "Lokasi Kami", label: "contact map title leak" },
+    {
+      pattern: "Informasi Kontak",
+      label: "contact info title leak",
+    },
+    {
+      pattern: "Follow Us",
+      label: "contact social heading leak",
+    },
+    {
+      pattern: "/ orang",
+      label: "package cabin price unit leak",
+    },
     { pattern: 'alt="Sungkar Group"', label: "logo alt hardcoded in Header" },
   ];
 

@@ -1,19 +1,19 @@
 ---
-import type { HTMLTag, Polymorphic } from "astro/types"
+import type { HTMLTag, Polymorphic } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props<Tag extends HTMLTag> = Polymorphic<{
-  as: Tag
-  size?: "sm" | "default" | "lg"
-}>
+  as: Tag;
+  size?: "sm" | "default" | "lg";
+}>;
 
 const {
   as: Tag = "div",
   class: className,
   size = "default",
   ...props
-} = Astro.props
+} = Astro.props;
 ---
 
 <Tag

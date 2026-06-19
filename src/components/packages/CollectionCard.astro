@@ -2,6 +2,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import type { TourPackage } from "@/lib/content/tourPackages/types";
 import { t } from "@/lib/i18n";
+import { localizeHref } from "@/lib/i18n/localize";
 
 interface Props {
   collection: {
@@ -17,7 +18,7 @@ const { collection, region, locale = "id" } = Astro.props;
 const uiStrings = t(locale);
 ---
 
-<a href={`/paket-wisata/${region}/${collection.slug}`}>
+<a href={localizeHref(`/paket-wisata/${region}/${collection.slug}`, locale)}>
   <Card
     class="h-full
       transition-all

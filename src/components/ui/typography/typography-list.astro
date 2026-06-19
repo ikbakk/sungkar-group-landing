@@ -1,14 +1,14 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = HTMLAttributes<"ul"> &
   HTMLAttributes<"ol"> & {
-    as?: "ul" | "ol"
-  }
+    as?: "ul" | "ol";
+  };
 
-const { as: Tag = "ul", class: className, ...props } = Astro.props
+const { as: Tag = "ul", class: className, ...props } = Astro.props;
 ---
 
 <Tag

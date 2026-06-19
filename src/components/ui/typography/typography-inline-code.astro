@@ -1,11 +1,11 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-type Props = HTMLAttributes<"code">
+type Props = HTMLAttributes<"code">;
 
-const { class: className, ...props } = Astro.props
+const { class: className, ...props } = Astro.props;
 ---
 
 <code data-slot="typography-inline-code" class={cn(className)} {...props}>

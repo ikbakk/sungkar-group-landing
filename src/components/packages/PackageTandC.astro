@@ -21,8 +21,15 @@ const uiStrings = t(locale);
   </TypographyH2>
 
   <div class="mt-6 grid gap-2">
-    {content.split("\n").filter(Boolean).map((line) => (
-      <TypographyP class="m-0 text-sm leading-7 text-muted-foreground">{line}</TypographyP>
-    ))}
+    {
+      content
+        .split("\n")
+        .filter(Boolean)
+        .map((line) => (
+          <TypographyP class="m-0 text-sm leading-7 text-muted-foreground">
+            {line}
+          </TypographyP>
+        ))
+    }
   </div>
 </div>

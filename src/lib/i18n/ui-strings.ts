@@ -43,6 +43,8 @@ export interface UIStrings {
   gallery: {
     title: string;
     photos: string;
+    previousImage: string;
+    nextImage: string;
   };
   cta: {
     book: string;
@@ -57,6 +59,8 @@ export interface UIStrings {
     galleryTitle: string;
     galleryPhotoCaptions: string[];
     totalOnGoogle: string;
+    googleReview: string;
+    ratingOutOfFive: string;
   };
   faq: {
     sectionTitle: string;
@@ -158,6 +162,7 @@ export interface UIStrings {
     viewDetail: string;
     moreCount: string;
     contactForPrice: string;
+    people: string;
     imageAltSunrise: string;
     imageAltSunset: string;
     imageAltDestinations: string;
@@ -176,12 +181,16 @@ export interface UIStrings {
   contact: {
     formDesc: string;
     formDescSidebar: string;
+    contactInfoTitle: string;
+    contactInfoDescription: string;
     chooseLocation: string;
     choosePackage: string;
     selectLocationFirst: string;
     optional: string;
     formTitle: string;
     formDescription: string;
+    mapTitle: string;
+    mapDescription: string;
     formWhatsappSubject: string;
     whatsappGreeting: string;
     whatsappSewaIntro: string;
@@ -198,6 +207,8 @@ export interface UIStrings {
     sectionTitlePaket: string;
     contextLabelSewa: string;
     contextLabelPaket: string;
+    followUs: string;
+    phoneWhatsapp: string;
   };
   page: {
     about: string;
@@ -271,6 +282,8 @@ export const translations: Record<Locale, UIStrings> = {
     gallery: {
       title: "Galeri",
       photos: "Foto Perjalanan",
+      previousImage: "Gambar sebelumnya",
+      nextImage: "Gambar berikutnya",
     },
     cta: {
       book: "Pesan",
@@ -284,6 +297,8 @@ export const translations: Record<Locale, UIStrings> = {
       seeAllReviews: "Lihat semua ulasan di Google",
       galleryTitle: "Galeri Pengalaman Wisatawan",
       totalOnGoogle: "{n} ulasan di Google",
+      googleReview: "Ulasan Google",
+      ratingOutOfFive: "{rating} dari 5 bintang",
       galleryPhotoCaptions: [
         "Momen perjalanan keluarga",
         "Eksplorasi pantai dan pulau",
@@ -410,6 +425,7 @@ export const translations: Record<Locale, UIStrings> = {
       explore: "Jelajahi",
       moreCount: "+{n} lainnya",
       contactForPrice: "Hubungi untuk harga",
+      people: "orang",
       imageAltSunrise: "Lombok saat matahari terbit",
       imageAltSunset: "Pemandangan pantai Lombok dengan matahari terbenam",
       imageAltDestinations: "Destinasi Lombok",
@@ -430,6 +446,9 @@ export const translations: Record<Locale, UIStrings> = {
         "Isi form di bawah, tim kami akan merespon via WhatsApp dalam waktu singkat.",
       formDescSidebar:
         "Isi form di bawah dan tim kami akan merespon via WhatsApp.",
+      contactInfoTitle: "Informasi Kontak",
+      contactInfoDescription:
+        "Hubungi kami melalui berbagai saluran yang tersedia",
       chooseLocation: "Pilih lokasi",
       choosePackage: "Pilih paket",
       selectLocationFirst: "Pilih lokasi terlebih dahulu",
@@ -437,6 +456,9 @@ export const translations: Record<Locale, UIStrings> = {
       formTitle: "Ceritakan rencana perjalanan Anda",
       formDescription:
         "Berikan informasi dasar perjalanan agar tim kami dapat memberikan rekomendasi yang lebih relevan.",
+      mapTitle: "Lokasi Kami",
+      mapDescription:
+        "Kunjungi kantor Sungkar Group Indonesia atau hubungi tim kami untuk konsultasi perjalanan.",
       formWhatsappSubject: "Pertanyaan Baru - Sungkar Group Website",
       whatsappGreeting: "Halo Sungkar Group,",
       whatsappSewaIntro: "Saya ingin sewa: {item}",
@@ -453,6 +475,8 @@ export const translations: Record<Locale, UIStrings> = {
       sectionTitlePaket: "Pesan Paket Wisata",
       contextLabelSewa: "Pilihan Kendaraan",
       contextLabelPaket: "Pilihan Paket",
+      followUs: "Ikuti Kami",
+      phoneWhatsapp: "Telepon / Whatsapp",
     },
     seo: {
       keywords:
@@ -513,6 +537,8 @@ export const translations: Record<Locale, UIStrings> = {
     gallery: {
       title: "Gallery",
       photos: "Journey Photos",
+      previousImage: "Previous image",
+      nextImage: "Next image",
     },
     cta: {
       book: "Book Now",
@@ -526,6 +552,8 @@ export const translations: Record<Locale, UIStrings> = {
       seeAllReviews: "See all reviews on Google",
       galleryTitle: "Traveler Experience Gallery",
       totalOnGoogle: "{n} reviews on Google",
+      googleReview: "Google Review",
+      ratingOutOfFive: "{rating} out of 5 stars",
       galleryPhotoCaptions: [
         "Family travel moments",
         "Beach and island exploration",
@@ -652,6 +680,7 @@ export const translations: Record<Locale, UIStrings> = {
       explore: "Explore",
       moreCount: "+{n} more",
       contactForPrice: "Contact for price",
+      people: "people",
       imageAltSunrise: "Lombok at sunrise",
       imageAltSunset: "Lombok beach with sunset view",
       imageAltDestinations: "Lombok Destinations",
@@ -672,6 +701,8 @@ export const translations: Record<Locale, UIStrings> = {
         "Fill out the form below and our team will respond via WhatsApp shortly.",
       formDescSidebar:
         "Fill out the form and our team will get back to you on WhatsApp.",
+      contactInfoTitle: "Contact Information",
+      contactInfoDescription: "Reach us through the available channels",
       chooseLocation: "Choose location",
       choosePackage: "Choose package",
       selectLocationFirst: "Select location first",
@@ -679,6 +710,9 @@ export const translations: Record<Locale, UIStrings> = {
       formTitle: "Tell us about your trip",
       formDescription:
         "Provide basic trip information so our team can give you the most relevant recommendations.",
+      mapTitle: "Our Location",
+      mapDescription:
+        "Visit the Sungkar Group office or contact our team for trip consultation.",
       formWhatsappSubject: "New Inquiry - Sungkar Group Website",
       whatsappGreeting: "Hello Sungkar Group,",
       whatsappSewaIntro: "I want to rent: {item}",
@@ -695,6 +729,8 @@ export const translations: Record<Locale, UIStrings> = {
       sectionTitlePaket: "Book a Tour Package",
       contextLabelSewa: "Selected Vehicle",
       contextLabelPaket: "Selected Package",
+      followUs: "Follow Us",
+      phoneWhatsapp: "Phone / WhatsApp",
     },
     seo: {
       keywords:
@@ -769,6 +805,8 @@ export const translations: Record<Locale, UIStrings> = {
     gallery: {
       title: "\u0645\u0639\u0631\u0636 \u0627\u0644\u0635\u0648\u0631",
       photos: "\u0635\u0648\u0631 \u0627\u0644\u0631\u062D\u0644\u0629",
+      previousImage: "\u0627\u0644\u0635\u0648\u0631\u0629 \u0627\u0644\u0633\u0627\u0628\u0642\u0629",
+      nextImage: "\u0627\u0644\u0635\u0648\u0631\u0629 \u0627\u0644\u062A\u0627\u0644\u064A\u0629",
     },
     cta: {
       book: "\u0627\u062D\u062C\u0632 \u0627\u0644\u0622\u0646",
@@ -790,6 +828,8 @@ export const translations: Record<Locale, UIStrings> = {
         "\u0645\u0639\u0631\u0636 \u062A\u062C\u0627\u0631\u0628 \u0627\u0644\u0645\u0633\u0627\u0641\u0631\u064A\u0646",
       totalOnGoogle:
         "{n} \u062A\u0642\u064A\u064A\u0645\u0627\u062A \u0639\u0644\u0649 \u062C\u0648\u062C\u0644",
+      googleReview: "\u0645\u0631\u0627\u062C\u0639\u0629 \u062C\u0648\u062C\u0644",
+      ratingOutOfFive: "{rating} \u0645\u0646 5 \u0646\u062C\u0645\u0627\u062A",
       galleryPhotoCaptions: [
         "\u0644\u062D\u0638\u0627\u062A \u0627\u0644\u0633\u0641\u0631 \u0627\u0644\u0639\u0627\u0626\u0644\u064A\u0629",
         "\u0627\u0633\u062A\u0643\u0634\u0627\u0641 \u0627\u0644\u0634\u0648\u0627\u0637\u0626 \u0648\u0627\u0644\u062C\u0632\u0631",
@@ -913,12 +953,15 @@ export const translations: Record<Locale, UIStrings> = {
         "\u062C\u0645\u064A\u0639 \u0627\u0644\u0645\u0631\u0627\u0641\u0642 \u0627\u0644\u0645\u062F\u0631\u062C\u0629 \u0644\u0645\u0633\u0627\u0639\u062F\u062A\u0643 \u0641\u064A \u0627\u0644\u062A\u062D\u0636\u064A\u0631 \u0644\u0631\u062D\u0644\u062A\u0643.",
       included: "\u0645\u0634\u0645\u0648\u0644",
       excluded: "\u063A\u064A\u0631 \u0645\u0634\u0645\u0648\u0644",
-      boatSpecs: "\u0645\u0648\u0627\u0635\u0641\u0627\u062A \u0627\u0644\u0642\u0627\u0631\u0628",
+      boatSpecs:
+        "\u0645\u0648\u0627\u0635\u0641\u0627\u062A \u0627\u0644\u0642\u0627\u0631\u0628",
       boatType: "\u0646\u0648\u0639 \u0627\u0644\u0642\u0627\u0631\u0628",
       boatCapacity: "\u0627\u0644\u0633\u0639\u0629",
       cabins: "\u0627\u0644\u0645\u0642\u0627\u0635\u064A\u0631",
-      cabinPrice: "\u0633\u0639\u0631 \u0627\u0644\u0645\u0642\u0635\u0648\u0631\u0629",
-      termsAndConditions: "\u0627\u0644\u0634\u0631\u0648\u0637 \u0648\u0627\u0644\u0623\u062D\u0643\u0627\u0645",
+      cabinPrice:
+        "\u0633\u0639\u0631 \u0627\u0644\u0645\u0642\u0635\u0648\u0631\u0629",
+      termsAndConditions:
+        "\u0627\u0644\u0634\u0631\u0648\u0637 \u0648\u0627\u0644\u0623\u062D\u0643\u0627\u0645",
     },
     akomodasi: {
       title: "\u0627\u0644\u0625\u0642\u0627\u0645\u0629",
@@ -968,6 +1011,7 @@ export const translations: Record<Locale, UIStrings> = {
       moreCount: "+{n} \u0627\u0644\u0645\u0632\u064A\u062F",
       contactForPrice:
         "\u0627\u062A\u0635\u0644 \u0644\u0644\u0633\u0639\u0631",
+      people: "\u0634\u062E\u0635",
       imageAltSunrise:
         "\u0644\u0648\u0645\u0628\u0648\u0643 \u0639\u0646\u062F \u0634\u0631\u0648\u0642 \u0627\u0644\u0634\u0645\u0633",
       imageAltSunset:
@@ -993,6 +1037,9 @@ export const translations: Record<Locale, UIStrings> = {
         "\u0627\u0645\u0644\u0623 \u0627\u0644\u0646\u0645\u0648\u0630\u062C \u0623\u062F\u0646\u0627\u0647 \u0648\u0633\u064A\u0642\u0648\u0645 \u0641\u0631\u064A\u0642\u0646\u0627 \u0628\u0627\u0644\u0631\u062F \u0639\u0628\u0631 WhatsApp \u0642\u0631\u064A\u0628\u064B\u0627.",
       formDescSidebar:
         "\u0627\u0645\u0644\u0623 \u0627\u0644\u0646\u0645\u0648\u0630\u062C \u0648\u0633\u064A\u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0643 \u0641\u0631\u064A\u0642\u0646\u0627 \u0639\u0628\u0631 WhatsApp.",
+      contactInfoTitle: "\u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u0627\u062A\u0635\u0627\u0644",
+      contactInfoDescription:
+        "\u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0646\u0627 \u0639\u0628\u0631 \u0627\u0644\u0642\u0646\u0648\u0627\u062A \u0627\u0644\u0645\u062A\u0627\u062D\u0629",
       chooseLocation:
         "\u0627\u062E\u062A\u0631 \u0627\u0644\u0645\u0648\u0642\u0639",
       choosePackage:
@@ -1004,16 +1051,17 @@ export const translations: Record<Locale, UIStrings> = {
         "\u0623\u062E\u0628\u0631\u0646\u0627 \u0639\u0646 \u0631\u062D\u0644\u062A\u0643",
       formDescription:
         "\u0642\u062F\u0645 \u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u0631\u062D\u0644\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064A\u0629 \u062D\u062A\u0649 \u064A\u062A\u0645\u0643\u0646 \u0641\u0631\u064A\u0642\u0646\u0627 \u0645\u0646 \u062A\u0642\u062F\u064A\u0645 \u062A\u0648\u0635\u064A\u0627\u062A \u0623\u0643\u062B\u0631 \u0635\u0644\u0629.",
+      mapTitle: "\u0645\u0648\u0642\u0639\u0646\u0627",
+      mapDescription:
+        "\u0632\u0631 \u0645\u0643\u062A\u0628 Sungkar Group \u0623\u0648 \u062A\u0648\u0627\u0635\u0644 \u0645\u0639 \u0641\u0631\u064A\u0642\u0646\u0627 \u0644\u0627\u0633\u062A\u0634\u0627\u0631\u0629 \u0627\u0644\u0633\u0641\u0631.",
       formWhatsappSubject:
         "\u0627\u0633\u062A\u0641\u0633\u0627\u0631 \u062C\u062F\u064A\u062F - \u0645\u0648\u0642\u0639 Sungkar Group",
-      whatsappGreeting:
-        "\u0645\u0631\u062D\u0628\u0627 Sungkar Group\u060C",
+      whatsappGreeting: "\u0645\u0631\u062D\u0628\u0627 Sungkar Group\u060C",
       whatsappSewaIntro:
         "\u0623\u0631\u063A\u0628 \u0641\u064A \u0627\u0633\u062A\u0626\u062C\u0627\u0631: {item}",
       whatsappPaketIntro:
         "\u0623\u0646\u0627 \u0645\u0647\u062A\u0645 \u0628\u0627\u0644\u0628\u0627\u0642\u0629: {item}",
-      whatsappLocation:
-        "\u0627\u0644\u0645\u0648\u0642\u0639: {region}",
+      whatsappLocation: "\u0627\u0644\u0645\u0648\u0642\u0639: {region}",
       whatsappFollowUp:
         "\u064A\u0631\u062C\u0649 \u062A\u0642\u062F\u064A\u0645 \u0645\u0632\u064A\u062F \u0645\u0646 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062A.",
       whatsappFormDate:
@@ -1022,8 +1070,7 @@ export const translations: Record<Locale, UIStrings> = {
         "\u0639\u062F\u062F \u0627\u0644\u0636\u064A\u0648\u0641: {guests}",
       whatsappFormMessage:
         "\u0631\u0633\u0627\u0644\u0629 \u0625\u0636\u0627\u0641\u064A\u0629: {message}",
-      whatsappFormPackage:
-        "\u0627\u0644\u0628\u0627\u0642\u0629: {package}",
+      whatsappFormPackage: "\u0627\u0644\u0628\u0627\u0642\u0629: {package}",
       sidebarTitleSewa:
         "\u0627\u0633\u062A\u0626\u062C\u0627\u0631 \u0647\u0630\u0647 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",
       sidebarTitlePaket:
@@ -1036,6 +1083,8 @@ export const translations: Record<Locale, UIStrings> = {
         "\u0627\u0644\u0645\u0631\u0643\u0628\u0629 \u0627\u0644\u0645\u062E\u062A\u0627\u0631\u0629",
       contextLabelPaket:
         "\u0627\u0644\u0628\u0627\u0642\u0629 \u0627\u0644\u0645\u062E\u062A\u0627\u0631\u0629",
+      followUs: "\u062A\u0627\u0628\u0639\u0646\u0627",
+      phoneWhatsapp: "\u0627\u0644\u0647\u0627\u062A\u0641 / \u0648\u0627\u062A\u0633\u0627\u0628",
     },
     seo: {
       keywords:
@@ -1102,6 +1151,8 @@ export const translations: Record<Locale, UIStrings> = {
     gallery: {
       title: "Galeri",
       photos: "Gambar Perjalanan",
+      previousImage: "Imej sebelumnya",
+      nextImage: "Imej seterusnya",
     },
     cta: {
       book: "Tempah Sekarang",
@@ -1115,6 +1166,8 @@ export const translations: Record<Locale, UIStrings> = {
       seeAllReviews: "Lihat semua ulasan di Google",
       galleryTitle: "Galeri Pengalaman Pengembara",
       totalOnGoogle: "{n} ulasan di Google",
+      googleReview: "Ulasan Google",
+      ratingOutOfFive: "{rating} daripada 5 bintang",
       galleryPhotoCaptions: [
         "Momen perjalanan keluarga",
         "Eksplorasi pantai dan pulau",
@@ -1243,6 +1296,7 @@ export const translations: Record<Locale, UIStrings> = {
       viewDetail: "Lihat Butiran",
       moreCount: "+{n} lagi",
       contactForPrice: "Hubungi untuk harga",
+      people: "orang",
       imageAltSunrise: "Lombok ketika matahari terbit",
       imageAltSunset: "Pemandangan pantai Lombok dengan matahari terbenam",
       imageAltDestinations: "Destinasi Lombok",
@@ -1263,6 +1317,9 @@ export const translations: Record<Locale, UIStrings> = {
         "Isi borang di bawah, pasukan kami akan membalas melalui WhatsApp dalam masa terdekat.",
       formDescSidebar:
         "Isi borang di bawah dan pasukan kami akan membalas melalui WhatsApp.",
+      contactInfoTitle: "Maklumat Hubungan",
+      contactInfoDescription:
+        "Hubungi kami melalui saluran yang tersedia",
       chooseLocation: "Pilih lokasi",
       choosePackage: "Pilih pakej",
       selectLocationFirst: "Pilih lokasi terlebih dahulu",
@@ -1270,6 +1327,9 @@ export const translations: Record<Locale, UIStrings> = {
       formTitle: "Ceritakan rancangan perjalanan anda",
       formDescription:
         "Berikan maklumat asas perjalanan supaya pasukan kami dapat memberikan cadangan yang lebih relevan.",
+      mapTitle: "Lokasi Kami",
+      mapDescription:
+        "Lawati pejabat Sungkar Group atau hubungi pasukan kami untuk konsultasi perjalanan.",
       formWhatsappSubject: "Pertanyaan Baru - Laman Web Sungkar Group",
       whatsappGreeting: "Halo Sungkar Group,",
       whatsappSewaIntro: "Saya ingin sewa: {item}",
@@ -1286,6 +1346,8 @@ export const translations: Record<Locale, UIStrings> = {
       sectionTitlePaket: "Tempah Pakej Pelancongan",
       contextLabelSewa: "Kenderaan Dipilih",
       contextLabelPaket: "Pakej Dipilih",
+      followUs: "Ikuti Kami",
+      phoneWhatsapp: "Telefon / WhatsApp",
     },
     seo: {
       keywords:
@@ -1349,6 +1411,8 @@ export const translations: Record<Locale, UIStrings> = {
     gallery: {
       title: "\u7535\u5B50\u76F8\u518C",
       photos: "\u65C5\u884C\u7167\u7247",
+      previousImage: "\u4E0A\u4E00\u5F20\u56FE\u7247",
+      nextImage: "\u4E0B\u4E00\u5F20\u56FE\u7247",
     },
     cta: {
       book: "\u7ACB\u5373\u9884\u8BA2",
@@ -1363,6 +1427,8 @@ export const translations: Record<Locale, UIStrings> = {
       seeAllReviews: "\u67E5\u770BGoogle\u4E0A\u7684\u6240\u6709\u8BC4\u4EF7",
       galleryTitle: "\u65C5\u884C\u8005\u4F53\u9A8C\u753B\u5ECA",
       totalOnGoogle: "\u5728Google\u4E0A\u6709{n}\u6761\u8BC4\u4EF7",
+      googleReview: "Google\u8BC4\u8BBA",
+      ratingOutOfFive: "{rating}/5\u661F",
       galleryPhotoCaptions: [
         "\u5BB6\u5EAD\u65C5\u884C\u65F6\u5149",
         "\u6D77\u6EE9\u548C\u5C9B\u5C7F\u63A2\u7D22",
@@ -1499,6 +1565,7 @@ export const translations: Record<Locale, UIStrings> = {
       viewDetail: "\u67E5\u770B\u8BE6\u60C5",
       moreCount: "+{n}\u66F4\u591A",
       contactForPrice: "\u8054\u7CFB\u83B7\u53D6\u4EF7\u683C",
+      people: "\u4EBA",
       imageAltSunrise: "\u65E5\u51FA\u65F6\u7684\u9F99\u6728\u5C9B",
       imageAltSunset:
         "\u65E5\u843D\u65F6\u7684\u9F99\u6728\u5C9B\u6D77\u6EE9\u7F8E\u666F",
@@ -1521,46 +1588,37 @@ export const translations: Record<Locale, UIStrings> = {
         "\u586B\u5199\u4EE5\u4E0B\u8868\u683C\uFF0C\u6211\u4EEC\u7684\u56E2\u961F\u5C06\u5F88\u5FEB\u901A\u8FC7WhatsApp\u56DE\u590D\u3002",
       formDescSidebar:
         "\u586B\u5199\u8868\u683C\uFF0C\u6211\u4EEC\u7684\u56E2\u961F\u5C06\u901A\u8FC7WhatsApp\u4E0E\u60A8\u8054\u7CFB\u3002",
+      contactInfoTitle: "\u8054\u7CFB\u4FE1\u606F",
+      contactInfoDescription:
+        "\u901A\u8FC7\u53EF\u7528\u6E20\u9053\u8054\u7CFB\u6211\u4EEC",
       chooseLocation: "\u9009\u62E9\u5730\u70B9",
       choosePackage: "\u9009\u62E9\u5957\u9910",
       selectLocationFirst: "\u8BF7\u5148\u9009\u62E9\u5730\u70B9",
       optional: "\u53EF\u9009",
-      formTitle:
-        "\u544A\u8BC9\u6211\u4EEC\u60A8\u7684\u65C5\u884C\u8BA1\u5212",
+      formTitle: "\u544A\u8BC9\u6211\u4EEC\u60A8\u7684\u65C5\u884C\u8BA1\u5212",
       formDescription:
         "\u63D0\u4F9B\u57FA\u672C\u65C5\u884C\u4FE1\u606F\uFF0C\u8BA9\u6211\u4EEC\u7684\u56E2\u961F\u80FD\u4E3A\u60A8\u63D0\u4F9B\u66F4\u8D34\u5408\u7684\u5EFA\u8BAE\u3002",
-      formWhatsappSubject:
-        "\u65B0\u54A8\u8BE2 - Sungkar Group\u7F51\u7AD9",
-      whatsappGreeting:
-        "\u60A8\u597D Sungkar Group\uFF0C",
-      whatsappSewaIntro:
-        "\u6211\u60F3\u79DF\u8D41: {item}",
-      whatsappPaketIntro:
-        "\u6211\u5BF9\u5957\u9910\u611F\u5174\u8DA3: {item}",
-      whatsappLocation:
-        "\u4F4D\u7F6E: {region}",
-      whatsappFollowUp:
-        "\u8BF7\u63D0\u4F9B\u66F4\u591A\u4FE1\u606F\u3002",
-      whatsappFormDate:
-        "\u65C5\u884C\u65E5\u671F: {date}",
-      whatsappFormGuests:
-        "\u5BA2\u4EBA\u6570\u91CF: {guests}",
-      whatsappFormMessage:
-        "\u9644\u52A0\u4FE1\u606F: {message}",
-      whatsappFormPackage:
-        "\u5957\u9910: {package}",
-      sidebarTitleSewa:
-        "\u79DF\u8D41\u6B64\u8F66\u8F86",
-      sidebarTitlePaket:
-        "\u9884\u8BA2\u6B64\u5957\u9910",
-      sectionTitleSewa:
-        "\u5728Sungkar Group\u79DF\u8F66",
-      sectionTitlePaket:
-        "\u9884\u8BA2\u65C5\u6E38\u5957\u9910",
-      contextLabelSewa:
-        "\u5DF2\u9009\u8F66\u8F86",
-      contextLabelPaket:
-        "\u5DF2\u9009\u5957\u9910",
+      mapTitle: "\u6211\u4EEC\u7684\u4F4D\u7F6E",
+      mapDescription:
+        "\u8BBF\u95EE Sungkar Group \u529E\u516C\u5BA4\u6216\u8054\u7CFB\u6211\u4EEC\u8FDB\u884C\u65C5\u884C\u54A8\u8BE2\u3002",
+      formWhatsappSubject: "\u65B0\u54A8\u8BE2 - Sungkar Group\u7F51\u7AD9",
+      whatsappGreeting: "\u60A8\u597D Sungkar Group\uFF0C",
+      whatsappSewaIntro: "\u6211\u60F3\u79DF\u8D41: {item}",
+      whatsappPaketIntro: "\u6211\u5BF9\u5957\u9910\u611F\u5174\u8DA3: {item}",
+      whatsappLocation: "\u4F4D\u7F6E: {region}",
+      whatsappFollowUp: "\u8BF7\u63D0\u4F9B\u66F4\u591A\u4FE1\u606F\u3002",
+      whatsappFormDate: "\u65C5\u884C\u65E5\u671F: {date}",
+      whatsappFormGuests: "\u5BA2\u4EBA\u6570\u91CF: {guests}",
+      whatsappFormMessage: "\u9644\u52A0\u4FE1\u606F: {message}",
+      whatsappFormPackage: "\u5957\u9910: {package}",
+      sidebarTitleSewa: "\u79DF\u8D41\u6B64\u8F66\u8F86",
+      sidebarTitlePaket: "\u9884\u8BA2\u6B64\u5957\u9910",
+      sectionTitleSewa: "\u5728Sungkar Group\u79DF\u8F66",
+      sectionTitlePaket: "\u9884\u8BA2\u65C5\u6E38\u5957\u9910",
+      contextLabelSewa: "\u5DF2\u9009\u8F66\u8F86",
+      contextLabelPaket: "\u5DF2\u9009\u5957\u9910",
+      followUs: "\u5173\u6CE8\u6211\u4EEC",
+      phoneWhatsapp: "\u7535\u8BDD / WhatsApp",
     },
     seo: {
       keywords:

@@ -9,13 +9,17 @@ import { SITE_URL } from "@/lib/site-config";
 
 import { getVehicles } from "@/lib/content/car-rental/collection";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
-import { sewaMobilFormFields } from "@/lib/contact-data";
 
 import VehicleDetailPanel from "@/components/vehicles/VehicleDetailPanel.astro";
 import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import { getImageSrc } from "@/lib/images";
+import { sewaMobilFormFields as idSewaMobilFormFields } from "@/lib/contact-data";
+import { sewaMobilFormFields as enSewaMobilFormFields } from "@/lib/i18n/en/shared/contact-data";
+import { sewaMobilFormFields as arSewaMobilFormFields } from "@/lib/i18n/ar/shared/contact-data";
+import { sewaMobilFormFields as msSewaMobilFormFields } from "@/lib/i18n/ms/shared/contact-data";
+import { sewaMobilFormFields as zhSewaMobilFormFields } from "@/lib/i18n/zh/shared/contact-data";
 
 export async function getStaticPaths() {
   const paths = [];
@@ -34,6 +38,17 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const { vehicle } = Astro.props;
 const uiStrings = t(locale!);
+
+const formFields =
+  locale === "en"
+    ? enSewaMobilFormFields
+    : locale === "ar"
+      ? arSewaMobilFormFields
+      : locale === "ms"
+        ? msSewaMobilFormFields
+        : locale === "zh"
+          ? zhSewaMobilFormFields
+          : idSewaMobilFormFields;
 
 const vehicleUrl = `${SITE_URL}/${locale}/car-rental/${vehicle.region}/${vehicle.slug}`;
 const absoluteImageUrl = new URL(
@@ -115,7 +130,7 @@ const r = vehicle.region as Region;
         </div>
         <WhatsAppForm
           context="sewa-mobil"
-          fields={sewaMobilFormFields}
+          fields={formFields}
           mode="sidebar"
           itemName={vehicle.name}
           region={REGION_LABEL[r]}

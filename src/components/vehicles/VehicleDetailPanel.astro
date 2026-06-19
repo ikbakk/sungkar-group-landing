@@ -19,7 +19,8 @@ const uiStrings = t(locale);
 <Card class="border-border bg-white shadow-[0_16px_45px_rgba(17,24,39,0.05)]">
   <CardHeader>
     <Badge variant="outline" class="w-fit rounded-lg px-3 py-1">
-      {vehicle.seats} Seat | {vehicle.transmission}
+      {vehicle.seats}
+      {uiStrings.sewaMobil.passengers} | {vehicle.transmission}
     </Badge>
     <CardTitle class="text-3xl leading-tight">
       {vehicle.name}
@@ -40,7 +41,7 @@ const uiStrings = t(locale);
       <div class="flex items-center justify-between">
         <span class="text-text-muted">{uiStrings.sewaMobil.passengers}</span>
         <span class="font-medium"
-          >{vehicle.seats} {uiStrings.sewaMobil.passengers.toLowerCase()}</span
+          >{vehicle.seats} {uiStrings.sewaMobil.passengers}</span
         >
       </div>
     </div>

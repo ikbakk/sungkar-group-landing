@@ -17,8 +17,6 @@ import { getAccommodations } from "@/lib/content/accommodations/collection";
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
-import { packagePageContent } from "@/lib/content/tour-packages";
-
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
 }
@@ -28,6 +26,8 @@ const uiStrings = t(locale!);
 
 const pageModule = await loadContent(locale!, "akomodasiPage");
 const { akomodasiPageContent } = pageModule;
+const packagePageModule = await loadContent(locale!, "packagePage");
+const { packagePageContent } = packagePageModule;
 
 const accommodations = await getAccommodations(locale!);
 
@@ -65,7 +65,7 @@ const breadcrumbs = [
 ---
 
 <MainLayout
-  title={uiStrings.akomodasi.title}
+  title={akomodasiPageContent.hero.title}
   description={akomodasiPageContent.hero.description}
   canonical={`/${locale}/accommodations`}
   image={accommodations[0]?.image}

@@ -7,6 +7,7 @@ import PackageCard from "@/components/cards/PackageCard.astro";
 import { getPackages } from "@/lib/content/tourPackages/collection";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
+import { loadContent } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
 export async function getStaticPaths() {
@@ -37,6 +38,8 @@ export async function getStaticPaths() {
 const { locale, region, collection } = Astro.params;
 const r = region as Region;
 const uiStrings = t(locale!);
+const pageModule = await loadContent(locale!, "packagePage");
+const { packagePageContent } = pageModule;
 
 const packages = await getPackages(locale!);
 const collectionPackages = packages.filter(
@@ -58,14 +61,14 @@ const breadcrumbs = [
 
 <MainLayout
   title={collectionTitle}
-  description={`Pilihan paket wisata ${collectionTitle} di ${REGION_LABEL[r]}.`}
+  description={packagePageContent.regions[r].description}
   canonical={`/${locale}/tour-packages/${r}/${collection}`}
   locale={locale}
 >
   <PageHeader
-    eyebrow={uiStrings.paketWisata.eyebrow}
+    eyebrow={packagePageContent.regions[r].title}
     title={collectionTitle}
-    description={`Pilihan paket wisata ${collectionTitle} di ${REGION_LABEL[r]}.`}
+    description={packagePageContent.regions[r].description}
     breadcrumbs={breadcrumbs}
   />
 

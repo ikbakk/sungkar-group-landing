@@ -31,7 +31,7 @@ const uiStrings = t(locale);
   <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
     {
       accommodations.map((accommodation) => (
-        <AccommodationCard accommodation={accommodation} />
+        <AccommodationCard accommodation={accommodation} locale={locale} />
       ))
     }
   </div>

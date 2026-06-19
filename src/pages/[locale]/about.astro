@@ -52,12 +52,12 @@ const pageDescription = aboutContent.hero.description;
       { label: uiStrings.breadcrumb.about },
     ]}
   />
-  <StorySection story={aboutContent.story} />
+  <StorySection story={aboutContent.story} locale={locale} />
   <VisionMissionSection
     vision={aboutContent.vision}
     mission={aboutContent.mission}
   />
-  <ServicesSection services={aboutContent.services} />
+  <ServicesSection services={aboutContent.services} locale={locale} />
   <StrengthsSection strengths={aboutContent.strengths} />
   <ValuesSection values={aboutContent.values} />
   <CommitmentSection commitment={aboutContent.commitment} />

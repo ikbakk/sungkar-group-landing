@@ -29,7 +29,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
-import { paketWisataFormFields } from "@/lib/contact-data";
+import { paketWisataFormFields as idPaketWisataFormFields } from "@/lib/contact-data";
+import { paketWisataFormFields as enPaketWisataFormFields } from "@/lib/i18n/en/shared/contact-data";
+import { paketWisataFormFields as arPaketWisataFormFields } from "@/lib/i18n/ar/shared/contact-data";
+import { paketWisataFormFields as msPaketWisataFormFields } from "@/lib/i18n/ms/shared/contact-data";
+import { paketWisataFormFields as zhPaketWisataFormFields } from "@/lib/i18n/zh/shared/contact-data";
 
 import { loadFaq } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
@@ -57,6 +61,16 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const { tour } = Astro.props;
 const uiStrings = t(locale!);
+const paketWisataFormFields =
+  locale === "en"
+    ? enPaketWisataFormFields
+    : locale === "ar"
+      ? arPaketWisataFormFields
+      : locale === "ms"
+        ? msPaketWisataFormFields
+        : locale === "zh"
+          ? zhPaketWisataFormFields
+          : idPaketWisataFormFields;
 
 const r = tour.region as Region;
 
@@ -109,6 +123,7 @@ const itineraryByDay = Object.entries(
 );
 ---
 
+<!-- FIX: many still have not localized language check hardcoded and string template  -->
 <MainLayout
   title={tour.title}
   description={tour.summary}
@@ -252,6 +267,7 @@ const itineraryByDay = Object.entries(
           mode="section"
           itemName={tour.title}
           region={REGION_LABEL[r]}
+          locale={locale}
         />
       </div>
       <FaqSection

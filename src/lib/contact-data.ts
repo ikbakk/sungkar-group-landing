@@ -225,9 +225,13 @@ export function buildWhatsappMessage(
   if (itemName) {
     parts.push(``);
     if (context === "sewa-mobil") {
-      parts.push(uiStrings.contact.whatsappSewaIntro.replace("{item}", itemName));
+      parts.push(
+        uiStrings.contact.whatsappSewaIntro.replace("{item}", itemName),
+      );
     } else {
-      parts.push(uiStrings.contact.whatsappPaketIntro.replace("{item}", itemName));
+      parts.push(
+        uiStrings.contact.whatsappPaketIntro.replace("{item}", itemName),
+      );
     }
   }
 

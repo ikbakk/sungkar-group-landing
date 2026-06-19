@@ -8,6 +8,7 @@ import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
 import AccommodationCard from "@/components/cards/AccommodationCard.astro";
 
+import { loadContent } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
 export async function getStaticPaths() {
@@ -26,6 +27,8 @@ export async function getStaticPaths() {
 
 const { locale } = Astro.params;
 const uiStrings = t(locale!);
+const pageModule = await loadContent(locale!, "akomodasiPage");
+const { akomodasiPageContent } = pageModule;
 
 interface Props {
   region: Region;
@@ -50,8 +53,8 @@ const breadcrumbs = [
 ---
 
 <MainLayout
-  title={`${uiStrings.akomodasi.title} ${regionName}`}
-  description={`Temukan akomodasi terbaik di ${regionName} untuk pengalaman menginap yang sempurna`}
+  title={`${akomodasiPageContent.hero.title} ${regionName}`}
+  description={akomodasiPageContent.regions[region].description}
   canonical={`/${locale}/accommodations/${region}`}
   image={regionAccommodations[0]?.image}
   locale={locale}

@@ -1,11 +1,11 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-type Props = HTMLAttributes<"a">
+type Props = HTMLAttributes<"a">;
 
-const { class: className, ...props } = Astro.props
+const { class: className, ...props } = Astro.props;
 ---
 
 <a data-slot="typography-a" class={cn(className)} {...props}>
