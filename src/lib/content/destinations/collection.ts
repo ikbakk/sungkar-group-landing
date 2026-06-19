@@ -18,11 +18,7 @@ export async function getDestinations(locale = "id"): Promise<Destination[]> {
 
   for (const entry of entries) {
     const data = entry.data as EntryData;
-    const entryLocale =
-      entry.id
-        .split("/")
-        .pop()
-        ?.replace(/\.(md|mdx)$/, "") || "id";
+    const entryLocale = entry.id.split("/").pop() || "id";
     if (entryLocale !== locale) continue;
 
     results.push({
