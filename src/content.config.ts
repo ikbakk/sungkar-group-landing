@@ -37,6 +37,7 @@ const tourPackages = defineCollection({
   loader: glob({
     pattern: "**/*.{md,mdx}",
     base: "./src/content/tourPackages",
+    generateId: ({ entry }) => entry.replace(/\.(md|mdx)$/, ""),
   }),
   schema: z.object({
     title: z.string(),
@@ -59,6 +60,7 @@ const accommodations = defineCollection({
   loader: glob({
     pattern: "**/*.{md,mdx}",
     base: "./src/content/accommodations",
+    generateId: ({ entry }) => entry.replace(/\.(md|mdx)$/, ""),
   }),
   schema: z.object({
     name: z.string(),
@@ -71,7 +73,11 @@ const accommodations = defineCollection({
 });
 
 const carRental = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/car-rental" }),
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "./src/content/car-rental",
+    generateId: ({ entry }) => entry.replace(/\.(md|mdx)$/, ""),
+  }),
   schema: z.object({
     name: z.string(),
     region: z.enum(["lombok", "sumbawa", "labuan-bajo"]),
@@ -90,6 +96,7 @@ const destinations = defineCollection({
   loader: glob({
     pattern: "**/*.{md,mdx}",
     base: "./src/content/destinations",
+    generateId: ({ entry }) => entry.replace(/\.(md|mdx)$/, ""),
   }),
   schema: z.object({
     title: z.string(),
