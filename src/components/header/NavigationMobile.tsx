@@ -24,7 +24,7 @@ import {
   getLocalizedPath,
   type Locale,
 } from "@/lib/i18n";
-import { t } from "@/lib/i18n/ui-strings";
+import { t } from "@/lib/i18n";
 
 type Props = {
   items: NavItem[];

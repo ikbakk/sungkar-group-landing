@@ -82,4 +82,4 @@ export function formatDate(
   );
 }
 
-export { t } from "./ui-strings";
+export { t } from "./ui-strings/index";

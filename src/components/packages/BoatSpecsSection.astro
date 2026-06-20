@@ -14,13 +14,12 @@ interface Props {
 const { boatName, boatType, boatCapacity, specs, locale = "id" } = Astro.props;
 const uiStrings = t(locale);
 ---
-<!-- FIX: Check typography components -->
+
 <div class="w-full">
   <div class="text-sm uppercase tracking-[0.28em] text-brand-700">
     {uiStrings.paketWisata.boatSpecs}
   </div>
 
-  <!-- TODO: Fix typography components, font-heading to not use bold, it is ugly -->
   <TypographyH2 class="mt-2 font-normal">{boatName}</TypographyH2>
 
   <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -30,8 +29,7 @@ const uiStrings = t(locale);
           <TypographyP class="text-xs uppercase tracking-wider text-muted-foreground">
             {uiStrings.paketWisata.boatType}
           </TypographyP>
-      <!-- TODO: make typographyP and other body use font-sans, typographyH and other heading use font-heading but no bold -->
-          <TypographyP class="mt-1 text-base ">{boatType}</TypographyP>
+          <TypographyP class="mt-1 text-base">{boatType}</TypographyP>
         </div>
       )
     }

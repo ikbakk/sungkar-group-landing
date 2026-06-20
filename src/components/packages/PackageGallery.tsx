@@ -105,7 +105,7 @@ export default function PackageGallery({
 
           {/* Prev button */}
           {images.length > 1 && (
-              <button
+            <button
               onClick={prev}
               className="absolute left-4 top-1/2 z-10 flex size-12 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
               aria-label={uiStrings.gallery.previousImage}

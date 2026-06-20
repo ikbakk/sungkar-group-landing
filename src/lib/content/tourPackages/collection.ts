@@ -24,9 +24,9 @@ type EntryData = {
     name: string;
     description?: string;
     price: string;
-    image: string;
+    images: string[];
   }[];
-  termsAndConditions?: string;
+  termsAndConditions?: string[];
 };
 
 export async function getPackages(locale = "id"): Promise<TourPackage[]> {
@@ -64,7 +64,7 @@ export async function getPackages(locale = "id"): Promise<TourPackage[]> {
       cabins: data.cabins?.map(
         (c): Cabin => ({
           ...c,
-          image: resolveImages([c.image])[0],
+          images: resolveImages(c.images),
         }),
       ),
       termsAndConditions: data.termsAndConditions,

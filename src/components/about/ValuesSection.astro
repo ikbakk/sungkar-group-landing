@@ -25,7 +25,9 @@ const uiStrings = t(locale);
       {
         values.map((value) => (
           <div class="rounded-2xl border border-border bg-surface-soft p-4">
-            <TypographyH3 class="font-heading font-normal text-foreground">{value.title}</TypographyH3>
+            <TypographyH3 class="font-heading font-normal text-foreground">
+              {value.title}
+            </TypographyH3>
 
             <div class="mt-2 text-sm leading-7 text-text-muted">
               {value.description}

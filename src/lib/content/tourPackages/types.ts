@@ -11,7 +11,7 @@ export type Cabin = {
   name: string;
   description?: string;
   price: string;
-  image: ImageSource;
+  images: ImageSource[];
 };
 
 export type TourPackage = {
@@ -43,5 +43,5 @@ export type TourPackage = {
   boatCapacity?: number;
   boatSpecs?: BoatSpec[];
   cabins?: Cabin[];
-  termsAndConditions?: string;
+  termsAndConditions?: string[];
 };

@@ -65,11 +65,11 @@ const tourPackages = defineCollection({
           name: z.string(),
           description: z.string().optional(),
           price: z.string(),
-          image: z.string(),
+          images: z.array(z.string()),
         }),
       )
       .optional(),
-    termsAndConditions: z.string().optional(),
+    termsAndConditions: z.array(z.string()).optional(),
   }),
 });
 

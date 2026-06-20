@@ -53,7 +53,9 @@ const uiStrings = t(locale);
       )}
     >
       {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
-      <TypographyH2 class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl">
+      <TypographyH2
+        class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl"
+      >
         {title}
       </TypographyH2>
       {
@@ -91,7 +93,9 @@ const uiStrings = t(locale);
             <div class="bg-primary/10 text-primary ring-primary/15 flex size-10 items-center justify-center rounded-lg ring-1 transition-transform ring-inset group-hover/service:scale-105">
               <Icon name={service.icon ?? "layout-grid"} class="size-5" />
             </div>
-            <TypographyH3 class="text-base tracking-tight">{service.title}</TypographyH3>
+            <TypographyH3 class="text-base tracking-tight">
+              {service.title}
+            </TypographyH3>
             <p class="text-muted-foreground text-sm leading-relaxed">
               {service.description}
             </p>

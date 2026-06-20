@@ -22,12 +22,8 @@ const {
   locale = "id",
 } = Astro.props;
 const uiStrings = t(locale);
-const resolvedTitle =
-  title ||
-  uiStrings.contact.mapTitle;
-const resolvedDescription =
-  description ||
-  uiStrings.contact.mapDescription;
+const resolvedTitle = title || uiStrings.contact.mapTitle;
+const resolvedDescription = description || uiStrings.contact.mapDescription;
 ---
 
 <div class="grid lg:grid-cols-2 min-h-80">

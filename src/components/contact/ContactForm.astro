@@ -53,6 +53,25 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
         : r.charAt(0).toUpperCase() + r.slice(1),
   }),
 );
+
+const formClientConfig = {
+  whatsappNumber: whatsappNumber,
+  packagesData: packagesData,
+  choosePackageLabel: uiStrings.contact.choosePackage,
+  selectLocationFirstLabel: uiStrings.contact.selectLocationFirst,
+  whatsappGreeting: uiStrings.contact.whatsappGreeting,
+  whatsappLocationLabel: uiStrings.contact.whatsappLocation,
+  whatsappFormDateLabel: uiStrings.contact.whatsappFormDate,
+  whatsappFormGuestsLabel: uiStrings.contact.whatsappFormGuests,
+  whatsappFormMessageLabel: uiStrings.contact.whatsappFormMessage,
+  whatsappFormPackageLabel: uiStrings.contact.whatsappFormPackage,
+  whatsappFollowUp: uiStrings.contact.whatsappFollowUp,
+  regionLabels: {
+    lombok: "Lombok",
+    sumbawa: "Sumbawa",
+    "labuan-bajo": "Labuan Bajo",
+  },
+};
 ---
 
 <Card class="border-border bg-brand-900 text-white">
@@ -220,178 +239,17 @@ const regions = Array.from(new Set(packagesData.map((p) => p.region))).map(
   </CardContent>
 </Card>
 
-<script
-  is:inline
-  define:vars={{
-    whatsappNumber,
-    packagesData,
-    choosePackageLabel: uiStrings.contact.choosePackage,
-    selectLocationFirstLabel: uiStrings.contact.selectLocationFirst,
-    whatsappGreeting: uiStrings.contact.whatsappGreeting,
-    whatsappLocationLabel: uiStrings.contact.whatsappLocation,
-    whatsappFormDateLabel: uiStrings.contact.whatsappFormDate,
-    whatsappFormGuestsLabel: uiStrings.contact.whatsappFormGuests,
-    whatsappFormMessageLabel: uiStrings.contact.whatsappFormMessage,
-    whatsappFormPackageLabel: uiStrings.contact.whatsappFormPackage,
-    whatsappFollowUp: uiStrings.contact.whatsappFollowUp,
-  }}
+<div
+  id="contact-form-data"
+  data-config={JSON.stringify(formClientConfig)}
+  class="hidden"
 >
-  var locationSelect = document.querySelector('[name="location"]');
-  var packageSelect = document.querySelector('[name="package"]');
-  var submitBtn = document.getElementById("contact-whatsapp");
+</div>
 
-  function updateButton() {
-    var travelDate = document.getElementById("travelDate")
-      ? document.getElementById("travelDate").value
-      : "";
-    var guests = document.getElementById("guests")
-      ? document.getElementById("guests").value
-      : "";
-    var location = locationSelect ? locationSelect.value : "";
-    var pkg = packageSelect ? packageSelect.value : "";
+<script>
+  import { initContactForm } from "./ContactForm.client";
 
-    if (submitBtn) {
-      submitBtn.disabled = !(travelDate && guests && location && pkg);
-    }
-  }
-
-  function updatePackages() {
-    var region = locationSelect ? locationSelect.value : "";
-    if (!region) {
-      packageSelect.innerHTML =
-        '<option value="">' + selectLocationFirstLabel + "</option>";
-      packageSelect.disabled = true;
-      updateButton();
-      return;
-    }
-
-    var filtered = packagesData.filter(function (p) {
-      return p.region === region;
-    });
-
-    var groups = {};
-    for (var i = 0; i < filtered.length; i++) {
-      var p = filtered[i];
-      if (!groups[p.collectionSlug]) {
-        groups[p.collectionSlug] = {
-          title: p.collectionTitle,
-          packages: [],
-        };
-      }
-      groups[p.collectionSlug].packages.push(p);
-    }
-
-    var html = '<option value="">' + choosePackageLabel + "</option>";
-    var groupKeys = Object.keys(groups);
-    for (var g = 0; g < groupKeys.length; g++) {
-      var group = groups[groupKeys[g]];
-      html += '<optgroup label="' + group.title + '">';
-      for (var k = 0; k < group.packages.length; k++) {
-        var pkg = group.packages[k];
-        html +=
-          '<option value="' +
-          pkg.title.replace(/"/g, "&quot;") +
-          '">' +
-          pkg.title +
-          "</option>";
-      }
-      html += "</optgroup>";
-    }
-
-    packageSelect.innerHTML = html;
-    packageSelect.value = "";
-    packageSelect.disabled = false;
-    updateButton();
-  }
-
-  locationSelect.addEventListener("change", updatePackages);
-  packageSelect.addEventListener("change", updateButton);
-
-  var travelDateInput = document.getElementById("travelDate");
-  var guestsInput = document.getElementById("guests");
-
-  if (travelDateInput) {
-    travelDateInput.addEventListener("input", updateButton);
-  }
-  if (guestsInput) {
-    guestsInput.addEventListener("input", updateButton);
-  }
-
-  async function submitForm() {
-    var form = document.getElementById("availability-form");
-    var accessKey = form.querySelector('[name="access_key"]').value;
-
-    // Submit to Web3Forms if access key is configured
-    if (accessKey) {
-      var formData = new FormData(form);
-      try {
-        await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          body: formData,
-        });
-      } catch (e) {
-        console.warn("Form backend unreachable, falling back to WhatsApp only");
-      }
-    }
-
-    // Always open WhatsApp
-    openWhatsApp();
-  }
-
-  function openWhatsApp() {
-    var travelDate = document.getElementById("travelDate")
-      ? document.getElementById("travelDate").value
-      : "";
-    var guests = document.getElementById("guests")
-      ? document.getElementById("guests").value
-      : "";
-    var location = locationSelect ? locationSelect.value : "";
-    var packageName = packageSelect ? packageSelect.value : "";
-    var message = document.getElementById("message")
-      ? document.getElementById("message").value
-      : "";
-
-    var lines = [whatsappGreeting, ""];
-
-    if (location) {
-      var regionLabels = {
-        lombok: "Lombok",
-        sumbawa: "Sumbawa",
-        "labuan-bajo": "Labuan Bajo",
-      };
-      lines.push(
-        whatsappLocationLabel.replace(
-          "{region}",
-          regionLabels[location] || location,
-        ),
-      );
-    }
-
-    if (packageName) {
-      lines.push(whatsappFormPackageLabel.replace("{package}", packageName));
-    }
-
-    lines.push("");
-    lines.push(whatsappFormDateLabel.replace("{date}", travelDate));
-    lines.push(whatsappFormGuestsLabel.replace("{guests}", guests));
-
-    if (message) {
-      lines.push(whatsappFormMessageLabel.replace("{message}", message));
-    }
-
-    lines.push("");
-    lines.push(whatsappFollowUp);
-
-    var whatsappMessage = lines.join("\n");
-    var url =
-      "https://wa.me/" +
-      whatsappNumber +
-      "?text=" +
-      encodeURIComponent(whatsappMessage);
-    window.open(url, "_blank");
-  }
-
-  submitBtn.addEventListener("click", submitForm);
-
-  updateButton();
+  const el = document.getElementById("contact-form-data");
+  const cfg = JSON.parse(el?.getAttribute("data-config") ?? "{}");
+  initContactForm(cfg);
 </script>

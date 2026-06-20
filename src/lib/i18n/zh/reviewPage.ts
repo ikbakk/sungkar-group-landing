@@ -1,5 +1,9 @@
 export type { Review, MarqueeReview } from "@/lib/content/reviews/reviews-data";
-export { reviews, reviewStats, toMarqueeReviews } from "@/lib/content/reviews/reviews-data";
+export {
+  reviews,
+  reviewStats,
+  toMarqueeReviews,
+} from "@/lib/content/reviews/reviews-data";
 
 export const reviewsPageContent = {
   hero: {

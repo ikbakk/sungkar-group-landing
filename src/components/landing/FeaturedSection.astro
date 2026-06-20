@@ -34,6 +34,9 @@ const {
     image: { src: tour.image, alt: tour.title },
     title: tour.title,
     description: tour.description,
-    href: localizeHref(`/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`, locale),
+    href: localizeHref(
+      `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`,
+      locale,
+    ),
   }))}
 />

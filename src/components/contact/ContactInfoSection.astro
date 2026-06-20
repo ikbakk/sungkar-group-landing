@@ -15,12 +15,9 @@ interface Props {
 const { businessInfo, title, description, locale = "id" } = Astro.props;
 const uiStrings = t(locale);
 
-const resolvedTitle =
-  title ||
-  uiStrings.contact.contactInfoTitle;
+const resolvedTitle = title || uiStrings.contact.contactInfoTitle;
 const resolvedDescription =
-  description ||
-  uiStrings.contact.contactInfoDescription;
+  description || uiStrings.contact.contactInfoDescription;
 const socialHeading = uiStrings.contact.followUs;
 const phoneLabel = uiStrings.contact.phoneWhatsapp;
 ---
