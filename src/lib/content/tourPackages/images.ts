@@ -13,6 +13,8 @@ import {
 const registry: Record<string, ImageSource> = {
   "hero/hero.webp": HERO.hero,
   "hero/hero-lombok.webp": HERO.heroLombok,
+  "hero/hero-sumbawa.webp": GALLERY.whaleshark,
+  "hero/hero-labuan-bajo.webp": GALLERY.tourSnorkeling,
 
   "destinations/gili.webp": DESTINATIONS.gili,
   "destinations/lombok.webp": DESTINATIONS.lombok,
@@ -65,6 +67,71 @@ const registry: Record<string, ImageSource> = {
   "legality/sk.webp": LEGALITY.sk,
 };
 
+const groups: Record<string, Record<string, ImageSource>> = {
+  hero: HERO as Record<string, ImageSource>,
+  destinations: DESTINATIONS as Record<string, ImageSource>,
+  gallery: GALLERY as Record<string, ImageSource>,
+  accommodations: ACCOMMODATIONS as Record<string, ImageSource>,
+  vehicles: VEHICLES as Record<string, ImageSource>,
+  brand: BRAND as Record<string, ImageSource>,
+  legality: LEGALITY as Record<string, ImageSource>,
+};
+
+function toCamel(fileName: string): string {
+  return fileName
+    .replace(/\.[^/.]+$/, "")
+    .replace(/[-_ ]+([a-zA-Z0-9])/g, (_, c) => c.toUpperCase())
+    .replace(/^([A-Z])/, (m) => m.toLowerCase());
+}
+
+function resolveRegistryPath(path: string): ImageSource | undefined {
+  const [groupName, ...rest] = path.split("/");
+  if (!groupName || rest.length === 0) return undefined;
+
+  const group = groups[groupName];
+  if (!group) return undefined;
+
+  return group[toCamel(rest.join("/"))];
+}
+
+function resolveFallbackImage(path: string): ImageSource | undefined {
+  if (path.startsWith("hero/")) {
+    if (path.includes("sumbawa")) return GALLERY.whaleshark;
+    if (path.includes("lombok")) return HERO.heroLombok;
+    return GALLERY.tourSnorkeling;
+  }
+
+  if (path.startsWith("gallery/")) {
+    if (path.includes("whaleshark") || path.includes("sumbawa")) {
+      return GALLERY.whaleshark;
+    }
+
+    if (path.includes("lombok") || path.includes("gili") || path.includes("kuta")) {
+      return GALLERY.kutaBeach;
+    }
+
+    return GALLERY.tourSnorkeling;
+  }
+
+  if (path.startsWith("destinations/")) {
+    if (path.includes("sumbawa")) return DESTINATIONS.sumbawa;
+    if (path.includes("lombok") || path.includes("gili") || path.includes("rinjani")) {
+      return DESTINATIONS.lombok;
+    }
+
+    return GALLERY.tourSnorkeling;
+  }
+
+  if (path.startsWith("accommodations/")) return ACCOMMODATIONS.lombok;
+  if (path.startsWith("vehicles/")) return VEHICLES.rental;
+
+  return undefined;
+}
+
+export function resolveImage(path: string): ImageSource {
+  return registry[path] ?? resolveRegistryPath(path) ?? resolveFallbackImage(path) ?? path;
+}
+
 export function resolveImages(paths: string[]): ImageSource[] {
-  return paths.map((p) => registry[p] ?? p);
+  return paths.map(resolveImage);
 }

@@ -1,0 +1,226 @@
+{
+  "slug": "deluxe-gaisan",
+  "region": "labuan-bajo",
+  "collectionSlug": "phinisi-deluxe-charter",
+  "images": [
+    "hero/gaisan-deluxe.webp",
+    "gallery/gaisan-deluxe-boat-02.webp",
+    "gallery/gaisan-deluxe-boat-03.webp",
+    "gallery/gaisan-deluxe-boat-04.webp",
+    "gallery/gaisan-deluxe-boat-05.webp",
+    "gallery/gaisan-deluxe-boat-06.webp",
+    "gallery/gaisan-deluxe-boat-07.webp",
+    "gallery/gaisan-deluxe-boat-08.webp",
+    "gallery/gaisan-deluxe-boat-09.webp",
+    "gallery/gaisan-deluxe-boat-10.webp",
+    "gallery/gaisan-deluxe-boat-11.webp",
+    "gallery/gaisan-deluxe-boat-12.webp",
+    "gallery/gaisan-deluxe-boat-13.webp",
+    "gallery/gaisan-deluxe-boat-14.webp",
+    "gallery/gaisan-deluxe-boat-15.webp",
+    "gallery/gaisan-deluxe-facility-captain-room.webp",
+    "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
+    "gallery/gaisan-deluxe-facility-jacuzzi-01.webp",
+    "gallery/gaisan-deluxe-facility-jacuzzi-02.webp",
+    "gallery/gaisan-deluxe-facility-jacuzzi-03.webp",
+    "gallery/gaisan-deluxe-facility-outdoor-dining-room-01.webp",
+    "gallery/gaisan-deluxe-facility-outdoor-dining-room-02.webp",
+    "gallery/gaisan-deluxe-facility-outdoor-dining-room-03.webp",
+    "gallery/gaisan-deluxe-sundeck.webp"
+  ],
+  "boatName": "Gaisan",
+  "boatType": "Deluxe Phinisi",
+  "boatCapacity": 19,
+  "boatSpecs": [
+    {
+      "label": "Panjang Kapal",
+      "value": "30 Meter"
+    },
+    {
+      "label": "Lebar Kapal",
+      "value": "6,5 Meter"
+    },
+    {
+      "label": "Kecepatan Jelajah",
+      "value": "7-10 Knot"
+    },
+    {
+      "label": "Kapasitas Air Tawar",
+      "value": "13000 Liter"
+    },
+    {
+      "label": "Kapasitas Bahan Bakar",
+      "value": "8000 Liter"
+    },
+    {
+      "label": "Mesin",
+      "value": "Mitsubishi 8D C9"
+    },
+    {
+      "label": "Generator",
+      "value": "PS120-30 kVA, PS120-22 kVA"
+    },
+    {
+      "label": "Navigasi",
+      "value": "AIS, Radar, Kompas, GPS, Peta"
+    },
+    {
+      "label": "Radio",
+      "value": "SBB Radio, VHF Radio"
+    },
+    {
+      "label": "Peralatan Keselamatan",
+      "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+    },
+    {
+      "label": "Speedboat",
+      "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+    },
+    {
+      "label": "Kabin",
+      "value": "9 Kabin dengan AC dan Kamar Mandi Pribadi"
+    },
+    {
+      "label": "Jumlah Kabin",
+      "value": "9 Kabin"
+    },
+    {
+      "label": "Fasilitas Tambahan",
+      "value": "Jacuzzi, Hot Shower, Karaoke Set, Ruang Makan Dalam dan Luar"
+    }
+  ],
+  "cabins": [
+    {
+      "name": "Superior Cabin 1 (Lower Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
+        "gallery/gaisan-deluxe-superior-cabin-1-02.webp",
+        "gallery/gaisan-deluxe-superior-cabin-1-03.webp",
+        "gallery/gaisan-deluxe-superior-cabin-1-04.webp"
+      ]
+    },
+    {
+      "name": "Superior Cabin 2 (Lower Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
+        "gallery/gaisan-deluxe-superior-cabin-2-02.webp",
+        "gallery/gaisan-deluxe-superior-cabin-2-03.webp",
+        "gallery/gaisan-deluxe-superior-cabin-2-04.webp"
+      ]
+    },
+    {
+      "name": "Superior Cabin 3 (Lower Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
+        "gallery/gaisan-deluxe-superior-cabin-3-02.webp",
+        "gallery/gaisan-deluxe-superior-cabin-3-03.webp"
+      ]
+    },
+    {
+      "name": "Superior Cabin 4 (Lower Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
+        "gallery/gaisan-deluxe-superior-cabin-4-02.webp",
+        "gallery/gaisan-deluxe-superior-cabin-4-03.webp",
+        "gallery/gaisan-deluxe-superior-cabin-4-04.webp",
+        "gallery/gaisan-deluxe-superior-cabin-4-05.webp"
+      ]
+    },
+    {
+      "name": "Signature Ocean 1 (Main Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
+        "gallery/gaisan-deluxe-signature-ocean-1-02.webp",
+        "gallery/gaisan-deluxe-signature-ocean-1-03.webp",
+        "gallery/gaisan-deluxe-signature-ocean-1-04.webp"
+      ]
+    },
+    {
+      "name": "Signature Ocean 2 (Main Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
+        "gallery/gaisan-deluxe-signature-ocean-2-02.webp",
+        "gallery/gaisan-deluxe-signature-ocean-2-03.webp"
+      ]
+    },
+    {
+      "name": "Deluxe Ocean (Upper Deck)",
+      "description": "Queen Bed dan extra bed, kamar mandi pribadi, AC, berada di dek atas, kapasitas 1-3 orang.",
+      "capacity": "1-3",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
+        "gallery/gaisan-deluxe-deluxe-ocean-02.webp",
+        "gallery/gaisan-deluxe-deluxe-ocean-03.webp",
+        "gallery/gaisan-deluxe-deluxe-ocean-04.webp"
+      ]
+    },
+    {
+      "name": "Master Ocean 1 (Upper Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, balkon pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/gaisan-deluxe-master-ocean-1-01.webp",
+        "gallery/gaisan-deluxe-master-ocean-1-02.webp",
+        "gallery/gaisan-deluxe-master-ocean-1-03.webp",
+        "gallery/gaisan-deluxe-master-ocean-1-04.webp",
+        "gallery/gaisan-deluxe-master-ocean-1-05.webp",
+        "gallery/gaisan-deluxe-master-ocean-1-06.webp"
+      ]
+    },
+    {
+      "name": "Master Ocean 2 (Upper Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, balkon pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/gaisan-deluxe-master-ocean-2-01.webp",
+        "gallery/gaisan-deluxe-master-ocean-2-02.webp",
+        "gallery/gaisan-deluxe-master-ocean-2-03.webp",
+        "gallery/gaisan-deluxe-master-ocean-2-04.webp",
+        "gallery/gaisan-deluxe-master-ocean-2-05.webp"
+      ]
+    }
+  ],
+  "priceList": {
+    "fullDay": {
+      "1-10": 40000000,
+      "addPerPax": 1000000,
+      "maxPax": 19
+    },
+    "2D1N": {
+      "1-10": 51000000,
+      "addPerPax": 1500000,
+      "maxPax": 19
+    },
+    "3D2N": {
+      "1-10": 58000000,
+      "addPerPax": 2500000,
+      "maxPax": 19
+    },
+    "4D3N": {
+      "1-10": 67000000,
+      "addPerPax": 3500000,
+      "maxPax": 19
+    }
+  }
+}
