@@ -32,12 +32,154 @@ import _gallery_gSnorkel from "./gallery/g-snorkel.webp";
 import _gallery_gSukarara2 from "./gallery/g-sukarara-2.webp";
 import _gallery_gSukarara from "./gallery/g-sukarara.webp";
 import _gallery_gWaterfall1 from "./gallery/g-waterfall-1.webp";
+import _gallery_gaisanDeluxeBoat02 from "./gallery/gaisan-deluxe-boat-02.webp";
+import _gallery_gaisanDeluxeBoat03 from "./gallery/gaisan-deluxe-boat-03.webp";
+import _gallery_gaisanDeluxeBoat04 from "./gallery/gaisan-deluxe-boat-04.webp";
+import _gallery_gaisanDeluxeBoat05 from "./gallery/gaisan-deluxe-boat-05.webp";
+import _gallery_gaisanDeluxeBoat06 from "./gallery/gaisan-deluxe-boat-06.webp";
+import _gallery_gaisanDeluxeBoat07 from "./gallery/gaisan-deluxe-boat-07.webp";
+import _gallery_gaisanDeluxeBoat08 from "./gallery/gaisan-deluxe-boat-08.webp";
+import _gallery_gaisanDeluxeBoat09 from "./gallery/gaisan-deluxe-boat-09.webp";
+import _gallery_gaisanDeluxeBoat10 from "./gallery/gaisan-deluxe-boat-10.webp";
+import _gallery_gaisanDeluxeBoat11 from "./gallery/gaisan-deluxe-boat-11.webp";
+import _gallery_gaisanDeluxeBoat12 from "./gallery/gaisan-deluxe-boat-12.webp";
+import _gallery_gaisanDeluxeBoat13 from "./gallery/gaisan-deluxe-boat-13.webp";
+import _gallery_gaisanDeluxeBoat14 from "./gallery/gaisan-deluxe-boat-14.webp";
+import _gallery_gaisanDeluxeBoat15 from "./gallery/gaisan-deluxe-boat-15.webp";
+import _gallery_gaisanDeluxeBoatRaw01 from "./gallery/gaisan-deluxe-boat-raw-01.webp";
+import _gallery_gaisanDeluxeBoatRaw02 from "./gallery/gaisan-deluxe-boat-raw-02.webp";
+import _gallery_gaisanDeluxeBoatRaw03 from "./gallery/gaisan-deluxe-boat-raw-03.webp";
+import _gallery_gaisanDeluxeBoatRaw04 from "./gallery/gaisan-deluxe-boat-raw-04.webp";
+import _gallery_gaisanDeluxeBoatRaw05 from "./gallery/gaisan-deluxe-boat-raw-05.webp";
+import _gallery_gaisanDeluxeBoatRaw06 from "./gallery/gaisan-deluxe-boat-raw-06.webp";
+import _gallery_gaisanDeluxeDeluxeOcean01 from "./gallery/gaisan-deluxe-deluxe-ocean-01.webp";
+import _gallery_gaisanDeluxeDeluxeOcean02 from "./gallery/gaisan-deluxe-deluxe-ocean-02.webp";
+import _gallery_gaisanDeluxeDeluxeOcean03 from "./gallery/gaisan-deluxe-deluxe-ocean-03.webp";
+import _gallery_gaisanDeluxeDeluxeOcean04 from "./gallery/gaisan-deluxe-deluxe-ocean-04.webp";
+import _gallery_gaisanDeluxeFacilityCaptainRoom from "./gallery/gaisan-deluxe-facility-captain-room.webp";
+import _gallery_gaisanDeluxeFacilityIndoorRestaurant from "./gallery/gaisan-deluxe-facility-indoor-restaurant.webp";
+import _gallery_gaisanDeluxeFacilityJacuzzi01 from "./gallery/gaisan-deluxe-facility-jacuzzi-01.webp";
+import _gallery_gaisanDeluxeFacilityJacuzzi02 from "./gallery/gaisan-deluxe-facility-jacuzzi-02.webp";
+import _gallery_gaisanDeluxeFacilityJacuzzi03 from "./gallery/gaisan-deluxe-facility-jacuzzi-03.webp";
+import _gallery_gaisanDeluxeFacilityOutdoorDiningRoom01 from "./gallery/gaisan-deluxe-facility-outdoor-dining-room-01.webp";
+import _gallery_gaisanDeluxeFacilityOutdoorDiningRoom02 from "./gallery/gaisan-deluxe-facility-outdoor-dining-room-02.webp";
+import _gallery_gaisanDeluxeFacilityOutdoorDiningRoom03 from "./gallery/gaisan-deluxe-facility-outdoor-dining-room-03.webp";
+import _gallery_gaisanDeluxeMasterOcean101 from "./gallery/gaisan-deluxe-master-ocean-1-01.webp";
+import _gallery_gaisanDeluxeMasterOcean102 from "./gallery/gaisan-deluxe-master-ocean-1-02.webp";
+import _gallery_gaisanDeluxeMasterOcean103 from "./gallery/gaisan-deluxe-master-ocean-1-03.webp";
+import _gallery_gaisanDeluxeMasterOcean104 from "./gallery/gaisan-deluxe-master-ocean-1-04.webp";
+import _gallery_gaisanDeluxeMasterOcean105 from "./gallery/gaisan-deluxe-master-ocean-1-05.webp";
+import _gallery_gaisanDeluxeMasterOcean106 from "./gallery/gaisan-deluxe-master-ocean-1-06.webp";
+import _gallery_gaisanDeluxeMasterOcean201 from "./gallery/gaisan-deluxe-master-ocean-2-01.webp";
+import _gallery_gaisanDeluxeMasterOcean202 from "./gallery/gaisan-deluxe-master-ocean-2-02.webp";
+import _gallery_gaisanDeluxeMasterOcean203 from "./gallery/gaisan-deluxe-master-ocean-2-03.webp";
+import _gallery_gaisanDeluxeMasterOcean204 from "./gallery/gaisan-deluxe-master-ocean-2-04.webp";
+import _gallery_gaisanDeluxeMasterOcean205 from "./gallery/gaisan-deluxe-master-ocean-2-05.webp";
+import _gallery_gaisanDeluxeSignatureOcean101 from "./gallery/gaisan-deluxe-signature-ocean-1-01.webp";
+import _gallery_gaisanDeluxeSignatureOcean102 from "./gallery/gaisan-deluxe-signature-ocean-1-02.webp";
+import _gallery_gaisanDeluxeSignatureOcean103 from "./gallery/gaisan-deluxe-signature-ocean-1-03.webp";
+import _gallery_gaisanDeluxeSignatureOcean104 from "./gallery/gaisan-deluxe-signature-ocean-1-04.webp";
+import _gallery_gaisanDeluxeSignatureOcean201 from "./gallery/gaisan-deluxe-signature-ocean-2-01.webp";
+import _gallery_gaisanDeluxeSignatureOcean202 from "./gallery/gaisan-deluxe-signature-ocean-2-02.webp";
+import _gallery_gaisanDeluxeSignatureOcean203 from "./gallery/gaisan-deluxe-signature-ocean-2-03.webp";
+import _gallery_gaisanDeluxeSundeck from "./gallery/gaisan-deluxe-sundeck.webp";
+import _gallery_gaisanDeluxeSuperiorCabin101 from "./gallery/gaisan-deluxe-superior-cabin-1-01.webp";
+import _gallery_gaisanDeluxeSuperiorCabin102 from "./gallery/gaisan-deluxe-superior-cabin-1-02.webp";
+import _gallery_gaisanDeluxeSuperiorCabin103 from "./gallery/gaisan-deluxe-superior-cabin-1-03.webp";
+import _gallery_gaisanDeluxeSuperiorCabin104 from "./gallery/gaisan-deluxe-superior-cabin-1-04.webp";
+import _gallery_gaisanDeluxeSuperiorCabin201 from "./gallery/gaisan-deluxe-superior-cabin-2-01.webp";
+import _gallery_gaisanDeluxeSuperiorCabin202 from "./gallery/gaisan-deluxe-superior-cabin-2-02.webp";
+import _gallery_gaisanDeluxeSuperiorCabin203 from "./gallery/gaisan-deluxe-superior-cabin-2-03.webp";
+import _gallery_gaisanDeluxeSuperiorCabin204 from "./gallery/gaisan-deluxe-superior-cabin-2-04.webp";
+import _gallery_gaisanDeluxeSuperiorCabin301 from "./gallery/gaisan-deluxe-superior-cabin-3-01.webp";
+import _gallery_gaisanDeluxeSuperiorCabin302 from "./gallery/gaisan-deluxe-superior-cabin-3-02.webp";
+import _gallery_gaisanDeluxeSuperiorCabin303 from "./gallery/gaisan-deluxe-superior-cabin-3-03.webp";
+import _gallery_gaisanDeluxeSuperiorCabin401 from "./gallery/gaisan-deluxe-superior-cabin-4-01.webp";
+import _gallery_gaisanDeluxeSuperiorCabin402 from "./gallery/gaisan-deluxe-superior-cabin-4-02.webp";
+import _gallery_gaisanDeluxeSuperiorCabin403 from "./gallery/gaisan-deluxe-superior-cabin-4-03.webp";
+import _gallery_gaisanDeluxeSuperiorCabin404 from "./gallery/gaisan-deluxe-superior-cabin-4-04.webp";
+import _gallery_gaisanDeluxeSuperiorCabin405 from "./gallery/gaisan-deluxe-superior-cabin-4-05.webp";
 import _gallery_giliMeno from "./gallery/gili-meno.webp";
+import _gallery_hatiraHelaDeluxeBoat02 from "./gallery/hatira-hela-deluxe-boat-02.webp";
+import _gallery_hatiraHelaDeluxeBoat03 from "./gallery/hatira-hela-deluxe-boat-03.webp";
+import _gallery_hatiraHelaDeluxeBoat04 from "./gallery/hatira-hela-deluxe-boat-04.webp";
+import _gallery_hatiraHelaDeluxeBoat05 from "./gallery/hatira-hela-deluxe-boat-05.webp";
+import _gallery_hatiraHelaDeluxeBoat06 from "./gallery/hatira-hela-deluxe-boat-06.webp";
+import _gallery_hatiraHelaDeluxeBoat07 from "./gallery/hatira-hela-deluxe-boat-07.webp";
+import _gallery_hatiraHelaDeluxeFacility02 from "./gallery/hatira-hela-deluxe-facility-02.webp";
+import _gallery_hatiraHelaDeluxeFacility03 from "./gallery/hatira-hela-deluxe-facility-03.webp";
+import _gallery_hatiraHelaDeluxeFacility04 from "./gallery/hatira-hela-deluxe-facility-04.webp";
+import _gallery_hatiraHelaDeluxeFacility05 from "./gallery/hatira-hela-deluxe-facility-05.webp";
+import _gallery_hatiraHelaDeluxeFacility06 from "./gallery/hatira-hela-deluxe-facility-06.webp";
+import _gallery_hatiraHelaDeluxeFacility07 from "./gallery/hatira-hela-deluxe-facility-07.webp";
+import _gallery_hatiraHelaDeluxeFacility08 from "./gallery/hatira-hela-deluxe-facility-08.webp";
+import _gallery_hatiraHelaDeluxeFacility09 from "./gallery/hatira-hela-deluxe-facility-09.webp";
+import _gallery_hatiraHelaDeluxeFacility10 from "./gallery/hatira-hela-deluxe-facility-10.webp";
+import _gallery_hatiraHelaDeluxeFacility11 from "./gallery/hatira-hela-deluxe-facility-11.webp";
+import _gallery_hatiraHelaDeluxeFacility12 from "./gallery/hatira-hela-deluxe-facility-12.webp";
+import _gallery_hatiraHelaDeluxeFacility13 from "./gallery/hatira-hela-deluxe-facility-13.webp";
+import _gallery_hatiraHelaDeluxeFacility14 from "./gallery/hatira-hela-deluxe-facility-14.webp";
+import _gallery_hatiraHelaDeluxeFacility15 from "./gallery/hatira-hela-deluxe-facility-15.webp";
+import _gallery_hatiraHelaDeluxeFacility16 from "./gallery/hatira-hela-deluxe-facility-16.webp";
+import _gallery_hatiraHelaDeluxeFloorPlan from "./gallery/hatira-hela-deluxe-floor-plan.webp";
+import _gallery_hatiraHelaDeluxeOcean301 from "./gallery/hatira-hela-deluxe-ocean-3-01.webp";
+import _gallery_hatiraHelaDeluxeOcean302 from "./gallery/hatira-hela-deluxe-ocean-3-02.webp";
+import _gallery_hatiraHelaDeluxeOcean303 from "./gallery/hatira-hela-deluxe-ocean-3-03.webp";
+import _gallery_hatiraHelaDeluxeOcean304 from "./gallery/hatira-hela-deluxe-ocean-3-04.webp";
+import _gallery_hatiraHelaDeluxeOcean305 from "./gallery/hatira-hela-deluxe-ocean-3-05.webp";
+import _gallery_hatiraHelaDeluxeOcean306 from "./gallery/hatira-hela-deluxe-ocean-3-06.webp";
+import _gallery_hatiraHelaDeluxeOcean401 from "./gallery/hatira-hela-deluxe-ocean-4-01.webp";
+import _gallery_hatiraHelaDeluxeOcean402 from "./gallery/hatira-hela-deluxe-ocean-4-02.webp";
+import _gallery_hatiraHelaDeluxeOcean403 from "./gallery/hatira-hela-deluxe-ocean-4-03.webp";
+import _gallery_hatiraHelaDeluxeOcean404 from "./gallery/hatira-hela-deluxe-ocean-4-04.webp";
+import _gallery_hatiraHelaDeluxeOcean405 from "./gallery/hatira-hela-deluxe-ocean-4-05.webp";
+import _gallery_hatiraHelaDeluxeOcean501 from "./gallery/hatira-hela-deluxe-ocean-5-01.webp";
+import _gallery_hatiraHelaDeluxeOcean502 from "./gallery/hatira-hela-deluxe-ocean-5-02.webp";
+import _gallery_hatiraHelaDeluxeOcean503 from "./gallery/hatira-hela-deluxe-ocean-5-03.webp";
+import _gallery_hatiraHelaDeluxeOcean504 from "./gallery/hatira-hela-deluxe-ocean-5-04.webp";
+import _gallery_hatiraHelaDeluxeOcean505 from "./gallery/hatira-hela-deluxe-ocean-5-05.webp";
+import _gallery_hatiraHelaDeluxeOcean601 from "./gallery/hatira-hela-deluxe-ocean-6-01.webp";
+import _gallery_hatiraHelaDeluxeOcean602 from "./gallery/hatira-hela-deluxe-ocean-6-02.webp";
+import _gallery_hatiraHelaDeluxeOcean603 from "./gallery/hatira-hela-deluxe-ocean-6-03.webp";
+import _gallery_hatiraHelaDeluxeOcean604 from "./gallery/hatira-hela-deluxe-ocean-6-04.webp";
+import _gallery_hatiraHelaDeluxeOcean605 from "./gallery/hatira-hela-deluxe-ocean-6-05.webp";
+import _gallery_hatiraHelaDeluxeOcean606 from "./gallery/hatira-hela-deluxe-ocean-6-06.webp";
+import _gallery_hatiraHelaDeluxeOcean701 from "./gallery/hatira-hela-deluxe-ocean-7-01.webp";
+import _gallery_hatiraHelaDeluxeOcean702 from "./gallery/hatira-hela-deluxe-ocean-7-02.webp";
+import _gallery_hatiraHelaDeluxeOcean703 from "./gallery/hatira-hela-deluxe-ocean-7-03.webp";
+import _gallery_hatiraHelaDeluxeOcean704 from "./gallery/hatira-hela-deluxe-ocean-7-04.webp";
+import _gallery_hatiraHelaDeluxeOcean705 from "./gallery/hatira-hela-deluxe-ocean-7-05.webp";
+import _gallery_hatiraHelaDeluxeOcean801 from "./gallery/hatira-hela-deluxe-ocean-8-01.webp";
+import _gallery_hatiraHelaDeluxeOcean802 from "./gallery/hatira-hela-deluxe-ocean-8-02.webp";
+import _gallery_hatiraHelaDeluxeOcean803 from "./gallery/hatira-hela-deluxe-ocean-8-03.webp";
+import _gallery_hatiraHelaDeluxeOcean804 from "./gallery/hatira-hela-deluxe-ocean-8-04.webp";
+import _gallery_hatiraHelaDeluxeOcean805 from "./gallery/hatira-hela-deluxe-ocean-8-05.webp";
+import _gallery_hatiraHelaDeluxeSundeck from "./gallery/hatira-hela-deluxe-sundeck.webp";
+import _gallery_hatiraHelaMasterOcean101 from "./gallery/hatira-hela-master-ocean-1-01.webp";
+import _gallery_hatiraHelaMasterOcean102 from "./gallery/hatira-hela-master-ocean-1-02.webp";
+import _gallery_hatiraHelaMasterOcean103 from "./gallery/hatira-hela-master-ocean-1-03.webp";
+import _gallery_hatiraHelaMasterOcean104 from "./gallery/hatira-hela-master-ocean-1-04.webp";
+import _gallery_hatiraHelaMasterOcean105 from "./gallery/hatira-hela-master-ocean-1-05.webp";
+import _gallery_hatiraHelaMasterOcean106 from "./gallery/hatira-hela-master-ocean-1-06.webp";
+import _gallery_hatiraHelaMasterOcean107 from "./gallery/hatira-hela-master-ocean-1-07.webp";
+import _gallery_hatiraHelaMasterOcean201 from "./gallery/hatira-hela-master-ocean-2-01.webp";
+import _gallery_hatiraHelaMasterOcean202 from "./gallery/hatira-hela-master-ocean-2-02.webp";
+import _gallery_hatiraHelaMasterOcean203 from "./gallery/hatira-hela-master-ocean-2-03.webp";
+import _gallery_hatiraHelaMasterOcean204 from "./gallery/hatira-hela-master-ocean-2-04.webp";
+import _gallery_hatiraHelaMasterOcean205 from "./gallery/hatira-hela-master-ocean-2-05.webp";
+import _gallery_hatiraHelaMasterOcean206 from "./gallery/hatira-hela-master-ocean-2-06.webp";
+import _gallery_hatiraHelaMasterOcean207 from "./gallery/hatira-hela-master-ocean-2-07.webp";
+import _gallery_hatiraHelaMasterOcean208 from "./gallery/hatira-hela-master-ocean-2-08.webp";
+import _gallery_hatiraHelaMasterOcean209 from "./gallery/hatira-hela-master-ocean-2-09.webp";
+import _gallery_hatiraHelaMasterOcean210 from "./gallery/hatira-hela-master-ocean-2-10.webp";
+import _gallery_hatiraHelaMasterOcean211 from "./gallery/hatira-hela-master-ocean-2-11.webp";
 import _gallery_kutaBeach2 from "./gallery/kuta-beach-2.webp";
 import _gallery_kutaBeach from "./gallery/kuta-beach.webp";
 import _gallery_tourCultural from "./gallery/tour-cultural.webp";
 import _gallery_tourSnorkeling from "./gallery/tour-snorkeling.webp";
 import _gallery_whaleshark from "./gallery/whaleshark.webp";
+import _hero_gaisanDeluxe from "./hero/gaisan-deluxe.webp";
+import _hero_hatiraHelaDeluxe from "./hero/hatira-hela-deluxe.webp";
 import _hero_heroLombok from "./hero/hero-lombok.webp";
 import _hero_hero from "./hero/hero.webp";
 import _legality_nib from "./legality/nib.webp";
@@ -108,7 +250,147 @@ export const GALLERY = {
   gSukarara2: _gallery_gSukarara2,
   gSukarara: _gallery_gSukarara,
   gWaterfall1: _gallery_gWaterfall1,
+  gaisanDeluxeBoat02: _gallery_gaisanDeluxeBoat02,
+  gaisanDeluxeBoat03: _gallery_gaisanDeluxeBoat03,
+  gaisanDeluxeBoat04: _gallery_gaisanDeluxeBoat04,
+  gaisanDeluxeBoat05: _gallery_gaisanDeluxeBoat05,
+  gaisanDeluxeBoat06: _gallery_gaisanDeluxeBoat06,
+  gaisanDeluxeBoat07: _gallery_gaisanDeluxeBoat07,
+  gaisanDeluxeBoat08: _gallery_gaisanDeluxeBoat08,
+  gaisanDeluxeBoat09: _gallery_gaisanDeluxeBoat09,
+  gaisanDeluxeBoat10: _gallery_gaisanDeluxeBoat10,
+  gaisanDeluxeBoat11: _gallery_gaisanDeluxeBoat11,
+  gaisanDeluxeBoat12: _gallery_gaisanDeluxeBoat12,
+  gaisanDeluxeBoat13: _gallery_gaisanDeluxeBoat13,
+  gaisanDeluxeBoat14: _gallery_gaisanDeluxeBoat14,
+  gaisanDeluxeBoat15: _gallery_gaisanDeluxeBoat15,
+  gaisanDeluxeBoatRaw01: _gallery_gaisanDeluxeBoatRaw01,
+  gaisanDeluxeBoatRaw02: _gallery_gaisanDeluxeBoatRaw02,
+  gaisanDeluxeBoatRaw03: _gallery_gaisanDeluxeBoatRaw03,
+  gaisanDeluxeBoatRaw04: _gallery_gaisanDeluxeBoatRaw04,
+  gaisanDeluxeBoatRaw05: _gallery_gaisanDeluxeBoatRaw05,
+  gaisanDeluxeBoatRaw06: _gallery_gaisanDeluxeBoatRaw06,
+  gaisanDeluxeDeluxeOcean01: _gallery_gaisanDeluxeDeluxeOcean01,
+  gaisanDeluxeDeluxeOcean02: _gallery_gaisanDeluxeDeluxeOcean02,
+  gaisanDeluxeDeluxeOcean03: _gallery_gaisanDeluxeDeluxeOcean03,
+  gaisanDeluxeDeluxeOcean04: _gallery_gaisanDeluxeDeluxeOcean04,
+  gaisanDeluxeFacilityCaptainRoom: _gallery_gaisanDeluxeFacilityCaptainRoom,
+  gaisanDeluxeFacilityIndoorRestaurant: _gallery_gaisanDeluxeFacilityIndoorRestaurant,
+  gaisanDeluxeFacilityJacuzzi01: _gallery_gaisanDeluxeFacilityJacuzzi01,
+  gaisanDeluxeFacilityJacuzzi02: _gallery_gaisanDeluxeFacilityJacuzzi02,
+  gaisanDeluxeFacilityJacuzzi03: _gallery_gaisanDeluxeFacilityJacuzzi03,
+  gaisanDeluxeFacilityOutdoorDiningRoom01: _gallery_gaisanDeluxeFacilityOutdoorDiningRoom01,
+  gaisanDeluxeFacilityOutdoorDiningRoom02: _gallery_gaisanDeluxeFacilityOutdoorDiningRoom02,
+  gaisanDeluxeFacilityOutdoorDiningRoom03: _gallery_gaisanDeluxeFacilityOutdoorDiningRoom03,
+  gaisanDeluxeMasterOcean101: _gallery_gaisanDeluxeMasterOcean101,
+  gaisanDeluxeMasterOcean102: _gallery_gaisanDeluxeMasterOcean102,
+  gaisanDeluxeMasterOcean103: _gallery_gaisanDeluxeMasterOcean103,
+  gaisanDeluxeMasterOcean104: _gallery_gaisanDeluxeMasterOcean104,
+  gaisanDeluxeMasterOcean105: _gallery_gaisanDeluxeMasterOcean105,
+  gaisanDeluxeMasterOcean106: _gallery_gaisanDeluxeMasterOcean106,
+  gaisanDeluxeMasterOcean201: _gallery_gaisanDeluxeMasterOcean201,
+  gaisanDeluxeMasterOcean202: _gallery_gaisanDeluxeMasterOcean202,
+  gaisanDeluxeMasterOcean203: _gallery_gaisanDeluxeMasterOcean203,
+  gaisanDeluxeMasterOcean204: _gallery_gaisanDeluxeMasterOcean204,
+  gaisanDeluxeMasterOcean205: _gallery_gaisanDeluxeMasterOcean205,
+  gaisanDeluxeSignatureOcean101: _gallery_gaisanDeluxeSignatureOcean101,
+  gaisanDeluxeSignatureOcean102: _gallery_gaisanDeluxeSignatureOcean102,
+  gaisanDeluxeSignatureOcean103: _gallery_gaisanDeluxeSignatureOcean103,
+  gaisanDeluxeSignatureOcean104: _gallery_gaisanDeluxeSignatureOcean104,
+  gaisanDeluxeSignatureOcean201: _gallery_gaisanDeluxeSignatureOcean201,
+  gaisanDeluxeSignatureOcean202: _gallery_gaisanDeluxeSignatureOcean202,
+  gaisanDeluxeSignatureOcean203: _gallery_gaisanDeluxeSignatureOcean203,
+  gaisanDeluxeSundeck: _gallery_gaisanDeluxeSundeck,
+  gaisanDeluxeSuperiorCabin101: _gallery_gaisanDeluxeSuperiorCabin101,
+  gaisanDeluxeSuperiorCabin102: _gallery_gaisanDeluxeSuperiorCabin102,
+  gaisanDeluxeSuperiorCabin103: _gallery_gaisanDeluxeSuperiorCabin103,
+  gaisanDeluxeSuperiorCabin104: _gallery_gaisanDeluxeSuperiorCabin104,
+  gaisanDeluxeSuperiorCabin201: _gallery_gaisanDeluxeSuperiorCabin201,
+  gaisanDeluxeSuperiorCabin202: _gallery_gaisanDeluxeSuperiorCabin202,
+  gaisanDeluxeSuperiorCabin203: _gallery_gaisanDeluxeSuperiorCabin203,
+  gaisanDeluxeSuperiorCabin204: _gallery_gaisanDeluxeSuperiorCabin204,
+  gaisanDeluxeSuperiorCabin301: _gallery_gaisanDeluxeSuperiorCabin301,
+  gaisanDeluxeSuperiorCabin302: _gallery_gaisanDeluxeSuperiorCabin302,
+  gaisanDeluxeSuperiorCabin303: _gallery_gaisanDeluxeSuperiorCabin303,
+  gaisanDeluxeSuperiorCabin401: _gallery_gaisanDeluxeSuperiorCabin401,
+  gaisanDeluxeSuperiorCabin402: _gallery_gaisanDeluxeSuperiorCabin402,
+  gaisanDeluxeSuperiorCabin403: _gallery_gaisanDeluxeSuperiorCabin403,
+  gaisanDeluxeSuperiorCabin404: _gallery_gaisanDeluxeSuperiorCabin404,
+  gaisanDeluxeSuperiorCabin405: _gallery_gaisanDeluxeSuperiorCabin405,
   giliMeno: _gallery_giliMeno,
+  hatiraHelaDeluxeBoat02: _gallery_hatiraHelaDeluxeBoat02,
+  hatiraHelaDeluxeBoat03: _gallery_hatiraHelaDeluxeBoat03,
+  hatiraHelaDeluxeBoat04: _gallery_hatiraHelaDeluxeBoat04,
+  hatiraHelaDeluxeBoat05: _gallery_hatiraHelaDeluxeBoat05,
+  hatiraHelaDeluxeBoat06: _gallery_hatiraHelaDeluxeBoat06,
+  hatiraHelaDeluxeBoat07: _gallery_hatiraHelaDeluxeBoat07,
+  hatiraHelaDeluxeFacility02: _gallery_hatiraHelaDeluxeFacility02,
+  hatiraHelaDeluxeFacility03: _gallery_hatiraHelaDeluxeFacility03,
+  hatiraHelaDeluxeFacility04: _gallery_hatiraHelaDeluxeFacility04,
+  hatiraHelaDeluxeFacility05: _gallery_hatiraHelaDeluxeFacility05,
+  hatiraHelaDeluxeFacility06: _gallery_hatiraHelaDeluxeFacility06,
+  hatiraHelaDeluxeFacility07: _gallery_hatiraHelaDeluxeFacility07,
+  hatiraHelaDeluxeFacility08: _gallery_hatiraHelaDeluxeFacility08,
+  hatiraHelaDeluxeFacility09: _gallery_hatiraHelaDeluxeFacility09,
+  hatiraHelaDeluxeFacility10: _gallery_hatiraHelaDeluxeFacility10,
+  hatiraHelaDeluxeFacility11: _gallery_hatiraHelaDeluxeFacility11,
+  hatiraHelaDeluxeFacility12: _gallery_hatiraHelaDeluxeFacility12,
+  hatiraHelaDeluxeFacility13: _gallery_hatiraHelaDeluxeFacility13,
+  hatiraHelaDeluxeFacility14: _gallery_hatiraHelaDeluxeFacility14,
+  hatiraHelaDeluxeFacility15: _gallery_hatiraHelaDeluxeFacility15,
+  hatiraHelaDeluxeFacility16: _gallery_hatiraHelaDeluxeFacility16,
+  hatiraHelaDeluxeFloorPlan: _gallery_hatiraHelaDeluxeFloorPlan,
+  hatiraHelaDeluxeOcean301: _gallery_hatiraHelaDeluxeOcean301,
+  hatiraHelaDeluxeOcean302: _gallery_hatiraHelaDeluxeOcean302,
+  hatiraHelaDeluxeOcean303: _gallery_hatiraHelaDeluxeOcean303,
+  hatiraHelaDeluxeOcean304: _gallery_hatiraHelaDeluxeOcean304,
+  hatiraHelaDeluxeOcean305: _gallery_hatiraHelaDeluxeOcean305,
+  hatiraHelaDeluxeOcean306: _gallery_hatiraHelaDeluxeOcean306,
+  hatiraHelaDeluxeOcean401: _gallery_hatiraHelaDeluxeOcean401,
+  hatiraHelaDeluxeOcean402: _gallery_hatiraHelaDeluxeOcean402,
+  hatiraHelaDeluxeOcean403: _gallery_hatiraHelaDeluxeOcean403,
+  hatiraHelaDeluxeOcean404: _gallery_hatiraHelaDeluxeOcean404,
+  hatiraHelaDeluxeOcean405: _gallery_hatiraHelaDeluxeOcean405,
+  hatiraHelaDeluxeOcean501: _gallery_hatiraHelaDeluxeOcean501,
+  hatiraHelaDeluxeOcean502: _gallery_hatiraHelaDeluxeOcean502,
+  hatiraHelaDeluxeOcean503: _gallery_hatiraHelaDeluxeOcean503,
+  hatiraHelaDeluxeOcean504: _gallery_hatiraHelaDeluxeOcean504,
+  hatiraHelaDeluxeOcean505: _gallery_hatiraHelaDeluxeOcean505,
+  hatiraHelaDeluxeOcean601: _gallery_hatiraHelaDeluxeOcean601,
+  hatiraHelaDeluxeOcean602: _gallery_hatiraHelaDeluxeOcean602,
+  hatiraHelaDeluxeOcean603: _gallery_hatiraHelaDeluxeOcean603,
+  hatiraHelaDeluxeOcean604: _gallery_hatiraHelaDeluxeOcean604,
+  hatiraHelaDeluxeOcean605: _gallery_hatiraHelaDeluxeOcean605,
+  hatiraHelaDeluxeOcean606: _gallery_hatiraHelaDeluxeOcean606,
+  hatiraHelaDeluxeOcean701: _gallery_hatiraHelaDeluxeOcean701,
+  hatiraHelaDeluxeOcean702: _gallery_hatiraHelaDeluxeOcean702,
+  hatiraHelaDeluxeOcean703: _gallery_hatiraHelaDeluxeOcean703,
+  hatiraHelaDeluxeOcean704: _gallery_hatiraHelaDeluxeOcean704,
+  hatiraHelaDeluxeOcean705: _gallery_hatiraHelaDeluxeOcean705,
+  hatiraHelaDeluxeOcean801: _gallery_hatiraHelaDeluxeOcean801,
+  hatiraHelaDeluxeOcean802: _gallery_hatiraHelaDeluxeOcean802,
+  hatiraHelaDeluxeOcean803: _gallery_hatiraHelaDeluxeOcean803,
+  hatiraHelaDeluxeOcean804: _gallery_hatiraHelaDeluxeOcean804,
+  hatiraHelaDeluxeOcean805: _gallery_hatiraHelaDeluxeOcean805,
+  hatiraHelaDeluxeSundeck: _gallery_hatiraHelaDeluxeSundeck,
+  hatiraHelaMasterOcean101: _gallery_hatiraHelaMasterOcean101,
+  hatiraHelaMasterOcean102: _gallery_hatiraHelaMasterOcean102,
+  hatiraHelaMasterOcean103: _gallery_hatiraHelaMasterOcean103,
+  hatiraHelaMasterOcean104: _gallery_hatiraHelaMasterOcean104,
+  hatiraHelaMasterOcean105: _gallery_hatiraHelaMasterOcean105,
+  hatiraHelaMasterOcean106: _gallery_hatiraHelaMasterOcean106,
+  hatiraHelaMasterOcean107: _gallery_hatiraHelaMasterOcean107,
+  hatiraHelaMasterOcean201: _gallery_hatiraHelaMasterOcean201,
+  hatiraHelaMasterOcean202: _gallery_hatiraHelaMasterOcean202,
+  hatiraHelaMasterOcean203: _gallery_hatiraHelaMasterOcean203,
+  hatiraHelaMasterOcean204: _gallery_hatiraHelaMasterOcean204,
+  hatiraHelaMasterOcean205: _gallery_hatiraHelaMasterOcean205,
+  hatiraHelaMasterOcean206: _gallery_hatiraHelaMasterOcean206,
+  hatiraHelaMasterOcean207: _gallery_hatiraHelaMasterOcean207,
+  hatiraHelaMasterOcean208: _gallery_hatiraHelaMasterOcean208,
+  hatiraHelaMasterOcean209: _gallery_hatiraHelaMasterOcean209,
+  hatiraHelaMasterOcean210: _gallery_hatiraHelaMasterOcean210,
+  hatiraHelaMasterOcean211: _gallery_hatiraHelaMasterOcean211,
   kutaBeach2: _gallery_kutaBeach2,
   kutaBeach: _gallery_kutaBeach,
   tourCultural: _gallery_tourCultural,
@@ -118,6 +400,8 @@ export const GALLERY = {
 
 
 export const HERO = {
+  gaisanDeluxe: _hero_gaisanDeluxe,
+  hatiraHelaDeluxe: _hero_hatiraHelaDeluxe,
   heroLombok: _hero_heroLombok,
   hero: _hero_hero,
   lombok: _hero_heroLombok,
