@@ -1,0 +1,32 @@
+{
+  "id": {
+    "name": "Toyota Hiace Commuter",
+    "features": ["Kabin Luas", "AC", "Driver Profesional", "BBM Termasuk"],
+    "bestFor": ["Family Gathering", "Group Tour", "Corporate Trip"],
+    "description": "Sewa Toyota Hiace Commuter Lombok untuk rombongan wisata, gathering perusahaan, dan perjalanan grup dengan kapasitas hingga 14 penumpang."
+  },
+  "en": {
+    "name": "Toyota Hiace Commuter",
+    "features": ["Kabin Luas", "AC", "Driver Profesional", "BBM Termasuk"],
+    "bestFor": ["Family Gathering", "Group Tour", "Corporate Trip"],
+    "description": "Rent a Toyota Hiace Commuter in Lombok for tour groups, company gatherings, and group travel with capacity for up to 14 passengers."
+  },
+  "ar": {
+    "name": "Toyota Hiace Commuter",
+    "features": ["مقصورة واسعة", "مكيف هواء", "سائق محترف", "الوقود مشمول"],
+    "bestFor": ["تجمع عائلي", "جولة جماعية", "رحلة شركات"],
+    "description": "استأجر تويوتا هيايس كوميوتر في لومبوك للجولات الجماعية، تجمعات الشركات، والسفر الجماعي بسعة تصل إلى 14 راكباً."
+  },
+  "ms": {
+    "name": "Toyota Hiace Commuter",
+    "features": ["Kabin Luas", "AC", "Pemandu Profesional", "BBM Termasuk"],
+    "bestFor": ["Family Gathering", "Group Tour", "Corporate Trip"],
+    "description": "Sewa Toyota Hiace Commuter di Lombok untuk kumpulan pelancongan, berkumpul syarikat, dan perjalanan kumpulan dengan kapasiti sehingga 14 penumpang."
+  },
+  "zh": {
+    "name": "Toyota Hiace Commuter",
+    "features": ["宽敞车厢", "空调", "专业司机", "含燃油"],
+    "bestFor": ["家庭聚会", "团体旅行", "企业出行"],
+    "description": "在龙目岛租用丰田Hiace Commuter，适合旅游团、公司聚会和团体出行，最多可容纳14名乘客。"
+  }
+}

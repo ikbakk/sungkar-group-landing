@@ -1,0 +1,67 @@
+{
+  "id": {
+    "name": "Labuan Bajo Komodo Base",
+    "perks": [
+      "Komodo Access",
+      "Trekking Guide",
+      "Park Services",
+      "Photography Tours"
+    ],
+    "regionalHighlights": [
+      "Gate masuk Taman Nasional Komodo",
+      "Ranger briefing dan safety gear",
+      "Pulau Komodo dragon tracking"
+    ],
+    "description": "Basecamp utama untuk petualangan Komodo dengan akses penuh ke Taman Nasional dan pemandu berpengalaman."
+  },
+  "en": {
+    "name": "Labuan Bajo Komodo Base",
+    "perks": [
+      "Komodo Access",
+      "Trekking Guide",
+      "Park Services",
+      "Photography Tours"
+    ],
+    "regionalHighlights": [
+      "Gate masuk Taman Nasional Komodo",
+      "Ranger briefing dan safety gear",
+      "Pulau Komodo dragon tracking"
+    ],
+    "description": "Main basecamp for Komodo adventures with full access to the National Park and experienced guides."
+  },
+  "ar": {
+    "name": "قاعدة كومودو في لابوان باجو",
+    "perks": ["وصول لكومودو", "دليل تخييم", "خدمات الحديقة", "جولات تصوير"],
+    "regionalHighlights": [
+      "بوابة دخول حديقة كومودو الوطنية",
+      "إحاطة الرانجر ومعدات السلامة",
+      "تتبع تنين كومودو في جزيرة كومودو"
+    ],
+    "description": "قاعدة رئيسية لمغامرات كومودو مع وصول كامل للحديقة الوطنية وأدلة ذوي خبرة."
+  },
+  "ms": {
+    "name": "Labuan Bajo Komodo Base",
+    "perks": [
+      "Akses Komodo",
+      "Pemandu Mendaki",
+      "Perkhidmatan Taman",
+      "Pelancongan Fotografi"
+    ],
+    "regionalHighlights": [
+      "Gerbang masuk Taman Negara Komodo",
+      "Briefing ranger dan kelengkapan keselamatan",
+      "Jejak naga Komodo di Pulau Komodo"
+    ],
+    "description": "Basecamp utama untuk petualangan Komodo dengan akses penuh ke Taman Negara dan pemandu berpengalaman."
+  },
+  "zh": {
+    "name": "Labuan Bajo Komodo Base",
+    "perks": ["科莫多通道", "徒步向导", "公园服务", "摄影之旅"],
+    "regionalHighlights": [
+      "科莫多国家公园入口",
+      "护林员简报和安全装备",
+      "科莫多巨蜥追踪"
+    ],
+    "description": "科莫多探险的主要大本营，可全面进入国家公园，配备经验丰富的导游。"
+  }
+}

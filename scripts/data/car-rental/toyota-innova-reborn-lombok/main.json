@@ -1,0 +1,10 @@
+{
+  "slug": "toyota-innova-reborn-lombok",
+  "region": "lombok",
+  "pricePerDay": "Rp 800.000",
+  "seats": 7,
+  "transmission": "Manual",
+  "imageTop": "hero/hero-lombok.webp",
+  "imageBottom": "hero/hero-lombok.webp",
+  "_type": "carRental"
+}

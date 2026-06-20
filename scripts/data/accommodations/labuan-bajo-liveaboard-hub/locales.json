@@ -1,0 +1,72 @@
+{
+  "id": {
+    "name": "Labuan Bajo Liveaboard Hub",
+    "perks": [
+      "Liveaboard Boats",
+      "Diving Equipment",
+      "Sailing Trips",
+      "Crew Services"
+    ],
+    "regionalHighlights": [
+      "Armada kapal paling lengkap",
+      "Paket sailing multi-hari tersedia",
+      "Manta Point diving di puncaknya"
+    ],
+    "description": "Pusat pelayaran Labuan Bajo dengan koleksi liveaboard terbaik untuk petualangan Komodo yang tak terlupakan."
+  },
+  "en": {
+    "name": "Labuan Bajo Liveaboard Hub",
+    "perks": [
+      "Liveaboard Boats",
+      "Diving Equipment",
+      "Sailing Trips",
+      "Crew Services"
+    ],
+    "regionalHighlights": [
+      "Armada kapal paling lengkap",
+      "Paket sailing multi-hari tersedia",
+      "Manta Point diving di puncaknya"
+    ],
+    "description": "Labuan Bajo's sailing hub with the best collection of liveaboards for an unforgettable Komodo adventure."
+  },
+  "ar": {
+    "name": "مركز الإبحار المباشر في لابوان باجو",
+    "perks": [
+      "قوارب الإبحار المباشر",
+      "معدات الغوص",
+      "رحلات إبحار",
+      "خدمات الطاقم"
+    ],
+    "regionalHighlights": [
+      "أكمل أسطول قوارب",
+      "برامج إبحار متعددة الأيام متاحة",
+      "غوص مانتا بوينت في قمته"
+    ],
+    "description": "مركز إبحار لابوان باجو مع أفضل مجموعة قوارب الإبحار المباشر لمغامرة كومودو لا تُنسى."
+  },
+  "ms": {
+    "name": "Labuan Bajo Liveaboard Hub",
+    "perks": [
+      "Kapal Liveaboard",
+      "Peralatan Mendaki",
+      "Perjalanan Layar",
+      "Perkhidmatan Kru"
+    ],
+    "regionalHighlights": [
+      "Armada kapal paling lengkap",
+      "Pakej sailing berbilang hari tersedia",
+      "Mendaki Manta Point di puncaknya"
+    ],
+    "description": "Hab pelayaran Labuan Bajo dengan koleksi liveaboard terbaik untuk petualangan Komodo yang tak terlupakan."
+  },
+  "zh": {
+    "name": "Labuan Bajo Liveaboard Hub",
+    "perks": ["船宿", "潜水装备", "帆船之旅", "船员服务"],
+    "regionalHighlights": [
+      "最齐全的船队",
+      "提供多日帆船套餐",
+      "曼塔角潜水巅峰体验"
+    ],
+    "description": "纳闽巴霍帆船中心，拥有最优质的船宿选择，开启难忘的科莫多探险之旅。"
+  }
+}

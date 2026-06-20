@@ -1,0 +1,10 @@
+{
+  "slug": "kuta-lombok",
+  "_type": "destinations",
+  "image": "destinations/lombok.webp",
+  "gallery": [
+    "gallery/kuta-beach.webp",
+    "gallery/kuta-beach-2.webp",
+    "hero/hero-lombok.webp"
+  ]
+}

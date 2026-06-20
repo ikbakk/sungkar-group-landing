@@ -1,0 +1,10 @@
+{
+  "slug": "toyota-hiace-commuter-lombok",
+  "region": "lombok",
+  "pricePerDay": "Rp 1.000.000",
+  "seats": 14,
+  "transmission": "Manual",
+  "imageTop": "hero/hero-lombok.webp",
+  "imageBottom": "hero/hero-lombok.webp",
+  "_type": "carRental"
+}

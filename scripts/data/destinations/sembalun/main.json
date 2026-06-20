@@ -1,0 +1,10 @@
+{
+  "slug": "sembalun",
+  "_type": "destinations",
+  "image": "destinations/rinjani.webp",
+  "gallery": [
+    "destinations/rinjani.webp",
+    "hero/hero-lombok.webp",
+    "gallery/tour-snorkeling.webp"
+  ]
+}

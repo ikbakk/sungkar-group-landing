@@ -1,0 +1,45 @@
+{
+  "id": {
+    "title": "Sembalun",
+    "region": "Koridor pegunungan",
+    "summary": "Koridor pegunungan yang sering dipakai sebagai titik awal menuju pengalaman Rinjani.",
+    "thingsToDo": [
+      "Pemandangan dataran tinggi",
+      "Perjalanan matahari terbit",
+      "Singgah kebun lokal"
+    ],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "en": {
+    "title": "Sembalun",
+    "region": "Koridor pegunungan",
+    "summary": "Mountain corridor commonly used as a starting point for the Rinjani experience.",
+    "thingsToDo": ["Highland views", "Sunrise journey", "Local farm stops"],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "ar": {
+    "title": "سيمبالون",
+    "region": "ممر الجبال",
+    "summary": "ممر جبلي يستخدم عادة كنقطة انطلاق لتجربة رينجاني.",
+    "thingsToDo": ["مناظر المرتفعات", "رحلة الشروق", "محطات المزارع المحلية"],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "ms": {
+    "title": "Sembalun",
+    "region": "Koridor pegunungan",
+    "summary": "Koridor pegunungan yang biasa digunakan sebagai titik permulaan pengalaman Rinjani.",
+    "thingsToDo": [
+      "Pemandangan pegunungan",
+      "Perjalanan matahari terbit",
+      "Lawatan ladang tempatan"
+    ],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "zh": {
+    "title": "Sembalun",
+    "region": "山区走廊",
+    "summary": "山区走廊，通常作为林贾尼体验的起点。",
+    "thingsToDo": ["高地景观", "日出之旅", "当地农场停留"],
+    "packages": ["3d2n-lombok-signature"]
+  }
+}

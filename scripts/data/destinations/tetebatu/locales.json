@@ -1,0 +1,37 @@
+{
+  "id": {
+    "title": "Tetebatu",
+    "region": "Timur Lombok",
+    "summary": "Desa pegunungan yang lebih tenang dengan lanskap hijau dan ritme kunjungan yang pelan.",
+    "thingsToDo": ["Jalan desa", "Terasering padi", "Singgah air terjun"],
+    "packages": ["village-culture-experience"]
+  },
+  "en": {
+    "title": "Tetebatu",
+    "region": "Timur Lombok",
+    "summary": "A quieter mountain village with green landscapes and a slow visit pace.",
+    "thingsToDo": ["Village walk", "Rice terraces", "Waterfall stops"],
+    "packages": ["village-culture-experience"]
+  },
+  "ar": {
+    "title": "تيتابتو",
+    "region": "شرق لومبوك",
+    "summary": "قرية جبلية أكثر هدوءاً مع مناظر خضراء ووتيرة زيارة بطيئة.",
+    "thingsToDo": ["جولة في القرية", "مدرجات الأرز", "محطات الشلالات"],
+    "packages": ["village-culture-experience"]
+  },
+  "ms": {
+    "title": "Tetebatu",
+    "region": "Timur Lombok",
+    "summary": "Desa pegunungan yang tenang dengan lanskap hijau dan tempo lawatan yang perlahan.",
+    "thingsToDo": ["Jalan kampung", "Sawah terasering", "Air terjun"],
+    "packages": ["village-culture-experience"]
+  },
+  "zh": {
+    "title": "Tetebatu",
+    "region": "龙目岛东部",
+    "summary": "一个更安静的山区村庄，绿意盎然，节奏悠闲。",
+    "thingsToDo": ["村庄漫步", "梯田观光", "瀑布停留"],
+    "packages": ["village-culture-experience"]
+  }
+}

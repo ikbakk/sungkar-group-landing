@@ -62,15 +62,15 @@ Keep the route → component table, directory layout, and "Key Files by Task" ta
 
 All structured content now lives in MDX content collections under `src/content/{type}/{slug}/{locale}.mdx`. Loaded via async bridge functions. Old sync TypeScript data files have been deleted.
 
-| Content Type   | Content Collection | Bridge Function                                                                 | JSON Source                        | Generator                               |
-| -------------- | ------------------ | ------------------------------------------------------------------------------- | ---------------------------------- | --------------------------------------- |
-| Tour Packages  | `tourPackages`     | `getPackages(locale)` from `src/lib/content/tourPackages/collection.ts`         | `scripts/data/*.json`              | `node scripts/generate-tour-mdx.mjs`    |
-| Accommodations | `accommodations`   | `getAccommodations(locale)` from `src/lib/content/accommodations/collection.ts` | `scripts/data/accommodations.json` | `node scripts/generate-content-mdx.mjs` |
-| Car Rental     | `carRental`        | `getVehicles(locale)` from `src/lib/content/car-rental/collection.ts`           | `scripts/data/car-rental.json`     | `node scripts/generate-content-mdx.mjs` |
+| Content Type   | Content Collection | Bridge Function                                                                 | JSON Source                      | Generator                               |
+| -------------- | ------------------ | ------------------------------------------------------------------------------- | -------------------------------- | --------------------------------------- |
+| Tour Packages  | `tourPackages`     | `getPackages(locale)` from `src/lib/content/tourPackages/collection.ts`         | `scripts/data/packages/*/`       | `node scripts/generate-tour-mdx.mjs`    |
+| Accommodations | `accommodations`   | `getAccommodations(locale)` from `src/lib/content/accommodations/collection.ts` | `scripts/data/accommodations/*/` | `node scripts/generate-content-mdx.mjs` |
+| Car Rental     | `carRental`        | `getVehicles(locale)` from `src/lib/content/car-rental/collection.ts`           | `scripts/data/car-rental/*/`     | `node scripts/generate-content-mdx.mjs` |
 
 Navigation uses `createNavigation(packages)` factory functions in each locale's `navigationData.ts` called from `Header.astro`. Landing page computes `featuredTours` by merging locale base with `getPackages()` results in the page files. Tests validate MDX frontmatter directly via `yaml` parsing in vitest (no Astro runtime needed).
 
 ### Adding content
 
-1. **Tour packages**: Add a JSON entry to an existing file in `scripts/data/`, then run `node scripts/generate-tour-mdx.mjs`.
-2. **Accommodations / Car rental**: Edit `scripts/data/accommodations.json` or `scripts/data/car-rental.json`, then run `node scripts/generate-content-mdx.mjs`.
+1. **Tour packages**: Create `scripts/data/packages/{slug}/main.json` (shared fields) and `scripts/data/packages/{slug}/locales.json` (locale blocks), then run `node scripts/generate-tour-mdx.mjs`.
+2. **Accommodations / Car rental / Destinations**: Create `scripts/data/{type}/{slug}/main.json` and `scripts/data/{type}/{slug}/locales.json`, then run `node scripts/generate-content-mdx.mjs`.

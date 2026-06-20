@@ -43,14 +43,14 @@ Multi-language landing site for Sungkar Group — Lombok tour operator. 268 page
 
 All structured content lives in `src/content/` as MDX files generated from JSON sources:
 
-| Content        | Generator                  | JSON Source                        | MDX Location                                     |
-| -------------- | -------------------------- | ---------------------------------- | ------------------------------------------------ |
-| Tour packages  | `generate-tour-mdx.mjs`    | `scripts/data/*.json`              | `src/content/tourPackages/{slug}/{locale}.mdx`   |
-| Accommodations | `generate-content-mdx.mjs` | `scripts/data/accommodations.json` | `src/content/accommodations/{slug}/{locale}.mdx` |
-| Car rental     | `generate-content-mdx.mjs` | `scripts/data/car-rental.json`     | `src/content/car-rental/{slug}/{locale}.mdx`     |
-| Destinations   | `generate-content-mdx.mjs` | `scripts/data/destinations.json`   | `src/content/destinations/{slug}/{locale}.mdx`   |
-| Blog posts     | Write directly             | —                                  | `src/content/blog/{slug}/{locale}.mdx`           |
-| Travel guides  | Write directly             | —                                  | `src/content/guides/{slug}/{locale}.mdx`         |
+| Content        | Generator                  | JSON Source                      | MDX Location                                     |
+| -------------- | -------------------------- | -------------------------------- | ------------------------------------------------ |
+| Tour packages  | `generate-tour-mdx.mjs`    | `scripts/data/packages/*/`       | `src/content/tourPackages/{slug}/{locale}.mdx`   |
+| Accommodations | `generate-content-mdx.mjs` | `scripts/data/accommodations/*/` | `src/content/accommodations/{slug}/{locale}.mdx` |
+| Car rental     | `generate-content-mdx.mjs` | `scripts/data/car-rental/*/`     | `src/content/car-rental/{slug}/{locale}.mdx`     |
+| Destinations   | `generate-content-mdx.mjs` | `scripts/data/destinations/*/`   | `src/content/destinations/{slug}/{locale}.mdx`   |
+| Blog posts     | Write directly             | —                                | `src/content/blog/{slug}/{locale}.mdx`           |
+| Travel guides  | Write directly             | —                                | `src/content/guides/{slug}/{locale}.mdx`         |
 
 Each content type has:
 
@@ -62,7 +62,7 @@ Each content type has:
 
 ### New Tour Package
 
-1. Add a JSON entry to an existing file in `scripts/data/` (or create a new `.json` file)
+1. Create `scripts/data/packages/{slug}/main.json` (shared fields) and `scripts/data/packages/{slug}/locales.json` (locale blocks)
 2. Run `node scripts/generate-tour-mdx.mjs`
 3. Run `npm test` to validate
 
@@ -70,7 +70,7 @@ Each locale reads `title`, `collectionTitle`, `category`, `duration`, `summary`,
 
 ### New Destination / Accommodation / Vehicle
 
-1. Edit `scripts/data/destinations.json`, `accommodations.json`, or `car-rental.json` (each entry has `_type: "destinations"|"accommodations"|"carRental"` to route to the correct collection)
+1. Create `scripts/data/{type}/{slug}/main.json` and `scripts/data/{type}/{slug}/locales.json` (`type` is one of `accommodations`, `car-rental`, `destinations`)
 2. Run `node scripts/generate-content-mdx.mjs`
 3. Run `npm test` to validate
 

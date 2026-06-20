@@ -1,0 +1,10 @@
+{
+  "slug": "sumbawa",
+  "_type": "destinations",
+  "image": "destinations/sumbawa.webp",
+  "gallery": [
+    "destinations/sumbawa.webp",
+    "gallery/whaleshark.webp",
+    "gallery/tour-snorkeling.webp"
+  ]
+}

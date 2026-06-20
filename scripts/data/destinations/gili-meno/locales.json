@@ -1,0 +1,37 @@
+{
+  "id": {
+    "title": "Gili Meno",
+    "region": "Kepulauan Gili",
+    "summary": "Pulau paling sunyi untuk traveler yang ingin suasana privat dan sederhana.",
+    "thingsToDo": ["Pantai tenang", "Snorkeling", "Tempo santai"],
+    "packages": ["snorkeling-gili-escape"]
+  },
+  "en": {
+    "title": "Gili Meno",
+    "region": "Kepulauan Gili",
+    "summary": "The quietest island for travelers seeking a private and simple atmosphere.",
+    "thingsToDo": ["Quiet beach", "Snorkeling", "Relaxed pace"],
+    "packages": ["snorkeling-gili-escape"]
+  },
+  "ar": {
+    "title": "غيلي مينو",
+    "region": "جزر جيلي",
+    "summary": "أهدأ جزيرة للمسافرين الباحثين عن أجواء خاصة وبسيطة.",
+    "thingsToDo": ["شاطئ هادئ", "الغطس", "وتيرة مريحة"],
+    "packages": ["snorkeling-gili-escape"]
+  },
+  "ms": {
+    "title": "Gili Meno",
+    "region": "Kepulauan Gili",
+    "summary": "Pulau paling tenang untuk pelancong yang mencari suasana persendirian dan sederhana.",
+    "thingsToDo": ["Pantai sepi", "Snorkeling", "Tempo santai"],
+    "packages": ["snorkeling-gili-escape"]
+  },
+  "zh": {
+    "title": "Gili Meno",
+    "region": "吉利群岛",
+    "summary": "最安静的岛屿，适合寻求私密和简约氛围的旅行者。",
+    "thingsToDo": ["安静海滩", "浮潜", "放松节奏"],
+    "packages": ["snorkeling-gili-escape"]
+  }
+}

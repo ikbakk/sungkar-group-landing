@@ -1,0 +1,32 @@
+{
+  "id": {
+    "name": "Medium Bus",
+    "features": ["Kapasitas Besar", "AC", "Driver Profesional", "Bagasi Luas"],
+    "bestFor": ["Study Tour", "Company Gathering", "Rombongan Besar"],
+    "description": "Sewa Medium Bus Lombok untuk rombongan wisata, study tour, outing perusahaan, dan kegiatan grup dengan kapasitas hingga 30 penumpang."
+  },
+  "en": {
+    "name": "Medium Bus",
+    "features": ["Kapasitas Besar", "AC", "Driver Profesional", "Bagasi Luas"],
+    "bestFor": ["Study Tour", "Company Gathering", "Rombongan Besar"],
+    "description": "Rent a Medium Bus in Lombok for tour groups, study tours, company outings, and group activities with capacity for up to 30 passengers."
+  },
+  "ar": {
+    "name": "Medium Bus",
+    "features": ["سعة كبيرة", "مكيف هواء", "سائق محترف", "حقيبة واسعة"],
+    "bestFor": ["جولة دراسية", "تجمع شركات", "مجموعة كبيرة"],
+    "description": "استأجر حافلة متوسطة في لومبوك للجولات الجماعية، الجولات الدراسية، تجمعات الشركات، والأنشطة الجماعية بسعة تصل إلى 30 راكباً."
+  },
+  "ms": {
+    "name": "Medium Bus",
+    "features": ["Kapasiti Besar", "AC", "Pemandu Profesional", "Bagasi Luas"],
+    "bestFor": ["Study Tour", "Company Gathering", "Rombongan Besar"],
+    "description": "Sewa Medium Bus di Lombok untuk kumpulan pelancongan, study tour, company outing, dan aktiviti kumpulan dengan kapasiti sehingga 30 penumpang."
+  },
+  "zh": {
+    "name": "中型巴士",
+    "features": ["大容量", "空调", "专业司机", "宽敞行李厢"],
+    "bestFor": ["研学旅行", "公司聚会", "大型团体"],
+    "description": "在龙目岛租用中型巴士，适合旅游团、研学旅行、公司郊游和团体活动，最多可容纳30名乘客。"
+  }
+}

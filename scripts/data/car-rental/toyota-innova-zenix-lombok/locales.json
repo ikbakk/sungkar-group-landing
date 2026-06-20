@@ -1,0 +1,47 @@
+{
+  "id": {
+    "name": "Toyota Innova Zenix",
+    "features": [
+      "Driver Profesional",
+      "BBM Termasuk",
+      "Air Mineral",
+      "Premium Interior"
+    ],
+    "bestFor": ["VIP Travel", "Corporate Trip", "Premium Family Tour"],
+    "description": "Sewa Toyota Innova Zenix Lombok dengan kenyamanan premium, interior modern, dan performa terbaik untuk perjalanan wisata maupun bisnis."
+  },
+  "en": {
+    "name": "Toyota Innova Zenix",
+    "features": [
+      "Driver Profesional",
+      "BBM Termasuk",
+      "Air Mineral",
+      "Premium Interior"
+    ],
+    "bestFor": ["VIP Travel", "Corporate Trip", "Premium Family Tour"],
+    "description": "Rent a Toyota Innova Zenix in Lombok with premium comfort, modern interior, and top performance for both leisure and business travel."
+  },
+  "ar": {
+    "name": "Toyota Innova Zenix",
+    "features": ["سائق محترف", "الوقود مشمول", "مياه معدنية", "مقصورة فاخرة"],
+    "bestFor": ["سفر كبار الشخصيات", "رحلة شركات", "جولة عائلية فاخرة"],
+    "description": "استأجر تويوتا إنوفا زينيكس في لومبوك مع راحة فاخرة، مقصورة حديثة، وأداء عالٍ للسفر الترفيهي والعملية."
+  },
+  "ms": {
+    "name": "Toyota Innova Zenix",
+    "features": [
+      "Pemandu Profesional",
+      "BBM Termasuk",
+      "Air Mineral",
+      "Interior Premium"
+    ],
+    "bestFor": ["VIP Travel", "Corporate Trip", "Premium Family Tour"],
+    "description": "Sewa Toyota Innova Zenix di Lombok dengan kesenangan premium, interior moden, dan prestasi terbaik untuk pelancongan rehat dan perniagaan."
+  },
+  "zh": {
+    "name": "Toyota Innova Zenix",
+    "features": ["专业司机", "含燃油", "矿泉水", "高级内饰"],
+    "bestFor": ["VIP出行", "企业差旅", "高级家庭游"],
+    "description": "在龙目岛租用丰田Innova Zenix，享受高级舒适、现代内饰和卓越性能，适合休闲和商务出行。"
+  }
+}

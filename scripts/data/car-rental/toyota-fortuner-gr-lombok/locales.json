@@ -1,0 +1,52 @@
+{
+  "id": {
+    "name": "Toyota Fortuner GR",
+    "features": [
+      "SUV Premium",
+      "Driver Profesional",
+      "BBM Termasuk",
+      "Air Mineral"
+    ],
+    "bestFor": ["VIP Tour", "Executive Travel", "Premium Vacation"],
+    "description": "Sewa Toyota Fortuner GR Lombok dengan tampilan mewah dan kenyamanan premium. Cocok untuk tamu VIP, perjalanan bisnis, maupun wisata eksklusif."
+  },
+  "en": {
+    "name": "Toyota Fortuner GR",
+    "features": [
+      "SUV Premium",
+      "Driver Profesional",
+      "BBM Termasuk",
+      "Air Mineral"
+    ],
+    "bestFor": ["VIP Tour", "Executive Travel", "Premium Vacation"],
+    "description": "Rent a Toyota Fortuner GR in Lombok with a luxurious appearance and premium comfort. Suitable for VIP guests, business trips, and exclusive tours."
+  },
+  "ar": {
+    "name": "Toyota Fortuner GR",
+    "features": [
+      "سيارة دفع رباعي فاخرة",
+      "سائق محترف",
+      "الوقود مشمول",
+      "مياه معدنية"
+    ],
+    "bestFor": ["جولة كبار الشخصيات", "سفر تنفيذي", "عطلة فاخرة"],
+    "description": "استأجر تويوتا فورتشنر GR في لومبوك بمظهر فاخر وراحة متميزة. مناسب للضيوف المميزين، رحلات العمل، والجولات الحصرية."
+  },
+  "ms": {
+    "name": "Toyota Fortuner GR",
+    "features": [
+      "SUV Premium",
+      "Pemandu Profesional",
+      "BBM Termasuk",
+      "Air Mineral"
+    ],
+    "bestFor": ["VIP Tour", "Executive Travel", "Premium Vacation"],
+    "description": "Sewa Toyota Fortuner GR di Lombok dengan penampilan mewah dan kesenangan premium. Sesuai untuk tetamu VIP, perjalanan perniagaan, dan pelancongan eksklusif."
+  },
+  "zh": {
+    "name": "Toyota Fortuner GR",
+    "features": ["高级SUV", "专业司机", "含燃油", "矿泉水"],
+    "bestFor": ["VIP旅行", "行政出行", "高端度假"],
+    "description": "在龙目岛租用丰田Fortuner GR，外观豪华，舒适高端。适合VIP客人、商务差旅和专属旅行。"
+  }
+}

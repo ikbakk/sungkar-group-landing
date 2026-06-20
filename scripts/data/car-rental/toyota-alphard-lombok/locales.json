@@ -1,0 +1,47 @@
+{
+  "id": {
+    "name": "Toyota Alphard",
+    "features": [
+      "Luxury MPV",
+      "Captain Seat",
+      "Driver Profesional",
+      "Premium Experience"
+    ],
+    "bestFor": ["VIP Travel", "Wedding", "Executive Transport"],
+    "description": "Sewa Toyota Alphard Lombok dengan fasilitas premium dan kabin mewah. Pilihan terbaik untuk tamu VIP, pejabat, dan kebutuhan transportasi eksklusif."
+  },
+  "en": {
+    "name": "Toyota Alphard",
+    "features": [
+      "Luxury MPV",
+      "Captain Seat",
+      "Driver Profesional",
+      "Premium Experience"
+    ],
+    "bestFor": ["VIP Travel", "Wedding", "Executive Transport"],
+    "description": "Rent a Toyota Alphard in Lombok with premium facilities and a luxurious cabin. The best choice for VIP guests, officials, and exclusive transportation needs."
+  },
+  "ar": {
+    "name": "Toyota Alphard",
+    "features": ["MPV فاخرة", "مقاعد كابتن", "سائق محترف", "تجربة فاخرة"],
+    "bestFor": ["سفر كبار الشخصيات", "حفل زفاف", "نقل تنفيذي"],
+    "description": "استأجر تويوتا ألفارد في لومبوك بمرافق متميزة ومقصورة فاخرة. الخيار الأفضل للضيوف المميزين، المسؤولين، واحتياجات النقل الحصرية."
+  },
+  "ms": {
+    "name": "Toyota Alphard",
+    "features": [
+      "Luxury MPV",
+      "Captain Seat",
+      "Pemandu Profesional",
+      "Premium Experience"
+    ],
+    "bestFor": ["VIP Travel", "Perkahwinan", "Executive Transport"],
+    "description": "Sewa Toyota Alphard di Lombok dengan kemudahan premium dan kabin mewah. Pilihan terbaik untuk tetamu VIP, pegawai, dan keperluan pengangkutan eksklusif."
+  },
+  "zh": {
+    "name": "Toyota Alphard",
+    "features": ["豪华MPV", "独立座椅", "专业司机", "高级体验"],
+    "bestFor": ["VIP出行", "婚礼", "行政接送"],
+    "description": "在龙目岛租用丰田Alphard，配备高级设施和豪华车厢。VIP客人、官员和专属交通需求的最佳选择。"
+  }
+}

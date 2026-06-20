@@ -1,0 +1,10 @@
+{
+  "slug": "toyota-alphard-lombok",
+  "region": "lombok",
+  "pricePerDay": "Rp 3.500.000",
+  "seats": 6,
+  "transmission": "Automatic",
+  "imageTop": "hero/hero-lombok.webp",
+  "imageBottom": "hero/hero-lombok.webp",
+  "_type": "carRental"
+}

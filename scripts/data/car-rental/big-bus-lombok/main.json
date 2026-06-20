@@ -1,0 +1,10 @@
+{
+  "slug": "big-bus-lombok",
+  "region": "lombok",
+  "pricePerDay": "Rp 2.200.000",
+  "seats": 45,
+  "transmission": "Manual",
+  "imageTop": "hero/hero-lombok.webp",
+  "imageBottom": "hero/hero-lombok.webp",
+  "_type": "carRental"
+}

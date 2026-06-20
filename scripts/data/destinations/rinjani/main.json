@@ -1,0 +1,10 @@
+{
+  "slug": "rinjani",
+  "_type": "destinations",
+  "image": "destinations/rinjani.webp",
+  "gallery": [
+    "destinations/rinjani.webp",
+    "gallery/tour-snorkeling.webp",
+    "gallery/kuta-beach.webp"
+  ]
+}

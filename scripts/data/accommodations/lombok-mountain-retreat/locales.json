@@ -1,0 +1,67 @@
+{
+  "id": {
+    "name": "Lombok Mountain Retreat",
+    "perks": [
+      "Pemandangan Gunung",
+      "Trekking Guide",
+      "Farm to Table",
+      "Tradisional"
+    ],
+    "regionalHighlights": [
+      "Lokasi di Tetebatu dengan view pegunungan",
+      "Dekat dengan sawah terasering",
+      "Air terjun Jukung terdekat"
+    ],
+    "description": "Penginapan pegunungan yang menawarkan pengalaman autentik Lombok dengan kehidupan lokal dan alam yang asri."
+  },
+  "en": {
+    "name": "Lombok Mountain Retreat",
+    "perks": [
+      "Pemandangan Gunung",
+      "Trekking Guide",
+      "Farm to Table",
+      "Tradisional"
+    ],
+    "regionalHighlights": [
+      "Lokasi di Tetebatu dengan view pegunungan",
+      "Dekat dengan sawah terasering",
+      "Air terjun Jukung terdekat"
+    ],
+    "description": "Mountain accommodations offering an authentic Lombok experience with local life and natural surroundings."
+  },
+  "ar": {
+    "name": "منتجع لومبوك الجبلي",
+    "perks": ["إطلالة جبلية", "دليل تخييم", "من المزرعة للمائدة", "تقليدي"],
+    "regionalHighlights": [
+      "موقع في تيتاباتو مع إطلالة الجبال",
+      "قريب من مدرجات الأرز",
+      "شلال جوكونغ الأقرب"
+    ],
+    "description": "أماكن إقامة جبلية تقدم تجربة لومبوك أصيلة مع الحياة المحلية والمحيط الطبيعي."
+  },
+  "ms": {
+    "name": "Lombok Mountain Retreat",
+    "perks": [
+      "Pemandangan Gunung",
+      "Pemandu Mendaki",
+      "Farm to Table",
+      "Tradisional"
+    ],
+    "regionalHighlights": [
+      "Lokasi di Tetebatu dengan pemandangan pegunungan",
+      "Dekat dengan sawah terasering",
+      "Air terjun Jukung terdekat"
+    ],
+    "description": "Penginapan pegunungan yang menawarkan pengalaman Lombok autentik dengan kehidupan tempatan dan persekitaran semula jadi."
+  },
+  "zh": {
+    "name": "Lombok Mountain Retreat",
+    "perks": ["山景", "徒步向导", "从农场到餐桌", "传统体验"],
+    "regionalHighlights": [
+      "位于特特巴图，坐拥山景",
+      "靠近梯田",
+      "附近朱昆瀑布"
+    ],
+    "description": "山区住宿，提供地道的龙目岛体验，融入当地生活和自然环境。"
+  }
+}

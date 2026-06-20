@@ -11,23 +11,27 @@ import yaml from "yaml";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "data");
+const PACKAGES_DIR = join(DATA_DIR, "packages");
 const ROOT = join(__dirname, "..", "src/content/tourPackages");
 const LOCALES = ["id", "en", "ar", "ms", "zh"];
 
-// Read all tour package JSON data files (exclude accommodation/car-rental/destination data)
-const EXCLUDED = new Set([
-  "accommodations.json",
-  "car-rental.json",
-  "destinations.json",
-]);
-const files = readdirSync(DATA_DIR).filter(
-  (f) => f.endsWith(".json") && !EXCLUDED.has(f),
+// Read tour packages from packages/*/ directory tree
+const packageDirs = readdirSync(PACKAGES_DIR, { withFileTypes: true }).filter(
+  (d) => d.isDirectory(),
 );
 
 let PKGS = [];
-for (const f of files) {
-  const data = JSON.parse(readFileSync(join(DATA_DIR, f), "utf-8"));
-  PKGS = PKGS.concat(data);
+for (const dir of packageDirs) {
+  const slug = dir.name;
+  const mainPath = join(PACKAGES_DIR, slug, "main.json");
+  const localesPath = join(PACKAGES_DIR, slug, "locales.json");
+  if (!existsSync(mainPath) || !existsSync(localesPath)) {
+    console.warn(`  Skipping ${slug}: missing main.json or locales.json`);
+    continue;
+  }
+  const main = JSON.parse(readFileSync(mainPath, "utf-8"));
+  const locales = JSON.parse(readFileSync(localesPath, "utf-8"));
+  PKGS.push({ ...main, locales });
 }
 
 const COL_TITLE_EN = {
@@ -58,7 +62,12 @@ const COL_TITLE_ZH = {
   "Paket 4 Hari 3 Malam": "四天三晚套餐",
 };
 
-const COL_TITLE_MAP = { en: COL_TITLE_EN, ms: COL_TITLE_MS, ar: COL_TITLE_AR, zh: COL_TITLE_ZH };
+const COL_TITLE_MAP = {
+  en: COL_TITLE_EN,
+  ms: COL_TITLE_MS,
+  ar: COL_TITLE_AR,
+  zh: COL_TITLE_ZH,
+};
 
 const BOAT_SPECS_EN = {
   "Panjang Kapal": "Boat Length",

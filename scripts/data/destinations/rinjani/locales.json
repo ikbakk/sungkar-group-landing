@@ -1,0 +1,45 @@
+{
+  "id": {
+    "title": "Rinjani",
+    "region": "Area pegunungan",
+    "summary": "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang jadi alasan banyak tamu datang.",
+    "thingsToDo": [
+      "Titik pandang indah",
+      "Dukungan trekking",
+      "Rute matahari terbit"
+    ],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "en": {
+    "title": "Rinjani",
+    "region": "Area pegunungan",
+    "summary": "Dramatic peak, mountain air, and sunrise experiences that bring many guests here.",
+    "thingsToDo": ["Scenic viewpoints", "Trekking support", "Sunrise routes"],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "ar": {
+    "title": "رينجاني",
+    "region": "منطقة جبلية",
+    "summary": "قمة درامية، هواء جبلي، وتجارب شروق تجلب العديد من الضيوف إلى هنا.",
+    "thingsToDo": ["نقاط مراقبة خلابة", "دعم التخييم", "مسارات الشروق"],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "ms": {
+    "title": "Rinjani",
+    "region": "Area pegunungan",
+    "summary": "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang menarik ramai pelancong.",
+    "thingsToDo": [
+      "Titik pandang senja",
+      "Sokongan mendaki",
+      "Jalur matahari terbit"
+    ],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "zh": {
+    "title": "Rinjani",
+    "region": "山区",
+    "summary": "壮丽的山峰、高山空气和日出体验，吸引众多游客前来。",
+    "thingsToDo": ["观景台", "徒步支持", "日出路线"],
+    "packages": ["3d2n-lombok-signature"]
+  }
+}

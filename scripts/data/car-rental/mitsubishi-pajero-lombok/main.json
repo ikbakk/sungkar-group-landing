@@ -1,0 +1,10 @@
+{
+  "slug": "mitsubishi-pajero-lombok",
+  "region": "lombok",
+  "pricePerDay": "Rp 1.500.000",
+  "seats": 7,
+  "transmission": "Automatic",
+  "imageTop": "hero/hero-lombok.webp",
+  "imageBottom": "hero/hero-lombok.webp",
+  "_type": "carRental"
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "gili-meno",
+  "_type": "destinations",
+  "image": "destinations/gili.webp",
+  "gallery": [
+    "destinations/gili.webp",
+    "gallery/gili-meno.webp",
+    "gallery/kuta-beach-2.webp"
+  ]
+}

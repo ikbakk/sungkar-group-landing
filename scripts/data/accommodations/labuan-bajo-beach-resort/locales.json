@@ -1,0 +1,57 @@
+{
+  "id": {
+    "name": "Labuan Bajo Beach Resort",
+    "perks": ["Pantai Pribadi", "Infinity Pool", "Fine Dining", "Spa Luxury"],
+    "regionalHighlights": [
+      "Pantai eksotis Labuan Bajo",
+      "Sunset view di teluk yang indah",
+      "Akses day trip ke Pink Beach"
+    ],
+    "description": "Resort mewah tepi pantai untuk istirahat nyaman dengan akses mudah ke semua destinasi wisata Komodo."
+  },
+  "en": {
+    "name": "Labuan Bajo Beach Resort",
+    "perks": ["Pantai Pribadi", "Infinity Pool", "Fine Dining", "Spa Luxury"],
+    "regionalHighlights": [
+      "Pantai eksotis Labuan Bajo",
+      "Sunset view di teluk yang indah",
+      "Akses day trip ke Pink Beach"
+    ],
+    "description": "Luxury beachfront resort for a comfortable stay with easy access to all Komodo tour destinations."
+  },
+  "ar": {
+    "name": "منتجع شاطئ لابوان باجو",
+    "perks": ["شاطئ خاص", "مسبح لا متناهي", "طعام فاخر", "سبا فاخر"],
+    "regionalHighlights": [
+      "شاطئ لابوان باجو الغريب",
+      "منظر الغروب في الخليج الجميل",
+      "وصول رحلة يومية إلى الشاطئ الوردي"
+    ],
+    "description": "منتجع شاطئي فاخر لإقامة مريحة مع وصول سهل لجميع وجهات جولات كومودو."
+  },
+  "ms": {
+    "name": "Labuan Bajo Beach Resort",
+    "perks": [
+      "Pantai Persendirian",
+      "Infinity Pool",
+      "Fine Dining",
+      "Spa Luxury"
+    ],
+    "regionalHighlights": [
+      "Pantai eksotik Labuan Bajo",
+      "Pemandangan senja di teluk yang indah",
+      "Akses day trip ke Pink Beach"
+    ],
+    "description": "Resort tepi pantai mewah untuk menginap selesa dengan akses mudah ke semua destinasi pelancongan Komodo."
+  },
+  "zh": {
+    "name": "Labuan Bajo Beach Resort",
+    "perks": ["私人海滩", "无边泳池", "精致餐饮", "豪华水疗"],
+    "regionalHighlights": [
+      "纳闽巴霍迷人海滩",
+      "海湾美丽日落景观",
+      "可日游粉色海滩"
+    ],
+    "description": "豪华海滨度假村，提供舒适住宿，方便前往科莫多所有旅游目的地。"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": {
+    "title": "Sumbawa",
+    "region": "Pulau luar",
+    "summary": "Pilihan destinasi yang lebih sepi dengan karakter alam terbuka dan garis pantai yang kuat.",
+    "thingsToDo": ["Pantai tenang", "Rute perjalanan", "Singgah lanskap"],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "en": {
+    "title": "Sumbawa",
+    "region": "Pulau luar",
+    "summary": "A quieter destination option with open nature character and strong coastlines.",
+    "thingsToDo": ["Quiet beach", "Travel routes", "Landscape stops"],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "ar": {
+    "title": "سومباوا",
+    "region": "جزيرة خارجية",
+    "summary": "خيار وجهة أكثر هدوءاً بطبيعة مفتوحة وسواحل قوية.",
+    "thingsToDo": ["شاطئ هادئ", "مسارات السفر", "محطات المناظر"],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "ms": {
+    "title": "Sumbawa",
+    "region": "Pulau luar",
+    "summary": "Pilihan destinasi yang lebih tenang dengan watak alam terbuka dan garis pantai yang kukuh.",
+    "thingsToDo": ["Pantai sepi", "Laluan perjalanan", "Titik lanskap"],
+    "packages": ["3d2n-lombok-signature"]
+  },
+  "zh": {
+    "title": "Sumbawa",
+    "region": "外岛",
+    "summary": "更安静的目的地选择，拥有开阔的自然风貌和壮丽的海岸线。",
+    "thingsToDo": ["安静海滩", "旅行路线", "景观停留"],
+    "packages": ["3d2n-lombok-signature"]
+  }
+}

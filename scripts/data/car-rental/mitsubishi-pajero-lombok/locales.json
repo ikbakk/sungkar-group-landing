@@ -1,0 +1,52 @@
+{
+  "id": {
+    "name": "Mitsubishi Pajero Sport",
+    "features": [
+      "SUV Premium",
+      "Driver Profesional",
+      "BBM Termasuk",
+      "Air Mineral"
+    ],
+    "bestFor": ["Luxury Travel", "VIP Guest", "Corporate Visit"],
+    "description": "Sewa Mitsubishi Pajero Sport Lombok untuk perjalanan yang nyaman dan berkelas. Pilihan ideal untuk tamu VIP dan wisata premium."
+  },
+  "en": {
+    "name": "Mitsubishi Pajero Sport",
+    "features": [
+      "SUV Premium",
+      "Driver Profesional",
+      "BBM Termasuk",
+      "Air Mineral"
+    ],
+    "bestFor": ["Luxury Travel", "VIP Guest", "Corporate Visit"],
+    "description": "Rent a Mitsubishi Pajero Sport in Lombok for a comfortable and classy journey. An ideal choice for VIP guests and premium tours."
+  },
+  "ar": {
+    "name": "Mitsubishi Pajero Sport",
+    "features": [
+      "سيارة دفع رباعي فاخرة",
+      "سائق محترف",
+      "الوقود مشمول",
+      "مياه معدنية"
+    ],
+    "bestFor": ["سفر فاخر", "ضيف مميز", "زيارة شركات"],
+    "description": "استأجر ميتسوبيشي باجيرو سبورت في لومبوك لرحلة مريحة وأنيقة. خيار مثالي للضيوف المميزين والجولات الفاخرة."
+  },
+  "ms": {
+    "name": "Mitsubishi Pajero Sport",
+    "features": [
+      "SUV Premium",
+      "Pemandu Profesional",
+      "BBM Termasuk",
+      "Air Mineral"
+    ],
+    "bestFor": ["Luxury Travel", "VIP Guest", "Corporate Visit"],
+    "description": "Sewa Mitsubishi Pajero Sport di Lombok untuk perjalanan yang selesa dan bergaya. Pilihan ideal untuk tetamu VIP dan pelancongan premium."
+  },
+  "zh": {
+    "name": "Mitsubishi Pajero Sport",
+    "features": ["高级SUV", "专业司机", "含燃油", "矿泉水"],
+    "bestFor": ["豪华旅行", "VIP客人", "企业访问"],
+    "description": "在龙目岛租用三菱帕杰罗运动版，享受舒适和优雅的旅程。VIP客人和高端旅行的理想选择。"
+  }
+}

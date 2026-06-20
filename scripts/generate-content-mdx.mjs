@@ -47,7 +47,7 @@ function toFrontmatterYaml(obj, indent = 0) {
   return out;
 }
 
-function generateMdx(contentDir, entry, locale) {
+function generateMdx(contentType, contentDir, entry, locale) {
   const localeData = entry.locales[locale];
   if (!localeData) return;
 
@@ -55,15 +55,49 @@ function generateMdx(contentDir, entry, locale) {
   const dirPath = join(contentDir, slug);
   mkdirSync(dirPath, { recursive: true });
 
-  const frontmatter = {
-    title: localeData.title,
-    region: localeData.region,
-    image: entry.image,
-    gallery: entry.gallery,
-    summary: localeData.summary,
-    thingsToDo: localeData.thingsToDo,
-    packages: localeData.packages,
-  };
+  let frontmatter;
+  switch (contentType) {
+    case "accommodations":
+      frontmatter = {
+        slug,
+        name: localeData.name,
+        region: entry.region,
+        perks: localeData.perks,
+        regionalHighlights: localeData.regionalHighlights,
+        description: localeData.description,
+        image: entry.image,
+      };
+      break;
+    case "car-rental":
+      frontmatter = {
+        slug,
+        name: localeData.name,
+        region: entry.region,
+        pricePerDay: entry.pricePerDay,
+        seats: entry.seats,
+        transmission: entry.transmission,
+        features: localeData.features,
+        bestFor: localeData.bestFor,
+        description: localeData.description,
+        imageTop: entry.imageTop,
+        imageBottom: entry.imageBottom,
+      };
+      break;
+    case "destinations":
+      frontmatter = {
+        title: localeData.title,
+        region: localeData.region,
+        image: entry.image,
+        gallery: entry.gallery,
+        summary: localeData.summary,
+        thingsToDo: localeData.thingsToDo,
+        packages: localeData.packages,
+      };
+      break;
+    default:
+      console.warn(`  Unknown content type: ${contentType}`);
+      return;
+  }
 
   const yaml = toFrontmatterYaml(frontmatter);
   const mdx = `---\n${yaml}---\n`;
@@ -73,42 +107,59 @@ function generateMdx(contentDir, entry, locale) {
   console.log(`  Created: ${filePath.replace(process.cwd(), ".")}`);
 }
 
+const CONTENT_TYPES = ["accommodations", "car-rental", "destinations"];
+
 function main() {
   if (!existsSync(DATA_DIR)) {
     console.error("No data directory found at", DATA_DIR);
     process.exit(1);
   }
 
-  const files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));
+  let total = 0;
 
-  if (files.length === 0) {
-    console.log("No JSON data files found in", DATA_DIR);
-    return;
-  }
+  for (const type of CONTENT_TYPES) {
+    const typeDir = join(DATA_DIR, type);
+    if (!existsSync(typeDir)) {
+      console.log(`\nSkipping ${type}/ (not found)`);
+      continue;
+    }
 
-  for (const file of files) {
-    const filePath = join(DATA_DIR, file);
-    console.log(`\nProcessing: ${file}`);
-    const raw = readFileSync(filePath, "utf-8");
-    const entries = JSON.parse(raw);
+    const itemDirs = readdirSync(typeDir, { withFileTypes: true }).filter((d) =>
+      d.isDirectory(),
+    );
 
-    for (const entry of entries) {
-      const type = entry._type;
-      if (!type) {
-        console.warn(`  Skipping entry "${entry.slug}": no _type field`);
+    if (itemDirs.length === 0) {
+      console.log(`\nNo entries found in ${type}/`);
+      continue;
+    }
+
+    console.log(`\nProcessing: ${type}/`);
+
+    for (const dir of itemDirs) {
+      const slug = dir.name;
+      const mainPath = join(typeDir, slug, "main.json");
+      const localesPath = join(typeDir, slug, "locales.json");
+
+      if (!existsSync(mainPath) || !existsSync(localesPath)) {
+        console.warn(`  Skipping ${slug}: missing main.json or locales.json`);
         continue;
       }
+
+      const main = JSON.parse(readFileSync(mainPath, "utf-8"));
+      const locales = JSON.parse(readFileSync(localesPath, "utf-8"));
+      const entry = { ...main, locales };
 
       const contentDir = join(CONTENT_DIR, type);
       mkdirSync(contentDir, { recursive: true });
 
       for (const locale of LOCALES) {
-        generateMdx(contentDir, entry, locale);
+        generateMdx(type, contentDir, entry, locale);
+        total++;
       }
     }
   }
 
-  console.log("\nDone!");
+  console.log(`\nDone! Generated ${total} files.`);
 }
 
 main();

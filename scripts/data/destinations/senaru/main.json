@@ -1,0 +1,10 @@
+{
+  "slug": "senaru",
+  "_type": "destinations",
+  "image": "destinations/rinjani.webp",
+  "gallery": [
+    "destinations/rinjani.webp",
+    "gallery/tour-cultural.webp",
+    "gallery/kuta-beach-2.webp"
+  ]
+}
