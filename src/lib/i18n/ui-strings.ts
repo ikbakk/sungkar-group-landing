@@ -209,6 +209,14 @@ export interface UIStrings {
     contextLabelPaket: string;
     followUs: string;
     phoneWhatsapp: string;
+    formFieldName: string;
+    formFieldTravelDate: string;
+    formFieldTravelDateSewa: string;
+    formFieldDuration: string;
+    formFieldGuests: string;
+    formFieldPassengers: string;
+    formFieldRentalReason: string;
+    formFieldMessage: string;
   };
   page: {
     about: string;
@@ -477,6 +485,14 @@ export const translations: Record<Locale, UIStrings> = {
       contextLabelPaket: "Pilihan Paket",
       followUs: "Ikuti Kami",
       phoneWhatsapp: "Telepon / Whatsapp",
+      formFieldName: "Nama",
+      formFieldTravelDate: "Tanggal perjalanan",
+      formFieldTravelDateSewa: "Tanggal sewa",
+      formFieldDuration: "Durasi sewa",
+      formFieldGuests: "Jumlah tamu",
+      formFieldPassengers: "Jumlah penumpang",
+      formFieldRentalReason: "Keperluan sewa",
+      formFieldMessage: "Pesan tambahan",
     },
     seo: {
       keywords:
@@ -731,6 +747,14 @@ export const translations: Record<Locale, UIStrings> = {
       contextLabelPaket: "Selected Package",
       followUs: "Follow Us",
       phoneWhatsapp: "Phone / WhatsApp",
+      formFieldName: "Name",
+      formFieldTravelDate: "Travel date",
+      formFieldTravelDateSewa: "Rental date",
+      formFieldDuration: "Rental duration",
+      formFieldGuests: "Number of guests",
+      formFieldPassengers: "Number of passengers",
+      formFieldRentalReason: "Rental purpose",
+      formFieldMessage: "Additional message",
     },
     seo: {
       keywords:
@@ -805,8 +829,10 @@ export const translations: Record<Locale, UIStrings> = {
     gallery: {
       title: "\u0645\u0639\u0631\u0636 \u0627\u0644\u0635\u0648\u0631",
       photos: "\u0635\u0648\u0631 \u0627\u0644\u0631\u062D\u0644\u0629",
-      previousImage: "\u0627\u0644\u0635\u0648\u0631\u0629 \u0627\u0644\u0633\u0627\u0628\u0642\u0629",
-      nextImage: "\u0627\u0644\u0635\u0648\u0631\u0629 \u0627\u0644\u062A\u0627\u0644\u064A\u0629",
+      previousImage:
+        "\u0627\u0644\u0635\u0648\u0631\u0629 \u0627\u0644\u0633\u0627\u0628\u0642\u0629",
+      nextImage:
+        "\u0627\u0644\u0635\u0648\u0631\u0629 \u0627\u0644\u062A\u0627\u0644\u064A\u0629",
     },
     cta: {
       book: "\u0627\u062D\u062C\u0632 \u0627\u0644\u0622\u0646",
@@ -828,7 +854,8 @@ export const translations: Record<Locale, UIStrings> = {
         "\u0645\u0639\u0631\u0636 \u062A\u062C\u0627\u0631\u0628 \u0627\u0644\u0645\u0633\u0627\u0641\u0631\u064A\u0646",
       totalOnGoogle:
         "{n} \u062A\u0642\u064A\u064A\u0645\u0627\u062A \u0639\u0644\u0649 \u062C\u0648\u062C\u0644",
-      googleReview: "\u0645\u0631\u0627\u062C\u0639\u0629 \u062C\u0648\u062C\u0644",
+      googleReview:
+        "\u0645\u0631\u0627\u062C\u0639\u0629 \u062C\u0648\u062C\u0644",
       ratingOutOfFive: "{rating} \u0645\u0646 5 \u0646\u062C\u0645\u0627\u062A",
       galleryPhotoCaptions: [
         "\u0644\u062D\u0638\u0627\u062A \u0627\u0644\u0633\u0641\u0631 \u0627\u0644\u0639\u0627\u0626\u0644\u064A\u0629",
@@ -1037,7 +1064,8 @@ export const translations: Record<Locale, UIStrings> = {
         "\u0627\u0645\u0644\u0623 \u0627\u0644\u0646\u0645\u0648\u0630\u062C \u0623\u062F\u0646\u0627\u0647 \u0648\u0633\u064A\u0642\u0648\u0645 \u0641\u0631\u064A\u0642\u0646\u0627 \u0628\u0627\u0644\u0631\u062F \u0639\u0628\u0631 WhatsApp \u0642\u0631\u064A\u0628\u064B\u0627.",
       formDescSidebar:
         "\u0627\u0645\u0644\u0623 \u0627\u0644\u0646\u0645\u0648\u0630\u062C \u0648\u0633\u064A\u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0643 \u0641\u0631\u064A\u0642\u0646\u0627 \u0639\u0628\u0631 WhatsApp.",
-      contactInfoTitle: "\u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u0627\u062A\u0635\u0627\u0644",
+      contactInfoTitle:
+        "\u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u0627\u062A\u0635\u0627\u0644",
       contactInfoDescription:
         "\u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0646\u0627 \u0639\u0628\u0631 \u0627\u0644\u0642\u0646\u0648\u0627\u062A \u0627\u0644\u0645\u062A\u0627\u062D\u0629",
       chooseLocation:
@@ -1084,7 +1112,23 @@ export const translations: Record<Locale, UIStrings> = {
       contextLabelPaket:
         "\u0627\u0644\u0628\u0627\u0642\u0629 \u0627\u0644\u0645\u062E\u062A\u0627\u0631\u0629",
       followUs: "\u062A\u0627\u0628\u0639\u0646\u0627",
-      phoneWhatsapp: "\u0627\u0644\u0647\u0627\u062A\u0641 / \u0648\u0627\u062A\u0633\u0627\u0628",
+      phoneWhatsapp:
+        "\u0627\u0644\u0647\u0627\u062A\u0641 / \u0648\u0627\u062A\u0633\u0627\u0628",
+      formFieldName: "\u0627\u0644\u0627\u0633\u0645",
+      formFieldTravelDate:
+        "\u062A\u0627\u0631\u064A\u062E \u0627\u0644\u0633\u0641\u0631",
+      formFieldTravelDateSewa:
+        "\u062A\u0627\u0631\u064A\u062E \u0627\u0644\u062A\u0623\u062C\u064A\u0631",
+      formFieldDuration:
+        "\u0645\u062F\u0629 \u0627\u0644\u062A\u0623\u062C\u064A\u0631",
+      formFieldGuests:
+        "\u0639\u062F\u062F \u0627\u0644\u0636\u064A\u0648\u0641",
+      formFieldPassengers:
+        "\u0639\u062F\u062F \u0627\u0644\u0631\u0643\u0627\u0628",
+      formFieldRentalReason:
+        "\u063A\u0631\u0636 \u0627\u0644\u062A\u0623\u062C\u064A\u0631",
+      formFieldMessage:
+        "\u0631\u0633\u0627\u0644\u0629 \u0625\u0636\u0627\u0641\u064A\u0629",
     },
     seo: {
       keywords:
@@ -1318,8 +1362,7 @@ export const translations: Record<Locale, UIStrings> = {
       formDescSidebar:
         "Isi borang di bawah dan pasukan kami akan membalas melalui WhatsApp.",
       contactInfoTitle: "Maklumat Hubungan",
-      contactInfoDescription:
-        "Hubungi kami melalui saluran yang tersedia",
+      contactInfoDescription: "Hubungi kami melalui saluran yang tersedia",
       chooseLocation: "Pilih lokasi",
       choosePackage: "Pilih pakej",
       selectLocationFirst: "Pilih lokasi terlebih dahulu",
@@ -1348,6 +1391,14 @@ export const translations: Record<Locale, UIStrings> = {
       contextLabelPaket: "Pakej Dipilih",
       followUs: "Ikuti Kami",
       phoneWhatsapp: "Telefon / WhatsApp",
+      formFieldName: "Nama",
+      formFieldTravelDate: "Tarikh perjalanan",
+      formFieldTravelDateSewa: "Tarikh sewa",
+      formFieldDuration: "Tempoh sewa",
+      formFieldGuests: "Jumlah tetamu",
+      formFieldPassengers: "Jumlah penumpang",
+      formFieldRentalReason: "Tujuan sewa",
+      formFieldMessage: "Mesej tambahan",
     },
     seo: {
       keywords:
@@ -1619,6 +1670,14 @@ export const translations: Record<Locale, UIStrings> = {
       contextLabelPaket: "\u5DF2\u9009\u5957\u9910",
       followUs: "\u5173\u6CE8\u6211\u4EEC",
       phoneWhatsapp: "\u7535\u8BDD / WhatsApp",
+      formFieldName: "\u59D3\u540D",
+      formFieldTravelDate: "\u65C5\u884C\u65E5\u671F",
+      formFieldTravelDateSewa: "\u79DF\u8D41\u65E5\u671F",
+      formFieldDuration: "\u79DF\u8D41\u671F\u9650",
+      formFieldGuests: "\u5BA2\u4EBA\u6570\u91CF",
+      formFieldPassengers: "\u4E58\u5BA2\u6570\u91CF",
+      formFieldRentalReason: "\u79DF\u8D41\u76EE\u7684",
+      formFieldMessage: "\u9644\u52A0\u4FE1\u606F",
     },
     seo: {
       keywords:

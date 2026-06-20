@@ -1,4 +1,5 @@
 ---
+import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
 import type { ImageSource } from "@/lib/images";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 
@@ -51,9 +52,9 @@ const {
       )}
     >
       {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
-      <h2 class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl">
+      <TypographyH2 class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl">
         {title}
-      </h2>
+      </TypographyH2>
       {
         description && (
           <p class="text-muted-foreground mt-4 text-sm leading-relaxed">
@@ -94,7 +95,7 @@ const {
               <div class="absolute inset-0 -z-10 bg-linear-to-t from-black/70 to-transparent" />
               <div class="flex items-end justify-between gap-4 p-5 text-white">
                 <div class="flex flex-col gap-1">
-                  <h3 class="text-xl">{service.title}</h3>
+                  <TypographyH3 class="text-xl">{service.title}</TypographyH3>
                   <p class="text-sm leading-relaxed text-white/75 line-clamp-4">
                     {service.description}
                   </p>

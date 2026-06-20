@@ -2,9 +2,11 @@
 import Services6Block from "@/components/blocks/services-6.astro";
 import type { ImageSource } from "@/lib/images";
 import type { LandingTourCard as FeaturedTour } from "@/lib/content/landing";
+import { localizeHref } from "@/lib/i18n/localize";
 
 interface Props {
   class?: string;
+  locale?: string;
   eyebrow: string;
   title: string;
   description: string;
@@ -14,6 +16,7 @@ interface Props {
 
 const {
   class: className,
+  locale = "id",
   eyebrow,
   title,
   description,
@@ -31,6 +34,6 @@ const {
     image: { src: tour.image, alt: tour.title },
     title: tour.title,
     description: tour.description,
-    href: `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`,
+    href: localizeHref(`/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`, locale),
   }))}
 />

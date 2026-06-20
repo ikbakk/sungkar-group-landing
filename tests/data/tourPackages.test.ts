@@ -62,9 +62,10 @@ describe("Tour Package MDX Data Validation", () => {
         }));
     });
 
-    const byCollection = allLocalized.reduce(
+    // Group by (collectionSlug + locale) to check consistency within same locale
+    const byCollectionAndLocale = allLocalized.reduce(
       (acc, p) => {
-        const key = p.fm.collectionSlug;
+        const key = `${p.fm.collectionSlug}__${p.locale}`;
         if (!acc[key]) acc[key] = [];
         acc[key].push(p);
         return acc;
@@ -72,8 +73,9 @@ describe("Tour Package MDX Data Validation", () => {
       {} as Record<string, typeof allLocalized>,
     );
 
-    for (const [collectionSlug, packages] of Object.entries(byCollection)) {
-      it(`collection "${collectionSlug}" has consistent titles across packages`, () => {
+    for (const [key, packages] of Object.entries(byCollectionAndLocale)) {
+      const [collectionSlug, locale] = key.split("__");
+      it(`collection "${collectionSlug}" has consistent titles for "${locale}"`, () => {
         const titles = [...new Set(packages.map((p) => p.fm.collectionTitle))];
         expect(titles.length).toBe(1);
       });

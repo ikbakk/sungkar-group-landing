@@ -1,4 +1,5 @@
 ---
+import { TypographyH2 } from "@/components/ui/typography";
 import { t } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 
@@ -31,9 +32,9 @@ const resolvedDescription =
 
 <div class="grid lg:grid-cols-2 min-h-80">
   <div class="space-y-1 h-full flex flex-col justify-center">
-    <h2 class="text-3xl leading-tight text-foreground">
+    <TypographyH2 class="text-3xl leading-tight text-foreground">
       {resolvedTitle}
-    </h2>
+    </TypographyH2>
     <p class="text-sm leading-7 text-text-muted">
       {resolvedDescription}
     </p>

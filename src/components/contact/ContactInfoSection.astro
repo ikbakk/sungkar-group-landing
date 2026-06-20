@@ -1,4 +1,5 @@
 ---
+import { TypographyH3 } from "@/components/ui/typography";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { BusinessInfo } from "@/lib/contact-data";
 import { t } from "@/lib/i18n";
@@ -74,9 +75,9 @@ const phoneLabel = uiStrings.contact.phoneWhatsapp;
     {
       Object.values(businessInfo.socialLinks).filter(Boolean).length > 0 && (
         <div class="flex flex-col items-start rounded-lg border border-border p-4 bg-surface-soft transition-colors hover:border-brand-200 hover:bg-brand-50">
-          <h3 class="font-sans font-medium text-sm text-foreground mb-2">
+          <TypographyH3 class="font-sans font-medium text-sm text-foreground mb-2">
             {socialHeading}
-          </h3>
+          </TypographyH3>
           <div class="flex flex-wrap gap-2">
             {businessInfo.socialLinks.instagram && (
               <a

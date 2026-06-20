@@ -90,6 +90,12 @@ import * as zhFaqReviews from "@/lib/i18n/zh/faqs/reviews";
 import * as zhFaqAkomodasi from "@/lib/i18n/zh/faqs/akomodasi";
 import * as zhNavigation from "@/lib/i18n/zh/navigationData";
 
+import * as idLegal from "@/lib/content/legal";
+import * as enLegal from "@/lib/i18n/en/legal";
+import * as arLegal from "@/lib/i18n/ar/legal";
+import * as msLegal from "@/lib/i18n/ms/legal";
+import * as zhLegal from "@/lib/i18n/zh/legal";
+
 import * as idNavigation from "@/lib/content/navigationData";
 import * as enNavigation from "@/lib/i18n/en/navigationData";
 
@@ -104,6 +110,7 @@ const contentModules: Record<string, Record<string, any>> = {
     akomodasiPage: idAkomodasiPage,
     reviewPage: idReviewPage,
     faqPage: idFaqPage,
+    legal: idLegal,
     navigation: idNavigation,
   },
   en: {
@@ -116,6 +123,7 @@ const contentModules: Record<string, Record<string, any>> = {
     akomodasiPage: enAkomodasiPage,
     reviewPage: enReviewPage,
     faqPage: enFaqPage,
+    legal: enLegal,
     navigation: enNavigation,
   },
   ar: {
@@ -128,6 +136,7 @@ const contentModules: Record<string, Record<string, any>> = {
     akomodasiPage: arAkomodasiPage,
     reviewPage: arReviewPage,
     faqPage: arFaqPage,
+    legal: arLegal,
     navigation: arNavigation,
   },
   ms: {
@@ -140,6 +149,7 @@ const contentModules: Record<string, Record<string, any>> = {
     akomodasiPage: msAkomodasiPage,
     reviewPage: msReviewPage,
     faqPage: msFaqPage,
+    legal: msLegal,
     navigation: msNavigation,
   },
   zh: {
@@ -152,6 +162,7 @@ const contentModules: Record<string, Record<string, any>> = {
     akomodasiPage: zhAkomodasiPage,
     reviewPage: zhReviewPage,
     faqPage: zhFaqPage,
+    legal: zhLegal,
     navigation: zhNavigation,
   },
 };

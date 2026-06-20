@@ -1,4 +1,5 @@
 ---
+import { TypographyH3 } from "@/components/ui/typography";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -128,9 +129,9 @@ function lh(href: string | undefined): string | undefined {
                             {group.title}
                           </NavigationMenuLink>
                         ) : (
-                          <div class="text-sm font-semibold text-brand-700">
+                          <TypographyH3 class="text-sm font-heading font-normal text-brand-700">
                             {group.title}
-                          </div>
+                          </TypographyH3>
                         )}
                       </div>
                       {/* Single-package items linked directly */}

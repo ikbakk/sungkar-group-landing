@@ -1,4 +1,5 @@
 ---
+import { TypographyH2 } from "@/components/ui/typography";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
@@ -103,9 +104,9 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
   {
     relatedPackages.length > 0 && (
       <SectionContainer background="bg-background" padding="py-16 lg:py-24">
-        <h2 class="text-3xl leading-tight tracking-tight sm:text-4xl">
+        <TypographyH2 class="text-3xl leading-tight tracking-tight sm:text-4xl">
           {destinationsPageContent.detail.relatedPackagesTitle}
-        </h2>
+        </TypographyH2>
         <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {relatedPackages.map((tour) => (
             <PackageCard tour={tour} locale={locale} />

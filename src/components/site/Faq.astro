@@ -1,4 +1,5 @@
 ---
+import { TypographyH2 } from "@/components/ui/typography";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { t } from "@/lib/i18n";
 import FaqAccordion from "./FaqAccordion";
@@ -32,9 +33,9 @@ const uiStrings = t(locale);
       {eyebrow}
     </div>
 
-    <h2 class="mt-2 text-3xl leading-tight">
+    <TypographyH2 class="mt-2 text-3xl leading-tight">
       {title || uiStrings.faq.sectionTitle}
-    </h2>
+    </TypographyH2>
   </div>
 
   <FaqAccordion items={items} variant={variant} client:load />

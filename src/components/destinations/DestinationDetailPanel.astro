@@ -1,4 +1,5 @@
 ---
+import { TypographyH2 } from "@/components/ui/typography";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import type { Destination } from "@/lib/content/destinations";
 
@@ -26,9 +27,9 @@ const { destination, content } = Astro.props;
 
   <div class="flex flex-col gap-8">
     <div>
-      <h2 class="text-2xl leading-tight tracking-tight sm:text-3xl">
+      <TypographyH2 class="text-2xl leading-tight tracking-tight sm:text-3xl">
         {content.activitiesTitle}
-      </h2>
+      </TypographyH2>
       <ul class="mt-5 flex flex-wrap gap-3">
         {
           destination.thingsToDo.map((item) => (
@@ -43,9 +44,9 @@ const { destination, content } = Astro.props;
     <div class="h-px w-16 bg-brand-600"></div>
 
     <div>
-      <h2 class="text-2xl leading-tight tracking-tight sm:text-3xl">
+      <TypographyH2 class="text-2xl leading-tight tracking-tight sm:text-3xl">
         {content.summaryTitle}
-      </h2>
+      </TypographyH2>
       <p class="mt-4 text-sm leading-7 text-text-muted sm:text-base">
         {destination.summary}
       </p>

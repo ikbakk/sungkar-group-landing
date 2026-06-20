@@ -8,6 +8,7 @@ interface TransportService {
 
 interface Props {
   class?: string;
+  locale?: string;
   eyebrow: string;
   title: string;
   services: TransportService[];
@@ -16,6 +17,7 @@ interface Props {
 
 const {
   class: className,
+  locale = "id",
   eyebrow,
   title,
   services,
@@ -25,6 +27,7 @@ const {
 
 <Services5Block
   class={className}
+  locale={locale}
   eyebrow={eyebrow}
   title={title}
   alignment={alignment}

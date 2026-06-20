@@ -70,7 +70,7 @@ export const landingHero = {
   },
   secondaryAction: {
     label: "View Packages",
-    href: "/paket-wisata",
+    href: "/en/tour-packages",
     variant: "secondary" as const,
   },
   cards: [

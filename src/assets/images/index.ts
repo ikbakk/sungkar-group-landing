@@ -68,12 +68,10 @@ export const ACCOMMODATIONS = {
   lombok: _accommodations_lombok,
 };
 
-
 export const BRAND = {
   logo: _brand_logo,
   ogHome: _brand_ogHome,
 };
-
 
 export const DESTINATIONS = {
   gili: _destinations_gili,
@@ -81,7 +79,6 @@ export const DESTINATIONS = {
   rinjani: _destinations_rinjani,
   sumbawa: _destinations_sumbawa,
 };
-
 
 export const GALLERY = {
   gAirport1: _gallery_gAirport1,
@@ -116,7 +113,6 @@ export const GALLERY = {
   whaleshark: _gallery_whaleshark,
 };
 
-
 export const HERO = {
   heroLombok: _hero_heroLombok,
   hero: _hero_hero,
@@ -124,12 +120,10 @@ export const HERO = {
   main: _hero_hero,
 };
 
-
 export const LEGALITY = {
   nib: _legality_nib,
   sk: _legality_sk,
 };
-
 
 export const OG = {
   about: _og_about,
@@ -150,7 +144,6 @@ export const OG = {
   vehicleDetail: _og_vehicleDetail,
 };
 
-
 export const VEHICLES = {
   avanza: _vehicles_avanza,
   bus1: _vehicles_bus1,
@@ -158,4 +151,3 @@ export const VEHICLES = {
   bus3: _vehicles_bus3,
   rental: _vehicles_rental,
 };
-

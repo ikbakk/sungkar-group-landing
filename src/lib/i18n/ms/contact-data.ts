@@ -1,6 +1,8 @@
 // Contact Data Layer
 // Separates business logic and data from presentation components
 
+import { t } from "@/lib/i18n";
+
 export interface ContactMethod {
   id: string;
   title: string;
@@ -214,46 +216,60 @@ export function buildWhatsappMessage(
   values: Record<string, string>,
   itemName?: string,
   region?: string,
+  locale?: string,
 ): string {
+  const uiStrings = t(locale ?? "id");
   const parts: string[] = [];
-  parts.push(`Hello Sungkar Group,`);
+  parts.push(uiStrings.contact.whatsappGreeting);
 
   if (itemName) {
     parts.push(``);
     if (context === "sewa-mobil") {
-      parts.push(`I want to rent: ${itemName}`);
+      parts.push(
+        uiStrings.contact.whatsappSewaIntro.replace("{item}", itemName),
+      );
     } else {
-      parts.push(`I am interested in the package: ${itemName}`);
+      parts.push(
+        uiStrings.contact.whatsappPaketIntro.replace("{item}", itemName),
+      );
     }
   }
 
   if (region) {
-    parts.push(`Location: ${region}`);
+    parts.push(uiStrings.contact.whatsappLocation.replace("{region}", region));
   }
 
   parts.push(``);
 
   for (const [key, value] of Object.entries(values)) {
     if (!value) continue;
-    const label = getFieldLabel(context, key);
+    const label = getFieldLabel(context, key, locale);
     parts.push(`${label}: ${value}`);
   }
 
   parts.push(``);
-  parts.push("Please provide more information.");
+  parts.push(uiStrings.contact.whatsappFollowUp);
 
   return parts.join("\n");
 }
 
-function getFieldLabel(context: FormContext, fieldId: string): string {
+function getFieldLabel(
+  context: FormContext,
+  fieldId: string,
+  locale?: string,
+): string {
+  const s = t(locale ?? "id");
   const fieldMap: Record<string, string> = {
-    name: "Name",
-    travelDate: context === "sewa-mobil" ? "Rental date" : "Travel date",
-    duration: "Rental duration",
-    guests: "Number of guests",
-    passengers: "Number of passengers",
-    rentalReason: "Rental purpose",
-    message: "Additional message",
+    name: s.contact.formFieldName,
+    travelDate:
+      context === "sewa-mobil"
+        ? s.contact.formFieldTravelDateSewa
+        : s.contact.formFieldTravelDate,
+    duration: s.contact.formFieldDuration,
+    guests: s.contact.formFieldGuests,
+    passengers: s.contact.formFieldPassengers,
+    rentalReason: s.contact.formFieldRentalReason,
+    message: s.contact.formFieldMessage,
   };
   return fieldMap[fieldId] ?? fieldId;
 }

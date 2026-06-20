@@ -142,7 +142,7 @@ export const aboutContent = {
       "Discuss your travel needs with our team and find the most suitable itinerary for your Lombok experience.",
     primaryButton: {
       label: "Contact Us",
-      href: "/kontak",
+      href: "/en/contact",
     },
   },
 } as const;

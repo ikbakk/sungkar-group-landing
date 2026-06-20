@@ -1,4 +1,5 @@
 ---
+import { TypographyH3 } from "@/components/ui/typography";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -82,14 +83,14 @@ const cardHref = localizeHref(
     </div>
 
     <div>
-      <h3
+      <TypographyH3
         class="text-xl
             
             leading-tight
             text-foreground"
       >
         {tour.title}
-      </h3>
+      </TypographyH3>
 
       <p
         class="mt-3

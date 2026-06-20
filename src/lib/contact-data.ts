@@ -243,7 +243,7 @@ export function buildWhatsappMessage(
 
   for (const [key, value] of Object.entries(values)) {
     if (!value) continue;
-    const label = getFieldLabel(context, key);
+    const label = getFieldLabel(context, key, locale);
     parts.push(`${label}: ${value}`);
   }
 
@@ -253,16 +253,23 @@ export function buildWhatsappMessage(
   return parts.join("\n");
 }
 
-function getFieldLabel(context: FormContext, fieldId: string): string {
+function getFieldLabel(
+  context: FormContext,
+  fieldId: string,
+  locale?: string,
+): string {
+  const s = t(locale ?? "id");
   const fieldMap: Record<string, string> = {
-    name: "Nama",
+    name: s.contact.formFieldName,
     travelDate:
-      context === "sewa-mobil" ? "Tanggal sewa" : "Tanggal perjalanan",
-    duration: "Durasi sewa",
-    guests: "Jumlah tamu",
-    passengers: "Jumlah penumpang",
-    rentalReason: "Keperluan sewa",
-    message: "Pesan tambahan",
+      context === "sewa-mobil"
+        ? s.contact.formFieldTravelDateSewa
+        : s.contact.formFieldTravelDate,
+    duration: s.contact.formFieldDuration,
+    guests: s.contact.formFieldGuests,
+    passengers: s.contact.formFieldPassengers,
+    rentalReason: s.contact.formFieldRentalReason,
+    message: s.contact.formFieldMessage,
   };
   return fieldMap[fieldId] ?? fieldId;
 }

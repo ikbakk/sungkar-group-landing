@@ -1,4 +1,5 @@
 ---
+import { TypographyH2 } from "@/components/ui/typography";
 import type { ImageSource } from "@/lib/images";
 
 import { cn } from "@/lib/utils";
@@ -52,9 +53,9 @@ const row3 = reviews.slice(third * 2);
       >
         {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
         {title && (
-          <h2 class="text-4xl leading-tight tracking-tight sm:text-5xl">
+          <TypographyH2 class="text-4xl leading-tight tracking-tight sm:text-5xl">
             {title}
-          </h2>
+          </TypographyH2>
         )}
         {description && (
           <p

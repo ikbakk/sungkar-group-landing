@@ -136,6 +136,7 @@
   h5,
   h6 {
     font-family: var(--font-heading);
+    font-weight: 400;
   }
 
   button:not(:disabled),

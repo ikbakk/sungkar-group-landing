@@ -1,4 +1,5 @@
 ---
+import { TypographyH1 } from "@/components/ui/typography";
 import MainLayout from "@/layouts/MainLayout.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Button } from "@/components/ui/button";
@@ -17,9 +18,9 @@ const uiStrings = t(locale);
   <SectionContainer background="bg-surface-soft" padding="py-24 sm:py-32">
     <div class="mx-auto max-w-xl text-center">
       <p class="text-8xl font-bold text-brand-600">404</p>
-      <h1 class="mt-4 text-3xl leading-tight sm:text-4xl">
+      <TypographyH1 class="mt-4 text-3xl leading-tight sm:text-4xl">
         {uiStrings.common.pageNotFound}
-      </h1>
+      </TypographyH1>
       <p class="mt-4 text-base leading-7 text-text-muted">
         {uiStrings.common.pageNotFoundDesc}
       </p>

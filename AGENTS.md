@@ -2,7 +2,6 @@
 
 ## AI Agent Navigation
 
-- **docs/CODEBASE.md** — Complete codebase map: directory layout, route→component mapping, data architecture, file locations by task. Read this first instead of grep/find.
 - **AGENTS.md** — This file. Build commands, style conventions, commit guidelines.
 
 ## Keeping Docs in Sync
@@ -34,7 +33,7 @@ Keep the route → component table, directory layout, and "Key Files by Task" ta
 ## Coding Style & Naming Conventions
 
 - Use TypeScript, Astro components, and React components where appropriate.
-- Follow the existing formatting style: 2-space indentation, double quotes in TS/TSX, and semicolons in Astro frontmatter.
+- Follow the existing formatting style: 2-space indentation, double quotes in TS/TSX, and semicolons in Astro frontmatter or run npm run format.
 - Prefer the `@/*` alias for imports from `src/`, for example `@/components/ui/button`.
 - Name components with `PascalCase` files and exports, and keep route files lowercase in `src/pages/`.
 - Tailwind utility classes are used heavily; keep class lists readable and grouped by layout, spacing, and state.

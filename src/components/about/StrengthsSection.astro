@@ -1,4 +1,5 @@
 ---
+import { TypographyH3 } from "@/components/ui/typography";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { t } from "@/lib/i18n";
@@ -24,7 +25,7 @@ const uiStrings = t(locale);
       {
         strengths.map((item) => (
           <div class="rounded-lg border border-border bg-surface-soft p-4">
-            <div class="font-medium text-foreground">{item.title}</div>
+            <TypographyH3 class="font-heading font-normal text-foreground">{item.title}</TypographyH3>
 
             <div class="mt-2 text-sm leading-7 text-text-muted">
               {item.description}
