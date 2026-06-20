@@ -68,9 +68,19 @@ All structured content now lives in MDX content collections under `src/content/{
 | Accommodations | `accommodations`   | `getAccommodations(locale)` from `src/lib/content/accommodations/collection.ts` | `scripts/data/accommodations/*/` | `node scripts/generate-content-mdx.mjs` |
 | Car Rental     | `carRental`        | `getVehicles(locale)` from `src/lib/content/car-rental/collection.ts`           | `scripts/data/car-rental/*/`     | `node scripts/generate-content-mdx.mjs` |
 
+**Template generator**: `npm run generate:template` runs `scripts/generate-data-template.mjs` — an interactive CLI that scaffolds correct `main.json` + `locales.json` templates with validated enums from the source-of-truth constants files.
+
 Navigation uses `createNavigation(packages)` factory functions in each locale's `navigationData.ts` called from `Header.astro`. Landing page computes `featuredTours` by merging locale base with `getPackages()` results in the page files. Tests validate MDX frontmatter directly via `yaml` parsing in vitest (no Astro runtime needed).
 
-### Adding content
+### Adding content (with template generator)
+
+```bash
+npm run generate:template
+```
+
+Select the content type, answer the prompts, and a correctly-structured template is created. Then edit the generated files and run the appropriate generator command.
+
+**Without template generator:**
 
 1. **Tour packages**: Create `scripts/data/packages/{slug}/main.json` (shared fields) and `scripts/data/packages/{slug}/locales.json` (locale blocks), then run `node scripts/generate-tour-mdx.mjs`.
 2. **Accommodations / Car rental / Destinations**: Create `scripts/data/{type}/{slug}/main.json` and `scripts/data/{type}/{slug}/locales.json`, then run `node scripts/generate-content-mdx.mjs`.
