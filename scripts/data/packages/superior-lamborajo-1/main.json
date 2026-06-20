@@ -1,0 +1,153 @@
+{
+  "slug": "superior-lamborajo-1",
+  "region": "labuan-bajo",
+  "collectionSlug": "private-trip-superior-phinisi",
+  "images": [
+    "hero/superior-lamborajo-1.webp",
+    "gallery/superior-lamborajo-1-exterior.webp",
+    "gallery/superior-lamborajo-1-interior.webp",
+    "gallery/superior-lamborajo-1-cabin.webp",
+    "gallery/superior-lamborajo-1-sundeck.webp"
+  ],
+  "boatName": "Lamborajo 1",
+  "boatType": "Superior Phinisi",
+  "boatCapacity": 24,
+  "boatSpecs": [
+    {
+      "label": "Panjang Kapal",
+      "value": "26 Meter"
+    },
+    {
+      "label": "Lebar Kapal",
+      "value": "5 Meter"
+    },
+    {
+      "label": "Kecepatan Jelajah",
+      "value": "7-10 Knot"
+    },
+    {
+      "label": "Kapasitas Air Tawar",
+      "value": "8000 Liter"
+    },
+    {
+      "label": "Kapasitas Bahan Bakar",
+      "value": "3000 Liter"
+    },
+    {
+      "label": "Mesin",
+      "value": "Mitsubishi 6D16"
+    },
+    {
+      "label": "Generator",
+      "value": "PS120-30 kVA, PS120-22 kVA"
+    },
+    {
+      "label": "Navigasi",
+      "value": "AIS, Radar, Kompas, GPS, Peta"
+    },
+    {
+      "label": "Radio",
+      "value": "SBB Radio, VHF Radio"
+    },
+    {
+      "label": "Peralatan Keselamatan",
+      "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+    },
+    {
+      "label": "Speedboat",
+      "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+    },
+    {
+      "label": "Kabin",
+      "value": "6 Kabin dengan AC, 2 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+    },
+    {
+      "label": "Jumlah Kabin",
+      "value": "6 Kabin"
+    }
+  ],
+  "cabins": [
+    {
+      "name": "Share Cabin 1 (Main Deck)",
+      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "capacity": "1-4",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/superior-lamborajo-1-share-cabin-1.webp"
+      ]
+    },
+    {
+      "name": "Share Cabin 2 (Main Deck)",
+      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "capacity": "1-4",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/superior-lamborajo-1-share-cabin-2.webp"
+      ]
+    },
+    {
+      "name": "Share Cabin 3 (Main Deck)",
+      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "capacity": "1-4",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/superior-lamborajo-1-share-cabin-3.webp"
+      ]
+    },
+    {
+      "name": "Full Ocean (Main Deck)",
+      "description": "Queen Bed dan 2 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "capacity": "1-4",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/superior-lamborajo-1-full-ocean.webp"
+      ]
+    },
+    {
+      "name": "Master Ocean 1 (Upper Deck)",
+      "description": "Queen Bed dan 2 extra single bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
+      "capacity": "1-4",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/superior-lamborajo-1-master-ocean-1.webp"
+      ]
+    },
+    {
+      "name": "Master Ocean 2 (Upper Deck)",
+      "description": "Queen Bed dan 2 extra single bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
+      "capacity": "1-4",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/superior-lamborajo-1-master-ocean-2.webp"
+      ]
+    }
+  ],
+  "priceList": {
+    "fullDay": {
+      "1-12": 32000000,
+      "addPerPax": 1000000,
+      "maxPax": 24
+    },
+    "2D1N": {
+      "1-12": 38000000,
+      "13-16": 40000000,
+      "17-20": 43000000,
+      "addPerPax": 1500000,
+      "maxPax": 24
+    },
+    "3D2N": {
+      "1-12": 43000000,
+      "13-16": 45000000,
+      "17-20": 48000000,
+      "addPerPax": 2000000,
+      "maxPax": 24
+    },
+    "4D3N": {
+      "1-12": 49000000,
+      "13-16": 51000000,
+      "17-20": 54000000,
+      "addPerPax": 2500000,
+      "maxPax": 24
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { getCollection } from "astro:content";
 import type { Vehicle } from "@/lib/content/shared/types";
+import { resolveImage } from "@/lib/content/tourPackages/images";
 
 type EntryData = {
   name: string;
@@ -35,8 +36,8 @@ export async function getVehicles(locale = "id"): Promise<Vehicle[]> {
       features: data.features,
       bestFor: data.bestFor,
       description: data.description,
-      imageTop: data.imageTop,
-      imageBottom: data.imageBottom,
+      imageTop: resolveImage(data.imageTop),
+      imageBottom: resolveImage(data.imageBottom),
     });
   }
 

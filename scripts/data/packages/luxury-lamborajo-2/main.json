@@ -1,0 +1,175 @@
+{
+  "slug": "luxury-lamborajo-2",
+  "region": "labuan-bajo",
+  "collectionSlug": "private-trip-luxury-phinisi",
+  "images": [
+    "hero/luxury-lamborajo-2.webp",
+    "gallery/luxury-lamborajo-2-exterior.webp",
+    "gallery/luxury-lamborajo-2-interior.webp",
+    "gallery/luxury-lamborajo-2-cabin.webp",
+    "gallery/luxury-lamborajo-2-sundeck.webp"
+  ],
+  "boatName": "Lamborajo 2",
+  "boatType": "Luxury Phinisi",
+  "boatCapacity": 25,
+  "boatSpecs": [
+    {
+      "label": "Panjang Kapal",
+      "value": "30 Meter"
+    },
+    {
+      "label": "Lebar Kapal",
+      "value": "7,2 Meter"
+    },
+    {
+      "label": "Kecepatan Jelajah",
+      "value": "7-10 Knot"
+    },
+    {
+      "label": "Kapasitas Air Tawar",
+      "value": "8000 Liter"
+    },
+    {
+      "label": "Kapasitas Bahan Bakar",
+      "value": "3000 Liter"
+    },
+    {
+      "label": "Mesin",
+      "value": "Mitsubishi 6D22 Cylinder"
+    },
+    {
+      "label": "Generator",
+      "value": "Double PS120"
+    },
+    {
+      "label": "Navigasi",
+      "value": "AIS, Radar, Kompas, GPS, Peta"
+    },
+    {
+      "label": "Radio",
+      "value": "SBB Radio, VHF Radio"
+    },
+    {
+      "label": "Peralatan Keselamatan",
+      "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+    },
+    {
+      "label": "Speedboat",
+      "value": "Fiberglass 6 Meter dengan Mesin Yamaha 40 HP"
+    },
+    {
+      "label": "Kabin",
+      "value": "8 Kabin dengan AC, Kamar Mandi Pribadi, dan Air Panas"
+    },
+    {
+      "label": "Jumlah Kabin",
+      "value": "8 Kabin"
+    },
+    {
+      "label": "Fasilitas Tambahan",
+      "value": "Jacuzzi, Canoe, Paddle Board, TV, Bar, Karaoke Set"
+    }
+  ],
+  "cabins": [
+    {
+      "name": "Superior Cabin 1 (Lower Deck)",
+      "description": "Queen Bed dan single bed, kamar mandi pribadi, AC, air panas, kapasitas 1-3 orang.",
+      "capacity": "1-3",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/luxury-lamborajo-2-superior-cabin-1.webp"
+      ]
+    },
+    {
+      "name": "Superior Cabin 2 (Lower Deck)",
+      "description": "Queen Bed dan single bed, kamar mandi pribadi, AC, air panas, kapasitas 1-3 orang.",
+      "capacity": "1-3",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/luxury-lamborajo-2-superior-cabin-2.webp"
+      ]
+    },
+    {
+      "name": "Superior Cabin 3 (Lower Deck)",
+      "description": "Queen Bed dan single bed, kamar mandi pribadi, AC, air panas, kapasitas 1-3 orang.",
+      "capacity": "1-3",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/luxury-lamborajo-2-superior-cabin-3.webp"
+      ]
+    },
+    {
+      "name": "Superior Cabin 4 (Lower Deck)",
+      "description": "Queen Bed dan single bed, kamar mandi pribadi, AC, air panas, kapasitas 1-3 orang.",
+      "capacity": "1-3",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/luxury-lamborajo-2-superior-cabin-4.webp"
+      ]
+    },
+    {
+      "name": "Superior Cabin 5 (Lower Deck)",
+      "description": "Queen Bed dan single bed, kamar mandi pribadi, AC, air panas, kapasitas 1-3 orang.",
+      "capacity": "1-3",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/luxury-lamborajo-2-superior-cabin-5.webp"
+      ]
+    },
+    {
+      "name": "Family Ocean View (Main Deck)",
+      "description": "Queen Bed dan 2 extra bed, kamar mandi pribadi, AC, air panas, kapasitas 1-4 orang.",
+      "capacity": "1-4",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/luxury-lamborajo-2-family-ocean-view.webp"
+      ]
+    },
+    {
+      "name": "Master Ocean View 1 (Upper Deck)",
+      "description": "Queen Bed dan extra bed, kamar mandi pribadi, balkon pribadi, AC, air panas, kapasitas 1-3 orang.",
+      "capacity": "1-3",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/luxury-lamborajo-2-master-ocean-view-1.webp"
+      ]
+    },
+    {
+      "name": "Master Ocean View 2 (Upper Deck)",
+      "description": "Queen Bed dan extra bed, kamar mandi pribadi, balkon pribadi, AC, air panas, kapasitas 1-3 orang.",
+      "capacity": "1-3",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/luxury-lamborajo-2-master-ocean-view-2.webp"
+      ]
+    }
+  ],
+  "priceList": {
+    "fullDay": {
+      "1-12": 55000000,
+      "addPerPax": 1500000,
+      "maxPax": 25
+    },
+    "2D1N": {
+      "1-12": 76000000,
+      "13-16": 84000000,
+      "17-20": 93000000,
+      "addPerPax": 2500000,
+      "maxPax": 25
+    },
+    "3D2N": {
+      "1-12": 88000000,
+      "13-16": 97000000,
+      "17-20": 107000000,
+      "addPerPax": 3000000,
+      "maxPax": 25
+    },
+    "4D3N": {
+      "1-12": 104000000,
+      "13-16": 116000000,
+      "17-20": 130000000,
+      "addPerPax": 4000000,
+      "maxPax": 25
+    }
+  }
+}

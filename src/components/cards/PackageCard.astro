@@ -15,9 +15,10 @@ import { Button } from "@/components/ui/button";
 interface Props {
   tour: TourPackage;
   locale?: string;
+  loading?: "lazy" | "eager";
 }
 
-const { tour, locale = "id" } = Astro.props;
+const { tour, locale = "id", loading = "lazy" } = Astro.props;
 const uiStrings = t(locale);
 
 const region = REGION_MAP[tour.region];
@@ -45,7 +46,7 @@ const cardHref = localizeHref(
           duration-700
           ease-out
           group-hover:scale-105"
-      loading="lazy"
+      loading={loading}
     />
 
     <div class="absolute left-4 top-4 font-sans">

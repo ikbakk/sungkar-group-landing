@@ -15,6 +15,9 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
+  devToolbar: {
+    enabled: true,
+  },
   site: SITE_URL,
   vite: {
     plugins: [tailwindcss()],

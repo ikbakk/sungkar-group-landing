@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/typography";
 import type { Cabin } from "@/lib/content/tourPackages/types";
 import { t } from "@/lib/i18n";
-import { getImageSrc } from "@/lib/images";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import { Card, CardContent } from "@/components/ui/card";
 import { Price } from "@/components/ui/price";
 import {
@@ -44,22 +44,22 @@ const uiStrings = t(locale);
                   {cabin.images.map((img) => (
                     <CarouselItem>
                       <div class="aspect-[4/3] overflow-hidden">
-                        <img
-                          src={getImageSrc(img)}
+                        <OptimizedImage
+                          src={img}
                           alt={cabin.name}
                           class="h-full w-full object-cover"
-                          loading={i < 1 ? "eager" : "lazy"}
+                          loading="lazy"
                         />
                       </div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious class="left-2" />
+                <CarouselNext class="right-2" />
               </Carousel>
             </div>
             <CardContent class="flex flex-1 flex-col justify-center gap-3 py-6 md:py-8">
-              <TypographyH3 class="!mt-0">{cabin.name}</TypographyH3>
+              <TypographyH3 class="mt-0!">{cabin.name}</TypographyH3>
               {cabin.description && (
                 <TypographyP class="text-sm leading-relaxed text-muted-foreground">
                   {cabin.description}

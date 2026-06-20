@@ -1,5 +1,5 @@
 ---
-import { TypographyH2, TypographyP } from "@/components/ui/typography";
+import { TypographyH2 } from "@/components/ui/typography";
 import { t } from "@/lib/i18n";
 
 interface Props {
@@ -11,7 +11,7 @@ const { content, locale = "id" } = Astro.props;
 const uiStrings = t(locale);
 ---
 
-<div class="mx-auto max-w-3xl">
+<div>
   <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
     {uiStrings.paketWisata.termsAndConditions}
   </div>
@@ -20,13 +20,14 @@ const uiStrings = t(locale);
     {uiStrings.paketWisata.termsAndConditions}
   </TypographyH2>
 
-  <div class="mt-6 grid gap-2">
+  <ul class="mt-6 space-y-2.5">
     {
       content.map((line) => (
-        <TypographyP class="m-0 text-sm leading-7 text-muted-foreground">
-          {line}
-        </TypographyP>
+        <li class="flex gap-3 text-sm leading-6 text-text-muted">
+          <span class="mt-1.75 size-1 shrink-0 rounded-full bg-brand-300/60" />
+          <span>{line}</span>
+        </li>
       ))
     }
-  </div>
+  </ul>
 </div>

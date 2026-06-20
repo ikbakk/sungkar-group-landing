@@ -1,0 +1,153 @@
+{
+  "slug": "deluxe-yukai",
+  "region": "labuan-bajo",
+  "collectionSlug": "phinisi-deluxe-charter",
+  "images": [
+    "hero/yukai-deluxe.webp",
+    "gallery/yukai-deluxe-exterior.webp",
+    "gallery/yukai-deluxe-interior.webp",
+    "gallery/yukai-deluxe-cabin.webp",
+    "gallery/yukai-deluxe-sundeck.webp"
+  ],
+  "boatName": "Yukai",
+  "boatType": "Deluxe Phinisi",
+  "boatCapacity": 12,
+  "boatSpecs": [
+    {
+      "label": "Panjang Kapal",
+      "value": "22 Meter"
+    },
+    {
+      "label": "Lebar Kapal",
+      "value": "4,2 Meter"
+    },
+    {
+      "label": "Kecepatan Jelajah",
+      "value": "7-10 Knot"
+    },
+    {
+      "label": "Kapasitas Air Tawar",
+      "value": "5000 Liter"
+    },
+    {
+      "label": "Kapasitas Bahan Bakar",
+      "value": "3000 Liter"
+    },
+    {
+      "label": "Mesin",
+      "value": "Mitsubishi 6D16"
+    },
+    {
+      "label": "Generator",
+      "value": "30 KVA, Emergency 7500 Watt"
+    },
+    {
+      "label": "Navigasi",
+      "value": "AIS, Radar, Kompas, GPS, Peta"
+    },
+    {
+      "label": "Radio",
+      "value": "SBB Radio, VHF Radio"
+    },
+    {
+      "label": "Peralatan Keselamatan",
+      "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+    },
+    {
+      "label": "Speedboat",
+      "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+    },
+    {
+      "label": "Kabin",
+      "value": "6 Kabin dengan AC dan Kamar Mandi Pribadi"
+    },
+    {
+      "label": "Jumlah Kabin",
+      "value": "6 Kabin"
+    },
+    {
+      "label": "Fasilitas Tambahan",
+      "value": "Jacuzzi, TV, Karaoke Set, Sistem Suara Bluetooth"
+    }
+  ],
+  "cabins": [
+    {
+      "name": "Signature Cabin 1 (Main Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/yukai-deluxe-signature-cabin-1.webp"
+      ]
+    },
+    {
+      "name": "Signature Cabin 2 (Main Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/yukai-deluxe-signature-cabin-2.webp"
+      ]
+    },
+    {
+      "name": "Deluxe Cabin 1 (Main Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/yukai-deluxe-deluxe-cabin-1.webp"
+      ]
+    },
+    {
+      "name": "Deluxe Cabin 2 (Main Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/yukai-deluxe-deluxe-cabin-2.webp"
+      ]
+    },
+    {
+      "name": "Deluxe Cabin 3 (Upper Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/yukai-deluxe-deluxe-cabin-3.webp"
+      ]
+    },
+    {
+      "name": "Deluxe Cabin 4 (Upper Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/yukai-deluxe-deluxe-cabin-4.webp"
+      ]
+    }
+  ],
+  "priceList": {
+    "fullDay": {
+      "1-12": 34000000,
+      "maxPax": 12
+    },
+    "2D1N": {
+      "1-8": 41000000,
+      "9-12": 45000000,
+      "addPerPax": 1000000,
+      "maxPax": 12
+    },
+    "3D2N": {
+      "1-8": 46000000,
+      "9-12": 51000000,
+      "addPerPax": 2000000,
+      "maxPax": 12
+    },
+    "4D3N": {
+      "1-8": 52000000,
+      "9-12": 57000000,
+      "addPerPax": 3000000,
+      "maxPax": 12
+    }
+  }
+}

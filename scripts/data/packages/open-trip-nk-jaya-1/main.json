@@ -1,0 +1,98 @@
+{
+  "slug": "open-trip-nk-jaya-1",
+  "region": "labuan-bajo",
+  "collectionSlug": "open-trip",
+  "images": [
+    "hero/open-trip-nk-jaya-1.webp",
+    "gallery/open-trip-nk-jaya-1-exterior.webp",
+    "gallery/open-trip-nk-jaya-1-interior.webp",
+    "gallery/open-trip-nk-jaya-1-cabin.webp",
+    "gallery/open-trip-nk-jaya-1-sundeck.webp"
+  ],
+  "boatName": "NK Jaya 1",
+  "boatType": "Deluxe Phinisi",
+  "boatCapacity": 14,
+  "boatSpecs": [
+    {
+      "label": "Panjang Kapal",
+      "value": "22 Meter"
+    },
+    {
+      "label": "Lebar Kapal",
+      "value": "4,5 Meter"
+    },
+    {
+      "label": "Kecepatan Jelajah",
+      "value": "7-10 Knot"
+    },
+    {
+      "label": "Kabin",
+      "value": "7 Kabin"
+    }
+  ],
+  "cabins": [
+    {
+      "name": "Superior Cabin 1",
+      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
+      "capacity": "1-2",
+      "price": "Minimum 2 pax: IDR 4.350.000/pax",
+      "images": [
+        "gallery/open-trip-nk-jaya-1-superior-cabin-1.webp"
+      ]
+    },
+    {
+      "name": "Superior Cabin 2",
+      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
+      "capacity": "1-2",
+      "price": "Minimum 2 pax: IDR 4.350.000/pax",
+      "images": [
+        "gallery/open-trip-nk-jaya-1-superior-cabin-2.webp"
+      ]
+    },
+    {
+      "name": "Superior Cabin 3",
+      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
+      "capacity": "1-2",
+      "price": "Minimum 2 pax: IDR 4.350.000/pax",
+      "images": [
+        "gallery/open-trip-nk-jaya-1-superior-cabin-3.webp"
+      ]
+    },
+    {
+      "name": "Full Ocean 1",
+      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "capacity": "1-2",
+      "price": "Minimum 2 pax: IDR 5.350.000/pax",
+      "images": [
+        "gallery/open-trip-nk-jaya-1-full-ocean-1.webp"
+      ]
+    },
+    {
+      "name": "Full Ocean 2",
+      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "capacity": "1-2",
+      "price": "Minimum 2 pax: IDR 5.350.000/pax",
+      "images": [
+        "gallery/open-trip-nk-jaya-1-full-ocean-2.webp"
+      ]
+    },
+    {
+      "name": "Full Ocean 3",
+      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "capacity": "1-2",
+      "price": "Minimum 2 pax: IDR 5.350.000/pax",
+      "images": [
+        "gallery/open-trip-nk-jaya-1-full-ocean-3.webp"
+      ]
+    },
+    {
+      "name": "Full Ocean 4",
+      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "capacity": "1-2",
+      "price": "Minimum 2 pax: IDR 5.350.000/pax",
+      "images": [
+        "gallery/open-trip-nk-jaya-1-full-ocean-4.webp"
+      ]
+    }
+  ]
+}

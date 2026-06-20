@@ -1,0 +1,166 @@
+{
+  "slug": "deluxe-maheswari",
+  "region": "labuan-bajo",
+  "featured": false,
+  "collectionSlug": "phinisi-deluxe-charter",
+  "images": [
+    "hero/maheswari-deluxe-phinisi.webp",
+    "gallery/maheswari-deluxe-phinisi-exterior.webp",
+    "gallery/maheswari-deluxe-phinisi-interior.webp",
+    "gallery/maheswari-deluxe-phinisi-cabin.webp",
+    "gallery/maheswari-deluxe-phinisi-sundeck.webp"
+  ],
+  "boatName": "Maheswari",
+  "boatType": "Deluxe Phinisi",
+  "boatCapacity": 20,
+  "boatSpecs": [
+    {
+      "label": "Panjang Kapal",
+      "value": "30m"
+    },
+    {
+      "label": "Lebar Kapal",
+      "value": "6.5m"
+    },
+    {
+      "label": "Kecepatan Jelajah",
+      "value": "7-10 Knot"
+    },
+    {
+      "label": "Kapasitas Bahan Bakar",
+      "value": "8000 Liter"
+    },
+    {
+      "label": "Kapasitas Air Tawar",
+      "value": "13000 Liter"
+    },
+    {
+      "label": "Mesin",
+      "value": "Mitsubishi 8D C9 Cylinder"
+    },
+    {
+      "label": "Generator",
+      "value": "PS120-30KVA, PS120-22KVA"
+    },
+    {
+      "label": "Navigasi",
+      "value": "AIS, Radar, Kompas, GPS, Peta"
+    },
+    {
+      "label": "Radio",
+      "value": "SBB Radio, VHF Radio"
+    },
+    {
+      "label": "Peralatan Keselamatan",
+      "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+    },
+    {
+      "label": "Speedboat",
+      "value": "6 Meter Fiberglass dengan Mesin Yamaha 15 HP"
+    },
+    {
+      "label": "Kabin",
+      "value": "8 Kabin (AC, Kamar Mandi Pribadi)"
+    },
+    {
+      "label": "Fasilitas Tambahan",
+      "value": "Jacuzzi"
+    }
+  ],
+  "cabins": [
+    {
+      "name": "Superior Cabin 1 (Lower Deck)",
+      "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
+      "capacity": 2,
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/maheswari-deluxe-phinisi-superior-cabin.webp"
+      ]
+    },
+    {
+      "name": "Superior Cabin 2 (Lower Deck)",
+      "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
+      "capacity": 2,
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/maheswari-deluxe-phinisi-superior-cabin.webp"
+      ]
+    },
+    {
+      "name": "Signature Ocean 1 (Main Deck)",
+      "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
+      "capacity": 3,
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/maheswari-deluxe-phinisi-signature-cabin.webp"
+      ]
+    },
+    {
+      "name": "Signature Ocean 2 (Main Deck)",
+      "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
+      "capacity": 3,
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/maheswari-deluxe-phinisi-signature-cabin.webp"
+      ]
+    },
+    {
+      "name": "Deluxe Ocean 1 (Upper Deck)",
+      "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
+      "capacity": 2,
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/maheswari-deluxe-phinisi-deluxe-cabin.webp"
+      ]
+    },
+    {
+      "name": "Deluxe Ocean 2 (Upper Deck)",
+      "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
+      "capacity": 2,
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/maheswari-deluxe-phinisi-deluxe-cabin.webp"
+      ]
+    },
+    {
+      "name": "Master Ocean 1 (Main Deck)",
+      "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
+      "capacity": 3,
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/maheswari-deluxe-phinisi-master-cabin.webp"
+      ]
+    },
+    {
+      "name": "Master Ocean 2 (Main Deck)",
+      "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
+      "capacity": 3,
+      "price": "Harga tergantung paket (lihat daftar harga)",
+      "images": [
+        "gallery/maheswari-deluxe-phinisi-master-cabin.webp"
+      ]
+    }
+  ],
+  "priceList": {
+    "fullDay": {
+      "1-10": 40000000,
+      "addPerPax": 1000000,
+      "maxPax": 25
+    },
+    "2D1N": {
+      "1-10": 51000000,
+      "addPerPax": 1500000,
+      "maxPax": 25
+    },
+    "3D2N": {
+      "1-10": 58000000,
+      "addPerPax": 2500000,
+      "maxPax": 25
+    },
+    "4D3N": {
+      "1-10": 67000000,
+      "addPerPax": 3500000,
+      "maxPax": 25
+    }
+  }
+}

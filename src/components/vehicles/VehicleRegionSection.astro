@@ -23,8 +23,8 @@ const { id, title, description, vehicles, locale = "id" } = Astro.props;
       </div>
 
       <div class="grid gap-8 md:grid-cols-2">
-        {vehicles.map((vehicle) => (
-          <VehicleCard vehicle={vehicle} locale={locale} />
+        {vehicles.map((vehicle, i) => (
+          <VehicleCard vehicle={vehicle} locale={locale} loading={i < 3 ? "eager" : "lazy"} />
         ))}
       </div>
     </div>

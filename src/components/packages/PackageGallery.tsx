@@ -132,7 +132,7 @@ export default function PackageGallery({
           >
             <img
               src={getImageSrc(images[current])}
-              alt={`${current + 1} / ${images.length}`}
+              alt={`${uiStrings.gallery.photos} ${current + 1}`}
               className="max-h-[70vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
             />
           </div>

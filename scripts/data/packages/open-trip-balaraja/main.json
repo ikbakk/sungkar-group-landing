@@ -1,0 +1,89 @@
+{
+  "slug": "open-trip-balaraja",
+  "region": "labuan-bajo",
+  "collectionSlug": "open-trip",
+  "images": [
+    "hero/open-trip-balaraja.webp",
+    "gallery/open-trip-balaraja-exterior.webp",
+    "gallery/open-trip-balaraja-interior.webp",
+    "gallery/open-trip-balaraja-cabin.webp",
+    "gallery/open-trip-balaraja-sundeck.webp"
+  ],
+  "boatName": "Balaraja",
+  "boatType": "Superior Phinisi",
+  "boatCapacity": 22,
+  "boatSpecs": [
+    {
+      "label": "Panjang Kapal",
+      "value": "33 Meter"
+    },
+    {
+      "label": "Lebar Kapal",
+      "value": "5,8 Meter"
+    },
+    {
+      "label": "Kecepatan Jelajah",
+      "value": "7-10 Knot"
+    },
+    {
+      "label": "Kabin",
+      "value": "6 Kabin"
+    }
+  ],
+  "cabins": [
+    {
+      "name": "Share Cabin 1",
+      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "capacity": "1-4",
+      "price": "Minimum 2 pax: IDR 3.000.000/pax",
+      "images": [
+        "gallery/open-trip-balaraja-share-cabin-1.webp"
+      ]
+    },
+    {
+      "name": "Share Cabin 2",
+      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "capacity": "1-4",
+      "price": "Minimum 2 pax: IDR 3.000.000/pax",
+      "images": [
+        "gallery/open-trip-balaraja-share-cabin-2.webp"
+      ]
+    },
+    {
+      "name": "Share Cabin 3",
+      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "capacity": "1-4",
+      "price": "Minimum 2 pax: IDR 3.000.000/pax",
+      "images": [
+        "gallery/open-trip-balaraja-share-cabin-3.webp"
+      ]
+    },
+    {
+      "name": "Share Cabin 4",
+      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "capacity": "1-4",
+      "price": "Minimum 2 pax: IDR 3.000.000/pax",
+      "images": [
+        "gallery/open-trip-balaraja-share-cabin-4.webp"
+      ]
+    },
+    {
+      "name": "Master Ocean 1",
+      "description": "Queen Bed + Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "capacity": "1-3",
+      "price": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax",
+      "images": [
+        "gallery/open-trip-balaraja-master-ocean-1.webp"
+      ]
+    },
+    {
+      "name": "Master Ocean 2",
+      "description": "Queen Bed + Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "capacity": "1-3",
+      "price": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax",
+      "images": [
+        "gallery/open-trip-balaraja-master-ocean-2.webp"
+      ]
+    }
+  ]
+}

@@ -24,7 +24,7 @@ const { src, alt, ...rest } = Astro.props;
 
 {
   isRemoteImage(src) ? (
-    <img
+    <Image
       src={src}
       alt={alt}
       class={rest.class}

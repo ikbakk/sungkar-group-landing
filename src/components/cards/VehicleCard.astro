@@ -16,9 +16,10 @@ import { Button } from "@/components/ui/button";
 interface Props {
   vehicle: Vehicle;
   locale?: string;
+  loading?: "lazy" | "eager";
 }
 
-const { vehicle, locale = "id" } = Astro.props;
+const { vehicle, locale = "id", loading = "lazy" } = Astro.props;
 const uiStrings = t(locale);
 
 const cardHref = localizeHref(
@@ -33,7 +34,7 @@ const cardHref = localizeHref(
       src={vehicle.imageTop}
       alt={vehicle.name}
       class="h-full w-full object-cover"
-      loading="lazy"
+      loading={loading}
     />
   </div>
 

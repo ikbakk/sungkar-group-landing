@@ -1,5 +1,6 @@
 import { getCollection } from "astro:content";
 import type { Accommodation } from "@/lib/content/shared/types";
+import { resolveImage } from "@/lib/content/tourPackages/images";
 
 type EntryData = {
   name: string;
@@ -30,7 +31,7 @@ export async function getAccommodations(
       perks: data.perks,
       regionalHighlights: data.regionalHighlights,
       description: data.description,
-      image: data.image,
+      image: resolveImage(data.image),
     });
   }
 
