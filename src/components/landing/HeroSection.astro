@@ -1,5 +1,5 @@
 ---
-import { TypographyH1 } from "@/components/ui/typography";
+import { TypographyH1, TypographyP } from "@/components/ui/typography";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import type { ImageSource } from "@/lib/images";
 
@@ -75,23 +75,23 @@ const { eyebrow, title, description, primaryAction, secondaryAction, image } =
     class="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 sm:pb-20 lg:pb-28 lg:px-8"
   >
     <div class="max-w-2xl hero-content">
-      <p
+      <TypographyP
         class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-brand-200 sm:text-sm"
       >
         <span class="size-1.5 rounded-full bg-amber-400" aria-hidden="true"
         ></span>
         {eyebrow}
-      </p>
+      </TypographyP>
       <TypographyH1
         class="mt-4 text-4xl leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl"
       >
         {title}
       </TypographyH1>
-      <p
+      <TypographyP
         class="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg"
       >
         {description}
-      </p>
+      </TypographyP>
       <div class="mt-8 flex flex-col gap-3 sm:flex-row">
         <a
           href={primaryAction.href}

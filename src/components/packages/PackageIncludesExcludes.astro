@@ -1,5 +1,9 @@
 ---
-import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
+import {
+  TypographyH2,
+  TypographyH3,
+  TypographyP,
+} from "@/components/ui/typography";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Tick02Icon, Cancel01Icon } from "@hugeicons/core-free-icons";
 import type { TourPackage } from "@/lib/content/tourPackages/types";
@@ -23,9 +27,9 @@ const uiStrings = t(locale);
     {uiStrings.paketWisata.includedExcluded}
   </TypographyH2>
 
-  <p class="mt-3 text-sm leading-7 text-text-muted">
+  <TypographyP class="mt-3 text-sm leading-7 text-text-muted">
     {uiStrings.paketWisata.includedExcludedDesc}
-  </p>
+  </TypographyP>
 </div>
 
 <div class="mx-auto mt-10 grid gap-6 md:grid-cols-2">
@@ -58,7 +62,9 @@ const uiStrings = t(locale);
   <div
     class="rounded-xl border border-border bg-white p-6 shadow-[0_8px_30px_rgba(17,24,39,0.04)]"
   >
-    <TypographyH3 class="mb-5 flex items-center gap-2 text-lg leading-tight text-red-600">
+    <TypographyH3
+      class="mb-5 flex items-center gap-2 text-lg leading-tight text-red-600"
+    >
       <span
         class="flex size-6 items-center justify-center rounded-full bg-red-100 text-red-500"
       >
