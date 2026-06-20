@@ -69,6 +69,9 @@ const tourPackages = defineCollection({
         }),
       )
       .optional(),
+    durationLabels: z.record(z.string(), z.string()).optional(),
+    additionalServices: z.array(z.string()).optional(),
+    dontForgetToBring: z.array(z.string()).optional(),
     termsAndConditions: z.array(z.string()).optional(),
   }),
 });

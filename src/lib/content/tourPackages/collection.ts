@@ -26,6 +26,9 @@ type EntryData = {
     price: string;
     images: string[];
   }[];
+  durationLabels?: Record<string, string>;
+  additionalServices?: string[];
+  dontForgetToBring?: string[];
   termsAndConditions?: string[];
 };
 
@@ -67,6 +70,9 @@ export async function getPackages(locale = "id"): Promise<TourPackage[]> {
           images: resolveImages(c.images),
         }),
       ),
+      durationLabels: data.durationLabels,
+      additionalServices: data.additionalServices,
+      dontForgetToBring: data.dontForgetToBring,
       termsAndConditions: data.termsAndConditions,
     });
   }

@@ -148,6 +148,8 @@ export const en: UIStrings = {
     cabins: "Cabins",
     cabinPrice: "Cabin Price",
     termsAndConditions: "Terms & Conditions",
+    additionalServices: "Additional Services",
+    dontForgetToBring: "Don't Forget to Bring",
   },
   akomodasi: {
     title: "Accommodations",

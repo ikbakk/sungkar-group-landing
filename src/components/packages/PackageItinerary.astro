@@ -1,17 +1,60 @@
 ---
-import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
+import { TypographyH2 } from "@/components/ui/typography";
 import { t } from "@/lib/i18n";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
+
+import PackageDayTimeline from "./PackageDayTimeline.astro";
 
 interface Props {
   itineraryByDay: [string, string[]][];
   locale?: string;
+  durationLabels?: Record<string, string>;
 }
 
-const { itineraryByDay, locale = "id" } = Astro.props;
+const { itineraryByDay, locale = "id", durationLabels } = Astro.props;
 const uiStrings = t(locale);
+const multiDuration = !!durationLabels;
+const firstKey = itineraryByDay[0]?.[0] ?? "";
+
+interface DayGroup {
+  day: string;
+  activities: string[];
+}
+
+interface TabGroup {
+  key: string;
+  dayGroups: DayGroup[];
+}
+
+const tabGroups: TabGroup[] = multiDuration
+  ? itineraryByDay.map(([key, activities]) => {
+      const dayMap: Record<string, string[]> = {};
+      for (const item of activities) {
+        const [day, ...rest] = item.split(" - ");
+        const desc = rest.join(" - ");
+        if (!dayMap[day]) dayMap[day] = [];
+        dayMap[day].push(desc);
+      }
+      return { key, dayGroups: Object.entries(dayMap).map(([day, acts]) => ({ day, activities: acts })) };
+    })
+  : [];
+
+const singleDayGroups: DayGroup[] = !multiDuration
+  ? itineraryByDay.map(([day, activities]) => ({ day, activities }))
+  : [];
 ---
 
-<!-- PackageItinerary --><!-- FIX: replace with proper ui strings, it still only in indonesian whatever the locale is-->
 <div class="w-full">
   <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
     {uiStrings.paketWisata.itineraryLabel}
@@ -24,29 +67,44 @@ const uiStrings = t(locale);
   </p>
 </div>
 
-<div class="relative mx-auto mt-14">
-  <div class="absolute left-2.75 top-3 bottom-3 w-px bg-brand-200/50"></div>
-
-  {
-    itineraryByDay.map(([day, activities]) => (
-      <div class="relative pl-11 pb-14 last:pb-0">
-        <div class="absolute left-0 top-2 z-10 flex size-6 items-center justify-center rounded-full border-2 border-brand-500 bg-white">
-          <span class="size-2 rounded-full bg-brand-500" />
-        </div>
-
-        <TypographyH3 class="text-xl leading-tight text-foreground">
-          {day}
-        </TypographyH3>
-
-        <ul class="mt-4 space-y-3">
-          {activities.map((activity) => (
-            <li class="flex gap-3 text-sm leading-6 text-text-muted">
-              <span class="mt-1.75 size-1 shrink-0 rounded-full bg-brand-300/60" />
-              <span>{activity}</span>
-            </li>
+{
+  multiDuration ? (
+    <>
+      <Tabs defaultValue={firstKey} class="mt-14 hidden md:block w-full">
+        <TabsList
+          class="grid w-full"
+          style={`grid-template-columns: repeat(${itineraryByDay.length}, 1fr)`}
+        >
+          {tabGroups.map(({ key }) => (
+            <TabsTrigger value={key}>
+              {durationLabels[key] || key}
+            </TabsTrigger>
           ))}
-        </ul>
-      </div>
-    ))
-  }
-</div>
+        </TabsList>
+
+        {tabGroups.map(({ key, dayGroups }) => (
+          <TabsContent value={key} class="mt-0">
+            <PackageDayTimeline dayGroups={dayGroups} />
+          </TabsContent>
+        ))}
+      </Tabs>
+
+      <Accordion class="mt-14 block md:hidden rounded-lg border">
+        {tabGroups.map(({ key, dayGroups }) => (
+          <AccordionItem value={key} class="border-b last:border-b-0">
+            <AccordionTrigger class="px-4 py-3">
+              {durationLabels[key] || key}
+            </AccordionTrigger>
+            <AccordionContent class="px-4">
+              <PackageDayTimeline dayGroups={dayGroups} />
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </>
+  ) : (
+    <div class="mt-14">
+      <PackageDayTimeline dayGroups={singleDayGroups} />
+    </div>
+  )
+}

@@ -38,6 +38,9 @@ export type TourPackage = {
   includes: string[];
   excludes: string[];
 
+  durationLabels?: Record<string, string>;
+  additionalServices?: string[];
+  dontForgetToBring?: string[];
   boatName?: string;
   boatType?: string;
   boatCapacity?: number;

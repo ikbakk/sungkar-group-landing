@@ -69,26 +69,131 @@ const COL_TITLE_MAP = {
   zh: COL_TITLE_ZH,
 };
 
-const BOAT_SPECS_EN = {
-  "Panjang Kapal": "Boat Length",
-  "Jumlah Kabin": "Cabins",
-  Mesin: "Engine",
-  Crew: "Crew",
-  Dibangun: "Built",
+const BOAT_SPECS_LABELS = {
+  en: {
+    "Panjang Kapal": "Boat Length",
+    "Jumlah Kabin": "Cabins",
+    "Lebar Kapal": "Boat Width",
+    "Kecepatan Jelajah": "Cruising Speed",
+    "Kapasitas Bahan Bakar": "Fuel Capacity",
+    "Kapasitas Air Tawar": "Fresh Water Capacity",
+    Mesin: "Engine",
+    Generator: "Generator",
+    Navigasi: "Navigation",
+    Radio: "Radio",
+    "Peralatan Keselamatan": "Safety Equipment",
+    Speedboat: "Speedboat",
+    Kabin: "Cabins",
+    Crew: "Crew",
+    Dibangun: "Built",
+  },
+  ms: {
+    "Panjang Kapal": "Panjang Kapal",
+    "Jumlah Kabin": "Bilangan Kabin",
+    "Lebar Kapal": "Lebar Kapal",
+    "Kecepatan Jelajah": "Kelajuan Pelayaran",
+    "Kapasitas Bahan Bakar": "Kapasiti Bahan Api",
+    "Kapasitas Air Tawar": "Kapasiti Air Tawar",
+    Mesin: "Enjin",
+    Generator: "Generator",
+    Navigasi: "Navigasi",
+    Radio: "Radio",
+    "Peralatan Keselamatan": "Peralatan Keselamatan",
+    Speedboat: "Bot Laju",
+    Kabin: "Kabin",
+    Crew: "Krew",
+    Dibangun: "Dibina",
+  },
+  ar: {
+    "Panjang Kapal": "طول القارب",
+    "Jumlah Kabin": "عدد المقصورات",
+    "Lebar Kapal": "عرض القارب",
+    "Kecepatan Jelajah": "سرعة الإبحار",
+    "Kapasitas Bahan Bakar": "سعة الوقود",
+    "Kapasitas Air Tawar": "سعة المياه العذبة",
+    Mesin: "محرك",
+    Generator: "مولد",
+    Navigasi: "ملاحة",
+    Radio: "راديو",
+    "Peralatan Keselamatan": "معدات السلامة",
+    Speedboat: "زورق سريع",
+    Kabin: "مقصورات",
+    Crew: "طاقم",
+    Dibangun: "مبني",
+  },
+  zh: {
+    "Panjang Kapal": "船长",
+    "Jumlah Kabin": "客舱数量",
+    "Lebar Kapal": "船宽",
+    "Kecepatan Jelajah": "巡航速度",
+    "Kapasitas Bahan Bakar": "燃料容量",
+    "Kapasitas Air Tawar": "淡水容量",
+    Mesin: "发动机",
+    Generator: "发电机",
+    Navigasi: "导航",
+    Radio: "无线电",
+    "Peralatan Keselamatan": "安全设备",
+    Speedboat: "快艇",
+    Kabin: "客舱",
+    Crew: "船员",
+    Dibangun: "建造年份",
+  },
 };
 
-const BOAT_VALUES_EN = {
-  "6 Orang": "6 Persons",
-  "5 Kamar": "5 Cabins",
-  "8 Orang": "8 Persons",
-  "4 Kamar": "4 Cabins",
+const BOAT_VALUES_MAP = {
+  en: {
+    "6 Orang": "6 Persons",
+    "8 Orang": "8 Persons",
+    "5 Kamar": "5 Cabins",
+    "4 Kamar": "4 Cabins",
+    "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K":
+      "Life Raft, Life Jackets, Ring Buoys, Fire Extinguisher, First Aid Kit",
+    "6 Meter Fiberglass dengan Mesin Yamaha 15 HP":
+      "6 Meter Fiberglass with Yamaha 15 HP Engine",
+    "6 Kabin (AC, Kamar Mandi Pribadi)": "6 Cabins (AC, Private Bathroom)",
+  },
+  ms: {
+    "6 Orang": "6 Orang",
+    "8 Orang": "8 Orang",
+    "5 Kamar": "5 Kabin",
+    "4 Kamar": "4 Kabin",
+    "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K":
+      "Rakit Penyelamat, Jaket Keselamatan, Pelampung Cincin, Alat Pemadam Kebakaran, Peti P3K",
+    "6 Meter Fiberglass dengan Mesin Yamaha 15 HP":
+      "6 Meter Fiberglass dengan Enjin Yamaha 15 HP",
+    "6 Kabin (AC, Kamar Mandi Pribadi)": "6 Kabin (AC, Bilik Mandi Peribadi)",
+  },
+  ar: {
+    "6 Orang": "6 أشخاص",
+    "8 Orang": "8 أشخاص",
+    "5 Kamar": "5 مقصورات",
+    "4 Kamar": "4 مقصورات",
+    "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K":
+      "طوف نجاة، سترات النجاة، عوامات دائرية، طفاية حريق، عدة إسعافات أولية",
+    "6 Meter Fiberglass dengan Mesin Yamaha 15 HP":
+      "6 أمتار من الألياف الزجاجية بمحرك ياماها 15 حصان",
+    "6 Kabin (AC, Kamar Mandi Pribadi)": "6 مقصورات (تكييف، حمام خاص)",
+  },
+  zh: {
+    "6 Orang": "6人",
+    "8 Orang": "8人",
+    "5 Kamar": "5间客舱",
+    "4 Kamar": "4间客舱",
+    "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K":
+      "救生筏、救生衣、救生圈、灭火器、急救箱",
+    "6 Meter Fiberglass dengan Mesin Yamaha 15 HP":
+      "6米玻璃纤维船体配雅马哈15马力发动机",
+    "6 Kabin (AC, Kamar Mandi Pribadi)": "6间客舱（空调、私人浴室）",
+  },
 };
 
 function localizeBoatSpecs(specs, locale) {
   if (locale === "id") return specs;
+  const labelMap = BOAT_SPECS_LABELS[locale] || {};
+  const valueMap = BOAT_VALUES_MAP[locale] || {};
   return specs.map((s) => ({
-    label: BOAT_SPECS_EN[s.label] || s.label,
-    value: BOAT_VALUES_EN[s.value] || s.value,
+    label: labelMap[s.label] || s.label,
+    value: valueMap[s.value] || s.value,
   }));
 }
 
@@ -129,11 +234,29 @@ function yml(locale, pkg) {
   ordered.collectionTitle =
     COL_TITLE_MAP[locKey]?.[locale.collectionTitle] || locale.collectionTitle;
   ordered.category = locale.category;
-  ordered.duration = locale.duration;
+  if (locale.durationOptions) {
+    ordered.duration = locale.durationOptions.join(", ");
+    const keys = Object.keys(locale.itinerary);
+    ordered.durationLabels = Object.fromEntries(
+      keys.map((key, i) => [key, locale.durationOptions[i]]),
+    );
+  } else {
+    ordered.duration = locale.duration;
+  }
   ordered.images = pkg.images;
   ordered.summary = locale.summary;
   ordered.highlights = locale.highlights;
-  ordered.itinerary = locale.itinerary;
+  if (locale.itinerary && typeof locale.itinerary === "object" && !Array.isArray(locale.itinerary)) {
+    const flat = [];
+    for (const [day, activities] of Object.entries(locale.itinerary)) {
+      for (const activity of activities) {
+        flat.push(`${day} - ${activity}`);
+      }
+    }
+    ordered.itinerary = flat;
+  } else {
+    ordered.itinerary = locale.itinerary;
+  }
   ordered.includes = locale.includes;
   ordered.excludes = locale.excludes;
   if (pkg.boatName) ordered.boatName = pkg.boatName;
@@ -142,6 +265,10 @@ function yml(locale, pkg) {
   if (pkg.boatSpecs)
     ordered.boatSpecs = localizeBoatSpecs(pkg.boatSpecs, locKey);
   if (pkg.cabins) ordered.cabins = localizeCabins(pkg.cabins, locKey);
+  if (locale.additionalServices)
+    ordered.additionalServices = locale.additionalServices;
+  if (locale.dontForgetToBring)
+    ordered.dontForgetToBring = locale.dontForgetToBring;
   if (locale.termsAndConditions)
     ordered.termsAndConditions = locale.termsAndConditions;
   const y = yaml.stringify(ordered, { lineWidth: 0, quotingType: '"' });

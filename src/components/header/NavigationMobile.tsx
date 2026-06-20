@@ -13,7 +13,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/components/ui/accordion-legacy";
 
 import type { NavItem } from "@/lib/content/shared/types";
 import { localizeHref } from "@/lib/i18n/localize";

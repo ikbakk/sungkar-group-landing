@@ -1,0 +1,31 @@
+---
+import { TypographyH3 } from "@/components/ui/typography";
+
+interface Props {
+  dayGroups: Array<{ day: string; activities: string[] }>;
+}
+
+const { dayGroups } = Astro.props;
+---
+
+<div class="relative mx-auto mt-8">
+  <div class="absolute left-2.75 top-3 bottom-3 w-px bg-brand-200/50"></div>
+  {dayGroups.map(({ day, activities }) => (
+    <div class="relative pl-11 pb-4 last:pb-0">
+      <div class="absolute left-0 top-2 z-10 flex size-6 items-center justify-center rounded-full border-2 border-brand-500 bg-white">
+        <span class="size-2 rounded-full bg-brand-500" />
+      </div>
+      <TypographyH3 class="text-xl leading-tight text-foreground">
+        {day}
+      </TypographyH3>
+      <ul class="mt-4 space-y-3">
+        {activities.map((activity) => (
+          <li class="flex gap-3 text-sm leading-6 text-text-muted">
+            <span class="mt-1.75 size-1 shrink-0 rounded-full bg-brand-300/60" />
+            <span>{activity}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</div>

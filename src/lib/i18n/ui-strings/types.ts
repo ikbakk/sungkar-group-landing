@@ -136,6 +136,8 @@ export interface UIStrings {
     cabins: string;
     cabinPrice: string;
     termsAndConditions: string;
+    additionalServices: string;
+    dontForgetToBring: string;
   };
   akomodasi: {
     title: string;

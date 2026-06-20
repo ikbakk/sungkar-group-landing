@@ -16,6 +16,7 @@ import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 import PageHeader from "@/components/site/PageHeader.astro";
 import PackageItinerary from "@/components/packages/PackageItinerary.astro";
 import PackageIncludesExcludes from "@/components/packages/PackageIncludesExcludes.astro";
+import PackageExtraInfo from "@/components/packages/PackageExtraInfo.astro";
 import BoatSpecsSection from "@/components/packages/BoatSpecsSection.astro";
 import CabinsSection from "@/components/packages/CabinsSection.astro";
 import PackageTandC from "@/components/packages/PackageTandC.astro";
@@ -141,7 +142,10 @@ const itineraryByDay = Object.entries(
   />
 
   <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
-    <PackageItinerary itineraryByDay={itineraryByDay} />
+    <PackageItinerary
+      itineraryByDay={itineraryByDay}
+      durationLabels={tour.durationLabels}
+    />
   </SectionContainer>
 
   {
@@ -168,6 +172,10 @@ const itineraryByDay = Object.entries(
 
   <SectionContainer background="bg-white" padding="py-16 sm:py-20">
     <PackageIncludesExcludes tour={tour} />
+  </SectionContainer>
+
+  <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+    <PackageExtraInfo tour={tour} />
   </SectionContainer>
 
   {

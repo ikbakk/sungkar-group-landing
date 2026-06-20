@@ -161,6 +161,8 @@ export const zh: UIStrings = {
     cabins: "\u8239\u8231",
     cabinPrice: "\u8231\u623F\u4EF7\u683C",
     termsAndConditions: "\u6761\u6B3E\u548C\u6761\u4EF6",
+    additionalServices: "\u989D\u5916\u670D\u52A1",
+    dontForgetToBring: "\u522B\u5FD8\u8BB0\u5E26",
   },
   akomodasi: {
     title: "\u4F4F\u5BBF",

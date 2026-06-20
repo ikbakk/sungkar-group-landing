@@ -151,6 +151,8 @@ export const ms: UIStrings = {
     cabins: "Kabin",
     cabinPrice: "Harga Kabin",
     termsAndConditions: "Syarat & Ketentuan",
+    additionalServices: "Perkhidmatan Tambahan",
+    dontForgetToBring: "Jangan Lupa Bawa",
   },
   akomodasi: {
     title: "Penginapan",

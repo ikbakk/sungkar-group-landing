@@ -10,6 +10,12 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import type { FAQItem } from "@/lib/content/shared/types";
 import { HERO } from "@/assets/images";
 
@@ -67,20 +73,22 @@ const breadcrumbs = [
         </CardContent>
       </Card>
 
-      <div class="grid gap-4">
+      <Accordion class="rounded-[1.5rem] border border-border bg-white overflow-hidden">
         {
           generalFaqItems.map((item: FAQItem) => (
-            <details class="rounded-[1.5rem] border border-border bg-white p-6">
-              <summary class="cursor-pointer list-none font-medium text-foreground [&::-webkit-details-marker]:hidden">
+            <AccordionItem value={item.question}>
+              <AccordionTrigger class="px-6 py-5 font-medium text-foreground">
                 {item.question}
-              </summary>
-              <p class="mt-4 text-sm leading-7 text-text-muted">
-                {item.answer}
-              </p>
-            </details>
+              </AccordionTrigger>
+              <AccordionContent class="px-6">
+                <p class="text-sm leading-7 text-text-muted">
+                  {item.answer}
+                </p>
+              </AccordionContent>
+            </AccordionItem>
           ))
         }
-      </div>
+      </Accordion>
     </div>
 
     <div class="mt-12 grid gap-6 md:grid-cols-3">

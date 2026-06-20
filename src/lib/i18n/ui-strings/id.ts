@@ -149,6 +149,8 @@ export const id: UIStrings = {
     cabins: "Kabin Kapal",
     cabinPrice: "Harga Kabin",
     termsAndConditions: "Syarat & Ketentuan",
+    additionalServices: "Layanan Tambahan",
+    dontForgetToBring: "Jangan Lupa Dibawa",
   },
   akomodasi: {
     title: "Akomodasi",

@@ -1,5 +1,5 @@
 ---
-import { TypographyH2, TypographyP } from "@/components/ui/typography";
+import { TypographyH2 } from "@/components/ui/typography";
 import type { BoatSpec } from "@/lib/content/tourPackages/types";
 import { t } from "@/lib/i18n";
 
@@ -26,10 +26,10 @@ const uiStrings = t(locale);
     {
       boatType && (
         <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
-          <TypographyP class="text-xs uppercase tracking-wider text-muted-foreground">
+          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             {uiStrings.paketWisata.boatType}
-          </TypographyP>
-          <TypographyP class="mt-1 text-base">{boatType}</TypographyP>
+          </p>
+          <p class="mt-1 text-base">{boatType}</p>
         </div>
       )
     }
@@ -37,10 +37,10 @@ const uiStrings = t(locale);
     {
       boatCapacity && (
         <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
-          <div class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             {uiStrings.paketWisata.boatCapacity}
-          </div>
-          <div class="mt-1 text-base font-semibold">{boatCapacity}</div>
+          </p>
+          <p class="mt-1 text-base">{boatCapacity}</p>
         </div>
       )
     }
@@ -48,10 +48,10 @@ const uiStrings = t(locale);
     {
       specs?.map((spec) => (
         <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
-          <div class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             {spec.label}
-          </div>
-          <div class="mt-1 text-base font-semibold">{spec.value}</div>
+          </p>
+          <p class="mt-1 text-base">{spec.value}</p>
         </div>
       ))
     }
