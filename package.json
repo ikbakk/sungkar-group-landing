@@ -21,6 +21,7 @@
     "generate:content": "node scripts/generate-content-mdx.mjs",
     "generate:all": "node scripts/generate-tour-mdx.mjs && node scripts/generate-content-mdx.mjs",
     "generate:og-images": "node scripts/generate-og-images.mjs",
+    "generate:template": "node scripts/generate-data-template.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
@@ -39,6 +40,7 @@
     "@fontsource/playfair-display": "^5.2.8",
     "@hugeicons/core-free-icons": "^4.2.0",
     "@hugeicons/react": "^1.1.6",
+    "@inquirer/prompts": "^8.5.2",
     "@tailwindcss/vite": "^4.3.0",
     "@types/react": "^19.2.16",
     "@types/react-dom": "^19.2.3",
