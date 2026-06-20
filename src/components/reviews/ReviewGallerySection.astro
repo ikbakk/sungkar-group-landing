@@ -1,5 +1,6 @@
 ---
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { TypographyH2 } from "@/components/ui/typography";
 import {
   Carousel,
   CarouselContent,
@@ -23,39 +24,38 @@ const galleryImages = Object.values(GALLERY);
 
 <Card class="border-border bg-white">
   <CardHeader>
-    <CardTitle class="text-3xl leading-tight">
+    <TypographyH2 class="text-3xl leading-tight">
       {uiStrings.reviews.galleryTitle}
-    </CardTitle>
+    </TypographyH2>
   </CardHeader>
 
-  <CardContent class="px-0 sm:px-6">
+  <CardContent class="sm:px-6">
     <Carousel
       opts={{
-        slidesToScroll: 4,
+        slidesToScroll: 3,
         loop: true,
-        breakpoints: {
-          "(max-width: 640px)": { slidesToScroll: 1 },
-          "(max-width: 1024px)": { slidesToScroll: 2 },
-        },
       }}
+      class="w-[90%] mx-auto"
     >
-      <CarouselContent class="-ml-2 md:-ml-4">
-        {galleryImages.map((img) => (
-          <CarouselItem class="basis-full sm:basis-1/2 md:basis-1/4 pl-2 md:pl-4">
-            <div class="aspect-4/3 overflow-hidden rounded-xl border border-border">
-              <OptimizedImage
-                src={img}
-                alt=""
-                class="h-full w-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </CarouselItem>
-        ))}
+      <CarouselContent>
+        {
+          galleryImages.map((img) => (
+            <CarouselItem class="sm:basis-1/2 md:basis-1/3 md:pl-4">
+              <div class="aspect-4/3 overflow-hidden rounded-xl border border-border ">
+                <OptimizedImage
+                  src={img}
+                  alt="review-images"
+                  class="h-full w-full object-cover hover:scale-105 duration-150"
+                  loading="lazy"
+                />
+              </div>
+            </CarouselItem>
+          ))
+        }
       </CarouselContent>
 
-      <CarouselPrevious class="left-2 sm:-left-12" />
-      <CarouselNext class="right-2 sm:-right-12" />
+      <CarouselPrevious />
+      <CarouselNext />
     </Carousel>
   </CardContent>
 </Card>
