@@ -143,6 +143,16 @@ const resolvedOpts: EmblaOptionsType = {
 
       const api = EmblaCarousel(viewport, parseOptions(carouselRoot));
 
+      const reInit = () => {
+        api.reInit();
+        sync();
+      };
+
+      const ro = new ResizeObserver(() => {
+        reInit();
+      });
+      ro.observe(viewport);
+
       const sync = () => {
         const details = getDetails(api);
 
@@ -214,6 +224,7 @@ const resolvedOpts: EmblaOptionsType = {
 
       store.set(carouselRoot, {
         cleanup: () => {
+          ro.disconnect();
           api.off("reInit", sync);
           api.off("select", sync);
 

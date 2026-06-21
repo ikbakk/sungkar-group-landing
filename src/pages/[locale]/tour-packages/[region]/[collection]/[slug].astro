@@ -29,6 +29,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import ScaleIn from "@astroanimate/core/ScaleIn";
 import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 import { paketWisataFormFields as idPaketWisataFormFields } from "@/lib/contact-data";
 import { paketWisataFormFields as enPaketWisataFormFields } from "@/lib/i18n/en/shared/contact-data";
@@ -227,20 +228,22 @@ const itineraryByDay = Object.entries(
           {
             tour.images.map((img, i) => (
               <CarouselItem>
-                <button
-                  type="button"
-                  data-image-index={i}
-                  class="group cursor-zoom-in overflow-hidden rounded-xl"
-                >
-                  <div class="aspect-[4/3]">
-                    <OptimizedImage
-                      src={img}
-                      alt=""
-                      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                  </div>
-                </button>
+                <ScaleIn enhance duration={500} once>
+                  <button
+                    type="button"
+                    data-image-index={i}
+                    class="group cursor-zoom-in overflow-hidden rounded-xl"
+                  >
+                    <div class="aspect-[4/3]">
+                      <OptimizedImage
+                        src={img}
+                        alt=""
+                        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    </div>
+                  </button>
+                </ScaleIn>
               </CarouselItem>
             ))
           }
