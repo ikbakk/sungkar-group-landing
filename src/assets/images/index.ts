@@ -175,6 +175,14 @@ import _gallery_hatiraHelaMasterOcean210 from "./gallery/hatira-hela-master-ocea
 import _gallery_hatiraHelaMasterOcean211 from "./gallery/hatira-hela-master-ocean-2-11.webp";
 import _gallery_kutaBeach2 from "./gallery/kuta-beach-2.webp";
 import _gallery_kutaBeach from "./gallery/kuta-beach.webp";
+import _gallery_maheswariDeluxePhinisiCabin from "./gallery/maheswari-deluxe-phinisi-cabin.webp";
+import _gallery_maheswariDeluxePhinisiDeluxeCabin from "./gallery/maheswari-deluxe-phinisi-deluxe-cabin.webp";
+import _gallery_maheswariDeluxePhinisiExterior from "./gallery/maheswari-deluxe-phinisi-exterior.webp";
+import _gallery_maheswariDeluxePhinisiInterior from "./gallery/maheswari-deluxe-phinisi-interior.webp";
+import _gallery_maheswariDeluxePhinisiMasterCabin from "./gallery/maheswari-deluxe-phinisi-master-cabin.webp";
+import _gallery_maheswariDeluxePhinisiSignatureCabin from "./gallery/maheswari-deluxe-phinisi-signature-cabin.webp";
+import _gallery_maheswariDeluxePhinisiSundeck from "./gallery/maheswari-deluxe-phinisi-sundeck.webp";
+import _gallery_maheswariDeluxePhinisiSuperiorCabin from "./gallery/maheswari-deluxe-phinisi-superior-cabin.webp";
 import _gallery_tourCultural from "./gallery/tour-cultural.webp";
 import _gallery_tourSnorkeling from "./gallery/tour-snorkeling.webp";
 import _gallery_whaleshark from "./gallery/whaleshark.webp";
@@ -182,6 +190,7 @@ import _hero_gaisanDeluxe from "./hero/gaisan-deluxe.webp";
 import _hero_hatiraHelaDeluxe from "./hero/hatira-hela-deluxe.webp";
 import _hero_heroLombok from "./hero/hero-lombok.webp";
 import _hero_hero from "./hero/hero.webp";
+import _hero_maheswariDeluxePhinisi from "./hero/maheswari-deluxe-phinisi.webp";
 import _legality_nib from "./legality/nib.webp";
 import _legality_sk from "./legality/sk.webp";
 import _og_about from "./og/about.webp";
@@ -393,6 +402,14 @@ export const GALLERY = {
   hatiraHelaMasterOcean211: _gallery_hatiraHelaMasterOcean211,
   kutaBeach2: _gallery_kutaBeach2,
   kutaBeach: _gallery_kutaBeach,
+  maheswariDeluxePhinisiCabin: _gallery_maheswariDeluxePhinisiCabin,
+  maheswariDeluxePhinisiDeluxeCabin: _gallery_maheswariDeluxePhinisiDeluxeCabin,
+  maheswariDeluxePhinisiExterior: _gallery_maheswariDeluxePhinisiExterior,
+  maheswariDeluxePhinisiInterior: _gallery_maheswariDeluxePhinisiInterior,
+  maheswariDeluxePhinisiMasterCabin: _gallery_maheswariDeluxePhinisiMasterCabin,
+  maheswariDeluxePhinisiSignatureCabin: _gallery_maheswariDeluxePhinisiSignatureCabin,
+  maheswariDeluxePhinisiSundeck: _gallery_maheswariDeluxePhinisiSundeck,
+  maheswariDeluxePhinisiSuperiorCabin: _gallery_maheswariDeluxePhinisiSuperiorCabin,
   tourCultural: _gallery_tourCultural,
   tourSnorkeling: _gallery_tourSnorkeling,
   whaleshark: _gallery_whaleshark,
@@ -404,6 +421,7 @@ export const HERO = {
   hatiraHelaDeluxe: _hero_hatiraHelaDeluxe,
   heroLombok: _hero_heroLombok,
   hero: _hero_hero,
+  maheswariDeluxePhinisi: _hero_maheswariDeluxePhinisi,
   lombok: _hero_heroLombok,
   main: _hero_hero,
 };

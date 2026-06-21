@@ -31,6 +31,7 @@
 | Task | Files |
 | --- | --- |
 | Update a tour package's source content | `scripts/data/packages/<slug>/main.json`, `scripts/data/packages/<slug>/locales.json` |
+| Update private-trip deluxe phinisi naming/metadata | `scripts/data/packages/deluxe-*/main.json`, `scripts/data/packages/deluxe-*/locales.json`, then regenerate via `npm run generate:tours` |
 | Update published tour package MDX | `src/content/tourPackages/<slug>/{id,en,ar,ms,zh}.mdx` |
 | Resolve package images into Astro imports | `src/lib/content/tourPackages/images.ts`, `src/assets/images/index.ts` |
 | Add or refresh packaged image assets | `src/assets/images/{hero,gallery}/`, `scripts/generate-image-barrel.mjs`, `npm run images:barrel` |
@@ -41,4 +42,5 @@
 
 - `deluxe-gaisan` now uses Drive-sourced WebP assets in `src/assets/images/hero/gaisan-deluxe.webp` and `src/assets/images/gallery/gaisan-deluxe-*.webp`.
 - `deluxe-hatira` now uses Drive-sourced WebP assets in `src/assets/images/hero/hatira-hela-deluxe.webp` and `src/assets/images/gallery/hatira-hela-*.webp`.
+- `deluxe-maheswari` now uses Drive-sourced WebP assets in `src/assets/images/hero/maheswari-deluxe-phinisi.webp` and `src/assets/images/gallery/maheswari-deluxe-phinisi-*.webp`.
 - Tour package image strings are resolved through `src/lib/content/tourPackages/images.ts`, with exact registry entries for legacy assets and dynamic group lookup for generated `hero/` and `gallery/` filenames.
