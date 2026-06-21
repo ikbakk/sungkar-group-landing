@@ -89,8 +89,8 @@ describe("generateArticleSchema", () => {
       "Title",
       "Desc",
       "/img.jpg",
+      `${SITE_URL}/blog/post`,
       SITE_URL,
-      "blog/post",
       "2026-01-01",
     );
     expect(result.author.name).toBe("Sungkar Group Indonesia");
@@ -101,8 +101,8 @@ describe("generateArticleSchema", () => {
       "Title",
       "Desc",
       "/img.jpg",
+      `${SITE_URL}/blog/post`,
       SITE_URL,
-      "blog/post",
       "2026-01-01",
     );
     expect(result.dateModified).toBe("2026-01-01");
@@ -113,8 +113,8 @@ describe("generateArticleSchema", () => {
       "Title",
       "Desc",
       "/img.jpg",
+      `${SITE_URL}/blog/post`,
       SITE_URL,
-      "blog/post",
       "2026-01-01",
       "2026-06-01",
     );
@@ -126,8 +126,8 @@ describe("generateArticleSchema", () => {
       "Title",
       "Desc",
       "/img.jpg",
+      `${SITE_URL}/blog/post`,
       SITE_URL,
-      "blog/post",
       "2026-01-01",
     );
     expect(result.url).toBe(`${SITE_URL}/blog/post`);
@@ -140,8 +140,7 @@ describe("generateTouristAttractionSchema", () => {
       "Kuta Beach",
       "Beautiful beach",
       "/img.jpg",
-      SITE_URL,
-      "kuta-beach",
+      `${SITE_URL}/destinasi/kuta-beach`,
       "lombok",
     );
     expect(result.geo["@type"]).toBe("GeoCoordinates");
@@ -154,8 +153,7 @@ describe("generateTouristAttractionSchema", () => {
       "Place",
       "Desc",
       "/img.jpg",
-      SITE_URL,
-      "place",
+      `${SITE_URL}/destinasi/place`,
     );
     expect(result.address.addressLocality).toBe("Lombok");
   });

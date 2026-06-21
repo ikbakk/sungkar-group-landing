@@ -3,6 +3,7 @@
 ## AI Agent Navigation
 
 - **AGENTS.md** — This file. Build commands, style conventions, commit guidelines.
+- Work on the `dev` branch for all code changes. Keep `dev` synced with `main` before starting new work.
 
 ## Keeping Docs in Sync
 

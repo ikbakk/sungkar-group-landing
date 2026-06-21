@@ -53,22 +53,25 @@ const breadcrumbs = [
 ];
 
 const articleImage = featuredImage || "";
+const canonicalPath = `/${locale}/blog/${slug}`;
+const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
 const articleSchema = generateArticleSchema(
   title,
   description,
   articleImage,
+  canonicalUrl,
   SITE_URL,
-  `${locale}/blog/${slug}`,
   publishDate.toISOString(),
 );
 ---
 
 <MainLayout
-  title={`${title} - Blog Sungkar Group`}
+  title={`${title} - Blog`}
   description={description}
-  canonical={`/${locale}/blog/${slug}`}
+  canonical={canonicalPath}
   image={featuredImage}
   imageAlt={title}
+  ogType="article"
   locale={locale}
 >
   <StructuredData schema={articleSchema} />

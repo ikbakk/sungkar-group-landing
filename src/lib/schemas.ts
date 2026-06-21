@@ -120,8 +120,7 @@ export function generateTouristAttractionSchema(
   title: string,
   description: string,
   image: string,
-  siteUrl: string,
-  slug: string,
+  url: string,
   region?: string,
 ) {
   return {
@@ -130,7 +129,7 @@ export function generateTouristAttractionSchema(
     name: title,
     description: description,
     image: image,
-    url: `${siteUrl}/destinasi/${slug}`,
+    url,
     geo: {
       "@type": "GeoCoordinates",
       latitude: "-8.7667",
@@ -210,18 +209,18 @@ export function generateArticleSchema(
   title: string,
   description: string,
   image: string,
+  url: string,
   siteUrl: string,
-  slug: string,
   datePublished: string,
   dateModified?: string,
 ) {
   return {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "BlogPosting",
     headline: title,
     description: description,
     image: image,
-    url: `${siteUrl}/${slug}`,
+    url,
     datePublished: datePublished,
     dateModified: dateModified || datePublished,
     author: {
@@ -253,7 +252,7 @@ export function generateWebsiteSchema(siteUrl: string) {
 
 // Contact Page Schema with LocalBusiness and ContactPoint
 export function generateContactPageSchema(
-  siteUrl: string,
+  url: string,
   businessInfo: {
     name: string;
     phone: string;
@@ -277,7 +276,7 @@ export function generateContactPageSchema(
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: businessInfo.name,
-    url: `${siteUrl}/kontak`,
+    url,
     telephone: businessInfo.phone,
     email: businessInfo.email,
     address: {

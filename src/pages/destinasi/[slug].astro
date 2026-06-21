@@ -50,12 +50,13 @@ const absoluteImageUrl = new URL(
   SITE_URL,
 ).toString();
 
+const canonicalPath = `/destinasi/${destination.slug}`;
+const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
 const touristAttractionSchema = generateTouristAttractionSchema(
   destination.title,
   destination.summary,
   absoluteImageUrl,
-  SITE_URL,
-  destination.slug,
+  canonicalUrl,
   destination.region,
 );
 
@@ -73,7 +74,7 @@ const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
 <MainLayout
   title={destination.title}
   description={destination.summary}
-  canonical={`/destinasi/${destination.slug}`}
+  canonical={canonicalPath}
   image={destination.image}
   locale={locale}
 >

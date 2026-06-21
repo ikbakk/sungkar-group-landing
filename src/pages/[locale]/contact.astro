@@ -77,8 +77,10 @@ const { contactFaq } = faqModule;
 const packages = await getPackages(locale!);
 
 const siteUrl = Astro.site?.toString() ?? SITE_URL;
+const canonicalPath = `/${locale}/contact`;
+const canonicalUrl = new URL(canonicalPath, siteUrl).toString();
 
-const contactSchema = generateContactPageSchema(siteUrl, businessInfo);
+const contactSchema = generateContactPageSchema(canonicalUrl, businessInfo);
 
 const faqSchema = generateFAQPageSchema(contactFaq);
 
@@ -92,7 +94,7 @@ const breadcrumbs = [
 <MainLayout
   title={pageTitle}
   description={contactPageContent.hero.description}
-  canonical={`/${locale}/contact`}
+  canonical={canonicalPath}
   locale={locale}
 >
   <StructuredData schema={contactSchema} />
