@@ -73,11 +73,12 @@ const breadcrumbItems = [
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
 
 const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
+const metaDescription = `${destination.title} - ${destination.summary}`;
 ---
 
 <MainLayout
   title={destination.title}
-  description={destination.summary}
+  description={metaDescription}
   canonical={canonicalPath}
   image={destination.image}
   locale={locale}

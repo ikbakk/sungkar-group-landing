@@ -9,6 +9,9 @@ import { HERO } from "@/assets/images";
 const locale = "id";
 const uiStrings = t(locale);
 
+const metaDescription =
+  "Pelajari bagaimana Sungkar Group mengumpulkan, menggunakan, dan melindungi data pribadi Anda saat menggunakan website, formulir, dan layanan perjalanan kami.";
+
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: "/" },
   { label: "Kebijakan Privasi" },
@@ -17,7 +20,7 @@ const breadcrumbs = [
 
 <MainLayout
   title="Kebijakan Privasi"
-  description="Kebijakan privasi Sungkar Group - bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda."
+  description={metaDescription}
   canonical="/kebijakan-privasi"
   image={HERO.heroLombok}
   locale={locale}
@@ -25,7 +28,7 @@ const breadcrumbs = [
   <PageHeader
     eyebrow="Privasi"
     title="Kebijakan Privasi"
-    description="Bagaimana Sungkar Group mengelola dan melindungi data pribadi Anda."
+    description={metaDescription}
     breadcrumbs={breadcrumbs}
     image={HERO.heroLombok}
     imageAlt={uiStrings.common.imageAltSunrise}

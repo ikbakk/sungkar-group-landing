@@ -4,6 +4,7 @@ import { getImageWidth, getImageHeight } from "@/lib/images";
 import { SITE_URL } from "@/lib/site-config";
 import { t } from "@/lib/i18n";
 import { LOCALES } from "@/lib/i18n";
+import { appendTrailingSlash, normalizeMetaDescription } from "@/lib/seo";
 
 interface Props {
   title: string;
@@ -49,13 +50,7 @@ const pageTitle = title.includes("Sungkar Group")
 
 const canonicalPath = canonical ?? Astro.url.pathname;
 const canonicalUrl = new URL(canonicalPath, SITE_URL);
-
-if (
-  !canonicalUrl.pathname.endsWith("/") &&
-  !/\.[a-z0-9]+$/i.test(canonicalUrl.pathname)
-) {
-  canonicalUrl.pathname = `${canonicalUrl.pathname}/`;
-}
+canonicalUrl.pathname = appendTrailingSlash(canonicalUrl.pathname);
 
 const canonicalHref = canonicalUrl.toString();
 
@@ -83,6 +78,7 @@ const localeMap: Record<string, string> = {
 const ogLocale = localeMap[locale] || "id_ID";
 
 const uiStrings = t(locale);
+const metaDescription = normalizeMetaDescription(description);
 
 const canonicalPathname = canonicalUrl.pathname;
 const basePath =
@@ -98,7 +94,7 @@ const defaultUrl = new URL(basePath, SITE_URL).toString();
 
 <title>{pageTitle}</title>
 
-<meta name="description" content={description} />
+<meta name="description" content={metaDescription} />
 
 <link rel="canonical" href={canonicalHref} />
 
@@ -129,7 +125,7 @@ const defaultUrl = new URL(basePath, SITE_URL).toString();
 
 <meta property="og:title" content={pageTitle} />
 
-<meta property="og:description" content={description} />
+<meta property="og:description" content={metaDescription} />
 
 <meta property="og:url" content={canonicalHref} />
 
@@ -157,7 +153,7 @@ const defaultUrl = new URL(basePath, SITE_URL).toString();
 
 <meta name="twitter:title" content={pageTitle} />
 
-<meta name="twitter:description" content={description} />
+<meta name="twitter:description" content={metaDescription} />
 
 {
   ogImageUrl && (

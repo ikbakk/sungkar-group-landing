@@ -47,6 +47,11 @@ const collections = Object.values(
   }, {}),
 );
 
+const regionDescription = uiStrings.paketWisata.chooseCategory.replace(
+  "{region}",
+  REGION_LABEL[r],
+);
+
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: "/" },
   { label: uiStrings.breadcrumb.tourPackages, href: "/paket-wisata" },
@@ -56,7 +61,7 @@ const breadcrumbs = [
 
 <MainLayout
   title={`${uiStrings.paketWisata.packagesFor.replace("{region}", REGION_LABEL[r])}`}
-  description={`Pilihan paket wisata ${REGION_LABEL[r]}`}
+  description={regionDescription}
   canonical={`/paket-wisata/${r}`}
   image={regionPackages[0]?.images[0]}
   locale={locale}
@@ -67,10 +72,7 @@ const breadcrumbs = [
       "{region}",
       REGION_LABEL[r],
     )}
-    description={uiStrings.paketWisata.chooseCategory.replace(
-      "{region}",
-      REGION_LABEL[r],
-    )}
+    description={regionDescription}
     breadcrumbs={breadcrumbs}
   />
 

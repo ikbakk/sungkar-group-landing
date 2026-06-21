@@ -12,7 +12,7 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { getVehicles } from "@/lib/content/car-rental/collection";
 import { REGION_LABEL, REGIONS, type RegionKey as Region } from "@/lib/regions";
 
-import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { loadFaq } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
 export async function getStaticPaths() {
@@ -34,9 +34,6 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const uiStrings = t(locale!);
 
-const pageModule = await loadContent(locale!, "sewaPage");
-const { sewaPageContent } = pageModule;
-
 const faqModule = await loadFaq(locale!, "sewa-mobil");
 const { sewaMobilFaq } = faqModule;
 
@@ -51,7 +48,10 @@ const vehicles = await getVehicles(locale!);
 const regionVehicles = vehicles.filter((v) => v.region === region);
 
 const regionName = REGION_LABEL[region];
-const regionDescription = sewaPageContent.regions[region].title;
+const regionDescription = uiStrings.sewaMobil.allVehicles.replace(
+  "{region}",
+  regionName,
+);
 
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: `/${locale}` },
