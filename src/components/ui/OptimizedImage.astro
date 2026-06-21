@@ -19,7 +19,7 @@ interface Props {
   height?: number;
 }
 
-const { src, alt, ...rest } = Astro.props;
+const { src, alt, width, height, ...rest } = Astro.props;
 ---
 
 {
@@ -32,10 +32,28 @@ const { src, alt, ...rest } = Astro.props;
       decoding={rest.decoding}
       fetchpriority={rest.fetchpriority}
       style={rest.style}
-      width={rest.width}
-      height={rest.height}
+      widths={rest.widths}
+      sizes={rest.sizes}
+      format={rest.format}
+      quality={rest.quality}
+      width={width as number}
+      height={height as number}
     />
   ) : (
-    <Image src={src as ImageMetadata} alt={alt} {...rest} />
+    <Image
+      src={src as ImageMetadata}
+      alt={alt}
+      class={rest.class}
+      loading={rest.loading}
+      decoding={rest.decoding}
+      fetchpriority={rest.fetchpriority}
+      style={rest.style}
+      widths={rest.widths}
+      sizes={rest.sizes}
+      format={rest.format}
+      quality={rest.quality}
+      width={width}
+      height={height}
+    />
   )
 }
