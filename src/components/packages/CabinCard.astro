@@ -1,0 +1,148 @@
+---
+import {
+  TypographyH3,
+  TypographyP,
+} from "@/components/ui/typography";
+import type { Cabin } from "@/lib/content/tourPackages/types";
+import { t } from "@/lib/i18n";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
+import { Card, CardContent } from "@/components/ui/card";
+import { Price } from "@/components/ui/price";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
+
+interface Props {
+  cabin: Cabin;
+  locale?: string;
+  durationLabels?: Record<string, string>;
+  priceList?: Record<string, Record<string, number>>;
+}
+
+const { cabin, locale = "id", durationLabels, priceList } = Astro.props;
+const uiStrings = t(locale);
+
+const durationKeys = durationLabels ? Object.keys(durationLabels) : [];
+const multiDuration = durationKeys.length > 1;
+const firstDurationKey = durationKeys[0] ?? "default";
+
+function formatRupiah(value: number): string {
+  return new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  }).format(value);
+}
+
+function getPrice(key: string): string {
+  // Prefer priceList (real numeric pricing) over cabin.prices (placeholder text)
+  if (priceList && priceList[key]) {
+    const tiers = priceList[key];
+    // Find the first tier (lowest price) — keys like "1-8", "1-10", etc.
+    const tierKeys = Object.keys(tiers).filter((k) => k !== "addPerPax" && k !== "maxPax");
+    tierKeys.sort((a, b) => {
+      const aMin = parseInt(a.split("-")[0], 10);
+      const bMin = parseInt(b.split("-")[0], 10);
+      return aMin - bMin;
+    });
+    const baseTier = tierKeys[0];
+    if (baseTier && tiers[baseTier] !== undefined) {
+      return formatRupiah(tiers[baseTier]);
+    }
+  }
+  if (!cabin.prices) return "";
+  return cabin.prices[key] ?? Object.values(cabin.prices)[0] ?? "";
+}
+---
+
+<Card size="sm" class="overflow-hidden">
+  <div class="flex flex-col md:flex-row">
+    <div class="w-full md:w-[40%] shrink-0">
+      {
+        cabin.images.length > 1 ? (
+          <Carousel opts={{ loop: true }} class="aspect-[4/3]">
+            <CarouselContent>
+              {cabin.images.map((img) => (
+                <CarouselItem>
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <OptimizedImage
+                      src={img}
+                      alt={cabin.name}
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious class="left-2" />
+            <CarouselNext class="right-2" />
+          </Carousel>
+        ) : (
+          <div class="aspect-[4/3] overflow-hidden">
+            <OptimizedImage
+              src={cabin.images[0]}
+              alt={cabin.name}
+              class="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        )
+      }
+    </div>
+    <CardContent class="flex flex-1 flex-col justify-center gap-3 py-6 md:py-8">
+      <TypographyH3 class="mt-0!">{cabin.name}</TypographyH3>
+      {cabin.description && (
+        <TypographyP class="text-sm leading-relaxed text-muted-foreground">
+          {cabin.description}
+        </TypographyP>
+      )}
+
+      {
+        multiDuration ? (
+          <Tabs defaultValue={firstDurationKey} class="mt-auto pt-2 w-full">
+            <TabsList class="w-full">
+              {durationKeys.map((key) => (
+                <TabsTrigger value={key}>
+                  {durationLabels![key] || key}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+            {durationKeys.map((key) => (
+              <TabsContent value={key} class="pt-2">
+                <Price>
+                  <span class="text-lg font-bold text-brand-700">
+                    {getPrice(key)}
+                  </span>
+                  <span class="text-xs text-muted-foreground">
+                    / {uiStrings.common.people}
+                  </span>
+                </Price>
+              </TabsContent>
+            ))}
+          </Tabs>
+        ) : (
+          <Price class="mt-auto pt-2">
+            <span class="text-lg font-bold text-brand-700">
+              {getPrice(firstDurationKey)}
+            </span>
+            <span class="text-xs text-muted-foreground">
+              / {uiStrings.common.people}
+            </span>
+          </Price>
+        )
+      }
+    </CardContent>
+  </div>
+</Card>

@@ -25,11 +25,25 @@ export const packagePageContent = {
     },
 
     "labuan-bajo": {
-      title: "Pakej Pelancongan Labuan Bajo",
+      title: "Pakej Pelancongan Labuan Bajo (Darat)",
       description:
-        "Pelayaran 1–3 hari mengeksplor Taman Negara Komodo: Pulau Padar, Pantai Pink, Manta Point, Taka Makassar, dan Rinca. Termasuk peralatan snorkeling, makanan, dan pemandu tempatan.",
+        "Terokai Labuan Bajo dan destinasi darat sekitarnya dengan pakej pelancongan darat yang selesa. Sesuai untuk pelancong yang ingin menikmati keindahan Flores tanpa belayar.",
       intro:
-        "Jelajahi tarikan ikonik Labuan Bajo dengan pakej pelayaran yang selesa dan berpatutan.",
+        "Pilih destinasi darat kegemaran anda dan tempoh di Labuan Bajo.",
+    },
+    "sailing-labuan-bajo": {
+      title: "Pakej Pelayaran Labuan Bajo",
+      description:
+        "Pelayaran 1–4 hari menjelajahi Taman Negara Komodo: Pulau Padar, Pantai Pink, Manta Point, Taka Makassar, dan Rinca. Tersedia sebagai open trip bajet dan sewa peribadi eksklusif dengan bot phinisi.",
+      intro:
+        "Terokai tarikan ikonik Labuan Bajo dengan pakej pelayaran yang selesa dan berpatutan.",
+    },
+    "lombok-to-bajo": {
+      title: "Pakej Lombok ke Labuan Bajo",
+      description:
+        "Pakej pelayaran dari Lombok ke Labuan Bajo, merentasi pulau-pulau eksotik dan destinasi marin terbaik. Akan datang.",
+      intro:
+        "Akan datang: pengembaraan pelayaran merentas pulau dari Lombok ke Labuan Bajo.",
     },
   },
 

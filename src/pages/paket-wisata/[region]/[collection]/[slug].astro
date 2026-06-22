@@ -165,7 +165,7 @@ const itineraryByDay = Object.entries(
   {
     tour.cabins && tour.cabins.length > 0 && (
       <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
-        <CabinsSection cabins={tour.cabins} locale={locale} />
+        <CabinsSection cabins={tour.cabins} locale={locale} durationLabels={tour.durationLabels} priceList={tour.priceList} />
       </SectionContainer>
     )
   }

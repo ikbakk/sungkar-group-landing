@@ -220,7 +220,14 @@ function localizeCabins(cabins, locale) {
       (d, [id, en]) => d.replace(id, en),
       c.description,
     ),
-    price: c.price.replace("/orang", "/person").replace("/kabin", "/cabin"),
+    prices: c.prices
+      ? Object.fromEntries(
+          Object.entries(c.prices).map(([k, v]) => [
+            k,
+            v.replace("/orang", "/person").replace("/kabin", "/cabin"),
+          ]),
+        )
+      : undefined,
   }));
 }
 
@@ -265,6 +272,13 @@ function yml(locale, pkg) {
   if (pkg.boatSpecs)
     ordered.boatSpecs = localizeBoatSpecs(pkg.boatSpecs, locKey);
   if (pkg.cabins) ordered.cabins = localizeCabins(pkg.cabins, locKey);
+  if (pkg.priceList) {
+    // Map priceList keys to durationLabels keys (fullDay -> 1D)
+    const keyMap = { fullDay: "1D" };
+    ordered.priceList = Object.fromEntries(
+      Object.entries(pkg.priceList).map(([k, v]) => [keyMap[k] || k, v]),
+    );
+  }
   if (locale.additionalServices)
     ordered.additionalServices = locale.additionalServices;
   if (locale.dontForgetToBring)

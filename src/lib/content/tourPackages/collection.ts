@@ -4,7 +4,7 @@ import { resolveImages } from "./images";
 
 type EntryData = {
   title: string;
-  region: "lombok" | "sumbawa" | "labuan-bajo";
+  region: "lombok" | "sumbawa" | "labuan-bajo" | "sailing-labuan-bajo" | "lombok-to-bajo";
   featured?: boolean;
   collectionSlug: string;
   collectionTitle: string;
@@ -23,10 +23,11 @@ type EntryData = {
   cabins?: {
     name: string;
     description?: string;
-    price: string;
+    prices: Record<string, string>;
     images: string[];
   }[];
   durationLabels?: Record<string, string>;
+  priceList?: Record<string, Record<string, number>>;
   additionalServices?: string[];
   dontForgetToBring?: string[];
   termsAndConditions?: string[];
@@ -71,6 +72,7 @@ export async function getPackages(locale = "id"): Promise<TourPackage[]> {
         }),
       ),
       durationLabels: data.durationLabels,
+      priceList: data.priceList,
       additionalServices: data.additionalServices,
       dontForgetToBring: data.dontForgetToBring,
       termsAndConditions: data.termsAndConditions,

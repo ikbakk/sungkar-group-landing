@@ -26,6 +26,7 @@ interface Props {
   canonical?: string;
   image?: ImageSource;
   imageAlt?: string;
+  ogType?: "website" | "article" | "profile";
   noIndex?: boolean;
   locale?: string;
 }
@@ -36,6 +37,7 @@ const {
   canonical,
   image,
   imageAlt,
+  ogType = "website",
   noIndex = false,
   locale = "id",
 } = Astro.props as Props;
@@ -67,6 +69,7 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
       canonical={canonical}
       ogImage={pageImage}
       ogImageAlt={pageImageAlt}
+      ogType={ogType}
       noIndex={noIndex}
       locale={currentLocale}
     />

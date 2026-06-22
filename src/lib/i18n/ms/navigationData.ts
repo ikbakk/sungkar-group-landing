@@ -39,7 +39,7 @@ type CollectionResult = {
 
 const createPackageCollections = (
   packages: TourPackage[],
-  region: "lombok" | "sumbawa" | "labuan-bajo",
+  region: "lombok" | "sumbawa" | "labuan-bajo" | "sailing-labuan-bajo" | "lombok-to-bajo",
 ): CollectionResult => {
   const regionPackages = packages.filter((pkg) => pkg.region === region);
 
@@ -81,6 +81,9 @@ const createPackageCollections = (
     }
   }
 
+  // Sort collections alphabetically by title
+  collections.sort((a, b) => a.title.localeCompare(b.title));
+
   return { collections, items };
 };
 
@@ -109,6 +112,13 @@ export function createNavigation(packages: TourPackage[]): NavItem[] {
           href: "/paket-wisata/sumbawa",
 
           ...createPackageCollections(packages, "sumbawa"),
+        },
+
+        {
+          title: "Pelayaran Labuan Bajo",
+          href: "/paket-wisata/sailing-labuan-bajo",
+
+          ...createPackageCollections(packages, "sailing-labuan-bajo"),
         },
 
         {

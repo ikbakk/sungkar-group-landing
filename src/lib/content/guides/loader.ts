@@ -9,7 +9,7 @@ export interface GuideMeta {
   slug: string;
   title: string;
   description: string;
-  region: "lombok" | "sumbawa" | "labuan-bajo" | "general";
+  region: "lombok" | "sumbawa" | "labuan-bajo" | "sailing-labuan-bajo" | "lombok-to-bajo" | "general";
   readingTime: number;
   bestFor: string[];
   keyTakeaways: string[];

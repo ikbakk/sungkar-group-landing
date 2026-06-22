@@ -1,7 +1,7 @@
 {
   "slug": "open-trip-whale-shark-sumbawa",
   "region": "sumbawa",
-  "featured": false,
+  "featured": true,
   "collectionSlug": "open-trip",
   "images": [
     "hero/hero-sumbawa.webp",

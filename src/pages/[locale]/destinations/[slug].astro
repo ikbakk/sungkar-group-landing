@@ -51,12 +51,13 @@ const absoluteImageUrl = new URL(
   SITE_URL,
 ).toString();
 
+const canonicalPath = `/${locale}/destinations/${destination.slug}`;
+const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
 const touristAttractionSchema = generateTouristAttractionSchema(
   destination.title,
   destination.summary,
   absoluteImageUrl,
-  SITE_URL,
-  destination.slug,
+  canonicalUrl,
   destination.region,
 );
 
@@ -72,12 +73,13 @@ const breadcrumbItems = [
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
 
 const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
+const metaDescription = `${destination.title} - ${destination.summary}`;
 ---
 
 <MainLayout
   title={destination.title}
-  description={destination.summary}
-  canonical={`/${locale}/destinations/${destination.slug}`}
+  description={metaDescription}
+  canonical={canonicalPath}
   image={destination.image}
   locale={locale}
 >

@@ -1,7 +1,10 @@
 {
   "slug": "paket-wisata-air-terjun-sendang-gile-tiu-kelep",
   "region": "lombok",
-  "featured": true,
+  "featured": false,
   "collectionSlug": "1-hari",
-  "images": ["hero/hero-lombok.webp", "destinations/rinjani.webp"]
+  "images": [
+    "hero/hero-lombok.webp",
+    "destinations/rinjani.webp"
+  ]
 }

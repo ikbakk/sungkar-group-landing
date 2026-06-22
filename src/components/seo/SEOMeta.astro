@@ -4,6 +4,7 @@ import { getImageWidth, getImageHeight } from "@/lib/images";
 import { SITE_URL } from "@/lib/site-config";
 import { t } from "@/lib/i18n";
 import { LOCALES } from "@/lib/i18n";
+import { appendTrailingSlash, normalizeMetaDescription } from "@/lib/seo";
 
 interface Props {
   title: string;
@@ -43,12 +44,15 @@ const {
   locale = "id",
 } = Astro.props as Props;
 
-const pageTitle = title.endsWith(" | Sungkar Group")
+const pageTitle = title.includes("Sungkar Group")
   ? title
   : `${title} | Sungkar Group`;
 
 const canonicalPath = canonical ?? Astro.url.pathname;
-const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
+const canonicalUrl = new URL(canonicalPath, SITE_URL);
+canonicalUrl.pathname = appendTrailingSlash(canonicalUrl.pathname);
+
+const canonicalHref = canonicalUrl.toString();
 
 const ogImageUrl = ogImage
   ? typeof ogImage === "string"
@@ -74,11 +78,13 @@ const localeMap: Record<string, string> = {
 const ogLocale = localeMap[locale] || "id_ID";
 
 const uiStrings = t(locale);
+const metaDescription = normalizeMetaDescription(description);
 
+const canonicalPathname = canonicalUrl.pathname;
 const basePath =
   locale === "id"
-    ? canonicalPath
-    : canonicalPath.replace(new RegExp("^/" + locale), "") || "/";
+    ? canonicalPathname
+    : canonicalPathname.replace(new RegExp("^/" + locale), "") || "/";
 const defaultUrl = new URL(basePath, SITE_URL).toString();
 ---
 
@@ -88,11 +94,11 @@ const defaultUrl = new URL(basePath, SITE_URL).toString();
 
 <title>{pageTitle}</title>
 
-<meta name="description" content={description} />
+<meta name="description" content={metaDescription} />
 
-<link rel="canonical" href={canonicalUrl} />
+<link rel="canonical" href={canonicalHref} />
 
-<link rel="alternate" href={canonicalUrl} hreflang={locale} />
+<link rel="alternate" href={canonicalHref} hreflang={locale} />
 <link rel="alternate" href={defaultUrl} hreflang="x-default" />
 {
   LOCALES.filter((l) => l !== locale).map((l) => {
@@ -119,9 +125,9 @@ const defaultUrl = new URL(basePath, SITE_URL).toString();
 
 <meta property="og:title" content={pageTitle} />
 
-<meta property="og:description" content={description} />
+<meta property="og:description" content={metaDescription} />
 
-<meta property="og:url" content={canonicalUrl} />
+<meta property="og:url" content={canonicalHref} />
 
 {
   ogImage && ogImageUrl && (
@@ -147,7 +153,7 @@ const defaultUrl = new URL(basePath, SITE_URL).toString();
 
 <meta name="twitter:title" content={pageTitle} />
 
-<meta name="twitter:description" content={description} />
+<meta name="twitter:description" content={metaDescription} />
 
 {
   ogImageUrl && (

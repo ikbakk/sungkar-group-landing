@@ -17,7 +17,7 @@ type CCard = {
 };
 
 export function getStaticPaths() {
-  const regions: Region[] = ["lombok", "sumbawa", "labuan-bajo"];
+  const regions: Region[] = ["lombok", "sumbawa", "labuan-bajo", "sailing-labuan-bajo", "lombok-to-bajo"];
   const paths = [];
   for (const region of regions) {
     paths.push({ params: { region } });
@@ -45,6 +45,11 @@ const collections = Object.values(
     acc[pkg.collectionSlug].packages.push(pkg);
     return acc;
   }, {}),
+).sort((a, b) => a.title.localeCompare(b.title));
+
+const regionDescription = uiStrings.paketWisata.chooseCategory.replace(
+  "{region}",
+  REGION_LABEL[r],
 );
 
 const breadcrumbs = [
@@ -56,7 +61,7 @@ const breadcrumbs = [
 
 <MainLayout
   title={`${uiStrings.paketWisata.packagesFor.replace("{region}", REGION_LABEL[r])}`}
-  description={`Pilihan paket wisata ${REGION_LABEL[r]}`}
+  description={regionDescription}
   canonical={`/paket-wisata/${r}`}
   image={regionPackages[0]?.images[0]}
   locale={locale}
@@ -67,10 +72,7 @@ const breadcrumbs = [
       "{region}",
       REGION_LABEL[r],
     )}
-    description={uiStrings.paketWisata.chooseCategory.replace(
-      "{region}",
-      REGION_LABEL[r],
-    )}
+    description={regionDescription}
     breadcrumbs={breadcrumbs}
   />
 

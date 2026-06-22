@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO/GEO Setup Guide — Sungkar Group</title>
+    <style>
+      :root {
+        --slate-50: #f8fafc;
+        --slate-100: #f1f5f9;
+        --slate-200: #e2e8f0;
+        --slate-300: #cbd5e1;
+        --slate-400: #94a3b8;
+        --slate-500: #64748b;
+        --slate-600: #475569;
+        --slate-700: #334155;
+        --slate-800: #1e293b;
+        --slate-900: #0f172a;
+        --emerald-50: #ecfdf5;
+        --emerald-100: #d1fae5;
+        --emerald-500: #10b981;
+        --emerald-600: #059669;
+        --emerald-700: #047857;
+        --blue-50: #eff6ff;
+        --blue-100: #dbeafe;
+        --blue-500: #3b82f6;
+        --blue-600: #2563eb;
+        --blue-700: #1d4ed8;
+        --amber-50: #fffbeb;
+        --amber-100: #fef3c7;
+        --amber-500: #f59e0b;
+        --amber-600: #d97706;
+        --red-50: #fef2f2;
+        --red-100: #fee2e2;
+        --red-500: #ef4444;
+        --red-600: #dc2626;
+        --violet-50: #f5f3ff;
+        --violet-100: #ede9fe;
+        --violet-500: #8b5cf6;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 15px; line-height: 1.6; color: var(--slate-800); background: var(--slate-50);
+      }
+      .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+      .report-header {
+        background: linear-gradient(135deg, var(--slate-900), var(--slate-700));
+        color: white; padding: 3rem 1.5rem; text-align: center;
+      }
+      .report-header h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+      .report-header p { color: var(--slate-300); font-size: 0.95rem; }
+      .report-header .meta {
+        margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem;
+        flex-wrap: wrap; font-size: 0.85rem; color: var(--slate-300);
+      }
+      .status-banner {
+        display: flex; align-items: center; gap: 0.75rem;
+        padding: 1rem 1.25rem; border-radius: 10px; margin-bottom: 2rem; font-size: 0.9rem;
+      }
+      .status-banner.success { background: var(--emerald-100); color: var(--emerald-700); }
+      .status-banner .status-icon { font-size: 1.5rem; flex-shrink: 0; }
+      .summary-grid {
+        display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 1rem; margin-bottom: 2rem;
+      }
+      .summary-card {
+        background: white; border-radius: 10px; padding: 1.25rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08); text-align: center;
+      }
+      .summary-card .count { font-size: 1.75rem; font-weight: 700; line-height: 1.2; }
+      .summary-card .label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--slate-500); margin-top: 0.25rem; }
+      .summary-card.done .count { color: var(--emerald-600); }
+      .summary-card.pending .count { color: var(--amber-600); }
+      .summary-card.info .count { color: var(--blue-600); }
+      .summary-card.total .count { color: var(--violet-500); }
+      section { margin-bottom: 2.5rem; }
+      h2 {
+        font-size: 1.25rem; font-weight: 700; color: var(--slate-900);
+        padding-bottom: 0.5rem; border-bottom: 2px solid var(--slate-200); margin-bottom: 1rem;
+        display: flex; align-items: center; gap: 0.5rem;
+      }
+      h3 { font-size: 1rem; font-weight: 600; color: var(--slate-700); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+      h4 { font-size: 0.9rem; font-weight: 600; color: var(--slate-600); margin-top: 1rem; margin-bottom: 0.5rem; }
+      .step {
+        background: white; border-radius: 10px; padding: 1.25rem;
+        margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        border-left: 4px solid var(--slate-300);
+      }
+      .step.done { border-left-color: var(--emerald-500); }
+      .step.pending { border-left-color: var(--amber-500); }
+      .step.info { border-left-color: var(--blue-500); }
+      .step-header {
+        display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.5rem;
+      }
+      .step-title { font-weight: 600; font-size: 0.95rem; }
+      .badge {
+        display: inline-block; font-size: 0.7rem; font-weight: 600;
+        text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 999px;
+        white-space: nowrap; flex-shrink: 0;
+      }
+      .badge.done { background: var(--emerald-100); color: var(--emerald-700); }
+      .badge.pending { background: var(--amber-100); color: var(--amber-600); }
+      .badge.info { background: var(--blue-100); color: var(--blue-700); }
+      .badge.critical { background: var(--red-100); color: var(--red-600); }
+      .step-desc { font-size: 0.88rem; color: var(--slate-600); }
+      .step-desc code, .step-desc kbd {
+        font-size: 0.82rem; background: var(--slate-100);
+        padding: 0.1rem 0.35rem; border-radius: 4px; color: var(--slate-800);
+        font-family: "JetBrains Mono", "Consolas", monospace;
+      }
+      .step-desc ul, .step-desc ol { margin-top: 0.4rem; padding-left: 1.25rem; }
+      .step-desc li { margin-bottom: 0.25rem; }
+      .step-desc a { color: var(--blue-600); text-decoration: underline; }
+      .note {
+        margin-top: 0.6rem; padding: 0.6rem 0.8rem; border-radius: 6px; font-size: 0.85rem;
+      }
+      .note.success { background: var(--emerald-100); color: var(--emerald-700); }
+      .note.warning { background: var(--amber-100); color: var(--amber-600); }
+      .note.info { background: var(--blue-100); color: var(--blue-700); }
+      .table-wrap { overflow-x: auto; }
+      table {
+        width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 0.75rem;
+      }
+      th {
+        text-align: left; padding: 0.6rem 0.75rem; background: var(--slate-100);
+        font-weight: 600; color: var(--slate-700); border-bottom: 2px solid var(--slate-200);
+      }
+      td {
+        padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--slate-200);
+        color: var(--slate-600); vertical-align: top;
+      }
+      tr:hover td { background: var(--slate-50); }
+      .checklist { list-style: none; padding: 0; margin: 0.5rem 0; }
+      .checklist li {
+        padding: 0.3rem 0; font-size: 0.88rem; color: var(--slate-700);
+        display: flex; align-items: flex-start; gap: 0.5rem;
+      }
+      .checklist .check { color: var(--emerald-500); flex-shrink: 0; }
+      pre {
+        background: var(--slate-800); color: #e2e8f0; padding: 0.75rem 1rem;
+        border-radius: 8px; font-size: 0.8rem; overflow-x: auto; margin: 0.5rem 0;
+      }
+      code { font-family: "JetBrains Mono", "Consolas", monospace; font-size: 0.82rem; }
+      hr { border: none; border-top: 1px solid var(--slate-200); margin: 2rem 0; }
+    </style>
+  </head>
+  <body>
+    <div class="report-header">
+      <h1>SEO/GEO Setup Guide</h1>
+      <p>Sungkar Group — <code>sungkargroup.com</code> → <code>www.sungkargroup.com</code></p>
+      <div class="meta">
+        <span>Generated: June 2026</span>
+        <span>HTTPS: ✅ Propagated</span>
+        <span>Pages: 483 (in sitemap)</span>
+        <span>Stack: Astro + Netlify</span>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="status-banner success">
+        <span class="status-icon">✅</span>
+        <div>
+          <strong>HTTPS is live</strong> —
+          <code>https://sungkargroup.com</code> → <code>https://www.sungkargroup.com</code>
+          with valid SSL, HSTS enabled, and 301 redirect from non-www to www.
+          The site is ready for Search Console, Webmaster Tools, and GEO platform verification.
+        </div>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-card done"><div class="count">4</div><div class="label">Completed</div></div>
+        <div class="summary-card pending"><div class="count">7</div><div class="label">To Do</div></div>
+        <div class="summary-card info"><div class="count">3</div><div class="label">Optional</div></div>
+        <div class="summary-card total"><div class="count">14</div><div class="label">Total Steps</div></div>
+      </div>
+
+      <!-- Section 1 -->
+      <section>
+        <h2>1. ✅ Current State Verification</h2>
+        <p style="margin-bottom:1rem;font-size:0.88rem;color:var(--slate-600);">
+          All checks performed against the live production site at <code>www.sungkargroup.com</code>.
+        </p>
+
+        <div class="step done">
+          <div class="step-header">
+            <span class="step-title">HTTPS &amp; SSL Certificate</span>
+            <span class="badge done">DONE</span>
+          </div>
+          <div class="step-desc">
+            <p><strong>Result:</strong> HTTPS is fully propagated with a valid SSL certificate.</p>
+            <ul>
+              <li><code>https://sungkargroup.com</code> → 301 redirects to <code>https://www.sungkargroup.com</code></li>
+              <li>Response: <code>HTTP/2 200</code> on www</li>
+              <li><code>strict-transport-security: max-age=31536000</code> (HSTS enabled for 1 year)</li>
+              <li>Server: Netlify with Edge caching</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step done">
+          <div class="step-header">
+            <span class="step-title">Sitemap Structure</span>
+            <span class="badge done">DONE</span>
+          </div>
+          <div class="step-desc">
+            <p><strong>Result:</strong> Sitemap is live and contains 483 URLs.</p>
+            <ul>
+              <li><code>robots.txt</code>: <code>Sitemap: https://www.sungkargroup.com/sitemap-index.xml</code></li>
+              <li>Structure: <code>sitemap-index.xml</code> → <code>sitemap-0.xml</code> (483 URLs)</li>
+              <li>Covers all locales: <code>/id/</code>, <code>/en/</code>, <code>/ar/</code>, <code>/ms/</code>, <code>/zh/</code></li>
+              <li>Includes tour packages, accommodations, car rental, blog, travel guides, info pages</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step done">
+          <div class="step-header">
+            <span class="step-title">robots.txt Configuration</span>
+            <span class="badge done">DONE</span>
+          </div>
+          <div class="step-desc">
+            <p><strong>Result:</strong> Permissive robots.txt — all bots allowed.</p>
+            <pre>User-agent: *
+Allow: /
+Sitemap: https://www.sungkargroup.com/sitemap-index.xml</pre>
+            <div class="note info">
+              <strong>Note:</strong> This is a good default, but for GEO optimization
+              you may want to explicitly name AI bots (GPTBot, PerplexityBot, ClaudeBot)
+              to ensure they have access.
+            </div>
+          </div>
+        </div>
+
+        <div class="step done">
+          <div class="step-header">
+            <span class="step-title">Canonical Domain &amp; Redirect</span>
+            <span class="badge done">DONE</span>
+          </div>
+          <div class="step-desc">
+            <p><strong>Result:</strong> Clean 301 redirect from non-www to www.</p>
+            <ul>
+              <li><code>sungkargroup.com</code> → 301 → <code>www.sungkargroup.com</code></li>
+              <li>This ensures no duplicate content issues from the bare domain</li>
+              <li>Use <code>www.sungkargroup.com</code> as the verified domain in all search consoles</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Section 2 -->
+      <section>
+        <h2>2. 🔍 Google Search Console</h2>
+        <p style="margin-bottom:1rem;font-size:0.88rem;color:var(--slate-500);"><strong>Priority: P0 — Critical.</strong> Required for indexing visibility, crawl error monitoring, and performance data.</p>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Add property to Google Search Console</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <ol>
+              <li>Go to <a href="https://search.google.com/search-console">search.google.com/search-console</a></li>
+              <li>Sign in with your Google account (use the business/organization account)</li>
+              <li>Choose <strong>URL prefix</strong> method and enter: <code>https://www.sungkargroup.com</code></li>
+              <li>Verify ownership using one of these methods:</li>
+            </ol>
+
+            <h4>Recommended: DNS TXT Record (Netlify)</h4>
+            <ul>
+              <li>Select <strong>DNS TXT Record</strong> verification method</li>
+              <li>Copy the TXT record value provided by Google</li>
+              <li>In your Netlify DNS settings, add a new TXT record for <code>@</code> or <code>www</code> with that value</li>
+              <li>Wait for DNS propagation (5–30 minutes), then click <strong>Verify</strong></li>
+            </ul>
+
+            <h4>Alternatives</h4>
+            <ul>
+              <li><strong>HTML file upload</strong> — Place the Google-provided <code>googleXXXX.html</code> in <code>public/</code> and deploy</li>
+              <li><strong>HTML tag</strong> — Add the meta tag to <code>&lt;head&gt;</code> via Netlify snippet injection or Astro layout</li>
+              <li><strong>Google Analytics</strong> — If GA4 is already set up on the site, use the same account</li>
+            </ul>
+
+            <div class="note warning">
+              <strong>Important:</strong> If you use the non-www domain (<code>sungkargroup.com</code>), also add it as a separate property. The 301 redirect means www is the canonical — add both to get full data.
+            </div>
+          </div>
+        </div>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Submit sitemap to Google</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <ol>
+              <li>In Search Console, go to <strong>Sitemaps</strong></li>
+              <li>Enter sitemap URL: <code>https://www.sungkargroup.com/sitemap-index.xml</code></li>
+              <li>Click <strong>Submit</strong></li>
+              <li>Monitor — should show <code>Success</code> with 483 discovered URLs</li>
+            </ol>
+            <div class="note success">
+              <strong>Expected:</strong> All 483 URLs should be indexed within a few days. Check <strong>Pages → Indexing</strong> after 48–72 hours.
+            </div>
+          </div>
+        </div>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Configure crawl settings</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <ul>
+              <li><strong>Settings → Crawl rate:</strong> Leave at "Let Google optimize"</li>
+              <li><strong>Settings → URL parameters:</strong> Review if any query params create duplicates (unlikely with Astro SSG)</li>
+              <li><strong>International targeting:</strong> Verify hreflang tags are correct</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Monitor Core Web Vitals</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <p>After verification, check <strong>Core Web Vitals</strong> in Search Console:</p>
+            <ul>
+              <li>Go to <strong>Experience → Core Web Vitals</strong></li>
+              <li>Review mobile and desktop scores</li>
+              <li>Key metrics: LCP &lt; 2.5s, FID &lt; 100ms, CLS &lt; 0.1</li>
+              <li>Use <a href="https://pagespeed.web.dev">PageSpeed Insights</a> for detailed diagnostics</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Section 3 -->
+      <section>
+        <h2>3. 🖥️ Bing Webmaster Tools</h2>
+        <p style="margin-bottom:1rem;font-size:0.88rem;color:var(--slate-500);"><strong>Priority: P1 — Important.</strong> Required for Bing indexing and <strong>Microsoft Copilot AI visibility</strong> (Copilot uses Bing's index).</p>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Add site to Bing Webmaster Tools</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <ol>
+              <li>Go to <a href="https://www.bing.com/webmasters">bing.com/webmasters</a></li>
+              <li>Sign in with a Microsoft or Google account</li>
+              <li>Add your site: <code>https://www.sungkargroup.com</code></li>
+              <li>Verify using <strong>DNS TXT record</strong> or <strong>XML file upload</strong></li>
+            </ol>
+            <h4>Option: Import from Google Search Console</h4>
+            <ul>
+              <li>Bing supports importing data directly from Google Search Console</li>
+              <li>Go to <strong>Settings → Import</strong> and connect your Google account</li>
+            </ul>
+            <div class="note warning">
+              <strong>Important:</strong> Bing/Copilot AI requires indexing in Bing. If not yet indexed, submit sitemap and request manual indexing.
+            </div>
+          </div>
+        </div>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Submit sitemap to Bing</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <ol>
+              <li>In Bing Webmaster Tools, go to <strong>Sitemaps</strong></li>
+              <li>Submit: <code>https://www.sungkargroup.com/sitemap-index.xml</code></li>
+              <li>Check <strong>Index → Indexed Pages</strong> after a few days</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Configure automatic URL submission</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <p>Enable IndexNow for instant URL notification on deploy:</p>
+            <pre>curl -X POST "https://api.indexnow.org/IndexNow" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "host": "www.sungkargroup.com",
+    "key": "your-indexnow-key",
+    "urlList": [
+      "https://www.sungkargroup.com/",
+      "https://www.sungkargroup.com/en/about/"
+    ]
+  }'</pre>
+            <div class="note info">
+              <strong>Tip:</strong> Netlify supports IndexNow — enable it in your build/deploy settings.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Section 4 -->
+      <section>
+        <h2>4. 🤖 GEO — AI Bot Access Configuration</h2>
+        <p style="margin-bottom:1rem;font-size:0.88rem;color:var(--slate-500);"><strong>Priority: P1 — Important.</strong> AI search engines (ChatGPT, Perplexity, Claude) need explicit bot access to cite your content.</p>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Explicitly allow AI bots in robots.txt</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <p>Current robots.txt uses a blanket <code>Allow: /</code>. Explicitly naming AI bots removes ambiguity.</p>
+            <p><strong>Recommended robots.txt:</strong></p>
+            <pre>User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI Search Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Others
+User-agent: *
+Allow: /
+
+Sitemap: https://www.sungkargroup.com/sitemap-index.xml</pre>
+            <p>Source: <code>public/robots.txt</code> — edit directly and redeploy.</p>
+          </div>
+        </div>
+
+        <div class="step info">
+          <div class="step-header">
+            <span class="step-title">Verify AI bot crawling</span>
+            <span class="badge info">OPTIONAL</span>
+          </div>
+          <div class="step-desc">
+            <p>Test bot access with curl:</p>
+            <pre>curl -sI -A "PerplexityBot" "https://www.sungkargroup.com/" | head -5
+curl -sI -A "GPTBot/1.0" "https://www.sungkargroup.com/" | head -5
+curl -sI -A "ClaudeBot" "https://www.sungkargroup.com/" | head -5</pre>
+            <div class="note success">All should return <code>HTTP/2 200</code>.</div>
+          </div>
+        </div>
+
+        <div class="step info">
+          <div class="step-header">
+            <span class="step-title">Register with AI search platforms</span>
+            <span class="badge info">OPTIONAL</span>
+          </div>
+          <div class="step-desc">
+            <ul>
+              <li><strong>ChatGPT:</strong> No manual submission — relies on crawling and Bing index</li>
+              <li><strong>Perplexity:</strong> Submit at <a href="https://www.perplexity.ai/sitemap">perplexity.ai/sitemap</a></li>
+              <li><strong>Google AI Overviews:</strong> Covered by Google Search Console indexing</li>
+              <li><strong>Bing Copilot:</strong> Covered by Bing Webmaster Tools</li>
+              <li><strong>Claude:</strong> Uses Brave Search — ensure <code>site:sungkargroup.com</code> on Brave</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Section 5 -->
+      <section>
+        <h2>5. 📊 Analytics &amp; Monitoring</h2>
+        <p style="margin-bottom:1rem;font-size:0.88rem;color:var(--slate-500);"><strong>Priority: P1 — Important.</strong> Without analytics, you cannot measure traffic, track GEO performance, or diagnose issues.</p>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Google Analytics 4 (GA4)</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <ol>
+              <li>Go to <a href="https://analytics.google.com">analytics.google.com</a></li>
+              <li>Create a new GA4 property for <code>www.sungkargroup.com</code></li>
+              <li>Get the Measurement ID (starts with <code>G-</code>)</li>
+              <li>Add to Astro — use the <code>@astrojs/partytown</code> integration or add the snippet directly:</li>
+            </ol>
+            <pre>// astro.config.mjs
+import partytown from '@astrojs/partytown';
+export default defineConfig({
+  integrations: [
+    partytown({
+      config: { forward: ['dataLayer.push'] },
+    }),
+  ],
+});</pre>
+            <div class="note warning">
+              <strong>Note:</strong> The site has 5 locales. GA4 can handle multi-language — use the <code>language</code> dimension.
+            </div>
+          </div>
+        </div>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Link Search Console + GA4</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <ul>
+              <li>Link GSC to GA4: <strong>Admin → Property Settings → Search Console Linking</strong></li>
+              <li>This enables query-level data in Search Console reports within GA4</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step info">
+          <div class="step-header">
+            <span class="step-title">GEO visibility monitoring tools</span>
+            <span class="badge info">OPTIONAL</span>
+          </div>
+          <div class="step-desc">
+            <table>
+              <thead>
+                <tr><th>Tool</th><th>Platforms</th><th>Pricing</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Profound</td><td>ChatGPT, Perplexity, Claude, Gemini</td><td>$499/mo+</td></tr>
+                <tr><td>Otterly.ai</td><td>ChatGPT, Perplexity, Google AIO</td><td>Free trial</td></tr>
+                <tr><td>SE Ranking AI Toolkit</td><td>AI Overviews, ChatGPT</td><td>Included</td></tr>
+                <tr><td>Semrush AI Visibility</td><td>Google AIO, ChatGPT</td><td>Included</td></tr>
+                <tr><td>Google Search Console</td><td>Google Search</td><td>Free</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Section 6 -->
+      <section>
+        <h2>6. ✅ Validation &amp; Testing</h2>
+        <p style="margin-bottom:1rem;font-size:0.88rem;color:var(--slate-500);">Quick validation commands and regular monitoring cadence.</p>
+
+        <div class="step done">
+          <div class="step-header">
+            <span class="step-title">Quick validation commands</span>
+            <span class="badge done">DONE</span>
+          </div>
+          <div class="step-desc">
+            <pre>curl -sI "https://www.sungkargroup.com"
+curl -s "https://www.sungkargroup.com/robots.txt"
+curl -s "https://www.sungkargroup.com/sitemap-index.xml"
+curl -sL "https://www.sungkargroup.com/" | grep -E "&lt;title&gt;|&lt;meta" | head -10
+curl -sI -A "Googlebot" "https://www.sungkargroup.com/"
+curl -sI -A "Bingbot" "https://www.sungkargroup.com/"
+curl -sI -A "GPTBot/1.0" "https://www.sungkargroup.com/"
+curl -sI -A "PerplexityBot" "https://www.sungkargroup.com/"
+curl -sI -A "ClaudeBot" "https://www.sungkargroup.com/"</pre>
+          </div>
+        </div>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Schema markup validation</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <ul>
+              <li>Google Rich Results Test: <a href="https://search.google.com/test/rich-results?url=https://www.sungkargroup.com/">search.google.com/test/rich-results</a></li>
+              <li>Schema.org Validator: <a href="https://validator.schema.org/?url=https://www.sungkargroup.com/">validator.schema.org</a></li>
+              <li>Check GSC → <strong>Enhancements</strong> for schema errors</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step pending">
+          <div class="step-header">
+            <span class="step-title">Regular monitoring cadence</span>
+            <span class="badge pending">TODO</span>
+          </div>
+          <div class="step-desc">
+            <table>
+              <thead>
+                <tr><th>Frequency</th><th>Task</th><th>Tool</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Weekly</td><td>Check crawl errors, manual actions</td><td>GSC</td></tr>
+                <tr><td>Weekly</td><td>Review Core Web Vitals</td><td>GSC</td></tr>
+                <tr><td>Weekly</td><td>AI bot crawl spot-check</td><td>curl</td></tr>
+                <tr><td>Monthly</td><td>Analyze organic traffic</td><td>GA4</td></tr>
+                <tr><td>Monthly</td><td>Review indexed pages</td><td>GSC, Bing</td></tr>
+                <tr><td>Monthly</td><td>AI citation spot-check</td><td>ChatGPT, Perplexity</td></tr>
+                <tr><td>Quarterly</td><td>Full SEO/GEO audit</td><td>Various</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Section 7 -->
+      <section>
+        <h2>📋 Complete Setup Checklist</h2>
+        <p style="margin-bottom:1rem;font-size:0.88rem;color:var(--slate-500);">Track progress by priority.</p>
+
+        <h3>🔴 P0 — Critical</h3>
+        <ul class="checklist">
+          <li><span class="check">☐</span> <strong>Google Search Console</strong> — Add <code>www.sungkargroup.com</code> property and verify</li>
+          <li><span class="check">☐</span> <strong>Submit sitemap</strong> — <code>sitemap-index.xml</code> to Google Search Console</li>
+          <li><span class="check">☐</span> <strong>Google Analytics (GA4)</strong> — Create property and add tracking</li>
+          <li><span class="check">☐</span> <strong>Verify HTTPS</strong> — No mixed content ✅ (already verified)</li>
+        </ul>
+
+        <h3>🟠 P1 — Important (within 1 week)</h3>
+        <ul class="checklist">
+          <li><span class="check">☐</span> <strong>Bing Webmaster Tools</strong> — Add site and submit sitemap</li>
+          <li><span class="check">☐</span> <strong>robots.txt</strong> — Explicitly allow GPTBot, PerplexityBot, ClaudeBot</li>
+          <li><span class="check">☐</span> <strong>Link GSC + GA4</strong> — Enable Search Console linking in GA4</li>
+          <li><span class="check">☐</span> <strong>Schema validation</strong> — Run Rich Results Test</li>
+          <li><span class="check">☐</span> <strong>Configure preferred domain</strong> — www as canonical</li>
+        </ul>
+
+        <h3>🟡 P2 — Recommended (within 1 month)</h3>
+        <ul class="checklist">
+          <li><span class="check">☐</span> <strong>IndexNow</strong> — Enable automatic URL submission on deploy</li>
+          <li><span class="check">☐</span> <strong>Register with Perplexity</strong> — Submit sitemap</li>
+          <li><span class="check">☐</span> <strong>GEO visibility tool</strong> — Set up Otterly.ai for AI citation tracking</li>
+          <li><span class="check">☐</span> <strong>Brave Search</strong> — Ensure indexed (for Claude citations)</li>
+          <li><span class="check">☐</span> <strong>Monthly monitoring routine</strong> — Set calendar reminders</li>
+        </ul>
+
+        <h3>📈 Post-Setup Benchmarks</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Metric</th><th>Week 1</th><th>Month 1</th><th>Quarter 1</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Google Indexed Pages</td><td>200+</td><td>400+</td><td>450+</td></tr>
+              <tr><td>Bing Indexed Pages</td><td>100+</td><td>300+</td><td>400+</td></tr>
+              <tr><td>Core Web Vitals (pass)</td><td>80%+</td><td>90%+</td><td>95%+</td></tr>
+              <tr><td>Search Console Errors</td><td>&lt; 10</td><td>&lt; 5</td><td>0 critical</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Section 8 -->
+      <section>
+        <h2>🔗 Quick Reference URLs</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Platform</th><th>URL</th><th>Purpose</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Google Search Console</td><td><a href="https://search.google.com/search-console">search.google.com/search-console</a></td><td>Indexing, crawl errors</td></tr>
+              <tr><td>Bing Webmaster Tools</td><td><a href="https://www.bing.com/webmasters">bing.com/webmasters</a></td><td>Bing indexing, Copilot</td></tr>
+              <tr><td>Google Analytics (GA4)</td><td><a href="https://analytics.google.com">analytics.google.com</a></td><td>Traffic analytics</td></tr>
+              <tr><td>PageSpeed Insights</td><td><a href="https://pagespeed.web.dev">pagespeed.web.dev</a></td><td>Core Web Vitals</td></tr>
+              <tr><td>Rich Results Test</td><td><a href="https://search.google.com/test/rich-results">search.google.com/test/rich-results</a></td><td>Schema validation</td></tr>
+              <tr><td>Schema Validator</td><td><a href="https://validator.schema.org">validator.schema.org</a></td><td>Schema.org validation</td></tr>
+              <tr><td>IndexNow</td><td><a href="https://www.indexnow.org">indexnow.org</a></td><td>Instant URL submission</td></tr>
+              <tr><td>Perplexity Publisher</td><td><a href="https://www.perplexity.ai/sitemap">perplexity.ai/sitemap</a></td><td>AI search submission</td></tr>
+              <tr><td>Netlify Dashboard</td><td><a href="https://app.netlify.com">app.netlify.com</a></td><td>Deploy &amp; DNS</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>

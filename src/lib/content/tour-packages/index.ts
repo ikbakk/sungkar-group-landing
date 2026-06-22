@@ -25,11 +25,25 @@ export const packagePageContent = {
     },
 
     "labuan-bajo": {
-      title: "Paket Wisata Labuan Bajo",
+      title: "Paket Wisata Labuan Bajo (Darat)",
       description:
-        "Sailing 1–3 hari menjelajahi Komodo National Park: Pulau Padar, Pink Beach, Manta Point, Taka Makassar, dan Rinca. Termasuk snorkeling gear, makan, dan guide lokal.",
+        "Jelajahi Labuan Bajo dan destinasi darat sekitarnya dengan paket wisata darat yang nyaman. Cocok untuk wisatawan yang ingin menikmati keindahan Flores tanpa berlayar.",
+      intro:
+        "Pilih durasi dan destinasi darat favorit Anda di Labuan Bajo.",
+    },
+    "sailing-labuan-bajo": {
+      title: "Paket Sailing Labuan Bajo",
+      description:
+        "Sailing 1–4 hari menjelajahi Komodo National Park: Pulau Padar, Pink Beach, Manta Point, Taka Makassar, dan Rinca. Tersedia open trip hemat dan private charter eksklusif dengan kapal phinisi.",
       intro:
         "Jelajahi ikon wisata Labuan Bajo dengan paket sailing nyaman dan terjangkau.",
+    },
+    "lombok-to-bajo": {
+      title: "Paket Lombok ke Labuan Bajo",
+      description:
+        "Paket sailing dari Lombok ke Labuan Bajo, melintasi pulau-pulau eksotis dan destinasi bahari terbaik. Segera hadir.",
+      intro:
+        "Segera hadir: petualangan sailing lintas pulau dari Lombok ke Labuan Bajo.",
     },
   },
 

@@ -25,11 +25,25 @@ export const packagePageContent = {
     },
 
     "labuan-bajo": {
-      title: "Labuan Bajo Tour Packages",
+      title: "Labuan Bajo Tour Packages (Land)",
       description:
-        "1–3 day sailing exploring Komodo National Park: Padar Island, Pink Beach, Manta Point, Taka Makassar, and Rinca. Includes snorkeling gear, meals, and local guide.",
+        "Explore Labuan Bajo and surrounding land destinations with comfortable land tour packages. Perfect for travelers wanting to enjoy Flores' beauty without sailing.",
+      intro:
+        "Choose your favorite land destinations and duration in Labuan Bajo.",
+    },
+    "sailing-labuan-bajo": {
+      title: "Sailing Labuan Bajo Packages",
+      description:
+        "1–4 day sailing exploring Komodo National Park: Padar Island, Pink Beach, Manta Point, Taka Makassar, and Rinca. Available as budget-friendly open trips and exclusive private charter with phinisi boats.",
       intro:
         "Explore Labuan Bajo's iconic attractions with comfortable and affordable sailing packages.",
+    },
+    "lombok-to-bajo": {
+      title: "Lombok to Labuan Bajo Packages",
+      description:
+        "Sailing packages from Lombok to Labuan Bajo, crossing exotic islands and top marine destinations. Coming soon.",
+      intro:
+        "Coming soon: cross-island sailing adventure from Lombok to Labuan Bajo.",
     },
   },
 

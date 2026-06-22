@@ -13,6 +13,15 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const uiStrings = t(locale!);
 
+const metaDescriptions = {
+  en: "Learn how Sungkar Group collects, uses, and protects your personal data when you use our website, contact forms, and travel services.",
+  ar: "تعرّف على كيفية جمع Sungkar Group لبياناتك الشخصية واستخدامها وحمايتها عند استخدام الموقع ونماذج التواصل وخدمات السفر.",
+  ms: "Ketahui cara Sungkar Group mengumpul, menggunakan, dan melindungi data peribadi anda apabila anda menggunakan laman web, borang hubungan, dan perkhidmatan perjalanan kami.",
+  zh: "了解 Sungkar Group 在您使用我们的网站、联系表单和旅游服务时，如何收集、使用并保护您的个人数据。",
+} as const;
+
+const metaDescription = metaDescriptions[locale as keyof typeof metaDescriptions];
+
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: `/${locale}` },
   { label: uiStrings.footer.privacy },
@@ -21,7 +30,7 @@ const breadcrumbs = [
 
 <MainLayout
   title={uiStrings.footer.privacy}
-  description={uiStrings.footer.privacy}
+  description={metaDescription}
   canonical={`/${locale}/privacy-policy`}
   image={HERO.heroLombok}
   locale={locale}
@@ -29,7 +38,7 @@ const breadcrumbs = [
   <PageHeader
     eyebrow={uiStrings.footer.privacy}
     title={uiStrings.footer.privacy}
-    description={uiStrings.footer.privacy}
+    description={metaDescription}
     breadcrumbs={breadcrumbs}
     image={HERO.heroLombok}
     imageAlt={uiStrings.common.imageAltSunrise}

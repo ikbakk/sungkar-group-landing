@@ -9,6 +9,9 @@ import { HERO } from "@/assets/images";
 const locale = "id";
 const uiStrings = t(locale);
 
+const metaDescription =
+  "Baca syarat dan ketentuan Sungkar Group tentang pemesanan, pembayaran, pembatalan, perubahan itinerary, tanggung jawab, dan penggunaan layanan perjalanan kami.";
+
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: "/" },
   { label: "Syarat & Ketentuan" },
@@ -17,7 +20,7 @@ const breadcrumbs = [
 
 <MainLayout
   title="Syarat & Ketentuan"
-  description="Syarat dan ketentuan layanan Sungkar Group - tour operator Lombok, Sumbawa, dan Labuan Bajo."
+  description={metaDescription}
   canonical="/syarat-ketentuan"
   image={HERO.heroLombok}
   locale={locale}
@@ -25,7 +28,7 @@ const breadcrumbs = [
   <PageHeader
     eyebrow="Ketentuan"
     title="Syarat & Ketentuan"
-    description="Ketentuan layanan yang berlaku bagi pengguna jasa Sungkar Group."
+    description={metaDescription}
     breadcrumbs={breadcrumbs}
     image={HERO.heroLombok}
     imageAlt={uiStrings.common.imageAltSunrise}

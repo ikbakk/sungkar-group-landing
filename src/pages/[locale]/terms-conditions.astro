@@ -13,6 +13,15 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const uiStrings = t(locale!);
 
+const metaDescriptions = {
+  en: "Read Sungkar Group terms and conditions covering bookings, payments, cancellations, itinerary changes, responsibilities, and use of our travel services.",
+  ar: "اقرأ الشروط والأحكام الخاصة بـ Sungkar Group والتي تغطي الحجز والدفع والإلغاء وتغييرات خط السير والمسؤوليات واستخدام خدمات السفر لدينا.",
+  ms: "Baca terma dan syarat Sungkar Group yang merangkumi tempahan, pembayaran, pembatalan, perubahan itinerari, tanggungjawab, dan penggunaan perkhidmatan perjalanan kami.",
+  zh: "阅读 Sungkar Group 的条款与条件，内容涵盖预订、付款、取消、行程变更、责任范围以及旅游服务的使用。",
+} as const;
+
+const metaDescription = metaDescriptions[locale as keyof typeof metaDescriptions];
+
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: `/${locale}` },
   { label: uiStrings.footer.terms },
@@ -21,7 +30,7 @@ const breadcrumbs = [
 
 <MainLayout
   title={uiStrings.footer.terms}
-  description={uiStrings.footer.terms}
+  description={metaDescription}
   canonical={`/${locale}/terms-conditions`}
   image={HERO.heroLombok}
   locale={locale}
@@ -29,7 +38,7 @@ const breadcrumbs = [
   <PageHeader
     eyebrow={uiStrings.footer.terms}
     title={uiStrings.footer.terms}
-    description={uiStrings.footer.terms}
+    description={metaDescription}
     breadcrumbs={breadcrumbs}
     image={HERO.heroLombok}
     imageAlt={uiStrings.common.imageAltSunrise}
