@@ -69,6 +69,27 @@ All structured content now lives in MDX content collections under `src/content/{
 | Accommodations | `accommodations`   | `getAccommodations(locale)` from `src/lib/content/accommodations/collection.ts` | `scripts/data/accommodations/*/` | `node scripts/generate-content-mdx.mjs` |
 | Car Rental     | `carRental`        | `getVehicles(locale)` from `src/lib/content/car-rental/collection.ts`           | `scripts/data/car-rental/*/`     | `node scripts/generate-content-mdx.mjs` |
 
+
+## Data Pipeline (⚠️ do not edit generated files)
+
+```
+scripts/data/packages/*/main.json       ← EDIT HERE (source of truth)
+scripts/data/packages/*/locales.json    ← EDIT HERE (translations)
+         │
+         ▼
+scripts/generate-tour-mdx.mjs           ← generator script
+         │
+         ▼
+src/content/tourPackages/**/*.mdx       ← GENERATED — never edit manually
+         │
+         ▼
+src/components/packages/*.astro         ← UI reads from collection.ts
+```
+
+- **MDX files under `src/content/tourPackages/` are auto-generated.** Any manual edits will be overwritten the next time the generator runs.
+- **To change content**, edit the JSON source files in `scripts/data/packages/*/main.json` or `scripts/data/packages/*/locales.json`, then run `node scripts/generate-tour-mdx.mjs`.
+- The same pattern applies to accommodations (`scripts/data/accommodations/`) and car rental (`scripts/data/car-rental/`), using `node scripts/generate-content-mdx.mjs`.
+
 **Template generator**: `npm run generate:template` runs `scripts/generate-data-template.mjs` — an interactive CLI that scaffolds correct `main.json` + `locales.json` templates with validated enums from the source-of-truth constants files.
 
 Navigation uses `createNavigation(packages)` factory functions in each locale's `navigationData.ts` called from `Header.astro`. Landing page computes `featuredTours` by merging locale base with `getPackages()` results in the page files. Tests validate MDX frontmatter directly via `yaml` parsing in vitest (no Astro runtime needed).
