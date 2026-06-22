@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
-    "build": "astro build",
+    "build": "npm run generate:all && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest run",

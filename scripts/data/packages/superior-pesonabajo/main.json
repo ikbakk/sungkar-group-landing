@@ -71,9 +71,7 @@
       "name": "Share Cabin (Main Deck)",
       "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": [
-        "gallery/superior-pesonabajo-share-cabin.webp"
-      ],
+      "images": ["gallery/superior-pesonabajo-share-cabin.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -85,9 +83,7 @@
       "name": "Private Double (Main Deck)",
       "description": "Queen Bed, kamar mandi bersama, AC, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": [
-        "gallery/superior-pesonabajo-private-double.webp"
-      ],
+      "images": ["gallery/superior-pesonabajo-private-double.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -99,9 +95,7 @@
       "name": "Private Triple (Main Deck)",
       "description": "Queen Bed dan single bunk bed, kamar mandi bersama, AC, kapasitas 1-3 orang.",
       "capacity": "1-3",
-      "images": [
-        "gallery/superior-pesonabajo-private-triple.webp"
-      ],
+      "images": ["gallery/superior-pesonabajo-private-triple.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -113,9 +107,7 @@
       "name": "Deluxe Ocean 1 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": [
-        "gallery/superior-pesonabajo-deluxe-ocean-1.webp"
-      ],
+      "images": ["gallery/superior-pesonabajo-deluxe-ocean-1.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -127,9 +119,7 @@
       "name": "Deluxe Ocean 2 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": [
-        "gallery/superior-pesonabajo-deluxe-ocean-2.webp"
-      ],
+      "images": ["gallery/superior-pesonabajo-deluxe-ocean-2.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -141,9 +131,7 @@
       "name": "Master Ocean (Upper Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": [
-        "gallery/superior-pesonabajo-master-ocean.webp"
-      ],
+      "images": ["gallery/superior-pesonabajo-master-ocean.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",

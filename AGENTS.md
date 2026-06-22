@@ -69,7 +69,6 @@ All structured content now lives in MDX content collections under `src/content/{
 | Accommodations | `accommodations`   | `getAccommodations(locale)` from `src/lib/content/accommodations/collection.ts` | `scripts/data/accommodations/*/` | `node scripts/generate-content-mdx.mjs` |
 | Car Rental     | `carRental`        | `getVehicles(locale)` from `src/lib/content/car-rental/collection.ts`           | `scripts/data/car-rental/*/`     | `node scripts/generate-content-mdx.mjs` |
 
-
 ## Data Pipeline (⚠️ do not edit generated files)
 
 ```

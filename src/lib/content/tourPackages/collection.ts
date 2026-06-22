@@ -4,7 +4,12 @@ import { resolveImages } from "./images";
 
 type EntryData = {
   title: string;
-  region: "lombok" | "sumbawa" | "labuan-bajo" | "sailing-labuan-bajo" | "lombok-to-bajo";
+  region:
+    | "lombok"
+    | "sumbawa"
+    | "labuan-bajo"
+    | "sailing-labuan-bajo"
+    | "lombok-to-bajo";
   featured?: boolean;
   collectionSlug: string;
   collectionTitle: string;

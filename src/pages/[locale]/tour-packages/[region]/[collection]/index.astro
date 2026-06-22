@@ -76,7 +76,11 @@ const breadcrumbs = [
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       {
         collectionPackages.map((tour, i) => (
-          <PackageCard tour={tour} locale={locale} loading={i < 3 ? "eager" : "lazy"} />
+          <PackageCard
+            tour={tour}
+            locale={locale}
+            loading={i < 3 ? "eager" : "lazy"}
+          />
         ))
       }
     </div>

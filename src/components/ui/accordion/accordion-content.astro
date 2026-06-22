@@ -1,11 +1,11 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-type Props = HTMLAttributes<"div">
+type Props = HTMLAttributes<"div">;
 
-const { class: className, ...props } = Astro.props
+const { class: className, ...props } = Astro.props;
 ---
 
 <div
@@ -17,7 +17,7 @@ const { class: className, ...props } = Astro.props
     data-slot="accordion-content-inner"
     class={cn(
       "[&_a]:hover:text-foreground h-(--accordion-panel-height) pt-0 pb-4 data-ending-style:h-0 data-starting-style:h-0 [&_a]:underline [&_a]:underline-offset-3 [&_p:not(:last-child)]:mb-4",
-      className
+      className,
     )}
   >
     <slot />

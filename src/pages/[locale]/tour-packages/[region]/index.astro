@@ -18,7 +18,13 @@ type CCard = {
 };
 
 export function getStaticPaths() {
-  const regions: Region[] = ["lombok", "sumbawa", "labuan-bajo", "sailing-labuan-bajo", "lombok-to-bajo"];
+  const regions: Region[] = [
+    "lombok",
+    "sumbawa",
+    "labuan-bajo",
+    "sailing-labuan-bajo",
+    "lombok-to-bajo",
+  ];
   const paths = [];
   for (const locale of NON_DEFAULT_LOCALES) {
     for (const region of regions) {

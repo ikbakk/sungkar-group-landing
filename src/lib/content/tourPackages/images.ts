@@ -106,7 +106,11 @@ function resolveFallbackImage(path: string): ImageSource | undefined {
       return GALLERY.whaleshark;
     }
 
-    if (path.includes("lombok") || path.includes("gili") || path.includes("kuta")) {
+    if (
+      path.includes("lombok") ||
+      path.includes("gili") ||
+      path.includes("kuta")
+    ) {
       return GALLERY.kutaBeach;
     }
 
@@ -115,7 +119,11 @@ function resolveFallbackImage(path: string): ImageSource | undefined {
 
   if (path.startsWith("destinations/")) {
     if (path.includes("sumbawa")) return DESTINATIONS.sumbawa;
-    if (path.includes("lombok") || path.includes("gili") || path.includes("rinjani")) {
+    if (
+      path.includes("lombok") ||
+      path.includes("gili") ||
+      path.includes("rinjani")
+    ) {
       return DESTINATIONS.lombok;
     }
 
@@ -129,7 +137,12 @@ function resolveFallbackImage(path: string): ImageSource | undefined {
 }
 
 export function resolveImage(path: string): ImageSource {
-  return registry[path] ?? resolveRegistryPath(path) ?? resolveFallbackImage(path) ?? path;
+  return (
+    registry[path] ??
+    resolveRegistryPath(path) ??
+    resolveFallbackImage(path) ??
+    path
+  );
 }
 
 export function resolveImages(paths: string[]): ImageSource[] {

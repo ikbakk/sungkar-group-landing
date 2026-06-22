@@ -117,17 +117,31 @@ for (const locale of ["en", "ms", "ar", "zh"]) {
   if (!existsSync(fp)) continue;
   const localeLabel = localeLabels[locale] || label;
 
-  patch(fp, /"lombok" \| "sumbawa" \| "labuan-bajo"/,
-    `"lombok" | "sumbawa" | "labuan-bajo" | "${newRegion}"`);
-  patch(fp, /\["lombok", "sumbawa", "labuan-bajo"\];/,
-    `["lombok", "sumbawa", "labuan-bajo", "${newRegion}"];`);
-  patch(fp,
+  patch(
+    fp,
+    /"lombok" \| "sumbawa" \| "labuan-bajo"/,
+    `"lombok" | "sumbawa" | "labuan-bajo" | "${newRegion}"`,
+  );
+  patch(
+    fp,
+    /\["lombok", "sumbawa", "labuan-bajo"\];/,
+    `["lombok", "sumbawa", "labuan-bajo", "${newRegion}"];`,
+  );
+  patch(
+    fp,
     /("labuan-bajo": \{\s+label: "[^"]+",\s+className: "[^"]+",\s+\},)/,
-    `"${newRegion}": {\n    label: "${localeLabel}",\n    className: "${ORANGE_BG_CLASS}",\n  },\n  $1`);
-  patch(fp, /("labuan-bajo": "[\w ]+",)/,
-    `"${newRegion}": "${localeLabel}",\n  $1`);
-  patch(fp, /("labuan-bajo": "\w+",)$/m,
-    `"${newRegion}": "${camelKey}",\n  $1`);
+    `"${newRegion}": {\n    label: "${localeLabel}",\n    className: "${ORANGE_BG_CLASS}",\n  },\n  $1`,
+  );
+  patch(
+    fp,
+    /("labuan-bajo": "[\w ]+",)/,
+    `"${newRegion}": "${localeLabel}",\n  $1`,
+  );
+  patch(
+    fp,
+    /("labuan-bajo": "\w+",)$/m,
+    `"${newRegion}": "${camelKey}",\n  $1`,
+  );
 }
 
 // ─── 4. content.config.ts (4 enum declarations) —────────────────────────
@@ -159,8 +173,11 @@ for (const fp of [
   "src/lib/content/car-rental/collection.ts",
   "src/lib/content/guides/loader.ts",
 ]) {
-  patchAll(fp, /"lombok" \| "sumbawa" \| "labuan-bajo"/g,
-    `"lombok" | "sumbawa" | "labuan-bajo" | "${newRegion}"`);
+  patchAll(
+    fp,
+    /"lombok" \| "sumbawa" \| "labuan-bajo"/g,
+    `"lombok" | "sumbawa" | "labuan-bajo" | "${newRegion}"`,
+  );
 }
 
 // ─── 6. Page getStaticPaths arrays —─────────────────────────────────────
@@ -172,8 +189,11 @@ for (const fp of [
   "src/pages/[locale]/accommodations/[slug].astro",
 ]) {
   if (!existsSync(fp)) continue;
-  patch(fp, /\["lombok", "sumbawa", "labuan-bajo"\];/,
-    `["lombok", "sumbawa", "labuan-bajo", "${newRegion}"];`);
+  patch(
+    fp,
+    /\["lombok", "sumbawa", "labuan-bajo"\];/,
+    `["lombok", "sumbawa", "labuan-bajo", "${newRegion}"];`,
+  );
 }
 
 // ─── 7. Guide pages —─────────────────────────────────────────────────────
@@ -181,8 +201,11 @@ for (const fp of [
   "src/pages/panduan-wisata/index.astro",
   "src/pages/[locale]/travel-guides/index.astro",
 ]) {
-  patch(fp, /\["lombok", "sumbawa", "labuan-bajo", "general"\]/,
-    `["lombok", "sumbawa", "labuan-bajo", "${newRegion}", "general"]`);
+  patch(
+    fp,
+    /\["lombok", "sumbawa", "labuan-bajo", "general"\]/,
+    `["lombok", "sumbawa", "labuan-bajo", "${newRegion}", "general"]`,
+  );
 }
 
 // ─── 8. Navigation data —─────────────────────────────────────────────────
@@ -194,8 +217,11 @@ for (const fp of [
   "src/lib/content/navigationData.ts",
 ]) {
   if (!existsSync(fp)) continue;
-  patchAll(fp, /"lombok" \| "sumbawa" \| "labuan-bajo"/g,
-    `"lombok" | "sumbawa" | "labuan-bajo" | "${newRegion}"`);
+  patchAll(
+    fp,
+    /"lombok" \| "sumbawa" \| "labuan-bajo"/g,
+    `"lombok" | "sumbawa" | "labuan-bajo" | "${newRegion}"`,
+  );
 }
 
 // ─── 9. i18n page data files —────────────────────────────────────────────
@@ -217,8 +243,11 @@ for (const fp of [
   "src/lib/i18n/zh/accommodationPage.ts",
 ]) {
   if (!existsSync(fp)) continue;
-  patch(fp, /("labuan-bajo": \{)/,
-    `"${newRegion}": {\n    title: "${label}",\n    description: "",\n  },\n  $1`);
+  patch(
+    fp,
+    /("labuan-bajo": \{)/,
+    `"${newRegion}": {\n    title: "${label}",\n    description: "",\n  },\n  $1`,
+  );
 }
 
 // ─── Print summary —─────────────────────────────────────────────────────

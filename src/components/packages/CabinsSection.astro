@@ -23,13 +23,15 @@ const uiStrings = t(locale);
   <TypographyH2 class="mt-2">{uiStrings.paketWisata.cabins}</TypographyH2>
 
   <div class="mt-8 grid gap-8">
-    {cabins.map((cabin) => (
-      <CabinCard
-        cabin={cabin}
-        locale={locale}
-        durationLabels={durationLabels}
-        priceList={priceList}
-      />
-    ))}
+    {
+      cabins.map((cabin) => (
+        <CabinCard
+          cabin={cabin}
+          locale={locale}
+          durationLabels={durationLabels}
+          priceList={priceList}
+        />
+      ))
+    }
   </div>
 </div>

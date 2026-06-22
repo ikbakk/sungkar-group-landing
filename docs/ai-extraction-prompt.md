@@ -3,6 +3,7 @@
 You are given a PDF brochure for a tour package. Extract all data and output exactly **two JSON files** following the structure below.
 
 There are two template types:
+
 - **Boat template** — for sailing/phinisi packages with boat specs, cabins, multi-duration
 - **Land tour template** — for regular tour packages with a single fixed duration
 
@@ -38,8 +39,14 @@ There are two template types:
     { "label": "Generator", "value": "30KVA, Emergency 7500watt" },
     { "label": "Navigasi", "value": "AIS, Radar, Kompas, GPS, Peta" },
     { "label": "Radio", "value": "SBB Radio, VHF Radio" },
-    { "label": "Peralatan Keselamatan", "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K" },
-    { "label": "Speedboat", "value": "6 Meter Fiberglass dengan Mesin Yamaha 15 HP" },
+    {
+      "label": "Peralatan Keselamatan",
+      "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+    },
+    {
+      "label": "Speedboat",
+      "value": "6 Meter Fiberglass dengan Mesin Yamaha 15 HP"
+    },
     { "label": "Kabin", "value": "6 Kabin (AC, Kamar Mandi Pribadi)" }
   ],
   "cabins": [
@@ -52,10 +59,30 @@ There are two template types:
     }
   ],
   "priceList": {
-    "fullDay": { "1-8": 39000000, "9-10": 45000000, "addPerPax": 1000000, "maxPax": 25 },
-    "2D1N": { "1-8": 43000000, "9-10": 45000000, "addPerPax": 1500000, "maxPax": 25 },
-    "3D2N": { "1-8": 52000000, "9-10": 54000000, "addPerPax": 2000000, "maxPax": 25 },
-    "4D3N": { "1-8": 62000000, "9-10": 65000000, "addPerPax": 2500000, "maxPax": 25 }
+    "fullDay": {
+      "1-8": 39000000,
+      "9-10": 45000000,
+      "addPerPax": 1000000,
+      "maxPax": 25
+    },
+    "2D1N": {
+      "1-8": 43000000,
+      "9-10": 45000000,
+      "addPerPax": 1500000,
+      "maxPax": 25
+    },
+    "3D2N": {
+      "1-8": 52000000,
+      "9-10": 54000000,
+      "addPerPax": 2000000,
+      "maxPax": 25
+    },
+    "4D3N": {
+      "1-8": 62000000,
+      "9-10": 65000000,
+      "addPerPax": 2500000,
+      "maxPax": 25
+    }
   }
 }
 ```
@@ -100,6 +127,7 @@ Every locale MUST include all the fields shown below for its format type. Transl
 Use when the package offers multiple trip lengths (e.g. 1D, 2D1N, 3D2N, 4D3N). Used by sailing/boat packages.
 
 **Indonesian (`id`):**
+
 ```json
 {
   "id": {
@@ -135,8 +163,8 @@ Use when the package offers multiple trip lengths (e.g. 1D, 2D1N, 3D2N, 4D3N). U
         "Day 1 - ...",
         "Day 2 - Tiba di Labuan Bajo pukul 18.00-19.00 WITA"
       ],
-      "3D2N": [ "Day 1 - ...", "Day 2 - ...", "Day 3 - ..." ],
-      "4D3N": [ "Day 1 - ...", "Day 2 - ...", "Day 3 - ...", "Day 4 - ..." ]
+      "3D2N": ["Day 1 - ...", "Day 2 - ...", "Day 3 - ..."],
+      "4D3N": ["Day 1 - ...", "Day 2 - ...", "Day 3 - ...", "Day 4 - ..."]
     },
     "includes": [
       "Penjemputan dan pengantaran (di dalam dan luar pelabuhan)",
@@ -177,6 +205,7 @@ Use when the package offers multiple trip lengths (e.g. 1D, 2D1N, 3D2N, 4D3N). U
 ```
 
 **Other locales for multi-duration:**
+
 - **English (`en`)**: `durationOptions` → `["1 Day (Full Day)", "2 Days 1 Night", ...]`, `category` → `"Labuan Bajo Sailing Packages (Private)"`, itinerary day labels → `"Day 1"`, `"Day 2"`, etc.
 - **Malay (`ms`)**: `category` → `"Pakej Sailing Labuan Bajo (Persendirian)"`, day labels → `"Hari 1"`, `"Hari 2"`, etc.
 - **Arabic (`ar`)**: `category` → `"باكيجات الإبحار لابوان باجو (خاص)"`, day labels → `"اليوم الأول"`, `"اليوم الثاني"`, etc.
@@ -194,10 +223,7 @@ Use when the package has a single fixed duration. This is the format for most la
     "category": "Paket Liburan Lombok",
     "duration": "3 Hari 2 Malam",
     "summary": "Jelajahi keindahan Lombok dalam paket 3 hari 2 malam...",
-    "highlights": [
-      "Kunjungan ke Pantai Pink",
-      "Snorkeling di Gili Trawangan"
-    ],
+    "highlights": ["Kunjungan ke Pantai Pink", "Snorkeling di Gili Trawangan"],
     "itinerary": [
       "Day 1 - Penjemputan dari Bandara Lombok",
       "Day 1 - Kunjungan ke Desa Suku Sasak",
@@ -209,20 +235,24 @@ Use when the package has a single fixed duration. This is the format for most la
       "Mobil ber-AC",
       "Guide lokal"
     ],
-    "excludes": [
-      "Tiket pesawat",
-      "Penginapan",
-      "Makanan dan minuman pribadi"
-    ],
+    "excludes": ["Tiket pesawat", "Penginapan", "Makanan dan minuman pribadi"],
     "termsAndConditions": [
       "Pembatalan 7 hari sebelum perjalanan: refund 100%",
       "Pembatalan kurang dari 7 hari: no refund"
     ]
   },
-  "en": { /* same structure, translated */ },
-  "ms": { /* same structure, translated */ },
-  "ar": { /* same structure, translated */ },
-  "zh": { /* same structure, translated */ }
+  "en": {
+    /* same structure, translated */
+  },
+  "ms": {
+    /* same structure, translated */
+  },
+  "ar": {
+    /* same structure, translated */
+  },
+  "zh": {
+    /* same structure, translated */
+  }
 }
 ```
 
@@ -230,53 +260,54 @@ Use when the package has a single fixed duration. This is the format for most la
 
 ## Required Fields per Locale
 
-| Field | Multi-Duration | Single-Duration |
-|-------|---------------|-----------------|
-| title | ✅ required | ✅ required |
-| collectionTitle | ✅ required | ✅ required |
-| category | ✅ required | ✅ required |
-| durationOptions | ✅ required | ❌ omit |
-| duration | ❌ omit | ✅ required |
-| summary | ✅ required | ✅ required |
-| highlights | ✅ required | ✅ required |
-| itinerary | ✅ object (keys: 1D/2D1N/3D2N/4D3N) | ✅ array (flat) |
-| includes | ✅ required | ✅ required |
-| excludes | ✅ required | ✅ required |
-| additionalServices | optional | optional |
-| dontForgetToBring | optional | optional |
-| termsAndConditions | optional | optional |
+| Field              | Multi-Duration                      | Single-Duration |
+| ------------------ | ----------------------------------- | --------------- |
+| title              | ✅ required                         | ✅ required     |
+| collectionTitle    | ✅ required                         | ✅ required     |
+| category           | ✅ required                         | ✅ required     |
+| durationOptions    | ✅ required                         | ❌ omit         |
+| duration           | ❌ omit                             | ✅ required     |
+| summary            | ✅ required                         | ✅ required     |
+| highlights         | ✅ required                         | ✅ required     |
+| itinerary          | ✅ object (keys: 1D/2D1N/3D2N/4D3N) | ✅ array (flat) |
+| includes           | ✅ required                         | ✅ required     |
+| excludes           | ✅ required                         | ✅ required     |
+| additionalServices | optional                            | optional        |
+| dontForgetToBring  | optional                            | optional        |
+| termsAndConditions | optional                            | optional        |
 
 ## Known collectionTitle Values (must match exactly)
 
-| collectionTitle | Used for |
-|---|---|
-| `Sailing Deluxe Private Trip` | Boat packages (id/en) |
-| `Sailing Private Trip` | Boat packages (ms/ar/zh) |
-| `Private Trip Deluxe` | Alternative boat packages (en) |
-| `Paket 1 Hari` | 1-day packages |
-| `Paket 2 Hari 1 Malam` | 2D1N packages |
-| `Paket 3 Hari 2 Malam` | 3D2N packages |
-| `Paket 4 Hari 3 Malam` | 4D3N packages |
-| `Open Trip` | Open trip packages |
+| collectionTitle               | Used for                       |
+| ----------------------------- | ------------------------------ |
+| `Sailing Deluxe Private Trip` | Boat packages (id/en)          |
+| `Sailing Private Trip`        | Boat packages (ms/ar/zh)       |
+| `Private Trip Deluxe`         | Alternative boat packages (en) |
+| `Paket 1 Hari`                | 1-day packages                 |
+| `Paket 2 Hari 1 Malam`        | 2D1N packages                  |
+| `Paket 3 Hari 2 Malam`        | 3D2N packages                  |
+| `Paket 4 Hari 3 Malam`        | 4D3N packages                  |
+| `Open Trip`                   | Open trip packages             |
 
 ## Known collectionSlug Values
 
-| collectionSlug | Used for |
-|---|---|
-| `sailing-deluxe-private-trip` | Deluxe sailing |
-| `sailing-private-trip` | Standard sailing |
-| `private-trip-deluxe` | Alternative sailing |
-| `1-hari` | 1-day packages |
-| `2-hari-1-malam` | 2D1N packages |
-| `3-hari-2-malam` | 3D2N packages |
-| `4-hari-3-malam` | 4D3N packages |
-| `open-trip` | Open trips |
+| collectionSlug                | Used for            |
+| ----------------------------- | ------------------- |
+| `sailing-deluxe-private-trip` | Deluxe sailing      |
+| `sailing-private-trip`        | Standard sailing    |
+| `private-trip-deluxe`         | Alternative sailing |
+| `1-hari`                      | 1-day packages      |
+| `2-hari-1-malam`              | 2D1N packages       |
+| `3-hari-2-malam`              | 3D2N packages       |
+| `4-hari-3-malam`              | 4D3N packages       |
+| `open-trip`                   | Open trips          |
 
 ## Itinerary Format Rules
 
 **Each activity string must start with "Day N - "** (or localized equivalent), where N is the day number. This applies to BOTH formats.
 
 Multi-duration example:
+
 ```json
 "itinerary": {
   "1D": ["Day 1 - Pickup from hotel", "Day 1 - Welcome drink"],
@@ -285,6 +316,7 @@ Multi-duration example:
 ```
 
 Single-duration example:
+
 ```json
 "itinerary": [
   "Day 1 - Pickup from hotel at 10:00",
@@ -296,12 +328,12 @@ Single-duration example:
 
 ## Locale Translations for Day Labels
 
-| Locale | Day label |
-|--------|----------|
-| id, en | `"Day 1"`, `"Day 2"`, etc. |
-| ms | `"Hari 1"`, `"Hari 2"`, etc. |
-| ar | `"اليوم الأول"`, `"اليوم الثاني"`, `"اليوم الثالث"`, `"اليوم الرابع"` |
-| zh | `"第1天"`, `"第2天"`, `"第3天"`, `"第4天"` |
+| Locale | Day label                                                             |
+| ------ | --------------------------------------------------------------------- |
+| id, en | `"Day 1"`, `"Day 2"`, etc.                                            |
+| ms     | `"Hari 1"`, `"Hari 2"`, etc.                                          |
+| ar     | `"اليوم الأول"`, `"اليوم الثاني"`, `"اليوم الثالث"`, `"اليوم الرابع"` |
+| zh     | `"第1天"`, `"第2天"`, `"第3天"`, `"第4天"`                            |
 
 ## Critical Rules
 
@@ -318,13 +350,13 @@ Single-duration example:
 
 Provide exactly two code blocks:
 
-```json
+````json
 // main.json
 { ... }
 
 ```json
 // locales.json
 { ... }
-```
+````
 
 Do NOT include any fields beyond what is shown. Do NOT add comments in the JSON. Ensure all JSON is valid.

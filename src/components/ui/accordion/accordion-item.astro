@@ -1,14 +1,14 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = HTMLAttributes<"div"> & {
-  value: string
-  disabled?: boolean
-}
+  value: string;
+  disabled?: boolean;
+};
 
-const { class: className, value, disabled, ...props } = Astro.props
+const { class: className, value, disabled, ...props } = Astro.props;
 ---
 
 <div

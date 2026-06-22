@@ -71,9 +71,7 @@
       "name": "Share Cabin 1 (Main Deck)",
       "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": [
-        "gallery/superior-lamborajo-1-share-cabin-1.webp"
-      ],
+      "images": ["gallery/superior-lamborajo-1-share-cabin-1.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -85,9 +83,7 @@
       "name": "Share Cabin 2 (Main Deck)",
       "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": [
-        "gallery/superior-lamborajo-1-share-cabin-2.webp"
-      ],
+      "images": ["gallery/superior-lamborajo-1-share-cabin-2.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -99,9 +95,7 @@
       "name": "Share Cabin 3 (Main Deck)",
       "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": [
-        "gallery/superior-lamborajo-1-share-cabin-3.webp"
-      ],
+      "images": ["gallery/superior-lamborajo-1-share-cabin-3.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -113,9 +107,7 @@
       "name": "Full Ocean (Main Deck)",
       "description": "Queen Bed dan 2 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": [
-        "gallery/superior-lamborajo-1-full-ocean.webp"
-      ],
+      "images": ["gallery/superior-lamborajo-1-full-ocean.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -127,9 +119,7 @@
       "name": "Master Ocean 1 (Upper Deck)",
       "description": "Queen Bed dan 2 extra single bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": [
-        "gallery/superior-lamborajo-1-master-ocean-1.webp"
-      ],
+      "images": ["gallery/superior-lamborajo-1-master-ocean-1.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -141,9 +131,7 @@
       "name": "Master Ocean 2 (Upper Deck)",
       "description": "Queen Bed dan 2 extra single bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": [
-        "gallery/superior-lamborajo-1-master-ocean-2.webp"
-      ],
+      "images": ["gallery/superior-lamborajo-1-master-ocean-2.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",

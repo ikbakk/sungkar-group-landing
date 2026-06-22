@@ -41,7 +41,13 @@ const tourPackages = defineCollection({
   }),
   schema: z.object({
     title: z.string(),
-    region: z.enum(["lombok", "sumbawa", "labuan-bajo", "sailing-labuan-bajo", "lombok-to-bajo"]),
+    region: z.enum([
+      "lombok",
+      "sumbawa",
+      "labuan-bajo",
+      "sailing-labuan-bajo",
+      "lombok-to-bajo",
+    ]),
     featured: z.boolean().optional(),
     collectionSlug: z.string(),
     collectionTitle: z.string(),
@@ -71,10 +77,7 @@ const tourPackages = defineCollection({
       .optional(),
     durationLabels: z.record(z.string(), z.string()).optional(),
     priceList: z
-      .record(
-        z.string(),
-        z.record(z.string(), z.number()),
-      )
+      .record(z.string(), z.record(z.string(), z.number()))
       .optional(),
     additionalServices: z.array(z.string()).optional(),
     dontForgetToBring: z.array(z.string()).optional(),
@@ -90,7 +93,13 @@ const accommodations = defineCollection({
   }),
   schema: z.object({
     name: z.string(),
-    region: z.enum(["lombok", "sumbawa", "labuan-bajo", "sailing-labuan-bajo", "lombok-to-bajo"]),
+    region: z.enum([
+      "lombok",
+      "sumbawa",
+      "labuan-bajo",
+      "sailing-labuan-bajo",
+      "lombok-to-bajo",
+    ]),
     perks: z.array(z.string()),
     regionalHighlights: z.array(z.string()),
     description: z.string(),
@@ -106,7 +115,13 @@ const carRental = defineCollection({
   }),
   schema: z.object({
     name: z.string(),
-    region: z.enum(["lombok", "sumbawa", "labuan-bajo", "sailing-labuan-bajo", "lombok-to-bajo"]),
+    region: z.enum([
+      "lombok",
+      "sumbawa",
+      "labuan-bajo",
+      "sailing-labuan-bajo",
+      "lombok-to-bajo",
+    ]),
     pricePerDay: z.string(),
     seats: z.number(),
     transmission: z.enum(["Manual", "Automatic"]),

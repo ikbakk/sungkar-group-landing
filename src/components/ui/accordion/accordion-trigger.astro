@@ -1,11 +1,11 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-type Props = HTMLAttributes<"button">
+type Props = HTMLAttributes<"button">;
 
-const { class: className, type = "button", ...props } = Astro.props
+const { class: className, type = "button", ...props } = Astro.props;
 ---
 
 <button
@@ -13,7 +13,7 @@ const { class: className, type = "button", ...props } = Astro.props
   type={type}
   class={cn(
     "group/accordion-trigger focus-visible:border-ring focus-visible:ring-ring/50 relative flex w-full flex-1 items-center justify-between gap-4 rounded-md border border-transparent bg-transparent py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-3 aria-disabled:pointer-events-none aria-disabled:opacity-50",
-    className
+    className,
   )}
   {...props}
 >
@@ -30,7 +30,7 @@ const { class: className, type = "button", ...props } = Astro.props
     stroke-linecap="round"
     stroke-linejoin="round"
   >
-    <polyline points="6 9 12 15 18 9" />
+    <polyline points="6 9 12 15 18 9"></polyline>
   </svg>
   <svg
     data-slot="accordion-trigger-icon"
@@ -44,6 +44,6 @@ const { class: className, type = "button", ...props } = Astro.props
     stroke-linecap="round"
     stroke-linejoin="round"
   >
-    <polyline points="18 15 12 9 6 15" />
+    <polyline points="18 15 12 9 6 15"></polyline>
   </svg>
 </button>

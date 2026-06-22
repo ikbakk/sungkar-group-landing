@@ -1,13 +1,13 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = HTMLAttributes<"div"> & {
-  defaultValue?: string
-  orientation?: "horizontal" | "vertical"
-  activationMode?: "auto" | "manual"
-}
+  defaultValue?: string;
+  orientation?: "horizontal" | "vertical";
+  activationMode?: "auto" | "manual";
+};
 
 const {
   class: className,
@@ -15,7 +15,7 @@ const {
   orientation = "horizontal",
   activationMode,
   ...props
-} = Astro.props
+} = Astro.props;
 ---
 
 <div
@@ -32,7 +32,7 @@ const {
 </div>
 
 <script>
-  import { create } from "@data-slot/tabs"
+  import { create } from "@data-slot/tabs";
 
-  create()
+  create();
 </script>

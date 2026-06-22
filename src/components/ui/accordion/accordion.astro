@@ -1,17 +1,17 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type Props = HTMLAttributes<"div"> & {
-  multiple?: boolean
-  defaultValue?: string | string[]
-  disabled?: boolean
-  orientation?: "horizontal" | "vertical"
-  loopFocus?: boolean
-  hiddenUntilFound?: boolean
-  collapsible?: boolean
-}
+  multiple?: boolean;
+  defaultValue?: string | string[];
+  disabled?: boolean;
+  orientation?: "horizontal" | "vertical";
+  loopFocus?: boolean;
+  hiddenUntilFound?: boolean;
+  collapsible?: boolean;
+};
 
 const {
   class: className,
@@ -23,11 +23,11 @@ const {
   hiddenUntilFound,
   collapsible,
   ...props
-} = Astro.props
+} = Astro.props;
 
 const serializedDefaultValue = Array.isArray(defaultValue)
   ? JSON.stringify(defaultValue)
-  : defaultValue
+  : defaultValue;
 ---
 
 <div
@@ -46,7 +46,7 @@ const serializedDefaultValue = Array.isArray(defaultValue)
 </div>
 
 <script>
-  import { create } from "@data-slot/accordion"
+  import { create } from "@data-slot/accordion";
 
-  create()
+  create();
 </script>

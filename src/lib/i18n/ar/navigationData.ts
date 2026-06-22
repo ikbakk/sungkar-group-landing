@@ -39,7 +39,12 @@ type CollectionResult = {
 
 const createPackageCollections = (
   packages: TourPackage[],
-  region: "lombok" | "sumbawa" | "labuan-bajo" | "sailing-labuan-bajo" | "lombok-to-bajo",
+  region:
+    | "lombok"
+    | "sumbawa"
+    | "labuan-bajo"
+    | "sailing-labuan-bajo"
+    | "lombok-to-bajo",
 ): CollectionResult => {
   const regionPackages = packages.filter((pkg) => pkg.region === region);
 

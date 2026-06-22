@@ -35,9 +35,7 @@
       "name": "Share Cabin",
       "description": "4x Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-8",
-      "images": [
-        "gallery/open-trip-kanha-loka-share-cabin.webp"
-      ],
+      "images": ["gallery/open-trip-kanha-loka-share-cabin.webp"],
       "prices": {
         "default": "Minimum 2 pax: IDR 4.500.000/pax"
       }
@@ -46,9 +44,7 @@
       "name": "Superior Cabin 1",
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-2",
-      "images": [
-        "gallery/open-trip-kanha-loka-superior-cabin-1.webp"
-      ],
+      "images": ["gallery/open-trip-kanha-loka-superior-cabin-1.webp"],
       "prices": {
         "default": "Minimum 2 pax: IDR 6.000.000/pax"
       }
@@ -57,9 +53,7 @@
       "name": "Superior Cabin 2",
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-2",
-      "images": [
-        "gallery/open-trip-kanha-loka-superior-cabin-2.webp"
-      ],
+      "images": ["gallery/open-trip-kanha-loka-superior-cabin-2.webp"],
       "prices": {
         "default": "Minimum 2 pax: IDR 6.000.000/pax"
       }
@@ -68,9 +62,7 @@
       "name": "Family Ocean",
       "description": "2x Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-4",
-      "images": [
-        "gallery/open-trip-kanha-loka-family-ocean.webp"
-      ],
+      "images": ["gallery/open-trip-kanha-loka-family-ocean.webp"],
       "prices": {
         "default": "Minimum 2 pax: IDR 6.000.000/pax; additional pax: IDR 5.100.000/pax"
       }
@@ -79,9 +71,7 @@
       "name": "Deluxe Ocean 1",
       "description": "Queen Bed + Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
       "capacity": "1-3",
-      "images": [
-        "gallery/open-trip-kanha-loka-deluxe-ocean-1.webp"
-      ],
+      "images": ["gallery/open-trip-kanha-loka-deluxe-ocean-1.webp"],
       "prices": {
         "default": "Minimum 2 pax: IDR 7.800.000/pax; additional pax: IDR 5.100.000/pax"
       }
@@ -90,9 +80,7 @@
       "name": "Deluxe Ocean 2",
       "description": "Queen Bed + Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
       "capacity": "1-3",
-      "images": [
-        "gallery/open-trip-kanha-loka-deluxe-ocean-2.webp"
-      ],
+      "images": ["gallery/open-trip-kanha-loka-deluxe-ocean-2.webp"],
       "prices": {
         "default": "Minimum 2 pax: IDR 7.800.000/pax; additional pax: IDR 5.100.000/pax"
       }
@@ -101,9 +89,7 @@
       "name": "Master Ocean",
       "description": "Queen Bed + Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
       "capacity": "1-3",
-      "images": [
-        "gallery/open-trip-kanha-loka-master-ocean.webp"
-      ],
+      "images": ["gallery/open-trip-kanha-loka-master-ocean.webp"],
       "prices": {
         "default": "Minimum 2 pax: IDR 8.400.000/pax; additional pax: IDR 5.100.000/pax"
       }

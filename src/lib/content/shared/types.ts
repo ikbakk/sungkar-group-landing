@@ -223,7 +223,13 @@ export interface OGMetadata {
 // ─── Zod Schemas for Runtime Validation ────────────────────────────────
 import { z } from "zod";
 
-const regionSchema = z.enum(["lombok", "sumbawa", "labuan-bajo", "sailing-labuan-bajo", "lombok-to-bajo"]);
+const regionSchema = z.enum([
+  "lombok",
+  "sumbawa",
+  "labuan-bajo",
+  "sailing-labuan-bajo",
+  "lombok-to-bajo",
+]);
 
 export const TourPackageSchema = z.object({
   slug: z.string().min(1),

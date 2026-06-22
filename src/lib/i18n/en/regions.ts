@@ -1,6 +1,17 @@
-export type RegionKey = "lombok" | "sumbawa" | "labuan-bajo" | "sailing-labuan-bajo" | "lombok-to-bajo";
+export type RegionKey =
+  | "lombok"
+  | "sumbawa"
+  | "labuan-bajo"
+  | "sailing-labuan-bajo"
+  | "lombok-to-bajo";
 
-export const REGIONS: RegionKey[] = ["lombok", "sumbawa", "labuan-bajo", "sailing-labuan-bajo", "lombok-to-bajo"];
+export const REGIONS: RegionKey[] = [
+  "lombok",
+  "sumbawa",
+  "labuan-bajo",
+  "sailing-labuan-bajo",
+  "lombok-to-bajo",
+];
 
 export interface RegionInfo {
   label: string;

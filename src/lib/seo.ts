@@ -4,10 +4,7 @@ function collapseWhitespace(value: string) {
   return value.replace(/\s+/g, " ").trim();
 }
 
-export function normalizeMetaDescription(
-  description: string,
-  maxLength = 160,
-) {
+export function normalizeMetaDescription(description: string, maxLength = 160) {
   const normalized = collapseWhitespace(description);
 
   if (normalized.length <= maxLength) {
@@ -29,9 +26,8 @@ export function normalizeMetaDescription(
   }
 
   const wordBoundary = slice.lastIndexOf(" ");
-  const cutoff = wordBoundary >= Math.floor(maxLength * 0.6)
-    ? wordBoundary
-    : maxLength;
+  const cutoff =
+    wordBoundary >= Math.floor(maxLength * 0.6) ? wordBoundary : maxLength;
 
   return `${slice.slice(0, cutoff).trim()}…`;
 }
