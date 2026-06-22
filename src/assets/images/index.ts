@@ -177,20 +177,62 @@ import _gallery_kutaBeach2 from "./gallery/kuta-beach-2.webp";
 import _gallery_kutaBeach from "./gallery/kuta-beach.webp";
 import _gallery_maheswariDeluxePhinisiCabin from "./gallery/maheswari-deluxe-phinisi-cabin.webp";
 import _gallery_maheswariDeluxePhinisiDeluxeCabin from "./gallery/maheswari-deluxe-phinisi-deluxe-cabin.webp";
+import _gallery_maheswariDeluxePhinisiDeluxeOcean1 from "./gallery/maheswari-deluxe-phinisi-deluxe-ocean-1.webp";
+import _gallery_maheswariDeluxePhinisiDeluxeOcean2 from "./gallery/maheswari-deluxe-phinisi-deluxe-ocean-2.webp";
 import _gallery_maheswariDeluxePhinisiExterior from "./gallery/maheswari-deluxe-phinisi-exterior.webp";
 import _gallery_maheswariDeluxePhinisiInterior from "./gallery/maheswari-deluxe-phinisi-interior.webp";
 import _gallery_maheswariDeluxePhinisiMasterCabin from "./gallery/maheswari-deluxe-phinisi-master-cabin.webp";
+import _gallery_maheswariDeluxePhinisiMasterOcean1 from "./gallery/maheswari-deluxe-phinisi-master-ocean-1.webp";
+import _gallery_maheswariDeluxePhinisiMasterOcean2 from "./gallery/maheswari-deluxe-phinisi-master-ocean-2.webp";
 import _gallery_maheswariDeluxePhinisiSignatureCabin from "./gallery/maheswari-deluxe-phinisi-signature-cabin.webp";
+import _gallery_maheswariDeluxePhinisiSignatureOcean1 from "./gallery/maheswari-deluxe-phinisi-signature-ocean-1.webp";
+import _gallery_maheswariDeluxePhinisiSignatureOcean2 from "./gallery/maheswari-deluxe-phinisi-signature-ocean-2.webp";
 import _gallery_maheswariDeluxePhinisiSundeck from "./gallery/maheswari-deluxe-phinisi-sundeck.webp";
+import _gallery_maheswariDeluxePhinisiSuperiorCabin1 from "./gallery/maheswari-deluxe-phinisi-superior-cabin-1.webp";
+import _gallery_maheswariDeluxePhinisiSuperiorCabin2 from "./gallery/maheswari-deluxe-phinisi-superior-cabin-2.webp";
 import _gallery_maheswariDeluxePhinisiSuperiorCabin from "./gallery/maheswari-deluxe-phinisi-superior-cabin.webp";
+import _gallery_nkJaya1DeluxeCabin from "./gallery/nk-jaya-1-deluxe-cabin.webp";
+import _gallery_nkJaya1DeluxeExterior from "./gallery/nk-jaya-1-deluxe-exterior.webp";
+import _gallery_nkJaya1DeluxeFullOcean1 from "./gallery/nk-jaya-1-deluxe-full-ocean-1.webp";
+import _gallery_nkJaya1DeluxeFullOcean2 from "./gallery/nk-jaya-1-deluxe-full-ocean-2.webp";
+import _gallery_nkJaya1DeluxeFullOcean3 from "./gallery/nk-jaya-1-deluxe-full-ocean-3.webp";
+import _gallery_nkJaya1DeluxeFullOcean4 from "./gallery/nk-jaya-1-deluxe-full-ocean-4.webp";
+import _gallery_nkJaya1DeluxeInterior from "./gallery/nk-jaya-1-deluxe-interior.webp";
+import _gallery_nkJaya1DeluxeSundeck from "./gallery/nk-jaya-1-deluxe-sundeck.webp";
+import _gallery_nkJaya1DeluxeSuperiorCabin1 from "./gallery/nk-jaya-1-deluxe-superior-cabin-1.webp";
+import _gallery_nkJaya1DeluxeSuperiorCabin2 from "./gallery/nk-jaya-1-deluxe-superior-cabin-2.webp";
+import _gallery_nkJaya1DeluxeSuperiorCabin3 from "./gallery/nk-jaya-1-deluxe-superior-cabin-3.webp";
+import _gallery_nkJaya2DeluxeCabin from "./gallery/nk-jaya-2-deluxe-cabin.webp";
+import _gallery_nkJaya2DeluxeExterior from "./gallery/nk-jaya-2-deluxe-exterior.webp";
+import _gallery_nkJaya2DeluxeFullOcean1 from "./gallery/nk-jaya-2-deluxe-full-ocean-1.webp";
+import _gallery_nkJaya2DeluxeFullOcean2 from "./gallery/nk-jaya-2-deluxe-full-ocean-2.webp";
+import _gallery_nkJaya2DeluxeInterior from "./gallery/nk-jaya-2-deluxe-interior.webp";
+import _gallery_nkJaya2DeluxeMasterOcean from "./gallery/nk-jaya-2-deluxe-master-ocean.webp";
+import _gallery_nkJaya2DeluxeSundeck from "./gallery/nk-jaya-2-deluxe-sundeck.webp";
+import _gallery_nkJaya2DeluxeSuperiorCabin1 from "./gallery/nk-jaya-2-deluxe-superior-cabin-1.webp";
+import _gallery_nkJaya2DeluxeSuperiorCabin2 from "./gallery/nk-jaya-2-deluxe-superior-cabin-2.webp";
+import _gallery_nkJaya2DeluxeSuperiorCabin3 from "./gallery/nk-jaya-2-deluxe-superior-cabin-3.webp";
 import _gallery_tourCultural from "./gallery/tour-cultural.webp";
 import _gallery_tourSnorkeling from "./gallery/tour-snorkeling.webp";
 import _gallery_whaleshark from "./gallery/whaleshark.webp";
+import _gallery_yukaiDeluxeCabin from "./gallery/yukai-deluxe-cabin.webp";
+import _gallery_yukaiDeluxeDeluxeCabin1 from "./gallery/yukai-deluxe-deluxe-cabin-1.webp";
+import _gallery_yukaiDeluxeDeluxeCabin2 from "./gallery/yukai-deluxe-deluxe-cabin-2.webp";
+import _gallery_yukaiDeluxeDeluxeCabin3 from "./gallery/yukai-deluxe-deluxe-cabin-3.webp";
+import _gallery_yukaiDeluxeDeluxeCabin4 from "./gallery/yukai-deluxe-deluxe-cabin-4.webp";
+import _gallery_yukaiDeluxeExterior from "./gallery/yukai-deluxe-exterior.webp";
+import _gallery_yukaiDeluxeInterior from "./gallery/yukai-deluxe-interior.webp";
+import _gallery_yukaiDeluxeSignatureCabin1 from "./gallery/yukai-deluxe-signature-cabin-1.webp";
+import _gallery_yukaiDeluxeSignatureCabin2 from "./gallery/yukai-deluxe-signature-cabin-2.webp";
+import _gallery_yukaiDeluxeSundeck from "./gallery/yukai-deluxe-sundeck.webp";
 import _hero_gaisanDeluxe from "./hero/gaisan-deluxe.webp";
 import _hero_hatiraHelaDeluxe from "./hero/hatira-hela-deluxe.webp";
 import _hero_heroLombok from "./hero/hero-lombok.webp";
 import _hero_hero from "./hero/hero.webp";
 import _hero_maheswariDeluxePhinisi from "./hero/maheswari-deluxe-phinisi.webp";
+import _hero_nkJaya1Deluxe from "./hero/nk-jaya-1-deluxe.webp";
+import _hero_nkJaya2Deluxe from "./hero/nk-jaya-2-deluxe.webp";
+import _hero_yukaiDeluxe from "./hero/yukai-deluxe.webp";
 import _legality_nib from "./legality/nib.webp";
 import _legality_sk from "./legality/sk.webp";
 import _og_about from "./og/about.webp";
@@ -404,15 +446,54 @@ export const GALLERY = {
   kutaBeach: _gallery_kutaBeach,
   maheswariDeluxePhinisiCabin: _gallery_maheswariDeluxePhinisiCabin,
   maheswariDeluxePhinisiDeluxeCabin: _gallery_maheswariDeluxePhinisiDeluxeCabin,
+  maheswariDeluxePhinisiDeluxeOcean1: _gallery_maheswariDeluxePhinisiDeluxeOcean1,
+  maheswariDeluxePhinisiDeluxeOcean2: _gallery_maheswariDeluxePhinisiDeluxeOcean2,
   maheswariDeluxePhinisiExterior: _gallery_maheswariDeluxePhinisiExterior,
   maheswariDeluxePhinisiInterior: _gallery_maheswariDeluxePhinisiInterior,
   maheswariDeluxePhinisiMasterCabin: _gallery_maheswariDeluxePhinisiMasterCabin,
+  maheswariDeluxePhinisiMasterOcean1: _gallery_maheswariDeluxePhinisiMasterOcean1,
+  maheswariDeluxePhinisiMasterOcean2: _gallery_maheswariDeluxePhinisiMasterOcean2,
   maheswariDeluxePhinisiSignatureCabin: _gallery_maheswariDeluxePhinisiSignatureCabin,
+  maheswariDeluxePhinisiSignatureOcean1: _gallery_maheswariDeluxePhinisiSignatureOcean1,
+  maheswariDeluxePhinisiSignatureOcean2: _gallery_maheswariDeluxePhinisiSignatureOcean2,
   maheswariDeluxePhinisiSundeck: _gallery_maheswariDeluxePhinisiSundeck,
+  maheswariDeluxePhinisiSuperiorCabin1: _gallery_maheswariDeluxePhinisiSuperiorCabin1,
+  maheswariDeluxePhinisiSuperiorCabin2: _gallery_maheswariDeluxePhinisiSuperiorCabin2,
   maheswariDeluxePhinisiSuperiorCabin: _gallery_maheswariDeluxePhinisiSuperiorCabin,
+  nkJaya1DeluxeCabin: _gallery_nkJaya1DeluxeCabin,
+  nkJaya1DeluxeExterior: _gallery_nkJaya1DeluxeExterior,
+  nkJaya1DeluxeFullOcean1: _gallery_nkJaya1DeluxeFullOcean1,
+  nkJaya1DeluxeFullOcean2: _gallery_nkJaya1DeluxeFullOcean2,
+  nkJaya1DeluxeFullOcean3: _gallery_nkJaya1DeluxeFullOcean3,
+  nkJaya1DeluxeFullOcean4: _gallery_nkJaya1DeluxeFullOcean4,
+  nkJaya1DeluxeInterior: _gallery_nkJaya1DeluxeInterior,
+  nkJaya1DeluxeSundeck: _gallery_nkJaya1DeluxeSundeck,
+  nkJaya1DeluxeSuperiorCabin1: _gallery_nkJaya1DeluxeSuperiorCabin1,
+  nkJaya1DeluxeSuperiorCabin2: _gallery_nkJaya1DeluxeSuperiorCabin2,
+  nkJaya1DeluxeSuperiorCabin3: _gallery_nkJaya1DeluxeSuperiorCabin3,
+  nkJaya2DeluxeCabin: _gallery_nkJaya2DeluxeCabin,
+  nkJaya2DeluxeExterior: _gallery_nkJaya2DeluxeExterior,
+  nkJaya2DeluxeFullOcean1: _gallery_nkJaya2DeluxeFullOcean1,
+  nkJaya2DeluxeFullOcean2: _gallery_nkJaya2DeluxeFullOcean2,
+  nkJaya2DeluxeInterior: _gallery_nkJaya2DeluxeInterior,
+  nkJaya2DeluxeMasterOcean: _gallery_nkJaya2DeluxeMasterOcean,
+  nkJaya2DeluxeSundeck: _gallery_nkJaya2DeluxeSundeck,
+  nkJaya2DeluxeSuperiorCabin1: _gallery_nkJaya2DeluxeSuperiorCabin1,
+  nkJaya2DeluxeSuperiorCabin2: _gallery_nkJaya2DeluxeSuperiorCabin2,
+  nkJaya2DeluxeSuperiorCabin3: _gallery_nkJaya2DeluxeSuperiorCabin3,
   tourCultural: _gallery_tourCultural,
   tourSnorkeling: _gallery_tourSnorkeling,
   whaleshark: _gallery_whaleshark,
+  yukaiDeluxeCabin: _gallery_yukaiDeluxeCabin,
+  yukaiDeluxeDeluxeCabin1: _gallery_yukaiDeluxeDeluxeCabin1,
+  yukaiDeluxeDeluxeCabin2: _gallery_yukaiDeluxeDeluxeCabin2,
+  yukaiDeluxeDeluxeCabin3: _gallery_yukaiDeluxeDeluxeCabin3,
+  yukaiDeluxeDeluxeCabin4: _gallery_yukaiDeluxeDeluxeCabin4,
+  yukaiDeluxeExterior: _gallery_yukaiDeluxeExterior,
+  yukaiDeluxeInterior: _gallery_yukaiDeluxeInterior,
+  yukaiDeluxeSignatureCabin1: _gallery_yukaiDeluxeSignatureCabin1,
+  yukaiDeluxeSignatureCabin2: _gallery_yukaiDeluxeSignatureCabin2,
+  yukaiDeluxeSundeck: _gallery_yukaiDeluxeSundeck,
 };
 
 
@@ -422,6 +503,9 @@ export const HERO = {
   heroLombok: _hero_heroLombok,
   hero: _hero_hero,
   maheswariDeluxePhinisi: _hero_maheswariDeluxePhinisi,
+  nkJaya1Deluxe: _hero_nkJaya1Deluxe,
+  nkJaya2Deluxe: _hero_nkJaya2Deluxe,
+  yukaiDeluxe: _hero_yukaiDeluxe,
   lombok: _hero_heroLombok,
   main: _hero_hero,
 };

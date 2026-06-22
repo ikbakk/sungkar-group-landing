@@ -3,11 +3,11 @@
   "region": "labuan-bajo",
   "collectionSlug": "open-trip-deluxe-phinisi",
   "images": [
-    "hero/open-trip-nk-jaya-1.webp",
-    "gallery/open-trip-nk-jaya-1-exterior.webp",
-    "gallery/open-trip-nk-jaya-1-interior.webp",
-    "gallery/open-trip-nk-jaya-1-cabin.webp",
-    "gallery/open-trip-nk-jaya-1-sundeck.webp"
+    "hero/nk-jaya-1-deluxe.webp",
+    "gallery/nk-jaya-1-deluxe-exterior.webp",
+    "gallery/nk-jaya-1-deluxe-interior.webp",
+    "gallery/nk-jaya-1-deluxe-cabin.webp",
+    "gallery/nk-jaya-1-deluxe-sundeck.webp"
   ],
   "boatName": "NK Jaya 1",
   "boatType": "Deluxe Phinisi",
@@ -37,7 +37,7 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 4.350.000/pax",
       "images": [
-        "gallery/open-trip-nk-jaya-1-superior-cabin-1.webp"
+        "gallery/nk-jaya-1-deluxe-superior-cabin-1.webp"
       ]
     },
     {
@@ -46,7 +46,7 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 4.350.000/pax",
       "images": [
-        "gallery/open-trip-nk-jaya-1-superior-cabin-2.webp"
+        "gallery/nk-jaya-1-deluxe-superior-cabin-2.webp"
       ]
     },
     {
@@ -55,7 +55,7 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 4.350.000/pax",
       "images": [
-        "gallery/open-trip-nk-jaya-1-superior-cabin-3.webp"
+        "gallery/nk-jaya-1-deluxe-superior-cabin-3.webp"
       ]
     },
     {
@@ -64,7 +64,7 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 5.350.000/pax",
       "images": [
-        "gallery/open-trip-nk-jaya-1-full-ocean-1.webp"
+        "gallery/nk-jaya-1-deluxe-full-ocean-1.webp"
       ]
     },
     {
@@ -73,7 +73,7 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 5.350.000/pax",
       "images": [
-        "gallery/open-trip-nk-jaya-1-full-ocean-2.webp"
+        "gallery/nk-jaya-1-deluxe-full-ocean-2.webp"
       ]
     },
     {
@@ -82,7 +82,7 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 5.350.000/pax",
       "images": [
-        "gallery/open-trip-nk-jaya-1-full-ocean-3.webp"
+        "gallery/nk-jaya-1-deluxe-full-ocean-3.webp"
       ]
     },
     {
@@ -91,7 +91,7 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 5.350.000/pax",
       "images": [
-        "gallery/open-trip-nk-jaya-1-full-ocean-4.webp"
+        "gallery/nk-jaya-1-deluxe-full-ocean-4.webp"
       ]
     }
   ]
