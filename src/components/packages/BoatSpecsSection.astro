@@ -56,14 +56,16 @@ const hasMore = hiddenSpecs.length > 0;
       )
     }
 
-    {visibleSpecs.map((spec) => (
-      <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
-        <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          {spec.label}
-        </p>
-        <p class="mt-1 text-base">{spec.value}</p>
-      </div>
-    ))}
+    {
+      visibleSpecs.map((spec) => (
+        <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
+          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            {spec.label}
+          </p>
+          <p class="mt-1 text-base">{spec.value}</p>
+        </div>
+      ))
+    }
   </div>
 
   {

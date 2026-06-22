@@ -28,8 +28,7 @@ export const packagePageContent = {
       title: "Paket Wisata Labuan Bajo (Darat)",
       description:
         "Jelajahi Labuan Bajo dan destinasi darat sekitarnya dengan paket wisata darat yang nyaman. Cocok untuk wisatawan yang ingin menikmati keindahan Flores tanpa berlayar.",
-      intro:
-        "Pilih durasi dan destinasi darat favorit Anda di Labuan Bajo.",
+      intro: "Pilih durasi dan destinasi darat favorit Anda di Labuan Bajo.",
     },
     "sailing-labuan-bajo": {
       title: "Paket Sailing Labuan Bajo",

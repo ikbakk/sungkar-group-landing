@@ -7,12 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import PackageDayTimeline from "./PackageDayTimeline.astro";
 
@@ -46,7 +41,13 @@ const tabGroups: TabGroup[] = multiDuration
         if (!dayMap[day]) dayMap[day] = [];
         dayMap[day].push(desc);
       }
-      return { key, dayGroups: Object.entries(dayMap).map(([day, acts]) => ({ day, activities: acts })) };
+      return {
+        key,
+        dayGroups: Object.entries(dayMap).map(([day, acts]) => ({
+          day,
+          activities: acts,
+        })),
+      };
     })
   : [];
 
@@ -76,9 +77,7 @@ const singleDayGroups: DayGroup[] = !multiDuration
           style={`grid-template-columns: repeat(${itineraryByDay.length}, 1fr)`}
         >
           {tabGroups.map(({ key }) => (
-            <TabsTrigger value={key}>
-              {durationLabels[key] || key}
-            </TabsTrigger>
+            <TabsTrigger value={key}>{durationLabels[key] || key}</TabsTrigger>
           ))}
         </TabsList>
 

@@ -253,7 +253,11 @@ function yml(locale, pkg) {
   ordered.images = pkg.images;
   ordered.summary = locale.summary;
   ordered.highlights = locale.highlights;
-  if (locale.itinerary && typeof locale.itinerary === "object" && !Array.isArray(locale.itinerary)) {
+  if (
+    locale.itinerary &&
+    typeof locale.itinerary === "object" &&
+    !Array.isArray(locale.itinerary)
+  ) {
     const flat = [];
     for (const [day, activities] of Object.entries(locale.itinerary)) {
       for (const activity of activities) {

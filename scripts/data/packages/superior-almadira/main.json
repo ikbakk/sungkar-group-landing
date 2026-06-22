@@ -71,9 +71,7 @@
       "name": "Share Cabin (Lower Deck)",
       "description": "2 queen bed dan single bed, kamar mandi bersama, AC, kapasitas 1-5 orang.",
       "capacity": "1-5",
-      "images": [
-        "gallery/superior-almadira-share-cabin.webp"
-      ],
+      "images": ["gallery/superior-almadira-share-cabin.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -85,9 +83,7 @@
       "name": "Private Cabin 1 (Lower Deck)",
       "description": "Queen Bed dan single bed, kamar mandi bersama, AC, kapasitas 1-3 orang.",
       "capacity": "1-3",
-      "images": [
-        "gallery/superior-almadira-private-cabin-1.webp"
-      ],
+      "images": ["gallery/superior-almadira-private-cabin-1.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -99,9 +95,7 @@
       "name": "Private Cabin 2 (Lower Deck)",
       "description": "Queen Bed dan single bed, kamar mandi bersama, AC, kapasitas 1-3 orang.",
       "capacity": "1-3",
-      "images": [
-        "gallery/superior-almadira-private-cabin-2.webp"
-      ],
+      "images": ["gallery/superior-almadira-private-cabin-2.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -113,9 +107,7 @@
       "name": "Master Ocean (Main Deck)",
       "description": "Queen Bed dan extra bed, kamar mandi pribadi, AC, kapasitas 1-3 orang.",
       "capacity": "1-3",
-      "images": [
-        "gallery/superior-almadira-master-ocean.webp"
-      ],
+      "images": ["gallery/superior-almadira-master-ocean.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -127,9 +119,7 @@
       "name": "Deluxe Ocean 1 (Upper Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": [
-        "gallery/superior-almadira-deluxe-ocean-1.webp"
-      ],
+      "images": ["gallery/superior-almadira-deluxe-ocean-1.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -141,9 +131,7 @@
       "name": "Deluxe Ocean 2 (Upper Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": [
-        "gallery/superior-almadira-deluxe-ocean-2.webp"
-      ],
+      "images": ["gallery/superior-almadira-deluxe-ocean-2.webp"],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",

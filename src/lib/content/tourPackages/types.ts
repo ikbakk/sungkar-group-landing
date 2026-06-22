@@ -1,6 +1,11 @@
 import type { ImageSource } from "@/lib/images";
 
-export type Region = "lombok" | "sumbawa" | "labuan-bajo" | "sailing-labuan-bajo" | "lombok-to-bajo";
+export type Region =
+  | "lombok"
+  | "sumbawa"
+  | "labuan-bajo"
+  | "sailing-labuan-bajo"
+  | "lombok-to-bajo";
 
 export type BoatSpec = {
   label: string;

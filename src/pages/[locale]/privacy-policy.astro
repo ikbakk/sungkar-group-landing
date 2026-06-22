@@ -20,7 +20,8 @@ const metaDescriptions = {
   zh: "了解 Sungkar Group 在您使用我们的网站、联系表单和旅游服务时，如何收集、使用并保护您的个人数据。",
 } as const;
 
-const metaDescription = metaDescriptions[locale as keyof typeof metaDescriptions];
+const metaDescription =
+  metaDescriptions[locale as keyof typeof metaDescriptions];
 
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: `/${locale}` },

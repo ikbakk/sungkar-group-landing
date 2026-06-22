@@ -1,15 +1,15 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-import { tabsListVariants } from "./tabs-list-variants"
+import { tabsListVariants } from "./tabs-list-variants";
 
 type Props = HTMLAttributes<"div"> & {
-  variant?: "default" | "line"
-}
+  variant?: "default" | "line";
+};
 
-const { class: className, variant = "default", ...props } = Astro.props
+const { class: className, variant = "default", ...props } = Astro.props;
 ---
 
 <div

@@ -1,8 +1,5 @@
 ---
-import {
-  TypographyH3,
-  TypographyP,
-} from "@/components/ui/typography";
+import { TypographyH3, TypographyP } from "@/components/ui/typography";
 import type { Cabin } from "@/lib/content/tourPackages/types";
 import { t } from "@/lib/i18n";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
@@ -15,12 +12,7 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 interface Props {
   cabin: Cabin;
@@ -50,7 +42,9 @@ function getPrice(key: string): string {
   if (priceList && priceList[key]) {
     const tiers = priceList[key];
     // Find the first tier (lowest price) — keys like "1-8", "1-10", etc.
-    const tierKeys = Object.keys(tiers).filter((k) => k !== "addPerPax" && k !== "maxPax");
+    const tierKeys = Object.keys(tiers).filter(
+      (k) => k !== "addPerPax" && k !== "maxPax",
+    );
     tierKeys.sort((a, b) => {
       const aMin = parseInt(a.split("-")[0], 10);
       const bMin = parseInt(b.split("-")[0], 10);
@@ -103,11 +97,13 @@ function getPrice(key: string): string {
     </div>
     <CardContent class="flex flex-1 flex-col justify-center gap-3 py-6 md:py-8">
       <TypographyH3 class="mt-0!">{cabin.name}</TypographyH3>
-      {cabin.description && (
-        <TypographyP class="text-sm leading-relaxed text-muted-foreground">
-          {cabin.description}
-        </TypographyP>
-      )}
+      {
+        cabin.description && (
+          <TypographyP class="text-sm leading-relaxed text-muted-foreground">
+            {cabin.description}
+          </TypographyP>
+        )
+      }
 
       {
         multiDuration ? (

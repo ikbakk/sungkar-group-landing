@@ -23,7 +23,20 @@ const packages = await getPackages("id");
 const allDestinations = await getDestinations("id");
 const landingFeaturedTours = {
   ...landingFeaturedToursBase,
-  tours: packages.filter((p) => p.featured).sort((a, b) => { const order = ['open-trip-motogp-mandalika-2026-4-hari-3-malam','paket-wisata-lombok-3-hari-2-malam-snorkeling-3-gili-mandalika','open-trip-whale-shark-sumbawa','paket-wisata-pantai-kuta-lombok-desa-suku-sasak','open-trip-maheswari','luxury-ocean-angel']; return order.indexOf(a.slug) - order.indexOf(b.slug); }).map(toLandingTourCard),
+  tours: packages
+    .filter((p) => p.featured)
+    .sort((a, b) => {
+      const order = [
+        "open-trip-motogp-mandalika-2026-4-hari-3-malam",
+        "paket-wisata-lombok-3-hari-2-malam-snorkeling-3-gili-mandalika",
+        "open-trip-whale-shark-sumbawa",
+        "paket-wisata-pantai-kuta-lombok-desa-suku-sasak",
+        "open-trip-maheswari",
+        "luxury-ocean-angel",
+      ];
+      return order.indexOf(a.slug) - order.indexOf(b.slug);
+    })
+    .map(toLandingTourCard),
 };
 const landingDestinations = {
   ...landingDestinationsBase,
