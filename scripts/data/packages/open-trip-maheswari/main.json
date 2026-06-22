@@ -135,5 +135,6 @@
         "default": "Minimum 2 pax: IDR 6.250.000/pax; additional pax: IDR 3.850.000/pax"
       }
     }
-  ]
+  ],
+  "featured": true
 }

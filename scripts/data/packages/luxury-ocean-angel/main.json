@@ -325,5 +325,6 @@
       "addPerPax": 5000000,
       "maxPax": 44
     }
-  }
+  },
+  "featured": true
 }
