@@ -44,7 +44,8 @@ const createPackageCollections = (
     | "sumbawa"
     | "labuan-bajo"
     | "sailing-labuan-bajo"
-    | "lombok-to-bajo",
+    | "lombok-to-bajo"
+    | "lombok-bajo",
 ): CollectionResult => {
   const regionPackages = packages.filter((pkg) => pkg.region === region);
 
@@ -122,6 +123,13 @@ export function createNavigation(packages: TourPackage[]): NavItem[] {
           href: "/paket-wisata/labuan-bajo",
 
           ...createPackageCollections(packages, "labuan-bajo"),
+        },
+
+        {
+          title: "Lombok - Bajo",
+          href: "/paket-wisata/lombok-bajo",
+
+          ...createPackageCollections(packages, "lombok-bajo"),
         },
       ],
     },
