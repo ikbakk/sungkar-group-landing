@@ -298,11 +298,6 @@ function writeMdx(pkg, localeKey) {
   const dir = join(ROOT, pkg.slug);
   mkdirSync(dir, { recursive: true });
   const path = join(dir, `${loc}.mdx`);
-  // Skip if already exists and matches slug of already-created package 5
-  if (existsSync(path)) {
-    console.log(`  SKIP ${pkg.slug}/${loc}.mdx (exists)`);
-    return;
-  }
   const localeData = { ...pkg.locales[localeKey], localeKey };
   writeFileSync(path, yml(localeData, pkg));
   console.log(`  OK ${pkg.slug}/${loc}.mdx`);

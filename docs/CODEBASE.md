@@ -21,7 +21,7 @@
 | `src/components/`        | Feature UI split by domain: `landing`, `packages`, `destinations`, `vehicles`, `contact`, `reviews`, `about`, `site`, `ui`                                                 |
 | `src/content/`           | MDX content collections, including `tourPackages`, `accommodations`, and other authored content                                                                            |
 | `src/lib/content/`       | Collection loaders, image resolvers, shared schemas, and content-facing types                                                                                              |
-| `src/assets/images/`     | Bundled image assets; current groups include `hero`, `gallery`, `destinations`, `vehicles`, `accommodations`, `brand`, `legality`, `og`                                    |
+| `src/assets/images/`     | Bundled image assets; current groups include `hero`, `gallery`, `destinations`, `vehicles`, `accommodations`, `brand`, `legality`, `og`, and nested `packages` boat/cabin assets |
 | `scripts/data/packages/` | JSON source-of-truth for package content before MDX generation                                                                                                             |
 | `scripts/`               | Generators and validation scripts such as `generate-tour-mdx.mjs`, `generate-image-barrel.mjs`, and `validate-images.mjs`                                                  |
 | `docs/`                  | Project documentation, SEO/GEO setup guide (`seo-geo-setup.html`), SEO audit report (`seo-audit.html`), keyword clustering, link prospecting, and internal reference notes |
@@ -34,7 +34,7 @@
 | Update private-trip deluxe phinisi naming/metadata | `scripts/data/packages/deluxe-*/main.json`, `scripts/data/packages/deluxe-*/locales.json`, then regenerate via `npm run generate:tours`                         |
 | Update published tour package MDX                  | `src/content/tourPackages/<slug>/{id,en,ar,ms,zh}.mdx`                                                                                                          |
 | Resolve package images into Astro imports          | `src/lib/content/tourPackages/images.ts`, `src/assets/images/index.ts`                                                                                          |
-| Add or refresh packaged image assets               | `src/assets/images/{hero,gallery}/`, `scripts/generate-image-barrel.mjs`, `npm run images:barrel`, `npm run validate:images`                                    |
+| Add or refresh packaged image assets               | `resource/`, `scripts/convert-resource-images.mjs`, `src/assets/images/packages/`, `scripts/generate-image-barrel.mjs`, `npm run images:resource`, `npm run images:barrel`, `npm run validate:images` |
 | Validate content/image wiring                      | `npm run validate:images`, `npm run check`                                                                                                                      |
 | Understand package detail rendering                | `src/pages/paket-wisata/[region]/[collection]/[slug].astro`, `src/pages/[locale]/tour-packages/[region]/[collection]/[slug].astro`, `src/components/packages/*` |
 
@@ -46,6 +46,7 @@
 - `deluxe-nk-jaya-1` / `open-trip-nk-jaya-1` use video-frame-extracted WebP assets from `resource/NK JAYA 1 - Boat Tour.MP4` in `src/assets/images/{hero,gallery}/nk-jaya-1-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 7 cabins × 3 images = 21 cabin images).
 - `deluxe-nk-jaya-2` / `open-trip-nk-jaya-2` use `resource/`-derived WebP assets in `src/assets/images/{hero,gallery}/nk-jaya-2-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 6 cabins × 3 images = 18 cabin images).
 - `deluxe-yukai` / `open-trip-yukai` use `resource/`-derived WebP assets in `src/assets/images/{hero,gallery}/yukai-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 6 cabins × 2-3 images = 14 cabin images).
-- All cabin images follow naming convention `<boat-prefix>-<cabin-slug>-{a,b,c}.webp` for carousel support.
-- Open-trip packages share the same hero/gallery/cabin images as their private-trip counterparts for the same boat.
+- New bulk package assets from `resource/` are stored under `src/assets/images/packages/<boat>/{boat,cabins,facility}/...` and mapped through `scripts/data/package-image-map.generated.json`.
+- `scripts/generate-tour-mdx.mjs` overwrites generated tour MDX from `scripts/data/packages/**/main.json` so updated package image mappings reach cards, galleries, and cabin sections during `npm run generate:tours` / `npm run build`.
+- Open-trip packages share the same hero/gallery/cabin images as their private-trip counterparts for the same boat where the validated mapping can safely match them.
 - Tour package image strings are resolved through `src/lib/content/tourPackages/images.ts`, with exact registry entries for legacy assets and dynamic group lookup for generated `hero/` and `gallery/` filenames.
