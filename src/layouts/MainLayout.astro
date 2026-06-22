@@ -81,6 +81,21 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
 
     <StructuredData schema={organizationSchema} />
     <StructuredData schema={websiteSchema} />
+
+    <!-- Netlify Identity: redirect invite/password-recovery/confirmation to /admin/ -->
+    <script>
+      (function () {
+        var hash = window.location.hash;
+        if (
+          hash &&
+          (hash.indexOf("invite_token") !== -1 ||
+            hash.indexOf("confirmation_token") !== -1 ||
+            hash.indexOf("recovery_token") !== -1)
+        ) {
+          window.location.replace("/admin/" + hash);
+        }
+      })();
+    </script>
   </head>
 
   <body>
