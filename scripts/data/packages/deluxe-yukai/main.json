@@ -77,7 +77,8 @@
       "capacity": "1-2",
       "price": "Harga tergantung paket (lihat daftar harga)",
       "images": [
-        "gallery/yukai-deluxe-signature-cabin-1.webp"
+        "gallery/yukai-deluxe-signature-cabin-1-a.webp",
+        "gallery/yukai-deluxe-signature-cabin-1-b.webp"
       ]
     },
     {
@@ -86,7 +87,8 @@
       "capacity": "1-2",
       "price": "Harga tergantung paket (lihat daftar harga)",
       "images": [
-        "gallery/yukai-deluxe-signature-cabin-2.webp"
+        "gallery/yukai-deluxe-signature-cabin-2-a.webp",
+        "gallery/yukai-deluxe-signature-cabin-2-b.webp"
       ]
     },
     {
@@ -95,7 +97,8 @@
       "capacity": "1-2",
       "price": "Harga tergantung paket (lihat daftar harga)",
       "images": [
-        "gallery/yukai-deluxe-deluxe-cabin-1.webp"
+        "gallery/yukai-deluxe-deluxe-cabin-1-a.webp",
+        "gallery/yukai-deluxe-deluxe-cabin-1-b.webp"
       ]
     },
     {
@@ -104,7 +107,8 @@
       "capacity": "1-2",
       "price": "Harga tergantung paket (lihat daftar harga)",
       "images": [
-        "gallery/yukai-deluxe-deluxe-cabin-2.webp"
+        "gallery/yukai-deluxe-deluxe-cabin-2-a.webp",
+        "gallery/yukai-deluxe-deluxe-cabin-2-b.webp"
       ]
     },
     {
@@ -113,7 +117,9 @@
       "capacity": "1-2",
       "price": "Harga tergantung paket (lihat daftar harga)",
       "images": [
-        "gallery/yukai-deluxe-deluxe-cabin-3.webp"
+        "gallery/yukai-deluxe-deluxe-cabin-3-a.webp",
+        "gallery/yukai-deluxe-deluxe-cabin-3-b.webp",
+        "gallery/yukai-deluxe-deluxe-cabin-3-c.webp"
       ]
     },
     {
@@ -122,7 +128,9 @@
       "capacity": "1-2",
       "price": "Harga tergantung paket (lihat daftar harga)",
       "images": [
-        "gallery/yukai-deluxe-deluxe-cabin-4.webp"
+        "gallery/yukai-deluxe-deluxe-cabin-4-a.webp",
+        "gallery/yukai-deluxe-deluxe-cabin-4-b.webp",
+        "gallery/yukai-deluxe-deluxe-cabin-4-c.webp"
       ]
     }
   ],

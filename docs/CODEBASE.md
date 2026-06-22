@@ -34,13 +34,17 @@
 | Update private-trip deluxe phinisi naming/metadata | `scripts/data/packages/deluxe-*/main.json`, `scripts/data/packages/deluxe-*/locales.json`, then regenerate via `npm run generate:tours` |
 | Update published tour package MDX | `src/content/tourPackages/<slug>/{id,en,ar,ms,zh}.mdx` |
 | Resolve package images into Astro imports | `src/lib/content/tourPackages/images.ts`, `src/assets/images/index.ts` |
-| Add or refresh packaged image assets | `src/assets/images/{hero,gallery}/`, `scripts/generate-image-barrel.mjs`, `npm run images:barrel` |
+| Add or refresh packaged image assets | `src/assets/images/{hero,gallery}/`, `scripts/generate-image-barrel.mjs`, `npm run images:barrel`, `npm run validate:images` |
 | Validate content/image wiring | `npm run validate:images`, `npm run check` |
 | Understand package detail rendering | `src/pages/paket-wisata/[region]/[collection]/[slug].astro`, `src/pages/[locale]/tour-packages/[region]/[collection]/[slug].astro`, `src/components/packages/*` |
 
 ## Image Notes
 
-- `deluxe-gaisan` now uses Drive-sourced WebP assets in `src/assets/images/hero/gaisan-deluxe.webp` and `src/assets/images/gallery/gaisan-deluxe-*.webp`.
-- `deluxe-hatira` now uses Drive-sourced WebP assets in `src/assets/images/hero/hatira-hela-deluxe.webp` and `src/assets/images/gallery/hatira-hela-*.webp`.
-- `deluxe-maheswari` now uses Drive-sourced WebP assets in `src/assets/images/hero/maheswari-deluxe-phinisi.webp` and `src/assets/images/gallery/maheswari-deluxe-phinisi-*.webp`.
+- `deluxe-gaisan` uses Drive-sourced WebP assets in `src/assets/images/hero/gaisan-deluxe.webp` and `src/assets/images/gallery/gaisan-deluxe-*.webp`.
+- `deluxe-hatira` uses Drive-sourced WebP assets in `src/assets/images/hero/hatira-hela-deluxe.webp` and `src/assets/images/gallery/hatira-hela-*.webp`.
+- `deluxe-maheswari` / `open-trip-maheswari` use `resource/`-derived WebP assets in `src/assets/images/hero/maheswari-deluxe-phinisi.webp` and `src/assets/images/gallery/maheswari-deluxe-phinisi-*.webp` (hero, exterior, interior, cabin, sundeck, plus 8 per-cabin images).
+- `deluxe-nk-jaya-1` / `open-trip-nk-jaya-1` use video-frame-extracted WebP assets from `resource/NK JAYA 1 - Boat Tour.MP4` in `src/assets/images/{hero,gallery}/nk-jaya-1-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 7 per-cabin images).
+- `deluxe-nk-jaya-2` / `open-trip-nk-jaya-2` use `resource/`-derived WebP assets in `src/assets/images/{hero,gallery}/nk-jaya-2-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 6 per-cabin images).
+- `deluxe-yukai` / `open-trip-yukai` use `resource/`-derived WebP assets in `src/assets/images/{hero,gallery}/yukai-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 6 per-cabin images).
+- Open-trip packages share the same hero/gallery/cabin images as their private-trip counterparts for the same boat.
 - Tour package image strings are resolved through `src/lib/content/tourPackages/images.ts`, with exact registry entries for legacy assets and dynamic group lookup for generated `hero/` and `gallery/` filenames.

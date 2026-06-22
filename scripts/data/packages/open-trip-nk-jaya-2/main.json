@@ -37,7 +37,9 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 4.350.000/pax",
       "images": [
-        "gallery/nk-jaya-2-deluxe-superior-cabin-1.webp"
+        "gallery/nk-jaya-2-deluxe-superior-cabin-1-a.webp",
+        "gallery/nk-jaya-2-deluxe-superior-cabin-1-b.webp",
+        "gallery/nk-jaya-2-deluxe-superior-cabin-1-c.webp"
       ]
     },
     {
@@ -46,7 +48,9 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 4.350.000/pax",
       "images": [
-        "gallery/nk-jaya-2-deluxe-superior-cabin-2.webp"
+        "gallery/nk-jaya-2-deluxe-superior-cabin-2-a.webp",
+        "gallery/nk-jaya-2-deluxe-superior-cabin-2-b.webp",
+        "gallery/nk-jaya-2-deluxe-superior-cabin-2-c.webp"
       ]
     },
     {
@@ -55,7 +59,9 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 4.350.000/pax",
       "images": [
-        "gallery/nk-jaya-2-deluxe-superior-cabin-3.webp"
+        "gallery/nk-jaya-2-deluxe-superior-cabin-3-a.webp",
+        "gallery/nk-jaya-2-deluxe-superior-cabin-3-b.webp",
+        "gallery/nk-jaya-2-deluxe-superior-cabin-3-c.webp"
       ]
     },
     {
@@ -64,7 +70,9 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 5.350.000/pax",
       "images": [
-        "gallery/nk-jaya-2-deluxe-full-ocean-1.webp"
+        "gallery/nk-jaya-2-deluxe-full-ocean-1-a.webp",
+        "gallery/nk-jaya-2-deluxe-full-ocean-1-b.webp",
+        "gallery/nk-jaya-2-deluxe-full-ocean-1-c.webp"
       ]
     },
     {
@@ -73,7 +81,9 @@
       "capacity": "1-2",
       "price": "Minimum 2 pax: IDR 5.350.000/pax",
       "images": [
-        "gallery/nk-jaya-2-deluxe-full-ocean-2.webp"
+        "gallery/nk-jaya-2-deluxe-full-ocean-2-a.webp",
+        "gallery/nk-jaya-2-deluxe-full-ocean-2-b.webp",
+        "gallery/nk-jaya-2-deluxe-full-ocean-2-c.webp"
       ]
     },
     {
@@ -82,7 +92,9 @@
       "capacity": "1-3",
       "price": "Minimum 2 pax: IDR 6.050.000/pax; additional pax: IDR 3.850.000/pax",
       "images": [
-        "gallery/nk-jaya-2-deluxe-master-ocean.webp"
+        "gallery/nk-jaya-2-deluxe-master-ocean-a.webp",
+        "gallery/nk-jaya-2-deluxe-master-ocean-b.webp",
+        "gallery/nk-jaya-2-deluxe-master-ocean-c.webp"
       ]
     }
   ]
