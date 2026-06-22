@@ -311,10 +311,12 @@ export const ACCOMMODATIONS = {
   lombok: _accommodations_lombok,
 };
 
+
 export const BRAND = {
   logo: _brand_logo,
   ogHome: _brand_ogHome,
 };
+
 
 export const DESTINATIONS = {
   gili: _destinations_gili,
@@ -322,6 +324,7 @@ export const DESTINATIONS = {
   rinjani: _destinations_rinjani,
   sumbawa: _destinations_sumbawa,
 };
+
 
 export const GALLERY = {
   gAirport1: _gallery_gAirport1,
@@ -373,17 +376,13 @@ export const GALLERY = {
   gaisanDeluxeDeluxeOcean03: _gallery_gaisanDeluxeDeluxeOcean03,
   gaisanDeluxeDeluxeOcean04: _gallery_gaisanDeluxeDeluxeOcean04,
   gaisanDeluxeFacilityCaptainRoom: _gallery_gaisanDeluxeFacilityCaptainRoom,
-  gaisanDeluxeFacilityIndoorRestaurant:
-    _gallery_gaisanDeluxeFacilityIndoorRestaurant,
+  gaisanDeluxeFacilityIndoorRestaurant: _gallery_gaisanDeluxeFacilityIndoorRestaurant,
   gaisanDeluxeFacilityJacuzzi01: _gallery_gaisanDeluxeFacilityJacuzzi01,
   gaisanDeluxeFacilityJacuzzi02: _gallery_gaisanDeluxeFacilityJacuzzi02,
   gaisanDeluxeFacilityJacuzzi03: _gallery_gaisanDeluxeFacilityJacuzzi03,
-  gaisanDeluxeFacilityOutdoorDiningRoom01:
-    _gallery_gaisanDeluxeFacilityOutdoorDiningRoom01,
-  gaisanDeluxeFacilityOutdoorDiningRoom02:
-    _gallery_gaisanDeluxeFacilityOutdoorDiningRoom02,
-  gaisanDeluxeFacilityOutdoorDiningRoom03:
-    _gallery_gaisanDeluxeFacilityOutdoorDiningRoom03,
+  gaisanDeluxeFacilityOutdoorDiningRoom01: _gallery_gaisanDeluxeFacilityOutdoorDiningRoom01,
+  gaisanDeluxeFacilityOutdoorDiningRoom02: _gallery_gaisanDeluxeFacilityOutdoorDiningRoom02,
+  gaisanDeluxeFacilityOutdoorDiningRoom03: _gallery_gaisanDeluxeFacilityOutdoorDiningRoom03,
   gaisanDeluxeMasterOcean101: _gallery_gaisanDeluxeMasterOcean101,
   gaisanDeluxeMasterOcean102: _gallery_gaisanDeluxeMasterOcean102,
   gaisanDeluxeMasterOcean103: _gallery_gaisanDeluxeMasterOcean103,
@@ -497,62 +496,36 @@ export const GALLERY = {
   kutaBeach: _gallery_kutaBeach,
   maheswariDeluxePhinisiCabin: _gallery_maheswariDeluxePhinisiCabin,
   maheswariDeluxePhinisiDeluxeCabin: _gallery_maheswariDeluxePhinisiDeluxeCabin,
-  maheswariDeluxePhinisiDeluxeOcean1A:
-    _gallery_maheswariDeluxePhinisiDeluxeOcean1A,
-  maheswariDeluxePhinisiDeluxeOcean1B:
-    _gallery_maheswariDeluxePhinisiDeluxeOcean1B,
-  maheswariDeluxePhinisiDeluxeOcean1C:
-    _gallery_maheswariDeluxePhinisiDeluxeOcean1C,
-  maheswariDeluxePhinisiDeluxeOcean2A:
-    _gallery_maheswariDeluxePhinisiDeluxeOcean2A,
-  maheswariDeluxePhinisiDeluxeOcean2B:
-    _gallery_maheswariDeluxePhinisiDeluxeOcean2B,
-  maheswariDeluxePhinisiDeluxeOcean2C:
-    _gallery_maheswariDeluxePhinisiDeluxeOcean2C,
+  maheswariDeluxePhinisiDeluxeOcean1A: _gallery_maheswariDeluxePhinisiDeluxeOcean1A,
+  maheswariDeluxePhinisiDeluxeOcean1B: _gallery_maheswariDeluxePhinisiDeluxeOcean1B,
+  maheswariDeluxePhinisiDeluxeOcean1C: _gallery_maheswariDeluxePhinisiDeluxeOcean1C,
+  maheswariDeluxePhinisiDeluxeOcean2A: _gallery_maheswariDeluxePhinisiDeluxeOcean2A,
+  maheswariDeluxePhinisiDeluxeOcean2B: _gallery_maheswariDeluxePhinisiDeluxeOcean2B,
+  maheswariDeluxePhinisiDeluxeOcean2C: _gallery_maheswariDeluxePhinisiDeluxeOcean2C,
   maheswariDeluxePhinisiExterior: _gallery_maheswariDeluxePhinisiExterior,
   maheswariDeluxePhinisiInterior: _gallery_maheswariDeluxePhinisiInterior,
   maheswariDeluxePhinisiMasterCabin: _gallery_maheswariDeluxePhinisiMasterCabin,
-  maheswariDeluxePhinisiMasterOcean1A:
-    _gallery_maheswariDeluxePhinisiMasterOcean1A,
-  maheswariDeluxePhinisiMasterOcean1B:
-    _gallery_maheswariDeluxePhinisiMasterOcean1B,
-  maheswariDeluxePhinisiMasterOcean1C:
-    _gallery_maheswariDeluxePhinisiMasterOcean1C,
-  maheswariDeluxePhinisiMasterOcean2A:
-    _gallery_maheswariDeluxePhinisiMasterOcean2A,
-  maheswariDeluxePhinisiMasterOcean2B:
-    _gallery_maheswariDeluxePhinisiMasterOcean2B,
-  maheswariDeluxePhinisiMasterOcean2C:
-    _gallery_maheswariDeluxePhinisiMasterOcean2C,
-  maheswariDeluxePhinisiSignatureCabin:
-    _gallery_maheswariDeluxePhinisiSignatureCabin,
-  maheswariDeluxePhinisiSignatureOcean1A:
-    _gallery_maheswariDeluxePhinisiSignatureOcean1A,
-  maheswariDeluxePhinisiSignatureOcean1B:
-    _gallery_maheswariDeluxePhinisiSignatureOcean1B,
-  maheswariDeluxePhinisiSignatureOcean1C:
-    _gallery_maheswariDeluxePhinisiSignatureOcean1C,
-  maheswariDeluxePhinisiSignatureOcean2A:
-    _gallery_maheswariDeluxePhinisiSignatureOcean2A,
-  maheswariDeluxePhinisiSignatureOcean2B:
-    _gallery_maheswariDeluxePhinisiSignatureOcean2B,
-  maheswariDeluxePhinisiSignatureOcean2C:
-    _gallery_maheswariDeluxePhinisiSignatureOcean2C,
+  maheswariDeluxePhinisiMasterOcean1A: _gallery_maheswariDeluxePhinisiMasterOcean1A,
+  maheswariDeluxePhinisiMasterOcean1B: _gallery_maheswariDeluxePhinisiMasterOcean1B,
+  maheswariDeluxePhinisiMasterOcean1C: _gallery_maheswariDeluxePhinisiMasterOcean1C,
+  maheswariDeluxePhinisiMasterOcean2A: _gallery_maheswariDeluxePhinisiMasterOcean2A,
+  maheswariDeluxePhinisiMasterOcean2B: _gallery_maheswariDeluxePhinisiMasterOcean2B,
+  maheswariDeluxePhinisiMasterOcean2C: _gallery_maheswariDeluxePhinisiMasterOcean2C,
+  maheswariDeluxePhinisiSignatureCabin: _gallery_maheswariDeluxePhinisiSignatureCabin,
+  maheswariDeluxePhinisiSignatureOcean1A: _gallery_maheswariDeluxePhinisiSignatureOcean1A,
+  maheswariDeluxePhinisiSignatureOcean1B: _gallery_maheswariDeluxePhinisiSignatureOcean1B,
+  maheswariDeluxePhinisiSignatureOcean1C: _gallery_maheswariDeluxePhinisiSignatureOcean1C,
+  maheswariDeluxePhinisiSignatureOcean2A: _gallery_maheswariDeluxePhinisiSignatureOcean2A,
+  maheswariDeluxePhinisiSignatureOcean2B: _gallery_maheswariDeluxePhinisiSignatureOcean2B,
+  maheswariDeluxePhinisiSignatureOcean2C: _gallery_maheswariDeluxePhinisiSignatureOcean2C,
   maheswariDeluxePhinisiSundeck: _gallery_maheswariDeluxePhinisiSundeck,
-  maheswariDeluxePhinisiSuperiorCabin1A:
-    _gallery_maheswariDeluxePhinisiSuperiorCabin1A,
-  maheswariDeluxePhinisiSuperiorCabin1B:
-    _gallery_maheswariDeluxePhinisiSuperiorCabin1B,
-  maheswariDeluxePhinisiSuperiorCabin1C:
-    _gallery_maheswariDeluxePhinisiSuperiorCabin1C,
-  maheswariDeluxePhinisiSuperiorCabin2A:
-    _gallery_maheswariDeluxePhinisiSuperiorCabin2A,
-  maheswariDeluxePhinisiSuperiorCabin2B:
-    _gallery_maheswariDeluxePhinisiSuperiorCabin2B,
-  maheswariDeluxePhinisiSuperiorCabin2C:
-    _gallery_maheswariDeluxePhinisiSuperiorCabin2C,
-  maheswariDeluxePhinisiSuperiorCabin:
-    _gallery_maheswariDeluxePhinisiSuperiorCabin,
+  maheswariDeluxePhinisiSuperiorCabin1A: _gallery_maheswariDeluxePhinisiSuperiorCabin1A,
+  maheswariDeluxePhinisiSuperiorCabin1B: _gallery_maheswariDeluxePhinisiSuperiorCabin1B,
+  maheswariDeluxePhinisiSuperiorCabin1C: _gallery_maheswariDeluxePhinisiSuperiorCabin1C,
+  maheswariDeluxePhinisiSuperiorCabin2A: _gallery_maheswariDeluxePhinisiSuperiorCabin2A,
+  maheswariDeluxePhinisiSuperiorCabin2B: _gallery_maheswariDeluxePhinisiSuperiorCabin2B,
+  maheswariDeluxePhinisiSuperiorCabin2C: _gallery_maheswariDeluxePhinisiSuperiorCabin2C,
+  maheswariDeluxePhinisiSuperiorCabin: _gallery_maheswariDeluxePhinisiSuperiorCabin,
   nkJaya1DeluxeCabin: _gallery_nkJaya1DeluxeCabin,
   nkJaya1DeluxeExterior: _gallery_nkJaya1DeluxeExterior,
   nkJaya1DeluxeFullOcean1A: _gallery_nkJaya1DeluxeFullOcean1A,
@@ -623,6 +596,7 @@ export const GALLERY = {
   yukaiDeluxeSundeck: _gallery_yukaiDeluxeSundeck,
 };
 
+
 export const HERO = {
   gaisanDeluxe: _hero_gaisanDeluxe,
   hatiraHelaDeluxe: _hero_hatiraHelaDeluxe,
@@ -636,10 +610,12 @@ export const HERO = {
   main: _hero_hero,
 };
 
+
 export const LEGALITY = {
   nib: _legality_nib,
   sk: _legality_sk,
 };
+
 
 export const OG = {
   about: _og_about,
@@ -660,6 +636,7 @@ export const OG = {
   vehicleDetail: _og_vehicleDetail,
 };
 
+
 export const VEHICLES = {
   avanza: _vehicles_avanza,
   bus1: _vehicles_bus1,
@@ -667,3 +644,4 @@ export const VEHICLES = {
   bus3: _vehicles_bus3,
   rental: _vehicles_rental,
 };
+
