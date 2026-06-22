@@ -71,11 +71,20 @@ const hasMore = hiddenSpecs.length > 0;
       <Accordion class="mt-4" collapsible>
         <AccordionItem value="more-specs" class="border-0">
           <AccordionTrigger class="py-3 text-sm font-medium text-brand-700 hover:no-underline hover:text-brand-600 [&>svg]:text-brand-500 [&>svg]:size-5">
-            {locale === "id"
-              ? `Lihat Semua Spesifikasi (${hiddenSpecs.length} lainnya)`
-              : locale === "en"
-                ? `See All Specifications (${hiddenSpecs.length} more)`
-                : `Lihat Semua Spesifikasi (${hiddenSpecs.length})`}
+            <span class="group-aria-expanded/accordion-trigger:hidden">
+              {locale === "id"
+                ? `Lihat Semua Spesifikasi (${hiddenSpecs.length} lainnya)`
+                : locale === "en"
+                  ? `See All Specifications (${hiddenSpecs.length} more)`
+                  : `Lihat Semua Spesifikasi (${hiddenSpecs.length})`}
+            </span>
+            <span class="hidden group-aria-expanded/accordion-trigger:inline">
+              {locale === "id"
+                ? "Sembunyikan Spesifikasi"
+                : locale === "en"
+                  ? "Hide Specifications"
+                  : "Sembunyikan Spesifikasi"}
+            </span>
           </AccordionTrigger>
           <AccordionContent class="pt-0">
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
