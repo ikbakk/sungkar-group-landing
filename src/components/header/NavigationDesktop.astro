@@ -108,16 +108,16 @@ function lh(href: string | undefined): string | undefined {
               <NavigationMenuTrigger class="inline-flex h-10 w-max items-center justify-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
                 {item.label}
               </NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent align="center">
                 <div
                   class="grid gap-3 p-3"
                   style={{
                     gridTemplateColumns: `repeat(${
-                      item.groups?.length ?? 1
+                      item.groups?.filter((g) => (g.collections?.length ?? 0) > 0 || (g.items?.length ?? 0) > 0).length ?? 1
                     }, minmax(220px, 280px))`,
                   }}
                 >
-                  {item.groups?.map((group) => (
+                  {item.groups?.filter((g) => (g.collections?.length ?? 0) > 0 || (g.items?.length ?? 0) > 0).map((group) => (
                     <div class="rounded-lg border border-border bg-background p-2">
                       <div class="mb-2">
                         {group.href ? (
