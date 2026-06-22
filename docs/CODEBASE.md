@@ -24,7 +24,7 @@
 | `src/assets/images/` | Bundled image assets; current groups include `hero`, `gallery`, `destinations`, `vehicles`, `accommodations`, `brand`, `legality`, `og` |
 | `scripts/data/packages/` | JSON source-of-truth for package content before MDX generation |
 | `scripts/` | Generators and validation scripts such as `generate-tour-mdx.mjs`, `generate-image-barrel.mjs`, and `validate-images.mjs` |
-| `docs/` | Project documentation and internal reference notes |
+| `docs/` | Project documentation, SEO/GEO setup guide (`seo-geo-setup.html`), SEO audit report (`seo-audit.html`), keyword clustering, link prospecting, and internal reference notes |
 
 ## Key Files By Task
 
