@@ -2,6 +2,12 @@
 import { TypographyH2 } from "@/components/ui/typography";
 import type { BoatSpec } from "@/lib/content/tourPackages/types";
 import { t } from "@/lib/i18n";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 interface Props {
   boatName: string;
@@ -13,6 +19,11 @@ interface Props {
 
 const { boatName, boatType, boatCapacity, specs, locale = "id" } = Astro.props;
 const uiStrings = t(locale);
+
+const INITIAL_COUNT = 6;
+const visibleSpecs = specs?.slice(0, INITIAL_COUNT) ?? [];
+const hiddenSpecs = specs?.slice(INITIAL_COUNT) ?? [];
+const hasMore = hiddenSpecs.length > 0;
 ---
 
 <div class="w-full">
@@ -45,15 +56,41 @@ const uiStrings = t(locale);
       )
     }
 
-    {
-      specs?.map((spec) => (
-        <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
-          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-            {spec.label}
-          </p>
-          <p class="mt-1 text-base">{spec.value}</p>
-        </div>
-      ))
-    }
+    {visibleSpecs.map((spec) => (
+      <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
+        <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+          {spec.label}
+        </p>
+        <p class="mt-1 text-base">{spec.value}</p>
+      </div>
+    ))}
   </div>
+
+  {
+    hasMore && (
+      <Accordion class="mt-4" collapsible>
+        <AccordionItem value="more-specs" class="border-0">
+          <AccordionTrigger class="py-3 text-sm font-medium text-brand-700 hover:no-underline hover:text-brand-600 [&>svg]:text-brand-500 [&>svg]:size-5">
+            {locale === "id"
+              ? `Lihat Semua Spesifikasi (${hiddenSpecs.length} lainnya)`
+              : locale === "en"
+                ? `See All Specifications (${hiddenSpecs.length} more)`
+                : `Lihat Semua Spesifikasi (${hiddenSpecs.length})`}
+          </AccordionTrigger>
+          <AccordionContent class="pt-0">
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {hiddenSpecs.map((spec) => (
+                <div class="rounded-xl border border-border bg-card p-4 shadow-xs">
+                  <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    {spec.label}
+                  </p>
+                  <p class="mt-1 text-base">{spec.value}</p>
+                </div>
+              ))}
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    )
+  }
 </div>
