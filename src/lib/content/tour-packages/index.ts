@@ -44,6 +44,13 @@ export const packagePageContent = {
       intro:
         "Segera hadir: petualangan sailing lintas pulau dari Lombok ke Labuan Bajo.",
     },
+    "lombok-bajo": {
+      title: "Paket Lombok - Bajo",
+      description:
+        "Paket sailing lintas pulau antara Lombok dan Labuan Bajo, tersedia dua arah perjalanan.",
+      intro:
+        "Pilih arah perjalanan: dari Lombok ke Labuan Bajo atau dari Labuan Bajo ke Lombok.",
+    },
   },
 
   cta: {

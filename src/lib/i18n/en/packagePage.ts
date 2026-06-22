@@ -45,6 +45,13 @@ export const packagePageContent = {
       intro:
         "Coming soon: cross-island sailing adventure from Lombok to Labuan Bajo.",
     },
+    "lombok-bajo": {
+      title: "Lombok - Bajo Packages",
+      description:
+        "Cross-island sailing packages between Lombok and Labuan Bajo, available in both directions.",
+      intro:
+        "Choose your direction: from Lombok to Labuan Bajo or from Labuan Bajo to Lombok.",
+    },
   },
 
   cta: {

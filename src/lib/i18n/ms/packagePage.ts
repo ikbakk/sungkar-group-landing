@@ -44,6 +44,13 @@ export const packagePageContent = {
       intro:
         "Akan datang: pengembaraan pelayaran merentas pulau dari Lombok ke Labuan Bajo.",
     },
+    "lombok-bajo": {
+      title: "Pakej Lombok - Bajo",
+      description:
+        "Pakej pelayaran merentas pulau antara Lombok dan Labuan Bajo, tersedia dalam kedua-dua arah.",
+      intro:
+        "Pilih arah perjalanan: dari Lombok ke Labuan Bajo atau dari Labuan Bajo ke Lombok.",
+    },
   },
 
   cta: {
