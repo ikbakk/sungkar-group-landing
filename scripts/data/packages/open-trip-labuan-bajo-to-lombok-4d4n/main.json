@@ -1,0 +1,133 @@
+{
+  "region": "lombok-bajo",
+  "collectionSlug": "bajo-to-lombok",
+  "boatName": "Alfathran 3",
+  "boatType": "Open Trip Phinisi",
+  "boatCapacity": 50,
+  "boatSpecs": [
+    {
+      "label": "Panjang Kapal",
+      "value": "29,30 Meter"
+    },
+    {
+      "label": "Lebar Kapal",
+      "value": "7 Meter"
+    },
+    {
+      "label": "Kecepatan Jelajah",
+      "value": "7-11 Knot"
+    },
+    {
+      "label": "Kapasitas Air Tawar",
+      "value": "10000 Liter"
+    },
+    {
+      "label": "Kapasitas Bahan Bakar",
+      "value": "7500 Liter"
+    },
+    {
+      "label": "Mesin",
+      "value": "Mitsubishi 6D22"
+    },
+    {
+      "label": "Generator",
+      "value": "30 kVA, 40 kVA, Emergency 8000 Watt"
+    },
+    {
+      "label": "Navigasi",
+      "value": "Kompas, GPS, AIS, Peta, Radio SSB, VHF Radio, Handy Talky"
+    },
+    {
+      "label": "Peralatan Keselamatan",
+      "value": "Life raft 50 orang, 30 life jacket, 2 fire extinguisher, first aid kit"
+    },
+    {
+      "label": "Speedboat",
+      "value": "1 unit fiberglass dengan mesin Yamaha 40 HP"
+    },
+    {
+      "label": "Jumlah Kabin",
+      "value": "6 Kabin"
+    },
+    {
+      "label": "Fasilitas",
+      "value": "AC cabin, large sundeck, sun chair, bean bag, snorkeling equipment, Bluetooth sound system, indoor dining room, fridge, dispenser, jacuzzi, Starlink WiFi"
+    }
+  ],
+  "cabins": [
+    {
+      "name": "Sumbawa Room",
+      "description": "6 single bunk bed, kamar mandi pribadi, kapasitas 1-5 orang.",
+      "capacity": "1-5",
+      "prices": {
+        "default": "Minimum 2 pax: IDR 5.800.000/pax"
+      },
+      "images": [
+        "gallery/open-trip-alfathran-3-sumbawa-room.webp"
+      ]
+    },
+    {
+      "name": "Gili Room",
+      "description": "Queen bed dan 2 single bunk bed, kamar mandi pribadi, kapasitas 2-4 orang.",
+      "capacity": "2-4",
+      "prices": {
+        "default": "Minimum 2 pax: IDR 7.050.000/pax; additional pax: IDR 4.550.000/pax"
+      },
+      "images": [
+        "gallery/open-trip-alfathran-3-gili-room.webp"
+      ]
+    },
+    {
+      "name": "Flores Room",
+      "description": "Queen bed dan single bed, kamar mandi pribadi, kapasitas 2-3 orang.",
+      "capacity": "2-3",
+      "prices": {
+        "default": "Minimum 2 pax: IDR 9.550.000/pax; additional pax: IDR 4.550.000/pax"
+      },
+      "images": [
+        "gallery/open-trip-alfathran-3-flores-room.webp"
+      ]
+    },
+    {
+      "name": "Rinjani Room 01",
+      "description": "2 queen bed, kamar mandi pribadi, kapasitas 2-4 orang.",
+      "capacity": "2-4",
+      "prices": {
+        "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+      },
+      "images": [
+        "gallery/open-trip-alfathran-3-rinjani-room-01.webp"
+      ]
+    },
+    {
+      "name": "Rinjani Room 02",
+      "description": "Queen bed dan 2 single bunk bed, kamar mandi pribadi, kapasitas 2-4 orang.",
+      "capacity": "2-4",
+      "prices": {
+        "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+      },
+      "images": [
+        "gallery/open-trip-alfathran-3-rinjani-room-02.webp"
+      ]
+    },
+    {
+      "name": "Senggigi Room",
+      "description": "Queen bed dan 3 extra bed, kamar mandi pribadi dan balkon pribadi, kapasitas 2-5 orang.",
+      "capacity": "2-5",
+      "prices": {
+        "default": "Minimum 2 pax: IDR 12.050.000/pax; additional pax: IDR 4.550.000/pax"
+      },
+      "images": [
+        "gallery/open-trip-alfathran-3-senggigi-room.webp"
+      ]
+    }
+  ],
+  "slug": "open-trip-labuan-bajo-to-lombok-4d4n",
+  "images": [
+    "hero/open-trip-labuan-bajo-to-lombok-4d4n.webp",
+    "gallery/open-trip-labuan-bajo-to-lombok-4d4n-exterior.webp",
+    "gallery/open-trip-labuan-bajo-to-lombok-4d4n-interior.webp",
+    "gallery/open-trip-labuan-bajo-to-lombok-4d4n-cabin.webp",
+    "gallery/open-trip-labuan-bajo-to-lombok-4d4n-sundeck.webp"
+  ]
+}
