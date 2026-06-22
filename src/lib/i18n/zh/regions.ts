@@ -3,7 +3,8 @@ export type RegionKey =
   | "sumbawa"
   | "labuan-bajo"
   | "sailing-labuan-bajo"
-  | "lombok-to-bajo";
+  | "lombok-to-bajo"
+  | "lombok-bajo";
 
 export const REGIONS: RegionKey[] = [
   "lombok",
@@ -11,6 +12,7 @@ export const REGIONS: RegionKey[] = [
   "labuan-bajo",
   "sailing-labuan-bajo",
   "lombok-to-bajo",
+  "lombok-bajo",
 ];
 
 export interface RegionInfo {
@@ -39,6 +41,10 @@ export const REGION_MAP: Record<RegionKey, RegionInfo> = {
     label: "龙目岛到巴霍",
     className: "bg-amber-600 text-white border-amber-600",
   },
+  "lombok-bajo": {
+    label: "龙目岛 - 巴霍",
+    className: "bg-amber-600 text-white border-amber-600",
+  },
 };
 
 export const REGION_LABEL: Record<RegionKey, string> = {
@@ -47,6 +53,7 @@ export const REGION_LABEL: Record<RegionKey, string> = {
   "labuan-bajo": "Labuan Bajo",
   "sailing-labuan-bajo": "拉布安巴霍航海",
   "lombok-to-bajo": "龙目岛到巴霍",
+  "lombok-bajo": "龙目岛 - 巴霍",
 };
 
 export const REGION_CONTENT_KEY: Record<RegionKey, string> = {
@@ -55,4 +62,5 @@ export const REGION_CONTENT_KEY: Record<RegionKey, string> = {
   "labuan-bajo": "labuanBajo",
   "sailing-labuan-bajo": "sailingLabuanBajo",
   "lombok-to-bajo": "lombokToBajo",
+  "lombok-bajo": "lombokBajo",
 };
