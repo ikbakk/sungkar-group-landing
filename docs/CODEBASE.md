@@ -42,9 +42,10 @@
 
 - `deluxe-gaisan` uses Drive-sourced WebP assets in `src/assets/images/hero/gaisan-deluxe.webp` and `src/assets/images/gallery/gaisan-deluxe-*.webp`.
 - `deluxe-hatira` uses Drive-sourced WebP assets in `src/assets/images/hero/hatira-hela-deluxe.webp` and `src/assets/images/gallery/hatira-hela-*.webp`.
-- `deluxe-maheswari` / `open-trip-maheswari` use `resource/`-derived WebP assets in `src/assets/images/hero/maheswari-deluxe-phinisi.webp` and `src/assets/images/gallery/maheswari-deluxe-phinisi-*.webp` (hero, exterior, interior, cabin, sundeck, plus 8 per-cabin images).
-- `deluxe-nk-jaya-1` / `open-trip-nk-jaya-1` use video-frame-extracted WebP assets from `resource/NK JAYA 1 - Boat Tour.MP4` in `src/assets/images/{hero,gallery}/nk-jaya-1-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 7 per-cabin images).
-- `deluxe-nk-jaya-2` / `open-trip-nk-jaya-2` use `resource/`-derived WebP assets in `src/assets/images/{hero,gallery}/nk-jaya-2-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 6 per-cabin images).
-- `deluxe-yukai` / `open-trip-yukai` use `resource/`-derived WebP assets in `src/assets/images/{hero,gallery}/yukai-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 6 per-cabin images).
+- `deluxe-maheswari` / `open-trip-maheswari` use `resource/`-derived WebP assets in `src/assets/images/hero/maheswari-deluxe-phinisi.webp` and `src/assets/images/gallery/maheswari-deluxe-phinisi-*.webp` (hero, exterior, interior, cabin, sundeck, plus 8 cabins × 3 images = 24 cabin images).
+- `deluxe-nk-jaya-1` / `open-trip-nk-jaya-1` use video-frame-extracted WebP assets from `resource/NK JAYA 1 - Boat Tour.MP4` in `src/assets/images/{hero,gallery}/nk-jaya-1-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 7 cabins × 3 images = 21 cabin images).
+- `deluxe-nk-jaya-2` / `open-trip-nk-jaya-2` use `resource/`-derived WebP assets in `src/assets/images/{hero,gallery}/nk-jaya-2-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 6 cabins × 3 images = 18 cabin images).
+- `deluxe-yukai` / `open-trip-yukai` use `resource/`-derived WebP assets in `src/assets/images/{hero,gallery}/yukai-deluxe-*.webp` (hero, exterior, interior, cabin, sundeck, plus 6 cabins × 2-3 images = 14 cabin images).
+- All cabin images follow naming convention `<boat-prefix>-<cabin-slug>-{a,b,c}.webp` for carousel support.
 - Open-trip packages share the same hero/gallery/cabin images as their private-trip counterparts for the same boat.
 - Tour package image strings are resolved through `src/lib/content/tourPackages/images.ts`, with exact registry entries for legacy assets and dynamic group lookup for generated `hero/` and `gallery/` filenames.
