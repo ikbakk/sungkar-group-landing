@@ -36,15 +36,32 @@ collections:
     fields:
       - { name: "title", widget: "string", label: "Title" }
       - { name: "description", widget: "text", label: "Description" }
-      - { name: "publishDate", widget: "datetime", label: "Publish Date", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - {
+          name: "publishDate",
+          widget: "datetime",
+          label: "Publish Date",
+          date_format: "YYYY-MM-DD",
+          time_format: false,
+          format: "YYYY-MM-DD",
+        }
       - name: "tags"
         widget: "list"
         label: "Tags"
         default: []
         field: { widget: "string", label: "Tag" }
-      - { name: "readingTime", widget: "number", label: "Reading Time (min)", value_type: "int" }
+      - {
+          name: "readingTime",
+          widget: "number",
+          label: "Reading Time (min)",
+          value_type: "int",
+        }
       - { name: "author", widget: "string", label: "Author", required: false }
-      - { name: "featuredImage", widget: "string", label: "Featured Image Path", required: false }
+      - {
+          name: "featuredImage",
+          widget: "string",
+          label: "Featured Image Path",
+          required: false,
+        }
       - name: "relatedDestinations"
         widget: "list"
         label: "Related Destinations"
@@ -90,11 +107,21 @@ collections:
           - { label: "Labuan Bajo", value: "labuan-bajo" }
           - { label: "Sailing Labuan Bajo", value: "sailing-labuan-bajo" }
           - { label: "Lombok to Bajo", value: "lombok-to-bajo" }
-      - { name: "featured", widget: "boolean", label: "Featured", default: false, required: false }
+      - {
+          name: "featured",
+          widget: "boolean",
+          label: "Featured",
+          default: false,
+          required: false,
+        }
       - { name: "collectionSlug", widget: "string", label: "Collection Slug" }
       - { name: "collectionTitle", widget: "string", label: "Collection Title" }
       - { name: "category", widget: "string", label: "Category" }
-      - { name: "duration", widget: "string", label: "Duration (comma-separated)" }
+      - {
+          name: "duration",
+          widget: "string",
+          label: "Duration (comma-separated)",
+        }
       - name: "durationLabels"
         widget: "object"
         label: "Duration Labels"
@@ -102,9 +129,24 @@ collections:
         collapsed: true
         fields:
           - { name: "1D", widget: "string", label: "1 Day", required: false }
-          - { name: "2D1N", widget: "string", label: "2 Days 1 Night", required: false }
-          - { name: "3D2N", widget: "string", label: "3 Days 2 Nights", required: false }
-          - { name: "4D3N", widget: "string", label: "4 Days 3 Nights", required: false }
+          - {
+              name: "2D1N",
+              widget: "string",
+              label: "2 Days 1 Night",
+              required: false,
+            }
+          - {
+              name: "3D2N",
+              widget: "string",
+              label: "3 Days 2 Nights",
+              required: false,
+            }
+          - {
+              name: "4D3N",
+              widget: "string",
+              label: "4 Days 3 Nights",
+              required: false,
+            }
       - name: "images"
         widget: "list"
         label: "Images"
@@ -131,9 +173,25 @@ collections:
         label: "Excludes"
         default: []
         field: { widget: "string", label: "Item" }
-      - { name: "boatName", widget: "string", label: "Boat Name", required: false }
-      - { name: "boatType", widget: "string", label: "Boat Type", required: false }
-      - { name: "boatCapacity", widget: "number", label: "Boat Capacity", required: false, value_type: "int" }
+      - {
+          name: "boatName",
+          widget: "string",
+          label: "Boat Name",
+          required: false,
+        }
+      - {
+          name: "boatType",
+          widget: "string",
+          label: "Boat Type",
+          required: false,
+        }
+      - {
+          name: "boatCapacity",
+          widget: "number",
+          label: "Boat Capacity",
+          required: false,
+          value_type: "int",
+        }
       - name: "boatSpecs"
         widget: "list"
         label: "Boat Specifications"
@@ -149,8 +207,18 @@ collections:
         collapsed: true
         fields:
           - { name: "name", widget: "string", label: "Cabin Name" }
-          - { name: "description", widget: "text", label: "Description", required: false }
-          - { name: "capacity", widget: "string", label: "Capacity", required: false }
+          - {
+              name: "description",
+              widget: "text",
+              label: "Description",
+              required: false,
+            }
+          - {
+              name: "capacity",
+              widget: "string",
+              label: "Capacity",
+              required: false,
+            }
           - name: "images"
             widget: "list"
             label: "Cabin Images"
@@ -163,10 +231,30 @@ collections:
             required: false
             collapsed: true
             fields:
-              - { name: "1D", widget: "string", label: "1 Day", required: false }
-              - { name: "2D1N", widget: "string", label: "2D1N", required: false }
-              - { name: "3D2N", widget: "string", label: "3D2N", required: false }
-              - { name: "4D3N", widget: "string", label: "4D3N", required: false }
+              - {
+                  name: "1D",
+                  widget: "string",
+                  label: "1 Day",
+                  required: false,
+                }
+              - {
+                  name: "2D1N",
+                  widget: "string",
+                  label: "2D1N",
+                  required: false,
+                }
+              - {
+                  name: "3D2N",
+                  widget: "string",
+                  label: "3D2N",
+                  required: false,
+                }
+              - {
+                  name: "4D3N",
+                  widget: "string",
+                  label: "4D3N",
+                  required: false,
+                }
       - name: "priceList"
         widget: "object"
         label: "Price List"
@@ -179,36 +267,108 @@ collections:
             required: false
             collapsed: true
             fields:
-              - { name: "1-10", widget: "number", label: "Base Price (1-10 pax)", required: false, value_type: "int" }
-              - { name: "addPerPax", widget: "number", label: "Additional Per Pax", required: false, value_type: "int" }
-              - { name: "maxPax", widget: "number", label: "Max Pax", required: false, value_type: "int" }
+              - {
+                  name: "1-10",
+                  widget: "number",
+                  label: "Base Price (1-10 pax)",
+                  required: false,
+                  value_type: "int",
+                }
+              - {
+                  name: "addPerPax",
+                  widget: "number",
+                  label: "Additional Per Pax",
+                  required: false,
+                  value_type: "int",
+                }
+              - {
+                  name: "maxPax",
+                  widget: "number",
+                  label: "Max Pax",
+                  required: false,
+                  value_type: "int",
+                }
           - name: "2D1N"
             widget: "object"
             label: "2 Days 1 Night"
             required: false
             collapsed: true
             fields:
-              - { name: "1-10", widget: "number", label: "Base Price (1-10 pax)", required: false, value_type: "int" }
-              - { name: "addPerPax", widget: "number", label: "Additional Per Pax", required: false, value_type: "int" }
-              - { name: "maxPax", widget: "number", label: "Max Pax", required: false, value_type: "int" }
+              - {
+                  name: "1-10",
+                  widget: "number",
+                  label: "Base Price (1-10 pax)",
+                  required: false,
+                  value_type: "int",
+                }
+              - {
+                  name: "addPerPax",
+                  widget: "number",
+                  label: "Additional Per Pax",
+                  required: false,
+                  value_type: "int",
+                }
+              - {
+                  name: "maxPax",
+                  widget: "number",
+                  label: "Max Pax",
+                  required: false,
+                  value_type: "int",
+                }
           - name: "3D2N"
             widget: "object"
             label: "3 Days 2 Nights"
             required: false
             collapsed: true
             fields:
-              - { name: "1-10", widget: "number", label: "Base Price (1-10 pax)", required: false, value_type: "int" }
-              - { name: "addPerPax", widget: "number", label: "Additional Per Pax", required: false, value_type: "int" }
-              - { name: "maxPax", widget: "number", label: "Max Pax", required: false, value_type: "int" }
+              - {
+                  name: "1-10",
+                  widget: "number",
+                  label: "Base Price (1-10 pax)",
+                  required: false,
+                  value_type: "int",
+                }
+              - {
+                  name: "addPerPax",
+                  widget: "number",
+                  label: "Additional Per Pax",
+                  required: false,
+                  value_type: "int",
+                }
+              - {
+                  name: "maxPax",
+                  widget: "number",
+                  label: "Max Pax",
+                  required: false,
+                  value_type: "int",
+                }
           - name: "4D3N"
             widget: "object"
             label: "4 Days 3 Nights"
             required: false
             collapsed: true
             fields:
-              - { name: "1-10", widget: "number", label: "Base Price (1-10 pax)", required: false, value_type: "int" }
-              - { name: "addPerPax", widget: "number", label: "Additional Per Pax", required: false, value_type: "int" }
-              - { name: "maxPax", widget: "number", label: "Max Pax", required: false, value_type: "int" }
+              - {
+                  name: "1-10",
+                  widget: "number",
+                  label: "Base Price (1-10 pax)",
+                  required: false,
+                  value_type: "int",
+                }
+              - {
+                  name: "addPerPax",
+                  widget: "number",
+                  label: "Additional Per Pax",
+                  required: false,
+                  value_type: "int",
+                }
+              - {
+                  name: "maxPax",
+                  widget: "number",
+                  label: "Max Pax",
+                  required: false,
+                  value_type: "int",
+                }
       - name: "additionalServices"
         widget: "list"
         label: "Additional Services"
@@ -259,7 +419,12 @@ collections:
           - { label: "Sumbawa", value: "sumbawa" }
           - { label: "Labuan Bajo", value: "labuan-bajo" }
           - { label: "General", value: "general" }
-      - { name: "readingTime", widget: "number", label: "Reading Time (min)", value_type: "int" }
+      - {
+          name: "readingTime",
+          widget: "number",
+          label: "Reading Time (min)",
+          value_type: "int",
+        }
       - name: "keyTakeaways"
         widget: "list"
         label: "Key Takeaways"
@@ -282,8 +447,17 @@ collections:
         required: false
         default: []
         field: { widget: "string", label: "Package Slug" }
-      - { name: "publishDate", widget: "string", label: "Publish Date (YYYY-MM-DD)" }
-      - { name: "featuredImage", widget: "string", label: "Featured Image Path", required: false }
+      - {
+          name: "publishDate",
+          widget: "string",
+          label: "Publish Date (YYYY-MM-DD)",
+        }
+      - {
+          name: "featuredImage",
+          widget: "string",
+          label: "Featured Image Path",
+          required: false,
+        }
       - { name: "body", widget: "markdown", label: "Content" }
     meta:
       path:
