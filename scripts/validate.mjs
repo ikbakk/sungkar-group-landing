@@ -1,7 +1,6 @@
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, extname } from "node:path";
-
-const yaml = require("yaml");
+import yaml from "yaml";
 
 // Suppress deprecation warning
 process.removeAllListeners("deprecation");
