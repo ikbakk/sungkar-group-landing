@@ -3,11 +3,11 @@
   "region": "sailing-labuan-bajo",
   "collectionSlug": "private-trip-superior-phinisi",
   "images": [
-    "hero/superior-pesonabajo.webp",
-    "gallery/superior-pesonabajo-exterior.webp",
-    "gallery/superior-pesonabajo-interior.webp",
-    "gallery/superior-pesonabajo-cabin.webp",
-    "gallery/superior-pesonabajo-sundeck.webp"
+    "packages/pesonabajo/boat/gallery/1325-dji-0512.webp",
+    "packages/pesonabajo/boat/gallery/1326-dji-0513.webp",
+    "packages/pesonabajo/boat/gallery/1327-dji-0514.webp",
+    "packages/pesonabajo/boat/gallery/1328-dji-0515.webp",
+    "packages/pesonabajo/boat/gallery/1329-dji-0516.webp"
   ],
   "boatName": "Pesonabajo",
   "boatType": "Superior Phinisi",
@@ -71,7 +71,12 @@
       "name": "Share Cabin (Main Deck)",
       "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": ["gallery/superior-pesonabajo-share-cabin.webp"],
+      "images": [
+        "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+        "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+        "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+        "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -83,7 +88,9 @@
       "name": "Private Double (Main Deck)",
       "description": "Queen Bed, kamar mandi bersama, AC, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/superior-pesonabajo-private-double.webp"],
+      "images": [
+        "gallery/superior-pesonabajo-private-double.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -95,7 +102,9 @@
       "name": "Private Triple (Main Deck)",
       "description": "Queen Bed dan single bunk bed, kamar mandi bersama, AC, kapasitas 1-3 orang.",
       "capacity": "1-3",
-      "images": ["gallery/superior-pesonabajo-private-triple.webp"],
+      "images": [
+        "gallery/superior-pesonabajo-private-triple.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -107,7 +116,9 @@
       "name": "Deluxe Ocean 1 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/superior-pesonabajo-deluxe-ocean-1.webp"],
+      "images": [
+        "gallery/superior-pesonabajo-deluxe-ocean-1.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -119,7 +130,9 @@
       "name": "Deluxe Ocean 2 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/superior-pesonabajo-deluxe-ocean-2.webp"],
+      "images": [
+        "gallery/superior-pesonabajo-deluxe-ocean-2.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -131,7 +144,12 @@
       "name": "Master Ocean (Upper Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/superior-pesonabajo-master-ocean.webp"],
+      "images": [
+        "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+        "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+        "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+        "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",

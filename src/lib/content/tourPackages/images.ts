@@ -8,6 +8,7 @@ import {
   VEHICLES,
   BRAND,
   LEGALITY,
+  PACKAGES,
 } from "@/assets/images";
 
 const registry: Record<string, ImageSource> = {
@@ -67,7 +68,7 @@ const registry: Record<string, ImageSource> = {
   "legality/sk.webp": LEGALITY.sk,
 };
 
-const groups: Record<string, Record<string, ImageSource>> = {
+const groups: Record<string, unknown> = {
   hero: HERO as Record<string, ImageSource>,
   destinations: DESTINATIONS as Record<string, ImageSource>,
   gallery: GALLERY as Record<string, ImageSource>,
@@ -75,6 +76,7 @@ const groups: Record<string, Record<string, ImageSource>> = {
   vehicles: VEHICLES as Record<string, ImageSource>,
   brand: BRAND as Record<string, ImageSource>,
   legality: LEGALITY as Record<string, ImageSource>,
+  packages: PACKAGES,
 };
 
 function toCamel(fileName: string): string {
@@ -88,10 +90,20 @@ function resolveRegistryPath(path: string): ImageSource | undefined {
   const [groupName, ...rest] = path.split("/");
   if (!groupName || rest.length === 0) return undefined;
 
-  const group = groups[groupName];
-  if (!group) return undefined;
+  let cursor: unknown = groups[groupName];
+  if (!cursor) return undefined;
 
-  return group[toCamel(rest.join("/"))];
+  for (const part of rest) {
+    if (!cursor || typeof cursor !== "object") return undefined;
+    cursor = (cursor as Record<string, unknown>)[toCamel(part)];
+  }
+
+  if (typeof cursor === "string") return cursor;
+  if (cursor && typeof cursor === "object" && "src" in cursor) {
+    return cursor as ImageSource;
+  }
+
+  return undefined;
 }
 
 function resolveFallbackImage(path: string): ImageSource | undefined {

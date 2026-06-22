@@ -63,7 +63,10 @@
         "default": "Minimum 2 pax: IDR 5.800.000/pax"
       },
       "images": [
-        "gallery/open-trip-alfathran-3-sumbawa-room.webp"
+        "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/035-alfathran-sumbawa-cabin-1.webp",
+        "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/036-alfathran-sumbawa-cabin-2.webp",
+        "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/037-alfathran-sumbawa-cabin-3.webp",
+        "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/038-alfathran-sumbawa-cabin-4.webp"
       ]
     },
     {
@@ -74,7 +77,10 @@
         "default": "Minimum 2 pax: IDR 7.050.000/pax; additional pax: IDR 4.550.000/pax"
       },
       "images": [
-        "gallery/open-trip-alfathran-3-gili-room.webp"
+        "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/055-alfathran-3-gili-room-1-0004-sve03436.webp",
+        "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/056-alfathran-3-gili-room-7.webp",
+        "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/057-alfathran-gili-cabin-1.webp",
+        "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/058-alfathran-gili-cabin-2.webp"
       ]
     },
     {
@@ -85,7 +91,10 @@
         "default": "Minimum 2 pax: IDR 9.550.000/pax; additional pax: IDR 4.550.000/pax"
       },
       "images": [
-        "gallery/open-trip-alfathran-3-flores-room.webp"
+        "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/039-alfathran-3-flores-room-1-0000-sve03548.webp",
+        "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/040-alfathran-3-flores-room-1-00055.webp",
+        "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/041-alfathran-flores-cabin-1.webp",
+        "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/042-alfathran-flores-cabin-2.webp"
       ]
     },
     {
@@ -118,16 +127,19 @@
         "default": "Minimum 2 pax: IDR 12.050.000/pax; additional pax: IDR 4.550.000/pax"
       },
       "images": [
-        "gallery/open-trip-alfathran-3-senggigi-room.webp"
+        "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
+        "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
+        "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
+        "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
       ]
     }
   ],
   "slug": "open-trip-labuan-bajo-to-lombok-4d4n",
   "images": [
-    "hero/open-trip-labuan-bajo-to-lombok-4d4n.webp",
-    "gallery/open-trip-labuan-bajo-to-lombok-4d4n-exterior.webp",
-    "gallery/open-trip-labuan-bajo-to-lombok-4d4n-interior.webp",
-    "gallery/open-trip-labuan-bajo-to-lombok-4d4n-cabin.webp",
-    "gallery/open-trip-labuan-bajo-to-lombok-4d4n-sundeck.webp"
+    "packages/alfathran-3/boat/gallery/001-dji-0139.webp",
+    "packages/alfathran-3/boat/gallery/002-dji-0141.webp",
+    "packages/alfathran-3/boat/gallery/003-dji-0143.webp",
+    "packages/alfathran-3/boat/gallery/004-dji-0145.webp",
+    "packages/alfathran-3/boat/gallery/005-dji-0147.webp"
   ]
 }

@@ -3,11 +3,11 @@
   "region": "sailing-labuan-bajo",
   "collectionSlug": "private-trip-luxury-phinisi",
   "images": [
-    "hero/luxury-ocean-angel.webp",
-    "gallery/luxury-ocean-angel-exterior.webp",
-    "gallery/luxury-ocean-angel-interior.webp",
-    "gallery/luxury-ocean-angel-cabin.webp",
-    "gallery/luxury-ocean-angel-sundeck.webp"
+    "packages/ocean-angel/boat/gallery/1117-dji-0751.webp",
+    "packages/ocean-angel/boat/gallery/1118-dji-0752.webp",
+    "packages/ocean-angel/boat/gallery/1119-dji-0753.webp",
+    "packages/ocean-angel/boat/gallery/1120-dji-0756.webp",
+    "packages/ocean-angel/boat/gallery/1121-dji-0759.webp"
   ],
   "boatName": "Ocean Angel",
   "boatType": "Luxury Phinisi",
@@ -75,7 +75,9 @@
       "name": "Add Cabin 1 (Lower Deck)",
       "description": "4 single bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": ["gallery/luxury-ocean-angel-add-cabin-1.webp"],
+      "images": [
+        "gallery/luxury-ocean-angel-add-cabin-1.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -87,7 +89,9 @@
       "name": "Add Cabin 2 (Lower Deck)",
       "description": "4 single bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": ["gallery/luxury-ocean-angel-add-cabin-2.webp"],
+      "images": [
+        "gallery/luxury-ocean-angel-add-cabin-2.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -99,7 +103,12 @@
       "name": "Superior Cabin 1 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-superior-cabin-1.webp"],
+      "images": [
+        "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1159-ocean-angel-23.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1160-ocean-angel-24.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -111,7 +120,12 @@
       "name": "Superior Cabin 2 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-superior-cabin-2.webp"],
+      "images": [
+        "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1159-ocean-angel-23.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1160-ocean-angel-24.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -123,7 +137,12 @@
       "name": "Superior Cabin 3 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-superior-cabin-3.webp"],
+      "images": [
+        "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1159-ocean-angel-23.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1160-ocean-angel-24.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -135,7 +154,12 @@
       "name": "Superior Cabin 4 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-superior-cabin-4.webp"],
+      "images": [
+        "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1159-ocean-angel-23.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1160-ocean-angel-24.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -147,7 +171,12 @@
       "name": "Superior Cabin 5 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-superior-cabin-5.webp"],
+      "images": [
+        "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1159-ocean-angel-23.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1160-ocean-angel-24.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -159,7 +188,12 @@
       "name": "Superior Cabin 6 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-superior-cabin-6.webp"],
+      "images": [
+        "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1159-ocean-angel-23.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1160-ocean-angel-24.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -171,7 +205,12 @@
       "name": "Superior Cabin 7 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-superior-cabin-7.webp"],
+      "images": [
+        "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1159-ocean-angel-23.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1160-ocean-angel-24.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -183,7 +222,12 @@
       "name": "Superior Cabin 8 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-superior-cabin-8.webp"],
+      "images": [
+        "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1159-ocean-angel-23.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1160-ocean-angel-24.webp",
+        "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -195,7 +239,9 @@
       "name": "VVIP Cabin 1 (Upper Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-vvip-cabin-1.webp"],
+      "images": [
+        "gallery/luxury-ocean-angel-vvip-cabin-1.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -207,7 +253,9 @@
       "name": "VVIP Cabin 2 (Upper Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-vvip-cabin-2.webp"],
+      "images": [
+        "gallery/luxury-ocean-angel-vvip-cabin-2.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -219,7 +267,9 @@
       "name": "VVIP Cabin 3 (Upper Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-vvip-cabin-3.webp"],
+      "images": [
+        "gallery/luxury-ocean-angel-vvip-cabin-3.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -231,7 +281,9 @@
       "name": "VVIP Cabin 4 (Upper Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, air panas, kapasitas 1-2 orang.",
       "capacity": "1-2",
-      "images": ["gallery/luxury-ocean-angel-vvip-cabin-4.webp"],
+      "images": [
+        "gallery/luxury-ocean-angel-vvip-cabin-4.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -243,7 +295,11 @@
       "name": "Family Cabin 1 (Upper Deck)",
       "description": "Queen Bed dan 2 single bed, kamar mandi pribadi, AC, air panas, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": ["gallery/luxury-ocean-angel-family-cabin-1.webp"],
+      "images": [
+        "packages/ocean-angel/cabins/3-family-cabin/1155-ocean-angel-11.webp",
+        "packages/ocean-angel/cabins/3-family-cabin/1156-ocean-angel-12.webp",
+        "packages/ocean-angel/cabins/3-family-cabin/1157-ocean-angel-13.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",
@@ -255,7 +311,11 @@
       "name": "Family Cabin 2 (Upper Deck)",
       "description": "Queen Bed dan 2 single bed, kamar mandi pribadi, AC, air panas, kapasitas 1-4 orang.",
       "capacity": "1-4",
-      "images": ["gallery/luxury-ocean-angel-family-cabin-2.webp"],
+      "images": [
+        "packages/ocean-angel/cabins/3-family-cabin/1155-ocean-angel-11.webp",
+        "packages/ocean-angel/cabins/3-family-cabin/1156-ocean-angel-12.webp",
+        "packages/ocean-angel/cabins/3-family-cabin/1157-ocean-angel-13.webp"
+      ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
         "2D1N": "Harga tergantung paket (lihat daftar harga)",

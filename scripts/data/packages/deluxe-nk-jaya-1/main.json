@@ -3,11 +3,11 @@
   "region": "sailing-labuan-bajo",
   "collectionSlug": "phinisi-deluxe-charter",
   "images": [
-    "hero/nk-jaya-1-deluxe.webp",
-    "gallery/nk-jaya-1-deluxe-exterior.webp",
-    "gallery/nk-jaya-1-deluxe-interior.webp",
-    "gallery/nk-jaya-1-deluxe-cabin.webp",
-    "gallery/nk-jaya-1-deluxe-sundeck.webp"
+    "packages/nk-jaya-1/boat/gallery/271-dji-0552.webp",
+    "packages/nk-jaya-1/boat/gallery/272-dji-0554.webp",
+    "packages/nk-jaya-1/boat/gallery/273-dji-0555.webp",
+    "packages/nk-jaya-1/boat/gallery/274-dji-0557.webp",
+    "packages/nk-jaya-1/boat/gallery/275-dji-0562.webp"
   ],
   "boatName": "NK Jaya 1",
   "boatType": "Private Trip Deluxe Phinisi",
