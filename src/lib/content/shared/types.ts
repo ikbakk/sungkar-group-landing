@@ -229,6 +229,7 @@ const regionSchema = z.enum([
   "labuan-bajo",
   "sailing-labuan-bajo",
   "lombok-to-bajo",
+  "lombok-bajo",
 ]);
 
 export const TourPackageSchema = z.object({

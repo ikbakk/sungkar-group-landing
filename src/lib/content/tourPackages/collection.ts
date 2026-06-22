@@ -9,7 +9,8 @@ type EntryData = {
     | "sumbawa"
     | "labuan-bajo"
     | "sailing-labuan-bajo"
-    | "lombok-to-bajo";
+    | "lombok-to-bajo"
+    | "lombok-bajo";
   featured?: boolean;
   collectionSlug: string;
   collectionTitle: string;

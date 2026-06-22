@@ -5,7 +5,8 @@ export type Region =
   | "sumbawa"
   | "labuan-bajo"
   | "sailing-labuan-bajo"
-  | "lombok-to-bajo";
+  | "lombok-to-bajo"
+  | "lombok-bajo";
 
 export type BoatSpec = {
   label: string;
