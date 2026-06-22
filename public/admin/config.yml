@@ -107,6 +107,7 @@ collections:
           - { label: "Labuan Bajo", value: "labuan-bajo" }
           - { label: "Sailing Labuan Bajo", value: "sailing-labuan-bajo" }
           - { label: "Lombok to Bajo", value: "lombok-to-bajo" }
+          - { label: "Lombok - Bajo", value: "lombok-bajo" }
       - {
           name: "featured",
           widget: "boolean",

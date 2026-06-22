@@ -15,6 +15,7 @@ export interface GuideMeta {
     | "labuan-bajo"
     | "sailing-labuan-bajo"
     | "lombok-to-bajo"
+    | "lombok-bajo"
     | "general";
   readingTime: number;
   bestFor: string[];
