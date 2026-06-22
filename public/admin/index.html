@@ -10,10 +10,15 @@
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
-      // Handle redirect after Netlify Identity invitation acceptance
+      // Process any auth token in the URL hash (invite, confirmation, recovery)
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", function (user) {
           if (!user) {
+            // If there's a hash with an auth token, process it
+            if (window.location.hash && window.location.hash.length > 1) {
+              window.netlifyIdentity.handleAuthCallback();
+            }
+            // After login, redirect to /admin/ to reload the CMS
             window.netlifyIdentity.on("login", function () {
               document.location.href = "/admin/";
             });
