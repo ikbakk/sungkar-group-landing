@@ -1,6 +1,6 @@
 {
   "slug": "open-trip-yukai",
-  "region": "labuan-bajo",
+  "region": "sailing-labuan-bajo",
   "collectionSlug": "open-trip-deluxe-phinisi",
   "images": [
     "hero/yukai-deluxe.webp",
@@ -35,63 +35,75 @@
       "name": "Signature Cabin 1",
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-2",
-      "price": "Minimum 2 pax: IDR 4.950.000/pax",
       "images": [
         "gallery/yukai-deluxe-signature-cabin-1-a.webp",
         "gallery/yukai-deluxe-signature-cabin-1-b.webp"
-      ]
+      ],
+      "prices": {
+        "default": "Minimum 2 pax: IDR 4.950.000/pax"
+      }
     },
     {
       "name": "Signature Cabin 2",
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-2",
-      "price": "Minimum 2 pax: IDR 4.950.000/pax",
       "images": [
         "gallery/yukai-deluxe-signature-cabin-2-a.webp",
         "gallery/yukai-deluxe-signature-cabin-2-b.webp"
-      ]
+      ],
+      "prices": {
+        "default": "Minimum 2 pax: IDR 4.950.000/pax"
+      }
     },
     {
       "name": "Deluxe Cabin 1",
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-2",
-      "price": "Minimum 2 pax: IDR 4.650.000/pax",
       "images": [
         "gallery/yukai-deluxe-deluxe-cabin-1-a.webp",
         "gallery/yukai-deluxe-deluxe-cabin-1-b.webp"
-      ]
+      ],
+      "prices": {
+        "default": "Minimum 2 pax: IDR 4.650.000/pax"
+      }
     },
     {
       "name": "Deluxe Cabin 2",
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-2",
-      "price": "Minimum 2 pax: IDR 4.650.000/pax",
       "images": [
         "gallery/yukai-deluxe-deluxe-cabin-2-a.webp",
         "gallery/yukai-deluxe-deluxe-cabin-2-b.webp"
-      ]
+      ],
+      "prices": {
+        "default": "Minimum 2 pax: IDR 4.650.000/pax"
+      }
     },
     {
       "name": "Deluxe Cabin 3",
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
       "capacity": "1-2",
-      "price": "Minimum 2 pax: IDR 4.650.000/pax",
       "images": [
         "gallery/yukai-deluxe-deluxe-cabin-3-a.webp",
         "gallery/yukai-deluxe-deluxe-cabin-3-b.webp",
         "gallery/yukai-deluxe-deluxe-cabin-3-c.webp"
-      ]
+      ],
+      "prices": {
+        "default": "Minimum 2 pax: IDR 4.650.000/pax"
+      }
     },
     {
       "name": "Deluxe Cabin 4",
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
       "capacity": "1-2",
-      "price": "Minimum 2 pax: IDR 4.650.000/pax",
       "images": [
         "gallery/yukai-deluxe-deluxe-cabin-4-a.webp",
         "gallery/yukai-deluxe-deluxe-cabin-4-b.webp",
         "gallery/yukai-deluxe-deluxe-cabin-4-c.webp"
-      ]
+      ],
+      "prices": {
+        "default": "Minimum 2 pax: IDR 4.650.000/pax"
+      }
     }
   ]
 }

@@ -1,28 +1,17 @@
 ---
-import {
-  TypographyH2,
-  TypographyH3,
-  TypographyP,
-} from "@/components/ui/typography";
+import { TypographyH2 } from "@/components/ui/typography";
 import type { Cabin } from "@/lib/content/tourPackages/types";
 import { t } from "@/lib/i18n";
-import OptimizedImage from "@/components/ui/OptimizedImage.astro";
-import { Card, CardContent } from "@/components/ui/card";
-import { Price } from "@/components/ui/price";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from "@/components/ui/carousel";
+import CabinCard from "./CabinCard.astro";
 
 interface Props {
   cabins: Cabin[];
   locale?: string;
+  durationLabels?: Record<string, string>;
+  priceList?: Record<string, Record<string, number>>;
 }
 
-const { cabins, locale = "id" } = Astro.props;
+const { cabins, locale = "id", durationLabels, priceList } = Astro.props;
 const uiStrings = t(locale);
 ---
 
@@ -34,49 +23,13 @@ const uiStrings = t(locale);
   <TypographyH2 class="mt-2">{uiStrings.paketWisata.cabins}</TypographyH2>
 
   <div class="mt-8 grid gap-8">
-    {
-      cabins.map((cabin, i) => (
-        <Card size="sm" class="overflow-hidden">
-          <div class="flex flex-col md:flex-row">
-            <div class="w-full md:w-[40%] shrink-0">
-              <Carousel opts={{ loop: true }} class="aspect-[4/3]">
-                <CarouselContent>
-                  {cabin.images.map((img) => (
-                    <CarouselItem>
-                      <div class="aspect-[4/3] overflow-hidden">
-                        <OptimizedImage
-                          src={img}
-                          alt={cabin.name}
-                          class="h-full w-full object-cover"
-                          loading="lazy"
-                        />
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious class="left-2" />
-                <CarouselNext class="right-2" />
-              </Carousel>
-            </div>
-            <CardContent class="flex flex-1 flex-col justify-center gap-3 py-6 md:py-8">
-              <TypographyH3 class="mt-0!">{cabin.name}</TypographyH3>
-              {cabin.description && (
-                <TypographyP class="text-sm leading-relaxed text-muted-foreground">
-                  {cabin.description}
-                </TypographyP>
-              )}
-              <Price class="mt-auto pt-2">
-                <span class="text-lg font-bold text-brand-700">
-                  {cabin.price}
-                </span>
-                <span class="text-xs text-muted-foreground">
-                  / {uiStrings.common.people}
-                </span>
-              </Price>
-            </CardContent>
-          </div>
-        </Card>
-      ))
-    }
+    {cabins.map((cabin) => (
+      <CabinCard
+        cabin={cabin}
+        locale={locale}
+        durationLabels={durationLabels}
+        priceList={priceList}
+      />
+    ))}
   </div>
 </div>
