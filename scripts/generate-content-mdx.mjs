@@ -103,6 +103,10 @@ function generateMdx(contentType, contentDir, entry, locale) {
   const mdx = `---\n${yaml}---\n`;
 
   const filePath = join(dirPath, `${locale}.mdx`);
+  if (existsSync(filePath)) {
+    console.log(`  SKIP ${filePath.replace(process.cwd(), ".")} (exists)`);
+    return;
+  }
   writeFileSync(filePath, mdx, "utf-8");
   console.log(`  Created: ${filePath.replace(process.cwd(), ".")}`);
 }

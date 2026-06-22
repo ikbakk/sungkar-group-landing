@@ -1,0 +1,429 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "cms: create {{collection}} — {{slug}}"
+    update: "cms: update {{collection}} — {{slug}}"
+    delete: "cms: delete {{collection}} — {{slug}}"
+    uploadMedia: "cms: upload {{path}}"
+    deleteMedia: "cms: delete {{path}}"
+
+local_backend: true
+
+# Images are stored in src/assets/images
+# Paths in frontmatter are relative to this folder (e.g. "hero/hero-lombok.webp")
+media_folder: "src/assets/images"
+public_folder: ""
+
+locale: en
+
+collections:
+  # ============================================================
+  # BLOG POSTS
+  # ============================================================
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "src/content/blog"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    nested:
+      depth: 2
+      summary: "{{title}}"
+    identifier_field: "title"
+    summary: "{{title}} — {{publishDate}}"
+    fields:
+      - { name: "title", widget: "string", label: "Title" }
+      - { name: "description", widget: "text", label: "Description" }
+      - { name: "publishDate", widget: "datetime", label: "Publish Date", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - name: "tags"
+        widget: "list"
+        label: "Tags"
+        default: []
+        field: { widget: "string", label: "Tag" }
+      - { name: "readingTime", widget: "number", label: "Reading Time (min)", value_type: "int" }
+      - { name: "author", widget: "string", label: "Author", required: false }
+      - { name: "featuredImage", widget: "string", label: "Featured Image Path", required: false }
+      - name: "relatedDestinations"
+        widget: "list"
+        label: "Related Destinations"
+        required: false
+        default: []
+        field: { widget: "string", label: "Destination Slug" }
+      - name: "relatedPackages"
+        widget: "list"
+        label: "Related Packages"
+        required: false
+        default: []
+        field: { widget: "string", label: "Package Slug" }
+      - { name: "body", widget: "markdown", label: "Content" }
+    meta:
+      path:
+        widget: "string"
+        label: "Path"
+        index_file: "id"
+
+  # ============================================================
+  # TOUR PACKAGES
+  # ============================================================
+  - name: "tour-packages"
+    label: "Tour Packages"
+    label_singular: "Tour Package"
+    folder: "src/content/tourPackages"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    nested:
+      depth: 2
+      summary: "{{title}}"
+    identifier_field: "title"
+    summary: "{{title}} ({{region}})"
+    fields:
+      - { name: "title", widget: "string", label: "Title" }
+      - name: "region"
+        widget: "select"
+        label: "Region"
+        options:
+          - { label: "Lombok", value: "lombok" }
+          - { label: "Sumbawa", value: "sumbawa" }
+          - { label: "Labuan Bajo", value: "labuan-bajo" }
+          - { label: "Sailing Labuan Bajo", value: "sailing-labuan-bajo" }
+          - { label: "Lombok to Bajo", value: "lombok-to-bajo" }
+      - { name: "featured", widget: "boolean", label: "Featured", default: false, required: false }
+      - { name: "collectionSlug", widget: "string", label: "Collection Slug" }
+      - { name: "collectionTitle", widget: "string", label: "Collection Title" }
+      - { name: "category", widget: "string", label: "Category" }
+      - { name: "duration", widget: "string", label: "Duration (comma-separated)" }
+      - name: "durationLabels"
+        widget: "object"
+        label: "Duration Labels"
+        required: false
+        collapsed: true
+        fields:
+          - { name: "1D", widget: "string", label: "1 Day", required: false }
+          - { name: "2D1N", widget: "string", label: "2 Days 1 Night", required: false }
+          - { name: "3D2N", widget: "string", label: "3 Days 2 Nights", required: false }
+          - { name: "4D3N", widget: "string", label: "4 Days 3 Nights", required: false }
+      - name: "images"
+        widget: "list"
+        label: "Images"
+        default: []
+        field: { widget: "string", label: "Image Path" }
+      - { name: "summary", widget: "text", label: "Summary" }
+      - name: "highlights"
+        widget: "list"
+        label: "Highlights"
+        default: []
+        field: { widget: "string", label: "Highlight" }
+      - name: "itinerary"
+        widget: "list"
+        label: "Itinerary"
+        default: []
+        field: { widget: "string", label: "Activity" }
+      - name: "includes"
+        widget: "list"
+        label: "Includes"
+        default: []
+        field: { widget: "string", label: "Item" }
+      - name: "excludes"
+        widget: "list"
+        label: "Excludes"
+        default: []
+        field: { widget: "string", label: "Item" }
+      - { name: "boatName", widget: "string", label: "Boat Name", required: false }
+      - { name: "boatType", widget: "string", label: "Boat Type", required: false }
+      - { name: "boatCapacity", widget: "number", label: "Boat Capacity", required: false, value_type: "int" }
+      - name: "boatSpecs"
+        widget: "list"
+        label: "Boat Specifications"
+        required: false
+        collapsed: true
+        fields:
+          - { name: "label", widget: "string", label: "Label" }
+          - { name: "value", widget: "string", label: "Value" }
+      - name: "cabins"
+        widget: "list"
+        label: "Cabins"
+        required: false
+        collapsed: true
+        fields:
+          - { name: "name", widget: "string", label: "Cabin Name" }
+          - { name: "description", widget: "text", label: "Description", required: false }
+          - { name: "capacity", widget: "string", label: "Capacity", required: false }
+          - name: "images"
+            widget: "list"
+            label: "Cabin Images"
+            required: false
+            default: []
+            field: { widget: "string", label: "Image Path" }
+          - name: "prices"
+            widget: "object"
+            label: "Prices"
+            required: false
+            collapsed: true
+            fields:
+              - { name: "1D", widget: "string", label: "1 Day", required: false }
+              - { name: "2D1N", widget: "string", label: "2D1N", required: false }
+              - { name: "3D2N", widget: "string", label: "3D2N", required: false }
+              - { name: "4D3N", widget: "string", label: "4D3N", required: false }
+      - name: "priceList"
+        widget: "object"
+        label: "Price List"
+        required: false
+        collapsed: true
+        fields:
+          - name: "1D"
+            widget: "object"
+            label: "1 Day"
+            required: false
+            collapsed: true
+            fields:
+              - { name: "1-10", widget: "number", label: "Base Price (1-10 pax)", required: false, value_type: "int" }
+              - { name: "addPerPax", widget: "number", label: "Additional Per Pax", required: false, value_type: "int" }
+              - { name: "maxPax", widget: "number", label: "Max Pax", required: false, value_type: "int" }
+          - name: "2D1N"
+            widget: "object"
+            label: "2 Days 1 Night"
+            required: false
+            collapsed: true
+            fields:
+              - { name: "1-10", widget: "number", label: "Base Price (1-10 pax)", required: false, value_type: "int" }
+              - { name: "addPerPax", widget: "number", label: "Additional Per Pax", required: false, value_type: "int" }
+              - { name: "maxPax", widget: "number", label: "Max Pax", required: false, value_type: "int" }
+          - name: "3D2N"
+            widget: "object"
+            label: "3 Days 2 Nights"
+            required: false
+            collapsed: true
+            fields:
+              - { name: "1-10", widget: "number", label: "Base Price (1-10 pax)", required: false, value_type: "int" }
+              - { name: "addPerPax", widget: "number", label: "Additional Per Pax", required: false, value_type: "int" }
+              - { name: "maxPax", widget: "number", label: "Max Pax", required: false, value_type: "int" }
+          - name: "4D3N"
+            widget: "object"
+            label: "4 Days 3 Nights"
+            required: false
+            collapsed: true
+            fields:
+              - { name: "1-10", widget: "number", label: "Base Price (1-10 pax)", required: false, value_type: "int" }
+              - { name: "addPerPax", widget: "number", label: "Additional Per Pax", required: false, value_type: "int" }
+              - { name: "maxPax", widget: "number", label: "Max Pax", required: false, value_type: "int" }
+      - name: "additionalServices"
+        widget: "list"
+        label: "Additional Services"
+        required: false
+        default: []
+        field: { widget: "string", label: "Service" }
+      - name: "dontForgetToBring"
+        widget: "list"
+        label: "Don't Forget To Bring"
+        required: false
+        default: []
+        field: { widget: "string", label: "Item" }
+      - name: "termsAndConditions"
+        widget: "list"
+        label: "Terms and Conditions"
+        required: false
+        default: []
+        field: { widget: "string", label: "Term" }
+    meta:
+      path:
+        widget: "string"
+        label: "Path"
+        index_file: "id"
+
+  # ============================================================
+  # GUIDES
+  # ============================================================
+  - name: "guides"
+    label: "Guides"
+    label_singular: "Guide"
+    folder: "src/content/guides"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    nested:
+      depth: 2
+      summary: "{{title}}"
+    identifier_field: "title"
+    summary: "{{title}} — {{region}}"
+    fields:
+      - { name: "title", widget: "string", label: "Title" }
+      - { name: "description", widget: "text", label: "Description" }
+      - name: "region"
+        widget: "select"
+        label: "Region"
+        options:
+          - { label: "Lombok", value: "lombok" }
+          - { label: "Sumbawa", value: "sumbawa" }
+          - { label: "Labuan Bajo", value: "labuan-bajo" }
+          - { label: "General", value: "general" }
+      - { name: "readingTime", widget: "number", label: "Reading Time (min)", value_type: "int" }
+      - name: "keyTakeaways"
+        widget: "list"
+        label: "Key Takeaways"
+        default: []
+        field: { widget: "string", label: "Takeaway" }
+      - name: "bestFor"
+        widget: "list"
+        label: "Best For"
+        default: []
+        field: { widget: "string", label: "Best For" }
+      - name: "relatedDestinations"
+        widget: "list"
+        label: "Related Destinations"
+        required: false
+        default: []
+        field: { widget: "string", label: "Destination Slug" }
+      - name: "relatedPackages"
+        widget: "list"
+        label: "Related Packages"
+        required: false
+        default: []
+        field: { widget: "string", label: "Package Slug" }
+      - { name: "publishDate", widget: "string", label: "Publish Date (YYYY-MM-DD)" }
+      - { name: "featuredImage", widget: "string", label: "Featured Image Path", required: false }
+      - { name: "body", widget: "markdown", label: "Content" }
+    meta:
+      path:
+        widget: "string"
+        label: "Path"
+        index_file: "id"
+
+  # ============================================================
+  # ACCOMMODATIONS
+  # ============================================================
+  - name: "accommodations"
+    label: "Accommodations"
+    label_singular: "Accommodation"
+    folder: "src/content/accommodations"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    nested:
+      depth: 2
+      summary: "{{name}}"
+    identifier_field: "name"
+    summary: "{{name}} — {{region}}"
+    fields:
+      - { name: "name", widget: "string", label: "Name" }
+      - name: "region"
+        widget: "select"
+        label: "Region"
+        options:
+          - { label: "Lombok", value: "lombok" }
+          - { label: "Sumbawa", value: "sumbawa" }
+          - { label: "Labuan Bajo", value: "labuan-bajo" }
+          - { label: "Sailing Labuan Bajo", value: "sailing-labuan-bajo" }
+          - { label: "Lombok to Bajo", value: "lombok-to-bajo" }
+      - name: "perks"
+        widget: "list"
+        label: "Perks"
+        default: []
+        field: { widget: "string", label: "Perk" }
+      - name: "regionalHighlights"
+        widget: "list"
+        label: "Regional Highlights"
+        default: []
+        field: { widget: "string", label: "Highlight" }
+      - { name: "description", widget: "text", label: "Description" }
+      - { name: "image", widget: "string", label: "Image Path" }
+    meta:
+      path:
+        widget: "string"
+        label: "Path"
+        index_file: "id"
+
+  # ============================================================
+  # CAR RENTALS
+  # ============================================================
+  - name: "car-rental"
+    label: "Car Rentals"
+    label_singular: "Car Rental"
+    folder: "src/content/car-rental"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    nested:
+      depth: 2
+      summary: "{{name}}"
+    identifier_field: "name"
+    summary: "{{name}} — {{pricePerDay}}"
+    fields:
+      - { name: "name", widget: "string", label: "Vehicle Name" }
+      - name: "region"
+        widget: "select"
+        label: "Region"
+        options:
+          - { label: "Lombok", value: "lombok" }
+          - { label: "Sumbawa", value: "sumbawa" }
+          - { label: "Labuan Bajo", value: "labuan-bajo" }
+          - { label: "Sailing Labuan Bajo", value: "sailing-labuan-bajo" }
+          - { label: "Lombok to Bajo", value: "lombok-to-bajo" }
+      - { name: "pricePerDay", widget: "string", label: "Price Per Day" }
+      - { name: "seats", widget: "number", label: "Seats", value_type: "int" }
+      - name: "transmission"
+        widget: "select"
+        label: "Transmission"
+        options: ["Manual", "Automatic"]
+      - name: "features"
+        widget: "list"
+        label: "Features"
+        default: []
+        field: { widget: "string", label: "Feature" }
+      - name: "bestFor"
+        widget: "list"
+        label: "Best For"
+        default: []
+        field: { widget: "string", label: "Best For" }
+      - { name: "description", widget: "text", label: "Description" }
+      - { name: "imageTop", widget: "string", label: "Image (Top)" }
+      - { name: "imageBottom", widget: "string", label: "Image (Bottom)" }
+    meta:
+      path:
+        widget: "string"
+        label: "Path"
+        index_file: "id"
+
+  # ============================================================
+  # DESTINATIONS
+  # ============================================================
+  - name: "destinations"
+    label: "Destinations"
+    label_singular: "Destination"
+    folder: "src/content/destinations"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    nested:
+      depth: 2
+      summary: "{{title}}"
+    identifier_field: "title"
+    summary: "{{title}} — {{region}}"
+    fields:
+      - { name: "title", widget: "string", label: "Title" }
+      - { name: "region", widget: "string", label: "Region" }
+      - { name: "image", widget: "string", label: "Main Image Path" }
+      - name: "gallery"
+        widget: "list"
+        label: "Gallery Images"
+        default: []
+        field: { widget: "string", label: "Image Path" }
+      - { name: "summary", widget: "text", label: "Summary" }
+      - name: "thingsToDo"
+        widget: "list"
+        label: "Things To Do"
+        default: []
+        field: { widget: "string", label: "Activity" }
+      - name: "packages"
+        widget: "list"
+        label: "Related Packages"
+        required: false
+        default: []
+        field: { widget: "string", label: "Package Slug" }
+    meta:
+      path:
+        widget: "string"
+        label: "Path"
+        index_file: "id"
