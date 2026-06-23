@@ -51,6 +51,26 @@ const formClass = isSidebar ? "grid gap-4" : "grid gap-4 md:grid-cols-2";
 const btnClass = isSidebar
   ? "inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)]"
   : "inline-flex items-center justify-center rounded-md bg-brand-900 text-white text-sm px-8 h-11 font-medium whitespace-nowrap transition-all hover:bg-brand-800";
+
+const messageConfig = {
+  greeting: uiStrings.contact.whatsappGreeting,
+  sewaIntro: uiStrings.contact.whatsappSewaIntro,
+  paketIntro: uiStrings.contact.whatsappPaketIntro,
+  location: uiStrings.contact.whatsappLocation,
+  followUp: uiStrings.contact.whatsappFollowUp,
+  labels: {
+    name: uiStrings.contact.formFieldName,
+    travelDate:
+      context === "sewa-mobil"
+        ? uiStrings.contact.formFieldTravelDateSewa
+        : uiStrings.contact.formFieldTravelDate,
+    duration: uiStrings.contact.formFieldDuration,
+    guests: uiStrings.contact.formFieldGuests,
+    passengers: uiStrings.contact.formFieldPassengers,
+    rentalReason: uiStrings.contact.formFieldRentalReason,
+    message: uiStrings.contact.formFieldMessage,
+  },
+};
 ---
 
 <Card class={cardClass}>
@@ -132,34 +152,73 @@ const btnClass = isSidebar
 
 <script
   is:inline
-  define:vars={{ formId, whatsappNumber, context, itemName, region, locale }}
+  define:vars={{
+    formId,
+    whatsappNumber,
+    context,
+    itemName,
+    region,
+    messageConfig,
+  }}
 >
-  import { buildWhatsappMessage } from "@/lib/contact-data";
+  // @ts-nocheck
+  var form = document.getElementById(formId);
+  var submitButton = document.getElementById("btn-submit-" + formId);
 
-  document
-    .getElementById("btn-submit-" + formId)
-    .addEventListener("click", function () {
-      var fieldIds = [
-        "name",
-        "travelDate",
-        "duration",
-        "passengers",
-        "guests",
-        "rentalReason",
-        "message",
-      ];
+  function buildMessage(values) {
+    var parts = [messageConfig.greeting];
 
-      var values = {};
-      for (var i = 0; i < fieldIds.length; i++) {
-        var el = document.querySelector('[name="' + fieldIds[i] + '"]');
-        if (el) {
-          values[fieldIds[i]] = el.value || "";
-        }
-      }
+    if (itemName) {
+      parts.push("");
+      parts.push(
+        (context === "sewa-mobil"
+          ? messageConfig.sewaIntro
+          : messageConfig.paketIntro
+        ).replace("{item}", itemName),
+      );
+    }
 
-      var msg = buildWhatsappMessage(context, values, itemName, region, locale);
-      var url =
-        "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(msg);
-      window.open(url, "_blank");
+    if (region) {
+      parts.push(messageConfig.location.replace("{region}", region));
+    }
+
+    parts.push("");
+
+    Object.keys(values).forEach(function (key) {
+      if (!values[key]) return;
+      parts.push((messageConfig.labels[key] || key) + ": " + values[key]);
     });
+
+    parts.push("");
+    parts.push(messageConfig.followUp);
+
+    return parts.join("\n");
+  }
+
+  submitButton?.addEventListener("click", function () {
+    if (!form || !form.reportValidity()) return;
+
+    var fieldIds = [
+      "name",
+      "travelDate",
+      "duration",
+      "passengers",
+      "guests",
+      "rentalReason",
+      "message",
+    ];
+
+    var values = {};
+    for (var i = 0; i < fieldIds.length; i++) {
+      var el = form.querySelector('[name="' + fieldIds[i] + '"]');
+      if (el) {
+        values[fieldIds[i]] = el.value || "";
+      }
+    }
+
+    var msg = buildMessage(values);
+    var url =
+      "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(msg);
+    window.open(url, "_blank");
+  });
 </script>
