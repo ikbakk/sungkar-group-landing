@@ -54,10 +54,41 @@ const collections = Object.values(
   }, {}),
 ).sort((a, b) => a.title.localeCompare(b.title));
 
-const regionDescription = uiStrings.paketWisata.chooseCategory.replace(
-  "{region}",
-  REGION_LABEL[r],
-);
+const REGION_SEO: Record<Region, { title: string; description: string }> = {
+  lombok: {
+    title: "Paket Wisata Lombok",
+    description:
+      "Pilih paket wisata Lombok untuk pantai Mandalika, Gili Trawangan, Gili Nanggu, desa budaya Sasak, air terjun, dan rute private tour fleksibel.",
+  },
+  sumbawa: {
+    title: "Paket Wisata Sumbawa",
+    description:
+      "Temukan paket wisata Sumbawa untuk whale shark Teluk Saleh, Moyo, Kenawa, Sangiang, dan perjalanan laut dari Lombok dengan open trip atau private trip.",
+  },
+  "labuan-bajo": {
+    title: "Paket Wisata Labuan Bajo",
+    description:
+      "Jelajahi paket wisata Labuan Bajo untuk rute darat Flores, city tour, bukit, pantai, dan itinerary nyaman sebelum atau sesudah sailing Komodo.",
+  },
+  "sailing-labuan-bajo": {
+    title: "Sailing Labuan Bajo",
+    description:
+      "Bandingkan paket sailing Labuan Bajo ke Komodo, Padar, Pink Beach, Manta Point, dan Taka Makassar dengan pilihan open trip atau private phinisi.",
+  },
+  "lombok-to-bajo": {
+    title: "Paket Lombok ke Labuan Bajo",
+    description:
+      "Rencanakan perjalanan laut dari Lombok ke Labuan Bajo melewati pulau-pulau eksotis, snorkeling, dan destinasi bahari terbaik Nusa Tenggara.",
+  },
+  "lombok-bajo": {
+    title: "Paket Lombok - Labuan Bajo",
+    description:
+      "Pilih paket lintas pulau Lombok dan Labuan Bajo dengan opsi keberangkatan dua arah, kapal phinisi, open trip, dan private charter.",
+  },
+};
+
+const regionSeo = REGION_SEO[r];
+const regionDescription = regionSeo.description;
 
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: "/" },
@@ -67,7 +98,7 @@ const breadcrumbs = [
 ---
 
 <MainLayout
-  title={`${uiStrings.paketWisata.packagesFor.replace("{region}", REGION_LABEL[r])}`}
+  title={regionSeo.title}
   description={regionDescription}
   canonical={`/paket-wisata/${r}`}
   image={regionPackages[0]?.images[0]}
@@ -75,10 +106,7 @@ const breadcrumbs = [
 >
   <PageHeader
     eyebrow={uiStrings.paketWisata.eyebrow}
-    title={uiStrings.paketWisata.packagesFor.replace(
-      "{region}",
-      REGION_LABEL[r],
-    )}
+    title={regionSeo.title}
     description={regionDescription}
     breadcrumbs={breadcrumbs}
   />

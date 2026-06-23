@@ -47,6 +47,14 @@ const collectionPackages = packages.filter(
 );
 
 const collectionTitle = collectionPackages[0]?.collectionTitle ?? "";
+const regionTitle = packagePageContent.regions[r].title;
+const normalizedCollectionTitle = collectionTitle.toLowerCase();
+const collectionSeoTitle = normalizedCollectionTitle.includes(
+  regionTitle.toLowerCase(),
+)
+  ? collectionTitle
+  : `${collectionTitle} ${regionTitle}`;
+const collectionDescription = packagePageContent.regions[r].description;
 
 const breadcrumbs = [
   { label: uiStrings.breadcrumb.home, href: `/${locale}` },
@@ -60,15 +68,15 @@ const breadcrumbs = [
 ---
 
 <MainLayout
-  title={collectionTitle}
-  description={packagePageContent.regions[r].description}
+  title={collectionSeoTitle}
+  description={collectionDescription}
   canonical={`/${locale}/tour-packages/${r}/${collection}`}
   locale={locale}
 >
   <PageHeader
     eyebrow={packagePageContent.regions[r].title}
     title={collectionTitle}
-    description={packagePageContent.regions[r].description}
+    description={collectionDescription}
     breadcrumbs={breadcrumbs}
   />
 
