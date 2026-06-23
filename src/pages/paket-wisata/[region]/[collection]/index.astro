@@ -81,6 +81,7 @@ const breadcrumbs = [
             tour={tour}
             locale={locale}
             loading={i < 3 ? "eager" : "lazy"}
+            fetchpriority={i === 0 ? "high" : "auto"}
           />
         ))
       }
