@@ -4,7 +4,7 @@
   "pricePerDay": "Rp 1.500.000",
   "seats": 7,
   "transmission": "Automatic",
-  "imageTop": "hero/hero-lombok.webp",
-  "imageBottom": "hero/hero-lombok.webp",
+  "imageTop": "vehicles/toyota-innova-zenix.webp",
+  "imageBottom": "vehicles/toyota-innova-zenix.webp",
   "_type": "carRental"
 }

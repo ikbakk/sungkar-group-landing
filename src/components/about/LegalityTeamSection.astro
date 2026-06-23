@@ -1,0 +1,269 @@
+---
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
+import { Card, CardContent } from "@/components/ui/card";
+import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
+import { LEGALITY } from "@/assets/images";
+
+interface Props {
+  locale?: string;
+}
+
+type LocaleCopy = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  verifiedLabel: string;
+  teamTitle: string;
+  teamDescription: string;
+  teamPlaceholder: string;
+  documents: Array<{
+    title: string;
+    subtitle: string;
+    description: string;
+    image: (typeof LEGALITY)[keyof typeof LEGALITY];
+  }>;
+};
+
+const copyByLocale: Record<string, LocaleCopy> = {
+  id: {
+    eyebrow: "Legalitas Perusahaan",
+    title: "Beroperasi resmi sebagai PT Sungkar Group Indonesia",
+    description:
+      "Dokumen legalitas ini menjadi dasar operasional layanan tour, travel, transportasi, dan kemitraan Sungkar Group Indonesia.",
+    verifiedLabel: "Dokumen resmi",
+    teamTitle: "Tim operasional Sungkar Group",
+    teamDescription:
+      "Area ini disiapkan untuk foto grup tim, dokumentasi lapangan, atau momen bersama kru operasional — bukan foto personal individu.",
+    teamPlaceholder: "Tempat foto grup tim",
+    documents: [
+      {
+        title: "NIB",
+        subtitle: "Nomor Induk Berusaha",
+        description:
+          "Identitas resmi pelaku usaha yang diterbitkan melalui sistem perizinan berusaha berbasis risiko Republik Indonesia.",
+        image: LEGALITY.nib,
+      },
+      {
+        title: "SK Kemenkumham",
+        subtitle: "Surat Keputusan Pengesahan Badan Hukum",
+        description:
+          "Pengesahan pendirian badan hukum Perseroan Terbatas PT Sungkar Group Indonesia oleh Kementerian Hukum dan HAM RI.",
+        image: LEGALITY.sk,
+      },
+    ],
+  },
+  en: {
+    eyebrow: "Company Legality",
+    title: "Officially operating as PT Sungkar Group Indonesia",
+    description:
+      "These documents support Sungkar Group Indonesia's tour, travel, transportation, and partnership operations.",
+    verifiedLabel: "Official document",
+    teamTitle: "Sungkar Group operations team",
+    teamDescription:
+      "This area is prepared for a group team photo, field documentation, or shared crew moments — not individual personal portraits.",
+    teamPlaceholder: "Team group photo spot",
+    documents: [
+      {
+        title: "NIB",
+        subtitle: "Business Identification Number",
+        description:
+          "The official business identity issued through Indonesia's risk-based business licensing system.",
+        image: LEGALITY.nib,
+      },
+      {
+        title: "Kemenkumham Decree",
+        subtitle: "Legal Entity Approval Decree",
+        description:
+          "Approval of PT Sungkar Group Indonesia as a limited liability legal entity by Indonesia's Ministry of Law and Human Rights.",
+        image: LEGALITY.sk,
+      },
+    ],
+  },
+  ms: {
+    eyebrow: "Legaliti Syarikat",
+    title: "Beroperasi secara rasmi sebagai PT Sungkar Group Indonesia",
+    description:
+      "Dokumen ini menyokong operasi tour, travel, pengangkutan, dan kerjasama Sungkar Group Indonesia.",
+    verifiedLabel: "Dokumen rasmi",
+    teamTitle: "Pasukan operasi Sungkar Group",
+    teamDescription:
+      "Ruang ini disediakan untuk foto kumpulan pasukan, dokumentasi lapangan, atau momen bersama kru operasi — bukan potret peribadi individu.",
+    teamPlaceholder: "Ruang foto kumpulan pasukan",
+    documents: [
+      {
+        title: "NIB",
+        subtitle: "Nombor Induk Berusaha",
+        description:
+          "Identiti rasmi pelaku usaha yang diterbitkan melalui sistem perizinan berusaha berasaskan risiko Republik Indonesia.",
+        image: LEGALITY.nib,
+      },
+      {
+        title: "SK Kemenkumham",
+        subtitle: "Surat Keputusan Pengesahan Badan Hukum",
+        description:
+          "Pengesahan PT Sungkar Group Indonesia sebagai badan hukum perseroan terbatas oleh Kementerian Hukum dan HAM RI.",
+        image: LEGALITY.sk,
+      },
+    ],
+  },
+  zh: {
+    eyebrow: "公司合法资质",
+    title: "PT Sungkar Group Indonesia 正式合法运营",
+    description:
+      "这些文件支持 Sungkar Group Indonesia 的旅游、交通和合作业务运营。",
+    verifiedLabel: "官方文件",
+    teamTitle: "Sungkar Group 运营团队",
+    teamDescription:
+      "此区域预留用于团队合影、现场记录或运营团队集体照片，而不是个人头像。",
+    teamPlaceholder: "团队合影位置",
+    documents: [
+      {
+        title: "NIB",
+        subtitle: "企业识别号码",
+        description:
+          "通过印度尼西亚风险导向营业许可系统签发的官方企业身份文件。",
+        image: LEGALITY.nib,
+      },
+      {
+        title: "Kemenkumham 批准书",
+        subtitle: "法人实体批准决定书",
+        description:
+          "印度尼西亚法律与人权部批准 PT Sungkar Group Indonesia 作为有限责任公司法人实体。",
+        image: LEGALITY.sk,
+      },
+    ],
+  },
+  ar: {
+    eyebrow: "قانونية الشركة",
+    title: "تعمل رسميًا باسم PT Sungkar Group Indonesia",
+    description:
+      "تدعم هذه الوثائق تشغيل خدمات الجولات والسفر والنقل والشراكات لدى Sungkar Group Indonesia.",
+    verifiedLabel: "وثيقة رسمية",
+    teamTitle: "فريق تشغيل Sungkar Group",
+    teamDescription:
+      "هذه المساحة مخصصة لصورة جماعية للفريق أو توثيق ميداني أو لحظات مشتركة للطاقم، وليست صورًا شخصية فردية.",
+    teamPlaceholder: "مكان صورة جماعية للفريق",
+    documents: [
+      {
+        title: "NIB",
+        subtitle: "رقم تعريف الأعمال",
+        description:
+          "هوية تجارية رسمية صادرة عبر نظام الترخيص التجاري القائم على المخاطر في جمهورية إندونيسيا.",
+        image: LEGALITY.nib,
+      },
+      {
+        title: "قرار Kemenkumham",
+        subtitle: "قرار اعتماد الكيان القانوني",
+        description:
+          "اعتماد PT Sungkar Group Indonesia ككيان قانوني لشركة ذات مسؤولية محدودة من وزارة القانون وحقوق الإنسان الإندونيسية.",
+        image: LEGALITY.sk,
+      },
+    ],
+  },
+};
+
+const { locale = "id" } = Astro.props;
+const copy = copyByLocale[locale] ?? copyByLocale.en;
+---
+
+<SectionContainer background="bg-background">
+  <div class="space-y-10">
+    <div class="mx-auto max-w-3xl text-center">
+      <p
+        class="text-sm font-semibold uppercase tracking-[0.28em] text-brand-700"
+      >
+        {copy.eyebrow}
+      </p>
+      <TypographyH2
+        size="lg"
+        class="mt-3 font-heading font-normal text-foreground"
+      >
+        {copy.title}
+      </TypographyH2>
+      <p class="mt-4 text-sm leading-7 text-text-muted md:text-base">
+        {copy.description}
+      </p>
+    </div>
+
+    <div class="grid gap-6 lg:grid-cols-2">
+      {
+        copy.documents.map((document) => (
+          <Card class="overflow-hidden border-border bg-white shadow-[0_20px_60px_rgba(17,24,39,0.07)]">
+            <div class="relative bg-surface-soft p-4">
+              <div class="absolute left-4 top-4 z-10 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-brand-800 shadow-sm backdrop-blur">
+                {copy.verifiedLabel}
+              </div>
+              <figure
+                class="group block w-full overflow-hidden rounded-xl border border-border bg-white"
+                aria-label={`${copy.verifiedLabel}: ${document.subtitle}`}
+              >
+                <OptimizedImage
+                  src={document.image}
+                  alt={`${document.title} - ${document.subtitle}`}
+                  class="mx-auto max-h-[28rem] w-full object-contain transition-transform duration-500 group-hover:scale-[1.015]"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+            <CardContent class="space-y-3 p-6">
+              <div class="flex flex-wrap items-baseline gap-3">
+                <TypographyH3 class="font-heading font-normal text-foreground">
+                  {document.title}
+                </TypographyH3>
+                <p class="text-sm font-medium text-brand-700">
+                  {document.subtitle}
+                </p>
+              </div>
+              <p class="text-sm leading-7 text-text-muted">
+                {document.description}
+              </p>
+            </CardContent>
+          </Card>
+        ))
+      }
+    </div>
+
+    <Card class="overflow-hidden border-border bg-brand-950 text-white">
+      <div class="grid lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="relative min-h-[18rem] overflow-hidden bg-brand-900">
+          <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(255,255,255,0.22),transparent_28%),linear-gradient(135deg,rgba(20,83,45,0.75),rgba(15,23,42,0.95))]"
+          >
+          </div>
+          <div
+            class="absolute inset-x-8 top-8 h-28 rounded-full border border-white/15"
+          >
+          </div>
+          <div
+            class="absolute bottom-10 left-1/2 flex -translate-x-1/2 items-end gap-3"
+          >
+            <span class="h-20 w-14 rounded-t-full bg-white/20"></span>
+            <span class="h-28 w-16 rounded-t-full bg-white/30"></span>
+            <span class="h-24 w-14 rounded-t-full bg-white/20"></span>
+            <span class="h-16 w-12 rounded-t-full bg-white/15"></span>
+          </div>
+          <div
+            class="absolute inset-x-6 bottom-6 rounded-xl border border-dashed border-white/35 bg-white/10 px-4 py-3 text-center text-sm font-medium text-white backdrop-blur"
+          >
+            {copy.teamPlaceholder}
+          </div>
+        </div>
+
+        <CardContent class="flex flex-col justify-center gap-4 p-8 md:p-10">
+          <p
+            class="text-sm font-semibold uppercase tracking-[0.26em] text-brand-200"
+          >
+            Team Photo
+          </p>
+          <TypographyH3 size="lg" class="font-heading font-normal text-white">
+            {copy.teamTitle}
+          </TypographyH3>
+          <p class="max-w-2xl text-sm leading-7 text-brand-100">
+            {copy.teamDescription}
+          </p>
+        </CardContent>
+      </div>
+    </Card>
+  </div>
+</SectionContainer>

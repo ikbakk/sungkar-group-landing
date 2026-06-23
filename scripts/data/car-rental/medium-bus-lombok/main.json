@@ -4,7 +4,7 @@
   "pricePerDay": "Rp 1.500.000",
   "seats": 30,
   "transmission": "Manual",
-  "imageTop": "hero/hero-lombok.webp",
-  "imageBottom": "hero/hero-lombok.webp",
+  "imageTop": "vehicles/bus-1.webp",
+  "imageBottom": "vehicles/bus-2.webp",
   "_type": "carRental"
 }

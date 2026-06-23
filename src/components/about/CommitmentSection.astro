@@ -1,6 +1,7 @@
 ---
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { TypographyH2 } from "@/components/ui/typography";
 
 interface Props {
   commitment: { title: string; description: string };
@@ -12,9 +13,9 @@ const { commitment } = Astro.props;
 <SectionContainer background="bg-background">
   <Card class="border-border bg-brand-900 text-white">
     <CardHeader>
-      <CardTitle class="text-3xl leading-tight text-white">
+      <TypographyH2 class="font-heading font-normal text-white">
         {commitment.title}
-      </CardTitle>
+      </TypographyH2>
     </CardHeader>
 
     <CardContent>

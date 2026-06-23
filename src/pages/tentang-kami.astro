@@ -6,11 +6,11 @@ import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 
 import StorySection from "@/components/about/StorySection.astro";
-import VisionMissionSection from "@/components/about/VisionMissionSection.astro";
 import ServicesSection from "@/components/about/ServicesSection.astro";
 import StrengthsSection from "@/components/about/StrengthsSection.astro";
 import ValuesSection from "@/components/about/ValuesSection.astro";
 import CommitmentSection from "@/components/about/CommitmentSection.astro";
+import LegalityTeamSection from "@/components/about/LegalityTeamSection.astro";
 import CtaSection from "@/components/about/CtaSection.astro";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
@@ -48,13 +48,10 @@ const pageDescription = aboutContent.hero.description;
     ]}
   />
   <StorySection story={aboutContent.story} />
-  <VisionMissionSection
-    vision={aboutContent.vision}
-    mission={aboutContent.mission}
-  />
   <ServicesSection services={aboutContent.services} />
   <StrengthsSection strengths={aboutContent.strengths} />
   <ValuesSection values={aboutContent.values} />
+  <LegalityTeamSection locale={locale} />
   <CommitmentSection commitment={aboutContent.commitment} />
   <FaqSection
     eyebrow={uiStrings.faq.sectionTitle}

@@ -3,5 +3,9 @@
   "region": "lombok",
   "featured": false,
   "collectionSlug": "1-hari",
-  "images": ["hero/hero-lombok.webp", "destinations/rinjani.webp"]
+  "images": [
+    "gallery/tiu-kelep-waterfall.webp",
+    "gallery/g-waterfall-1.webp",
+    "destinations/rinjani.webp"
+  ]
 }

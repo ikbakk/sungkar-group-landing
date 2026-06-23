@@ -4,9 +4,12 @@
   "featured": true,
   "collectionSlug": "3-hari-2-malam",
   "images": [
-    "hero/hero-lombok.webp",
-    "gallery/tour-snorkeling.webp",
     "destinations/gili.webp",
-    "gallery/gili-meno.webp"
+    "gallery/gili-meno.webp",
+    "gallery/tour-snorkeling.webp",
+    "gallery/kuta-mandalika-aerial.webp",
+    "gallery/g-merese-1.webp",
+    "gallery/sasak-village.webp",
+    "gallery/sukarara-village.webp"
   ]
 }

@@ -4,7 +4,7 @@
   "pricePerDay": "Rp 1.500.000",
   "seats": 7,
   "transmission": "Automatic",
-  "imageTop": "hero/hero-lombok.webp",
-  "imageBottom": "hero/hero-lombok.webp",
+  "imageTop": "vehicles/mitsubishi-pajero-sport.webp",
+  "imageBottom": "vehicles/mitsubishi-pajero-sport.webp",
   "_type": "carRental"
 }

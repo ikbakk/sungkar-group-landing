@@ -4,7 +4,7 @@
   "pricePerDay": "Rp 3.500.000",
   "seats": 6,
   "transmission": "Automatic",
-  "imageTop": "hero/hero-lombok.webp",
-  "imageBottom": "hero/hero-lombok.webp",
+  "imageTop": "vehicles/toyota-alphard.webp",
+  "imageBottom": "vehicles/toyota-alphard.webp",
   "_type": "carRental"
 }

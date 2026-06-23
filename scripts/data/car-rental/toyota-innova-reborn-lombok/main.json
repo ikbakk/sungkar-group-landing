@@ -4,7 +4,7 @@
   "pricePerDay": "Rp 800.000",
   "seats": 7,
   "transmission": "Manual",
-  "imageTop": "hero/hero-lombok.webp",
-  "imageBottom": "hero/hero-lombok.webp",
+  "imageTop": "vehicles/toyota-innova-reborn.webp",
+  "imageBottom": "vehicles/toyota-innova-reborn-diesel.webp",
   "_type": "carRental"
 }

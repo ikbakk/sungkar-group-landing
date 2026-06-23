@@ -1,6 +1,7 @@
 ---
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import { Card, CardContent, CardTitle, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { TypographyH2 } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 
 interface Props {
@@ -17,9 +18,9 @@ const { cta } = Astro.props;
 <SectionContainer background="bg-background">
   <Card class="border-border bg-white">
     <CardHeader>
-      <CardTitle class="text-3xl leading-tight">
+      <TypographyH2 class="font-heading font-normal text-foreground">
         {cta.title}
-      </CardTitle>
+      </TypographyH2>
     </CardHeader>
     <CardContent
       class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between"
