@@ -29,6 +29,7 @@ type EntryData = {
   cabins?: {
     name: string;
     description?: string;
+    capacity?: string;
     prices: Record<string, string>;
     images: string[];
   }[];

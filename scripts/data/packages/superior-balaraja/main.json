@@ -69,7 +69,7 @@
   "cabins": [
     {
       "name": "Share Cabin 1 (Main Deck)",
-      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/balaraja/cabins/share-toilet-1/569-sve04960-hdr.webp",
@@ -84,7 +84,7 @@
     },
     {
       "name": "Share Cabin 2 (Main Deck)",
-      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/balaraja/cabins/share-toilet-2/571-sve05006-hdr.webp",
@@ -99,7 +99,7 @@
     },
     {
       "name": "Share Cabin 3 (Main Deck)",
-      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/balaraja/cabins/3-share-cabin-3-4x-single-bunk-bed/549-sve04948-hdr.webp",
@@ -114,7 +114,7 @@
     },
     {
       "name": "Share Cabin 4 (Main Deck)",
-      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/balaraja/cabins/4-share-cabin-4-4x-single-bunk-bed/551-sve04991-hdr.webp",

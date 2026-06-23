@@ -1,10 +1,12 @@
 ---
-import { TypographyH3, TypographyP } from "@/components/ui/typography";
+import { TypographyH3 } from "@/components/ui/typography";
+import { Badge } from "@/components/ui/badge";
 import type { Cabin } from "@/lib/content/tourPackages/types";
 import { t } from "@/lib/i18n";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
-import { Card, CardContent } from "@/components/ui/card";
-import { Price } from "@/components/ui/price";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Price, PriceUnit } from "@/components/ui/price";
+import { Icon } from "@/components/ui/icon";
 import {
   Carousel,
   CarouselContent,
@@ -12,133 +14,234 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 interface Props {
   cabin: Cabin;
   locale?: string;
   durationLabels?: Record<string, string>;
   priceList?: Record<string, Record<string, number>>;
+  showPrice?: boolean;
 }
 
-const { cabin, locale = "id", durationLabels, priceList } = Astro.props;
+const { cabin, locale = "id", priceList, showPrice = true } = Astro.props;
 const uiStrings = t(locale);
 
-const durationKeys = durationLabels ? Object.keys(durationLabels) : [];
-const multiDuration = durationKeys.length > 1;
-const firstDurationKey = durationKeys[0] ?? "default";
+// --- description parts: split into badges straight from the data ---
+// e.g. "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang." -> ["Queen Bed", "kamar mandi pribadi", "AC", "berada di dek utama", "kapasitas 1-2 orang"]
+const descParts =
+  cabin.description
+    ?.split(",")
+    .map((s) => s.trim().replace(/\.$/, ""))
+    .filter(Boolean) ?? [];
 
-function formatRupiah(value: number): string {
-  return new Intl.NumberFormat("id-ID", {
-    style: "currency",
-    currency: "IDR",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(value);
+// The deck part is pulled out and shown as a dedicated top badge.
+// Matches both word orders: "dek bawah" (id) and "Lower Deck" (en).
+const deckPart = descParts.find(
+  (p) =>
+    /(dek|deck)\s+(bawah|tengah|atas|utama|main|middle|lower|upper)/i.test(p) ||
+    /(bawah|tengah|atas|utama|main|middle|lower|upper)\s+(dek|deck)/i.test(p),
+);
+
+// Description badges = every part except the deck part, rendered as-is from data.
+const descBadges = descParts.filter((p) => p !== deckPart);
+
+function extractDeckLabel(text: string): string {
+  // Try id order first: "dek bawah"
+  let m = text.match(
+    /(dek|deck)\s+(bawah|tengah|atas|utama|main|middle|lower|upper)/i,
+  );
+  let level = m?.[2].toLowerCase();
+  // Otherwise en order: "Lower Deck"
+  if (!level) {
+    m = text.match(
+      /(bawah|tengah|atas|utama|main|middle|lower|upper)\s+(dek|deck)/i,
+    );
+    level = m?.[1].toLowerCase();
+  }
+  if (!level) return "";
+  if (locale === "id") {
+    const map: Record<string, string> = {
+      bawah: "Dek Bawah",
+      tengah: "Dek Tengah",
+      atas: "Dek Atas",
+      utama: "Dek Utama",
+      lower: "Dek Bawah",
+      middle: "Dek Tengah",
+      upper: "Dek Atas",
+      main: "Dek Utama",
+    };
+    return map[level] || m![0];
+  }
+  const enMap: Record<string, string> = {
+    lower: "Lower Deck",
+    middle: "Middle Deck",
+    upper: "Upper Deck",
+    main: "Main Deck",
+    bawah: "Lower Deck",
+    tengah: "Middle Deck",
+    atas: "Upper Deck",
+    utama: "Main Deck",
+  };
+  return enMap[level] || m![0];
 }
 
-function getPrice(key: string): string {
-  // Prefer priceList (real numeric pricing) over cabin.prices (placeholder text)
-  if (priceList && priceList[key]) {
-    const tiers = priceList[key];
-    // Find the first tier (lowest price) — keys like "1-8", "1-10", etc.
-    const tierKeys = Object.keys(tiers).filter(
-      (k) => k !== "addPerPax" && k !== "maxPax",
-    );
-    tierKeys.sort((a, b) => {
-      const aMin = parseInt(a.split("-")[0], 10);
-      const bMin = parseInt(b.split("-")[0], 10);
-      return aMin - bMin;
+/** Pick a lucide icon name for a description part based on keywords. */
+function pickIconForPart(part: string): string | null {
+  const p = part.toLowerCase();
+  if (/bed/.test(p)) return "bed";
+  if (/kamar\s+mandi|bath|shower/.test(p)) return "bath";
+  if (/(^ac$|\bac\b|air\s*condition)/.test(p)) return "snowflake";
+  if (/kapasitas|pax|orang|guest/.test(p)) return "users";
+  if (/balkon|balcony/.test(p)) return "door-open";
+  if (/air\s*panas|hot\s*water/.test(p)) return "thermometer";
+  if (/jacuzzi/.test(p)) return "droplets";
+  return null;
+}
+
+/** Parse cabin price string into structured badge+price pairs */
+type PriceEntry = { label: string; value: string };
+function parseCabinPrice(priceStr: string): PriceEntry[] {
+  const entries: PriceEntry[] = [];
+
+  // Pattern: "Minimum X pax: IDR Y.YYY.YYY(/pax)?"
+  const minMatch = priceStr.match(
+    /Minimum\s+(\d+)\s*pax\s*:\s*(IDR\s*[\d.]+)/i,
+  );
+  if (minMatch) {
+    entries.push({
+      label: uiStrings.paketWisata.cabinMinPax.replace("{n}", minMatch[1]),
+      value: minMatch[2].trim(),
     });
-    const baseTier = tierKeys[0];
-    if (baseTier && tiers[baseTier] !== undefined) {
-      return formatRupiah(tiers[baseTier]);
+  }
+
+  // Pattern: "additional pax: IDR Z.ZZZ.ZZZ(/pax)?"
+  const addMatch = priceStr.match(/additional\s*pax\s*:\s*(IDR\s*[\d.]+)/i);
+  if (addMatch) {
+    entries.push({
+      label: uiStrings.paketWisata.cabinAdditionalPax,
+      value: addMatch[1].trim(),
+    });
+  }
+
+  // Fallback: just a plain price like "IDR 5.000.000"
+  if (entries.length === 0) {
+    const plainMatch = priceStr.match(/(IDR\s*[\d.]+)/i);
+    if (plainMatch) {
+      entries.push({ label: "Price", value: plainMatch[1].trim() });
     }
   }
-  if (!cabin.prices) return "";
-  return cabin.prices[key] ?? Object.values(cabin.prices)[0] ?? "";
+
+  return entries;
 }
+
+const deckLabel = deckPart ? extractDeckLabel(deckPart) : "";
+
+// Parse pricing for open-trip boats (showPrice = true, no priceList)
+const hasPerUnitPricing = showPrice && !priceList;
+const rawPrice =
+  hasPerUnitPricing && cabin.prices
+    ? (Object.values(cabin.prices)[0] ?? "")
+    : "";
+const priceEntries = rawPrice ? parseCabinPrice(rawPrice) : [];
 ---
 
-<Card size="sm" class="overflow-hidden">
-  <div class="flex flex-col md:flex-row">
-    <div class="w-full md:w-[40%] shrink-0">
-      {
-        cabin.images.length > 1 ? (
-          <Carousel opts={{ loop: true }} class="aspect-[4/3]">
-            <CarouselContent>
-              {cabin.images.map((img) => (
-                <CarouselItem>
-                  <div class="aspect-[4/3] overflow-hidden">
-                    <OptimizedImage
-                      src={img}
-                      alt={cabin.name}
-                      class="h-full w-full object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious class="left-2" />
-            <CarouselNext class="right-2" />
-          </Carousel>
-        ) : (
-          <div class="aspect-[4/3] overflow-hidden">
-            <OptimizedImage
-              src={cabin.images[0]}
-              alt={cabin.name}
-              class="h-full w-full object-cover"
-              loading="lazy"
-            />
-          </div>
-        )
-      }
-    </div>
-    <CardContent class="flex flex-1 flex-col justify-center gap-3 py-6 md:py-8">
-      <TypographyH3 class="mt-0!">{cabin.name}</TypographyH3>
-      {
-        cabin.description && (
-          <TypographyP class="text-sm leading-relaxed text-muted-foreground">
-            {cabin.description}
-          </TypographyP>
-        )
-      }
-
-      {
-        multiDuration ? (
-          <Tabs defaultValue={firstDurationKey} class="mt-auto pt-2 w-full">
-            <TabsList class="w-full">
-              {durationKeys.map((key) => (
-                <TabsTrigger value={key}>
-                  {durationLabels![key] || key}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-            {durationKeys.map((key) => (
-              <TabsContent value={key} class="pt-2">
-                <Price>
-                  <span class="text-lg font-bold text-brand-700">
-                    {getPrice(key)}
-                  </span>
-                  <span class="text-xs text-muted-foreground">
-                    / {uiStrings.common.people}
-                  </span>
-                </Price>
-              </TabsContent>
+<Card size="sm" class="flex flex-col overflow-hidden border-border/60">
+  <!-- Image carousel on top -->
+  <div class="relative w-full overflow-hidden -mt-4">
+    {
+      cabin.images.length > 1 ? (
+        <Carousel opts={{ loop: true }} class="aspect-[5/4]">
+          <CarouselContent>
+            {cabin.images.map((img) => (
+              <CarouselItem>
+                <div class="aspect-[5/4] overflow-hidden">
+                  <OptimizedImage
+                    src={img}
+                    alt={cabin.name}
+                    class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+              </CarouselItem>
             ))}
-          </Tabs>
-        ) : (
-          <Price class="mt-auto pt-2">
-            <span class="text-lg font-bold text-brand-700">
-              {getPrice(firstDurationKey)}
-            </span>
-            <span class="text-xs text-muted-foreground">
-              / {uiStrings.common.people}
-            </span>
-          </Price>
-        )
-      }
-    </CardContent>
+          </CarouselContent>
+          <CarouselPrevious class="left-2" />
+          <CarouselNext class="right-2" />
+        </Carousel>
+      ) : (
+        <div class="aspect-[5/4] overflow-hidden">
+          <OptimizedImage
+            src={cabin.images[0]}
+            alt={cabin.name}
+            class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105"
+            loading="lazy"
+          />
+        </div>
+      )
+    }
   </div>
+
+  <!-- Content below image -->
+  <CardContent class="flex flex-col gap-2 pt-0">
+    <!-- Deck badge on top of the name -->
+    {
+      deckLabel ? (
+        <span class="w-fit inline-flex items-center gap-1 rounded-full bg-brand-50 px-2 py-0.5 text-[10px] font-medium text-brand-700 leading-tight">
+          <Icon name="ship" class="size-3" />
+          {deckLabel}
+        </span>
+      ) : null
+    }
+
+    <!-- Cabin name (clamped to 2 lines) -->
+    <TypographyH3 class="mt-0! text-sm md:text-base leading-tight line-clamp-2">
+      {cabin.name}
+    </TypographyH3>
+
+    <!-- Description badges straight from the data, with icons, bigger font -->
+    {
+      descBadges.length > 0 ? (
+        <div class="flex flex-wrap items-center gap-1.5">
+          {descBadges.map((part) => {
+            const icon = pickIconForPart(part);
+            return (
+              <Badge
+                variant="outline"
+                class="gap-1 font-normal border-border/50 text-[11px] leading-tight"
+              >
+                {icon ? (
+                  <Icon name={icon} class="size-3 shrink-0 text-brand-600" />
+                ) : null}
+                <span>{part}</span>
+              </Badge>
+            );
+          })}
+        </div>
+      ) : null
+    }
+  </CardContent>
+
+  <!-- Pricing footer (open-trip boats): badge -> price rows -->
+  {
+    priceEntries.length > 0 ? (
+      <CardFooter class="mt-auto flex-col items-stretch gap-1 border-t border-border/40">
+        {priceEntries.map((entry) => (
+          <div class="flex items-center justify-between gap-2">
+            <Badge
+              variant="secondary"
+              class="shrink-0 text-[9px] leading-tight"
+            >
+              {entry.label}
+            </Badge>
+            <Price class="gap-1">
+              <span class="font-bold text-brand-700 text-xs leading-tight">
+                {entry.value}
+              </span>
+              <PriceUnit class="text-[9px]">pax</PriceUnit>
+            </Price>
+          </div>
+        ))}
+      </CardFooter>
+    ) : null
+  }
 </Card>

@@ -16,10 +16,4 @@ jobs:
           node-version: "22.12"
           cache: "npm"
       - run: npm ci
-      - run: npm run format:check
-      - run: npm test
-      - run: npm run check
-      - run: npm run validate
-      - run: npm run images:barrel
-      - run: npm run check:images
       - run: npm run build

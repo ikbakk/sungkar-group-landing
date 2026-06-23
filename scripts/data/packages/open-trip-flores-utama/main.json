@@ -33,7 +33,7 @@
   "cabins": [
     {
       "name": "Share Cabin 1",
-      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/flores-utama/cabins/share-cabin-1-4x-single-bunk-bed/616-img-2219.webp",
@@ -45,7 +45,7 @@
     },
     {
       "name": "Share Cabin 2",
-      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/flores-utama/cabins/wc-share-2/614-img-2188.webp",
@@ -57,7 +57,7 @@
     },
     {
       "name": "Share Cabin 3",
-      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/620-img-2228.webp",
@@ -70,7 +70,7 @@
     },
     {
       "name": "Share Cabin 4",
-      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/flores-utama/cabins/share-cabin-4-4x-single-bunk-bed/623-img-2225.webp",
@@ -83,7 +83,7 @@
     },
     {
       "name": "Master Ocean 1",
-      "description": "Queen Bed + Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "description": "Queen Bed + Extra Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
         "packages/flores-utama/cabins/master-ocean-1-queen-bed-extra-bed/587-img-2194.webp",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Master Ocean 2",
-      "description": "Queen Bed + Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "description": "Queen Bed + Extra Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
         "packages/flores-utama/cabins/master-ocean-2-queen-bed-extra-bed/594-img-2201.webp",
@@ -111,7 +111,7 @@
     },
     {
       "name": "Royal Master",
-      "description": "Queen Bed + Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "description": "Queen Bed + Extra Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
         "packages/flores-utama/cabins/royal-master-queen-bed-extra-bed/602-img-2209.webp",

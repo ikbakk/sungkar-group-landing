@@ -213,6 +213,12 @@ export const ar: UIStrings = {
     cabins: "\u0627\u0644\u0645\u0642\u0627\u0635\u064A\u0631",
     cabinPrice:
       "\u0633\u0639\u0631 \u0627\u0644\u0645\u0642\u0635\u0648\u0631\u0629",
+    packagePrice: "قائمة أسعار الباقة",
+    packagePriceDesc: "هذه الأسعار خاصة بباقة القارب الخاص وليست لكل مقصورة.",
+    participants: "عدد المشاركين",
+    additionalPax: "إضافة لكل شخص",
+    cabinMinPax: "حد أدنى {n} باكس",
+    cabinAdditionalPax: "راكب إضافي",
     termsAndConditions:
       "\u0627\u0644\u0634\u0631\u0648\u0637 \u0648\u0627\u0644\u0623\u062D\u0643\u0627\u0645",
     additionalServices:
@@ -267,6 +273,7 @@ export const ar: UIStrings = {
     moreCount: "+{n} \u0627\u0644\u0645\u0632\u064A\u062F",
     contactForPrice: "\u0627\u062A\u0635\u0644 \u0644\u0644\u0633\u0639\u0631",
     people: "\u0634\u062E\u0635",
+    perPax: "\u0628\u0627\u0643\u0633",
     imageAltSunrise:
       "\u0644\u0648\u0645\u0628\u0648\u0643 \u0639\u0646\u062F \u0634\u0631\u0648\u0642 \u0627\u0644\u0634\u0645\u0633",
     imageAltSunset:

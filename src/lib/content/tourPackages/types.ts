@@ -16,6 +16,7 @@ export type BoatSpec = {
 export type Cabin = {
   name: string;
   description?: string;
+  capacity?: string;
   prices: Record<string, string>;
   images: ImageSource[];
 };
