@@ -1,6 +1,15 @@
 ---
 import { TypographyH2, TypographyP } from "@/components/ui/typography";
 import { t } from "@/lib/i18n";
+import {
+  Table,
+  TableHeader,
+  TableBody,
+  TableFooter,
+  TableRow,
+  TableHead,
+  TableCell,
+} from "@/components/ui/table";
 
 interface Props {
   priceList: Record<string, Record<string, number>>;
@@ -21,6 +30,7 @@ const labels = {
 const durationKeys = durationLabels
   ? Object.keys(durationLabels).filter((key) => priceList[key])
   : Object.keys(priceList);
+
 const tierKeys = Array.from(
   new Set(
     durationKeys.flatMap((durationKey) =>
@@ -54,6 +64,7 @@ function formatTierLabel(key: string): string {
 ---
 
 <div class="w-full">
+  <!-- Eyebrow + heading -->
   <div class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700">
     {labels.title}
   </div>
@@ -63,54 +74,53 @@ function formatTierLabel(key: string): string {
     {labels.desc}
   </TypographyP>
 
-  <div
-    class="mt-8 overflow-x-auto rounded-2xl border border-border bg-white shadow-sm"
-  >
-    <table class="min-w-full text-left text-sm">
-      <thead class="bg-brand-700 text-white">
-        <tr>
-          <th class="whitespace-nowrap px-4 py-3 font-semibold">
+  <!-- Pricing table: always shown when priceList is present -->
+  <div class="mt-8">
+    <Table class="w-full">
+      <TableHeader>
+        <TableRow>
+          <TableHead class="font-semibold">
             {labels.participants}
-          </th>
+          </TableHead>
           {
             durationKeys.map((durationKey) => (
-              <th class="whitespace-nowrap px-4 py-3 font-semibold">
+              <TableHead class="text-right font-semibold">
                 {durationLabels?.[durationKey] ?? durationKey}
-              </th>
+              </TableHead>
             ))
           }
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-border">
+        </TableRow>
+      </TableHeader>
+      <TableBody>
         {
           tierKeys.map((tierKey) => (
-            <tr class="odd:bg-surface-soft/60">
-              <th class="whitespace-nowrap px-4 py-3 font-semibold text-foreground">
+            <TableRow>
+              <TableCell class="font-medium text-foreground">
                 {formatTierLabel(tierKey)}
-              </th>
+              </TableCell>
               {durationKeys.map((durationKey) => (
-                <td class="whitespace-nowrap px-4 py-3 font-semibold text-brand-700">
+                <TableCell class="text-right font-semibold text-brand-700">
                   {formatRupiah(priceList[durationKey]?.[tierKey])}
-                </td>
+                </TableCell>
               ))}
-            </tr>
+            </TableRow>
           ))
         }
-        {
-          hasAddPerPax && (
-            <tr class="bg-brand-50/60">
-              <th class="whitespace-nowrap px-4 py-3 font-semibold text-foreground">
-                {labels.addPerPax}
-              </th>
+      </TableBody>
+      {
+        hasAddPerPax ? (
+          <TableFooter>
+            <TableRow>
+              <TableCell class="font-medium">{labels.addPerPax}</TableCell>
               {durationKeys.map((durationKey) => (
-                <td class="whitespace-nowrap px-4 py-3 font-semibold text-brand-700">
+                <TableCell class="text-right font-semibold text-brand-700">
                   {formatRupiah(priceList[durationKey]?.addPerPax)}
-                </td>
+                </TableCell>
               ))}
-            </tr>
-          )
-        }
-      </tbody>
-    </table>
+            </TableRow>
+          </TableFooter>
+        ) : null
+      }
+    </Table>
   </div>
 </div>
