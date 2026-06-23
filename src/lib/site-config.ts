@@ -13,7 +13,7 @@
  */
 
 export const SITE_URL =
-  process.env.PUBLIC_SITE_URL || "https://sungkargroup.com";
+  process.env.PUBLIC_SITE_URL || "https://www.sungkargroup.com";
 
 // TODO: If using image CDN (Cloudflare Images, Cloudinary, etc.), add:
 // export const CDN_ORIGIN = "https://cdn.sungkargroup.com";
