@@ -139,6 +139,8 @@ export interface UIStrings {
     packagePriceDesc: string;
     participants: string;
     additionalPax: string;
+    cabinMinPax: string;
+    cabinAdditionalPax: string;
     termsAndConditions: string;
     additionalServices: string;
     dontForgetToBring: string;
@@ -167,6 +169,7 @@ export interface UIStrings {
     moreCount: string;
     contactForPrice: string;
     people: string;
+    perPax: string;
     imageAltSunrise: string;
     imageAltSunset: string;
     imageAltDestinations: string;

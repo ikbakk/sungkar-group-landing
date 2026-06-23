@@ -164,6 +164,8 @@ export const zh: UIStrings = {
     packagePriceDesc: "以下价格适用于私人船套餐，并非按船舱计价。",
     participants: "参加人数",
     additionalPax: "每人加价",
+    cabinMinPax: "最少 {n} 位",
+    cabinAdditionalPax: "加客",
     termsAndConditions: "\u6761\u6B3E\u548C\u6761\u4EF6",
     additionalServices: "\u989D\u5916\u670D\u52A1",
     dontForgetToBring: "\u522B\u5FD8\u8BB0\u5E26",
@@ -206,6 +208,7 @@ export const zh: UIStrings = {
     moreCount: "+{n}\u66F4\u591A",
     contactForPrice: "\u8054\u7CFB\u83B7\u53D6\u4EF7\u683C",
     people: "\u4EBA",
+    perPax: "\u6BCF\u4F4D",
     imageAltSunrise: "\u65E5\u51FA\u65F6\u7684\u9F99\u6728\u5C9B",
     imageAltSunset:
       "\u65E5\u843D\u65F6\u7684\u9F99\u6728\u5C9B\u6D77\u6EE9\u7F8E\u666F",
