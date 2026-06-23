@@ -12,6 +12,9 @@ import { t } from "@/lib/i18n";
 import LocaleSwitcher from "./LocaleSwitcher.astro";
 import { localizeHref } from "@/lib/i18n/localize";
 import { getPackages } from "@/lib/content/tourPackages/collection";
+import { getAccommodations } from "@/lib/content/accommodations/collection";
+import { getVehicles } from "@/lib/content/car-rental/collection";
+import type { NavGroup, NavItem } from "@/lib/content/shared/types";
 
 interface Props {
   locale?: string;
@@ -20,7 +23,68 @@ interface Props {
 const { locale = "id" } = Astro.props as Props;
 const navModule = await loadContent(locale, "navigation");
 const packages = await getPackages(locale);
-const navigation = navModule.createNavigation(packages);
+const accommodations = await getAccommodations(locale);
+const vehicles = await getVehicles(locale);
+
+const availableAccommodationHrefs = new Set(
+  accommodations.map((item) => `/akomodasi/${item.region}`),
+);
+const availableVehicleHrefs = new Set(
+  vehicles.map((item) => `/sewa-mobil/${item.region}`),
+);
+
+function isAvailableHref(href?: string) {
+  if (!href) return true;
+  if (href.startsWith("/akomodasi/")) {
+    return availableAccommodationHrefs.has(href);
+  }
+  if (href.startsWith("/sewa-mobil/")) {
+    return availableVehicleHrefs.has(href);
+  }
+  return true;
+}
+
+function pruneGroup(group: NavGroup): NavGroup | null {
+  const items = group.items?.filter((item) => isAvailableHref(item.href));
+  const collections = group.collections
+    ?.map((collection) => ({
+      ...collection,
+      items: collection.items.filter((item) => isAvailableHref(item.href)),
+    }))
+    .filter((collection) => collection.items.length > 0);
+
+  if ((items?.length ?? 0) === 0 && (collections?.length ?? 0) === 0) {
+    return null;
+  }
+
+  return { ...group, items, collections };
+}
+
+function pruneNavigation(items: NavItem[]): NavItem[] {
+  return items
+    .map((item) => {
+      if (item.variant === "link")
+        return isAvailableHref(item.href) ? item : null;
+
+      if (item.variant === "dropdown") {
+        const dropdownItems = item.items?.filter((subItem) =>
+          isAvailableHref(subItem.href),
+        );
+        return (dropdownItems?.length ?? 0) > 0
+          ? { ...item, items: dropdownItems }
+          : null;
+      }
+
+      const groups = item.groups
+        ?.map(pruneGroup)
+        .filter((group): group is NavGroup => Boolean(group));
+
+      return (groups?.length ?? 0) > 0 ? { ...item, groups } : null;
+    })
+    .filter((item): item is NavItem => Boolean(item));
+}
+
+const navigation = pruneNavigation(navModule.createNavigation(packages));
 const uiStrings = t(locale);
 ---
 

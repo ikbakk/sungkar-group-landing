@@ -233,65 +233,71 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
 
                         <AccordionContent>
                           <Accordion className="pb-2 border-none bg-background">
-                            {item.groups?.map((group) => {
-                              const totalItems =
-                                (group.items?.length ?? 0) +
-                                (group.collections?.reduce(
-                                  (acc, c) => acc + c.items.length,
-                                  0,
-                                ) ?? 0);
+                            {item.groups
+                              ?.filter(
+                                (group) =>
+                                  (group.items?.length ?? 0) > 0 ||
+                                  (group.collections?.length ?? 0) > 0,
+                              )
+                              .map((group) => {
+                                const totalItems =
+                                  (group.items?.length ?? 0) +
+                                  (group.collections?.reduce(
+                                    (acc, c) => acc + c.items.length,
+                                    0,
+                                  ) ?? 0);
 
-                              return (
-                                <AccordionItem
-                                  key={group.title}
-                                  value={group.title}
-                                  className="border-none"
-                                >
-                                  <AccordionTrigger
-                                    className="
+                                return (
+                                  <AccordionItem
+                                    key={group.title}
+                                    value={group.title}
+                                    className="border-none"
+                                  >
+                                    <AccordionTrigger
+                                      className="
                                       py-3
                                       text-sm
                                       font-normal
                                       text-muted-foreground
                                       bg-background
                                     "
-                                  >
-                                    <div className="flex items-center w-full justify-between gap-2">
-                                      <span>{group.title}</span>
+                                    >
+                                      <div className="flex items-center w-full justify-between gap-2">
+                                        <span>{group.title}</span>
 
-                                      <span className="inline-flex items-center justify-center rounded-full border border-transparent bg-primary text-primary-foreground text-xs font-medium px-4 py-1 ">
-                                        {totalItems}
-                                      </span>
-                                    </div>
-                                  </AccordionTrigger>
+                                        <span className="inline-flex items-center justify-center rounded-full border border-transparent bg-primary text-primary-foreground text-xs font-medium px-4 py-1 ">
+                                          {totalItems}
+                                        </span>
+                                      </div>
+                                    </AccordionTrigger>
 
-                                  <AccordionContent className="bg-background">
-                                    <div className="space-y-4 pl-4">
-                                      {/* Direct items (single-package collections) */}
-                                      {group.items &&
-                                        group.items.length > 0 && (
-                                          <div className="grid gap-1">
-                                            {group.items.map((subItem) => (
-                                              <TruncatedLink
-                                                key={subItem.href}
-                                                href={lh(subItem.href)!}
-                                                label={subItem.label}
-                                                className="py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                                              />
-                                            ))}
-                                          </div>
-                                        )}
+                                    <AccordionContent className="bg-background">
+                                      <div className="space-y-4 pl-4">
+                                        {/* Direct items (single-package collections) */}
+                                        {group.items &&
+                                          group.items.length > 0 && (
+                                            <div className="grid gap-1">
+                                              {group.items.map((subItem) => (
+                                                <TruncatedLink
+                                                  key={subItem.href}
+                                                  href={lh(subItem.href)!}
+                                                  label={subItem.label}
+                                                  className="py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                                                />
+                                              ))}
+                                            </div>
+                                          )}
 
-                                      {/* Multi-package collections */}
-                                      {group.collections &&
-                                        group.collections.length > 0 && (
-                                          <div className="space-y-4">
-                                            {group.collections.map(
-                                              (collection) => (
-                                                <div key={collection.title}>
-                                                  <a
-                                                    href={lh(collection.href)}
-                                                    className="
+                                        {/* Multi-package collections */}
+                                        {group.collections &&
+                                          group.collections.length > 0 && (
+                                            <div className="space-y-4">
+                                              {group.collections.map(
+                                                (collection) => (
+                                                  <div key={collection.title}>
+                                                    <a
+                                                      href={lh(collection.href)}
+                                                      className="
                                                   mb-2
                                                   block
                                                   text-xs
@@ -300,41 +306,41 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
                                                   tracking-wide
                                                   text-brand-700
                                                 "
-                                                  >
-                                                    {collection.title}
-                                                  </a>
+                                                    >
+                                                      {collection.title}
+                                                    </a>
 
-                                                  <div className="grid gap-1">
-                                                    {collection.items.map(
-                                                      (subItem) => (
-                                                        <a
-                                                          key={subItem.href}
-                                                          href={lh(
-                                                            subItem.href,
-                                                          )}
-                                                          className="
+                                                    <div className="grid gap-1">
+                                                      {collection.items.map(
+                                                        (subItem) => (
+                                                          <a
+                                                            key={subItem.href}
+                                                            href={lh(
+                                                              subItem.href,
+                                                            )}
+                                                            className="
                                                       py-2
                                                       text-sm
                                                       text-muted-foreground
                                                       transition-colors
                                                       hover:text-foreground
                                                     "
-                                                        >
-                                                          {subItem.label}
-                                                        </a>
-                                                      ),
-                                                    )}
+                                                          >
+                                                            {subItem.label}
+                                                          </a>
+                                                        ),
+                                                      )}
+                                                    </div>
                                                   </div>
-                                                </div>
-                                              ),
-                                            )}
-                                          </div>
-                                        )}
-                                    </div>
-                                  </AccordionContent>
-                                </AccordionItem>
-                              );
-                            })}
+                                                ),
+                                              )}
+                                            </div>
+                                          )}
+                                      </div>
+                                    </AccordionContent>
+                                  </AccordionItem>
+                                );
+                              })}
                           </Accordion>
                         </AccordionContent>
                       </AccordionItem>
