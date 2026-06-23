@@ -150,6 +150,11 @@ export const ms: UIStrings = {
     boatCapacity: "Kapasiti",
     cabins: "Kabin",
     cabinPrice: "Harga Kabin",
+    packagePrice: "Senarai Harga Pakej",
+    packagePriceDesc:
+      "Harga ini dikenakan untuk pakej bot persendirian, bukan setiap kabin.",
+    participants: "Jumlah Peserta",
+    additionalPax: "Tambahan per Pax",
     termsAndConditions: "Syarat & Ketentuan",
     additionalServices: "Perkhidmatan Tambahan",
     dontForgetToBring: "Jangan Lupa Bawa",

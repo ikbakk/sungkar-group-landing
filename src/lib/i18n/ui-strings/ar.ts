@@ -213,6 +213,10 @@ export const ar: UIStrings = {
     cabins: "\u0627\u0644\u0645\u0642\u0627\u0635\u064A\u0631",
     cabinPrice:
       "\u0633\u0639\u0631 \u0627\u0644\u0645\u0642\u0635\u0648\u0631\u0629",
+    packagePrice: "قائمة أسعار الباقة",
+    packagePriceDesc: "هذه الأسعار خاصة بباقة القارب الخاص وليست لكل مقصورة.",
+    participants: "عدد المشاركين",
+    additionalPax: "إضافة لكل شخص",
     termsAndConditions:
       "\u0627\u0644\u0634\u0631\u0648\u0637 \u0648\u0627\u0644\u0623\u062D\u0643\u0627\u0645",
     additionalServices:

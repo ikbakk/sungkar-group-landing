@@ -9,9 +9,16 @@ interface Props {
   locale?: string;
   durationLabels?: Record<string, string>;
   priceList?: Record<string, Record<string, number>>;
+  showPrice?: boolean;
 }
 
-const { cabins, locale = "id", durationLabels, priceList } = Astro.props;
+const {
+  cabins,
+  locale = "id",
+  durationLabels,
+  priceList,
+  showPrice = true,
+} = Astro.props;
 const uiStrings = t(locale);
 ---
 
@@ -30,6 +37,7 @@ const uiStrings = t(locale);
           locale={locale}
           durationLabels={durationLabels}
           priceList={priceList}
+          showPrice={showPrice}
         />
       ))
     }

@@ -18,6 +18,7 @@ import PackageItinerary from "@/components/packages/PackageItinerary.astro";
 import PackageIncludesExcludes from "@/components/packages/PackageIncludesExcludes.astro";
 import BoatSpecsSection from "@/components/packages/BoatSpecsSection.astro";
 import CabinsSection from "@/components/packages/CabinsSection.astro";
+import PackagePricingSection from "@/components/packages/PackagePricingSection.astro";
 import PackageTandC from "@/components/packages/PackageTandC.astro";
 import PackageGallery from "@/components/packages/PackageGallery";
 import FaqSection from "@/components/site/Faq.astro";
@@ -165,6 +166,18 @@ const itineraryByDay = Object.entries(
   }
 
   {
+    tour.priceList && (
+      <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+        <PackagePricingSection
+          priceList={tour.priceList}
+          locale={locale}
+          durationLabels={tour.durationLabels}
+        />
+      </SectionContainer>
+    )
+  }
+
+  {
     tour.cabins && tour.cabins.length > 0 && (
       <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
         <CabinsSection
@@ -172,6 +185,7 @@ const itineraryByDay = Object.entries(
           locale={locale}
           durationLabels={tour.durationLabels}
           priceList={tour.priceList}
+          showPrice={!tour.priceList}
         />
       </SectionContainer>
     )

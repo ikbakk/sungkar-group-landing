@@ -148,6 +148,11 @@ export const id: UIStrings = {
     boatCapacity: "Kapasitas",
     cabins: "Kabin Kapal",
     cabinPrice: "Harga Kabin",
+    packagePrice: "Daftar Harga Paket",
+    packagePriceDesc:
+      "Harga berikut berlaku untuk paket kapal private, bukan per kabin.",
+    participants: "Jumlah Peserta",
+    additionalPax: "Tambahan per Pax",
     termsAndConditions: "Syarat & Ketentuan",
     additionalServices: "Layanan Tambahan",
     dontForgetToBring: "Jangan Lupa Dibawa",

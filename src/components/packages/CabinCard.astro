@@ -19,9 +19,16 @@ interface Props {
   locale?: string;
   durationLabels?: Record<string, string>;
   priceList?: Record<string, Record<string, number>>;
+  showPrice?: boolean;
 }
 
-const { cabin, locale = "id", durationLabels, priceList } = Astro.props;
+const {
+  cabin,
+  locale = "id",
+  durationLabels,
+  priceList,
+  showPrice = true,
+} = Astro.props;
 const uiStrings = t(locale);
 
 const durationKeys = durationLabels ? Object.keys(durationLabels) : [];
@@ -98,15 +105,15 @@ function getPrice(key: string): string {
     <CardContent class="flex flex-1 flex-col justify-center gap-3 py-6 md:py-8">
       <TypographyH3 class="mt-0!">{cabin.name}</TypographyH3>
       {
-        cabin.description && (
+        cabin.description ? (
           <TypographyP class="text-sm leading-relaxed text-muted-foreground">
             {cabin.description}
           </TypographyP>
-        )
+        ) : null
       }
 
       {
-        multiDuration ? (
+        showPrice && multiDuration ? (
           <Tabs defaultValue={firstDurationKey} class="mt-auto pt-2 w-full">
             <TabsList class="w-full">
               {durationKeys.map((key) => (
@@ -128,7 +135,7 @@ function getPrice(key: string): string {
               </TabsContent>
             ))}
           </Tabs>
-        ) : (
+        ) : showPrice ? (
           <Price class="mt-auto pt-2">
             <span class="text-lg font-bold text-brand-700">
               {getPrice(firstDurationKey)}
@@ -137,7 +144,7 @@ function getPrice(key: string): string {
               / {uiStrings.common.people}
             </span>
           </Price>
-        )
+        ) : null
       }
     </CardContent>
   </div>

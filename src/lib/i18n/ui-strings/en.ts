@@ -147,6 +147,11 @@ export const en: UIStrings = {
     boatCapacity: "Capacity",
     cabins: "Cabins",
     cabinPrice: "Cabin Price",
+    packagePrice: "Package Price List",
+    packagePriceDesc:
+      "These prices apply to the private boat package, not per cabin.",
+    participants: "Participants",
+    additionalPax: "Additional per Pax",
     termsAndConditions: "Terms & Conditions",
     additionalServices: "Additional Services",
     dontForgetToBring: "Don't Forget to Bring",

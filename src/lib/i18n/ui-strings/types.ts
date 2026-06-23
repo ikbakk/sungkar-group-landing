@@ -135,6 +135,10 @@ export interface UIStrings {
     boatCapacity: string;
     cabins: string;
     cabinPrice: string;
+    packagePrice: string;
+    packagePriceDesc: string;
+    participants: string;
+    additionalPax: string;
     termsAndConditions: string;
     additionalServices: string;
     dontForgetToBring: string;
