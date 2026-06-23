@@ -50,7 +50,10 @@
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-2",
       "images": [
-        "gallery/open-trip-alfathran-superior-cabin-1.webp"
+        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/480-alfathran-0005-wil00889.webp",
+        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/481-alfathran-0006-layer-0.webp",
+        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/482-alfathran-0010-wil00882.webp",
+        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/483-alfathran-0011-wil00881.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 4.600.000/pax"
@@ -61,7 +64,10 @@
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-2",
       "images": [
-        "gallery/open-trip-alfathran-superior-cabin-2.webp"
+        "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/485-alfathran-lower-deck-0000-wil00838.webp",
+        "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/486-alfathran-lower-deck-0001-wil00832.webp",
+        "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/487-alfathran-lower-deck-0001-wil00837.webp",
+        "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/488-alfathran-lower-deck-0002-wil00833.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 4.600.000/pax"
@@ -72,7 +78,10 @@
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-2",
       "images": [
-        "gallery/open-trip-alfathran-full-ocean.webp"
+        "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/495-alfathran-0000-wil00915.webp",
+        "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/496-alfathran-0001-wil00914.webp",
+        "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/497-alfathran-0002-wil00911.webp",
+        "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/498-alfathran-0002-wil00913.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 5.350.000/pax"

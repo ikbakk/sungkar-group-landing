@@ -72,13 +72,10 @@
       "description": "Queen Bed dan extra bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
-        "gallery/hatira-hela-master-ocean-1-01.webp",
-        "gallery/hatira-hela-master-ocean-1-02.webp",
-        "gallery/hatira-hela-master-ocean-1-03.webp",
-        "gallery/hatira-hela-master-ocean-1-04.webp",
-        "gallery/hatira-hela-master-ocean-1-05.webp",
-        "gallery/hatira-hela-master-ocean-1-06.webp",
-        "gallery/hatira-hela-master-ocean-1-07.webp"
+        "packages/hatira-hela/cabins/1-master-1-main-deck/633-hatirah-master1-1.webp",
+        "packages/hatira-hela/cabins/1-master-1-main-deck/634-hatirah-master1-2.webp",
+        "packages/hatira-hela/cabins/1-master-1-main-deck/635-hatirah-master1-3.webp",
+        "packages/hatira-hela/cabins/1-master-1-main-deck/636-hatirah-master1-4.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -92,17 +89,10 @@
       "description": "Queen Bed dan extra bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
-        "gallery/hatira-hela-master-ocean-2-01.webp",
-        "gallery/hatira-hela-master-ocean-2-02.webp",
-        "gallery/hatira-hela-master-ocean-2-03.webp",
-        "gallery/hatira-hela-master-ocean-2-04.webp",
-        "gallery/hatira-hela-master-ocean-2-05.webp",
-        "gallery/hatira-hela-master-ocean-2-06.webp",
-        "gallery/hatira-hela-master-ocean-2-07.webp",
-        "gallery/hatira-hela-master-ocean-2-08.webp",
-        "gallery/hatira-hela-master-ocean-2-09.webp",
-        "gallery/hatira-hela-master-ocean-2-10.webp",
-        "gallery/hatira-hela-master-ocean-2-11.webp"
+        "packages/hatira-hela/cabins/2-master-2-main-deck/640-hatirah-master2-1.webp",
+        "packages/hatira-hela/cabins/2-master-2-main-deck/641-hatirah-master2-10.webp",
+        "packages/hatira-hela/cabins/2-master-2-main-deck/642-hatirah-master2-11.webp",
+        "packages/hatira-hela/cabins/2-master-2-main-deck/643-hatirah-master2-2.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -116,12 +106,10 @@
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "gallery/hatira-hela-deluxe-ocean-3-01.webp",
-        "gallery/hatira-hela-deluxe-ocean-3-02.webp",
-        "gallery/hatira-hela-deluxe-ocean-3-03.webp",
-        "gallery/hatira-hela-deluxe-ocean-3-04.webp",
-        "gallery/hatira-hela-deluxe-ocean-3-05.webp",
-        "gallery/hatira-hela-deluxe-ocean-3-06.webp"
+        "packages/hatira-hela/cabins/3-deluxe-3-main-deck/651-hatirah-deluxe3-1.webp",
+        "packages/hatira-hela/cabins/3-deluxe-3-main-deck/652-hatirah-deluxe3-2.webp",
+        "packages/hatira-hela/cabins/3-deluxe-3-main-deck/653-hatirah-deluxe3-3.webp",
+        "packages/hatira-hela/cabins/3-deluxe-3-main-deck/654-hatirah-deluxe3-4.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -135,11 +123,10 @@
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "gallery/hatira-hela-deluxe-ocean-4-01.webp",
-        "gallery/hatira-hela-deluxe-ocean-4-02.webp",
-        "gallery/hatira-hela-deluxe-ocean-4-03.webp",
-        "gallery/hatira-hela-deluxe-ocean-4-04.webp",
-        "gallery/hatira-hela-deluxe-ocean-4-05.webp"
+        "packages/hatira-hela/cabins/4-deluxe-4-main-deck/657-hatirah-deluxe4-1.webp",
+        "packages/hatira-hela/cabins/4-deluxe-4-main-deck/658-hatirah-deluxe4-2.webp",
+        "packages/hatira-hela/cabins/4-deluxe-4-main-deck/659-hatirah-deluxe4-3.webp",
+        "packages/hatira-hela/cabins/4-deluxe-4-main-deck/660-hatirah-deluxe4-4.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -153,11 +140,10 @@
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "gallery/hatira-hela-deluxe-ocean-5-01.webp",
-        "gallery/hatira-hela-deluxe-ocean-5-02.webp",
-        "gallery/hatira-hela-deluxe-ocean-5-03.webp",
-        "gallery/hatira-hela-deluxe-ocean-5-04.webp",
-        "gallery/hatira-hela-deluxe-ocean-5-05.webp"
+        "packages/hatira-hela/cabins/5-deluxe-5-main-deck/662-hatirah-deluxe5-1.webp",
+        "packages/hatira-hela/cabins/5-deluxe-5-main-deck/663-hatirah-deluxe5-2.webp",
+        "packages/hatira-hela/cabins/5-deluxe-5-main-deck/664-hatirah-deluxe5-3.webp",
+        "packages/hatira-hela/cabins/5-deluxe-5-main-deck/665-hatirah-deluxe5-4.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -171,12 +157,10 @@
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "gallery/hatira-hela-deluxe-ocean-6-01.webp",
-        "gallery/hatira-hela-deluxe-ocean-6-02.webp",
-        "gallery/hatira-hela-deluxe-ocean-6-03.webp",
-        "gallery/hatira-hela-deluxe-ocean-6-04.webp",
-        "gallery/hatira-hela-deluxe-ocean-6-05.webp",
-        "gallery/hatira-hela-deluxe-ocean-6-06.webp"
+        "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/667-dji-20250224162030-0020-d-wilartboard-1-copy-2.webp",
+        "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/668-dji-20250224162030-0020-d-wilartboard-1-copy-3.webp",
+        "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/669-dji-20250224162030-0020-d-wilartboard-1-copy-4.webp",
+        "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/670-dji-20250224162030-0020-d-wilartboard-1-copy-5.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -190,11 +174,10 @@
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "gallery/hatira-hela-deluxe-ocean-7-01.webp",
-        "gallery/hatira-hela-deluxe-ocean-7-02.webp",
-        "gallery/hatira-hela-deluxe-ocean-7-03.webp",
-        "gallery/hatira-hela-deluxe-ocean-7-04.webp",
-        "gallery/hatira-hela-deluxe-ocean-7-05.webp"
+        "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/673-hatiraartboard-1-copy-2.webp",
+        "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/674-hatiraartboard-1-copy-3.webp",
+        "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/675-hatiraartboard-1-copy-4.webp",
+        "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/676-hatiraartboard-1-copy.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -208,11 +191,10 @@
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "gallery/hatira-hela-deluxe-ocean-8-01.webp",
-        "gallery/hatira-hela-deluxe-ocean-8-02.webp",
-        "gallery/hatira-hela-deluxe-ocean-8-03.webp",
-        "gallery/hatira-hela-deluxe-ocean-8-04.webp",
-        "gallery/hatira-hela-deluxe-ocean-8-05.webp"
+        "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+        "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+        "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+        "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",

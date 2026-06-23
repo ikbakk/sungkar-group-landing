@@ -36,7 +36,10 @@
       "description": "2x Queen Bed + Single Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-5",
       "images": [
-        "gallery/open-trip-almadira-share-cabin.webp"
+        "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/146-sve08906.webp",
+        "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/147-sve08908.webp",
+        "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/148-sve08909.webp",
+        "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/149-sve08910.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 3.000.000/pax"
@@ -47,7 +50,10 @@
       "description": "Queen Bed + Single Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-3",
       "images": [
-        "gallery/open-trip-almadira-private-cabin-1.webp"
+        "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+        "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+        "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+        "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
@@ -58,7 +64,10 @@
       "description": "Queen Bed + Single Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-3",
       "images": [
-        "gallery/open-trip-almadira-private-cabin-2.webp"
+        "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+        "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+        "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+        "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"

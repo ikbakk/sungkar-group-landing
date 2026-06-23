@@ -36,9 +36,9 @@
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-2",
       "images": [
-        "gallery/nk-jaya-2-deluxe-superior-cabin-1-a.webp",
-        "gallery/nk-jaya-2-deluxe-superior-cabin-1-b.webp",
-        "gallery/nk-jaya-2-deluxe-superior-cabin-1-c.webp"
+        "packages/nk-jaya-2/cabins/1-superior-queen-bed/396-nk2-0000s-0001-wil04852.webp",
+        "packages/nk-jaya-2/cabins/1-superior-queen-bed/397-nk2-0000s-0002-wil04847.webp",
+        "packages/nk-jaya-2/cabins/1-superior-queen-bed/398-nk2-0000s-0003-wil04843.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 4.350.000/pax"
@@ -49,9 +49,10 @@
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-2",
       "images": [
-        "gallery/nk-jaya-2-deluxe-superior-cabin-2-a.webp",
-        "gallery/nk-jaya-2-deluxe-superior-cabin-2-b.webp",
-        "gallery/nk-jaya-2-deluxe-superior-cabin-2-c.webp"
+        "packages/nk-jaya-2/cabins/2-superior-queen-bed/399-nk2-0000s-0004-wil04834.webp",
+        "packages/nk-jaya-2/cabins/2-superior-queen-bed/400-nk2-0000s-0005-wil04826.webp",
+        "packages/nk-jaya-2/cabins/2-superior-queen-bed/401-nk2-0000s-0006-wil04823.webp",
+        "packages/nk-jaya-2/cabins/2-superior-queen-bed/402-nk2-0000s-0007-wil04820.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 4.350.000/pax"
@@ -62,9 +63,10 @@
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
       "capacity": "1-2",
       "images": [
-        "gallery/nk-jaya-2-deluxe-superior-cabin-3-a.webp",
-        "gallery/nk-jaya-2-deluxe-superior-cabin-3-b.webp",
-        "gallery/nk-jaya-2-deluxe-superior-cabin-3-c.webp"
+        "packages/nk-jaya-2/cabins/3-superior-queen-bed/403-nk2-0000s-0008-wil04812.webp",
+        "packages/nk-jaya-2/cabins/3-superior-queen-bed/404-nk2-0000s-0009-wil04809.webp",
+        "packages/nk-jaya-2/cabins/3-superior-queen-bed/405-nk2-0000s-0010-wil04806.webp",
+        "packages/nk-jaya-2/cabins/3-superior-queen-bed/406-nk2-0000s-0011-wil04803.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 4.350.000/pax"
@@ -75,9 +77,10 @@
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-2",
       "images": [
-        "gallery/nk-jaya-2-deluxe-full-ocean-1-a.webp",
-        "gallery/nk-jaya-2-deluxe-full-ocean-1-b.webp",
-        "gallery/nk-jaya-2-deluxe-full-ocean-1-c.webp"
+        "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/408-nk2-0001s-0000-wil04792.webp",
+        "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/409-nk2-0001s-0001-wil04783.webp",
+        "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/410-nk2-0001s-0002-wil04775.webp",
+        "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/411-nk2-0001s-0003-wil04772.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 5.350.000/pax"
@@ -88,9 +91,10 @@
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-2",
       "images": [
-        "gallery/nk-jaya-2-deluxe-full-ocean-2-a.webp",
-        "gallery/nk-jaya-2-deluxe-full-ocean-2-b.webp",
-        "gallery/nk-jaya-2-deluxe-full-ocean-2-c.webp"
+        "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/412-nk2-0002s-0000-wil04795.webp",
+        "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/413-nk2-0002s-0001-layer-3.webp",
+        "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/414-nk2-0002s-0002-layer-2.webp",
+        "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/415-nk2-0002s-0003-layer-1.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 5.350.000/pax"

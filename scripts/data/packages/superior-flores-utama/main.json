@@ -72,7 +72,8 @@
       "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
-        "gallery/superior-flores-utama-share-cabin-1.webp"
+        "packages/flores-utama/cabins/share-cabin-1-4x-single-bunk-bed/616-img-2219.webp",
+        "packages/flores-utama/cabins/share-cabin-1-4x-single-bunk-bed/617-img-2220.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -86,7 +87,8 @@
       "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
-        "gallery/superior-flores-utama-share-cabin-2.webp"
+        "packages/flores-utama/cabins/wc-share-2/614-img-2188.webp",
+        "packages/flores-utama/cabins/wc-share-2/615-img-2189.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -100,7 +102,8 @@
       "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
-        "gallery/superior-flores-utama-share-cabin-3.webp"
+        "packages/flores-utama/cabins/share-cabin-2-4x-single-bunk-bed/618-img-2221.webp",
+        "packages/flores-utama/cabins/share-cabin-2-4x-single-bunk-bed/619-img-2222.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -114,7 +117,9 @@
       "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
-        "gallery/superior-flores-utama-share-cabin-4.webp"
+        "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/620-img-2228.webp",
+        "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/621-img-2229.webp",
+        "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/622-img-2230.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -128,7 +133,10 @@
       "description": "Queen Bed dan extra bed, kamar mandi pribadi, AC, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
-        "gallery/superior-flores-utama-master-ocean-1.webp"
+        "packages/flores-utama/cabins/master-ocean-1-queen-bed-extra-bed/587-img-2194.webp",
+        "packages/flores-utama/cabins/master-ocean-1-queen-bed-extra-bed/588-img-2195.webp",
+        "packages/flores-utama/cabins/master-ocean-1-queen-bed-extra-bed/589-img-2196.webp",
+        "packages/flores-utama/cabins/master-ocean-1-queen-bed-extra-bed/590-img-2197.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -142,7 +150,10 @@
       "description": "Queen Bed dan extra bed, kamar mandi pribadi, AC, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
-        "gallery/superior-flores-utama-master-ocean-2.webp"
+        "packages/flores-utama/cabins/master-ocean-2-queen-bed-extra-bed/594-img-2201.webp",
+        "packages/flores-utama/cabins/master-ocean-2-queen-bed-extra-bed/595-img-2202.webp",
+        "packages/flores-utama/cabins/master-ocean-2-queen-bed-extra-bed/596-img-2203.webp",
+        "packages/flores-utama/cabins/master-ocean-2-queen-bed-extra-bed/597-img-2204.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
