@@ -33,7 +33,7 @@
   "cabins": [
     {
       "name": "Share Cabin 1",
-      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
@@ -44,7 +44,7 @@
     },
     {
       "name": "Share Cabin 2",
-      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
@@ -55,7 +55,7 @@
     },
     {
       "name": "Share Cabin 3",
-      "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Full Ocean",
-      "description": "Queen Bed + 2 Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "Queen Bed + 2 Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
@@ -82,7 +82,7 @@
     },
     {
       "name": "Master Ocean 1",
-      "description": "Queen Bed + 2 Extra Single Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "description": "Queen Bed + 2 Extra Single Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
@@ -96,7 +96,7 @@
     },
     {
       "name": "Master Ocean 2",
-      "description": "Queen Bed + 2 Extra Single Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "description": "Queen Bed + 2 Extra Single Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",

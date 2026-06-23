@@ -69,7 +69,7 @@
   "cabins": [
     {
       "name": "Share Cabin (Lower Deck)",
-      "description": "2 queen bed dan single bed, kamar mandi bersama, AC, kapasitas 1-5 orang.",
+      "description": "2 queen bed dan single bed, kamar mandi pribadi, AC, kapasitas 1-5 orang.",
       "capacity": "1-5",
       "images": [
         "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/146-sve08906.webp",
@@ -86,7 +86,7 @@
     },
     {
       "name": "Private Cabin 1 (Lower Deck)",
-      "description": "Queen Bed dan single bed, kamar mandi bersama, AC, kapasitas 1-3 orang.",
+      "description": "Queen Bed dan single bed, kamar mandi pribadi, AC, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
         "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
@@ -103,7 +103,7 @@
     },
     {
       "name": "Private Cabin 2 (Lower Deck)",
-      "description": "Queen Bed dan single bed, kamar mandi bersama, AC, kapasitas 1-3 orang.",
+      "description": "Queen Bed dan single bed, kamar mandi pribadi, AC, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
         "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",

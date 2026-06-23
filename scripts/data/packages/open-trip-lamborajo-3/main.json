@@ -33,7 +33,7 @@
   "cabins": [
     {
       "name": "Superior Cabin 1",
-      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/lamborajo-3/cabins/cabin-1-superior-cabin-queen-bed-private-bathroom/905-lamborajo-3-20.webp",
@@ -47,7 +47,7 @@
     },
     {
       "name": "Superior Cabin 2",
-      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/lamborajo-3/cabins/cabin-2-superior-cabin-queen-bed-private-bathroom/911-lamborajo-3-21.webp",
@@ -61,7 +61,7 @@
     },
     {
       "name": "Superior Cabin 3",
-      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/lamborajo-3/cabins/cabin-3-superior-cabin-queen-bed-private-bathroom/916-lamborajo-3-12.webp",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Superior Cabin 4",
-      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Lower Deck.",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/lamborajo-3/cabins/cabin-4-superior-cabin-queen-bed-private-bathroom/922-lamborajo-3-1.webp",
@@ -89,7 +89,7 @@
     },
     {
       "name": "Master Ocean 1",
-      "description": "Queen Bed + Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "Queen Bed + Extra Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
         "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/929-lamborajo-3-10.webp",
@@ -103,7 +103,7 @@
     },
     {
       "name": "Master Ocean 2",
-      "description": "Queen Bed + Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "Queen Bed + Extra Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-3 orang.",
       "capacity": "1-3",
       "images": [
         "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/929-lamborajo-3-10.webp",
@@ -117,7 +117,7 @@
     },
     {
       "name": "Royal Master Ocean 1",
-      "description": "Queen Bed + 2 Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "description": "Queen Bed + 2 Extra Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/lamborajo-3/cabins/cabin-7-royal-master-queen-bed-extra-2x-single-bed-private-bathroom-and-jacuzzi/959-lamborajo-3-113.webp",
@@ -131,7 +131,7 @@
     },
     {
       "name": "Royal Master Ocean 2",
-      "description": "Queen Bed + 2 Extra Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "description": "Queen Bed + 2 Extra Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/lamborajo-3/cabins/cabin-8-royal-master-queen-bed-extra-2x-single-bed-private-bathroom-and-jacuzzi/975-lamborajo-3-100.webp",

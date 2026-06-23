@@ -69,7 +69,7 @@
   "cabins": [
     {
       "name": "Share Cabin 1 (Main Deck)",
-      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/flores-utama/cabins/share-cabin-1-4x-single-bunk-bed/616-img-2219.webp",
@@ -84,7 +84,7 @@
     },
     {
       "name": "Share Cabin 2 (Main Deck)",
-      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/flores-utama/cabins/wc-share-2/614-img-2188.webp",
@@ -99,7 +99,7 @@
     },
     {
       "name": "Share Cabin 3 (Main Deck)",
-      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/620-img-2228.webp",
@@ -115,7 +115,7 @@
     },
     {
       "name": "Share Cabin 4 (Main Deck)",
-      "description": "4 single bunk bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/flores-utama/cabins/share-cabin-4-4x-single-bunk-bed/623-img-2225.webp",

@@ -73,7 +73,7 @@
   "cabins": [
     {
       "name": "Add Cabin 1 (Lower Deck)",
-      "description": "4 single bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "description": "4 single bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/ocean-angel/cabins/5-additional-cabin/1163-ocean-angel-crew-room-1.webp",
@@ -89,7 +89,7 @@
     },
     {
       "name": "Add Cabin 2 (Lower Deck)",
-      "description": "4 single bed, kamar mandi bersama, AC, kapasitas 1-4 orang.",
+      "description": "4 single bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
       "capacity": "1-4",
       "images": [
         "packages/ocean-angel/cabins/5-additional-cabin/1163-ocean-angel-crew-room-1.webp",

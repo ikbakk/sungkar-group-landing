@@ -208,24 +208,106 @@ const CABIN_EN = {
   "Kabin VIP": "VIP cabin",
 };
 
+// Per-locale description-fragment dictionaries. Keys are lowercase Indonesian
+// fragments; replacements are applied longest-first and case-insensitively to
+// handle mixed-case source data. The deck-level fragment is excluded from the
+// badge display in the component, so it is not translated here.
+const CABIN_PARTS = {
+  en: {
+    "kamar mandi pribadi dengan jacuzzi": "private bathroom with jacuzzi",
+    "kamar mandi pribadi dan balkon pribadi":
+      "private bathroom and private balcony",
+    "kamar mandi sesuai tipe kabin": "bathroom by cabin type",
+    "kamar mandi bersama": "shared bathroom",
+    "kamar mandi pribadi": "private bathroom",
+    "balkon pribadi": "private balcony",
+    "air panas": "hot water",
+    kapasitas: "capacity",
+    orang: "pax",
+    dan: "and",
+  },
+  ar: {
+    "kamar mandi pribadi dengan jacuzzi": "حمام خاص مع جاكوزي",
+    "kamar mandi pribadi dan balkon pribadi": "حمام خاص وشرفة خاصة",
+    "kamar mandi sesuai tipe kabin": "حمام حسب نوع الكابينة",
+    "kamar mandi bersama": "حمام مشترك",
+    "kamar mandi pribadi": "حمام خاص",
+    "balkon pribadi": "شرفة خاصة",
+    "air panas": "ماء ساخن",
+    kapasitas: "سعة",
+    orang: "أشخاص",
+    dan: "و",
+  },
+  ms: {
+    "kamar mandi pribadi dengan jacuzzi": "bilik mandi peribadi dengan jacuzzi",
+    "kamar mandi pribadi dan balkon pribadi":
+      "bilik mandi peribadi dan balkon peribadi",
+    "kamar mandi sesuai tipe kabin": "bilik mandi mengikut jenis kabin",
+    "kamar mandi bersama": "bilik mandi berkongsi",
+    "kamar mandi pribadi": "bilik mandi peribadi",
+    "balkon pribadi": "balkon peribadi",
+    "air panas": "air panas",
+    kapasitas: "kapasiti",
+    orang: "orang",
+    dan: "dan",
+  },
+  zh: {
+    "kamar mandi pribadi dengan jacuzzi": "带按摩浴缸的私人浴室",
+    "kamar mandi pribadi dan balkon pribadi": "私人浴室和私人阳台",
+    "kamar mandi sesuai tipe kabin": "按舱型配备浴室",
+    "kamar mandi bersama": "共用浴室",
+    "kamar mandi pribadi": "私人浴室",
+    "balkon pribadi": "私人阳台",
+    "air panas": "热水",
+    kapasitas: "容纳",
+    orang: "人",
+    dan: "和",
+  },
+};
+
+// Per-locale price-unit suffixes (e.g. "/orang" -> "/person").
+const PRICE_UNIT = {
+  en: { "/orang": "/person", "/kabin": "/cabin" },
+  ar: { "/orang": "/شخص", "/kabin": "/كابينة" },
+  ms: { "/orang": "/orang", "/kabin": "/kabin" },
+  zh: { "/orang": "/人", "/kabin": "/间" },
+};
+
+function applyParts(text, parts) {
+  if (!text) return text;
+  // Sort keys longest-first so multi-word fragments win over single words.
+  const entries = Object.entries(parts).sort(
+    (a, b) => b[0].length - a[0].length,
+  );
+  let result = text;
+  for (const [from, to] of entries) {
+    const re = new RegExp(from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
+    result = result.replace(re, to);
+  }
+  return result;
+}
+
 function localizeCabins(cabins, locale) {
   if (locale === "id") return cabins;
+  const nameMap = CABIN_EN;
+  const partsMap = CABIN_PARTS[locale] || CABIN_PARTS.en;
+  const unitMap = PRICE_UNIT[locale] || PRICE_UNIT.en;
   return cabins.map((c) => ({
     ...c,
-    name: Object.entries(CABIN_EN).reduce(
+    name: Object.entries(nameMap).reduce(
       (n, [id, en]) => n.replace(id, en),
       c.name,
     ),
-    description: Object.entries(CABIN_EN).reduce(
-      (d, [id, en]) => d.replace(id, en),
-      c.description,
-    ),
+    description: applyParts(c.description, partsMap),
     prices: c.prices
       ? Object.fromEntries(
-          Object.entries(c.prices).map(([k, v]) => [
-            k,
-            v.replace("/orang", "/person").replace("/kabin", "/cabin"),
-          ]),
+          Object.entries(c.prices).map(([k, v]) => {
+            let s = v;
+            for (const [from, to] of Object.entries(unitMap)) {
+              s = s.split(from).join(to);
+            }
+            return [k, s];
+          }),
         )
       : undefined,
   }));

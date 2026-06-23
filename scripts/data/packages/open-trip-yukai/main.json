@@ -33,7 +33,7 @@
   "cabins": [
     {
       "name": "Signature Cabin 1",
-      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/yukai/cabins/signature/1441-asfa.webp",
@@ -47,7 +47,7 @@
     },
     {
       "name": "Signature Cabin 2",
-      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/yukai/cabins/signature/1441-asfa.webp",
@@ -61,7 +61,7 @@
     },
     {
       "name": "Deluxe Cabin 1",
-      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/yukai/cabins/deluxe-main-deck/1413-dji-0065.webp",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Deluxe Cabin 2",
-      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/yukai/cabins/deluxe-main-deck/1413-dji-0065.webp",
@@ -89,7 +89,7 @@
     },
     {
       "name": "Deluxe Cabin 3",
-      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/yukai/cabins/deluxe-main-deck/1413-dji-0065.webp",
@@ -103,7 +103,7 @@
     },
     {
       "name": "Deluxe Cabin 4",
-      "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Upper Deck.",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/yukai/cabins/deluxe-main-deck/1413-dji-0065.webp",
