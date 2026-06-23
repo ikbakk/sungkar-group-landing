@@ -91,10 +91,10 @@
       "description": "Queen Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-2",
       "images": [
-        "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/412-nk2-0002s-0000-wil04795.webp",
-        "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/413-nk2-0002s-0001-layer-3.webp",
-        "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/414-nk2-0002s-0002-layer-2.webp",
-        "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/415-nk2-0002s-0003-layer-1.webp"
+        "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/408-nk2-0001s-0000-wil04792.webp",
+        "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/409-nk2-0001s-0001-wil04783.webp",
+        "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/410-nk2-0001s-0002-wil04775.webp",
+        "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/411-nk2-0001s-0003-wil04772.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 5.350.000/pax"

@@ -1533,6 +1533,7 @@ import _packages_ocean_pro_cabins_etc_1268_gopr1001 from "./packages/ocean-pro/c
 import _packages_ocean_pro_cabins_etc_1269_gopr1002 from "./packages/ocean-pro/cabins/etc/1269-gopr1002.webp";
 import _packages_ocean_pro_cabins_etc_1270_gopr1004 from "./packages/ocean-pro/cabins/etc/1270-gopr1004.webp";
 import _packages_ocean_pro_cabins_etc_1271_gopr1007 from "./packages/ocean-pro/cabins/etc/1271-gopr1007.webp";
+import _packages_ocean_pro_cabins_etc_1272_gopr1009 from "./packages/ocean-pro/cabins/etc/1272-gopr1009.webp";
 import _packages_ocean_pro_cabins_etc_1273_gopr1010 from "./packages/ocean-pro/cabins/etc/1273-gopr1010.webp";
 import _packages_ocean_pro_cabins_etc_1274_gopr1012 from "./packages/ocean-pro/cabins/etc/1274-gopr1012.webp";
 import _packages_ocean_pro_cabins_etc_1275_gopr1788 from "./packages/ocean-pro/cabins/etc/1275-gopr1788.webp";
@@ -4017,6 +4018,7 @@ export const PACKAGES = {
         "1269Gopr1002": _packages_ocean_pro_cabins_etc_1269_gopr1002,
         "1270Gopr1004": _packages_ocean_pro_cabins_etc_1270_gopr1004,
         "1271Gopr1007": _packages_ocean_pro_cabins_etc_1271_gopr1007,
+        "1272Gopr1009": _packages_ocean_pro_cabins_etc_1272_gopr1009,
         "1273Gopr1010": _packages_ocean_pro_cabins_etc_1273_gopr1010,
         "1274Gopr1012": _packages_ocean_pro_cabins_etc_1274_gopr1012,
         "1275Gopr1788": _packages_ocean_pro_cabins_etc_1275_gopr1788,

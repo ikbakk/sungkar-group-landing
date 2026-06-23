@@ -76,9 +76,10 @@
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
-        "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
-        "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
+        "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+        "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+        "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+        "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -90,57 +91,6 @@
     {
       "name": "Superior Cabin 2 (Lower Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
-      "capacity": "1-2",
-      "images": [
-        "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
-        "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
-        "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
-        "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
-      ],
-      "prices": {
-        "1D": "Harga tergantung paket (lihat daftar harga)",
-        "2D1N": "Harga tergantung paket (lihat daftar harga)",
-        "3D2N": "Harga tergantung paket (lihat daftar harga)",
-        "4D3N": "Harga tergantung paket (lihat daftar harga)"
-      }
-    },
-    {
-      "name": "Superior Cabin 3 (Lower Deck)",
-      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
-      "capacity": "1-2",
-      "images": [
-        "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
-        "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
-        "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
-        "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
-      ],
-      "prices": {
-        "1D": "Harga tergantung paket (lihat daftar harga)",
-        "2D1N": "Harga tergantung paket (lihat daftar harga)",
-        "3D2N": "Harga tergantung paket (lihat daftar harga)",
-        "4D3N": "Harga tergantung paket (lihat daftar harga)"
-      }
-    },
-    {
-      "name": "Full Ocean 1 (Main Deck)",
-      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
-      "capacity": "1-2",
-      "images": [
-        "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
-        "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
-        "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
-        "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
-      ],
-      "prices": {
-        "1D": "Harga tergantung paket (lihat daftar harga)",
-        "2D1N": "Harga tergantung paket (lihat daftar harga)",
-        "3D2N": "Harga tergantung paket (lihat daftar harga)",
-        "4D3N": "Harga tergantung paket (lihat daftar harga)"
-      }
-    },
-    {
-      "name": "Full Ocean 2 (Main Deck)",
-      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
         "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
@@ -156,14 +106,64 @@
       }
     },
     {
+      "name": "Superior Cabin 3 (Lower Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "images": [
+        "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+        "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+        "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+        "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+      ],
+      "prices": {
+        "1D": "Harga tergantung paket (lihat daftar harga)",
+        "2D1N": "Harga tergantung paket (lihat daftar harga)",
+        "3D2N": "Harga tergantung paket (lihat daftar harga)",
+        "4D3N": "Harga tergantung paket (lihat daftar harga)"
+      }
+    },
+    {
+      "name": "Full Ocean 1 (Main Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "images": [
+        "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
+        "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
+        "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
+      ],
+      "prices": {
+        "1D": "Harga tergantung paket (lihat daftar harga)",
+        "2D1N": "Harga tergantung paket (lihat daftar harga)",
+        "3D2N": "Harga tergantung paket (lihat daftar harga)",
+        "4D3N": "Harga tergantung paket (lihat daftar harga)"
+      }
+    },
+    {
+      "name": "Full Ocean 2 (Main Deck)",
+      "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+      "capacity": "1-2",
+      "images": [
+        "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
+        "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
+        "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
+        "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
+      ],
+      "prices": {
+        "1D": "Harga tergantung paket (lihat daftar harga)",
+        "2D1N": "Harga tergantung paket (lihat daftar harga)",
+        "3D2N": "Harga tergantung paket (lihat daftar harga)",
+        "4D3N": "Harga tergantung paket (lihat daftar harga)"
+      }
+    },
+    {
       "name": "Full Ocean 3 (Main Deck)",
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/337-nkj1-36-0007-wil02353.webp",
-        "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/338-nkj1-36-0008-wil02350.webp",
-        "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/339-nkj1-36-0009-wil02344.webp",
-        "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/340-nkj1-36-0010-wil02341.webp"
+        "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
+        "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
+        "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
+        "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -177,10 +177,10 @@
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/342-nkj1-36-0012-wil02334.webp",
-        "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/343-nkj1-36-0013-wil02328.webp",
-        "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/344-nkj1-36-0014-wil02325.webp",
-        "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/345-nkj1-36-0015-wil02319.webp"
+        "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
+        "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
+        "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
+        "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",

@@ -73,10 +73,9 @@
       "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
       "capacity": 2,
       "images": [
-        "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
-        "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
-        "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
-        "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
+        "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+        "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+        "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -90,10 +89,9 @@
       "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
       "capacity": 2,
       "images": [
-        "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
-        "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
-        "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
-        "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
+        "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+        "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+        "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -124,10 +122,10 @@
       "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
       "capacity": 3,
       "images": [
-        "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1093-maheswari-signatureocean-1-rightside-1.webp",
-        "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1094-maheswari-signatureocean-1-rightside-2.webp",
-        "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1095-maheswari-signatureocean-1-rightside-3.webp",
-        "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1096-maheswari-signatureocean-1-rightside-4.webp"
+        "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+        "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+        "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+        "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -141,9 +139,9 @@
       "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
       "capacity": 2,
       "images": [
-        "packages/maheswari/cabins/5-cabin-5-deluxe-ocean-right-side-upper-deck/1097-maheswari-deluxeocean-1-rightside-1.webp",
-        "packages/maheswari/cabins/5-cabin-5-deluxe-ocean-right-side-upper-deck/1098-maheswari-deluxeocean-1-rightside-2.webp",
-        "packages/maheswari/cabins/5-cabin-5-deluxe-ocean-right-side-upper-deck/1099-maheswari-deluxeocean-1-rightside-3.webp"
+        "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+        "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+        "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -173,9 +171,10 @@
       "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
       "capacity": 3,
       "images": [
-        "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
-        "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
-        "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
+        "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
+        "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
+        "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -189,9 +188,10 @@
       "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
       "capacity": 3,
       "images": [
-        "packages/maheswari/cabins/8-cabin-8-superior-cabin-lower-deck/1106-maheswari-superior-8-1.webp",
-        "packages/maheswari/cabins/8-cabin-8-superior-cabin-lower-deck/1107-maheswari-superior-8-2.webp",
-        "packages/maheswari/cabins/8-cabin-8-superior-cabin-lower-deck/1108-maheswari-superior-8-3.webp"
+        "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
+        "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
+        "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
+        "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",

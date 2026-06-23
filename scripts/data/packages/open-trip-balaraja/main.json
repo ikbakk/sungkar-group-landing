@@ -36,8 +36,8 @@
       "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-4",
       "images": [
-        "packages/balaraja/cabins/1-share-cabin-1-4x-single-bunk-bed/544-sve04903-hdr.webp",
-        "packages/balaraja/cabins/1-share-cabin-1-4x-single-bunk-bed/545-sve04921-hdr.webp"
+        "packages/balaraja/cabins/share-toilet-1/569-sve04960-hdr.webp",
+        "packages/balaraja/cabins/share-toilet-1/570-sve04969-hdr.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 3.000.000/pax"
@@ -48,8 +48,8 @@
       "description": "4x Single Bunk Bed, kamar mandi sesuai tipe kabin, AC, berada di Main Deck.",
       "capacity": "1-4",
       "images": [
-        "packages/balaraja/cabins/share-toilet-1/569-sve04960-hdr.webp",
-        "packages/balaraja/cabins/share-toilet-1/570-sve04969-hdr.webp"
+        "packages/balaraja/cabins/share-toilet-2/571-sve05006-hdr.webp",
+        "packages/balaraja/cabins/share-toilet-2/572-sve05012-hdr.webp"
       ],
       "prices": {
         "default": "Minimum 2 pax: IDR 3.000.000/pax"

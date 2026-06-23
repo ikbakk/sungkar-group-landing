@@ -89,10 +89,10 @@
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/480-alfathran-0005-wil00889.webp",
-        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/481-alfathran-0006-layer-0.webp",
-        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/482-alfathran-0010-wil00882.webp",
-        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/483-alfathran-0011-wil00881.webp"
+        "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+        "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+        "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+        "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -106,10 +106,10 @@
       "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
       "capacity": "1-2",
       "images": [
-        "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/485-alfathran-lower-deck-0000-wil00838.webp",
-        "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/486-alfathran-lower-deck-0001-wil00832.webp",
-        "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/487-alfathran-lower-deck-0001-wil00837.webp",
-        "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/488-alfathran-lower-deck-0002-wil00833.webp"
+        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/480-alfathran-0005-wil00889.webp",
+        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/481-alfathran-0006-layer-0.webp",
+        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/482-alfathran-0010-wil00882.webp",
+        "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/483-alfathran-0011-wil00881.webp"
       ],
       "prices": {
         "1D": "Harga tergantung paket (lihat daftar harga)",

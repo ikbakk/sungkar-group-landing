@@ -10970,16 +10970,16 @@
           "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
         ],
         "Superior Cabin 1 (Lower Deck)": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "Superior Cabin 2 (Lower Deck)": [
           "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/480-alfathran-0005-wil00889.webp",
           "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/481-alfathran-0006-layer-0.webp",
           "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/482-alfathran-0010-wil00882.webp",
           "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/483-alfathran-0011-wil00881.webp"
-        ],
-        "Superior Cabin 2 (Lower Deck)": [
-          "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/485-alfathran-lower-deck-0000-wil00838.webp",
-          "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/486-alfathran-lower-deck-0001-wil00832.webp",
-          "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/487-alfathran-lower-deck-0001-wil00837.webp",
-          "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/488-alfathran-lower-deck-0002-wil00833.webp"
         ],
         "Full Ocean (Main Deck)": [
           "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/495-alfathran-0000-wil00915.webp",
@@ -11026,34 +11026,34 @@
           "packages/hatira-hela/cabins/2-master-2-main-deck/643-hatirah-master2-2.webp"
         ],
         "Deluxe Ocean 3 (Main Deck)": [
-          "packages/hatira-hela/cabins/3-deluxe-3-main-deck/651-hatirah-deluxe3-1.webp",
-          "packages/hatira-hela/cabins/3-deluxe-3-main-deck/652-hatirah-deluxe3-2.webp",
-          "packages/hatira-hela/cabins/3-deluxe-3-main-deck/653-hatirah-deluxe3-3.webp",
-          "packages/hatira-hela/cabins/3-deluxe-3-main-deck/654-hatirah-deluxe3-4.webp"
-        ],
-        "Deluxe Ocean 4 (Main Deck)": [
-          "packages/hatira-hela/cabins/4-deluxe-4-main-deck/657-hatirah-deluxe4-1.webp",
-          "packages/hatira-hela/cabins/4-deluxe-4-main-deck/658-hatirah-deluxe4-2.webp",
-          "packages/hatira-hela/cabins/4-deluxe-4-main-deck/659-hatirah-deluxe4-3.webp",
-          "packages/hatira-hela/cabins/4-deluxe-4-main-deck/660-hatirah-deluxe4-4.webp"
-        ],
-        "Deluxe Ocean 5 (Main Deck)": [
           "packages/hatira-hela/cabins/5-deluxe-5-main-deck/662-hatirah-deluxe5-1.webp",
           "packages/hatira-hela/cabins/5-deluxe-5-main-deck/663-hatirah-deluxe5-2.webp",
           "packages/hatira-hela/cabins/5-deluxe-5-main-deck/664-hatirah-deluxe5-3.webp",
           "packages/hatira-hela/cabins/5-deluxe-5-main-deck/665-hatirah-deluxe5-4.webp"
         ],
-        "Deluxe Ocean 6 (Upper Deck)": [
+        "Deluxe Ocean 4 (Main Deck)": [
           "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/667-dji-20250224162030-0020-d-wilartboard-1-copy-2.webp",
           "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/668-dji-20250224162030-0020-d-wilartboard-1-copy-3.webp",
           "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/669-dji-20250224162030-0020-d-wilartboard-1-copy-4.webp",
           "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/670-dji-20250224162030-0020-d-wilartboard-1-copy-5.webp"
         ],
-        "Deluxe Ocean 7 (Upper Deck)": [
+        "Deluxe Ocean 5 (Main Deck)": [
           "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/673-hatiraartboard-1-copy-2.webp",
           "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/674-hatiraartboard-1-copy-3.webp",
           "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/675-hatiraartboard-1-copy-4.webp",
           "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/676-hatiraartboard-1-copy.webp"
+        ],
+        "Deluxe Ocean 6 (Upper Deck)": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "Deluxe Ocean 7 (Upper Deck)": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
         ],
         "Deluxe Ocean 8 (Upper Deck)": [
           "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
@@ -11076,16 +11076,14 @@
       ],
       "cabins": {
         "Superior Cabin 1 (Lower Deck)": [
-          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
-          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
-          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
-          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
         ],
         "Superior Cabin 2 (Lower Deck)": [
-          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
-          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
-          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
-          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
         ],
         "Signature Ocean 1 (Main Deck)": [
           "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
@@ -11094,15 +11092,15 @@
           "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
         ],
         "Signature Ocean 2 (Main Deck)": [
-          "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1093-maheswari-signatureocean-1-rightside-1.webp",
-          "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1094-maheswari-signatureocean-1-rightside-2.webp",
-          "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1095-maheswari-signatureocean-1-rightside-3.webp",
-          "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1096-maheswari-signatureocean-1-rightside-4.webp"
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
         ],
         "Deluxe Ocean 1 (Upper Deck)": [
-          "packages/maheswari/cabins/5-cabin-5-deluxe-ocean-right-side-upper-deck/1097-maheswari-deluxeocean-1-rightside-1.webp",
-          "packages/maheswari/cabins/5-cabin-5-deluxe-ocean-right-side-upper-deck/1098-maheswari-deluxeocean-1-rightside-2.webp",
-          "packages/maheswari/cabins/5-cabin-5-deluxe-ocean-right-side-upper-deck/1099-maheswari-deluxeocean-1-rightside-3.webp"
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
         ],
         "Deluxe Ocean 2 (Upper Deck)": [
           "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
@@ -11110,14 +11108,16 @@
           "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
         ],
         "Master Ocean 1 (Main Deck)": [
-          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
-          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
-          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
         ],
         "Master Ocean 2 (Main Deck)": [
-          "packages/maheswari/cabins/8-cabin-8-superior-cabin-lower-deck/1106-maheswari-superior-8-1.webp",
-          "packages/maheswari/cabins/8-cabin-8-superior-cabin-lower-deck/1107-maheswari-superior-8-2.webp",
-          "packages/maheswari/cabins/8-cabin-8-superior-cabin-lower-deck/1108-maheswari-superior-8-3.webp"
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
         ]
       },
       "cabinErrors": []
@@ -11134,45 +11134,45 @@
       ],
       "cabins": {
         "Superior Cabin 1 (Lower Deck)": [
-          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
-          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
-          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
-        ],
-        "Superior Cabin 2 (Lower Deck)": [
-          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
-          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
-          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
-          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
-        ],
-        "Superior Cabin 3 (Lower Deck)": [
-          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
-          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
-          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
-          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
-        ],
-        "Full Ocean 1 (Main Deck)": [
-          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
-          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
-          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
-          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
-        ],
-        "Full Ocean 2 (Main Deck)": [
           "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
           "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
           "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
           "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
         ],
+        "Superior Cabin 2 (Lower Deck)": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "Superior Cabin 3 (Lower Deck)": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "Full Ocean 1 (Main Deck)": [
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
+        ],
+        "Full Ocean 2 (Main Deck)": [
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
+        ],
         "Full Ocean 3 (Main Deck)": [
-          "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/337-nkj1-36-0007-wil02353.webp",
-          "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/338-nkj1-36-0008-wil02350.webp",
-          "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/339-nkj1-36-0009-wil02344.webp",
-          "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/340-nkj1-36-0010-wil02341.webp"
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
         ],
         "Full Ocean 4 (Main Deck)": [
-          "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/342-nkj1-36-0012-wil02334.webp",
-          "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/343-nkj1-36-0013-wil02328.webp",
-          "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/344-nkj1-36-0014-wil02325.webp",
-          "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/345-nkj1-36-0015-wil02319.webp"
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
         ]
       },
       "cabinErrors": []
@@ -11212,10 +11212,10 @@
           "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/411-nk2-0001s-0003-wil04772.webp"
         ],
         "Full Ocean 2 (Main Deck)": [
-          "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/412-nk2-0002s-0000-wil04795.webp",
-          "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/413-nk2-0002s-0001-layer-3.webp",
-          "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/414-nk2-0002s-0002-layer-2.webp",
-          "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/415-nk2-0002s-0003-layer-1.webp"
+          "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/408-nk2-0001s-0000-wil04792.webp",
+          "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/409-nk2-0001s-0001-wil04783.webp",
+          "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/410-nk2-0001s-0002-wil04775.webp",
+          "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/411-nk2-0001s-0003-wil04772.webp"
         ],
         "Master Ocean (Upper Deck)": [
           "packages/nk-jaya-2/cabins/6-master-ocean-queen-bed/417-nk2-0002-wil04944.webp",
@@ -11262,16 +11262,16 @@
           "packages/yukai/cabins/deluxe-main-deck/1416-yukai-juli2025-0004-yukai-deluce-r-11.webp"
         ],
         "Deluxe Cabin 3 (Upper Deck)": [
-          "packages/yukai/cabins/deluxe-upper-deck/1417-dji-20250724153742-0054-d-wil.webp",
-          "packages/yukai/cabins/deluxe-upper-deck/1418-dji-20250724153809-0056-d-wil.webp",
-          "packages/yukai/cabins/deluxe-upper-deck/1419-yukai-juli2025-0000-yukai-deluc-l-2.webp",
-          "packages/yukai/cabins/deluxe-upper-deck/1420-yukai-juli2025-0000-yukai-deluc-l-3.webp"
+          "packages/yukai/cabins/deluxe-main-deck/1413-dji-0065.webp",
+          "packages/yukai/cabins/deluxe-main-deck/1414-yukai-juli2025-copy1.webp",
+          "packages/yukai/cabins/deluxe-main-deck/1415-yukai-juli2025-0004-yukai-deluc-r-11.webp",
+          "packages/yukai/cabins/deluxe-main-deck/1416-yukai-juli2025-0004-yukai-deluce-r-11.webp"
         ],
         "Deluxe Cabin 4 (Upper Deck)": [
-          "packages/yukai/cabins/deluxe-upper-deck/1417-dji-20250724153742-0054-d-wil.webp",
-          "packages/yukai/cabins/deluxe-upper-deck/1418-dji-20250724153809-0056-d-wil.webp",
-          "packages/yukai/cabins/deluxe-upper-deck/1419-yukai-juli2025-0000-yukai-deluc-l-2.webp",
-          "packages/yukai/cabins/deluxe-upper-deck/1420-yukai-juli2025-0000-yukai-deluc-l-3.webp"
+          "packages/yukai/cabins/deluxe-main-deck/1413-dji-0065.webp",
+          "packages/yukai/cabins/deluxe-main-deck/1414-yukai-juli2025-copy1.webp",
+          "packages/yukai/cabins/deluxe-main-deck/1415-yukai-juli2025-0004-yukai-deluc-r-11.webp",
+          "packages/yukai/cabins/deluxe-main-deck/1416-yukai-juli2025-0004-yukai-deluce-r-11.webp"
         ]
       },
       "cabinErrors": []
@@ -11380,10 +11380,10 @@
           "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/932-lamborajo-3-26.webp"
         ],
         "Master Ocean 2 (Main Deck)": [
-          "packages/lamborajo-3/cabins/cabin-6-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/952-lamborajo-3-11.webp",
-          "packages/lamborajo-3/cabins/cabin-6-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/953-lamborajo-3-15.webp",
-          "packages/lamborajo-3/cabins/cabin-6-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/954-lamborajo-3-18.webp",
-          "packages/lamborajo-3/cabins/cabin-6-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/955-lamborajo-3-19.webp"
+          "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/929-lamborajo-3-10.webp",
+          "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/930-lamborajo-3-17.webp",
+          "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/931-lamborajo-3-25.webp",
+          "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/932-lamborajo-3-26.webp"
         ],
         "Royal Master Ocean 1 (Upper Deck)": [
           "packages/lamborajo-3/cabins/cabin-7-royal-master-queen-bed-extra-2x-single-bed-private-bathroom-and-jacuzzi/959-lamborajo-3-113.webp",
@@ -11412,21 +11412,20 @@
       ],
       "cabins": {
         "Add Cabin 1 (Lower Deck)": [
-          "packages/ocean-angel/cabins/1-vip-full-ocean/1141-ocean-angel-cabin-1-1.webp",
-          "packages/ocean-angel/cabins/1-vip-full-ocean/1142-ocean-angel-cabin-1-2.webp",
-          "packages/ocean-angel/cabins/1-vip-full-ocean/1143-ocean-angel-cabin-1-3.webp",
-          "packages/ocean-angel/cabins/1-vip-full-ocean/1144-ocean-angel-1.webp"
+          "packages/ocean-angel/cabins/5-additional-cabin/1163-ocean-angel-crew-room-1.webp",
+          "packages/ocean-angel/cabins/5-additional-cabin/1164-ocean-angel-crew-room-2.webp",
+          "packages/ocean-angel/cabins/5-additional-cabin/1165-ocean-angel-crew-room-3.webp"
         ],
         "Add Cabin 2 (Lower Deck)": [
-          "packages/ocean-angel/cabins/2-vip-seaview/1150-ocean-angel-15.webp",
-          "packages/ocean-angel/cabins/2-vip-seaview/1151-ocean-angel-16.webp",
-          "packages/ocean-angel/cabins/2-vip-seaview/1152-ocean-angel-17.webp",
-          "packages/ocean-angel/cabins/2-vip-seaview/1153-ocean-angel-18.webp"
+          "packages/ocean-angel/cabins/5-additional-cabin/1163-ocean-angel-crew-room-1.webp",
+          "packages/ocean-angel/cabins/5-additional-cabin/1164-ocean-angel-crew-room-2.webp",
+          "packages/ocean-angel/cabins/5-additional-cabin/1165-ocean-angel-crew-room-3.webp"
         ],
         "Superior Cabin 1 (Main Deck)": [
-          "packages/ocean-angel/cabins/3-family-cabin/1155-ocean-angel-11.webp",
-          "packages/ocean-angel/cabins/3-family-cabin/1156-ocean-angel-12.webp",
-          "packages/ocean-angel/cabins/3-family-cabin/1157-ocean-angel-13.webp"
+          "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
+          "packages/ocean-angel/cabins/4-superior-cabin/1159-ocean-angel-23.webp",
+          "packages/ocean-angel/cabins/4-superior-cabin/1160-ocean-angel-24.webp",
+          "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
         ],
         "Superior Cabin 2 (Main Deck)": [
           "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
@@ -11435,9 +11434,10 @@
           "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
         ],
         "Superior Cabin 3 (Main Deck)": [
-          "packages/ocean-angel/cabins/5-additional-cabin/1163-ocean-angel-crew-room-1.webp",
-          "packages/ocean-angel/cabins/5-additional-cabin/1164-ocean-angel-crew-room-2.webp",
-          "packages/ocean-angel/cabins/5-additional-cabin/1165-ocean-angel-crew-room-3.webp"
+          "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
+          "packages/ocean-angel/cabins/4-superior-cabin/1159-ocean-angel-23.webp",
+          "packages/ocean-angel/cabins/4-superior-cabin/1160-ocean-angel-24.webp",
+          "packages/ocean-angel/cabins/4-superior-cabin/1161-ocean-angel-25.webp"
         ],
         "Superior Cabin 4 (Main Deck)": [
           "packages/ocean-angel/cabins/4-superior-cabin/1158-ocean-angel-22.webp",
@@ -11592,16 +11592,16 @@
       ],
       "cabins": {
         "Superior Cabin 1 (Lower Deck)": [
-          "packages/yumana/cabins/1-royal-suite-cabin/1475-yumana-royalsuite-cabin-1.webp",
-          "packages/yumana/cabins/1-royal-suite-cabin/1476-yumana-royalsuite-cabin-10.webp",
-          "packages/yumana/cabins/1-royal-suite-cabin/1477-yumana-royalsuite-cabin-11.webp",
-          "packages/yumana/cabins/1-royal-suite-cabin/1478-yumana-royalsuite-cabin-12.webp"
+          "packages/yumana/cabins/4-superior-cabin/1507-yumana-superior-cabin-1.webp",
+          "packages/yumana/cabins/4-superior-cabin/1508-yumana-superior-cabin-10.webp",
+          "packages/yumana/cabins/4-superior-cabin/1509-yumana-superior-cabin-11.webp",
+          "packages/yumana/cabins/4-superior-cabin/1510-yumana-superior-cabin-12.webp"
         ],
         "Superior Cabin 2 (Lower Deck)": [
-          "packages/yumana/cabins/2-signature-cabin-upper-deck/1493-yumana-sign-cabin-ud-1.webp",
-          "packages/yumana/cabins/2-signature-cabin-upper-deck/1494-yumana-sign-cabin-ud-2.webp",
-          "packages/yumana/cabins/2-signature-cabin-upper-deck/1495-yumana-sign-cabin-ud-3.webp",
-          "packages/yumana/cabins/2-signature-cabin-upper-deck/1496-yumana-sign-cabin-ud-4.webp"
+          "packages/yumana/cabins/4-superior-cabin/1507-yumana-superior-cabin-1.webp",
+          "packages/yumana/cabins/4-superior-cabin/1508-yumana-superior-cabin-10.webp",
+          "packages/yumana/cabins/4-superior-cabin/1509-yumana-superior-cabin-11.webp",
+          "packages/yumana/cabins/4-superior-cabin/1510-yumana-superior-cabin-12.webp"
         ],
         "Deluxe Cabin 1 (Main Deck)": [
           "packages/yumana/cabins/3-deluxe-cabin/1500-yumana-deluxe-cabin-2.webp",
@@ -11610,10 +11610,10 @@
           "packages/yumana/cabins/3-deluxe-cabin/1503-yumana-deluxe-cabin-5.webp"
         ],
         "Deluxe Cabin 2 (Main Deck)": [
-          "packages/yumana/cabins/4-superior-cabin/1507-yumana-superior-cabin-1.webp",
-          "packages/yumana/cabins/4-superior-cabin/1508-yumana-superior-cabin-10.webp",
-          "packages/yumana/cabins/4-superior-cabin/1509-yumana-superior-cabin-11.webp",
-          "packages/yumana/cabins/4-superior-cabin/1510-yumana-superior-cabin-12.webp"
+          "packages/yumana/cabins/3-deluxe-cabin/1500-yumana-deluxe-cabin-2.webp",
+          "packages/yumana/cabins/3-deluxe-cabin/1501-yumana-deluxe-cabin-3.webp",
+          "packages/yumana/cabins/3-deluxe-cabin/1502-yumana-deluxe-cabin-4.webp",
+          "packages/yumana/cabins/3-deluxe-cabin/1503-yumana-deluxe-cabin-5.webp"
         ],
         "Signature Cabin 1 (Main Deck)": [
           "packages/yumana/cabins/2-signature-cabin-upper-deck/1493-yumana-sign-cabin-ud-1.webp",
@@ -11622,16 +11622,16 @@
           "packages/yumana/cabins/2-signature-cabin-upper-deck/1496-yumana-sign-cabin-ud-4.webp"
         ],
         "Signature Cabin 2 (Upper Deck)": [
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1487-yumana-sign-cabin-md-1.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1488-yumana-sign-cabin-md-2.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1489-yumana-sign-cabin-md-3.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1490-yumana-sign-cabin-md-4.webp"
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1493-yumana-sign-cabin-ud-1.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1494-yumana-sign-cabin-ud-2.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1495-yumana-sign-cabin-ud-3.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1496-yumana-sign-cabin-ud-4.webp"
         ],
         "Signature Cabin 3 (Upper Deck)": [
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1487-yumana-sign-cabin-md-1.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1488-yumana-sign-cabin-md-2.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1489-yumana-sign-cabin-md-3.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1490-yumana-sign-cabin-md-4.webp"
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1493-yumana-sign-cabin-ud-1.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1494-yumana-sign-cabin-ud-2.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1495-yumana-sign-cabin-ud-3.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1496-yumana-sign-cabin-ud-4.webp"
         ],
         "Royal Suite Cabin (Upper Deck)": [
           "packages/yumana/cabins/1-royal-suite-cabin/1475-yumana-royalsuite-cabin-1.webp",
@@ -11660,16 +11660,16 @@
           "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
         ],
         "Superior Cabin 1": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "Superior Cabin 2": [
           "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/480-alfathran-0005-wil00889.webp",
           "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/481-alfathran-0006-layer-0.webp",
           "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/482-alfathran-0010-wil00882.webp",
           "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/483-alfathran-0011-wil00881.webp"
-        ],
-        "Superior Cabin 2": [
-          "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/485-alfathran-lower-deck-0000-wil00838.webp",
-          "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/486-alfathran-lower-deck-0001-wil00832.webp",
-          "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/487-alfathran-lower-deck-0001-wil00837.webp",
-          "packages/alfathran/cabins/3-superior-cabin-lower-deck-queen-bed-2pax/488-alfathran-lower-deck-0002-wil00833.webp"
         ],
         "Full Ocean": [
           "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/495-alfathran-0000-wil00915.webp",
@@ -11754,12 +11754,12 @@
       ],
       "cabins": {
         "Share Cabin 1": [
-          "packages/balaraja/cabins/1-share-cabin-1-4x-single-bunk-bed/544-sve04903-hdr.webp",
-          "packages/balaraja/cabins/1-share-cabin-1-4x-single-bunk-bed/545-sve04921-hdr.webp"
-        ],
-        "Share Cabin 2": [
           "packages/balaraja/cabins/share-toilet-1/569-sve04960-hdr.webp",
           "packages/balaraja/cabins/share-toilet-1/570-sve04969-hdr.webp"
+        ],
+        "Share Cabin 2": [
+          "packages/balaraja/cabins/share-toilet-2/571-sve05006-hdr.webp",
+          "packages/balaraja/cabins/share-toilet-2/572-sve05012-hdr.webp"
         ],
         "Share Cabin 3": [
           "packages/balaraja/cabins/3-share-cabin-3-4x-single-bunk-bed/549-sve04948-hdr.webp",
@@ -11804,13 +11804,14 @@
           "packages/flores-utama/cabins/wc-share-2/615-img-2189.webp"
         ],
         "Share Cabin 3": [
-          "packages/flores-utama/cabins/share-cabin-2-4x-single-bunk-bed/618-img-2221.webp",
-          "packages/flores-utama/cabins/share-cabin-2-4x-single-bunk-bed/619-img-2222.webp"
-        ],
-        "Share Cabin 4": [
           "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/620-img-2228.webp",
           "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/621-img-2229.webp",
           "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/622-img-2230.webp"
+        ],
+        "Share Cabin 4": [
+          "packages/flores-utama/cabins/share-cabin-4-4x-single-bunk-bed/623-img-2225.webp",
+          "packages/flores-utama/cabins/share-cabin-4-4x-single-bunk-bed/624-img-2226.webp",
+          "packages/flores-utama/cabins/share-cabin-4-4x-single-bunk-bed/625-img-2227.webp"
         ],
         "Master Ocean 1": [
           "packages/flores-utama/cabins/master-ocean-1-queen-bed-extra-bed/587-img-2194.webp",
@@ -11849,24 +11850,23 @@
           "packages/kanha-loka/cabins/01-master-ocean-view-1-cabin/762-bath-ocean-view.webp"
         ],
         "Superior Cabin 1": [
-          "packages/kanha-loka/cabins/02-family-cabin-1-cabin/763-copy-of-copy-of-dsc00498.webp",
-          "packages/kanha-loka/cabins/02-family-cabin-1-cabin/764-copy-of-dsc00401.webp",
-          "packages/kanha-loka/cabins/02-family-cabin-1-cabin/765-copy-of-dsc00523.webp"
-        ],
-        "Superior Cabin 2": [
-          "packages/kanha-loka/cabins/03-deluxe-ocean-view-2-cabin/766-copy-of-dsc00378.webp",
-          "packages/kanha-loka/cabins/03-deluxe-ocean-view-2-cabin/767-copy-of-dsc00491.webp"
-        ],
-        "Family Ocean": [
           "packages/kanha-loka/cabins/04-superior-lower-deck-2-cabins/768-copy-of-dsc00570.webp",
           "packages/kanha-loka/cabins/04-superior-lower-deck-2-cabins/769-dsc00556.webp",
           "packages/kanha-loka/cabins/04-superior-lower-deck-2-cabins/770-dsc00598.webp"
         ],
+        "Superior Cabin 2": [
+          "packages/kanha-loka/cabins/04-superior-lower-deck-2-cabins/768-copy-of-dsc00570.webp",
+          "packages/kanha-loka/cabins/04-superior-lower-deck-2-cabins/769-dsc00556.webp",
+          "packages/kanha-loka/cabins/04-superior-lower-deck-2-cabins/770-dsc00598.webp"
+        ],
+        "Family Ocean": [
+          "packages/kanha-loka/cabins/02-family-cabin-1-cabin/763-copy-of-copy-of-dsc00498.webp",
+          "packages/kanha-loka/cabins/02-family-cabin-1-cabin/764-copy-of-dsc00401.webp",
+          "packages/kanha-loka/cabins/02-family-cabin-1-cabin/765-copy-of-dsc00523.webp"
+        ],
         "Deluxe Ocean 1": [
-          "packages/kanha-loka/cabins/05-sharing-cabin-1-cabin/771-copy-of-dsc00580.webp",
-          "packages/kanha-loka/cabins/05-sharing-cabin-1-cabin/772-copy-of-dsc00594.webp",
-          "packages/kanha-loka/cabins/05-sharing-cabin-1-cabin/773-dsc00556.webp",
-          "packages/kanha-loka/cabins/05-sharing-cabin-1-cabin/774-dsc00558.webp"
+          "packages/kanha-loka/cabins/03-deluxe-ocean-view-2-cabin/766-copy-of-dsc00378.webp",
+          "packages/kanha-loka/cabins/03-deluxe-ocean-view-2-cabin/767-copy-of-dsc00491.webp"
         ],
         "Deluxe Ocean 2": [
           "packages/kanha-loka/cabins/03-deluxe-ocean-view-2-cabin/766-copy-of-dsc00378.webp",
@@ -11891,16 +11891,16 @@
       ],
       "cabins": {
         "Sumbawa Room": [
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/035-alfathran-sumbawa-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/036-alfathran-sumbawa-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/037-alfathran-sumbawa-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/038-alfathran-sumbawa-cabin-4.webp"
         ],
         "Gili Room": [
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/055-alfathran-3-gili-room-1-0004-sve03436.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/056-alfathran-3-gili-room-7.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/057-alfathran-gili-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/058-alfathran-gili-cabin-2.webp"
         ],
         "Flores Room": [
           "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/039-alfathran-3-flores-room-1-0000-sve03548.webp",
@@ -11909,10 +11909,10 @@
           "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/042-alfathran-flores-cabin-2.webp"
         ],
         "Rinjani Room 01": [
-          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/039-alfathran-3-flores-room-1-0000-sve03548.webp",
-          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/040-alfathran-3-flores-room-1-00055.webp",
-          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/041-alfathran-flores-cabin-1.webp",
-          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/042-alfathran-flores-cabin-2.webp"
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/050-alfathran-rinjani1-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/051-alfathran-rinjani1-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/052-alfathran-rinjani1-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/053-alfathran-rinjani1-cabin-4.webp"
         ],
         "Rinjani Room 02": [
           "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/045-alfathran-rinjani2-cabin-1.webp",
@@ -11921,10 +11921,10 @@
           "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/048-alfathran-rinjani2-cabin-4.webp"
         ],
         "Senggigi Room": [
-          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/050-alfathran-rinjani1-cabin-1.webp",
-          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/051-alfathran-rinjani1-cabin-2.webp",
-          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/052-alfathran-rinjani1-cabin-3.webp",
-          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/053-alfathran-rinjani1-cabin-4.webp"
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
         ]
       },
       "cabinErrors": []
@@ -11941,12 +11941,10 @@
       ],
       "cabins": {
         "Share Cabin 1": [
-          "packages/lamborajo-1/cabins/1-share-cabin-1-4x-single-bunk-bed/834-sve04654-hdr.webp",
-          "packages/lamborajo-1/cabins/1-share-cabin-1-4x-single-bunk-bed/835-sve04663-hdr.webp",
-          "packages/lamborajo-1/cabins/1-share-cabin-1-4x-single-bunk-bed/836-sve04666-hdr.webp"
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
         ],
         "Share Cabin 2": [
-          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
         ],
         "Share Cabin 3": [
           "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
@@ -12078,10 +12076,10 @@
           "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/932-lamborajo-3-26.webp"
         ],
         "Master Ocean 2": [
-          "packages/lamborajo-3/cabins/cabin-6-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/952-lamborajo-3-11.webp",
-          "packages/lamborajo-3/cabins/cabin-6-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/953-lamborajo-3-15.webp",
-          "packages/lamborajo-3/cabins/cabin-6-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/954-lamborajo-3-18.webp",
-          "packages/lamborajo-3/cabins/cabin-6-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/955-lamborajo-3-19.webp"
+          "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/929-lamborajo-3-10.webp",
+          "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/930-lamborajo-3-17.webp",
+          "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/931-lamborajo-3-25.webp",
+          "packages/lamborajo-3/cabins/cabin-5-master-ocean-queen-bed-extra-single-bed-private-bathroom-and-jacuzzi/932-lamborajo-3-26.webp"
         ],
         "Royal Master Ocean 1": [
           "packages/lamborajo-3/cabins/cabin-7-royal-master-queen-bed-extra-2x-single-bed-private-bathroom-and-jacuzzi/959-lamborajo-3-113.webp",
@@ -12110,16 +12108,16 @@
       ],
       "cabins": {
         "Sumbawa Room": [
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/035-alfathran-sumbawa-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/036-alfathran-sumbawa-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/037-alfathran-sumbawa-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/038-alfathran-sumbawa-cabin-4.webp"
         ],
         "Gili Room": [
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
-          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/055-alfathran-3-gili-room-1-0004-sve03436.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/056-alfathran-3-gili-room-7.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/057-alfathran-gili-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/058-alfathran-gili-cabin-2.webp"
         ],
         "Flores Room": [
           "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/039-alfathran-3-flores-room-1-0000-sve03548.webp",
@@ -12128,10 +12126,10 @@
           "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/042-alfathran-flores-cabin-2.webp"
         ],
         "Rinjani Room 01": [
-          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/039-alfathran-3-flores-room-1-0000-sve03548.webp",
-          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/040-alfathran-3-flores-room-1-00055.webp",
-          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/041-alfathran-flores-cabin-1.webp",
-          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/042-alfathran-flores-cabin-2.webp"
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/050-alfathran-rinjani1-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/051-alfathran-rinjani1-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/052-alfathran-rinjani1-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/053-alfathran-rinjani1-cabin-4.webp"
         ],
         "Rinjani Room 02": [
           "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/045-alfathran-rinjani2-cabin-1.webp",
@@ -12140,10 +12138,10 @@
           "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/048-alfathran-rinjani2-cabin-4.webp"
         ],
         "Senggigi Room": [
-          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/050-alfathran-rinjani1-cabin-1.webp",
-          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/051-alfathran-rinjani1-cabin-2.webp",
-          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/052-alfathran-rinjani1-cabin-3.webp",
-          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/053-alfathran-rinjani1-cabin-4.webp"
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
         ]
       },
       "cabinErrors": []
@@ -12160,16 +12158,14 @@
       ],
       "cabins": {
         "Superior Cabin 1": [
-          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
-          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
-          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
-          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
         ],
         "Superior Cabin 2": [
-          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
-          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
-          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
-          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
         ],
         "Signature Ocean 1": [
           "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
@@ -12178,15 +12174,15 @@
           "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
         ],
         "Signature Ocean 2": [
-          "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1093-maheswari-signatureocean-1-rightside-1.webp",
-          "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1094-maheswari-signatureocean-1-rightside-2.webp",
-          "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1095-maheswari-signatureocean-1-rightside-3.webp",
-          "packages/maheswari/cabins/4-cabin-4-signature-ocean-right-side-balcony-main-deck/1096-maheswari-signatureocean-1-rightside-4.webp"
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
         ],
         "Deluxe Ocean 1": [
-          "packages/maheswari/cabins/5-cabin-5-deluxe-ocean-right-side-upper-deck/1097-maheswari-deluxeocean-1-rightside-1.webp",
-          "packages/maheswari/cabins/5-cabin-5-deluxe-ocean-right-side-upper-deck/1098-maheswari-deluxeocean-1-rightside-2.webp",
-          "packages/maheswari/cabins/5-cabin-5-deluxe-ocean-right-side-upper-deck/1099-maheswari-deluxeocean-1-rightside-3.webp"
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
         ],
         "Deluxe Ocean 2": [
           "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
@@ -12194,14 +12190,16 @@
           "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
         ],
         "Master Ocean 1": [
-          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
-          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
-          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
         ],
         "Master Ocean 2": [
-          "packages/maheswari/cabins/8-cabin-8-superior-cabin-lower-deck/1106-maheswari-superior-8-1.webp",
-          "packages/maheswari/cabins/8-cabin-8-superior-cabin-lower-deck/1107-maheswari-superior-8-2.webp",
-          "packages/maheswari/cabins/8-cabin-8-superior-cabin-lower-deck/1108-maheswari-superior-8-3.webp"
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
         ]
       },
       "cabinErrors": []
@@ -12218,45 +12216,45 @@
       ],
       "cabins": {
         "Superior Cabin 1": [
-          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
-          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
-          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
-        ],
-        "Superior Cabin 2": [
-          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
-          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
-          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
-          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
-        ],
-        "Superior Cabin 3": [
-          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
-          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
-          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
-          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
-        ],
-        "Full Ocean 1": [
-          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
-          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
-          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
-          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
-        ],
-        "Full Ocean 2": [
           "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
           "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
           "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
           "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
         ],
+        "Superior Cabin 2": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "Superior Cabin 3": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "Full Ocean 1": [
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
+        ],
+        "Full Ocean 2": [
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
+        ],
         "Full Ocean 3": [
-          "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/337-nkj1-36-0007-wil02353.webp",
-          "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/338-nkj1-36-0008-wil02350.webp",
-          "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/339-nkj1-36-0009-wil02344.webp",
-          "packages/nk-jaya-1/cabins/6-cabin-6-superior-cabin/340-nkj1-36-0010-wil02341.webp"
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
         ],
         "Full Ocean 4": [
-          "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/342-nkj1-36-0012-wil02334.webp",
-          "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/343-nkj1-36-0013-wil02328.webp",
-          "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/344-nkj1-36-0014-wil02325.webp",
-          "packages/nk-jaya-1/cabins/7-cabin-7-superior-cabin/345-nkj1-36-0015-wil02319.webp"
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
         ]
       },
       "cabinErrors": []
@@ -12296,10 +12294,10 @@
           "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/411-nk2-0001s-0003-wil04772.webp"
         ],
         "Full Ocean 2": [
-          "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/412-nk2-0002s-0000-wil04795.webp",
-          "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/413-nk2-0002s-0001-layer-3.webp",
-          "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/414-nk2-0002s-0002-layer-2.webp",
-          "packages/nk-jaya-2/cabins/5-full-ocean-queen-bed/415-nk2-0002s-0003-layer-1.webp"
+          "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/408-nk2-0001s-0000-wil04792.webp",
+          "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/409-nk2-0001s-0001-wil04783.webp",
+          "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/410-nk2-0001s-0002-wil04775.webp",
+          "packages/nk-jaya-2/cabins/4-full-ocean-queen-bed/411-nk2-0001s-0003-wil04772.webp"
         ],
         "Master Ocean": [
           "packages/nk-jaya-2/cabins/6-master-ocean-queen-bed/417-nk2-0002-wil04944.webp",
@@ -12396,39 +12394,38 @@
       ],
       "cabins": {
         "Share Cabin": [
-          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
-          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
-          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
-          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
-        ],
-        "Private Double": [
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
-        ],
-        "Private Triple": [
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
-        ],
-        "Deluxe Ocean 1": [
-          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
-          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
-          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
-        ],
-        "Deluxe Ocean 2": [
           "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
           "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
           "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
           "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
         ],
+        "Private Double": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "Private Triple": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "Deluxe Ocean 1": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "Deluxe Ocean 2": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
         "Master Ocean": [
-          "packages/pesonabajo/cabins/6-private-triple-cabin-double-bed-single-bed/1375-wil05787-hdr.webp",
-          "packages/pesonabajo/cabins/6-private-triple-cabin-double-bed-single-bed/1376-wil05790-hdr.webp",
-          "packages/pesonabajo/cabins/6-private-triple-cabin-double-bed-single-bed/1377-wil05793-hdr.webp",
-          "packages/pesonabajo/cabins/6-private-triple-cabin-double-bed-single-bed/1378-wil05796-hdr.webp"
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
         ]
       },
       "cabinErrors": []
@@ -12495,16 +12492,16 @@
       ],
       "cabins": {
         "Superior Cabin 1": [
-          "packages/yumana/cabins/1-royal-suite-cabin/1475-yumana-royalsuite-cabin-1.webp",
-          "packages/yumana/cabins/1-royal-suite-cabin/1476-yumana-royalsuite-cabin-10.webp",
-          "packages/yumana/cabins/1-royal-suite-cabin/1477-yumana-royalsuite-cabin-11.webp",
-          "packages/yumana/cabins/1-royal-suite-cabin/1478-yumana-royalsuite-cabin-12.webp"
+          "packages/yumana/cabins/4-superior-cabin/1507-yumana-superior-cabin-1.webp",
+          "packages/yumana/cabins/4-superior-cabin/1508-yumana-superior-cabin-10.webp",
+          "packages/yumana/cabins/4-superior-cabin/1509-yumana-superior-cabin-11.webp",
+          "packages/yumana/cabins/4-superior-cabin/1510-yumana-superior-cabin-12.webp"
         ],
         "Superior Cabin 2": [
-          "packages/yumana/cabins/2-signature-cabin-upper-deck/1493-yumana-sign-cabin-ud-1.webp",
-          "packages/yumana/cabins/2-signature-cabin-upper-deck/1494-yumana-sign-cabin-ud-2.webp",
-          "packages/yumana/cabins/2-signature-cabin-upper-deck/1495-yumana-sign-cabin-ud-3.webp",
-          "packages/yumana/cabins/2-signature-cabin-upper-deck/1496-yumana-sign-cabin-ud-4.webp"
+          "packages/yumana/cabins/4-superior-cabin/1507-yumana-superior-cabin-1.webp",
+          "packages/yumana/cabins/4-superior-cabin/1508-yumana-superior-cabin-10.webp",
+          "packages/yumana/cabins/4-superior-cabin/1509-yumana-superior-cabin-11.webp",
+          "packages/yumana/cabins/4-superior-cabin/1510-yumana-superior-cabin-12.webp"
         ],
         "Deluxe Cabin 1": [
           "packages/yumana/cabins/3-deluxe-cabin/1500-yumana-deluxe-cabin-2.webp",
@@ -12513,10 +12510,10 @@
           "packages/yumana/cabins/3-deluxe-cabin/1503-yumana-deluxe-cabin-5.webp"
         ],
         "Deluxe Cabin 2": [
-          "packages/yumana/cabins/4-superior-cabin/1507-yumana-superior-cabin-1.webp",
-          "packages/yumana/cabins/4-superior-cabin/1508-yumana-superior-cabin-10.webp",
-          "packages/yumana/cabins/4-superior-cabin/1509-yumana-superior-cabin-11.webp",
-          "packages/yumana/cabins/4-superior-cabin/1510-yumana-superior-cabin-12.webp"
+          "packages/yumana/cabins/3-deluxe-cabin/1500-yumana-deluxe-cabin-2.webp",
+          "packages/yumana/cabins/3-deluxe-cabin/1501-yumana-deluxe-cabin-3.webp",
+          "packages/yumana/cabins/3-deluxe-cabin/1502-yumana-deluxe-cabin-4.webp",
+          "packages/yumana/cabins/3-deluxe-cabin/1503-yumana-deluxe-cabin-5.webp"
         ],
         "Signature Cabin 1": [
           "packages/yumana/cabins/2-signature-cabin-upper-deck/1493-yumana-sign-cabin-ud-1.webp",
@@ -12525,16 +12522,16 @@
           "packages/yumana/cabins/2-signature-cabin-upper-deck/1496-yumana-sign-cabin-ud-4.webp"
         ],
         "Signature Cabin 2": [
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1487-yumana-sign-cabin-md-1.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1488-yumana-sign-cabin-md-2.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1489-yumana-sign-cabin-md-3.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1490-yumana-sign-cabin-md-4.webp"
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1493-yumana-sign-cabin-ud-1.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1494-yumana-sign-cabin-ud-2.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1495-yumana-sign-cabin-ud-3.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1496-yumana-sign-cabin-ud-4.webp"
         ],
         "Signature Cabin 3": [
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1487-yumana-sign-cabin-md-1.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1488-yumana-sign-cabin-md-2.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1489-yumana-sign-cabin-md-3.webp",
-          "packages/yumana/cabins/2-1-singature-cabin-main-deck/1490-yumana-sign-cabin-md-4.webp"
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1493-yumana-sign-cabin-ud-1.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1494-yumana-sign-cabin-ud-2.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1495-yumana-sign-cabin-ud-3.webp",
+          "packages/yumana/cabins/2-signature-cabin-upper-deck/1496-yumana-sign-cabin-ud-4.webp"
         ],
         "Royal Suite Cabin": [
           "packages/yumana/cabins/1-royal-suite-cabin/1475-yumana-royalsuite-cabin-1.webp",
@@ -12575,10 +12572,10 @@
           "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
         ],
         "Master Ocean (Main Deck)": [
-          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
-          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
-          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
-          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/155-sve08928.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/156-sve08929.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/157-sve08930.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/158-sve08931.webp"
         ],
         "Deluxe Ocean 1 (Upper Deck)": [
           "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
@@ -12587,10 +12584,10 @@
           "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
         ],
         "Deluxe Ocean 2 (Upper Deck)": [
-          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/155-sve08928.webp",
-          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/156-sve08929.webp",
-          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/157-sve08930.webp",
-          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/158-sve08931.webp"
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
         ]
       },
       "cabinErrors": []
@@ -12607,12 +12604,12 @@
       ],
       "cabins": {
         "Share Cabin 1 (Main Deck)": [
-          "packages/balaraja/cabins/1-share-cabin-1-4x-single-bunk-bed/544-sve04903-hdr.webp",
-          "packages/balaraja/cabins/1-share-cabin-1-4x-single-bunk-bed/545-sve04921-hdr.webp"
-        ],
-        "Share Cabin 2 (Main Deck)": [
           "packages/balaraja/cabins/share-toilet-1/569-sve04960-hdr.webp",
           "packages/balaraja/cabins/share-toilet-1/570-sve04969-hdr.webp"
+        ],
+        "Share Cabin 2 (Main Deck)": [
+          "packages/balaraja/cabins/share-toilet-2/571-sve05006-hdr.webp",
+          "packages/balaraja/cabins/share-toilet-2/572-sve05012-hdr.webp"
         ],
         "Share Cabin 3 (Main Deck)": [
           "packages/balaraja/cabins/3-share-cabin-3-4x-single-bunk-bed/549-sve04948-hdr.webp",
@@ -12657,13 +12654,14 @@
           "packages/flores-utama/cabins/wc-share-2/615-img-2189.webp"
         ],
         "Share Cabin 3 (Main Deck)": [
-          "packages/flores-utama/cabins/share-cabin-2-4x-single-bunk-bed/618-img-2221.webp",
-          "packages/flores-utama/cabins/share-cabin-2-4x-single-bunk-bed/619-img-2222.webp"
-        ],
-        "Share Cabin 4 (Main Deck)": [
           "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/620-img-2228.webp",
           "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/621-img-2229.webp",
           "packages/flores-utama/cabins/share-cabin-3-4x-single-bunk-bed/622-img-2230.webp"
+        ],
+        "Share Cabin 4 (Main Deck)": [
+          "packages/flores-utama/cabins/share-cabin-4-4x-single-bunk-bed/623-img-2225.webp",
+          "packages/flores-utama/cabins/share-cabin-4-4x-single-bunk-bed/624-img-2226.webp",
+          "packages/flores-utama/cabins/share-cabin-4-4x-single-bunk-bed/625-img-2227.webp"
         ],
         "Master Ocean 1 (Upper Deck)": [
           "packages/flores-utama/cabins/master-ocean-1-queen-bed-extra-bed/587-img-2194.webp",
@@ -12698,12 +12696,10 @@
       ],
       "cabins": {
         "Share Cabin 1 (Main Deck)": [
-          "packages/lamborajo-1/cabins/1-share-cabin-1-4x-single-bunk-bed/834-sve04654-hdr.webp",
-          "packages/lamborajo-1/cabins/1-share-cabin-1-4x-single-bunk-bed/835-sve04663-hdr.webp",
-          "packages/lamborajo-1/cabins/1-share-cabin-1-4x-single-bunk-bed/836-sve04666-hdr.webp"
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
         ],
         "Share Cabin 2 (Main Deck)": [
-          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
         ],
         "Share Cabin 3 (Main Deck)": [
           "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
@@ -12743,39 +12739,38 @@
       ],
       "cabins": {
         "Share Cabin (Main Deck)": [
-          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
-          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
-          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
-          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
-        ],
-        "Private Double (Main Deck)": [
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
-        ],
-        "Private Triple (Main Deck)": [
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
-          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
-        ],
-        "Deluxe Ocean 1 (Main Deck)": [
-          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
-          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
-          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
-        ],
-        "Deluxe Ocean 2 (Main Deck)": [
           "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
           "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
           "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
           "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
         ],
+        "Private Double (Main Deck)": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "Private Triple (Main Deck)": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "Deluxe Ocean 1 (Main Deck)": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "Deluxe Ocean 2 (Main Deck)": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
         "Master Ocean (Upper Deck)": [
-          "packages/pesonabajo/cabins/6-private-triple-cabin-double-bed-single-bed/1375-wil05787-hdr.webp",
-          "packages/pesonabajo/cabins/6-private-triple-cabin-double-bed-single-bed/1376-wil05790-hdr.webp",
-          "packages/pesonabajo/cabins/6-private-triple-cabin-double-bed-single-bed/1377-wil05793-hdr.webp",
-          "packages/pesonabajo/cabins/6-private-triple-cabin-double-bed-single-bed/1378-wil05796-hdr.webp"
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
         ]
       },
       "cabinErrors": []
