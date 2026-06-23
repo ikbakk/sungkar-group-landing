@@ -10,9 +10,9 @@ const groups = fs
   .sort((a, b) => a.name.localeCompare(b.name));
 
 function walkImages(dir, base = dir) {
-  const entries = fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) =>
-    a.name.localeCompare(b.name),
-  );
+  const entries = fs
+    .readdirSync(dir, { withFileTypes: true })
+    .sort((a, b) => a.name.localeCompare(b.name));
   const files = [];
   for (const entry of entries) {
     const full = path.join(dir, entry.name);
@@ -57,7 +57,8 @@ function renderObject(obj, indent = "  ") {
       const renderedKey = /^[A-Za-z_$][A-Za-z0-9_$]*$/.test(key)
         ? key
         : JSON.stringify(key);
-      if (typeof value === "string") return `${indent}${renderedKey}: ${value},`;
+      if (typeof value === "string")
+        return `${indent}${renderedKey}: ${value},`;
       return `${indent}${renderedKey}: {\n${renderObject(value, `${indent}  `)}\n${indent}},`;
     })
     .join("\n");

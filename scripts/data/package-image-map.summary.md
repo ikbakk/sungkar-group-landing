@@ -7,11 +7,14 @@ Existing converted: 1523
 <100KB: 536
 <200KB: 1523
 <=300KB: 1523
->300KB: 0
+
+> 300KB: 0
 
 Boat errors:
+
 - none
 
 Missing resource boats (skipped, existing JSON left unchanged):
+
 - deluxe-gaisan (Gaisan)
 - open-trip-gaisan (Gaisan)

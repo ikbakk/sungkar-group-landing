@@ -15,28 +15,28 @@
 
 ## Directory Layout
 
-| Path                     | Purpose                                                                                                                                                                    |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `src/pages/`             | Astro routes for default-language and localized pages                                                                                                                      |
-| `src/components/`        | Feature UI split by domain: `landing`, `packages`, `destinations`, `vehicles`, `contact`, `reviews`, `about`, `site`, `ui`                                                 |
-| `src/content/`           | MDX content collections, including `tourPackages`, `accommodations`, and other authored content                                                                            |
-| `src/lib/content/`       | Collection loaders, image resolvers, shared schemas, and content-facing types                                                                                              |
+| Path                     | Purpose                                                                                                                                                                          |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/pages/`             | Astro routes for default-language and localized pages                                                                                                                            |
+| `src/components/`        | Feature UI split by domain: `landing`, `packages`, `destinations`, `vehicles`, `contact`, `reviews`, `about`, `site`, `ui`                                                       |
+| `src/content/`           | MDX content collections, including `tourPackages`, `accommodations`, and other authored content                                                                                  |
+| `src/lib/content/`       | Collection loaders, image resolvers, shared schemas, and content-facing types                                                                                                    |
 | `src/assets/images/`     | Bundled image assets; current groups include `hero`, `gallery`, `destinations`, `vehicles`, `accommodations`, `brand`, `legality`, `og`, and nested `packages` boat/cabin assets |
-| `scripts/data/packages/` | JSON source-of-truth for package content before MDX generation                                                                                                             |
-| `scripts/`               | Generators and validation scripts such as `generate-tour-mdx.mjs`, `generate-image-barrel.mjs`, and `validate-images.mjs`                                                  |
-| `docs/`                  | Project documentation, SEO/GEO setup guide (`seo-geo-setup.html`), SEO audit report (`seo-audit.html`), keyword clustering, link prospecting, and internal reference notes |
+| `scripts/data/packages/` | JSON source-of-truth for package content before MDX generation                                                                                                                   |
+| `scripts/`               | Generators and validation scripts such as `generate-tour-mdx.mjs`, `generate-image-barrel.mjs`, and `validate-images.mjs`                                                        |
+| `docs/`                  | Project documentation, SEO/GEO setup guide (`seo-geo-setup.html`), SEO audit report (`seo-audit.html`), keyword clustering, link prospecting, and internal reference notes       |
 
 ## Key Files By Task
 
-| Task                                               | Files                                                                                                                                                           |
-| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Update a tour package's source content             | `scripts/data/packages/<slug>/main.json`, `scripts/data/packages/<slug>/locales.json`                                                                           |
-| Update private-trip deluxe phinisi naming/metadata | `scripts/data/packages/deluxe-*/main.json`, `scripts/data/packages/deluxe-*/locales.json`, then regenerate via `npm run generate:tours`                         |
-| Update published tour package MDX                  | `src/content/tourPackages/<slug>/{id,en,ar,ms,zh}.mdx`                                                                                                          |
-| Resolve package images into Astro imports          | `src/lib/content/tourPackages/images.ts`, `src/assets/images/index.ts`                                                                                          |
+| Task                                               | Files                                                                                                                                                                                                 |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Update a tour package's source content             | `scripts/data/packages/<slug>/main.json`, `scripts/data/packages/<slug>/locales.json`                                                                                                                 |
+| Update private-trip deluxe phinisi naming/metadata | `scripts/data/packages/deluxe-*/main.json`, `scripts/data/packages/deluxe-*/locales.json`, then regenerate via `npm run generate:tours`                                                               |
+| Update published tour package MDX                  | `src/content/tourPackages/<slug>/{id,en,ar,ms,zh}.mdx`                                                                                                                                                |
+| Resolve package images into Astro imports          | `src/lib/content/tourPackages/images.ts`, `src/assets/images/index.ts`                                                                                                                                |
 | Add or refresh packaged image assets               | `resource/`, `scripts/convert-resource-images.mjs`, `src/assets/images/packages/`, `scripts/generate-image-barrel.mjs`, `npm run images:resource`, `npm run images:barrel`, `npm run validate:images` |
-| Validate content/image wiring                      | `npm run validate:images`, `npm run check`                                                                                                                      |
-| Understand package detail rendering                | `src/pages/paket-wisata/[region]/[collection]/[slug].astro`, `src/pages/[locale]/tour-packages/[region]/[collection]/[slug].astro`, `src/components/packages/*` |
+| Validate content/image wiring                      | `npm run validate:images`, `npm run check`                                                                                                                                                            |
+| Understand package detail rendering                | `src/pages/paket-wisata/[region]/[collection]/[slug].astro`, `src/pages/[locale]/tour-packages/[region]/[collection]/[slug].astro`, `src/components/packages/*`                                       |
 
 ## Image Notes
 

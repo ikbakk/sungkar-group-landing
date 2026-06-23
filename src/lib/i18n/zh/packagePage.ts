@@ -41,8 +41,7 @@ export const packagePageContent = {
     },
     "lombok-bajo": {
       title: "龙目岛 - 巴霍套餐",
-      description:
-        "龙目岛和拉布安巴霍之间的跨岛航行套餐，提供双向选择。",
+      description: "龙目岛和拉布安巴霍之间的跨岛航行套餐，提供双向选择。",
       intro: "选择您的方向：从龙目岛到拉布安巴霍或从拉布安巴霍到龙目岛。",
     },
   },

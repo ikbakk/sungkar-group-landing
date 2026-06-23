@@ -11,10 +11,7 @@
     ".xlsx": 1
   },
   "boatErrors": [],
-  "missingBoats": [
-    "deluxe-gaisan (Gaisan)",
-    "open-trip-gaisan (Gaisan)"
-  ],
+  "missingBoats": ["deluxe-gaisan (Gaisan)", "open-trip-gaisan (Gaisan)"],
   "assets": [
     {
       "boat": "alfathran-3",
