@@ -9,6 +9,10 @@ import { generateArticleSchema } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 import { BlogCard } from "@/components/blog";
 import SectionContainer from "@/layouts/SectionContainer.astro";
+import { getPackages } from "@/lib/content/tourPackages/collection";
+import { getDestinations } from "@/lib/content/destinations/collection";
+import { getImageSrc } from "@/lib/images";
+import { HERO } from "@/assets/images";
 
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
@@ -52,7 +56,20 @@ const breadcrumbs = [
   { label: title },
 ];
 
-const articleImage = featuredImage || "";
+const packages = await getPackages(locale!);
+const destinations = await getDestinations(locale!);
+const relatedPackageImage = packages.find((tour) =>
+  post.relatedPackages?.includes(tour.slug),
+)?.images[0];
+const relatedDestinationImage = destinations.find((destination) =>
+  post.relatedDestinations?.includes(destination.slug),
+)?.image;
+const blogHeroImage =
+  featuredImage ||
+  relatedPackageImage ||
+  relatedDestinationImage ||
+  HERO.heroLombok;
+const articleImage = new URL(getImageSrc(blogHeroImage), SITE_URL).toString();
 const canonicalPath = `/${locale}/blog/${slug}`;
 const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
 const articleSchema = generateArticleSchema(
@@ -69,7 +86,7 @@ const articleSchema = generateArticleSchema(
   title={`${title} - Blog`}
   description={description}
   canonical={canonicalPath}
-  image={featuredImage}
+  image={blogHeroImage}
   imageAlt={title}
   ogType="article"
   locale={locale}

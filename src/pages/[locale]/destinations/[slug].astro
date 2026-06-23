@@ -46,8 +46,9 @@ const relatedPackages = packages.filter((tour) =>
   destination.packages.includes(tour.slug),
 );
 
+const destinationHeroImage = destination.gallery[0] ?? destination.image;
 const absoluteImageUrl = new URL(
-  getImageSrc(destination.image),
+  getImageSrc(destinationHeroImage),
   SITE_URL,
 ).toString();
 
@@ -80,7 +81,7 @@ const metaDescription = `${destination.title} - ${destination.summary}`;
   title={destination.title}
   description={metaDescription}
   canonical={canonicalPath}
-  image={destination.image}
+  image={destinationHeroImage}
   locale={locale}
 >
   <StructuredData schema={touristAttractionSchema} />
@@ -99,7 +100,7 @@ const metaDescription = `${destination.title} - ${destination.summary}`;
       },
       { label: destination.title },
     ]}
-    image={destination.image}
+    image={destinationHeroImage}
     imageAlt={destination.title}
   />
 

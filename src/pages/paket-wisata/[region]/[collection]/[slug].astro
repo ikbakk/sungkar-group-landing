@@ -59,9 +59,10 @@ const uiStrings = t(locale);
 
 const r = tour.region as Region;
 
+const packageHeroImage = tour.images[0];
 const packageUrl = `${SITE_URL}/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
 const absoluteImageUrl = new URL(
-  getImageSrc(tour.images[0]),
+  getImageSrc(packageHeroImage),
   SITE_URL,
 ).toString();
 
@@ -112,7 +113,8 @@ const itineraryByDay = Object.entries(
   title={tour.title}
   description={tour.summary}
   canonical={`/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`}
-  image={tour.images[0]}
+  image={packageHeroImage}
+  imageAlt={tour.title}
   locale={locale}
 >
   <StructuredData schema={productSchema} />
@@ -132,7 +134,7 @@ const itineraryByDay = Object.entries(
       },
       { label: tour.title },
     ]}
-    image={tour.images[0]}
+    image={packageHeroImage}
     imageAlt={tour.title}
     stats={[
       { label: uiStrings.paketWisata.duration, value: tour.duration },
