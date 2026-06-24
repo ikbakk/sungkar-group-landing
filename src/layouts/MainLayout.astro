@@ -20,6 +20,8 @@ import { SITE_URL } from "@/lib/site-config";
 
 import { isRTL } from "@/lib/i18n";
 
+import { ClientRouter } from "astro:transitions";
+
 import "../styles/global.css";
 
 interface Props {
@@ -86,6 +88,8 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
 
     <GoogleAnalytics />
 
+    <ClientRouter />
+
     <!-- Netlify Identity: redirect invite/password-recovery/confirmation to /admin/ -->
     <script>
       (function () {
@@ -111,6 +115,6 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
 
     <Footer locale={currentLocale} />
 
-    <CookieConsentBanner locale={currentLocale as Locale} client:load />
+    <CookieConsentBanner locale={currentLocale as Locale} client:idle />
   </body>
 </html>
