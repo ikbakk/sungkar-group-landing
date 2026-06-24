@@ -6,7 +6,11 @@ import RelatedLinkCardsSection from "@/components/site/RelatedLinkCardsSection.a
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
-import { generateServiceSchema, generateBreadcrumbSchema, generateFAQPageSchema } from "@/lib/schemas";
+import {
+  generateServiceSchema,
+  generateBreadcrumbSchema,
+  generateFAQPageSchema,
+} from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 
 import { getVehicles } from "@/lib/content/car-rental/collection";

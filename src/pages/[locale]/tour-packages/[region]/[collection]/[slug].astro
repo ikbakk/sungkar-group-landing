@@ -329,10 +329,12 @@ const itineraryByDay = Object.entries(
     <RelatedLinkCardsSection
       title={packagePageContent.detailLinksTitle}
       buttonLabel={uiStrings.common.learnMore}
-      items={packagePageContent.relatedContent.slice(0, 3).map((item: (typeof packagePageContent.relatedContent)[number]) => ({
-        ...item,
-        href: localizeHref(item.href, locale!) || item.href,
-      }))}
+      items={packagePageContent.relatedContent
+        .slice(0, 3)
+        .map((item: (typeof packagePageContent.relatedContent)[number]) => ({
+          ...item,
+          href: localizeHref(item.href, locale!) || item.href,
+        }))}
     />
   </SectionContainer>
 </MainLayout>
