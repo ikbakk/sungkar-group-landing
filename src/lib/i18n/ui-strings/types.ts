@@ -250,4 +250,12 @@ export interface UIStrings {
     keywords: string;
     siteName: string;
   };
+  consent: {
+    title: string;
+    description: string;
+    acceptAll: string;
+    rejectAll: string;
+    customize: string;
+    learnMore: string;
+  };
 }
