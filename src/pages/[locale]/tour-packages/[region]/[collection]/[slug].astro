@@ -4,7 +4,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import {
-  generateProductSchema,
+  generateServiceSchema,
   generateBreadcrumbSchema,
   generateFAQPageSchema,
 } from "@/lib/schemas";
@@ -22,6 +22,7 @@ import PackagePricingSection from "@/components/packages/PackagePricingSection.a
 import PackageTandC from "@/components/packages/PackageTandC.astro";
 import PackageGallery from "@/components/packages/PackageGallery";
 import FaqSection from "@/components/site/Faq.astro";
+import RelatedLinkCardsSection from "@/components/site/RelatedLinkCardsSection.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import {
   Carousel,
@@ -38,8 +39,9 @@ import { paketWisataFormFields as arPaketWisataFormFields } from "@/lib/i18n/ar/
 import { paketWisataFormFields as msPaketWisataFormFields } from "@/lib/i18n/ms/shared/contact-data";
 import { paketWisataFormFields as zhPaketWisataFormFields } from "@/lib/i18n/zh/shared/contact-data";
 
-import { loadFaq } from "@/lib/i18n/loader";
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { localizeHref } from "@/lib/i18n/localize";
 import { getImageSrc } from "@/lib/images";
 
 export async function getStaticPaths() {
@@ -84,17 +86,20 @@ const absoluteImageUrl = new URL(
   SITE_URL,
 ).toString();
 
-const productSchema = generateProductSchema(
+const serviceSchema = generateServiceSchema(
   tour.title,
   tour.summary,
   uiStrings.common.contactForPrice,
   absoluteImageUrl,
   packageUrl,
+  tour.category,
   tour.duration,
 );
 
 const faqModule = await loadFaq(locale!, "package");
 const { packageFaq } = faqModule;
+const pageModule = await loadContent(locale!, "packagePage");
+const { packagePageContent } = pageModule;
 
 const faqSchema = generateFAQPageSchema(packageFaq);
 
@@ -136,7 +141,7 @@ const itineraryByDay = Object.entries(
   imageAlt={tour.title}
   locale={locale}
 >
-  <StructuredData schema={productSchema} />
+  <StructuredData schema={serviceSchema} />
   <StructuredData schema={breadcrumbSchema} />
   <StructuredData schema={faqSchema} />
 
@@ -318,5 +323,16 @@ const itineraryByDay = Object.entries(
         ))
       }
     </div>
+  </SectionContainer>
+
+  <SectionContainer background="bg-white" padding="py-14 sm:py-16">
+    <RelatedLinkCardsSection
+      title={packagePageContent.detailLinksTitle}
+      buttonLabel={uiStrings.common.learnMore}
+      items={packagePageContent.relatedContent.slice(0, 3).map((item: (typeof packagePageContent.relatedContent)[number]) => ({
+        ...item,
+        href: localizeHref(item.href, locale!) || item.href,
+      }))}
+    />
   </SectionContainer>
 </MainLayout>

@@ -5,6 +5,24 @@ export const sewaPageContent = {
     description:
       "从紧凑型车辆到小型巴士，我们提供多种选择，价格具有竞争力，每个目的地均有专业司机。",
   },
+  relatedContentTitle: "继续探索",
+  relatedContent: [
+    {
+      title: "旅游套餐",
+      href: "/paket-wisata",
+      description: "将租车服务与适合您目的地的旅游行程结合起来。",
+    },
+    {
+      title: "联系我们",
+      href: "/kontak",
+      description: "咨询车辆、司机和接送时间安排。",
+    },
+    {
+      title: "目的地",
+      href: "/destinasi",
+      description: "查看热门旅行区域，与您的租车计划一起安排。",
+    },
+  ],
   regions: {
     lombok: {
       title: "龙目岛车辆",

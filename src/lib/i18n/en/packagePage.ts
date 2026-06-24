@@ -54,6 +54,8 @@ export const packagePageContent = {
     },
   },
 
+  detailLinksTitle: "Explore more",
+
   cta: {
     title: "Haven't found the right package?",
     description:

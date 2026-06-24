@@ -4,7 +4,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import {
-  generateProductSchema,
+  generateServiceSchema,
   generateBreadcrumbSchema,
   generateFAQPageSchema,
 } from "@/lib/schemas";
@@ -22,6 +22,7 @@ import PackagePricingSection from "@/components/packages/PackagePricingSection.a
 import PackageTandC from "@/components/packages/PackageTandC.astro";
 import PackageGallery from "@/components/packages/PackageGallery";
 import FaqSection from "@/components/site/Faq.astro";
+import RelatedLinkCardsSection from "@/components/site/RelatedLinkCardsSection.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import {
   Carousel,
@@ -34,7 +35,7 @@ import ScaleIn from "@astroanimate/core/ScaleIn";
 import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 import { paketWisataFormFields } from "@/lib/contact-data";
 
-import { loadFaq } from "@/lib/i18n/loader";
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { t } from "@/lib/i18n";
 import { getImageSrc } from "@/lib/images";
 
@@ -67,17 +68,20 @@ const absoluteImageUrl = new URL(
   SITE_URL,
 ).toString();
 
-const productSchema = generateProductSchema(
+const serviceSchema = generateServiceSchema(
   tour.title,
   tour.summary,
   uiStrings.common.contactForPrice,
   absoluteImageUrl,
   packageUrl,
+  tour.category,
   tour.duration,
 );
 
 const faqModule = await loadFaq(locale, "package");
 const { packageFaq } = faqModule;
+const pageModule = await loadContent(locale, "packagePage");
+const { packagePageContent } = pageModule;
 
 const faqSchema = generateFAQPageSchema(packageFaq);
 
@@ -118,7 +122,7 @@ const itineraryByDay = Object.entries(
   imageAlt={tour.title}
   locale={locale}
 >
-  <StructuredData schema={productSchema} />
+  <StructuredData schema={serviceSchema} />
   <StructuredData schema={breadcrumbSchema} />
   <StructuredData schema={faqSchema} />
 
@@ -281,6 +285,14 @@ const itineraryByDay = Object.entries(
         variant="card"
       />
     </div>
+  </SectionContainer>
+
+  <SectionContainer background="bg-white" padding="py-14 sm:py-16">
+    <RelatedLinkCardsSection
+      title={packagePageContent.detailLinksTitle}
+      buttonLabel={uiStrings.common.learnMore}
+      items={packagePageContent.relatedContent.slice(0, 3)}
+    />
   </SectionContainer>
 
   <SectionContainer background="bg-surface-soft" padding="py-12">

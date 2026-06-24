@@ -46,6 +46,8 @@ export const packagePageContent = {
     },
   },
 
+  detailLinksTitle: "继续探索",
+
   cta: {
     title: "还没找到合适的套餐？",
     description:

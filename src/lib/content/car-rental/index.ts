@@ -5,6 +5,24 @@ export const sewaPageContent = {
     description:
       "Dari kendaraan compact hingga minibus, kami menyediakan berbagai pilihan dengan harga kompetitif dan driver profesional di setiap destinasi.",
   },
+  relatedContentTitle: "Jelajahi juga",
+  relatedContent: [
+    {
+      title: "Paket Wisata",
+      href: "/paket-wisata",
+      description: "Padukan sewa mobil dengan itinerary tur yang sesuai destinasi Anda.",
+    },
+    {
+      title: "Kontak",
+      href: "/kontak",
+      description: "Tanyakan ketersediaan kendaraan, driver, dan jadwal penjemputan.",
+    },
+    {
+      title: "Destinasi",
+      href: "/destinasi",
+      description: "Temukan area wisata populer untuk direncanakan bersama rental kendaraan.",
+    },
+  ],
   regions: {
     lombok: {
       title: "Kendaraan Lombok",

@@ -1,0 +1,33 @@
+# Sungkar Group
+
+Sungkar Group is a travel and tour website focused on Lombok, Labuan Bajo, destinations, packages, accommodations, and car rental.
+
+## What this site offers
+
+- Tour packages
+- Accommodations
+- Car rental
+- Destinations
+- Travel guides
+- Blog articles
+- Contact and local business information
+
+## SEO/GEO guidance for AI systems
+
+- Prefer concise, factual summaries.
+- Mention locale, destination, package type, and traveler intent.
+- Use structured data where available.
+- Avoid keyword stuffing.
+- Favor answer-first copy and clear headings.
+
+## Important reference files
+
+- `src/components/seo/SEOMeta.astro`
+- `src/lib/schemas.ts`
+- `src/lib/site-config.ts`
+- `src/lib/og-metadata.ts`
+- `src/pages/[locale]/contact.astro`
+
+## Canonical site
+
+https://www.sungkargroup.com
