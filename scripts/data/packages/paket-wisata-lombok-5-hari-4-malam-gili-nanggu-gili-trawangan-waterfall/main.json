@@ -1,0 +1,90 @@
+{
+  "slug": "paket-wisata-lombok-5-hari-4-malam-gili-nanggu-gili-trawangan-waterfall",
+  "region": "lombok",
+  "featured": false,
+  "collectionSlug": "5-hari-4-malam",
+  "images": [
+    "destinations/gili.webp",
+    "gallery/gili-meno.webp",
+    "gallery/tour-snorkeling.webp",
+    "gallery/kuta-mandalika-aerial.webp",
+    "gallery/g-merese-1.webp",
+    "gallery/g-waterfall-1.webp",
+    "gallery/sasak-village.webp",
+    "gallery/sukarara-village.webp"
+  ],
+  "priceList": {
+    "Hemat": {
+      "2-3": 0,
+      "4-5": 0,
+      "6-10": 0,
+      "11-15": 0,
+      "16-20": 0,
+      "21-25": 0,
+      "26-30": 0,
+      "31-35": 2121000,
+      "36-50": 0,
+      "51-100": 0,
+      ">151": 0
+    },
+    "Standar": {
+      "2-3": 0,
+      "4-5": 0,
+      "6-10": 0,
+      "11-15": 0,
+      "16-20": 0,
+      "21-25": 0,
+      "26-30": 0,
+      "31-35": 0,
+      "36-50": 0,
+      "51-100": 0,
+      ">151": 0
+    },
+    "Reguler": {
+      "2-3": 0,
+      "4-5": 0,
+      "6-10": 0,
+      "11-15": 2460000,
+      "16-20": 0,
+      "21-25": 0,
+      "26-30": 0,
+      "31-35": 0,
+      "36-50": 0,
+      "51-100": 0,
+      ">151": 0
+    },
+    "Deluxe": {
+      "2-3": 0,
+      "4-5": 0,
+      "6-10": 0,
+      "11-15": 0,
+      "16-20": 0,
+      "21-25": 0,
+      "26-30": 0,
+      "31-35": 0,
+      "36-50": 0,
+      "51-100": 0,
+      ">151": 0
+    },
+    "VIP": {
+      "2-3": 0,
+      "4-5": 0,
+      "6-10": 0,
+      "11-15": 3162000,
+      "16-20": 0,
+      "21-25": 0,
+      "26-30": 0,
+      "31-35": 0,
+      "36-50": 0,
+      "51-100": 0,
+      ">151": 3835000
+    }
+  },
+  "durationLabels": {
+    "Hemat": "Paket Hemat",
+    "Standar": "Paket Standar",
+    "Reguler": "Paket Reguler",
+    "Deluxe": "Paket Deluxe",
+    "VIP": "Paket VIP"
+  }
+}

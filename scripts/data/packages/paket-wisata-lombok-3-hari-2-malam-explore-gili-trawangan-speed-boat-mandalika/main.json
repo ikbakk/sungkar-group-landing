@@ -1,0 +1,90 @@
+{
+  "slug": "paket-wisata-lombok-3-hari-2-malam-explore-gili-trawangan-speed-boat-mandalika",
+  "region": "lombok",
+  "featured": false,
+  "collectionSlug": "3-hari-2-malam",
+  "images": [
+    "destinations/gili.webp",
+    "gallery/gili-meno.webp",
+    "gallery/gili-tangkong.webp",
+    "gallery/tour-snorkeling.webp",
+    "gallery/kuta-beach.webp",
+    "gallery/g-merese-1.webp",
+    "gallery/sasak-village.webp",
+    "gallery/sukarara-village.webp"
+  ],
+  "priceList": {
+    "Hemat": {
+      "2-3": 0,
+      "4-5": 0,
+      "6-10": 0,
+      "11-15": 1170000,
+      "16-20": 0,
+      "21-25": 0,
+      "26-30": 0,
+      "31-35": 0,
+      "36-50": 0,
+      "51-100": 0,
+      ">151": 0
+    },
+    "Standar": {
+      "2-3": 0,
+      "4-5": 0,
+      "6-10": 0,
+      "11-15": 1306000,
+      "16-20": 0,
+      "21-25": 0,
+      "26-30": 0,
+      "31-35": 0,
+      "36-50": 0,
+      "51-100": 0,
+      ">151": 0
+    },
+    "Reguler": {
+      "2-3": 0,
+      "4-5": 0,
+      "6-10": 0,
+      "11-15": 1657000,
+      "16-20": 0,
+      "21-25": 0,
+      "26-30": 0,
+      "31-35": 0,
+      "36-50": 0,
+      "51-100": 0,
+      ">151": 0
+    },
+    "Deluxe": {
+      "2-3": 0,
+      "4-5": 0,
+      "6-10": 0,
+      "11-15": 0,
+      "16-20": 0,
+      "21-25": 0,
+      "26-30": 0,
+      "31-35": 0,
+      "36-50": 0,
+      "51-100": 0,
+      ">151": 0
+    },
+    "VIP": {
+      "2-3": 0,
+      "4-5": 0,
+      "6-10": 0,
+      "11-15": 0,
+      "16-20": 0,
+      "21-25": 0,
+      "26-30": 0,
+      "31-35": 0,
+      "36-50": 0,
+      "51-100": 0,
+      ">151": 0
+    }
+  },
+  "durationLabels": {
+    "Hemat": "Paket Hemat",
+    "Standar": "Paket Standar",
+    "Reguler": "Paket Reguler",
+    "Deluxe": "Paket Deluxe",
+    "VIP": "Paket VIP"
+  }
+}
