@@ -5,20 +5,6 @@
 - **AGENTS.md** — This file. Build commands, style conventions, commit guidelines.
 - Work on the `dev` branch for all code changes. Keep `dev` synced with `main` before starting new work.
 
-## Keeping Docs in Sync
-
-When you add, rename, or remove any of the following, update **docs/CODEBASE.md** before finishing the session:
-
-- New pages or routes (`src/pages/`)
-- New components or component directories (`src/components/`)
-- New content data files (`src/lib/content/`)
-- New UI primitives (`src/components/ui/`)
-- New image assets (`src/assets/images/`)
-- New dependencies in `package.json`
-- Changes to `astro.config.mjs`, `tsconfig.json`, or `src/styles/global.css`
-
-Keep the route → component table, directory layout, and "Key Files by Task" table accurate so the next session starts with zero discovery overhead.
-
 ## Build, Test, and Development Commands
 
 - `npm install` installs dependencies.
