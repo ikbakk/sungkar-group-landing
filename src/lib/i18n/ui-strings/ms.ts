@@ -274,4 +274,13 @@ export const ms: UIStrings = {
     description:
       "Tips, inspirasi, dan maklumat terkini tentang pelancongan di Lombok, Sumbawa, dan Labuan Bajo.",
   },
+  consent: {
+    title: "Tetapan Kuki",
+    description:
+      "Kami menggunakan kuki untuk mengukur prestasi dan meningkatkan pengalaman anda. Uruskan pilihan anda di bawah.",
+    acceptAll: "Terima Semua",
+    rejectAll: "Tolak Semua",
+    customize: "Sesuaikan",
+    learnMore: "Ketahui Lebih Lanjut",
+  },
 };

@@ -1,9 +1,11 @@
 ---
 import Header from "@/components/header/Header.astro";
 import Footer from "@/components/site/Footer.astro";
+import CookieConsentBanner from "@/components/site/CookieConsentBanner";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics.astro";
 import SEOMeta from "@/components/seo/SEOMeta.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
+import type { Locale } from "@/lib/i18n";
 
 import {
   generateOrganizationSchema,
@@ -108,5 +110,7 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
     </main>
 
     <Footer locale={currentLocale} />
+
+    <CookieConsentBanner locale={currentLocale as Locale} client:load />
   </body>
 </html>

@@ -271,4 +271,13 @@ export const en: UIStrings = {
     description:
       "Tips, inspiration, and latest information about tourism in Lombok, Sumbawa, and Labuan Bajo.",
   },
+  consent: {
+    title: "Cookie Settings",
+    description:
+      "We use cookies to measure performance and improve your experience. Manage your preferences below.",
+    acceptAll: "Accept All",
+    rejectAll: "Reject All",
+    customize: "Customize",
+    learnMore: "Learn More",
+  },
 };
