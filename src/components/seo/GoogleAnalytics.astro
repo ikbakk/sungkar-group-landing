@@ -1,0 +1,35 @@
+---
+/**
+ * Google Analytics 4 (via Partytown)
+ *
+ * Injects the GA4 gtag script, offloaded to a web worker via Partytown
+ * for zero main-thread blocking during page loads.
+ *
+ * Only enabled in production builds.
+ *
+ * Set the GA4 Measurement ID via the PUBLIC_GA_ID env variable,
+ * otherwise falls back to G-P3W4KT8E8L.
+ */
+
+const gaId = import.meta.env.PUBLIC_GA_ID || "G-P3W4KT8E8L";
+const isProduction = import.meta.env.PROD;
+
+const gtagInitScript = `
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag("js", new Date());
+gtag("config", "${gaId}");
+`;
+---
+
+{isProduction && gaId && (
+  <>
+    <script
+      is:inline
+      type="text/partytown"
+      async
+      src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+    />
+    <script is:inline type="text/partytown" set:html={gtagInitScript} />
+  </>
+)}

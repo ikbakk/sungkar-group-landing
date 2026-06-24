@@ -22,6 +22,7 @@
 | `src/pages/`             | Astro routes for default-language and localized pages                                                                                                                            |
 | `src/components/`        | Feature UI split by domain: `landing`, `packages`, `destinations`, `vehicles`, `contact`, `reviews`, `about`, `site`, `ui`                                                       |
 | `src/content/`           | MDX content collections, including `tourPackages`, `accommodations`, and other authored content                                                                                  |
+| `src/components/seo/GoogleAnalytics.astro` | GA4 integration via Partytown (offloaded to web worker). Only active in production. Configured via `PUBLIC_GA_ID` env var.                                        |
 | `src/lib/content/`       | Collection loaders, image resolvers, shared schemas, and content-facing types                                                                                                    |
 | `src/assets/images/`     | Bundled image assets; current groups include `hero`, `gallery`, `destinations`, `vehicles`, `accommodations`, `brand`, `legality`, `og`, and nested `packages` boat/cabin assets |
 | `scripts/data/packages/` | JSON source-of-truth for package content before MDX generation                                                                                                                   |
@@ -40,6 +41,7 @@
 | Validate content/image wiring                      | `npm run validate:images`, `npm run check`                                                                                                                                                            |
 | Update detail-page related links / SEO support     | `src/components/site/RelatedLinkCardsSection.astro`, `src/lib/content/car-rental/index.ts`, `src/lib/content/tour-packages/index.ts`, `src/lib/i18n/*/{packagePage,sewaPage}.ts` |
 | Understand package detail rendering                | `src/pages/paket-wisata/[region]/[collection]/[slug].astro`, `src/pages/[locale]/tour-packages/[region]/[collection]/[slug].astro`, `src/components/packages/*`, `src/components/site/RelatedLinkCardsSection.astro`, `src/lib/content/tour-packages/index.ts`, `src/lib/i18n/*/packagePage.ts` |
+| Configure Google Analytics tracking                | `src/components/seo/GoogleAnalytics.astro` (GA4 gtag via Partytown), `src/layouts/MainLayout.astro` (injection point), `astro.config.mjs` (Partytown integration config). Override GA ID via `PUBLIC_GA_ID` env var. |
 
 ## Image Notes
 

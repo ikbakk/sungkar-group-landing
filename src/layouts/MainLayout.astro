@@ -1,6 +1,7 @@
 ---
 import Header from "@/components/header/Header.astro";
 import Footer from "@/components/site/Footer.astro";
+import GoogleAnalytics from "@/components/seo/GoogleAnalytics.astro";
 import SEOMeta from "@/components/seo/SEOMeta.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 
@@ -80,6 +81,8 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
 
     <StructuredData schema={organizationSchema} />
     <StructuredData schema={websiteSchema} />
+
+    <GoogleAnalytics />
 
     <!-- Netlify Identity: redirect invite/password-recovery/confirmation to /admin/ -->
     <script>

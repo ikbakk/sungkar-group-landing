@@ -9,6 +9,8 @@ import react from "@astrojs/react";
 
 import sitemap from "@astrojs/sitemap";
 
+import partytown from "@astrojs/partytown";
+
 import { SITE_URL } from "./src/lib/site-config";
 
 import mdx from "@astrojs/mdx";
@@ -48,5 +50,10 @@ export default defineConfig({
     }),
     robotsTxt(),
     mdx(),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
   ],
 });
