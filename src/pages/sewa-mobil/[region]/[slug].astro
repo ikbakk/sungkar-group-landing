@@ -1,10 +1,12 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
+import FaqSection from "@/components/site/Faq.astro";
+import RelatedLinkCardsSection from "@/components/site/RelatedLinkCardsSection.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
-import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schemas";
+import { generateServiceSchema, generateBreadcrumbSchema, generateFAQPageSchema } from "@/lib/schemas";
 import { SITE_URL } from "@/lib/site-config";
 
 import { getVehicles } from "@/lib/content/car-rental/collection";
@@ -15,6 +17,7 @@ import VehicleDetailPanel from "@/components/vehicles/VehicleDetailPanel.astro";
 import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 
 import { t } from "@/lib/i18n";
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
 import { getImageSrc } from "@/lib/images";
 
 export async function getStaticPaths() {
@@ -39,12 +42,13 @@ const absoluteImageUrl = new URL(
   SITE_URL,
 ).toString();
 
-const productSchema = generateProductSchema(
+const serviceSchema = generateServiceSchema(
   vehicle.name,
   vehicle.description,
   vehicle.pricePerDay,
   absoluteImageUrl,
   vehicleUrl,
+  uiStrings.sewaMobil.title,
 );
 
 const breadcrumbItems = [
@@ -56,6 +60,12 @@ const breadcrumbItems = [
 
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
 
+const faqModule = await loadFaq(locale, "sewa-mobil");
+const { sewaMobilFaq } = faqModule;
+const pageModule = await loadContent(locale, "sewaPage");
+const { sewaPageContent } = pageModule;
+const faqSchema = generateFAQPageSchema(sewaMobilFaq);
+
 const r = vehicle.region as Region;
 ---
 
@@ -66,8 +76,9 @@ const r = vehicle.region as Region;
   image={vehicle.imageTop}
   locale={locale}
 >
-  <StructuredData schema={productSchema} />
+  <StructuredData schema={serviceSchema} />
   <StructuredData schema={breadcrumbSchema} />
+  <StructuredData schema={faqSchema} />
 
   <PageHeader
     eyebrow={uiStrings.sewaMobil.vehicleDetail}
@@ -111,5 +122,19 @@ const r = vehicle.region as Region;
         />
       </div>
     </div>
+  </SectionContainer>
+  <FaqSection
+    eyebrow={uiStrings.faq.sectionTitle}
+    title={uiStrings.faq.sectionCarRental}
+    items={sewaMobilFaq}
+    background="bg-surface-soft"
+  />
+
+  <SectionContainer background="bg-white" padding="py-14 sm:py-16">
+    <RelatedLinkCardsSection
+      title={sewaPageContent.relatedContentTitle}
+      buttonLabel={uiStrings.common.learnMore}
+      items={sewaPageContent.relatedContent}
+    />
   </SectionContainer>
 </MainLayout>

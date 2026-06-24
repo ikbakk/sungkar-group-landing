@@ -53,6 +53,8 @@ export const packagePageContent = {
     },
   },
 
+  detailLinksTitle: "Teroka lagi",
+
   cta: {
     title: "Belum jumpa pakej yang sesuai?",
     description:

@@ -50,6 +50,8 @@ export const packagePageContent = {
     },
   },
 
+  detailLinksTitle: "استكشف المزيد",
+
   cta: {
     title: "لم تجد البرنامج المناسب؟",
     description:

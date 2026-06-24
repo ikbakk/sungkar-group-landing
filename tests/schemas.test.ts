@@ -4,6 +4,7 @@ import {
   generateOrganizationSchema,
   generateWebsiteSchema,
   generateProductSchema,
+  generateServiceSchema,
   generateArticleSchema,
   generateTouristAttractionSchema,
   generateFAQPageSchema,
@@ -196,6 +197,37 @@ describe("generateHowToSchema", () => {
   });
 });
 
+describe("generateServiceSchema", () => {
+  it("uses ContactForPrice for non-numeric price", () => {
+    const result = generateServiceSchema(
+      "Tour",
+      "Desc",
+      "Hubungi untuk harga",
+      "/img.jpg",
+      `${SITE_URL}/tour`,
+      "Tour package",
+    );
+    expect(result["@type"]).toBe("Service");
+    expect(result.offers.price).toBe("https://schema.org/ContactForPrice");
+    expect((result.offers as any).priceCurrency).toBe("IDR");
+  });
+
+  it("sets numeric price and serviceType", () => {
+    const result = generateServiceSchema(
+      "Tour",
+      "Desc",
+      "500000",
+      "/img.jpg",
+      `${SITE_URL}/tour`,
+      "Tour package",
+      "3 days",
+    );
+    expect(result.serviceType).toBe("Tour package");
+    expect((result.offers as any).priceSpecification.price).toBe("500000");
+    expect(result.duration).toBe("3 days");
+  });
+});
+
 describe("generateProductSchema", () => {
   it("uses real aggregate rating from reviews", () => {
     const result = generateProductSchema(
@@ -218,7 +250,8 @@ describe("generateProductSchema", () => {
       `${SITE_URL}/test`,
     );
     expect(result.offers.price).toBe("https://schema.org/ContactForPrice");
-    expect((result.offers as any).priceCurrency).toBeUndefined();
+    expect((result.offers as any).priceCurrency).toBe("IDR");
+    expect((result.offers as any).priceSpecification.priceCurrency).toBe("IDR");
   });
 
   it("sets priceCurrency for numeric price", () => {
@@ -230,5 +263,6 @@ describe("generateProductSchema", () => {
       `${SITE_URL}/test`,
     );
     expect((result.offers as any).priceCurrency).toBe("IDR");
+    expect((result.offers as any).priceSpecification.price).toBe("500000");
   });
 });

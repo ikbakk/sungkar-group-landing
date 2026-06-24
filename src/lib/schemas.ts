@@ -154,6 +154,8 @@ export function generateProductSchema(
   url: string,
   duration?: string,
 ) {
+  const isNumericPrice = /^\d+$/.test(price);
+
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -166,8 +168,14 @@ export function generateProductSchema(
 
     offers: {
       "@type": "Offer",
-      ...(/^\d+$/.test(price)
-        ? { price, priceCurrency: "IDR" }
+      priceCurrency: "IDR",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "IDR",
+        ...(isNumericPrice ? { price } : {}),
+      },
+      ...(isNumericPrice
+        ? { price }
         : { price: "https://schema.org/ContactForPrice" }),
       availability: "https://schema.org/InStock",
     },
@@ -176,6 +184,51 @@ export function generateProductSchema(
       "@type": "AggregateRating",
       ratingValue: String(reviewStats.rating),
       reviewCount: String(reviewStats.totalReviews),
+    },
+
+    ...(duration && { duration }),
+  };
+}
+
+// Service Schema for tours and rentals
+export function generateServiceSchema(
+  name: string,
+  description: string,
+  price: string,
+  image: string,
+  url: string,
+  serviceType: string,
+  duration?: string,
+) {
+  const isNumericPrice = /^\d+$/.test(price);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+
+    name,
+    description,
+    image,
+    url,
+    serviceType,
+
+    areaServed: {
+      "@type": "Place",
+      name: "Indonesia",
+    },
+
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "IDR",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "IDR",
+        ...(isNumericPrice ? { price } : {}),
+      },
+      ...(isNumericPrice
+        ? { price }
+        : { price: "https://schema.org/ContactForPrice" }),
+      availability: "https://schema.org/InStock",
     },
 
     ...(duration && { duration }),
@@ -319,6 +372,7 @@ export type SchemaObject = ReturnType<
   | typeof generateFAQPageSchema
   | typeof generateTouristAttractionSchema
   | typeof generateProductSchema
+  | typeof generateServiceSchema
   | typeof generateHowToSchema
   | typeof generateArticleSchema
   | typeof generateWebsiteSchema

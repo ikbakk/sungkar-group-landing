@@ -5,6 +5,24 @@ export const sewaPageContent = {
     description:
       "من المركبات المدمجة إلى الحافلات الصغيرة، نوفر خيارات متنوعة بأسعار تنافسية مع سائقين محترفين في كل وجهة.",
   },
+  relatedContentTitle: "استكشف المزيد",
+  relatedContent: [
+    {
+      title: "الباقات السياحية",
+      href: "/paket-wisata",
+      description: "نسّق تأجير السيارة مع برنامج رحلة يناسب وجهتك.",
+    },
+    {
+      title: "اتصل بنا",
+      href: "/kontak",
+      description: "اسأل عن توفر المركبات والسائقين ومواعيد الاستلام.",
+    },
+    {
+      title: "الوجهات",
+      href: "/destinasi",
+      description: "اكتشف المناطق السياحية الشهيرة لتخطيط رحلتك مع خدمة التأجير.",
+    },
+  ],
   regions: {
     lombok: {
       title: "مركبات لومبوك",
