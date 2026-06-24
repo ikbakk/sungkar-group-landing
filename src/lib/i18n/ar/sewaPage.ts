@@ -20,7 +20,8 @@ export const sewaPageContent = {
     {
       title: "الوجهات",
       href: "/destinasi",
-      description: "اكتشف المناطق السياحية الشهيرة لتخطيط رحلتك مع خدمة التأجير.",
+      description:
+        "اكتشف المناطق السياحية الشهيرة لتخطيط رحلتك مع خدمة التأجير.",
     },
   ],
   regions: {

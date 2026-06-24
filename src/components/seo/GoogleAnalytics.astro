@@ -22,14 +22,16 @@ gtag("config", "${gaId}");
 `;
 ---
 
-{isProduction && gaId && (
-  <>
-    <script
-      is:inline
-      type="text/partytown"
-      async
-      src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-    />
-    <script is:inline type="text/partytown" set:html={gtagInitScript} />
-  </>
-)}
+{
+  isProduction && gaId && (
+    <>
+      <script
+        is:inline
+        type="text/partytown"
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+      />
+      <script is:inline type="text/partytown" set:html={gtagInitScript} />
+    </>
+  )
+}

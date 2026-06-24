@@ -10,17 +10,20 @@ export const sewaPageContent = {
     {
       title: "Tour Packages",
       href: "/paket-wisata",
-      description: "Pair your rental car with a tour itinerary that fits your destination.",
+      description:
+        "Pair your rental car with a tour itinerary that fits your destination.",
     },
     {
       title: "Contact",
       href: "/kontak",
-      description: "Ask about vehicle availability, drivers, and pickup schedules.",
+      description:
+        "Ask about vehicle availability, drivers, and pickup schedules.",
     },
     {
       title: "Destinations",
       href: "/destinasi",
-      description: "See popular travel areas to plan together with your vehicle rental.",
+      description:
+        "See popular travel areas to plan together with your vehicle rental.",
     },
   ],
   regions: {
