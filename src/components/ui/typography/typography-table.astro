@@ -17,7 +17,7 @@ const { class: className, containerClass, ...props } = Astro.props;
 </div>
 
 <style is:global>
-  @reference "@/styles/global.css";
+  @reference "../../../styles/global.css";
 
   [data-slot="typography-table-container"] {
     @apply border-border w-full overflow-x-auto rounded-xl border;

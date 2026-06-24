@@ -15,7 +15,7 @@ const { class: className, size = "default", ...props } = Astro.props;
 </h1>
 
 <style is:global>
-  @reference "@/styles/global.css";
+  @reference "../../../styles/global.css";
 
   [data-slot="typography-h1"],
   [data-slot="typography"] h1:not(.no-typography):not(.no-typography *) {
