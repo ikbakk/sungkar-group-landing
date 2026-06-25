@@ -2,7 +2,7 @@
 import type { ImageSource } from "@/lib/images";
 import { getImageWidth, getImageHeight } from "@/lib/images";
 import { SITE_URL } from "@/lib/site-config";
-import { t } from "@/lib/i18n";
+import { getLocalizedPath, t } from "@/lib/i18n";
 import { LOCALES } from "@/lib/i18n";
 import { appendTrailingSlash, normalizeMetaDescription } from "@/lib/seo";
 
@@ -68,6 +68,14 @@ const twitterCard =
   twitterCardOverride || (ogImageUrl ? "summary_large_image" : "summary");
 
 const localeMap: Record<string, string> = {
+  id: "id-ID",
+  en: "en-US",
+  ar: "ar-SA",
+  ms: "ms-MY",
+  zh: "zh-CN",
+};
+
+const ogLocaleMap: Record<string, string> = {
   id: "id_ID",
   en: "en_US",
   ar: "ar_SA",
@@ -75,17 +83,27 @@ const localeMap: Record<string, string> = {
   zh: "zh_CN",
 };
 
-const ogLocale = localeMap[locale] || "id_ID";
+const ogLocale = ogLocaleMap[locale] || "id_ID";
 
 const uiStrings = t(locale);
 const metaDescription = normalizeMetaDescription(description);
 
 const canonicalPathname = canonicalUrl.pathname;
-const basePath =
-  locale === "id"
-    ? canonicalPathname
-    : canonicalPathname.replace(new RegExp("^/" + locale), "") || "/";
-const defaultUrl = new URL(basePath, SITE_URL).toString();
+
+const alternateLinks = LOCALES.map((targetLocale) => {
+  const localizedPath = getLocalizedPath(canonicalPathname, targetLocale);
+  const normalizedPath = appendTrailingSlash(localizedPath);
+
+  return {
+    locale: targetLocale,
+    hreflang: localeMap[targetLocale] || targetLocale,
+    href: new URL(normalizedPath, SITE_URL).toString(),
+  };
+});
+
+const defaultUrl =
+  alternateLinks.find((entry) => entry.locale === "id")?.href ||
+  new URL(appendTrailingSlash(canonicalPathname), SITE_URL).toString();
 ---
 
 <meta charset="utf-8" />
@@ -99,17 +117,12 @@ const defaultUrl = new URL(basePath, SITE_URL).toString();
 
 <link rel="canonical" href={canonicalHref} />
 
-<link rel="alternate" href={canonicalHref} hreflang={locale} />
-<link rel="alternate" href={defaultUrl} hreflang="x-default" />
 {
-  LOCALES.filter((l) => l !== locale).map((l) => {
-    const altUrl =
-      l === "id"
-        ? defaultUrl
-        : new URL(`/${l}${basePath}`, SITE_URL).toString();
-    return <link rel="alternate" href={altUrl} hreflang={l} />;
-  })
+  alternateLinks.map((entry) => (
+    <link rel="alternate" href={entry.href} hreflang={entry.hreflang} />
+  ))
 }
+<link rel="alternate" href={defaultUrl} hreflang="x-default" />
 
 <meta name="robots" content={noIndex ? "noindex,nofollow" : "index,follow"} />
 

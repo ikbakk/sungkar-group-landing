@@ -10,6 +10,10 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 
 import { SITE_URL } from "./src/lib/site-config";
+import {
+  serializeSitemapItem,
+  sitemapLastmodIntegration,
+} from "./src/lib/sitemap";
 
 import mdx from "@astrojs/mdx";
 
@@ -45,9 +49,10 @@ export default defineConfig({
           zh: "zh-CN",
         },
       },
+      serialize: serializeSitemapItem,
     }),
     robotsTxt(),
     mdx(),
-
+    sitemapLastmodIntegration(),
   ],
 });
