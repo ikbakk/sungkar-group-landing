@@ -10,12 +10,17 @@ import {
 import { Badge } from "@/components/ui/badge";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import { localizeHref } from "@/lib/i18n/localize";
-import { t } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 
 interface Props {
   vehicle: Vehicle;
   locale?: string;
+  passengersLabel: string;
+  specificationsLabel: string;
+  transmissionLabel: string;
+  featuresLabel: string;
+  suitableForLabel: string;
+  viewDetailRentLabel: string;
   loading?: "lazy" | "eager";
   fetchpriority?: "high" | "low" | "auto";
 }
@@ -23,10 +28,15 @@ interface Props {
 const {
   vehicle,
   locale = "id",
+  passengersLabel,
+  specificationsLabel,
+  transmissionLabel,
+  featuresLabel,
+  suitableForLabel,
+  viewDetailRentLabel,
   loading = "lazy",
   fetchpriority = "auto",
 } = Astro.props;
-const uiStrings = t(locale);
 
 const cardHref = localizeHref(
   `/sewa-mobil/${vehicle.region}/${vehicle.slug}`,
@@ -55,7 +65,7 @@ const cardHref = localizeHref(
       </CardTitle>
       <Badge variant="default" class="rounded-full px-3 py-1 text-sm">
         {vehicle.seats}
-        {uiStrings.sewaMobil.passengers}
+        {passengersLabel}
       </Badge>
     </div>
   </CardHeader>
@@ -65,18 +75,18 @@ const cardHref = localizeHref(
       <div
         class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
       >
-        {uiStrings.sewaMobil.specifications}
+        {specificationsLabel}
       </div>
       <div class="grid grid-cols-2 gap-2 text-sm">
         <div class="rounded border border-border p-2 text-center">
           <div class="text-xs text-text-muted">
-            {uiStrings.sewaMobil.transmission}
+            {transmissionLabel}
           </div>
           <div class="font-medium">{vehicle.transmission}</div>
         </div>
         <div class="rounded border border-border p-2 text-center">
           <div class="text-xs text-text-muted">
-            {uiStrings.sewaMobil.passengers}
+            {passengersLabel}
           </div>
           <div class="font-medium">{vehicle.seats}</div>
         </div>
@@ -87,7 +97,7 @@ const cardHref = localizeHref(
       <div
         class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
       >
-        {uiStrings.sewaMobil.features}
+        {featuresLabel}
       </div>
       <div class="flex flex-wrap gap-2">
         {
@@ -104,7 +114,7 @@ const cardHref = localizeHref(
       <div
         class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
       >
-        {uiStrings.sewaMobil.suitableFor}
+        {suitableForLabel}
       </div>
       <ul class="space-y-1 text-sm leading-7 text-text-muted">
         {
@@ -126,7 +136,7 @@ const cardHref = localizeHref(
   <CardFooter>
     <a href={cardHref}>
       <Button size="lg" class="w-full"
-        >{uiStrings.sewaMobil.viewDetailRent}</Button
+        >{viewDetailRentLabel}</Button
       >
     </a>
   </CardFooter>

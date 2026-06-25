@@ -10,14 +10,12 @@ import {
 } from "@/components/ui/carousel";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
 import { GALLERY } from "@/assets/images";
-import { t } from "@/lib/i18n";
 
 interface Props {
-  locale?: string;
+  title: string;
 }
 
-const { locale = "id" } = Astro.props;
-const uiStrings = t(locale);
+const { title } = Astro.props;
 
 const galleryImages = Object.values(GALLERY);
 ---
@@ -25,7 +23,7 @@ const galleryImages = Object.values(GALLERY);
 <Card class="border-border bg-white">
   <CardHeader>
     <TypographyH2 class="text-3xl leading-tight">
-      {uiStrings.reviews.galleryTitle}
+      {title}
     </TypographyH2>
   </CardHeader>
 

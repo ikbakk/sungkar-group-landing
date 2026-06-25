@@ -4,7 +4,7 @@ import {
   NativeSelect,
   NativeSelectOption,
 } from "@/components/ui/native-select";
-import { t } from "@/lib/i18n";
+import { getContactFormStrings } from "@/lib/i18n";
 import type { FormField, BusinessInfo } from "@/lib/contact-data";
 
 interface Props {
@@ -30,7 +30,7 @@ const {
   locale = "id",
   packages,
 } = Astro.props;
-const uiStrings = t(locale);
+const uiStrings = getContactFormStrings(locale);
 
 const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
 

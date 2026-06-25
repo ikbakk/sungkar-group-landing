@@ -7,7 +7,7 @@ import NavigationDesktop from "./NavigationDesktop.astro";
 import NavigationMobile from "./NavigationMobile";
 
 import { loadContent } from "@/lib/i18n/loader";
-import { t } from "@/lib/i18n";
+import { getHeaderStrings } from "@/lib/i18n";
 
 import LocaleSwitcher from "./LocaleSwitcher.astro";
 import { localizeHref } from "@/lib/i18n/localize";
@@ -85,7 +85,7 @@ function pruneNavigation(items: NavItem[]): NavItem[] {
 }
 
 const navigation = pruneNavigation(navModule.createNavigation(packages));
-const uiStrings = t(locale);
+const headerStrings = getHeaderStrings(locale);
 ---
 
 <header
@@ -97,7 +97,7 @@ const uiStrings = t(locale);
     <a href={localizeHref("/", locale)} class="flex items-center gap-3">
       <OptimizedImage
         src={BRAND.logo}
-        alt={uiStrings.seo.siteName}
+        alt={headerStrings.siteName}
         class="h-14 w-auto"
         loading="eager"
       />

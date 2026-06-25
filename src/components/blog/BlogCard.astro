@@ -4,15 +4,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { BlogPostMeta } from "@/lib/content/blog";
 import { localizeHref } from "@/lib/i18n/localize";
-import { t } from "@/lib/i18n";
 
 interface Props {
   post: BlogPostMeta;
   locale?: string;
+  readingTimeLabel: string;
 }
 
-const { post, locale = "id" } = Astro.props;
-const uiStrings = t(locale);
+const { post, locale = "id", readingTimeLabel } = Astro.props;
 const href = localizeHref("/blog/" + post.slug, locale);
 ---
 
@@ -27,7 +26,7 @@ const href = localizeHref("/blog/" + post.slug, locale);
           class="rounded-full px-3 py-1 text-xs font-medium"
         >
           {post.readingTime}
-          {uiStrings.guides.readingTime}
+          {readingTimeLabel}
         </Badge>
         {
           post.tags.slice(0, 2).map((tag) => (

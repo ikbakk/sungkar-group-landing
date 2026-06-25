@@ -24,7 +24,7 @@ import {
   getLocalizedPath,
   type Locale,
 } from "@/lib/i18n";
-import { t } from "@/lib/i18n";
+import { getHeaderStrings } from "@/lib/i18n";
 
 type Props = {
   items: NavItem[];
@@ -70,6 +70,7 @@ function TruncatedLink({
 
 export default function NavigationMobile({ items, locale = "id" }: Props) {
   const lh = (href: string | undefined) => localizeHref(href, locale);
+  const strings = getHeaderStrings(locale);
 
   return (
     <div className="lg:hidden">
@@ -89,18 +90,18 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
               backdrop-blur-md
             "
           >
-            {t(locale).header.menu}
+            {strings.menu}
           </button>
         </DrawerTrigger>
 
         <DrawerContent className="h-[85vh]">
           <DrawerHeader className="space-y-2 pb-2">
             <DrawerTitle className="text-center text-xl font-medium font-sans">
-              {t(locale).header.exploreDestinations}
+              {strings.exploreDestinations}
             </DrawerTitle>
 
             <p className="text-center text-sm text-muted-foreground">
-              {t(locale).header.destinationsSubtitle}
+              {strings.destinationsSubtitle}
             </p>
           </DrawerHeader>
 
@@ -108,7 +109,7 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
             <div className="flex-1 overflow-y-auto px-6 min-h-0">
               <div className="mb-4 border-b border-border pb-4">
                 <p className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                  {t(locale).header.language}
+                  {strings.language}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {LOCALES.map((l) => {

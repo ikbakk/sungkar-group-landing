@@ -9,16 +9,15 @@ import { Tick02Icon } from "@hugeicons/core-free-icons";
 import type { Accommodation } from "@/lib/content/shared/types";
 import { REGION_MAP } from "@/lib/regions";
 
-import { t } from "@/lib/i18n";
-
 interface Props {
   accommodation: Accommodation;
-  locale?: string;
+  featuresLabel: string;
+  morePerksLabel: string;
   loading?: "lazy" | "eager";
 }
 
-const { accommodation, locale = "id", loading = "lazy" } = Astro.props;
-const uiStrings = t(locale);
+const { accommodation, featuresLabel, morePerksLabel, loading = "lazy" } =
+  Astro.props;
 
 const region = REGION_MAP[accommodation.region];
 ---
@@ -76,7 +75,7 @@ const region = REGION_MAP[accommodation.region];
       <div
         class="mb-2 text-xs font-medium uppercase tracking-[0.28em] text-brand-700"
       >
-        {uiStrings.akomodasi.features}
+        {featuresLabel}
       </div>
       <ul class="space-y-1 text-sm font-sans">
         {
@@ -102,7 +101,7 @@ const region = REGION_MAP[accommodation.region];
         {
           accommodation.perks.length > 3 && (
             <li class="text-sm text-text-muted font-sans">
-              {uiStrings.akomodasi.morePerks.replace(
+              {morePerksLabel.replace(
                 "{n}",
                 String(accommodation.perks.length - 3),
               )}

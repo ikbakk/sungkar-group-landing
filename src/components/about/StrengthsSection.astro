@@ -2,22 +2,20 @@
 import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { t } from "@/lib/i18n";
 
 interface Props {
   strengths: Array<{ title: string; description: string }>;
-  locale?: string;
+  sectionTitle: string;
 }
 
-const { strengths, locale = "id" } = Astro.props;
-const uiStrings = t(locale);
+const { strengths, sectionTitle } = Astro.props;
 ---
 
 <SectionContainer background="bg-background">
   <Card class="border-border bg-white">
     <CardHeader>
       <TypographyH2 class="font-heading font-normal text-foreground">
-        {uiStrings.about.whyChooseUs}
+        {sectionTitle}
       </TypographyH2>
     </CardHeader>
 
