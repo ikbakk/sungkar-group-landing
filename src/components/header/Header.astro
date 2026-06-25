@@ -111,6 +111,6 @@ const uiStrings = t(locale);
       <LocaleSwitcher locale={locale} />
     </div>
 
-    <NavigationMobile items={navigation} locale={locale} client:load />
+    <NavigationMobile items={navigation} locale={locale} client:only="react" />
   </div>
 </header>

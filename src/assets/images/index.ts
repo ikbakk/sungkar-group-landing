@@ -1853,10 +1853,12 @@ export const ACCOMMODATIONS = {
   lombok: _accommodations_lombok,
 };
 
+
 export const BRAND = {
   logo: _brand_logo,
   ogHome: _brand_og_home,
 };
+
 
 export const DESTINATIONS = {
   gili: _destinations_gili,
@@ -1864,6 +1866,7 @@ export const DESTINATIONS = {
   rinjani: _destinations_rinjani,
   sumbawa: _destinations_sumbawa,
 };
+
 
 export const GALLERY = {
   gAirport1: _gallery_g_airport_1,
@@ -1915,17 +1918,13 @@ export const GALLERY = {
   gaisanDeluxeDeluxeOcean03: _gallery_gaisan_deluxe_deluxe_ocean_03,
   gaisanDeluxeDeluxeOcean04: _gallery_gaisan_deluxe_deluxe_ocean_04,
   gaisanDeluxeFacilityCaptainRoom: _gallery_gaisan_deluxe_facility_captain_room,
-  gaisanDeluxeFacilityIndoorRestaurant:
-    _gallery_gaisan_deluxe_facility_indoor_restaurant,
+  gaisanDeluxeFacilityIndoorRestaurant: _gallery_gaisan_deluxe_facility_indoor_restaurant,
   gaisanDeluxeFacilityJacuzzi01: _gallery_gaisan_deluxe_facility_jacuzzi_01,
   gaisanDeluxeFacilityJacuzzi02: _gallery_gaisan_deluxe_facility_jacuzzi_02,
   gaisanDeluxeFacilityJacuzzi03: _gallery_gaisan_deluxe_facility_jacuzzi_03,
-  gaisanDeluxeFacilityOutdoorDiningRoom01:
-    _gallery_gaisan_deluxe_facility_outdoor_dining_room_01,
-  gaisanDeluxeFacilityOutdoorDiningRoom02:
-    _gallery_gaisan_deluxe_facility_outdoor_dining_room_02,
-  gaisanDeluxeFacilityOutdoorDiningRoom03:
-    _gallery_gaisan_deluxe_facility_outdoor_dining_room_03,
+  gaisanDeluxeFacilityOutdoorDiningRoom01: _gallery_gaisan_deluxe_facility_outdoor_dining_room_01,
+  gaisanDeluxeFacilityOutdoorDiningRoom02: _gallery_gaisan_deluxe_facility_outdoor_dining_room_02,
+  gaisanDeluxeFacilityOutdoorDiningRoom03: _gallery_gaisan_deluxe_facility_outdoor_dining_room_03,
   gaisanDeluxeMasterOcean101: _gallery_gaisan_deluxe_master_ocean_1_01,
   gaisanDeluxeMasterOcean102: _gallery_gaisan_deluxe_master_ocean_1_02,
   gaisanDeluxeMasterOcean103: _gallery_gaisan_deluxe_master_ocean_1_03,
@@ -2040,65 +2039,37 @@ export const GALLERY = {
   kutaBeach: _gallery_kuta_beach,
   kutaMandalikaAerial: _gallery_kuta_mandalika_aerial,
   maheswariDeluxePhinisiCabin: _gallery_maheswari_deluxe_phinisi_cabin,
-  maheswariDeluxePhinisiDeluxeCabin:
-    _gallery_maheswari_deluxe_phinisi_deluxe_cabin,
-  maheswariDeluxePhinisiDeluxeOcean1A:
-    _gallery_maheswari_deluxe_phinisi_deluxe_ocean_1_a,
-  maheswariDeluxePhinisiDeluxeOcean1B:
-    _gallery_maheswari_deluxe_phinisi_deluxe_ocean_1_b,
-  maheswariDeluxePhinisiDeluxeOcean1C:
-    _gallery_maheswari_deluxe_phinisi_deluxe_ocean_1_c,
-  maheswariDeluxePhinisiDeluxeOcean2A:
-    _gallery_maheswari_deluxe_phinisi_deluxe_ocean_2_a,
-  maheswariDeluxePhinisiDeluxeOcean2B:
-    _gallery_maheswari_deluxe_phinisi_deluxe_ocean_2_b,
-  maheswariDeluxePhinisiDeluxeOcean2C:
-    _gallery_maheswari_deluxe_phinisi_deluxe_ocean_2_c,
+  maheswariDeluxePhinisiDeluxeCabin: _gallery_maheswari_deluxe_phinisi_deluxe_cabin,
+  maheswariDeluxePhinisiDeluxeOcean1A: _gallery_maheswari_deluxe_phinisi_deluxe_ocean_1_a,
+  maheswariDeluxePhinisiDeluxeOcean1B: _gallery_maheswari_deluxe_phinisi_deluxe_ocean_1_b,
+  maheswariDeluxePhinisiDeluxeOcean1C: _gallery_maheswari_deluxe_phinisi_deluxe_ocean_1_c,
+  maheswariDeluxePhinisiDeluxeOcean2A: _gallery_maheswari_deluxe_phinisi_deluxe_ocean_2_a,
+  maheswariDeluxePhinisiDeluxeOcean2B: _gallery_maheswari_deluxe_phinisi_deluxe_ocean_2_b,
+  maheswariDeluxePhinisiDeluxeOcean2C: _gallery_maheswari_deluxe_phinisi_deluxe_ocean_2_c,
   maheswariDeluxePhinisiExterior: _gallery_maheswari_deluxe_phinisi_exterior,
   maheswariDeluxePhinisiInterior: _gallery_maheswari_deluxe_phinisi_interior,
-  maheswariDeluxePhinisiMasterCabin:
-    _gallery_maheswari_deluxe_phinisi_master_cabin,
-  maheswariDeluxePhinisiMasterOcean1A:
-    _gallery_maheswari_deluxe_phinisi_master_ocean_1_a,
-  maheswariDeluxePhinisiMasterOcean1B:
-    _gallery_maheswari_deluxe_phinisi_master_ocean_1_b,
-  maheswariDeluxePhinisiMasterOcean1C:
-    _gallery_maheswari_deluxe_phinisi_master_ocean_1_c,
-  maheswariDeluxePhinisiMasterOcean2A:
-    _gallery_maheswari_deluxe_phinisi_master_ocean_2_a,
-  maheswariDeluxePhinisiMasterOcean2B:
-    _gallery_maheswari_deluxe_phinisi_master_ocean_2_b,
-  maheswariDeluxePhinisiMasterOcean2C:
-    _gallery_maheswari_deluxe_phinisi_master_ocean_2_c,
-  maheswariDeluxePhinisiSignatureCabin:
-    _gallery_maheswari_deluxe_phinisi_signature_cabin,
-  maheswariDeluxePhinisiSignatureOcean1A:
-    _gallery_maheswari_deluxe_phinisi_signature_ocean_1_a,
-  maheswariDeluxePhinisiSignatureOcean1B:
-    _gallery_maheswari_deluxe_phinisi_signature_ocean_1_b,
-  maheswariDeluxePhinisiSignatureOcean1C:
-    _gallery_maheswari_deluxe_phinisi_signature_ocean_1_c,
-  maheswariDeluxePhinisiSignatureOcean2A:
-    _gallery_maheswari_deluxe_phinisi_signature_ocean_2_a,
-  maheswariDeluxePhinisiSignatureOcean2B:
-    _gallery_maheswari_deluxe_phinisi_signature_ocean_2_b,
-  maheswariDeluxePhinisiSignatureOcean2C:
-    _gallery_maheswari_deluxe_phinisi_signature_ocean_2_c,
+  maheswariDeluxePhinisiMasterCabin: _gallery_maheswari_deluxe_phinisi_master_cabin,
+  maheswariDeluxePhinisiMasterOcean1A: _gallery_maheswari_deluxe_phinisi_master_ocean_1_a,
+  maheswariDeluxePhinisiMasterOcean1B: _gallery_maheswari_deluxe_phinisi_master_ocean_1_b,
+  maheswariDeluxePhinisiMasterOcean1C: _gallery_maheswari_deluxe_phinisi_master_ocean_1_c,
+  maheswariDeluxePhinisiMasterOcean2A: _gallery_maheswari_deluxe_phinisi_master_ocean_2_a,
+  maheswariDeluxePhinisiMasterOcean2B: _gallery_maheswari_deluxe_phinisi_master_ocean_2_b,
+  maheswariDeluxePhinisiMasterOcean2C: _gallery_maheswari_deluxe_phinisi_master_ocean_2_c,
+  maheswariDeluxePhinisiSignatureCabin: _gallery_maheswari_deluxe_phinisi_signature_cabin,
+  maheswariDeluxePhinisiSignatureOcean1A: _gallery_maheswari_deluxe_phinisi_signature_ocean_1_a,
+  maheswariDeluxePhinisiSignatureOcean1B: _gallery_maheswari_deluxe_phinisi_signature_ocean_1_b,
+  maheswariDeluxePhinisiSignatureOcean1C: _gallery_maheswari_deluxe_phinisi_signature_ocean_1_c,
+  maheswariDeluxePhinisiSignatureOcean2A: _gallery_maheswari_deluxe_phinisi_signature_ocean_2_a,
+  maheswariDeluxePhinisiSignatureOcean2B: _gallery_maheswari_deluxe_phinisi_signature_ocean_2_b,
+  maheswariDeluxePhinisiSignatureOcean2C: _gallery_maheswari_deluxe_phinisi_signature_ocean_2_c,
   maheswariDeluxePhinisiSundeck: _gallery_maheswari_deluxe_phinisi_sundeck,
-  maheswariDeluxePhinisiSuperiorCabin1A:
-    _gallery_maheswari_deluxe_phinisi_superior_cabin_1_a,
-  maheswariDeluxePhinisiSuperiorCabin1B:
-    _gallery_maheswari_deluxe_phinisi_superior_cabin_1_b,
-  maheswariDeluxePhinisiSuperiorCabin1C:
-    _gallery_maheswari_deluxe_phinisi_superior_cabin_1_c,
-  maheswariDeluxePhinisiSuperiorCabin2A:
-    _gallery_maheswari_deluxe_phinisi_superior_cabin_2_a,
-  maheswariDeluxePhinisiSuperiorCabin2B:
-    _gallery_maheswari_deluxe_phinisi_superior_cabin_2_b,
-  maheswariDeluxePhinisiSuperiorCabin2C:
-    _gallery_maheswari_deluxe_phinisi_superior_cabin_2_c,
-  maheswariDeluxePhinisiSuperiorCabin:
-    _gallery_maheswari_deluxe_phinisi_superior_cabin,
+  maheswariDeluxePhinisiSuperiorCabin1A: _gallery_maheswari_deluxe_phinisi_superior_cabin_1_a,
+  maheswariDeluxePhinisiSuperiorCabin1B: _gallery_maheswari_deluxe_phinisi_superior_cabin_1_b,
+  maheswariDeluxePhinisiSuperiorCabin1C: _gallery_maheswari_deluxe_phinisi_superior_cabin_1_c,
+  maheswariDeluxePhinisiSuperiorCabin2A: _gallery_maheswari_deluxe_phinisi_superior_cabin_2_a,
+  maheswariDeluxePhinisiSuperiorCabin2B: _gallery_maheswari_deluxe_phinisi_superior_cabin_2_b,
+  maheswariDeluxePhinisiSuperiorCabin2C: _gallery_maheswari_deluxe_phinisi_superior_cabin_2_c,
+  maheswariDeluxePhinisiSuperiorCabin: _gallery_maheswari_deluxe_phinisi_superior_cabin,
   mandalikaCircuit: _gallery_mandalika_circuit,
   mataramIslamicCenter: _gallery_mataram_islamic_center,
   nkJaya1DeluxeCabin: _gallery_nk_jaya_1_deluxe_cabin,
@@ -2176,6 +2147,7 @@ export const GALLERY = {
   yukaiDeluxeSundeck: _gallery_yukai_deluxe_sundeck,
 };
 
+
 export const HERO = {
   gaisanDeluxe: _hero_gaisan_deluxe,
   hatiraHelaDeluxe: _hero_hatira_hela_deluxe,
@@ -2189,10 +2161,12 @@ export const HERO = {
   main: _hero_hero,
 };
 
+
 export const LEGALITY = {
   nib: _legality_nib,
   sk: _legality_sk,
 };
+
 
 export const OG = {
   about: _og_about,
@@ -2212,6 +2186,7 @@ export const OG = {
   terms: _og_terms,
   vehicleDetail: _og_vehicle_detail,
 };
+
 
 export const PACKAGES = {
   alfathran3: {
@@ -2247,164 +2222,104 @@ export const PACKAGES = {
     },
     cabins: {
       cabin12SenggigiRoomQueenBed3xExtraBedPrivateBathroomBalcony: {
-        "029AlfathranSenggigiCabin1":
-          _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_029_alfathran_senggigi_cabin_1,
-        "030AlfathranSenggigiCabin2":
-          _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_030_alfathran_senggigi_cabin_2,
-        "031AlfathranSenggigiCabin3":
-          _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_031_alfathran_senggigi_cabin_3,
-        "032AlfathranSenggigiCabin4":
-          _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_032_alfathran_senggigi_cabin_4,
-        "033AlfathranSenggigiCabin5":
-          _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_033_alfathran_senggigi_cabin_5,
-        "034AlfathranSenggigiCabin6":
-          _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_034_alfathran_senggigi_cabin_6,
+        "029AlfathranSenggigiCabin1": _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_029_alfathran_senggigi_cabin_1,
+        "030AlfathranSenggigiCabin2": _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_030_alfathran_senggigi_cabin_2,
+        "031AlfathranSenggigiCabin3": _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_031_alfathran_senggigi_cabin_3,
+        "032AlfathranSenggigiCabin4": _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_032_alfathran_senggigi_cabin_4,
+        "033AlfathranSenggigiCabin5": _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_033_alfathran_senggigi_cabin_5,
+        "034AlfathranSenggigiCabin6": _packages_alfathran_3_cabins_cabin_1_2_senggigi_room_queen_bed_3x_extra_bed_private_bathroom_balcony_034_alfathran_senggigi_cabin_6,
       },
       cabin1112SumbawaRoomSharingCabinAndToilet: {
-        "035AlfathranSumbawaCabin1":
-          _packages_alfathran_3_cabins_cabin_11_12_sumbawa_room_sharing_cabin_and_toilet_035_alfathran_sumbawa_cabin_1,
-        "036AlfathranSumbawaCabin2":
-          _packages_alfathran_3_cabins_cabin_11_12_sumbawa_room_sharing_cabin_and_toilet_036_alfathran_sumbawa_cabin_2,
-        "037AlfathranSumbawaCabin3":
-          _packages_alfathran_3_cabins_cabin_11_12_sumbawa_room_sharing_cabin_and_toilet_037_alfathran_sumbawa_cabin_3,
-        "038AlfathranSumbawaCabin4":
-          _packages_alfathran_3_cabins_cabin_11_12_sumbawa_room_sharing_cabin_and_toilet_038_alfathran_sumbawa_cabin_4,
+        "035AlfathranSumbawaCabin1": _packages_alfathran_3_cabins_cabin_11_12_sumbawa_room_sharing_cabin_and_toilet_035_alfathran_sumbawa_cabin_1,
+        "036AlfathranSumbawaCabin2": _packages_alfathran_3_cabins_cabin_11_12_sumbawa_room_sharing_cabin_and_toilet_036_alfathran_sumbawa_cabin_2,
+        "037AlfathranSumbawaCabin3": _packages_alfathran_3_cabins_cabin_11_12_sumbawa_room_sharing_cabin_and_toilet_037_alfathran_sumbawa_cabin_3,
+        "038AlfathranSumbawaCabin4": _packages_alfathran_3_cabins_cabin_11_12_sumbawa_room_sharing_cabin_and_toilet_038_alfathran_sumbawa_cabin_4,
       },
       cabin34FloresRoomQueenBedPrivateBathroom: {
-        "039Alfathran3FloresRoom10000Sve03548":
-          _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_039_alfathran_3_flores_room_1_0000_sve03548,
-        "040Alfathran3FloresRoom100055":
-          _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_040_alfathran_3_flores_room_1_00055,
-        "041AlfathranFloresCabin1":
-          _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_041_alfathran_flores_cabin_1,
-        "042AlfathranFloresCabin2":
-          _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_042_alfathran_flores_cabin_2,
-        "043AlfathranFloresCabin3":
-          _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_043_alfathran_flores_cabin_3,
-        "044AlfathranFloresCabin4":
-          _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_044_alfathran_flores_cabin_4,
+        "039Alfathran3FloresRoom10000Sve03548": _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_039_alfathran_3_flores_room_1_0000_sve03548,
+        "040Alfathran3FloresRoom100055": _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_040_alfathran_3_flores_room_1_00055,
+        "041AlfathranFloresCabin1": _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_041_alfathran_flores_cabin_1,
+        "042AlfathranFloresCabin2": _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_042_alfathran_flores_cabin_2,
+        "043AlfathranFloresCabin3": _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_043_alfathran_flores_cabin_3,
+        "044AlfathranFloresCabin4": _packages_alfathran_3_cabins_cabin_3_4_flores_room_queen_bed_private_bathroom_044_alfathran_flores_cabin_4,
       },
       cabin5Rinjani02RoomQueenBed2ExtraSingleBed: {
-        "045AlfathranRinjani2Cabin1":
-          _packages_alfathran_3_cabins_cabin_5_rinjani_02_room_queen_bed_2_extra_single_bed_045_alfathran_rinjani2_cabin_1,
-        "046AlfathranRinjani2Cabin2":
-          _packages_alfathran_3_cabins_cabin_5_rinjani_02_room_queen_bed_2_extra_single_bed_046_alfathran_rinjani2_cabin_2,
-        "047AlfathranRinjani2Cabin3":
-          _packages_alfathran_3_cabins_cabin_5_rinjani_02_room_queen_bed_2_extra_single_bed_047_alfathran_rinjani2_cabin_3,
-        "048AlfathranRinjani2Cabin4":
-          _packages_alfathran_3_cabins_cabin_5_rinjani_02_room_queen_bed_2_extra_single_bed_048_alfathran_rinjani2_cabin_4,
-        "049AlfathranRinjani2Cabin5":
-          _packages_alfathran_3_cabins_cabin_5_rinjani_02_room_queen_bed_2_extra_single_bed_049_alfathran_rinjani2_cabin_5,
+        "045AlfathranRinjani2Cabin1": _packages_alfathran_3_cabins_cabin_5_rinjani_02_room_queen_bed_2_extra_single_bed_045_alfathran_rinjani2_cabin_1,
+        "046AlfathranRinjani2Cabin2": _packages_alfathran_3_cabins_cabin_5_rinjani_02_room_queen_bed_2_extra_single_bed_046_alfathran_rinjani2_cabin_2,
+        "047AlfathranRinjani2Cabin3": _packages_alfathran_3_cabins_cabin_5_rinjani_02_room_queen_bed_2_extra_single_bed_047_alfathran_rinjani2_cabin_3,
+        "048AlfathranRinjani2Cabin4": _packages_alfathran_3_cabins_cabin_5_rinjani_02_room_queen_bed_2_extra_single_bed_048_alfathran_rinjani2_cabin_4,
+        "049AlfathranRinjani2Cabin5": _packages_alfathran_3_cabins_cabin_5_rinjani_02_room_queen_bed_2_extra_single_bed_049_alfathran_rinjani2_cabin_5,
       },
       cabin6Rinjani01Room2xQueenBed: {
-        "050AlfathranRinjani1Cabin1":
-          _packages_alfathran_3_cabins_cabin_6_rinjani_01_room_2x_queen_bed_050_alfathran_rinjani1_cabin_1,
-        "051AlfathranRinjani1Cabin2":
-          _packages_alfathran_3_cabins_cabin_6_rinjani_01_room_2x_queen_bed_051_alfathran_rinjani1_cabin_2,
-        "052AlfathranRinjani1Cabin3":
-          _packages_alfathran_3_cabins_cabin_6_rinjani_01_room_2x_queen_bed_052_alfathran_rinjani1_cabin_3,
-        "053AlfathranRinjani1Cabin4":
-          _packages_alfathran_3_cabins_cabin_6_rinjani_01_room_2x_queen_bed_053_alfathran_rinjani1_cabin_4,
-        "054AlfathranRinjani1Cabin5":
-          _packages_alfathran_3_cabins_cabin_6_rinjani_01_room_2x_queen_bed_054_alfathran_rinjani1_cabin_5,
+        "050AlfathranRinjani1Cabin1": _packages_alfathran_3_cabins_cabin_6_rinjani_01_room_2x_queen_bed_050_alfathran_rinjani1_cabin_1,
+        "051AlfathranRinjani1Cabin2": _packages_alfathran_3_cabins_cabin_6_rinjani_01_room_2x_queen_bed_051_alfathran_rinjani1_cabin_2,
+        "052AlfathranRinjani1Cabin3": _packages_alfathran_3_cabins_cabin_6_rinjani_01_room_2x_queen_bed_052_alfathran_rinjani1_cabin_3,
+        "053AlfathranRinjani1Cabin4": _packages_alfathran_3_cabins_cabin_6_rinjani_01_room_2x_queen_bed_053_alfathran_rinjani1_cabin_4,
+        "054AlfathranRinjani1Cabin5": _packages_alfathran_3_cabins_cabin_6_rinjani_01_room_2x_queen_bed_054_alfathran_rinjani1_cabin_5,
       },
       cabin710GiliRoomQueenBedPrivateBathroom: {
-        "055Alfathran3GiliRoom10004Sve03436":
-          _packages_alfathran_3_cabins_cabin_7_10_gili_room_queen_bed_private_bathroom_055_alfathran_3_gili_room_1_0004_sve03436,
-        "056Alfathran3GiliRoom7":
-          _packages_alfathran_3_cabins_cabin_7_10_gili_room_queen_bed_private_bathroom_056_alfathran_3_gili_room_7,
-        "057AlfathranGiliCabin1":
-          _packages_alfathran_3_cabins_cabin_7_10_gili_room_queen_bed_private_bathroom_057_alfathran_gili_cabin_1,
-        "058AlfathranGiliCabin2":
-          _packages_alfathran_3_cabins_cabin_7_10_gili_room_queen_bed_private_bathroom_058_alfathran_gili_cabin_2,
-        "059AlfathranGiliCabin3":
-          _packages_alfathran_3_cabins_cabin_7_10_gili_room_queen_bed_private_bathroom_059_alfathran_gili_cabin_3,
+        "055Alfathran3GiliRoom10004Sve03436": _packages_alfathran_3_cabins_cabin_7_10_gili_room_queen_bed_private_bathroom_055_alfathran_3_gili_room_1_0004_sve03436,
+        "056Alfathran3GiliRoom7": _packages_alfathran_3_cabins_cabin_7_10_gili_room_queen_bed_private_bathroom_056_alfathran_3_gili_room_7,
+        "057AlfathranGiliCabin1": _packages_alfathran_3_cabins_cabin_7_10_gili_room_queen_bed_private_bathroom_057_alfathran_gili_cabin_1,
+        "058AlfathranGiliCabin2": _packages_alfathran_3_cabins_cabin_7_10_gili_room_queen_bed_private_bathroom_058_alfathran_gili_cabin_2,
+        "059AlfathranGiliCabin3": _packages_alfathran_3_cabins_cabin_7_10_gili_room_queen_bed_private_bathroom_059_alfathran_gili_cabin_3,
       },
       indoorRestaurant: {
-        "069Alfathran3IndoorRestaurant1":
-          _packages_alfathran_3_cabins_indoor_restaurant_069_alfathran_3_indoor_restaurant1,
-        "070Alfathran3IndoorRestaurant10":
-          _packages_alfathran_3_cabins_indoor_restaurant_070_alfathran_3_indoor_restaurant10,
-        "071Alfathran3IndoorRestaurant11":
-          _packages_alfathran_3_cabins_indoor_restaurant_071_alfathran_3_indoor_restaurant11,
-        "072Alfathran3IndoorRestaurant15":
-          _packages_alfathran_3_cabins_indoor_restaurant_072_alfathran_3_indoor_restaurant15,
-        "073Alfathran3IndoorRestaurant16":
-          _packages_alfathran_3_cabins_indoor_restaurant_073_alfathran_3_indoor_restaurant16,
-        "074Alfathran3IndoorRestaurant2":
-          _packages_alfathran_3_cabins_indoor_restaurant_074_alfathran_3_indoor_restaurant2,
-        "075Alfathran3IndoorRestaurant3":
-          _packages_alfathran_3_cabins_indoor_restaurant_075_alfathran_3_indoor_restaurant3,
-        "076Alfathran3IndoorRestaurant4":
-          _packages_alfathran_3_cabins_indoor_restaurant_076_alfathran_3_indoor_restaurant4,
-        "077Alfathran3IndoorRestaurant5":
-          _packages_alfathran_3_cabins_indoor_restaurant_077_alfathran_3_indoor_restaurant5,
-        "078Alfathran3IndoorRestaurant6":
-          _packages_alfathran_3_cabins_indoor_restaurant_078_alfathran_3_indoor_restaurant6,
-        "079Alfathran3IndoorRestaurant7":
-          _packages_alfathran_3_cabins_indoor_restaurant_079_alfathran_3_indoor_restaurant7,
-        "080Alfathran3IndoorRestaurant8":
-          _packages_alfathran_3_cabins_indoor_restaurant_080_alfathran_3_indoor_restaurant8,
-        "081Alfathran3IndoorRestaurant9":
-          _packages_alfathran_3_cabins_indoor_restaurant_081_alfathran_3_indoor_restaurant9,
+        "069Alfathran3IndoorRestaurant1": _packages_alfathran_3_cabins_indoor_restaurant_069_alfathran_3_indoor_restaurant1,
+        "070Alfathran3IndoorRestaurant10": _packages_alfathran_3_cabins_indoor_restaurant_070_alfathran_3_indoor_restaurant10,
+        "071Alfathran3IndoorRestaurant11": _packages_alfathran_3_cabins_indoor_restaurant_071_alfathran_3_indoor_restaurant11,
+        "072Alfathran3IndoorRestaurant15": _packages_alfathran_3_cabins_indoor_restaurant_072_alfathran_3_indoor_restaurant15,
+        "073Alfathran3IndoorRestaurant16": _packages_alfathran_3_cabins_indoor_restaurant_073_alfathran_3_indoor_restaurant16,
+        "074Alfathran3IndoorRestaurant2": _packages_alfathran_3_cabins_indoor_restaurant_074_alfathran_3_indoor_restaurant2,
+        "075Alfathran3IndoorRestaurant3": _packages_alfathran_3_cabins_indoor_restaurant_075_alfathran_3_indoor_restaurant3,
+        "076Alfathran3IndoorRestaurant4": _packages_alfathran_3_cabins_indoor_restaurant_076_alfathran_3_indoor_restaurant4,
+        "077Alfathran3IndoorRestaurant5": _packages_alfathran_3_cabins_indoor_restaurant_077_alfathran_3_indoor_restaurant5,
+        "078Alfathran3IndoorRestaurant6": _packages_alfathran_3_cabins_indoor_restaurant_078_alfathran_3_indoor_restaurant6,
+        "079Alfathran3IndoorRestaurant7": _packages_alfathran_3_cabins_indoor_restaurant_079_alfathran_3_indoor_restaurant7,
+        "080Alfathran3IndoorRestaurant8": _packages_alfathran_3_cabins_indoor_restaurant_080_alfathran_3_indoor_restaurant8,
+        "081Alfathran3IndoorRestaurant9": _packages_alfathran_3_cabins_indoor_restaurant_081_alfathran_3_indoor_restaurant9,
       },
     },
     facility: {
       alfathran3Facility0000Sve03568Jpg: {
-        "060Alfathran3Facility0000Sve03568":
-          _packages_alfathran_3_facility_alfathran_3_facility_0000_sve03568_jpg_060_alfathran_3_facility_0000_sve03568,
+        "060Alfathran3Facility0000Sve03568": _packages_alfathran_3_facility_alfathran_3_facility_0000_sve03568_jpg_060_alfathran_3_facility_0000_sve03568,
       },
       alfathran3Facility0001Sve03566Jpg: {
-        "061Alfathran3Facility0001Sve03566":
-          _packages_alfathran_3_facility_alfathran_3_facility_0001_sve03566_jpg_061_alfathran_3_facility_0001_sve03566,
+        "061Alfathran3Facility0001Sve03566": _packages_alfathran_3_facility_alfathran_3_facility_0001_sve03566_jpg_061_alfathran_3_facility_0001_sve03566,
       },
       alfathran3Facility0002Sve03565Jpg: {
-        "062Alfathran3Facility0002Sve03565":
-          _packages_alfathran_3_facility_alfathran_3_facility_0002_sve03565_jpg_062_alfathran_3_facility_0002_sve03565,
+        "062Alfathran3Facility0002Sve03565": _packages_alfathran_3_facility_alfathran_3_facility_0002_sve03565_jpg_062_alfathran_3_facility_0002_sve03565,
       },
       alfathran3Facility0003Sve03564Jpg: {
-        "063Alfathran3Facility0003Sve03564":
-          _packages_alfathran_3_facility_alfathran_3_facility_0003_sve03564_jpg_063_alfathran_3_facility_0003_sve03564,
+        "063Alfathran3Facility0003Sve03564": _packages_alfathran_3_facility_alfathran_3_facility_0003_sve03564_jpg_063_alfathran_3_facility_0003_sve03564,
       },
       alfathran3Facility0004Sve03563Jpg: {
-        "064Alfathran3Facility0004Sve03563":
-          _packages_alfathran_3_facility_alfathran_3_facility_0004_sve03563_jpg_064_alfathran_3_facility_0004_sve03563,
+        "064Alfathran3Facility0004Sve03563": _packages_alfathran_3_facility_alfathran_3_facility_0004_sve03563_jpg_064_alfathran_3_facility_0004_sve03563,
       },
       alfathran3Facility0005Sve03562Jpg: {
-        "065Alfathran3Facility0005Sve03562":
-          _packages_alfathran_3_facility_alfathran_3_facility_0005_sve03562_jpg_065_alfathran_3_facility_0005_sve03562,
+        "065Alfathran3Facility0005Sve03562": _packages_alfathran_3_facility_alfathran_3_facility_0005_sve03562_jpg_065_alfathran_3_facility_0005_sve03562,
       },
       alfathran3Facility0006Sve03561Jpg: {
-        "066Alfathran3Facility0006Sve03561":
-          _packages_alfathran_3_facility_alfathran_3_facility_0006_sve03561_jpg_066_alfathran_3_facility_0006_sve03561,
+        "066Alfathran3Facility0006Sve03561": _packages_alfathran_3_facility_alfathran_3_facility_0006_sve03561_jpg_066_alfathran_3_facility_0006_sve03561,
       },
       alfathran3Facility0007Sve03518Jpg: {
-        "067Alfathran3Facility0007Sve03518":
-          _packages_alfathran_3_facility_alfathran_3_facility_0007_sve03518_jpg_067_alfathran_3_facility_0007_sve03518,
+        "067Alfathran3Facility0007Sve03518": _packages_alfathran_3_facility_alfathran_3_facility_0007_sve03518_jpg_067_alfathran_3_facility_0007_sve03518,
       },
       alfathran3Facility0008Sve03516Jpg: {
-        "068Alfathran3Facility0008Sve03516":
-          _packages_alfathran_3_facility_alfathran_3_facility_0008_sve03516_jpg_068_alfathran_3_facility_0008_sve03516,
+        "068Alfathran3Facility0008Sve03516": _packages_alfathran_3_facility_alfathran_3_facility_0008_sve03516_jpg_068_alfathran_3_facility_0008_sve03516,
       },
     },
   },
   alfathran: {
     boat: {
       gallery: {
-        "440CopyOfWil08851":
-          _packages_alfathran_boat_gallery_440_copy_of_wil08851,
-        "441CopyOfWil08853":
-          _packages_alfathran_boat_gallery_441_copy_of_wil08853,
-        "442CopyOfWil08858":
-          _packages_alfathran_boat_gallery_442_copy_of_wil08858,
-        "443CopyOfWil08864":
-          _packages_alfathran_boat_gallery_443_copy_of_wil08864,
-        "444CopyOfWil08867":
-          _packages_alfathran_boat_gallery_444_copy_of_wil08867,
-        "445CopyOfWil08869":
-          _packages_alfathran_boat_gallery_445_copy_of_wil08869,
-        "446CopyOfWil08870":
-          _packages_alfathran_boat_gallery_446_copy_of_wil08870,
+        "440CopyOfWil08851": _packages_alfathran_boat_gallery_440_copy_of_wil08851,
+        "441CopyOfWil08853": _packages_alfathran_boat_gallery_441_copy_of_wil08853,
+        "442CopyOfWil08858": _packages_alfathran_boat_gallery_442_copy_of_wil08858,
+        "443CopyOfWil08864": _packages_alfathran_boat_gallery_443_copy_of_wil08864,
+        "444CopyOfWil08867": _packages_alfathran_boat_gallery_444_copy_of_wil08867,
+        "445CopyOfWil08869": _packages_alfathran_boat_gallery_445_copy_of_wil08869,
+        "446CopyOfWil08870": _packages_alfathran_boat_gallery_446_copy_of_wil08870,
         "447Dji0019": _packages_alfathran_boat_gallery_447_dji_0019,
         "448Dji0020": _packages_alfathran_boat_gallery_448_dji_0020,
         "449Dji0021": _packages_alfathran_boat_gallery_449_dji_0021,
@@ -2429,166 +2344,92 @@ export const PACKAGES = {
     },
     cabins: {
       "1SuperiorFamilyCabinLowerDeck2xQueenBed24pax": {
-        "467AlfathranLowerDeck0000Wil00840":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_467_alfathran_lower_deck_0000_wil00840,
-        "468AlfathranLowerDeck0003Wil00825":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_468_alfathran_lower_deck_0003_wil00825,
-        "469AlfathranLowerDeck0005Wil00822":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_469_alfathran_lower_deck_0005_wil00822,
-        "470AlfathranLowerDeck0006Wil00820":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_470_alfathran_lower_deck_0006_wil00820,
-        "471AlfathranLowerDeck0007Wil00819":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_471_alfathran_lower_deck_0007_wil00819,
-        "472Gopr9127":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_472_gopr9127,
-        "473Gopr9128":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_473_gopr9128,
-        "474Gopr9131":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_474_gopr9131,
-        "475Gopr9132":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_475_gopr9132,
-        "476Gopr9133":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_476_gopr9133,
-        "477Gopr9134":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_477_gopr9134,
-        "478WhatsappImage20250411At10520736cd45d82":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_478_whatsapp_image_2025_04_11_at_10_52_07_36cd45d8_2,
-        "479WhatsappImage20250411At1052084ced82792":
-          _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_479_whatsapp_image_2025_04_11_at_10_52_08_4ced8279_2,
+        "467AlfathranLowerDeck0000Wil00840": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_467_alfathran_lower_deck_0000_wil00840,
+        "468AlfathranLowerDeck0003Wil00825": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_468_alfathran_lower_deck_0003_wil00825,
+        "469AlfathranLowerDeck0005Wil00822": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_469_alfathran_lower_deck_0005_wil00822,
+        "470AlfathranLowerDeck0006Wil00820": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_470_alfathran_lower_deck_0006_wil00820,
+        "471AlfathranLowerDeck0007Wil00819": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_471_alfathran_lower_deck_0007_wil00819,
+        "472Gopr9127": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_472_gopr9127,
+        "473Gopr9128": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_473_gopr9128,
+        "474Gopr9131": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_474_gopr9131,
+        "475Gopr9132": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_475_gopr9132,
+        "476Gopr9133": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_476_gopr9133,
+        "477Gopr9134": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_477_gopr9134,
+        "478WhatsappImage20250411At10520736cd45d82": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_478_whatsapp_image_2025_04_11_at_10_52_07_36cd45d8_2,
+        "479WhatsappImage20250411At1052084ced82792": _packages_alfathran_cabins_1_superior_family_cabin_lower_deck_2x_queen_bed_2_4pax_479_whatsapp_image_2025_04_11_at_10_52_08_4ced8279_2,
       },
       "2SuperiorCabinLowerDeckQueenBed2pax": {
-        "480Alfathran0005Wil00889":
-          _packages_alfathran_cabins_2_superior_cabin_lower_deck_queen_bed_2pax_480_alfathran_0005_wil00889,
-        "481Alfathran0006Layer0":
-          _packages_alfathran_cabins_2_superior_cabin_lower_deck_queen_bed_2pax_481_alfathran_0006_layer_0,
-        "482Alfathran0010Wil00882":
-          _packages_alfathran_cabins_2_superior_cabin_lower_deck_queen_bed_2pax_482_alfathran_0010_wil00882,
-        "483Alfathran0011Wil00881":
-          _packages_alfathran_cabins_2_superior_cabin_lower_deck_queen_bed_2pax_483_alfathran_0011_wil00881,
-        "484Alfathran0012Wil00878":
-          _packages_alfathran_cabins_2_superior_cabin_lower_deck_queen_bed_2pax_484_alfathran_0012_wil00878,
+        "480Alfathran0005Wil00889": _packages_alfathran_cabins_2_superior_cabin_lower_deck_queen_bed_2pax_480_alfathran_0005_wil00889,
+        "481Alfathran0006Layer0": _packages_alfathran_cabins_2_superior_cabin_lower_deck_queen_bed_2pax_481_alfathran_0006_layer_0,
+        "482Alfathran0010Wil00882": _packages_alfathran_cabins_2_superior_cabin_lower_deck_queen_bed_2pax_482_alfathran_0010_wil00882,
+        "483Alfathran0011Wil00881": _packages_alfathran_cabins_2_superior_cabin_lower_deck_queen_bed_2pax_483_alfathran_0011_wil00881,
+        "484Alfathran0012Wil00878": _packages_alfathran_cabins_2_superior_cabin_lower_deck_queen_bed_2pax_484_alfathran_0012_wil00878,
       },
       "3SuperiorCabinLowerDeckQueenBed2pax": {
-        "485AlfathranLowerDeck0000Wil00838":
-          _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_485_alfathran_lower_deck_0000_wil00838,
-        "486AlfathranLowerDeck0001Wil00832":
-          _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_486_alfathran_lower_deck_0001_wil00832,
-        "487AlfathranLowerDeck0001Wil00837":
-          _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_487_alfathran_lower_deck_0001_wil00837,
-        "488AlfathranLowerDeck0002Wil00833":
-          _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_488_alfathran_lower_deck_0002_wil00833,
-        "489AlfathranLowerDeck0002Wil00835":
-          _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_489_alfathran_lower_deck_0002_wil00835,
-        "490AlfathranLowerDeck0003Wil00831":
-          _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_490_alfathran_lower_deck_0003_wil00831,
-        "491AlfathranLowerDeck0004Wil00824":
-          _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_491_alfathran_lower_deck_0004_wil00824,
-        "492AlfathranLowerDeck0004Wil00830":
-          _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_492_alfathran_lower_deck_0004_wil00830,
-        "493AlfathranLowerDeck0005Wil00829":
-          _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_493_alfathran_lower_deck_0005_wil00829,
-        "494AlfathranLowerDeck0007Wil00821":
-          _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_494_alfathran_lower_deck_0007_wil00821,
+        "485AlfathranLowerDeck0000Wil00838": _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_485_alfathran_lower_deck_0000_wil00838,
+        "486AlfathranLowerDeck0001Wil00832": _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_486_alfathran_lower_deck_0001_wil00832,
+        "487AlfathranLowerDeck0001Wil00837": _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_487_alfathran_lower_deck_0001_wil00837,
+        "488AlfathranLowerDeck0002Wil00833": _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_488_alfathran_lower_deck_0002_wil00833,
+        "489AlfathranLowerDeck0002Wil00835": _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_489_alfathran_lower_deck_0002_wil00835,
+        "490AlfathranLowerDeck0003Wil00831": _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_490_alfathran_lower_deck_0003_wil00831,
+        "491AlfathranLowerDeck0004Wil00824": _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_491_alfathran_lower_deck_0004_wil00824,
+        "492AlfathranLowerDeck0004Wil00830": _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_492_alfathran_lower_deck_0004_wil00830,
+        "493AlfathranLowerDeck0005Wil00829": _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_493_alfathran_lower_deck_0005_wil00829,
+        "494AlfathranLowerDeck0007Wil00821": _packages_alfathran_cabins_3_superior_cabin_lower_deck_queen_bed_2pax_494_alfathran_lower_deck_0007_wil00821,
       },
       "4FullOceanMainDeckQueenBed": {
-        "495Alfathran0000Wil00915":
-          _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_495_alfathran_0000_wil00915,
-        "496Alfathran0001Wil00914":
-          _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_496_alfathran_0001_wil00914,
-        "497Alfathran0002Wil00911":
-          _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_497_alfathran_0002_wil00911,
-        "498Alfathran0002Wil00913":
-          _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_498_alfathran_0002_wil00913,
-        "499Alfathran0003Wil00909":
-          _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_499_alfathran_0003_wil00909,
-        "500Alfathran0004Wil00908":
-          _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_500_alfathran_0004_wil00908,
-        "501Alfathran0005Wil00904":
-          _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_501_alfathran_0005_wil00904,
+        "495Alfathran0000Wil00915": _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_495_alfathran_0000_wil00915,
+        "496Alfathran0001Wil00914": _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_496_alfathran_0001_wil00914,
+        "497Alfathran0002Wil00911": _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_497_alfathran_0002_wil00911,
+        "498Alfathran0002Wil00913": _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_498_alfathran_0002_wil00913,
+        "499Alfathran0003Wil00909": _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_499_alfathran_0003_wil00909,
+        "500Alfathran0004Wil00908": _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_500_alfathran_0004_wil00908,
+        "501Alfathran0005Wil00904": _packages_alfathran_cabins_4_full_ocean_main_deck_queen_bed_501_alfathran_0005_wil00904,
       },
       "5DeluxeFullOceanViewUpperDeckQueenBedExtraSingleBed23pax": {
-        "502AlfathranMasterOceanCabin0000Wil00804":
-          _packages_alfathran_cabins_5_deluxe_full_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3pax_502_alfathran_master_ocean_cabin_0000_wil00804,
-        "503AlfathranMasterOceanCabin0006Wil00774":
-          _packages_alfathran_cabins_5_deluxe_full_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3pax_503_alfathran_master_ocean_cabin_0006_wil00774,
-        "504AlfathranMasterOceanCabin0007Wil00773":
-          _packages_alfathran_cabins_5_deluxe_full_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3pax_504_alfathran_master_ocean_cabin_0007_wil00773,
-        "505AlfathranMasterOceanCabin0009Wil00769":
-          _packages_alfathran_cabins_5_deluxe_full_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3pax_505_alfathran_master_ocean_cabin_0009_wil00769,
-        "506AlfathranMasterOceanCabin0012Background":
-          _packages_alfathran_cabins_5_deluxe_full_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3pax_506_alfathran_master_ocean_cabin_0012_background,
+        "502AlfathranMasterOceanCabin0000Wil00804": _packages_alfathran_cabins_5_deluxe_full_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3pax_502_alfathran_master_ocean_cabin_0000_wil00804,
+        "503AlfathranMasterOceanCabin0006Wil00774": _packages_alfathran_cabins_5_deluxe_full_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3pax_503_alfathran_master_ocean_cabin_0006_wil00774,
+        "504AlfathranMasterOceanCabin0007Wil00773": _packages_alfathran_cabins_5_deluxe_full_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3pax_504_alfathran_master_ocean_cabin_0007_wil00773,
+        "505AlfathranMasterOceanCabin0009Wil00769": _packages_alfathran_cabins_5_deluxe_full_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3pax_505_alfathran_master_ocean_cabin_0009_wil00769,
+        "506AlfathranMasterOceanCabin0012Background": _packages_alfathran_cabins_5_deluxe_full_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3pax_506_alfathran_master_ocean_cabin_0012_background,
       },
       "6MasterOceanViewUpperDeckQueenBedExtraSingleBed23Pax": {
-        "507AlfathranMasterOceanCabin0002Wil00789":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_507_alfathran_master_ocean_cabin_0002_wil00789,
-        "508AlfathranMasterOceanCabin0003Wil00786":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_508_alfathran_master_ocean_cabin_0003_wil00786,
-        "509AlfathranMasterOceanCabin0004Wil00783":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_509_alfathran_master_ocean_cabin_0004_wil00783,
-        "510AlfathranMasterOceanCabin0005Wil00779":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_510_alfathran_master_ocean_cabin_0005_wil00779,
-        "511AlfathranMasterOceanCabin0008Wil00770":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_511_alfathran_master_ocean_cabin_0008_wil00770,
-        "512AlfathranMasterOceanCabin0010Wil00764":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_512_alfathran_master_ocean_cabin_0010_wil00764,
-        "513AlfathranMasterOceanCabin0011Wil00761":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_513_alfathran_master_ocean_cabin_0011_wil00761,
-        "514AlfathranMasterOcean0000Wil00802":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_514_alfathran_master_ocean_0000_wil00802,
-        "515AlfathranMasterOcean0001Wil00800":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_515_alfathran_master_ocean_0001_wil00800,
-        "516AlfathranMasterOcean0002Wil00797":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_516_alfathran_master_ocean_0002_wil00797,
-        "517AlfathranMasterOcean0003Background":
-          _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_517_alfathran_master_ocean_0003_background,
+        "507AlfathranMasterOceanCabin0002Wil00789": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_507_alfathran_master_ocean_cabin_0002_wil00789,
+        "508AlfathranMasterOceanCabin0003Wil00786": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_508_alfathran_master_ocean_cabin_0003_wil00786,
+        "509AlfathranMasterOceanCabin0004Wil00783": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_509_alfathran_master_ocean_cabin_0004_wil00783,
+        "510AlfathranMasterOceanCabin0005Wil00779": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_510_alfathran_master_ocean_cabin_0005_wil00779,
+        "511AlfathranMasterOceanCabin0008Wil00770": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_511_alfathran_master_ocean_cabin_0008_wil00770,
+        "512AlfathranMasterOceanCabin0010Wil00764": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_512_alfathran_master_ocean_cabin_0010_wil00764,
+        "513AlfathranMasterOceanCabin0011Wil00761": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_513_alfathran_master_ocean_cabin_0011_wil00761,
+        "514AlfathranMasterOcean0000Wil00802": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_514_alfathran_master_ocean_0000_wil00802,
+        "515AlfathranMasterOcean0001Wil00800": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_515_alfathran_master_ocean_0001_wil00800,
+        "516AlfathranMasterOcean0002Wil00797": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_516_alfathran_master_ocean_0002_wil00797,
+        "517AlfathranMasterOcean0003Background": _packages_alfathran_cabins_6_master_ocean_view_upper_deck_queen_bed_extra_single_bed_2_3_pax_517_alfathran_master_ocean_0003_background,
       },
       diningRoomPublicArea: {
-        "518Alfathran0000Wil00926":
-          _packages_alfathran_cabins_dining_room_public_area_518_alfathran_0000_wil00926,
-        "519Alfathran0001Wil00919":
-          _packages_alfathran_cabins_dining_room_public_area_519_alfathran_0001_wil00919,
-        "520Alfathran0003Wil00898":
-          _packages_alfathran_cabins_dining_room_public_area_520_alfathran_0003_wil00898,
-        "521Alfathran0004Wil00895":
-          _packages_alfathran_cabins_dining_room_public_area_521_alfathran_0004_wil00895,
-        "522Alfathran0006Wil00900":
-          _packages_alfathran_cabins_dining_room_public_area_522_alfathran_0006_wil00900,
-        "523Alfathran0007Wil00899":
-          _packages_alfathran_cabins_dining_room_public_area_523_alfathran_0007_wil00899,
-        "524Alfathran0008Wil00893":
-          _packages_alfathran_cabins_dining_room_public_area_524_alfathran_0008_wil00893,
-        "525Alfathran0009Wil00892":
-          _packages_alfathran_cabins_dining_room_public_area_525_alfathran_0009_wil00892,
-        "526Alfathran0013Wil00876":
-          _packages_alfathran_cabins_dining_room_public_area_526_alfathran_0013_wil00876,
-        "527Alfathran0014Wil00874":
-          _packages_alfathran_cabins_dining_room_public_area_527_alfathran_0014_wil00874,
-        "528Alfathran0015Wil00872":
-          _packages_alfathran_cabins_dining_room_public_area_528_alfathran_0015_wil00872,
-        "529Alfathran0016Wil00870":
-          _packages_alfathran_cabins_dining_room_public_area_529_alfathran_0016_wil00870,
-        "530Alfathran0017Wil00866":
-          _packages_alfathran_cabins_dining_room_public_area_530_alfathran_0017_wil00866,
-        "531Alfathran0018Wil00865":
-          _packages_alfathran_cabins_dining_room_public_area_531_alfathran_0018_wil00865,
-        "532Alfathran0019Wil00863":
-          _packages_alfathran_cabins_dining_room_public_area_532_alfathran_0019_wil00863,
-        "533Alfathran0020Wil00861":
-          _packages_alfathran_cabins_dining_room_public_area_533_alfathran_0020_wil00861,
-        "534Alfathran0021Wil00860":
-          _packages_alfathran_cabins_dining_room_public_area_534_alfathran_0021_wil00860,
-        "535Alfathran0022Wil00859":
-          _packages_alfathran_cabins_dining_room_public_area_535_alfathran_0022_wil00859,
-        "536Alfathran0023Wil00855":
-          _packages_alfathran_cabins_dining_room_public_area_536_alfathran_0023_wil00855,
-        "537Alfathran0024Wil00856":
-          _packages_alfathran_cabins_dining_room_public_area_537_alfathran_0024_wil00856,
-        "538Alfathran0025Wil00854":
-          _packages_alfathran_cabins_dining_room_public_area_538_alfathran_0025_wil00854,
-        "539Alfathran0026RelaxingArea2":
-          _packages_alfathran_cabins_dining_room_public_area_539_alfathran_0026_relaxing_area_2,
-        "540Alfathran0027RelaxingArea1":
-          _packages_alfathran_cabins_dining_room_public_area_540_alfathran_0027_relaxing_area_1,
+        "518Alfathran0000Wil00926": _packages_alfathran_cabins_dining_room_public_area_518_alfathran_0000_wil00926,
+        "519Alfathran0001Wil00919": _packages_alfathran_cabins_dining_room_public_area_519_alfathran_0001_wil00919,
+        "520Alfathran0003Wil00898": _packages_alfathran_cabins_dining_room_public_area_520_alfathran_0003_wil00898,
+        "521Alfathran0004Wil00895": _packages_alfathran_cabins_dining_room_public_area_521_alfathran_0004_wil00895,
+        "522Alfathran0006Wil00900": _packages_alfathran_cabins_dining_room_public_area_522_alfathran_0006_wil00900,
+        "523Alfathran0007Wil00899": _packages_alfathran_cabins_dining_room_public_area_523_alfathran_0007_wil00899,
+        "524Alfathran0008Wil00893": _packages_alfathran_cabins_dining_room_public_area_524_alfathran_0008_wil00893,
+        "525Alfathran0009Wil00892": _packages_alfathran_cabins_dining_room_public_area_525_alfathran_0009_wil00892,
+        "526Alfathran0013Wil00876": _packages_alfathran_cabins_dining_room_public_area_526_alfathran_0013_wil00876,
+        "527Alfathran0014Wil00874": _packages_alfathran_cabins_dining_room_public_area_527_alfathran_0014_wil00874,
+        "528Alfathran0015Wil00872": _packages_alfathran_cabins_dining_room_public_area_528_alfathran_0015_wil00872,
+        "529Alfathran0016Wil00870": _packages_alfathran_cabins_dining_room_public_area_529_alfathran_0016_wil00870,
+        "530Alfathran0017Wil00866": _packages_alfathran_cabins_dining_room_public_area_530_alfathran_0017_wil00866,
+        "531Alfathran0018Wil00865": _packages_alfathran_cabins_dining_room_public_area_531_alfathran_0018_wil00865,
+        "532Alfathran0019Wil00863": _packages_alfathran_cabins_dining_room_public_area_532_alfathran_0019_wil00863,
+        "533Alfathran0020Wil00861": _packages_alfathran_cabins_dining_room_public_area_533_alfathran_0020_wil00861,
+        "534Alfathran0021Wil00860": _packages_alfathran_cabins_dining_room_public_area_534_alfathran_0021_wil00860,
+        "535Alfathran0022Wil00859": _packages_alfathran_cabins_dining_room_public_area_535_alfathran_0022_wil00859,
+        "536Alfathran0023Wil00855": _packages_alfathran_cabins_dining_room_public_area_536_alfathran_0023_wil00855,
+        "537Alfathran0024Wil00856": _packages_alfathran_cabins_dining_room_public_area_537_alfathran_0024_wil00856,
+        "538Alfathran0025Wil00854": _packages_alfathran_cabins_dining_room_public_area_538_alfathran_0025_wil00854,
+        "539Alfathran0026RelaxingArea2": _packages_alfathran_cabins_dining_room_public_area_539_alfathran_0026_relaxing_area_2,
+        "540Alfathran0027RelaxingArea1": _packages_alfathran_cabins_dining_room_public_area_540_alfathran_0027_relaxing_area_1,
       },
     },
   },
@@ -2653,108 +2494,63 @@ export const PACKAGES = {
     },
     cabins: {
       cabin12SharePrivateQueenbedSingleBed: {
-        "136Sve08914":
-          _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_136_sve08914,
-        "137Sve08915":
-          _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_137_sve08915,
-        "138Sve08916":
-          _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_138_sve08916,
-        "139Sve08917":
-          _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_139_sve08917,
-        "140Sve08918":
-          _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_140_sve08918,
-        "141Sve08919":
-          _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_141_sve08919,
-        "142Sve08920":
-          _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_142_sve08920,
-        "143Sve08921":
-          _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_143_sve08921,
-        "144Sve08922":
-          _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_144_sve08922,
-        "145Sve08923":
-          _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_145_sve08923,
+        "136Sve08914": _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_136_sve08914,
+        "137Sve08915": _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_137_sve08915,
+        "138Sve08916": _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_138_sve08916,
+        "139Sve08917": _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_139_sve08917,
+        "140Sve08918": _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_140_sve08918,
+        "141Sve08919": _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_141_sve08919,
+        "142Sve08920": _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_142_sve08920,
+        "143Sve08921": _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_143_sve08921,
+        "144Sve08922": _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_144_sve08922,
+        "145Sve08923": _packages_almadira_cabins_cabin_1_2_share_private_queenbed_single_bed_145_sve08923,
       },
       cabin3ShareQueenbedQueenbedSingle: {
-        "146Sve08906":
-          _packages_almadira_cabins_cabin_3_share_queenbed_queenbed_single_146_sve08906,
-        "147Sve08908":
-          _packages_almadira_cabins_cabin_3_share_queenbed_queenbed_single_147_sve08908,
-        "148Sve08909":
-          _packages_almadira_cabins_cabin_3_share_queenbed_queenbed_single_148_sve08909,
-        "149Sve08910":
-          _packages_almadira_cabins_cabin_3_share_queenbed_queenbed_single_149_sve08910,
+        "146Sve08906": _packages_almadira_cabins_cabin_3_share_queenbed_queenbed_single_146_sve08906,
+        "147Sve08908": _packages_almadira_cabins_cabin_3_share_queenbed_queenbed_single_147_sve08908,
+        "148Sve08909": _packages_almadira_cabins_cabin_3_share_queenbed_queenbed_single_148_sve08909,
+        "149Sve08910": _packages_almadira_cabins_cabin_3_share_queenbed_queenbed_single_149_sve08910,
       },
       cabin45DeluxeOceanUpperDeckQueenBedBathroom: {
-        "150Gopr7427Hdr":
-          _packages_almadira_cabins_cabin_4_5_deluxe_ocean_upper_deck_queen_bed_bathroom_150_gopr7427_hdr,
-        "151Gopr7428Hdr":
-          _packages_almadira_cabins_cabin_4_5_deluxe_ocean_upper_deck_queen_bed_bathroom_151_gopr7428_hdr,
-        "152Gopr7431":
-          _packages_almadira_cabins_cabin_4_5_deluxe_ocean_upper_deck_queen_bed_bathroom_152_gopr7431,
-        "153Gopr7432Hdr":
-          _packages_almadira_cabins_cabin_4_5_deluxe_ocean_upper_deck_queen_bed_bathroom_153_gopr7432_hdr,
-        "154Gopr7434Hdr":
-          _packages_almadira_cabins_cabin_4_5_deluxe_ocean_upper_deck_queen_bed_bathroom_154_gopr7434_hdr,
+        "150Gopr7427Hdr": _packages_almadira_cabins_cabin_4_5_deluxe_ocean_upper_deck_queen_bed_bathroom_150_gopr7427_hdr,
+        "151Gopr7428Hdr": _packages_almadira_cabins_cabin_4_5_deluxe_ocean_upper_deck_queen_bed_bathroom_151_gopr7428_hdr,
+        "152Gopr7431": _packages_almadira_cabins_cabin_4_5_deluxe_ocean_upper_deck_queen_bed_bathroom_152_gopr7431,
+        "153Gopr7432Hdr": _packages_almadira_cabins_cabin_4_5_deluxe_ocean_upper_deck_queen_bed_bathroom_153_gopr7432_hdr,
+        "154Gopr7434Hdr": _packages_almadira_cabins_cabin_4_5_deluxe_ocean_upper_deck_queen_bed_bathroom_154_gopr7434_hdr,
       },
       cabin6MasterOceanQueenbedExtraQueenBedPrivateBathroom: {
-        "155Sve08928":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_155_sve08928,
-        "156Sve08929":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_156_sve08929,
-        "157Sve08930":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_157_sve08930,
-        "158Sve08931":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_158_sve08931,
-        "159Sve08932":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_159_sve08932,
-        "160Sve08934":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_160_sve08934,
-        "161Sve08935":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_161_sve08935,
-        "162Sve08938":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_162_sve08938,
-        "163Sve08939":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_163_sve08939,
-        "164Sve08940":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_164_sve08940,
-        "165Sve08941":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_165_sve08941,
-        "166Sve08942":
-          _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_166_sve08942,
+        "155Sve08928": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_155_sve08928,
+        "156Sve08929": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_156_sve08929,
+        "157Sve08930": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_157_sve08930,
+        "158Sve08931": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_158_sve08931,
+        "159Sve08932": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_159_sve08932,
+        "160Sve08934": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_160_sve08934,
+        "161Sve08935": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_161_sve08935,
+        "162Sve08938": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_162_sve08938,
+        "163Sve08939": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_163_sve08939,
+        "164Sve08940": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_164_sve08940,
+        "165Sve08941": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_165_sve08941,
+        "166Sve08942": _packages_almadira_cabins_cabin_6_master_ocean_queenbed_extra_queen_bed_private_bathroom_166_sve08942,
       },
       indoorDiningRoom: {
-        "167Sve09015":
-          _packages_almadira_cabins_indoor_dining_room_167_sve09015,
-        "168Sve09017":
-          _packages_almadira_cabins_indoor_dining_room_168_sve09017,
-        "169Sve09027":
-          _packages_almadira_cabins_indoor_dining_room_169_sve09027,
+        "167Sve09015": _packages_almadira_cabins_indoor_dining_room_167_sve09015,
+        "168Sve09017": _packages_almadira_cabins_indoor_dining_room_168_sve09017,
+        "169Sve09027": _packages_almadira_cabins_indoor_dining_room_169_sve09027,
       },
       outdoorDiningRoom: {
-        "170Sve08980Hdr":
-          _packages_almadira_cabins_outdoor_dining_room_170_sve08980_hdr,
-        "171Sve08983Hdr":
-          _packages_almadira_cabins_outdoor_dining_room_171_sve08983_hdr,
-        "172Sve08990":
-          _packages_almadira_cabins_outdoor_dining_room_172_sve08990,
-        "173Sve08991":
-          _packages_almadira_cabins_outdoor_dining_room_173_sve08991,
-        "174Sve08992":
-          _packages_almadira_cabins_outdoor_dining_room_174_sve08992,
-        "175Sve08997Hdr":
-          _packages_almadira_cabins_outdoor_dining_room_175_sve08997_hdr,
-        "176Sve08999":
-          _packages_almadira_cabins_outdoor_dining_room_176_sve08999,
+        "170Sve08980Hdr": _packages_almadira_cabins_outdoor_dining_room_170_sve08980_hdr,
+        "171Sve08983Hdr": _packages_almadira_cabins_outdoor_dining_room_171_sve08983_hdr,
+        "172Sve08990": _packages_almadira_cabins_outdoor_dining_room_172_sve08990,
+        "173Sve08991": _packages_almadira_cabins_outdoor_dining_room_173_sve08991,
+        "174Sve08992": _packages_almadira_cabins_outdoor_dining_room_174_sve08992,
+        "175Sve08997Hdr": _packages_almadira_cabins_outdoor_dining_room_175_sve08997_hdr,
+        "176Sve08999": _packages_almadira_cabins_outdoor_dining_room_176_sve08999,
       },
       sharing2ToiletLowerDeck: {
-        "177Gopr5414":
-          _packages_almadira_cabins_sharing_2_toilet_lower_deck_177_gopr5414,
-        "178Gopr5415":
-          _packages_almadira_cabins_sharing_2_toilet_lower_deck_178_gopr5415,
-        "179Gopr5416":
-          _packages_almadira_cabins_sharing_2_toilet_lower_deck_179_gopr5416,
-        "180Gopr5417":
-          _packages_almadira_cabins_sharing_2_toilet_lower_deck_180_gopr5417,
+        "177Gopr5414": _packages_almadira_cabins_sharing_2_toilet_lower_deck_177_gopr5414,
+        "178Gopr5415": _packages_almadira_cabins_sharing_2_toilet_lower_deck_178_gopr5415,
+        "179Gopr5416": _packages_almadira_cabins_sharing_2_toilet_lower_deck_179_gopr5416,
+        "180Gopr5417": _packages_almadira_cabins_sharing_2_toilet_lower_deck_180_gopr5417,
       },
       sundeck: {
         "181Sve09001": _packages_almadira_cabins_sundeck_181_sve09001,
@@ -2767,100 +2563,71 @@ export const PACKAGES = {
       gallery: {
         "541Boat1": _packages_balaraja_boat_gallery_541_boat_1,
         "542Boat2": _packages_balaraja_boat_gallery_542_boat_2,
-        "543PrivateBalaraja2026":
-          _packages_balaraja_boat_gallery_543_private_balaraja2026,
+        "543PrivateBalaraja2026": _packages_balaraja_boat_gallery_543_private_balaraja2026,
       },
     },
     cabins: {
       "1ShareCabin14xSingleBunkBed": {
-        "544Sve04903Hdr":
-          _packages_balaraja_cabins_1_share_cabin_1_4x_single_bunk_bed_544_sve04903_hdr,
-        "545Sve04921Hdr":
-          _packages_balaraja_cabins_1_share_cabin_1_4x_single_bunk_bed_545_sve04921_hdr,
+        "544Sve04903Hdr": _packages_balaraja_cabins_1_share_cabin_1_4x_single_bunk_bed_544_sve04903_hdr,
+        "545Sve04921Hdr": _packages_balaraja_cabins_1_share_cabin_1_4x_single_bunk_bed_545_sve04921_hdr,
       },
       "2ShareCabin24xSingleBunkBed": {
-        "546Sve04933Hdr":
-          _packages_balaraja_cabins_2_share_cabin_2_4x_single_bunk_bed_546_sve04933_hdr,
-        "547Sve04936Hdr":
-          _packages_balaraja_cabins_2_share_cabin_2_4x_single_bunk_bed_547_sve04936_hdr,
+        "546Sve04933Hdr": _packages_balaraja_cabins_2_share_cabin_2_4x_single_bunk_bed_546_sve04933_hdr,
+        "547Sve04936Hdr": _packages_balaraja_cabins_2_share_cabin_2_4x_single_bunk_bed_547_sve04936_hdr,
       },
       "3ShareCabin34xSingleBunkBed": {
-        "549Sve04948Hdr":
-          _packages_balaraja_cabins_3_share_cabin_3_4x_single_bunk_bed_549_sve04948_hdr,
-        "550Sve04951Hdr":
-          _packages_balaraja_cabins_3_share_cabin_3_4x_single_bunk_bed_550_sve04951_hdr,
+        "549Sve04948Hdr": _packages_balaraja_cabins_3_share_cabin_3_4x_single_bunk_bed_549_sve04948_hdr,
+        "550Sve04951Hdr": _packages_balaraja_cabins_3_share_cabin_3_4x_single_bunk_bed_550_sve04951_hdr,
       },
       "4ShareCabin44xSingleBunkBed": {
-        "551Sve04991Hdr":
-          _packages_balaraja_cabins_4_share_cabin_4_4x_single_bunk_bed_551_sve04991_hdr,
-        "552Sve05003Hdr":
-          _packages_balaraja_cabins_4_share_cabin_4_4x_single_bunk_bed_552_sve05003_hdr,
+        "551Sve04991Hdr": _packages_balaraja_cabins_4_share_cabin_4_4x_single_bunk_bed_551_sve04991_hdr,
+        "552Sve05003Hdr": _packages_balaraja_cabins_4_share_cabin_4_4x_single_bunk_bed_552_sve05003_hdr,
       },
       "5MasterOcean1QueenBedExtraBedPrivateBathroom": {
-        "553Sve04818Hdr":
-          _packages_balaraja_cabins_5_master_ocean_1_queen_bed_extra_bed_private_bathroom_553_sve04818_hdr,
-        "554Sve04825Hdr":
-          _packages_balaraja_cabins_5_master_ocean_1_queen_bed_extra_bed_private_bathroom_554_sve04825_hdr,
-        "555Sve04828Hdr":
-          _packages_balaraja_cabins_5_master_ocean_1_queen_bed_extra_bed_private_bathroom_555_sve04828_hdr,
-        "556Sve04831Hdr":
-          _packages_balaraja_cabins_5_master_ocean_1_queen_bed_extra_bed_private_bathroom_556_sve04831_hdr,
+        "553Sve04818Hdr": _packages_balaraja_cabins_5_master_ocean_1_queen_bed_extra_bed_private_bathroom_553_sve04818_hdr,
+        "554Sve04825Hdr": _packages_balaraja_cabins_5_master_ocean_1_queen_bed_extra_bed_private_bathroom_554_sve04825_hdr,
+        "555Sve04828Hdr": _packages_balaraja_cabins_5_master_ocean_1_queen_bed_extra_bed_private_bathroom_555_sve04828_hdr,
+        "556Sve04831Hdr": _packages_balaraja_cabins_5_master_ocean_1_queen_bed_extra_bed_private_bathroom_556_sve04831_hdr,
       },
       "6MasterOcean2QueenBedExtraBedPrivateBathroom": {
-        "557Sve04852Hdr":
-          _packages_balaraja_cabins_6_master_ocean_2_queen_bed_extra_bed_private_bathroom_557_sve04852_hdr,
-        "558Sve04858Hdr":
-          _packages_balaraja_cabins_6_master_ocean_2_queen_bed_extra_bed_private_bathroom_558_sve04858_hdr,
-        "559Sve04867Hdr":
-          _packages_balaraja_cabins_6_master_ocean_2_queen_bed_extra_bed_private_bathroom_559_sve04867_hdr,
-        "560Sve04870Hdr":
-          _packages_balaraja_cabins_6_master_ocean_2_queen_bed_extra_bed_private_bathroom_560_sve04870_hdr,
+        "557Sve04852Hdr": _packages_balaraja_cabins_6_master_ocean_2_queen_bed_extra_bed_private_bathroom_557_sve04852_hdr,
+        "558Sve04858Hdr": _packages_balaraja_cabins_6_master_ocean_2_queen_bed_extra_bed_private_bathroom_558_sve04858_hdr,
+        "559Sve04867Hdr": _packages_balaraja_cabins_6_master_ocean_2_queen_bed_extra_bed_private_bathroom_559_sve04867_hdr,
+        "560Sve04870Hdr": _packages_balaraja_cabins_6_master_ocean_2_queen_bed_extra_bed_private_bathroom_560_sve04870_hdr,
       },
       shareToilet1: {
-        "569Sve04960Hdr":
-          _packages_balaraja_cabins_share_toilet_1_569_sve04960_hdr,
-        "570Sve04969Hdr":
-          _packages_balaraja_cabins_share_toilet_1_570_sve04969_hdr,
+        "569Sve04960Hdr": _packages_balaraja_cabins_share_toilet_1_569_sve04960_hdr,
+        "570Sve04969Hdr": _packages_balaraja_cabins_share_toilet_1_570_sve04969_hdr,
       },
       shareToilet2: {
-        "571Sve05006Hdr":
-          _packages_balaraja_cabins_share_toilet_2_571_sve05006_hdr,
-        "572Sve05012Hdr":
-          _packages_balaraja_cabins_share_toilet_2_572_sve05012_hdr,
+        "571Sve05006Hdr": _packages_balaraja_cabins_share_toilet_2_571_sve05006_hdr,
+        "572Sve05012Hdr": _packages_balaraja_cabins_share_toilet_2_572_sve05012_hdr,
       },
     },
     facility: {
       sve05023HdrJpg: {
-        "561Sve05023Hdr":
-          _packages_balaraja_facility_sve05023_hdr_jpg_561_sve05023_hdr,
+        "561Sve05023Hdr": _packages_balaraja_facility_sve05023_hdr_jpg_561_sve05023_hdr,
       },
       sve05057HdrJpg: {
-        "562Sve05057Hdr":
-          _packages_balaraja_facility_sve05057_hdr_jpg_562_sve05057_hdr,
+        "562Sve05057Hdr": _packages_balaraja_facility_sve05057_hdr_jpg_562_sve05057_hdr,
       },
       sve05098HdrJpg: {
-        "563Sve05098Hdr":
-          _packages_balaraja_facility_sve05098_hdr_jpg_563_sve05098_hdr,
+        "563Sve05098Hdr": _packages_balaraja_facility_sve05098_hdr_jpg_563_sve05098_hdr,
       },
       sve05104HdrJpg: {
-        "564Sve05104Hdr":
-          _packages_balaraja_facility_sve05104_hdr_jpg_564_sve05104_hdr,
+        "564Sve05104Hdr": _packages_balaraja_facility_sve05104_hdr_jpg_564_sve05104_hdr,
       },
       sve05113HdrJpg: {
-        "565Sve05113Hdr":
-          _packages_balaraja_facility_sve05113_hdr_jpg_565_sve05113_hdr,
+        "565Sve05113Hdr": _packages_balaraja_facility_sve05113_hdr_jpg_565_sve05113_hdr,
       },
       sve05122HdrJpg: {
-        "566Sve05122Hdr":
-          _packages_balaraja_facility_sve05122_hdr_jpg_566_sve05122_hdr,
+        "566Sve05122Hdr": _packages_balaraja_facility_sve05122_hdr_jpg_566_sve05122_hdr,
       },
       sve05134HdrJpg: {
-        "567Sve05134Hdr":
-          _packages_balaraja_facility_sve05134_hdr_jpg_567_sve05134_hdr,
+        "567Sve05134Hdr": _packages_balaraja_facility_sve05134_hdr_jpg_567_sve05134_hdr,
       },
       sve05148HdrJpg: {
-        "568Sve05148Hdr":
-          _packages_balaraja_facility_sve05148_hdr_jpg_568_sve05148_hdr,
+        "568Sve05148Hdr": _packages_balaraja_facility_sve05148_hdr_jpg_568_sve05148_hdr,
       },
     },
   },
@@ -2886,84 +2653,52 @@ export const PACKAGES = {
         "585Img2187": _packages_flores_utama_cabins_dining_room_585_img_2187,
       },
       floresUtama: {
-        "586FloorPlanFloresUtama":
-          _packages_flores_utama_cabins_flores_utama_586_floor_plan_flores_utama,
+        "586FloorPlanFloresUtama": _packages_flores_utama_cabins_flores_utama_586_floor_plan_flores_utama,
       },
       masterOcean1QueenBedExtraBed: {
-        "587Img2194":
-          _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_587_img_2194,
-        "588Img2195":
-          _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_588_img_2195,
-        "589Img2196":
-          _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_589_img_2196,
-        "590Img2197":
-          _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_590_img_2197,
-        "591Img2198":
-          _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_591_img_2198,
-        "592Img2199":
-          _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_592_img_2199,
-        "593Img2200":
-          _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_593_img_2200,
+        "587Img2194": _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_587_img_2194,
+        "588Img2195": _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_588_img_2195,
+        "589Img2196": _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_589_img_2196,
+        "590Img2197": _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_590_img_2197,
+        "591Img2198": _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_591_img_2198,
+        "592Img2199": _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_592_img_2199,
+        "593Img2200": _packages_flores_utama_cabins_master_ocean_1_queen_bed_extra_bed_593_img_2200,
       },
       masterOcean2QueenBedExtraBed: {
-        "594Img2201":
-          _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_594_img_2201,
-        "595Img2202":
-          _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_595_img_2202,
-        "596Img2203":
-          _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_596_img_2203,
-        "597Img2204":
-          _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_597_img_2204,
-        "598Img2205":
-          _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_598_img_2205,
-        "599Img2206":
-          _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_599_img_2206,
-        "600Img2207":
-          _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_600_img_2207,
-        "601Img2208":
-          _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_601_img_2208,
+        "594Img2201": _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_594_img_2201,
+        "595Img2202": _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_595_img_2202,
+        "596Img2203": _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_596_img_2203,
+        "597Img2204": _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_597_img_2204,
+        "598Img2205": _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_598_img_2205,
+        "599Img2206": _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_599_img_2206,
+        "600Img2207": _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_600_img_2207,
+        "601Img2208": _packages_flores_utama_cabins_master_ocean_2_queen_bed_extra_bed_601_img_2208,
       },
       royalMasterQueenBedExtraBed: {
-        "602Img2209":
-          _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_602_img_2209,
-        "603Img2210":
-          _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_603_img_2210,
-        "604Img2211":
-          _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_604_img_2211,
-        "605Img2212":
-          _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_605_img_2212,
-        "606Img2213":
-          _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_606_img_2213,
-        "607Img2214":
-          _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_607_img_2214,
+        "602Img2209": _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_602_img_2209,
+        "603Img2210": _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_603_img_2210,
+        "604Img2211": _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_604_img_2211,
+        "605Img2212": _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_605_img_2212,
+        "606Img2213": _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_606_img_2213,
+        "607Img2214": _packages_flores_utama_cabins_royal_master_queen_bed_extra_bed_607_img_2214,
       },
       shareCabin14xSingleBunkBed: {
-        "616Img2219":
-          _packages_flores_utama_cabins_share_cabin_1_4x_single_bunk_bed_616_img_2219,
-        "617Img2220":
-          _packages_flores_utama_cabins_share_cabin_1_4x_single_bunk_bed_617_img_2220,
+        "616Img2219": _packages_flores_utama_cabins_share_cabin_1_4x_single_bunk_bed_616_img_2219,
+        "617Img2220": _packages_flores_utama_cabins_share_cabin_1_4x_single_bunk_bed_617_img_2220,
       },
       shareCabin24xSingleBunkBed: {
-        "618Img2221":
-          _packages_flores_utama_cabins_share_cabin_2_4x_single_bunk_bed_618_img_2221,
-        "619Img2222":
-          _packages_flores_utama_cabins_share_cabin_2_4x_single_bunk_bed_619_img_2222,
+        "618Img2221": _packages_flores_utama_cabins_share_cabin_2_4x_single_bunk_bed_618_img_2221,
+        "619Img2222": _packages_flores_utama_cabins_share_cabin_2_4x_single_bunk_bed_619_img_2222,
       },
       shareCabin34xSingleBunkBed: {
-        "620Img2228":
-          _packages_flores_utama_cabins_share_cabin_3_4x_single_bunk_bed_620_img_2228,
-        "621Img2229":
-          _packages_flores_utama_cabins_share_cabin_3_4x_single_bunk_bed_621_img_2229,
-        "622Img2230":
-          _packages_flores_utama_cabins_share_cabin_3_4x_single_bunk_bed_622_img_2230,
+        "620Img2228": _packages_flores_utama_cabins_share_cabin_3_4x_single_bunk_bed_620_img_2228,
+        "621Img2229": _packages_flores_utama_cabins_share_cabin_3_4x_single_bunk_bed_621_img_2229,
+        "622Img2230": _packages_flores_utama_cabins_share_cabin_3_4x_single_bunk_bed_622_img_2230,
       },
       shareCabin44xSingleBunkBed: {
-        "623Img2225":
-          _packages_flores_utama_cabins_share_cabin_4_4x_single_bunk_bed_623_img_2225,
-        "624Img2226":
-          _packages_flores_utama_cabins_share_cabin_4_4x_single_bunk_bed_624_img_2226,
-        "625Img2227":
-          _packages_flores_utama_cabins_share_cabin_4_4x_single_bunk_bed_625_img_2227,
+        "623Img2225": _packages_flores_utama_cabins_share_cabin_4_4x_single_bunk_bed_623_img_2225,
+        "624Img2226": _packages_flores_utama_cabins_share_cabin_4_4x_single_bunk_bed_624_img_2226,
+        "625Img2227": _packages_flores_utama_cabins_share_cabin_4_4x_single_bunk_bed_625_img_2227,
       },
       sundeck: {
         "608Img2215": _packages_flores_utama_cabins_sundeck_608_img_2215,
@@ -2984,338 +2719,204 @@ export const PACKAGES = {
   hatiraHela: {
     boat: {
       gallery: {
-        "626Hatiraartboard1Copy2":
-          _packages_hatira_hela_boat_gallery_626_hatiraartboard_1_copy_2,
-        "627Hatiraartboard1Copy3":
-          _packages_hatira_hela_boat_gallery_627_hatiraartboard_1_copy_3,
-        "628Hatiraartboard1Copy4":
-          _packages_hatira_hela_boat_gallery_628_hatiraartboard_1_copy_4,
-        "629Hatiraartboard1Copy":
-          _packages_hatira_hela_boat_gallery_629_hatiraartboard_1_copy,
-        "630Hatiraartboard1":
-          _packages_hatira_hela_boat_gallery_630_hatiraartboard_1,
-        "631HatiraBoatartboard1Copy":
-          _packages_hatira_hela_boat_gallery_631_hatira_boatartboard_1_copy,
-        "632HatiraBoatartboard1":
-          _packages_hatira_hela_boat_gallery_632_hatira_boatartboard_1,
+        "626Hatiraartboard1Copy2": _packages_hatira_hela_boat_gallery_626_hatiraartboard_1_copy_2,
+        "627Hatiraartboard1Copy3": _packages_hatira_hela_boat_gallery_627_hatiraartboard_1_copy_3,
+        "628Hatiraartboard1Copy4": _packages_hatira_hela_boat_gallery_628_hatiraartboard_1_copy_4,
+        "629Hatiraartboard1Copy": _packages_hatira_hela_boat_gallery_629_hatiraartboard_1_copy,
+        "630Hatiraartboard1": _packages_hatira_hela_boat_gallery_630_hatiraartboard_1,
+        "631HatiraBoatartboard1Copy": _packages_hatira_hela_boat_gallery_631_hatira_boatartboard_1_copy,
+        "632HatiraBoatartboard1": _packages_hatira_hela_boat_gallery_632_hatira_boatartboard_1,
       },
     },
     cabins: {
       "1Master1MainDeck": {
-        "633HatirahMaster11":
-          _packages_hatira_hela_cabins_1_master_1_main_deck_633_hatirah_master1_1,
-        "634HatirahMaster12":
-          _packages_hatira_hela_cabins_1_master_1_main_deck_634_hatirah_master1_2,
-        "635HatirahMaster13":
-          _packages_hatira_hela_cabins_1_master_1_main_deck_635_hatirah_master1_3,
-        "636HatirahMaster14":
-          _packages_hatira_hela_cabins_1_master_1_main_deck_636_hatirah_master1_4,
-        "637HatirahMaster15":
-          _packages_hatira_hela_cabins_1_master_1_main_deck_637_hatirah_master1_5,
-        "638HatirahMaster16":
-          _packages_hatira_hela_cabins_1_master_1_main_deck_638_hatirah_master1_6,
-        "639HatirahMaster17":
-          _packages_hatira_hela_cabins_1_master_1_main_deck_639_hatirah_master1_7,
+        "633HatirahMaster11": _packages_hatira_hela_cabins_1_master_1_main_deck_633_hatirah_master1_1,
+        "634HatirahMaster12": _packages_hatira_hela_cabins_1_master_1_main_deck_634_hatirah_master1_2,
+        "635HatirahMaster13": _packages_hatira_hela_cabins_1_master_1_main_deck_635_hatirah_master1_3,
+        "636HatirahMaster14": _packages_hatira_hela_cabins_1_master_1_main_deck_636_hatirah_master1_4,
+        "637HatirahMaster15": _packages_hatira_hela_cabins_1_master_1_main_deck_637_hatirah_master1_5,
+        "638HatirahMaster16": _packages_hatira_hela_cabins_1_master_1_main_deck_638_hatirah_master1_6,
+        "639HatirahMaster17": _packages_hatira_hela_cabins_1_master_1_main_deck_639_hatirah_master1_7,
       },
       "2Master2MainDeck": {
-        "640HatirahMaster21":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_640_hatirah_master2_1,
-        "641HatirahMaster210":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_641_hatirah_master2_10,
-        "642HatirahMaster211":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_642_hatirah_master2_11,
-        "643HatirahMaster22":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_643_hatirah_master2_2,
-        "644HatirahMaster23":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_644_hatirah_master2_3,
-        "645HatirahMaster24":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_645_hatirah_master2_4,
-        "646HatirahMaster25":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_646_hatirah_master2_5,
-        "647HatirahMaster26":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_647_hatirah_master2_6,
-        "648HatirahMaster27":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_648_hatirah_master2_7,
-        "649HatirahMaster28":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_649_hatirah_master2_8,
-        "650HatirahMaster29":
-          _packages_hatira_hela_cabins_2_master_2_main_deck_650_hatirah_master2_9,
+        "640HatirahMaster21": _packages_hatira_hela_cabins_2_master_2_main_deck_640_hatirah_master2_1,
+        "641HatirahMaster210": _packages_hatira_hela_cabins_2_master_2_main_deck_641_hatirah_master2_10,
+        "642HatirahMaster211": _packages_hatira_hela_cabins_2_master_2_main_deck_642_hatirah_master2_11,
+        "643HatirahMaster22": _packages_hatira_hela_cabins_2_master_2_main_deck_643_hatirah_master2_2,
+        "644HatirahMaster23": _packages_hatira_hela_cabins_2_master_2_main_deck_644_hatirah_master2_3,
+        "645HatirahMaster24": _packages_hatira_hela_cabins_2_master_2_main_deck_645_hatirah_master2_4,
+        "646HatirahMaster25": _packages_hatira_hela_cabins_2_master_2_main_deck_646_hatirah_master2_5,
+        "647HatirahMaster26": _packages_hatira_hela_cabins_2_master_2_main_deck_647_hatirah_master2_6,
+        "648HatirahMaster27": _packages_hatira_hela_cabins_2_master_2_main_deck_648_hatirah_master2_7,
+        "649HatirahMaster28": _packages_hatira_hela_cabins_2_master_2_main_deck_649_hatirah_master2_8,
+        "650HatirahMaster29": _packages_hatira_hela_cabins_2_master_2_main_deck_650_hatirah_master2_9,
       },
       "3Deluxe3MainDeck": {
-        "651HatirahDeluxe31":
-          _packages_hatira_hela_cabins_3_deluxe_3_main_deck_651_hatirah_deluxe3_1,
-        "652HatirahDeluxe32":
-          _packages_hatira_hela_cabins_3_deluxe_3_main_deck_652_hatirah_deluxe3_2,
-        "653HatirahDeluxe33":
-          _packages_hatira_hela_cabins_3_deluxe_3_main_deck_653_hatirah_deluxe3_3,
-        "654HatirahDeluxe34":
-          _packages_hatira_hela_cabins_3_deluxe_3_main_deck_654_hatirah_deluxe3_4,
-        "655HatirahDeluxe35":
-          _packages_hatira_hela_cabins_3_deluxe_3_main_deck_655_hatirah_deluxe3_5,
-        "656HatirahDeluxe36":
-          _packages_hatira_hela_cabins_3_deluxe_3_main_deck_656_hatirah_deluxe3_6,
+        "651HatirahDeluxe31": _packages_hatira_hela_cabins_3_deluxe_3_main_deck_651_hatirah_deluxe3_1,
+        "652HatirahDeluxe32": _packages_hatira_hela_cabins_3_deluxe_3_main_deck_652_hatirah_deluxe3_2,
+        "653HatirahDeluxe33": _packages_hatira_hela_cabins_3_deluxe_3_main_deck_653_hatirah_deluxe3_3,
+        "654HatirahDeluxe34": _packages_hatira_hela_cabins_3_deluxe_3_main_deck_654_hatirah_deluxe3_4,
+        "655HatirahDeluxe35": _packages_hatira_hela_cabins_3_deluxe_3_main_deck_655_hatirah_deluxe3_5,
+        "656HatirahDeluxe36": _packages_hatira_hela_cabins_3_deluxe_3_main_deck_656_hatirah_deluxe3_6,
       },
       "4Deluxe4MainDeck": {
-        "657HatirahDeluxe41":
-          _packages_hatira_hela_cabins_4_deluxe_4_main_deck_657_hatirah_deluxe4_1,
-        "658HatirahDeluxe42":
-          _packages_hatira_hela_cabins_4_deluxe_4_main_deck_658_hatirah_deluxe4_2,
-        "659HatirahDeluxe43":
-          _packages_hatira_hela_cabins_4_deluxe_4_main_deck_659_hatirah_deluxe4_3,
-        "660HatirahDeluxe44":
-          _packages_hatira_hela_cabins_4_deluxe_4_main_deck_660_hatirah_deluxe4_4,
-        "661HatirahDeluxe45":
-          _packages_hatira_hela_cabins_4_deluxe_4_main_deck_661_hatirah_deluxe4_5,
+        "657HatirahDeluxe41": _packages_hatira_hela_cabins_4_deluxe_4_main_deck_657_hatirah_deluxe4_1,
+        "658HatirahDeluxe42": _packages_hatira_hela_cabins_4_deluxe_4_main_deck_658_hatirah_deluxe4_2,
+        "659HatirahDeluxe43": _packages_hatira_hela_cabins_4_deluxe_4_main_deck_659_hatirah_deluxe4_3,
+        "660HatirahDeluxe44": _packages_hatira_hela_cabins_4_deluxe_4_main_deck_660_hatirah_deluxe4_4,
+        "661HatirahDeluxe45": _packages_hatira_hela_cabins_4_deluxe_4_main_deck_661_hatirah_deluxe4_5,
       },
       "5Deluxe5MainDeck": {
-        "662HatirahDeluxe51":
-          _packages_hatira_hela_cabins_5_deluxe_5_main_deck_662_hatirah_deluxe5_1,
-        "663HatirahDeluxe52":
-          _packages_hatira_hela_cabins_5_deluxe_5_main_deck_663_hatirah_deluxe5_2,
-        "664HatirahDeluxe53":
-          _packages_hatira_hela_cabins_5_deluxe_5_main_deck_664_hatirah_deluxe5_3,
-        "665HatirahDeluxe54":
-          _packages_hatira_hela_cabins_5_deluxe_5_main_deck_665_hatirah_deluxe5_4,
-        "666HatirahDeluxe55":
-          _packages_hatira_hela_cabins_5_deluxe_5_main_deck_666_hatirah_deluxe5_5,
+        "662HatirahDeluxe51": _packages_hatira_hela_cabins_5_deluxe_5_main_deck_662_hatirah_deluxe5_1,
+        "663HatirahDeluxe52": _packages_hatira_hela_cabins_5_deluxe_5_main_deck_663_hatirah_deluxe5_2,
+        "664HatirahDeluxe53": _packages_hatira_hela_cabins_5_deluxe_5_main_deck_664_hatirah_deluxe5_3,
+        "665HatirahDeluxe54": _packages_hatira_hela_cabins_5_deluxe_5_main_deck_665_hatirah_deluxe5_4,
+        "666HatirahDeluxe55": _packages_hatira_hela_cabins_5_deluxe_5_main_deck_666_hatirah_deluxe5_5,
       },
       "6Deluxe6UpperDeck": {
-        "667Dji202502241620300020DWilartboard1Copy2":
-          _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_667_dji_20250224162030_0020_d_wilartboard_1_copy_2,
-        "668Dji202502241620300020DWilartboard1Copy3":
-          _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_668_dji_20250224162030_0020_d_wilartboard_1_copy_3,
-        "669Dji202502241620300020DWilartboard1Copy4":
-          _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_669_dji_20250224162030_0020_d_wilartboard_1_copy_4,
-        "670Dji202502241620300020DWilartboard1Copy5":
-          _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_670_dji_20250224162030_0020_d_wilartboard_1_copy_5,
-        "671Dji202502241620300020DWilartboard1Copy":
-          _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_671_dji_20250224162030_0020_d_wilartboard_1_copy,
-        "672Dji202502241620300020DWilartboard1":
-          _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_672_dji_20250224162030_0020_d_wilartboard_1,
+        "667Dji202502241620300020DWilartboard1Copy2": _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_667_dji_20250224162030_0020_d_wilartboard_1_copy_2,
+        "668Dji202502241620300020DWilartboard1Copy3": _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_668_dji_20250224162030_0020_d_wilartboard_1_copy_3,
+        "669Dji202502241620300020DWilartboard1Copy4": _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_669_dji_20250224162030_0020_d_wilartboard_1_copy_4,
+        "670Dji202502241620300020DWilartboard1Copy5": _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_670_dji_20250224162030_0020_d_wilartboard_1_copy_5,
+        "671Dji202502241620300020DWilartboard1Copy": _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_671_dji_20250224162030_0020_d_wilartboard_1_copy,
+        "672Dji202502241620300020DWilartboard1": _packages_hatira_hela_cabins_6_deluxe_6_upper_deck_672_dji_20250224162030_0020_d_wilartboard_1,
       },
       "7Deluxe7UpperDeck": {
-        "673Hatiraartboard1Copy2":
-          _packages_hatira_hela_cabins_7_deluxe_7_upper_deck_673_hatiraartboard_1_copy_2,
-        "674Hatiraartboard1Copy3":
-          _packages_hatira_hela_cabins_7_deluxe_7_upper_deck_674_hatiraartboard_1_copy_3,
-        "675Hatiraartboard1Copy4":
-          _packages_hatira_hela_cabins_7_deluxe_7_upper_deck_675_hatiraartboard_1_copy_4,
-        "676Hatiraartboard1Copy":
-          _packages_hatira_hela_cabins_7_deluxe_7_upper_deck_676_hatiraartboard_1_copy,
-        "677Hatiraartboard1":
-          _packages_hatira_hela_cabins_7_deluxe_7_upper_deck_677_hatiraartboard_1,
+        "673Hatiraartboard1Copy2": _packages_hatira_hela_cabins_7_deluxe_7_upper_deck_673_hatiraartboard_1_copy_2,
+        "674Hatiraartboard1Copy3": _packages_hatira_hela_cabins_7_deluxe_7_upper_deck_674_hatiraartboard_1_copy_3,
+        "675Hatiraartboard1Copy4": _packages_hatira_hela_cabins_7_deluxe_7_upper_deck_675_hatiraartboard_1_copy_4,
+        "676Hatiraartboard1Copy": _packages_hatira_hela_cabins_7_deluxe_7_upper_deck_676_hatiraartboard_1_copy,
+        "677Hatiraartboard1": _packages_hatira_hela_cabins_7_deluxe_7_upper_deck_677_hatiraartboard_1,
       },
       "8Deluxe8UpperDeck": {
-        "678Hatiraartboard1Copy2":
-          _packages_hatira_hela_cabins_8_deluxe_8_upper_deck_678_hatiraartboard_1_copy_2,
-        "679Hatiraartboard1Copy3":
-          _packages_hatira_hela_cabins_8_deluxe_8_upper_deck_679_hatiraartboard_1_copy_3,
-        "680Hatiraartboard1Copy4":
-          _packages_hatira_hela_cabins_8_deluxe_8_upper_deck_680_hatiraartboard_1_copy_4,
-        "681Hatiraartboard1Copy":
-          _packages_hatira_hela_cabins_8_deluxe_8_upper_deck_681_hatiraartboard_1_copy,
-        "682Hatiraartboard1":
-          _packages_hatira_hela_cabins_8_deluxe_8_upper_deck_682_hatiraartboard_1,
+        "678Hatiraartboard1Copy2": _packages_hatira_hela_cabins_8_deluxe_8_upper_deck_678_hatiraartboard_1_copy_2,
+        "679Hatiraartboard1Copy3": _packages_hatira_hela_cabins_8_deluxe_8_upper_deck_679_hatiraartboard_1_copy_3,
+        "680Hatiraartboard1Copy4": _packages_hatira_hela_cabins_8_deluxe_8_upper_deck_680_hatiraartboard_1_copy_4,
+        "681Hatiraartboard1Copy": _packages_hatira_hela_cabins_8_deluxe_8_upper_deck_681_hatiraartboard_1_copy,
+        "682Hatiraartboard1": _packages_hatira_hela_cabins_8_deluxe_8_upper_deck_682_hatiraartboard_1,
       },
       breakfast: {
-        "699BreakfastHatiraDay21":
-          _packages_hatira_hela_cabins_breakfast_699_breakfast_hatira_day2_1,
-        "700BreakfastHatiraDay210":
-          _packages_hatira_hela_cabins_breakfast_700_breakfast_hatira_day2_10,
-        "701BreakfastHatiraDay22":
-          _packages_hatira_hela_cabins_breakfast_701_breakfast_hatira_day2_2,
-        "702BreakfastHatiraDay23":
-          _packages_hatira_hela_cabins_breakfast_702_breakfast_hatira_day2_3,
-        "703BreakfastHatiraDay24":
-          _packages_hatira_hela_cabins_breakfast_703_breakfast_hatira_day2_4,
-        "704BreakfastHatiraDay25":
-          _packages_hatira_hela_cabins_breakfast_704_breakfast_hatira_day2_5,
-        "705BreakfastHatiraDay26":
-          _packages_hatira_hela_cabins_breakfast_705_breakfast_hatira_day2_6,
-        "706BreakfastHatiraDay27":
-          _packages_hatira_hela_cabins_breakfast_706_breakfast_hatira_day2_7,
-        "707BreakfastHatiraDay28":
-          _packages_hatira_hela_cabins_breakfast_707_breakfast_hatira_day2_8,
-        "708BreakfastHatiraDay29":
-          _packages_hatira_hela_cabins_breakfast_708_breakfast_hatira_day2_9,
+        "699BreakfastHatiraDay21": _packages_hatira_hela_cabins_breakfast_699_breakfast_hatira_day2_1,
+        "700BreakfastHatiraDay210": _packages_hatira_hela_cabins_breakfast_700_breakfast_hatira_day2_10,
+        "701BreakfastHatiraDay22": _packages_hatira_hela_cabins_breakfast_701_breakfast_hatira_day2_2,
+        "702BreakfastHatiraDay23": _packages_hatira_hela_cabins_breakfast_702_breakfast_hatira_day2_3,
+        "703BreakfastHatiraDay24": _packages_hatira_hela_cabins_breakfast_703_breakfast_hatira_day2_4,
+        "704BreakfastHatiraDay25": _packages_hatira_hela_cabins_breakfast_704_breakfast_hatira_day2_5,
+        "705BreakfastHatiraDay26": _packages_hatira_hela_cabins_breakfast_705_breakfast_hatira_day2_6,
+        "706BreakfastHatiraDay27": _packages_hatira_hela_cabins_breakfast_706_breakfast_hatira_day2_7,
+        "707BreakfastHatiraDay28": _packages_hatira_hela_cabins_breakfast_707_breakfast_hatira_day2_8,
+        "708BreakfastHatiraDay29": _packages_hatira_hela_cabins_breakfast_708_breakfast_hatira_day2_9,
       },
       dinner: {
-        "709DinnerHatiraDay21":
-          _packages_hatira_hela_cabins_dinner_709_dinner_hatira_day2_1,
-        "710DinnerHatiraDay210":
-          _packages_hatira_hela_cabins_dinner_710_dinner_hatira_day2_10,
-        "711DinnerHatiraDay211":
-          _packages_hatira_hela_cabins_dinner_711_dinner_hatira_day2_11,
-        "712DinnerHatiraDay212":
-          _packages_hatira_hela_cabins_dinner_712_dinner_hatira_day2_12,
-        "713DinnerHatiraDay213":
-          _packages_hatira_hela_cabins_dinner_713_dinner_hatira_day2_13,
-        "714DinnerHatiraDay214":
-          _packages_hatira_hela_cabins_dinner_714_dinner_hatira_day2_14,
-        "715DinnerHatiraDay215":
-          _packages_hatira_hela_cabins_dinner_715_dinner_hatira_day2_15,
-        "716DinnerHatiraDay22":
-          _packages_hatira_hela_cabins_dinner_716_dinner_hatira_day2_2,
-        "717DinnerHatiraDay23":
-          _packages_hatira_hela_cabins_dinner_717_dinner_hatira_day2_3,
-        "718DinnerHatiraDay24":
-          _packages_hatira_hela_cabins_dinner_718_dinner_hatira_day2_4,
-        "719DinnerHatiraDay25":
-          _packages_hatira_hela_cabins_dinner_719_dinner_hatira_day2_5,
-        "720DinnerHatiraDay26":
-          _packages_hatira_hela_cabins_dinner_720_dinner_hatira_day2_6,
-        "721DinnerHatiraDay27":
-          _packages_hatira_hela_cabins_dinner_721_dinner_hatira_day2_7,
-        "722DinnerHatiraDay28":
-          _packages_hatira_hela_cabins_dinner_722_dinner_hatira_day2_8,
-        "723DinnerHatiraDay29":
-          _packages_hatira_hela_cabins_dinner_723_dinner_hatira_day2_9,
+        "709DinnerHatiraDay21": _packages_hatira_hela_cabins_dinner_709_dinner_hatira_day2_1,
+        "710DinnerHatiraDay210": _packages_hatira_hela_cabins_dinner_710_dinner_hatira_day2_10,
+        "711DinnerHatiraDay211": _packages_hatira_hela_cabins_dinner_711_dinner_hatira_day2_11,
+        "712DinnerHatiraDay212": _packages_hatira_hela_cabins_dinner_712_dinner_hatira_day2_12,
+        "713DinnerHatiraDay213": _packages_hatira_hela_cabins_dinner_713_dinner_hatira_day2_13,
+        "714DinnerHatiraDay214": _packages_hatira_hela_cabins_dinner_714_dinner_hatira_day2_14,
+        "715DinnerHatiraDay215": _packages_hatira_hela_cabins_dinner_715_dinner_hatira_day2_15,
+        "716DinnerHatiraDay22": _packages_hatira_hela_cabins_dinner_716_dinner_hatira_day2_2,
+        "717DinnerHatiraDay23": _packages_hatira_hela_cabins_dinner_717_dinner_hatira_day2_3,
+        "718DinnerHatiraDay24": _packages_hatira_hela_cabins_dinner_718_dinner_hatira_day2_4,
+        "719DinnerHatiraDay25": _packages_hatira_hela_cabins_dinner_719_dinner_hatira_day2_5,
+        "720DinnerHatiraDay26": _packages_hatira_hela_cabins_dinner_720_dinner_hatira_day2_6,
+        "721DinnerHatiraDay27": _packages_hatira_hela_cabins_dinner_721_dinner_hatira_day2_7,
+        "722DinnerHatiraDay28": _packages_hatira_hela_cabins_dinner_722_dinner_hatira_day2_8,
+        "723DinnerHatiraDay29": _packages_hatira_hela_cabins_dinner_723_dinner_hatira_day2_9,
       },
       hatiraHela: {
-        "759FloorPlanHatirah":
-          _packages_hatira_hela_cabins_hatira_hela_759_floor_plan_hatirah,
+        "759FloorPlanHatirah": _packages_hatira_hela_cabins_hatira_hela_759_floor_plan_hatirah,
       },
       lunchHatiraDay1: {
-        "724LunchHatiraDay11":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_724_lunch_hatira_day1_1,
-        "725LunchHatiraDay110":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_725_lunch_hatira_day1_10,
-        "726LunchHatiraDay111":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_726_lunch_hatira_day1_11,
-        "727LunchHatiraDay112":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_727_lunch_hatira_day1_12,
-        "728LunchHatiraDay113":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_728_lunch_hatira_day1_13,
-        "729LunchHatiraDay12":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_729_lunch_hatira_day1_2,
-        "730LunchHatiraDay13":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_730_lunch_hatira_day1_3,
-        "731LunchHatiraDay14":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_731_lunch_hatira_day1_4,
-        "732LunchHatiraDay15":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_732_lunch_hatira_day1_5,
-        "733LunchHatiraDay16":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_733_lunch_hatira_day1_6,
-        "734LunchHatiraDay17":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_734_lunch_hatira_day1_7,
-        "735LunchHatiraDay18":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_735_lunch_hatira_day1_8,
-        "736LunchHatiraDay19":
-          _packages_hatira_hela_cabins_lunch_hatira_day1_736_lunch_hatira_day1_9,
+        "724LunchHatiraDay11": _packages_hatira_hela_cabins_lunch_hatira_day1_724_lunch_hatira_day1_1,
+        "725LunchHatiraDay110": _packages_hatira_hela_cabins_lunch_hatira_day1_725_lunch_hatira_day1_10,
+        "726LunchHatiraDay111": _packages_hatira_hela_cabins_lunch_hatira_day1_726_lunch_hatira_day1_11,
+        "727LunchHatiraDay112": _packages_hatira_hela_cabins_lunch_hatira_day1_727_lunch_hatira_day1_12,
+        "728LunchHatiraDay113": _packages_hatira_hela_cabins_lunch_hatira_day1_728_lunch_hatira_day1_13,
+        "729LunchHatiraDay12": _packages_hatira_hela_cabins_lunch_hatira_day1_729_lunch_hatira_day1_2,
+        "730LunchHatiraDay13": _packages_hatira_hela_cabins_lunch_hatira_day1_730_lunch_hatira_day1_3,
+        "731LunchHatiraDay14": _packages_hatira_hela_cabins_lunch_hatira_day1_731_lunch_hatira_day1_4,
+        "732LunchHatiraDay15": _packages_hatira_hela_cabins_lunch_hatira_day1_732_lunch_hatira_day1_5,
+        "733LunchHatiraDay16": _packages_hatira_hela_cabins_lunch_hatira_day1_733_lunch_hatira_day1_6,
+        "734LunchHatiraDay17": _packages_hatira_hela_cabins_lunch_hatira_day1_734_lunch_hatira_day1_7,
+        "735LunchHatiraDay18": _packages_hatira_hela_cabins_lunch_hatira_day1_735_lunch_hatira_day1_8,
+        "736LunchHatiraDay19": _packages_hatira_hela_cabins_lunch_hatira_day1_736_lunch_hatira_day1_9,
       },
       lunchHatiraDay2: {
-        "737LunchHatiraDay21":
-          _packages_hatira_hela_cabins_lunch_hatira_day2_737_lunch_hatira_day2_1,
-        "738LunchHatiraDay22":
-          _packages_hatira_hela_cabins_lunch_hatira_day2_738_lunch_hatira_day2_2,
-        "739LunchHatiraDay23":
-          _packages_hatira_hela_cabins_lunch_hatira_day2_739_lunch_hatira_day2_3,
-        "740LunchHatiraDay24":
-          _packages_hatira_hela_cabins_lunch_hatira_day2_740_lunch_hatira_day2_4,
-        "741LunchHatiraDay25":
-          _packages_hatira_hela_cabins_lunch_hatira_day2_741_lunch_hatira_day2_5,
-        "742LunchHatiraDay26":
-          _packages_hatira_hela_cabins_lunch_hatira_day2_742_lunch_hatira_day2_6,
-        "743LunchHatiraDay27":
-          _packages_hatira_hela_cabins_lunch_hatira_day2_743_lunch_hatira_day2_7,
-        "744LunchHatiraDay28":
-          _packages_hatira_hela_cabins_lunch_hatira_day2_744_lunch_hatira_day2_8,
-        "745LunchHatiraDay29":
-          _packages_hatira_hela_cabins_lunch_hatira_day2_745_lunch_hatira_day2_9,
+        "737LunchHatiraDay21": _packages_hatira_hela_cabins_lunch_hatira_day2_737_lunch_hatira_day2_1,
+        "738LunchHatiraDay22": _packages_hatira_hela_cabins_lunch_hatira_day2_738_lunch_hatira_day2_2,
+        "739LunchHatiraDay23": _packages_hatira_hela_cabins_lunch_hatira_day2_739_lunch_hatira_day2_3,
+        "740LunchHatiraDay24": _packages_hatira_hela_cabins_lunch_hatira_day2_740_lunch_hatira_day2_4,
+        "741LunchHatiraDay25": _packages_hatira_hela_cabins_lunch_hatira_day2_741_lunch_hatira_day2_5,
+        "742LunchHatiraDay26": _packages_hatira_hela_cabins_lunch_hatira_day2_742_lunch_hatira_day2_6,
+        "743LunchHatiraDay27": _packages_hatira_hela_cabins_lunch_hatira_day2_743_lunch_hatira_day2_7,
+        "744LunchHatiraDay28": _packages_hatira_hela_cabins_lunch_hatira_day2_744_lunch_hatira_day2_8,
+        "745LunchHatiraDay29": _packages_hatira_hela_cabins_lunch_hatira_day2_745_lunch_hatira_day2_9,
       },
       lunchHatiraDay3: {
-        "746LunchHatiraDay31":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_746_lunch_hatira_day3_1,
-        "747LunchHatiraDay310":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_747_lunch_hatira_day3_10,
-        "748LunchHatiraDay311":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_748_lunch_hatira_day3_11,
-        "749LunchHatiraDay312":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_749_lunch_hatira_day3_12,
-        "750LunchHatiraDay313":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_750_lunch_hatira_day3_13,
-        "751LunchHatiraDay32":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_751_lunch_hatira_day3_2,
-        "752LunchHatiraDay33":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_752_lunch_hatira_day3_3,
-        "753LunchHatiraDay34":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_753_lunch_hatira_day3_4,
-        "754LunchHatiraDay35":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_754_lunch_hatira_day3_5,
-        "755LunchHatiraDay36":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_755_lunch_hatira_day3_6,
-        "756LunchHatiraDay37":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_756_lunch_hatira_day3_7,
-        "757LunchHatiraDay38":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_757_lunch_hatira_day3_8,
-        "758LunchHatiraDay39":
-          _packages_hatira_hela_cabins_lunch_hatira_day3_758_lunch_hatira_day3_9,
+        "746LunchHatiraDay31": _packages_hatira_hela_cabins_lunch_hatira_day3_746_lunch_hatira_day3_1,
+        "747LunchHatiraDay310": _packages_hatira_hela_cabins_lunch_hatira_day3_747_lunch_hatira_day3_10,
+        "748LunchHatiraDay311": _packages_hatira_hela_cabins_lunch_hatira_day3_748_lunch_hatira_day3_11,
+        "749LunchHatiraDay312": _packages_hatira_hela_cabins_lunch_hatira_day3_749_lunch_hatira_day3_12,
+        "750LunchHatiraDay313": _packages_hatira_hela_cabins_lunch_hatira_day3_750_lunch_hatira_day3_13,
+        "751LunchHatiraDay32": _packages_hatira_hela_cabins_lunch_hatira_day3_751_lunch_hatira_day3_2,
+        "752LunchHatiraDay33": _packages_hatira_hela_cabins_lunch_hatira_day3_752_lunch_hatira_day3_3,
+        "753LunchHatiraDay34": _packages_hatira_hela_cabins_lunch_hatira_day3_753_lunch_hatira_day3_4,
+        "754LunchHatiraDay35": _packages_hatira_hela_cabins_lunch_hatira_day3_754_lunch_hatira_day3_5,
+        "755LunchHatiraDay36": _packages_hatira_hela_cabins_lunch_hatira_day3_755_lunch_hatira_day3_6,
+        "756LunchHatiraDay37": _packages_hatira_hela_cabins_lunch_hatira_day3_756_lunch_hatira_day3_7,
+        "757LunchHatiraDay38": _packages_hatira_hela_cabins_lunch_hatira_day3_757_lunch_hatira_day3_8,
+        "758LunchHatiraDay39": _packages_hatira_hela_cabins_lunch_hatira_day3_758_lunch_hatira_day3_9,
       },
     },
     facility: {
       hatiraartboard1Copy2Jpg: {
-        "683Hatiraartboard1Copy2":
-          _packages_hatira_hela_facility_hatiraartboard_1_copy_2_jpg_683_hatiraartboard_1_copy_2,
+        "683Hatiraartboard1Copy2": _packages_hatira_hela_facility_hatiraartboard_1_copy_2_jpg_683_hatiraartboard_1_copy_2,
       },
       hatiraartboard1Copy3Jpg: {
-        "684Hatiraartboard1Copy3":
-          _packages_hatira_hela_facility_hatiraartboard_1_copy_3_jpg_684_hatiraartboard_1_copy_3,
+        "684Hatiraartboard1Copy3": _packages_hatira_hela_facility_hatiraartboard_1_copy_3_jpg_684_hatiraartboard_1_copy_3,
       },
       hatiraartboard1Copy4Jpg: {
-        "685Hatiraartboard1Copy4":
-          _packages_hatira_hela_facility_hatiraartboard_1_copy_4_jpg_685_hatiraartboard_1_copy_4,
+        "685Hatiraartboard1Copy4": _packages_hatira_hela_facility_hatiraartboard_1_copy_4_jpg_685_hatiraartboard_1_copy_4,
       },
       hatiraartboard1Copy5Jpg: {
-        "686Hatiraartboard1Copy5":
-          _packages_hatira_hela_facility_hatiraartboard_1_copy_5_jpg_686_hatiraartboard_1_copy_5,
+        "686Hatiraartboard1Copy5": _packages_hatira_hela_facility_hatiraartboard_1_copy_5_jpg_686_hatiraartboard_1_copy_5,
       },
       hatiraartboard1CopyJpg: {
-        "687Hatiraartboard1Copy":
-          _packages_hatira_hela_facility_hatiraartboard_1_copy_jpg_687_hatiraartboard_1_copy,
+        "687Hatiraartboard1Copy": _packages_hatira_hela_facility_hatiraartboard_1_copy_jpg_687_hatiraartboard_1_copy,
       },
       hatiraartboard1Jpg: {
-        "688Hatiraartboard1":
-          _packages_hatira_hela_facility_hatiraartboard_1_jpg_688_hatiraartboard_1,
+        "688Hatiraartboard1": _packages_hatira_hela_facility_hatiraartboard_1_jpg_688_hatiraartboard_1,
       },
       hatirapaartboard1Copy2Jpg: {
-        "689Hatirapaartboard1Copy2":
-          _packages_hatira_hela_facility_hatirapaartboard_1_copy_2_jpg_689_hatirapaartboard_1_copy_2,
+        "689Hatirapaartboard1Copy2": _packages_hatira_hela_facility_hatirapaartboard_1_copy_2_jpg_689_hatirapaartboard_1_copy_2,
       },
       hatirapaartboard1Copy3Jpg: {
-        "690Hatirapaartboard1Copy3":
-          _packages_hatira_hela_facility_hatirapaartboard_1_copy_3_jpg_690_hatirapaartboard_1_copy_3,
+        "690Hatirapaartboard1Copy3": _packages_hatira_hela_facility_hatirapaartboard_1_copy_3_jpg_690_hatirapaartboard_1_copy_3,
       },
       hatirapaartboard1Copy4Jpg: {
-        "691Hatirapaartboard1Copy4":
-          _packages_hatira_hela_facility_hatirapaartboard_1_copy_4_jpg_691_hatirapaartboard_1_copy_4,
+        "691Hatirapaartboard1Copy4": _packages_hatira_hela_facility_hatirapaartboard_1_copy_4_jpg_691_hatirapaartboard_1_copy_4,
       },
       hatirapaartboard1CopyJpg: {
-        "692Hatirapaartboard1Copy":
-          _packages_hatira_hela_facility_hatirapaartboard_1_copy_jpg_692_hatirapaartboard_1_copy,
+        "692Hatirapaartboard1Copy": _packages_hatira_hela_facility_hatirapaartboard_1_copy_jpg_692_hatirapaartboard_1_copy,
       },
       hatirapaartboard1Jpg: {
-        "693Hatirapaartboard1":
-          _packages_hatira_hela_facility_hatirapaartboard_1_jpg_693_hatirapaartboard_1,
+        "693Hatirapaartboard1": _packages_hatira_hela_facility_hatirapaartboard_1_jpg_693_hatirapaartboard_1,
       },
       hatirarestoartboard1Copy2Jpg: {
-        "694Hatirarestoartboard1Copy2":
-          _packages_hatira_hela_facility_hatirarestoartboard_1_copy_2_jpg_694_hatirarestoartboard_1_copy_2,
+        "694Hatirarestoartboard1Copy2": _packages_hatira_hela_facility_hatirarestoartboard_1_copy_2_jpg_694_hatirarestoartboard_1_copy_2,
       },
       hatirarestoartboard1Copy3Jpg: {
-        "695Hatirarestoartboard1Copy3":
-          _packages_hatira_hela_facility_hatirarestoartboard_1_copy_3_jpg_695_hatirarestoartboard_1_copy_3,
+        "695Hatirarestoartboard1Copy3": _packages_hatira_hela_facility_hatirarestoartboard_1_copy_3_jpg_695_hatirarestoartboard_1_copy_3,
       },
       hatirarestoartboard1Copy4Jpg: {
-        "696Hatirarestoartboard1Copy4":
-          _packages_hatira_hela_facility_hatirarestoartboard_1_copy_4_jpg_696_hatirarestoartboard_1_copy_4,
+        "696Hatirarestoartboard1Copy4": _packages_hatira_hela_facility_hatirarestoartboard_1_copy_4_jpg_696_hatirarestoartboard_1_copy_4,
       },
       hatirarestoartboard1Copy5Jpg: {
-        "697Hatirarestoartboard1Copy5":
-          _packages_hatira_hela_facility_hatirarestoartboard_1_copy_5_jpg_697_hatirarestoartboard_1_copy_5,
+        "697Hatirarestoartboard1Copy5": _packages_hatira_hela_facility_hatirarestoartboard_1_copy_5_jpg_697_hatirarestoartboard_1_copy_5,
       },
       hatirarestoartboard1CopyJpg: {
-        "698Hatirarestoartboard1Copy":
-          _packages_hatira_hela_facility_hatirarestoartboard_1_copy_jpg_698_hatirarestoartboard_1_copy,
+        "698Hatirarestoartboard1Copy": _packages_hatira_hela_facility_hatirarestoartboard_1_copy_jpg_698_hatirarestoartboard_1_copy,
       },
     },
   },
@@ -3329,87 +2930,57 @@ export const PACKAGES = {
     },
     cabins: {
       "01MasterOceanView1Cabin": {
-        "760Dsc003501Copy":
-          _packages_kanha_loka_cabins_01_master_ocean_view_1_cabin_760_dsc00350_1_copy,
-        "762BathOceanView":
-          _packages_kanha_loka_cabins_01_master_ocean_view_1_cabin_762_bath_ocean_view,
+        "760Dsc003501Copy": _packages_kanha_loka_cabins_01_master_ocean_view_1_cabin_760_dsc00350_1_copy,
+        "762BathOceanView": _packages_kanha_loka_cabins_01_master_ocean_view_1_cabin_762_bath_ocean_view,
       },
       "02FamilyCabin1Cabin": {
-        "763CopyOfCopyOfDsc00498":
-          _packages_kanha_loka_cabins_02_family_cabin_1_cabin_763_copy_of_copy_of_dsc00498,
-        "764CopyOfDsc00401":
-          _packages_kanha_loka_cabins_02_family_cabin_1_cabin_764_copy_of_dsc00401,
-        "765CopyOfDsc00523":
-          _packages_kanha_loka_cabins_02_family_cabin_1_cabin_765_copy_of_dsc00523,
+        "763CopyOfCopyOfDsc00498": _packages_kanha_loka_cabins_02_family_cabin_1_cabin_763_copy_of_copy_of_dsc00498,
+        "764CopyOfDsc00401": _packages_kanha_loka_cabins_02_family_cabin_1_cabin_764_copy_of_dsc00401,
+        "765CopyOfDsc00523": _packages_kanha_loka_cabins_02_family_cabin_1_cabin_765_copy_of_dsc00523,
       },
       "03DeluxeOceanView2Cabin": {
-        "766CopyOfDsc00378":
-          _packages_kanha_loka_cabins_03_deluxe_ocean_view_2_cabin_766_copy_of_dsc00378,
-        "767CopyOfDsc00491":
-          _packages_kanha_loka_cabins_03_deluxe_ocean_view_2_cabin_767_copy_of_dsc00491,
+        "766CopyOfDsc00378": _packages_kanha_loka_cabins_03_deluxe_ocean_view_2_cabin_766_copy_of_dsc00378,
+        "767CopyOfDsc00491": _packages_kanha_loka_cabins_03_deluxe_ocean_view_2_cabin_767_copy_of_dsc00491,
       },
       "04SuperiorLowerDeck2Cabins": {
-        "768CopyOfDsc00570":
-          _packages_kanha_loka_cabins_04_superior_lower_deck_2_cabins_768_copy_of_dsc00570,
-        "769Dsc00556":
-          _packages_kanha_loka_cabins_04_superior_lower_deck_2_cabins_769_dsc00556,
-        "770Dsc00598":
-          _packages_kanha_loka_cabins_04_superior_lower_deck_2_cabins_770_dsc00598,
+        "768CopyOfDsc00570": _packages_kanha_loka_cabins_04_superior_lower_deck_2_cabins_768_copy_of_dsc00570,
+        "769Dsc00556": _packages_kanha_loka_cabins_04_superior_lower_deck_2_cabins_769_dsc00556,
+        "770Dsc00598": _packages_kanha_loka_cabins_04_superior_lower_deck_2_cabins_770_dsc00598,
       },
       "05SharingCabin1Cabin": {
-        "771CopyOfDsc00580":
-          _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_771_copy_of_dsc00580,
-        "772CopyOfDsc00594":
-          _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_772_copy_of_dsc00594,
-        "773Dsc00556":
-          _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_773_dsc00556,
-        "774Dsc00558":
-          _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_774_dsc00558,
-        "775Dsc005671":
-          _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_775_dsc00567_1,
-        "776Dsc00570":
-          _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_776_dsc00570,
-        "777Dsc00573":
-          _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_777_dsc00573,
-        "778Dsc00575":
-          _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_778_dsc00575,
-        "779Dsc00576":
-          _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_779_dsc00576,
+        "771CopyOfDsc00580": _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_771_copy_of_dsc00580,
+        "772CopyOfDsc00594": _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_772_copy_of_dsc00594,
+        "773Dsc00556": _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_773_dsc00556,
+        "774Dsc00558": _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_774_dsc00558,
+        "775Dsc005671": _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_775_dsc00567_1,
+        "776Dsc00570": _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_776_dsc00570,
+        "777Dsc00573": _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_777_dsc00573,
+        "778Dsc00575": _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_778_dsc00575,
+        "779Dsc00576": _packages_kanha_loka_cabins_05_sharing_cabin_1_cabin_779_dsc00576,
       },
     },
     facility: {
       diningArea: {
-        "783CopyOfDsc00403":
-          _packages_kanha_loka_facility_dining_area_783_copy_of_dsc00403,
-        "784CopyOfDsc00462":
-          _packages_kanha_loka_facility_dining_area_784_copy_of_dsc00462,
+        "783CopyOfDsc00403": _packages_kanha_loka_facility_dining_area_783_copy_of_dsc00403,
+        "784CopyOfDsc00462": _packages_kanha_loka_facility_dining_area_784_copy_of_dsc00462,
         "785Dsc00426": _packages_kanha_loka_facility_dining_area_785_dsc00426,
         "786Dsc00429": _packages_kanha_loka_facility_dining_area_786_dsc00429,
       },
       othersLainnya: {
         "794Img8803": _packages_kanha_loka_facility_others_lainnya_794_img_8803,
-        "795BathSuperior":
-          _packages_kanha_loka_facility_others_lainnya_795_bath_superior,
-        "798FamilyCabin":
-          _packages_kanha_loka_facility_others_lainnya_798_family_cabin,
-        "801OuterSunnyLounge":
-          _packages_kanha_loka_facility_others_lainnya_801_outer_sunny_lounge,
-        "802RestoDiningg01":
-          _packages_kanha_loka_facility_others_lainnya_802_resto_diningg_01,
-        "803SharingCabin":
-          _packages_kanha_loka_facility_others_lainnya_803_sharing_cabin,
+        "795BathSuperior": _packages_kanha_loka_facility_others_lainnya_795_bath_superior,
+        "798FamilyCabin": _packages_kanha_loka_facility_others_lainnya_798_family_cabin,
+        "801OuterSunnyLounge": _packages_kanha_loka_facility_others_lainnya_801_outer_sunny_lounge,
+        "802RestoDiningg01": _packages_kanha_loka_facility_others_lainnya_802_resto_diningg_01,
+        "803SharingCabin": _packages_kanha_loka_facility_others_lainnya_803_sharing_cabin,
       },
       sharingToilet: {
-        "807CopyOfDsc00538":
-          _packages_kanha_loka_facility_sharing_toilet_807_copy_of_dsc00538,
-        "808CopyOfDsc00546":
-          _packages_kanha_loka_facility_sharing_toilet_808_copy_of_dsc00546,
+        "807CopyOfDsc00538": _packages_kanha_loka_facility_sharing_toilet_807_copy_of_dsc00538,
+        "808CopyOfDsc00546": _packages_kanha_loka_facility_sharing_toilet_808_copy_of_dsc00546,
       },
       sunDeck: {
-        "809CopyOfDsc00603":
-          _packages_kanha_loka_facility_sun_deck_809_copy_of_dsc00603,
-        "810CopyOfDsc00631":
-          _packages_kanha_loka_facility_sun_deck_810_copy_of_dsc00631,
+        "809CopyOfDsc00603": _packages_kanha_loka_facility_sun_deck_809_copy_of_dsc00603,
+        "810CopyOfDsc00631": _packages_kanha_loka_facility_sun_deck_810_copy_of_dsc00631,
         "811Dsc00599": _packages_kanha_loka_facility_sun_deck_811_dsc00599,
         "812Dsc00601": _packages_kanha_loka_facility_sun_deck_812_dsc00601,
         "813Dsc00603": _packages_kanha_loka_facility_sun_deck_813_dsc00603,
@@ -3443,358 +3014,219 @@ export const PACKAGES = {
     },
     cabins: {
       "1ShareCabin14xSingleBunkBed": {
-        "834Sve04654Hdr":
-          _packages_lamborajo_1_cabins_1_share_cabin_1_4x_single_bunk_bed_834_sve04654_hdr,
-        "835Sve04663Hdr":
-          _packages_lamborajo_1_cabins_1_share_cabin_1_4x_single_bunk_bed_835_sve04663_hdr,
-        "836Sve04666Hdr":
-          _packages_lamborajo_1_cabins_1_share_cabin_1_4x_single_bunk_bed_836_sve04666_hdr,
+        "834Sve04654Hdr": _packages_lamborajo_1_cabins_1_share_cabin_1_4x_single_bunk_bed_834_sve04654_hdr,
+        "835Sve04663Hdr": _packages_lamborajo_1_cabins_1_share_cabin_1_4x_single_bunk_bed_835_sve04663_hdr,
+        "836Sve04666Hdr": _packages_lamborajo_1_cabins_1_share_cabin_1_4x_single_bunk_bed_836_sve04666_hdr,
       },
       "2ShareCabin24xSingleBunkBed": {
-        "837Sve04603Hdr":
-          _packages_lamborajo_1_cabins_2_share_cabin_2_4x_single_bunk_bed_837_sve04603_hdr,
-        "838Sve04606Hdr":
-          _packages_lamborajo_1_cabins_2_share_cabin_2_4x_single_bunk_bed_838_sve04606_hdr,
-        "839Sve04609Hdr":
-          _packages_lamborajo_1_cabins_2_share_cabin_2_4x_single_bunk_bed_839_sve04609_hdr,
+        "837Sve04603Hdr": _packages_lamborajo_1_cabins_2_share_cabin_2_4x_single_bunk_bed_837_sve04603_hdr,
+        "838Sve04606Hdr": _packages_lamborajo_1_cabins_2_share_cabin_2_4x_single_bunk_bed_838_sve04606_hdr,
+        "839Sve04609Hdr": _packages_lamborajo_1_cabins_2_share_cabin_2_4x_single_bunk_bed_839_sve04609_hdr,
       },
       "3ShareCabin34xSingleBunkBed": {
-        "840Sve04612Hdr":
-          _packages_lamborajo_1_cabins_3_share_cabin_3_4x_single_bunk_bed_840_sve04612_hdr,
-        "841Sve04615Hdr":
-          _packages_lamborajo_1_cabins_3_share_cabin_3_4x_single_bunk_bed_841_sve04615_hdr,
-        "842Sve04618Hdr":
-          _packages_lamborajo_1_cabins_3_share_cabin_3_4x_single_bunk_bed_842_sve04618_hdr,
+        "840Sve04612Hdr": _packages_lamborajo_1_cabins_3_share_cabin_3_4x_single_bunk_bed_840_sve04612_hdr,
+        "841Sve04615Hdr": _packages_lamborajo_1_cabins_3_share_cabin_3_4x_single_bunk_bed_841_sve04615_hdr,
+        "842Sve04618Hdr": _packages_lamborajo_1_cabins_3_share_cabin_3_4x_single_bunk_bed_842_sve04618_hdr,
       },
       "4FullOceanQueenbed2xSingleBunkBed": {
-        "843Sve04624Hdr":
-          _packages_lamborajo_1_cabins_4_full_ocean_queenbed_2x_single_bunk_bed_843_sve04624_hdr,
-        "844Sve04627Hdr":
-          _packages_lamborajo_1_cabins_4_full_ocean_queenbed_2x_single_bunk_bed_844_sve04627_hdr,
-        "845Sve04630Hdr":
-          _packages_lamborajo_1_cabins_4_full_ocean_queenbed_2x_single_bunk_bed_845_sve04630_hdr,
-        "846Sve04633Hdr":
-          _packages_lamborajo_1_cabins_4_full_ocean_queenbed_2x_single_bunk_bed_846_sve04633_hdr,
+        "843Sve04624Hdr": _packages_lamborajo_1_cabins_4_full_ocean_queenbed_2x_single_bunk_bed_843_sve04624_hdr,
+        "844Sve04627Hdr": _packages_lamborajo_1_cabins_4_full_ocean_queenbed_2x_single_bunk_bed_844_sve04627_hdr,
+        "845Sve04630Hdr": _packages_lamborajo_1_cabins_4_full_ocean_queenbed_2x_single_bunk_bed_845_sve04630_hdr,
+        "846Sve04633Hdr": _packages_lamborajo_1_cabins_4_full_ocean_queenbed_2x_single_bunk_bed_846_sve04633_hdr,
       },
       "5MasterOcean1Queenbed2xExtraBedPrivateBathroom": {
-        "847Sve04702Hdr":
-          _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_847_sve04702_hdr,
-        "848Sve04710Hdr":
-          _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_848_sve04710_hdr,
-        "849Sve08662Hdr":
-          _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_849_sve08662_hdr,
-        "850Sve08665Hdr":
-          _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_850_sve08665_hdr,
-        "851Sve08666Hdr":
-          _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_851_sve08666_hdr,
-        "852Sve08671Hdr":
-          _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_852_sve08671_hdr,
-        "853Sve08674Hdr":
-          _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_853_sve08674_hdr,
-        "854Sve08677Hdr":
-          _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_854_sve08677_hdr,
-        "855Sve08680Hdr":
-          _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_855_sve08680_hdr,
+        "847Sve04702Hdr": _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_847_sve04702_hdr,
+        "848Sve04710Hdr": _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_848_sve04710_hdr,
+        "849Sve08662Hdr": _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_849_sve08662_hdr,
+        "850Sve08665Hdr": _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_850_sve08665_hdr,
+        "851Sve08666Hdr": _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_851_sve08666_hdr,
+        "852Sve08671Hdr": _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_852_sve08671_hdr,
+        "853Sve08674Hdr": _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_853_sve08674_hdr,
+        "854Sve08677Hdr": _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_854_sve08677_hdr,
+        "855Sve08680Hdr": _packages_lamborajo_1_cabins_5_master_ocean_1_queenbed_2x_extra_bed_private_bathroom_855_sve08680_hdr,
       },
       "6MasterOcean2Queenbed2xExtraBedPrivateBathroom": {
-        "856Sve04726Hdr":
-          _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_856_sve04726_hdr,
-        "857Sve08493Hdr":
-          _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_857_sve08493_hdr,
-        "858Sve08496Hdr":
-          _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_858_sve08496_hdr,
-        "859Sve08499Hdr":
-          _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_859_sve08499_hdr,
-        "860Sve08502Hdr":
-          _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_860_sve08502_hdr,
-        "861Sve08505Hdr":
-          _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_861_sve08505_hdr,
-        "862Sve08508Hdr":
-          _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_862_sve08508_hdr,
-        "863Sve08509Hdr":
-          _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_863_sve08509_hdr,
-        "864Sve08512Hdr":
-          _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_864_sve08512_hdr,
-        "865Sve08517Hdr":
-          _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_865_sve08517_hdr,
+        "856Sve04726Hdr": _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_856_sve04726_hdr,
+        "857Sve08493Hdr": _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_857_sve08493_hdr,
+        "858Sve08496Hdr": _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_858_sve08496_hdr,
+        "859Sve08499Hdr": _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_859_sve08499_hdr,
+        "860Sve08502Hdr": _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_860_sve08502_hdr,
+        "861Sve08505Hdr": _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_861_sve08505_hdr,
+        "862Sve08508Hdr": _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_862_sve08508_hdr,
+        "863Sve08509Hdr": _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_863_sve08509_hdr,
+        "864Sve08512Hdr": _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_864_sve08512_hdr,
+        "865Sve08517Hdr": _packages_lamborajo_1_cabins_6_master_ocean_2_queenbed_2x_extra_bed_private_bathroom_865_sve08517_hdr,
       },
       diningRoom: {
-        "866Sve08693Hdr":
-          _packages_lamborajo_1_cabins_dining_room_866_sve08693_hdr,
-        "867Sve08696Hdr":
-          _packages_lamborajo_1_cabins_dining_room_867_sve08696_hdr,
-        "868Sve08702Hdr":
-          _packages_lamborajo_1_cabins_dining_room_868_sve08702_hdr,
-        "869Sve08705Hdr":
-          _packages_lamborajo_1_cabins_dining_room_869_sve08705_hdr,
-        "870Sve08710Hdr":
-          _packages_lamborajo_1_cabins_dining_room_870_sve08710_hdr,
+        "866Sve08693Hdr": _packages_lamborajo_1_cabins_dining_room_866_sve08693_hdr,
+        "867Sve08696Hdr": _packages_lamborajo_1_cabins_dining_room_867_sve08696_hdr,
+        "868Sve08702Hdr": _packages_lamborajo_1_cabins_dining_room_868_sve08702_hdr,
+        "869Sve08705Hdr": _packages_lamborajo_1_cabins_dining_room_869_sve08705_hdr,
+        "870Sve08710Hdr": _packages_lamborajo_1_cabins_dining_room_870_sve08710_hdr,
       },
       lamborajo1: {
-        "882FloorPlanLamborajo1":
-          _packages_lamborajo_1_cabins_lamborajo_1_882_floor_plan_lamborajo_1,
+        "882FloorPlanLamborajo1": _packages_lamborajo_1_cabins_lamborajo_1_882_floor_plan_lamborajo_1,
       },
       shareBathroom1: {
-        "883Sve04639Hdr":
-          _packages_lamborajo_1_cabins_share_bathroom_1_883_sve04639_hdr,
+        "883Sve04639Hdr": _packages_lamborajo_1_cabins_share_bathroom_1_883_sve04639_hdr,
       },
       shareBathroom2: {
-        "884Sve04645":
-          _packages_lamborajo_1_cabins_share_bathroom_2_884_sve04645,
+        "884Sve04645": _packages_lamborajo_1_cabins_share_bathroom_2_884_sve04645,
       },
     },
     facility: {
       bowMaindeck1Jpg: {
-        "871BowMaindeck1":
-          _packages_lamborajo_1_facility_bow_maindeck1_jpg_871_bow_maindeck1,
+        "871BowMaindeck1": _packages_lamborajo_1_facility_bow_maindeck1_jpg_871_bow_maindeck1,
       },
       bowMaindeck2Jpg: {
-        "872BowMaindeck2":
-          _packages_lamborajo_1_facility_bow_maindeck2_jpg_872_bow_maindeck2,
+        "872BowMaindeck2": _packages_lamborajo_1_facility_bow_maindeck2_jpg_872_bow_maindeck2,
       },
       bowMaindeck3Jpg: {
-        "873BowMaindeck3":
-          _packages_lamborajo_1_facility_bow_maindeck3_jpg_873_bow_maindeck3,
+        "873BowMaindeck3": _packages_lamborajo_1_facility_bow_maindeck3_jpg_873_bow_maindeck3,
       },
       speedboatJpg: {
-        "874Speedboat":
-          _packages_lamborajo_1_facility_speedboat_jpg_874_speedboat,
+        "874Speedboat": _packages_lamborajo_1_facility_speedboat_jpg_874_speedboat,
       },
       sundeckTopDeck1Jpg: {
-        "875SundeckTopDeck1":
-          _packages_lamborajo_1_facility_sundeck_top_deck1_jpg_875_sundeck_top_deck1,
+        "875SundeckTopDeck1": _packages_lamborajo_1_facility_sundeck_top_deck1_jpg_875_sundeck_top_deck1,
       },
       sundeckTopDeck2Jpg: {
-        "876SundeckTopDeck2":
-          _packages_lamborajo_1_facility_sundeck_top_deck2_jpg_876_sundeck_top_deck2,
+        "876SundeckTopDeck2": _packages_lamborajo_1_facility_sundeck_top_deck2_jpg_876_sundeck_top_deck2,
       },
       sundeckTopDeck3Jpg: {
-        "877SundeckTopDeck3":
-          _packages_lamborajo_1_facility_sundeck_top_deck3_jpg_877_sundeck_top_deck3,
+        "877SundeckTopDeck3": _packages_lamborajo_1_facility_sundeck_top_deck3_jpg_877_sundeck_top_deck3,
       },
       sundeckTopDeck4Jpg: {
-        "878SundeckTopDeck4":
-          _packages_lamborajo_1_facility_sundeck_top_deck4_jpg_878_sundeck_top_deck4,
+        "878SundeckTopDeck4": _packages_lamborajo_1_facility_sundeck_top_deck4_jpg_878_sundeck_top_deck4,
       },
       sundeckUpperDeck1Jpg: {
-        "879SundeckUpperDeck1":
-          _packages_lamborajo_1_facility_sundeck_upper_deck1_jpg_879_sundeck_upper_deck1,
+        "879SundeckUpperDeck1": _packages_lamborajo_1_facility_sundeck_upper_deck1_jpg_879_sundeck_upper_deck1,
       },
       sundeckUpperDeck2Jpg: {
-        "880SundeckUpperDeck2":
-          _packages_lamborajo_1_facility_sundeck_upper_deck2_jpg_880_sundeck_upper_deck2,
+        "880SundeckUpperDeck2": _packages_lamborajo_1_facility_sundeck_upper_deck2_jpg_880_sundeck_upper_deck2,
       },
       sundeckUpperDeck3Jpg: {
-        "881SundeckUpperDeck3":
-          _packages_lamborajo_1_facility_sundeck_upper_deck3_jpg_881_sundeck_upper_deck3,
+        "881SundeckUpperDeck3": _packages_lamborajo_1_facility_sundeck_upper_deck3_jpg_881_sundeck_upper_deck3,
       },
     },
   },
   lamborajo2: {
     boat: {
       gallery: {
-        "183Dji202603311447310187D":
-          _packages_lamborajo_2_boat_gallery_183_dji_20260331144731_0187_d,
-        "184Dji202603311447370188D":
-          _packages_lamborajo_2_boat_gallery_184_dji_20260331144737_0188_d,
-        "185Dji202603311450080212D":
-          _packages_lamborajo_2_boat_gallery_185_dji_20260331145008_0212_d,
-        "186Dji202603311450120213D":
-          _packages_lamborajo_2_boat_gallery_186_dji_20260331145012_0213_d,
-        "187Dji202603311450150214D":
-          _packages_lamborajo_2_boat_gallery_187_dji_20260331145015_0214_d,
-        "188Dji202603311454280226D":
-          _packages_lamborajo_2_boat_gallery_188_dji_20260331145428_0226_d,
-        "189Dji202603311455180231D":
-          _packages_lamborajo_2_boat_gallery_189_dji_20260331145518_0231_d,
+        "183Dji202603311447310187D": _packages_lamborajo_2_boat_gallery_183_dji_20260331144731_0187_d,
+        "184Dji202603311447370188D": _packages_lamborajo_2_boat_gallery_184_dji_20260331144737_0188_d,
+        "185Dji202603311450080212D": _packages_lamborajo_2_boat_gallery_185_dji_20260331145008_0212_d,
+        "186Dji202603311450120213D": _packages_lamborajo_2_boat_gallery_186_dji_20260331145012_0213_d,
+        "187Dji202603311450150214D": _packages_lamborajo_2_boat_gallery_187_dji_20260331145015_0214_d,
+        "188Dji202603311454280226D": _packages_lamborajo_2_boat_gallery_188_dji_20260331145428_0226_d,
+        "189Dji202603311455180231D": _packages_lamborajo_2_boat_gallery_189_dji_20260331145518_0231_d,
       },
     },
     cabins: {
       "1SuperiorCabin1QueenBedSingleBedPriavteBathroom": {
-        "190Lamborajo2Superior11":
-          _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_190_lamborajo2_superior1_1,
-        "191Lamborajo2Superior12":
-          _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_191_lamborajo2_superior1_2,
-        "192Lamborajo2Superior13":
-          _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_192_lamborajo2_superior1_3,
-        "193Lamborajo2Superior14":
-          _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_193_lamborajo2_superior1_4,
-        "194Lamborajo2Superior15":
-          _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_194_lamborajo2_superior1_5,
-        "195Lamborajo2Superior16":
-          _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_195_lamborajo2_superior1_6,
-        "196Lamborajo2Superior17":
-          _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_196_lamborajo2_superior1_7,
+        "190Lamborajo2Superior11": _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_190_lamborajo2_superior1_1,
+        "191Lamborajo2Superior12": _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_191_lamborajo2_superior1_2,
+        "192Lamborajo2Superior13": _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_192_lamborajo2_superior1_3,
+        "193Lamborajo2Superior14": _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_193_lamborajo2_superior1_4,
+        "194Lamborajo2Superior15": _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_194_lamborajo2_superior1_5,
+        "195Lamborajo2Superior16": _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_195_lamborajo2_superior1_6,
+        "196Lamborajo2Superior17": _packages_lamborajo_2_cabins_1_superior_cabin_1_queen_bed_single_bed_priavte_bathroom_196_lamborajo2_superior1_7,
       },
       "2SuperiorCabin2QueenBedSingleBedPriavteBathroom": {
-        "197Lamborajo2Superior21":
-          _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_197_lamborajo2_superior2_1,
-        "198Lamborajo2Superior22":
-          _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_198_lamborajo2_superior2_2,
-        "199Lamborajo2Superior23":
-          _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_199_lamborajo2_superior2_3,
-        "200Lamborajo2Superior24":
-          _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_200_lamborajo2_superior2_4,
-        "201Lamborajo2Superior25":
-          _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_201_lamborajo2_superior2_5,
-        "202Lamborajo2Superior26":
-          _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_202_lamborajo2_superior2_6,
+        "197Lamborajo2Superior21": _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_197_lamborajo2_superior2_1,
+        "198Lamborajo2Superior22": _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_198_lamborajo2_superior2_2,
+        "199Lamborajo2Superior23": _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_199_lamborajo2_superior2_3,
+        "200Lamborajo2Superior24": _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_200_lamborajo2_superior2_4,
+        "201Lamborajo2Superior25": _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_201_lamborajo2_superior2_5,
+        "202Lamborajo2Superior26": _packages_lamborajo_2_cabins_2_superior_cabin_2_queen_bed_single_bed_priavte_bathroom_202_lamborajo2_superior2_6,
       },
       "3SuperiorCabin3QueenBedSingleBedPriavteBathroom": {
-        "203Lamborajo2Superior31":
-          _packages_lamborajo_2_cabins_3_superior_cabin_3_queen_bed_single_bed_priavte_bathroom_203_lamborajo2_superior3_1,
-        "204Lamborajo2Superior32":
-          _packages_lamborajo_2_cabins_3_superior_cabin_3_queen_bed_single_bed_priavte_bathroom_204_lamborajo2_superior3_2,
-        "205Lamborajo2Superior33":
-          _packages_lamborajo_2_cabins_3_superior_cabin_3_queen_bed_single_bed_priavte_bathroom_205_lamborajo2_superior3_3,
-        "206Lamborajo2Superior34":
-          _packages_lamborajo_2_cabins_3_superior_cabin_3_queen_bed_single_bed_priavte_bathroom_206_lamborajo2_superior3_4,
-        "207Lamborajo2Superior35":
-          _packages_lamborajo_2_cabins_3_superior_cabin_3_queen_bed_single_bed_priavte_bathroom_207_lamborajo2_superior3_5,
+        "203Lamborajo2Superior31": _packages_lamborajo_2_cabins_3_superior_cabin_3_queen_bed_single_bed_priavte_bathroom_203_lamborajo2_superior3_1,
+        "204Lamborajo2Superior32": _packages_lamborajo_2_cabins_3_superior_cabin_3_queen_bed_single_bed_priavte_bathroom_204_lamborajo2_superior3_2,
+        "205Lamborajo2Superior33": _packages_lamborajo_2_cabins_3_superior_cabin_3_queen_bed_single_bed_priavte_bathroom_205_lamborajo2_superior3_3,
+        "206Lamborajo2Superior34": _packages_lamborajo_2_cabins_3_superior_cabin_3_queen_bed_single_bed_priavte_bathroom_206_lamborajo2_superior3_4,
+        "207Lamborajo2Superior35": _packages_lamborajo_2_cabins_3_superior_cabin_3_queen_bed_single_bed_priavte_bathroom_207_lamborajo2_superior3_5,
       },
       "4SuperiorCabin4QueenBedSingleBedPriavteBathroom": {
-        "208Lamborajo2Superior41":
-          _packages_lamborajo_2_cabins_4_superior_cabin_4_queen_bed_single_bed_priavte_bathroom_208_lamborajo2_superior4_1,
-        "209Lamborajo2Superior42":
-          _packages_lamborajo_2_cabins_4_superior_cabin_4_queen_bed_single_bed_priavte_bathroom_209_lamborajo2_superior4_2,
-        "210Lamborajo2Superior43":
-          _packages_lamborajo_2_cabins_4_superior_cabin_4_queen_bed_single_bed_priavte_bathroom_210_lamborajo2_superior4_3,
-        "211Lamborajo2Superior44":
-          _packages_lamborajo_2_cabins_4_superior_cabin_4_queen_bed_single_bed_priavte_bathroom_211_lamborajo2_superior4_4,
-        "212Lamborajo2Superior45":
-          _packages_lamborajo_2_cabins_4_superior_cabin_4_queen_bed_single_bed_priavte_bathroom_212_lamborajo2_superior4_5,
+        "208Lamborajo2Superior41": _packages_lamborajo_2_cabins_4_superior_cabin_4_queen_bed_single_bed_priavte_bathroom_208_lamborajo2_superior4_1,
+        "209Lamborajo2Superior42": _packages_lamborajo_2_cabins_4_superior_cabin_4_queen_bed_single_bed_priavte_bathroom_209_lamborajo2_superior4_2,
+        "210Lamborajo2Superior43": _packages_lamborajo_2_cabins_4_superior_cabin_4_queen_bed_single_bed_priavte_bathroom_210_lamborajo2_superior4_3,
+        "211Lamborajo2Superior44": _packages_lamborajo_2_cabins_4_superior_cabin_4_queen_bed_single_bed_priavte_bathroom_211_lamborajo2_superior4_4,
+        "212Lamborajo2Superior45": _packages_lamborajo_2_cabins_4_superior_cabin_4_queen_bed_single_bed_priavte_bathroom_212_lamborajo2_superior4_5,
       },
       "5SuperiorCabin5QueenBedSingleBedPriavteBathroom": {
-        "213Lamborajo2Superior51":
-          _packages_lamborajo_2_cabins_5_superior_cabin_5_queen_bed_single_bed_priavte_bathroom_213_lamborajo2_superior5_1,
-        "214Lamborajo2Superior52":
-          _packages_lamborajo_2_cabins_5_superior_cabin_5_queen_bed_single_bed_priavte_bathroom_214_lamborajo2_superior5_2,
-        "215Lamborajo2Superior53":
-          _packages_lamborajo_2_cabins_5_superior_cabin_5_queen_bed_single_bed_priavte_bathroom_215_lamborajo2_superior5_3,
-        "216Lamborajo2Superior54":
-          _packages_lamborajo_2_cabins_5_superior_cabin_5_queen_bed_single_bed_priavte_bathroom_216_lamborajo2_superior5_4,
+        "213Lamborajo2Superior51": _packages_lamborajo_2_cabins_5_superior_cabin_5_queen_bed_single_bed_priavte_bathroom_213_lamborajo2_superior5_1,
+        "214Lamborajo2Superior52": _packages_lamborajo_2_cabins_5_superior_cabin_5_queen_bed_single_bed_priavte_bathroom_214_lamborajo2_superior5_2,
+        "215Lamborajo2Superior53": _packages_lamborajo_2_cabins_5_superior_cabin_5_queen_bed_single_bed_priavte_bathroom_215_lamborajo2_superior5_3,
+        "216Lamborajo2Superior54": _packages_lamborajo_2_cabins_5_superior_cabin_5_queen_bed_single_bed_priavte_bathroom_216_lamborajo2_superior5_4,
       },
       "6FamilyOcean1QueenBed2xextraBedPrivateBathroom": {
-        "217Lamborajo2Family1":
-          _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_217_lamborajo2_family_1,
-        "218Lamborajo2Family2":
-          _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_218_lamborajo2_family_2,
-        "219Lamborajo2Family3":
-          _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_219_lamborajo2_family_3,
-        "220Lamborajo2Family4":
-          _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_220_lamborajo2_family_4,
-        "221Lamborajo2Family5":
-          _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_221_lamborajo2_family_5,
-        "222Lamborajo2Family6":
-          _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_222_lamborajo2_family_6,
-        "223Lamborajo2Family7":
-          _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_223_lamborajo2_family_7,
-        "224Lamborajo2Family8":
-          _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_224_lamborajo2_family_8,
-        "225Lamborajo2Family9":
-          _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_225_lamborajo2_family_9,
+        "217Lamborajo2Family1": _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_217_lamborajo2_family_1,
+        "218Lamborajo2Family2": _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_218_lamborajo2_family_2,
+        "219Lamborajo2Family3": _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_219_lamborajo2_family_3,
+        "220Lamborajo2Family4": _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_220_lamborajo2_family_4,
+        "221Lamborajo2Family5": _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_221_lamborajo2_family_5,
+        "222Lamborajo2Family6": _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_222_lamborajo2_family_6,
+        "223Lamborajo2Family7": _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_223_lamborajo2_family_7,
+        "224Lamborajo2Family8": _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_224_lamborajo2_family_8,
+        "225Lamborajo2Family9": _packages_lamborajo_2_cabins_6_family_ocean_1_queen_bed_2xextra_bed_private_bathroom_225_lamborajo2_family_9,
       },
       "7MasterOcean1QueenBedExtraBedPrivateBathroomBalcony": {
-        "226Lamborajo2Master11":
-          _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_226_lamborajo2_master1_1,
-        "227Lamborajo2Master12":
-          _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_227_lamborajo2_master1_2,
-        "228Lamborajo2Master13":
-          _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_228_lamborajo2_master1_3,
-        "229Lamborajo2Master14":
-          _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_229_lamborajo2_master1_4,
-        "230Lamborajo2Master15":
-          _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_230_lamborajo2_master1_5,
-        "231Lamborajo2Master16":
-          _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_231_lamborajo2_master1_6,
-        "232Lamborajo2Master17":
-          _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_232_lamborajo2_master1_7,
+        "226Lamborajo2Master11": _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_226_lamborajo2_master1_1,
+        "227Lamborajo2Master12": _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_227_lamborajo2_master1_2,
+        "228Lamborajo2Master13": _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_228_lamborajo2_master1_3,
+        "229Lamborajo2Master14": _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_229_lamborajo2_master1_4,
+        "230Lamborajo2Master15": _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_230_lamborajo2_master1_5,
+        "231Lamborajo2Master16": _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_231_lamborajo2_master1_6,
+        "232Lamborajo2Master17": _packages_lamborajo_2_cabins_7_master_ocean_1_queen_bed_extra_bed_private_bathroom_balcony_232_lamborajo2_master1_7,
       },
       "8MasterOcean2QueenBedExtraBedPrivateBathroomBalcony": {
-        "233Lamborajo2Master21":
-          _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_233_lamborajo2_master2_1,
-        "234Lamborajo2Master22":
-          _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_234_lamborajo2_master2_2,
-        "235Lamborajo2Master23":
-          _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_235_lamborajo2_master2_3,
-        "236Lamborajo2Master24":
-          _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_236_lamborajo2_master2_4,
-        "237Lamborajo2Master25":
-          _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_237_lamborajo2_master2_5,
-        "238Lamborajo2Master26":
-          _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_238_lamborajo2_master2_6,
-        "239Lamborajo2Master27":
-          _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_239_lamborajo2_master2_7,
-        "240Lamborajo2Master28":
-          _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_240_lamborajo2_master2_8,
+        "233Lamborajo2Master21": _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_233_lamborajo2_master2_1,
+        "234Lamborajo2Master22": _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_234_lamborajo2_master2_2,
+        "235Lamborajo2Master23": _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_235_lamborajo2_master2_3,
+        "236Lamborajo2Master24": _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_236_lamborajo2_master2_4,
+        "237Lamborajo2Master25": _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_237_lamborajo2_master2_5,
+        "238Lamborajo2Master26": _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_238_lamborajo2_master2_6,
+        "239Lamborajo2Master27": _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_239_lamborajo2_master2_7,
+        "240Lamborajo2Master28": _packages_lamborajo_2_cabins_8_master_ocean_2_queen_bed_extra_bed_private_bathroom_balcony_240_lamborajo2_master2_8,
       },
       indoorDiningAndKaraokeRoom: {
-        "241Lamborajo2Indoor1":
-          _packages_lamborajo_2_cabins_indoor_dining_and_karaoke_room_241_lamborajo2_indoor_1,
-        "242Lamborajo2Indoor2":
-          _packages_lamborajo_2_cabins_indoor_dining_and_karaoke_room_242_lamborajo2_indoor_2,
-        "243Lamborajo2Indoor3":
-          _packages_lamborajo_2_cabins_indoor_dining_and_karaoke_room_243_lamborajo2_indoor_3,
-        "244Lamborajo2Indoor4":
-          _packages_lamborajo_2_cabins_indoor_dining_and_karaoke_room_244_lamborajo2_indoor_4,
-        "245Lamborajo2Indoor5":
-          _packages_lamborajo_2_cabins_indoor_dining_and_karaoke_room_245_lamborajo2_indoor_5,
+        "241Lamborajo2Indoor1": _packages_lamborajo_2_cabins_indoor_dining_and_karaoke_room_241_lamborajo2_indoor_1,
+        "242Lamborajo2Indoor2": _packages_lamborajo_2_cabins_indoor_dining_and_karaoke_room_242_lamborajo2_indoor_2,
+        "243Lamborajo2Indoor3": _packages_lamborajo_2_cabins_indoor_dining_and_karaoke_room_243_lamborajo2_indoor_3,
+        "244Lamborajo2Indoor4": _packages_lamborajo_2_cabins_indoor_dining_and_karaoke_room_244_lamborajo2_indoor_4,
+        "245Lamborajo2Indoor5": _packages_lamborajo_2_cabins_indoor_dining_and_karaoke_room_245_lamborajo2_indoor_5,
       },
       lamborajo2: {
-        "270DenahLamborajo2":
-          _packages_lamborajo_2_cabins_lamborajo_2_270_denah_lamborajo_2,
+        "270DenahLamborajo2": _packages_lamborajo_2_cabins_lamborajo_2_270_denah_lamborajo_2,
       },
       outdoorDiningRoom: {
-        "246Lamborajo2Outdoordining1":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_246_lamborajo2_outdoordining_1,
-        "247Lamborajo2Outdoordining10":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_247_lamborajo2_outdoordining_10,
-        "248Lamborajo2Outdoordining11":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_248_lamborajo2_outdoordining_11,
-        "249Lamborajo2Outdoordining2":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_249_lamborajo2_outdoordining_2,
-        "250Lamborajo2Outdoordining3":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_250_lamborajo2_outdoordining_3,
-        "251Lamborajo2Outdoordining4":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_251_lamborajo2_outdoordining_4,
-        "252Lamborajo2Outdoordining5":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_252_lamborajo2_outdoordining_5,
-        "253Lamborajo2Outdoordining6":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_253_lamborajo2_outdoordining_6,
-        "254Lamborajo2Outdoordining7":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_254_lamborajo2_outdoordining_7,
-        "255Lamborajo2Outdoordining8":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_255_lamborajo2_outdoordining_8,
-        "256Lamborajo2Outdoordining9":
-          _packages_lamborajo_2_cabins_outdoor_dining_room_256_lamborajo2_outdoordining_9,
+        "246Lamborajo2Outdoordining1": _packages_lamborajo_2_cabins_outdoor_dining_room_246_lamborajo2_outdoordining_1,
+        "247Lamborajo2Outdoordining10": _packages_lamborajo_2_cabins_outdoor_dining_room_247_lamborajo2_outdoordining_10,
+        "248Lamborajo2Outdoordining11": _packages_lamborajo_2_cabins_outdoor_dining_room_248_lamborajo2_outdoordining_11,
+        "249Lamborajo2Outdoordining2": _packages_lamborajo_2_cabins_outdoor_dining_room_249_lamborajo2_outdoordining_2,
+        "250Lamborajo2Outdoordining3": _packages_lamborajo_2_cabins_outdoor_dining_room_250_lamborajo2_outdoordining_3,
+        "251Lamborajo2Outdoordining4": _packages_lamborajo_2_cabins_outdoor_dining_room_251_lamborajo2_outdoordining_4,
+        "252Lamborajo2Outdoordining5": _packages_lamborajo_2_cabins_outdoor_dining_room_252_lamborajo2_outdoordining_5,
+        "253Lamborajo2Outdoordining6": _packages_lamborajo_2_cabins_outdoor_dining_room_253_lamborajo2_outdoordining_6,
+        "254Lamborajo2Outdoordining7": _packages_lamborajo_2_cabins_outdoor_dining_room_254_lamborajo2_outdoordining_7,
+        "255Lamborajo2Outdoordining8": _packages_lamborajo_2_cabins_outdoor_dining_room_255_lamborajo2_outdoordining_8,
+        "256Lamborajo2Outdoordining9": _packages_lamborajo_2_cabins_outdoor_dining_room_256_lamborajo2_outdoordining_9,
       },
       sundeck: {
-        "257Lamborajo2Sundeck1":
-          _packages_lamborajo_2_cabins_sundeck_257_lamborajo2_sundeck_1,
-        "258Lamborajo2Sundeck10":
-          _packages_lamborajo_2_cabins_sundeck_258_lamborajo2_sundeck_10,
-        "259Lamborajo2Sundeck11":
-          _packages_lamborajo_2_cabins_sundeck_259_lamborajo2_sundeck_11,
-        "260Lamborajo2Sundeck12":
-          _packages_lamborajo_2_cabins_sundeck_260_lamborajo2_sundeck_12,
-        "261Lamborajo2Sundeck13":
-          _packages_lamborajo_2_cabins_sundeck_261_lamborajo2_sundeck_13,
-        "262Lamborajo2Sundeck2":
-          _packages_lamborajo_2_cabins_sundeck_262_lamborajo2_sundeck_2,
-        "263Lamborajo2Sundeck3":
-          _packages_lamborajo_2_cabins_sundeck_263_lamborajo2_sundeck_3,
-        "264Lamborajo2Sundeck4":
-          _packages_lamborajo_2_cabins_sundeck_264_lamborajo2_sundeck_4,
-        "265Lamborajo2Sundeck5":
-          _packages_lamborajo_2_cabins_sundeck_265_lamborajo2_sundeck_5,
-        "266Lamborajo2Sundeck6":
-          _packages_lamborajo_2_cabins_sundeck_266_lamborajo2_sundeck_6,
-        "267Lamborajo2Sundeck7":
-          _packages_lamborajo_2_cabins_sundeck_267_lamborajo2_sundeck_7,
-        "268Lamborajo2Sundeck8":
-          _packages_lamborajo_2_cabins_sundeck_268_lamborajo2_sundeck_8,
-        "269Lamborajo2Sundeck9":
-          _packages_lamborajo_2_cabins_sundeck_269_lamborajo2_sundeck_9,
+        "257Lamborajo2Sundeck1": _packages_lamborajo_2_cabins_sundeck_257_lamborajo2_sundeck_1,
+        "258Lamborajo2Sundeck10": _packages_lamborajo_2_cabins_sundeck_258_lamborajo2_sundeck_10,
+        "259Lamborajo2Sundeck11": _packages_lamborajo_2_cabins_sundeck_259_lamborajo2_sundeck_11,
+        "260Lamborajo2Sundeck12": _packages_lamborajo_2_cabins_sundeck_260_lamborajo2_sundeck_12,
+        "261Lamborajo2Sundeck13": _packages_lamborajo_2_cabins_sundeck_261_lamborajo2_sundeck_13,
+        "262Lamborajo2Sundeck2": _packages_lamborajo_2_cabins_sundeck_262_lamborajo2_sundeck_2,
+        "263Lamborajo2Sundeck3": _packages_lamborajo_2_cabins_sundeck_263_lamborajo2_sundeck_3,
+        "264Lamborajo2Sundeck4": _packages_lamborajo_2_cabins_sundeck_264_lamborajo2_sundeck_4,
+        "265Lamborajo2Sundeck5": _packages_lamborajo_2_cabins_sundeck_265_lamborajo2_sundeck_5,
+        "266Lamborajo2Sundeck6": _packages_lamborajo_2_cabins_sundeck_266_lamborajo2_sundeck_6,
+        "267Lamborajo2Sundeck7": _packages_lamborajo_2_cabins_sundeck_267_lamborajo2_sundeck_7,
+        "268Lamborajo2Sundeck8": _packages_lamborajo_2_cabins_sundeck_268_lamborajo2_sundeck_8,
+        "269Lamborajo2Sundeck9": _packages_lamborajo_2_cabins_sundeck_269_lamborajo2_sundeck_9,
       },
     },
   },
@@ -3818,336 +3250,192 @@ export const PACKAGES = {
         "899Dji0194": _packages_lamborajo_3_boat_gallery_899_dji_0194,
         "900Dji0199": _packages_lamborajo_3_boat_gallery_900_dji_0199,
         "901Dji0205": _packages_lamborajo_3_boat_gallery_901_dji_0205,
-        "902Lamborajo3Boat0000Dji0003":
-          _packages_lamborajo_3_boat_gallery_902_lamborajo3_boat_0000_dji_0003,
-        "903Lamborajo3Boat0001Dji0006":
-          _packages_lamborajo_3_boat_gallery_903_lamborajo3_boat_0001_dji_0006,
-        "904Lamborajo3Boat0002Dji0027":
-          _packages_lamborajo_3_boat_gallery_904_lamborajo3_boat_0002_dji_0027,
+        "902Lamborajo3Boat0000Dji0003": _packages_lamborajo_3_boat_gallery_902_lamborajo3_boat_0000_dji_0003,
+        "903Lamborajo3Boat0001Dji0006": _packages_lamborajo_3_boat_gallery_903_lamborajo3_boat_0001_dji_0006,
+        "904Lamborajo3Boat0002Dji0027": _packages_lamborajo_3_boat_gallery_904_lamborajo3_boat_0002_dji_0027,
       },
     },
     cabins: {
       cabin1SuperiorCabinQueenBedPrivateBathroom: {
-        "905Lamborajo320":
-          _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_905_lamborajo_3_20,
-        "906Lamborajo328":
-          _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_906_lamborajo_3_28,
-        "907Lamborajo335":
-          _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_907_lamborajo_3_35,
-        "908Lamborajo342":
-          _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_908_lamborajo_3_42,
-        "909Lamborajo343":
-          _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_909_lamborajo_3_43,
-        "910Lamborajo348":
-          _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_910_lamborajo_3_48,
+        "905Lamborajo320": _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_905_lamborajo_3_20,
+        "906Lamborajo328": _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_906_lamborajo_3_28,
+        "907Lamborajo335": _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_907_lamborajo_3_35,
+        "908Lamborajo342": _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_908_lamborajo_3_42,
+        "909Lamborajo343": _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_909_lamborajo_3_43,
+        "910Lamborajo348": _packages_lamborajo_3_cabins_cabin_1_superior_cabin_queen_bed_private_bathroom_910_lamborajo_3_48,
       },
       cabin2SuperiorCabinQueenBedPrivateBathroom: {
-        "911Lamborajo321":
-          _packages_lamborajo_3_cabins_cabin_2_superior_cabin_queen_bed_private_bathroom_911_lamborajo_3_21,
-        "912Lamborajo329":
-          _packages_lamborajo_3_cabins_cabin_2_superior_cabin_queen_bed_private_bathroom_912_lamborajo_3_29,
-        "913Lamborajo336":
-          _packages_lamborajo_3_cabins_cabin_2_superior_cabin_queen_bed_private_bathroom_913_lamborajo_3_36,
-        "914Lamborajo35":
-          _packages_lamborajo_3_cabins_cabin_2_superior_cabin_queen_bed_private_bathroom_914_lamborajo_3_5,
-        "915Lamborajo36":
-          _packages_lamborajo_3_cabins_cabin_2_superior_cabin_queen_bed_private_bathroom_915_lamborajo_3_6,
+        "911Lamborajo321": _packages_lamborajo_3_cabins_cabin_2_superior_cabin_queen_bed_private_bathroom_911_lamborajo_3_21,
+        "912Lamborajo329": _packages_lamborajo_3_cabins_cabin_2_superior_cabin_queen_bed_private_bathroom_912_lamborajo_3_29,
+        "913Lamborajo336": _packages_lamborajo_3_cabins_cabin_2_superior_cabin_queen_bed_private_bathroom_913_lamborajo_3_36,
+        "914Lamborajo35": _packages_lamborajo_3_cabins_cabin_2_superior_cabin_queen_bed_private_bathroom_914_lamborajo_3_5,
+        "915Lamborajo36": _packages_lamborajo_3_cabins_cabin_2_superior_cabin_queen_bed_private_bathroom_915_lamborajo_3_6,
       },
       cabin3SuperiorCabinQueenBedPrivateBathroom: {
-        "916Lamborajo312":
-          _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_916_lamborajo_3_12,
-        "917Lamborajo313":
-          _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_917_lamborajo_3_13,
-        "918Lamborajo314":
-          _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_918_lamborajo_3_14,
-        "919Lamborajo322":
-          _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_919_lamborajo_3_22,
-        "920Lamborajo330":
-          _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_920_lamborajo_3_30,
-        "921Lamborajo337":
-          _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_921_lamborajo_3_37,
+        "916Lamborajo312": _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_916_lamborajo_3_12,
+        "917Lamborajo313": _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_917_lamborajo_3_13,
+        "918Lamborajo314": _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_918_lamborajo_3_14,
+        "919Lamborajo322": _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_919_lamborajo_3_22,
+        "920Lamborajo330": _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_920_lamborajo_3_30,
+        "921Lamborajo337": _packages_lamborajo_3_cabins_cabin_3_superior_cabin_queen_bed_private_bathroom_921_lamborajo_3_37,
       },
       cabin4SuperiorCabinQueenBedPrivateBathroom: {
-        "922Lamborajo31":
-          _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_922_lamborajo_3_1,
-        "923Lamborajo32":
-          _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_923_lamborajo_3_2,
-        "924Lamborajo33":
-          _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_924_lamborajo_3_3,
-        "925Lamborajo34":
-          _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_925_lamborajo_3_4,
-        "926Lamborajo349":
-          _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_926_lamborajo_3_49,
-        "927Lamborajo354":
-          _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_927_lamborajo_3_54,
-        "928Lamborajo359":
-          _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_928_lamborajo_3_59,
+        "922Lamborajo31": _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_922_lamborajo_3_1,
+        "923Lamborajo32": _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_923_lamborajo_3_2,
+        "924Lamborajo33": _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_924_lamborajo_3_3,
+        "925Lamborajo34": _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_925_lamborajo_3_4,
+        "926Lamborajo349": _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_926_lamborajo_3_49,
+        "927Lamborajo354": _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_927_lamborajo_3_54,
+        "928Lamborajo359": _packages_lamborajo_3_cabins_cabin_4_superior_cabin_queen_bed_private_bathroom_928_lamborajo_3_59,
       },
       cabin5MasterOceanQueenBedExtraSingleBedPrivateBathroomAndJacuzzi: {
-        "929Lamborajo310":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_929_lamborajo_3_10,
-        "930Lamborajo317":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_930_lamborajo_3_17,
-        "931Lamborajo325":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_931_lamborajo_3_25,
-        "932Lamborajo326":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_932_lamborajo_3_26,
-        "933Lamborajo327":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_933_lamborajo_3_27,
-        "934Lamborajo334":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_934_lamborajo_3_34,
-        "935Lamborajo338":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_935_lamborajo_3_38,
-        "936Lamborajo341":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_936_lamborajo_3_41,
-        "937Lamborajo344":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_937_lamborajo_3_44,
-        "938Lamborajo347":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_938_lamborajo_3_47,
-        "939Lamborajo350":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_939_lamborajo_3_50,
-        "940Lamborajo353":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_940_lamborajo_3_53,
-        "941Lamborajo355":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_941_lamborajo_3_55,
-        "942Lamborajo360":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_942_lamborajo_3_60,
-        "943Lamborajo363":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_943_lamborajo_3_63,
-        "944Lamborajo366":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_944_lamborajo_3_66,
-        "945Lamborajo369":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_945_lamborajo_3_69,
-        "946Lamborajo372":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_946_lamborajo_3_72,
-        "947Lamborajo375":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_947_lamborajo_3_75,
-        "948Lamborajo378":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_948_lamborajo_3_78,
-        "949Lamborajo381":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_949_lamborajo_3_81,
-        "950Lamborajo384":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_950_lamborajo_3_84,
-        "951Lamborajo39":
-          _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_951_lamborajo_3_9,
+        "929Lamborajo310": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_929_lamborajo_3_10,
+        "930Lamborajo317": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_930_lamborajo_3_17,
+        "931Lamborajo325": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_931_lamborajo_3_25,
+        "932Lamborajo326": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_932_lamborajo_3_26,
+        "933Lamborajo327": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_933_lamborajo_3_27,
+        "934Lamborajo334": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_934_lamborajo_3_34,
+        "935Lamborajo338": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_935_lamborajo_3_38,
+        "936Lamborajo341": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_936_lamborajo_3_41,
+        "937Lamborajo344": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_937_lamborajo_3_44,
+        "938Lamborajo347": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_938_lamborajo_3_47,
+        "939Lamborajo350": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_939_lamborajo_3_50,
+        "940Lamborajo353": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_940_lamborajo_3_53,
+        "941Lamborajo355": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_941_lamborajo_3_55,
+        "942Lamborajo360": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_942_lamborajo_3_60,
+        "943Lamborajo363": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_943_lamborajo_3_63,
+        "944Lamborajo366": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_944_lamborajo_3_66,
+        "945Lamborajo369": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_945_lamborajo_3_69,
+        "946Lamborajo372": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_946_lamborajo_3_72,
+        "947Lamborajo375": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_947_lamborajo_3_75,
+        "948Lamborajo378": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_948_lamborajo_3_78,
+        "949Lamborajo381": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_949_lamborajo_3_81,
+        "950Lamborajo384": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_950_lamborajo_3_84,
+        "951Lamborajo39": _packages_lamborajo_3_cabins_cabin_5_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_951_lamborajo_3_9,
       },
       cabin6MasterOceanQueenBedExtraSingleBedPrivateBathroomAndJacuzzi: {
-        "952Lamborajo311":
-          _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_952_lamborajo_3_11,
-        "953Lamborajo315":
-          _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_953_lamborajo_3_15,
-        "954Lamborajo318":
-          _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_954_lamborajo_3_18,
-        "955Lamborajo319":
-          _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_955_lamborajo_3_19,
-        "956Lamborajo323":
-          _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_956_lamborajo_3_23,
-        "957Lamborajo331":
-          _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_957_lamborajo_3_31,
-        "958Lamborajo37":
-          _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_958_lamborajo_3_7,
+        "952Lamborajo311": _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_952_lamborajo_3_11,
+        "953Lamborajo315": _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_953_lamborajo_3_15,
+        "954Lamborajo318": _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_954_lamborajo_3_18,
+        "955Lamborajo319": _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_955_lamborajo_3_19,
+        "956Lamborajo323": _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_956_lamborajo_3_23,
+        "957Lamborajo331": _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_957_lamborajo_3_31,
+        "958Lamborajo37": _packages_lamborajo_3_cabins_cabin_6_master_ocean_queen_bed_extra_single_bed_private_bathroom_and_jacuzzi_958_lamborajo_3_7,
       },
       cabin7RoyalMasterQueenBedExtra2xSingleBedPrivateBathroomAndJacuzzi: {
-        "959Lamborajo3113":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_959_lamborajo_3_113,
-        "960Lamborajo3114":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_960_lamborajo_3_114,
-        "961Lamborajo3115":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_961_lamborajo_3_115,
-        "962Lamborajo3116":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_962_lamborajo_3_116,
-        "963Lamborajo3117":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_963_lamborajo_3_117,
-        "964Lamborajo3118":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_964_lamborajo_3_118,
-        "965Lamborajo3119":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_965_lamborajo_3_119,
-        "966Lamborajo3120":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_966_lamborajo_3_120,
-        "967Lamborajo3121":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_967_lamborajo_3_121,
-        "968Lamborajo3122":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_968_lamborajo_3_122,
-        "969Lamborajo3123":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_969_lamborajo_3_123,
-        "970Lamborajo3124":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_970_lamborajo_3_124,
-        "971Lamborajo3126":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_971_lamborajo_3_126,
-        "972Lamborajo3128":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_972_lamborajo_3_128,
-        "973Lamborajo3129":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_973_lamborajo_3_129,
-        "974Lamborajo370":
-          _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_974_lamborajo_3_70,
+        "959Lamborajo3113": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_959_lamborajo_3_113,
+        "960Lamborajo3114": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_960_lamborajo_3_114,
+        "961Lamborajo3115": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_961_lamborajo_3_115,
+        "962Lamborajo3116": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_962_lamborajo_3_116,
+        "963Lamborajo3117": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_963_lamborajo_3_117,
+        "964Lamborajo3118": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_964_lamborajo_3_118,
+        "965Lamborajo3119": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_965_lamborajo_3_119,
+        "966Lamborajo3120": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_966_lamborajo_3_120,
+        "967Lamborajo3121": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_967_lamborajo_3_121,
+        "968Lamborajo3122": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_968_lamborajo_3_122,
+        "969Lamborajo3123": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_969_lamborajo_3_123,
+        "970Lamborajo3124": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_970_lamborajo_3_124,
+        "971Lamborajo3126": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_971_lamborajo_3_126,
+        "972Lamborajo3128": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_972_lamborajo_3_128,
+        "973Lamborajo3129": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_973_lamborajo_3_129,
+        "974Lamborajo370": _packages_lamborajo_3_cabins_cabin_7_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_974_lamborajo_3_70,
       },
       cabin8RoyalMasterQueenBedExtra2xSingleBedPrivateBathroomAndJacuzzi: {
-        "975Lamborajo3100":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_975_lamborajo_3_100,
-        "976Lamborajo3101":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_976_lamborajo_3_101,
-        "977Lamborajo3102":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_977_lamborajo_3_102,
-        "978Lamborajo3103":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_978_lamborajo_3_103,
-        "979Lamborajo3127":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_979_lamborajo_3_127,
-        "980Lamborajo3128Copy":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_980_lamborajo_3_128_copy,
-        "981Lamborajo3129Copy":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_981_lamborajo_3_129_copy,
-        "982Lamborajo3130":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_982_lamborajo_3_130,
-        "983Lamborajo3131":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_983_lamborajo_3_131,
-        "984Lamborajo3132":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_984_lamborajo_3_132,
-        "985Lamborajo316":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_985_lamborajo_3_16,
-        "986Lamborajo324":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_986_lamborajo_3_24,
-        "987Lamborajo332":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_987_lamborajo_3_32,
-        "988Lamborajo339":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_988_lamborajo_3_39,
-        "989Lamborajo345":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_989_lamborajo_3_45,
-        "990Lamborajo351":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_990_lamborajo_3_51,
-        "991Lamborajo356":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_991_lamborajo_3_56,
-        "992Lamborajo361":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_992_lamborajo_3_61,
-        "993Lamborajo364":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_993_lamborajo_3_64,
-        "994Lamborajo367":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_994_lamborajo_3_67,
-        "995Lamborajo373":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_995_lamborajo_3_73,
-        "996Lamborajo38":
-          _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_996_lamborajo_3_8,
+        "975Lamborajo3100": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_975_lamborajo_3_100,
+        "976Lamborajo3101": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_976_lamborajo_3_101,
+        "977Lamborajo3102": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_977_lamborajo_3_102,
+        "978Lamborajo3103": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_978_lamborajo_3_103,
+        "979Lamborajo3127": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_979_lamborajo_3_127,
+        "980Lamborajo3128Copy": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_980_lamborajo_3_128_copy,
+        "981Lamborajo3129Copy": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_981_lamborajo_3_129_copy,
+        "982Lamborajo3130": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_982_lamborajo_3_130,
+        "983Lamborajo3131": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_983_lamborajo_3_131,
+        "984Lamborajo3132": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_984_lamborajo_3_132,
+        "985Lamborajo316": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_985_lamborajo_3_16,
+        "986Lamborajo324": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_986_lamborajo_3_24,
+        "987Lamborajo332": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_987_lamborajo_3_32,
+        "988Lamborajo339": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_988_lamborajo_3_39,
+        "989Lamborajo345": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_989_lamborajo_3_45,
+        "990Lamborajo351": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_990_lamborajo_3_51,
+        "991Lamborajo356": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_991_lamborajo_3_56,
+        "992Lamborajo361": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_992_lamborajo_3_61,
+        "993Lamborajo364": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_993_lamborajo_3_64,
+        "994Lamborajo367": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_994_lamborajo_3_67,
+        "995Lamborajo373": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_995_lamborajo_3_73,
+        "996Lamborajo38": _packages_lamborajo_3_cabins_cabin_8_royal_master_queen_bed_extra_2x_single_bed_private_bathroom_and_jacuzzi_996_lamborajo_3_8,
       },
       diningRoom: {
-        "1018Lamborajo3104":
-          _packages_lamborajo_3_cabins_dining_room_1018_lamborajo_3_104,
-        "1019Lamborajo3105":
-          _packages_lamborajo_3_cabins_dining_room_1019_lamborajo_3_105,
-        "1020Lamborajo3106":
-          _packages_lamborajo_3_cabins_dining_room_1020_lamborajo_3_106,
-        "1021Lamborajo3107":
-          _packages_lamborajo_3_cabins_dining_room_1021_lamborajo_3_107,
-        "1022Lamborajo3108":
-          _packages_lamborajo_3_cabins_dining_room_1022_lamborajo_3_108,
-        "1023Lamborajo3109":
-          _packages_lamborajo_3_cabins_dining_room_1023_lamborajo_3_109,
-        "1024Lamborajo3110":
-          _packages_lamborajo_3_cabins_dining_room_1024_lamborajo_3_110,
-        "1025Lamborajo3111":
-          _packages_lamborajo_3_cabins_dining_room_1025_lamborajo_3_111,
-        "1026Lamborajo3112":
-          _packages_lamborajo_3_cabins_dining_room_1026_lamborajo_3_112,
-        "1027Lamborajo357":
-          _packages_lamborajo_3_cabins_dining_room_1027_lamborajo_3_57,
-        "1028Lamborajo374":
-          _packages_lamborajo_3_cabins_dining_room_1028_lamborajo_3_74,
-        "1029Lamborajo377":
-          _packages_lamborajo_3_cabins_dining_room_1029_lamborajo_3_77,
-        "1030Lamborajo380":
-          _packages_lamborajo_3_cabins_dining_room_1030_lamborajo_3_80,
-        "1031Lamborajo383":
-          _packages_lamborajo_3_cabins_dining_room_1031_lamborajo_3_83,
-        "1032Lamborajo386":
-          _packages_lamborajo_3_cabins_dining_room_1032_lamborajo_3_86,
-        "1033Lamborajo388":
-          _packages_lamborajo_3_cabins_dining_room_1033_lamborajo_3_88,
-        "1034Lamborajo390":
-          _packages_lamborajo_3_cabins_dining_room_1034_lamborajo_3_90,
-        "1035Lamborajo391":
-          _packages_lamborajo_3_cabins_dining_room_1035_lamborajo_3_91,
-        "1036Lamborajo392":
-          _packages_lamborajo_3_cabins_dining_room_1036_lamborajo_3_92,
-        "1037Lamborajo393":
-          _packages_lamborajo_3_cabins_dining_room_1037_lamborajo_3_93,
-        "1038Lamborajo394":
-          _packages_lamborajo_3_cabins_dining_room_1038_lamborajo_3_94,
+        "1018Lamborajo3104": _packages_lamborajo_3_cabins_dining_room_1018_lamborajo_3_104,
+        "1019Lamborajo3105": _packages_lamborajo_3_cabins_dining_room_1019_lamborajo_3_105,
+        "1020Lamborajo3106": _packages_lamborajo_3_cabins_dining_room_1020_lamborajo_3_106,
+        "1021Lamborajo3107": _packages_lamborajo_3_cabins_dining_room_1021_lamborajo_3_107,
+        "1022Lamborajo3108": _packages_lamborajo_3_cabins_dining_room_1022_lamborajo_3_108,
+        "1023Lamborajo3109": _packages_lamborajo_3_cabins_dining_room_1023_lamborajo_3_109,
+        "1024Lamborajo3110": _packages_lamborajo_3_cabins_dining_room_1024_lamborajo_3_110,
+        "1025Lamborajo3111": _packages_lamborajo_3_cabins_dining_room_1025_lamborajo_3_111,
+        "1026Lamborajo3112": _packages_lamborajo_3_cabins_dining_room_1026_lamborajo_3_112,
+        "1027Lamborajo357": _packages_lamborajo_3_cabins_dining_room_1027_lamborajo_3_57,
+        "1028Lamborajo374": _packages_lamborajo_3_cabins_dining_room_1028_lamborajo_3_74,
+        "1029Lamborajo377": _packages_lamborajo_3_cabins_dining_room_1029_lamborajo_3_77,
+        "1030Lamborajo380": _packages_lamborajo_3_cabins_dining_room_1030_lamborajo_3_80,
+        "1031Lamborajo383": _packages_lamborajo_3_cabins_dining_room_1031_lamborajo_3_83,
+        "1032Lamborajo386": _packages_lamborajo_3_cabins_dining_room_1032_lamborajo_3_86,
+        "1033Lamborajo388": _packages_lamborajo_3_cabins_dining_room_1033_lamborajo_3_88,
+        "1034Lamborajo390": _packages_lamborajo_3_cabins_dining_room_1034_lamborajo_3_90,
+        "1035Lamborajo391": _packages_lamborajo_3_cabins_dining_room_1035_lamborajo_3_91,
+        "1036Lamborajo392": _packages_lamborajo_3_cabins_dining_room_1036_lamborajo_3_92,
+        "1037Lamborajo393": _packages_lamborajo_3_cabins_dining_room_1037_lamborajo_3_93,
+        "1038Lamborajo394": _packages_lamborajo_3_cabins_dining_room_1038_lamborajo_3_94,
       },
       jacuzziAndSundeckUpperDeck: {
-        "1039Lamborajo395":
-          _packages_lamborajo_3_cabins_jacuzzi_and_sundeck_upper_deck_1039_lamborajo_3_95,
-        "1040Lamborajo396":
-          _packages_lamborajo_3_cabins_jacuzzi_and_sundeck_upper_deck_1040_lamborajo_3_96,
-        "1041Lamborajo397":
-          _packages_lamborajo_3_cabins_jacuzzi_and_sundeck_upper_deck_1041_lamborajo_3_97,
-        "1042Lamborajo398":
-          _packages_lamborajo_3_cabins_jacuzzi_and_sundeck_upper_deck_1042_lamborajo_3_98,
-        "1043Lamborajo399":
-          _packages_lamborajo_3_cabins_jacuzzi_and_sundeck_upper_deck_1043_lamborajo_3_99,
+        "1039Lamborajo395": _packages_lamborajo_3_cabins_jacuzzi_and_sundeck_upper_deck_1039_lamborajo_3_95,
+        "1040Lamborajo396": _packages_lamborajo_3_cabins_jacuzzi_and_sundeck_upper_deck_1040_lamborajo_3_96,
+        "1041Lamborajo397": _packages_lamborajo_3_cabins_jacuzzi_and_sundeck_upper_deck_1041_lamborajo_3_97,
+        "1042Lamborajo398": _packages_lamborajo_3_cabins_jacuzzi_and_sundeck_upper_deck_1042_lamborajo_3_98,
+        "1043Lamborajo399": _packages_lamborajo_3_cabins_jacuzzi_and_sundeck_upper_deck_1043_lamborajo_3_99,
       },
       sundeckMainDeck: {
-        "1044Lamborajo3125":
-          _packages_lamborajo_3_cabins_sundeck_main_deck_1044_lamborajo_3_125,
-        "1045Lamborajo333":
-          _packages_lamborajo_3_cabins_sundeck_main_deck_1045_lamborajo_3_33,
-        "1046Lamborajo340":
-          _packages_lamborajo_3_cabins_sundeck_main_deck_1046_lamborajo_3_40,
-        "1047Lamborajo346":
-          _packages_lamborajo_3_cabins_sundeck_main_deck_1047_lamborajo_3_46,
-        "1048Lamborajo352":
-          _packages_lamborajo_3_cabins_sundeck_main_deck_1048_lamborajo_3_52,
-        "1049Lamborajo358":
-          _packages_lamborajo_3_cabins_sundeck_main_deck_1049_lamborajo_3_58,
-        "1050Lamborajo362":
-          _packages_lamborajo_3_cabins_sundeck_main_deck_1050_lamborajo_3_62,
-        "1051Lamborajo365":
-          _packages_lamborajo_3_cabins_sundeck_main_deck_1051_lamborajo_3_65,
-        "1052Lamborajo368":
-          _packages_lamborajo_3_cabins_sundeck_main_deck_1052_lamborajo_3_68,
-        "1053Lamborajo371":
-          _packages_lamborajo_3_cabins_sundeck_main_deck_1053_lamborajo_3_71,
+        "1044Lamborajo3125": _packages_lamborajo_3_cabins_sundeck_main_deck_1044_lamborajo_3_125,
+        "1045Lamborajo333": _packages_lamborajo_3_cabins_sundeck_main_deck_1045_lamborajo_3_33,
+        "1046Lamborajo340": _packages_lamborajo_3_cabins_sundeck_main_deck_1046_lamborajo_3_40,
+        "1047Lamborajo346": _packages_lamborajo_3_cabins_sundeck_main_deck_1047_lamborajo_3_46,
+        "1048Lamborajo352": _packages_lamborajo_3_cabins_sundeck_main_deck_1048_lamborajo_3_52,
+        "1049Lamborajo358": _packages_lamborajo_3_cabins_sundeck_main_deck_1049_lamborajo_3_58,
+        "1050Lamborajo362": _packages_lamborajo_3_cabins_sundeck_main_deck_1050_lamborajo_3_62,
+        "1051Lamborajo365": _packages_lamborajo_3_cabins_sundeck_main_deck_1051_lamborajo_3_65,
+        "1052Lamborajo368": _packages_lamborajo_3_cabins_sundeck_main_deck_1052_lamborajo_3_68,
+        "1053Lamborajo371": _packages_lamborajo_3_cabins_sundeck_main_deck_1053_lamborajo_3_71,
       },
       sundeckMiddleDeck: {
-        "1054Lamborajo376":
-          _packages_lamborajo_3_cabins_sundeck_middle_deck_1054_lamborajo_3_76,
-        "1055Lamborajo379":
-          _packages_lamborajo_3_cabins_sundeck_middle_deck_1055_lamborajo_3_79,
-        "1056Lamborajo382":
-          _packages_lamborajo_3_cabins_sundeck_middle_deck_1056_lamborajo_3_82,
-        "1057Lamborajo385":
-          _packages_lamborajo_3_cabins_sundeck_middle_deck_1057_lamborajo_3_85,
-        "1058Lamborajo387":
-          _packages_lamborajo_3_cabins_sundeck_middle_deck_1058_lamborajo_3_87,
-        "1059Lamborajo389":
-          _packages_lamborajo_3_cabins_sundeck_middle_deck_1059_lamborajo_3_89,
+        "1054Lamborajo376": _packages_lamborajo_3_cabins_sundeck_middle_deck_1054_lamborajo_3_76,
+        "1055Lamborajo379": _packages_lamborajo_3_cabins_sundeck_middle_deck_1055_lamborajo_3_79,
+        "1056Lamborajo382": _packages_lamborajo_3_cabins_sundeck_middle_deck_1056_lamborajo_3_82,
+        "1057Lamborajo385": _packages_lamborajo_3_cabins_sundeck_middle_deck_1057_lamborajo_3_85,
+        "1058Lamborajo387": _packages_lamborajo_3_cabins_sundeck_middle_deck_1058_lamborajo_3_87,
+        "1059Lamborajo389": _packages_lamborajo_3_cabins_sundeck_middle_deck_1059_lamborajo_3_89,
       },
     },
     facility: {
       img6678Jpg: {
-        "1060Img6678":
-          _packages_lamborajo_3_facility_img_6678_jpg_1060_img_6678,
+        "1060Img6678": _packages_lamborajo_3_facility_img_6678_jpg_1060_img_6678,
       },
       img7291Jpg: {
-        "1061Img7291":
-          _packages_lamborajo_3_facility_img_7291_jpg_1061_img_7291,
+        "1061Img7291": _packages_lamborajo_3_facility_img_7291_jpg_1061_img_7291,
       },
       img7292Jpg: {
-        "1062Img7292":
-          _packages_lamborajo_3_facility_img_7292_jpg_1062_img_7292,
+        "1062Img7292": _packages_lamborajo_3_facility_img_7292_jpg_1062_img_7292,
       },
       lamborajoPa1Jpg: {
-        "1063LamborajoPa1":
-          _packages_lamborajo_3_facility_lamborajo_pa_1_jpg_1063_lamborajo_pa_1,
+        "1063LamborajoPa1": _packages_lamborajo_3_facility_lamborajo_pa_1_jpg_1063_lamborajo_pa_1,
       },
       lamborajoPa2Jpg: {
-        "1064LamborajoPa2":
-          _packages_lamborajo_3_facility_lamborajo_pa_2_jpg_1064_lamborajo_pa_2,
+        "1064LamborajoPa2": _packages_lamborajo_3_facility_lamborajo_pa_2_jpg_1064_lamborajo_pa_2,
       },
       lamborajoPa3Jpg: {
-        "1065LamborajoPa3":
-          _packages_lamborajo_3_facility_lamborajo_pa_3_jpg_1065_lamborajo_pa_3,
+        "1065LamborajoPa3": _packages_lamborajo_3_facility_lamborajo_pa_3_jpg_1065_lamborajo_pa_3,
       },
       lamborajoPa4Jpg: {
-        "1066LamborajoPa4":
-          _packages_lamborajo_3_facility_lamborajo_pa_4_jpg_1066_lamborajo_pa_4,
+        "1066LamborajoPa4": _packages_lamborajo_3_facility_lamborajo_pa_4_jpg_1066_lamborajo_pa_4,
       },
     },
   },
@@ -4160,106 +3448,66 @@ export const PACKAGES = {
         "1070Wil03776": _packages_maheswari_boat_gallery_1070_wil03776,
         "1071Wil03777": _packages_maheswari_boat_gallery_1071_wil03777,
         "1072Wil03781": _packages_maheswari_boat_gallery_1072_wil03781,
-        "1073DjiFly2025072307465641753243751161Photo":
-          _packages_maheswari_boat_gallery_1073_dji_fly_20250723_074656_4_1753243751161_photo,
-        "1074DjiFly2025072307485881753243741573Photo":
-          _packages_maheswari_boat_gallery_1074_dji_fly_20250723_074858_8_1753243741573_photo,
-        "1075DjiFly20250723074912121753243734789Photo":
-          _packages_maheswari_boat_gallery_1075_dji_fly_20250723_074912_12_1753243734789_photo,
-        "1076DjiFly20250723074918131753243733760Photo":
-          _packages_maheswari_boat_gallery_1076_dji_fly_20250723_074918_13_1753243733760_photo,
-        "1077DjiFly20250723074934141753243733029Photo":
-          _packages_maheswari_boat_gallery_1077_dji_fly_20250723_074934_14_1753243733029_photo,
+        "1073DjiFly2025072307465641753243751161Photo": _packages_maheswari_boat_gallery_1073_dji_fly_20250723_074656_4_1753243751161_photo,
+        "1074DjiFly2025072307485881753243741573Photo": _packages_maheswari_boat_gallery_1074_dji_fly_20250723_074858_8_1753243741573_photo,
+        "1075DjiFly20250723074912121753243734789Photo": _packages_maheswari_boat_gallery_1075_dji_fly_20250723_074912_12_1753243734789_photo,
+        "1076DjiFly20250723074918131753243733760Photo": _packages_maheswari_boat_gallery_1076_dji_fly_20250723_074918_13_1753243733760_photo,
+        "1077DjiFly20250723074934141753243733029Photo": _packages_maheswari_boat_gallery_1077_dji_fly_20250723_074934_14_1753243733029_photo,
       },
     },
     cabins: {
       "1Cabin1MasterOceanViewLeftSideBalconyUpperDeck": {
-        "1078MaheswariMasterocean1Leftside1":
-          _packages_maheswari_cabins_1_cabin_1_master_ocean_view_left_side_balcony_upper_deck_1078_maheswari_masterocean_1_leftside_1,
-        "1079MaheswariMasterocean1Leftside2":
-          _packages_maheswari_cabins_1_cabin_1_master_ocean_view_left_side_balcony_upper_deck_1079_maheswari_masterocean_1_leftside_2,
-        "1080MaheswariMasterocean1Leftside3":
-          _packages_maheswari_cabins_1_cabin_1_master_ocean_view_left_side_balcony_upper_deck_1080_maheswari_masterocean_1_leftside_3,
-        "1081MaheswariMasterocean1Leftside4":
-          _packages_maheswari_cabins_1_cabin_1_master_ocean_view_left_side_balcony_upper_deck_1081_maheswari_masterocean_1_leftside_4,
-        "1082MaheswariMasterocean1Leftside5":
-          _packages_maheswari_cabins_1_cabin_1_master_ocean_view_left_side_balcony_upper_deck_1082_maheswari_masterocean_1_leftside_5,
+        "1078MaheswariMasterocean1Leftside1": _packages_maheswari_cabins_1_cabin_1_master_ocean_view_left_side_balcony_upper_deck_1078_maheswari_masterocean_1_leftside_1,
+        "1079MaheswariMasterocean1Leftside2": _packages_maheswari_cabins_1_cabin_1_master_ocean_view_left_side_balcony_upper_deck_1079_maheswari_masterocean_1_leftside_2,
+        "1080MaheswariMasterocean1Leftside3": _packages_maheswari_cabins_1_cabin_1_master_ocean_view_left_side_balcony_upper_deck_1080_maheswari_masterocean_1_leftside_3,
+        "1081MaheswariMasterocean1Leftside4": _packages_maheswari_cabins_1_cabin_1_master_ocean_view_left_side_balcony_upper_deck_1081_maheswari_masterocean_1_leftside_4,
+        "1082MaheswariMasterocean1Leftside5": _packages_maheswari_cabins_1_cabin_1_master_ocean_view_left_side_balcony_upper_deck_1082_maheswari_masterocean_1_leftside_5,
       },
       "2Cabin2MasterOceanViewRightSideBalconyUpperDeck": {
-        "1083MaheswariMasterocean1Rightside1":
-          _packages_maheswari_cabins_2_cabin_2_master_ocean_view_right_side_balcony_upper_deck_1083_maheswari_masterocean_1_rightside_1,
-        "1084MaheswariMasterocean1Rightside2":
-          _packages_maheswari_cabins_2_cabin_2_master_ocean_view_right_side_balcony_upper_deck_1084_maheswari_masterocean_1_rightside_2,
-        "1085MaheswariMasterocean1Rightside3":
-          _packages_maheswari_cabins_2_cabin_2_master_ocean_view_right_side_balcony_upper_deck_1085_maheswari_masterocean_1_rightside_3,
-        "1086MaheswariMasterocean1Rightside4":
-          _packages_maheswari_cabins_2_cabin_2_master_ocean_view_right_side_balcony_upper_deck_1086_maheswari_masterocean_1_rightside_4,
-        "1087MaheswariMasterocean1Rightside5":
-          _packages_maheswari_cabins_2_cabin_2_master_ocean_view_right_side_balcony_upper_deck_1087_maheswari_masterocean_1_rightside_5,
+        "1083MaheswariMasterocean1Rightside1": _packages_maheswari_cabins_2_cabin_2_master_ocean_view_right_side_balcony_upper_deck_1083_maheswari_masterocean_1_rightside_1,
+        "1084MaheswariMasterocean1Rightside2": _packages_maheswari_cabins_2_cabin_2_master_ocean_view_right_side_balcony_upper_deck_1084_maheswari_masterocean_1_rightside_2,
+        "1085MaheswariMasterocean1Rightside3": _packages_maheswari_cabins_2_cabin_2_master_ocean_view_right_side_balcony_upper_deck_1085_maheswari_masterocean_1_rightside_3,
+        "1086MaheswariMasterocean1Rightside4": _packages_maheswari_cabins_2_cabin_2_master_ocean_view_right_side_balcony_upper_deck_1086_maheswari_masterocean_1_rightside_4,
+        "1087MaheswariMasterocean1Rightside5": _packages_maheswari_cabins_2_cabin_2_master_ocean_view_right_side_balcony_upper_deck_1087_maheswari_masterocean_1_rightside_5,
       },
       "3Cabin3SignatureOceanLeftSideBalconyMainDeck": {
-        "1088MaheswariSignatureocean1Leftside1":
-          _packages_maheswari_cabins_3_cabin_3_signature_ocean_left_side_balcony_main_deck_1088_maheswari_signatureocean_1_leftside_1,
-        "1089MaheswariSignatureocean1Leftside2":
-          _packages_maheswari_cabins_3_cabin_3_signature_ocean_left_side_balcony_main_deck_1089_maheswari_signatureocean_1_leftside_2,
-        "1090MaheswariSignatureocean1Leftside3":
-          _packages_maheswari_cabins_3_cabin_3_signature_ocean_left_side_balcony_main_deck_1090_maheswari_signatureocean_1_leftside_3,
-        "1091MaheswariSignatureocean1Leftside4":
-          _packages_maheswari_cabins_3_cabin_3_signature_ocean_left_side_balcony_main_deck_1091_maheswari_signatureocean_1_leftside_4,
-        "1092MaheswariSignatureocean1Leftside5":
-          _packages_maheswari_cabins_3_cabin_3_signature_ocean_left_side_balcony_main_deck_1092_maheswari_signatureocean_1_leftside_5,
+        "1088MaheswariSignatureocean1Leftside1": _packages_maheswari_cabins_3_cabin_3_signature_ocean_left_side_balcony_main_deck_1088_maheswari_signatureocean_1_leftside_1,
+        "1089MaheswariSignatureocean1Leftside2": _packages_maheswari_cabins_3_cabin_3_signature_ocean_left_side_balcony_main_deck_1089_maheswari_signatureocean_1_leftside_2,
+        "1090MaheswariSignatureocean1Leftside3": _packages_maheswari_cabins_3_cabin_3_signature_ocean_left_side_balcony_main_deck_1090_maheswari_signatureocean_1_leftside_3,
+        "1091MaheswariSignatureocean1Leftside4": _packages_maheswari_cabins_3_cabin_3_signature_ocean_left_side_balcony_main_deck_1091_maheswari_signatureocean_1_leftside_4,
+        "1092MaheswariSignatureocean1Leftside5": _packages_maheswari_cabins_3_cabin_3_signature_ocean_left_side_balcony_main_deck_1092_maheswari_signatureocean_1_leftside_5,
       },
       "4Cabin4SignatureOceanRightSideBalconyMainDeck": {
-        "1093MaheswariSignatureocean1Rightside1":
-          _packages_maheswari_cabins_4_cabin_4_signature_ocean_right_side_balcony_main_deck_1093_maheswari_signatureocean_1_rightside_1,
-        "1094MaheswariSignatureocean1Rightside2":
-          _packages_maheswari_cabins_4_cabin_4_signature_ocean_right_side_balcony_main_deck_1094_maheswari_signatureocean_1_rightside_2,
-        "1095MaheswariSignatureocean1Rightside3":
-          _packages_maheswari_cabins_4_cabin_4_signature_ocean_right_side_balcony_main_deck_1095_maheswari_signatureocean_1_rightside_3,
-        "1096MaheswariSignatureocean1Rightside4":
-          _packages_maheswari_cabins_4_cabin_4_signature_ocean_right_side_balcony_main_deck_1096_maheswari_signatureocean_1_rightside_4,
+        "1093MaheswariSignatureocean1Rightside1": _packages_maheswari_cabins_4_cabin_4_signature_ocean_right_side_balcony_main_deck_1093_maheswari_signatureocean_1_rightside_1,
+        "1094MaheswariSignatureocean1Rightside2": _packages_maheswari_cabins_4_cabin_4_signature_ocean_right_side_balcony_main_deck_1094_maheswari_signatureocean_1_rightside_2,
+        "1095MaheswariSignatureocean1Rightside3": _packages_maheswari_cabins_4_cabin_4_signature_ocean_right_side_balcony_main_deck_1095_maheswari_signatureocean_1_rightside_3,
+        "1096MaheswariSignatureocean1Rightside4": _packages_maheswari_cabins_4_cabin_4_signature_ocean_right_side_balcony_main_deck_1096_maheswari_signatureocean_1_rightside_4,
       },
       "5Cabin5DeluxeOceanRightSideUpperDeck": {
-        "1097MaheswariDeluxeocean1Rightside1":
-          _packages_maheswari_cabins_5_cabin_5_deluxe_ocean_right_side_upper_deck_1097_maheswari_deluxeocean_1_rightside_1,
-        "1098MaheswariDeluxeocean1Rightside2":
-          _packages_maheswari_cabins_5_cabin_5_deluxe_ocean_right_side_upper_deck_1098_maheswari_deluxeocean_1_rightside_2,
-        "1099MaheswariDeluxeocean1Rightside3":
-          _packages_maheswari_cabins_5_cabin_5_deluxe_ocean_right_side_upper_deck_1099_maheswari_deluxeocean_1_rightside_3,
+        "1097MaheswariDeluxeocean1Rightside1": _packages_maheswari_cabins_5_cabin_5_deluxe_ocean_right_side_upper_deck_1097_maheswari_deluxeocean_1_rightside_1,
+        "1098MaheswariDeluxeocean1Rightside2": _packages_maheswari_cabins_5_cabin_5_deluxe_ocean_right_side_upper_deck_1098_maheswari_deluxeocean_1_rightside_2,
+        "1099MaheswariDeluxeocean1Rightside3": _packages_maheswari_cabins_5_cabin_5_deluxe_ocean_right_side_upper_deck_1099_maheswari_deluxeocean_1_rightside_3,
       },
       "6Cabin6DeluxeOceanLeftSideUpperDeck": {
-        "1100MaheswariDeluxeocean1Rightside1":
-          _packages_maheswari_cabins_6_cabin_6_deluxe_ocean_left_side_upper_deck_1100_maheswari_deluxeocean_1_rightside_1,
-        "1101MaheswariDeluxeocean1Rightside2":
-          _packages_maheswari_cabins_6_cabin_6_deluxe_ocean_left_side_upper_deck_1101_maheswari_deluxeocean_1_rightside_2,
-        "1102MaheswariDeluxeocean1Rightside3":
-          _packages_maheswari_cabins_6_cabin_6_deluxe_ocean_left_side_upper_deck_1102_maheswari_deluxeocean_1_rightside_3,
+        "1100MaheswariDeluxeocean1Rightside1": _packages_maheswari_cabins_6_cabin_6_deluxe_ocean_left_side_upper_deck_1100_maheswari_deluxeocean_1_rightside_1,
+        "1101MaheswariDeluxeocean1Rightside2": _packages_maheswari_cabins_6_cabin_6_deluxe_ocean_left_side_upper_deck_1101_maheswari_deluxeocean_1_rightside_2,
+        "1102MaheswariDeluxeocean1Rightside3": _packages_maheswari_cabins_6_cabin_6_deluxe_ocean_left_side_upper_deck_1102_maheswari_deluxeocean_1_rightside_3,
       },
       "7Cabin7SuperiorCabinLowerDeck": {
-        "1103MaheswariSuperior71":
-          _packages_maheswari_cabins_7_cabin_7_superior_cabin_lower_deck_1103_maheswari_superior_7_1,
-        "1104MaheswariSuperior72":
-          _packages_maheswari_cabins_7_cabin_7_superior_cabin_lower_deck_1104_maheswari_superior_7_2,
-        "1105MaheswariSuperior73":
-          _packages_maheswari_cabins_7_cabin_7_superior_cabin_lower_deck_1105_maheswari_superior_7_3,
+        "1103MaheswariSuperior71": _packages_maheswari_cabins_7_cabin_7_superior_cabin_lower_deck_1103_maheswari_superior_7_1,
+        "1104MaheswariSuperior72": _packages_maheswari_cabins_7_cabin_7_superior_cabin_lower_deck_1104_maheswari_superior_7_2,
+        "1105MaheswariSuperior73": _packages_maheswari_cabins_7_cabin_7_superior_cabin_lower_deck_1105_maheswari_superior_7_3,
       },
       "8Cabin8SuperiorCabinLowerDeck": {
-        "1106MaheswariSuperior81":
-          _packages_maheswari_cabins_8_cabin_8_superior_cabin_lower_deck_1106_maheswari_superior_8_1,
-        "1107MaheswariSuperior82":
-          _packages_maheswari_cabins_8_cabin_8_superior_cabin_lower_deck_1107_maheswari_superior_8_2,
-        "1108MaheswariSuperior83":
-          _packages_maheswari_cabins_8_cabin_8_superior_cabin_lower_deck_1108_maheswari_superior_8_3,
+        "1106MaheswariSuperior81": _packages_maheswari_cabins_8_cabin_8_superior_cabin_lower_deck_1106_maheswari_superior_8_1,
+        "1107MaheswariSuperior82": _packages_maheswari_cabins_8_cabin_8_superior_cabin_lower_deck_1107_maheswari_superior_8_2,
+        "1108MaheswariSuperior83": _packages_maheswari_cabins_8_cabin_8_superior_cabin_lower_deck_1108_maheswari_superior_8_3,
       },
       indoorDiningRoom: {
-        "1109Gopr7928Hdr":
-          _packages_maheswari_cabins_indoor_dining_room_1109_gopr7928_hdr,
-        "1110Gopr7930Hdr":
-          _packages_maheswari_cabins_indoor_dining_room_1110_gopr7930_hdr,
-        "1111Gopr7932Hdr":
-          _packages_maheswari_cabins_indoor_dining_room_1111_gopr7932_hdr,
-        "1112Gopr7934Hdr":
-          _packages_maheswari_cabins_indoor_dining_room_1112_gopr7934_hdr,
+        "1109Gopr7928Hdr": _packages_maheswari_cabins_indoor_dining_room_1109_gopr7928_hdr,
+        "1110Gopr7930Hdr": _packages_maheswari_cabins_indoor_dining_room_1110_gopr7930_hdr,
+        "1111Gopr7932Hdr": _packages_maheswari_cabins_indoor_dining_room_1111_gopr7932_hdr,
+        "1112Gopr7934Hdr": _packages_maheswari_cabins_indoor_dining_room_1112_gopr7934_hdr,
       },
       sundeck: {
         "1113Img8474": _packages_maheswari_cabins_sundeck_1113_img_8474,
@@ -4320,80 +3568,49 @@ export const PACKAGES = {
     },
     cabins: {
       "1Cabin1FullOceanView": {
-        "315Nkj111":
-          _packages_nk_jaya_1_cabins_1_cabin_1_full_ocean_view_315_nkj1_11,
-        "316Nkj112":
-          _packages_nk_jaya_1_cabins_1_cabin_1_full_ocean_view_316_nkj1_12,
-        "317Nkj113":
-          _packages_nk_jaya_1_cabins_1_cabin_1_full_ocean_view_317_nkj1_13,
+        "315Nkj111": _packages_nk_jaya_1_cabins_1_cabin_1_full_ocean_view_315_nkj1_11,
+        "316Nkj112": _packages_nk_jaya_1_cabins_1_cabin_1_full_ocean_view_316_nkj1_12,
+        "317Nkj113": _packages_nk_jaya_1_cabins_1_cabin_1_full_ocean_view_317_nkj1_13,
       },
       "2Cabin2FullOceanView": {
-        "318Nkj11":
-          _packages_nk_jaya_1_cabins_2_cabin_2_full_ocean_view_318_nkj1_1,
-        "319Nkj12":
-          _packages_nk_jaya_1_cabins_2_cabin_2_full_ocean_view_319_nkj1_2,
-        "320Nkj13":
-          _packages_nk_jaya_1_cabins_2_cabin_2_full_ocean_view_320_nkj1_3,
-        "321Nkj14":
-          _packages_nk_jaya_1_cabins_2_cabin_2_full_ocean_view_321_nkj1_4,
-        "322Nkj15":
-          _packages_nk_jaya_1_cabins_2_cabin_2_full_ocean_view_322_nkj1_5,
+        "318Nkj11": _packages_nk_jaya_1_cabins_2_cabin_2_full_ocean_view_318_nkj1_1,
+        "319Nkj12": _packages_nk_jaya_1_cabins_2_cabin_2_full_ocean_view_319_nkj1_2,
+        "320Nkj13": _packages_nk_jaya_1_cabins_2_cabin_2_full_ocean_view_320_nkj1_3,
+        "321Nkj14": _packages_nk_jaya_1_cabins_2_cabin_2_full_ocean_view_321_nkj1_4,
+        "322Nkj15": _packages_nk_jaya_1_cabins_2_cabin_2_full_ocean_view_322_nkj1_5,
       },
       "3Cabin3FullOceanView": {
-        "323Nkj110":
-          _packages_nk_jaya_1_cabins_3_cabin_3_full_ocean_view_323_nkj1_10,
-        "324Nkj16":
-          _packages_nk_jaya_1_cabins_3_cabin_3_full_ocean_view_324_nkj1_6,
-        "325Nkj17":
-          _packages_nk_jaya_1_cabins_3_cabin_3_full_ocean_view_325_nkj1_7,
-        "326Nkj18":
-          _packages_nk_jaya_1_cabins_3_cabin_3_full_ocean_view_326_nkj1_8,
-        "327Nkj19":
-          _packages_nk_jaya_1_cabins_3_cabin_3_full_ocean_view_327_nkj1_9,
+        "323Nkj110": _packages_nk_jaya_1_cabins_3_cabin_3_full_ocean_view_323_nkj1_10,
+        "324Nkj16": _packages_nk_jaya_1_cabins_3_cabin_3_full_ocean_view_324_nkj1_6,
+        "325Nkj17": _packages_nk_jaya_1_cabins_3_cabin_3_full_ocean_view_325_nkj1_7,
+        "326Nkj18": _packages_nk_jaya_1_cabins_3_cabin_3_full_ocean_view_326_nkj1_8,
+        "327Nkj19": _packages_nk_jaya_1_cabins_3_cabin_3_full_ocean_view_327_nkj1_9,
       },
       "4Cabin4FullOceanView": {
-        "328Nkj114":
-          _packages_nk_jaya_1_cabins_4_cabin_4_full_ocean_view_328_nkj1_14,
-        "329Nkj115":
-          _packages_nk_jaya_1_cabins_4_cabin_4_full_ocean_view_329_nkj1_15,
-        "330Nkj116":
-          _packages_nk_jaya_1_cabins_4_cabin_4_full_ocean_view_330_nkj1_16,
-        "331Nkj117":
-          _packages_nk_jaya_1_cabins_4_cabin_4_full_ocean_view_331_nkj1_17,
-        "332Nkj118":
-          _packages_nk_jaya_1_cabins_4_cabin_4_full_ocean_view_332_nkj1_18,
+        "328Nkj114": _packages_nk_jaya_1_cabins_4_cabin_4_full_ocean_view_328_nkj1_14,
+        "329Nkj115": _packages_nk_jaya_1_cabins_4_cabin_4_full_ocean_view_329_nkj1_15,
+        "330Nkj116": _packages_nk_jaya_1_cabins_4_cabin_4_full_ocean_view_330_nkj1_16,
+        "331Nkj117": _packages_nk_jaya_1_cabins_4_cabin_4_full_ocean_view_331_nkj1_17,
+        "332Nkj118": _packages_nk_jaya_1_cabins_4_cabin_4_full_ocean_view_332_nkj1_18,
       },
       "5Cabin5SuperiorCabin": {
-        "333Nkj1360003Wil02365":
-          _packages_nk_jaya_1_cabins_5_cabin_5_superior_cabin_333_nkj1_36_0003_wil02365,
-        "334Nkj1360004Wil02362":
-          _packages_nk_jaya_1_cabins_5_cabin_5_superior_cabin_334_nkj1_36_0004_wil02362,
-        "335Nkj1360005Wil02359":
-          _packages_nk_jaya_1_cabins_5_cabin_5_superior_cabin_335_nkj1_36_0005_wil02359,
-        "336Nkj1360006Wil02356":
-          _packages_nk_jaya_1_cabins_5_cabin_5_superior_cabin_336_nkj1_36_0006_wil02356,
+        "333Nkj1360003Wil02365": _packages_nk_jaya_1_cabins_5_cabin_5_superior_cabin_333_nkj1_36_0003_wil02365,
+        "334Nkj1360004Wil02362": _packages_nk_jaya_1_cabins_5_cabin_5_superior_cabin_334_nkj1_36_0004_wil02362,
+        "335Nkj1360005Wil02359": _packages_nk_jaya_1_cabins_5_cabin_5_superior_cabin_335_nkj1_36_0005_wil02359,
+        "336Nkj1360006Wil02356": _packages_nk_jaya_1_cabins_5_cabin_5_superior_cabin_336_nkj1_36_0006_wil02356,
       },
       "6Cabin6SuperiorCabin": {
-        "337Nkj1360007Wil02353":
-          _packages_nk_jaya_1_cabins_6_cabin_6_superior_cabin_337_nkj1_36_0007_wil02353,
-        "338Nkj1360008Wil02350":
-          _packages_nk_jaya_1_cabins_6_cabin_6_superior_cabin_338_nkj1_36_0008_wil02350,
-        "339Nkj1360009Wil02344":
-          _packages_nk_jaya_1_cabins_6_cabin_6_superior_cabin_339_nkj1_36_0009_wil02344,
-        "340Nkj1360010Wil02341":
-          _packages_nk_jaya_1_cabins_6_cabin_6_superior_cabin_340_nkj1_36_0010_wil02341,
-        "341Nkj1360011Wil02338":
-          _packages_nk_jaya_1_cabins_6_cabin_6_superior_cabin_341_nkj1_36_0011_wil02338,
+        "337Nkj1360007Wil02353": _packages_nk_jaya_1_cabins_6_cabin_6_superior_cabin_337_nkj1_36_0007_wil02353,
+        "338Nkj1360008Wil02350": _packages_nk_jaya_1_cabins_6_cabin_6_superior_cabin_338_nkj1_36_0008_wil02350,
+        "339Nkj1360009Wil02344": _packages_nk_jaya_1_cabins_6_cabin_6_superior_cabin_339_nkj1_36_0009_wil02344,
+        "340Nkj1360010Wil02341": _packages_nk_jaya_1_cabins_6_cabin_6_superior_cabin_340_nkj1_36_0010_wil02341,
+        "341Nkj1360011Wil02338": _packages_nk_jaya_1_cabins_6_cabin_6_superior_cabin_341_nkj1_36_0011_wil02338,
       },
       "7Cabin7SuperiorCabin": {
-        "342Nkj1360012Wil02334":
-          _packages_nk_jaya_1_cabins_7_cabin_7_superior_cabin_342_nkj1_36_0012_wil02334,
-        "343Nkj1360013Wil02328":
-          _packages_nk_jaya_1_cabins_7_cabin_7_superior_cabin_343_nkj1_36_0013_wil02328,
-        "344Nkj1360014Wil02325":
-          _packages_nk_jaya_1_cabins_7_cabin_7_superior_cabin_344_nkj1_36_0014_wil02325,
-        "345Nkj1360015Wil02319":
-          _packages_nk_jaya_1_cabins_7_cabin_7_superior_cabin_345_nkj1_36_0015_wil02319,
+        "342Nkj1360012Wil02334": _packages_nk_jaya_1_cabins_7_cabin_7_superior_cabin_342_nkj1_36_0012_wil02334,
+        "343Nkj1360013Wil02328": _packages_nk_jaya_1_cabins_7_cabin_7_superior_cabin_343_nkj1_36_0013_wil02328,
+        "344Nkj1360014Wil02325": _packages_nk_jaya_1_cabins_7_cabin_7_superior_cabin_344_nkj1_36_0014_wil02325,
+        "345Nkj1360015Wil02319": _packages_nk_jaya_1_cabins_7_cabin_7_superior_cabin_345_nkj1_36_0015_wil02319,
       },
     },
     facility: {
@@ -4452,43 +3669,34 @@ export const PACKAGES = {
         "363Nkj135": _packages_nk_jaya_1_facility_nkj1_35_jpg_363_nkj1_35,
       },
       nkj1360016Wil02314Jpg: {
-        "365Nkj1360016Wil02314":
-          _packages_nk_jaya_1_facility_nkj1_36_0016_wil02314_jpg_365_nkj1_36_0016_wil02314,
+        "365Nkj1360016Wil02314": _packages_nk_jaya_1_facility_nkj1_36_0016_wil02314_jpg_365_nkj1_36_0016_wil02314,
       },
       nkj1360017Wil02311Jpg: {
-        "366Nkj1360017Wil02311":
-          _packages_nk_jaya_1_facility_nkj1_36_0017_wil02311_jpg_366_nkj1_36_0017_wil02311,
+        "366Nkj1360017Wil02311": _packages_nk_jaya_1_facility_nkj1_36_0017_wil02311_jpg_366_nkj1_36_0017_wil02311,
       },
       nkj1360018Wil02308Jpg: {
-        "367Nkj1360018Wil02308":
-          _packages_nk_jaya_1_facility_nkj1_36_0018_wil02308_jpg_367_nkj1_36_0018_wil02308,
+        "367Nkj1360018Wil02308": _packages_nk_jaya_1_facility_nkj1_36_0018_wil02308_jpg_367_nkj1_36_0018_wil02308,
       },
       nkj1360019Wil02302Jpg: {
-        "368Nkj1360019Wil02302":
-          _packages_nk_jaya_1_facility_nkj1_36_0019_wil02302_jpg_368_nkj1_36_0019_wil02302,
+        "368Nkj1360019Wil02302": _packages_nk_jaya_1_facility_nkj1_36_0019_wil02302_jpg_368_nkj1_36_0019_wil02302,
       },
       nkj1360020Wil02299Jpg: {
-        "369Nkj1360020Wil02299":
-          _packages_nk_jaya_1_facility_nkj1_36_0020_wil02299_jpg_369_nkj1_36_0020_wil02299,
+        "369Nkj1360020Wil02299": _packages_nk_jaya_1_facility_nkj1_36_0020_wil02299_jpg_369_nkj1_36_0020_wil02299,
       },
       nkj1360021Wil02296Jpg: {
-        "370Nkj1360021Wil02296":
-          _packages_nk_jaya_1_facility_nkj1_36_0021_wil02296_jpg_370_nkj1_36_0021_wil02296,
+        "370Nkj1360021Wil02296": _packages_nk_jaya_1_facility_nkj1_36_0021_wil02296_jpg_370_nkj1_36_0021_wil02296,
       },
       nkj136Jpg: {
         "364Nkj136": _packages_nk_jaya_1_facility_nkj1_36_jpg_364_nkj1_36,
       },
       wil02893HdrJpg: {
-        "371Wil02893Hdr":
-          _packages_nk_jaya_1_facility_wil02893_hdr_jpg_371_wil02893_hdr,
+        "371Wil02893Hdr": _packages_nk_jaya_1_facility_wil02893_hdr_jpg_371_wil02893_hdr,
       },
       wil02896HdrJpg: {
-        "372Wil02896Hdr":
-          _packages_nk_jaya_1_facility_wil02896_hdr_jpg_372_wil02896_hdr,
+        "372Wil02896Hdr": _packages_nk_jaya_1_facility_wil02896_hdr_jpg_372_wil02896_hdr,
       },
       wil02899HdrJpg: {
-        "373Wil02899Hdr":
-          _packages_nk_jaya_1_facility_wil02899_hdr_jpg_373_wil02899_hdr,
+        "373Wil02899Hdr": _packages_nk_jaya_1_facility_wil02899_hdr_jpg_373_wil02899_hdr,
       },
       wil05389Jpg: {
         "374Wil05389": _packages_nk_jaya_1_facility_wil05389_jpg_374_wil05389,
@@ -4497,36 +3705,31 @@ export const PACKAGES = {
         "375Wil05390": _packages_nk_jaya_1_facility_wil05390_jpg_375_wil05390,
       },
       wil053941Jpg: {
-        "376Wil053941":
-          _packages_nk_jaya_1_facility_wil05394_1_jpg_376_wil05394_1,
+        "376Wil053941": _packages_nk_jaya_1_facility_wil05394_1_jpg_376_wil05394_1,
       },
       wil05394Jpg: {
         "377Wil05394": _packages_nk_jaya_1_facility_wil05394_jpg_377_wil05394,
       },
       wil053981Jpg: {
-        "378Wil053981":
-          _packages_nk_jaya_1_facility_wil05398_1_jpg_378_wil05398_1,
+        "378Wil053981": _packages_nk_jaya_1_facility_wil05398_1_jpg_378_wil05398_1,
       },
       wil05398Jpg: {
         "379Wil05398": _packages_nk_jaya_1_facility_wil05398_jpg_379_wil05398,
       },
       wil054011Jpg: {
-        "380Wil054011":
-          _packages_nk_jaya_1_facility_wil05401_1_jpg_380_wil05401_1,
+        "380Wil054011": _packages_nk_jaya_1_facility_wil05401_1_jpg_380_wil05401_1,
       },
       wil05401Jpg: {
         "381Wil05401": _packages_nk_jaya_1_facility_wil05401_jpg_381_wil05401,
       },
       wil054051Jpg: {
-        "382Wil054051":
-          _packages_nk_jaya_1_facility_wil05405_1_jpg_382_wil05405_1,
+        "382Wil054051": _packages_nk_jaya_1_facility_wil05405_1_jpg_382_wil05405_1,
       },
       wil05405Jpg: {
         "383Wil05405": _packages_nk_jaya_1_facility_wil05405_jpg_383_wil05405,
       },
       wil054131Jpg: {
-        "384Wil054131":
-          _packages_nk_jaya_1_facility_wil05413_1_jpg_384_wil05413_1,
+        "384Wil054131": _packages_nk_jaya_1_facility_wil05413_1_jpg_384_wil05413_1,
       },
       wil05413Jpg: {
         "385Wil05413": _packages_nk_jaya_1_facility_wil05413_jpg_385_wil05413,
@@ -4535,8 +3738,7 @@ export const PACKAGES = {
         "386Wil05425": _packages_nk_jaya_1_facility_wil05425_jpg_386_wil05425,
       },
       wil054321Jpg: {
-        "387Wil054321":
-          _packages_nk_jaya_1_facility_wil05432_1_jpg_387_wil05432_1,
+        "387Wil054321": _packages_nk_jaya_1_facility_wil05432_1_jpg_387_wil05432_1,
       },
       wil05432Jpg: {
         "388Wil05432": _packages_nk_jaya_1_facility_wil05432_jpg_388_wil05432,
@@ -4558,140 +3760,95 @@ export const PACKAGES = {
   nkJaya2: {
     boat: {
       gallery: {
-        "393Nk20000Wil04961":
-          _packages_nk_jaya_2_boat_gallery_393_nk2_0000_wil04961,
+        "393Nk20000Wil04961": _packages_nk_jaya_2_boat_gallery_393_nk2_0000_wil04961,
         "394Wil02882": _packages_nk_jaya_2_boat_gallery_394_wil02882,
         "395Wil02888": _packages_nk_jaya_2_boat_gallery_395_wil02888,
       },
     },
     cabins: {
       "1SuperiorQueenBed": {
-        "396Nk20000s0001Wil04852":
-          _packages_nk_jaya_2_cabins_1_superior_queen_bed_396_nk2_0000s_0001_wil04852,
-        "397Nk20000s0002Wil04847":
-          _packages_nk_jaya_2_cabins_1_superior_queen_bed_397_nk2_0000s_0002_wil04847,
-        "398Nk20000s0003Wil04843":
-          _packages_nk_jaya_2_cabins_1_superior_queen_bed_398_nk2_0000s_0003_wil04843,
+        "396Nk20000s0001Wil04852": _packages_nk_jaya_2_cabins_1_superior_queen_bed_396_nk2_0000s_0001_wil04852,
+        "397Nk20000s0002Wil04847": _packages_nk_jaya_2_cabins_1_superior_queen_bed_397_nk2_0000s_0002_wil04847,
+        "398Nk20000s0003Wil04843": _packages_nk_jaya_2_cabins_1_superior_queen_bed_398_nk2_0000s_0003_wil04843,
       },
       "2SuperiorQueenBed": {
-        "399Nk20000s0004Wil04834":
-          _packages_nk_jaya_2_cabins_2_superior_queen_bed_399_nk2_0000s_0004_wil04834,
-        "400Nk20000s0005Wil04826":
-          _packages_nk_jaya_2_cabins_2_superior_queen_bed_400_nk2_0000s_0005_wil04826,
-        "401Nk20000s0006Wil04823":
-          _packages_nk_jaya_2_cabins_2_superior_queen_bed_401_nk2_0000s_0006_wil04823,
-        "402Nk20000s0007Wil04820":
-          _packages_nk_jaya_2_cabins_2_superior_queen_bed_402_nk2_0000s_0007_wil04820,
+        "399Nk20000s0004Wil04834": _packages_nk_jaya_2_cabins_2_superior_queen_bed_399_nk2_0000s_0004_wil04834,
+        "400Nk20000s0005Wil04826": _packages_nk_jaya_2_cabins_2_superior_queen_bed_400_nk2_0000s_0005_wil04826,
+        "401Nk20000s0006Wil04823": _packages_nk_jaya_2_cabins_2_superior_queen_bed_401_nk2_0000s_0006_wil04823,
+        "402Nk20000s0007Wil04820": _packages_nk_jaya_2_cabins_2_superior_queen_bed_402_nk2_0000s_0007_wil04820,
       },
       "3SuperiorQueenBed": {
-        "403Nk20000s0008Wil04812":
-          _packages_nk_jaya_2_cabins_3_superior_queen_bed_403_nk2_0000s_0008_wil04812,
-        "404Nk20000s0009Wil04809":
-          _packages_nk_jaya_2_cabins_3_superior_queen_bed_404_nk2_0000s_0009_wil04809,
-        "405Nk20000s0010Wil04806":
-          _packages_nk_jaya_2_cabins_3_superior_queen_bed_405_nk2_0000s_0010_wil04806,
-        "406Nk20000s0011Wil04803":
-          _packages_nk_jaya_2_cabins_3_superior_queen_bed_406_nk2_0000s_0011_wil04803,
-        "407Nk20000s0012Wil04800":
-          _packages_nk_jaya_2_cabins_3_superior_queen_bed_407_nk2_0000s_0012_wil04800,
+        "403Nk20000s0008Wil04812": _packages_nk_jaya_2_cabins_3_superior_queen_bed_403_nk2_0000s_0008_wil04812,
+        "404Nk20000s0009Wil04809": _packages_nk_jaya_2_cabins_3_superior_queen_bed_404_nk2_0000s_0009_wil04809,
+        "405Nk20000s0010Wil04806": _packages_nk_jaya_2_cabins_3_superior_queen_bed_405_nk2_0000s_0010_wil04806,
+        "406Nk20000s0011Wil04803": _packages_nk_jaya_2_cabins_3_superior_queen_bed_406_nk2_0000s_0011_wil04803,
+        "407Nk20000s0012Wil04800": _packages_nk_jaya_2_cabins_3_superior_queen_bed_407_nk2_0000s_0012_wil04800,
       },
       "4FullOceanQueenBed": {
-        "408Nk20001s0000Wil04792":
-          _packages_nk_jaya_2_cabins_4_full_ocean_queen_bed_408_nk2_0001s_0000_wil04792,
-        "409Nk20001s0001Wil04783":
-          _packages_nk_jaya_2_cabins_4_full_ocean_queen_bed_409_nk2_0001s_0001_wil04783,
-        "410Nk20001s0002Wil04775":
-          _packages_nk_jaya_2_cabins_4_full_ocean_queen_bed_410_nk2_0001s_0002_wil04775,
-        "411Nk20001s0003Wil04772":
-          _packages_nk_jaya_2_cabins_4_full_ocean_queen_bed_411_nk2_0001s_0003_wil04772,
+        "408Nk20001s0000Wil04792": _packages_nk_jaya_2_cabins_4_full_ocean_queen_bed_408_nk2_0001s_0000_wil04792,
+        "409Nk20001s0001Wil04783": _packages_nk_jaya_2_cabins_4_full_ocean_queen_bed_409_nk2_0001s_0001_wil04783,
+        "410Nk20001s0002Wil04775": _packages_nk_jaya_2_cabins_4_full_ocean_queen_bed_410_nk2_0001s_0002_wil04775,
+        "411Nk20001s0003Wil04772": _packages_nk_jaya_2_cabins_4_full_ocean_queen_bed_411_nk2_0001s_0003_wil04772,
       },
       "5FullOceanQueenBed": {
-        "412Nk20002s0000Wil04795":
-          _packages_nk_jaya_2_cabins_5_full_ocean_queen_bed_412_nk2_0002s_0000_wil04795,
-        "413Nk20002s0001Layer3":
-          _packages_nk_jaya_2_cabins_5_full_ocean_queen_bed_413_nk2_0002s_0001_layer_3,
-        "414Nk20002s0002Layer2":
-          _packages_nk_jaya_2_cabins_5_full_ocean_queen_bed_414_nk2_0002s_0002_layer_2,
-        "415Nk20002s0003Layer1":
-          _packages_nk_jaya_2_cabins_5_full_ocean_queen_bed_415_nk2_0002s_0003_layer_1,
-        "416Nk20002s0004Wil04739":
-          _packages_nk_jaya_2_cabins_5_full_ocean_queen_bed_416_nk2_0002s_0004_wil04739,
+        "412Nk20002s0000Wil04795": _packages_nk_jaya_2_cabins_5_full_ocean_queen_bed_412_nk2_0002s_0000_wil04795,
+        "413Nk20002s0001Layer3": _packages_nk_jaya_2_cabins_5_full_ocean_queen_bed_413_nk2_0002s_0001_layer_3,
+        "414Nk20002s0002Layer2": _packages_nk_jaya_2_cabins_5_full_ocean_queen_bed_414_nk2_0002s_0002_layer_2,
+        "415Nk20002s0003Layer1": _packages_nk_jaya_2_cabins_5_full_ocean_queen_bed_415_nk2_0002s_0003_layer_1,
+        "416Nk20002s0004Wil04739": _packages_nk_jaya_2_cabins_5_full_ocean_queen_bed_416_nk2_0002s_0004_wil04739,
       },
       "6MasterOceanQueenBed": {
-        "417Nk20002Wil04944":
-          _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_417_nk2_0002_wil04944,
-        "418Nk20003Wil04933":
-          _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_418_nk2_0003_wil04933,
-        "419Nk20004Wil04931":
-          _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_419_nk2_0004_wil04931,
-        "420Nk20005Wil04925":
-          _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_420_nk2_0005_wil04925,
-        "421Nk20006Wil04919":
-          _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_421_nk2_0006_wil04919,
-        "422Nk20007Wil04916":
-          _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_422_nk2_0007_wil04916,
+        "417Nk20002Wil04944": _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_417_nk2_0002_wil04944,
+        "418Nk20003Wil04933": _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_418_nk2_0003_wil04933,
+        "419Nk20004Wil04931": _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_419_nk2_0004_wil04931,
+        "420Nk20005Wil04925": _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_420_nk2_0005_wil04925,
+        "421Nk20006Wil04919": _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_421_nk2_0006_wil04919,
+        "422Nk20007Wil04916": _packages_nk_jaya_2_cabins_6_master_ocean_queen_bed_422_nk2_0007_wil04916,
       },
       diningRoom: {
-        "423Nk20018Wil04876":
-          _packages_nk_jaya_2_cabins_dining_room_423_nk2_0018_wil04876,
-        "424Nk20019Wil04872":
-          _packages_nk_jaya_2_cabins_dining_room_424_nk2_0019_wil04872,
-        "425Nk20020Wil04869":
-          _packages_nk_jaya_2_cabins_dining_room_425_nk2_0020_wil04869,
-        "426Nk20021Wil04866":
-          _packages_nk_jaya_2_cabins_dining_room_426_nk2_0021_wil04866,
-        "427Nk20022Wil04860":
-          _packages_nk_jaya_2_cabins_dining_room_427_nk2_0022_wil04860,
+        "423Nk20018Wil04876": _packages_nk_jaya_2_cabins_dining_room_423_nk2_0018_wil04876,
+        "424Nk20019Wil04872": _packages_nk_jaya_2_cabins_dining_room_424_nk2_0019_wil04872,
+        "425Nk20020Wil04869": _packages_nk_jaya_2_cabins_dining_room_425_nk2_0020_wil04869,
+        "426Nk20021Wil04866": _packages_nk_jaya_2_cabins_dining_room_426_nk2_0021_wil04866,
+        "427Nk20022Wil04860": _packages_nk_jaya_2_cabins_dining_room_427_nk2_0022_wil04860,
       },
     },
     facility: {
       nk20000s0000Wil04856Jpg: {
-        "428Nk20000s0000Wil04856":
-          _packages_nk_jaya_2_facility_nk2_0000s_0000_wil04856_jpg_428_nk2_0000s_0000_wil04856,
+        "428Nk20000s0000Wil04856": _packages_nk_jaya_2_facility_nk2_0000s_0000_wil04856_jpg_428_nk2_0000s_0000_wil04856,
       },
       nk20001Wil04949Jpg: {
-        "429Nk20001Wil04949":
-          _packages_nk_jaya_2_facility_nk2_0001_wil04949_jpg_429_nk2_0001_wil04949,
+        "429Nk20001Wil04949": _packages_nk_jaya_2_facility_nk2_0001_wil04949_jpg_429_nk2_0001_wil04949,
       },
       nk20008Wil04910Jpg: {
-        "430Nk20008Wil04910":
-          _packages_nk_jaya_2_facility_nk2_0008_wil04910_jpg_430_nk2_0008_wil04910,
+        "430Nk20008Wil04910": _packages_nk_jaya_2_facility_nk2_0008_wil04910_jpg_430_nk2_0008_wil04910,
       },
       nk20009Wil04907Jpg: {
-        "431Nk20009Wil04907":
-          _packages_nk_jaya_2_facility_nk2_0009_wil04907_jpg_431_nk2_0009_wil04907,
+        "431Nk20009Wil04907": _packages_nk_jaya_2_facility_nk2_0009_wil04907_jpg_431_nk2_0009_wil04907,
       },
       nk20010Wil04906Jpg: {
-        "432Nk20010Wil04906":
-          _packages_nk_jaya_2_facility_nk2_0010_wil04906_jpg_432_nk2_0010_wil04906,
+        "432Nk20010Wil04906": _packages_nk_jaya_2_facility_nk2_0010_wil04906_jpg_432_nk2_0010_wil04906,
       },
       nk20011Wil04900Jpg: {
-        "433Nk20011Wil04900":
-          _packages_nk_jaya_2_facility_nk2_0011_wil04900_jpg_433_nk2_0011_wil04900,
+        "433Nk20011Wil04900": _packages_nk_jaya_2_facility_nk2_0011_wil04900_jpg_433_nk2_0011_wil04900,
       },
       nk20012Wil04894Jpg: {
-        "434Nk20012Wil04894":
-          _packages_nk_jaya_2_facility_nk2_0012_wil04894_jpg_434_nk2_0012_wil04894,
+        "434Nk20012Wil04894": _packages_nk_jaya_2_facility_nk2_0012_wil04894_jpg_434_nk2_0012_wil04894,
       },
       nk20013Wil04891Jpg: {
-        "435Nk20013Wil04891":
-          _packages_nk_jaya_2_facility_nk2_0013_wil04891_jpg_435_nk2_0013_wil04891,
+        "435Nk20013Wil04891": _packages_nk_jaya_2_facility_nk2_0013_wil04891_jpg_435_nk2_0013_wil04891,
       },
       nk20014Wil04886Jpg: {
-        "436Nk20014Wil04886":
-          _packages_nk_jaya_2_facility_nk2_0014_wil04886_jpg_436_nk2_0014_wil04886,
+        "436Nk20014Wil04886": _packages_nk_jaya_2_facility_nk2_0014_wil04886_jpg_436_nk2_0014_wil04886,
       },
       nk20015Wil04885Jpg: {
-        "437Nk20015Wil04885":
-          _packages_nk_jaya_2_facility_nk2_0015_wil04885_jpg_437_nk2_0015_wil04885,
+        "437Nk20015Wil04885": _packages_nk_jaya_2_facility_nk2_0015_wil04885_jpg_437_nk2_0015_wil04885,
       },
       nk20016Wil04880Jpg: {
-        "438Nk20016Wil04880":
-          _packages_nk_jaya_2_facility_nk2_0016_wil04880_jpg_438_nk2_0016_wil04880,
+        "438Nk20016Wil04880": _packages_nk_jaya_2_facility_nk2_0016_wil04880_jpg_438_nk2_0016_wil04880,
       },
       nk20017Wil04877Jpg: {
-        "439Nk20017Wil04877":
-          _packages_nk_jaya_2_facility_nk2_0017_wil04877_jpg_439_nk2_0017_wil04877,
+        "439Nk20017Wil04877": _packages_nk_jaya_2_facility_nk2_0017_wil04877_jpg_439_nk2_0017_wil04877,
       },
     },
   },
@@ -4713,159 +3870,95 @@ export const PACKAGES = {
         "1129Dji0772": _packages_ocean_angel_boat_gallery_1129_dji_0772,
         "1130Dji0773": _packages_ocean_angel_boat_gallery_1130_dji_0773,
         "1131Dji0774": _packages_ocean_angel_boat_gallery_1131_dji_0774,
-        "1132Dji202401171733420134D":
-          _packages_ocean_angel_boat_gallery_1132_dji_20240117173342_0134_d,
-        "1133Dji202401171733480135D":
-          _packages_ocean_angel_boat_gallery_1133_dji_20240117173348_0135_d,
-        "1134Dji202401171742160159D":
-          _packages_ocean_angel_boat_gallery_1134_dji_20240117174216_0159_d,
-        "1135Dji202401171744090171D":
-          _packages_ocean_angel_boat_gallery_1135_dji_20240117174409_0171_d,
-        "1136Dji202401171744280176D":
-          _packages_ocean_angel_boat_gallery_1136_dji_20240117174428_0176_d,
-        "1137Dji202401171746060195D":
-          _packages_ocean_angel_boat_gallery_1137_dji_20240117174606_0195_d,
-        "1138Dji202401171746500202D":
-          _packages_ocean_angel_boat_gallery_1138_dji_20240117174650_0202_d,
-        "1139Dji202401171748370220D":
-          _packages_ocean_angel_boat_gallery_1139_dji_20240117174837_0220_d,
-        "1140Dji202401171748470221D":
-          _packages_ocean_angel_boat_gallery_1140_dji_20240117174847_0221_d,
+        "1132Dji202401171733420134D": _packages_ocean_angel_boat_gallery_1132_dji_20240117173342_0134_d,
+        "1133Dji202401171733480135D": _packages_ocean_angel_boat_gallery_1133_dji_20240117173348_0135_d,
+        "1134Dji202401171742160159D": _packages_ocean_angel_boat_gallery_1134_dji_20240117174216_0159_d,
+        "1135Dji202401171744090171D": _packages_ocean_angel_boat_gallery_1135_dji_20240117174409_0171_d,
+        "1136Dji202401171744280176D": _packages_ocean_angel_boat_gallery_1136_dji_20240117174428_0176_d,
+        "1137Dji202401171746060195D": _packages_ocean_angel_boat_gallery_1137_dji_20240117174606_0195_d,
+        "1138Dji202401171746500202D": _packages_ocean_angel_boat_gallery_1138_dji_20240117174650_0202_d,
+        "1139Dji202401171748370220D": _packages_ocean_angel_boat_gallery_1139_dji_20240117174837_0220_d,
+        "1140Dji202401171748470221D": _packages_ocean_angel_boat_gallery_1140_dji_20240117174847_0221_d,
       },
     },
     cabins: {
       "1VipFullOcean": {
-        "1141OceanAngelCabin11":
-          _packages_ocean_angel_cabins_1_vip_full_ocean_1141_ocean_angel_cabin_1_1,
-        "1142OceanAngelCabin12":
-          _packages_ocean_angel_cabins_1_vip_full_ocean_1142_ocean_angel_cabin_1_2,
-        "1143OceanAngelCabin13":
-          _packages_ocean_angel_cabins_1_vip_full_ocean_1143_ocean_angel_cabin_1_3,
-        "1144OceanAngel1":
-          _packages_ocean_angel_cabins_1_vip_full_ocean_1144_ocean_angel_1,
-        "1145OceanAngel2":
-          _packages_ocean_angel_cabins_1_vip_full_ocean_1145_ocean_angel_2,
-        "1146OceanAngel3":
-          _packages_ocean_angel_cabins_1_vip_full_ocean_1146_ocean_angel_3,
-        "1147OceanAngel4":
-          _packages_ocean_angel_cabins_1_vip_full_ocean_1147_ocean_angel_4,
-        "1148OceanAngel5":
-          _packages_ocean_angel_cabins_1_vip_full_ocean_1148_ocean_angel_5,
-        "1149OceanAngel6":
-          _packages_ocean_angel_cabins_1_vip_full_ocean_1149_ocean_angel_6,
+        "1141OceanAngelCabin11": _packages_ocean_angel_cabins_1_vip_full_ocean_1141_ocean_angel_cabin_1_1,
+        "1142OceanAngelCabin12": _packages_ocean_angel_cabins_1_vip_full_ocean_1142_ocean_angel_cabin_1_2,
+        "1143OceanAngelCabin13": _packages_ocean_angel_cabins_1_vip_full_ocean_1143_ocean_angel_cabin_1_3,
+        "1144OceanAngel1": _packages_ocean_angel_cabins_1_vip_full_ocean_1144_ocean_angel_1,
+        "1145OceanAngel2": _packages_ocean_angel_cabins_1_vip_full_ocean_1145_ocean_angel_2,
+        "1146OceanAngel3": _packages_ocean_angel_cabins_1_vip_full_ocean_1146_ocean_angel_3,
+        "1147OceanAngel4": _packages_ocean_angel_cabins_1_vip_full_ocean_1147_ocean_angel_4,
+        "1148OceanAngel5": _packages_ocean_angel_cabins_1_vip_full_ocean_1148_ocean_angel_5,
+        "1149OceanAngel6": _packages_ocean_angel_cabins_1_vip_full_ocean_1149_ocean_angel_6,
       },
       "2VipSeaview": {
-        "1150OceanAngel15":
-          _packages_ocean_angel_cabins_2_vip_seaview_1150_ocean_angel_15,
-        "1151OceanAngel16":
-          _packages_ocean_angel_cabins_2_vip_seaview_1151_ocean_angel_16,
-        "1152OceanAngel17":
-          _packages_ocean_angel_cabins_2_vip_seaview_1152_ocean_angel_17,
-        "1153OceanAngel18":
-          _packages_ocean_angel_cabins_2_vip_seaview_1153_ocean_angel_18,
-        "1154OceanAngel19":
-          _packages_ocean_angel_cabins_2_vip_seaview_1154_ocean_angel_19,
+        "1150OceanAngel15": _packages_ocean_angel_cabins_2_vip_seaview_1150_ocean_angel_15,
+        "1151OceanAngel16": _packages_ocean_angel_cabins_2_vip_seaview_1151_ocean_angel_16,
+        "1152OceanAngel17": _packages_ocean_angel_cabins_2_vip_seaview_1152_ocean_angel_17,
+        "1153OceanAngel18": _packages_ocean_angel_cabins_2_vip_seaview_1153_ocean_angel_18,
+        "1154OceanAngel19": _packages_ocean_angel_cabins_2_vip_seaview_1154_ocean_angel_19,
       },
       "3FamilyCabin": {
-        "1155OceanAngel11":
-          _packages_ocean_angel_cabins_3_family_cabin_1155_ocean_angel_11,
-        "1156OceanAngel12":
-          _packages_ocean_angel_cabins_3_family_cabin_1156_ocean_angel_12,
-        "1157OceanAngel13":
-          _packages_ocean_angel_cabins_3_family_cabin_1157_ocean_angel_13,
+        "1155OceanAngel11": _packages_ocean_angel_cabins_3_family_cabin_1155_ocean_angel_11,
+        "1156OceanAngel12": _packages_ocean_angel_cabins_3_family_cabin_1156_ocean_angel_12,
+        "1157OceanAngel13": _packages_ocean_angel_cabins_3_family_cabin_1157_ocean_angel_13,
       },
       "4SuperiorCabin": {
-        "1158OceanAngel22":
-          _packages_ocean_angel_cabins_4_superior_cabin_1158_ocean_angel_22,
-        "1159OceanAngel23":
-          _packages_ocean_angel_cabins_4_superior_cabin_1159_ocean_angel_23,
-        "1160OceanAngel24":
-          _packages_ocean_angel_cabins_4_superior_cabin_1160_ocean_angel_24,
-        "1161OceanAngel25":
-          _packages_ocean_angel_cabins_4_superior_cabin_1161_ocean_angel_25,
-        "1162OceanAngel26":
-          _packages_ocean_angel_cabins_4_superior_cabin_1162_ocean_angel_26,
+        "1158OceanAngel22": _packages_ocean_angel_cabins_4_superior_cabin_1158_ocean_angel_22,
+        "1159OceanAngel23": _packages_ocean_angel_cabins_4_superior_cabin_1159_ocean_angel_23,
+        "1160OceanAngel24": _packages_ocean_angel_cabins_4_superior_cabin_1160_ocean_angel_24,
+        "1161OceanAngel25": _packages_ocean_angel_cabins_4_superior_cabin_1161_ocean_angel_25,
+        "1162OceanAngel26": _packages_ocean_angel_cabins_4_superior_cabin_1162_ocean_angel_26,
       },
       "5AdditionalCabin": {
-        "1163OceanAngelCrewRoom1":
-          _packages_ocean_angel_cabins_5_additional_cabin_1163_ocean_angel_crew_room_1,
-        "1164OceanAngelCrewRoom2":
-          _packages_ocean_angel_cabins_5_additional_cabin_1164_ocean_angel_crew_room_2,
-        "1165OceanAngelCrewRoom3":
-          _packages_ocean_angel_cabins_5_additional_cabin_1165_ocean_angel_crew_room_3,
+        "1163OceanAngelCrewRoom1": _packages_ocean_angel_cabins_5_additional_cabin_1163_ocean_angel_crew_room_1,
+        "1164OceanAngelCrewRoom2": _packages_ocean_angel_cabins_5_additional_cabin_1164_ocean_angel_crew_room_2,
+        "1165OceanAngelCrewRoom3": _packages_ocean_angel_cabins_5_additional_cabin_1165_ocean_angel_crew_room_3,
       },
       diveDeck: {
-        "1166OceanAngelBackside1":
-          _packages_ocean_angel_cabins_dive_deck_1166_ocean_angel_backside_1,
-        "1167OceanAngelBackside2":
-          _packages_ocean_angel_cabins_dive_deck_1167_ocean_angel_backside_2,
-        "1168OceanAngelBackside3":
-          _packages_ocean_angel_cabins_dive_deck_1168_ocean_angel_backside_3,
-        "1169OceanAngelBackside4":
-          _packages_ocean_angel_cabins_dive_deck_1169_ocean_angel_backside_4,
-        "1170OceanAngelBackside5":
-          _packages_ocean_angel_cabins_dive_deck_1170_ocean_angel_backside_5,
+        "1166OceanAngelBackside1": _packages_ocean_angel_cabins_dive_deck_1166_ocean_angel_backside_1,
+        "1167OceanAngelBackside2": _packages_ocean_angel_cabins_dive_deck_1167_ocean_angel_backside_2,
+        "1168OceanAngelBackside3": _packages_ocean_angel_cabins_dive_deck_1168_ocean_angel_backside_3,
+        "1169OceanAngelBackside4": _packages_ocean_angel_cabins_dive_deck_1169_ocean_angel_backside_4,
+        "1170OceanAngelBackside5": _packages_ocean_angel_cabins_dive_deck_1170_ocean_angel_backside_5,
       },
       indoorArea: {
         "1171Gopr4764": _packages_ocean_angel_cabins_indoor_area_1171_gopr4764,
-        "1172OceanAngel10":
-          _packages_ocean_angel_cabins_indoor_area_1172_ocean_angel_10,
-        "1173OceanAngel14":
-          _packages_ocean_angel_cabins_indoor_area_1173_ocean_angel_14,
-        "1174OceanAngel20":
-          _packages_ocean_angel_cabins_indoor_area_1174_ocean_angel_20,
-        "1175OceanAngel21":
-          _packages_ocean_angel_cabins_indoor_area_1175_ocean_angel_21,
-        "1176OceanAngel7":
-          _packages_ocean_angel_cabins_indoor_area_1176_ocean_angel_7,
-        "1177OceanAngel8":
-          _packages_ocean_angel_cabins_indoor_area_1177_ocean_angel_8,
-        "1178OceanAngel9":
-          _packages_ocean_angel_cabins_indoor_area_1178_ocean_angel_9,
+        "1172OceanAngel10": _packages_ocean_angel_cabins_indoor_area_1172_ocean_angel_10,
+        "1173OceanAngel14": _packages_ocean_angel_cabins_indoor_area_1173_ocean_angel_14,
+        "1174OceanAngel20": _packages_ocean_angel_cabins_indoor_area_1174_ocean_angel_20,
+        "1175OceanAngel21": _packages_ocean_angel_cabins_indoor_area_1175_ocean_angel_21,
+        "1176OceanAngel7": _packages_ocean_angel_cabins_indoor_area_1176_ocean_angel_7,
+        "1177OceanAngel8": _packages_ocean_angel_cabins_indoor_area_1177_ocean_angel_8,
+        "1178OceanAngel9": _packages_ocean_angel_cabins_indoor_area_1178_ocean_angel_9,
       },
       indoorRestaurant: {
-        "1179OceanAngelDiningArea1":
-          _packages_ocean_angel_cabins_indoor_restaurant_1179_ocean_angel_dining_area_1,
-        "1180OceanAngelDiningArea2":
-          _packages_ocean_angel_cabins_indoor_restaurant_1180_ocean_angel_dining_area_2,
-        "1181OceanAngelDiningArea3":
-          _packages_ocean_angel_cabins_indoor_restaurant_1181_ocean_angel_dining_area_3,
-        "1182OceanAngelDiningArea4":
-          _packages_ocean_angel_cabins_indoor_restaurant_1182_ocean_angel_dining_area_4,
-        "1183OceanAngelDiningArea5":
-          _packages_ocean_angel_cabins_indoor_restaurant_1183_ocean_angel_dining_area_5,
-        "1184OceanAngelDiningArea6":
-          _packages_ocean_angel_cabins_indoor_restaurant_1184_ocean_angel_dining_area_6,
-        "1185OceanAngelDiningArea7":
-          _packages_ocean_angel_cabins_indoor_restaurant_1185_ocean_angel_dining_area_7,
+        "1179OceanAngelDiningArea1": _packages_ocean_angel_cabins_indoor_restaurant_1179_ocean_angel_dining_area_1,
+        "1180OceanAngelDiningArea2": _packages_ocean_angel_cabins_indoor_restaurant_1180_ocean_angel_dining_area_2,
+        "1181OceanAngelDiningArea3": _packages_ocean_angel_cabins_indoor_restaurant_1181_ocean_angel_dining_area_3,
+        "1182OceanAngelDiningArea4": _packages_ocean_angel_cabins_indoor_restaurant_1182_ocean_angel_dining_area_4,
+        "1183OceanAngelDiningArea5": _packages_ocean_angel_cabins_indoor_restaurant_1183_ocean_angel_dining_area_5,
+        "1184OceanAngelDiningArea6": _packages_ocean_angel_cabins_indoor_restaurant_1184_ocean_angel_dining_area_6,
+        "1185OceanAngelDiningArea7": _packages_ocean_angel_cabins_indoor_restaurant_1185_ocean_angel_dining_area_7,
       },
       outdoorArea: {
         "1186Gopr4765": _packages_ocean_angel_cabins_outdoor_area_1186_gopr4765,
         "1187Gopr4766": _packages_ocean_angel_cabins_outdoor_area_1187_gopr4766,
         "1188Gopr4769": _packages_ocean_angel_cabins_outdoor_area_1188_gopr4769,
         "1189Gopr4770": _packages_ocean_angel_cabins_outdoor_area_1189_gopr4770,
-        "1190OceanAngelSundeckAndRelaxArea1":
-          _packages_ocean_angel_cabins_outdoor_area_1190_ocean_angel_sundeck_and_relax_area_1,
-        "1191OceanAngelSundeckAndRelaxArea10":
-          _packages_ocean_angel_cabins_outdoor_area_1191_ocean_angel_sundeck_and_relax_area_10,
-        "1192OceanAngelSundeckAndRelaxArea11":
-          _packages_ocean_angel_cabins_outdoor_area_1192_ocean_angel_sundeck_and_relax_area_11,
-        "1193OceanAngelSundeckAndRelaxArea2":
-          _packages_ocean_angel_cabins_outdoor_area_1193_ocean_angel_sundeck_and_relax_area_2,
-        "1194OceanAngelSundeckAndRelaxArea3":
-          _packages_ocean_angel_cabins_outdoor_area_1194_ocean_angel_sundeck_and_relax_area_3,
-        "1195OceanAngelSundeckAndRelaxArea4":
-          _packages_ocean_angel_cabins_outdoor_area_1195_ocean_angel_sundeck_and_relax_area_4,
-        "1196OceanAngelSundeckAndRelaxArea5":
-          _packages_ocean_angel_cabins_outdoor_area_1196_ocean_angel_sundeck_and_relax_area_5,
-        "1197OceanAngelSundeckAndRelaxArea6":
-          _packages_ocean_angel_cabins_outdoor_area_1197_ocean_angel_sundeck_and_relax_area_6,
-        "1198OceanAngelSundeckAndRelaxArea7":
-          _packages_ocean_angel_cabins_outdoor_area_1198_ocean_angel_sundeck_and_relax_area_7,
-        "1199OceanAngelSundeckAndRelaxArea8":
-          _packages_ocean_angel_cabins_outdoor_area_1199_ocean_angel_sundeck_and_relax_area_8,
-        "1200OceanAngelSundeckAndRelaxArea9":
-          _packages_ocean_angel_cabins_outdoor_area_1200_ocean_angel_sundeck_and_relax_area_9,
+        "1190OceanAngelSundeckAndRelaxArea1": _packages_ocean_angel_cabins_outdoor_area_1190_ocean_angel_sundeck_and_relax_area_1,
+        "1191OceanAngelSundeckAndRelaxArea10": _packages_ocean_angel_cabins_outdoor_area_1191_ocean_angel_sundeck_and_relax_area_10,
+        "1192OceanAngelSundeckAndRelaxArea11": _packages_ocean_angel_cabins_outdoor_area_1192_ocean_angel_sundeck_and_relax_area_11,
+        "1193OceanAngelSundeckAndRelaxArea2": _packages_ocean_angel_cabins_outdoor_area_1193_ocean_angel_sundeck_and_relax_area_2,
+        "1194OceanAngelSundeckAndRelaxArea3": _packages_ocean_angel_cabins_outdoor_area_1194_ocean_angel_sundeck_and_relax_area_3,
+        "1195OceanAngelSundeckAndRelaxArea4": _packages_ocean_angel_cabins_outdoor_area_1195_ocean_angel_sundeck_and_relax_area_4,
+        "1196OceanAngelSundeckAndRelaxArea5": _packages_ocean_angel_cabins_outdoor_area_1196_ocean_angel_sundeck_and_relax_area_5,
+        "1197OceanAngelSundeckAndRelaxArea6": _packages_ocean_angel_cabins_outdoor_area_1197_ocean_angel_sundeck_and_relax_area_6,
+        "1198OceanAngelSundeckAndRelaxArea7": _packages_ocean_angel_cabins_outdoor_area_1198_ocean_angel_sundeck_and_relax_area_7,
+        "1199OceanAngelSundeckAndRelaxArea8": _packages_ocean_angel_cabins_outdoor_area_1199_ocean_angel_sundeck_and_relax_area_8,
+        "1200OceanAngelSundeckAndRelaxArea9": _packages_ocean_angel_cabins_outdoor_area_1200_ocean_angel_sundeck_and_relax_area_9,
       },
     },
   },
@@ -4911,28 +4004,18 @@ export const PACKAGES = {
         "1233Srp5155": _packages_ocean_pro_cabins_cabin_1233_srp_5155,
       },
       diningRoomIndoor: {
-        "1234Srp5160":
-          _packages_ocean_pro_cabins_dining_room_indoor_1234_srp_5160,
-        "1235Srp5166":
-          _packages_ocean_pro_cabins_dining_room_indoor_1235_srp_5166,
-        "1236Srp5174":
-          _packages_ocean_pro_cabins_dining_room_indoor_1236_srp_5174,
-        "1237Srp5177":
-          _packages_ocean_pro_cabins_dining_room_indoor_1237_srp_5177,
+        "1234Srp5160": _packages_ocean_pro_cabins_dining_room_indoor_1234_srp_5160,
+        "1235Srp5166": _packages_ocean_pro_cabins_dining_room_indoor_1235_srp_5166,
+        "1236Srp5174": _packages_ocean_pro_cabins_dining_room_indoor_1236_srp_5174,
+        "1237Srp5177": _packages_ocean_pro_cabins_dining_room_indoor_1237_srp_5177,
       },
       diningRoomOutdoor: {
-        "1238Srp5218":
-          _packages_ocean_pro_cabins_dining_room_outdoor_1238_srp_5218,
-        "1239Srp5220":
-          _packages_ocean_pro_cabins_dining_room_outdoor_1239_srp_5220,
-        "1240Srp5223":
-          _packages_ocean_pro_cabins_dining_room_outdoor_1240_srp_5223,
-        "1241Srp5433":
-          _packages_ocean_pro_cabins_dining_room_outdoor_1241_srp_5433,
-        "1242Srp5449":
-          _packages_ocean_pro_cabins_dining_room_outdoor_1242_srp_5449,
-        "1243Srp5479":
-          _packages_ocean_pro_cabins_dining_room_outdoor_1243_srp_5479,
+        "1238Srp5218": _packages_ocean_pro_cabins_dining_room_outdoor_1238_srp_5218,
+        "1239Srp5220": _packages_ocean_pro_cabins_dining_room_outdoor_1239_srp_5220,
+        "1240Srp5223": _packages_ocean_pro_cabins_dining_room_outdoor_1240_srp_5223,
+        "1241Srp5433": _packages_ocean_pro_cabins_dining_room_outdoor_1241_srp_5433,
+        "1242Srp5449": _packages_ocean_pro_cabins_dining_room_outdoor_1242_srp_5449,
+        "1243Srp5479": _packages_ocean_pro_cabins_dining_room_outdoor_1243_srp_5479,
       },
       etc: {
         "1244As05136": _packages_ocean_pro_cabins_etc_1244_as_05136,
@@ -5057,8 +4140,7 @@ export const PACKAGES = {
         "1297Srp5409": _packages_ocean_pro_facility_srp_5409_jpg_1297_srp_5409,
       },
       srp54391Jpg: {
-        "1298Srp54391":
-          _packages_ocean_pro_facility_srp_5439_1_jpg_1298_srp_5439_1,
+        "1298Srp54391": _packages_ocean_pro_facility_srp_5439_1_jpg_1298_srp_5439_1,
       },
       srp5439Jpg: {
         "1299Srp5439": _packages_ocean_pro_facility_srp_5439_jpg_1299_srp_5439,
@@ -5104,126 +4186,80 @@ export const PACKAGES = {
     },
     cabins: {
       "1MasterOceanQueenBedPrivateBathroom": {
-        "1348Wil05688Hdr":
-          _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1348_wil05688_hdr,
-        "1349Wil05691Hdr":
-          _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1349_wil05691_hdr,
-        "1350Wil05694Hdr":
-          _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1350_wil05694_hdr,
-        "1351Wil05697Hdr":
-          _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1351_wil05697_hdr,
-        "1352Wil05700Hdr":
-          _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1352_wil05700_hdr,
-        "1353Wil05703Hdr":
-          _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1353_wil05703_hdr,
-        "1354Wil05706Hdr":
-          _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1354_wil05706_hdr,
+        "1348Wil05688Hdr": _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1348_wil05688_hdr,
+        "1349Wil05691Hdr": _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1349_wil05691_hdr,
+        "1350Wil05694Hdr": _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1350_wil05694_hdr,
+        "1351Wil05697Hdr": _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1351_wil05697_hdr,
+        "1352Wil05700Hdr": _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1352_wil05700_hdr,
+        "1353Wil05703Hdr": _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1353_wil05703_hdr,
+        "1354Wil05706Hdr": _packages_pesonabajo_cabins_1_master_ocean_queen_bed_private_bathroom_1354_wil05706_hdr,
       },
       "23DeluxeDoubleQueenBedPrivateBathroom": {
-        "1355Wil05724Hdr":
-          _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1355_wil05724_hdr,
-        "1356Wil05727Hdr":
-          _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1356_wil05727_hdr,
-        "1357Wil05730Hdr":
-          _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1357_wil05730_hdr,
-        "1358Wil05733Hdr":
-          _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1358_wil05733_hdr,
-        "1359Wil05737Hdr":
-          _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1359_wil05737_hdr,
-        "1360Wil05742Hdr":
-          _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1360_wil05742_hdr,
-        "1361Wil05745Hdr":
-          _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1361_wil05745_hdr,
-        "1362Wil05750Hdr":
-          _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1362_wil05750_hdr,
+        "1355Wil05724Hdr": _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1355_wil05724_hdr,
+        "1356Wil05727Hdr": _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1356_wil05727_hdr,
+        "1357Wil05730Hdr": _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1357_wil05730_hdr,
+        "1358Wil05733Hdr": _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1358_wil05733_hdr,
+        "1359Wil05737Hdr": _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1359_wil05737_hdr,
+        "1360Wil05742Hdr": _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1360_wil05742_hdr,
+        "1361Wil05745Hdr": _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1361_wil05745_hdr,
+        "1362Wil05750Hdr": _packages_pesonabajo_cabins_2_3_deluxe_double_queen_bed_private_bathroom_1362_wil05750_hdr,
       },
       "4PrivateDoubleDoubleBed": {
-        "1363Wil05757Hdr":
-          _packages_pesonabajo_cabins_4_private_double_double_bed_1363_wil05757_hdr,
-        "1364Wil05760Hdr":
-          _packages_pesonabajo_cabins_4_private_double_double_bed_1364_wil05760_hdr,
-        "1365Wil05763Hdr":
-          _packages_pesonabajo_cabins_4_private_double_double_bed_1365_wil05763_hdr,
+        "1363Wil05757Hdr": _packages_pesonabajo_cabins_4_private_double_double_bed_1363_wil05757_hdr,
+        "1364Wil05760Hdr": _packages_pesonabajo_cabins_4_private_double_double_bed_1364_wil05760_hdr,
+        "1365Wil05763Hdr": _packages_pesonabajo_cabins_4_private_double_double_bed_1365_wil05763_hdr,
       },
       "5ShareCabin4xSingleBunkBed": {
-        "1366Wil05766Hdr":
-          _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1366_wil05766_hdr,
-        "1367Wil05769Hdr":
-          _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1367_wil05769_hdr,
-        "1368Wil05772Hdr":
-          _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1368_wil05772_hdr,
-        "1369Wil05775Hdr":
-          _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1369_wil05775_hdr,
-        "1370Wil05778Hdr":
-          _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1370_wil05778_hdr,
-        "1371Wil05781Hdr":
-          _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1371_wil05781_hdr,
-        "1372Wil05784Hdr":
-          _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1372_wil05784_hdr,
-        "1373Wil05799Hdr":
-          _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1373_wil05799_hdr,
-        "1374Wil05802Hdr":
-          _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1374_wil05802_hdr,
+        "1366Wil05766Hdr": _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1366_wil05766_hdr,
+        "1367Wil05769Hdr": _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1367_wil05769_hdr,
+        "1368Wil05772Hdr": _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1368_wil05772_hdr,
+        "1369Wil05775Hdr": _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1369_wil05775_hdr,
+        "1370Wil05778Hdr": _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1370_wil05778_hdr,
+        "1371Wil05781Hdr": _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1371_wil05781_hdr,
+        "1372Wil05784Hdr": _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1372_wil05784_hdr,
+        "1373Wil05799Hdr": _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1373_wil05799_hdr,
+        "1374Wil05802Hdr": _packages_pesonabajo_cabins_5_share_cabin_4x_single_bunk_bed_1374_wil05802_hdr,
       },
       "6PrivateTripleCabinDoubleBedSingleBed": {
-        "1375Wil05787Hdr":
-          _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1375_wil05787_hdr,
-        "1376Wil05790Hdr":
-          _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1376_wil05790_hdr,
-        "1377Wil05793Hdr":
-          _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1377_wil05793_hdr,
-        "1378Wil05796Hdr":
-          _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1378_wil05796_hdr,
-        "1379Wil05799Hdr":
-          _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1379_wil05799_hdr,
-        "1380Wil05802Hdr":
-          _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1380_wil05802_hdr,
+        "1375Wil05787Hdr": _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1375_wil05787_hdr,
+        "1376Wil05790Hdr": _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1376_wil05790_hdr,
+        "1377Wil05793Hdr": _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1377_wil05793_hdr,
+        "1378Wil05796Hdr": _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1378_wil05796_hdr,
+        "1379Wil05799Hdr": _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1379_wil05799_hdr,
+        "1380Wil05802Hdr": _packages_pesonabajo_cabins_6_private_triple_cabin_double_bed_single_bed_1380_wil05802_hdr,
       },
       diningRoom: {
-        "1381Wil05673Hdr":
-          _packages_pesonabajo_cabins_dining_room_1381_wil05673_hdr,
-        "1382Wil05676Hdr":
-          _packages_pesonabajo_cabins_dining_room_1382_wil05676_hdr,
-        "1383Wil05679Hdr":
-          _packages_pesonabajo_cabins_dining_room_1383_wil05679_hdr,
-        "1384Wil05682Hdr":
-          _packages_pesonabajo_cabins_dining_room_1384_wil05682_hdr,
-        "1385Wil05685Hdr":
-          _packages_pesonabajo_cabins_dining_room_1385_wil05685_hdr,
+        "1381Wil05673Hdr": _packages_pesonabajo_cabins_dining_room_1381_wil05673_hdr,
+        "1382Wil05676Hdr": _packages_pesonabajo_cabins_dining_room_1382_wil05676_hdr,
+        "1383Wil05679Hdr": _packages_pesonabajo_cabins_dining_room_1383_wil05679_hdr,
+        "1384Wil05682Hdr": _packages_pesonabajo_cabins_dining_room_1384_wil05682_hdr,
+        "1385Wil05685Hdr": _packages_pesonabajo_cabins_dining_room_1385_wil05685_hdr,
       },
     },
     facility: {
       wil05709HdrJpg: {
-        "1386Wil05709Hdr":
-          _packages_pesonabajo_facility_wil05709_hdr_jpg_1386_wil05709_hdr,
+        "1386Wil05709Hdr": _packages_pesonabajo_facility_wil05709_hdr_jpg_1386_wil05709_hdr,
       },
       wil05712HdrJpg: {
-        "1387Wil05712Hdr":
-          _packages_pesonabajo_facility_wil05712_hdr_jpg_1387_wil05712_hdr,
+        "1387Wil05712Hdr": _packages_pesonabajo_facility_wil05712_hdr_jpg_1387_wil05712_hdr,
       },
       wil05715HdrJpg: {
-        "1388Wil05715Hdr":
-          _packages_pesonabajo_facility_wil05715_hdr_jpg_1388_wil05715_hdr,
+        "1388Wil05715Hdr": _packages_pesonabajo_facility_wil05715_hdr_jpg_1388_wil05715_hdr,
       },
       wil05718HdrJpg: {
-        "1389Wil05718Hdr":
-          _packages_pesonabajo_facility_wil05718_hdr_jpg_1389_wil05718_hdr,
+        "1389Wil05718Hdr": _packages_pesonabajo_facility_wil05718_hdr_jpg_1389_wil05718_hdr,
       },
       wil05721HdrJpg: {
-        "1390Wil05721Hdr":
-          _packages_pesonabajo_facility_wil05721_hdr_jpg_1390_wil05721_hdr,
+        "1390Wil05721Hdr": _packages_pesonabajo_facility_wil05721_hdr_jpg_1390_wil05721_hdr,
       },
       wil05805HdrJpg: {
-        "1391Wil05805Hdr":
-          _packages_pesonabajo_facility_wil05805_hdr_jpg_1391_wil05805_hdr,
+        "1391Wil05805Hdr": _packages_pesonabajo_facility_wil05805_hdr_jpg_1391_wil05805_hdr,
       },
       wil05816HdrJpg: {
-        "1392Wil05816Hdr":
-          _packages_pesonabajo_facility_wil05816_hdr_jpg_1392_wil05816_hdr,
+        "1392Wil05816Hdr": _packages_pesonabajo_facility_wil05816_hdr_jpg_1392_wil05816_hdr,
       },
       wil05819HdrJpg: {
-        "1393Wil05819Hdr":
-          _packages_pesonabajo_facility_wil05819_hdr_jpg_1393_wil05819_hdr,
+        "1393Wil05819Hdr": _packages_pesonabajo_facility_wil05819_hdr_jpg_1393_wil05819_hdr,
       },
     },
   },
@@ -5254,67 +4290,43 @@ export const PACKAGES = {
     cabins: {
       deluxeMainDeck: {
         "1413Dji0065": _packages_yukai_cabins_deluxe_main_deck_1413_dji_0065,
-        "1414YukaiJuli2025Copy1":
-          _packages_yukai_cabins_deluxe_main_deck_1414_yukai_juli2025_copy1,
-        "1415YukaiJuli20250004YukaiDelucR11":
-          _packages_yukai_cabins_deluxe_main_deck_1415_yukai_juli2025_0004_yukai_deluc_r_11,
-        "1416YukaiJuli20250004YukaiDeluceR11":
-          _packages_yukai_cabins_deluxe_main_deck_1416_yukai_juli2025_0004_yukai_deluce_r_11,
+        "1414YukaiJuli2025Copy1": _packages_yukai_cabins_deluxe_main_deck_1414_yukai_juli2025_copy1,
+        "1415YukaiJuli20250004YukaiDelucR11": _packages_yukai_cabins_deluxe_main_deck_1415_yukai_juli2025_0004_yukai_deluc_r_11,
+        "1416YukaiJuli20250004YukaiDeluceR11": _packages_yukai_cabins_deluxe_main_deck_1416_yukai_juli2025_0004_yukai_deluce_r_11,
       },
       deluxeUpperDeck: {
-        "1417Dji202507241537420054DWil":
-          _packages_yukai_cabins_deluxe_upper_deck_1417_dji_20250724153742_0054_d_wil,
-        "1418Dji202507241538090056DWil":
-          _packages_yukai_cabins_deluxe_upper_deck_1418_dji_20250724153809_0056_d_wil,
-        "1419YukaiJuli20250000YukaiDelucL2":
-          _packages_yukai_cabins_deluxe_upper_deck_1419_yukai_juli2025_0000_yukai_deluc_l_2,
-        "1420YukaiJuli20250000YukaiDelucL3":
-          _packages_yukai_cabins_deluxe_upper_deck_1420_yukai_juli2025_0000_yukai_deluc_l_3,
-        "1421YukaiJuli20250001YukaiDelucL1":
-          _packages_yukai_cabins_deluxe_upper_deck_1421_yukai_juli2025_0001_yukai_deluc_l_1,
-        "1422YukaiJuli20250002YukaiDelucR3":
-          _packages_yukai_cabins_deluxe_upper_deck_1422_yukai_juli2025_0002_yukai_deluc_r_3,
-        "1423YukaiJuli20250002YukaiDelucR4":
-          _packages_yukai_cabins_deluxe_upper_deck_1423_yukai_juli2025_0002_yukai_deluc_r_4,
-        "1424YukaiJuli20250003YukaiDelucR2":
-          _packages_yukai_cabins_deluxe_upper_deck_1424_yukai_juli2025_0003_yukai_deluc_r_2,
-        "1425YukaiJuli20250004YukaiDelucR1":
-          _packages_yukai_cabins_deluxe_upper_deck_1425_yukai_juli2025_0004_yukai_deluc_r_1,
+        "1417Dji202507241537420054DWil": _packages_yukai_cabins_deluxe_upper_deck_1417_dji_20250724153742_0054_d_wil,
+        "1418Dji202507241538090056DWil": _packages_yukai_cabins_deluxe_upper_deck_1418_dji_20250724153809_0056_d_wil,
+        "1419YukaiJuli20250000YukaiDelucL2": _packages_yukai_cabins_deluxe_upper_deck_1419_yukai_juli2025_0000_yukai_deluc_l_2,
+        "1420YukaiJuli20250000YukaiDelucL3": _packages_yukai_cabins_deluxe_upper_deck_1420_yukai_juli2025_0000_yukai_deluc_l_3,
+        "1421YukaiJuli20250001YukaiDelucL1": _packages_yukai_cabins_deluxe_upper_deck_1421_yukai_juli2025_0001_yukai_deluc_l_1,
+        "1422YukaiJuli20250002YukaiDelucR3": _packages_yukai_cabins_deluxe_upper_deck_1422_yukai_juli2025_0002_yukai_deluc_r_3,
+        "1423YukaiJuli20250002YukaiDelucR4": _packages_yukai_cabins_deluxe_upper_deck_1423_yukai_juli2025_0002_yukai_deluc_r_4,
+        "1424YukaiJuli20250003YukaiDelucR2": _packages_yukai_cabins_deluxe_upper_deck_1424_yukai_juli2025_0003_yukai_deluc_r_2,
+        "1425YukaiJuli20250004YukaiDelucR1": _packages_yukai_cabins_deluxe_upper_deck_1425_yukai_juli2025_0004_yukai_deluc_r_1,
       },
       publicArea: {
         "1426Dji0020Srt": _packages_yukai_cabins_public_area_1426_dji_0020_srt,
-        "1427Dji202507241538490058DWil":
-          _packages_yukai_cabins_public_area_1427_dji_20250724153849_0058_d_wil,
-        "1428Dji202507241539050060DWil":
-          _packages_yukai_cabins_public_area_1428_dji_20250724153905_0060_d_wil,
-        "1429Dji202507241539210063DWil":
-          _packages_yukai_cabins_public_area_1429_dji_20250724153921_0063_d_wil,
-        "1430Dji202507241539490064DWil":
-          _packages_yukai_cabins_public_area_1430_dji_20250724153949_0064_d_wil,
-        "1431Dji202507241539590065DWil":
-          _packages_yukai_cabins_public_area_1431_dji_20250724153959_0065_d_wil,
-        "1432Dji202507241540070066DWil":
-          _packages_yukai_cabins_public_area_1432_dji_20250724154007_0066_d_wil,
-        "1433Dji202507241543570067DWil":
-          _packages_yukai_cabins_public_area_1433_dji_20250724154357_0067_d_wil,
-        "1434Dji202507241544130069DWil":
-          _packages_yukai_cabins_public_area_1434_dji_20250724154413_0069_d_wil,
+        "1427Dji202507241538490058DWil": _packages_yukai_cabins_public_area_1427_dji_20250724153849_0058_d_wil,
+        "1428Dji202507241539050060DWil": _packages_yukai_cabins_public_area_1428_dji_20250724153905_0060_d_wil,
+        "1429Dji202507241539210063DWil": _packages_yukai_cabins_public_area_1429_dji_20250724153921_0063_d_wil,
+        "1430Dji202507241539490064DWil": _packages_yukai_cabins_public_area_1430_dji_20250724153949_0064_d_wil,
+        "1431Dji202507241539590065DWil": _packages_yukai_cabins_public_area_1431_dji_20250724153959_0065_d_wil,
+        "1432Dji202507241540070066DWil": _packages_yukai_cabins_public_area_1432_dji_20250724154007_0066_d_wil,
+        "1433Dji202507241543570067DWil": _packages_yukai_cabins_public_area_1433_dji_20250724154357_0067_d_wil,
+        "1434Dji202507241544130069DWil": _packages_yukai_cabins_public_area_1434_dji_20250724154413_0069_d_wil,
         "1435Sve00292": _packages_yukai_cabins_public_area_1435_sve00292,
         "1436Sve00295": _packages_yukai_cabins_public_area_1436_sve00295,
         "1437Sve00296": _packages_yukai_cabins_public_area_1437_sve00296,
-        "1438YukaiJuli2025Copy":
-          _packages_yukai_cabins_public_area_1438_yukai_juli2025_copy,
-        "1439YukaiJuli20250003YukaiDeluaadwscR2":
-          _packages_yukai_cabins_public_area_1439_yukai_juli2025_0003_yukai_deluaadwsc_r_2,
-        "1440YukaiJuli20250003YukaiDeluascR2":
-          _packages_yukai_cabins_public_area_1440_yukai_juli2025_0003_yukai_deluasc_r_2,
+        "1438YukaiJuli2025Copy": _packages_yukai_cabins_public_area_1438_yukai_juli2025_copy,
+        "1439YukaiJuli20250003YukaiDeluaadwscR2": _packages_yukai_cabins_public_area_1439_yukai_juli2025_0003_yukai_deluaadwsc_r_2,
+        "1440YukaiJuli20250003YukaiDeluascR2": _packages_yukai_cabins_public_area_1440_yukai_juli2025_0003_yukai_deluasc_r_2,
       },
       signature: {
         "1441Asfa": _packages_yukai_cabins_signature_1441_asfa,
         "1442Awe": _packages_yukai_cabins_signature_1442_awe,
         "1443Ffff": _packages_yukai_cabins_signature_1443_ffff,
-        "1444YukaiJuli202adw5Copy":
-          _packages_yukai_cabins_signature_1444_yukai_juli202adw5_copy,
+        "1444YukaiJuli202adw5Copy": _packages_yukai_cabins_signature_1444_yukai_juli202adw5_copy,
       },
     },
   },
@@ -5355,139 +4367,81 @@ export const PACKAGES = {
     },
     cabins: {
       "1RoyalSuiteCabin": {
-        "1475YumanaRoyalsuiteCabin1":
-          _packages_yumana_cabins_1_royal_suite_cabin_1475_yumana_royalsuite_cabin_1,
-        "1476YumanaRoyalsuiteCabin10":
-          _packages_yumana_cabins_1_royal_suite_cabin_1476_yumana_royalsuite_cabin_10,
-        "1477YumanaRoyalsuiteCabin11":
-          _packages_yumana_cabins_1_royal_suite_cabin_1477_yumana_royalsuite_cabin_11,
-        "1478YumanaRoyalsuiteCabin12":
-          _packages_yumana_cabins_1_royal_suite_cabin_1478_yumana_royalsuite_cabin_12,
-        "1479YumanaRoyalsuiteCabin13":
-          _packages_yumana_cabins_1_royal_suite_cabin_1479_yumana_royalsuite_cabin_13,
-        "1480YumanaRoyalsuiteCabin14":
-          _packages_yumana_cabins_1_royal_suite_cabin_1480_yumana_royalsuite_cabin_14,
-        "1481YumanaRoyalsuiteCabin2":
-          _packages_yumana_cabins_1_royal_suite_cabin_1481_yumana_royalsuite_cabin_2,
-        "1482YumanaRoyalsuiteCabin3":
-          _packages_yumana_cabins_1_royal_suite_cabin_1482_yumana_royalsuite_cabin_3,
-        "1483YumanaRoyalsuiteCabin6":
-          _packages_yumana_cabins_1_royal_suite_cabin_1483_yumana_royalsuite_cabin_6,
-        "1484YumanaRoyalsuiteCabin7":
-          _packages_yumana_cabins_1_royal_suite_cabin_1484_yumana_royalsuite_cabin_7,
-        "1485YumanaRoyalsuiteCabin8":
-          _packages_yumana_cabins_1_royal_suite_cabin_1485_yumana_royalsuite_cabin_8,
-        "1486YumanaRoyalsuiteCabin9":
-          _packages_yumana_cabins_1_royal_suite_cabin_1486_yumana_royalsuite_cabin_9,
+        "1475YumanaRoyalsuiteCabin1": _packages_yumana_cabins_1_royal_suite_cabin_1475_yumana_royalsuite_cabin_1,
+        "1476YumanaRoyalsuiteCabin10": _packages_yumana_cabins_1_royal_suite_cabin_1476_yumana_royalsuite_cabin_10,
+        "1477YumanaRoyalsuiteCabin11": _packages_yumana_cabins_1_royal_suite_cabin_1477_yumana_royalsuite_cabin_11,
+        "1478YumanaRoyalsuiteCabin12": _packages_yumana_cabins_1_royal_suite_cabin_1478_yumana_royalsuite_cabin_12,
+        "1479YumanaRoyalsuiteCabin13": _packages_yumana_cabins_1_royal_suite_cabin_1479_yumana_royalsuite_cabin_13,
+        "1480YumanaRoyalsuiteCabin14": _packages_yumana_cabins_1_royal_suite_cabin_1480_yumana_royalsuite_cabin_14,
+        "1481YumanaRoyalsuiteCabin2": _packages_yumana_cabins_1_royal_suite_cabin_1481_yumana_royalsuite_cabin_2,
+        "1482YumanaRoyalsuiteCabin3": _packages_yumana_cabins_1_royal_suite_cabin_1482_yumana_royalsuite_cabin_3,
+        "1483YumanaRoyalsuiteCabin6": _packages_yumana_cabins_1_royal_suite_cabin_1483_yumana_royalsuite_cabin_6,
+        "1484YumanaRoyalsuiteCabin7": _packages_yumana_cabins_1_royal_suite_cabin_1484_yumana_royalsuite_cabin_7,
+        "1485YumanaRoyalsuiteCabin8": _packages_yumana_cabins_1_royal_suite_cabin_1485_yumana_royalsuite_cabin_8,
+        "1486YumanaRoyalsuiteCabin9": _packages_yumana_cabins_1_royal_suite_cabin_1486_yumana_royalsuite_cabin_9,
       },
       "21SingatureCabinMainDeck": {
-        "1487YumanaSignCabinMd1":
-          _packages_yumana_cabins_2_1_singature_cabin_main_deck_1487_yumana_sign_cabin_md_1,
-        "1488YumanaSignCabinMd2":
-          _packages_yumana_cabins_2_1_singature_cabin_main_deck_1488_yumana_sign_cabin_md_2,
-        "1489YumanaSignCabinMd3":
-          _packages_yumana_cabins_2_1_singature_cabin_main_deck_1489_yumana_sign_cabin_md_3,
-        "1490YumanaSignCabinMd4":
-          _packages_yumana_cabins_2_1_singature_cabin_main_deck_1490_yumana_sign_cabin_md_4,
-        "1491YumanaSignCabinMd5":
-          _packages_yumana_cabins_2_1_singature_cabin_main_deck_1491_yumana_sign_cabin_md_5,
-        "1492YumanaSignCabinMd6":
-          _packages_yumana_cabins_2_1_singature_cabin_main_deck_1492_yumana_sign_cabin_md_6,
+        "1487YumanaSignCabinMd1": _packages_yumana_cabins_2_1_singature_cabin_main_deck_1487_yumana_sign_cabin_md_1,
+        "1488YumanaSignCabinMd2": _packages_yumana_cabins_2_1_singature_cabin_main_deck_1488_yumana_sign_cabin_md_2,
+        "1489YumanaSignCabinMd3": _packages_yumana_cabins_2_1_singature_cabin_main_deck_1489_yumana_sign_cabin_md_3,
+        "1490YumanaSignCabinMd4": _packages_yumana_cabins_2_1_singature_cabin_main_deck_1490_yumana_sign_cabin_md_4,
+        "1491YumanaSignCabinMd5": _packages_yumana_cabins_2_1_singature_cabin_main_deck_1491_yumana_sign_cabin_md_5,
+        "1492YumanaSignCabinMd6": _packages_yumana_cabins_2_1_singature_cabin_main_deck_1492_yumana_sign_cabin_md_6,
       },
       "2SignatureCabinUpperDeck": {
-        "1493YumanaSignCabinUd1":
-          _packages_yumana_cabins_2_signature_cabin_upper_deck_1493_yumana_sign_cabin_ud_1,
-        "1494YumanaSignCabinUd2":
-          _packages_yumana_cabins_2_signature_cabin_upper_deck_1494_yumana_sign_cabin_ud_2,
-        "1495YumanaSignCabinUd3":
-          _packages_yumana_cabins_2_signature_cabin_upper_deck_1495_yumana_sign_cabin_ud_3,
-        "1496YumanaSignCabinUd4":
-          _packages_yumana_cabins_2_signature_cabin_upper_deck_1496_yumana_sign_cabin_ud_4,
-        "1497YumanaSignCabinUd5":
-          _packages_yumana_cabins_2_signature_cabin_upper_deck_1497_yumana_sign_cabin_ud_5,
-        "1498YumanaSignCabinUd6":
-          _packages_yumana_cabins_2_signature_cabin_upper_deck_1498_yumana_sign_cabin_ud_6,
-        "1499YumanaSignCabinUd7":
-          _packages_yumana_cabins_2_signature_cabin_upper_deck_1499_yumana_sign_cabin_ud_7,
+        "1493YumanaSignCabinUd1": _packages_yumana_cabins_2_signature_cabin_upper_deck_1493_yumana_sign_cabin_ud_1,
+        "1494YumanaSignCabinUd2": _packages_yumana_cabins_2_signature_cabin_upper_deck_1494_yumana_sign_cabin_ud_2,
+        "1495YumanaSignCabinUd3": _packages_yumana_cabins_2_signature_cabin_upper_deck_1495_yumana_sign_cabin_ud_3,
+        "1496YumanaSignCabinUd4": _packages_yumana_cabins_2_signature_cabin_upper_deck_1496_yumana_sign_cabin_ud_4,
+        "1497YumanaSignCabinUd5": _packages_yumana_cabins_2_signature_cabin_upper_deck_1497_yumana_sign_cabin_ud_5,
+        "1498YumanaSignCabinUd6": _packages_yumana_cabins_2_signature_cabin_upper_deck_1498_yumana_sign_cabin_ud_6,
+        "1499YumanaSignCabinUd7": _packages_yumana_cabins_2_signature_cabin_upper_deck_1499_yumana_sign_cabin_ud_7,
       },
       "3DeluxeCabin": {
-        "1500YumanaDeluxeCabin2":
-          _packages_yumana_cabins_3_deluxe_cabin_1500_yumana_deluxe_cabin_2,
-        "1501YumanaDeluxeCabin3":
-          _packages_yumana_cabins_3_deluxe_cabin_1501_yumana_deluxe_cabin_3,
-        "1502YumanaDeluxeCabin4":
-          _packages_yumana_cabins_3_deluxe_cabin_1502_yumana_deluxe_cabin_4,
-        "1503YumanaDeluxeCabin5":
-          _packages_yumana_cabins_3_deluxe_cabin_1503_yumana_deluxe_cabin_5,
-        "1504YumanaDeluxeCabin6":
-          _packages_yumana_cabins_3_deluxe_cabin_1504_yumana_deluxe_cabin_6,
-        "1505YumanaDeluxeCabin7":
-          _packages_yumana_cabins_3_deluxe_cabin_1505_yumana_deluxe_cabin_7,
-        "1506YumanaDeluxeCabin8":
-          _packages_yumana_cabins_3_deluxe_cabin_1506_yumana_deluxe_cabin_8,
+        "1500YumanaDeluxeCabin2": _packages_yumana_cabins_3_deluxe_cabin_1500_yumana_deluxe_cabin_2,
+        "1501YumanaDeluxeCabin3": _packages_yumana_cabins_3_deluxe_cabin_1501_yumana_deluxe_cabin_3,
+        "1502YumanaDeluxeCabin4": _packages_yumana_cabins_3_deluxe_cabin_1502_yumana_deluxe_cabin_4,
+        "1503YumanaDeluxeCabin5": _packages_yumana_cabins_3_deluxe_cabin_1503_yumana_deluxe_cabin_5,
+        "1504YumanaDeluxeCabin6": _packages_yumana_cabins_3_deluxe_cabin_1504_yumana_deluxe_cabin_6,
+        "1505YumanaDeluxeCabin7": _packages_yumana_cabins_3_deluxe_cabin_1505_yumana_deluxe_cabin_7,
+        "1506YumanaDeluxeCabin8": _packages_yumana_cabins_3_deluxe_cabin_1506_yumana_deluxe_cabin_8,
       },
       "4SuperiorCabin": {
-        "1507YumanaSuperiorCabin1":
-          _packages_yumana_cabins_4_superior_cabin_1507_yumana_superior_cabin_1,
-        "1508YumanaSuperiorCabin10":
-          _packages_yumana_cabins_4_superior_cabin_1508_yumana_superior_cabin_10,
-        "1509YumanaSuperiorCabin11":
-          _packages_yumana_cabins_4_superior_cabin_1509_yumana_superior_cabin_11,
-        "1510YumanaSuperiorCabin12":
-          _packages_yumana_cabins_4_superior_cabin_1510_yumana_superior_cabin_12,
-        "1511YumanaSuperiorCabin13":
-          _packages_yumana_cabins_4_superior_cabin_1511_yumana_superior_cabin_13,
-        "1512YumanaSuperiorCabin14":
-          _packages_yumana_cabins_4_superior_cabin_1512_yumana_superior_cabin_14,
-        "1513YumanaSuperiorCabin2":
-          _packages_yumana_cabins_4_superior_cabin_1513_yumana_superior_cabin_2,
-        "1514YumanaSuperiorCabin3":
-          _packages_yumana_cabins_4_superior_cabin_1514_yumana_superior_cabin_3,
-        "1515YumanaSuperiorCabin4":
-          _packages_yumana_cabins_4_superior_cabin_1515_yumana_superior_cabin_4,
-        "1516YumanaSuperiorCabin5":
-          _packages_yumana_cabins_4_superior_cabin_1516_yumana_superior_cabin_5,
-        "1517YumanaSuperiorCabin6":
-          _packages_yumana_cabins_4_superior_cabin_1517_yumana_superior_cabin_6,
-        "1518YumanaSuperiorCabin7":
-          _packages_yumana_cabins_4_superior_cabin_1518_yumana_superior_cabin_7,
-        "1519YumanaSuperiorCabin8":
-          _packages_yumana_cabins_4_superior_cabin_1519_yumana_superior_cabin_8,
-        "1520YumanaSuperiorCabin9":
-          _packages_yumana_cabins_4_superior_cabin_1520_yumana_superior_cabin_9,
+        "1507YumanaSuperiorCabin1": _packages_yumana_cabins_4_superior_cabin_1507_yumana_superior_cabin_1,
+        "1508YumanaSuperiorCabin10": _packages_yumana_cabins_4_superior_cabin_1508_yumana_superior_cabin_10,
+        "1509YumanaSuperiorCabin11": _packages_yumana_cabins_4_superior_cabin_1509_yumana_superior_cabin_11,
+        "1510YumanaSuperiorCabin12": _packages_yumana_cabins_4_superior_cabin_1510_yumana_superior_cabin_12,
+        "1511YumanaSuperiorCabin13": _packages_yumana_cabins_4_superior_cabin_1511_yumana_superior_cabin_13,
+        "1512YumanaSuperiorCabin14": _packages_yumana_cabins_4_superior_cabin_1512_yumana_superior_cabin_14,
+        "1513YumanaSuperiorCabin2": _packages_yumana_cabins_4_superior_cabin_1513_yumana_superior_cabin_2,
+        "1514YumanaSuperiorCabin3": _packages_yumana_cabins_4_superior_cabin_1514_yumana_superior_cabin_3,
+        "1515YumanaSuperiorCabin4": _packages_yumana_cabins_4_superior_cabin_1515_yumana_superior_cabin_4,
+        "1516YumanaSuperiorCabin5": _packages_yumana_cabins_4_superior_cabin_1516_yumana_superior_cabin_5,
+        "1517YumanaSuperiorCabin6": _packages_yumana_cabins_4_superior_cabin_1517_yumana_superior_cabin_6,
+        "1518YumanaSuperiorCabin7": _packages_yumana_cabins_4_superior_cabin_1518_yumana_superior_cabin_7,
+        "1519YumanaSuperiorCabin8": _packages_yumana_cabins_4_superior_cabin_1519_yumana_superior_cabin_8,
+        "1520YumanaSuperiorCabin9": _packages_yumana_cabins_4_superior_cabin_1520_yumana_superior_cabin_9,
       },
       crew: {
         "1521Why01379": _packages_yumana_cabins_crew_1521_why01379,
-        "1522WhatsappImage20220815At103354Pm":
-          _packages_yumana_cabins_crew_1522_whatsapp_image_2022_08_15_at_10_33_54_pm,
+        "1522WhatsappImage20220815At103354Pm": _packages_yumana_cabins_crew_1522_whatsapp_image_2022_08_15_at_10_33_54_pm,
       },
       diningRoom: {
-        "1523Gopr6860Hdr2":
-          _packages_yumana_cabins_dining_room_1523_gopr6860_hdr_2,
-        "1524Gopr6862Hdr2":
-          _packages_yumana_cabins_dining_room_1524_gopr6862_hdr_2,
-        "1525Gopr6864Hdr2":
-          _packages_yumana_cabins_dining_room_1525_gopr6864_hdr_2,
-        "1526Gopr6866Hdr2":
-          _packages_yumana_cabins_dining_room_1526_gopr6866_hdr_2,
-        "1527Gopr6868Hdr2":
-          _packages_yumana_cabins_dining_room_1527_gopr6868_hdr_2,
-        "1528Gopr6871Hdr2":
-          _packages_yumana_cabins_dining_room_1528_gopr6871_hdr_2,
-        "1529WhatsappImage20220815At103346Pm":
-          _packages_yumana_cabins_dining_room_1529_whatsapp_image_2022_08_15_at_10_33_46_pm,
+        "1523Gopr6860Hdr2": _packages_yumana_cabins_dining_room_1523_gopr6860_hdr_2,
+        "1524Gopr6862Hdr2": _packages_yumana_cabins_dining_room_1524_gopr6862_hdr_2,
+        "1525Gopr6864Hdr2": _packages_yumana_cabins_dining_room_1525_gopr6864_hdr_2,
+        "1526Gopr6866Hdr2": _packages_yumana_cabins_dining_room_1526_gopr6866_hdr_2,
+        "1527Gopr6868Hdr2": _packages_yumana_cabins_dining_room_1527_gopr6868_hdr_2,
+        "1528Gopr6871Hdr2": _packages_yumana_cabins_dining_room_1528_gopr6871_hdr_2,
+        "1529WhatsappImage20220815At103346Pm": _packages_yumana_cabins_dining_room_1529_whatsapp_image_2022_08_15_at_10_33_46_pm,
         "1530Yar00634": _packages_yumana_cabins_dining_room_1530_yar00634,
         "1531Yar00641": _packages_yumana_cabins_dining_room_1531_yar00641,
       },
       karaokeRoom: {
-        "1533WhatsappImage20220815At103341Pm":
-          _packages_yumana_cabins_karaoke_room_1533_whatsapp_image_2022_08_15_at_10_33_41_pm,
-        "1534WhatsappImage20220815At103347Pm":
-          _packages_yumana_cabins_karaoke_room_1534_whatsapp_image_2022_08_15_at_10_33_47_pm,
-        "1535WhatsappImage20220815At103350Pm1":
-          _packages_yumana_cabins_karaoke_room_1535_whatsapp_image_2022_08_15_at_10_33_50_pm_1,
-        "1536WhatsappImage20220815At103350Pm":
-          _packages_yumana_cabins_karaoke_room_1536_whatsapp_image_2022_08_15_at_10_33_50_pm,
+        "1533WhatsappImage20220815At103341Pm": _packages_yumana_cabins_karaoke_room_1533_whatsapp_image_2022_08_15_at_10_33_41_pm,
+        "1534WhatsappImage20220815At103347Pm": _packages_yumana_cabins_karaoke_room_1534_whatsapp_image_2022_08_15_at_10_33_47_pm,
+        "1535WhatsappImage20220815At103350Pm1": _packages_yumana_cabins_karaoke_room_1535_whatsapp_image_2022_08_15_at_10_33_50_pm_1,
+        "1536WhatsappImage20220815At103350Pm": _packages_yumana_cabins_karaoke_room_1536_whatsapp_image_2022_08_15_at_10_33_50_pm,
       },
       setupDinner: {
         "1537Why00947": _packages_yumana_cabins_setup_dinner_1537_why00947,
@@ -5511,30 +4465,23 @@ export const PACKAGES = {
         "1553Why01299": _packages_yumana_cabins_sundeck_1553_why01299,
         "1554Why01302": _packages_yumana_cabins_sundeck_1554_why01302,
         "1555Why01303": _packages_yumana_cabins_sundeck_1555_why01303,
-        "1556WhatsappImage20220815At103341Pm1":
-          _packages_yumana_cabins_sundeck_1556_whatsapp_image_2022_08_15_at_10_33_41_pm_1,
-        "1557WhatsappImage20220815At103347Pm":
-          _packages_yumana_cabins_sundeck_1557_whatsapp_image_2022_08_15_at_10_33_47_pm,
+        "1556WhatsappImage20220815At103341Pm1": _packages_yumana_cabins_sundeck_1556_whatsapp_image_2022_08_15_at_10_33_41_pm_1,
+        "1557WhatsappImage20220815At103347Pm": _packages_yumana_cabins_sundeck_1557_whatsapp_image_2022_08_15_at_10_33_47_pm,
       },
     },
     facility: {
       common: {
-        "1532BarYumanaFacility15":
-          _packages_yumana_facility_common_1532_bar_yumana_facility_15,
-        "1558SundeckUpperDeckYumanaFacility16":
-          _packages_yumana_facility_common_1558_sundeck_upper_deck_yumana_facility_16,
-        "1559SundeckUpperDeckYumanaFacility17":
-          _packages_yumana_facility_common_1559_sundeck_upper_deck_yumana_facility_17,
-        "1560SundeckUpperDeckYumanaFacility18":
-          _packages_yumana_facility_common_1560_sundeck_upper_deck_yumana_facility_18,
-        "1561SundeckUpperDeckYumanaFacility19":
-          _packages_yumana_facility_common_1561_sundeck_upper_deck_yumana_facility_19,
-        "1562SundeckUpperDeckYumanaFacility20":
-          _packages_yumana_facility_common_1562_sundeck_upper_deck_yumana_facility_20,
+        "1532BarYumanaFacility15": _packages_yumana_facility_common_1532_bar_yumana_facility_15,
+        "1558SundeckUpperDeckYumanaFacility16": _packages_yumana_facility_common_1558_sundeck_upper_deck_yumana_facility_16,
+        "1559SundeckUpperDeckYumanaFacility17": _packages_yumana_facility_common_1559_sundeck_upper_deck_yumana_facility_17,
+        "1560SundeckUpperDeckYumanaFacility18": _packages_yumana_facility_common_1560_sundeck_upper_deck_yumana_facility_18,
+        "1561SundeckUpperDeckYumanaFacility19": _packages_yumana_facility_common_1561_sundeck_upper_deck_yumana_facility_19,
+        "1562SundeckUpperDeckYumanaFacility20": _packages_yumana_facility_common_1562_sundeck_upper_deck_yumana_facility_20,
       },
     },
   },
 };
+
 
 export const VEHICLES = {
   avanza: _vehicles_avanza,
@@ -5553,3 +4500,4 @@ export const VEHICLES = {
   toyotaInnovaReborn: _vehicles_toyota_innova_reborn,
   toyotaInnovaZenix: _vehicles_toyota_innova_zenix,
 };
+

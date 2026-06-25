@@ -52,27 +52,24 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt, stats } =
       <div class="absolute inset-0 bg-linear-to-t from-black/80 via-black/50 to-black/20" />
 
       <div class="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-4 pb-10 pt-32 sm:px-6 md:pt-32 lg:pb-14 lg:px-8">
-        <Breadcrumb className="mb-8">
-          <BreadcrumbList className="flex-wrap">
+        <Breadcrumb class="mb-8">
+          <BreadcrumbList class="flex-wrap">
             {breadcrumbs.map((crumb, index) => (
-              <BreadcrumbItem
-                key={index}
-                className="shrink-0 whitespace-nowrap"
-              >
+              <BreadcrumbItem class="shrink-0 whitespace-nowrap">
                 {crumb.href ? (
                   <BreadcrumbLink
                     href={crumb.href}
-                    className="text-white/70 transition-colors hover:text-white"
+                    class="text-white/70 transition-colors hover:text-white"
                   >
                     {crumb.label}
                   </BreadcrumbLink>
                 ) : (
-                  <BreadcrumbPage className="font-semibold text-white">
+                  <BreadcrumbPage class="font-semibold text-white">
                     {crumb.label}
                   </BreadcrumbPage>
                 )}
                 {index < breadcrumbs.length - 1 && (
-                  <BreadcrumbSeparator className="text-white/30" />
+                  <BreadcrumbSeparator class="text-white/30" />
                 )}
               </BreadcrumbItem>
             ))}
@@ -112,16 +109,16 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt, stats } =
   ) : (
     <section class="bg-white">
       <div class="mx-auto max-w-7xl px-4 pt-32 pb-8 sm:px-6 lg:px-8 lg:pt-32">
-        <Breadcrumb className="font-sans">
+        <Breadcrumb class="font-sans">
           <BreadcrumbList>
             {breadcrumbs.map((crumb, index) => (
-              <BreadcrumbItem key={index}>
+              <BreadcrumbItem>
                 {crumb.href ? (
                   <BreadcrumbLink href={crumb.href}>
                     {crumb.label}
                   </BreadcrumbLink>
                 ) : (
-                  <BreadcrumbPage className="font-semibold">
+                  <BreadcrumbPage class="font-semibold">
                     {crumb.label}
                   </BreadcrumbPage>
                 )}

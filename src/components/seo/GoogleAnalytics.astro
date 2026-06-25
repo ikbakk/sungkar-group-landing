@@ -1,16 +1,15 @@
 ---
 /**
- * Google Analytics 4 with Consent Mode v2 (via Partytown)
+ * Google Analytics 4 with Consent Mode v2 (main thread)
  *
- *  1. Consent defaults (main thread) — sets all storage types to 'denied'
- *     before any tracking runs. dataLayer.push is forwarded to the Partytown
- *     worker via the forward config in astro.config.mjs.
- *  2. GA4 gtag (Partytown worker) — the gtag.js library and init run
- *     off the main thread so page performance is not impacted.
+ *  1. Consent defaults — sets all storage types to 'denied'
+ *     synchronously before gtag.js loads.
+ *  2. GA4 gtag.js — loads on the main thread so it has full access
+ *     to cookies, dataLayer, and consent updates from CookieConsentBanner.
  *
  * The CookieConsentBanner React component in the <body> calls
- * dataLayer.push(['consent', 'update', {...}]) when the user makes
- * a choice, which is forwarded to the worker and processed by GA4.
+ * dataLayer.push(['consent', 'update', {...}]) on the same main-thread
+ * dataLayer, so GA4 sees consent changes immediately.
  *
  * Only enabled in production builds.
  * Override GA ID via PUBLIC_GA_ID env var.
@@ -21,19 +20,17 @@ const isProduction = import.meta.env.PROD;
 
 const gtagInitScript = `
 window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag("js", new Date());
-gtag("config", "${gaId}");
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${gaId}');
 `;
 ---
 
 {isProduction && gaId && (
   <>
     {/*
-      Consent Mode v2 defaults — runs on the main thread (NOT Partytown)
-      so consent is established synchronously before any tracking library
-      loads in the Partytown worker. dataLayer.push is forwarded to the
-      worker via Partytown's forward config.
+      Consent Mode v2 defaults — runs synchronously before gtag.js loads
+      so consent is established before any tracking data is sent.
     */}
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
@@ -46,15 +43,9 @@ gtag("config", "${gaId}");
       }]);
     </script>
 
-    {/*
-      GA4 gtag.js loaded in the Partytown worker
-    */}
-    <script
-      is:inline
-      type="text/partytown"
-      async
-      src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-    />
-    <script is:inline type="text/partytown" set:html={gtagInitScript} />
+    {/* GA4 gtag.js — main thread */}
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}>
+    </script>
+    <script is:inline set:html={gtagInitScript}></script>
   </>
 )}

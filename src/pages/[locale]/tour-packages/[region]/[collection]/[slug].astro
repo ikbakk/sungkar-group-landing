@@ -279,7 +279,7 @@ const itineraryByDay = Object.entries(
       </Carousel>
     </div>
 
-    <PackageGallery images={tour.images} client:idle />
+    <PackageGallery images={tour.images} client:only="react" />
   </SectionContainer>
 
   <SectionContainer background="bg-white" padding="py-16 sm:py-20">

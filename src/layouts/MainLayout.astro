@@ -115,6 +115,6 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
 
     <Footer locale={currentLocale} />
 
-    <CookieConsentBanner locale={currentLocale as Locale} client:idle />
+    <CookieConsentBanner locale={currentLocale as Locale} client:only="react" />
   </body>
 </html>
