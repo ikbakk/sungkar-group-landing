@@ -82,4 +82,21 @@ export function formatDate(
   );
 }
 
-export { t } from "./ui-strings/index";
+export {
+  t,
+  getGlobalStrings,
+  getHeaderStrings,
+  getFooterStrings,
+  getAboutPageStrings,
+  getContactPageStrings,
+  getFaqPageStrings,
+  getReviewsPageStrings,
+  getTravelGuidesPageStrings,
+  getCarRentalPageStrings,
+  getTourPackagesPageStrings,
+  getAccommodationsPageStrings,
+  getBlogPageStrings,
+  getFaqStrings,
+  getContactFormStrings,
+  getPackageDetailStrings,
+} from "./ui-strings/index";
