@@ -177,26 +177,30 @@ If the project has a blog or docs content collection, mention to the user as a f
 ## Astro SEO audit: [site name]
 
 ### Score
-| Category                              | Score |
-|---------------------------------------|------:|
-| 1. `<Seo>` component and head         |  x/10 |
-| 2. Structured data / JSON-LD graph    |  x/10 |
-| 3. Content collections and schema     |  x/10 |
-| 4. Open Graph images                  |  x/10 |
-| 5. Sitemaps and indexing              |  x/10 |
-| 6. Agent discovery                    |  x/10 |
-| 7. Performance                        |  x/10 |
-| 8. Redirects and error handling       |  x/10 |
-| 9. Build-time validation and content  |  x/10 |
-| **Total**                             | xx/90 |
+
+| Category                             | Score |
+| ------------------------------------ | ----: |
+| 1. `<Seo>` component and head        |  x/10 |
+| 2. Structured data / JSON-LD graph   |  x/10 |
+| 3. Content collections and schema    |  x/10 |
+| 4. Open Graph images                 |  x/10 |
+| 5. Sitemaps and indexing             |  x/10 |
+| 6. Agent discovery                   |  x/10 |
+| 7. Performance                       |  x/10 |
+| 8. Redirects and error handling      |  x/10 |
+| 9. Build-time validation and content |  x/10 |
+| **Total**                            | xx/90 |
 
 ### Findings
+
 [Grouped by category. Quote actual code/config. Be specific.]
 
 ### Files generated or changed
+
 [List with short description of each.]
 
 ### Next steps
+
 [Non-file tasks: GSC, Bing Webmaster Tools, IndexNow key generation, analytics.]
 ```
 

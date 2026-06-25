@@ -6,8 +6,8 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev --host 0.0.0.0",
-    "build": "npm run generate:all && astro build",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run generate:structured && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest run",
@@ -26,7 +26,9 @@
     "generate:og-images": "node scripts/generate-og-images.mjs",
     "generate:template": "node scripts/generate-data-template.mjs",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "generate:structured": "node scripts/generate-structured-data.mjs",
+    "generate:structured:watch": "node scripts/generate-structured-data.mjs --watch"
   },
   "dependencies": {
     "@astrojs/mdx": "^7.0.0",

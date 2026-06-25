@@ -8,15 +8,15 @@
 
 /* Pastikan teks tetap terlihat selama font loading (cegah FOIT) */
 @font-face {
-  font-family: 'Inter Variable';
+  font-family: "Inter Variable";
   font-display: swap;
 }
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-display: swap;
 }
 @font-face {
-  font-family: 'Cairo Variable';
+  font-family: "Cairo Variable";
   font-display: swap;
 }
 

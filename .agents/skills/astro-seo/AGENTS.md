@@ -24,48 +24,48 @@ Read the package's [changelog](https://github.com/jdevalk/seo-graph/blob/main/pa
 
 ```js
 // astro.config.mjs
-import seoGraph from '@jdevalk/astro-seo-graph/integration';
+import seoGraph from "@jdevalk/astro-seo-graph/integration";
 
 // Only submit to IndexNow on the production host. Local `npm run build`
 // and preview deploys should not ping the endpoint with URLs the host
 // hasn't served yet — that gets the key rejected (403) and forces rotation.
 const isProductionBuild =
-    process.env.CF_PAGES === '1' && process.env.CF_PAGES_BRANCH === 'main';
-    // Vercel: process.env.VERCEL_ENV === 'production'
-    // Netlify: process.env.CONTEXT === 'production'
+  process.env.CF_PAGES === "1" && process.env.CF_PAGES_BRANCH === "main";
+// Vercel: process.env.VERCEL_ENV === 'production'
+// Netlify: process.env.CONTEXT === 'production'
 
 export default defineConfig({
-    site: 'https://example.com',
-    integrations: [
-        seoGraph({
-            validateH1: true,
-            validateUniqueMetadata: true,
-            validateImageAlt: true,
-            validateMetadataLength: true,
-            validateInternalLinks: {
-                // ≥ 1.1.1 recognises non-HTML files from public/ as valid
-                // link targets automatically. `skip` is still useful for
-                // SSR-only routes, wildcards, and `[slug]` params.
-                skip: (href) => href.startsWith('/api/'),
-            },
-            ...(isProductionBuild && {
-                indexNow: {
-                    key: process.env.INDEXNOW_KEY,
-                    host: 'example.com',
-                    siteUrl: 'https://example.com',
-                },
-            }),
-            llmsTxt: {
-                title: 'Example',
-                siteUrl: 'https://example.com',
-            },
-            // Emit <link rel="alternate" type="text/markdown"> on every
-            // page. Only enable once `createMarkdownEndpoint` is wired at
-            // the matching path (see § Markdown alternates below),
-            // otherwise the link 404s. Requires ≥ 1.2.0.
-            markdownAlternate: true,
-        }),
-    ],
+  site: "https://example.com",
+  integrations: [
+    seoGraph({
+      validateH1: true,
+      validateUniqueMetadata: true,
+      validateImageAlt: true,
+      validateMetadataLength: true,
+      validateInternalLinks: {
+        // ≥ 1.1.1 recognises non-HTML files from public/ as valid
+        // link targets automatically. `skip` is still useful for
+        // SSR-only routes, wildcards, and `[slug]` params.
+        skip: (href) => href.startsWith("/api/"),
+      },
+      ...(isProductionBuild && {
+        indexNow: {
+          key: process.env.INDEXNOW_KEY,
+          host: "example.com",
+          siteUrl: "https://example.com",
+        },
+      }),
+      llmsTxt: {
+        title: "Example",
+        siteUrl: "https://example.com",
+      },
+      // Emit <link rel="alternate" type="text/markdown"> on every
+      // page. Only enable once `createMarkdownEndpoint` is wired at
+      // the matching path (see § Markdown alternates below),
+      // otherwise the link 404s. Requires ≥ 1.2.0.
+      markdownAlternate: true,
+    }),
+  ],
 });
 ```
 
@@ -77,18 +77,19 @@ Replace whatever head metadata the project has with a single `<Seo>` call. The c
 
 ```ts
 // src/content/config.ts
-import { defineCollection, z } from 'astro:content';
-import { seoSchema } from '@jdevalk/astro-seo-graph';
+import { defineCollection, z } from "astro:content";
+import { seoSchema } from "@jdevalk/astro-seo-graph";
 
 export const collections = {
-    blog: defineCollection({
-        schema: ({ image }) => z.object({
-            title: z.string(),
-            excerpt: z.string(),
-            publishDate: z.coerce.date(),
-            seo: seoSchema(image).optional(),
-        }),
-    }),
+  blog: defineCollection({
+    schema: ({ image }) =>
+      z.object({
+        title: z.string(),
+        excerpt: z.string(),
+        publishDate: z.coerce.date(),
+        seo: seoSchema(image).optional(),
+      }),
+  }),
 };
 ```
 
@@ -97,28 +98,31 @@ export const collections = {
 Import `gitLastmod` from `@jdevalk/astro-seo-graph` (≥ 1.4.0) — don't hand-roll it. The export skips bulk commits (imports, reformats, mass renames) via `excludeCommits`, which a plain `git log -1` can't do, and returns `null` cleanly when git is unavailable so the caller can fall back to `publishDate`.
 
 ```js
-import sitemap from '@astrojs/sitemap';
-import { gitLastmod } from '@jdevalk/astro-seo-graph';
+import sitemap from "@astrojs/sitemap";
+import { gitLastmod } from "@jdevalk/astro-seo-graph";
 
 // Short SHAs of bulk commits that shouldn't count as content updates.
-const BULK_COMMITS = ['52130a9', '989dc47'];
+const BULK_COMMITS = ["52130a9", "989dc47"];
 
 function urlToSourceFile(url) {
-    // map the public URL back to the markdown file that produced it
-    const slug = new URL(url).pathname.replace(/^\/blog\/|\/$/g, '');
-    return `src/content/blog/${slug}/index.md`;
+  // map the public URL back to the markdown file that produced it
+  const slug = new URL(url).pathname.replace(/^\/blog\/|\/$/g, "");
+  return `src/content/blog/${slug}/index.md`;
 }
 
 sitemap({
-    entryLimit: 1000,
-    chunks: {
-        posts: (item) => isBlogPost(new URL(item.url).pathname) ? item : undefined,
-    },
-    serialize: (item) => {
-        const last = gitLastmod(urlToSourceFile(item.url), { excludeCommits: BULK_COMMITS });
-        if (last) item.lastmod = last.toISOString();
-        return item;
-    },
+  entryLimit: 1000,
+  chunks: {
+    posts: (item) =>
+      isBlogPost(new URL(item.url).pathname) ? item : undefined,
+  },
+  serialize: (item) => {
+    const last = gitLastmod(urlToSourceFile(item.url), {
+      excludeCommits: BULK_COMMITS,
+    });
+    if (last) item.lastmod = last.toISOString();
+    return item;
+  },
 });
 ```
 
@@ -149,31 +153,42 @@ Include the locale in the slug (`/og/en/<slug>.jpg`, `/og/nl/<slug>.jpg`) and re
 
 ```ts
 // src/pages/og/[...slug].jpg.ts
-import satori from 'satori';
-import sharp from 'sharp';
-import fs from 'node:fs';
-import { getCollection } from 'astro:content';
+import satori from "satori";
+import sharp from "sharp";
+import fs from "node:fs";
+import { getCollection } from "astro:content";
 
-const font = fs.readFileSync('src/fonts/Inter-Bold.woff2');
+const font = fs.readFileSync("src/fonts/Inter-Bold.woff2");
 
 export async function getStaticPaths() {
-    const posts = await getCollection('blog');
-    return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
 }
 
 export async function GET({ props }) {
-    const svg = await satori(
-        {
-            type: 'div',
-            props: {
-                style: { /* flex, padding, colors, etc. */ },
-                children: [/* title + subtitle nodes */],
-            },
+  const svg = await satori(
+    {
+      type: "div",
+      props: {
+        style: {
+          /* flex, padding, colors, etc. */
         },
-        { width: 1200, height: 675, fonts: [{ name: 'Inter', data: font, weight: 700, style: 'normal' }] }
-    );
-    const jpg = await sharp(Buffer.from(svg)).jpeg({ quality: 90 }).toBuffer();
-    return new Response(jpg, { headers: { 'Content-Type': 'image/jpeg' } });
+        children: [
+          /* title + subtitle nodes */
+        ],
+      },
+    },
+    {
+      width: 1200,
+      height: 675,
+      fonts: [{ name: "Inter", data: font, weight: 700, style: "normal" }],
+    },
+  );
+  const jpg = await sharp(Buffer.from(svg)).jpeg({ quality: 90 }).toBuffer();
+  return new Response(jpg, { headers: { "Content-Type": "image/jpeg" } });
 }
 ```
 
@@ -193,7 +208,7 @@ Pass an options object to `llmsTxt` on the `seoGraph()` integration (requires `@
 
 Serve clean markdown copies of every page at a parallel `.md` URL for AI agents (Claude, ChatGPT, Perplexity, Cloudflare's crawlers) to consume without HTML parsing. Requires `@jdevalk/astro-seo-graph` ≥ 1.2.0; ≥ 1.3.0 adds build-output verification of the discovery link. Two pieces:
 
-1. **The route.** Create `src/pages/[...slug].md.ts` (or whatever path shape you need) and export `createMarkdownEndpoint`. It serves a YAML frontmatter block (title, canonical, pubDate, updatedDate, author, description, tags, categories) followed by the markdown body, with `Content-Type: text/markdown; charset=utf-8`, `X-Robots-Tag: noindex, follow`, `X-Markdown-Tokens: <n>`, and a `Link: <canonical>; rel="canonical"` header pointing crawlers back at the HTML. Token count defaults to `chars/4`; swap in `gpt-tokenizer` or `@anthropic-ai/tokenizer` via `estimateTokens` for accuracy. **Slug-match guard required** in the `mapper`: return `null` when `post.id !== slug`, otherwise the first entry whose mapper returns non-null wins for *every* URL — a silent 200-with-wrong-content bug.
+1. **The route.** Create `src/pages/[...slug].md.ts` (or whatever path shape you need) and export `createMarkdownEndpoint`. It serves a YAML frontmatter block (title, canonical, pubDate, updatedDate, author, description, tags, categories) followed by the markdown body, with `Content-Type: text/markdown; charset=utf-8`, `X-Robots-Tag: noindex, follow`, `X-Markdown-Tokens: <n>`, and a `Link: <canonical>; rel="canonical"` header pointing crawlers back at the HTML. Token count defaults to `chars/4`; swap in `gpt-tokenizer` or `@anthropic-ai/tokenizer` via `estimateTokens` for accuracy. **Slug-match guard required** in the `mapper`: return `null` when `post.id !== slug`, otherwise the first entry whose mapper returns non-null wins for _every_ URL — a silent 200-with-wrong-content bug.
 2. **The discovery link.** Set `markdownAlternate: true` on the `seoGraph()` integration (see the integration config above). `<Seo>` will emit `<link rel="alternate" type="text/markdown" href="…">` on every page, derived from the canonical (`/blog/post/` → `/blog/post.md`). **Only turn this on after the route is wired** at the matching path — otherwise the link 404s. ≥ 1.3.0 walks the build output and strips any link whose target `.md` isn't on disk (with a per-occurrence `warn`), so misconfigured endpoints surface as build warnings instead of shipped 404s. SSR users whose `.md` endpoints aren't prerendered should leave this off and emit the link themselves — the verification will otherwise strip every link.
 
 **Content negotiation on a static host.** On Cloudflare Pages, add a Transform Rule that rewrites `Accept: text/markdown` requests to the `.md` path. Use `wildcard_replace` (free plan) — `regex_replace` is paid-only. **Don't add a `Vary: Accept` response-header rule:** Cloudflare strips custom `Vary` values at the edge, and the URL rewrite already separates cache entries per content type. Trailing-slash canonical URLs use `wildcard_replace(http.request.uri.path, "*/", "${1}.md")`; extensionless non-trailing-slash URLs need a separate rule that matches `not ends_with(…, "/")` and rewrites with `concat(http.request.uri.path, ".md")`. The `astro-seo-graph` README has the full rule config; copy from there.
@@ -205,19 +220,31 @@ For rendering outside the route, import `renderMarkdownAlternate` — pure rende
 `@jdevalk/astro-seo-graph` ≥ 1.4.0 ships `createApiCatalog`, an Astro route factory that returns RFC 9727 `application/linkset+json`. Drop it at `src/pages/.well-known/api-catalog.ts`:
 
 ```ts
-import { createApiCatalog } from '@jdevalk/astro-seo-graph';
+import { createApiCatalog } from "@jdevalk/astro-seo-graph";
 
 export const GET = createApiCatalog({
-    siteUrl: 'https://example.com',
-    schemaEndpoints: [
-        { path: '/schema/post.json', schemaType: 'BlogPosting', serviceDoc: '/seo-graph/' },
-        { path: '/schema/page.json', schemaType: 'WebPage', serviceDoc: '/seo-graph/' },
-    ],
-    schemaMap: { path: '/schemamap.xml', serviceDoc: '/seo-graph/' },
-    additional: [
-        { anchor: '/ask', serviceDoc: '/ask/', type: 'https://schema.org/SearchAction' },
-        { anchor: '/feed.xml', type: 'https://www.w3.org/2005/Atom' },
-    ],
+  siteUrl: "https://example.com",
+  schemaEndpoints: [
+    {
+      path: "/schema/post.json",
+      schemaType: "BlogPosting",
+      serviceDoc: "/seo-graph/",
+    },
+    {
+      path: "/schema/page.json",
+      schemaType: "WebPage",
+      serviceDoc: "/seo-graph/",
+    },
+  ],
+  schemaMap: { path: "/schemamap.xml", serviceDoc: "/seo-graph/" },
+  additional: [
+    {
+      anchor: "/ask",
+      serviceDoc: "/ask/",
+      type: "https://schema.org/SearchAction",
+    },
+    { anchor: "/feed.xml", type: "https://www.w3.org/2005/Atom" },
+  ],
 });
 ```
 
@@ -245,10 +272,10 @@ Only publish these if the site actually exposes the corresponding endpoint. They
 
 ```json
 {
-    "name": "example-mcp",
-    "version": "1.0.0",
-    "transport": { "type": "streamable-http", "url": "https://example.com/mcp" },
-    "capabilities": { "tools": true, "resources": false, "prompts": false }
+  "name": "example-mcp",
+  "version": "1.0.0",
+  "transport": { "type": "streamable-http", "url": "https://example.com/mcp" },
+  "capabilities": { "tools": true, "resources": false, "prompts": false }
 }
 ```
 
@@ -256,16 +283,16 @@ Only publish these if the site actually exposes the corresponding endpoint. They
 
 ```json
 {
-    "name": "example-agent",
-    "url": "https://example.com",
-    "skills": [
-        {
-            "id": "ask",
-            "name": "Ask",
-            "description": "Answer questions about the corpus",
-            "service_endpoint": "https://example.com/ask"
-        }
-    ]
+  "name": "example-agent",
+  "url": "https://example.com",
+  "skills": [
+    {
+      "id": "ask",
+      "name": "Ask",
+      "description": "Answer questions about the corpus",
+      "service_endpoint": "https://example.com/ask"
+    }
+  ]
 }
 ```
 
@@ -287,22 +314,22 @@ Both are v0.9 drafts — optional, not recommended. Publish ARD once the site ha
 
 ```json
 {
-    "version": "0.9",
-    "entries": [
-        {
-            "name": "OKF bundle",
-            "type": "application/okf-bundle+gzip",
-            "mediaType": "application/okf-bundle+gzip",
-            "url": "https://example.com/okf.tar.gz",
-            "representativeQueries": ["What does this site document?"]
-        },
-        {
-            "name": "MCP server",
-            "type": "application/json",
-            "mediaType": "application/json",
-            "url": "https://example.com/.well-known/mcp/server-card.json"
-        }
-    ]
+  "version": "0.9",
+  "entries": [
+    {
+      "name": "OKF bundle",
+      "type": "application/okf-bundle+gzip",
+      "mediaType": "application/okf-bundle+gzip",
+      "url": "https://example.com/okf.tar.gz",
+      "representativeQueries": ["What does this site document?"]
+    },
+    {
+      "name": "MCP server",
+      "type": "application/json",
+      "mediaType": "application/json",
+      "url": "https://example.com/.well-known/mcp/server-card.json"
+    }
+  ]
 }
 ```
 
@@ -325,14 +352,17 @@ Append `, </.well-known/mcp/server-card.json>; rel="mcp-server-card"` and `, </.
 
 ```json
 {
-    "headers": [
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
         {
-            "source": "/(.*)",
-            "headers": [
-                { "key": "Link", "value": "</sitemap-index.xml>; rel=\"sitemap\", </llms.txt>; rel=\"alternate\"; type=\"text/plain\", </.well-known/api-catalog>; rel=\"api-catalog\", </schemamap.xml>; rel=\"schemamap\"" }
-            ]
+          "key": "Link",
+          "value": "</sitemap-index.xml>; rel=\"sitemap\", </llms.txt>; rel=\"alternate\"; type=\"text/plain\", </.well-known/api-catalog>; rel=\"api-catalog\", </schemamap.xml>; rel=\"schemamap\""
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 
@@ -382,16 +412,26 @@ Syntax depends on the host. Pick the one matching Phase 0's detected deployment 
 
 ```json
 {
-    "headers": [
+  "headers": [
+    {
+      "source": "/_astro/(.*)",
+      "headers": [
         {
-            "source": "/_astro/(.*)",
-            "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
-        },
-        {
-            "source": "/(.*)",
-            "headers": [{ "key": "No-Vary-Search", "value": "key-order, params=(\"utm_source\" \"utm_medium\" \"utm_campaign\" \"utm_content\" \"utm_term\")" }]
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
         }
-    ]
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "No-Vary-Search",
+          "value": "key-order, params=(\"utm_source\" \"utm_medium\" \"utm_campaign\" \"utm_content\" \"utm_term\")"
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -406,11 +446,11 @@ name: Link Check
 on:
   push:
     paths:
-      - 'src/content/**'
-      - 'src/pages/**'
-      - '*.md'
+      - "src/content/**"
+      - "src/pages/**"
+      - "*.md"
   schedule:
-    - cron: '0 9 * * 1'  # Weekly, Mondays 09:00 UTC — catches link rot
+    - cron: "0 9 * * 1" # Weekly, Mondays 09:00 UTC — catches link rot
   workflow_dispatch:
 
 jobs:
