@@ -8,7 +8,6 @@ import {
   VEHICLES,
   BRAND,
   LEGALITY,
-  PACKAGES,
 } from "@/assets/images";
 
 const registry: Record<string, ImageSource> = {
@@ -16,12 +15,10 @@ const registry: Record<string, ImageSource> = {
   "hero/hero-lombok.webp": HERO.heroLombok,
   "hero/hero-sumbawa.webp": GALLERY.whaleshark,
   "hero/hero-labuan-bajo.webp": GALLERY.tourSnorkeling,
-
   "destinations/gili.webp": DESTINATIONS.gili,
   "destinations/lombok.webp": DESTINATIONS.lombok,
   "destinations/rinjani.webp": DESTINATIONS.rinjani,
   "destinations/sumbawa.webp": DESTINATIONS.sumbawa,
-
   "gallery/gili-meno.webp": GALLERY.giliMeno,
   "gallery/kuta-beach.webp": GALLERY.kutaBeach,
   "gallery/kuta-beach-2.webp": GALLERY.kutaBeach2,
@@ -52,109 +49,57 @@ const registry: Record<string, ImageSource> = {
   "gallery/g-sukarara.webp": GALLERY.gSukarara,
   "gallery/g-sukarara-2.webp": GALLERY.gSukarara2,
   "gallery/g-waterfall-1.webp": GALLERY.gWaterfall1,
-
   "accommodations/lombok.webp": ACCOMMODATIONS.lombok,
-
   "vehicles/avanza.webp": VEHICLES.avanza,
   "vehicles/bus-1.webp": VEHICLES.bus1,
   "vehicles/bus-2.webp": VEHICLES.bus2,
   "vehicles/bus-3.webp": VEHICLES.bus3,
   "vehicles/rental.webp": VEHICLES.rental,
-
   "brand/logo.webp": BRAND.logo,
   "brand/og-home.webp": BRAND.ogHome,
-
   "legality/nib.webp": LEGALITY.nib,
   "legality/sk.webp": LEGALITY.sk,
 };
 
-const groups: Record<string, unknown> = {
-  hero: HERO as Record<string, ImageSource>,
-  destinations: DESTINATIONS as Record<string, ImageSource>,
-  gallery: GALLERY as Record<string, ImageSource>,
-  accommodations: ACCOMMODATIONS as Record<string, ImageSource>,
-  vehicles: VEHICLES as Record<string, ImageSource>,
-  brand: BRAND as Record<string, ImageSource>,
-  legality: LEGALITY as Record<string, ImageSource>,
-  packages: PACKAGES,
-};
-
-function toCamel(fileName: string): string {
-  return fileName
-    .replace(/\.[^/.]+$/, "")
-    .replace(/[-_ ]+([a-zA-Z0-9])/g, (_, c) => c.toUpperCase())
-    .replace(/^([A-Z])/, (m) => m.toLowerCase());
+function toStaticImageUrl(assetPath: string): string {
+  return `/images/${assetPath}`;
 }
 
-function resolveRegistryPath(path: string): ImageSource | undefined {
-  const [groupName, ...rest] = path.split("/");
-  if (!groupName || rest.length === 0) return undefined;
-
-  let cursor: unknown = groups[groupName];
-  if (!cursor) return undefined;
-
-  for (const part of rest) {
-    if (!cursor || typeof cursor !== "object") return undefined;
-    cursor = (cursor as Record<string, unknown>)[toCamel(part)];
-  }
-
-  if (typeof cursor === "string") return cursor;
-  if (cursor && typeof cursor === "object" && "src" in cursor) {
-    return cursor as ImageSource;
-  }
-
-  return undefined;
-}
-
-function resolveFallbackImage(path: string): ImageSource | undefined {
-  if (path.startsWith("hero/")) {
-    if (path.includes("sumbawa")) return GALLERY.whaleshark;
-    if (path.includes("lombok")) return HERO.heroLombok;
+function resolveFallbackImage(assetPath: string): ImageSource | undefined {
+  if (assetPath.startsWith("packages/")) return toStaticImageUrl(assetPath);
+  if (assetPath.startsWith("hero/")) {
+    if (assetPath.includes("sumbawa")) return GALLERY.whaleshark;
+    if (assetPath.includes("lombok")) return HERO.heroLombok;
     return GALLERY.tourSnorkeling;
   }
-
-  if (path.startsWith("gallery/")) {
-    if (path.includes("whaleshark") || path.includes("sumbawa")) {
+  if (assetPath.startsWith("gallery/")) {
+    if (assetPath.includes("whaleshark") || assetPath.includes("sumbawa"))
       return GALLERY.whaleshark;
-    }
-
     if (
-      path.includes("lombok") ||
-      path.includes("gili") ||
-      path.includes("kuta")
-    ) {
+      assetPath.includes("lombok") ||
+      assetPath.includes("gili") ||
+      assetPath.includes("kuta")
+    )
       return GALLERY.kutaBeach;
-    }
-
     return GALLERY.tourSnorkeling;
   }
-
-  if (path.startsWith("destinations/")) {
-    if (path.includes("sumbawa")) return DESTINATIONS.sumbawa;
+  if (assetPath.startsWith("destinations/")) {
+    if (assetPath.includes("sumbawa")) return DESTINATIONS.sumbawa;
     if (
-      path.includes("lombok") ||
-      path.includes("gili") ||
-      path.includes("rinjani")
-    ) {
+      assetPath.includes("lombok") ||
+      assetPath.includes("gili") ||
+      assetPath.includes("rinjani")
+    )
       return DESTINATIONS.lombok;
-    }
-
     return GALLERY.tourSnorkeling;
   }
-
-  if (path.startsWith("accommodations/")) return ACCOMMODATIONS.lombok;
-  if (path.startsWith("vehicles/")) return VEHICLES.rental;
-
+  if (assetPath.startsWith("accommodations/")) return ACCOMMODATIONS.lombok;
+  if (assetPath.startsWith("vehicles/")) return VEHICLES.rental;
   return undefined;
 }
 
-export function resolveImage(path: string): ImageSource {
-  return (
-    registry[path] ??
-    resolveRegistryPath(path) ??
-    resolveFallbackImage(path) ??
-    path
-  );
+export function resolveImage(assetPath: string): ImageSource {
+  return registry[assetPath] ?? resolveFallbackImage(assetPath) ?? assetPath;
 }
 
 export function resolveImages(paths: string[]): ImageSource[] {

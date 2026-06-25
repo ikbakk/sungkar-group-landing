@@ -1,39 +1,22 @@
-import { getCollection } from "astro:content";
+import { accommodationsData } from "@/generated/content/accommodations.generated";
 import type { Accommodation } from "@/lib/content/shared/types";
+import type { RegionKey } from "@/lib/constants/regions";
 import { resolveImage } from "@/lib/content/tourPackages/images";
 
-type EntryData = {
-  name: string;
-  region: "lombok" | "sumbawa" | "labuan-bajo";
-  perks: string[];
-  regionalHighlights: string[];
-  description: string;
-  image: string;
-};
+type EntryData = (typeof accommodationsData)[number];
 
 export async function getAccommodations(
   locale = "id",
 ): Promise<Accommodation[]> {
-  const entries = await getCollection("accommodations");
-
-  const results: Accommodation[] = [];
-
-  for (const entry of entries) {
-    const data = entry.data as EntryData;
-    const entryLocale = entry.id.split("/").pop() || "id";
-
-    if (entryLocale !== locale) continue;
-
-    results.push({
-      slug: entry.id.split("/")[0],
+  return accommodationsData
+    .filter((entry) => entry.locale === locale)
+    .map((data: EntryData) => ({
+      slug: data.slug,
       name: data.name,
-      region: data.region,
+      region: data.region as RegionKey,
       perks: data.perks,
       regionalHighlights: data.regionalHighlights,
       description: data.description,
       image: resolveImage(data.image),
-    });
-  }
-
-  return results;
+    }));
 }
