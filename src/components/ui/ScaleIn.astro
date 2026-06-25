@@ -1,0 +1,97 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { cn } from "@/lib/utils";
+
+interface Props extends HTMLAttributes<"div"> {
+  duration?: number;
+  once?: boolean;
+  enhance?: boolean;
+}
+
+const {
+  duration = 500,
+  once = false,
+  enhance = false,
+  class: className,
+  style,
+  ...props
+} = Astro.props;
+
+const mergedStyle = [style, `--sg-scale-in-duration:${duration}ms`]
+  .filter(Boolean)
+  .join(";");
+---
+
+<div
+  class={cn(className)}
+  data-sg-scale-in={enhance ? "true" : undefined}
+  data-sg-scale-in-once={enhance ? String(once) : undefined}
+  style={mergedStyle}
+  {...props}
+>
+  <slot />
+</div>
+
+{enhance && (
+  <script is:inline>
+    (() => {
+      const el = document.currentScript?.previousElementSibling;
+      if (!(el instanceof HTMLElement) || el.dataset.sgScaleInMounted === "true") {
+        return;
+      }
+
+      el.dataset.sgScaleInMounted = "true";
+      const once = el.dataset.sgScaleInOnce !== "false";
+
+      const show = () => {
+        el.dataset.sgScaleInVisible = "true";
+      };
+
+      const hide = () => {
+        delete el.dataset.sgScaleInVisible;
+      };
+
+      if (!("IntersectionObserver" in window)) {
+        show();
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              show();
+              if (once) observer.disconnect();
+            } else if (!once) {
+              hide();
+            }
+          }
+        },
+        { threshold: 0.15 },
+      );
+
+      observer.observe(el);
+    })();
+  </script>
+)}
+
+<style>
+  [data-sg-scale-in="true"][data-sg-scale-in-mounted="true"] {
+    transition:
+      opacity var(--sg-scale-in-duration, 500ms) ease,
+      transform var(--sg-scale-in-duration, 500ms) ease;
+    will-change: opacity, transform;
+  }
+
+  [data-sg-scale-in="true"][data-sg-scale-in-mounted="true"]:not(
+      [data-sg-scale-in-visible="true"]
+    ) {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  [data-sg-scale-in="true"][data-sg-scale-in-visible="true"] {
+    opacity: 1;
+    transform: scale(1);
+  }
+</style>
