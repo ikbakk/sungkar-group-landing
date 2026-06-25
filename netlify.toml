@@ -30,3 +30,6 @@
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Link = "</sitemap-index.xml>; rel=\"sitemap\", </llms.txt>; rel=\"alternate\"; type=\"text/plain\", </feed.xml>; rel=\"alternate\"; type=\"application/rss+xml\""
+# Future discovery endpoints can be appended here when shipped:
+# Link = "</.well-known/api-catalog>; rel=\"api-catalog\", </schemamap.xml>; rel=\"schemamap\""

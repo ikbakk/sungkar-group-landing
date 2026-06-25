@@ -53,6 +53,9 @@ const canonicalUrl = new URL(canonicalPath, SITE_URL);
 canonicalUrl.pathname = appendTrailingSlash(canonicalUrl.pathname);
 
 const canonicalHref = canonicalUrl.toString();
+const robotsContent = noIndex
+  ? "noindex,nofollow"
+  : "index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1";
 
 const ogImageUrl = ogImage
   ? typeof ogImage === "string"
@@ -115,7 +118,7 @@ const defaultUrl =
 <meta name="description" content={metaDescription} />
 <meta name="msvalidate.01" content="66ABB4CFD3A0A8EF2007323324E7BD3D" />
 
-<link rel="canonical" href={canonicalHref} />
+{!noIndex && <link rel="canonical" href={canonicalHref} />}
 
 {
   alternateLinks.map((entry) => (
@@ -124,7 +127,7 @@ const defaultUrl =
 }
 <link rel="alternate" href={defaultUrl} hreflang="x-default" />
 
-<meta name="robots" content={noIndex ? "noindex,nofollow" : "index,follow"} />
+<meta name="robots" content={robotsContent} />
 
 <meta name="keywords" content={uiStrings.seo.keywords} />
 
@@ -164,20 +167,6 @@ const defaultUrl =
 <!-- Twitter -->
 
 <meta name="twitter:card" content={twitterCard} />
-
-<meta name="twitter:title" content={pageTitle} />
-
-<meta name="twitter:description" content={metaDescription} />
-
-{
-  ogImageUrl && (
-    <>
-      <meta name="twitter:image" content={ogImageUrl} />
-
-      <meta name="twitter:image:alt" content={ogImageAlt} />
-    </>
-  )
-}
 
 <!-- Mobile -->
 

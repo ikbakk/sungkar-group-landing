@@ -9,9 +9,17 @@ interface Props {
   description: string;
   vehicles: Vehicle[];
   locale?: string;
+  prioritizeImages?: boolean;
 }
 
-const { id, title, description, vehicles, locale = "id" } = Astro.props;
+const {
+  id,
+  title,
+  description,
+  vehicles,
+  locale = "id",
+  prioritizeImages = false,
+} = Astro.props;
 ---
 
 {
@@ -27,7 +35,8 @@ const { id, title, description, vehicles, locale = "id" } = Astro.props;
           <VehicleCard
             vehicle={vehicle}
             locale={locale}
-            loading={i < 3 ? "eager" : "lazy"}
+            loading={prioritizeImages && i < 2 ? "eager" : "lazy"}
+            fetchpriority={prioritizeImages && i === 0 ? "high" : "auto"}
           />
         ))}
       </div>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { t } from "@/lib/i18n/ui-strings";
 import type { Locale } from "@/lib/i18n";
+import { localizeHref } from "@/lib/i18n/localize";
 
 // Extend Window to include the Google dataLayer
 declare global {
@@ -50,6 +51,7 @@ interface Props {
 export default function CookieConsentBanner({ locale }: Props) {
   const [visible, setVisible] = useState(false);
   const strings = t(locale).consent;
+  const privacyHref = localizeHref("/kebijakan-privasi", locale);
 
   useEffect(() => {
     // Check if user already made a choice
@@ -98,10 +100,11 @@ export default function CookieConsentBanner({ locale }: Props) {
           <p className="mb-1 font-semibold">{strings.title}</p>
           <p className="text-text-muted">{strings.description}</p>
           <a
-            href="/kebijakan-privasi"
+            href={privacyHref}
             className="mt-1 inline-block text-xs underline underline-offset-2 hover:text-primary"
+            aria-label={`${strings.learnMore}: ${strings.title}`}
           >
-            {strings.learnMore}
+            {strings.learnMore}: {strings.title}
           </a>
         </div>
         <div className="flex shrink-0 flex-wrap gap-2">

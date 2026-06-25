@@ -33,6 +33,7 @@ interface Props {
   ogType?: "website" | "article" | "profile";
   noIndex?: boolean;
   locale?: string;
+  enableClientRouter?: boolean;
 }
 
 const {
@@ -44,6 +45,7 @@ const {
   ogType = "website",
   noIndex = false,
   locale = "id",
+  enableClientRouter = false,
 } = Astro.props as Props;
 
 const currentLocale = locale;
@@ -82,13 +84,19 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
     <link rel="icon" href="/favicon.ico" />
 
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Sungkar Group Blog Feed"
+      href="/feed.xml"
+    />
 
     <StructuredData schema={organizationSchema} />
     <StructuredData schema={websiteSchema} />
 
     <GoogleAnalytics />
 
-    <ClientRouter />
+    {enableClientRouter && <ClientRouter />}
 
     <!-- Netlify Identity: redirect invite/password-recovery/confirmation to /admin/ -->
     <script>
@@ -115,6 +123,6 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
 
     <Footer locale={currentLocale} />
 
-    <CookieConsentBanner locale={currentLocale as Locale} client:only="react" />
+    <CookieConsentBanner locale={currentLocale as Locale} client:idle />
   </body>
 </html>

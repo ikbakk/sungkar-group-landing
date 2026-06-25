@@ -1,0 +1,30 @@
+name: External link check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 6 * * 1"
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check external links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --cache
+            --max-cache-age 1d
+            --exclude-mail
+            --accept 200,206,429
+            'src/**/*.astro'
+            'src/**/*.md'
+            'src/**/*.mdx'
+            'public/**/*.html'
+            'public/**/*.txt'

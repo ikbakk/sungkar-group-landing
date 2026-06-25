@@ -1,0 +1,2559 @@
+{
+  "site": "https://www.sungkargroup.com",
+  "generatedAt": "2026-06-25T02:57:12.185Z",
+  "audited": [
+    {
+      "file": "src/pages/index.astro",
+      "url": "https://www.sungkargroup.com/",
+      "finalUrl": "https://www.sungkargroup.com/",
+      "fetchTime": "2026-06-25T02:43:37.667Z",
+      "scores": {
+        "performance": 73,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.7 s",
+        "lcp": "5.2 s",
+        "speedIndex": "3.0 s",
+        "tbt": "290 ms",
+        "cls": "0",
+        "tti": "5.2 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 171 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 98 KiB"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.0 s"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/tentang-kami.astro",
+      "url": "https://www.sungkargroup.com/tentang-kami/",
+      "finalUrl": "https://www.sungkargroup.com/tentang-kami/",
+      "fetchTime": "2026-06-25T02:43:55.171Z",
+      "scores": {
+        "performance": 83,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.3 s",
+        "lcp": "3.6 s",
+        "speedIndex": "2.1 s",
+        "tbt": "300 ms",
+        "cls": "0.015",
+        "tti": "3.8 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 50,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/faq.astro",
+      "url": "https://www.sungkargroup.com/faq/",
+      "finalUrl": "https://www.sungkargroup.com/faq/",
+      "fetchTime": "2026-06-25T02:44:11.748Z",
+      "scores": {
+        "performance": 75,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "4.5 s",
+        "speedIndex": "2.1 s",
+        "tbt": "370 ms",
+        "cls": "0.001",
+        "tti": "4.5 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 150 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/syarat-ketentuan.astro",
+      "url": "https://www.sungkargroup.com/syarat-ketentuan/",
+      "finalUrl": "https://www.sungkargroup.com/syarat-ketentuan/",
+      "fetchTime": "2026-06-25T02:44:27.213Z",
+      "scores": {
+        "performance": 92,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "2.3 s",
+        "speedIndex": "1.5 s",
+        "tbt": "290 ms",
+        "cls": "0.006",
+        "tti": "3.8 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 90 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 54,
+          "displayValue": "240 ms"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/kontak.astro",
+      "url": "https://www.sungkargroup.com/kontak/",
+      "finalUrl": "https://www.sungkargroup.com/kontak/",
+      "fetchTime": "2026-06-25T02:44:42.453Z",
+      "scores": {
+        "performance": 64,
+        "accessibility": 97,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "3.4 s",
+        "lcp": "8.0 s",
+        "speedIndex": "3.8 s",
+        "tbt": "240 ms",
+        "cls": "0.001",
+        "tti": "8.1 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 36 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 89 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 2,
+          "displayValue": "8.0 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 38,
+          "displayValue": "3.4 s"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/kebijakan-privasi.astro",
+      "url": "https://www.sungkargroup.com/kebijakan-privasi/",
+      "finalUrl": "https://www.sungkargroup.com/kebijakan-privasi/",
+      "fetchTime": "2026-06-25T02:44:59.210Z",
+      "scores": {
+        "performance": 94,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "1.9 s",
+        "speedIndex": "1.8 s",
+        "tbt": "280 ms",
+        "cls": "0.007",
+        "tti": "3.8 s"
+      },
+      "topIssues": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "displayValue": "Est savings of 510 ms"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 80 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "server-response-time",
+          "title": "Reduce initial server response time",
+          "score": 0,
+          "displayValue": "Root document took 610 ms"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/ulasan.astro",
+      "url": "https://www.sungkargroup.com/ulasan/",
+      "finalUrl": "https://www.sungkargroup.com/ulasan/",
+      "fetchTime": "2026-06-25T02:45:14.424Z",
+      "scores": {
+        "performance": 93,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.5 s",
+        "lcp": "1.9 s",
+        "speedIndex": "2.0 s",
+        "tbt": "290 ms",
+        "cls": "0.039",
+        "tti": "3.9 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 230 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 98 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/paket-wisata/index.astro",
+      "url": "https://www.sungkargroup.com/paket-wisata/",
+      "finalUrl": "https://www.sungkargroup.com/paket-wisata/",
+      "fetchTime": "2026-06-25T02:45:35.554Z",
+      "scores": {
+        "performance": 73,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "2.1 s",
+        "lcp": "6.3 s",
+        "speedIndex": "3.3 s",
+        "tbt": "160 ms",
+        "cls": "0.002",
+        "tti": "6.3 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 61 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 490 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 98 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/paket-wisata/[region]/index.astro",
+      "url": "https://www.sungkargroup.com/paket-wisata/labuan-bajo/",
+      "finalUrl": "https://www.sungkargroup.com/paket-wisata/labuan-bajo/",
+      "fetchTime": "2026-06-25T02:45:59.579Z",
+      "scores": {
+        "performance": 94,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "1.4 s",
+        "speedIndex": "1.8 s",
+        "tbt": "270 ms",
+        "cls": "0.041",
+        "tti": "3.7 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 110 ms"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 98 KiB"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/paket-wisata/[region]/[collection]/index.astro",
+      "url": "https://www.sungkargroup.com/paket-wisata/lombok-bajo/bajo-to-lombok/",
+      "finalUrl": "https://www.sungkargroup.com/paket-wisata/lombok-bajo/bajo-to-lombok/",
+      "fetchTime": "2026-06-25T02:46:14.500Z",
+      "scores": {
+        "performance": 82,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "3.8 s",
+        "speedIndex": "2.1 s",
+        "tbt": "300 ms",
+        "cls": "0.001",
+        "tti": "3.8 s"
+      },
+      "topIssues": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "displayValue": "Est savings of 550 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 44 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 100 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/paket-wisata/[region]/[collection]/[slug].astro",
+      "url": "https://www.sungkargroup.com/paket-wisata/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/",
+      "finalUrl": "https://www.sungkargroup.com/paket-wisata/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/",
+      "fetchTime": "2026-06-25T02:46:30.130Z",
+      "scores": {
+        "performance": 73,
+        "accessibility": 92,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "4.6 s",
+        "speedIndex": "3.2 s",
+        "tbt": "410 ms",
+        "cls": "0",
+        "tti": "4.6 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 96 KiB"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.6 s"
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/panduan-wisata/index.astro",
+      "url": "https://www.sungkargroup.com/panduan-wisata/",
+      "finalUrl": "https://www.sungkargroup.com/panduan-wisata/",
+      "fetchTime": "2026-06-25T02:46:53.181Z",
+      "scores": {
+        "performance": 78,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.2 s",
+        "lcp": "4.5 s",
+        "speedIndex": "1.7 s",
+        "tbt": "290 ms",
+        "cls": "0.011",
+        "tti": "4.5 s"
+      },
+      "topIssues": [
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 100 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 38,
+          "displayValue": "4.5 s"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 50,
+          "displayValue": "Est savings of 30 KiB"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/panduan-wisata/[slug].astro",
+      "url": "https://www.sungkargroup.com/panduan-wisata/best-time-to-visit-lombok/",
+      "finalUrl": "https://www.sungkargroup.com/panduan-wisata/best-time-to-visit-lombok/",
+      "fetchTime": "2026-06-25T02:47:08.310Z",
+      "scores": {
+        "performance": 76,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.0 s",
+        "lcp": "4.1 s",
+        "speedIndex": "2.6 s",
+        "tbt": "430 ms",
+        "cls": "0.016",
+        "tti": "4.1 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 96 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 47,
+          "displayValue": "4.1 s"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/akomodasi/index.astro",
+      "url": "https://www.sungkargroup.com/akomodasi/",
+      "finalUrl": "https://www.sungkargroup.com/akomodasi/",
+      "fetchTime": "2026-06-25T02:47:23.880Z",
+      "scores": {
+        "performance": 70,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.0 s",
+        "lcp": "4.7 s",
+        "speedIndex": "2.4 s",
+        "tbt": "490 ms",
+        "cls": "0.001",
+        "tti": "4.7 s"
+      },
+      "topIssues": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "displayValue": "Est savings of 560 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 98 KiB"
+        },
+        {
+          "id": "server-response-time",
+          "title": "Reduce initial server response time",
+          "score": 0,
+          "displayValue": "Root document took 660 ms"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/akomodasi/[slug].astro",
+      "url": "https://www.sungkargroup.com/akomodasi/labuan-bajo/",
+      "finalUrl": "https://www.sungkargroup.com/akomodasi/labuan-bajo/",
+      "fetchTime": "2026-06-25T02:47:43.177Z",
+      "scores": {
+        "performance": 77,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "0.9 s",
+        "lcp": "3.6 s",
+        "speedIndex": "2.7 s",
+        "tbt": "510 ms",
+        "cls": "0.001",
+        "tti": "3.8 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 39 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 98 KiB"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.2 s"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/sewa-mobil/index.astro",
+      "url": "https://www.sungkargroup.com/sewa-mobil/",
+      "finalUrl": "https://www.sungkargroup.com/sewa-mobil/",
+      "fetchTime": "2026-06-25T02:48:05.755Z",
+      "scores": {
+        "performance": 88,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.4 s",
+        "lcp": "1.7 s",
+        "speedIndex": "2.0 s",
+        "tbt": "470 ms",
+        "cls": "0.017",
+        "tti": "4.1 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 501 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.4 s"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/sewa-mobil/[region]/index.astro",
+      "url": "https://www.sungkargroup.com/sewa-mobil/lombok/",
+      "finalUrl": "https://www.sungkargroup.com/sewa-mobil/lombok/",
+      "fetchTime": "2026-06-25T02:48:23.296Z",
+      "scores": {
+        "performance": 89,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.2 s",
+        "lcp": "3.1 s",
+        "speedIndex": "1.7 s",
+        "tbt": "250 ms",
+        "cls": "0.001",
+        "tti": "3.8 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 501 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 50,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/sewa-mobil/[region]/[slug].astro",
+      "url": "https://www.sungkargroup.com/sewa-mobil/lombok/big-bus-lombok/",
+      "finalUrl": "https://www.sungkargroup.com/sewa-mobil/lombok/big-bus-lombok/",
+      "fetchTime": "2026-06-25T02:48:40.274Z",
+      "scores": {
+        "performance": 81,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "0.9 s",
+        "lcp": "3.4 s",
+        "speedIndex": "2.8 s",
+        "tbt": "400 ms",
+        "cls": "0",
+        "tti": "3.9 s"
+      },
+      "topIssues": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "displayValue": "Est savings of 590 ms"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 96 KiB"
+        },
+        {
+          "id": "server-response-time",
+          "title": "Reduce initial server response time",
+          "score": 0,
+          "displayValue": "Root document took 690 ms"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 50,
+          "displayValue": "Est savings of 79 KiB"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/destinasi/index.astro",
+      "url": "https://www.sungkargroup.com/destinasi/",
+      "finalUrl": "https://www.sungkargroup.com/destinasi/",
+      "fetchTime": "2026-06-25T02:48:56.370Z",
+      "scores": {
+        "performance": 72,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.0 s",
+        "lcp": "4.7 s",
+        "speedIndex": "2.6 s",
+        "tbt": "410 ms",
+        "cls": "0.07",
+        "tti": "4.7 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 32,
+          "displayValue": "4.7 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 41,
+          "displayValue": "280 ms"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/destinasi/[slug].astro",
+      "url": "https://www.sungkargroup.com/destinasi/gili-air/",
+      "finalUrl": "https://www.sungkargroup.com/destinasi/gili-air/",
+      "fetchTime": "2026-06-25T02:49:13.188Z",
+      "scores": {
+        "performance": 73,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "0.9 s",
+        "lcp": "4.5 s",
+        "speedIndex": "2.8 s",
+        "tbt": "320 ms",
+        "cls": "0.107",
+        "tti": "4.6 s"
+      },
+      "topIssues": [
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 96 KiB"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "3 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/blog/index.astro",
+      "url": "https://www.sungkargroup.com/blog/",
+      "finalUrl": "https://www.sungkargroup.com/blog/",
+      "fetchTime": "2026-06-25T02:49:29.357Z",
+      "scores": {
+        "performance": 78,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.7 s",
+        "lcp": "4.5 s",
+        "speedIndex": "2.7 s",
+        "tbt": "270 ms",
+        "cls": "0.001",
+        "tti": "4.5 s"
+      },
+      "topIssues": [
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 360 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 98 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 37,
+          "displayValue": "4.5 s"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/blog/[slug].astro",
+      "url": "https://www.sungkargroup.com/blog/biaya-liburan-ke-labuan-bajo/",
+      "finalUrl": "https://www.sungkargroup.com/blog/biaya-liburan-ke-labuan-bajo/",
+      "fetchTime": "2026-06-25T02:49:44.414Z",
+      "scores": {
+        "performance": 91,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "1.7 s",
+        "speedIndex": "1.9 s",
+        "tbt": "380 ms",
+        "cls": "0.019",
+        "tti": "3.9 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 50,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/index.astro",
+      "url": "https://www.sungkargroup.com/en/",
+      "finalUrl": "https://www.sungkargroup.com/en/",
+      "fetchTime": "2026-06-25T02:50:00.236Z",
+      "scores": {
+        "performance": 81,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "3.9 s",
+        "speedIndex": "2.2 s",
+        "tbt": "320 ms",
+        "cls": "0.02",
+        "tti": "4.0 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 171 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 98 KiB"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.2 s"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/about.astro",
+      "url": "https://www.sungkargroup.com/en/about/",
+      "finalUrl": "https://www.sungkargroup.com/en/about/",
+      "fetchTime": "2026-06-25T02:50:17.917Z",
+      "scores": {
+        "performance": 93,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.3 s",
+        "lcp": "1.8 s",
+        "speedIndex": "1.9 s",
+        "tbt": "290 ms",
+        "cls": "0.039",
+        "tti": "3.9 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "score": 0,
+          "displayValue": "1 link found"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/terms-conditions.astro",
+      "url": "https://www.sungkargroup.com/en/terms-conditions/",
+      "finalUrl": "https://www.sungkargroup.com/en/terms-conditions/",
+      "fetchTime": "2026-06-25T02:50:35.316Z",
+      "scores": {
+        "performance": 93,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "1.5 s",
+        "speedIndex": "1.5 s",
+        "tbt": "310 ms",
+        "cls": "0.023",
+        "tti": "3.7 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 90 ms"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "score": 0,
+          "displayValue": "1 link found"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 98 KiB"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/privacy-policy.astro",
+      "url": "https://www.sungkargroup.com/en/privacy-policy/",
+      "finalUrl": "https://www.sungkargroup.com/en/privacy-policy/",
+      "fetchTime": "2026-06-25T02:50:50.731Z",
+      "scores": {
+        "performance": 84,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "0.9 s",
+        "lcp": "3.8 s",
+        "speedIndex": "2.5 s",
+        "tbt": "250 ms",
+        "cls": "0.007",
+        "tti": "3.8 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "score": 0,
+          "displayValue": "1 link found"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/faq.astro",
+      "url": "https://www.sungkargroup.com/en/faq/",
+      "finalUrl": "https://www.sungkargroup.com/en/faq/",
+      "fetchTime": "2026-06-25T02:51:06.810Z",
+      "scores": {
+        "performance": 79,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "0.9 s",
+        "lcp": "3.5 s",
+        "speedIndex": "2.8 s",
+        "tbt": "420 ms",
+        "cls": "0.064",
+        "tti": "4.1 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 96 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/contact.astro",
+      "url": "https://www.sungkargroup.com/en/contact/",
+      "finalUrl": "https://www.sungkargroup.com/en/contact/",
+      "fetchTime": "2026-06-25T02:51:22.130Z",
+      "scores": {
+        "performance": 93,
+        "accessibility": 97,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.2 s",
+        "lcp": "1.7 s",
+        "speedIndex": "2.1 s",
+        "tbt": "310 ms",
+        "cls": "0.001",
+        "tti": "6.1 s"
+      },
+      "topIssues": [
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 240 ms"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 42 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "score": 0,
+          "displayValue": "1 link found"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 49,
+          "displayValue": "250 ms"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/reviews.astro",
+      "url": "https://www.sungkargroup.com/en/reviews/",
+      "finalUrl": "https://www.sungkargroup.com/en/reviews/",
+      "fetchTime": "2026-06-25T02:51:42.314Z",
+      "scores": {
+        "performance": 78,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.3 s",
+        "lcp": "4.3 s",
+        "speedIndex": "2.8 s",
+        "tbt": "300 ms",
+        "cls": "0",
+        "tti": "4.3 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 270 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 96 KiB"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.1 s"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/blog/index.astro",
+      "url": "https://www.sungkargroup.com/en/blog/",
+      "finalUrl": "https://www.sungkargroup.com/en/blog/",
+      "fetchTime": "2026-06-25T02:52:04.944Z",
+      "scores": {
+        "performance": 86,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "2.9 s",
+        "speedIndex": "2.2 s",
+        "tbt": "370 ms",
+        "cls": "0.003",
+        "tti": "3.9 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 80 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 98 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/blog/[slug].astro",
+      "url": "https://www.sungkargroup.com/en/blog/persiapan-sebelum-liburan-ke-lombok/",
+      "finalUrl": "https://www.sungkargroup.com/en/blog/persiapan-sebelum-liburan-ke-lombok/",
+      "fetchTime": "2026-06-25T02:52:20.116Z",
+      "scores": {
+        "performance": 81,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.0 s",
+        "lcp": "3.7 s",
+        "speedIndex": "2.1 s",
+        "tbt": "340 ms",
+        "cls": "0.001",
+        "tti": "4.0 s"
+      },
+      "topIssues": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "displayValue": "Est savings of 530 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 96 KiB"
+        },
+        {
+          "id": "server-response-time",
+          "title": "Reduce initial server response time",
+          "score": 0,
+          "displayValue": "Root document took 630 ms"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/travel-guides/index.astro",
+      "url": "https://www.sungkargroup.com/en/travel-guides/",
+      "finalUrl": "https://www.sungkargroup.com/en/travel-guides/",
+      "fetchTime": "2026-06-25T02:52:35.416Z",
+      "scores": {
+        "performance": 87,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "0.9 s",
+        "lcp": "3.0 s",
+        "speedIndex": "2.0 s",
+        "tbt": "320 ms",
+        "cls": "0.001",
+        "tti": "3.7 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 110 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/travel-guides/[slug].astro",
+      "url": "https://www.sungkargroup.com/en/travel-guides/best-time-to-visit-lombok/",
+      "finalUrl": "https://www.sungkargroup.com/en/travel-guides/best-time-to-visit-lombok/",
+      "fetchTime": "2026-06-25T02:52:50.550Z",
+      "scores": {
+        "performance": 92,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.3 s",
+        "lcp": "1.7 s",
+        "speedIndex": "1.7 s",
+        "tbt": "340 ms",
+        "cls": "0.04",
+        "tti": "4.0 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 41 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "score": 0,
+          "displayValue": "1 link found"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/accommodations/index.astro",
+      "url": "https://www.sungkargroup.com/en/accommodations/",
+      "finalUrl": "https://www.sungkargroup.com/en/accommodations/",
+      "fetchTime": "2026-06-25T02:53:06.516Z",
+      "scores": {
+        "performance": 88,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "2.0 s",
+        "speedIndex": "1.8 s",
+        "tbt": "450 ms",
+        "cls": "0.001",
+        "tti": "4.1 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 39 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "score": 0,
+          "displayValue": "1 link found"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 41,
+          "displayValue": "280 ms"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/accommodations/[slug].astro",
+      "url": "https://www.sungkargroup.com/en/accommodations/labuan-bajo/",
+      "finalUrl": "https://www.sungkargroup.com/en/accommodations/labuan-bajo/",
+      "fetchTime": "2026-06-25T02:53:22.898Z",
+      "scores": {
+        "performance": 92,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.2 s",
+        "lcp": "2.5 s",
+        "speedIndex": "1.7 s",
+        "tbt": "280 ms",
+        "cls": "0.001",
+        "tti": "3.8 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 39 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 80 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/car-rental/index.astro",
+      "url": "https://www.sungkargroup.com/en/car-rental/",
+      "finalUrl": "https://www.sungkargroup.com/en/car-rental/",
+      "fetchTime": "2026-06-25T02:53:41.445Z",
+      "scores": {
+        "performance": 26,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "7.4 s",
+        "lcp": "7.4 s",
+        "speedIndex": "13.1 s",
+        "tbt": "10,210 ms",
+        "cls": "0",
+        "tti": "18.5 s"
+      },
+      "topIssues": [
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0,
+          "displayValue": "10,210 ms"
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "displayValue": "Est savings of 530 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0,
+          "displayValue": "4,590 ms"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/car-rental/[region]/index.astro",
+      "url": "https://www.sungkargroup.com/en/car-rental/lombok/",
+      "finalUrl": "https://www.sungkargroup.com/en/car-rental/lombok/",
+      "fetchTime": "2026-06-25T02:54:40.217Z",
+      "scores": {
+        "performance": 90,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "1.6 s",
+        "speedIndex": "1.8 s",
+        "tbt": "380 ms",
+        "cls": "0.039",
+        "tti": "4.0 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 501 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "score": 0,
+          "displayValue": "1 link found"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/car-rental/[region]/[slug].astro",
+      "url": "https://www.sungkargroup.com/en/car-rental/lombok/big-bus-lombok/",
+      "finalUrl": "https://www.sungkargroup.com/en/car-rental/lombok/big-bus-lombok/",
+      "fetchTime": "2026-06-25T02:54:57.526Z",
+      "scores": {
+        "performance": 89,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.2 s",
+        "lcp": "1.7 s",
+        "speedIndex": "1.8 s",
+        "tbt": "420 ms",
+        "cls": "0.001",
+        "tti": "3.8 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 79 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "score": 0,
+          "displayValue": "4 links found"
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 50,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/tour-packages/index.astro",
+      "url": "https://www.sungkargroup.com/en/tour-packages/",
+      "finalUrl": "https://www.sungkargroup.com/en/tour-packages/",
+      "fetchTime": "2026-06-25T02:55:16.355Z",
+      "scores": {
+        "performance": 76,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.1 s",
+        "lcp": "2.2 s",
+        "speedIndex": "2.2 s",
+        "tbt": "1,050 ms",
+        "cls": "0.002",
+        "tti": "4.2 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 61 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "bootup-time",
+          "title": "Reduce JavaScript execution time",
+          "score": 0,
+          "displayValue": "1.3 s"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "4.0 s"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/tour-packages/[region]/index.astro",
+      "url": "https://www.sungkargroup.com/en/tour-packages/labuan-bajo/",
+      "finalUrl": "https://www.sungkargroup.com/en/tour-packages/labuan-bajo/",
+      "fetchTime": "2026-06-25T02:55:45.049Z",
+      "scores": {
+        "performance": 84,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.2 s",
+        "lcp": "1.6 s",
+        "speedIndex": "2.6 s",
+        "tbt": "610 ms",
+        "cls": "0.001",
+        "tti": "4.1 s"
+      },
+      "topIssues": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "displayValue": "Est savings of 720 ms"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 70 ms"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.1 s"
+        },
+        {
+          "id": "server-response-time",
+          "title": "Reduce initial server response time",
+          "score": 0,
+          "displayValue": "Root document took 820 ms"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/tour-packages/[region]/[collection]/index.astro",
+      "url": "https://www.sungkargroup.com/en/tour-packages/lombok-bajo/bajo-to-lombok/",
+      "finalUrl": "https://www.sungkargroup.com/en/tour-packages/lombok-bajo/bajo-to-lombok/",
+      "fetchTime": "2026-06-25T02:56:01.414Z",
+      "scores": {
+        "performance": 79,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.4 s",
+        "lcp": "2.2 s",
+        "speedIndex": "1.9 s",
+        "tbt": "800 ms",
+        "cls": "0.002",
+        "tti": "4.3 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 44 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 240 ms"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 98 KiB"
+        },
+        {
+          "id": "bootup-time",
+          "title": "Reduce JavaScript execution time",
+          "score": 0,
+          "displayValue": "1.3 s"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.3 s"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/tour-packages/[region]/[collection]/[slug].astro",
+      "url": "https://www.sungkargroup.com/en/tour-packages/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/",
+      "finalUrl": "https://www.sungkargroup.com/en/tour-packages/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/",
+      "fetchTime": "2026-06-25T02:56:18.182Z",
+      "scores": {
+        "performance": 86,
+        "accessibility": 92,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.3 s",
+        "lcp": "2.4 s",
+        "speedIndex": "2.1 s",
+        "tbt": "410 ms",
+        "cls": "0.069",
+        "tti": "3.9 s"
+      },
+      "topIssues": [
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 627 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 98 KiB"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.6 s"
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "score": 0,
+          "displayValue": null
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/destinations/index.astro",
+      "url": "https://www.sungkargroup.com/en/destinations/",
+      "finalUrl": "https://www.sungkargroup.com/en/destinations/",
+      "fetchTime": "2026-06-25T02:56:41.693Z",
+      "scores": {
+        "performance": 80,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "1.7 s",
+        "lcp": "2.4 s",
+        "speedIndex": "2.2 s",
+        "tbt": "700 ms",
+        "cls": "0.029",
+        "tti": "4.4 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 41 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 99 KiB"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.7 s"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "score": 0,
+          "displayValue": "1 link found"
+        }
+      ]
+    },
+    {
+      "file": "src/pages/[locale]/destinations/[slug].astro",
+      "url": "https://www.sungkargroup.com/en/destinations/gili-air/",
+      "finalUrl": "https://www.sungkargroup.com/en/destinations/gili-air/",
+      "fetchTime": "2026-06-25T02:56:59.942Z",
+      "scores": {
+        "performance": 89,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "0.9 s",
+        "lcp": "2.0 s",
+        "speedIndex": "2.1 s",
+        "tbt": "360 ms",
+        "cls": "0.084",
+        "tti": "3.8 s"
+      },
+      "topIssues": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 454 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "score": 0,
+          "displayValue": "1 link found"
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 50,
+          "displayValue": null
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 98 KiB"
+        }
+      ]
+    }
+  ],
+  "missing": []
+}

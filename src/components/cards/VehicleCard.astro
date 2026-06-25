@@ -17,9 +17,15 @@ interface Props {
   vehicle: Vehicle;
   locale?: string;
   loading?: "lazy" | "eager";
+  fetchpriority?: "high" | "low" | "auto";
 }
 
-const { vehicle, locale = "id", loading = "lazy" } = Astro.props;
+const {
+  vehicle,
+  locale = "id",
+  loading = "lazy",
+  fetchpriority = "auto",
+} = Astro.props;
 const uiStrings = t(locale);
 
 const cardHref = localizeHref(
@@ -35,6 +41,10 @@ const cardHref = localizeHref(
       alt={vehicle.name}
       class="h-full w-full object-cover"
       loading={loading}
+      fetchpriority={fetchpriority}
+      widths={[320, 480, 640, 800]}
+      sizes="(min-width: 768px) 50vw, 100vw"
+      quality={68}
     />
   </div>
 

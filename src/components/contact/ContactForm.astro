@@ -249,7 +249,15 @@ const formClientConfig = {
 <script>
   import { initContactForm } from "./ContactForm.client";
 
-  const el = document.getElementById("contact-form-data");
-  const cfg = JSON.parse(el?.getAttribute("data-config") ?? "{}");
-  initContactForm(cfg);
+  const run = () => {
+    const el = document.getElementById("contact-form-data");
+    const cfg = JSON.parse(el?.getAttribute("data-config") ?? "{}");
+    initContactForm(cfg);
+  };
+
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(run, { timeout: 1200 });
+  } else {
+    globalThis.setTimeout(run, 300);
+  }
 </script>

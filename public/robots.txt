@@ -1,3 +1,6 @@
 User-agent: *
 Allow: /
 Sitemap: https://www.sungkargroup.com/sitemap-index.xml
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+# Reserved for future schema endpoint rollout:
+# Schemamap: https://www.sungkargroup.com/schemamap.xml
