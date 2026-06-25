@@ -36,7 +36,7 @@ import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
 import { paketWisataFormFields } from "@/lib/contact-data";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t } from "@/lib/i18n";
+import { getPackageDetailStrings } from "@/lib/i18n";
 import { getImageSrc } from "@/lib/images";
 
 export async function getStaticPaths() {
@@ -57,7 +57,7 @@ export async function getStaticPaths() {
 
 const locale = "id";
 const { tour } = Astro.props;
-const uiStrings = t(locale);
+const uiStrings = getPackageDetailStrings(locale);
 
 const r = tour.region as Region;
 

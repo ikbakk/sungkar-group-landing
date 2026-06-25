@@ -13,7 +13,7 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { businessInfo, contactFormFields } from "@/lib/contact-data";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t } from "@/lib/i18n";
+import { getFaqPageStrings, getGlobalStrings } from "@/lib/i18n";
 
 import { getPackages } from "@/lib/content/tourPackages/collection";
 
@@ -24,7 +24,8 @@ import {
 import { SITE_URL } from "@/lib/site-config";
 
 const locale = "id";
-const uiStrings = t(locale);
+const globalStrings = getGlobalStrings(locale);
+const faqStrings = getFaqPageStrings(locale);
 
 const pageModule = await loadContent(locale, "contactPage");
 const { contactPageContent } = pageModule;
@@ -42,10 +43,10 @@ const contactSchema = generateContactPageSchema(canonicalUrl, businessInfo);
 
 const faqSchema = generateFAQPageSchema(contactFaq);
 
-const pageTitle = uiStrings.page.contact;
+const pageTitle = globalStrings.page.contact;
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: "/" },
-  { label: uiStrings.breadcrumb.contact },
+  { label: globalStrings.breadcrumb.home, href: "/" },
+  { label: globalStrings.breadcrumb.contact },
 ];
 ---
 
@@ -95,8 +96,8 @@ const breadcrumbs = [
 
   <SectionContainer background="bg-surface-soft">
     <FaqSection
-      eyebrow={uiStrings.faq.sectionTitle}
-      title={uiStrings.faq.sectionContact}
+      eyebrow={faqStrings.faq.sectionTitle}
+      title={faqStrings.faq.sectionContact}
       items={contactFaq}
       background="bg-surface-soft"
     />

@@ -8,7 +8,10 @@ import { getPackages } from "@/lib/content/tourPackages/collection";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
 import { loadContent } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import {
+  getGlobalStrings,
+  NON_DEFAULT_LOCALES,
+} from "@/lib/i18n";
 
 export async function getStaticPaths() {
   const paths = [];
@@ -37,7 +40,7 @@ export async function getStaticPaths() {
 
 const { locale, region, collection } = Astro.params;
 const r = region as Region;
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
 const pageModule = await loadContent(locale!, "packagePage");
 const { packagePageContent } = pageModule;
 
@@ -57,9 +60,9 @@ const collectionSeoTitle = normalizedCollectionTitle.includes(
 const collectionDescription = packagePageContent.regions[r].description;
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
   {
-    label: uiStrings.breadcrumb.tourPackages,
+    label: globalStrings.breadcrumb.tourPackages,
     href: `/${locale}/tour-packages`,
   },
   { label: REGION_LABEL[r], href: `/${locale}/tour-packages/${r}` },
@@ -87,6 +90,8 @@ const breadcrumbs = [
           <PackageCard
             tour={tour}
             locale={locale}
+            moreCountLabel={globalStrings.common.moreCount}
+            viewPackageDetailLabel={globalStrings.common.viewDetail}
             loading={i < 3 ? "eager" : "lazy"}
             fetchpriority={i === 0 ? "high" : "auto"}
           />

@@ -6,7 +6,7 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { getPackages } from "@/lib/content/tourPackages/collection";
 import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 
-import { t } from "@/lib/i18n";
+import { getGlobalStrings, getTourPackagesPageStrings } from "@/lib/i18n";
 
 import CollectionCard from "@/components/packages/CollectionCard.astro";
 
@@ -35,7 +35,8 @@ export function getStaticPaths() {
 const locale = "id";
 const { region } = Astro.params;
 const r = region as Region;
-const uiStrings = t(locale);
+const globalStrings = getGlobalStrings(locale);
+const packageStrings = getTourPackagesPageStrings(locale);
 
 const packages = await getPackages(locale);
 const regionPackages = packages.filter((pkg) => pkg.region === r);
@@ -91,8 +92,8 @@ const regionSeo = REGION_SEO[r];
 const regionDescription = regionSeo.description;
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: "/" },
-  { label: uiStrings.breadcrumb.tourPackages, href: "/paket-wisata" },
+  { label: globalStrings.breadcrumb.home, href: "/" },
+  { label: globalStrings.breadcrumb.tourPackages, href: "/paket-wisata" },
   { label: REGION_LABEL[r] },
 ];
 ---
@@ -105,7 +106,7 @@ const breadcrumbs = [
   locale={locale}
 >
   <PageHeader
-    eyebrow={uiStrings.paketWisata.eyebrow}
+    eyebrow={packageStrings.paketWisata.eyebrow}
     title={regionSeo.title}
     description={regionDescription}
     breadcrumbs={breadcrumbs}
@@ -115,7 +116,12 @@ const breadcrumbs = [
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       {
         collections.map((collection) => (
-          <CollectionCard collection={collection} region={r} />
+          <CollectionCard
+            collection={collection}
+            region={r}
+            packagesAvailableLabel={packageStrings.paketWisata.packagesAvailable}
+            morePackagesLabel={packageStrings.paketWisata.morePackages}
+          />
         ))
       }
     </div>

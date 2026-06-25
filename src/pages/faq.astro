@@ -5,7 +5,7 @@ import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t } from "@/lib/i18n";
+import { getGlobalStrings } from "@/lib/i18n";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -20,7 +20,7 @@ import type { FAQItem } from "@/lib/content/shared/types";
 import { HERO } from "@/assets/images";
 
 const locale = "id";
-const uiStrings = t(locale);
+const globalStrings = getGlobalStrings(locale);
 
 const faqModule = await loadFaq(locale, "general");
 const { generalFaqItems } = faqModule;
@@ -31,8 +31,8 @@ const { faqPageContent } = pageModule;
 const faqSchema = generateFAQPageSchema(generalFaqItems);
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: "/" },
-  { label: uiStrings.breadcrumb.faq },
+  { label: globalStrings.breadcrumb.home, href: "/" },
+  { label: globalStrings.breadcrumb.faq },
 ];
 ---
 
@@ -50,7 +50,7 @@ const breadcrumbs = [
     description={faqPageContent.hero.description}
     breadcrumbs={breadcrumbs}
     image={HERO.heroLombok}
-    imageAlt={uiStrings.common.imageAltSunrise}
+    imageAlt={globalStrings.common.imageAltSunrise}
   />
 
   <SectionContainer background="bg-surface-soft" padding="pb-20">

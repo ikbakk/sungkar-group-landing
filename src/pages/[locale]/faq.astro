@@ -5,7 +5,7 @@ import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { getGlobalStrings, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 }
 
 const { locale } = Astro.params;
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
 
 const faqModule = await loadFaq(locale!, "general");
 const { generalFaqItems } = faqModule;
@@ -35,8 +35,8 @@ const { faqPageContent } = pageModule;
 const faqSchema = generateFAQPageSchema(generalFaqItems);
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-  { label: uiStrings.breadcrumb.faq },
+  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
+  { label: globalStrings.breadcrumb.faq },
 ];
 ---
 
@@ -54,7 +54,7 @@ const breadcrumbs = [
     description={faqPageContent.hero.description}
     breadcrumbs={breadcrumbs}
     image={HERO.heroLombok}
-    imageAlt={uiStrings.common.imageAltSunrise}
+    imageAlt={globalStrings.common.imageAltSunrise}
   />
 
   <SectionContainer background="bg-surface-soft" padding="pb-20">

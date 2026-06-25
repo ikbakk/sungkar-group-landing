@@ -15,14 +15,21 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { getAccommodations } from "@/lib/content/accommodations/collection";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import {
+  getAccommodationsPageStrings,
+  getFaqPageStrings,
+  getGlobalStrings,
+  NON_DEFAULT_LOCALES,
+} from "@/lib/i18n";
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
 }
 
 const { locale } = Astro.params;
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
+const accommodationsStrings = getAccommodationsPageStrings(locale!);
+const faqStrings = getFaqPageStrings(locale!);
 
 const pageModule = await loadContent(locale!, "akomodasiPage");
 const { akomodasiPageContent } = pageModule;
@@ -59,8 +66,8 @@ const regions = [
 ].filter((region) => region.count > 0);
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-  { label: uiStrings.breadcrumb.accommodations },
+  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
+  { label: globalStrings.breadcrumb.accommodations },
 ];
 ---
 
@@ -86,10 +93,12 @@ const breadcrumbs = [
       <SectionContainer background="bg-surface-soft">
         <AccommodationRegionSection
           id="lombok"
-          locale={locale}
           title={akomodasiPageContent.regions.lombok.title}
           description={akomodasiPageContent.regions.lombok.description}
           accommodations={lombokAccommodations}
+          featuresLabel={accommodationsStrings.akomodasi.features}
+          morePerksLabel={accommodationsStrings.akomodasi.morePerks}
+          backToTopLabel={globalStrings.common.backToTop}
         />
       </SectionContainer>
     )
@@ -100,10 +109,12 @@ const breadcrumbs = [
       <SectionContainer background="bg-background">
         <AccommodationRegionSection
           id="sumbawa"
-          locale={locale}
           title={akomodasiPageContent.regions.sumbawa.title}
           description={akomodasiPageContent.regions.sumbawa.description}
           accommodations={sumbawaAccommodations}
+          featuresLabel={accommodationsStrings.akomodasi.features}
+          morePerksLabel={accommodationsStrings.akomodasi.morePerks}
+          backToTopLabel={globalStrings.common.backToTop}
         />
       </SectionContainer>
     )
@@ -114,18 +125,20 @@ const breadcrumbs = [
       <SectionContainer background="bg-surface-soft">
         <AccommodationRegionSection
           id="labuan-bajo"
-          locale={locale}
           title={akomodasiPageContent.regions["labuan-bajo"].title}
           description={akomodasiPageContent.regions["labuan-bajo"].description}
           accommodations={labuanBajoAccommodations}
+          featuresLabel={accommodationsStrings.akomodasi.features}
+          morePerksLabel={accommodationsStrings.akomodasi.morePerks}
+          backToTopLabel={globalStrings.common.backToTop}
         />
       </SectionContainer>
     )
   }
 
   <FaqSection
-    eyebrow={uiStrings.faq.sectionTitle}
-    title={uiStrings.faq.sectionAccommodations}
+    eyebrow={faqStrings.faq.sectionTitle}
+    title={faqStrings.faq.sectionAccommodations}
     items={akomodasiFaq}
     background="bg-surface-soft"
   />

@@ -10,11 +10,17 @@ import StickyNav from "@/components/ui/StickyNav.astro";
 import DestinationGroupSection from "@/components/destinations/DestinationGroupSection.astro";
 
 import { loadContent } from "@/lib/i18n/loader";
-import { t } from "@/lib/i18n";
+import {
+  getFaqPageStrings,
+  getGlobalStrings,
+  getTourPackagesPageStrings,
+} from "@/lib/i18n";
 import { getDestinations } from "@/lib/content/destinations/collection";
 
 const locale = "id";
-const uiStrings = t(locale);
+const globalStrings = getGlobalStrings(locale);
+const faqStrings = getFaqPageStrings(locale);
+const packageStrings = getTourPackagesPageStrings(locale);
 
 const pageModule = await loadContent(locale, "destinationsPage");
 const { destinationsPageContent } = pageModule;
@@ -44,13 +50,13 @@ const groups = destinationsPageContent.groups.map(
 );
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: "/" },
-  { label: uiStrings.breadcrumb.destinations },
+  { label: globalStrings.breadcrumb.home, href: "/" },
+  { label: globalStrings.breadcrumb.destinations },
 ];
 ---
 
 <MainLayout
-  title={uiStrings.page.destinations}
+  title={globalStrings.page.destinations}
   description={destinationsPageContent.hero.description}
   canonical="/destinasi"
   image={destinationsPageContent.spotlightImage}
@@ -65,7 +71,7 @@ const breadcrumbs = [
     description={destinationsPageContent.hero.description}
     breadcrumbs={breadcrumbs}
     image={destinationsPageContent.spotlightImage}
-    imageAlt={uiStrings.common.imageAltDestinations}
+    imageAlt={globalStrings.common.imageAltDestinations}
   />
 
   <StickyNav
@@ -90,19 +96,22 @@ const breadcrumbs = [
           title={group.title}
           description={group.description}
           destinations={group.destinations}
+          moreCountLabel={globalStrings.common.moreCount}
+          viewDetailLabel={globalStrings.common.viewDetail}
+          backToTopLabel={globalStrings.common.backToTop}
         />
       </SectionContainer>
     ))
   }
 
   <FaqSection
-    eyebrow={uiStrings.faq.sectionTitle}
+    eyebrow={faqStrings.faq.sectionTitle}
     title={destinationsPageContent.detail.faqTitle}
     items={destinationsPageContent.faq}
   />
 
   <RelatedContent
-    title={uiStrings.paketWisata.exploreServices}
+    title={packageStrings.paketWisata.exploreServices}
     items={destinationsPageContent.relatedContent}
     background="bg-surface-soft"
   />

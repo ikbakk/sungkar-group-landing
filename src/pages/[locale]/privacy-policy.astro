@@ -3,7 +3,7 @@ import { TypographyH2 } from "@/components/ui/typography";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { getFooterStrings, getGlobalStrings, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import { HERO } from "@/assets/images";
 
 export async function getStaticPaths() {
@@ -11,7 +11,8 @@ export async function getStaticPaths() {
 }
 
 const { locale } = Astro.params;
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
+const footerStrings = getFooterStrings(locale!);
 
 const metaDescriptions = {
   en: "Learn how Sungkar Group collects, uses, and protects your personal data when you use our website, contact forms, and travel services.",
@@ -24,25 +25,25 @@ const metaDescription =
   metaDescriptions[locale as keyof typeof metaDescriptions];
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-  { label: uiStrings.footer.privacy },
+  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
+  { label: footerStrings.footer.privacy },
 ];
 ---
 
 <MainLayout
-  title={uiStrings.footer.privacy}
+  title={footerStrings.footer.privacy}
   description={metaDescription}
   canonical={`/${locale}/privacy-policy`}
   image={HERO.heroLombok}
   locale={locale}
 >
   <PageHeader
-    eyebrow={uiStrings.footer.privacy}
-    title={uiStrings.footer.privacy}
+    eyebrow={footerStrings.footer.privacy}
+    title={footerStrings.footer.privacy}
     description={metaDescription}
     breadcrumbs={breadcrumbs}
     image={HERO.heroLombok}
-    imageAlt={uiStrings.common.imageAltSunrise}
+    imageAlt={globalStrings.common.imageAltSunrise}
   />
 
   <SectionContainer background="bg-surface-soft" padding="pb-20">

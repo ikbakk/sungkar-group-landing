@@ -13,7 +13,7 @@ import { generateHowToSchema } from "@/lib/schemas";
 import { getGuides, getGuide } from "@/lib/content/guides";
 import { getPackages } from "@/lib/content/tourPackages/collection";
 
-import { t } from "@/lib/i18n";
+import { getGlobalStrings, getTravelGuidesPageStrings } from "@/lib/i18n";
 
 export async function getStaticPaths() {
   const guides = await getGuides("id");
@@ -24,7 +24,8 @@ export async function getStaticPaths() {
 }
 
 const locale = "id";
-const uiStrings = t(locale);
+const globalStrings = getGlobalStrings(locale);
+const guideStrings = getTravelGuidesPageStrings(locale);
 const { slug } = Astro.props;
 const guide = await getGuide(locale, slug);
 
@@ -49,13 +50,13 @@ const relatedPackages = packages.filter((p) =>
 );
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: "/" },
-  { label: uiStrings.breadcrumb.travelGuides, href: "/panduan-wisata" },
+  { label: globalStrings.breadcrumb.home, href: "/" },
+  { label: globalStrings.breadcrumb.travelGuides, href: "/panduan-wisata" },
   { label: title },
 ];
 
 const howToSteps = keyTakeaways.map((takeaway: string, index: number) => ({
-  name: uiStrings.guides.stepName.replace("{n}", String(index + 1)),
+  name: guideStrings.guides.stepName.replace("{n}", String(index + 1)),
   description: takeaway,
 }));
 
@@ -73,7 +74,7 @@ const guideSchema = generateHowToSchema(title, description, howToSteps);
   <StructuredData schema={guideSchema} />
 
   <PageHeader
-    eyebrow={uiStrings.page.travelGuides}
+    eyebrow={globalStrings.page.travelGuides}
     title={title}
     description={description}
     breadcrumbs={breadcrumbs}
@@ -87,7 +88,7 @@ const guideSchema = generateHowToSchema(title, description, howToSteps);
         <span class="inline-flex items-center gap-2">
           <HugeiconsIcon icon={AlarmClockIcon} size={16} />
           {readingTime}
-          {uiStrings.guides.readingTime}
+          {guideStrings.guides.readingTime}
         </span>
         <span class="hidden sm:inline text-border">/</span>
         <span class="inline-flex items-center gap-2">
@@ -109,7 +110,11 @@ const guideSchema = generateHowToSchema(title, description, howToSteps);
   </SectionContainer>
 
   <SectionContainer background="bg-background">
-    <KeyTakeaways takeaways={keyTakeaways} />
+    <KeyTakeaways
+      takeaways={keyTakeaways}
+      title={guideStrings.guides.keyTakeaways}
+      description={guideStrings.guides.keyTakeawaysDesc}
+    />
   </SectionContainer>
 
   {
@@ -117,15 +122,20 @@ const guideSchema = generateHowToSchema(title, description, howToSteps);
       <SectionContainer background="bg-background">
         <div class="mb-8">
           <TypographyH2 class="text-3xl leading-tight text-foreground">
-            {uiStrings.guides.packageRelated}
+            {guideStrings.guides.packageRelated}
           </TypographyH2>
           <p class="mt-3 max-w-2xl text-base leading-7 text-text-muted">
-            {uiStrings.guides.relatedPackagesDesc}
+            {guideStrings.guides.relatedPackagesDesc}
           </p>
         </div>
         <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {relatedPackages.map((pkg) => (
-            <PackageCard tour={pkg} locale={locale} />
+            <PackageCard
+              tour={pkg}
+              locale={locale}
+              moreCountLabel={globalStrings.common.moreCount}
+              viewPackageDetailLabel={globalStrings.common.viewDetail}
+            />
           ))}
         </div>
       </SectionContainer>
@@ -135,7 +145,7 @@ const guideSchema = generateHowToSchema(title, description, howToSteps);
   <SectionContainer background="bg-background">
     <div class="mb-8">
       <TypographyH2 class="text-3xl leading-tight text-foreground">
-        {uiStrings.guides.otherGuides}
+        {guideStrings.guides.otherGuides}
       </TypographyH2>
     </div>
     <div
@@ -147,7 +157,11 @@ const guideSchema = generateHowToSchema(title, description, howToSteps);
           .slice(0, 5)
           .map((g) => (
             <div class="w-[85vw] shrink-0 snap-start sm:w-[380px]">
-              <GuideCard guide={g} locale={locale} />
+              <GuideCard
+                guide={g}
+                locale={locale}
+                readingTimeLabel={guideStrings.guides.readingTime}
+              />
             </div>
           ))
       }
