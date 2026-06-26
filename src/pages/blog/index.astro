@@ -5,7 +5,11 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { BlogCard } from "@/components/blog";
 import { getBlogPosts } from "@/lib/content/blog";
 
-import { getBlogPageStrings, getGlobalStrings, getTravelGuidesPageStrings } from "@/lib/i18n";
+import {
+  getBlogPageStrings,
+  getGlobalStrings,
+  getTravelGuidesPageStrings,
+} from "@/lib/i18n";
 
 const locale = "id";
 const globalStrings = getGlobalStrings(locale);

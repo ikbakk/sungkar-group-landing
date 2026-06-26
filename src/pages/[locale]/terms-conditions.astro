@@ -3,7 +3,11 @@ import { TypographyH2 } from "@/components/ui/typography";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import { getFooterStrings, getGlobalStrings, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import {
+  getFooterStrings,
+  getGlobalStrings,
+  NON_DEFAULT_LOCALES,
+} from "@/lib/i18n";
 import { HERO } from "@/assets/images";
 
 export async function getStaticPaths() {

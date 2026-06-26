@@ -25,8 +25,9 @@ export async function GET(context: { site?: URL }) {
   const renderers = await loadRenderers([mdxContainerRenderer()]);
   const container = await AstroContainer.create({ renderers });
 
-  const posts = (await getCollection("blog", (entry) => entry.id.endsWith("/id")))
-    .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+  const posts = (
+    await getCollection("blog", (entry) => entry.id.endsWith("/id"))
+  ).sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
 
   const items = await Promise.all(
     posts.map(async (post) => {

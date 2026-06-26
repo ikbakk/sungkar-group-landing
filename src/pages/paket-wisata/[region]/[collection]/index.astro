@@ -82,7 +82,9 @@ const breadcrumbs = [
             tour={tour}
             locale={locale}
             moreCountLabel={globalStrings.common.moreCount}
-            viewPackageDetailLabel={packageStrings.paketWisata.viewPackageDetail}
+            viewPackageDetailLabel={
+              packageStrings.paketWisata.viewPackageDetail
+            }
             loading={i < 3 ? "eager" : "lazy"}
             fetchpriority={i === 0 ? "high" : "auto"}
           />

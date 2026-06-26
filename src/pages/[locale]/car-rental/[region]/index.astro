@@ -76,8 +76,14 @@ const breadcrumbs = [
 >
   <StructuredData schema={faqSchema} />
   <PageHeader
-    eyebrow={carRentalStrings.sewaMobil.vehicleFor.replace("{region}", regionName)}
-    title={carRentalStrings.sewaMobil.vehicleFor.replace("{region}", regionName)}
+    eyebrow={carRentalStrings.sewaMobil.vehicleFor.replace(
+      "{region}",
+      regionName,
+    )}
+    title={carRentalStrings.sewaMobil.vehicleFor.replace(
+      "{region}",
+      regionName,
+    )}
     description={regionDescription}
     breadcrumbs={breadcrumbs}
   />
@@ -91,7 +97,10 @@ const breadcrumbs = [
       featuresLabel={carRentalStrings.sewaMobil.features}
       suitableForLabel={carRentalStrings.sewaMobil.suitableFor}
       viewDetailRentLabel={carRentalStrings.sewaMobil.viewDetailRent}
-      title={carRentalStrings.sewaMobil.rentalVehicles.replace("{region}", regionName)}
+      title={carRentalStrings.sewaMobil.rentalVehicles.replace(
+        "{region}",
+        regionName,
+      )}
       description={carRentalStrings.sewaMobil.allVehicles.replace(
         "{region}",
         regionName,
@@ -102,7 +111,10 @@ const breadcrumbs = [
 
   <FaqSection
     eyebrow={faqStrings.faq.sectionTitle}
-    title={carRentalStrings.sewaMobil.faqTitleFor.replace("{region}", regionName)}
+    title={carRentalStrings.sewaMobil.faqTitleFor.replace(
+      "{region}",
+      regionName,
+    )}
     items={sewaMobilFaq}
     background="bg-surface-soft"
   />

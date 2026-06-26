@@ -16,8 +16,12 @@ interface Props {
   loading?: "lazy" | "eager";
 }
 
-const { accommodation, featuresLabel, morePerksLabel, loading = "lazy" } =
-  Astro.props;
+const {
+  accommodation,
+  featuresLabel,
+  morePerksLabel,
+  loading = "lazy",
+} = Astro.props;
 
 const region = REGION_MAP[accommodation.region];
 ---

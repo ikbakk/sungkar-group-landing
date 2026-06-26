@@ -141,10 +141,7 @@ const cardHref = localizeHref(
       {
         tour.highlights.length > 3 && (
           <li class="text-sm text-text-muted font-sans">
-            {moreCountLabel.replace(
-              "{n}",
-              String(tour.highlights.length - 3),
-            )}
+            {moreCountLabel.replace("{n}", String(tour.highlights.length - 3))}
           </li>
         )
       }
@@ -152,9 +149,7 @@ const cardHref = localizeHref(
 
     <div class="mt-auto pt-2">
       <a href={cardHref}>
-        <Button size="lg" class="w-full"
-          >{viewPackageDetailLabel}</Button
-        >
+        <Button size="lg" class="w-full">{viewPackageDetailLabel}</Button>
       </a>
     </div>
   </CardContent>

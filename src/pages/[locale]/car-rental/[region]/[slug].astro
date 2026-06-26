@@ -121,7 +121,10 @@ const r = vehicle.region as Region;
     description={vehicle.description}
     breadcrumbs={[
       { label: globalStrings.breadcrumb.home, href: `/${locale}` },
-      { label: globalStrings.breadcrumb.carRental, href: `/${locale}/car-rental` },
+      {
+        label: globalStrings.breadcrumb.carRental,
+        href: `/${locale}/car-rental`,
+      },
       {
         label: REGION_LABEL[r],
         href: `/${locale}/car-rental/${vehicle.region}`,

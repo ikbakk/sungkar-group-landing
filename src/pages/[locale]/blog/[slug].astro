@@ -204,12 +204,12 @@ const articleSchema = generateArticleSchema(
             .filter((p) => p.slug !== slug)
             .slice(0, 3)
             .map((p) => (
-          <BlogCard
-            post={p}
-            locale={locale!}
-            readingTimeLabel={guideStrings.guides.readingTime}
-          />
-        ))
+              <BlogCard
+                post={p}
+                locale={locale!}
+                readingTimeLabel={guideStrings.guides.readingTime}
+              />
+            ))
         }
       </div>
     </div>

@@ -17,8 +17,12 @@ interface Props {
   viewDetailLabel: string;
 }
 
-const { destination, locale = "id", moreCountLabel, viewDetailLabel } =
-  Astro.props;
+const {
+  destination,
+  locale = "id",
+  moreCountLabel,
+  viewDetailLabel,
+} = Astro.props;
 
 const highlightCount = Math.max(destination.thingsToDo.length - 3, 0);
 
@@ -71,10 +75,7 @@ const cardHref = localizeHref("/destinasi/" + destination.slug, locale);
         {
           highlightCount > 0 && (
             <li class="text-sm text-text-muted font-sans">
-              {moreCountLabel.replace(
-                "{n}",
-                String(highlightCount),
-              )}
+              {moreCountLabel.replace("{n}", String(highlightCount))}
             </li>
           )
         }

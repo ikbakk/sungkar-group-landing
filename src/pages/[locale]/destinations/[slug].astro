@@ -71,7 +71,10 @@ const touristAttractionSchema = generateTouristAttractionSchema(
 
 const breadcrumbItems = [
   { name: globalStrings.breadcrumb.home, url: "/" },
-  { name: globalStrings.breadcrumb.destinations, url: `/${locale}/destinations` },
+  {
+    name: globalStrings.breadcrumb.destinations,
+    url: `/${locale}/destinations`,
+  },
   {
     name: destination.title,
     url: `/${locale}/destinations/${destination.slug}`,
@@ -130,7 +133,9 @@ const metaDescription = `${destination.title} - ${destination.summary}`;
               tour={tour}
               locale={locale}
               moreCountLabel={globalStrings.common.moreCount}
-              viewPackageDetailLabel={packageStrings.paketWisata.viewPackageDetail}
+              viewPackageDetailLabel={
+                packageStrings.paketWisata.viewPackageDetail
+              }
             />
           ))}
         </div>
