@@ -9,7 +9,11 @@ import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
 import AccommodationCard from "@/components/cards/AccommodationCard.astro";
 
 import { loadContent } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import {
+  getAccommodationsPageStrings,
+  getGlobalStrings,
+  NON_DEFAULT_LOCALES,
+} from "@/lib/i18n";
 
 export async function getStaticPaths() {
   const paths = [];
@@ -26,7 +30,8 @@ export async function getStaticPaths() {
 }
 
 const { locale } = Astro.params;
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
+const accommodationsStrings = getAccommodationsPageStrings(locale!);
 const pageModule = await loadContent(locale!, "akomodasiPage");
 const { akomodasiPageContent } = pageModule;
 
@@ -43,9 +48,9 @@ const regionAccommodations = accommodations.filter(
 const regionName = REGION_LABEL[region];
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
+  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
   {
-    label: uiStrings.breadcrumb.accommodations,
+    label: globalStrings.breadcrumb.accommodations,
     href: `/${locale}/accommodations`,
   },
   { label: regionName },
@@ -60,12 +65,12 @@ const breadcrumbs = [
   locale={locale}
 >
   <PageHeader
-    eyebrow={uiStrings.akomodasi.eyebrow}
-    title={uiStrings.akomodasi.accommodationChoice.replace(
+    eyebrow={accommodationsStrings.akomodasi.eyebrow}
+    title={accommodationsStrings.akomodasi.accommodationChoice.replace(
       "{region}",
       regionName,
     )}
-    description={uiStrings.akomodasi.exploreAccommodation.replace(
+    description={accommodationsStrings.akomodasi.exploreAccommodation.replace(
       "{region}",
       regionName,
     )}
@@ -76,7 +81,11 @@ const breadcrumbs = [
     <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
       {
         regionAccommodations.map((accommodation) => (
-          <AccommodationCard accommodation={accommodation} />
+          <AccommodationCard
+            accommodation={accommodation}
+            featuresLabel={accommodationsStrings.akomodasi.features}
+            morePerksLabel={accommodationsStrings.akomodasi.morePerks}
+          />
         ))
       }
     </div>

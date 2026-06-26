@@ -151,7 +151,11 @@ function validateStringArray(fieldName, value, shortPath, { min = 0 } = {}) {
   }
 
   if (value.length < min) {
-    report("ERROR", shortPath, `${fieldName} must contain at least ${min} item(s)`);
+    report(
+      "ERROR",
+      shortPath,
+      `${fieldName} must contain at least ${min} item(s)`,
+    );
   }
 
   for (const [index, item] of value.entries()) {
@@ -206,7 +210,11 @@ for (const file of findMdxFiles(BLOG_DIR)) {
 
   for (const optionalArrayField of ["relatedDestinations", "relatedPackages"]) {
     if (frontmatter[optionalArrayField] !== undefined) {
-      validateStringArray(optionalArrayField, frontmatter[optionalArrayField], shortPath);
+      validateStringArray(
+        optionalArrayField,
+        frontmatter[optionalArrayField],
+        shortPath,
+      );
     }
   }
 }
@@ -238,7 +246,9 @@ for (const file of findMdxFiles(GUIDES_DIR)) {
     "relatedPackages",
   ]) {
     if (frontmatter[arrField] !== undefined) {
-      validateStringArray(arrField, frontmatter[arrField], shortPath, { min: 1 });
+      validateStringArray(arrField, frontmatter[arrField], shortPath, {
+        min: 1,
+      });
     }
   }
 

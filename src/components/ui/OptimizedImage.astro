@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
-import { isRemoteImage, type ImageSource } from "@/lib/images";
+import { isStringImage, type ImageSource } from "@/lib/images";
 
 interface Props {
   src: ImageSource;
@@ -23,8 +23,8 @@ const { src, alt, width, height, ...rest } = Astro.props;
 ---
 
 {
-  isRemoteImage(src) ? (
-    <Image
+  isStringImage(src) ? (
+    <img
       src={src}
       alt={alt}
       class={rest.class}
@@ -32,12 +32,8 @@ const { src, alt, width, height, ...rest } = Astro.props;
       decoding={rest.decoding}
       fetchpriority={rest.fetchpriority}
       style={rest.style}
-      widths={rest.widths}
-      sizes={rest.sizes}
-      format={rest.format}
-      quality={rest.quality}
-      width={width as number}
-      height={height as number}
+      width={width}
+      height={height}
     />
   ) : (
     <Image

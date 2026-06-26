@@ -14,7 +14,12 @@ import { getDestinations } from "@/lib/content/destinations/collection";
 import { getImageSrc } from "@/lib/images";
 import { HERO } from "@/assets/images";
 
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import {
+  getBlogPageStrings,
+  getGlobalStrings,
+  getTravelGuidesPageStrings,
+  NON_DEFAULT_LOCALES,
+} from "@/lib/i18n";
 
 export async function getStaticPaths() {
   const paths = [];
@@ -32,7 +37,9 @@ export async function getStaticPaths() {
 
 const { locale } = Astro.params;
 const { slug } = Astro.props;
-const uiStrings = t(locale!);
+const blogStrings = getBlogPageStrings(locale!);
+const globalStrings = getGlobalStrings(locale!);
+const guideStrings = getTravelGuidesPageStrings(locale!);
 const post = await getBlogPost(locale!, slug);
 
 if (!post) {
@@ -51,8 +58,8 @@ const {
 
 const homeHref = `/${locale}`;
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: homeHref },
-  { label: uiStrings.breadcrumb.blog, href: `/${locale}/blog` },
+  { label: globalStrings.breadcrumb.home, href: homeHref },
+  { label: globalStrings.breadcrumb.blog, href: `/${locale}/blog` },
   { label: title },
 ];
 
@@ -94,7 +101,7 @@ const articleSchema = generateArticleSchema(
   <StructuredData schema={articleSchema} />
 
   <PageHeader
-    eyebrow={uiStrings.page.blog}
+    eyebrow={globalStrings.page.blog}
     title={title}
     description={description}
     breadcrumbs={breadcrumbs}
@@ -105,7 +112,7 @@ const articleSchema = generateArticleSchema(
     description={description}
     publishDate={publishDate}
     readingTime={readingTime}
-    readingTimeLabel={uiStrings.guides.readingTime}
+    readingTimeLabel={guideStrings.guides.readingTime}
     tags={tags}
     locale={locale!}
   >
@@ -116,7 +123,7 @@ const articleSchema = generateArticleSchema(
     <div class="mx-auto max-w-4xl">
       <div class="border-t border-border pt-8">
         <p class="mb-4 text-sm font-medium text-text-muted">
-          {uiStrings.blogSection.share}
+          {blogStrings.blogSection.share}
         </p>
         <div class="flex flex-wrap gap-3">
           <a
@@ -174,7 +181,7 @@ const articleSchema = generateArticleSchema(
                 d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
               ></path></svg
             >
-            {uiStrings.blogSection.copyLink}
+            {blogStrings.blogSection.copyLink}
           </button>
         </div>
       </div>
@@ -185,10 +192,10 @@ const articleSchema = generateArticleSchema(
     <div class="mx-auto max-w-4xl">
       <div class="mb-8">
         <TypographyH2 class="text-3xl leading-tight text-foreground">
-          {uiStrings.blogSection.relatedPosts}
+          {blogStrings.blogSection.relatedPosts}
         </TypographyH2>
         <p class="mt-3 max-w-2xl text-base leading-7 text-text-muted">
-          {uiStrings.blogSection.relatedPostsDesc}
+          {blogStrings.blogSection.relatedPostsDesc}
         </p>
       </div>
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -196,14 +203,20 @@ const articleSchema = generateArticleSchema(
           (await getBlogPosts(locale!))
             .filter((p) => p.slug !== slug)
             .slice(0, 3)
-            .map((p) => <BlogCard post={p} locale={locale!} />)
+            .map((p) => (
+          <BlogCard
+            post={p}
+            locale={locale!}
+            readingTimeLabel={guideStrings.guides.readingTime}
+          />
+        ))
         }
       </div>
     </div>
   </SectionContainer>
 </MainLayout>
 
-<script is:inline define:vars={{ uiStrings }}>
+<script is:inline define:vars={{ blogStrings }}>
   document
     .getElementById("copy-link-btn")
     ?.addEventListener("click", async () => {
@@ -213,7 +226,7 @@ const articleSchema = generateArticleSchema(
         const btn = document.getElementById("copy-link-btn");
         if (btn) {
           const original = btn.innerHTML;
-          btn.innerHTML = `<svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ${uiStrings.blogSection.linkCopied}`;
+          btn.innerHTML = `<svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ${blogStrings.blogSection.linkCopied}`;
           setTimeout(() => {
             btn.innerHTML = original;
           }, 2000);

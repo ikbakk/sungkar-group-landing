@@ -2,23 +2,22 @@
 import { TypographyH2 } from "@/components/ui/typography";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Tick02Icon } from "@hugeicons/core-free-icons";
-import { t } from "@/lib/i18n";
 
 interface Props {
   takeaways: string[];
-  locale?: string;
+  title: string;
+  description: string;
 }
 
-const { takeaways, locale = "id" } = Astro.props;
-const uiStrings = t(locale);
+const { takeaways, title, description } = Astro.props;
 ---
 
 <div class="mx-auto max-w-4xl">
   <TypographyH2 class="text-3xl leading-tight text-foreground">
-    {uiStrings.guides.keyTakeaways}
+    {title}
   </TypographyH2>
   <p class="mt-2 text-base leading-7 text-text-muted">
-    {uiStrings.guides.keyTakeawaysDesc}
+    {description}
   </p>
 
   <div class="mt-8 grid gap-4 md:grid-cols-2">

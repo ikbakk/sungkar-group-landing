@@ -2,7 +2,7 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import LandingPage from "@/components/landing/LandingPage.astro";
 import { loadContent } from "@/lib/i18n/loader";
-import { t } from "@/lib/i18n";
+import { getGlobalStrings } from "@/lib/i18n";
 import { BRAND } from "@/assets/images";
 import { getDestinations } from "@/lib/content/destinations/collection";
 import { toLandingDestinationCard } from "@/lib/content/landing";
@@ -42,7 +42,7 @@ const landingDestinations = {
   ...landingDestinationsBase,
   destinations: allDestinations.slice(0, 4).map(toLandingDestinationCard),
 };
-const uiStrings = t("id");
+const globalStrings = getGlobalStrings("id");
 ---
 
 <MainLayout
@@ -50,7 +50,7 @@ const uiStrings = t("id");
   description={landingHero.description}
   canonical="/"
   image={BRAND.ogHome}
-  imageAlt={uiStrings.common.imageAltSunset}
+  imageAlt={globalStrings.common.imageAltSunset}
   locale="id"
 >
   <LandingPage

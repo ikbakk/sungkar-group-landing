@@ -1,7 +1,7 @@
 ---
 import { TypographyH2 } from "@/components/ui/typography";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import { t } from "@/lib/i18n";
+import { getFaqStrings } from "@/lib/i18n";
 import FaqAccordion from "./FaqAccordion";
 
 interface Props {
@@ -24,7 +24,7 @@ const {
   background = "bg-background",
   variant = "divider",
 } = Astro.props;
-const uiStrings = t(locale);
+const uiStrings = getFaqStrings(locale);
 ---
 
 <SectionContainer background={background}>
@@ -34,7 +34,7 @@ const uiStrings = t(locale);
     </div>
 
     <TypographyH2 class="mt-2 text-3xl leading-tight">
-      {title || uiStrings.faq.sectionTitle}
+      {title || uiStrings.sectionTitle}
     </TypographyH2>
   </div>
 

@@ -18,7 +18,11 @@ import { getDestinations } from "@/lib/content/destinations/collection";
 import { getPackages } from "@/lib/content/tourPackages/collection";
 
 import { loadContent } from "@/lib/i18n/loader";
-import { t } from "@/lib/i18n";
+import {
+  getFaqPageStrings,
+  getGlobalStrings,
+  getTourPackagesPageStrings,
+} from "@/lib/i18n";
 import { getImageSrc } from "@/lib/images";
 
 const _allDestinations = await getDestinations("id");
@@ -33,7 +37,9 @@ export async function getStaticPaths() {
 
 const locale = "id";
 const { slug } = Astro.params;
-const uiStrings = t(locale);
+const globalStrings = getGlobalStrings(locale);
+const faqStrings = getFaqPageStrings(locale);
+const packageStrings = getTourPackagesPageStrings(locale);
 
 const pageModule = await loadContent(locale, "destinationsPage");
 const { destinationsPageContent } = pageModule;
@@ -62,8 +68,8 @@ const touristAttractionSchema = generateTouristAttractionSchema(
 );
 
 const breadcrumbItems = [
-  { name: uiStrings.breadcrumb.home, url: "/" },
-  { name: uiStrings.breadcrumb.destinations, url: "/destinasi" },
+  { name: globalStrings.breadcrumb.home, url: "/" },
+  { name: globalStrings.breadcrumb.destinations, url: "/destinasi" },
   { name: destination.title, url: `/destinasi/${destination.slug}` },
 ];
 
@@ -89,8 +95,8 @@ const metaDescription = `${destination.title} - ${destination.summary}`;
     title={destination.title}
     description={destination.summary}
     breadcrumbs={[
-      { label: uiStrings.breadcrumb.home, href: "/" },
-      { label: uiStrings.breadcrumb.destinations, href: "/destinations" },
+      { label: globalStrings.breadcrumb.home, href: "/" },
+      { label: globalStrings.breadcrumb.destinations, href: "/destinations" },
       { label: destination.title },
     ]}
     image={destinationHeroImage}
@@ -112,7 +118,12 @@ const metaDescription = `${destination.title} - ${destination.summary}`;
         </TypographyH2>
         <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {relatedPackages.map((tour) => (
-            <PackageCard tour={tour} locale={locale} />
+            <PackageCard
+              tour={tour}
+              locale={locale}
+              moreCountLabel={globalStrings.common.moreCount}
+              viewPackageDetailLabel={packageStrings.paketWisata.viewPackageDetail}
+            />
           ))}
         </div>
       </SectionContainer>
@@ -128,7 +139,7 @@ const metaDescription = `${destination.title} - ${destination.summary}`;
 
   <SectionContainer background="bg-background" padding="py-16 lg:py-24">
     <FaqSection
-      eyebrow={uiStrings.faq.sectionTitle}
+      eyebrow={faqStrings.faq.sectionTitle}
       title={destinationsPageContent.detail.faqTitle}
       items={destinationsPageContent.faq}
       variant="card"

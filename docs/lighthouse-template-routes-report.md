@@ -11,97 +11,97 @@
 ## Average scores
 
 | Performance | Accessibility | Best Practices | SEO |
-|---:|---:|---:|---:|
-| 82 | 96 | 100 | 96 |
+| ----------: | ------------: | -------------: | --: |
+|          82 |            96 |            100 |  96 |
 
 ## Lowest performance scores
 
-| Score | Template | URL |
-|---:|---|---|
-| 26 | `src/pages/[locale]/car-rental/index.astro` | https://www.sungkargroup.com/en/car-rental/ |
-| 64 | `src/pages/kontak.astro` | https://www.sungkargroup.com/kontak/ |
-| 70 | `src/pages/akomodasi/index.astro` | https://www.sungkargroup.com/akomodasi/ |
-| 72 | `src/pages/destinasi/index.astro` | https://www.sungkargroup.com/destinasi/ |
-| 73 | `src/pages/index.astro` | https://www.sungkargroup.com/ |
+| Score | Template                                    | URL                                         |
+| ----: | ------------------------------------------- | ------------------------------------------- |
+|    26 | `src/pages/[locale]/car-rental/index.astro` | https://www.sungkargroup.com/en/car-rental/ |
+|    64 | `src/pages/kontak.astro`                    | https://www.sungkargroup.com/kontak/        |
+|    70 | `src/pages/akomodasi/index.astro`           | https://www.sungkargroup.com/akomodasi/     |
+|    72 | `src/pages/destinasi/index.astro`           | https://www.sungkargroup.com/destinasi/     |
+|    73 | `src/pages/index.astro`                     | https://www.sungkargroup.com/               |
 
 ## Lowest accessibility scores
 
-| Score | Template | URL |
-|---:|---|---|
-| 92 | `src/pages/paket-wisata/[region]/[collection]/[slug].astro` | https://www.sungkargroup.com/paket-wisata/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/ |
-| 92 | `src/pages/[locale]/tour-packages/[region]/[collection]/[slug].astro` | https://www.sungkargroup.com/en/tour-packages/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/ |
-| 95 | `src/pages/faq.astro` | https://www.sungkargroup.com/faq/ |
-| 95 | `src/pages/ulasan.astro` | https://www.sungkargroup.com/ulasan/ |
-| 95 | `src/pages/paket-wisata/[region]/index.astro` | https://www.sungkargroup.com/paket-wisata/labuan-bajo/ |
+| Score | Template                                                              | URL                                                                                                            |
+| ----: | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+|    92 | `src/pages/paket-wisata/[region]/[collection]/[slug].astro`           | https://www.sungkargroup.com/paket-wisata/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/     |
+|    92 | `src/pages/[locale]/tour-packages/[region]/[collection]/[slug].astro` | https://www.sungkargroup.com/en/tour-packages/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/ |
+|    95 | `src/pages/faq.astro`                                                 | https://www.sungkargroup.com/faq/                                                                              |
+|    95 | `src/pages/ulasan.astro`                                              | https://www.sungkargroup.com/ulasan/                                                                           |
+|    95 | `src/pages/paket-wisata/[region]/index.astro`                         | https://www.sungkargroup.com/paket-wisata/labuan-bajo/                                                         |
 
 ## Lowest best-practices scores
 
-| Score | Template | URL |
-|---:|---|---|
-| 100 | `src/pages/index.astro` | https://www.sungkargroup.com/ |
-| 100 | `src/pages/tentang-kami.astro` | https://www.sungkargroup.com/tentang-kami/ |
-| 100 | `src/pages/faq.astro` | https://www.sungkargroup.com/faq/ |
-| 100 | `src/pages/syarat-ketentuan.astro` | https://www.sungkargroup.com/syarat-ketentuan/ |
-| 100 | `src/pages/kontak.astro` | https://www.sungkargroup.com/kontak/ |
+| Score | Template                           | URL                                            |
+| ----: | ---------------------------------- | ---------------------------------------------- |
+|   100 | `src/pages/index.astro`            | https://www.sungkargroup.com/                  |
+|   100 | `src/pages/tentang-kami.astro`     | https://www.sungkargroup.com/tentang-kami/     |
+|   100 | `src/pages/faq.astro`              | https://www.sungkargroup.com/faq/              |
+|   100 | `src/pages/syarat-ketentuan.astro` | https://www.sungkargroup.com/syarat-ketentuan/ |
+|   100 | `src/pages/kontak.astro`           | https://www.sungkargroup.com/kontak/           |
 
 ## Lowest seo scores
 
-| Score | Template | URL |
-|---:|---|---|
-| 92 | `src/pages/[locale]/index.astro` | https://www.sungkargroup.com/en/ |
-| 92 | `src/pages/[locale]/about.astro` | https://www.sungkargroup.com/en/about/ |
-| 92 | `src/pages/[locale]/terms-conditions.astro` | https://www.sungkargroup.com/en/terms-conditions/ |
-| 92 | `src/pages/[locale]/privacy-policy.astro` | https://www.sungkargroup.com/en/privacy-policy/ |
-| 92 | `src/pages/[locale]/faq.astro` | https://www.sungkargroup.com/en/faq/ |
+| Score | Template                                    | URL                                               |
+| ----: | ------------------------------------------- | ------------------------------------------------- |
+|    92 | `src/pages/[locale]/index.astro`            | https://www.sungkargroup.com/en/                  |
+|    92 | `src/pages/[locale]/about.astro`            | https://www.sungkargroup.com/en/about/            |
+|    92 | `src/pages/[locale]/terms-conditions.astro` | https://www.sungkargroup.com/en/terms-conditions/ |
+|    92 | `src/pages/[locale]/privacy-policy.astro`   | https://www.sungkargroup.com/en/privacy-policy/   |
+|    92 | `src/pages/[locale]/faq.astro`              | https://www.sungkargroup.com/en/faq/              |
 
 ## Per-template results
 
-| Template | URL | Perf | Acc | BP | SEO | LCP | TBT | CLS |
-|---|---|---:|---:|---:|---:|---|---|---|
-| `src/pages/index.astro` | https://www.sungkargroup.com/ | 73 | 96 | 100 | 100 | 5.2 s | 290 ms | 0 |
-| `src/pages/tentang-kami.astro` | https://www.sungkargroup.com/tentang-kami/ | 83 | 96 | 100 | 100 | 3.6 s | 300 ms | 0.015 |
-| `src/pages/faq.astro` | https://www.sungkargroup.com/faq/ | 75 | 95 | 100 | 100 | 4.5 s | 370 ms | 0.001 |
-| `src/pages/syarat-ketentuan.astro` | https://www.sungkargroup.com/syarat-ketentuan/ | 92 | 96 | 100 | 100 | 2.3 s | 290 ms | 0.006 |
-| `src/pages/kontak.astro` | https://www.sungkargroup.com/kontak/ | 64 | 97 | 100 | 100 | 8.0 s | 240 ms | 0.001 |
-| `src/pages/kebijakan-privasi.astro` | https://www.sungkargroup.com/kebijakan-privasi/ | 94 | 96 | 100 | 100 | 1.9 s | 280 ms | 0.007 |
-| `src/pages/ulasan.astro` | https://www.sungkargroup.com/ulasan/ | 93 | 95 | 100 | 100 | 1.9 s | 290 ms | 0.039 |
-| `src/pages/paket-wisata/index.astro` | https://www.sungkargroup.com/paket-wisata/ | 73 | 96 | 100 | 100 | 6.3 s | 160 ms | 0.002 |
-| `src/pages/paket-wisata/[region]/index.astro` | https://www.sungkargroup.com/paket-wisata/labuan-bajo/ | 94 | 95 | 100 | 100 | 1.4 s | 270 ms | 0.041 |
-| `src/pages/paket-wisata/[region]/[collection]/index.astro` | https://www.sungkargroup.com/paket-wisata/lombok-bajo/bajo-to-lombok/ | 82 | 95 | 100 | 100 | 3.8 s | 300 ms | 0.001 |
-| `src/pages/paket-wisata/[region]/[collection]/[slug].astro` | https://www.sungkargroup.com/paket-wisata/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/ | 73 | 92 | 100 | 100 | 4.6 s | 410 ms | 0 |
-| `src/pages/panduan-wisata/index.astro` | https://www.sungkargroup.com/panduan-wisata/ | 78 | 96 | 100 | 100 | 4.5 s | 290 ms | 0.011 |
-| `src/pages/panduan-wisata/[slug].astro` | https://www.sungkargroup.com/panduan-wisata/best-time-to-visit-lombok/ | 76 | 96 | 100 | 100 | 4.1 s | 430 ms | 0.016 |
-| `src/pages/akomodasi/index.astro` | https://www.sungkargroup.com/akomodasi/ | 70 | 96 | 100 | 100 | 4.7 s | 490 ms | 0.001 |
-| `src/pages/akomodasi/[slug].astro` | https://www.sungkargroup.com/akomodasi/labuan-bajo/ | 77 | 95 | 100 | 100 | 3.6 s | 510 ms | 0.001 |
-| `src/pages/sewa-mobil/index.astro` | https://www.sungkargroup.com/sewa-mobil/ | 88 | 96 | 100 | 100 | 1.7 s | 470 ms | 0.017 |
-| `src/pages/sewa-mobil/[region]/index.astro` | https://www.sungkargroup.com/sewa-mobil/lombok/ | 89 | 96 | 100 | 100 | 3.1 s | 250 ms | 0.001 |
-| `src/pages/sewa-mobil/[region]/[slug].astro` | https://www.sungkargroup.com/sewa-mobil/lombok/big-bus-lombok/ | 81 | 96 | 100 | 100 | 3.4 s | 400 ms | 0 |
-| `src/pages/destinasi/index.astro` | https://www.sungkargroup.com/destinasi/ | 72 | 96 | 100 | 100 | 4.7 s | 410 ms | 0.07 |
-| `src/pages/destinasi/[slug].astro` | https://www.sungkargroup.com/destinasi/gili-air/ | 73 | 96 | 100 | 100 | 4.5 s | 320 ms | 0.107 |
-| `src/pages/blog/index.astro` | https://www.sungkargroup.com/blog/ | 78 | 95 | 100 | 100 | 4.5 s | 270 ms | 0.001 |
-| `src/pages/blog/[slug].astro` | https://www.sungkargroup.com/blog/biaya-liburan-ke-labuan-bajo/ | 91 | 96 | 100 | 100 | 1.7 s | 380 ms | 0.019 |
-| `src/pages/[locale]/index.astro` | https://www.sungkargroup.com/en/ | 81 | 96 | 100 | 92 | 3.9 s | 320 ms | 0.02 |
-| `src/pages/[locale]/about.astro` | https://www.sungkargroup.com/en/about/ | 93 | 96 | 100 | 92 | 1.8 s | 290 ms | 0.039 |
-| `src/pages/[locale]/terms-conditions.astro` | https://www.sungkargroup.com/en/terms-conditions/ | 93 | 96 | 100 | 92 | 1.5 s | 310 ms | 0.023 |
-| `src/pages/[locale]/privacy-policy.astro` | https://www.sungkargroup.com/en/privacy-policy/ | 84 | 96 | 100 | 92 | 3.8 s | 250 ms | 0.007 |
-| `src/pages/[locale]/faq.astro` | https://www.sungkargroup.com/en/faq/ | 79 | 95 | 100 | 92 | 3.5 s | 420 ms | 0.064 |
-| `src/pages/[locale]/contact.astro` | https://www.sungkargroup.com/en/contact/ | 93 | 97 | 100 | 92 | 1.7 s | 310 ms | 0.001 |
-| `src/pages/[locale]/reviews.astro` | https://www.sungkargroup.com/en/reviews/ | 78 | 95 | 100 | 92 | 4.3 s | 300 ms | 0 |
-| `src/pages/[locale]/blog/index.astro` | https://www.sungkargroup.com/en/blog/ | 86 | 95 | 100 | 92 | 2.9 s | 370 ms | 0.003 |
-| `src/pages/[locale]/blog/[slug].astro` | https://www.sungkargroup.com/en/blog/persiapan-sebelum-liburan-ke-lombok/ | 81 | 96 | 100 | 92 | 3.7 s | 340 ms | 0.001 |
-| `src/pages/[locale]/travel-guides/index.astro` | https://www.sungkargroup.com/en/travel-guides/ | 87 | 96 | 100 | 92 | 3.0 s | 320 ms | 0.001 |
-| `src/pages/[locale]/travel-guides/[slug].astro` | https://www.sungkargroup.com/en/travel-guides/best-time-to-visit-lombok/ | 92 | 96 | 100 | 92 | 1.7 s | 340 ms | 0.04 |
-| `src/pages/[locale]/accommodations/index.astro` | https://www.sungkargroup.com/en/accommodations/ | 88 | 96 | 100 | 92 | 2.0 s | 450 ms | 0.001 |
-| `src/pages/[locale]/accommodations/[slug].astro` | https://www.sungkargroup.com/en/accommodations/labuan-bajo/ | 92 | 95 | 100 | 92 | 2.5 s | 280 ms | 0.001 |
-| `src/pages/[locale]/car-rental/index.astro` | https://www.sungkargroup.com/en/car-rental/ | 26 | 96 | 100 | 92 | 7.4 s | 10,210 ms | 0 |
-| `src/pages/[locale]/car-rental/[region]/index.astro` | https://www.sungkargroup.com/en/car-rental/lombok/ | 90 | 96 | 100 | 92 | 1.6 s | 380 ms | 0.039 |
-| `src/pages/[locale]/car-rental/[region]/[slug].astro` | https://www.sungkargroup.com/en/car-rental/lombok/big-bus-lombok/ | 89 | 96 | 100 | 92 | 1.7 s | 420 ms | 0.001 |
-| `src/pages/[locale]/tour-packages/index.astro` | https://www.sungkargroup.com/en/tour-packages/ | 76 | 96 | 100 | 92 | 2.2 s | 1,050 ms | 0.002 |
-| `src/pages/[locale]/tour-packages/[region]/index.astro` | https://www.sungkargroup.com/en/tour-packages/labuan-bajo/ | 84 | 95 | 100 | 92 | 1.6 s | 610 ms | 0.001 |
-| `src/pages/[locale]/tour-packages/[region]/[collection]/index.astro` | https://www.sungkargroup.com/en/tour-packages/lombok-bajo/bajo-to-lombok/ | 79 | 95 | 100 | 92 | 2.2 s | 800 ms | 0.002 |
-| `src/pages/[locale]/tour-packages/[region]/[collection]/[slug].astro` | https://www.sungkargroup.com/en/tour-packages/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/ | 86 | 92 | 100 | 92 | 2.4 s | 410 ms | 0.069 |
-| `src/pages/[locale]/destinations/index.astro` | https://www.sungkargroup.com/en/destinations/ | 80 | 96 | 100 | 92 | 2.4 s | 700 ms | 0.029 |
-| `src/pages/[locale]/destinations/[slug].astro` | https://www.sungkargroup.com/en/destinations/gili-air/ | 89 | 96 | 100 | 92 | 2.0 s | 360 ms | 0.084 |
+| Template                                                              | URL                                                                                                            | Perf | Acc |  BP | SEO | LCP   | TBT       | CLS   |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---: | --: | --: | --: | ----- | --------- | ----- |
+| `src/pages/index.astro`                                               | https://www.sungkargroup.com/                                                                                  |   73 |  96 | 100 | 100 | 5.2 s | 290 ms    | 0     |
+| `src/pages/tentang-kami.astro`                                        | https://www.sungkargroup.com/tentang-kami/                                                                     |   83 |  96 | 100 | 100 | 3.6 s | 300 ms    | 0.015 |
+| `src/pages/faq.astro`                                                 | https://www.sungkargroup.com/faq/                                                                              |   75 |  95 | 100 | 100 | 4.5 s | 370 ms    | 0.001 |
+| `src/pages/syarat-ketentuan.astro`                                    | https://www.sungkargroup.com/syarat-ketentuan/                                                                 |   92 |  96 | 100 | 100 | 2.3 s | 290 ms    | 0.006 |
+| `src/pages/kontak.astro`                                              | https://www.sungkargroup.com/kontak/                                                                           |   64 |  97 | 100 | 100 | 8.0 s | 240 ms    | 0.001 |
+| `src/pages/kebijakan-privasi.astro`                                   | https://www.sungkargroup.com/kebijakan-privasi/                                                                |   94 |  96 | 100 | 100 | 1.9 s | 280 ms    | 0.007 |
+| `src/pages/ulasan.astro`                                              | https://www.sungkargroup.com/ulasan/                                                                           |   93 |  95 | 100 | 100 | 1.9 s | 290 ms    | 0.039 |
+| `src/pages/paket-wisata/index.astro`                                  | https://www.sungkargroup.com/paket-wisata/                                                                     |   73 |  96 | 100 | 100 | 6.3 s | 160 ms    | 0.002 |
+| `src/pages/paket-wisata/[region]/index.astro`                         | https://www.sungkargroup.com/paket-wisata/labuan-bajo/                                                         |   94 |  95 | 100 | 100 | 1.4 s | 270 ms    | 0.041 |
+| `src/pages/paket-wisata/[region]/[collection]/index.astro`            | https://www.sungkargroup.com/paket-wisata/lombok-bajo/bajo-to-lombok/                                          |   82 |  95 | 100 | 100 | 3.8 s | 300 ms    | 0.001 |
+| `src/pages/paket-wisata/[region]/[collection]/[slug].astro`           | https://www.sungkargroup.com/paket-wisata/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/     |   73 |  92 | 100 | 100 | 4.6 s | 410 ms    | 0     |
+| `src/pages/panduan-wisata/index.astro`                                | https://www.sungkargroup.com/panduan-wisata/                                                                   |   78 |  96 | 100 | 100 | 4.5 s | 290 ms    | 0.011 |
+| `src/pages/panduan-wisata/[slug].astro`                               | https://www.sungkargroup.com/panduan-wisata/best-time-to-visit-lombok/                                         |   76 |  96 | 100 | 100 | 4.1 s | 430 ms    | 0.016 |
+| `src/pages/akomodasi/index.astro`                                     | https://www.sungkargroup.com/akomodasi/                                                                        |   70 |  96 | 100 | 100 | 4.7 s | 490 ms    | 0.001 |
+| `src/pages/akomodasi/[slug].astro`                                    | https://www.sungkargroup.com/akomodasi/labuan-bajo/                                                            |   77 |  95 | 100 | 100 | 3.6 s | 510 ms    | 0.001 |
+| `src/pages/sewa-mobil/index.astro`                                    | https://www.sungkargroup.com/sewa-mobil/                                                                       |   88 |  96 | 100 | 100 | 1.7 s | 470 ms    | 0.017 |
+| `src/pages/sewa-mobil/[region]/index.astro`                           | https://www.sungkargroup.com/sewa-mobil/lombok/                                                                |   89 |  96 | 100 | 100 | 3.1 s | 250 ms    | 0.001 |
+| `src/pages/sewa-mobil/[region]/[slug].astro`                          | https://www.sungkargroup.com/sewa-mobil/lombok/big-bus-lombok/                                                 |   81 |  96 | 100 | 100 | 3.4 s | 400 ms    | 0     |
+| `src/pages/destinasi/index.astro`                                     | https://www.sungkargroup.com/destinasi/                                                                        |   72 |  96 | 100 | 100 | 4.7 s | 410 ms    | 0.07  |
+| `src/pages/destinasi/[slug].astro`                                    | https://www.sungkargroup.com/destinasi/gili-air/                                                               |   73 |  96 | 100 | 100 | 4.5 s | 320 ms    | 0.107 |
+| `src/pages/blog/index.astro`                                          | https://www.sungkargroup.com/blog/                                                                             |   78 |  95 | 100 | 100 | 4.5 s | 270 ms    | 0.001 |
+| `src/pages/blog/[slug].astro`                                         | https://www.sungkargroup.com/blog/biaya-liburan-ke-labuan-bajo/                                                |   91 |  96 | 100 | 100 | 1.7 s | 380 ms    | 0.019 |
+| `src/pages/[locale]/index.astro`                                      | https://www.sungkargroup.com/en/                                                                               |   81 |  96 | 100 |  92 | 3.9 s | 320 ms    | 0.02  |
+| `src/pages/[locale]/about.astro`                                      | https://www.sungkargroup.com/en/about/                                                                         |   93 |  96 | 100 |  92 | 1.8 s | 290 ms    | 0.039 |
+| `src/pages/[locale]/terms-conditions.astro`                           | https://www.sungkargroup.com/en/terms-conditions/                                                              |   93 |  96 | 100 |  92 | 1.5 s | 310 ms    | 0.023 |
+| `src/pages/[locale]/privacy-policy.astro`                             | https://www.sungkargroup.com/en/privacy-policy/                                                                |   84 |  96 | 100 |  92 | 3.8 s | 250 ms    | 0.007 |
+| `src/pages/[locale]/faq.astro`                                        | https://www.sungkargroup.com/en/faq/                                                                           |   79 |  95 | 100 |  92 | 3.5 s | 420 ms    | 0.064 |
+| `src/pages/[locale]/contact.astro`                                    | https://www.sungkargroup.com/en/contact/                                                                       |   93 |  97 | 100 |  92 | 1.7 s | 310 ms    | 0.001 |
+| `src/pages/[locale]/reviews.astro`                                    | https://www.sungkargroup.com/en/reviews/                                                                       |   78 |  95 | 100 |  92 | 4.3 s | 300 ms    | 0     |
+| `src/pages/[locale]/blog/index.astro`                                 | https://www.sungkargroup.com/en/blog/                                                                          |   86 |  95 | 100 |  92 | 2.9 s | 370 ms    | 0.003 |
+| `src/pages/[locale]/blog/[slug].astro`                                | https://www.sungkargroup.com/en/blog/persiapan-sebelum-liburan-ke-lombok/                                      |   81 |  96 | 100 |  92 | 3.7 s | 340 ms    | 0.001 |
+| `src/pages/[locale]/travel-guides/index.astro`                        | https://www.sungkargroup.com/en/travel-guides/                                                                 |   87 |  96 | 100 |  92 | 3.0 s | 320 ms    | 0.001 |
+| `src/pages/[locale]/travel-guides/[slug].astro`                       | https://www.sungkargroup.com/en/travel-guides/best-time-to-visit-lombok/                                       |   92 |  96 | 100 |  92 | 1.7 s | 340 ms    | 0.04  |
+| `src/pages/[locale]/accommodations/index.astro`                       | https://www.sungkargroup.com/en/accommodations/                                                                |   88 |  96 | 100 |  92 | 2.0 s | 450 ms    | 0.001 |
+| `src/pages/[locale]/accommodations/[slug].astro`                      | https://www.sungkargroup.com/en/accommodations/labuan-bajo/                                                    |   92 |  95 | 100 |  92 | 2.5 s | 280 ms    | 0.001 |
+| `src/pages/[locale]/car-rental/index.astro`                           | https://www.sungkargroup.com/en/car-rental/                                                                    |   26 |  96 | 100 |  92 | 7.4 s | 10,210 ms | 0     |
+| `src/pages/[locale]/car-rental/[region]/index.astro`                  | https://www.sungkargroup.com/en/car-rental/lombok/                                                             |   90 |  96 | 100 |  92 | 1.6 s | 380 ms    | 0.039 |
+| `src/pages/[locale]/car-rental/[region]/[slug].astro`                 | https://www.sungkargroup.com/en/car-rental/lombok/big-bus-lombok/                                              |   89 |  96 | 100 |  92 | 1.7 s | 420 ms    | 0.001 |
+| `src/pages/[locale]/tour-packages/index.astro`                        | https://www.sungkargroup.com/en/tour-packages/                                                                 |   76 |  96 | 100 |  92 | 2.2 s | 1,050 ms  | 0.002 |
+| `src/pages/[locale]/tour-packages/[region]/index.astro`               | https://www.sungkargroup.com/en/tour-packages/labuan-bajo/                                                     |   84 |  95 | 100 |  92 | 1.6 s | 610 ms    | 0.001 |
+| `src/pages/[locale]/tour-packages/[region]/[collection]/index.astro`  | https://www.sungkargroup.com/en/tour-packages/lombok-bajo/bajo-to-lombok/                                      |   79 |  95 | 100 |  92 | 2.2 s | 800 ms    | 0.002 |
+| `src/pages/[locale]/tour-packages/[region]/[collection]/[slug].astro` | https://www.sungkargroup.com/en/tour-packages/lombok-bajo/bajo-to-lombok/open-trip-labuan-bajo-to-lombok-4d4n/ |   86 |  92 | 100 |  92 | 2.4 s | 410 ms    | 0.069 |
+| `src/pages/[locale]/destinations/index.astro`                         | https://www.sungkargroup.com/en/destinations/                                                                  |   80 |  96 | 100 |  92 | 2.4 s | 700 ms    | 0.029 |
+| `src/pages/[locale]/destinations/[slug].astro`                        | https://www.sungkargroup.com/en/destinations/gili-air/                                                         |   89 |  96 | 100 |  92 | 2.0 s | 360 ms    | 0.084 |
 
 ## Top issues by template
 

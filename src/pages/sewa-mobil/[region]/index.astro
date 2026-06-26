@@ -13,7 +13,11 @@ import { getVehicles } from "@/lib/content/car-rental/collection";
 import { REGION_LABEL, REGIONS, type RegionKey as Region } from "@/lib/regions";
 
 import { loadFaq } from "@/lib/i18n/loader";
-import { t } from "@/lib/i18n";
+import {
+  getCarRentalPageStrings,
+  getFaqPageStrings,
+  getGlobalStrings,
+} from "@/lib/i18n";
 
 export async function getStaticPaths() {
   const vehicles = await getVehicles("id");
@@ -30,7 +34,9 @@ export async function getStaticPaths() {
 }
 
 const locale = "id";
-const uiStrings = t(locale);
+const globalStrings = getGlobalStrings(locale);
+const carRentalStrings = getCarRentalPageStrings(locale);
+const faqStrings = getFaqPageStrings(locale);
 
 const faqModule = await loadFaq(locale, "sewa-mobil");
 const { sewaMobilFaq } = faqModule;
@@ -46,20 +52,20 @@ const vehicles = await getVehicles(locale);
 const regionVehicles = vehicles.filter((v) => v.region === region);
 
 const regionName = REGION_LABEL[region];
-const regionDescription = uiStrings.sewaMobil.allVehicles.replace(
+const regionDescription = carRentalStrings.sewaMobil.allVehicles.replace(
   "{region}",
   regionName,
 );
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: "/" },
-  { label: uiStrings.breadcrumb.carRental, href: "/sewa-mobil" },
+  { label: globalStrings.breadcrumb.home, href: "/" },
+  { label: globalStrings.breadcrumb.carRental, href: "/sewa-mobil" },
   { label: regionName },
 ];
 ---
 
 <MainLayout
-  title={`${uiStrings.sewaMobil.title} ${regionName}`}
+  title={`${carRentalStrings.sewaMobil.title} ${regionName}`}
   description={regionDescription}
   canonical={`/sewa-mobil/${region}`}
   image={regionVehicles[0]?.imageTop}
@@ -67,8 +73,8 @@ const breadcrumbs = [
 >
   <StructuredData schema={faqSchema} />
   <PageHeader
-    eyebrow={uiStrings.sewaMobil.vehicleFor.replace("{region}", regionName)}
-    title={uiStrings.sewaMobil.vehicleFor.replace("{region}", regionName)}
+    eyebrow={carRentalStrings.sewaMobil.vehicleFor.replace("{region}", regionName)}
+    title={carRentalStrings.sewaMobil.vehicleFor.replace("{region}", regionName)}
     description={regionDescription}
     breadcrumbs={breadcrumbs}
   />
@@ -76,8 +82,14 @@ const breadcrumbs = [
   <SectionContainer background="bg-surface-soft">
     <VehicleRegionSection
       id={region}
-      title={uiStrings.sewaMobil.rentalVehicles.replace("{region}", regionName)}
-      description={uiStrings.sewaMobil.allVehicles.replace(
+      passengersLabel={carRentalStrings.sewaMobil.passengers}
+      specificationsLabel={carRentalStrings.sewaMobil.specifications}
+      transmissionLabel={carRentalStrings.sewaMobil.transmission}
+      featuresLabel={carRentalStrings.sewaMobil.features}
+      suitableForLabel={carRentalStrings.sewaMobil.suitableFor}
+      viewDetailRentLabel={carRentalStrings.sewaMobil.viewDetailRent}
+      title={carRentalStrings.sewaMobil.rentalVehicles.replace("{region}", regionName)}
+      description={carRentalStrings.sewaMobil.allVehicles.replace(
         "{region}",
         regionName,
       )}
@@ -86,8 +98,8 @@ const breadcrumbs = [
   </SectionContainer>
 
   <FaqSection
-    eyebrow={uiStrings.faq.sectionTitle}
-    title={uiStrings.sewaMobil.faqTitleFor.replace("{region}", regionName)}
+    eyebrow={faqStrings.faq.sectionTitle}
+    title={carRentalStrings.sewaMobil.faqTitleFor.replace("{region}", regionName)}
     items={sewaMobilFaq}
     background="bg-surface-soft"
   />

@@ -11,14 +11,21 @@ import StructuredData from "@/components/seo/StructuredData.astro";
 import { generateFAQPageSchema } from "@/lib/schemas";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import {
+  getFaqPageStrings,
+  getGlobalStrings,
+  getReviewsPageStrings,
+  NON_DEFAULT_LOCALES,
+} from "@/lib/i18n";
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
 }
 
 const { locale } = Astro.params;
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
+const faqStrings = getFaqPageStrings(locale!);
+const reviewStrings = getReviewsPageStrings(locale!);
 
 const faqModule = await loadFaq(locale!, "reviews");
 const { reviewsFaq } = faqModule;
@@ -29,13 +36,13 @@ const { reviewsPageContent, reviews, reviewStats } = pageModule;
 const faqSchema = generateFAQPageSchema(reviewsFaq);
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-  { label: uiStrings.breadcrumb.reviews },
+  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
+  { label: globalStrings.breadcrumb.reviews },
 ];
 ---
 
 <MainLayout
-  title={uiStrings.page.reviews}
+  title={globalStrings.page.reviews}
   description={reviewsPageContent.hero.description}
   canonical={`/${locale}/reviews`}
   locale={locale}
@@ -53,9 +60,9 @@ const breadcrumbs = [
 
   <SectionContainer background="bg-white">
     <ReviewStatsSection
-      locale={locale}
       rating={reviewStats.rating}
       totalReviews={reviewStats.totalReviews}
+      totalOnGoogleLabel={reviewStrings.reviews.totalOnGoogle}
     />
   </SectionContainer>
 
@@ -66,18 +73,18 @@ const breadcrumbs = [
   <SectionContainer background="bg-white">
     <ReviewInsightsSection
       insights={reviewsPageContent.insights}
-      seeOnGoogleMaps={uiStrings.reviews.seeOnGoogleMaps}
-      seeAllReviews={uiStrings.reviews.seeAllReviews}
+      seeOnGoogleMaps={reviewStrings.reviews.seeOnGoogleMaps}
+      seeAllReviews={reviewStrings.reviews.seeAllReviews}
     />
   </SectionContainer>
 
   <SectionContainer background="bg-surface-soft">
-    <ReviewGallerySection locale={locale} />
+    <ReviewGallerySection title={reviewStrings.reviews.galleryTitle} />
   </SectionContainer>
 
   <FaqSection
-    eyebrow={uiStrings.faq.sectionTitle}
-    title={uiStrings.faq.sectionReviews}
+    eyebrow={faqStrings.faq.sectionTitle}
+    title={faqStrings.faq.sectionReviews}
     items={reviewsFaq}
   />
 </MainLayout>

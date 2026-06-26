@@ -1,28 +1,14 @@
-import { getCollection } from "astro:content";
+import { destinationsData } from "@/generated/content/destinations.generated";
 import type { Destination } from "./types";
 import { resolveImage, resolveImages } from "./images";
 
-type EntryData = {
-  title: string;
-  region: string;
-  image: string;
-  gallery: string[];
-  summary: string;
-  thingsToDo: string[];
-  packages: string[];
-};
+type EntryData = (typeof destinationsData)[number];
 
 export async function getDestinations(locale = "id"): Promise<Destination[]> {
-  const entries = await getCollection("destinations");
-  const results: Destination[] = [];
-
-  for (const entry of entries) {
-    const data = entry.data as EntryData;
-    const entryLocale = entry.id.split("/").pop() || "id";
-    if (entryLocale !== locale) continue;
-
-    results.push({
-      slug: entry.id.split("/")[0],
+  return destinationsData
+    .filter((entry) => entry.locale === locale)
+    .map((data: EntryData) => ({
+      slug: data.slug,
       title: data.title,
       region: data.region,
       image: resolveImage(data.image),
@@ -30,8 +16,5 @@ export async function getDestinations(locale = "id"): Promise<Destination[]> {
       summary: data.summary,
       thingsToDo: data.thingsToDo,
       packages: data.packages,
-    });
-  }
-
-  return results;
+    }));
 }

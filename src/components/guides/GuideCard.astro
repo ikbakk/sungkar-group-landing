@@ -5,15 +5,14 @@ import { Badge } from "@/components/ui/badge";
 import { REGION_LABEL, REGION_MAP } from "@/lib/regions";
 import type { GuideMeta } from "@/lib/content/guides";
 import { localizeHref } from "@/lib/i18n/localize";
-import { t } from "@/lib/i18n";
 
 interface Props {
   guide: GuideMeta;
   locale?: string;
+  readingTimeLabel: string;
 }
 
-const { guide, locale = "id" } = Astro.props;
-const uiStrings = t(locale);
+const { guide, locale = "id", readingTimeLabel } = Astro.props;
 
 const href = localizeHref("/panduan-wisata/" + guide.slug, locale);
 
@@ -39,7 +38,7 @@ const regionLabel =
           class="rounded-full px-3 py-1 text-xs font-medium"
         >
           {guide.readingTime}
-          {uiStrings.guides.readingTime}
+          {readingTimeLabel}
         </Badge>
 
         {region && <Badge class={region.className}>{regionLabel}</Badge>}

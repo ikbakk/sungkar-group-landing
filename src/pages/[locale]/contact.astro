@@ -11,7 +11,11 @@ import FaqSection from "@/components/site/Faq.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import {
+  getFaqPageStrings,
+  getGlobalStrings,
+  NON_DEFAULT_LOCALES,
+} from "@/lib/i18n";
 
 import { getPackages } from "@/lib/content/tourPackages/collection";
 
@@ -46,7 +50,8 @@ export async function getStaticPaths() {
 }
 
 const { locale } = Astro.params;
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
+const faqStrings = getFaqPageStrings(locale!);
 const businessInfo =
   locale === "en"
     ? enBusinessInfo
@@ -84,10 +89,10 @@ const contactSchema = generateContactPageSchema(canonicalUrl, businessInfo);
 
 const faqSchema = generateFAQPageSchema(contactFaq);
 
-const pageTitle = uiStrings.page.contact;
+const pageTitle = globalStrings.page.contact;
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-  { label: uiStrings.breadcrumb.contact },
+  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
+  { label: globalStrings.breadcrumb.contact },
 ];
 ---
 
@@ -140,8 +145,8 @@ const breadcrumbs = [
 
   <SectionContainer background="bg-surface-soft">
     <FaqSection
-      eyebrow={uiStrings.faq.sectionTitle}
-      title={uiStrings.faq.sectionContact}
+      eyebrow={faqStrings.faq.sectionTitle}
+      title={faqStrings.faq.sectionContact}
       items={contactFaq}
       background="bg-surface-soft"
     />

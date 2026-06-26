@@ -2,7 +2,7 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import LandingPage from "@/components/landing/LandingPage.astro";
 import { loadContent } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { getGlobalStrings, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import { BRAND } from "@/assets/images";
 import { getDestinations } from "@/lib/content/destinations/collection";
 import { toLandingDestinationCard } from "@/lib/content/landing";
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { locale } = Astro.params;
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
 const landingModule = await loadContent(locale!, "landing");
 const {
   landingHero,
@@ -55,7 +55,7 @@ const landingDestinations = {
   description={landingHero.description}
   canonical={"/" + locale}
   image={BRAND.ogHome}
-  imageAlt={uiStrings.common.imageAltSunset}
+  imageAlt={globalStrings.common.imageAltSunset}
   locale={locale}
 >
   <LandingPage

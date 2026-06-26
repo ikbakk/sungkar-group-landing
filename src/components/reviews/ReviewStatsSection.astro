@@ -1,14 +1,11 @@
 ---
-import { t } from "@/lib/i18n";
-
 interface Props {
-  locale?: string;
   rating: number;
   totalReviews: number;
+  totalOnGoogleLabel: string;
 }
 
-const { locale = "id", rating, totalReviews } = Astro.props;
-const uiStrings = t(locale);
+const { rating, totalReviews, totalOnGoogleLabel } = Astro.props;
 ---
 
 <div class="mx-auto max-w-2xl text-center">
@@ -45,9 +42,7 @@ const uiStrings = t(locale);
 
       <p class="text-sm text-text-muted mt-2">
         <span class="font-semibold text-foreground"
-          >{
-            uiStrings.reviews.totalOnGoogle.replace("{n}", String(totalReviews))
-          }</span
+          >{totalOnGoogleLabel.replace("{n}", String(totalReviews))}</span
         >
       </p>
     </div>

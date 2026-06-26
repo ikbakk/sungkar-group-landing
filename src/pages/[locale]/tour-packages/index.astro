@@ -17,14 +17,21 @@ import { getPackages } from "@/lib/content/tourPackages/collection";
 import { REGIONS, REGION_LABEL } from "@/lib/regions";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import {
+  getFaqPageStrings,
+  getGlobalStrings,
+  getTourPackagesPageStrings,
+  NON_DEFAULT_LOCALES,
+} from "@/lib/i18n";
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
 }
 
 const { locale } = Astro.params;
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
+const faqStrings = getFaqPageStrings(locale!);
+const packageStrings = getTourPackagesPageStrings(locale!);
 
 const pageModule = await loadContent(locale!, "packagePage");
 const { packagePageContent } = pageModule;
@@ -68,13 +75,13 @@ const regions = regionSections.map(({ id, label, count }) => ({
 }));
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-  { label: uiStrings.breadcrumb.tourPackages },
+  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
+  { label: globalStrings.breadcrumb.tourPackages },
 ];
 ---
 
 <MainLayout
-  title={uiStrings.paketWisata.title}
+  title={packageStrings.paketWisata.title}
   description={packagePageContent.hero.description}
   canonical={`/${locale}/tour-packages`}
   image={packages[0]?.images[0]}
@@ -98,6 +105,9 @@ const breadcrumbs = [
         <PackageRegionSection
           id={section.id}
           locale={locale}
+          backToTopLabel={globalStrings.common.backToTop}
+          moreCountLabel={globalStrings.common.moreCount}
+          viewPackageDetailLabel={packageStrings.paketWisata.viewPackageDetail}
           title={section.title}
           description={section.description}
           packages={section.packages}
@@ -107,14 +117,14 @@ const breadcrumbs = [
   }
 
   <FaqSection
-    eyebrow={uiStrings.faq.sectionTitle}
-    title={uiStrings.faq.sectionPackages}
+    eyebrow={faqStrings.faq.sectionTitle}
+    title={faqStrings.faq.sectionPackages}
     items={packageFaq}
   />
 
   <RelatedContent
     background="bg-surface-soft"
-    title={uiStrings.paketWisata.exploreServices}
+    title={packageStrings.paketWisata.exploreServices}
     items={packagePageContent.relatedContent}
   />
 

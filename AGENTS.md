@@ -15,7 +15,6 @@
 - `npm test` runs vitest (config: `vitest.config.ts`; tests in `tests/`).
 - `npm run format` runs Prettier auto-format; `npm run format:check` checks formatting in CI.
 - `npm run images:barrel` regenerates `src/assets/images/index.ts` after adding images.
-- Use `rg` for text search and `rg --files` for file discovery; do not use `grep` for searching files.
 
 ## Coding Style & Naming Conventions
 
@@ -24,6 +23,9 @@
 - Prefer the `@/*` alias for imports from `src/`, for example `@/components/ui/button`.
 - Name components with `PascalCase` files and exports, and keep route files lowercase in `src/pages/`.
 - Tailwind utility classes are used heavily; keep class lists readable and grouped by layout, spacing, and state.
+- Prefer Clean architecture, presentation layer and data layer style.
+- Use existing components as much as possible, if not existing, ask the user or propoes new components, Even text uses typography component.
+- Always run `npm run format` before commiting.
 
 ## Testing Guidelines
 

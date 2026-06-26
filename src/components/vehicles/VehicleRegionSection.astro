@@ -9,6 +9,12 @@ interface Props {
   description: string;
   vehicles: Vehicle[];
   locale?: string;
+  passengersLabel: string;
+  specificationsLabel: string;
+  transmissionLabel: string;
+  featuresLabel: string;
+  suitableForLabel: string;
+  viewDetailRentLabel: string;
   prioritizeImages?: boolean;
 }
 
@@ -18,6 +24,12 @@ const {
   description,
   vehicles,
   locale = "id",
+  passengersLabel,
+  specificationsLabel,
+  transmissionLabel,
+  featuresLabel,
+  suitableForLabel,
+  viewDetailRentLabel,
   prioritizeImages = false,
 } = Astro.props;
 ---
@@ -35,6 +47,12 @@ const {
           <VehicleCard
             vehicle={vehicle}
             locale={locale}
+            passengersLabel={passengersLabel}
+            specificationsLabel={specificationsLabel}
+            transmissionLabel={transmissionLabel}
+            featuresLabel={featuresLabel}
+            suitableForLabel={suitableForLabel}
+            viewDetailRentLabel={viewDetailRentLabel}
             loading={prioritizeImages && i < 2 ? "eager" : "lazy"}
             fetchpriority={prioritizeImages && i === 0 ? "high" : "auto"}
           />

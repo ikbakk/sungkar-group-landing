@@ -3,7 +3,7 @@ import { TypographyH2 } from "@/components/ui/typography";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { getFooterStrings, getGlobalStrings, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import { HERO } from "@/assets/images";
 
 export async function getStaticPaths() {
@@ -11,7 +11,8 @@ export async function getStaticPaths() {
 }
 
 const { locale } = Astro.params;
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
+const footerStrings = getFooterStrings(locale!);
 
 const metaDescriptions = {
   en: "Read Sungkar Group terms and conditions covering bookings, payments, cancellations, itinerary changes, responsibilities, and use of our travel services.",
@@ -24,25 +25,25 @@ const metaDescription =
   metaDescriptions[locale as keyof typeof metaDescriptions];
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-  { label: uiStrings.footer.terms },
+  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
+  { label: footerStrings.footer.terms },
 ];
 ---
 
 <MainLayout
-  title={uiStrings.footer.terms}
+  title={footerStrings.footer.terms}
   description={metaDescription}
   canonical={`/${locale}/terms-conditions`}
   image={HERO.heroLombok}
   locale={locale}
 >
   <PageHeader
-    eyebrow={uiStrings.footer.terms}
-    title={uiStrings.footer.terms}
+    eyebrow={footerStrings.footer.terms}
+    title={footerStrings.footer.terms}
     description={metaDescription}
     breadcrumbs={breadcrumbs}
     image={HERO.heroLombok}
-    imageAlt={uiStrings.common.imageAltSunrise}
+    imageAlt={globalStrings.common.imageAltSunrise}
   />
 
   <SectionContainer background="bg-surface-soft" padding="pb-20">

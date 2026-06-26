@@ -15,14 +15,21 @@ import SectionContainer from "@/layouts/SectionContainer.astro";
 import { getVehicles } from "@/lib/content/car-rental/collection";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import {
+  getCarRentalPageStrings,
+  getFaqPageStrings,
+  getGlobalStrings,
+  NON_DEFAULT_LOCALES,
+} from "@/lib/i18n";
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
 }
 
 const { locale } = Astro.params;
 const vehicles = await getVehicles(locale!);
-const uiStrings = t(locale!);
+const globalStrings = getGlobalStrings(locale!);
+const carRentalStrings = getCarRentalPageStrings(locale!);
+const faqStrings = getFaqPageStrings(locale!);
 
 const pageModule = await loadContent(locale!, "sewaPage");
 const { sewaPageContent } = pageModule;
@@ -45,13 +52,13 @@ const regions = [
 ].filter((region) => region.count > 0);
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: `/${locale}` },
-  { label: uiStrings.breadcrumb.carRental },
+  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
+  { label: globalStrings.breadcrumb.carRental },
 ];
 ---
 
 <MainLayout
-  title={uiStrings.sewaMobil.title}
+  title={carRentalStrings.sewaMobil.title}
   description={sewaPageContent.hero.description}
   canonical={`/${locale}/car-rental`}
   image={vehicles[0]?.imageTop}
@@ -73,6 +80,12 @@ const breadcrumbs = [
         <VehicleRegionSection
           id="lombok"
           locale={locale}
+          passengersLabel={carRentalStrings.sewaMobil.passengers}
+          specificationsLabel={carRentalStrings.sewaMobil.specifications}
+          transmissionLabel={carRentalStrings.sewaMobil.transmission}
+          featuresLabel={carRentalStrings.sewaMobil.features}
+          suitableForLabel={carRentalStrings.sewaMobil.suitableFor}
+          viewDetailRentLabel={carRentalStrings.sewaMobil.viewDetailRent}
           title={sewaPageContent.regions.lombok.title}
           description={sewaPageContent.regions.lombok.description}
           vehicles={lombokVehicles}
@@ -88,6 +101,12 @@ const breadcrumbs = [
         <VehicleRegionSection
           id="sumbawa"
           locale={locale}
+          passengersLabel={carRentalStrings.sewaMobil.passengers}
+          specificationsLabel={carRentalStrings.sewaMobil.specifications}
+          transmissionLabel={carRentalStrings.sewaMobil.transmission}
+          featuresLabel={carRentalStrings.sewaMobil.features}
+          suitableForLabel={carRentalStrings.sewaMobil.suitableFor}
+          viewDetailRentLabel={carRentalStrings.sewaMobil.viewDetailRent}
           title={sewaPageContent.regions.sumbawa.title}
           description={sewaPageContent.regions.sumbawa.description}
           vehicles={sumbawaVehicles}
@@ -102,6 +121,12 @@ const breadcrumbs = [
         <VehicleRegionSection
           id="labuan-bajo"
           locale={locale}
+          passengersLabel={carRentalStrings.sewaMobil.passengers}
+          specificationsLabel={carRentalStrings.sewaMobil.specifications}
+          transmissionLabel={carRentalStrings.sewaMobil.transmission}
+          featuresLabel={carRentalStrings.sewaMobil.features}
+          suitableForLabel={carRentalStrings.sewaMobil.suitableFor}
+          viewDetailRentLabel={carRentalStrings.sewaMobil.viewDetailRent}
           title={sewaPageContent.regions["labuan-bajo"].title}
           description={sewaPageContent.regions["labuan-bajo"].description}
           vehicles={labuanBajoVehicles}
@@ -111,8 +136,8 @@ const breadcrumbs = [
   }
 
   <FaqSection
-    eyebrow={uiStrings.faq.sectionTitle}
-    title={uiStrings.faq.sectionCarRental}
+    eyebrow={faqStrings.faq.sectionTitle}
+    title={faqStrings.faq.sectionCarRental}
     items={sewaMobilFaq}
     background="bg-surface-soft"
   />

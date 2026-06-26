@@ -40,7 +40,7 @@ import { paketWisataFormFields as msPaketWisataFormFields } from "@/lib/i18n/ms/
 import { paketWisataFormFields as zhPaketWisataFormFields } from "@/lib/i18n/zh/shared/contact-data";
 
 import { loadContent, loadFaq } from "@/lib/i18n/loader";
-import { t, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { getPackageDetailStrings, NON_DEFAULT_LOCALES } from "@/lib/i18n";
 import { localizeHref } from "@/lib/i18n/localize";
 import { getImageSrc } from "@/lib/images";
 
@@ -65,7 +65,7 @@ export async function getStaticPaths() {
 
 const { locale } = Astro.params;
 const { tour } = Astro.props;
-const uiStrings = t(locale!);
+const uiStrings = getPackageDetailStrings(locale!);
 const paketWisataFormFields =
   locale === "en"
     ? enPaketWisataFormFields

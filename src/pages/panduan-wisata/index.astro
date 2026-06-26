@@ -7,10 +7,11 @@ import GuideCard from "@/components/guides/GuideCard.astro";
 import { REGION_LABEL } from "@/lib/regions";
 import { getGuides } from "@/lib/content/guides";
 
-import { t } from "@/lib/i18n";
+import { getGlobalStrings, getTravelGuidesPageStrings } from "@/lib/i18n";
 
 const locale = "id";
-const uiStrings = t(locale);
+const globalStrings = getGlobalStrings(locale);
+const guideStrings = getTravelGuidesPageStrings(locale);
 const guides = await getGuides(locale);
 
 const regions = ["lombok", "sumbawa", "labuan-bajo", "general"] as const;
@@ -20,21 +21,21 @@ function guidesByRegion(region: string) {
 }
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: "/" },
-  { label: uiStrings.breadcrumb.travelGuides },
+  { label: globalStrings.breadcrumb.home, href: "/" },
+  { label: globalStrings.breadcrumb.travelGuides },
 ];
 ---
 
 <MainLayout
-  title={uiStrings.page.travelGuides}
-  description={uiStrings.guides.guidesIndexDesc}
+  title={globalStrings.page.travelGuides}
+  description={guideStrings.guides.guidesIndexDesc}
   canonical="/panduan-wisata"
   locale={locale}
 >
   <PageHeader
-    eyebrow={uiStrings.page.travelGuides}
-    title={uiStrings.guides.general}
-    description={uiStrings.guides.guidesIndexDesc}
+    eyebrow={globalStrings.page.travelGuides}
+    title={guideStrings.guides.general}
+    description={guideStrings.guides.guidesIndexDesc}
     breadcrumbs={breadcrumbs}
   />
 
@@ -45,20 +46,20 @@ const breadcrumbs = [
 
       const label =
         region === "general"
-          ? uiStrings.guides.general
-          : uiStrings.guides.guideFor.replace(
+          ? guideStrings.guides.general
+          : guideStrings.guides.guideFor.replace(
               "{region}",
               REGION_LABEL[region as keyof typeof REGION_LABEL],
             );
 
       const regionDesc =
         region === "lombok"
-          ? uiStrings.guides.regionLombok
+          ? guideStrings.guides.regionLombok
           : region === "sumbawa"
-            ? uiStrings.guides.regionSumbawa
+            ? guideStrings.guides.regionSumbawa
             : region === "labuan-bajo"
-              ? uiStrings.guides.regionLabuanBajo
-              : uiStrings.guides.regionGeneral;
+              ? guideStrings.guides.regionLabuanBajo
+              : guideStrings.guides.regionGeneral;
 
       return (
         <SectionContainer
@@ -75,7 +76,11 @@ const breadcrumbs = [
 
           <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {regionGuides.map((guide) => (
-              <GuideCard guide={guide} locale={locale} />
+              <GuideCard
+                guide={guide}
+                locale={locale}
+                readingTimeLabel={guideStrings.guides.readingTime}
+              />
             ))}
           </div>
         </SectionContainer>

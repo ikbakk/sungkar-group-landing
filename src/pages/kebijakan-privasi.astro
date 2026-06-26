@@ -3,17 +3,17 @@ import { TypographyH2 } from "@/components/ui/typography";
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageHeader from "@/components/site/PageHeader.astro";
 import SectionContainer from "@/layouts/SectionContainer.astro";
-import { t } from "@/lib/i18n";
+import { getGlobalStrings } from "@/lib/i18n";
 import { HERO } from "@/assets/images";
 
 const locale = "id";
-const uiStrings = t(locale);
+const globalStrings = getGlobalStrings(locale);
 
 const metaDescription =
   "Pelajari bagaimana Sungkar Group mengumpulkan, menggunakan, dan melindungi data pribadi Anda saat menggunakan website, formulir, dan layanan perjalanan kami.";
 
 const breadcrumbs = [
-  { label: uiStrings.breadcrumb.home, href: "/" },
+  { label: globalStrings.breadcrumb.home, href: "/" },
   { label: "Kebijakan Privasi" },
 ];
 ---
@@ -31,7 +31,7 @@ const breadcrumbs = [
     description={metaDescription}
     breadcrumbs={breadcrumbs}
     image={HERO.heroLombok}
-    imageAlt={uiStrings.common.imageAltSunrise}
+    imageAlt={globalStrings.common.imageAltSunrise}
   />
 
   <SectionContainer background="bg-surface-soft" padding="pb-20">
