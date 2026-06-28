@@ -11,16 +11,36 @@
       "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
     ],
     "itinerary": [
-      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
-      "Hari 1 - Makan malam di restoran lokal.",
-      "Hari 1 - Check-in hotel dan istirahat.",
-      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
-      "Hari 2 - Snorkeling di Gili Meno, Gili Air, dan Gili Trawangan menggunakan private glass-bottom boat.",
-      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
-      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
-      "Hari 3 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
-      "Hari 3 - Makan siang di kawasan Pantai Kuta Mandalika.",
-      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok."
+      "Hari 1 - Penjemputan di Bandara Internasional Lombok dengan sambutan hangat.",
+      "Hari 1 - Mengunjungi Desa Tenun Sukarare untuk melihat proses pembuatan kain songket khas Lombok.",
+      "Hari 1 - Berfoto menggunakan pakaian adat Sasak di Desa Sukarare.",
+      "Hari 1 - Mengunjungi Desa Adat Sade untuk mengenal budaya dan kehidupan tradisional suku Sasak.",
+      "Hari 1 - Makan siang di kawasan Pantai Kuta Mandalika dengan menu khas Lombok.",
+      "Hari 1 - Menikmati keindahan Pantai Kuta Mandalika dengan pasir putih dan bukit-bukit hijau.",
+      "Hari 1 - Berfoto di area Sirkuit Mandalika, venue balap MotoGP internasional.",
+      "Hari 1 - Mengunjungi Pantai Tanjung Aan dengan pasir putih lembut dan air laut biru jernih.",
+      "Hari 1 - Menikmati panorama matahari terbenam dari puncak Bukit Merese.",
+      "Hari 1 - Makan malam di restoran lokal pilihan.",
+      "Hari 1 - Check-in hotel dan acara bebas.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, pura dengan batu berlubang ikonik.",
+      "Hari 2 - Berfoto di Villa Hantu dengan pemandangan laut lepas.",
+      "Hari 2 - Menikmati panorama tiga Gili dari Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di 3 spot Gili (Gili Meno, Gili Air, Gili Trawangan) menggunakan private glass-bottom boat.",
+      "Hari 2 - Melihat patung bawah laut ikonik di Gili Meno.",
+      "Hari 2 - Snorkeling bersama penyu laut di perairan Gili Trawangan.",
+      "Hari 2 - Makan siang di Gili Trawangan.",
+      "Hari 2 - Waktu bebas menjelajahi Gili Trawangan dengan sepeda atau cidomo.",
+      "Hari 2 - Mengunjungi tempat kerajinan mutiara dan toko oleh-oleh khas Lombok.",
+      "Hari 2 - Makan malam di kawasan Senggigi.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Acara bebas menikmati fasilitas hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek (jika waktu memungkinkan).",
+      "Hari 3 - Makan siang sebelum keberangkatan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok.",
+      "Hari 3 - Tour selesai."
     ],
     "includes": [
       "Transportasi ber-AC sesuai jumlah peserta.",
@@ -38,7 +58,10 @@
       "Peralatan snorkeling.",
       "Kamera GoPro Hero bawah air."
     ],
-    "excludes": ["Tiket pesawat.", "Keperluan pribadi."]
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ]
   },
   "en": {
     "title": "3-Day Lombok Tour Package – Gili Snorkeling & Mandalika",
@@ -52,16 +75,36 @@
       "Hotel options from no hotel to 5-star accommodation."
     ],
     "itinerary": [
-      "Day 1 - Pickup and welcome at Lombok International Airport.",
-      "Day 1 - Dinner at a local restaurant.",
-      "Day 1 - Hotel check-in and rest.",
-      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
-      "Day 2 - Snorkel at Gili Meno, Gili Air, and Gili Trawangan by private glass-bottom boat.",
-      "Day 2 - Lunch and explore Gili Trawangan.",
-      "Day 2 - Dinner in Senggigi and return to the hotel.",
-      "Day 3 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
-      "Day 3 - Lunch in the Kuta Mandalika area.",
-      "Day 3 - Transfer to Lombok International Airport."
+      "Day 1 - Pickup at Lombok International Airport with warm welcome.",
+      "Day 1 - Visit Sukarare Weaving Village to see traditional songket making.",
+      "Day 1 - Photo session in traditional Sasak attire at Sukarare Village.",
+      "Day 1 - Visit Sade Traditional Village to experience authentic Sasak culture.",
+      "Day 1 - Lunch at Kuta Mandalika area with authentic Lombok cuisine.",
+      "Day 1 - Enjoy Kuta Mandalika Beach with its white sand and scenic green hills.",
+      "Day 1 - Photo stop at Mandalika Circuit, the MotoGP venue.",
+      "Day 1 - Visit Tanjung Aan Beach with soft white sand and crystal-clear water.",
+      "Day 1 - Enjoy sunset panorama from the top of Bukit Merese.",
+      "Day 1 - Dinner at a selected local restaurant.",
+      "Day 1 - Check-in at hotel and free time.",
+      "Day 2 - Breakfast at the hotel.",
+      "Day 2 - Visit Batu Bolong Temple with its iconic hollow rock.",
+      "Day 2 - Photo stop at the Haunted Villa with open sea views.",
+      "Day 2 - Enjoy the three Gili islands panorama from Bukit Malimbu / Malaka.",
+      "Day 2 - Snorkel 3 Gili spots (Meno, Air, Trawangan) by private glass-bottom boat.",
+      "Day 2 - See the iconic underwater statue at Gili Meno.",
+      "Day 2 - Snorkeling with sea turtles at Gili Trawangan.",
+      "Day 2 - Lunch at Gili Trawangan.",
+      "Day 2 - Free time to explore Gili Trawangan by bicycle or cidomo (horse cart).",
+      "Day 2 - Visit pearl craft center and Lombok souvenir shops.",
+      "Day 2 - Dinner at Senggigi area.",
+      "Day 2 - Return to hotel and free time.",
+      "Day 3 - Breakfast at the hotel.",
+      "Day 3 - Free time to enjoy hotel facilities.",
+      "Day 3 - Check-out from hotel.",
+      "Day 3 - Optional visit to Islamic Center Lombok or Banyumulek pottery village (if time permits).",
+      "Day 3 - Lunch before departure.",
+      "Day 3 - Transfer to Lombok International Airport.",
+      "Day 3 - Tour ends."
     ],
     "includes": [
       "Air-conditioned transportation according to group size.",
@@ -79,7 +122,10 @@
       "Snorkeling equipment.",
       "Underwater GoPro Hero camera."
     ],
-    "excludes": ["Airfare.", "Personal expenses."]
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ]
   },
   "ms": {
     "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Snorkeling Gili & Mandalika",
@@ -93,16 +139,36 @@
       "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
     ],
     "itinerary": [
-      "Hari 1 - Dijemput dan disambut di Lapangan Terbang Antarabangsa Lombok.",
-      "Hari 1 - Makan malam di restoran tempatan.",
-      "Hari 1 - Daftar masuk hotel dan berehat.",
-      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
-      "Hari 2 - Snorkeling di Gili Meno, Gili Air dan Gili Trawangan dengan bot kaca dasar persendirian.",
-      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
-      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
-      "Hari 3 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
-      "Hari 3 - Makan tengah hari di kawasan Kuta Mandalika.",
-      "Hari 3 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+      "Hari 1 - Penjemputan di Bandara Internasional Lombok dengan sambutan hangat.",
+      "Hari 1 - Mengunjungi Desa Tenun Sukarare untuk melihat proses pembuatan kain songket khas Lombok.",
+      "Hari 1 - Berfoto menggunakan pakaian adat Sasak di Desa Sukarare.",
+      "Hari 1 - Mengunjungi Desa Adat Sade untuk mengenal budaya dan kehidupan tradisional suku Sasak.",
+      "Hari 1 - Makan siang di kawasan Pantai Kuta Mandalika dengan menu khas Lombok.",
+      "Hari 1 - Menikmati keindahan Pantai Kuta Mandalika dengan pasir putih dan bukit-bukit hijau.",
+      "Hari 1 - Berfoto di area Sirkuit Mandalika, venue balap MotoGP internasional.",
+      "Hari 1 - Mengunjungi Pantai Tanjung Aan dengan pasir putih lembut dan air laut biru jernih.",
+      "Hari 1 - Menikmati panorama matahari terbenam dari puncak Bukit Merese.",
+      "Hari 1 - Makan malam di restoran lokal pilihan.",
+      "Hari 1 - Check-in hotel dan acara bebas.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, pura dengan batu berlubang ikonik.",
+      "Hari 2 - Berfoto di Villa Hantu dengan pemandangan laut lepas.",
+      "Hari 2 - Menikmati panorama tiga Gili dari Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di 3 spot Gili (Gili Meno, Gili Air, Gili Trawangan) menggunakan private glass-bottom boat.",
+      "Hari 2 - Melihat patung bawah laut ikonik di Gili Meno.",
+      "Hari 2 - Snorkeling bersama penyu laut di perairan Gili Trawangan.",
+      "Hari 2 - Makan siang di Gili Trawangan.",
+      "Hari 2 - Waktu bebas menjelajahi Gili Trawangan dengan sepeda atau cidomo.",
+      "Hari 2 - Mengunjungi tempat kerajinan mutiara dan toko oleh-oleh khas Lombok.",
+      "Hari 2 - Makan malam di kawasan Senggigi.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Acara bebas menikmati fasilitas hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek (jika waktu memungkinkan).",
+      "Hari 3 - Makan siang sebelum keberangkatan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok.",
+      "Hari 3 - Tour selesai."
     ],
     "includes": [
       "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
@@ -120,7 +186,10 @@
       "Peralatan snorkeling.",
       "Kamera GoPro Hero bawah air."
     ],
-    "excludes": ["Tiket penerbangan.", "Perbelanjaan peribadi."]
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ]
   },
   "ar": {
     "title": "باقة لومبوك 3 أيام – الغطس في جيلي ومانداليكا",
@@ -134,16 +203,36 @@
       "خيارات من دون فندق حتى فندق 5 نجوم."
     ],
     "itinerary": [
-      "اليوم 1 - الاستقبال والترحيب في مطار لومبوك الدولي.",
-      "اليوم 1 - تناول العشاء في مطعم محلي.",
-      "اليوم 1 - تسجيل الدخول إلى الفندق والراحة.",
-      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
-      "اليوم 2 - الغطس في جيلي مينو وجيلي آير وجيلي تراوانغان بقارب خاص ذي قاع زجاجي.",
-      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
-      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
-      "اليوم 3 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
-      "اليوم 3 - تناول الغداء في منطقة كوتا مانداليكا.",
-      "اليوم 3 - الانتقال إلى مطار لومبوك الدولي."
+      "Hari 1 - Penjemputan di Bandara Internasional Lombok dengan sambutan hangat.",
+      "Hari 1 - Mengunjungi Desa Tenun Sukarare untuk melihat proses pembuatan kain songket khas Lombok.",
+      "Hari 1 - Berfoto menggunakan pakaian adat Sasak di Desa Sukarare.",
+      "Hari 1 - Mengunjungi Desa Adat Sade untuk mengenal budaya dan kehidupan tradisional suku Sasak.",
+      "Hari 1 - Makan siang di kawasan Pantai Kuta Mandalika dengan menu khas Lombok.",
+      "Hari 1 - Menikmati keindahan Pantai Kuta Mandalika dengan pasir putih dan bukit-bukit hijau.",
+      "Hari 1 - Berfoto di area Sirkuit Mandalika, venue balap MotoGP internasional.",
+      "Hari 1 - Mengunjungi Pantai Tanjung Aan dengan pasir putih lembut dan air laut biru jernih.",
+      "Hari 1 - Menikmati panorama matahari terbenam dari puncak Bukit Merese.",
+      "Hari 1 - Makan malam di restoran lokal pilihan.",
+      "Hari 1 - Check-in hotel dan acara bebas.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, pura dengan batu berlubang ikonik.",
+      "Hari 2 - Berfoto di Villa Hantu dengan pemandangan laut lepas.",
+      "Hari 2 - Menikmati panorama tiga Gili dari Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di 3 spot Gili (Gili Meno, Gili Air, Gili Trawangan) menggunakan private glass-bottom boat.",
+      "Hari 2 - Melihat patung bawah laut ikonik di Gili Meno.",
+      "Hari 2 - Snorkeling bersama penyu laut di perairan Gili Trawangan.",
+      "Hari 2 - Makan siang di Gili Trawangan.",
+      "Hari 2 - Waktu bebas menjelajahi Gili Trawangan dengan sepeda atau cidomo.",
+      "Hari 2 - Mengunjungi tempat kerajinan mutiara dan toko oleh-oleh khas Lombok.",
+      "Hari 2 - Makan malam di kawasan Senggigi.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Acara bebas menikmati fasilitas hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek (jika waktu memungkinkan).",
+      "Hari 3 - Makan siang sebelum keberangkatan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok.",
+      "Hari 3 - Tour selesai."
     ],
     "includes": [
       "مواصلات مكيفة حسب حجم المجموعة.",
@@ -161,7 +250,10 @@
       "معدات الغطس.",
       "كاميرا GoPro Hero للتصوير تحت الماء."
     ],
-    "excludes": ["تذاكر الطيران.", "المصاريف الشخصية."]
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ]
   },
   "zh": {
     "title": "龙目岛3天2晚旅游套餐－吉利浮潜与曼达利卡",
@@ -175,16 +267,36 @@
       "可选择不含酒店至五星级酒店。"
     ],
     "itinerary": [
-      "第1天 - 在龙目国际机场接机并欢迎抵达。",
-      "第1天 - 在当地餐厅享用晚餐。",
-      "第1天 - 办理酒店入住并休息。",
-      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
-      "第2天 - 乘私人玻璃底船在吉利美诺、吉利艾尔和吉利特拉旺安浮潜。",
-      "第2天 - 享用午餐并探索吉利特拉旺安。",
-      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
-      "第3天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
-      "第3天 - 在库塔曼达利卡区域享用午餐。",
-      "第3天 - 送往龙目国际机场。"
+      "Hari 1 - Penjemputan di Bandara Internasional Lombok dengan sambutan hangat.",
+      "Hari 1 - Mengunjungi Desa Tenun Sukarare untuk melihat proses pembuatan kain songket khas Lombok.",
+      "Hari 1 - Berfoto menggunakan pakaian adat Sasak di Desa Sukarare.",
+      "Hari 1 - Mengunjungi Desa Adat Sade untuk mengenal budaya dan kehidupan tradisional suku Sasak.",
+      "Hari 1 - Makan siang di kawasan Pantai Kuta Mandalika dengan menu khas Lombok.",
+      "Hari 1 - Menikmati keindahan Pantai Kuta Mandalika dengan pasir putih dan bukit-bukit hijau.",
+      "Hari 1 - Berfoto di area Sirkuit Mandalika, venue balap MotoGP internasional.",
+      "Hari 1 - Mengunjungi Pantai Tanjung Aan dengan pasir putih lembut dan air laut biru jernih.",
+      "Hari 1 - Menikmati panorama matahari terbenam dari puncak Bukit Merese.",
+      "Hari 1 - Makan malam di restoran lokal pilihan.",
+      "Hari 1 - Check-in hotel dan acara bebas.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, pura dengan batu berlubang ikonik.",
+      "Hari 2 - Berfoto di Villa Hantu dengan pemandangan laut lepas.",
+      "Hari 2 - Menikmati panorama tiga Gili dari Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di 3 spot Gili (Gili Meno, Gili Air, Gili Trawangan) menggunakan private glass-bottom boat.",
+      "Hari 2 - Melihat patung bawah laut ikonik di Gili Meno.",
+      "Hari 2 - Snorkeling bersama penyu laut di perairan Gili Trawangan.",
+      "Hari 2 - Makan siang di Gili Trawangan.",
+      "Hari 2 - Waktu bebas menjelajahi Gili Trawangan dengan sepeda atau cidomo.",
+      "Hari 2 - Mengunjungi tempat kerajinan mutiara dan toko oleh-oleh khas Lombok.",
+      "Hari 2 - Makan malam di kawasan Senggigi.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Acara bebas menikmati fasilitas hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek (jika waktu memungkinkan).",
+      "Hari 3 - Makan siang sebelum keberangkatan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok.",
+      "Hari 3 - Tour selesai."
     ],
     "includes": [
       "根据团队人数安排空调车辆。",
@@ -202,6 +314,9 @@
       "浮潜设备。",
       "GoPro Hero水下相机。"
     ],
-    "excludes": ["机票。", "个人消费。"]
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ]
   }
 }

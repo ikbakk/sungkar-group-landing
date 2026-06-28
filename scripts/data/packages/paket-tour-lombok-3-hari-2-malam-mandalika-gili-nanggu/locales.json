@@ -11,17 +11,33 @@
       "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
     ],
     "itinerary": [
-      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
-      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
-      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
-      "Hari 2 - Perjalanan menuju Sekotong dan menaiki private boat.",
-      "Hari 2 - Snorkeling dan bersantai di Gili Nanggu.",
-      "Hari 2 - Makan siang di Gili Sudak dan mengunjungi Gili Kedis.",
-      "Hari 2 - Makan malam dan kembali ke hotel.",
-      "Hari 3 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 1 - Penjemputan di Bandara Internasional Lombok dengan sambutan hangat.",
+      "Hari 1 - Mengunjungi Desa Tenun Sukarare untuk melihat proses pembuatan kain songket khas Lombok.",
+      "Hari 1 - Berfoto menggunakan pakaian adat Sasak di Desa Sukarare.",
+      "Hari 1 - Mengunjungi Desa Adat Sade untuk mengenal budaya dan kehidupan tradisional suku Sasak.",
+      "Hari 1 - Makan siang di kawasan Pantai Kuta Mandalika dengan menu khas Lombok.",
+      "Hari 1 - Menikmati keindahan Pantai Kuta Mandalika dengan pasir putih dan bukit-bukit hijau.",
+      "Hari 1 - Berfoto di area Sirkuit Mandalika, venue balap MotoGP internasional.",
+      "Hari 1 - Mengunjungi Pantai Tanjung Aan dengan pasir putih lembut dan air laut biru jernih.",
+      "Hari 1 - Menikmati panorama matahari terbenam dari puncak Bukit Merese.",
+      "Hari 1 - Makan malam di restoran lokal pilihan.",
+      "Hari 1 - Check-in hotel dan acara bebas.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Perjalanan menuju Sekotong untuk memulai Gili Nanggu Tour.",
+      "Hari 2 - Menyeberang ke Gili Nanggu dengan private boat.",
+      "Hari 2 - Snorkeling di perairan Gili Nanggu yang tenang dengan terumbu karang dan ikan tropis.",
+      "Hari 2 - Bersantai di pasir putih Gili Nanggu (cocok untuk anak-anak dan lansia).",
+      "Hari 2 - Makan siang di Gili Sudak dengan hidangan laut segar di tepi pantai.",
+      "Hari 2 - Mengunjungi Gili Kedis, pulau kecil eksotis dengan ayunan dan bintang laut.",
+      "Hari 2 - Makan malam di restoran lokal.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Acara bebas menikmati fasilitas hotel.",
       "Hari 3 - Check-out hotel.",
-      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek apabila waktu memungkinkan.",
-      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok."
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek (jika waktu memungkinkan).",
+      "Hari 3 - Makan siang sebelum keberangkatan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok.",
+      "Hari 3 - Tour selesai."
     ],
     "includes": [
       "Transportasi ber-AC sesuai jumlah peserta.",
@@ -39,7 +55,10 @@
       "Peralatan snorkeling.",
       "Kamera GoPro Hero bawah air."
     ],
-    "excludes": ["Tiket pesawat.", "Keperluan pribadi."]
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ]
   },
   "en": {
     "title": "3-Day Lombok Tour Package – Mandalika & Gili Nanggu",
@@ -53,17 +72,33 @@
       "Hotel options from no hotel to 5-star accommodation."
     ],
     "itinerary": [
-      "Day 1 - Pickup at the airport or harbor.",
-      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
-      "Day 1 - Dinner, hotel check-in, and rest.",
-      "Day 2 - Travel to Sekotong and board a private boat.",
-      "Day 2 - Snorkel and relax on Gili Nanggu.",
-      "Day 2 - Lunch on Gili Sudak and visit Gili Kedis.",
-      "Day 2 - Dinner and return to the hotel.",
-      "Day 3 - Breakfast and free time at the hotel.",
-      "Day 3 - Hotel check-out.",
-      "Day 3 - Optional visit to the Lombok Islamic Center or Banyumulek Village if time permits.",
-      "Day 3 - Transfer to Lombok International Airport."
+      "Day 1 - Pickup at Lombok International Airport with warm welcome.",
+      "Day 1 - Visit Sukarare Weaving Village to see traditional songket making.",
+      "Day 1 - Photo session in traditional Sasak attire at Sukarare Village.",
+      "Day 1 - Visit Sade Traditional Village to experience authentic Sasak culture.",
+      "Day 1 - Lunch at Kuta Mandalika area with authentic Lombok cuisine.",
+      "Day 1 - Enjoy Kuta Mandalika Beach with its white sand and scenic green hills.",
+      "Day 1 - Photo stop at Mandalika Circuit, the MotoGP venue.",
+      "Day 1 - Visit Tanjung Aan Beach with soft white sand and crystal-clear water.",
+      "Day 1 - Enjoy sunset panorama from the top of Bukit Merese.",
+      "Day 1 - Dinner at a selected local restaurant.",
+      "Day 1 - Check-in at hotel and free time.",
+      "Day 2 - Breakfast at the hotel.",
+      "Day 2 - Travel to Sekotong to begin the Gili Nanggu Tour.",
+      "Day 2 - Cross to Gili Nanggu by private boat.",
+      "Day 2 - Snorkeling in the calm waters of Gili Nanggu with coral reefs and tropical fish.",
+      "Day 2 - Relax on the white sand of Gili Nanggu (suitable for children and elderly).",
+      "Day 2 - Lunch at Gili Sudak with fresh seafood by the beach.",
+      "Day 2 - Visit Gili Kedis, an exotic tiny island with swings and starfish.",
+      "Day 2 - Dinner at a local restaurant.",
+      "Day 2 - Return to hotel and free time.",
+      "Day 3 - Breakfast at the hotel.",
+      "Day 3 - Free time to enjoy hotel facilities.",
+      "Day 3 - Check-out from hotel.",
+      "Day 3 - Optional visit to Islamic Center Lombok or Banyumulek pottery village (if time permits).",
+      "Day 3 - Lunch before departure.",
+      "Day 3 - Transfer to Lombok International Airport.",
+      "Day 3 - Tour ends."
     ],
     "includes": [
       "Air-conditioned transportation according to group size.",
@@ -81,7 +116,10 @@
       "Snorkeling equipment.",
       "Underwater GoPro Hero camera."
     ],
-    "excludes": ["Airfare.", "Personal expenses."]
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ]
   },
   "ms": {
     "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Mandalika & Gili Nanggu",
@@ -95,17 +133,33 @@
       "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
     ],
     "itinerary": [
-      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
-      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
-      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
-      "Hari 2 - Perjalanan ke Sekotong dan menaiki bot persendirian.",
-      "Hari 2 - Snorkeling dan bersantai di Gili Nanggu.",
-      "Hari 2 - Makan tengah hari di Gili Sudak dan melawat Gili Kedis.",
-      "Hari 2 - Makan malam dan kembali ke hotel.",
-      "Hari 3 - Sarapan pagi dan masa bebas di hotel.",
-      "Hari 3 - Daftar keluar hotel.",
-      "Hari 3 - Lawatan pilihan ke Islamic Center Lombok atau Kampung Banyumulek jika masa mengizinkan.",
-      "Hari 3 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+      "Hari 1 - Penjemputan di Bandara Internasional Lombok dengan sambutan hangat.",
+      "Hari 1 - Mengunjungi Desa Tenun Sukarare untuk melihat proses pembuatan kain songket khas Lombok.",
+      "Hari 1 - Berfoto menggunakan pakaian adat Sasak di Desa Sukarare.",
+      "Hari 1 - Mengunjungi Desa Adat Sade untuk mengenal budaya dan kehidupan tradisional suku Sasak.",
+      "Hari 1 - Makan siang di kawasan Pantai Kuta Mandalika dengan menu khas Lombok.",
+      "Hari 1 - Menikmati keindahan Pantai Kuta Mandalika dengan pasir putih dan bukit-bukit hijau.",
+      "Hari 1 - Berfoto di area Sirkuit Mandalika, venue balap MotoGP internasional.",
+      "Hari 1 - Mengunjungi Pantai Tanjung Aan dengan pasir putih lembut dan air laut biru jernih.",
+      "Hari 1 - Menikmati panorama matahari terbenam dari puncak Bukit Merese.",
+      "Hari 1 - Makan malam di restoran lokal pilihan.",
+      "Hari 1 - Check-in hotel dan acara bebas.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Perjalanan menuju Sekotong untuk memulai Gili Nanggu Tour.",
+      "Hari 2 - Menyeberang ke Gili Nanggu dengan private boat.",
+      "Hari 2 - Snorkeling di perairan Gili Nanggu yang tenang dengan terumbu karang dan ikan tropis.",
+      "Hari 2 - Bersantai di pasir putih Gili Nanggu (cocok untuk anak-anak dan lansia).",
+      "Hari 2 - Makan siang di Gili Sudak dengan hidangan laut segar di tepi pantai.",
+      "Hari 2 - Mengunjungi Gili Kedis, pulau kecil eksotis dengan ayunan dan bintang laut.",
+      "Hari 2 - Makan malam di restoran lokal.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Acara bebas menikmati fasilitas hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek (jika waktu memungkinkan).",
+      "Hari 3 - Makan siang sebelum keberangkatan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok.",
+      "Hari 3 - Tour selesai."
     ],
     "includes": [
       "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
@@ -123,7 +177,10 @@
       "Peralatan snorkeling.",
       "Kamera GoPro Hero bawah air."
     ],
-    "excludes": ["Tiket penerbangan.", "Perbelanjaan peribadi."]
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ]
   },
   "ar": {
     "title": "باقة لومبوك 3 أيام – مانداليكا وجيلي نانغو",
@@ -137,17 +194,33 @@
       "خيارات من دون فندق حتى فندق 5 نجوم."
     ],
     "itinerary": [
-      "اليوم 1 - الاستقبال من المطار أو الميناء.",
-      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
-      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
-      "اليوم 2 - التوجه إلى سيكوتونغ وركوب قارب خاص.",
-      "اليوم 2 - الغطس والاسترخاء في جيلي نانغو.",
-      "اليوم 2 - تناول الغداء في جيلي سوداك وزيارة جيلي كيديس.",
-      "اليوم 2 - تناول العشاء والعودة إلى الفندق.",
-      "اليوم 3 - تناول الإفطار ووقت حر في الفندق.",
-      "اليوم 3 - تسجيل الخروج من الفندق.",
-      "اليوم 3 - زيارة اختيارية إلى المركز الإسلامي في لومبوك أو قرية بانيوموليك إذا سمح الوقت.",
-      "اليوم 3 - الانتقال إلى مطار لومبوك الدولي."
+      "Hari 1 - Penjemputan di Bandara Internasional Lombok dengan sambutan hangat.",
+      "Hari 1 - Mengunjungi Desa Tenun Sukarare untuk melihat proses pembuatan kain songket khas Lombok.",
+      "Hari 1 - Berfoto menggunakan pakaian adat Sasak di Desa Sukarare.",
+      "Hari 1 - Mengunjungi Desa Adat Sade untuk mengenal budaya dan kehidupan tradisional suku Sasak.",
+      "Hari 1 - Makan siang di kawasan Pantai Kuta Mandalika dengan menu khas Lombok.",
+      "Hari 1 - Menikmati keindahan Pantai Kuta Mandalika dengan pasir putih dan bukit-bukit hijau.",
+      "Hari 1 - Berfoto di area Sirkuit Mandalika, venue balap MotoGP internasional.",
+      "Hari 1 - Mengunjungi Pantai Tanjung Aan dengan pasir putih lembut dan air laut biru jernih.",
+      "Hari 1 - Menikmati panorama matahari terbenam dari puncak Bukit Merese.",
+      "Hari 1 - Makan malam di restoran lokal pilihan.",
+      "Hari 1 - Check-in hotel dan acara bebas.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Perjalanan menuju Sekotong untuk memulai Gili Nanggu Tour.",
+      "Hari 2 - Menyeberang ke Gili Nanggu dengan private boat.",
+      "Hari 2 - Snorkeling di perairan Gili Nanggu yang tenang dengan terumbu karang dan ikan tropis.",
+      "Hari 2 - Bersantai di pasir putih Gili Nanggu (cocok untuk anak-anak dan lansia).",
+      "Hari 2 - Makan siang di Gili Sudak dengan hidangan laut segar di tepi pantai.",
+      "Hari 2 - Mengunjungi Gili Kedis, pulau kecil eksotis dengan ayunan dan bintang laut.",
+      "Hari 2 - Makan malam di restoran lokal.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Acara bebas menikmati fasilitas hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek (jika waktu memungkinkan).",
+      "Hari 3 - Makan siang sebelum keberangkatan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok.",
+      "Hari 3 - Tour selesai."
     ],
     "includes": [
       "مواصلات مكيفة حسب حجم المجموعة.",
@@ -165,7 +238,10 @@
       "معدات الغطس.",
       "كاميرا GoPro Hero للتصوير تحت الماء."
     ],
-    "excludes": ["تذاكر الطيران.", "المصاريف الشخصية."]
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ]
   },
   "zh": {
     "title": "龙目岛3天2晚旅游套餐－曼达利卡与吉利南古",
@@ -179,17 +255,33 @@
       "可选择不含酒店至五星级酒店。"
     ],
     "itinerary": [
-      "第1天 - 在机场或码头接客。",
-      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
-      "第1天 - 享用晚餐、办理酒店入住并休息。",
-      "第2天 - 前往塞科通并乘坐私人船。",
-      "第2天 - 在吉利南古浮潜和休闲。",
-      "第2天 - 在吉利苏达克享用午餐并游览吉利克迪斯。",
-      "第2天 - 享用晚餐并返回酒店。",
-      "第3天 - 在酒店享用早餐并自由活动。",
-      "第3天 - 办理酒店退房。",
-      "第3天 - 时间允许时可选择参观龙目岛伊斯兰中心或班尤穆勒克村。",
-      "第3天 - 送往龙目国际机场。"
+      "Hari 1 - Penjemputan di Bandara Internasional Lombok dengan sambutan hangat.",
+      "Hari 1 - Mengunjungi Desa Tenun Sukarare untuk melihat proses pembuatan kain songket khas Lombok.",
+      "Hari 1 - Berfoto menggunakan pakaian adat Sasak di Desa Sukarare.",
+      "Hari 1 - Mengunjungi Desa Adat Sade untuk mengenal budaya dan kehidupan tradisional suku Sasak.",
+      "Hari 1 - Makan siang di kawasan Pantai Kuta Mandalika dengan menu khas Lombok.",
+      "Hari 1 - Menikmati keindahan Pantai Kuta Mandalika dengan pasir putih dan bukit-bukit hijau.",
+      "Hari 1 - Berfoto di area Sirkuit Mandalika, venue balap MotoGP internasional.",
+      "Hari 1 - Mengunjungi Pantai Tanjung Aan dengan pasir putih lembut dan air laut biru jernih.",
+      "Hari 1 - Menikmati panorama matahari terbenam dari puncak Bukit Merese.",
+      "Hari 1 - Makan malam di restoran lokal pilihan.",
+      "Hari 1 - Check-in hotel dan acara bebas.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Perjalanan menuju Sekotong untuk memulai Gili Nanggu Tour.",
+      "Hari 2 - Menyeberang ke Gili Nanggu dengan private boat.",
+      "Hari 2 - Snorkeling di perairan Gili Nanggu yang tenang dengan terumbu karang dan ikan tropis.",
+      "Hari 2 - Bersantai di pasir putih Gili Nanggu (cocok untuk anak-anak dan lansia).",
+      "Hari 2 - Makan siang di Gili Sudak dengan hidangan laut segar di tepi pantai.",
+      "Hari 2 - Mengunjungi Gili Kedis, pulau kecil eksotis dengan ayunan dan bintang laut.",
+      "Hari 2 - Makan malam di restoran lokal.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Acara bebas menikmati fasilitas hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek (jika waktu memungkinkan).",
+      "Hari 3 - Makan siang sebelum keberangkatan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok.",
+      "Hari 3 - Tour selesai."
     ],
     "includes": [
       "根据团队人数安排空调车辆。",
@@ -207,6 +299,9 @@
       "浮潜设备。",
       "GoPro Hero水下相机。"
     ],
-    "excludes": ["机票。", "个人消费。"]
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ]
   }
 }
