@@ -47,7 +47,9 @@ function parsePriceNumbers(value: string): number[] {
 
 const priceListPrices = tour.priceList
   ? Object.values(tour.priceList).flatMap((priceGroup) =>
-      Object.values(priceGroup),
+      Object.entries(priceGroup)
+        .filter(([k]) => k !== "maxPax" && k !== "addPerPax")
+        .map(([, v]) => v),
     )
   : [];
 const cabinPrices = tour.cabins
