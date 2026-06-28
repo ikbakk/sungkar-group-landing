@@ -28,7 +28,7 @@ const strings = {
     facebook: "Facebook",
     tiktok: "TikTok",
     licensedTourOperator: "Operator Wisata Bersertifikat",
-    ratingOnGoogle: "Rating 4.9 di Google",
+    ratingOnGoogle: "Rating {rating} di Google",
     secureBooking: "Pemesanan Aman",
     support247: "Dukungan 24/7",
     subscribeForTips: "Berlangganan tips wisata",

@@ -1,4 +1,6 @@
 ---
+import { reviewStats } from "@/lib/content/reviews";
+
 interface Props {
   rating?: number;
   reviewCount?: number;
@@ -8,8 +10,8 @@ interface Props {
 }
 
 const {
-  rating = 4.9,
-  reviewCount = 1200,
+  rating = reviewStats.rating,
+  reviewCount = reviewStats.totalReviews,
   bookingCount = 15000,
   yearsInBusiness = 10,
   class: className = "",

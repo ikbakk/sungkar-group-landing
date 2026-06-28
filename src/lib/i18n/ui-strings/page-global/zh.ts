@@ -30,7 +30,7 @@ const strings = {
     facebook: "Facebook",
     tiktok: "TikTok",
     licensedTourOperator: "\u6301\u7248\u65C5\u6E38\u8FD0\u8425\u5546",
-    ratingOnGoogle: "Google \u8BC4\u5206 4.9",
+    ratingOnGoogle: "Google \u8BC4\u5206 {rating}",
     secureBooking: "\u5B89\u5168\u9884\u8BA2",
     support247: "24/7 \u5BA2\u670D",
     subscribeForTips: "\u8BA2\u9605\u65C5\u884C\u63D0\u793A",
