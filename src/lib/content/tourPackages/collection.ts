@@ -1,13 +1,17 @@
-import { tourPackagesData } from "@/generated/content/tour-packages.generated";
+import { getTourPackagesData } from "../generated/direct-json-loader";
 import { safeParse } from "@/lib/errors/content-errors";
 import { generatedTourPackageSchema } from "@/lib/content/generated/schemas";
 import type { TourPackage, Cabin, Region } from "./types";
 import { resolveImages } from "./images";
 
+type GeneratedEntry = ReturnType<typeof getTourPackagesData>[number];
+
+const tourPackagesData = getTourPackagesData();
+
 export async function getPackages(locale = "id"): Promise<TourPackage[]> {
   return tourPackagesData
-    .filter((entry) => entry.locale === locale)
-    .map((entry): TourPackage => {
+    .filter((entry: GeneratedEntry) => entry.locale === locale)
+    .map((entry: GeneratedEntry): TourPackage => {
       const data = safeParse(
         generatedTourPackageSchema,
         entry,
