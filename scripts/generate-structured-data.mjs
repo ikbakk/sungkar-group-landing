@@ -59,6 +59,46 @@ const COL_TITLE_MAP = {
   ar: COL_TITLE_AR,
   zh: COL_TITLE_ZH,
 };
+
+const PRICE_LIST_LABELS = {
+  landHotelTier: {
+    id: {
+      withoutHotel: "Tanpa Hotel",
+      hotel2: "Hotel Bintang 2",
+      hotel3: "Hotel Bintang 3",
+      hotel4: "Hotel Bintang 4",
+      hotel5: "Hotel Bintang 5",
+    },
+    en: {
+      withoutHotel: "Without Hotel",
+      hotel2: "2-Star Hotel",
+      hotel3: "3-Star Hotel",
+      hotel4: "4-Star Hotel",
+      hotel5: "5-Star Hotel",
+    },
+    ms: {
+      withoutHotel: "Tanpa Hotel",
+      hotel2: "Hotel 2 Bintang",
+      hotel3: "Hotel 3 Bintang",
+      hotel4: "Hotel 4 Bintang",
+      hotel5: "Hotel 5 Bintang",
+    },
+    ar: {
+      withoutHotel: "بدون فندق",
+      hotel2: "فندق نجمتين",
+      hotel3: "فندق 3 نجوم",
+      hotel4: "فندق 4 نجوم",
+      hotel5: "فندق 5 نجوم",
+    },
+    zh: {
+      withoutHotel: "不含酒店",
+      hotel2: "二星酒店",
+      hotel3: "三星酒店",
+      hotel4: "四星酒店",
+      hotel5: "五星酒店",
+    },
+  },
+};
 const BOAT_SPECS_LABELS = {
   en: {
     "Panjang Kapal": "Boat Length",
@@ -338,6 +378,8 @@ function normalizePackageLocale(pkg, localeKey) {
     ordered.priceList = Object.fromEntries(
       Object.entries(pkg.priceList).map(([k, v]) => [keyMap[k] || k, v]),
     );
+    const priceListLabels = PRICE_LIST_LABELS[pkg.priceListType]?.[localeKey];
+    if (priceListLabels) ordered.priceListLabels = priceListLabels;
   }
   if (locale.additionalServices)
     ordered.additionalServices = locale.additionalServices;

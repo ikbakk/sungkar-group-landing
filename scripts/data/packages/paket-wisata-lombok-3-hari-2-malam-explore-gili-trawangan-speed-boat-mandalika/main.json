@@ -3,6 +3,7 @@
   "region": "lombok",
   "featured": false,
   "collectionSlug": "3-hari-2-malam",
+  "priceListType": "landHotelTier",
   "images": [
     "destinations/gili.webp",
     "gallery/gili-meno.webp",
@@ -14,7 +15,7 @@
     "gallery/sukarara-village.webp"
   ],
   "priceList": {
-    "Hemat": {
+    "withoutHotel": {
       "2-3": 0,
       "4-5": 0,
       "6-10": 0,
@@ -27,7 +28,7 @@
       "51-100": 0,
       ">151": 0
     },
-    "Standar": {
+    "hotel2": {
       "2-3": 0,
       "4-5": 0,
       "6-10": 0,
@@ -40,7 +41,7 @@
       "51-100": 0,
       ">151": 0
     },
-    "Reguler": {
+    "hotel3": {
       "2-3": 0,
       "4-5": 0,
       "6-10": 0,
@@ -53,7 +54,7 @@
       "51-100": 0,
       ">151": 0
     },
-    "Deluxe": {
+    "hotel4": {
       "2-3": 0,
       "4-5": 0,
       "6-10": 0,
@@ -66,7 +67,7 @@
       "51-100": 0,
       ">151": 0
     },
-    "VIP": {
+    "hotel5": {
       "2-3": 0,
       "4-5": 0,
       "6-10": 0,
@@ -79,12 +80,5 @@
       "51-100": 0,
       ">151": 0
     }
-  },
-  "durationLabels": {
-    "Hemat": "Paket Hemat",
-    "Standar": "Paket Standar",
-    "Reguler": "Paket Reguler",
-    "Deluxe": "Paket Deluxe",
-    "VIP": "Paket VIP"
   }
 }

@@ -47,6 +47,7 @@ export type TourPackage = {
 
   durationLabels?: Record<string, string>;
   priceList?: Record<string, Record<string, number>>;
+  priceListLabels?: Record<string, string>;
   additionalServices?: string[];
   dontForgetToBring?: string[];
   boatName?: string;

@@ -39,6 +39,7 @@ export async function getPackages(locale = "id"): Promise<TourPackage[]> {
         priceList: data.priceList as
           | Record<string, Record<string, number>>
           | undefined,
+        priceListLabels: data.priceListLabels,
         additionalServices: data.additionalServices,
         dontForgetToBring: data.dontForgetToBring,
         termsAndConditions: data.termsAndConditions,

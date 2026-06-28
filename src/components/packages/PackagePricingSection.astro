@@ -15,9 +15,15 @@ interface Props {
   priceList: Record<string, Record<string, number>>;
   locale?: string;
   durationLabels?: Record<string, string>;
+  priceListLabels?: Record<string, string>;
 }
 
-const { priceList, locale = "id", durationLabels } = Astro.props;
+const {
+  priceList,
+  locale = "id",
+  durationLabels,
+  priceListLabels,
+} = Astro.props;
 const uiStrings = t(locale);
 
 const labels = {
@@ -27,8 +33,9 @@ const labels = {
   addPerPax: uiStrings.paketWisata.additionalPax,
 };
 
-const durationKeys = durationLabels
-  ? Object.keys(durationLabels).filter((key) => priceList[key])
+const columnLabels = priceListLabels ?? durationLabels;
+const durationKeys = columnLabels
+  ? Object.keys(columnLabels).filter((key) => priceList[key])
   : Object.keys(priceList);
 
 const tierKeys = Array.from(
@@ -85,7 +92,7 @@ function formatTierLabel(key: string): string {
           {
             durationKeys.map((durationKey) => (
               <TableHead class="text-right font-semibold">
-                {durationLabels?.[durationKey] ?? durationKey}
+                {columnLabels?.[durationKey] ?? durationKey}
               </TableHead>
             ))
           }

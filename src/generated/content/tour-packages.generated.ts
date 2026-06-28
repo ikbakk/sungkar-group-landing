@@ -41557,7 +41557,7 @@ export const tourPackagesData = [
       "Aktivitas di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41570,7 +41570,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41583,7 +41583,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41596,7 +41596,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41609,7 +41609,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41622,6 +41622,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
     }
   },
   {
@@ -41689,7 +41696,7 @@ export const tourPackagesData = [
       "Activities outside the program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41702,7 +41709,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41715,7 +41722,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41728,7 +41735,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41741,7 +41748,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41754,6 +41761,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
     }
   },
   {
@@ -41821,7 +41835,7 @@ export const tourPackagesData = [
       "الأنشطة خارج البرنامج"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41834,7 +41848,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41847,7 +41861,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41860,7 +41874,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41873,7 +41887,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41886,6 +41900,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
     }
   },
   {
@@ -41953,7 +41974,7 @@ export const tourPackagesData = [
       "Aktiviti di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41966,7 +41987,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41979,7 +42000,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -41992,7 +42013,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -42005,7 +42026,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -42018,6 +42039,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
     }
   },
   {
@@ -42085,7 +42113,7 @@ export const tourPackagesData = [
       "行程外活动"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -42098,7 +42126,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -42111,7 +42139,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -42124,7 +42152,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -42137,7 +42165,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -42150,6 +42178,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
     }
   },
   {
@@ -43104,7 +43139,7 @@ export const tourPackagesData = [
       "Aktivitas di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 1658000,
         "4-5": 1105000,
         "6-10": 1042000,
@@ -43117,7 +43152,7 @@ export const tourPackagesData = [
         "51-100": 601000,
         ">151": 562000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 1908000,
         "4-5": 0,
         "6-10": 1292000,
@@ -43130,7 +43165,7 @@ export const tourPackagesData = [
         "51-100": 851000,
         ">151": 812000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 2069000,
         "4-5": 1530000,
         "6-10": 1463000,
@@ -43143,7 +43178,7 @@ export const tourPackagesData = [
         "51-100": 1010000,
         ">151": 968000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 2368000,
         "4-5": 1855000,
         "6-10": 1780000,
@@ -43156,7 +43191,7 @@ export const tourPackagesData = [
         "51-100": 1307000,
         ">151": 1256000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 3116000,
         "4-5": 2668000,
         "6-10": 2573000,
@@ -43169,6 +43204,13 @@ export const tourPackagesData = [
         "51-100": 2048000,
         ">151": 1978000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
     }
   },
   {
@@ -43263,7 +43305,7 @@ export const tourPackagesData = [
       "Activities outside the program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 1658000,
         "4-5": 1105000,
         "6-10": 1042000,
@@ -43276,7 +43318,7 @@ export const tourPackagesData = [
         "51-100": 601000,
         ">151": 562000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 1908000,
         "4-5": 0,
         "6-10": 1292000,
@@ -43289,7 +43331,7 @@ export const tourPackagesData = [
         "51-100": 851000,
         ">151": 812000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 2069000,
         "4-5": 1530000,
         "6-10": 1463000,
@@ -43302,7 +43344,7 @@ export const tourPackagesData = [
         "51-100": 1010000,
         ">151": 968000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 2368000,
         "4-5": 1855000,
         "6-10": 1780000,
@@ -43315,7 +43357,7 @@ export const tourPackagesData = [
         "51-100": 1307000,
         ">151": 1256000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 3116000,
         "4-5": 2668000,
         "6-10": 2573000,
@@ -43328,6 +43370,13 @@ export const tourPackagesData = [
         "51-100": 2048000,
         ">151": 1978000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
     }
   },
   {
@@ -43422,7 +43471,7 @@ export const tourPackagesData = [
       "Aktivitas di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 1658000,
         "4-5": 1105000,
         "6-10": 1042000,
@@ -43435,7 +43484,7 @@ export const tourPackagesData = [
         "51-100": 601000,
         ">151": 562000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 1908000,
         "4-5": 0,
         "6-10": 1292000,
@@ -43448,7 +43497,7 @@ export const tourPackagesData = [
         "51-100": 851000,
         ">151": 812000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 2069000,
         "4-5": 1530000,
         "6-10": 1463000,
@@ -43461,7 +43510,7 @@ export const tourPackagesData = [
         "51-100": 1010000,
         ">151": 968000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 2368000,
         "4-5": 1855000,
         "6-10": 1780000,
@@ -43474,7 +43523,7 @@ export const tourPackagesData = [
         "51-100": 1307000,
         ">151": 1256000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 3116000,
         "4-5": 2668000,
         "6-10": 2573000,
@@ -43487,6 +43536,13 @@ export const tourPackagesData = [
         "51-100": 2048000,
         ">151": 1978000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
     }
   },
   {
@@ -43581,7 +43637,7 @@ export const tourPackagesData = [
       "Aktiviti di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 1658000,
         "4-5": 1105000,
         "6-10": 1042000,
@@ -43594,7 +43650,7 @@ export const tourPackagesData = [
         "51-100": 601000,
         ">151": 562000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 1908000,
         "4-5": 0,
         "6-10": 1292000,
@@ -43607,7 +43663,7 @@ export const tourPackagesData = [
         "51-100": 851000,
         ">151": 812000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 2069000,
         "4-5": 1530000,
         "6-10": 1463000,
@@ -43620,7 +43676,7 @@ export const tourPackagesData = [
         "51-100": 1010000,
         ">151": 968000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 2368000,
         "4-5": 1855000,
         "6-10": 1780000,
@@ -43633,7 +43689,7 @@ export const tourPackagesData = [
         "51-100": 1307000,
         ">151": 1256000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 3116000,
         "4-5": 2668000,
         "6-10": 2573000,
@@ -43646,6 +43702,13 @@ export const tourPackagesData = [
         "51-100": 2048000,
         ">151": 1978000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
     }
   },
   {
@@ -43740,7 +43803,7 @@ export const tourPackagesData = [
       "行程外活动"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 1658000,
         "4-5": 1105000,
         "6-10": 1042000,
@@ -43753,7 +43816,7 @@ export const tourPackagesData = [
         "51-100": 601000,
         ">151": 562000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 1908000,
         "4-5": 0,
         "6-10": 1292000,
@@ -43766,7 +43829,7 @@ export const tourPackagesData = [
         "51-100": 851000,
         ">151": 812000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 2069000,
         "4-5": 1530000,
         "6-10": 1463000,
@@ -43779,7 +43842,7 @@ export const tourPackagesData = [
         "51-100": 1010000,
         ">151": 968000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 2368000,
         "4-5": 1855000,
         "6-10": 1780000,
@@ -43792,7 +43855,7 @@ export const tourPackagesData = [
         "51-100": 1307000,
         ">151": 1256000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 3116000,
         "4-5": 2668000,
         "6-10": 2573000,
@@ -43805,6 +43868,13 @@ export const tourPackagesData = [
         "51-100": 2048000,
         ">151": 1978000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
     }
   },
   {
@@ -43900,7 +43970,7 @@ export const tourPackagesData = [
       "Aktivitas di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 2222000,
         "4-5": 1607000,
         "6-10": 1561000,
@@ -43913,7 +43983,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 842000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 2596000,
         "4-5": 1982000,
         "6-10": 1936000,
@@ -43926,7 +43996,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1217000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 2838000,
         "4-5": 2255000,
         "6-10": 2209000,
@@ -43939,7 +44009,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1450000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 3286000,
         "4-5": 2762000,
         "6-10": 2716000,
@@ -43952,7 +44022,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1883000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 4407000,
         "4-5": 4030000,
         "6-10": 3983000,
@@ -43965,6 +44035,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 2965000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
     }
   },
   {
@@ -44060,7 +44137,7 @@ export const tourPackagesData = [
       "Activities outside the program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 2222000,
         "4-5": 1607000,
         "6-10": 1561000,
@@ -44073,7 +44150,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 842000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 2596000,
         "4-5": 1982000,
         "6-10": 1936000,
@@ -44086,7 +44163,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1217000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 2838000,
         "4-5": 2255000,
         "6-10": 2209000,
@@ -44099,7 +44176,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1450000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 3286000,
         "4-5": 2762000,
         "6-10": 2716000,
@@ -44112,7 +44189,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1883000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 4407000,
         "4-5": 4030000,
         "6-10": 3983000,
@@ -44125,6 +44202,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 2965000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
     }
   },
   {
@@ -44220,7 +44304,7 @@ export const tourPackagesData = [
       "الأنشطة خارج البرنامج"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 2222000,
         "4-5": 1607000,
         "6-10": 1561000,
@@ -44233,7 +44317,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 842000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 2596000,
         "4-5": 1982000,
         "6-10": 1936000,
@@ -44246,7 +44330,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1217000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 2838000,
         "4-5": 2255000,
         "6-10": 2209000,
@@ -44259,7 +44343,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1450000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 3286000,
         "4-5": 2762000,
         "6-10": 2716000,
@@ -44272,7 +44356,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1883000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 4407000,
         "4-5": 4030000,
         "6-10": 3983000,
@@ -44285,6 +44369,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 2965000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
     }
   },
   {
@@ -44380,7 +44471,7 @@ export const tourPackagesData = [
       "Aktiviti di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 2222000,
         "4-5": 1607000,
         "6-10": 1561000,
@@ -44393,7 +44484,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 842000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 2596000,
         "4-5": 1982000,
         "6-10": 1936000,
@@ -44406,7 +44497,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1217000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 2838000,
         "4-5": 2255000,
         "6-10": 2209000,
@@ -44419,7 +44510,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1450000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 3286000,
         "4-5": 2762000,
         "6-10": 2716000,
@@ -44432,7 +44523,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1883000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 4407000,
         "4-5": 4030000,
         "6-10": 3983000,
@@ -44445,6 +44536,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 2965000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
     }
   },
   {
@@ -44540,7 +44638,7 @@ export const tourPackagesData = [
       "行程外活动"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 2222000,
         "4-5": 1607000,
         "6-10": 1561000,
@@ -44553,7 +44651,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 842000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 2596000,
         "4-5": 1982000,
         "6-10": 1936000,
@@ -44566,7 +44664,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1217000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 2838000,
         "4-5": 2255000,
         "6-10": 2209000,
@@ -44579,7 +44677,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1450000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 3286000,
         "4-5": 2762000,
         "6-10": 2716000,
@@ -44592,7 +44690,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 1883000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 4407000,
         "4-5": 4030000,
         "6-10": 3983000,
@@ -44605,6 +44703,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 2965000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
     }
   },
   {
@@ -44680,7 +44785,7 @@ export const tourPackagesData = [
       "Aktivitas di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44693,7 +44798,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44706,7 +44811,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44719,7 +44824,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44732,7 +44837,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44745,6 +44850,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 3835000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
     }
   },
   {
@@ -44820,7 +44932,7 @@ export const tourPackagesData = [
       "Activities outside the program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44833,7 +44945,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44846,7 +44958,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44859,7 +44971,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44872,7 +44984,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44885,6 +44997,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 3835000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
     }
   },
   {
@@ -44960,7 +45079,7 @@ export const tourPackagesData = [
       "الأنشطة خارج البرنامج"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44973,7 +45092,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44986,7 +45105,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -44999,7 +45118,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45012,7 +45131,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45025,6 +45144,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 3835000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
     }
   },
   {
@@ -45100,7 +45226,7 @@ export const tourPackagesData = [
       "Aktiviti di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45113,7 +45239,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45126,7 +45252,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45139,7 +45265,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45152,7 +45278,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45165,6 +45291,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 3835000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
     }
   },
   {
@@ -45240,7 +45373,7 @@ export const tourPackagesData = [
       "行程外活动"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45253,7 +45386,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45266,7 +45399,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45279,7 +45412,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45292,7 +45425,7 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 0
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 0,
         "4-5": 0,
         "6-10": 0,
@@ -45305,6 +45438,13 @@ export const tourPackagesData = [
         "51-100": 0,
         ">151": 3835000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
     }
   },
   {
@@ -45379,7 +45519,7 @@ export const tourPackagesData = [
       "Aktivitas di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 3289000,
         "4-5": 2434000,
         "6-10": 2402000,
@@ -45392,7 +45532,7 @@ export const tourPackagesData = [
         "51-100": 1393000,
         ">151": 1302000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 3914000,
         "4-5": 3059000,
         "6-10": 3027000,
@@ -45405,7 +45545,7 @@ export const tourPackagesData = [
         "51-100": 2018000,
         ">151": 1927000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 4316000,
         "4-5": 3514000,
         "6-10": 3482000,
@@ -45418,7 +45558,7 @@ export const tourPackagesData = [
         "51-100": 2417000,
         ">151": 2316000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 5064000,
         "4-5": 4359000,
         "6-10": 4327000,
@@ -45431,7 +45571,7 @@ export const tourPackagesData = [
         "51-100": 3158000,
         ">151": 3037000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 6933000,
         "4-5": 6472000,
         "6-10": 6439000,
@@ -45444,6 +45584,13 @@ export const tourPackagesData = [
         "51-100": 5010000,
         ">151": 4841000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
     }
   },
   {
@@ -45518,7 +45665,7 @@ export const tourPackagesData = [
       "Activities outside the program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 3289000,
         "4-5": 2434000,
         "6-10": 2402000,
@@ -45531,7 +45678,7 @@ export const tourPackagesData = [
         "51-100": 1393000,
         ">151": 1302000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 3914000,
         "4-5": 3059000,
         "6-10": 3027000,
@@ -45544,7 +45691,7 @@ export const tourPackagesData = [
         "51-100": 2018000,
         ">151": 1927000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 4316000,
         "4-5": 3514000,
         "6-10": 3482000,
@@ -45557,7 +45704,7 @@ export const tourPackagesData = [
         "51-100": 2417000,
         ">151": 2316000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 5064000,
         "4-5": 4359000,
         "6-10": 4327000,
@@ -45570,7 +45717,7 @@ export const tourPackagesData = [
         "51-100": 3158000,
         ">151": 3037000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 6933000,
         "4-5": 6472000,
         "6-10": 6439000,
@@ -45583,6 +45730,13 @@ export const tourPackagesData = [
         "51-100": 5010000,
         ">151": 4841000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
     }
   },
   {
@@ -45657,7 +45811,7 @@ export const tourPackagesData = [
       "الأنشطة خارج البرنامج"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 3289000,
         "4-5": 2434000,
         "6-10": 2402000,
@@ -45670,7 +45824,7 @@ export const tourPackagesData = [
         "51-100": 1393000,
         ">151": 1302000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 3914000,
         "4-5": 3059000,
         "6-10": 3027000,
@@ -45683,7 +45837,7 @@ export const tourPackagesData = [
         "51-100": 2018000,
         ">151": 1927000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 4316000,
         "4-5": 3514000,
         "6-10": 3482000,
@@ -45696,7 +45850,7 @@ export const tourPackagesData = [
         "51-100": 2417000,
         ">151": 2316000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 5064000,
         "4-5": 4359000,
         "6-10": 4327000,
@@ -45709,7 +45863,7 @@ export const tourPackagesData = [
         "51-100": 3158000,
         ">151": 3037000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 6933000,
         "4-5": 6472000,
         "6-10": 6439000,
@@ -45722,6 +45876,13 @@ export const tourPackagesData = [
         "51-100": 5010000,
         ">151": 4841000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
     }
   },
   {
@@ -45796,7 +45957,7 @@ export const tourPackagesData = [
       "Aktiviti di luar program"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 3289000,
         "4-5": 2434000,
         "6-10": 2402000,
@@ -45809,7 +45970,7 @@ export const tourPackagesData = [
         "51-100": 1393000,
         ">151": 1302000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 3914000,
         "4-5": 3059000,
         "6-10": 3027000,
@@ -45822,7 +45983,7 @@ export const tourPackagesData = [
         "51-100": 2018000,
         ">151": 1927000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 4316000,
         "4-5": 3514000,
         "6-10": 3482000,
@@ -45835,7 +45996,7 @@ export const tourPackagesData = [
         "51-100": 2417000,
         ">151": 2316000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 5064000,
         "4-5": 4359000,
         "6-10": 4327000,
@@ -45848,7 +46009,7 @@ export const tourPackagesData = [
         "51-100": 3158000,
         ">151": 3037000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 6933000,
         "4-5": 6472000,
         "6-10": 6439000,
@@ -45861,6 +46022,13 @@ export const tourPackagesData = [
         "51-100": 5010000,
         ">151": 4841000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
     }
   },
   {
@@ -45935,7 +46103,7 @@ export const tourPackagesData = [
       "行程外活动"
     ],
     "priceList": {
-      "Hemat": {
+      "withoutHotel": {
         "2-3": 3289000,
         "4-5": 2434000,
         "6-10": 2402000,
@@ -45948,7 +46116,7 @@ export const tourPackagesData = [
         "51-100": 1393000,
         ">151": 1302000
       },
-      "Standar": {
+      "hotel2": {
         "2-3": 3914000,
         "4-5": 3059000,
         "6-10": 3027000,
@@ -45961,7 +46129,7 @@ export const tourPackagesData = [
         "51-100": 2018000,
         ">151": 1927000
       },
-      "Reguler": {
+      "hotel3": {
         "2-3": 4316000,
         "4-5": 3514000,
         "6-10": 3482000,
@@ -45974,7 +46142,7 @@ export const tourPackagesData = [
         "51-100": 2417000,
         ">151": 2316000
       },
-      "Deluxe": {
+      "hotel4": {
         "2-3": 5064000,
         "4-5": 4359000,
         "6-10": 4327000,
@@ -45987,7 +46155,7 @@ export const tourPackagesData = [
         "51-100": 3158000,
         ">151": 3037000
       },
-      "VIP": {
+      "hotel5": {
         "2-3": 6933000,
         "4-5": 6472000,
         "6-10": 6439000,
@@ -46000,6 +46168,13 @@ export const tourPackagesData = [
         "51-100": 5010000,
         ">151": 4841000
       }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
     }
   },
   {
