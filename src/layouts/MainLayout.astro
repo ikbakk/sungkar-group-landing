@@ -4,6 +4,7 @@ import Footer from "@/components/site/Footer.astro";
 import WhatsAppFloat from "@/components/ui/WhatsAppFloat.astro";
 import CookieConsentBanner from "@/components/site/CookieConsentBanner";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics.astro";
+import MicrosoftClarity from "@/components/seo/MicrosoftClarity.astro";
 import SEOMeta from "@/components/seo/SEOMeta.astro";
 import StructuredData from "@/components/seo/StructuredData.astro";
 import type { Locale } from "@/lib/i18n";
@@ -96,6 +97,7 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
     <StructuredData schema={websiteSchema} />
 
     <GoogleAnalytics />
+    <MicrosoftClarity />
 
     {enableClientRouter && <ClientRouter />}
 

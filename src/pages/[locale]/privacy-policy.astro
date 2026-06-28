@@ -32,6 +32,45 @@ const breadcrumbs = [
   { label: globalStrings.breadcrumb.home, href: `/${locale}` },
   { label: footerStrings.footer.privacy },
 ];
+
+const clarityDisclosures = {
+  en: {
+    heading: "6. Cookies and Microsoft Clarity",
+    cookie:
+      "Our website may use cookies and similar tracking technologies to enhance your browsing experience. You can manage cookie preferences through your browser settings.",
+    disclosure:
+      "We partner with Microsoft Clarity and Microsoft Advertising to understand how you use and interact with our website through behavioral metrics, heatmaps, and session replay. Website usage data is collected using first-party and third-party cookies and other tracking technologies to help us improve our services, optimize the site, support security and fraud prevention, and support marketing or advertising activities. For more information about how Microsoft collects and uses your data, visit the Microsoft Privacy Statement.",
+    link: "Microsoft Privacy Statement",
+  },
+  ar: {
+    heading: "6. ملفات تعريف الارتباط وMicrosoft Clarity",
+    cookie:
+      "قد يستخدم موقعنا ملفات تعريف الارتباط وتقنيات تتبع مماثلة لتحسين تجربة التصفح. يمكنك إدارة تفضيلات ملفات تعريف الارتباط من خلال إعدادات المتصفح.",
+    disclosure:
+      "نتعاون مع Microsoft Clarity وMicrosoft Advertising لفهم كيفية استخدامك لموقعنا وتفاعلك معه من خلال مقاييس السلوك والخرائط الحرارية وتسجيلات الجلسات. يتم جمع بيانات استخدام الموقع باستخدام ملفات تعريف ارتباط من الطرف الأول والطرف الثالث وتقنيات تتبع أخرى لمساعدتنا على تحسين خدماتنا، وتحسين الموقع، ودعم الأمان ومنع الاحتيال، ودعم أنشطة التسويق أو الإعلان. لمزيد من المعلومات حول كيفية جمع Microsoft لبياناتك واستخدامها، يُرجى زيارة بيان خصوصية Microsoft.",
+    link: "بيان خصوصية Microsoft",
+  },
+  ms: {
+    heading: "6. Kuki dan Microsoft Clarity",
+    cookie:
+      "Laman web kami mungkin menggunakan kuki dan teknologi penjejakan serupa untuk meningkatkan pengalaman pelayaran anda. Anda boleh mengurus keutamaan kuki melalui tetapan pelayar anda.",
+    disclosure:
+      "Kami bekerjasama dengan Microsoft Clarity dan Microsoft Advertising untuk memahami cara anda menggunakan dan berinteraksi dengan laman web kami melalui metrik tingkah laku, peta haba, dan rakaman sesi. Data penggunaan laman web dikumpulkan menggunakan kuki pihak pertama dan pihak ketiga serta teknologi penjejakan lain untuk membantu kami meningkatkan perkhidmatan, mengoptimumkan laman web, menyokong keselamatan dan pencegahan penipuan, serta menyokong aktiviti pemasaran atau pengiklanan. Untuk maklumat lanjut tentang cara Microsoft mengumpul dan menggunakan data anda, lawati Pernyataan Privasi Microsoft.",
+    link: "Pernyataan Privasi Microsoft",
+  },
+  zh: {
+    heading: "6. Cookie 与 Microsoft Clarity",
+    cookie:
+      "我们的网站可能会使用 Cookie 和类似的跟踪技术来提升您的浏览体验。您可以通过浏览器设置管理 Cookie 偏好。",
+    disclosure:
+      "我们与 Microsoft Clarity 和 Microsoft Advertising 合作，通过行为指标、热力图和会话回放了解您如何使用我们的网站并与之互动。网站使用数据会通过第一方和第三方 Cookie 以及其他跟踪技术收集，以帮助我们改进服务、优化网站、支持安全和防欺诈，并支持营销或广告活动。有关 Microsoft 如何收集和使用您的数据的更多信息，请访问 Microsoft 隐私声明。",
+    link: "Microsoft 隐私声明",
+  },
+} as const;
+
+const clarityDisclosure =
+  clarityDisclosures[locale as keyof typeof clarityDisclosures] ??
+  clarityDisclosures.en;
 ---
 
 <MainLayout
@@ -101,11 +140,15 @@ const breadcrumbs = [
         <li>Menarik persetujuan yang telah diberikan sebelumnya</li>
       </ul>
 
-      <TypographyH2>6. Cookie</TypographyH2>
+      <TypographyH2>{clarityDisclosure.heading}</TypographyH2>
+      <p>{clarityDisclosure.cookie}</p>
       <p>
-        Situs web kami dapat menggunakan cookie untuk meningkatkan pengalaman
-        browsing. Anda dapat mengatur preferensi cookie melalui pengaturan
-        browser Anda.
+        {clarityDisclosure.disclosure.split(clarityDisclosure.link)[0]}
+        <a
+          href="https://privacy.microsoft.com/privacystatement"
+          rel="noopener noreferrer"
+          target="_blank">{clarityDisclosure.link}</a
+        >{clarityDisclosure.disclosure.split(clarityDisclosure.link)[1]}
       </p>
 
       <TypographyH2>7. Perubahan Kebijakan</TypographyH2>
