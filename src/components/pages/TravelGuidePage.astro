@@ -1,0 +1,213 @@
+---
+import { TypographyH2 } from "@/components/ui/typography";
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import KeyTakeaways from "@/components/guides/KeyTakeaways.astro";
+import GuideCard from "@/components/guides/GuideCard.astro";
+import DestinationCard from "@/components/cards/DestinationCard.astro";
+import PackageCard from "@/components/cards/PackageCard.astro";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { AlarmClockIcon, Calendar03Icon } from "@hugeicons/core-free-icons";
+import { generateHowToSchema } from "@/lib/schemas";
+import { getGuides, getGuide, type GuideMeta } from "@/lib/content/guides";
+import { getDestinations } from "@/lib/content/destinations/collection";
+import { getPackages } from "@/lib/content/tourPackages/collection";
+import {
+  formatDate,
+  getGlobalStrings,
+  getTravelGuidesPageStrings,
+} from "@/lib/i18n";
+import ArticleContentStyles from "@/components/pages/ArticleContentStyles.astro";
+
+type Guide = NonNullable<Awaited<ReturnType<typeof getGuide>>>;
+
+interface Props {
+  locale: string;
+  slug: string;
+  guide: Guide;
+}
+
+const { locale, slug, guide } = Astro.props as Props;
+const isDefaultLocale = locale === "id";
+const globalStrings = getGlobalStrings(locale);
+const guideStrings = getTravelGuidesPageStrings(locale);
+
+const {
+  Content,
+  title,
+  description,
+  readingTime,
+  publishDate,
+  keyTakeaways,
+  relatedDestinations: relatedDestSlugs,
+  relatedPackages: relatedPkgSlugs,
+  featuredImage,
+} = guide;
+
+const allDestinations = await getDestinations(locale);
+const relatedDestinations = allDestinations.filter((d) =>
+  relatedDestSlugs.includes(d.slug),
+);
+
+const packages = await getPackages(locale);
+const relatedPackages = packages.filter((p) =>
+  relatedPkgSlugs.includes(p.slug),
+);
+
+const breadcrumbs = [
+  {
+    label: globalStrings.breadcrumb.home,
+    href: isDefaultLocale ? "/" : `/${locale}`,
+  },
+  {
+    label: globalStrings.breadcrumb.travelGuides,
+    href: isDefaultLocale ? "/panduan-wisata" : `/${locale}/travel-guides`,
+  },
+  { label: title },
+];
+
+const howToSteps = keyTakeaways.map((takeaway: string, index: number) => ({
+  name: guideStrings.guides.stepName.replace("{n}", String(index + 1)),
+  description: takeaway,
+}));
+
+const guideSchema = generateHowToSchema(title, description, howToSteps);
+const canonicalPath = isDefaultLocale
+  ? `/panduan-wisata/${slug}`
+  : `/${locale}/travel-guides/${slug}`;
+const otherGuides = (await getGuides(locale))
+  .filter((g: GuideMeta) => g.slug !== slug)
+  .slice(0, 5);
+---
+
+<MainLayout
+  title={title}
+  description={description}
+  canonical={canonicalPath}
+  image={featuredImage}
+  imageAlt={title}
+  locale={locale}
+>
+  <StructuredData schema={guideSchema} />
+
+  <PageHeader
+    eyebrow={globalStrings.page.travelGuides}
+    title={title}
+    description={description}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <SectionContainer background="bg-surface-soft">
+    <article class="article-content mx-auto max-w-4xl">
+      <div
+        class="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-text-muted"
+      >
+        <span class="inline-flex items-center gap-2">
+          <HugeiconsIcon icon={AlarmClockIcon} size={16} />
+          {readingTime}
+          {guideStrings.guides.readingTime}
+        </span>
+        <span class="hidden sm:inline text-border">/</span>
+        <span class="inline-flex items-center gap-2">
+          <HugeiconsIcon icon={Calendar03Icon} size={16} />
+          <time datetime={publishDate}>
+            {
+              formatDate(new Date(publishDate), locale, {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              })
+            }
+          </time>
+        </span>
+      </div>
+
+      <Content />
+    </article>
+  </SectionContainer>
+
+  <SectionContainer background="bg-background">
+    <KeyTakeaways
+      takeaways={keyTakeaways}
+      title={guideStrings.guides.keyTakeaways}
+      description={guideStrings.guides.keyTakeawaysDesc}
+    />
+  </SectionContainer>
+
+  {
+    !isDefaultLocale && relatedDestinations.length > 0 && (
+      <SectionContainer background="bg-surface-soft">
+        <div class="mb-8">
+          <TypographyH2 class="text-3xl leading-tight text-foreground">
+            {guideStrings.guides.destinationRelated}
+          </TypographyH2>
+          <p class="mt-3 max-w-2xl text-base leading-7 text-text-muted">
+            {guideStrings.guides.relatedDestinationsDesc}
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {relatedDestinations.map((dest) => (
+            <DestinationCard
+              destination={dest}
+              locale={locale}
+              moreCountLabel={globalStrings.common.moreCount}
+              viewDetailLabel={globalStrings.common.viewDetail}
+            />
+          ))}
+        </div>
+      </SectionContainer>
+    )
+  }
+
+  {
+    relatedPackages.length > 0 && (
+      <SectionContainer background="bg-background">
+        <div class="mb-8">
+          <TypographyH2 class="text-3xl leading-tight text-foreground">
+            {guideStrings.guides.packageRelated}
+          </TypographyH2>
+          <p class="mt-3 max-w-2xl text-base leading-7 text-text-muted">
+            {guideStrings.guides.relatedPackagesDesc}
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {relatedPackages.map((pkg) => (
+            <PackageCard
+              tour={pkg}
+              locale={locale}
+              moreCountLabel={globalStrings.common.moreCount}
+              viewPackageDetailLabel={globalStrings.common.viewDetail}
+            />
+          ))}
+        </div>
+      </SectionContainer>
+    )
+  }
+
+  <SectionContainer background="bg-background">
+    <div class="mb-8">
+      <TypographyH2 class="text-3xl leading-tight text-foreground">
+        {guideStrings.guides.otherGuides}
+      </TypographyH2>
+    </div>
+    <div
+      class="-mx-4 flex gap-6 overflow-x-auto px-4 snap-x snap-mandatory sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"
+    >
+      {
+        otherGuides.map((g) => (
+          <div class="w-[85vw] shrink-0 snap-start sm:w-[380px]">
+            <GuideCard
+              guide={g}
+              locale={locale}
+              readingTimeLabel={guideStrings.guides.readingTime}
+            />
+          </div>
+        ))
+      }
+    </div>
+  </SectionContainer>
+
+  <ArticleContentStyles />
+</MainLayout>

@@ -41,10 +41,17 @@ const usesSlot = (content: string) =>
 const isUiPrimitive = (relPath: string) =>
   relPath.startsWith("ui/") || relPath.startsWith("seo/");
 
+const isStyleOnly = (relPath: string) =>
+  relPath.endsWith("ArticleContentStyles.astro");
+
 describe("component hardcoded strings", () => {
   const files = collectFiles(COMPONENTS_DIR);
 
-  it.each(files.filter((f) => !isUiPrimitive(relative(COMPONENTS_DIR, f))))(
+  it.each(
+    files.filter(
+      (f) => !isUiPrimitive(relative(COMPONENTS_DIR, f)) && !isStyleOnly(relative(COMPONENTS_DIR, f)),
+    ),
+  )(
     "%s uses t() or receives text as props",
     (filePath) => {
       const content = readFileSync(filePath, "utf-8");
