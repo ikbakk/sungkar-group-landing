@@ -41233,6 +41233,15586 @@ export const tourPackagesData = [
     ]
   },
   {
+    "slug": "paket-tour-lombok-3-hari-2-malam-gili-trawangan-mandalika",
+    "locale": "id",
+    "title": "Paket Tour Lombok 3 Hari 2 Malam – Gili Trawangan & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 3 hari 2 malam dengan eksplorasi Gili Trawangan dan Mandalika.",
+    "highlights": [
+      "Private tour tanpa bergabung dengan peserta lain.",
+      "Rute disusun berdasarkan aktivitas utama paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "Hari 1 - Makan malam di restoran lokal.",
+      "Hari 1 - Check-in hotel dan istirahat.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 3 - Makan siang di kawasan Pantai Kuta Mandalika.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1505000,
+        "4-5": 1037000,
+        "6-10": 984000,
+        "11-15": 898000,
+        "16-20": 838000,
+        "21-34": 781000,
+        "35-66": 707000,
+        "67-101": 648000,
+        "102-150": 604000,
+        ">151": 560000
+      },
+      "hotel2": {
+        "2-3": 1755000,
+        "4-5": 1287000,
+        "6-10": 1234000,
+        "11-15": 1148000,
+        "16-20": 1088000,
+        "21-34": 1031000,
+        "35-66": 957000,
+        "67-101": 898000,
+        "102-150": 854000,
+        ">151": 810000
+      },
+      "hotel3": {
+        "2-3": 1916000,
+        "4-5": 1462000,
+        "6-10": 1405000,
+        "11-15": 1337000,
+        "16-20": 1270000,
+        "21-34": 1213000,
+        "35-66": 1136000,
+        "67-101": 1064000,
+        "102-150": 1014000,
+        ">151": 965000
+      },
+      "hotel4": {
+        "2-3": 2215000,
+        "4-5": 1787000,
+        "6-10": 1722000,
+        "11-15": 1688000,
+        "16-20": 1608000,
+        "21-34": 1551000,
+        "35-66": 1469000,
+        "67-101": 1374000,
+        "102-150": 1310000,
+        ">151": 1254000
+      },
+      "hotel5": {
+        "2-3": 2962000,
+        "4-5": 2599000,
+        "6-10": 2515000,
+        "11-15": 2566000,
+        "16-20": 2453000,
+        "21-34": 2396000,
+        "35-66": 2301000,
+        "67-101": 2147000,
+        "102-150": 2051000,
+        ">151": 1975000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-gili-trawangan-mandalika",
+    "locale": "en",
+    "title": "3-Day Lombok Tour Package – Gili Trawangan & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "3 Days 2 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "3 Days 2 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
+    "highlights": [
+      "Private tour without joining other participants.",
+      "Transportation, hotel, meals, and entrance tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup and welcome at Lombok International Airport.",
+      "Day 1 - Dinner at a local restaurant.",
+      "Day 1 - Hotel check-in and rest.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Travel to Gili Trawangan by private speedboat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 3 - Lunch in the Kuta Mandalika area.",
+      "Day 3 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1505000,
+        "4-5": 1037000,
+        "6-10": 984000,
+        "11-15": 898000,
+        "16-20": 838000,
+        "21-34": 781000,
+        "35-66": 707000,
+        "67-101": 648000,
+        "102-150": 604000,
+        ">151": 560000
+      },
+      "hotel2": {
+        "2-3": 1755000,
+        "4-5": 1287000,
+        "6-10": 1234000,
+        "11-15": 1148000,
+        "16-20": 1088000,
+        "21-34": 1031000,
+        "35-66": 957000,
+        "67-101": 898000,
+        "102-150": 854000,
+        ">151": 810000
+      },
+      "hotel3": {
+        "2-3": 1916000,
+        "4-5": 1462000,
+        "6-10": 1405000,
+        "11-15": 1337000,
+        "16-20": 1270000,
+        "21-34": 1213000,
+        "35-66": 1136000,
+        "67-101": 1064000,
+        "102-150": 1014000,
+        ">151": 965000
+      },
+      "hotel4": {
+        "2-3": 2215000,
+        "4-5": 1787000,
+        "6-10": 1722000,
+        "11-15": 1688000,
+        "16-20": 1608000,
+        "21-34": 1551000,
+        "35-66": 1469000,
+        "67-101": 1374000,
+        "102-150": 1310000,
+        ">151": 1254000
+      },
+      "hotel5": {
+        "2-3": 2962000,
+        "4-5": 2599000,
+        "6-10": 2515000,
+        "11-15": 2566000,
+        "16-20": 2453000,
+        "21-34": 2396000,
+        "35-66": 2301000,
+        "67-101": 2147000,
+        "102-150": 2051000,
+        ">151": 1975000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-gili-trawangan-mandalika",
+    "locale": "ar",
+    "title": "باقة لومبوك 3 أيام – جيلي تراوانغان ومانداليكا",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "باقة 3 أيام وليلتين",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "3 أيام وليلتان",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر الدخول حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال والترحيب في مطار لومبوك الدولي.",
+      "اليوم 1 - تناول العشاء في مطعم محلي.",
+      "اليوم 1 - تسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 3 - تناول الغداء في منطقة كوتا مانداليكا.",
+      "اليوم 3 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1505000,
+        "4-5": 1037000,
+        "6-10": 984000,
+        "11-15": 898000,
+        "16-20": 838000,
+        "21-34": 781000,
+        "35-66": 707000,
+        "67-101": 648000,
+        "102-150": 604000,
+        ">151": 560000
+      },
+      "hotel2": {
+        "2-3": 1755000,
+        "4-5": 1287000,
+        "6-10": 1234000,
+        "11-15": 1148000,
+        "16-20": 1088000,
+        "21-34": 1031000,
+        "35-66": 957000,
+        "67-101": 898000,
+        "102-150": 854000,
+        ">151": 810000
+      },
+      "hotel3": {
+        "2-3": 1916000,
+        "4-5": 1462000,
+        "6-10": 1405000,
+        "11-15": 1337000,
+        "16-20": 1270000,
+        "21-34": 1213000,
+        "35-66": 1136000,
+        "67-101": 1064000,
+        "102-150": 1014000,
+        ">151": 965000
+      },
+      "hotel4": {
+        "2-3": 2215000,
+        "4-5": 1787000,
+        "6-10": 1722000,
+        "11-15": 1688000,
+        "16-20": 1608000,
+        "21-34": 1551000,
+        "35-66": 1469000,
+        "67-101": 1374000,
+        "102-150": 1310000,
+        ">151": 1254000
+      },
+      "hotel5": {
+        "2-3": 2962000,
+        "4-5": 2599000,
+        "6-10": 2515000,
+        "11-15": 2566000,
+        "16-20": 2453000,
+        "21-34": 2396000,
+        "35-66": 2301000,
+        "67-101": 2147000,
+        "102-150": 2051000,
+        ">151": 1975000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-gili-trawangan-mandalika",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Gili Trawangan & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Pakej 3 Hari 2 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
+    "highlights": [
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain.",
+      "Pengangkutan, hotel, makanan dan tiket masuk mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput dan disambut di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Makan malam di restoran tempatan.",
+      "Hari 1 - Daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 3 - Makan tengah hari di kawasan Kuta Mandalika.",
+      "Hari 3 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1505000,
+        "4-5": 1037000,
+        "6-10": 984000,
+        "11-15": 898000,
+        "16-20": 838000,
+        "21-34": 781000,
+        "35-66": 707000,
+        "67-101": 648000,
+        "102-150": 604000,
+        ">151": 560000
+      },
+      "hotel2": {
+        "2-3": 1755000,
+        "4-5": 1287000,
+        "6-10": 1234000,
+        "11-15": 1148000,
+        "16-20": 1088000,
+        "21-34": 1031000,
+        "35-66": 957000,
+        "67-101": 898000,
+        "102-150": 854000,
+        ">151": 810000
+      },
+      "hotel3": {
+        "2-3": 1916000,
+        "4-5": 1462000,
+        "6-10": 1405000,
+        "11-15": 1337000,
+        "16-20": 1270000,
+        "21-34": 1213000,
+        "35-66": 1136000,
+        "67-101": 1064000,
+        "102-150": 1014000,
+        ">151": 965000
+      },
+      "hotel4": {
+        "2-3": 2215000,
+        "4-5": 1787000,
+        "6-10": 1722000,
+        "11-15": 1688000,
+        "16-20": 1608000,
+        "21-34": 1551000,
+        "35-66": 1469000,
+        "67-101": 1374000,
+        "102-150": 1310000,
+        ">151": 1254000
+      },
+      "hotel5": {
+        "2-3": 2962000,
+        "4-5": 2599000,
+        "6-10": 2515000,
+        "11-15": 2566000,
+        "16-20": 2453000,
+        "21-34": 2396000,
+        "35-66": 2301000,
+        "67-101": 2147000,
+        "102-150": 2051000,
+        ">151": 1975000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-gili-trawangan-mandalika",
+    "locale": "zh",
+    "title": "龙目岛3天2晚旅游套餐－吉利特拉旺安与曼达利卡",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "三天两晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "3天2晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "私人包团，不与其他游客拼团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机并欢迎抵达。",
+      "第1天 - 在当地餐厅享用晚餐。",
+      "第1天 - 办理酒店入住并休息。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人快艇前往吉利特拉旺安。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第3天 - 在库塔曼达利卡区域享用午餐。",
+      "第3天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1505000,
+        "4-5": 1037000,
+        "6-10": 984000,
+        "11-15": 898000,
+        "16-20": 838000,
+        "21-34": 781000,
+        "35-66": 707000,
+        "67-101": 648000,
+        "102-150": 604000,
+        ">151": 560000
+      },
+      "hotel2": {
+        "2-3": 1755000,
+        "4-5": 1287000,
+        "6-10": 1234000,
+        "11-15": 1148000,
+        "16-20": 1088000,
+        "21-34": 1031000,
+        "35-66": 957000,
+        "67-101": 898000,
+        "102-150": 854000,
+        ">151": 810000
+      },
+      "hotel3": {
+        "2-3": 1916000,
+        "4-5": 1462000,
+        "6-10": 1405000,
+        "11-15": 1337000,
+        "16-20": 1270000,
+        "21-34": 1213000,
+        "35-66": 1136000,
+        "67-101": 1064000,
+        "102-150": 1014000,
+        ">151": 965000
+      },
+      "hotel4": {
+        "2-3": 2215000,
+        "4-5": 1787000,
+        "6-10": 1722000,
+        "11-15": 1688000,
+        "16-20": 1608000,
+        "21-34": 1551000,
+        "35-66": 1469000,
+        "67-101": 1374000,
+        "102-150": 1310000,
+        ">151": 1254000
+      },
+      "hotel5": {
+        "2-3": 2962000,
+        "4-5": 2599000,
+        "6-10": 2515000,
+        "11-15": 2566000,
+        "16-20": 2453000,
+        "21-34": 2396000,
+        "35-66": 2301000,
+        "67-101": 2147000,
+        "102-150": 2051000,
+        ">151": 1975000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-nanggu",
+    "locale": "id",
+    "title": "Paket Tour Lombok 3 Hari 2 Malam – Mandalika & Gili Nanggu",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 3 hari 2 malam dengan Mandalika, Gili Nanggu, Gili Sudak, dan Gili Kedis.",
+    "highlights": [
+      "Private tour tanpa bergabung dengan peserta lain.",
+      "Rute disusun berdasarkan aktivitas utama paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Perjalanan menuju Sekotong dan menaiki private boat.",
+      "Hari 2 - Snorkeling dan bersantai di Gili Nanggu.",
+      "Hari 2 - Makan siang di Gili Sudak dan mengunjungi Gili Kedis.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek apabila waktu memungkinkan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private boat untuk Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-nanggu",
+    "locale": "en",
+    "title": "3-Day Lombok Tour Package – Mandalika & Gili Nanggu",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "3 Days 2 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "3 Days 2 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
+    "highlights": [
+      "Private tour without joining other participants.",
+      "Transportation, hotel, meals, and entrance tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Travel to Sekotong and board a private boat.",
+      "Day 2 - Snorkel and relax on Gili Nanggu.",
+      "Day 2 - Lunch on Gili Sudak and visit Gili Kedis.",
+      "Day 2 - Dinner and return to the hotel.",
+      "Day 3 - Breakfast and free time at the hotel.",
+      "Day 3 - Hotel check-out.",
+      "Day 3 - Optional visit to the Lombok Islamic Center or Banyumulek Village if time permits.",
+      "Day 3 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private boat for Gili Nanggu.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-nanggu",
+    "locale": "ar",
+    "title": "باقة لومبوك 3 أيام – مانداليكا وجيلي نانغو",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "باقة 3 أيام وليلتين",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "3 أيام وليلتان",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر الدخول حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - التوجه إلى سيكوتونغ وركوب قارب خاص.",
+      "اليوم 2 - الغطس والاسترخاء في جيلي نانغو.",
+      "اليوم 2 - تناول الغداء في جيلي سوداك وزيارة جيلي كيديس.",
+      "اليوم 2 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 3 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 3 - تسجيل الخروج من الفندق.",
+      "اليوم 3 - زيارة اختيارية إلى المركز الإسلامي في لومبوك أو قرية بانيوموليك إذا سمح الوقت.",
+      "اليوم 3 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب خاص إلى جيلي نانغو.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-nanggu",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Mandalika & Gili Nanggu",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Pakej 3 Hari 2 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
+    "highlights": [
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain.",
+      "Pengangkutan, hotel, makanan dan tiket masuk mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Perjalanan ke Sekotong dan menaiki bot persendirian.",
+      "Hari 2 - Snorkeling dan bersantai di Gili Nanggu.",
+      "Hari 2 - Makan tengah hari di Gili Sudak dan melawat Gili Kedis.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 3 - Daftar keluar hotel.",
+      "Hari 3 - Lawatan pilihan ke Islamic Center Lombok atau Kampung Banyumulek jika masa mengizinkan.",
+      "Hari 3 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot persendirian untuk Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-nanggu",
+    "locale": "zh",
+    "title": "龙目岛3天2晚旅游套餐－曼达利卡与吉利南古",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "三天两晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "3天2晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "私人包团，不与其他游客拼团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 前往塞科通并乘坐私人船。",
+      "第2天 - 在吉利南古浮潜和休闲。",
+      "第2天 - 在吉利苏达克享用午餐并游览吉利克迪斯。",
+      "第2天 - 享用晚餐并返回酒店。",
+      "第3天 - 在酒店享用早餐并自由活动。",
+      "第3天 - 办理酒店退房。",
+      "第3天 - 时间允许时可选择参观龙目岛伊斯兰中心或班尤穆勒克村。",
+      "第3天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利南古的私人船只。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-trawangan",
+    "locale": "id",
+    "title": "Paket Tour Lombok 3 Hari 2 Malam – Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 3 hari 2 malam untuk kedatangan pagi atau siang, mencakup Mandalika dan Gili Trawangan.",
+    "highlights": [
+      "Private tour tanpa bergabung dengan peserta lain.",
+      "Rute disusun berdasarkan aktivitas utama paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek apabila waktu memungkinkan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1436000,
+        "4-5": 962000,
+        "6-10": 911000,
+        "11-15": 817000,
+        "16-20": 760000,
+        "21-34": 703000,
+        "35-66": 630000,
+        "67-101": 576000,
+        "102-150": 536000,
+        ">151": 493000
+      },
+      "hotel2": {
+        "2-3": 1686000,
+        "4-5": 1212000,
+        "6-10": 1161000,
+        "11-15": 1067000,
+        "16-20": 1010000,
+        "21-34": 953000,
+        "35-66": 880000,
+        "67-101": 826000,
+        "102-150": 786000,
+        ">151": 743000
+      },
+      "hotel3": {
+        "2-3": 1847000,
+        "4-5": 1387000,
+        "6-10": 1332000,
+        "11-15": 1256000,
+        "16-20": 1192000,
+        "21-34": 1135000,
+        "35-66": 1059000,
+        "67-101": 993000,
+        "102-150": 945000,
+        ">151": 899000
+      },
+      "hotel4": {
+        "2-3": 2146000,
+        "4-5": 1712000,
+        "6-10": 1649000,
+        "11-15": 1607000,
+        "16-20": 1530000,
+        "21-34": 1473000,
+        "35-66": 1392000,
+        "67-101": 1302000,
+        "102-150": 1242000,
+        ">151": 1187000
+      },
+      "hotel5": {
+        "2-3": 2893000,
+        "4-5": 2524000,
+        "6-10": 2442000,
+        "11-15": 2391000,
+        "16-20": 2375000,
+        "21-34": 2318000,
+        "35-66": 2224000,
+        "67-101": 2076000,
+        "102-150": 1983000,
+        ">151": 1909000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-trawangan",
+    "locale": "en",
+    "title": "3-Day Lombok Tour Package – Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "3 Days 2 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "3 Days 2 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
+    "highlights": [
+      "Private tour without joining other participants.",
+      "Transportation, hotel, meals, and entrance tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Travel to Gili Trawangan by private speedboat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Breakfast and free time at the hotel.",
+      "Day 3 - Hotel check-out.",
+      "Day 3 - Optional visit to the Lombok Islamic Center or Banyumulek Village if time permits.",
+      "Day 3 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1436000,
+        "4-5": 962000,
+        "6-10": 911000,
+        "11-15": 817000,
+        "16-20": 760000,
+        "21-34": 703000,
+        "35-66": 630000,
+        "67-101": 576000,
+        "102-150": 536000,
+        ">151": 493000
+      },
+      "hotel2": {
+        "2-3": 1686000,
+        "4-5": 1212000,
+        "6-10": 1161000,
+        "11-15": 1067000,
+        "16-20": 1010000,
+        "21-34": 953000,
+        "35-66": 880000,
+        "67-101": 826000,
+        "102-150": 786000,
+        ">151": 743000
+      },
+      "hotel3": {
+        "2-3": 1847000,
+        "4-5": 1387000,
+        "6-10": 1332000,
+        "11-15": 1256000,
+        "16-20": 1192000,
+        "21-34": 1135000,
+        "35-66": 1059000,
+        "67-101": 993000,
+        "102-150": 945000,
+        ">151": 899000
+      },
+      "hotel4": {
+        "2-3": 2146000,
+        "4-5": 1712000,
+        "6-10": 1649000,
+        "11-15": 1607000,
+        "16-20": 1530000,
+        "21-34": 1473000,
+        "35-66": 1392000,
+        "67-101": 1302000,
+        "102-150": 1242000,
+        ">151": 1187000
+      },
+      "hotel5": {
+        "2-3": 2893000,
+        "4-5": 2524000,
+        "6-10": 2442000,
+        "11-15": 2391000,
+        "16-20": 2375000,
+        "21-34": 2318000,
+        "35-66": 2224000,
+        "67-101": 2076000,
+        "102-150": 1983000,
+        ">151": 1909000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-trawangan",
+    "locale": "ar",
+    "title": "باقة لومبوك 3 أيام – مانداليكا وجيلي تراوانغان",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "باقة 3 أيام وليلتين",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "3 أيام وليلتان",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر الدخول حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 3 - تسجيل الخروج من الفندق.",
+      "اليوم 3 - زيارة اختيارية إلى المركز الإسلامي في لومبوك أو قرية بانيوموليك إذا سمح الوقت.",
+      "اليوم 3 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1436000,
+        "4-5": 962000,
+        "6-10": 911000,
+        "11-15": 817000,
+        "16-20": 760000,
+        "21-34": 703000,
+        "35-66": 630000,
+        "67-101": 576000,
+        "102-150": 536000,
+        ">151": 493000
+      },
+      "hotel2": {
+        "2-3": 1686000,
+        "4-5": 1212000,
+        "6-10": 1161000,
+        "11-15": 1067000,
+        "16-20": 1010000,
+        "21-34": 953000,
+        "35-66": 880000,
+        "67-101": 826000,
+        "102-150": 786000,
+        ">151": 743000
+      },
+      "hotel3": {
+        "2-3": 1847000,
+        "4-5": 1387000,
+        "6-10": 1332000,
+        "11-15": 1256000,
+        "16-20": 1192000,
+        "21-34": 1135000,
+        "35-66": 1059000,
+        "67-101": 993000,
+        "102-150": 945000,
+        ">151": 899000
+      },
+      "hotel4": {
+        "2-3": 2146000,
+        "4-5": 1712000,
+        "6-10": 1649000,
+        "11-15": 1607000,
+        "16-20": 1530000,
+        "21-34": 1473000,
+        "35-66": 1392000,
+        "67-101": 1302000,
+        "102-150": 1242000,
+        ">151": 1187000
+      },
+      "hotel5": {
+        "2-3": 2893000,
+        "4-5": 2524000,
+        "6-10": 2442000,
+        "11-15": 2391000,
+        "16-20": 2375000,
+        "21-34": 2318000,
+        "35-66": 2224000,
+        "67-101": 2076000,
+        "102-150": 1983000,
+        ">151": 1909000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-trawangan",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Pakej 3 Hari 2 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
+    "highlights": [
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain.",
+      "Pengangkutan, hotel, makanan dan tiket masuk mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 3 - Daftar keluar hotel.",
+      "Hari 3 - Lawatan pilihan ke Islamic Center Lombok atau Kampung Banyumulek jika masa mengizinkan.",
+      "Hari 3 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1436000,
+        "4-5": 962000,
+        "6-10": 911000,
+        "11-15": 817000,
+        "16-20": 760000,
+        "21-34": 703000,
+        "35-66": 630000,
+        "67-101": 576000,
+        "102-150": 536000,
+        ">151": 493000
+      },
+      "hotel2": {
+        "2-3": 1686000,
+        "4-5": 1212000,
+        "6-10": 1161000,
+        "11-15": 1067000,
+        "16-20": 1010000,
+        "21-34": 953000,
+        "35-66": 880000,
+        "67-101": 826000,
+        "102-150": 786000,
+        ">151": 743000
+      },
+      "hotel3": {
+        "2-3": 1847000,
+        "4-5": 1387000,
+        "6-10": 1332000,
+        "11-15": 1256000,
+        "16-20": 1192000,
+        "21-34": 1135000,
+        "35-66": 1059000,
+        "67-101": 993000,
+        "102-150": 945000,
+        ">151": 899000
+      },
+      "hotel4": {
+        "2-3": 2146000,
+        "4-5": 1712000,
+        "6-10": 1649000,
+        "11-15": 1607000,
+        "16-20": 1530000,
+        "21-34": 1473000,
+        "35-66": 1392000,
+        "67-101": 1302000,
+        "102-150": 1242000,
+        ">151": 1187000
+      },
+      "hotel5": {
+        "2-3": 2893000,
+        "4-5": 2524000,
+        "6-10": 2442000,
+        "11-15": 2391000,
+        "16-20": 2375000,
+        "21-34": 2318000,
+        "35-66": 2224000,
+        "67-101": 2076000,
+        "102-150": 1983000,
+        ">151": 1909000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-trawangan",
+    "locale": "zh",
+    "title": "龙目岛3天2晚旅游套餐－曼达利卡与吉利特拉旺安",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "三天两晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "3天2晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "私人包团，不与其他游客拼团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人快艇前往吉利特拉旺安。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 在酒店享用早餐并自由活动。",
+      "第3天 - 办理酒店退房。",
+      "第3天 - 时间允许时可选择参观龙目岛伊斯兰中心或班尤穆勒克村。",
+      "第3天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1436000,
+        "4-5": 962000,
+        "6-10": 911000,
+        "11-15": 817000,
+        "16-20": 760000,
+        "21-34": 703000,
+        "35-66": 630000,
+        "67-101": 576000,
+        "102-150": 536000,
+        ">151": 493000
+      },
+      "hotel2": {
+        "2-3": 1686000,
+        "4-5": 1212000,
+        "6-10": 1161000,
+        "11-15": 1067000,
+        "16-20": 1010000,
+        "21-34": 953000,
+        "35-66": 880000,
+        "67-101": 826000,
+        "102-150": 786000,
+        ">151": 743000
+      },
+      "hotel3": {
+        "2-3": 1847000,
+        "4-5": 1387000,
+        "6-10": 1332000,
+        "11-15": 1256000,
+        "16-20": 1192000,
+        "21-34": 1135000,
+        "35-66": 1059000,
+        "67-101": 993000,
+        "102-150": 945000,
+        ">151": 899000
+      },
+      "hotel4": {
+        "2-3": 2146000,
+        "4-5": 1712000,
+        "6-10": 1649000,
+        "11-15": 1607000,
+        "16-20": 1530000,
+        "21-34": 1473000,
+        "35-66": 1392000,
+        "67-101": 1302000,
+        "102-150": 1242000,
+        ">151": 1187000
+      },
+      "hotel5": {
+        "2-3": 2893000,
+        "4-5": 2524000,
+        "6-10": 2442000,
+        "11-15": 2391000,
+        "16-20": 2375000,
+        "21-34": 2318000,
+        "35-66": 2224000,
+        "67-101": 2076000,
+        "102-150": 1983000,
+        ">151": 1909000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-trawangan-city-tour",
+    "locale": "id",
+    "title": "Paket Tour Lombok 3 Hari 2 Malam – Mandalika, Gili Trawangan & City Tour",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 3 hari 2 malam dengan Mandalika, Gili Trawangan, dan City Tour sebelum keberangkatan.",
+    "highlights": [
+      "Private tour tanpa bergabung dengan peserta lain.",
+      "Rute disusun berdasarkan aktivitas utama paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan check-out hotel.",
+      "Hari 3 - Mengunjungi Islamic Center Lombok dan Pura Lingsar.",
+      "Hari 3 - Makan siang dan mengunjungi Desa Banyumulek.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-trawangan-city-tour",
+    "locale": "en",
+    "title": "3-Day Lombok Tour Package – Mandalika, Gili Trawangan & City Tour",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "3 Days 2 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "3 Days 2 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
+    "highlights": [
+      "Private tour without joining other participants.",
+      "Transportation, hotel, meals, and entrance tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Travel to Gili Trawangan by private speedboat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Breakfast and hotel check-out.",
+      "Day 3 - Visit the Lombok Islamic Center and Lingsar Temple.",
+      "Day 3 - Lunch and visit Banyumulek Village.",
+      "Day 3 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-trawangan-city-tour",
+    "locale": "ar",
+    "title": "باقة لومبوك 3 أيام – مانداليكا وجيلي تراوانغان وجولة المدينة",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "باقة 3 أيام وليلتين",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "3 أيام وليلتان",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر الدخول حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - تناول الإفطار وتسجيل الخروج من الفندق.",
+      "اليوم 3 - زيارة المركز الإسلامي في لومبوك ومعبد لينغسار.",
+      "اليوم 3 - تناول الغداء وزيارة قرية بانيوموليك.",
+      "اليوم 3 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-trawangan-city-tour",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Mandalika, Gili Trawangan & City Tour",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Pakej 3 Hari 2 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
+    "highlights": [
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain.",
+      "Pengangkutan, hotel, makanan dan tiket masuk mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan daftar keluar hotel.",
+      "Hari 3 - Melawat Islamic Center Lombok dan Pura Lingsar.",
+      "Hari 3 - Makan tengah hari dan melawat Kampung Banyumulek.",
+      "Hari 3 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-gili-trawangan-city-tour",
+    "locale": "zh",
+    "title": "龙目岛3天2晚旅游套餐－曼达利卡、吉利特拉旺安与城市游",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "三天两晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "3天2晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "私人包团，不与其他游客拼团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人快艇前往吉利特拉旺安。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 享用早餐并办理酒店退房。",
+      "第3天 - 参观龙目岛伊斯兰中心和林萨寺。",
+      "第3天 - 享用午餐并游览班尤穆勒克村。",
+      "第3天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+    "locale": "id",
+    "title": "Paket Tour Lombok 3 Hari 2 Malam – Mandalika & Pink Beach",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 3 hari 2 malam dengan Mandalika, Pink Beach, Gili Pasir, dan snorkeling di Gili Petelu.",
+    "highlights": [
+      "Private tour tanpa bergabung dengan peserta lain.",
+      "Rute disusun berdasarkan aktivitas utama paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Gili Pasir dan Pink Beach 1.",
+      "Hari 2 - Makan siang di Pink Beach.",
+      "Hari 2 - Snorkeling di Gili Petelu.",
+      "Hari 2 - Mengunjungi Pink Beach 2 dan Pink Beach 3.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek apabila waktu memungkinkan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private boat untuk Pink Beach Tour.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+    "locale": "en",
+    "title": "3-Day Lombok Tour Package – Mandalika & Pink Beach",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "3 Days 2 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "3 Days 2 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
+    "highlights": [
+      "Private tour without joining other participants.",
+      "Transportation, hotel, meals, and entrance tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Gili Pasir and Pink Beach 1.",
+      "Day 2 - Lunch at Pink Beach.",
+      "Day 2 - Snorkel at Gili Petelu.",
+      "Day 2 - Visit Pink Beach 2 and Pink Beach 3.",
+      "Day 2 - Dinner and return to the hotel.",
+      "Day 3 - Breakfast and free time at the hotel.",
+      "Day 3 - Hotel check-out.",
+      "Day 3 - Optional visit to the Lombok Islamic Center or Banyumulek Village if time permits.",
+      "Day 3 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private boat for the Pink Beach tour.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+    "locale": "ar",
+    "title": "باقة لومبوك 3 أيام – مانداليكا وشاطئ بينك",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "باقة 3 أيام وليلتين",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "3 أيام وليلتان",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر الدخول حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة جيلي باسير وشاطئ بينك 1.",
+      "اليوم 2 - تناول الغداء في شاطئ بينك.",
+      "اليوم 2 - الغطس في جيلي بيتيلو.",
+      "اليوم 2 - زيارة شاطئ بينك 2 وشاطئ بينك 3.",
+      "اليوم 2 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 3 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 3 - تسجيل الخروج من الفندق.",
+      "اليوم 3 - زيارة اختيارية إلى المركز الإسلامي في لومبوك أو قرية بانيوموليك إذا سمح الوقت.",
+      "اليوم 3 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب خاص لجولة شاطئ بينك.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Mandalika & Pantai Pink",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Pakej 3 Hari 2 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
+    "highlights": [
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain.",
+      "Pengangkutan, hotel, makanan dan tiket masuk mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Gili Pasir dan Pantai Pink 1.",
+      "Hari 2 - Makan tengah hari di Pantai Pink.",
+      "Hari 2 - Snorkeling di Gili Petelu.",
+      "Hari 2 - Melawat Pantai Pink 2 dan Pantai Pink 3.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 3 - Daftar keluar hotel.",
+      "Hari 3 - Lawatan pilihan ke Islamic Center Lombok atau Kampung Banyumulek jika masa mengizinkan.",
+      "Hari 3 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot persendirian untuk lawatan Pantai Pink.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+    "locale": "zh",
+    "title": "龙目岛3天2晚旅游套餐－曼达利卡与粉红海滩",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "三天两晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "3天2晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "私人包团，不与其他游客拼团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览吉利帕希尔和粉红海滩1。",
+      "第2天 - 在粉红海滩享用午餐。",
+      "第2天 - 在吉利佩特鲁浮潜。",
+      "第2天 - 游览粉红海滩2和粉红海滩3。",
+      "第2天 - 享用晚餐并返回酒店。",
+      "第3天 - 在酒店享用早餐并自由活动。",
+      "第3天 - 办理酒店退房。",
+      "第3天 - 时间允许时可选择参观龙目岛伊斯兰中心或班尤穆勒克村。",
+      "第3天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "粉红海滩行程私人船只。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1631000,
+        "4-5": 1080000,
+        "6-10": 1033000,
+        "11-15": 961000,
+        "16-20": 918000,
+        "21-34": 890000,
+        "35-66": 802000,
+        "67-101": 737000,
+        "102-150": 689000,
+        ">151": 641000
+      },
+      "hotel2": {
+        "2-3": 1881000,
+        "4-5": 1330000,
+        "6-10": 1283000,
+        "11-15": 1211000,
+        "16-20": 1168000,
+        "21-34": 1140000,
+        "35-66": 1052000,
+        "67-101": 987000,
+        "102-150": 939000,
+        ">151": 891000
+      },
+      "hotel3": {
+        "2-3": 2042000,
+        "4-5": 1497000,
+        "6-10": 1445000,
+        "11-15": 1393000,
+        "16-20": 1345000,
+        "21-34": 1322000,
+        "35-66": 1231000,
+        "67-101": 1153000,
+        "102-150": 1099000,
+        ">151": 1047000
+      },
+      "hotel4": {
+        "2-3": 2341000,
+        "4-5": 1808000,
+        "6-10": 1745000,
+        "11-15": 1731000,
+        "16-20": 1672000,
+        "21-34": 1660000,
+        "35-66": 1564000,
+        "67-101": 1463000,
+        "102-150": 1395000,
+        ">151": 1335000
+      },
+      "hotel5": {
+        "2-3": 3089000,
+        "4-5": 2584000,
+        "6-10": 2496000,
+        "11-15": 2475000,
+        "16-20": 2451000,
+        "21-34": 2387000,
+        "35-66": 2319000,
+        "67-101": 2236000,
+        "102-150": 2136000,
+        ">151": 2057000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-snorkeling-gili",
+    "locale": "id",
+    "title": "Paket Tour Lombok 3 Hari 2 Malam – Mandalika & Snorkeling Gili",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 3 hari 2 malam untuk kedatangan pagi atau siang, mencakup Mandalika dan snorkeling tiga Gili.",
+    "highlights": [
+      "Private tour tanpa bergabung dengan peserta lain.",
+      "Rute disusun berdasarkan aktivitas utama paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air, dan Gili Trawangan menggunakan private glass-bottom boat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 3 - Check-out hotel.",
+      "Hari 3 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek apabila waktu memungkinkan.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private glass-bottom boat.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1608000,
+        "4-5": 1055000,
+        "6-10": 992000,
+        "11-15": 793000,
+        "16-20": 777000,
+        "21-34": 748000,
+        "35-66": 684000,
+        "67-101": 592000,
+        "102-150": 551000,
+        ">151": 512000
+      },
+      "hotel2": {
+        "2-3": 1858000,
+        "4-5": 1305000,
+        "6-10": 1242000,
+        "11-15": 1043000,
+        "16-20": 1027000,
+        "21-34": 998000,
+        "35-66": 934000,
+        "67-101": 842000,
+        "102-150": 801000,
+        ">151": 762000
+      },
+      "hotel3": {
+        "2-3": 2019000,
+        "4-5": 1480000,
+        "6-10": 1413000,
+        "11-15": 1232000,
+        "16-20": 1209000,
+        "21-34": 1230000,
+        "35-66": 1113000,
+        "67-101": 1008000,
+        "102-150": 960000,
+        ">151": 918000
+      },
+      "hotel4": {
+        "2-3": 2318000,
+        "4-5": 1805000,
+        "6-10": 1730000,
+        "11-15": 1583000,
+        "16-20": 1547000,
+        "21-34": 1518000,
+        "35-66": 1446000,
+        "67-101": 1318000,
+        "102-150": 1257000,
+        ">151": 1206000
+      },
+      "hotel5": {
+        "2-3": 3066000,
+        "4-5": 2618000,
+        "6-10": 2523000,
+        "11-15": 2460000,
+        "16-20": 2392000,
+        "21-34": 2363000,
+        "35-66": 2278000,
+        "67-101": 2091000,
+        "102-150": 1998000,
+        ">151": 1928000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-snorkeling-gili",
+    "locale": "en",
+    "title": "3-Day Lombok Tour Package – Mandalika & Gili Snorkeling",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "3 Days 2 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "3 Days 2 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
+    "highlights": [
+      "Private tour without joining other participants.",
+      "Transportation, hotel, meals, and entrance tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Snorkel at Gili Meno, Gili Air, and Gili Trawangan by private glass-bottom boat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Breakfast and free time at the hotel.",
+      "Day 3 - Hotel check-out.",
+      "Day 3 - Optional visit to the Lombok Islamic Center or Banyumulek Village if time permits.",
+      "Day 3 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private glass-bottom boat.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1608000,
+        "4-5": 1055000,
+        "6-10": 992000,
+        "11-15": 793000,
+        "16-20": 777000,
+        "21-34": 748000,
+        "35-66": 684000,
+        "67-101": 592000,
+        "102-150": 551000,
+        ">151": 512000
+      },
+      "hotel2": {
+        "2-3": 1858000,
+        "4-5": 1305000,
+        "6-10": 1242000,
+        "11-15": 1043000,
+        "16-20": 1027000,
+        "21-34": 998000,
+        "35-66": 934000,
+        "67-101": 842000,
+        "102-150": 801000,
+        ">151": 762000
+      },
+      "hotel3": {
+        "2-3": 2019000,
+        "4-5": 1480000,
+        "6-10": 1413000,
+        "11-15": 1232000,
+        "16-20": 1209000,
+        "21-34": 1230000,
+        "35-66": 1113000,
+        "67-101": 1008000,
+        "102-150": 960000,
+        ">151": 918000
+      },
+      "hotel4": {
+        "2-3": 2318000,
+        "4-5": 1805000,
+        "6-10": 1730000,
+        "11-15": 1583000,
+        "16-20": 1547000,
+        "21-34": 1518000,
+        "35-66": 1446000,
+        "67-101": 1318000,
+        "102-150": 1257000,
+        ">151": 1206000
+      },
+      "hotel5": {
+        "2-3": 3066000,
+        "4-5": 2618000,
+        "6-10": 2523000,
+        "11-15": 2460000,
+        "16-20": 2392000,
+        "21-34": 2363000,
+        "35-66": 2278000,
+        "67-101": 2091000,
+        "102-150": 1998000,
+        ">151": 1928000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-snorkeling-gili",
+    "locale": "ar",
+    "title": "باقة لومبوك 3 أيام – مانداليكا والغطس في جيلي",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "باقة 3 أيام وليلتين",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "3 أيام وليلتان",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر الدخول حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الغطس في جيلي مينو وجيلي آير وجيلي تراوانغان بقارب خاص ذي قاع زجاجي.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 3 - تسجيل الخروج من الفندق.",
+      "اليوم 3 - زيارة اختيارية إلى المركز الإسلامي في لومبوك أو قرية بانيوموليك إذا سمح الوقت.",
+      "اليوم 3 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب خاص ذو قاع زجاجي.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1608000,
+        "4-5": 1055000,
+        "6-10": 992000,
+        "11-15": 793000,
+        "16-20": 777000,
+        "21-34": 748000,
+        "35-66": 684000,
+        "67-101": 592000,
+        "102-150": 551000,
+        ">151": 512000
+      },
+      "hotel2": {
+        "2-3": 1858000,
+        "4-5": 1305000,
+        "6-10": 1242000,
+        "11-15": 1043000,
+        "16-20": 1027000,
+        "21-34": 998000,
+        "35-66": 934000,
+        "67-101": 842000,
+        "102-150": 801000,
+        ">151": 762000
+      },
+      "hotel3": {
+        "2-3": 2019000,
+        "4-5": 1480000,
+        "6-10": 1413000,
+        "11-15": 1232000,
+        "16-20": 1209000,
+        "21-34": 1230000,
+        "35-66": 1113000,
+        "67-101": 1008000,
+        "102-150": 960000,
+        ">151": 918000
+      },
+      "hotel4": {
+        "2-3": 2318000,
+        "4-5": 1805000,
+        "6-10": 1730000,
+        "11-15": 1583000,
+        "16-20": 1547000,
+        "21-34": 1518000,
+        "35-66": 1446000,
+        "67-101": 1318000,
+        "102-150": 1257000,
+        ">151": 1206000
+      },
+      "hotel5": {
+        "2-3": 3066000,
+        "4-5": 2618000,
+        "6-10": 2523000,
+        "11-15": 2460000,
+        "16-20": 2392000,
+        "21-34": 2363000,
+        "35-66": 2278000,
+        "67-101": 2091000,
+        "102-150": 1998000,
+        ">151": 1928000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-snorkeling-gili",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Mandalika & Snorkeling Gili",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Pakej 3 Hari 2 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
+    "highlights": [
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain.",
+      "Pengangkutan, hotel, makanan dan tiket masuk mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air dan Gili Trawangan dengan bot kaca dasar persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 3 - Daftar keluar hotel.",
+      "Hari 3 - Lawatan pilihan ke Islamic Center Lombok atau Kampung Banyumulek jika masa mengizinkan.",
+      "Hari 3 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot kaca dasar persendirian.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1608000,
+        "4-5": 1055000,
+        "6-10": 992000,
+        "11-15": 793000,
+        "16-20": 777000,
+        "21-34": 748000,
+        "35-66": 684000,
+        "67-101": 592000,
+        "102-150": 551000,
+        ">151": 512000
+      },
+      "hotel2": {
+        "2-3": 1858000,
+        "4-5": 1305000,
+        "6-10": 1242000,
+        "11-15": 1043000,
+        "16-20": 1027000,
+        "21-34": 998000,
+        "35-66": 934000,
+        "67-101": 842000,
+        "102-150": 801000,
+        ">151": 762000
+      },
+      "hotel3": {
+        "2-3": 2019000,
+        "4-5": 1480000,
+        "6-10": 1413000,
+        "11-15": 1232000,
+        "16-20": 1209000,
+        "21-34": 1230000,
+        "35-66": 1113000,
+        "67-101": 1008000,
+        "102-150": 960000,
+        ">151": 918000
+      },
+      "hotel4": {
+        "2-3": 2318000,
+        "4-5": 1805000,
+        "6-10": 1730000,
+        "11-15": 1583000,
+        "16-20": 1547000,
+        "21-34": 1518000,
+        "35-66": 1446000,
+        "67-101": 1318000,
+        "102-150": 1257000,
+        ">151": 1206000
+      },
+      "hotel5": {
+        "2-3": 3066000,
+        "4-5": 2618000,
+        "6-10": 2523000,
+        "11-15": 2460000,
+        "16-20": 2392000,
+        "21-34": 2363000,
+        "35-66": 2278000,
+        "67-101": 2091000,
+        "102-150": 1998000,
+        ">151": 1928000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-snorkeling-gili",
+    "locale": "zh",
+    "title": "龙目岛3天2晚旅游套餐－曼达利卡与吉利浮潜",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "三天两晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "3天2晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "私人包团，不与其他游客拼团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人玻璃底船在吉利美诺、吉利艾尔和吉利特拉旺安浮潜。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 在酒店享用早餐并自由活动。",
+      "第3天 - 办理酒店退房。",
+      "第3天 - 时间允许时可选择参观龙目岛伊斯兰中心或班尤穆勒克村。",
+      "第3天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "私人玻璃底船。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1608000,
+        "4-5": 1055000,
+        "6-10": 992000,
+        "11-15": 793000,
+        "16-20": 777000,
+        "21-34": 748000,
+        "35-66": 684000,
+        "67-101": 592000,
+        "102-150": 551000,
+        ">151": 512000
+      },
+      "hotel2": {
+        "2-3": 1858000,
+        "4-5": 1305000,
+        "6-10": 1242000,
+        "11-15": 1043000,
+        "16-20": 1027000,
+        "21-34": 998000,
+        "35-66": 934000,
+        "67-101": 842000,
+        "102-150": 801000,
+        ">151": 762000
+      },
+      "hotel3": {
+        "2-3": 2019000,
+        "4-5": 1480000,
+        "6-10": 1413000,
+        "11-15": 1232000,
+        "16-20": 1209000,
+        "21-34": 1230000,
+        "35-66": 1113000,
+        "67-101": 1008000,
+        "102-150": 960000,
+        ">151": 918000
+      },
+      "hotel4": {
+        "2-3": 2318000,
+        "4-5": 1805000,
+        "6-10": 1730000,
+        "11-15": 1583000,
+        "16-20": 1547000,
+        "21-34": 1518000,
+        "35-66": 1446000,
+        "67-101": 1318000,
+        "102-150": 1257000,
+        ">151": 1206000
+      },
+      "hotel5": {
+        "2-3": 3066000,
+        "4-5": 2618000,
+        "6-10": 2523000,
+        "11-15": 2460000,
+        "16-20": 2392000,
+        "21-34": 2363000,
+        "35-66": 2278000,
+        "67-101": 2091000,
+        "102-150": 1998000,
+        ">151": 1928000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-snorkeling-gili-city-tour",
+    "locale": "id",
+    "title": "Paket Tour Lombok 3 Hari 2 Malam – Mandalika, Snorkeling Gili & City Tour",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 3 hari 2 malam dengan Mandalika, snorkeling tiga Gili, dan City Tour sebelum keberangkatan.",
+    "highlights": [
+      "Private tour tanpa bergabung dengan peserta lain.",
+      "Rute disusun berdasarkan aktivitas utama paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air, dan Gili Trawangan menggunakan private glass-bottom boat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan check-out hotel.",
+      "Hari 3 - Mengunjungi Islamic Center Lombok dan Pura Lingsar.",
+      "Hari 3 - Makan siang dan mengunjungi Desa Banyumulek.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private glass-bottom boat.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1804000,
+        "4-5": 1237000,
+        "6-10": 1190000,
+        "11-15": 985000,
+        "16-20": 973000,
+        "21-34": 935000,
+        "35-66": 856000,
+        "67-101": 752000,
+        "102-150": 704000,
+        ">151": 660000
+      },
+      "hotel2": {
+        "2-3": 2054000,
+        "4-5": 1487000,
+        "6-10": 1440000,
+        "11-15": 1235000,
+        "16-20": 1223000,
+        "21-34": 1185000,
+        "35-66": 1106000,
+        "67-101": 1002000,
+        "102-150": 954000,
+        ">151": 910000
+      },
+      "hotel3": {
+        "2-3": 2215000,
+        "4-5": 1662000,
+        "6-10": 1611000,
+        "11-15": 1424000,
+        "16-20": 1405000,
+        "21-34": 1367000,
+        "35-66": 1285000,
+        "67-101": 1169000,
+        "102-150": 1114000,
+        ">151": 1066000
+      },
+      "hotel4": {
+        "2-3": 2514000,
+        "4-5": 1987000,
+        "6-10": 1928000,
+        "11-15": 1775000,
+        "16-20": 1743000,
+        "21-34": 1705000,
+        "35-66": 1618000,
+        "67-101": 1478000,
+        "102-150": 1410000,
+        ">151": 1354000
+      },
+      "hotel5": {
+        "2-3": 3261000,
+        "4-5": 2799000,
+        "6-10": 2721000,
+        "11-15": 2653000,
+        "16-20": 2588000,
+        "21-34": 2550000,
+        "35-66": 2450000,
+        "67-101": 2252000,
+        "102-150": 2151000,
+        ">151": 2076000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-snorkeling-gili-city-tour",
+    "locale": "en",
+    "title": "3-Day Lombok Tour Package – Mandalika, Gili Snorkeling & City Tour",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "3 Days 2 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "3 Days 2 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
+    "highlights": [
+      "Private tour without joining other participants.",
+      "Transportation, hotel, meals, and entrance tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Snorkel at Gili Meno, Gili Air, and Gili Trawangan by private glass-bottom boat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Breakfast and hotel check-out.",
+      "Day 3 - Visit the Lombok Islamic Center and Lingsar Temple.",
+      "Day 3 - Lunch and visit Banyumulek Village.",
+      "Day 3 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private glass-bottom boat.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1804000,
+        "4-5": 1237000,
+        "6-10": 1190000,
+        "11-15": 985000,
+        "16-20": 973000,
+        "21-34": 935000,
+        "35-66": 856000,
+        "67-101": 752000,
+        "102-150": 704000,
+        ">151": 660000
+      },
+      "hotel2": {
+        "2-3": 2054000,
+        "4-5": 1487000,
+        "6-10": 1440000,
+        "11-15": 1235000,
+        "16-20": 1223000,
+        "21-34": 1185000,
+        "35-66": 1106000,
+        "67-101": 1002000,
+        "102-150": 954000,
+        ">151": 910000
+      },
+      "hotel3": {
+        "2-3": 2215000,
+        "4-5": 1662000,
+        "6-10": 1611000,
+        "11-15": 1424000,
+        "16-20": 1405000,
+        "21-34": 1367000,
+        "35-66": 1285000,
+        "67-101": 1169000,
+        "102-150": 1114000,
+        ">151": 1066000
+      },
+      "hotel4": {
+        "2-3": 2514000,
+        "4-5": 1987000,
+        "6-10": 1928000,
+        "11-15": 1775000,
+        "16-20": 1743000,
+        "21-34": 1705000,
+        "35-66": 1618000,
+        "67-101": 1478000,
+        "102-150": 1410000,
+        ">151": 1354000
+      },
+      "hotel5": {
+        "2-3": 3261000,
+        "4-5": 2799000,
+        "6-10": 2721000,
+        "11-15": 2653000,
+        "16-20": 2588000,
+        "21-34": 2550000,
+        "35-66": 2450000,
+        "67-101": 2252000,
+        "102-150": 2151000,
+        ">151": 2076000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-snorkeling-gili-city-tour",
+    "locale": "ar",
+    "title": "باقة لومبوك 3 أيام – مانداليكا والغطس في جيلي وجولة المدينة",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "باقة 3 أيام وليلتين",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "3 أيام وليلتان",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر الدخول حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الغطس في جيلي مينو وجيلي آير وجيلي تراوانغان بقارب خاص ذي قاع زجاجي.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - تناول الإفطار وتسجيل الخروج من الفندق.",
+      "اليوم 3 - زيارة المركز الإسلامي في لومبوك ومعبد لينغسار.",
+      "اليوم 3 - تناول الغداء وزيارة قرية بانيوموليك.",
+      "اليوم 3 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب خاص ذو قاع زجاجي.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1804000,
+        "4-5": 1237000,
+        "6-10": 1190000,
+        "11-15": 985000,
+        "16-20": 973000,
+        "21-34": 935000,
+        "35-66": 856000,
+        "67-101": 752000,
+        "102-150": 704000,
+        ">151": 660000
+      },
+      "hotel2": {
+        "2-3": 2054000,
+        "4-5": 1487000,
+        "6-10": 1440000,
+        "11-15": 1235000,
+        "16-20": 1223000,
+        "21-34": 1185000,
+        "35-66": 1106000,
+        "67-101": 1002000,
+        "102-150": 954000,
+        ">151": 910000
+      },
+      "hotel3": {
+        "2-3": 2215000,
+        "4-5": 1662000,
+        "6-10": 1611000,
+        "11-15": 1424000,
+        "16-20": 1405000,
+        "21-34": 1367000,
+        "35-66": 1285000,
+        "67-101": 1169000,
+        "102-150": 1114000,
+        ">151": 1066000
+      },
+      "hotel4": {
+        "2-3": 2514000,
+        "4-5": 1987000,
+        "6-10": 1928000,
+        "11-15": 1775000,
+        "16-20": 1743000,
+        "21-34": 1705000,
+        "35-66": 1618000,
+        "67-101": 1478000,
+        "102-150": 1410000,
+        ">151": 1354000
+      },
+      "hotel5": {
+        "2-3": 3261000,
+        "4-5": 2799000,
+        "6-10": 2721000,
+        "11-15": 2653000,
+        "16-20": 2588000,
+        "21-34": 2550000,
+        "35-66": 2450000,
+        "67-101": 2252000,
+        "102-150": 2151000,
+        ">151": 2076000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-snorkeling-gili-city-tour",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Mandalika, Snorkeling Gili & City Tour",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Pakej 3 Hari 2 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
+    "highlights": [
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain.",
+      "Pengangkutan, hotel, makanan dan tiket masuk mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air dan Gili Trawangan dengan bot kaca dasar persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi dan daftar keluar hotel.",
+      "Hari 3 - Melawat Islamic Center Lombok dan Pura Lingsar.",
+      "Hari 3 - Makan tengah hari dan melawat Kampung Banyumulek.",
+      "Hari 3 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot kaca dasar persendirian.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1804000,
+        "4-5": 1237000,
+        "6-10": 1190000,
+        "11-15": 985000,
+        "16-20": 973000,
+        "21-34": 935000,
+        "35-66": 856000,
+        "67-101": 752000,
+        "102-150": 704000,
+        ">151": 660000
+      },
+      "hotel2": {
+        "2-3": 2054000,
+        "4-5": 1487000,
+        "6-10": 1440000,
+        "11-15": 1235000,
+        "16-20": 1223000,
+        "21-34": 1185000,
+        "35-66": 1106000,
+        "67-101": 1002000,
+        "102-150": 954000,
+        ">151": 910000
+      },
+      "hotel3": {
+        "2-3": 2215000,
+        "4-5": 1662000,
+        "6-10": 1611000,
+        "11-15": 1424000,
+        "16-20": 1405000,
+        "21-34": 1367000,
+        "35-66": 1285000,
+        "67-101": 1169000,
+        "102-150": 1114000,
+        ">151": 1066000
+      },
+      "hotel4": {
+        "2-3": 2514000,
+        "4-5": 1987000,
+        "6-10": 1928000,
+        "11-15": 1775000,
+        "16-20": 1743000,
+        "21-34": 1705000,
+        "35-66": 1618000,
+        "67-101": 1478000,
+        "102-150": 1410000,
+        ">151": 1354000
+      },
+      "hotel5": {
+        "2-3": 3261000,
+        "4-5": 2799000,
+        "6-10": 2721000,
+        "11-15": 2653000,
+        "16-20": 2588000,
+        "21-34": 2550000,
+        "35-66": 2450000,
+        "67-101": 2252000,
+        "102-150": 2151000,
+        ">151": 2076000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-mandalika-snorkeling-gili-city-tour",
+    "locale": "zh",
+    "title": "龙目岛3天2晚旅游套餐－曼达利卡、吉利浮潜与城市游",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "三天两晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "3天2晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "私人包团，不与其他游客拼团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人玻璃底船在吉利美诺、吉利艾尔和吉利特拉旺安浮潜。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 享用早餐并办理酒店退房。",
+      "第3天 - 参观龙目岛伊斯兰中心和林萨寺。",
+      "第3天 - 享用午餐并游览班尤穆勒克村。",
+      "第3天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "私人玻璃底船。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1804000,
+        "4-5": 1237000,
+        "6-10": 1190000,
+        "11-15": 985000,
+        "16-20": 973000,
+        "21-34": 935000,
+        "35-66": 856000,
+        "67-101": 752000,
+        "102-150": 704000,
+        ">151": 660000
+      },
+      "hotel2": {
+        "2-3": 2054000,
+        "4-5": 1487000,
+        "6-10": 1440000,
+        "11-15": 1235000,
+        "16-20": 1223000,
+        "21-34": 1185000,
+        "35-66": 1106000,
+        "67-101": 1002000,
+        "102-150": 954000,
+        ">151": 910000
+      },
+      "hotel3": {
+        "2-3": 2215000,
+        "4-5": 1662000,
+        "6-10": 1611000,
+        "11-15": 1424000,
+        "16-20": 1405000,
+        "21-34": 1367000,
+        "35-66": 1285000,
+        "67-101": 1169000,
+        "102-150": 1114000,
+        ">151": 1066000
+      },
+      "hotel4": {
+        "2-3": 2514000,
+        "4-5": 1987000,
+        "6-10": 1928000,
+        "11-15": 1775000,
+        "16-20": 1743000,
+        "21-34": 1705000,
+        "35-66": 1618000,
+        "67-101": 1478000,
+        "102-150": 1410000,
+        ">151": 1354000
+      },
+      "hotel5": {
+        "2-3": 3261000,
+        "4-5": 2799000,
+        "6-10": 2721000,
+        "11-15": 2653000,
+        "16-20": 2588000,
+        "21-34": 2550000,
+        "35-66": 2450000,
+        "67-101": 2252000,
+        "102-150": 2151000,
+        ">151": 2076000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-snorkeling-gili-mandalika",
+    "locale": "id",
+    "title": "Paket Tour Lombok 3 Hari 2 Malam – Snorkeling Gili & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 3 hari 2 malam dengan snorkeling Gili Meno, Gili Air, Gili Trawangan, dan Mandalika.",
+    "highlights": [
+      "Private tour tanpa bergabung dengan peserta lain.",
+      "Rute disusun berdasarkan aktivitas utama paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "Hari 1 - Makan malam di restoran lokal.",
+      "Hari 1 - Check-in hotel dan istirahat.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air, dan Gili Trawangan menggunakan private glass-bottom boat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 3 - Makan siang di kawasan Pantai Kuta Mandalika.",
+      "Hari 3 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private glass-bottom boat.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1677000,
+        "4-5": 1130000,
+        "6-10": 1066000,
+        "11-15": 874000,
+        "16-20": 855000,
+        "21-34": 826000,
+        "35-66": 761000,
+        "67-101": 663000,
+        "102-150": 619000,
+        ">151": 579000
+      },
+      "hotel2": {
+        "2-3": 1927000,
+        "4-5": 1380000,
+        "6-10": 1316000,
+        "11-15": 1124000,
+        "16-20": 1105000,
+        "21-34": 1075000,
+        "35-66": 1011000,
+        "67-101": 913000,
+        "102-150": 869000,
+        ">151": 829000
+      },
+      "hotel3": {
+        "2-3": 2088000,
+        "4-5": 1555000,
+        "6-10": 1486000,
+        "11-15": 1313000,
+        "16-20": 1287000,
+        "21-34": 1258000,
+        "35-66": 1190000,
+        "67-101": 1080000,
+        "102-150": 1029000,
+        ">151": 984000
+      },
+      "hotel4": {
+        "2-3": 2387000,
+        "4-5": 1880000,
+        "6-10": 1804000,
+        "11-15": 1664000,
+        "16-20": 1625000,
+        "21-34": 1596000,
+        "35-66": 1523000,
+        "67-101": 1389000,
+        "102-150": 1325000,
+        ">151": 1273000
+      },
+      "hotel5": {
+        "2-3": 3135000,
+        "4-5": 2693000,
+        "6-10": 2597000,
+        "11-15": 2541000,
+        "16-20": 2470000,
+        "21-34": 2441000,
+        "35-66": 2355000,
+        "67-101": 2163000,
+        "102-150": 2066000,
+        ">151": 1994000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-snorkeling-gili-mandalika",
+    "locale": "en",
+    "title": "3-Day Lombok Tour Package – Gili Snorkeling & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "3 Days 2 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "3 Days 2 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
+    "highlights": [
+      "Private tour without joining other participants.",
+      "Transportation, hotel, meals, and entrance tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup and welcome at Lombok International Airport.",
+      "Day 1 - Dinner at a local restaurant.",
+      "Day 1 - Hotel check-in and rest.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Snorkel at Gili Meno, Gili Air, and Gili Trawangan by private glass-bottom boat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 3 - Lunch in the Kuta Mandalika area.",
+      "Day 3 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private glass-bottom boat.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1677000,
+        "4-5": 1130000,
+        "6-10": 1066000,
+        "11-15": 874000,
+        "16-20": 855000,
+        "21-34": 826000,
+        "35-66": 761000,
+        "67-101": 663000,
+        "102-150": 619000,
+        ">151": 579000
+      },
+      "hotel2": {
+        "2-3": 1927000,
+        "4-5": 1380000,
+        "6-10": 1316000,
+        "11-15": 1124000,
+        "16-20": 1105000,
+        "21-34": 1075000,
+        "35-66": 1011000,
+        "67-101": 913000,
+        "102-150": 869000,
+        ">151": 829000
+      },
+      "hotel3": {
+        "2-3": 2088000,
+        "4-5": 1555000,
+        "6-10": 1486000,
+        "11-15": 1313000,
+        "16-20": 1287000,
+        "21-34": 1258000,
+        "35-66": 1190000,
+        "67-101": 1080000,
+        "102-150": 1029000,
+        ">151": 984000
+      },
+      "hotel4": {
+        "2-3": 2387000,
+        "4-5": 1880000,
+        "6-10": 1804000,
+        "11-15": 1664000,
+        "16-20": 1625000,
+        "21-34": 1596000,
+        "35-66": 1523000,
+        "67-101": 1389000,
+        "102-150": 1325000,
+        ">151": 1273000
+      },
+      "hotel5": {
+        "2-3": 3135000,
+        "4-5": 2693000,
+        "6-10": 2597000,
+        "11-15": 2541000,
+        "16-20": 2470000,
+        "21-34": 2441000,
+        "35-66": 2355000,
+        "67-101": 2163000,
+        "102-150": 2066000,
+        ">151": 1994000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-snorkeling-gili-mandalika",
+    "locale": "ar",
+    "title": "باقة لومبوك 3 أيام – الغطس في جيلي ومانداليكا",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "باقة 3 أيام وليلتين",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "3 أيام وليلتان",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر الدخول حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال والترحيب في مطار لومبوك الدولي.",
+      "اليوم 1 - تناول العشاء في مطعم محلي.",
+      "اليوم 1 - تسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الغطس في جيلي مينو وجيلي آير وجيلي تراوانغان بقارب خاص ذي قاع زجاجي.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 3 - تناول الغداء في منطقة كوتا مانداليكا.",
+      "اليوم 3 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب خاص ذو قاع زجاجي.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1677000,
+        "4-5": 1130000,
+        "6-10": 1066000,
+        "11-15": 874000,
+        "16-20": 855000,
+        "21-34": 826000,
+        "35-66": 761000,
+        "67-101": 663000,
+        "102-150": 619000,
+        ">151": 579000
+      },
+      "hotel2": {
+        "2-3": 1927000,
+        "4-5": 1380000,
+        "6-10": 1316000,
+        "11-15": 1124000,
+        "16-20": 1105000,
+        "21-34": 1075000,
+        "35-66": 1011000,
+        "67-101": 913000,
+        "102-150": 869000,
+        ">151": 829000
+      },
+      "hotel3": {
+        "2-3": 2088000,
+        "4-5": 1555000,
+        "6-10": 1486000,
+        "11-15": 1313000,
+        "16-20": 1287000,
+        "21-34": 1258000,
+        "35-66": 1190000,
+        "67-101": 1080000,
+        "102-150": 1029000,
+        ">151": 984000
+      },
+      "hotel4": {
+        "2-3": 2387000,
+        "4-5": 1880000,
+        "6-10": 1804000,
+        "11-15": 1664000,
+        "16-20": 1625000,
+        "21-34": 1596000,
+        "35-66": 1523000,
+        "67-101": 1389000,
+        "102-150": 1325000,
+        ">151": 1273000
+      },
+      "hotel5": {
+        "2-3": 3135000,
+        "4-5": 2693000,
+        "6-10": 2597000,
+        "11-15": 2541000,
+        "16-20": 2470000,
+        "21-34": 2441000,
+        "35-66": 2355000,
+        "67-101": 2163000,
+        "102-150": 2066000,
+        ">151": 1994000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-snorkeling-gili-mandalika",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Snorkeling Gili & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "Pakej 3 Hari 2 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "3 Hari 2 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
+    "highlights": [
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain.",
+      "Pengangkutan, hotel, makanan dan tiket masuk mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput dan disambut di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Makan malam di restoran tempatan.",
+      "Hari 1 - Daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air dan Gili Trawangan dengan bot kaca dasar persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 3 - Makan tengah hari di kawasan Kuta Mandalika.",
+      "Hari 3 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot kaca dasar persendirian.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1677000,
+        "4-5": 1130000,
+        "6-10": 1066000,
+        "11-15": 874000,
+        "16-20": 855000,
+        "21-34": 826000,
+        "35-66": 761000,
+        "67-101": 663000,
+        "102-150": 619000,
+        ">151": 579000
+      },
+      "hotel2": {
+        "2-3": 1927000,
+        "4-5": 1380000,
+        "6-10": 1316000,
+        "11-15": 1124000,
+        "16-20": 1105000,
+        "21-34": 1075000,
+        "35-66": 1011000,
+        "67-101": 913000,
+        "102-150": 869000,
+        ">151": 829000
+      },
+      "hotel3": {
+        "2-3": 2088000,
+        "4-5": 1555000,
+        "6-10": 1486000,
+        "11-15": 1313000,
+        "16-20": 1287000,
+        "21-34": 1258000,
+        "35-66": 1190000,
+        "67-101": 1080000,
+        "102-150": 1029000,
+        ">151": 984000
+      },
+      "hotel4": {
+        "2-3": 2387000,
+        "4-5": 1880000,
+        "6-10": 1804000,
+        "11-15": 1664000,
+        "16-20": 1625000,
+        "21-34": 1596000,
+        "35-66": 1523000,
+        "67-101": 1389000,
+        "102-150": 1325000,
+        ">151": 1273000
+      },
+      "hotel5": {
+        "2-3": 3135000,
+        "4-5": 2693000,
+        "6-10": 2597000,
+        "11-15": 2541000,
+        "16-20": 2470000,
+        "21-34": 2441000,
+        "35-66": 2355000,
+        "67-101": 2163000,
+        "102-150": 2066000,
+        ">151": 1994000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-3-hari-2-malam-snorkeling-gili-mandalika",
+    "locale": "zh",
+    "title": "龙目岛3天2晚旅游套餐－吉利浮潜与曼达利卡",
+    "region": "lombok",
+    "collectionSlug": "3-hari-2-malam",
+    "collectionTitle": "三天两晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "3天2晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "私人包团，不与其他游客拼团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机并欢迎抵达。",
+      "第1天 - 在当地餐厅享用晚餐。",
+      "第1天 - 办理酒店入住并休息。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人玻璃底船在吉利美诺、吉利艾尔和吉利特拉旺安浮潜。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第3天 - 在库塔曼达利卡区域享用午餐。",
+      "第3天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "私人玻璃底船。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1677000,
+        "4-5": 1130000,
+        "6-10": 1066000,
+        "11-15": 874000,
+        "16-20": 855000,
+        "21-34": 826000,
+        "35-66": 761000,
+        "67-101": 663000,
+        "102-150": 619000,
+        ">151": 579000
+      },
+      "hotel2": {
+        "2-3": 1927000,
+        "4-5": 1380000,
+        "6-10": 1316000,
+        "11-15": 1124000,
+        "16-20": 1105000,
+        "21-34": 1075000,
+        "35-66": 1011000,
+        "67-101": 913000,
+        "102-150": 869000,
+        ">151": 829000
+      },
+      "hotel3": {
+        "2-3": 2088000,
+        "4-5": 1555000,
+        "6-10": 1486000,
+        "11-15": 1313000,
+        "16-20": 1287000,
+        "21-34": 1258000,
+        "35-66": 1190000,
+        "67-101": 1080000,
+        "102-150": 1029000,
+        ">151": 984000
+      },
+      "hotel4": {
+        "2-3": 2387000,
+        "4-5": 1880000,
+        "6-10": 1804000,
+        "11-15": 1664000,
+        "16-20": 1625000,
+        "21-34": 1596000,
+        "35-66": 1523000,
+        "67-101": 1389000,
+        "102-150": 1325000,
+        ">151": 1273000
+      },
+      "hotel5": {
+        "2-3": 3135000,
+        "4-5": 2693000,
+        "6-10": 2597000,
+        "11-15": 2541000,
+        "16-20": 2470000,
+        "21-34": 2441000,
+        "35-66": 2355000,
+        "67-101": 2163000,
+        "102-150": 2066000,
+        ">151": 1994000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-city-tour-gili-trawangan-mandalika",
+    "locale": "id",
+    "title": "Paket Tour Lombok 4 Hari 3 Malam – City Tour, Gili Trawangan & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 4 hari 3 malam dengan City Tour, eksplorasi Gili Trawangan, dan Mandalika.",
+    "highlights": [
+      "Private tour dengan rute City Tour, Gili Trawangan & Mandalika.",
+      "Transportasi, hotel, makan, dan tiket wisata sesuai paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di Bandara Internasional Lombok.",
+      "Hari 1 - Mengunjungi Taman Narmada dan Pura Lingsar.",
+      "Hari 1 - Makan siang dan mengunjungi Islamic Center Lombok.",
+      "Hari 1 - Check-in hotel dan menikmati matahari terbenam di Tanjung Bias.",
+      "Hari 1 - Makan malam dan kembali ke hotel.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Desa Tenun Sukarare dan Desa Adat Sade.",
+      "Hari 3 - Mengunjungi Pantai Kuta Mandalika dan kawasan Sirkuit Mandalika.",
+      "Hari 3 - Mengunjungi Pantai Tanjung Aan dan menikmati matahari terbenam di Bukit Merese.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 4 - Check-out hotel.",
+      "Hari 4 - Kunjungan opsional apabila waktu memungkinkan.",
+      "Hari 4 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1884000,
+        "4-5": 1469000,
+        "6-10": 1372000,
+        "11-15": 1131000,
+        "16-20": 1071000,
+        "21-34": 987000,
+        "35-66": 892000,
+        "67-101": 814000,
+        "102-150": 757000,
+        ">151": 700000
+      },
+      "hotel2": {
+        "2-3": 2259000,
+        "4-5": 1844000,
+        "6-10": 1747000,
+        "11-15": 1506000,
+        "16-20": 1446000,
+        "21-34": 1367000,
+        "35-66": 1267000,
+        "67-101": 1189000,
+        "102-150": 1132000,
+        ">151": 1075000
+      },
+      "hotel3": {
+        "2-3": 2500000,
+        "4-5": 2132000,
+        "6-10": 2020000,
+        "11-15": 1790000,
+        "16-20": 1719000,
+        "21-34": 1635000,
+        "35-66": 1536000,
+        "67-101": 1439000,
+        "102-150": 1371000,
+        ">151": 1308000
+      },
+      "hotel4": {
+        "2-3": 2949000,
+        "4-5": 2666000,
+        "6-10": 2527000,
+        "11-15": 2316000,
+        "16-20": 2226000,
+        "21-34": 2142000,
+        "35-66": 2035000,
+        "67-101": 1903000,
+        "102-150": 1816000,
+        ">151": 1741000
+      },
+      "hotel5": {
+        "2-3": 4070000,
+        "4-5": 4002000,
+        "6-10": 3795000,
+        "11-15": 3633000,
+        "16-20": 3494000,
+        "21-34": 3409000,
+        "35-66": 3283000,
+        "67-101": 3063000,
+        "102-150": 2928000,
+        ">151": 2823000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-city-tour-gili-trawangan-mandalika",
+    "locale": "en",
+    "title": "4-Day Lombok Tour Package – City Tour, Gili Trawangan & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "4 Days 3 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "4 Days 3 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 4-day, 3-night Lombok tour covering City Tour, eksplorasi Gili Trawangan, dan Mandalika.",
+    "highlights": [
+      "Private tour covering City Tour, Gili Trawangan & Mandalika.",
+      "Transportation, hotel, meals, and attraction tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at Lombok International Airport.",
+      "Day 1 - Visit Narmada Park and Lingsar Temple.",
+      "Day 1 - Lunch and visit the Lombok Islamic Center.",
+      "Day 1 - Hotel check-in and sunset at Tanjung Bias.",
+      "Day 1 - Dinner and return to the hotel.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Travel to Gili Trawangan by private speedboat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Visit Sukarare Weaving Village and Sade Traditional Village.",
+      "Day 3 - Visit Kuta Mandalika Beach and the Mandalika Circuit area.",
+      "Day 3 - Visit Tanjung Aan Beach and enjoy sunset at Merese Hill.",
+      "Day 3 - Dinner and return to the hotel.",
+      "Day 4 - Breakfast and free time at the hotel.",
+      "Day 4 - Hotel check-out.",
+      "Day 4 - Optional visit if time permits.",
+      "Day 4 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1884000,
+        "4-5": 1469000,
+        "6-10": 1372000,
+        "11-15": 1131000,
+        "16-20": 1071000,
+        "21-34": 987000,
+        "35-66": 892000,
+        "67-101": 814000,
+        "102-150": 757000,
+        ">151": 700000
+      },
+      "hotel2": {
+        "2-3": 2259000,
+        "4-5": 1844000,
+        "6-10": 1747000,
+        "11-15": 1506000,
+        "16-20": 1446000,
+        "21-34": 1367000,
+        "35-66": 1267000,
+        "67-101": 1189000,
+        "102-150": 1132000,
+        ">151": 1075000
+      },
+      "hotel3": {
+        "2-3": 2500000,
+        "4-5": 2132000,
+        "6-10": 2020000,
+        "11-15": 1790000,
+        "16-20": 1719000,
+        "21-34": 1635000,
+        "35-66": 1536000,
+        "67-101": 1439000,
+        "102-150": 1371000,
+        ">151": 1308000
+      },
+      "hotel4": {
+        "2-3": 2949000,
+        "4-5": 2666000,
+        "6-10": 2527000,
+        "11-15": 2316000,
+        "16-20": 2226000,
+        "21-34": 2142000,
+        "35-66": 2035000,
+        "67-101": 1903000,
+        "102-150": 1816000,
+        ">151": 1741000
+      },
+      "hotel5": {
+        "2-3": 4070000,
+        "4-5": 4002000,
+        "6-10": 3795000,
+        "11-15": 3633000,
+        "16-20": 3494000,
+        "21-34": 3409000,
+        "35-66": 3283000,
+        "67-101": 3063000,
+        "102-150": 2928000,
+        ">151": 2823000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-city-tour-gili-trawangan-mandalika",
+    "locale": "ar",
+    "title": "باقة لومبوك 4 أيام – جولة المدينة وجيلي تراوانغان ومانداليكا",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "4 أيام و3 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة وفق المسار المحدد.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر المواقع حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال في مطار لومبوك الدولي.",
+      "اليوم 1 - زيارة حديقة نارمادا ومعبد لينغسار.",
+      "اليوم 1 - تناول الغداء وزيارة المركز الإسلامي في لومبوك.",
+      "اليوم 1 - تسجيل الدخول إلى الفندق والاستمتاع بغروب الشمس في تانجونغ بياس.",
+      "اليوم 1 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ ومتجر هدايا لومبوك.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - زيارة قرية سوكاراري للنسيج وقرية سادي التقليدية.",
+      "اليوم 3 - زيارة شاطئ كوتا مانداليكا ومنطقة حلبة مانداليكا.",
+      "اليوم 3 - زيارة شاطئ تانجونغ آن والاستمتاع بغروب الشمس في تل ميريسي.",
+      "اليوم 3 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 4 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 4 - تسجيل الخروج من الفندق.",
+      "اليوم 4 - زيارة اختيارية إذا سمح الوقت.",
+      "اليوم 4 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1884000,
+        "4-5": 1469000,
+        "6-10": 1372000,
+        "11-15": 1131000,
+        "16-20": 1071000,
+        "21-34": 987000,
+        "35-66": 892000,
+        "67-101": 814000,
+        "102-150": 757000,
+        ">151": 700000
+      },
+      "hotel2": {
+        "2-3": 2259000,
+        "4-5": 1844000,
+        "6-10": 1747000,
+        "11-15": 1506000,
+        "16-20": 1446000,
+        "21-34": 1367000,
+        "35-66": 1267000,
+        "67-101": 1189000,
+        "102-150": 1132000,
+        ">151": 1075000
+      },
+      "hotel3": {
+        "2-3": 2500000,
+        "4-5": 2132000,
+        "6-10": 2020000,
+        "11-15": 1790000,
+        "16-20": 1719000,
+        "21-34": 1635000,
+        "35-66": 1536000,
+        "67-101": 1439000,
+        "102-150": 1371000,
+        ">151": 1308000
+      },
+      "hotel4": {
+        "2-3": 2949000,
+        "4-5": 2666000,
+        "6-10": 2527000,
+        "11-15": 2316000,
+        "16-20": 2226000,
+        "21-34": 2142000,
+        "35-66": 2035000,
+        "67-101": 1903000,
+        "102-150": 1816000,
+        ">151": 1741000
+      },
+      "hotel5": {
+        "2-3": 4070000,
+        "4-5": 4002000,
+        "6-10": 3795000,
+        "11-15": 3633000,
+        "16-20": 3494000,
+        "21-34": 3409000,
+        "35-66": 3283000,
+        "67-101": 3063000,
+        "102-150": 2928000,
+        ">151": 2823000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-city-tour-gili-trawangan-mandalika",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 4 Hari 3 Malam – City Tour, Gili Trawangan & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi City Tour, eksplorasi Gili Trawangan, dan Mandalika.",
+    "highlights": [
+      "Lawatan persendirian merangkumi City Tour, Gili Trawangan & Mandalika.",
+      "Pengangkutan, hotel, makanan dan tiket tarikan mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Melawat Taman Narmada dan Pura Lingsar.",
+      "Hari 1 - Makan tengah hari dan melawat Islamic Center Lombok.",
+      "Hari 1 - Daftar masuk hotel dan menikmati matahari terbenam di Tanjung Bias.",
+      "Hari 1 - Makan malam dan kembali ke hotel.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Melawat pusat kraftangan mutiara dan cenderamata Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Melawat Kampung Tenun Sukarare dan Kampung Tradisional Sade.",
+      "Hari 3 - Melawat Pantai Kuta Mandalika dan kawasan Litar Mandalika.",
+      "Hari 3 - Melawat Pantai Tanjung Aan dan menikmati matahari terbenam di Bukit Merese.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 4 - Daftar keluar hotel.",
+      "Hari 4 - Lawatan pilihan jika masa mengizinkan.",
+      "Hari 4 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1884000,
+        "4-5": 1469000,
+        "6-10": 1372000,
+        "11-15": 1131000,
+        "16-20": 1071000,
+        "21-34": 987000,
+        "35-66": 892000,
+        "67-101": 814000,
+        "102-150": 757000,
+        ">151": 700000
+      },
+      "hotel2": {
+        "2-3": 2259000,
+        "4-5": 1844000,
+        "6-10": 1747000,
+        "11-15": 1506000,
+        "16-20": 1446000,
+        "21-34": 1367000,
+        "35-66": 1267000,
+        "67-101": 1189000,
+        "102-150": 1132000,
+        ">151": 1075000
+      },
+      "hotel3": {
+        "2-3": 2500000,
+        "4-5": 2132000,
+        "6-10": 2020000,
+        "11-15": 1790000,
+        "16-20": 1719000,
+        "21-34": 1635000,
+        "35-66": 1536000,
+        "67-101": 1439000,
+        "102-150": 1371000,
+        ">151": 1308000
+      },
+      "hotel4": {
+        "2-3": 2949000,
+        "4-5": 2666000,
+        "6-10": 2527000,
+        "11-15": 2316000,
+        "16-20": 2226000,
+        "21-34": 2142000,
+        "35-66": 2035000,
+        "67-101": 1903000,
+        "102-150": 1816000,
+        ">151": 1741000
+      },
+      "hotel5": {
+        "2-3": 4070000,
+        "4-5": 4002000,
+        "6-10": 3795000,
+        "11-15": 3633000,
+        "16-20": 3494000,
+        "21-34": 3409000,
+        "35-66": 3283000,
+        "67-101": 3063000,
+        "102-150": 2928000,
+        ">151": 2823000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-city-tour-gili-trawangan-mandalika",
+    "locale": "zh",
+    "title": "龙目岛4天3晚旅游套餐－城市游、吉利特拉旺安与曼达利卡",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "四天三晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "4天3晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "按指定路线安排私人包团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机。",
+      "第1天 - 游览纳尔默达公园和林萨寺。",
+      "第1天 - 享用午餐并参观龙目岛伊斯兰中心。",
+      "第1天 - 办理酒店入住并在丹绒比亚斯欣赏日落。",
+      "第1天 - 享用晚餐并返回酒店。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人快艇前往吉利特拉旺安。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 参观珍珠工艺中心和龙目岛纪念品店。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 游览苏卡拉拉织布村和萨德传统村落。",
+      "第3天 - 游览库塔曼达利卡海滩和曼达利卡赛道区域。",
+      "第3天 - 游览丹绒安海滩并在梅雷塞山欣赏日落。",
+      "第3天 - 享用晚餐并返回酒店。",
+      "第4天 - 在酒店享用早餐并自由活动。",
+      "第4天 - 办理酒店退房。",
+      "第4天 - 时间允许时进行可选参观。",
+      "第4天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1884000,
+        "4-5": 1469000,
+        "6-10": 1372000,
+        "11-15": 1131000,
+        "16-20": 1071000,
+        "21-34": 987000,
+        "35-66": 892000,
+        "67-101": 814000,
+        "102-150": 757000,
+        ">151": 700000
+      },
+      "hotel2": {
+        "2-3": 2259000,
+        "4-5": 1844000,
+        "6-10": 1747000,
+        "11-15": 1506000,
+        "16-20": 1446000,
+        "21-34": 1367000,
+        "35-66": 1267000,
+        "67-101": 1189000,
+        "102-150": 1132000,
+        ">151": 1075000
+      },
+      "hotel3": {
+        "2-3": 2500000,
+        "4-5": 2132000,
+        "6-10": 2020000,
+        "11-15": 1790000,
+        "16-20": 1719000,
+        "21-34": 1635000,
+        "35-66": 1536000,
+        "67-101": 1439000,
+        "102-150": 1371000,
+        ">151": 1308000
+      },
+      "hotel4": {
+        "2-3": 2949000,
+        "4-5": 2666000,
+        "6-10": 2527000,
+        "11-15": 2316000,
+        "16-20": 2226000,
+        "21-34": 2142000,
+        "35-66": 2035000,
+        "67-101": 1903000,
+        "102-150": 1816000,
+        ">151": 1741000
+      },
+      "hotel5": {
+        "2-3": 4070000,
+        "4-5": 4002000,
+        "6-10": 3795000,
+        "11-15": 3633000,
+        "16-20": 3494000,
+        "21-34": 3409000,
+        "35-66": 3283000,
+        "67-101": 3063000,
+        "102-150": 2928000,
+        ">151": 2823000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-city-tour-snorkeling-gili-mandalika",
+    "locale": "id",
+    "title": "Paket Tour Lombok 4 Hari 3 Malam – City Tour, Snorkeling Gili & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 4 hari 3 malam dengan City Tour, snorkeling Gili Meno, Gili Air, Gili Trawangan, dan Mandalika.",
+    "highlights": [
+      "Private tour dengan rute City Tour, Snorkeling Gili & Mandalika.",
+      "Transportasi, hotel, makan, dan tiket wisata sesuai paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di Bandara Internasional Lombok.",
+      "Hari 1 - Mengunjungi Taman Narmada dan Pura Lingsar.",
+      "Hari 1 - Makan siang dan mengunjungi Islamic Center Lombok.",
+      "Hari 1 - Check-in hotel dan menikmati matahari terbenam di Tanjung Bias.",
+      "Hari 1 - Makan malam dan kembali ke hotel.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air, dan Gili Trawangan menggunakan private glass-bottom boat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Desa Tenun Sukarare dan Desa Adat Sade.",
+      "Hari 3 - Mengunjungi Pantai Kuta Mandalika dan kawasan Sirkuit Mandalika.",
+      "Hari 3 - Mengunjungi Pantai Tanjung Aan dan menikmati matahari terbenam di Bukit Merese.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 4 - Check-out hotel.",
+      "Hari 4 - Kunjungan opsional apabila waktu memungkinkan.",
+      "Hari 4 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private glass-bottom boat.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2056000,
+        "4-5": 1470000,
+        "6-10": 1459000,
+        "11-15": 1107000,
+        "16-20": 1088000,
+        "21-34": 1032000,
+        "35-66": 946000,
+        "67-101": 829000,
+        "102-150": 772000,
+        ">151": 718000
+      },
+      "hotel2": {
+        "2-3": 2431000,
+        "4-5": 1845000,
+        "6-10": 1834000,
+        "11-15": 1482000,
+        "16-20": 1463000,
+        "21-34": 1407000,
+        "35-66": 1321000,
+        "67-101": 1204000,
+        "102-150": 1147000,
+        ">151": 1093000
+      },
+      "hotel3": {
+        "2-3": 2673000,
+        "4-5": 2118000,
+        "6-10": 2107000,
+        "11-15": 1765000,
+        "16-20": 1736000,
+        "21-34": 1680000,
+        "35-66": 1590000,
+        "67-101": 1454000,
+        "102-150": 1386000,
+        ">151": 1327000
+      },
+      "hotel4": {
+        "2-3": 3121000,
+        "4-5": 2625000,
+        "6-10": 2614000,
+        "11-15": 2292000,
+        "16-20": 2243000,
+        "21-34": 2187000,
+        "35-66": 2089000,
+        "67-101": 1918000,
+        "102-150": 1831000,
+        ">151": 1759000
+      },
+      "hotel5": {
+        "2-3": 4242000,
+        "4-5": 3892000,
+        "6-10": 3881000,
+        "11-15": 3608000,
+        "16-20": 3510000,
+        "21-34": 3454000,
+        "35-66": 3337000,
+        "67-101": 3079000,
+        "102-150": 2943000,
+        ">151": 2842000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-city-tour-snorkeling-gili-mandalika",
+    "locale": "en",
+    "title": "4-Day Lombok Tour Package – City Tour, Gili Snorkeling & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "4 Days 3 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "4 Days 3 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 4-day, 3-night Lombok tour covering City Tour, snorkeling Gili Meno, Gili Air, Gili Trawangan, dan Mandalika.",
+    "highlights": [
+      "Private tour covering City Tour, Snorkeling Gili & Mandalika.",
+      "Transportation, hotel, meals, and attraction tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at Lombok International Airport.",
+      "Day 1 - Visit Narmada Park and Lingsar Temple.",
+      "Day 1 - Lunch and visit the Lombok Islamic Center.",
+      "Day 1 - Hotel check-in and sunset at Tanjung Bias.",
+      "Day 1 - Dinner and return to the hotel.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Snorkel at Gili Meno, Gili Air, and Gili Trawangan by private glass-bottom boat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Visit Sukarare Weaving Village and Sade Traditional Village.",
+      "Day 3 - Visit Kuta Mandalika Beach and the Mandalika Circuit area.",
+      "Day 3 - Visit Tanjung Aan Beach and enjoy sunset at Merese Hill.",
+      "Day 3 - Dinner and return to the hotel.",
+      "Day 4 - Breakfast and free time at the hotel.",
+      "Day 4 - Hotel check-out.",
+      "Day 4 - Optional visit if time permits.",
+      "Day 4 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private glass-bottom boat.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2056000,
+        "4-5": 1470000,
+        "6-10": 1459000,
+        "11-15": 1107000,
+        "16-20": 1088000,
+        "21-34": 1032000,
+        "35-66": 946000,
+        "67-101": 829000,
+        "102-150": 772000,
+        ">151": 718000
+      },
+      "hotel2": {
+        "2-3": 2431000,
+        "4-5": 1845000,
+        "6-10": 1834000,
+        "11-15": 1482000,
+        "16-20": 1463000,
+        "21-34": 1407000,
+        "35-66": 1321000,
+        "67-101": 1204000,
+        "102-150": 1147000,
+        ">151": 1093000
+      },
+      "hotel3": {
+        "2-3": 2673000,
+        "4-5": 2118000,
+        "6-10": 2107000,
+        "11-15": 1765000,
+        "16-20": 1736000,
+        "21-34": 1680000,
+        "35-66": 1590000,
+        "67-101": 1454000,
+        "102-150": 1386000,
+        ">151": 1327000
+      },
+      "hotel4": {
+        "2-3": 3121000,
+        "4-5": 2625000,
+        "6-10": 2614000,
+        "11-15": 2292000,
+        "16-20": 2243000,
+        "21-34": 2187000,
+        "35-66": 2089000,
+        "67-101": 1918000,
+        "102-150": 1831000,
+        ">151": 1759000
+      },
+      "hotel5": {
+        "2-3": 4242000,
+        "4-5": 3892000,
+        "6-10": 3881000,
+        "11-15": 3608000,
+        "16-20": 3510000,
+        "21-34": 3454000,
+        "35-66": 3337000,
+        "67-101": 3079000,
+        "102-150": 2943000,
+        ">151": 2842000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-city-tour-snorkeling-gili-mandalika",
+    "locale": "ar",
+    "title": "باقة لومبوك 4 أيام – جولة المدينة والغطس في جيلي ومانداليكا",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "4 أيام و3 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة وفق المسار المحدد.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر المواقع حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال في مطار لومبوك الدولي.",
+      "اليوم 1 - زيارة حديقة نارمادا ومعبد لينغسار.",
+      "اليوم 1 - تناول الغداء وزيارة المركز الإسلامي في لومبوك.",
+      "اليوم 1 - تسجيل الدخول إلى الفندق والاستمتاع بغروب الشمس في تانجونغ بياس.",
+      "اليوم 1 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الغطس في جيلي مينو وجيلي آير وجيلي تراوانغان بقارب خاص ذي قاع زجاجي.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ ومتجر هدايا لومبوك.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - زيارة قرية سوكاراري للنسيج وقرية سادي التقليدية.",
+      "اليوم 3 - زيارة شاطئ كوتا مانداليكا ومنطقة حلبة مانداليكا.",
+      "اليوم 3 - زيارة شاطئ تانجونغ آن والاستمتاع بغروب الشمس في تل ميريسي.",
+      "اليوم 3 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 4 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 4 - تسجيل الخروج من الفندق.",
+      "اليوم 4 - زيارة اختيارية إذا سمح الوقت.",
+      "اليوم 4 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب خاص ذو قاع زجاجي.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2056000,
+        "4-5": 1470000,
+        "6-10": 1459000,
+        "11-15": 1107000,
+        "16-20": 1088000,
+        "21-34": 1032000,
+        "35-66": 946000,
+        "67-101": 829000,
+        "102-150": 772000,
+        ">151": 718000
+      },
+      "hotel2": {
+        "2-3": 2431000,
+        "4-5": 1845000,
+        "6-10": 1834000,
+        "11-15": 1482000,
+        "16-20": 1463000,
+        "21-34": 1407000,
+        "35-66": 1321000,
+        "67-101": 1204000,
+        "102-150": 1147000,
+        ">151": 1093000
+      },
+      "hotel3": {
+        "2-3": 2673000,
+        "4-5": 2118000,
+        "6-10": 2107000,
+        "11-15": 1765000,
+        "16-20": 1736000,
+        "21-34": 1680000,
+        "35-66": 1590000,
+        "67-101": 1454000,
+        "102-150": 1386000,
+        ">151": 1327000
+      },
+      "hotel4": {
+        "2-3": 3121000,
+        "4-5": 2625000,
+        "6-10": 2614000,
+        "11-15": 2292000,
+        "16-20": 2243000,
+        "21-34": 2187000,
+        "35-66": 2089000,
+        "67-101": 1918000,
+        "102-150": 1831000,
+        ">151": 1759000
+      },
+      "hotel5": {
+        "2-3": 4242000,
+        "4-5": 3892000,
+        "6-10": 3881000,
+        "11-15": 3608000,
+        "16-20": 3510000,
+        "21-34": 3454000,
+        "35-66": 3337000,
+        "67-101": 3079000,
+        "102-150": 2943000,
+        ">151": 2842000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-city-tour-snorkeling-gili-mandalika",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 4 Hari 3 Malam – City Tour, Snorkeling Gili & Mandalika",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi City Tour, snorkeling Gili Meno, Gili Air, Gili Trawangan, dan Mandalika.",
+    "highlights": [
+      "Lawatan persendirian merangkumi City Tour, Snorkeling Gili & Mandalika.",
+      "Pengangkutan, hotel, makanan dan tiket tarikan mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Melawat Taman Narmada dan Pura Lingsar.",
+      "Hari 1 - Makan tengah hari dan melawat Islamic Center Lombok.",
+      "Hari 1 - Daftar masuk hotel dan menikmati matahari terbenam di Tanjung Bias.",
+      "Hari 1 - Makan malam dan kembali ke hotel.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air dan Gili Trawangan dengan bot kaca dasar persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Melawat pusat kraftangan mutiara dan cenderamata Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Melawat Kampung Tenun Sukarare dan Kampung Tradisional Sade.",
+      "Hari 3 - Melawat Pantai Kuta Mandalika dan kawasan Litar Mandalika.",
+      "Hari 3 - Melawat Pantai Tanjung Aan dan menikmati matahari terbenam di Bukit Merese.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 4 - Daftar keluar hotel.",
+      "Hari 4 - Lawatan pilihan jika masa mengizinkan.",
+      "Hari 4 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot kaca dasar persendirian.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2056000,
+        "4-5": 1470000,
+        "6-10": 1459000,
+        "11-15": 1107000,
+        "16-20": 1088000,
+        "21-34": 1032000,
+        "35-66": 946000,
+        "67-101": 829000,
+        "102-150": 772000,
+        ">151": 718000
+      },
+      "hotel2": {
+        "2-3": 2431000,
+        "4-5": 1845000,
+        "6-10": 1834000,
+        "11-15": 1482000,
+        "16-20": 1463000,
+        "21-34": 1407000,
+        "35-66": 1321000,
+        "67-101": 1204000,
+        "102-150": 1147000,
+        ">151": 1093000
+      },
+      "hotel3": {
+        "2-3": 2673000,
+        "4-5": 2118000,
+        "6-10": 2107000,
+        "11-15": 1765000,
+        "16-20": 1736000,
+        "21-34": 1680000,
+        "35-66": 1590000,
+        "67-101": 1454000,
+        "102-150": 1386000,
+        ">151": 1327000
+      },
+      "hotel4": {
+        "2-3": 3121000,
+        "4-5": 2625000,
+        "6-10": 2614000,
+        "11-15": 2292000,
+        "16-20": 2243000,
+        "21-34": 2187000,
+        "35-66": 2089000,
+        "67-101": 1918000,
+        "102-150": 1831000,
+        ">151": 1759000
+      },
+      "hotel5": {
+        "2-3": 4242000,
+        "4-5": 3892000,
+        "6-10": 3881000,
+        "11-15": 3608000,
+        "16-20": 3510000,
+        "21-34": 3454000,
+        "35-66": 3337000,
+        "67-101": 3079000,
+        "102-150": 2943000,
+        ">151": 2842000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-city-tour-snorkeling-gili-mandalika",
+    "locale": "zh",
+    "title": "龙目岛4天3晚旅游套餐－城市游、吉利浮潜与曼达利卡",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "四天三晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "4天3晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "按指定路线安排私人包团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机。",
+      "第1天 - 游览纳尔默达公园和林萨寺。",
+      "第1天 - 享用午餐并参观龙目岛伊斯兰中心。",
+      "第1天 - 办理酒店入住并在丹绒比亚斯欣赏日落。",
+      "第1天 - 享用晚餐并返回酒店。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人玻璃底船在吉利美诺、吉利艾尔和吉利特拉旺安浮潜。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 参观珍珠工艺中心和龙目岛纪念品店。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 游览苏卡拉拉织布村和萨德传统村落。",
+      "第3天 - 游览库塔曼达利卡海滩和曼达利卡赛道区域。",
+      "第3天 - 游览丹绒安海滩并在梅雷塞山欣赏日落。",
+      "第3天 - 享用晚餐并返回酒店。",
+      "第4天 - 在酒店享用早餐并自由活动。",
+      "第4天 - 办理酒店退房。",
+      "第4天 - 时间允许时进行可选参观。",
+      "第4天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "私人玻璃底船。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2056000,
+        "4-5": 1470000,
+        "6-10": 1459000,
+        "11-15": 1107000,
+        "16-20": 1088000,
+        "21-34": 1032000,
+        "35-66": 946000,
+        "67-101": 829000,
+        "102-150": 772000,
+        ">151": 718000
+      },
+      "hotel2": {
+        "2-3": 2431000,
+        "4-5": 1845000,
+        "6-10": 1834000,
+        "11-15": 1482000,
+        "16-20": 1463000,
+        "21-34": 1407000,
+        "35-66": 1321000,
+        "67-101": 1204000,
+        "102-150": 1147000,
+        ">151": 1093000
+      },
+      "hotel3": {
+        "2-3": 2673000,
+        "4-5": 2118000,
+        "6-10": 2107000,
+        "11-15": 1765000,
+        "16-20": 1736000,
+        "21-34": 1680000,
+        "35-66": 1590000,
+        "67-101": 1454000,
+        "102-150": 1386000,
+        ">151": 1327000
+      },
+      "hotel4": {
+        "2-3": 3121000,
+        "4-5": 2625000,
+        "6-10": 2614000,
+        "11-15": 2292000,
+        "16-20": 2243000,
+        "21-34": 2187000,
+        "35-66": 2089000,
+        "67-101": 1918000,
+        "102-150": 1831000,
+        ">151": 1759000
+      },
+      "hotel5": {
+        "2-3": 4242000,
+        "4-5": 3892000,
+        "6-10": 3881000,
+        "11-15": 3608000,
+        "16-20": 3510000,
+        "21-34": 3454000,
+        "35-66": 3337000,
+        "67-101": 3079000,
+        "102-150": 2943000,
+        ">151": 2842000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-nanggu-gili-trawangan",
+    "locale": "id",
+    "title": "Paket Tour Lombok 4 Hari 3 Malam – Mandalika, Gili Nanggu & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 4 hari 3 malam untuk kedatangan pagi atau siang, mencakup Mandalika, Gili Nanggu, Gili Sudak, Gili Kedis, dan Gili Trawangan.",
+    "highlights": [
+      "Private tour dengan rute Mandalika, Gili Nanggu & Gili Trawangan.",
+      "Transportasi, hotel, makan, dan tiket wisata sesuai paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Perjalanan menuju Sekotong dan menaiki private boat.",
+      "Hari 2 - Snorkeling dan bersantai di Gili Nanggu.",
+      "Hari 2 - Makan siang di Gili Sudak dan mengunjungi Gili Kedis.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 3 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 3 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 3 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 4 - Check-out hotel.",
+      "Hari 4 - Kunjungan opsional apabila waktu memungkinkan.",
+      "Hari 4 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan.",
+      "Private boat untuk Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2171000,
+        "4-5": 1557000,
+        "6-10": 1511000,
+        "11-15": 1288000,
+        "16-20": 1187000,
+        "21-34": 1114000,
+        "35-66": 1000000,
+        "67-101": 909000,
+        "102-150": 850000,
+        ">151": 792000
+      },
+      "hotel2": {
+        "2-3": 2546000,
+        "4-5": 1932000,
+        "6-10": 1886000,
+        "11-15": 1663000,
+        "16-20": 1562000,
+        "21-34": 1489000,
+        "35-66": 1375000,
+        "67-101": 1284000,
+        "102-150": 1225000,
+        ">151": 1167000
+      },
+      "hotel3": {
+        "2-3": 2788000,
+        "4-5": 2205000,
+        "6-10": 2159000,
+        "11-15": 1947000,
+        "16-20": 1835000,
+        "21-34": 1762000,
+        "35-66": 1643000,
+        "67-101": 1534000,
+        "102-150": 1464000,
+        ">151": 1400000
+      },
+      "hotel4": {
+        "2-3": 3236000,
+        "4-5": 2712000,
+        "6-10": 2666000,
+        "11-15": 2473000,
+        "16-20": 2342000,
+        "21-34": 2269000,
+        "35-66": 2143000,
+        "67-101": 1998000,
+        "102-150": 1909000,
+        ">151": 1833000
+      },
+      "hotel5": {
+        "2-3": 4357000,
+        "4-5": 3980000,
+        "6-10": 3933000,
+        "11-15": 3790000,
+        "16-20": 3609000,
+        "21-34": 3537000,
+        "35-66": 3391000,
+        "67-101": 3158000,
+        "102-150": 3020000,
+        ">151": 2915000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-nanggu-gili-trawangan",
+    "locale": "en",
+    "title": "4-Day Lombok Tour Package – Mandalika, Gili Nanggu & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "4 Days 3 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "4 Days 3 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 4-day, 3-night Lombok tour for a morning or midday arrival, covering Mandalika, Gili Nanggu, Gili Sudak, Gili Kedis, dan Gili Trawangan.",
+    "highlights": [
+      "Private tour covering Mandalika, Gili Nanggu & Gili Trawangan.",
+      "Transportation, hotel, meals, and attraction tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Travel to Sekotong and board a private boat.",
+      "Day 2 - Snorkel and relax on Gili Nanggu.",
+      "Day 2 - Lunch on Gili Sudak and visit Gili Kedis.",
+      "Day 2 - Dinner and return to the hotel.",
+      "Day 3 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 3 - Travel to Gili Trawangan by private speedboat.",
+      "Day 3 - Lunch and explore Gili Trawangan.",
+      "Day 3 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 3 - Dinner in Senggigi and return to the hotel.",
+      "Day 4 - Breakfast and free time at the hotel.",
+      "Day 4 - Hotel check-out.",
+      "Day 4 - Optional visit if time permits.",
+      "Day 4 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan.",
+      "Private boat for Gili Nanggu.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2171000,
+        "4-5": 1557000,
+        "6-10": 1511000,
+        "11-15": 1288000,
+        "16-20": 1187000,
+        "21-34": 1114000,
+        "35-66": 1000000,
+        "67-101": 909000,
+        "102-150": 850000,
+        ">151": 792000
+      },
+      "hotel2": {
+        "2-3": 2546000,
+        "4-5": 1932000,
+        "6-10": 1886000,
+        "11-15": 1663000,
+        "16-20": 1562000,
+        "21-34": 1489000,
+        "35-66": 1375000,
+        "67-101": 1284000,
+        "102-150": 1225000,
+        ">151": 1167000
+      },
+      "hotel3": {
+        "2-3": 2788000,
+        "4-5": 2205000,
+        "6-10": 2159000,
+        "11-15": 1947000,
+        "16-20": 1835000,
+        "21-34": 1762000,
+        "35-66": 1643000,
+        "67-101": 1534000,
+        "102-150": 1464000,
+        ">151": 1400000
+      },
+      "hotel4": {
+        "2-3": 3236000,
+        "4-5": 2712000,
+        "6-10": 2666000,
+        "11-15": 2473000,
+        "16-20": 2342000,
+        "21-34": 2269000,
+        "35-66": 2143000,
+        "67-101": 1998000,
+        "102-150": 1909000,
+        ">151": 1833000
+      },
+      "hotel5": {
+        "2-3": 4357000,
+        "4-5": 3980000,
+        "6-10": 3933000,
+        "11-15": 3790000,
+        "16-20": 3609000,
+        "21-34": 3537000,
+        "35-66": 3391000,
+        "67-101": 3158000,
+        "102-150": 3020000,
+        ">151": 2915000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-nanggu-gili-trawangan",
+    "locale": "ar",
+    "title": "باقة لومبوك 4 أيام – مانداليكا وجيلي نانغو وجيلي تراوانغان",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "4 أيام و3 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة وفق المسار المحدد.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر المواقع حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - التوجه إلى سيكوتونغ وركوب قارب خاص.",
+      "اليوم 2 - الغطس والاسترخاء في جيلي نانغو.",
+      "اليوم 2 - تناول الغداء في جيلي سوداك وزيارة جيلي كيديس.",
+      "اليوم 2 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 3 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 3 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "اليوم 3 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 3 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ ومتجر هدايا لومبوك.",
+      "اليوم 3 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 4 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 4 - تسجيل الخروج من الفندق.",
+      "اليوم 4 - زيارة اختيارية إذا سمح الوقت.",
+      "اليوم 4 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان.",
+      "قارب خاص إلى جيلي نانغو.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2171000,
+        "4-5": 1557000,
+        "6-10": 1511000,
+        "11-15": 1288000,
+        "16-20": 1187000,
+        "21-34": 1114000,
+        "35-66": 1000000,
+        "67-101": 909000,
+        "102-150": 850000,
+        ">151": 792000
+      },
+      "hotel2": {
+        "2-3": 2546000,
+        "4-5": 1932000,
+        "6-10": 1886000,
+        "11-15": 1663000,
+        "16-20": 1562000,
+        "21-34": 1489000,
+        "35-66": 1375000,
+        "67-101": 1284000,
+        "102-150": 1225000,
+        ">151": 1167000
+      },
+      "hotel3": {
+        "2-3": 2788000,
+        "4-5": 2205000,
+        "6-10": 2159000,
+        "11-15": 1947000,
+        "16-20": 1835000,
+        "21-34": 1762000,
+        "35-66": 1643000,
+        "67-101": 1534000,
+        "102-150": 1464000,
+        ">151": 1400000
+      },
+      "hotel4": {
+        "2-3": 3236000,
+        "4-5": 2712000,
+        "6-10": 2666000,
+        "11-15": 2473000,
+        "16-20": 2342000,
+        "21-34": 2269000,
+        "35-66": 2143000,
+        "67-101": 1998000,
+        "102-150": 1909000,
+        ">151": 1833000
+      },
+      "hotel5": {
+        "2-3": 4357000,
+        "4-5": 3980000,
+        "6-10": 3933000,
+        "11-15": 3790000,
+        "16-20": 3609000,
+        "21-34": 3537000,
+        "35-66": 3391000,
+        "67-101": 3158000,
+        "102-150": 3020000,
+        ">151": 2915000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-nanggu-gili-trawangan",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 4 Hari 3 Malam – Mandalika, Gili Nanggu & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam untuk ketibaan pagi atau tengah hari, merangkumi Mandalika, Gili Nanggu, Gili Sudak, Gili Kedis, dan Gili Trawangan.",
+    "highlights": [
+      "Lawatan persendirian merangkumi Mandalika, Gili Nanggu & Gili Trawangan.",
+      "Pengangkutan, hotel, makanan dan tiket tarikan mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Perjalanan ke Sekotong dan menaiki bot persendirian.",
+      "Hari 2 - Snorkeling dan bersantai di Gili Nanggu.",
+      "Hari 2 - Makan tengah hari di Gili Sudak dan melawat Gili Kedis.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 3 - Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Hari 3 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 3 - Melawat pusat kraftangan mutiara dan cenderamata Lombok.",
+      "Hari 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 4 - Daftar keluar hotel.",
+      "Hari 4 - Lawatan pilihan jika masa mengizinkan.",
+      "Hari 4 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan.",
+      "Bot persendirian untuk Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2171000,
+        "4-5": 1557000,
+        "6-10": 1511000,
+        "11-15": 1288000,
+        "16-20": 1187000,
+        "21-34": 1114000,
+        "35-66": 1000000,
+        "67-101": 909000,
+        "102-150": 850000,
+        ">151": 792000
+      },
+      "hotel2": {
+        "2-3": 2546000,
+        "4-5": 1932000,
+        "6-10": 1886000,
+        "11-15": 1663000,
+        "16-20": 1562000,
+        "21-34": 1489000,
+        "35-66": 1375000,
+        "67-101": 1284000,
+        "102-150": 1225000,
+        ">151": 1167000
+      },
+      "hotel3": {
+        "2-3": 2788000,
+        "4-5": 2205000,
+        "6-10": 2159000,
+        "11-15": 1947000,
+        "16-20": 1835000,
+        "21-34": 1762000,
+        "35-66": 1643000,
+        "67-101": 1534000,
+        "102-150": 1464000,
+        ">151": 1400000
+      },
+      "hotel4": {
+        "2-3": 3236000,
+        "4-5": 2712000,
+        "6-10": 2666000,
+        "11-15": 2473000,
+        "16-20": 2342000,
+        "21-34": 2269000,
+        "35-66": 2143000,
+        "67-101": 1998000,
+        "102-150": 1909000,
+        ">151": 1833000
+      },
+      "hotel5": {
+        "2-3": 4357000,
+        "4-5": 3980000,
+        "6-10": 3933000,
+        "11-15": 3790000,
+        "16-20": 3609000,
+        "21-34": 3537000,
+        "35-66": 3391000,
+        "67-101": 3158000,
+        "102-150": 3020000,
+        ">151": 2915000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-nanggu-gili-trawangan",
+    "locale": "zh",
+    "title": "龙目岛4天3晚旅游套餐－曼达利卡、吉利南古与吉利特拉旺安",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "四天三晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "4天3晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "按指定路线安排私人包团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 前往塞科通并乘坐私人船。",
+      "第2天 - 在吉利南古浮潜和休闲。",
+      "第2天 - 在吉利苏达克享用午餐并游览吉利克迪斯。",
+      "第2天 - 享用晚餐并返回酒店。",
+      "第3天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第3天 - 乘私人快艇前往吉利特拉旺安。",
+      "第3天 - 享用午餐并探索吉利特拉旺安。",
+      "第3天 - 参观珍珠工艺中心和龙目岛纪念品店。",
+      "第3天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第4天 - 在酒店享用早餐并自由活动。",
+      "第4天 - 办理酒店退房。",
+      "第4天 - 时间允许时进行可选参观。",
+      "第4天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。",
+      "前往吉利南古的私人船只。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2171000,
+        "4-5": 1557000,
+        "6-10": 1511000,
+        "11-15": 1288000,
+        "16-20": 1187000,
+        "21-34": 1114000,
+        "35-66": 1000000,
+        "67-101": 909000,
+        "102-150": 850000,
+        ">151": 792000
+      },
+      "hotel2": {
+        "2-3": 2546000,
+        "4-5": 1932000,
+        "6-10": 1886000,
+        "11-15": 1663000,
+        "16-20": 1562000,
+        "21-34": 1489000,
+        "35-66": 1375000,
+        "67-101": 1284000,
+        "102-150": 1225000,
+        ">151": 1167000
+      },
+      "hotel3": {
+        "2-3": 2788000,
+        "4-5": 2205000,
+        "6-10": 2159000,
+        "11-15": 1947000,
+        "16-20": 1835000,
+        "21-34": 1762000,
+        "35-66": 1643000,
+        "67-101": 1534000,
+        "102-150": 1464000,
+        ">151": 1400000
+      },
+      "hotel4": {
+        "2-3": 3236000,
+        "4-5": 2712000,
+        "6-10": 2666000,
+        "11-15": 2473000,
+        "16-20": 2342000,
+        "21-34": 2269000,
+        "35-66": 2143000,
+        "67-101": 1998000,
+        "102-150": 1909000,
+        ">151": 1833000
+      },
+      "hotel5": {
+        "2-3": 4357000,
+        "4-5": 3980000,
+        "6-10": 3933000,
+        "11-15": 3790000,
+        "16-20": 3609000,
+        "21-34": 3537000,
+        "35-66": 3391000,
+        "67-101": 3158000,
+        "102-150": 3020000,
+        ">151": 2915000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan",
+    "locale": "id",
+    "title": "Paket Tour Lombok 4 Hari 3 Malam – Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika dan eksplorasi Gili Trawangan menggunakan private speedboat.",
+    "highlights": [
+      "Private tour dengan rute Mandalika & Gili Trawangan.",
+      "Transportasi, hotel, makan, dan tiket wisata sesuai paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "Hari 1 - Makan malam di restoran lokal.",
+      "Hari 1 - Check-in hotel dan istirahat.",
+      "Hari 2 - Mengunjungi Desa Tenun Sukarare dan Desa Adat Sade.",
+      "Hari 2 - Mengunjungi Pantai Kuta Mandalika dan kawasan Sirkuit Mandalika.",
+      "Hari 2 - Mengunjungi Pantai Tanjung Aan dan menikmati matahari terbenam di Bukit Merese.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 3 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 3 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 3 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 4 - Check-out hotel.",
+      "Hari 4 - Kunjungan opsional apabila waktu memungkinkan.",
+      "Hari 4 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1757000,
+        "4-5": 1262000,
+        "6-10": 1240000,
+        "11-15": 1020000,
+        "16-20": 953000,
+        "21-34": 878000,
+        "35-66": 797000,
+        "67-101": 725000,
+        "102-150": 672000,
+        ">151": 618000
+      },
+      "hotel2": {
+        "2-3": 2132000,
+        "4-5": 1637000,
+        "6-10": 1615000,
+        "11-15": 1395000,
+        "16-20": 1328000,
+        "21-34": 1253000,
+        "35-66": 1172000,
+        "67-101": 1100000,
+        "102-150": 1047000,
+        ">151": 993000
+      },
+      "hotel3": {
+        "2-3": 2374000,
+        "4-5": 1910000,
+        "6-10": 1888000,
+        "11-15": 1678000,
+        "16-20": 1601000,
+        "21-34": 1526000,
+        "35-66": 1441000,
+        "67-101": 1350000,
+        "102-150": 1286000,
+        ">151": 1226000
+      },
+      "hotel4": {
+        "2-3": 2822000,
+        "4-5": 2417000,
+        "6-10": 2395000,
+        "11-15": 2205000,
+        "16-20": 2108000,
+        "21-34": 2033000,
+        "35-66": 1940000,
+        "67-101": 1814000,
+        "102-150": 1731000,
+        ">151": 1659000
+      },
+      "hotel5": {
+        "2-3": 3943000,
+        "4-5": 3684000,
+        "6-10": 3662000,
+        "11-15": 3521000,
+        "16-20": 3375000,
+        "21-34": 3300000,
+        "35-66": 3188000,
+        "67-101": 2974000,
+        "102-150": 2842000,
+        ">151": 2741000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan",
+    "locale": "en",
+    "title": "4-Day Lombok Tour Package – Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "4 Days 3 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "4 Days 3 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 4-day, 3-night Lombok tour covering Mandalika dan eksplorasi Gili Trawangan menggunakan private speedboat.",
+    "highlights": [
+      "Private tour covering Mandalika & Gili Trawangan.",
+      "Transportation, hotel, meals, and attraction tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup and welcome at Lombok International Airport.",
+      "Day 1 - Dinner at a local restaurant.",
+      "Day 1 - Hotel check-in and rest.",
+      "Day 2 - Visit Sukarare Weaving Village and Sade Traditional Village.",
+      "Day 2 - Visit Kuta Mandalika Beach and the Mandalika Circuit area.",
+      "Day 2 - Visit Tanjung Aan Beach and enjoy sunset at Merese Hill.",
+      "Day 2 - Dinner and return to the hotel.",
+      "Day 3 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 3 - Travel to Gili Trawangan by private speedboat.",
+      "Day 3 - Lunch and explore Gili Trawangan.",
+      "Day 3 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 3 - Dinner in Senggigi and return to the hotel.",
+      "Day 4 - Breakfast and free time at the hotel.",
+      "Day 4 - Hotel check-out.",
+      "Day 4 - Optional visit if time permits.",
+      "Day 4 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1757000,
+        "4-5": 1262000,
+        "6-10": 1240000,
+        "11-15": 1020000,
+        "16-20": 953000,
+        "21-34": 878000,
+        "35-66": 797000,
+        "67-101": 725000,
+        "102-150": 672000,
+        ">151": 618000
+      },
+      "hotel2": {
+        "2-3": 2132000,
+        "4-5": 1637000,
+        "6-10": 1615000,
+        "11-15": 1395000,
+        "16-20": 1328000,
+        "21-34": 1253000,
+        "35-66": 1172000,
+        "67-101": 1100000,
+        "102-150": 1047000,
+        ">151": 993000
+      },
+      "hotel3": {
+        "2-3": 2374000,
+        "4-5": 1910000,
+        "6-10": 1888000,
+        "11-15": 1678000,
+        "16-20": 1601000,
+        "21-34": 1526000,
+        "35-66": 1441000,
+        "67-101": 1350000,
+        "102-150": 1286000,
+        ">151": 1226000
+      },
+      "hotel4": {
+        "2-3": 2822000,
+        "4-5": 2417000,
+        "6-10": 2395000,
+        "11-15": 2205000,
+        "16-20": 2108000,
+        "21-34": 2033000,
+        "35-66": 1940000,
+        "67-101": 1814000,
+        "102-150": 1731000,
+        ">151": 1659000
+      },
+      "hotel5": {
+        "2-3": 3943000,
+        "4-5": 3684000,
+        "6-10": 3662000,
+        "11-15": 3521000,
+        "16-20": 3375000,
+        "21-34": 3300000,
+        "35-66": 3188000,
+        "67-101": 2974000,
+        "102-150": 2842000,
+        ">151": 2741000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan",
+    "locale": "ar",
+    "title": "باقة لومبوك 4 أيام – مانداليكا وجيلي تراوانغان",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "4 أيام و3 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة وفق المسار المحدد.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر المواقع حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال والترحيب في مطار لومبوك الدولي.",
+      "اليوم 1 - تناول العشاء في مطعم محلي.",
+      "اليوم 1 - تسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة قرية سوكاراري للنسيج وقرية سادي التقليدية.",
+      "اليوم 2 - زيارة شاطئ كوتا مانداليكا ومنطقة حلبة مانداليكا.",
+      "اليوم 2 - زيارة شاطئ تانجونغ آن والاستمتاع بغروب الشمس في تل ميريسي.",
+      "اليوم 2 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 3 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 3 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "اليوم 3 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 3 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ ومتجر هدايا لومبوك.",
+      "اليوم 3 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 4 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 4 - تسجيل الخروج من الفندق.",
+      "اليوم 4 - زيارة اختيارية إذا سمح الوقت.",
+      "اليوم 4 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1757000,
+        "4-5": 1262000,
+        "6-10": 1240000,
+        "11-15": 1020000,
+        "16-20": 953000,
+        "21-34": 878000,
+        "35-66": 797000,
+        "67-101": 725000,
+        "102-150": 672000,
+        ">151": 618000
+      },
+      "hotel2": {
+        "2-3": 2132000,
+        "4-5": 1637000,
+        "6-10": 1615000,
+        "11-15": 1395000,
+        "16-20": 1328000,
+        "21-34": 1253000,
+        "35-66": 1172000,
+        "67-101": 1100000,
+        "102-150": 1047000,
+        ">151": 993000
+      },
+      "hotel3": {
+        "2-3": 2374000,
+        "4-5": 1910000,
+        "6-10": 1888000,
+        "11-15": 1678000,
+        "16-20": 1601000,
+        "21-34": 1526000,
+        "35-66": 1441000,
+        "67-101": 1350000,
+        "102-150": 1286000,
+        ">151": 1226000
+      },
+      "hotel4": {
+        "2-3": 2822000,
+        "4-5": 2417000,
+        "6-10": 2395000,
+        "11-15": 2205000,
+        "16-20": 2108000,
+        "21-34": 2033000,
+        "35-66": 1940000,
+        "67-101": 1814000,
+        "102-150": 1731000,
+        ">151": 1659000
+      },
+      "hotel5": {
+        "2-3": 3943000,
+        "4-5": 3684000,
+        "6-10": 3662000,
+        "11-15": 3521000,
+        "16-20": 3375000,
+        "21-34": 3300000,
+        "35-66": 3188000,
+        "67-101": 2974000,
+        "102-150": 2842000,
+        ">151": 2741000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 4 Hari 3 Malam – Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika dan eksplorasi Gili Trawangan menggunakan private speedboat.",
+    "highlights": [
+      "Lawatan persendirian merangkumi Mandalika & Gili Trawangan.",
+      "Pengangkutan, hotel, makanan dan tiket tarikan mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput dan disambut di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Makan malam di restoran tempatan.",
+      "Hari 1 - Daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Kampung Tenun Sukarare dan Kampung Tradisional Sade.",
+      "Hari 2 - Melawat Pantai Kuta Mandalika dan kawasan Litar Mandalika.",
+      "Hari 2 - Melawat Pantai Tanjung Aan dan menikmati matahari terbenam di Bukit Merese.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 3 - Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Hari 3 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 3 - Melawat pusat kraftangan mutiara dan cenderamata Lombok.",
+      "Hari 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 4 - Daftar keluar hotel.",
+      "Hari 4 - Lawatan pilihan jika masa mengizinkan.",
+      "Hari 4 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1757000,
+        "4-5": 1262000,
+        "6-10": 1240000,
+        "11-15": 1020000,
+        "16-20": 953000,
+        "21-34": 878000,
+        "35-66": 797000,
+        "67-101": 725000,
+        "102-150": 672000,
+        ">151": 618000
+      },
+      "hotel2": {
+        "2-3": 2132000,
+        "4-5": 1637000,
+        "6-10": 1615000,
+        "11-15": 1395000,
+        "16-20": 1328000,
+        "21-34": 1253000,
+        "35-66": 1172000,
+        "67-101": 1100000,
+        "102-150": 1047000,
+        ">151": 993000
+      },
+      "hotel3": {
+        "2-3": 2374000,
+        "4-5": 1910000,
+        "6-10": 1888000,
+        "11-15": 1678000,
+        "16-20": 1601000,
+        "21-34": 1526000,
+        "35-66": 1441000,
+        "67-101": 1350000,
+        "102-150": 1286000,
+        ">151": 1226000
+      },
+      "hotel4": {
+        "2-3": 2822000,
+        "4-5": 2417000,
+        "6-10": 2395000,
+        "11-15": 2205000,
+        "16-20": 2108000,
+        "21-34": 2033000,
+        "35-66": 1940000,
+        "67-101": 1814000,
+        "102-150": 1731000,
+        ">151": 1659000
+      },
+      "hotel5": {
+        "2-3": 3943000,
+        "4-5": 3684000,
+        "6-10": 3662000,
+        "11-15": 3521000,
+        "16-20": 3375000,
+        "21-34": 3300000,
+        "35-66": 3188000,
+        "67-101": 2974000,
+        "102-150": 2842000,
+        ">151": 2741000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan",
+    "locale": "zh",
+    "title": "龙目岛4天3晚旅游套餐－曼达利卡与吉利特拉旺安",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "四天三晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "4天3晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "按指定路线安排私人包团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机并欢迎抵达。",
+      "第1天 - 在当地餐厅享用晚餐。",
+      "第1天 - 办理酒店入住并休息。",
+      "第2天 - 游览苏卡拉拉织布村和萨德传统村落。",
+      "第2天 - 游览库塔曼达利卡海滩和曼达利卡赛道区域。",
+      "第2天 - 游览丹绒安海滩并在梅雷塞山欣赏日落。",
+      "第2天 - 享用晚餐并返回酒店。",
+      "第3天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第3天 - 乘私人快艇前往吉利特拉旺安。",
+      "第3天 - 享用午餐并探索吉利特拉旺安。",
+      "第3天 - 参观珍珠工艺中心和龙目岛纪念品店。",
+      "第3天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第4天 - 在酒店享用早餐并自由活动。",
+      "第4天 - 办理酒店退房。",
+      "第4天 - 时间允许时进行可选参观。",
+      "第4天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1757000,
+        "4-5": 1262000,
+        "6-10": 1240000,
+        "11-15": 1020000,
+        "16-20": 953000,
+        "21-34": 878000,
+        "35-66": 797000,
+        "67-101": 725000,
+        "102-150": 672000,
+        ">151": 618000
+      },
+      "hotel2": {
+        "2-3": 2132000,
+        "4-5": 1637000,
+        "6-10": 1615000,
+        "11-15": 1395000,
+        "16-20": 1328000,
+        "21-34": 1253000,
+        "35-66": 1172000,
+        "67-101": 1100000,
+        "102-150": 1047000,
+        ">151": 993000
+      },
+      "hotel3": {
+        "2-3": 2374000,
+        "4-5": 1910000,
+        "6-10": 1888000,
+        "11-15": 1678000,
+        "16-20": 1601000,
+        "21-34": 1526000,
+        "35-66": 1441000,
+        "67-101": 1350000,
+        "102-150": 1286000,
+        ">151": 1226000
+      },
+      "hotel4": {
+        "2-3": 2822000,
+        "4-5": 2417000,
+        "6-10": 2395000,
+        "11-15": 2205000,
+        "16-20": 2108000,
+        "21-34": 2033000,
+        "35-66": 1940000,
+        "67-101": 1814000,
+        "102-150": 1731000,
+        ">151": 1659000
+      },
+      "hotel5": {
+        "2-3": 3943000,
+        "4-5": 3684000,
+        "6-10": 3662000,
+        "11-15": 3521000,
+        "16-20": 3375000,
+        "21-34": 3300000,
+        "35-66": 3188000,
+        "67-101": 2974000,
+        "102-150": 2842000,
+        ">151": 2741000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan-air-terjun",
+    "locale": "id",
+    "title": "Paket Tour Lombok 4 Hari 3 Malam – Mandalika, Gili Trawangan & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika, eksplorasi Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Private tour dengan rute Mandalika, Gili Trawangan & Air Terjun.",
+      "Transportasi, hotel, makan, dan tiket wisata sesuai paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Desa Senaru.",
+      "Hari 3 - Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Hari 3 - Makan siang di restoran lokal.",
+      "Hari 3 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 4 - Check-out hotel.",
+      "Hari 4 - Kunjungan opsional apabila waktu memungkinkan.",
+      "Hari 4 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1953000,
+        "4-5": 1418000,
+        "6-10": 1407000,
+        "11-15": 1223000,
+        "16-20": 1166000,
+        "21-34": 1062000,
+        "35-66": 963000,
+        "67-101": 863000,
+        "102-150": 810000,
+        ">151": 750000
+      },
+      "hotel2": {
+        "2-3": 2328000,
+        "4-5": 1793000,
+        "6-10": 1782000,
+        "11-15": 1598000,
+        "16-20": 1541000,
+        "21-34": 1437000,
+        "35-66": 1338000,
+        "67-101": 1238000,
+        "102-150": 1185000,
+        ">151": 1125000
+      },
+      "hotel3": {
+        "2-3": 2569000,
+        "4-5": 2066000,
+        "6-10": 2055000,
+        "11-15": 1890000,
+        "16-20": 1814000,
+        "21-34": 1710000,
+        "35-66": 1607000,
+        "67-101": 1488000,
+        "102-150": 1424000,
+        ">151": 1358000
+      },
+      "hotel4": {
+        "2-3": 3018000,
+        "4-5": 2573000,
+        "6-10": 2562000,
+        "11-15": 2432000,
+        "16-20": 2321000,
+        "21-34": 2217000,
+        "35-66": 2106000,
+        "67-101": 1952000,
+        "102-150": 1869000,
+        ">151": 1791000
+      },
+      "hotel5": {
+        "2-3": 4139000,
+        "4-5": 3840000,
+        "6-10": 3829000,
+        "11-15": 3787000,
+        "16-20": 3588000,
+        "21-34": 3484000,
+        "35-66": 3354000,
+        "67-101": 3112000,
+        "102-150": 2980000,
+        ">151": 2873000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan-air-terjun",
+    "locale": "en",
+    "title": "4-Day Lombok Tour Package – Mandalika, Gili Trawangan & Waterfalls",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "4 Days 3 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "4 Days 3 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 4-day, 3-night Lombok tour covering Mandalika, eksplorasi Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Private tour covering Mandalika, Gili Trawangan & Air Terjun.",
+      "Transportation, hotel, meals, and attraction tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Travel to Gili Trawangan by private speedboat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Visit Senaru Village.",
+      "Day 3 - Trek to Sendang Gile and Tiu Kelep waterfalls.",
+      "Day 3 - Lunch at a local restaurant.",
+      "Day 3 - Stop at Pusuk Monkey Forest.",
+      "Day 3 - Dinner and return to the hotel.",
+      "Day 4 - Breakfast and free time at the hotel.",
+      "Day 4 - Hotel check-out.",
+      "Day 4 - Optional visit if time permits.",
+      "Day 4 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1953000,
+        "4-5": 1418000,
+        "6-10": 1407000,
+        "11-15": 1223000,
+        "16-20": 1166000,
+        "21-34": 1062000,
+        "35-66": 963000,
+        "67-101": 863000,
+        "102-150": 810000,
+        ">151": 750000
+      },
+      "hotel2": {
+        "2-3": 2328000,
+        "4-5": 1793000,
+        "6-10": 1782000,
+        "11-15": 1598000,
+        "16-20": 1541000,
+        "21-34": 1437000,
+        "35-66": 1338000,
+        "67-101": 1238000,
+        "102-150": 1185000,
+        ">151": 1125000
+      },
+      "hotel3": {
+        "2-3": 2569000,
+        "4-5": 2066000,
+        "6-10": 2055000,
+        "11-15": 1890000,
+        "16-20": 1814000,
+        "21-34": 1710000,
+        "35-66": 1607000,
+        "67-101": 1488000,
+        "102-150": 1424000,
+        ">151": 1358000
+      },
+      "hotel4": {
+        "2-3": 3018000,
+        "4-5": 2573000,
+        "6-10": 2562000,
+        "11-15": 2432000,
+        "16-20": 2321000,
+        "21-34": 2217000,
+        "35-66": 2106000,
+        "67-101": 1952000,
+        "102-150": 1869000,
+        ">151": 1791000
+      },
+      "hotel5": {
+        "2-3": 4139000,
+        "4-5": 3840000,
+        "6-10": 3829000,
+        "11-15": 3787000,
+        "16-20": 3588000,
+        "21-34": 3484000,
+        "35-66": 3354000,
+        "67-101": 3112000,
+        "102-150": 2980000,
+        ">151": 2873000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan-air-terjun",
+    "locale": "ar",
+    "title": "باقة لومبوك 4 أيام – مانداليكا وجيلي تراوانغان والشلالات",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "4 أيام و3 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة وفق المسار المحدد.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر المواقع حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ ومتجر هدايا لومبوك.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - زيارة قرية سينارو.",
+      "اليوم 3 - المشي إلى شلالي سيندانغ غيلي وتيو كيليب.",
+      "اليوم 3 - تناول الغداء في مطعم محلي.",
+      "اليوم 3 - التوقف عند غابة بوسوك للقرود.",
+      "اليوم 3 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 4 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 4 - تسجيل الخروج من الفندق.",
+      "اليوم 4 - زيارة اختيارية إذا سمح الوقت.",
+      "اليوم 4 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1953000,
+        "4-5": 1418000,
+        "6-10": 1407000,
+        "11-15": 1223000,
+        "16-20": 1166000,
+        "21-34": 1062000,
+        "35-66": 963000,
+        "67-101": 863000,
+        "102-150": 810000,
+        ">151": 750000
+      },
+      "hotel2": {
+        "2-3": 2328000,
+        "4-5": 1793000,
+        "6-10": 1782000,
+        "11-15": 1598000,
+        "16-20": 1541000,
+        "21-34": 1437000,
+        "35-66": 1338000,
+        "67-101": 1238000,
+        "102-150": 1185000,
+        ">151": 1125000
+      },
+      "hotel3": {
+        "2-3": 2569000,
+        "4-5": 2066000,
+        "6-10": 2055000,
+        "11-15": 1890000,
+        "16-20": 1814000,
+        "21-34": 1710000,
+        "35-66": 1607000,
+        "67-101": 1488000,
+        "102-150": 1424000,
+        ">151": 1358000
+      },
+      "hotel4": {
+        "2-3": 3018000,
+        "4-5": 2573000,
+        "6-10": 2562000,
+        "11-15": 2432000,
+        "16-20": 2321000,
+        "21-34": 2217000,
+        "35-66": 2106000,
+        "67-101": 1952000,
+        "102-150": 1869000,
+        ">151": 1791000
+      },
+      "hotel5": {
+        "2-3": 4139000,
+        "4-5": 3840000,
+        "6-10": 3829000,
+        "11-15": 3787000,
+        "16-20": 3588000,
+        "21-34": 3484000,
+        "35-66": 3354000,
+        "67-101": 3112000,
+        "102-150": 2980000,
+        ">151": 2873000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan-air-terjun",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 4 Hari 3 Malam – Mandalika, Gili Trawangan & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika, eksplorasi Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Lawatan persendirian merangkumi Mandalika, Gili Trawangan & Air Terjun.",
+      "Pengangkutan, hotel, makanan dan tiket tarikan mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Melawat pusat kraftangan mutiara dan cenderamata Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Melawat Kampung Senaru.",
+      "Hari 3 - Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Hari 3 - Makan tengah hari di restoran tempatan.",
+      "Hari 3 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 4 - Daftar keluar hotel.",
+      "Hari 4 - Lawatan pilihan jika masa mengizinkan.",
+      "Hari 4 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1953000,
+        "4-5": 1418000,
+        "6-10": 1407000,
+        "11-15": 1223000,
+        "16-20": 1166000,
+        "21-34": 1062000,
+        "35-66": 963000,
+        "67-101": 863000,
+        "102-150": 810000,
+        ">151": 750000
+      },
+      "hotel2": {
+        "2-3": 2328000,
+        "4-5": 1793000,
+        "6-10": 1782000,
+        "11-15": 1598000,
+        "16-20": 1541000,
+        "21-34": 1437000,
+        "35-66": 1338000,
+        "67-101": 1238000,
+        "102-150": 1185000,
+        ">151": 1125000
+      },
+      "hotel3": {
+        "2-3": 2569000,
+        "4-5": 2066000,
+        "6-10": 2055000,
+        "11-15": 1890000,
+        "16-20": 1814000,
+        "21-34": 1710000,
+        "35-66": 1607000,
+        "67-101": 1488000,
+        "102-150": 1424000,
+        ">151": 1358000
+      },
+      "hotel4": {
+        "2-3": 3018000,
+        "4-5": 2573000,
+        "6-10": 2562000,
+        "11-15": 2432000,
+        "16-20": 2321000,
+        "21-34": 2217000,
+        "35-66": 2106000,
+        "67-101": 1952000,
+        "102-150": 1869000,
+        ">151": 1791000
+      },
+      "hotel5": {
+        "2-3": 4139000,
+        "4-5": 3840000,
+        "6-10": 3829000,
+        "11-15": 3787000,
+        "16-20": 3588000,
+        "21-34": 3484000,
+        "35-66": 3354000,
+        "67-101": 3112000,
+        "102-150": 2980000,
+        ">151": 2873000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan-air-terjun",
+    "locale": "zh",
+    "title": "龙目岛4天3晚旅游套餐－曼达利卡、吉利特拉旺安与瀑布",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "四天三晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "4天3晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "按指定路线安排私人包团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人快艇前往吉利特拉旺安。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 参观珍珠工艺中心和龙目岛纪念品店。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 游览塞纳鲁村。",
+      "第3天 - 徒步前往仙达吉拉瀑布和蒂乌克勒普瀑布。",
+      "第3天 - 在当地餐厅享用午餐。",
+      "第3天 - 在普苏克猴林停留。",
+      "第3天 - 享用晚餐并返回酒店。",
+      "第4天 - 在酒店享用早餐并自由活动。",
+      "第4天 - 办理酒店退房。",
+      "第4天 - 时间允许时进行可选参观。",
+      "第4天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1953000,
+        "4-5": 1418000,
+        "6-10": 1407000,
+        "11-15": 1223000,
+        "16-20": 1166000,
+        "21-34": 1062000,
+        "35-66": 963000,
+        "67-101": 863000,
+        "102-150": 810000,
+        ">151": 750000
+      },
+      "hotel2": {
+        "2-3": 2328000,
+        "4-5": 1793000,
+        "6-10": 1782000,
+        "11-15": 1598000,
+        "16-20": 1541000,
+        "21-34": 1437000,
+        "35-66": 1338000,
+        "67-101": 1238000,
+        "102-150": 1185000,
+        ">151": 1125000
+      },
+      "hotel3": {
+        "2-3": 2569000,
+        "4-5": 2066000,
+        "6-10": 2055000,
+        "11-15": 1890000,
+        "16-20": 1814000,
+        "21-34": 1710000,
+        "35-66": 1607000,
+        "67-101": 1488000,
+        "102-150": 1424000,
+        ">151": 1358000
+      },
+      "hotel4": {
+        "2-3": 3018000,
+        "4-5": 2573000,
+        "6-10": 2562000,
+        "11-15": 2432000,
+        "16-20": 2321000,
+        "21-34": 2217000,
+        "35-66": 2106000,
+        "67-101": 1952000,
+        "102-150": 1869000,
+        ">151": 1791000
+      },
+      "hotel5": {
+        "2-3": 4139000,
+        "4-5": 3840000,
+        "6-10": 3829000,
+        "11-15": 3787000,
+        "16-20": 3588000,
+        "21-34": 3484000,
+        "35-66": 3354000,
+        "67-101": 3112000,
+        "102-150": 2980000,
+        ">151": 2873000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan-air-terjun-city-tour",
+    "locale": "id",
+    "title": "Paket Tour Lombok 4 Hari 3 Malam – Mandalika, Gili Trawangan, Air Terjun & City Tour",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika, eksplorasi Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
+    "highlights": [
+      "Private tour dengan rute Mandalika, Gili Trawangan, Air Terjun & City Tour.",
+      "Transportasi, hotel, makan, dan tiket wisata sesuai paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Desa Senaru.",
+      "Hari 3 - Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Hari 3 - Makan siang di restoran lokal.",
+      "Hari 3 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan check-out hotel.",
+      "Hari 4 - Mengunjungi Islamic Center Lombok dan Pura Lingsar.",
+      "Hari 4 - Makan siang dan mengunjungi Desa Banyumulek.",
+      "Hari 4 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2148000,
+        "4-5": 1512000,
+        "6-10": 1460000,
+        "11-15": 1342000,
+        "16-20": 1307000,
+        "21-34": 1249000,
+        "35-66": 1135000,
+        "67-101": 1024000,
+        "102-150": 963000,
+        ">151": 897000
+      },
+      "hotel2": {
+        "2-3": 2523000,
+        "4-5": 1887000,
+        "6-10": 1835000,
+        "11-15": 1717000,
+        "16-20": 1682000,
+        "21-34": 1624000,
+        "35-66": 1510000,
+        "67-101": 1399000,
+        "102-150": 1338000,
+        ">151": 1272000
+      },
+      "hotel3": {
+        "2-3": 2765000,
+        "4-5": 2148000,
+        "6-10": 2087000,
+        "11-15": 1996000,
+        "16-20": 1947000,
+        "21-34": 1897000,
+        "35-66": 1779000,
+        "67-101": 1648000,
+        "102-150": 1578000,
+        ">151": 1506000
+      },
+      "hotel4": {
+        "2-3": 3213000,
+        "4-5": 2400000,
+        "6-10": 2555000,
+        "11-15": 2515000,
+        "16-20": 2438000,
+        "21-34": 2404000,
+        "35-66": 2278000,
+        "67-101": 2113000,
+        "102-150": 2022000,
+        ">151": 1938000
+      },
+      "hotel5": {
+        "2-3": 4334000,
+        "4-5": 3840000,
+        "6-10": 3756000,
+        "11-15": 3724000,
+        "16-20": 3608000,
+        "21-34": 3528000,
+        "35-66": 3442000,
+        "67-101": 3273000,
+        "102-150": 3134000,
+        ">151": 3021000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan-air-terjun-city-tour",
+    "locale": "en",
+    "title": "4-Day Lombok Tour Package – Mandalika, Gili Trawangan, Waterfalls & City Tour",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "4 Days 3 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "4 Days 3 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 4-day, 3-night Lombok tour covering Mandalika, eksplorasi Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
+    "highlights": [
+      "Private tour covering Mandalika, Gili Trawangan, Air Terjun & City Tour.",
+      "Transportation, hotel, meals, and attraction tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Travel to Gili Trawangan by private speedboat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Visit Senaru Village.",
+      "Day 3 - Trek to Sendang Gile and Tiu Kelep waterfalls.",
+      "Day 3 - Lunch at a local restaurant.",
+      "Day 3 - Stop at Pusuk Monkey Forest.",
+      "Day 3 - Dinner and return to the hotel.",
+      "Day 4 - Breakfast and hotel check-out.",
+      "Day 4 - Visit the Lombok Islamic Center and Lingsar Temple.",
+      "Day 4 - Lunch and visit Banyumulek Village.",
+      "Day 4 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2148000,
+        "4-5": 1512000,
+        "6-10": 1460000,
+        "11-15": 1342000,
+        "16-20": 1307000,
+        "21-34": 1249000,
+        "35-66": 1135000,
+        "67-101": 1024000,
+        "102-150": 963000,
+        ">151": 897000
+      },
+      "hotel2": {
+        "2-3": 2523000,
+        "4-5": 1887000,
+        "6-10": 1835000,
+        "11-15": 1717000,
+        "16-20": 1682000,
+        "21-34": 1624000,
+        "35-66": 1510000,
+        "67-101": 1399000,
+        "102-150": 1338000,
+        ">151": 1272000
+      },
+      "hotel3": {
+        "2-3": 2765000,
+        "4-5": 2148000,
+        "6-10": 2087000,
+        "11-15": 1996000,
+        "16-20": 1947000,
+        "21-34": 1897000,
+        "35-66": 1779000,
+        "67-101": 1648000,
+        "102-150": 1578000,
+        ">151": 1506000
+      },
+      "hotel4": {
+        "2-3": 3213000,
+        "4-5": 2400000,
+        "6-10": 2555000,
+        "11-15": 2515000,
+        "16-20": 2438000,
+        "21-34": 2404000,
+        "35-66": 2278000,
+        "67-101": 2113000,
+        "102-150": 2022000,
+        ">151": 1938000
+      },
+      "hotel5": {
+        "2-3": 4334000,
+        "4-5": 3840000,
+        "6-10": 3756000,
+        "11-15": 3724000,
+        "16-20": 3608000,
+        "21-34": 3528000,
+        "35-66": 3442000,
+        "67-101": 3273000,
+        "102-150": 3134000,
+        ">151": 3021000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan-air-terjun-city-tour",
+    "locale": "ar",
+    "title": "باقة لومبوك 4 أيام – مانداليكا وجيلي تراوانغان والشلالات وجولة المدينة",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "4 أيام و3 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة وفق المسار المحدد.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر المواقع حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ ومتجر هدايا لومبوك.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - زيارة قرية سينارو.",
+      "اليوم 3 - المشي إلى شلالي سيندانغ غيلي وتيو كيليب.",
+      "اليوم 3 - تناول الغداء في مطعم محلي.",
+      "اليوم 3 - التوقف عند غابة بوسوك للقرود.",
+      "اليوم 3 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 4 - تناول الإفطار وتسجيل الخروج من الفندق.",
+      "اليوم 4 - زيارة المركز الإسلامي في لومبوك ومعبد لينغسار.",
+      "اليوم 4 - تناول الغداء وزيارة قرية بانيوموليك.",
+      "اليوم 4 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2148000,
+        "4-5": 1512000,
+        "6-10": 1460000,
+        "11-15": 1342000,
+        "16-20": 1307000,
+        "21-34": 1249000,
+        "35-66": 1135000,
+        "67-101": 1024000,
+        "102-150": 963000,
+        ">151": 897000
+      },
+      "hotel2": {
+        "2-3": 2523000,
+        "4-5": 1887000,
+        "6-10": 1835000,
+        "11-15": 1717000,
+        "16-20": 1682000,
+        "21-34": 1624000,
+        "35-66": 1510000,
+        "67-101": 1399000,
+        "102-150": 1338000,
+        ">151": 1272000
+      },
+      "hotel3": {
+        "2-3": 2765000,
+        "4-5": 2148000,
+        "6-10": 2087000,
+        "11-15": 1996000,
+        "16-20": 1947000,
+        "21-34": 1897000,
+        "35-66": 1779000,
+        "67-101": 1648000,
+        "102-150": 1578000,
+        ">151": 1506000
+      },
+      "hotel4": {
+        "2-3": 3213000,
+        "4-5": 2400000,
+        "6-10": 2555000,
+        "11-15": 2515000,
+        "16-20": 2438000,
+        "21-34": 2404000,
+        "35-66": 2278000,
+        "67-101": 2113000,
+        "102-150": 2022000,
+        ">151": 1938000
+      },
+      "hotel5": {
+        "2-3": 4334000,
+        "4-5": 3840000,
+        "6-10": 3756000,
+        "11-15": 3724000,
+        "16-20": 3608000,
+        "21-34": 3528000,
+        "35-66": 3442000,
+        "67-101": 3273000,
+        "102-150": 3134000,
+        ">151": 3021000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan-air-terjun-city-tour",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 4 Hari 3 Malam – Mandalika, Gili Trawangan, Air Terjun & City Tour",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika, eksplorasi Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
+    "highlights": [
+      "Lawatan persendirian merangkumi Mandalika, Gili Trawangan, Air Terjun & City Tour.",
+      "Pengangkutan, hotel, makanan dan tiket tarikan mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Melawat pusat kraftangan mutiara dan cenderamata Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Melawat Kampung Senaru.",
+      "Hari 3 - Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Hari 3 - Makan tengah hari di restoran tempatan.",
+      "Hari 3 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan daftar keluar hotel.",
+      "Hari 4 - Melawat Islamic Center Lombok dan Pura Lingsar.",
+      "Hari 4 - Makan tengah hari dan melawat Kampung Banyumulek.",
+      "Hari 4 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2148000,
+        "4-5": 1512000,
+        "6-10": 1460000,
+        "11-15": 1342000,
+        "16-20": 1307000,
+        "21-34": 1249000,
+        "35-66": 1135000,
+        "67-101": 1024000,
+        "102-150": 963000,
+        ">151": 897000
+      },
+      "hotel2": {
+        "2-3": 2523000,
+        "4-5": 1887000,
+        "6-10": 1835000,
+        "11-15": 1717000,
+        "16-20": 1682000,
+        "21-34": 1624000,
+        "35-66": 1510000,
+        "67-101": 1399000,
+        "102-150": 1338000,
+        ">151": 1272000
+      },
+      "hotel3": {
+        "2-3": 2765000,
+        "4-5": 2148000,
+        "6-10": 2087000,
+        "11-15": 1996000,
+        "16-20": 1947000,
+        "21-34": 1897000,
+        "35-66": 1779000,
+        "67-101": 1648000,
+        "102-150": 1578000,
+        ">151": 1506000
+      },
+      "hotel4": {
+        "2-3": 3213000,
+        "4-5": 2400000,
+        "6-10": 2555000,
+        "11-15": 2515000,
+        "16-20": 2438000,
+        "21-34": 2404000,
+        "35-66": 2278000,
+        "67-101": 2113000,
+        "102-150": 2022000,
+        ">151": 1938000
+      },
+      "hotel5": {
+        "2-3": 4334000,
+        "4-5": 3840000,
+        "6-10": 3756000,
+        "11-15": 3724000,
+        "16-20": 3608000,
+        "21-34": 3528000,
+        "35-66": 3442000,
+        "67-101": 3273000,
+        "102-150": 3134000,
+        ">151": 3021000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-gili-trawangan-air-terjun-city-tour",
+    "locale": "zh",
+    "title": "龙目岛4天3晚旅游套餐－曼达利卡、吉利特拉旺安、瀑布与城市游",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "四天三晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "4天3晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "按指定路线安排私人包团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人快艇前往吉利特拉旺安。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 参观珍珠工艺中心和龙目岛纪念品店。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 游览塞纳鲁村。",
+      "第3天 - 徒步前往仙达吉拉瀑布和蒂乌克勒普瀑布。",
+      "第3天 - 在当地餐厅享用午餐。",
+      "第3天 - 在普苏克猴林停留。",
+      "第3天 - 享用晚餐并返回酒店。",
+      "第4天 - 享用早餐并办理酒店退房。",
+      "第4天 - 参观龙目岛伊斯兰中心和林萨寺。",
+      "第4天 - 享用午餐并游览班尤穆勒克村。",
+      "第4天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2148000,
+        "4-5": 1512000,
+        "6-10": 1460000,
+        "11-15": 1342000,
+        "16-20": 1307000,
+        "21-34": 1249000,
+        "35-66": 1135000,
+        "67-101": 1024000,
+        "102-150": 963000,
+        ">151": 897000
+      },
+      "hotel2": {
+        "2-3": 2523000,
+        "4-5": 1887000,
+        "6-10": 1835000,
+        "11-15": 1717000,
+        "16-20": 1682000,
+        "21-34": 1624000,
+        "35-66": 1510000,
+        "67-101": 1399000,
+        "102-150": 1338000,
+        ">151": 1272000
+      },
+      "hotel3": {
+        "2-3": 2765000,
+        "4-5": 2148000,
+        "6-10": 2087000,
+        "11-15": 1996000,
+        "16-20": 1947000,
+        "21-34": 1897000,
+        "35-66": 1779000,
+        "67-101": 1648000,
+        "102-150": 1578000,
+        ">151": 1506000
+      },
+      "hotel4": {
+        "2-3": 3213000,
+        "4-5": 2400000,
+        "6-10": 2555000,
+        "11-15": 2515000,
+        "16-20": 2438000,
+        "21-34": 2404000,
+        "35-66": 2278000,
+        "67-101": 2113000,
+        "102-150": 2022000,
+        ">151": 1938000
+      },
+      "hotel5": {
+        "2-3": 4334000,
+        "4-5": 3840000,
+        "6-10": 3756000,
+        "11-15": 3724000,
+        "16-20": 3608000,
+        "21-34": 3528000,
+        "35-66": 3442000,
+        "67-101": 3273000,
+        "102-150": 3134000,
+        ">151": 3021000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-pink-beach-gili-trawangan",
+    "locale": "id",
+    "title": "Paket Tour Lombok 4 Hari 3 Malam – Mandalika, Pink Beach & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 4 hari 3 malam untuk kedatangan pagi atau siang, mencakup Mandalika, Pink Beach, Gili Petelu, dan Gili Trawangan.",
+    "highlights": [
+      "Private tour dengan rute Mandalika, Pink Beach & Gili Trawangan.",
+      "Transportasi, hotel, makan, dan tiket wisata sesuai paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Gili Pasir dan Pink Beach 1.",
+      "Hari 2 - Makan siang di Pink Beach.",
+      "Hari 2 - Snorkeling di Gili Petelu.",
+      "Hari 2 - Mengunjungi Pink Beach 2 dan Pink Beach 3.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 3 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 3 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 3 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 4 - Check-out hotel.",
+      "Hari 4 - Kunjungan opsional apabila waktu memungkinkan.",
+      "Hari 4 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan.",
+      "Private boat untuk Pink Beach Tour.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2171000,
+        "4-5": 1557000,
+        "6-10": 1511000,
+        "11-15": 1288000,
+        "16-20": 1187000,
+        "21-34": 1114000,
+        "35-66": 1000000,
+        "67-101": 909000,
+        "102-150": 850000,
+        ">151": 792000
+      },
+      "hotel2": {
+        "2-3": 2546000,
+        "4-5": 1932000,
+        "6-10": 1886000,
+        "11-15": 1663000,
+        "16-20": 1562000,
+        "21-34": 1489000,
+        "35-66": 1375000,
+        "67-101": 1284000,
+        "102-150": 1225000,
+        ">151": 1167000
+      },
+      "hotel3": {
+        "2-3": 2788000,
+        "4-5": 2205000,
+        "6-10": 2159000,
+        "11-15": 1947000,
+        "16-20": 1835000,
+        "21-34": 1762000,
+        "35-66": 1643000,
+        "67-101": 1534000,
+        "102-150": 1464000,
+        ">151": 1400000
+      },
+      "hotel4": {
+        "2-3": 3236000,
+        "4-5": 2712000,
+        "6-10": 2666000,
+        "11-15": 2473000,
+        "16-20": 2342000,
+        "21-34": 2269000,
+        "35-66": 2143000,
+        "67-101": 1998000,
+        "102-150": 1909000,
+        ">151": 1833000
+      },
+      "hotel5": {
+        "2-3": 4357000,
+        "4-5": 3980000,
+        "6-10": 3933000,
+        "11-15": 3790000,
+        "16-20": 3609000,
+        "21-34": 3537000,
+        "35-66": 3391000,
+        "67-101": 3158000,
+        "102-150": 3020000,
+        ">151": 2915000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-pink-beach-gili-trawangan",
+    "locale": "en",
+    "title": "4-Day Lombok Tour Package – Mandalika, Pink Beach & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "4 Days 3 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "4 Days 3 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 4-day, 3-night Lombok tour for a morning or midday arrival, covering Mandalika, Pink Beach, Gili Petelu, dan Gili Trawangan.",
+    "highlights": [
+      "Private tour covering Mandalika, Pink Beach & Gili Trawangan.",
+      "Transportation, hotel, meals, and attraction tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Gili Pasir and Pink Beach 1.",
+      "Day 2 - Lunch at Pink Beach.",
+      "Day 2 - Snorkel at Gili Petelu.",
+      "Day 2 - Visit Pink Beach 2 and Pink Beach 3.",
+      "Day 2 - Dinner and return to the hotel.",
+      "Day 3 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 3 - Travel to Gili Trawangan by private speedboat.",
+      "Day 3 - Lunch and explore Gili Trawangan.",
+      "Day 3 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 3 - Dinner in Senggigi and return to the hotel.",
+      "Day 4 - Breakfast and free time at the hotel.",
+      "Day 4 - Hotel check-out.",
+      "Day 4 - Optional visit if time permits.",
+      "Day 4 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan.",
+      "Private boat for the Pink Beach tour.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2171000,
+        "4-5": 1557000,
+        "6-10": 1511000,
+        "11-15": 1288000,
+        "16-20": 1187000,
+        "21-34": 1114000,
+        "35-66": 1000000,
+        "67-101": 909000,
+        "102-150": 850000,
+        ">151": 792000
+      },
+      "hotel2": {
+        "2-3": 2546000,
+        "4-5": 1932000,
+        "6-10": 1886000,
+        "11-15": 1663000,
+        "16-20": 1562000,
+        "21-34": 1489000,
+        "35-66": 1375000,
+        "67-101": 1284000,
+        "102-150": 1225000,
+        ">151": 1167000
+      },
+      "hotel3": {
+        "2-3": 2788000,
+        "4-5": 2205000,
+        "6-10": 2159000,
+        "11-15": 1947000,
+        "16-20": 1835000,
+        "21-34": 1762000,
+        "35-66": 1643000,
+        "67-101": 1534000,
+        "102-150": 1464000,
+        ">151": 1400000
+      },
+      "hotel4": {
+        "2-3": 3236000,
+        "4-5": 2712000,
+        "6-10": 2666000,
+        "11-15": 2473000,
+        "16-20": 2342000,
+        "21-34": 2269000,
+        "35-66": 2143000,
+        "67-101": 1998000,
+        "102-150": 1909000,
+        ">151": 1833000
+      },
+      "hotel5": {
+        "2-3": 4357000,
+        "4-5": 3980000,
+        "6-10": 3933000,
+        "11-15": 3790000,
+        "16-20": 3609000,
+        "21-34": 3537000,
+        "35-66": 3391000,
+        "67-101": 3158000,
+        "102-150": 3020000,
+        ">151": 2915000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-pink-beach-gili-trawangan",
+    "locale": "ar",
+    "title": "باقة لومبوك 4 أيام – مانداليكا وشاطئ بينك وجيلي تراوانغان",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "4 أيام و3 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة وفق المسار المحدد.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر المواقع حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة جيلي باسير وشاطئ بينك 1.",
+      "اليوم 2 - تناول الغداء في شاطئ بينك.",
+      "اليوم 2 - الغطس في جيلي بيتيلو.",
+      "اليوم 2 - زيارة شاطئ بينك 2 وشاطئ بينك 3.",
+      "اليوم 2 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 3 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 3 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "اليوم 3 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 3 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ ومتجر هدايا لومبوك.",
+      "اليوم 3 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 4 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 4 - تسجيل الخروج من الفندق.",
+      "اليوم 4 - زيارة اختيارية إذا سمح الوقت.",
+      "اليوم 4 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان.",
+      "قارب خاص لجولة شاطئ بينك.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2171000,
+        "4-5": 1557000,
+        "6-10": 1511000,
+        "11-15": 1288000,
+        "16-20": 1187000,
+        "21-34": 1114000,
+        "35-66": 1000000,
+        "67-101": 909000,
+        "102-150": 850000,
+        ">151": 792000
+      },
+      "hotel2": {
+        "2-3": 2546000,
+        "4-5": 1932000,
+        "6-10": 1886000,
+        "11-15": 1663000,
+        "16-20": 1562000,
+        "21-34": 1489000,
+        "35-66": 1375000,
+        "67-101": 1284000,
+        "102-150": 1225000,
+        ">151": 1167000
+      },
+      "hotel3": {
+        "2-3": 2788000,
+        "4-5": 2205000,
+        "6-10": 2159000,
+        "11-15": 1947000,
+        "16-20": 1835000,
+        "21-34": 1762000,
+        "35-66": 1643000,
+        "67-101": 1534000,
+        "102-150": 1464000,
+        ">151": 1400000
+      },
+      "hotel4": {
+        "2-3": 3236000,
+        "4-5": 2712000,
+        "6-10": 2666000,
+        "11-15": 2473000,
+        "16-20": 2342000,
+        "21-34": 2269000,
+        "35-66": 2143000,
+        "67-101": 1998000,
+        "102-150": 1909000,
+        ">151": 1833000
+      },
+      "hotel5": {
+        "2-3": 4357000,
+        "4-5": 3980000,
+        "6-10": 3933000,
+        "11-15": 3790000,
+        "16-20": 3609000,
+        "21-34": 3537000,
+        "35-66": 3391000,
+        "67-101": 3158000,
+        "102-150": 3020000,
+        ">151": 2915000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-pink-beach-gili-trawangan",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 4 Hari 3 Malam – Mandalika, Pantai Pink & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam untuk ketibaan pagi atau tengah hari, merangkumi Mandalika, Pink Beach, Gili Petelu, dan Gili Trawangan.",
+    "highlights": [
+      "Lawatan persendirian merangkumi Mandalika, Pink Beach & Gili Trawangan.",
+      "Pengangkutan, hotel, makanan dan tiket tarikan mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Gili Pasir dan Pantai Pink 1.",
+      "Hari 2 - Makan tengah hari di Pantai Pink.",
+      "Hari 2 - Snorkeling di Gili Petelu.",
+      "Hari 2 - Melawat Pantai Pink 2 dan Pantai Pink 3.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 3 - Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Hari 3 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 3 - Melawat pusat kraftangan mutiara dan cenderamata Lombok.",
+      "Hari 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 4 - Daftar keluar hotel.",
+      "Hari 4 - Lawatan pilihan jika masa mengizinkan.",
+      "Hari 4 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan.",
+      "Bot persendirian untuk lawatan Pantai Pink.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2171000,
+        "4-5": 1557000,
+        "6-10": 1511000,
+        "11-15": 1288000,
+        "16-20": 1187000,
+        "21-34": 1114000,
+        "35-66": 1000000,
+        "67-101": 909000,
+        "102-150": 850000,
+        ">151": 792000
+      },
+      "hotel2": {
+        "2-3": 2546000,
+        "4-5": 1932000,
+        "6-10": 1886000,
+        "11-15": 1663000,
+        "16-20": 1562000,
+        "21-34": 1489000,
+        "35-66": 1375000,
+        "67-101": 1284000,
+        "102-150": 1225000,
+        ">151": 1167000
+      },
+      "hotel3": {
+        "2-3": 2788000,
+        "4-5": 2205000,
+        "6-10": 2159000,
+        "11-15": 1947000,
+        "16-20": 1835000,
+        "21-34": 1762000,
+        "35-66": 1643000,
+        "67-101": 1534000,
+        "102-150": 1464000,
+        ">151": 1400000
+      },
+      "hotel4": {
+        "2-3": 3236000,
+        "4-5": 2712000,
+        "6-10": 2666000,
+        "11-15": 2473000,
+        "16-20": 2342000,
+        "21-34": 2269000,
+        "35-66": 2143000,
+        "67-101": 1998000,
+        "102-150": 1909000,
+        ">151": 1833000
+      },
+      "hotel5": {
+        "2-3": 4357000,
+        "4-5": 3980000,
+        "6-10": 3933000,
+        "11-15": 3790000,
+        "16-20": 3609000,
+        "21-34": 3537000,
+        "35-66": 3391000,
+        "67-101": 3158000,
+        "102-150": 3020000,
+        ">151": 2915000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-pink-beach-gili-trawangan",
+    "locale": "zh",
+    "title": "龙目岛4天3晚旅游套餐－曼达利卡、粉红海滩与吉利特拉旺安",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "四天三晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "4天3晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "按指定路线安排私人包团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览吉利帕希尔和粉红海滩1。",
+      "第2天 - 在粉红海滩享用午餐。",
+      "第2天 - 在吉利佩特鲁浮潜。",
+      "第2天 - 游览粉红海滩2和粉红海滩3。",
+      "第2天 - 享用晚餐并返回酒店。",
+      "第3天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第3天 - 乘私人快艇前往吉利特拉旺安。",
+      "第3天 - 享用午餐并探索吉利特拉旺安。",
+      "第3天 - 参观珍珠工艺中心和龙目岛纪念品店。",
+      "第3天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第4天 - 在酒店享用早餐并自由活动。",
+      "第4天 - 办理酒店退房。",
+      "第4天 - 时间允许时进行可选参观。",
+      "第4天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。",
+      "粉红海滩行程私人船只。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2171000,
+        "4-5": 1557000,
+        "6-10": 1511000,
+        "11-15": 1288000,
+        "16-20": 1187000,
+        "21-34": 1114000,
+        "35-66": 1000000,
+        "67-101": 909000,
+        "102-150": 850000,
+        ">151": 792000
+      },
+      "hotel2": {
+        "2-3": 2546000,
+        "4-5": 1932000,
+        "6-10": 1886000,
+        "11-15": 1663000,
+        "16-20": 1562000,
+        "21-34": 1489000,
+        "35-66": 1375000,
+        "67-101": 1284000,
+        "102-150": 1225000,
+        ">151": 1167000
+      },
+      "hotel3": {
+        "2-3": 2788000,
+        "4-5": 2205000,
+        "6-10": 2159000,
+        "11-15": 1947000,
+        "16-20": 1835000,
+        "21-34": 1762000,
+        "35-66": 1643000,
+        "67-101": 1534000,
+        "102-150": 1464000,
+        ">151": 1400000
+      },
+      "hotel4": {
+        "2-3": 3236000,
+        "4-5": 2712000,
+        "6-10": 2666000,
+        "11-15": 2473000,
+        "16-20": 2342000,
+        "21-34": 2269000,
+        "35-66": 2143000,
+        "67-101": 1998000,
+        "102-150": 1909000,
+        ">151": 1833000
+      },
+      "hotel5": {
+        "2-3": 4357000,
+        "4-5": 3980000,
+        "6-10": 3933000,
+        "11-15": 3790000,
+        "16-20": 3609000,
+        "21-34": 3537000,
+        "35-66": 3391000,
+        "67-101": 3158000,
+        "102-150": 3020000,
+        ">151": 2915000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-air-terjun",
+    "locale": "id",
+    "title": "Paket Tour Lombok 4 Hari 3 Malam – Mandalika, Snorkeling Gili & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika, snorkeling Gili Meno, Gili Air, dan Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Private tour dengan rute Mandalika, Snorkeling Gili & Air Terjun.",
+      "Transportasi, hotel, makan, dan tiket wisata sesuai paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air, dan Gili Trawangan menggunakan private glass-bottom boat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Desa Senaru.",
+      "Hari 3 - Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Hari 3 - Makan siang di restoran lokal.",
+      "Hari 3 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 4 - Check-out hotel.",
+      "Hari 4 - Kunjungan opsional apabila waktu memungkinkan.",
+      "Hari 4 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private glass-bottom boat.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2125000,
+        "4-5": 1515000,
+        "6-10": 1493000,
+        "11-15": 1198000,
+        "16-20": 1182000,
+        "21-34": 1107000,
+        "35-66": 1017000,
+        "67-101": 879000,
+        "102-150": 825000,
+        ">151": 769000
+      },
+      "hotel2": {
+        "2-3": 2500000,
+        "4-5": 1890000,
+        "6-10": 1868000,
+        "11-15": 1573000,
+        "16-20": 1557000,
+        "21-34": 1487000,
+        "35-66": 1392000,
+        "67-101": 1254000,
+        "102-150": 1200000,
+        ">151": 1144000
+      },
+      "hotel3": {
+        "2-3": 2742000,
+        "4-5": 2163000,
+        "6-10": 2141000,
+        "11-15": 1865000,
+        "16-20": 1830000,
+        "21-34": 1755000,
+        "35-66": 1661000,
+        "67-101": 1503000,
+        "102-150": 1439000,
+        ">151": 1377000
+      },
+      "hotel4": {
+        "2-3": 3190000,
+        "4-5": 2670000,
+        "6-10": 2648000,
+        "11-15": 2407000,
+        "16-20": 2337000,
+        "21-34": 2262000,
+        "35-66": 2160000,
+        "67-101": 1968000,
+        "102-150": 1884000,
+        ">151": 1810000
+      },
+      "hotel5": {
+        "2-3": 4311000,
+        "4-5": 3938000,
+        "6-10": 3916000,
+        "11-15": 3762000,
+        "16-20": 3604000,
+        "21-34": 3529000,
+        "35-66": 3408000,
+        "67-101": 3128000,
+        "102-150": 2995000,
+        ">151": 2892000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-air-terjun",
+    "locale": "en",
+    "title": "4-Day Lombok Tour Package – Mandalika, Gili Snorkeling & Waterfalls",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "4 Days 3 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "4 Days 3 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 4-day, 3-night Lombok tour covering Mandalika, snorkeling Gili Meno, Gili Air, dan Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Private tour covering Mandalika, Snorkeling Gili & Air Terjun.",
+      "Transportation, hotel, meals, and attraction tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Snorkel at Gili Meno, Gili Air, and Gili Trawangan by private glass-bottom boat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Visit Senaru Village.",
+      "Day 3 - Trek to Sendang Gile and Tiu Kelep waterfalls.",
+      "Day 3 - Lunch at a local restaurant.",
+      "Day 3 - Stop at Pusuk Monkey Forest.",
+      "Day 3 - Dinner and return to the hotel.",
+      "Day 4 - Breakfast and free time at the hotel.",
+      "Day 4 - Hotel check-out.",
+      "Day 4 - Optional visit if time permits.",
+      "Day 4 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private glass-bottom boat.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2125000,
+        "4-5": 1515000,
+        "6-10": 1493000,
+        "11-15": 1198000,
+        "16-20": 1182000,
+        "21-34": 1107000,
+        "35-66": 1017000,
+        "67-101": 879000,
+        "102-150": 825000,
+        ">151": 769000
+      },
+      "hotel2": {
+        "2-3": 2500000,
+        "4-5": 1890000,
+        "6-10": 1868000,
+        "11-15": 1573000,
+        "16-20": 1557000,
+        "21-34": 1487000,
+        "35-66": 1392000,
+        "67-101": 1254000,
+        "102-150": 1200000,
+        ">151": 1144000
+      },
+      "hotel3": {
+        "2-3": 2742000,
+        "4-5": 2163000,
+        "6-10": 2141000,
+        "11-15": 1865000,
+        "16-20": 1830000,
+        "21-34": 1755000,
+        "35-66": 1661000,
+        "67-101": 1503000,
+        "102-150": 1439000,
+        ">151": 1377000
+      },
+      "hotel4": {
+        "2-3": 3190000,
+        "4-5": 2670000,
+        "6-10": 2648000,
+        "11-15": 2407000,
+        "16-20": 2337000,
+        "21-34": 2262000,
+        "35-66": 2160000,
+        "67-101": 1968000,
+        "102-150": 1884000,
+        ">151": 1810000
+      },
+      "hotel5": {
+        "2-3": 4311000,
+        "4-5": 3938000,
+        "6-10": 3916000,
+        "11-15": 3762000,
+        "16-20": 3604000,
+        "21-34": 3529000,
+        "35-66": 3408000,
+        "67-101": 3128000,
+        "102-150": 2995000,
+        ">151": 2892000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-air-terjun",
+    "locale": "ar",
+    "title": "باقة لومبوك 4 أيام – مانداليكا والغطس في جزر جيلي والشلالات",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "4 أيام و3 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة وفق المسار المحدد.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر المواقع حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الغطس في جيلي مينو وجيلي آير وجيلي تراوانغان بقارب خاص ذي قاع زجاجي.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ ومتجر هدايا لومبوك.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - زيارة قرية سينارو.",
+      "اليوم 3 - المشي إلى شلالي سيندانغ غيلي وتيو كيليب.",
+      "اليوم 3 - تناول الغداء في مطعم محلي.",
+      "اليوم 3 - التوقف عند غابة بوسوك للقرود.",
+      "اليوم 3 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 4 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 4 - تسجيل الخروج من الفندق.",
+      "اليوم 4 - زيارة اختيارية إذا سمح الوقت.",
+      "اليوم 4 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب خاص ذو قاع زجاجي.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2125000,
+        "4-5": 1515000,
+        "6-10": 1493000,
+        "11-15": 1198000,
+        "16-20": 1182000,
+        "21-34": 1107000,
+        "35-66": 1017000,
+        "67-101": 879000,
+        "102-150": 825000,
+        ">151": 769000
+      },
+      "hotel2": {
+        "2-3": 2500000,
+        "4-5": 1890000,
+        "6-10": 1868000,
+        "11-15": 1573000,
+        "16-20": 1557000,
+        "21-34": 1487000,
+        "35-66": 1392000,
+        "67-101": 1254000,
+        "102-150": 1200000,
+        ">151": 1144000
+      },
+      "hotel3": {
+        "2-3": 2742000,
+        "4-5": 2163000,
+        "6-10": 2141000,
+        "11-15": 1865000,
+        "16-20": 1830000,
+        "21-34": 1755000,
+        "35-66": 1661000,
+        "67-101": 1503000,
+        "102-150": 1439000,
+        ">151": 1377000
+      },
+      "hotel4": {
+        "2-3": 3190000,
+        "4-5": 2670000,
+        "6-10": 2648000,
+        "11-15": 2407000,
+        "16-20": 2337000,
+        "21-34": 2262000,
+        "35-66": 2160000,
+        "67-101": 1968000,
+        "102-150": 1884000,
+        ">151": 1810000
+      },
+      "hotel5": {
+        "2-3": 4311000,
+        "4-5": 3938000,
+        "6-10": 3916000,
+        "11-15": 3762000,
+        "16-20": 3604000,
+        "21-34": 3529000,
+        "35-66": 3408000,
+        "67-101": 3128000,
+        "102-150": 2995000,
+        ">151": 2892000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-air-terjun",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 4 Hari 3 Malam – Mandalika, Snorkeling Gili & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika, snorkeling Gili Meno, Gili Air, dan Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Lawatan persendirian merangkumi Mandalika, Snorkeling Gili & Air Terjun.",
+      "Pengangkutan, hotel, makanan dan tiket tarikan mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air dan Gili Trawangan dengan bot kaca dasar persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Melawat pusat kraftangan mutiara dan cenderamata Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Melawat Kampung Senaru.",
+      "Hari 3 - Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Hari 3 - Makan tengah hari di restoran tempatan.",
+      "Hari 3 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 4 - Daftar keluar hotel.",
+      "Hari 4 - Lawatan pilihan jika masa mengizinkan.",
+      "Hari 4 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot kaca dasar persendirian.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2125000,
+        "4-5": 1515000,
+        "6-10": 1493000,
+        "11-15": 1198000,
+        "16-20": 1182000,
+        "21-34": 1107000,
+        "35-66": 1017000,
+        "67-101": 879000,
+        "102-150": 825000,
+        ">151": 769000
+      },
+      "hotel2": {
+        "2-3": 2500000,
+        "4-5": 1890000,
+        "6-10": 1868000,
+        "11-15": 1573000,
+        "16-20": 1557000,
+        "21-34": 1487000,
+        "35-66": 1392000,
+        "67-101": 1254000,
+        "102-150": 1200000,
+        ">151": 1144000
+      },
+      "hotel3": {
+        "2-3": 2742000,
+        "4-5": 2163000,
+        "6-10": 2141000,
+        "11-15": 1865000,
+        "16-20": 1830000,
+        "21-34": 1755000,
+        "35-66": 1661000,
+        "67-101": 1503000,
+        "102-150": 1439000,
+        ">151": 1377000
+      },
+      "hotel4": {
+        "2-3": 3190000,
+        "4-5": 2670000,
+        "6-10": 2648000,
+        "11-15": 2407000,
+        "16-20": 2337000,
+        "21-34": 2262000,
+        "35-66": 2160000,
+        "67-101": 1968000,
+        "102-150": 1884000,
+        ">151": 1810000
+      },
+      "hotel5": {
+        "2-3": 4311000,
+        "4-5": 3938000,
+        "6-10": 3916000,
+        "11-15": 3762000,
+        "16-20": 3604000,
+        "21-34": 3529000,
+        "35-66": 3408000,
+        "67-101": 3128000,
+        "102-150": 2995000,
+        ">151": 2892000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-air-terjun",
+    "locale": "zh",
+    "title": "龙目岛4天3晚旅游套餐－曼达利卡、吉利浮潜与瀑布",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "四天三晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "4天3晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "按指定路线安排私人包团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人玻璃底船在吉利美诺、吉利艾尔和吉利特拉旺安浮潜。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 参观珍珠工艺中心和龙目岛纪念品店。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 游览塞纳鲁村。",
+      "第3天 - 徒步前往仙达吉拉瀑布和蒂乌克勒普瀑布。",
+      "第3天 - 在当地餐厅享用午餐。",
+      "第3天 - 在普苏克猴林停留。",
+      "第3天 - 享用晚餐并返回酒店。",
+      "第4天 - 在酒店享用早餐并自由活动。",
+      "第4天 - 办理酒店退房。",
+      "第4天 - 时间允许时进行可选参观。",
+      "第4天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "私人玻璃底船。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2125000,
+        "4-5": 1515000,
+        "6-10": 1493000,
+        "11-15": 1198000,
+        "16-20": 1182000,
+        "21-34": 1107000,
+        "35-66": 1017000,
+        "67-101": 879000,
+        "102-150": 825000,
+        ">151": 769000
+      },
+      "hotel2": {
+        "2-3": 2500000,
+        "4-5": 1890000,
+        "6-10": 1868000,
+        "11-15": 1573000,
+        "16-20": 1557000,
+        "21-34": 1487000,
+        "35-66": 1392000,
+        "67-101": 1254000,
+        "102-150": 1200000,
+        ">151": 1144000
+      },
+      "hotel3": {
+        "2-3": 2742000,
+        "4-5": 2163000,
+        "6-10": 2141000,
+        "11-15": 1865000,
+        "16-20": 1830000,
+        "21-34": 1755000,
+        "35-66": 1661000,
+        "67-101": 1503000,
+        "102-150": 1439000,
+        ">151": 1377000
+      },
+      "hotel4": {
+        "2-3": 3190000,
+        "4-5": 2670000,
+        "6-10": 2648000,
+        "11-15": 2407000,
+        "16-20": 2337000,
+        "21-34": 2262000,
+        "35-66": 2160000,
+        "67-101": 1968000,
+        "102-150": 1884000,
+        ">151": 1810000
+      },
+      "hotel5": {
+        "2-3": 4311000,
+        "4-5": 3938000,
+        "6-10": 3916000,
+        "11-15": 3762000,
+        "16-20": 3604000,
+        "21-34": 3529000,
+        "35-66": 3408000,
+        "67-101": 3128000,
+        "102-150": 2995000,
+        ">151": 2892000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-air-terjun-city-tour",
+    "locale": "id",
+    "title": "Paket Tour Lombok 4 Hari 3 Malam – Mandalika, Snorkeling Gili, Air Terjun & City Tour",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika, snorkeling tiga Gili, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
+    "highlights": [
+      "Private tour dengan rute Mandalika, Snorkeling Gili, Air Terjun & City Tour.",
+      "Transportasi, hotel, makan, dan tiket wisata sesuai paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air, dan Gili Trawangan menggunakan private glass-bottom boat.",
+      "Hari 2 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 2 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Desa Senaru.",
+      "Hari 3 - Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Hari 3 - Makan siang di restoran lokal.",
+      "Hari 3 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan check-out hotel.",
+      "Hari 4 - Mengunjungi Islamic Center Lombok dan Pura Lingsar.",
+      "Hari 4 - Makan siang dan mengunjungi Desa Banyumulek.",
+      "Hari 4 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private glass-bottom boat.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2321000,
+        "4-5": 1605000,
+        "6-10": 1556000,
+        "11-15": 1370000,
+        "16-20": 1323000,
+        "21-34": 1293000,
+        "35-66": 1189000,
+        "67-101": 1039000,
+        "102-150": 978000,
+        ">151": 916000
+      },
+      "hotel2": {
+        "2-3": 2696000,
+        "4-5": 1980000,
+        "6-10": 1931000,
+        "11-15": 1745000,
+        "16-20": 1698000,
+        "21-34": 1668000,
+        "35-66": 1564000,
+        "67-101": 1414000,
+        "102-150": 1353000,
+        ">151": 1291000
+      },
+      "hotel3": {
+        "2-3": 2937000,
+        "4-5": 2241000,
+        "6-10": 2185000,
+        "11-15": 2033000,
+        "16-20": 1963000,
+        "21-34": 1941000,
+        "35-66": 1833000,
+        "67-101": 1664000,
+        "102-150": 1593000,
+        ">151": 1525000
+      },
+      "hotel4": {
+        "2-3": 3386000,
+        "4-5": 2724000,
+        "6-10": 2657000,
+        "11-15": 2567000,
+        "16-20": 2454000,
+        "21-34": 2448000,
+        "35-66": 2332000,
+        "67-101": 2128000,
+        "102-150": 2037000,
+        ">151": 1957000
+      },
+      "hotel5": {
+        "2-3": 4507000,
+        "4-5": 3933000,
+        "6-10": 3837000,
+        "11-15": 3701000,
+        "16-20": 3623000,
+        "21-34": 3571000,
+        "35-66": 3495000,
+        "67-101": 3288000,
+        "102-150": 3149000,
+        ">151": 3040000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-air-terjun-city-tour",
+    "locale": "en",
+    "title": "4-Day Lombok Tour Package – Mandalika, Gili Snorkeling, Waterfalls & City Tour",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "4 Days 3 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "4 Days 3 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 4-day, 3-night Lombok tour covering Mandalika, snorkeling tiga Gili, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
+    "highlights": [
+      "Private tour covering Mandalika, Snorkeling Gili, Air Terjun & City Tour.",
+      "Transportation, hotel, meals, and attraction tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup at the airport or harbor.",
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 2 - Snorkel at Gili Meno, Gili Air, and Gili Trawangan by private glass-bottom boat.",
+      "Day 2 - Lunch and explore Gili Trawangan.",
+      "Day 2 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 2 - Dinner in Senggigi and return to the hotel.",
+      "Day 3 - Visit Senaru Village.",
+      "Day 3 - Trek to Sendang Gile and Tiu Kelep waterfalls.",
+      "Day 3 - Lunch at a local restaurant.",
+      "Day 3 - Stop at Pusuk Monkey Forest.",
+      "Day 3 - Dinner and return to the hotel.",
+      "Day 4 - Breakfast and hotel check-out.",
+      "Day 4 - Visit the Lombok Islamic Center and Lingsar Temple.",
+      "Day 4 - Lunch and visit Banyumulek Village.",
+      "Day 4 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private glass-bottom boat.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2321000,
+        "4-5": 1605000,
+        "6-10": 1556000,
+        "11-15": 1370000,
+        "16-20": 1323000,
+        "21-34": 1293000,
+        "35-66": 1189000,
+        "67-101": 1039000,
+        "102-150": 978000,
+        ">151": 916000
+      },
+      "hotel2": {
+        "2-3": 2696000,
+        "4-5": 1980000,
+        "6-10": 1931000,
+        "11-15": 1745000,
+        "16-20": 1698000,
+        "21-34": 1668000,
+        "35-66": 1564000,
+        "67-101": 1414000,
+        "102-150": 1353000,
+        ">151": 1291000
+      },
+      "hotel3": {
+        "2-3": 2937000,
+        "4-5": 2241000,
+        "6-10": 2185000,
+        "11-15": 2033000,
+        "16-20": 1963000,
+        "21-34": 1941000,
+        "35-66": 1833000,
+        "67-101": 1664000,
+        "102-150": 1593000,
+        ">151": 1525000
+      },
+      "hotel4": {
+        "2-3": 3386000,
+        "4-5": 2724000,
+        "6-10": 2657000,
+        "11-15": 2567000,
+        "16-20": 2454000,
+        "21-34": 2448000,
+        "35-66": 2332000,
+        "67-101": 2128000,
+        "102-150": 2037000,
+        ">151": 1957000
+      },
+      "hotel5": {
+        "2-3": 4507000,
+        "4-5": 3933000,
+        "6-10": 3837000,
+        "11-15": 3701000,
+        "16-20": 3623000,
+        "21-34": 3571000,
+        "35-66": 3495000,
+        "67-101": 3288000,
+        "102-150": 3149000,
+        ">151": 3040000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-air-terjun-city-tour",
+    "locale": "ar",
+    "title": "باقة لومبوك 4 أيام – مانداليكا والغطس في جيلي والشلالات وجولة المدينة",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "4 أيام و3 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة وفق المسار المحدد.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر المواقع حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال من المطار أو الميناء.",
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 2 - الغطس في جيلي مينو وجيلي آير وجيلي تراوانغان بقارب خاص ذي قاع زجاجي.",
+      "اليوم 2 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 2 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ ومتجر هدايا لومبوك.",
+      "اليوم 2 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 3 - زيارة قرية سينارو.",
+      "اليوم 3 - المشي إلى شلالي سيندانغ غيلي وتيو كيليب.",
+      "اليوم 3 - تناول الغداء في مطعم محلي.",
+      "اليوم 3 - التوقف عند غابة بوسوك للقرود.",
+      "اليوم 3 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 4 - تناول الإفطار وتسجيل الخروج من الفندق.",
+      "اليوم 4 - زيارة المركز الإسلامي في لومبوك ومعبد لينغسار.",
+      "اليوم 4 - تناول الغداء وزيارة قرية بانيوموليك.",
+      "اليوم 4 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب خاص ذو قاع زجاجي.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2321000,
+        "4-5": 1605000,
+        "6-10": 1556000,
+        "11-15": 1370000,
+        "16-20": 1323000,
+        "21-34": 1293000,
+        "35-66": 1189000,
+        "67-101": 1039000,
+        "102-150": 978000,
+        ">151": 916000
+      },
+      "hotel2": {
+        "2-3": 2696000,
+        "4-5": 1980000,
+        "6-10": 1931000,
+        "11-15": 1745000,
+        "16-20": 1698000,
+        "21-34": 1668000,
+        "35-66": 1564000,
+        "67-101": 1414000,
+        "102-150": 1353000,
+        ">151": 1291000
+      },
+      "hotel3": {
+        "2-3": 2937000,
+        "4-5": 2241000,
+        "6-10": 2185000,
+        "11-15": 2033000,
+        "16-20": 1963000,
+        "21-34": 1941000,
+        "35-66": 1833000,
+        "67-101": 1664000,
+        "102-150": 1593000,
+        ">151": 1525000
+      },
+      "hotel4": {
+        "2-3": 3386000,
+        "4-5": 2724000,
+        "6-10": 2657000,
+        "11-15": 2567000,
+        "16-20": 2454000,
+        "21-34": 2448000,
+        "35-66": 2332000,
+        "67-101": 2128000,
+        "102-150": 2037000,
+        ">151": 1957000
+      },
+      "hotel5": {
+        "2-3": 4507000,
+        "4-5": 3933000,
+        "6-10": 3837000,
+        "11-15": 3701000,
+        "16-20": 3623000,
+        "21-34": 3571000,
+        "35-66": 3495000,
+        "67-101": 3288000,
+        "102-150": 3149000,
+        ">151": 3040000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-air-terjun-city-tour",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 4 Hari 3 Malam – Mandalika, Snorkeling Gili, Air Terjun & City Tour",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika, snorkeling tiga Gili, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
+    "highlights": [
+      "Lawatan persendirian merangkumi Mandalika, Snorkeling Gili, Air Terjun & City Tour.",
+      "Pengangkutan, hotel, makanan dan tiket tarikan mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput di lapangan terbang atau pelabuhan.",
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 2 - Snorkeling di Gili Meno, Gili Air dan Gili Trawangan dengan bot kaca dasar persendirian.",
+      "Hari 2 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 2 - Melawat pusat kraftangan mutiara dan cenderamata Lombok.",
+      "Hari 2 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 3 - Melawat Kampung Senaru.",
+      "Hari 3 - Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Hari 3 - Makan tengah hari di restoran tempatan.",
+      "Hari 3 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan daftar keluar hotel.",
+      "Hari 4 - Melawat Islamic Center Lombok dan Pura Lingsar.",
+      "Hari 4 - Makan tengah hari dan melawat Kampung Banyumulek.",
+      "Hari 4 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot kaca dasar persendirian.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2321000,
+        "4-5": 1605000,
+        "6-10": 1556000,
+        "11-15": 1370000,
+        "16-20": 1323000,
+        "21-34": 1293000,
+        "35-66": 1189000,
+        "67-101": 1039000,
+        "102-150": 978000,
+        ">151": 916000
+      },
+      "hotel2": {
+        "2-3": 2696000,
+        "4-5": 1980000,
+        "6-10": 1931000,
+        "11-15": 1745000,
+        "16-20": 1698000,
+        "21-34": 1668000,
+        "35-66": 1564000,
+        "67-101": 1414000,
+        "102-150": 1353000,
+        ">151": 1291000
+      },
+      "hotel3": {
+        "2-3": 2937000,
+        "4-5": 2241000,
+        "6-10": 2185000,
+        "11-15": 2033000,
+        "16-20": 1963000,
+        "21-34": 1941000,
+        "35-66": 1833000,
+        "67-101": 1664000,
+        "102-150": 1593000,
+        ">151": 1525000
+      },
+      "hotel4": {
+        "2-3": 3386000,
+        "4-5": 2724000,
+        "6-10": 2657000,
+        "11-15": 2567000,
+        "16-20": 2454000,
+        "21-34": 2448000,
+        "35-66": 2332000,
+        "67-101": 2128000,
+        "102-150": 2037000,
+        ">151": 1957000
+      },
+      "hotel5": {
+        "2-3": 4507000,
+        "4-5": 3933000,
+        "6-10": 3837000,
+        "11-15": 3701000,
+        "16-20": 3623000,
+        "21-34": 3571000,
+        "35-66": 3495000,
+        "67-101": 3288000,
+        "102-150": 3149000,
+        ">151": 3040000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-air-terjun-city-tour",
+    "locale": "zh",
+    "title": "龙目岛4天3晚旅游套餐－曼达利卡、吉利浮潜、瀑布与城市游",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "四天三晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "4天3晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "按指定路线安排私人包团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在机场或码头接客。",
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第2天 - 乘私人玻璃底船在吉利美诺、吉利艾尔和吉利特拉旺安浮潜。",
+      "第2天 - 享用午餐并探索吉利特拉旺安。",
+      "第2天 - 参观珍珠工艺中心和龙目岛纪念品店。",
+      "第2天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第3天 - 游览塞纳鲁村。",
+      "第3天 - 徒步前往仙达吉拉瀑布和蒂乌克勒普瀑布。",
+      "第3天 - 在当地餐厅享用午餐。",
+      "第3天 - 在普苏克猴林停留。",
+      "第3天 - 享用晚餐并返回酒店。",
+      "第4天 - 享用早餐并办理酒店退房。",
+      "第4天 - 参观龙目岛伊斯兰中心和林萨寺。",
+      "第4天 - 享用午餐并游览班尤穆勒克村。",
+      "第4天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "私人玻璃底船。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2321000,
+        "4-5": 1605000,
+        "6-10": 1556000,
+        "11-15": 1370000,
+        "16-20": 1323000,
+        "21-34": 1293000,
+        "35-66": 1189000,
+        "67-101": 1039000,
+        "102-150": 978000,
+        ">151": 916000
+      },
+      "hotel2": {
+        "2-3": 2696000,
+        "4-5": 1980000,
+        "6-10": 1931000,
+        "11-15": 1745000,
+        "16-20": 1698000,
+        "21-34": 1668000,
+        "35-66": 1564000,
+        "67-101": 1414000,
+        "102-150": 1353000,
+        ">151": 1291000
+      },
+      "hotel3": {
+        "2-3": 2937000,
+        "4-5": 2241000,
+        "6-10": 2185000,
+        "11-15": 2033000,
+        "16-20": 1963000,
+        "21-34": 1941000,
+        "35-66": 1833000,
+        "67-101": 1664000,
+        "102-150": 1593000,
+        ">151": 1525000
+      },
+      "hotel4": {
+        "2-3": 3386000,
+        "4-5": 2724000,
+        "6-10": 2657000,
+        "11-15": 2567000,
+        "16-20": 2454000,
+        "21-34": 2448000,
+        "35-66": 2332000,
+        "67-101": 2128000,
+        "102-150": 2037000,
+        ">151": 1957000
+      },
+      "hotel5": {
+        "2-3": 4507000,
+        "4-5": 3933000,
+        "6-10": 3837000,
+        "11-15": 3701000,
+        "16-20": 3623000,
+        "21-34": 3571000,
+        "35-66": 3495000,
+        "67-101": 3288000,
+        "102-150": 3149000,
+        ">151": 3040000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-trawangan-meno-air",
+    "locale": "id",
+    "title": "Paket Tour Lombok 4 Hari 3 Malam – Mandalika & Snorkeling Gili Trawangan, Meno, Air",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika dan snorkeling tiga Gili menggunakan private glass-bottom boat.",
+    "highlights": [
+      "Private tour dengan rute Mandalika & Snorkeling Gili Trawangan, Meno, Air.",
+      "Transportasi, hotel, makan, dan tiket wisata sesuai paket.",
+      "Pilihan hotel dari tanpa hotel hingga hotel bintang 5."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "Hari 1 - Makan malam di restoran lokal.",
+      "Hari 1 - Check-in hotel dan istirahat.",
+      "Hari 2 - Mengunjungi Desa Tenun Sukarare dan Desa Adat Sade.",
+      "Hari 2 - Mengunjungi Pantai Kuta Mandalika dan kawasan Sirkuit Mandalika.",
+      "Hari 2 - Mengunjungi Pantai Tanjung Aan dan menikmati matahari terbenam di Bukit Merese.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Mengunjungi Pura Batu Bolong, Villa Hantu, dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 3 - Snorkeling di Gili Meno, Gili Air, dan Gili Trawangan menggunakan private glass-bottom boat.",
+      "Hari 3 - Makan siang dan menjelajahi Gili Trawangan.",
+      "Hari 3 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 4 - Check-out hotel.",
+      "Hari 4 - Kunjungan opsional apabila waktu memungkinkan.",
+      "Hari 4 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private glass-bottom boat.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1930000,
+        "4-5": 1359000,
+        "6-10": 1327000,
+        "11-15": 995000,
+        "16-20": 969000,
+        "21-34": 923000,
+        "35-66": 851000,
+        "67-101": 740000,
+        "102-150": 687000,
+        ">151": 637000
+      },
+      "hotel2": {
+        "2-3": 2305000,
+        "4-5": 1734000,
+        "6-10": 1702000,
+        "11-15": 1370000,
+        "16-20": 1344000,
+        "21-34": 1298000,
+        "35-66": 1226000,
+        "67-101": 1115000,
+        "102-150": 1062000,
+        ">151": 1012000
+      },
+      "hotel3": {
+        "2-3": 2546000,
+        "4-5": 2007000,
+        "6-10": 1975000,
+        "11-15": 1654000,
+        "16-20": 1617000,
+        "21-34": 1571000,
+        "35-66": 1495000,
+        "67-101": 1365000,
+        "102-150": 1301000,
+        ">151": 1245000
+      },
+      "hotel4": {
+        "2-3": 2995000,
+        "4-5": 2514000,
+        "6-10": 2482000,
+        "11-15": 2180000,
+        "16-20": 2124000,
+        "21-34": 2078000,
+        "35-66": 1994000,
+        "67-101": 1829000,
+        "102-150": 1746000,
+        ">151": 1678000
+      },
+      "hotel5": {
+        "2-3": 4116000,
+        "4-5": 3782000,
+        "6-10": 3749000,
+        "11-15": 3496000,
+        "16-20": 3392000,
+        "21-34": 3345000,
+        "35-66": 3242000,
+        "67-101": 2989000,
+        "102-150": 2857000,
+        ">151": 2760000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-trawangan-meno-air",
+    "locale": "en",
+    "title": "4-Day Lombok Tour Package – Mandalika & Snorkeling Gili Trawangan, Meno, Air",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "4 Days 3 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "4 Days 3 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 4-day, 3-night Lombok tour covering Mandalika dan snorkeling tiga Gili menggunakan private glass-bottom boat.",
+    "highlights": [
+      "Private tour covering Mandalika & Snorkeling Gili Trawangan, Meno, Air.",
+      "Transportation, hotel, meals, and attraction tickets according to the package.",
+      "Hotel options from no hotel to 5-star accommodation."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup and welcome at Lombok International Airport.",
+      "Day 1 - Dinner at a local restaurant.",
+      "Day 1 - Hotel check-in and rest.",
+      "Day 2 - Visit Sukarare Weaving Village and Sade Traditional Village.",
+      "Day 2 - Visit Kuta Mandalika Beach and the Mandalika Circuit area.",
+      "Day 2 - Visit Tanjung Aan Beach and enjoy sunset at Merese Hill.",
+      "Day 2 - Dinner and return to the hotel.",
+      "Day 3 - Visit Batu Bolong Temple, Villa Hantu, and Malimbu Hill or Malaka Hill.",
+      "Day 3 - Snorkel at Gili Meno, Gili Air, and Gili Trawangan by private glass-bottom boat.",
+      "Day 3 - Lunch and explore Gili Trawangan.",
+      "Day 3 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 3 - Dinner in Senggigi and return to the hotel.",
+      "Day 4 - Breakfast and free time at the hotel.",
+      "Day 4 - Hotel check-out.",
+      "Day 4 - Optional visit if time permits.",
+      "Day 4 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private glass-bottom boat.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1930000,
+        "4-5": 1359000,
+        "6-10": 1327000,
+        "11-15": 995000,
+        "16-20": 969000,
+        "21-34": 923000,
+        "35-66": 851000,
+        "67-101": 740000,
+        "102-150": 687000,
+        ">151": 637000
+      },
+      "hotel2": {
+        "2-3": 2305000,
+        "4-5": 1734000,
+        "6-10": 1702000,
+        "11-15": 1370000,
+        "16-20": 1344000,
+        "21-34": 1298000,
+        "35-66": 1226000,
+        "67-101": 1115000,
+        "102-150": 1062000,
+        ">151": 1012000
+      },
+      "hotel3": {
+        "2-3": 2546000,
+        "4-5": 2007000,
+        "6-10": 1975000,
+        "11-15": 1654000,
+        "16-20": 1617000,
+        "21-34": 1571000,
+        "35-66": 1495000,
+        "67-101": 1365000,
+        "102-150": 1301000,
+        ">151": 1245000
+      },
+      "hotel4": {
+        "2-3": 2995000,
+        "4-5": 2514000,
+        "6-10": 2482000,
+        "11-15": 2180000,
+        "16-20": 2124000,
+        "21-34": 2078000,
+        "35-66": 1994000,
+        "67-101": 1829000,
+        "102-150": 1746000,
+        ">151": 1678000
+      },
+      "hotel5": {
+        "2-3": 4116000,
+        "4-5": 3782000,
+        "6-10": 3749000,
+        "11-15": 3496000,
+        "16-20": 3392000,
+        "21-34": 3345000,
+        "35-66": 3242000,
+        "67-101": 2989000,
+        "102-150": 2857000,
+        ">151": 2760000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-trawangan-meno-air",
+    "locale": "ar",
+    "title": "باقة لومبوك 4 أيام – مانداليكا والغطس في جيلي تراوانغان ومينو وآير",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "4 أيام و3 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
+    "highlights": [
+      "جولة خاصة وفق المسار المحدد.",
+      "تشمل المواصلات والفندق والوجبات وتذاكر المواقع حسب الباقة.",
+      "خيارات من دون فندق حتى فندق 5 نجوم."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال والترحيب في مطار لومبوك الدولي.",
+      "اليوم 1 - تناول العشاء في مطعم محلي.",
+      "اليوم 1 - تسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة قرية سوكاراري للنسيج وقرية سادي التقليدية.",
+      "اليوم 2 - زيارة شاطئ كوتا مانداليكا ومنطقة حلبة مانداليكا.",
+      "اليوم 2 - زيارة شاطئ تانجونغ آن والاستمتاع بغروب الشمس في تل ميريسي.",
+      "اليوم 2 - تناول العشاء والعودة إلى الفندق.",
+      "اليوم 3 - زيارة معبد باتو بولونغ وفيلا هانتو وتل ماليمبو أو تل مالاكا.",
+      "اليوم 3 - الغطس في جيلي مينو وجيلي آير وجيلي تراوانغان بقارب خاص ذي قاع زجاجي.",
+      "اليوم 3 - تناول الغداء واستكشاف جيلي تراوانغان.",
+      "اليوم 3 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ ومتجر هدايا لومبوك.",
+      "اليوم 3 - تناول العشاء في سينغيغي والعودة إلى الفندق.",
+      "اليوم 4 - تناول الإفطار ووقت حر في الفندق.",
+      "اليوم 4 - تسجيل الخروج من الفندق.",
+      "اليوم 4 - زيارة اختيارية إذا سمح الوقت.",
+      "اليوم 4 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب خاص ذو قاع زجاجي.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1930000,
+        "4-5": 1359000,
+        "6-10": 1327000,
+        "11-15": 995000,
+        "16-20": 969000,
+        "21-34": 923000,
+        "35-66": 851000,
+        "67-101": 740000,
+        "102-150": 687000,
+        ">151": 637000
+      },
+      "hotel2": {
+        "2-3": 2305000,
+        "4-5": 1734000,
+        "6-10": 1702000,
+        "11-15": 1370000,
+        "16-20": 1344000,
+        "21-34": 1298000,
+        "35-66": 1226000,
+        "67-101": 1115000,
+        "102-150": 1062000,
+        ">151": 1012000
+      },
+      "hotel3": {
+        "2-3": 2546000,
+        "4-5": 2007000,
+        "6-10": 1975000,
+        "11-15": 1654000,
+        "16-20": 1617000,
+        "21-34": 1571000,
+        "35-66": 1495000,
+        "67-101": 1365000,
+        "102-150": 1301000,
+        ">151": 1245000
+      },
+      "hotel4": {
+        "2-3": 2995000,
+        "4-5": 2514000,
+        "6-10": 2482000,
+        "11-15": 2180000,
+        "16-20": 2124000,
+        "21-34": 2078000,
+        "35-66": 1994000,
+        "67-101": 1829000,
+        "102-150": 1746000,
+        ">151": 1678000
+      },
+      "hotel5": {
+        "2-3": 4116000,
+        "4-5": 3782000,
+        "6-10": 3749000,
+        "11-15": 3496000,
+        "16-20": 3392000,
+        "21-34": 3345000,
+        "35-66": 3242000,
+        "67-101": 2989000,
+        "102-150": 2857000,
+        ">151": 2760000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-trawangan-meno-air",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 4 Hari 3 Malam – Mandalika & Snorkeling Gili Trawangan, Meno, Air",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "4 Hari 3 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika dan snorkeling tiga Gili menggunakan private glass-bottom boat.",
+    "highlights": [
+      "Lawatan persendirian merangkumi Mandalika & Snorkeling Gili Trawangan, Meno, Air.",
+      "Pengangkutan, hotel, makanan dan tiket tarikan mengikut pakej.",
+      "Pilihan daripada tanpa hotel hingga hotel 5 bintang."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput dan disambut di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Makan malam di restoran tempatan.",
+      "Hari 1 - Daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Kampung Tenun Sukarare dan Kampung Tradisional Sade.",
+      "Hari 2 - Melawat Pantai Kuta Mandalika dan kawasan Litar Mandalika.",
+      "Hari 2 - Melawat Pantai Tanjung Aan dan menikmati matahari terbenam di Bukit Merese.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Melawat Pura Batu Bolong, Villa Hantu dan Bukit Malimbu atau Bukit Malaka.",
+      "Hari 3 - Snorkeling di Gili Meno, Gili Air dan Gili Trawangan dengan bot kaca dasar persendirian.",
+      "Hari 3 - Makan tengah hari dan meneroka Gili Trawangan.",
+      "Hari 3 - Melawat pusat kraftangan mutiara dan cenderamata Lombok.",
+      "Hari 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi dan masa bebas di hotel.",
+      "Hari 4 - Daftar keluar hotel.",
+      "Hari 4 - Lawatan pilihan jika masa mengizinkan.",
+      "Hari 4 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot kaca dasar persendirian.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1930000,
+        "4-5": 1359000,
+        "6-10": 1327000,
+        "11-15": 995000,
+        "16-20": 969000,
+        "21-34": 923000,
+        "35-66": 851000,
+        "67-101": 740000,
+        "102-150": 687000,
+        ">151": 637000
+      },
+      "hotel2": {
+        "2-3": 2305000,
+        "4-5": 1734000,
+        "6-10": 1702000,
+        "11-15": 1370000,
+        "16-20": 1344000,
+        "21-34": 1298000,
+        "35-66": 1226000,
+        "67-101": 1115000,
+        "102-150": 1062000,
+        ">151": 1012000
+      },
+      "hotel3": {
+        "2-3": 2546000,
+        "4-5": 2007000,
+        "6-10": 1975000,
+        "11-15": 1654000,
+        "16-20": 1617000,
+        "21-34": 1571000,
+        "35-66": 1495000,
+        "67-101": 1365000,
+        "102-150": 1301000,
+        ">151": 1245000
+      },
+      "hotel4": {
+        "2-3": 2995000,
+        "4-5": 2514000,
+        "6-10": 2482000,
+        "11-15": 2180000,
+        "16-20": 2124000,
+        "21-34": 2078000,
+        "35-66": 1994000,
+        "67-101": 1829000,
+        "102-150": 1746000,
+        ">151": 1678000
+      },
+      "hotel5": {
+        "2-3": 4116000,
+        "4-5": 3782000,
+        "6-10": 3749000,
+        "11-15": 3496000,
+        "16-20": 3392000,
+        "21-34": 3345000,
+        "35-66": 3242000,
+        "67-101": 2989000,
+        "102-150": 2857000,
+        ">151": 2760000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-4-hari-3-malam-mandalika-snorkeling-gili-trawangan-meno-air",
+    "locale": "zh",
+    "title": "龙目岛4天3晚旅游套餐－曼达利卡与吉利特拉旺安、美诺、艾尔浮潜",
+    "region": "lombok",
+    "collectionSlug": "4-hari-3-malam",
+    "collectionTitle": "四天三晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "4天3晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
+    "highlights": [
+      "按指定路线安排私人包团。",
+      "套餐包含交通、酒店、餐饮和景点门票。",
+      "可选择不含酒店至五星级酒店。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机并欢迎抵达。",
+      "第1天 - 在当地餐厅享用晚餐。",
+      "第1天 - 办理酒店入住并休息。",
+      "第2天 - 游览苏卡拉拉织布村和萨德传统村落。",
+      "第2天 - 游览库塔曼达利卡海滩和曼达利卡赛道区域。",
+      "第2天 - 游览丹绒安海滩并在梅雷塞山欣赏日落。",
+      "第2天 - 享用晚餐并返回酒店。",
+      "第3天 - 游览巴图博隆寺、幽灵别墅及马林布山或马拉卡山。",
+      "第3天 - 乘私人玻璃底船在吉利美诺、吉利艾尔和吉利特拉旺安浮潜。",
+      "第3天 - 享用午餐并探索吉利特拉旺安。",
+      "第3天 - 参观珍珠工艺中心和龙目岛纪念品店。",
+      "第3天 - 在圣吉吉享用晚餐并返回酒店。",
+      "第4天 - 在酒店享用早餐并自由活动。",
+      "第4天 - 办理酒店退房。",
+      "第4天 - 时间允许时进行可选参观。",
+      "第4天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "私人玻璃底船。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 1930000,
+        "4-5": 1359000,
+        "6-10": 1327000,
+        "11-15": 995000,
+        "16-20": 969000,
+        "21-34": 923000,
+        "35-66": 851000,
+        "67-101": 740000,
+        "102-150": 687000,
+        ">151": 637000
+      },
+      "hotel2": {
+        "2-3": 2305000,
+        "4-5": 1734000,
+        "6-10": 1702000,
+        "11-15": 1370000,
+        "16-20": 1344000,
+        "21-34": 1298000,
+        "35-66": 1226000,
+        "67-101": 1115000,
+        "102-150": 1062000,
+        ">151": 1012000
+      },
+      "hotel3": {
+        "2-3": 2546000,
+        "4-5": 2007000,
+        "6-10": 1975000,
+        "11-15": 1654000,
+        "16-20": 1617000,
+        "21-34": 1571000,
+        "35-66": 1495000,
+        "67-101": 1365000,
+        "102-150": 1301000,
+        ">151": 1245000
+      },
+      "hotel4": {
+        "2-3": 2995000,
+        "4-5": 2514000,
+        "6-10": 2482000,
+        "11-15": 2180000,
+        "16-20": 2124000,
+        "21-34": 2078000,
+        "35-66": 1994000,
+        "67-101": 1829000,
+        "102-150": 1746000,
+        ">151": 1678000
+      },
+      "hotel5": {
+        "2-3": 4116000,
+        "4-5": 3782000,
+        "6-10": 3749000,
+        "11-15": 3496000,
+        "16-20": 3392000,
+        "21-34": 3345000,
+        "35-66": 3242000,
+        "67-101": 2989000,
+        "102-150": 2857000,
+        ">151": 2760000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-gili-nanggu-mandalika-gili-trawangan",
+    "locale": "id",
+    "title": "Paket Tour Lombok 5 Hari 4 Malam – Gili Nanggu, Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "Paket 5 Hari 4 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "5 Hari 4 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 5 hari 4 malam dengan snorkeling Gili Nanggu, Mandalika, dan eksplorasi Gili Trawangan.",
+    "highlights": [
+      "Snorkeling di Gili Nanggu.",
+      "Mengunjungi Gili Sudak dan Gili Kedis.",
+      "Mandalika dan Gili Trawangan."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Snorkeling di Gili Nanggu, makan siang di Gili Sudak, dan mengunjungi Gili Kedis.",
+      "Hari 2 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 4 - Menyeberang ke Gili Trawangan menggunakan private speedboat dan menjelajahi pulau.",
+      "Hari 5 - Sarapan, check-out hotel, kunjungan opsional, dan pengantaran ke Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf, atau bus sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan.",
+      "Private boat untuk Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2427000,
+        "4-5": 1779000,
+        "6-10": 1749000,
+        "11-15": 1470000,
+        "16-20": 1377000,
+        "21-34": 1281000,
+        "35-66": 1167000,
+        "67-101": 1064000,
+        "102-150": 994000,
+        ">151": 923000
+      },
+      "hotel2": {
+        "2-3": 2927000,
+        "4-5": 2279000,
+        "6-10": 2249000,
+        "11-15": 1970000,
+        "16-20": 1877000,
+        "21-34": 1781000,
+        "35-66": 1667000,
+        "67-101": 1564000,
+        "102-150": 1494000,
+        ">151": 1423000
+      },
+      "hotel3": {
+        "2-3": 3249000,
+        "4-5": 2643000,
+        "6-10": 2613000,
+        "11-15": 2348000,
+        "16-20": 2241000,
+        "21-34": 2145000,
+        "35-66": 2026000,
+        "67-101": 1897000,
+        "102-150": 1813000,
+        ">151": 1734000
+      },
+      "hotel4": {
+        "2-3": 3847000,
+        "4-5": 3319000,
+        "6-10": 3289000,
+        "11-15": 3050000,
+        "16-20": 2917000,
+        "21-34": 2821000,
+        "35-66": 2691000,
+        "67-101": 2516000,
+        "102-150": 2406000,
+        ">151": 2311000
+      },
+      "hotel5": {
+        "2-3": 5342000,
+        "4-5": 5009000,
+        "6-10": 4979000,
+        "11-15": 4805000,
+        "16-20": 4607000,
+        "21-34": 4511000,
+        "35-66": 4355000,
+        "67-101": 4063000,
+        "102-150": 3888000,
+        ">151": 3754000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-gili-nanggu-mandalika-gili-trawangan",
+    "locale": "en",
+    "title": "5-Day Lombok Tour Package – Gili Nanggu, Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "5 Days 4 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "5 Days 4 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 5-day Lombok tour covering snorkeling at Gili Nanggu, Mandalika, and Gili Trawangan.",
+    "highlights": [
+      "Snorkeling at Gili Nanggu.",
+      "Visit Gili Sudak and Gili Kedis.",
+      "Mandalika and Gili Trawangan."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup and welcome at Lombok International Airport.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Snorkel at Gili Nanggu, have lunch on Gili Sudak, and visit Gili Kedis.",
+      "Day 2 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 4 - Travel to Gili Trawangan by private speedboat and explore the island.",
+      "Day 5 - Breakfast, hotel check-out, optional visits, and transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation by Avanza, BR-V, Innova, Almaz, Hiace, Elf, or bus according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan.",
+      "Private boat for Gili Nanggu.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2427000,
+        "4-5": 1779000,
+        "6-10": 1749000,
+        "11-15": 1470000,
+        "16-20": 1377000,
+        "21-34": 1281000,
+        "35-66": 1167000,
+        "67-101": 1064000,
+        "102-150": 994000,
+        ">151": 923000
+      },
+      "hotel2": {
+        "2-3": 2927000,
+        "4-5": 2279000,
+        "6-10": 2249000,
+        "11-15": 1970000,
+        "16-20": 1877000,
+        "21-34": 1781000,
+        "35-66": 1667000,
+        "67-101": 1564000,
+        "102-150": 1494000,
+        ">151": 1423000
+      },
+      "hotel3": {
+        "2-3": 3249000,
+        "4-5": 2643000,
+        "6-10": 2613000,
+        "11-15": 2348000,
+        "16-20": 2241000,
+        "21-34": 2145000,
+        "35-66": 2026000,
+        "67-101": 1897000,
+        "102-150": 1813000,
+        ">151": 1734000
+      },
+      "hotel4": {
+        "2-3": 3847000,
+        "4-5": 3319000,
+        "6-10": 3289000,
+        "11-15": 3050000,
+        "16-20": 2917000,
+        "21-34": 2821000,
+        "35-66": 2691000,
+        "67-101": 2516000,
+        "102-150": 2406000,
+        ">151": 2311000
+      },
+      "hotel5": {
+        "2-3": 5342000,
+        "4-5": 5009000,
+        "6-10": 4979000,
+        "11-15": 4805000,
+        "16-20": 4607000,
+        "21-34": 4511000,
+        "35-66": 4355000,
+        "67-101": 4063000,
+        "102-150": 3888000,
+        ">151": 3754000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-gili-nanggu-mandalika-gili-trawangan",
+    "locale": "ar",
+    "title": "باقة سياحية إلى لومبوك لمدة 5 أيام – جيلي نانغو ومانداليكا وجيلي تراوانغان",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "باقة 5 أيام و4 ليالٍ",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "5 أيام و4 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 5 أيام تشمل الغطس في جيلي نانغو ومانداليكا وجيلي تراوانغان.",
+    "highlights": [
+      "الغطس في جيلي نانغو.",
+      "زيارة جيلي سوداك وجيلي كيديس.",
+      "مانداليكا وجيلي تراوانغان."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال والترحيب في مطار لومبوك الدولي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - الغطس في جيلي نانغو وتناول الغداء في جيلي سوداك وزيارة جيلي كيديس.",
+      "اليوم 2 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 4 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص واستكشاف الجزيرة.",
+      "اليوم 5 - الإفطار وتسجيل الخروج والزيارات الاختيارية والانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة باستخدام أفانزا أو BR-V أو إينوفا أو ألماز أو هايس أو إلف أو حافلة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان.",
+      "قارب خاص إلى جيلي نانغو.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2427000,
+        "4-5": 1779000,
+        "6-10": 1749000,
+        "11-15": 1470000,
+        "16-20": 1377000,
+        "21-34": 1281000,
+        "35-66": 1167000,
+        "67-101": 1064000,
+        "102-150": 994000,
+        ">151": 923000
+      },
+      "hotel2": {
+        "2-3": 2927000,
+        "4-5": 2279000,
+        "6-10": 2249000,
+        "11-15": 1970000,
+        "16-20": 1877000,
+        "21-34": 1781000,
+        "35-66": 1667000,
+        "67-101": 1564000,
+        "102-150": 1494000,
+        ">151": 1423000
+      },
+      "hotel3": {
+        "2-3": 3249000,
+        "4-5": 2643000,
+        "6-10": 2613000,
+        "11-15": 2348000,
+        "16-20": 2241000,
+        "21-34": 2145000,
+        "35-66": 2026000,
+        "67-101": 1897000,
+        "102-150": 1813000,
+        ">151": 1734000
+      },
+      "hotel4": {
+        "2-3": 3847000,
+        "4-5": 3319000,
+        "6-10": 3289000,
+        "11-15": 3050000,
+        "16-20": 2917000,
+        "21-34": 2821000,
+        "35-66": 2691000,
+        "67-101": 2516000,
+        "102-150": 2406000,
+        ">151": 2311000
+      },
+      "hotel5": {
+        "2-3": 5342000,
+        "4-5": 5009000,
+        "6-10": 4979000,
+        "11-15": 4805000,
+        "16-20": 4607000,
+        "21-34": 4511000,
+        "35-66": 4355000,
+        "67-101": 4063000,
+        "102-150": 3888000,
+        ">151": 3754000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-gili-nanggu-mandalika-gili-trawangan",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 5 Hari 4 Malam – Gili Nanggu, Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "Pakej 5 Hari 4 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "5 Hari 4 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Lawatan persendirian Lombok 5 hari merangkumi snorkeling di Gili Nanggu, Mandalika dan Gili Trawangan.",
+    "highlights": [
+      "Snorkeling di Gili Nanggu.",
+      "Melawat Gili Sudak dan Gili Kedis.",
+      "Mandalika dan Gili Trawangan."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput dan disambut di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Snorkeling di Gili Nanggu, makan tengah hari di Gili Sudak dan melawat Gili Kedis.",
+      "Hari 2 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 4 - Menyeberang ke Gili Trawangan dengan bot laju persendirian dan meneroka pulau.",
+      "Hari 5 - Sarapan, daftar keluar hotel, lawatan pilihan dan penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf atau bas mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan.",
+      "Bot persendirian untuk Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2427000,
+        "4-5": 1779000,
+        "6-10": 1749000,
+        "11-15": 1470000,
+        "16-20": 1377000,
+        "21-34": 1281000,
+        "35-66": 1167000,
+        "67-101": 1064000,
+        "102-150": 994000,
+        ">151": 923000
+      },
+      "hotel2": {
+        "2-3": 2927000,
+        "4-5": 2279000,
+        "6-10": 2249000,
+        "11-15": 1970000,
+        "16-20": 1877000,
+        "21-34": 1781000,
+        "35-66": 1667000,
+        "67-101": 1564000,
+        "102-150": 1494000,
+        ">151": 1423000
+      },
+      "hotel3": {
+        "2-3": 3249000,
+        "4-5": 2643000,
+        "6-10": 2613000,
+        "11-15": 2348000,
+        "16-20": 2241000,
+        "21-34": 2145000,
+        "35-66": 2026000,
+        "67-101": 1897000,
+        "102-150": 1813000,
+        ">151": 1734000
+      },
+      "hotel4": {
+        "2-3": 3847000,
+        "4-5": 3319000,
+        "6-10": 3289000,
+        "11-15": 3050000,
+        "16-20": 2917000,
+        "21-34": 2821000,
+        "35-66": 2691000,
+        "67-101": 2516000,
+        "102-150": 2406000,
+        ">151": 2311000
+      },
+      "hotel5": {
+        "2-3": 5342000,
+        "4-5": 5009000,
+        "6-10": 4979000,
+        "11-15": 4805000,
+        "16-20": 4607000,
+        "21-34": 4511000,
+        "35-66": 4355000,
+        "67-101": 4063000,
+        "102-150": 3888000,
+        ">151": 3754000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-gili-nanggu-mandalika-gili-trawangan",
+    "locale": "zh",
+    "title": "龙目岛5天4晚旅游套餐－吉利南古、曼达利卡与吉利特拉旺安",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "5天4晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "5天4晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛5天私人行程，涵盖吉利南古浮潜、曼达利卡和吉利特拉旺安。",
+    "highlights": [
+      "在吉利南古浮潜。",
+      "游览吉利苏达克和吉利克迪斯。",
+      "曼达利卡与吉利特拉旺安。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机并欢迎抵达。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 在吉利南古浮潜、于吉利苏达克享用午餐并游览吉利克迪斯。",
+      "第2天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第4天 - 乘私人快艇前往吉利特拉旺安并探索岛屿。",
+      "第5天 - 早餐、酒店退房、可选参观并送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排Avanza、BR-V、Innova、Almaz、Hiace、Elf或巴士等空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。",
+      "前往吉利南古的私人船只。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2427000,
+        "4-5": 1779000,
+        "6-10": 1749000,
+        "11-15": 1470000,
+        "16-20": 1377000,
+        "21-34": 1281000,
+        "35-66": 1167000,
+        "67-101": 1064000,
+        "102-150": 994000,
+        ">151": 923000
+      },
+      "hotel2": {
+        "2-3": 2927000,
+        "4-5": 2279000,
+        "6-10": 2249000,
+        "11-15": 1970000,
+        "16-20": 1877000,
+        "21-34": 1781000,
+        "35-66": 1667000,
+        "67-101": 1564000,
+        "102-150": 1494000,
+        ">151": 1423000
+      },
+      "hotel3": {
+        "2-3": 3249000,
+        "4-5": 2643000,
+        "6-10": 2613000,
+        "11-15": 2348000,
+        "16-20": 2241000,
+        "21-34": 2145000,
+        "35-66": 2026000,
+        "67-101": 1897000,
+        "102-150": 1813000,
+        ">151": 1734000
+      },
+      "hotel4": {
+        "2-3": 3847000,
+        "4-5": 3319000,
+        "6-10": 3289000,
+        "11-15": 3050000,
+        "16-20": 2917000,
+        "21-34": 2821000,
+        "35-66": 2691000,
+        "67-101": 2516000,
+        "102-150": 2406000,
+        ">151": 2311000
+      },
+      "hotel5": {
+        "2-3": 5342000,
+        "4-5": 5009000,
+        "6-10": 4979000,
+        "11-15": 4805000,
+        "16-20": 4607000,
+        "21-34": 4511000,
+        "35-66": 4355000,
+        "67-101": 4063000,
+        "102-150": 3888000,
+        ">151": 3754000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-mandalika-gili-nanggu-gili-trawangan-air-terjun",
+    "locale": "id",
+    "title": "Paket Tour Lombok 5 Hari 4 Malam – Mandalika, Gili Nanggu, Gili Trawangan & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "Paket 5 Hari 4 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "5 Hari 4 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 5 hari 4 malam untuk kedatangan pagi atau siang, mencakup Mandalika, Gili Nanggu, Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Mandalika Tour pada hari kedatangan.",
+      "Snorkeling di Gili Nanggu.",
+      "Gili Trawangan dan air terjun Senaru."
+    ],
+    "itinerary": [
+      "Hari 1 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 2 - Snorkeling di Gili Nanggu, makan siang di Gili Sudak, dan mengunjungi Gili Kedis.",
+      "Hari 3 - Menyeberang ke Gili Trawangan menggunakan private speedboat dan menjelajahi pulau.",
+      "Hari 4 - Mengunjungi Desa Senaru, Air Terjun Sendang Gile, Air Terjun Tiu Kelep, dan Hutan Monyet Pusuk.",
+      "Hari 5 - Sarapan, check-out hotel, kunjungan opsional, dan pengantaran ke Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf, atau bus sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan.",
+      "Private boat untuk Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2554000,
+        "4-5": 1889000,
+        "6-10": 1882000,
+        "11-15": 1582000,
+        "16-20": 1496000,
+        "21-34": 1390000,
+        "35-66": 1263000,
+        "67-101": 1153000,
+        "102-150": 1079000,
+        ">151": 1004000
+      },
+      "hotel2": {
+        "2-3": 3054000,
+        "4-5": 2389000,
+        "6-10": 2382000,
+        "11-15": 2082000,
+        "16-20": 1996000,
+        "21-34": 1890000,
+        "35-66": 1763000,
+        "67-101": 1653000,
+        "102-150": 1579000,
+        ">151": 1504000
+      },
+      "hotel3": {
+        "2-3": 3376000,
+        "4-5": 2753000,
+        "6-10": 2746000,
+        "11-15": 2460000,
+        "16-20": 2360000,
+        "21-34": 2254000,
+        "35-66": 2121000,
+        "67-101": 1986000,
+        "102-150": 1898000,
+        ">151": 1815000
+      },
+      "hotel4": {
+        "2-3": 3974000,
+        "4-5": 3429000,
+        "6-10": 3422000,
+        "11-15": 3162000,
+        "16-20": 3036000,
+        "21-34": 2930000,
+        "35-66": 2787000,
+        "67-101": 2605000,
+        "102-150": 2491000,
+        ">151": 2392000
+      },
+      "hotel5": {
+        "2-3": 5469000,
+        "4-5": 5119000,
+        "6-10": 5112000,
+        "11-15": 4917000,
+        "16-20": 4726000,
+        "21-34": 4620000,
+        "35-66": 4451000,
+        "67-101": 4152000,
+        "102-150": 3973000,
+        ">151": 3835000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-mandalika-gili-nanggu-gili-trawangan-air-terjun",
+    "locale": "en",
+    "title": "5-Day Lombok Tour Package – Mandalika, Gili Nanggu, Gili Trawangan & Waterfalls",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "5 Days 4 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "5 Days 4 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 5-day Lombok tour for a morning or midday arrival, covering Mandalika, Gili Nanggu, Gili Trawangan, and Sendang Gile and Tiu Kelep waterfalls.",
+    "highlights": [
+      "Mandalika tour on arrival day.",
+      "Snorkeling at Gili Nanggu.",
+      "Gili Trawangan and the Senaru waterfalls."
+    ],
+    "itinerary": [
+      "Day 1 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 2 - Snorkel at Gili Nanggu, have lunch on Gili Sudak, and visit Gili Kedis.",
+      "Day 3 - Travel to Gili Trawangan by private speedboat and explore the island.",
+      "Day 4 - Visit Senaru Village, Sendang Gile Waterfall, Tiu Kelep Waterfall, and Pusuk Monkey Forest.",
+      "Day 5 - Breakfast, hotel check-out, optional visits, and transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation by Avanza, BR-V, Innova, Almaz, Hiace, Elf, or bus according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan.",
+      "Private boat for Gili Nanggu.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2554000,
+        "4-5": 1889000,
+        "6-10": 1882000,
+        "11-15": 1582000,
+        "16-20": 1496000,
+        "21-34": 1390000,
+        "35-66": 1263000,
+        "67-101": 1153000,
+        "102-150": 1079000,
+        ">151": 1004000
+      },
+      "hotel2": {
+        "2-3": 3054000,
+        "4-5": 2389000,
+        "6-10": 2382000,
+        "11-15": 2082000,
+        "16-20": 1996000,
+        "21-34": 1890000,
+        "35-66": 1763000,
+        "67-101": 1653000,
+        "102-150": 1579000,
+        ">151": 1504000
+      },
+      "hotel3": {
+        "2-3": 3376000,
+        "4-5": 2753000,
+        "6-10": 2746000,
+        "11-15": 2460000,
+        "16-20": 2360000,
+        "21-34": 2254000,
+        "35-66": 2121000,
+        "67-101": 1986000,
+        "102-150": 1898000,
+        ">151": 1815000
+      },
+      "hotel4": {
+        "2-3": 3974000,
+        "4-5": 3429000,
+        "6-10": 3422000,
+        "11-15": 3162000,
+        "16-20": 3036000,
+        "21-34": 2930000,
+        "35-66": 2787000,
+        "67-101": 2605000,
+        "102-150": 2491000,
+        ">151": 2392000
+      },
+      "hotel5": {
+        "2-3": 5469000,
+        "4-5": 5119000,
+        "6-10": 5112000,
+        "11-15": 4917000,
+        "16-20": 4726000,
+        "21-34": 4620000,
+        "35-66": 4451000,
+        "67-101": 4152000,
+        "102-150": 3973000,
+        ">151": 3835000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-mandalika-gili-nanggu-gili-trawangan-air-terjun",
+    "locale": "ar",
+    "title": "باقة سياحية إلى لومبوك لمدة 5 أيام – مانداليكا وجيلي نانغو وجيلي تراوانغان والشلالات",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "باقة 5 أيام و4 ليالٍ",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "5 أيام و4 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 5 أيام تشمل مانداليكا وجيلي نانغو وجيلي تراوانغان وشلالي سيندانغ غيلي وتيو كيليب.",
+    "highlights": [
+      "جولة مانداليكا في يوم الوصول.",
+      "الغطس في جيلي نانغو.",
+      "جيلي تراوانغان وشلالات سينارو."
+    ],
+    "itinerary": [
+      "اليوم 1 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 2 - الغطس في جيلي نانغو وتناول الغداء في جيلي سوداك وزيارة جيلي كيديس.",
+      "اليوم 3 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص واستكشاف الجزيرة.",
+      "اليوم 4 - زيارة قرية سينارو وشلال سيندانغ غيلي وشلال تيو كيليب وغابة بوسوك للقرود.",
+      "اليوم 5 - الإفطار وتسجيل الخروج والزيارات الاختيارية والانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة باستخدام أفانزا أو BR-V أو إينوفا أو ألماز أو هايس أو إلف أو حافلة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان.",
+      "قارب خاص إلى جيلي نانغو.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2554000,
+        "4-5": 1889000,
+        "6-10": 1882000,
+        "11-15": 1582000,
+        "16-20": 1496000,
+        "21-34": 1390000,
+        "35-66": 1263000,
+        "67-101": 1153000,
+        "102-150": 1079000,
+        ">151": 1004000
+      },
+      "hotel2": {
+        "2-3": 3054000,
+        "4-5": 2389000,
+        "6-10": 2382000,
+        "11-15": 2082000,
+        "16-20": 1996000,
+        "21-34": 1890000,
+        "35-66": 1763000,
+        "67-101": 1653000,
+        "102-150": 1579000,
+        ">151": 1504000
+      },
+      "hotel3": {
+        "2-3": 3376000,
+        "4-5": 2753000,
+        "6-10": 2746000,
+        "11-15": 2460000,
+        "16-20": 2360000,
+        "21-34": 2254000,
+        "35-66": 2121000,
+        "67-101": 1986000,
+        "102-150": 1898000,
+        ">151": 1815000
+      },
+      "hotel4": {
+        "2-3": 3974000,
+        "4-5": 3429000,
+        "6-10": 3422000,
+        "11-15": 3162000,
+        "16-20": 3036000,
+        "21-34": 2930000,
+        "35-66": 2787000,
+        "67-101": 2605000,
+        "102-150": 2491000,
+        ">151": 2392000
+      },
+      "hotel5": {
+        "2-3": 5469000,
+        "4-5": 5119000,
+        "6-10": 5112000,
+        "11-15": 4917000,
+        "16-20": 4726000,
+        "21-34": 4620000,
+        "35-66": 4451000,
+        "67-101": 4152000,
+        "102-150": 3973000,
+        ">151": 3835000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-mandalika-gili-nanggu-gili-trawangan-air-terjun",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 5 Hari 4 Malam – Mandalika, Gili Nanggu, Gili Trawangan & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "Pakej 5 Hari 4 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "5 Hari 4 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Lawatan persendirian Lombok 5 hari untuk ketibaan pagi atau tengah hari, merangkumi Mandalika, Gili Nanggu, Gili Trawangan serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Lawatan Mandalika pada hari ketibaan.",
+      "Snorkeling di Gili Nanggu.",
+      "Gili Trawangan dan air terjun Senaru."
+    ],
+    "itinerary": [
+      "Hari 1 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 2 - Snorkeling di Gili Nanggu, makan tengah hari di Gili Sudak dan melawat Gili Kedis.",
+      "Hari 3 - Menyeberang ke Gili Trawangan dengan bot laju persendirian dan meneroka pulau.",
+      "Hari 4 - Melawat Kampung Senaru, Air Terjun Sendang Gile, Air Terjun Tiu Kelep dan Hutan Monyet Pusuk.",
+      "Hari 5 - Sarapan, daftar keluar hotel, lawatan pilihan dan penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf atau bas mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan.",
+      "Bot persendirian untuk Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2554000,
+        "4-5": 1889000,
+        "6-10": 1882000,
+        "11-15": 1582000,
+        "16-20": 1496000,
+        "21-34": 1390000,
+        "35-66": 1263000,
+        "67-101": 1153000,
+        "102-150": 1079000,
+        ">151": 1004000
+      },
+      "hotel2": {
+        "2-3": 3054000,
+        "4-5": 2389000,
+        "6-10": 2382000,
+        "11-15": 2082000,
+        "16-20": 1996000,
+        "21-34": 1890000,
+        "35-66": 1763000,
+        "67-101": 1653000,
+        "102-150": 1579000,
+        ">151": 1504000
+      },
+      "hotel3": {
+        "2-3": 3376000,
+        "4-5": 2753000,
+        "6-10": 2746000,
+        "11-15": 2460000,
+        "16-20": 2360000,
+        "21-34": 2254000,
+        "35-66": 2121000,
+        "67-101": 1986000,
+        "102-150": 1898000,
+        ">151": 1815000
+      },
+      "hotel4": {
+        "2-3": 3974000,
+        "4-5": 3429000,
+        "6-10": 3422000,
+        "11-15": 3162000,
+        "16-20": 3036000,
+        "21-34": 2930000,
+        "35-66": 2787000,
+        "67-101": 2605000,
+        "102-150": 2491000,
+        ">151": 2392000
+      },
+      "hotel5": {
+        "2-3": 5469000,
+        "4-5": 5119000,
+        "6-10": 5112000,
+        "11-15": 4917000,
+        "16-20": 4726000,
+        "21-34": 4620000,
+        "35-66": 4451000,
+        "67-101": 4152000,
+        "102-150": 3973000,
+        ">151": 3835000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-mandalika-gili-nanggu-gili-trawangan-air-terjun",
+    "locale": "zh",
+    "title": "龙目岛5天4晚旅游套餐－曼达利卡、吉利南古、吉利特拉旺安与瀑布",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "5天4晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "5天4晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛5天私人行程，适合早上或中午抵达，涵盖曼达利卡、吉利南古、吉利特拉旺安、仙达吉拉瀑布和蒂乌克勒普瀑布。",
+    "highlights": [
+      "抵达当天游览曼达利卡。",
+      "在吉利南古浮潜。",
+      "吉利特拉旺安与塞纳鲁瀑布。"
+    ],
+    "itinerary": [
+      "第1天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第2天 - 在吉利南古浮潜、于吉利苏达克享用午餐并游览吉利克迪斯。",
+      "第3天 - 乘私人快艇前往吉利特拉旺安并探索岛屿。",
+      "第4天 - 游览塞纳鲁村、仙达吉拉瀑布、蒂乌克勒普瀑布和普苏克猴林。",
+      "第5天 - 早餐、酒店退房、可选参观并送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排Avanza、BR-V、Innova、Almaz、Hiace、Elf或巴士等空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。",
+      "前往吉利南古的私人船只。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2554000,
+        "4-5": 1889000,
+        "6-10": 1882000,
+        "11-15": 1582000,
+        "16-20": 1496000,
+        "21-34": 1390000,
+        "35-66": 1263000,
+        "67-101": 1153000,
+        "102-150": 1079000,
+        ">151": 1004000
+      },
+      "hotel2": {
+        "2-3": 3054000,
+        "4-5": 2389000,
+        "6-10": 2382000,
+        "11-15": 2082000,
+        "16-20": 1996000,
+        "21-34": 1890000,
+        "35-66": 1763000,
+        "67-101": 1653000,
+        "102-150": 1579000,
+        ">151": 1504000
+      },
+      "hotel3": {
+        "2-3": 3376000,
+        "4-5": 2753000,
+        "6-10": 2746000,
+        "11-15": 2460000,
+        "16-20": 2360000,
+        "21-34": 2254000,
+        "35-66": 2121000,
+        "67-101": 1986000,
+        "102-150": 1898000,
+        ">151": 1815000
+      },
+      "hotel4": {
+        "2-3": 3974000,
+        "4-5": 3429000,
+        "6-10": 3422000,
+        "11-15": 3162000,
+        "16-20": 3036000,
+        "21-34": 2930000,
+        "35-66": 2787000,
+        "67-101": 2605000,
+        "102-150": 2491000,
+        ">151": 2392000
+      },
+      "hotel5": {
+        "2-3": 5469000,
+        "4-5": 5119000,
+        "6-10": 5112000,
+        "11-15": 4917000,
+        "16-20": 4726000,
+        "21-34": 4620000,
+        "35-66": 4451000,
+        "67-101": 4152000,
+        "102-150": 3973000,
+        ">151": 3835000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-mandalika-gili-trawangan-air-terjun",
+    "locale": "id",
+    "title": "Paket Tour Lombok 5 Hari 4 Malam – Mandalika, Gili Trawangan & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "Paket 5 Hari 4 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "5 Hari 4 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 5 hari 4 malam dengan Mandalika, eksplorasi Gili Trawangan menggunakan private speedboat, serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Eksplorasi Gili Trawangan.",
+      "Private speedboat.",
+      "Mandalika dan air terjun Senaru."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 3 - Menyeberang ke Gili Trawangan menggunakan private speedboat dan menjelajahi pulau.",
+      "Hari 4 - Mengunjungi Desa Senaru, Air Terjun Sendang Gile, Air Terjun Tiu Kelep, dan Hutan Monyet Pusuk.",
+      "Hari 5 - Sarapan, check-out hotel, kunjungan opsional, dan pengantaran ke Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf, atau bus sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2324000,
+        "4-5": 1717000,
+        "6-10": 1706000,
+        "11-15": 1428000,
+        "16-20": 1408000,
+        "21-34": 1287000,
+        "35-66": 1180000,
+        "67-101": 1061000,
+        "102-150": 996000,
+        ">151": 924000
+      },
+      "hotel2": {
+        "2-3": 2824000,
+        "4-5": 2217000,
+        "6-10": 2206000,
+        "11-15": 1928000,
+        "16-20": 1908000,
+        "21-34": 1787000,
+        "35-66": 1680000,
+        "67-101": 1561000,
+        "102-150": 1496000,
+        ">151": 1424000
+      },
+      "hotel3": {
+        "2-3": 3146000,
+        "4-5": 2581000,
+        "6-10": 2570000,
+        "11-15": 2306000,
+        "16-20": 2272000,
+        "21-34": 2151000,
+        "35-66": 2038000,
+        "67-101": 1895000,
+        "102-150": 1815000,
+        ">151": 1735000
+      },
+      "hotel4": {
+        "2-3": 3744000,
+        "4-5": 3257000,
+        "6-10": 3246000,
+        "11-15": 3008000,
+        "16-20": 2948000,
+        "21-34": 2827000,
+        "35-66": 2704000,
+        "67-101": 2513000,
+        "102-150": 2408000,
+        ">151": 2312000
+      },
+      "hotel5": {
+        "2-3": 5239000,
+        "4-5": 4947000,
+        "6-10": 4936000,
+        "11-15": 4763000,
+        "16-20": 4638000,
+        "21-34": 4517000,
+        "35-66": 4368000,
+        "67-101": 4060000,
+        "102-150": 3890000,
+        ">151": 3755000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-mandalika-gili-trawangan-air-terjun",
+    "locale": "en",
+    "title": "5-Day Lombok Tour Package – Mandalika, Gili Trawangan & Waterfalls",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "5 Days 4 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "5 Days 4 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 5-day Lombok tour covering Mandalika, Gili Trawangan by private speedboat, and Sendang Gile and Tiu Kelep waterfalls.",
+    "highlights": [
+      "Explore Gili Trawangan.",
+      "Private speedboat.",
+      "Mandalika and the Senaru waterfalls."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup and welcome at Lombok International Airport.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 3 - Travel to Gili Trawangan by private speedboat and explore the island.",
+      "Day 4 - Visit Senaru Village, Sendang Gile Waterfall, Tiu Kelep Waterfall, and Pusuk Monkey Forest.",
+      "Day 5 - Breakfast, hotel check-out, optional visits, and transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation by Avanza, BR-V, Innova, Almaz, Hiace, Elf, or bus according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2324000,
+        "4-5": 1717000,
+        "6-10": 1706000,
+        "11-15": 1428000,
+        "16-20": 1408000,
+        "21-34": 1287000,
+        "35-66": 1180000,
+        "67-101": 1061000,
+        "102-150": 996000,
+        ">151": 924000
+      },
+      "hotel2": {
+        "2-3": 2824000,
+        "4-5": 2217000,
+        "6-10": 2206000,
+        "11-15": 1928000,
+        "16-20": 1908000,
+        "21-34": 1787000,
+        "35-66": 1680000,
+        "67-101": 1561000,
+        "102-150": 1496000,
+        ">151": 1424000
+      },
+      "hotel3": {
+        "2-3": 3146000,
+        "4-5": 2581000,
+        "6-10": 2570000,
+        "11-15": 2306000,
+        "16-20": 2272000,
+        "21-34": 2151000,
+        "35-66": 2038000,
+        "67-101": 1895000,
+        "102-150": 1815000,
+        ">151": 1735000
+      },
+      "hotel4": {
+        "2-3": 3744000,
+        "4-5": 3257000,
+        "6-10": 3246000,
+        "11-15": 3008000,
+        "16-20": 2948000,
+        "21-34": 2827000,
+        "35-66": 2704000,
+        "67-101": 2513000,
+        "102-150": 2408000,
+        ">151": 2312000
+      },
+      "hotel5": {
+        "2-3": 5239000,
+        "4-5": 4947000,
+        "6-10": 4936000,
+        "11-15": 4763000,
+        "16-20": 4638000,
+        "21-34": 4517000,
+        "35-66": 4368000,
+        "67-101": 4060000,
+        "102-150": 3890000,
+        ">151": 3755000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-mandalika-gili-trawangan-air-terjun",
+    "locale": "ar",
+    "title": "باقة سياحية إلى لومبوك لمدة 5 أيام – مانداليكا وجيلي تراوانغان والشلالات",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "باقة 5 أيام و4 ليالٍ",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "5 أيام و4 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 5 أيام تشمل مانداليكا وجيلي تراوانغان بقارب سريع خاص وشلالي سيندانغ غيلي وتيو كيليب.",
+    "highlights": [
+      "استكشاف جيلي تراوانغان.",
+      "قارب سريع خاص.",
+      "مانداليكا وشلالات سينارو."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال والترحيب في مطار لومبوك الدولي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 3 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص واستكشاف الجزيرة.",
+      "اليوم 4 - زيارة قرية سينارو وشلال سيندانغ غيلي وشلال تيو كيليب وغابة بوسوك للقرود.",
+      "اليوم 5 - الإفطار وتسجيل الخروج والزيارات الاختيارية والانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة باستخدام أفانزا أو BR-V أو إينوفا أو ألماز أو هايس أو إلف أو حافلة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2324000,
+        "4-5": 1717000,
+        "6-10": 1706000,
+        "11-15": 1428000,
+        "16-20": 1408000,
+        "21-34": 1287000,
+        "35-66": 1180000,
+        "67-101": 1061000,
+        "102-150": 996000,
+        ">151": 924000
+      },
+      "hotel2": {
+        "2-3": 2824000,
+        "4-5": 2217000,
+        "6-10": 2206000,
+        "11-15": 1928000,
+        "16-20": 1908000,
+        "21-34": 1787000,
+        "35-66": 1680000,
+        "67-101": 1561000,
+        "102-150": 1496000,
+        ">151": 1424000
+      },
+      "hotel3": {
+        "2-3": 3146000,
+        "4-5": 2581000,
+        "6-10": 2570000,
+        "11-15": 2306000,
+        "16-20": 2272000,
+        "21-34": 2151000,
+        "35-66": 2038000,
+        "67-101": 1895000,
+        "102-150": 1815000,
+        ">151": 1735000
+      },
+      "hotel4": {
+        "2-3": 3744000,
+        "4-5": 3257000,
+        "6-10": 3246000,
+        "11-15": 3008000,
+        "16-20": 2948000,
+        "21-34": 2827000,
+        "35-66": 2704000,
+        "67-101": 2513000,
+        "102-150": 2408000,
+        ">151": 2312000
+      },
+      "hotel5": {
+        "2-3": 5239000,
+        "4-5": 4947000,
+        "6-10": 4936000,
+        "11-15": 4763000,
+        "16-20": 4638000,
+        "21-34": 4517000,
+        "35-66": 4368000,
+        "67-101": 4060000,
+        "102-150": 3890000,
+        ">151": 3755000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-mandalika-gili-trawangan-air-terjun",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 5 Hari 4 Malam – Mandalika, Gili Trawangan & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "Pakej 5 Hari 4 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "5 Hari 4 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Lawatan persendirian Lombok 5 hari merangkumi Mandalika, Gili Trawangan dengan bot laju persendirian serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Meneroka Gili Trawangan.",
+      "Bot laju persendirian.",
+      "Mandalika dan air terjun Senaru."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput dan disambut di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 3 - Menyeberang ke Gili Trawangan dengan bot laju persendirian dan meneroka pulau.",
+      "Hari 4 - Melawat Kampung Senaru, Air Terjun Sendang Gile, Air Terjun Tiu Kelep dan Hutan Monyet Pusuk.",
+      "Hari 5 - Sarapan, daftar keluar hotel, lawatan pilihan dan penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf atau bas mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2324000,
+        "4-5": 1717000,
+        "6-10": 1706000,
+        "11-15": 1428000,
+        "16-20": 1408000,
+        "21-34": 1287000,
+        "35-66": 1180000,
+        "67-101": 1061000,
+        "102-150": 996000,
+        ">151": 924000
+      },
+      "hotel2": {
+        "2-3": 2824000,
+        "4-5": 2217000,
+        "6-10": 2206000,
+        "11-15": 1928000,
+        "16-20": 1908000,
+        "21-34": 1787000,
+        "35-66": 1680000,
+        "67-101": 1561000,
+        "102-150": 1496000,
+        ">151": 1424000
+      },
+      "hotel3": {
+        "2-3": 3146000,
+        "4-5": 2581000,
+        "6-10": 2570000,
+        "11-15": 2306000,
+        "16-20": 2272000,
+        "21-34": 2151000,
+        "35-66": 2038000,
+        "67-101": 1895000,
+        "102-150": 1815000,
+        ">151": 1735000
+      },
+      "hotel4": {
+        "2-3": 3744000,
+        "4-5": 3257000,
+        "6-10": 3246000,
+        "11-15": 3008000,
+        "16-20": 2948000,
+        "21-34": 2827000,
+        "35-66": 2704000,
+        "67-101": 2513000,
+        "102-150": 2408000,
+        ">151": 2312000
+      },
+      "hotel5": {
+        "2-3": 5239000,
+        "4-5": 4947000,
+        "6-10": 4936000,
+        "11-15": 4763000,
+        "16-20": 4638000,
+        "21-34": 4517000,
+        "35-66": 4368000,
+        "67-101": 4060000,
+        "102-150": 3890000,
+        ">151": 3755000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-mandalika-gili-trawangan-air-terjun",
+    "locale": "zh",
+    "title": "龙目岛5天4晚旅游套餐－曼达利卡、吉利特拉旺安与瀑布",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "5天4晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "5天4晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛5天私人行程，涵盖曼达利卡、私人快艇前往吉利特拉旺安，以及仙达吉拉和蒂乌克勒普瀑布。",
+    "highlights": [
+      "探索吉利特拉旺安。",
+      "私人快艇。",
+      "曼达利卡与塞纳鲁瀑布。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机并欢迎抵达。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第3天 - 乘私人快艇前往吉利特拉旺安并探索岛屿。",
+      "第4天 - 游览塞纳鲁村、仙达吉拉瀑布、蒂乌克勒普瀑布和普苏克猴林。",
+      "第5天 - 早餐、酒店退房、可选参观并送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排Avanza、BR-V、Innova、Almaz、Hiace、Elf或巴士等空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2324000,
+        "4-5": 1717000,
+        "6-10": 1706000,
+        "11-15": 1428000,
+        "16-20": 1408000,
+        "21-34": 1287000,
+        "35-66": 1180000,
+        "67-101": 1061000,
+        "102-150": 996000,
+        ">151": 924000
+      },
+      "hotel2": {
+        "2-3": 2824000,
+        "4-5": 2217000,
+        "6-10": 2206000,
+        "11-15": 1928000,
+        "16-20": 1908000,
+        "21-34": 1787000,
+        "35-66": 1680000,
+        "67-101": 1561000,
+        "102-150": 1496000,
+        ">151": 1424000
+      },
+      "hotel3": {
+        "2-3": 3146000,
+        "4-5": 2581000,
+        "6-10": 2570000,
+        "11-15": 2306000,
+        "16-20": 2272000,
+        "21-34": 2151000,
+        "35-66": 2038000,
+        "67-101": 1895000,
+        "102-150": 1815000,
+        ">151": 1735000
+      },
+      "hotel4": {
+        "2-3": 3744000,
+        "4-5": 3257000,
+        "6-10": 3246000,
+        "11-15": 3008000,
+        "16-20": 2948000,
+        "21-34": 2827000,
+        "35-66": 2704000,
+        "67-101": 2513000,
+        "102-150": 2408000,
+        ">151": 2312000
+      },
+      "hotel5": {
+        "2-3": 5239000,
+        "4-5": 4947000,
+        "6-10": 4936000,
+        "11-15": 4763000,
+        "16-20": 4638000,
+        "21-34": 4517000,
+        "35-66": 4368000,
+        "67-101": 4060000,
+        "102-150": 3890000,
+        ">151": 3755000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-pink-beach-mandalika-gili-trawangan",
+    "locale": "id",
+    "title": "Paket Tour Lombok 5 Hari 4 Malam – Pink Beach, Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "Paket 5 Hari 4 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "5 Hari 4 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 5 hari 4 malam dengan Pink Beach, Gili Petelu, Mandalika, dan Gili Trawangan.",
+    "highlights": [
+      "Pink Beach Tour dan snorkeling di Gili Petelu.",
+      "Mandalika Tour.",
+      "Gili Trawangan dengan private speedboat."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Gili Pasir, Pink Beach 1, Gili Petelu, Pink Beach 2, dan Pink Beach 3.",
+      "Hari 2 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 4 - Menyeberang ke Gili Trawangan menggunakan private speedboat dan menjelajahi pulau.",
+      "Hari 5 - Sarapan, check-out hotel, kunjungan opsional, dan pengantaran ke Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf, atau bus sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan.",
+      "Private boat untuk Pink Beach Tour.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2542000,
+        "4-5": 1857000,
+        "6-10": 1810000,
+        "11-15": 1541000,
+        "16-20": 1429000,
+        "21-34": 1339000,
+        "35-66": 1216000,
+        "67-101": 1107000,
+        "102-150": 1036000,
+        ">151": 966000
+      },
+      "hotel2": {
+        "2-3": 3042000,
+        "4-5": 2357000,
+        "6-10": 2310000,
+        "11-15": 2041000,
+        "16-20": 1929000,
+        "21-34": 1839000,
+        "35-66": 1716000,
+        "67-101": 1607000,
+        "102-150": 1536000,
+        ">151": 1466000
+      },
+      "hotel3": {
+        "2-3": 3364000,
+        "4-5": 2721000,
+        "6-10": 2674000,
+        "11-15": 2419000,
+        "16-20": 2293000,
+        "21-34": 2203000,
+        "35-66": 2075000,
+        "67-101": 1941000,
+        "102-150": 1855000,
+        ">151": 1777000
+      },
+      "hotel4": {
+        "2-3": 3962000,
+        "4-5": 3397000,
+        "6-10": 3350000,
+        "11-15": 3121000,
+        "16-20": 2969000,
+        "21-34": 2879000,
+        "35-66": 2740000,
+        "67-101": 2559000,
+        "102-150": 2448000,
+        ">151": 2354000
+      },
+      "hotel5": {
+        "2-3": 5457000,
+        "4-5": 5087000,
+        "6-10": 5040000,
+        "11-15": 4876000,
+        "16-20": 4659000,
+        "21-34": 4569000,
+        "35-66": 4404000,
+        "67-101": 4106000,
+        "102-150": 3930000,
+        ">151": 3797000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-pink-beach-mandalika-gili-trawangan",
+    "locale": "en",
+    "title": "5-Day Lombok Tour Package – Pink Beach, Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "5 Days 4 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "5 Days 4 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 5-day Lombok tour covering Pink Beach, Gili Petelu, Mandalika, and Gili Trawangan.",
+    "highlights": [
+      "Pink Beach tour and snorkeling at Gili Petelu.",
+      "Mandalika tour.",
+      "Gili Trawangan by private speedboat."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup and welcome at Lombok International Airport.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Gili Pasir, Pink Beach 1, Gili Petelu, Pink Beach 2, and Pink Beach 3.",
+      "Day 2 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 4 - Travel to Gili Trawangan by private speedboat and explore the island.",
+      "Day 5 - Breakfast, hotel check-out, optional visits, and transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation by Avanza, BR-V, Innova, Almaz, Hiace, Elf, or bus according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan.",
+      "Private boat for the Pink Beach tour.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2542000,
+        "4-5": 1857000,
+        "6-10": 1810000,
+        "11-15": 1541000,
+        "16-20": 1429000,
+        "21-34": 1339000,
+        "35-66": 1216000,
+        "67-101": 1107000,
+        "102-150": 1036000,
+        ">151": 966000
+      },
+      "hotel2": {
+        "2-3": 3042000,
+        "4-5": 2357000,
+        "6-10": 2310000,
+        "11-15": 2041000,
+        "16-20": 1929000,
+        "21-34": 1839000,
+        "35-66": 1716000,
+        "67-101": 1607000,
+        "102-150": 1536000,
+        ">151": 1466000
+      },
+      "hotel3": {
+        "2-3": 3364000,
+        "4-5": 2721000,
+        "6-10": 2674000,
+        "11-15": 2419000,
+        "16-20": 2293000,
+        "21-34": 2203000,
+        "35-66": 2075000,
+        "67-101": 1941000,
+        "102-150": 1855000,
+        ">151": 1777000
+      },
+      "hotel4": {
+        "2-3": 3962000,
+        "4-5": 3397000,
+        "6-10": 3350000,
+        "11-15": 3121000,
+        "16-20": 2969000,
+        "21-34": 2879000,
+        "35-66": 2740000,
+        "67-101": 2559000,
+        "102-150": 2448000,
+        ">151": 2354000
+      },
+      "hotel5": {
+        "2-3": 5457000,
+        "4-5": 5087000,
+        "6-10": 5040000,
+        "11-15": 4876000,
+        "16-20": 4659000,
+        "21-34": 4569000,
+        "35-66": 4404000,
+        "67-101": 4106000,
+        "102-150": 3930000,
+        ">151": 3797000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-pink-beach-mandalika-gili-trawangan",
+    "locale": "ar",
+    "title": "باقة سياحية إلى لومبوك لمدة 5 أيام – شاطئ بينك ومانداليكا وجيلي تراوانغان",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "باقة 5 أيام و4 ليالٍ",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "5 أيام و4 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 5 أيام تشمل شاطئ بينك وجيلي بيتيلو ومانداليكا وجيلي تراوانغان.",
+    "highlights": [
+      "جولة شاطئ بينك والغطس في جيلي بيتيلو.",
+      "جولة مانداليكا.",
+      "جيلي تراوانغان بقارب سريع خاص."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال والترحيب في مطار لومبوك الدولي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة جيلي باسير وشاطئ بينك 1 وجيلي بيتيلو وشاطئ بينك 2 وشاطئ بينك 3.",
+      "اليوم 2 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 4 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص واستكشاف الجزيرة.",
+      "اليوم 5 - الإفطار وتسجيل الخروج والزيارات الاختيارية والانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة باستخدام أفانزا أو BR-V أو إينوفا أو ألماز أو هايس أو إلف أو حافلة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان.",
+      "قارب خاص لجولة شاطئ بينك.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2542000,
+        "4-5": 1857000,
+        "6-10": 1810000,
+        "11-15": 1541000,
+        "16-20": 1429000,
+        "21-34": 1339000,
+        "35-66": 1216000,
+        "67-101": 1107000,
+        "102-150": 1036000,
+        ">151": 966000
+      },
+      "hotel2": {
+        "2-3": 3042000,
+        "4-5": 2357000,
+        "6-10": 2310000,
+        "11-15": 2041000,
+        "16-20": 1929000,
+        "21-34": 1839000,
+        "35-66": 1716000,
+        "67-101": 1607000,
+        "102-150": 1536000,
+        ">151": 1466000
+      },
+      "hotel3": {
+        "2-3": 3364000,
+        "4-5": 2721000,
+        "6-10": 2674000,
+        "11-15": 2419000,
+        "16-20": 2293000,
+        "21-34": 2203000,
+        "35-66": 2075000,
+        "67-101": 1941000,
+        "102-150": 1855000,
+        ">151": 1777000
+      },
+      "hotel4": {
+        "2-3": 3962000,
+        "4-5": 3397000,
+        "6-10": 3350000,
+        "11-15": 3121000,
+        "16-20": 2969000,
+        "21-34": 2879000,
+        "35-66": 2740000,
+        "67-101": 2559000,
+        "102-150": 2448000,
+        ">151": 2354000
+      },
+      "hotel5": {
+        "2-3": 5457000,
+        "4-5": 5087000,
+        "6-10": 5040000,
+        "11-15": 4876000,
+        "16-20": 4659000,
+        "21-34": 4569000,
+        "35-66": 4404000,
+        "67-101": 4106000,
+        "102-150": 3930000,
+        ">151": 3797000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-pink-beach-mandalika-gili-trawangan",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 5 Hari 4 Malam – Pantai Pink, Mandalika & Gili Trawangan",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "Pakej 5 Hari 4 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "5 Hari 4 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Lawatan persendirian Lombok 5 hari merangkumi Pantai Pink, Gili Petelu, Mandalika dan Gili Trawangan.",
+    "highlights": [
+      "Lawatan Pantai Pink dan snorkeling di Gili Petelu.",
+      "Lawatan Mandalika.",
+      "Gili Trawangan dengan bot laju persendirian."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput dan disambut di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Gili Pasir, Pantai Pink 1, Gili Petelu, Pantai Pink 2 dan Pantai Pink 3.",
+      "Hari 2 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 4 - Menyeberang ke Gili Trawangan dengan bot laju persendirian dan meneroka pulau.",
+      "Hari 5 - Sarapan, daftar keluar hotel, lawatan pilihan dan penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf atau bas mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan.",
+      "Bot persendirian untuk lawatan Pantai Pink.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2542000,
+        "4-5": 1857000,
+        "6-10": 1810000,
+        "11-15": 1541000,
+        "16-20": 1429000,
+        "21-34": 1339000,
+        "35-66": 1216000,
+        "67-101": 1107000,
+        "102-150": 1036000,
+        ">151": 966000
+      },
+      "hotel2": {
+        "2-3": 3042000,
+        "4-5": 2357000,
+        "6-10": 2310000,
+        "11-15": 2041000,
+        "16-20": 1929000,
+        "21-34": 1839000,
+        "35-66": 1716000,
+        "67-101": 1607000,
+        "102-150": 1536000,
+        ">151": 1466000
+      },
+      "hotel3": {
+        "2-3": 3364000,
+        "4-5": 2721000,
+        "6-10": 2674000,
+        "11-15": 2419000,
+        "16-20": 2293000,
+        "21-34": 2203000,
+        "35-66": 2075000,
+        "67-101": 1941000,
+        "102-150": 1855000,
+        ">151": 1777000
+      },
+      "hotel4": {
+        "2-3": 3962000,
+        "4-5": 3397000,
+        "6-10": 3350000,
+        "11-15": 3121000,
+        "16-20": 2969000,
+        "21-34": 2879000,
+        "35-66": 2740000,
+        "67-101": 2559000,
+        "102-150": 2448000,
+        ">151": 2354000
+      },
+      "hotel5": {
+        "2-3": 5457000,
+        "4-5": 5087000,
+        "6-10": 5040000,
+        "11-15": 4876000,
+        "16-20": 4659000,
+        "21-34": 4569000,
+        "35-66": 4404000,
+        "67-101": 4106000,
+        "102-150": 3930000,
+        ">151": 3797000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-pink-beach-mandalika-gili-trawangan",
+    "locale": "zh",
+    "title": "龙目岛5天4晚旅游套餐－粉红海滩、曼达利卡与吉利特拉旺安",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "5天4晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "5天4晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛5天私人行程，涵盖粉红海滩、吉利佩特鲁、曼达利卡和吉利特拉旺安。",
+    "highlights": [
+      "粉红海滩行程及吉利佩特鲁浮潜。",
+      "曼达利卡行程。",
+      "乘私人快艇前往吉利特拉旺安。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机并欢迎抵达。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览吉利帕希尔、粉红海滩1、吉利佩特鲁、粉红海滩2和粉红海滩3。",
+      "第2天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第4天 - 乘私人快艇前往吉利特拉旺安并探索岛屿。",
+      "第5天 - 早餐、酒店退房、可选参观并送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排Avanza、BR-V、Innova、Almaz、Hiace、Elf或巴士等空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。",
+      "粉红海滩行程私人船只。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2542000,
+        "4-5": 1857000,
+        "6-10": 1810000,
+        "11-15": 1541000,
+        "16-20": 1429000,
+        "21-34": 1339000,
+        "35-66": 1216000,
+        "67-101": 1107000,
+        "102-150": 1036000,
+        ">151": 966000
+      },
+      "hotel2": {
+        "2-3": 3042000,
+        "4-5": 2357000,
+        "6-10": 2310000,
+        "11-15": 2041000,
+        "16-20": 1929000,
+        "21-34": 1839000,
+        "35-66": 1716000,
+        "67-101": 1607000,
+        "102-150": 1536000,
+        ">151": 1466000
+      },
+      "hotel3": {
+        "2-3": 3364000,
+        "4-5": 2721000,
+        "6-10": 2674000,
+        "11-15": 2419000,
+        "16-20": 2293000,
+        "21-34": 2203000,
+        "35-66": 2075000,
+        "67-101": 1941000,
+        "102-150": 1855000,
+        ">151": 1777000
+      },
+      "hotel4": {
+        "2-3": 3962000,
+        "4-5": 3397000,
+        "6-10": 3350000,
+        "11-15": 3121000,
+        "16-20": 2969000,
+        "21-34": 2879000,
+        "35-66": 2740000,
+        "67-101": 2559000,
+        "102-150": 2448000,
+        ">151": 2354000
+      },
+      "hotel5": {
+        "2-3": 5457000,
+        "4-5": 5087000,
+        "6-10": 5040000,
+        "11-15": 4876000,
+        "16-20": 4659000,
+        "21-34": 4569000,
+        "35-66": 4404000,
+        "67-101": 4106000,
+        "102-150": 3930000,
+        ">151": 3797000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-snorkeling-gili-trawangan-meno-air",
+    "locale": "id",
+    "title": "Paket Tour Lombok 5 Hari 4 Malam – Snorkeling Gili Trawangan, Meno & Air",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "Paket 5 Hari 4 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "5 Hari 4 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Private tour Lombok 5 hari 4 malam dengan Mandalika, snorkeling tiga Gili menggunakan glass-bottom boat, serta wisata air terjun Senaru.",
+    "highlights": [
+      "Snorkeling di Gili Meno, Gili Air, dan Gili Trawangan.",
+      "Private glass-bottom boat.",
+      "Mandalika dan air terjun Senaru."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Mengunjungi Desa Sukarare, Desa Sade, Pantai Kuta Mandalika, Sirkuit Mandalika, Pantai Tanjung Aan, dan Bukit Merese.",
+      "Hari 3 - Snorkeling di Gili Meno, Gili Air, dan Gili Trawangan menggunakan private glass-bottom boat.",
+      "Hari 4 - Mengunjungi Desa Senaru, Air Terjun Sendang Gile, Air Terjun Tiu Kelep, dan Hutan Monyet Pusuk.",
+      "Hari 5 - Sarapan, check-out hotel, kunjungan opsional, dan pengantaran ke Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf, atau bus sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private glass-bottom boat.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2496000,
+        "4-5": 1814000,
+        "6-10": 1793000,
+        "11-15": 1403000,
+        "16-20": 1380000,
+        "21-34": 1332000,
+        "35-66": 1234000,
+        "67-101": 1077000,
+        "102-150": 1011000,
+        ">151": 943000
+      },
+      "hotel2": {
+        "2-3": 2996000,
+        "4-5": 2314000,
+        "6-10": 2293000,
+        "11-15": 1903000,
+        "16-20": 1880000,
+        "21-34": 1832000,
+        "35-66": 1734000,
+        "67-101": 1577000,
+        "102-150": 1511000,
+        ">151": 1443000
+      },
+      "hotel3": {
+        "2-3": 3318000,
+        "4-5": 2678000,
+        "6-10": 2657000,
+        "11-15": 2281000,
+        "16-20": 2236000,
+        "21-34": 2196000,
+        "35-66": 2092000,
+        "67-101": 1910000,
+        "102-150": 1830000,
+        ">151": 1754000
+      },
+      "hotel4": {
+        "2-3": 3916000,
+        "4-5": 3354000,
+        "6-10": 3333000,
+        "11-15": 2983000,
+        "16-20": 2896000,
+        "21-34": 2872000,
+        "35-66": 2758000,
+        "67-101": 2529000,
+        "102-150": 2423000,
+        ">151": 2331000
+      },
+      "hotel5": {
+        "2-3": 5411000,
+        "4-5": 5044000,
+        "6-10": 5023000,
+        "11-15": 4738000,
+        "16-20": 4547000,
+        "21-34": 4491000,
+        "35-66": 4422000,
+        "67-101": 4076000,
+        "102-150": 3905000,
+        ">151": 3774000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-snorkeling-gili-trawangan-meno-air",
+    "locale": "en",
+    "title": "5-Day Lombok Tour Package – Snorkeling Gili Trawangan, Meno & Air",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "5 Days 4 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "5 Days 4 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 5-day Lombok tour covering Mandalika, three-island snorkeling by glass-bottom boat, and the Senaru waterfalls.",
+    "highlights": [
+      "Snorkeling at Gili Meno, Gili Air, and Gili Trawangan.",
+      "Private glass-bottom boat.",
+      "Mandalika and the Senaru waterfalls."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup and welcome at Lombok International Airport.",
+      "Day 1 - Dinner, hotel check-in, and rest.",
+      "Day 2 - Visit Sukarare Village, Sade Village, Kuta Mandalika Beach, Mandalika Circuit, Tanjung Aan Beach, and Merese Hill.",
+      "Day 3 - Snorkel at Gili Meno, Gili Air, and Gili Trawangan by private glass-bottom boat.",
+      "Day 4 - Visit Senaru Village, Sendang Gile Waterfall, Tiu Kelep Waterfall, and Pusuk Monkey Forest.",
+      "Day 5 - Breakfast, hotel check-out, optional visits, and transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation by Avanza, BR-V, Innova, Almaz, Hiace, Elf, or bus according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private glass-bottom boat.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2496000,
+        "4-5": 1814000,
+        "6-10": 1793000,
+        "11-15": 1403000,
+        "16-20": 1380000,
+        "21-34": 1332000,
+        "35-66": 1234000,
+        "67-101": 1077000,
+        "102-150": 1011000,
+        ">151": 943000
+      },
+      "hotel2": {
+        "2-3": 2996000,
+        "4-5": 2314000,
+        "6-10": 2293000,
+        "11-15": 1903000,
+        "16-20": 1880000,
+        "21-34": 1832000,
+        "35-66": 1734000,
+        "67-101": 1577000,
+        "102-150": 1511000,
+        ">151": 1443000
+      },
+      "hotel3": {
+        "2-3": 3318000,
+        "4-5": 2678000,
+        "6-10": 2657000,
+        "11-15": 2281000,
+        "16-20": 2236000,
+        "21-34": 2196000,
+        "35-66": 2092000,
+        "67-101": 1910000,
+        "102-150": 1830000,
+        ">151": 1754000
+      },
+      "hotel4": {
+        "2-3": 3916000,
+        "4-5": 3354000,
+        "6-10": 3333000,
+        "11-15": 2983000,
+        "16-20": 2896000,
+        "21-34": 2872000,
+        "35-66": 2758000,
+        "67-101": 2529000,
+        "102-150": 2423000,
+        ">151": 2331000
+      },
+      "hotel5": {
+        "2-3": 5411000,
+        "4-5": 5044000,
+        "6-10": 5023000,
+        "11-15": 4738000,
+        "16-20": 4547000,
+        "21-34": 4491000,
+        "35-66": 4422000,
+        "67-101": 4076000,
+        "102-150": 3905000,
+        ">151": 3774000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-snorkeling-gili-trawangan-meno-air",
+    "locale": "ar",
+    "title": "باقة سياحية إلى لومبوك لمدة 5 أيام – الغطس في جيلي تراوانغان ومينو وآير",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "باقة 5 أيام و4 ليالٍ",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "5 أيام و4 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 5 أيام تشمل مانداليكا والغطس في ثلاث جزر بقارب ذي قاع زجاجي وشلالات سينارو.",
+    "highlights": [
+      "الغطس في جيلي مينو وجيلي آير وجيلي تراوانغان.",
+      "قارب خاص ذو قاع زجاجي.",
+      "مانداليكا وشلالات سينارو."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال والترحيب في مطار لومبوك الدولي.",
+      "اليوم 1 - تناول العشاء وتسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - زيارة قرية سوكاراري وقرية سادي وشاطئ كوتا مانداليكا وحلبة مانداليكا وشاطئ تانجونغ آن وتل ميريسي.",
+      "اليوم 3 - الغطس في جيلي مينو وجيلي آير وجيلي تراوانغان بقارب خاص ذي قاع زجاجي.",
+      "اليوم 4 - زيارة قرية سينارو وشلال سيندانغ غيلي وشلال تيو كيليب وغابة بوسوك للقرود.",
+      "اليوم 5 - الإفطار وتسجيل الخروج والزيارات الاختيارية والانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة باستخدام أفانزا أو BR-V أو إينوفا أو ألماز أو هايس أو إلف أو حافلة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب خاص ذو قاع زجاجي.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2496000,
+        "4-5": 1814000,
+        "6-10": 1793000,
+        "11-15": 1403000,
+        "16-20": 1380000,
+        "21-34": 1332000,
+        "35-66": 1234000,
+        "67-101": 1077000,
+        "102-150": 1011000,
+        ">151": 943000
+      },
+      "hotel2": {
+        "2-3": 2996000,
+        "4-5": 2314000,
+        "6-10": 2293000,
+        "11-15": 1903000,
+        "16-20": 1880000,
+        "21-34": 1832000,
+        "35-66": 1734000,
+        "67-101": 1577000,
+        "102-150": 1511000,
+        ">151": 1443000
+      },
+      "hotel3": {
+        "2-3": 3318000,
+        "4-5": 2678000,
+        "6-10": 2657000,
+        "11-15": 2281000,
+        "16-20": 2236000,
+        "21-34": 2196000,
+        "35-66": 2092000,
+        "67-101": 1910000,
+        "102-150": 1830000,
+        ">151": 1754000
+      },
+      "hotel4": {
+        "2-3": 3916000,
+        "4-5": 3354000,
+        "6-10": 3333000,
+        "11-15": 2983000,
+        "16-20": 2896000,
+        "21-34": 2872000,
+        "35-66": 2758000,
+        "67-101": 2529000,
+        "102-150": 2423000,
+        ">151": 2331000
+      },
+      "hotel5": {
+        "2-3": 5411000,
+        "4-5": 5044000,
+        "6-10": 5023000,
+        "11-15": 4738000,
+        "16-20": 4547000,
+        "21-34": 4491000,
+        "35-66": 4422000,
+        "67-101": 4076000,
+        "102-150": 3905000,
+        ">151": 3774000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-snorkeling-gili-trawangan-meno-air",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 5 Hari 4 Malam – Snorkeling Gili Trawangan, Meno & Air",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "Pakej 5 Hari 4 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "5 Hari 4 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Lawatan persendirian Lombok 5 hari merangkumi Mandalika, snorkeling tiga Gili dengan bot kaca dasar dan air terjun Senaru.",
+    "highlights": [
+      "Snorkeling di Gili Meno, Gili Air dan Gili Trawangan.",
+      "Bot kaca dasar persendirian.",
+      "Mandalika dan air terjun Senaru."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput dan disambut di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Makan malam, daftar masuk hotel dan berehat.",
+      "Hari 2 - Melawat Kampung Sukarare, Kampung Sade, Pantai Kuta Mandalika, Litar Mandalika, Pantai Tanjung Aan dan Bukit Merese.",
+      "Hari 3 - Snorkeling di Gili Meno, Gili Air dan Gili Trawangan dengan bot kaca dasar persendirian.",
+      "Hari 4 - Melawat Kampung Senaru, Air Terjun Sendang Gile, Air Terjun Tiu Kelep dan Hutan Monyet Pusuk.",
+      "Hari 5 - Sarapan, daftar keluar hotel, lawatan pilihan dan penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf atau bas mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot kaca dasar persendirian.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2496000,
+        "4-5": 1814000,
+        "6-10": 1793000,
+        "11-15": 1403000,
+        "16-20": 1380000,
+        "21-34": 1332000,
+        "35-66": 1234000,
+        "67-101": 1077000,
+        "102-150": 1011000,
+        ">151": 943000
+      },
+      "hotel2": {
+        "2-3": 2996000,
+        "4-5": 2314000,
+        "6-10": 2293000,
+        "11-15": 1903000,
+        "16-20": 1880000,
+        "21-34": 1832000,
+        "35-66": 1734000,
+        "67-101": 1577000,
+        "102-150": 1511000,
+        ">151": 1443000
+      },
+      "hotel3": {
+        "2-3": 3318000,
+        "4-5": 2678000,
+        "6-10": 2657000,
+        "11-15": 2281000,
+        "16-20": 2236000,
+        "21-34": 2196000,
+        "35-66": 2092000,
+        "67-101": 1910000,
+        "102-150": 1830000,
+        ">151": 1754000
+      },
+      "hotel4": {
+        "2-3": 3916000,
+        "4-5": 3354000,
+        "6-10": 3333000,
+        "11-15": 2983000,
+        "16-20": 2896000,
+        "21-34": 2872000,
+        "35-66": 2758000,
+        "67-101": 2529000,
+        "102-150": 2423000,
+        ">151": 2331000
+      },
+      "hotel5": {
+        "2-3": 5411000,
+        "4-5": 5044000,
+        "6-10": 5023000,
+        "11-15": 4738000,
+        "16-20": 4547000,
+        "21-34": 4491000,
+        "35-66": 4422000,
+        "67-101": 4076000,
+        "102-150": 3905000,
+        ">151": 3774000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-5-hari-4-malam-snorkeling-gili-trawangan-meno-air",
+    "locale": "zh",
+    "title": "龙目岛5天4晚旅游套餐－吉利特拉旺安、美诺与艾尔浮潜",
+    "region": "lombok",
+    "collectionSlug": "5-hari-4-malam",
+    "collectionTitle": "5天4晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "5天4晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛5天私人行程，涵盖曼达利卡、三岛玻璃底船浮潜及塞纳鲁瀑布。",
+    "highlights": [
+      "在吉利美诺、吉利艾尔和吉利特拉旺安浮潜。",
+      "私人玻璃底船。",
+      "曼达利卡与塞纳鲁瀑布。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机并欢迎抵达。",
+      "第1天 - 享用晚餐、办理酒店入住并休息。",
+      "第2天 - 游览苏卡拉拉村、萨德村、库塔曼达利卡海滩、曼达利卡赛道、丹绒安海滩和梅雷塞山。",
+      "第3天 - 乘私人玻璃底船在吉利美诺、吉利艾尔和吉利特拉旺安浮潜。",
+      "第4天 - 游览塞纳鲁村、仙达吉拉瀑布、蒂乌克勒普瀑布和普苏克猴林。",
+      "第5天 - 早餐、酒店退房、可选参观并送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排Avanza、BR-V、Innova、Almaz、Hiace、Elf或巴士等空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "私人玻璃底船。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2496000,
+        "4-5": 1814000,
+        "6-10": 1793000,
+        "11-15": 1403000,
+        "16-20": 1380000,
+        "21-34": 1332000,
+        "35-66": 1234000,
+        "67-101": 1077000,
+        "102-150": 1011000,
+        ">151": 943000
+      },
+      "hotel2": {
+        "2-3": 2996000,
+        "4-5": 2314000,
+        "6-10": 2293000,
+        "11-15": 1903000,
+        "16-20": 1880000,
+        "21-34": 1832000,
+        "35-66": 1734000,
+        "67-101": 1577000,
+        "102-150": 1511000,
+        ">151": 1443000
+      },
+      "hotel3": {
+        "2-3": 3318000,
+        "4-5": 2678000,
+        "6-10": 2657000,
+        "11-15": 2281000,
+        "16-20": 2236000,
+        "21-34": 2196000,
+        "35-66": 2092000,
+        "67-101": 1910000,
+        "102-150": 1830000,
+        ">151": 1754000
+      },
+      "hotel4": {
+        "2-3": 3916000,
+        "4-5": 3354000,
+        "6-10": 3333000,
+        "11-15": 2983000,
+        "16-20": 2896000,
+        "21-34": 2872000,
+        "35-66": 2758000,
+        "67-101": 2529000,
+        "102-150": 2423000,
+        ">151": 2331000
+      },
+      "hotel5": {
+        "2-3": 5411000,
+        "4-5": 5044000,
+        "6-10": 5023000,
+        "11-15": 4738000,
+        "16-20": 4547000,
+        "21-34": 4491000,
+        "35-66": 4422000,
+        "67-101": 4076000,
+        "102-150": 3905000,
+        ">151": 3774000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-6-hari-5-malam-gili-nanggu-mandalika-gili-trawangan",
+    "locale": "id",
+    "title": "Paket Tour Lombok 6 Hari 5 Malam – Gili Nanggu, Mandalika, Gili Trawangan & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "Paket 6 Hari 5 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "6 Hari 5 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Paket private tour Lombok selama 6 hari 5 malam untuk kedatangan sore atau malam, mencakup Gili Nanggu, Mandalika, Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Private tour tanpa bergabung dengan peserta lain.",
+      "Snorkeling di Gili Nanggu dengan private boat.",
+      "Mengunjungi Gili Sudak dan Gili Kedis.",
+      "Menjelajahi Desa Sukarare, Desa Sade, dan Mandalika.",
+      "Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Trekking ke Air Terjun Sendang Gile dan Tiu Kelep."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "Hari 1 - Pengalungan selendang khas Lombok.",
+      "Hari 1 - Makan malam di restoran lokal.",
+      "Hari 1 - Check-in hotel dan istirahat.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Perjalanan menuju Sekotong dan menaiki private boat.",
+      "Hari 2 - Snorkeling dan bersantai di Gili Nanggu.",
+      "Hari 2 - Makan siang di Gili Sudak.",
+      "Hari 2 - Mengunjungi Gili Kedis.",
+      "Hari 2 - Makan malam di restoran lokal.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Mengunjungi Desa Tenun Sukarare.",
+      "Hari 3 - Mengunjungi Desa Adat Sade.",
+      "Hari 3 - Mengunjungi Pantai Kuta Mandalika.",
+      "Hari 3 - Makan siang di kawasan Pantai Kuta Mandalika.",
+      "Hari 3 - Mengunjungi kawasan Sirkuit Mandalika.",
+      "Hari 3 - Mengunjungi Pantai Tanjung Aan.",
+      "Hari 3 - Menikmati matahari terbenam di Bukit Merese.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi di hotel.",
+      "Hari 4 - Mengunjungi Pura Batu Bolong.",
+      "Hari 4 - Mengunjungi Villa Hantu.",
+      "Hari 4 - Berhenti di Bukit Malimbu atau Bukit Malaka.",
+      "Hari 4 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 4 - Makan siang dan acara bebas di Gili Trawangan.",
+      "Hari 4 - Kembali ke Lombok menggunakan private speedboat.",
+      "Hari 4 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 4 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 5 - Sarapan pagi di hotel.",
+      "Hari 5 - Mengunjungi Desa Senaru.",
+      "Hari 5 - Trekking ke Air Terjun Sendang Gile.",
+      "Hari 5 - Trekking ke Air Terjun Tiu Kelep.",
+      "Hari 5 - Makan siang di restoran lokal.",
+      "Hari 5 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 5 - Makan malam dan kembali ke hotel.",
+      "Hari 6 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 6 - Check-out hotel.",
+      "Hari 6 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek.",
+      "Hari 6 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf, atau bus sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan.",
+      "Private boat ke Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2944000,
+        "4-5": 2184000,
+        "6-10": 2166000,
+        "11-15": 1829000,
+        "16-20": 1783000,
+        "21-34": 1640000,
+        "35-66": 1534000,
+        "67-101": 1350000,
+        "102-150": 1268000,
+        ">151": 1179000
+      },
+      "hotel2": {
+        "2-3": 3569000,
+        "4-5": 2809000,
+        "6-10": 2791000,
+        "11-15": 2454000,
+        "16-20": 2408000,
+        "21-34": 2265000,
+        "35-66": 2159000,
+        "67-101": 1975000,
+        "102-150": 1893000,
+        ">151": 1804000
+      },
+      "hotel3": {
+        "2-3": 3971000,
+        "4-5": 3264000,
+        "6-10": 3246000,
+        "11-15": 2926000,
+        "16-20": 2863000,
+        "21-34": 2720000,
+        "35-66": 2614000,
+        "67-101": 2392000,
+        "102-150": 2292000,
+        ">151": 2192000
+      },
+      "hotel4": {
+        "2-3": 4719000,
+        "4-5": 4109000,
+        "6-10": 4091000,
+        "11-15": 3804000,
+        "16-20": 3708000,
+        "21-34": 3565000,
+        "35-66": 3459000,
+        "67-101": 3165000,
+        "102-150": 3033000,
+        ">151": 2914000
+      },
+      "hotel5": {
+        "2-3": 6588000,
+        "4-5": 6222000,
+        "6-10": 6203000,
+        "11-15": 5997000,
+        "16-20": 5820000,
+        "21-34": 5678000,
+        "35-66": 5571000,
+        "67-101": 5099000,
+        "102-150": 4885000,
+        ">151": 4718000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-6-hari-5-malam-gili-nanggu-mandalika-gili-trawangan",
+    "locale": "en",
+    "title": "6-Day Lombok Tour Package – Gili Nanggu, Mandalika, Gili Trawangan & Waterfalls",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "6 Days 5 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "6 Days 5 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 6-day, 5-night Lombok tour for an afternoon or evening arrival, covering Gili Nanggu, Mandalika, Gili Trawangan, and the Sendang Gile and Tiu Kelep waterfalls.",
+    "highlights": [
+      "Private tour without joining other participants.",
+      "Snorkeling at Gili Nanggu by private boat.",
+      "Visit Gili Sudak and Gili Kedis.",
+      "Explore Sukarare Village, Sade Village, and Mandalika.",
+      "Travel to Gili Trawangan by private speedboat.",
+      "Trek to Sendang Gile and Tiu Kelep waterfalls."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup and welcome at Lombok International Airport.",
+      "Day 1 - Traditional Lombok scarf welcoming ceremony.",
+      "Day 1 - Dinner at a local restaurant.",
+      "Day 1 - Hotel check-in and rest.",
+      "Day 2 - Breakfast at the hotel.",
+      "Day 2 - Travel to Sekotong and board a private boat.",
+      "Day 2 - Snorkel and relax on Gili Nanggu.",
+      "Day 2 - Lunch on Gili Sudak.",
+      "Day 2 - Visit Gili Kedis.",
+      "Day 2 - Dinner at a local restaurant.",
+      "Day 2 - Return to the hotel and enjoy free time.",
+      "Day 3 - Breakfast at the hotel.",
+      "Day 3 - Visit Sukarare Weaving Village.",
+      "Day 3 - Visit Sade Traditional Village.",
+      "Day 3 - Visit Kuta Mandalika Beach.",
+      "Day 3 - Lunch in the Kuta Mandalika Beach area.",
+      "Day 3 - Visit the Mandalika Circuit area.",
+      "Day 3 - Visit Tanjung Aan Beach.",
+      "Day 3 - Enjoy sunset at Merese Hill.",
+      "Day 3 - Dinner and return to the hotel.",
+      "Day 4 - Breakfast at the hotel.",
+      "Day 4 - Visit Batu Bolong Temple.",
+      "Day 4 - Visit Villa Hantu.",
+      "Day 4 - Stop at Malimbu Hill or Malaka Hill.",
+      "Day 4 - Travel to Gili Trawangan by private speedboat.",
+      "Day 4 - Lunch and free time on Gili Trawangan.",
+      "Day 4 - Return to Lombok by private speedboat.",
+      "Day 4 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 4 - Dinner in Senggigi and return to the hotel.",
+      "Day 5 - Breakfast at the hotel.",
+      "Day 5 - Visit Senaru Village.",
+      "Day 5 - Trek to Sendang Gile Waterfall.",
+      "Day 5 - Trek to Tiu Kelep Waterfall.",
+      "Day 5 - Lunch at a local restaurant.",
+      "Day 5 - Stop at Pusuk Monkey Forest.",
+      "Day 5 - Dinner and return to the hotel.",
+      "Day 6 - Breakfast and free time at the hotel.",
+      "Day 6 - Hotel check-out.",
+      "Day 6 - Optional visit to the Lombok Islamic Center or Banyumulek Village.",
+      "Day 6 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation by Avanza, BR-V, Innova, Almaz, Hiace, Elf, or bus according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan.",
+      "Private boat to Gili Nanggu.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2944000,
+        "4-5": 2184000,
+        "6-10": 2166000,
+        "11-15": 1829000,
+        "16-20": 1783000,
+        "21-34": 1640000,
+        "35-66": 1534000,
+        "67-101": 1350000,
+        "102-150": 1268000,
+        ">151": 1179000
+      },
+      "hotel2": {
+        "2-3": 3569000,
+        "4-5": 2809000,
+        "6-10": 2791000,
+        "11-15": 2454000,
+        "16-20": 2408000,
+        "21-34": 2265000,
+        "35-66": 2159000,
+        "67-101": 1975000,
+        "102-150": 1893000,
+        ">151": 1804000
+      },
+      "hotel3": {
+        "2-3": 3971000,
+        "4-5": 3264000,
+        "6-10": 3246000,
+        "11-15": 2926000,
+        "16-20": 2863000,
+        "21-34": 2720000,
+        "35-66": 2614000,
+        "67-101": 2392000,
+        "102-150": 2292000,
+        ">151": 2192000
+      },
+      "hotel4": {
+        "2-3": 4719000,
+        "4-5": 4109000,
+        "6-10": 4091000,
+        "11-15": 3804000,
+        "16-20": 3708000,
+        "21-34": 3565000,
+        "35-66": 3459000,
+        "67-101": 3165000,
+        "102-150": 3033000,
+        ">151": 2914000
+      },
+      "hotel5": {
+        "2-3": 6588000,
+        "4-5": 6222000,
+        "6-10": 6203000,
+        "11-15": 5997000,
+        "16-20": 5820000,
+        "21-34": 5678000,
+        "35-66": 5571000,
+        "67-101": 5099000,
+        "102-150": 4885000,
+        ">151": 4718000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-6-hari-5-malam-gili-nanggu-mandalika-gili-trawangan",
+    "locale": "ar",
+    "title": "باقة سياحية إلى لومبوك لمدة 6 أيام – جيلي نانغو ومانداليكا وجيلي تراوانغان والشلالات",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "باقة 6 أيام و5 ليالٍ",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "6 أيام و5 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 6 أيام و5 ليالٍ تشمل جيلي نانغو ومانداليكا وجيلي تراوانغان وشلالي سيندانغ غيلي وتيو كيليب.",
+    "highlights": [
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين.",
+      "الغطس في جيلي نانغو بقارب خاص.",
+      "زيارة جيلي سوداك وجيلي كيديس.",
+      "استكشاف قرية سوكاراري وقرية سادي ومانداليكا.",
+      "الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "المشي إلى شلالي سيندانغ غيلي وتيو كيليب."
+    ],
+    "itinerary": [
+      "اليوم 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "اليوم 1 - Pengalungan selendang khas Lombok.",
+      "اليوم 1 - Makan malam di restoran lokal.",
+      "اليوم 1 - Check-in hotel dan istirahat.",
+      "اليوم 2 - Sarapan pagi di hotel.",
+      "اليوم 2 - Perjalanan menuju Sekotong dan menaiki private boat.",
+      "اليوم 2 - Snorkeling dan bersantai di Gili Nanggu.",
+      "اليوم 2 - Makan siang di Gili Sudak.",
+      "اليوم 2 - Mengunjungi Gili Kedis.",
+      "اليوم 2 - Makan malam di restoran lokal.",
+      "اليوم 2 - Kembali ke hotel dan acara bebas.",
+      "اليوم 3 - Sarapan pagi di hotel.",
+      "اليوم 3 - Mengunjungi Desa Tenun Sukarare.",
+      "اليوم 3 - Mengunjungi Desa Adat Sade.",
+      "اليوم 3 - Mengunjungi Pantai Kuta Mandalika.",
+      "اليوم 3 - Makan siang di kawasan Pantai Kuta Mandalika.",
+      "اليوم 3 - Mengunjungi kawasan Sirkuit Mandalika.",
+      "اليوم 3 - Mengunjungi Pantai Tanjung Aan.",
+      "اليوم 3 - Menikmati matahari terbenam di Bukit Merese.",
+      "اليوم 3 - Makan malam dan kembali ke hotel.",
+      "اليوم 4 - Sarapan pagi di hotel.",
+      "اليوم 4 - Mengunjungi Pura Batu Bolong.",
+      "اليوم 4 - Mengunjungi Villa Hantu.",
+      "اليوم 4 - Berhenti di Bukit Malimbu atau Bukit Malaka.",
+      "اليوم 4 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "اليوم 4 - Makan siang dan acara bebas di Gili Trawangan.",
+      "اليوم 4 - Kembali ke Lombok menggunakan private speedboat.",
+      "اليوم 4 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "اليوم 4 - Makan malam di Senggigi dan kembali ke hotel.",
+      "اليوم 5 - Sarapan pagi di hotel.",
+      "اليوم 5 - Mengunjungi Desa Senaru.",
+      "اليوم 5 - Trekking ke Air Terjun Sendang Gile.",
+      "اليوم 5 - Trekking ke Air Terjun Tiu Kelep.",
+      "اليوم 5 - Makan siang di restoran lokal.",
+      "اليوم 5 - Berhenti di Hutan Monyet Pusuk.",
+      "اليوم 5 - Makan malam dan kembali ke hotel.",
+      "اليوم 6 - Sarapan pagi dan acara bebas di hotel.",
+      "اليوم 6 - Check-out hotel.",
+      "اليوم 6 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek.",
+      "اليوم 6 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "مواصلات مكيفة باستخدام أفانزا أو BR-V أو إينوفا أو ألماز أو هايس أو إلف أو حافلة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان.",
+      "قارب خاص إلى جيلي نانغو.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2944000,
+        "4-5": 2184000,
+        "6-10": 2166000,
+        "11-15": 1829000,
+        "16-20": 1783000,
+        "21-34": 1640000,
+        "35-66": 1534000,
+        "67-101": 1350000,
+        "102-150": 1268000,
+        ">151": 1179000
+      },
+      "hotel2": {
+        "2-3": 3569000,
+        "4-5": 2809000,
+        "6-10": 2791000,
+        "11-15": 2454000,
+        "16-20": 2408000,
+        "21-34": 2265000,
+        "35-66": 2159000,
+        "67-101": 1975000,
+        "102-150": 1893000,
+        ">151": 1804000
+      },
+      "hotel3": {
+        "2-3": 3971000,
+        "4-5": 3264000,
+        "6-10": 3246000,
+        "11-15": 2926000,
+        "16-20": 2863000,
+        "21-34": 2720000,
+        "35-66": 2614000,
+        "67-101": 2392000,
+        "102-150": 2292000,
+        ">151": 2192000
+      },
+      "hotel4": {
+        "2-3": 4719000,
+        "4-5": 4109000,
+        "6-10": 4091000,
+        "11-15": 3804000,
+        "16-20": 3708000,
+        "21-34": 3565000,
+        "35-66": 3459000,
+        "67-101": 3165000,
+        "102-150": 3033000,
+        ">151": 2914000
+      },
+      "hotel5": {
+        "2-3": 6588000,
+        "4-5": 6222000,
+        "6-10": 6203000,
+        "11-15": 5997000,
+        "16-20": 5820000,
+        "21-34": 5678000,
+        "35-66": 5571000,
+        "67-101": 5099000,
+        "102-150": 4885000,
+        ">151": 4718000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-6-hari-5-malam-gili-nanggu-mandalika-gili-trawangan",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 6 Hari 5 Malam – Gili Nanggu, Mandalika, Gili Trawangan & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "Pakej 6 Hari 5 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "6 Hari 5 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok selama 6 hari 5 malam untuk ketibaan petang atau malam, merangkumi Gili Nanggu, Mandalika, Gili Trawangan serta Air Terjun Sendang Gile dan Tiu Kelep.",
+    "highlights": [
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain.",
+      "Snorkeling di Gili Nanggu dengan bot persendirian.",
+      "Melawat Gili Sudak dan Gili Kedis.",
+      "Meneroka Kampung Sukarare, Kampung Sade dan Mandalika.",
+      "Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Trekking ke Air Terjun Sendang Gile dan Tiu Kelep."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput dan disambut di Bandara Internasional Lombok.",
+      "Hari 1 - Pengalungan selendang khas Lombok.",
+      "Hari 1 - Makan malam di restoran lokal.",
+      "Hari 1 - Check-in hotel dan istirahat.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Perjalanan menuju Sekotong dan menaiki private boat.",
+      "Hari 2 - Snorkeling dan bersantai di Gili Nanggu.",
+      "Hari 2 - Makan tengah hari di Gili Sudak.",
+      "Hari 2 - Melawat Gili Kedis.",
+      "Hari 2 - Makan malam di restoran lokal.",
+      "Hari 2 - Kembali ke hotel dan masa bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Melawat Desa Tenun Sukarare.",
+      "Hari 3 - Melawat Desa Adat Sade.",
+      "Hari 3 - Melawat Pantai Kuta Mandalika.",
+      "Hari 3 - Makan tengah hari di kawasan Pantai Kuta Mandalika.",
+      "Hari 3 - Melawat kawasan Sirkuit Mandalika.",
+      "Hari 3 - Melawat Pantai Tanjung Aan.",
+      "Hari 3 - Menikmati matahari terbenam di Bukit Merese.",
+      "Hari 3 - Makan malam dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi di hotel.",
+      "Hari 4 - Melawat Pura Batu Bolong.",
+      "Hari 4 - Melawat Villa Hantu.",
+      "Hari 4 - Berhenti di Bukit Malimbu atau Bukit Malaka.",
+      "Hari 4 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 4 - Makan tengah hari dan acara bebas di Gili Trawangan.",
+      "Hari 4 - Kembali ke Lombok menggunakan private speedboat.",
+      "Hari 4 - Melawat pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 4 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 5 - Sarapan pagi di hotel.",
+      "Hari 5 - Melawat Desa Senaru.",
+      "Hari 5 - Trekking ke Air Terjun Sendang Gile.",
+      "Hari 5 - Trekking ke Air Terjun Tiu Kelep.",
+      "Hari 5 - Makan tengah hari di restoran lokal.",
+      "Hari 5 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 5 - Makan malam dan kembali ke hotel.",
+      "Hari 6 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 6 - Check-out hotel.",
+      "Hari 6 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek.",
+      "Hari 6 - Penghantaran ke Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf atau bas mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan.",
+      "Bot persendirian ke Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2944000,
+        "4-5": 2184000,
+        "6-10": 2166000,
+        "11-15": 1829000,
+        "16-20": 1783000,
+        "21-34": 1640000,
+        "35-66": 1534000,
+        "67-101": 1350000,
+        "102-150": 1268000,
+        ">151": 1179000
+      },
+      "hotel2": {
+        "2-3": 3569000,
+        "4-5": 2809000,
+        "6-10": 2791000,
+        "11-15": 2454000,
+        "16-20": 2408000,
+        "21-34": 2265000,
+        "35-66": 2159000,
+        "67-101": 1975000,
+        "102-150": 1893000,
+        ">151": 1804000
+      },
+      "hotel3": {
+        "2-3": 3971000,
+        "4-5": 3264000,
+        "6-10": 3246000,
+        "11-15": 2926000,
+        "16-20": 2863000,
+        "21-34": 2720000,
+        "35-66": 2614000,
+        "67-101": 2392000,
+        "102-150": 2292000,
+        ">151": 2192000
+      },
+      "hotel4": {
+        "2-3": 4719000,
+        "4-5": 4109000,
+        "6-10": 4091000,
+        "11-15": 3804000,
+        "16-20": 3708000,
+        "21-34": 3565000,
+        "35-66": 3459000,
+        "67-101": 3165000,
+        "102-150": 3033000,
+        ">151": 2914000
+      },
+      "hotel5": {
+        "2-3": 6588000,
+        "4-5": 6222000,
+        "6-10": 6203000,
+        "11-15": 5997000,
+        "16-20": 5820000,
+        "21-34": 5678000,
+        "35-66": 5571000,
+        "67-101": 5099000,
+        "102-150": 4885000,
+        ">151": 4718000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-6-hari-5-malam-gili-nanggu-mandalika-gili-trawangan",
+    "locale": "zh",
+    "title": "龙目岛6天5晚旅游套餐－吉利南古、曼达利卡、吉利特拉旺安与瀑布",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "6天5晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "6天5晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛6天5晚私人旅游套餐，涵盖吉利南古、曼达利卡、吉利特拉旺安、仙达吉拉瀑布和蒂乌克勒普瀑布。",
+    "highlights": [
+      "私人包团，不与其他游客拼团。",
+      "乘私人船在吉利南古浮潜。",
+      "游览吉利苏达克和吉利克迪斯。",
+      "探索苏卡拉拉村、萨德村和曼达利卡。",
+      "乘私人快艇前往吉利特拉旺安。",
+      "徒步游览仙达吉拉瀑布和蒂乌克勒普瀑布。"
+    ],
+    "itinerary": [
+      "第1天 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "第1天 - Pengalungan selendang khas Lombok.",
+      "第1天 - Makan malam di restoran lokal.",
+      "第1天 - Check-in hotel dan istirahat.",
+      "第2天 - Sarapan pagi di hotel.",
+      "第2天 - Perjalanan menuju Sekotong dan menaiki private boat.",
+      "第2天 - Snorkeling dan bersantai di Gili Nanggu.",
+      "第2天 - Makan siang di Gili Sudak.",
+      "第2天 - Mengunjungi Gili Kedis.",
+      "第2天 - Makan malam di restoran lokal.",
+      "第2天 - Kembali ke hotel dan acara bebas.",
+      "第3天 - Sarapan pagi di hotel.",
+      "第3天 - Mengunjungi Desa Tenun Sukarare.",
+      "第3天 - Mengunjungi Desa Adat Sade.",
+      "第3天 - Mengunjungi Pantai Kuta Mandalika.",
+      "第3天 - Makan siang di kawasan Pantai Kuta Mandalika.",
+      "第3天 - Mengunjungi kawasan Sirkuit Mandalika.",
+      "第3天 - Mengunjungi Pantai Tanjung Aan.",
+      "第3天 - Menikmati matahari terbenam di Bukit Merese.",
+      "第3天 - Makan malam dan kembali ke hotel.",
+      "第4天 - Sarapan pagi di hotel.",
+      "第4天 - Mengunjungi Pura Batu Bolong.",
+      "第4天 - Mengunjungi Villa Hantu.",
+      "第4天 - Berhenti di Bukit Malimbu atau Bukit Malaka.",
+      "第4天 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "第4天 - Makan siang dan acara bebas di Gili Trawangan.",
+      "第4天 - Kembali ke Lombok menggunakan private speedboat.",
+      "第4天 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "第4天 - Makan malam di Senggigi dan kembali ke hotel.",
+      "第5天 - Sarapan pagi di hotel.",
+      "第5天 - Mengunjungi Desa Senaru.",
+      "第5天 - Trekking ke Air Terjun Sendang Gile.",
+      "第5天 - Trekking ke Air Terjun Tiu Kelep.",
+      "第5天 - Makan siang di restoran lokal.",
+      "第5天 - Berhenti di Hutan Monyet Pusuk.",
+      "第5天 - Makan malam dan kembali ke hotel.",
+      "第6天 - Sarapan pagi dan acara bebas di hotel.",
+      "第6天 - Check-out hotel.",
+      "第6天 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek.",
+      "第6天 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "根据团队人数安排Avanza、BR-V、Innova、Almaz、Hiace、Elf或巴士等空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。",
+      "前往吉利南古的私人船只。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 2944000,
+        "4-5": 2184000,
+        "6-10": 2166000,
+        "11-15": 1829000,
+        "16-20": 1783000,
+        "21-34": 1640000,
+        "35-66": 1534000,
+        "67-101": 1350000,
+        "102-150": 1268000,
+        ">151": 1179000
+      },
+      "hotel2": {
+        "2-3": 3569000,
+        "4-5": 2809000,
+        "6-10": 2791000,
+        "11-15": 2454000,
+        "16-20": 2408000,
+        "21-34": 2265000,
+        "35-66": 2159000,
+        "67-101": 1975000,
+        "102-150": 1893000,
+        ">151": 1804000
+      },
+      "hotel3": {
+        "2-3": 3971000,
+        "4-5": 3264000,
+        "6-10": 3246000,
+        "11-15": 2926000,
+        "16-20": 2863000,
+        "21-34": 2720000,
+        "35-66": 2614000,
+        "67-101": 2392000,
+        "102-150": 2292000,
+        ">151": 2192000
+      },
+      "hotel4": {
+        "2-3": 4719000,
+        "4-5": 4109000,
+        "6-10": 4091000,
+        "11-15": 3804000,
+        "16-20": 3708000,
+        "21-34": 3565000,
+        "35-66": 3459000,
+        "67-101": 3165000,
+        "102-150": 3033000,
+        ">151": 2914000
+      },
+      "hotel5": {
+        "2-3": 6588000,
+        "4-5": 6222000,
+        "6-10": 6203000,
+        "11-15": 5997000,
+        "16-20": 5820000,
+        "21-34": 5678000,
+        "35-66": 5571000,
+        "67-101": 5099000,
+        "102-150": 4885000,
+        ">151": 4718000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-6-hari-5-malam-mandalika-gili-nanggu-pink-beach",
+    "locale": "id",
+    "title": "Paket Tour Lombok 6 Hari 5 Malam – Mandalika, Gili Nanggu, Gili Trawangan & Pink Beach",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "Paket 6 Hari 5 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "6 Hari 5 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Paket private tour Lombok selama 6 hari 5 malam untuk kedatangan pagi atau siang, mencakup Mandalika, Gili Nanggu, Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, serta Pink Beach.",
+    "highlights": [
+      "Mandalika Tour langsung pada hari kedatangan.",
+      "Snorkeling di Gili Nanggu dengan private boat.",
+      "Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Mengunjungi Gili Pasir dan tiga kawasan Pink Beach.",
+      "Private tour tanpa bergabung dengan peserta lain."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Pengalungan selendang khas Lombok.",
+      "Hari 1 - Mengunjungi Desa Tenun Sukarare.",
+      "Hari 1 - Mengunjungi Desa Adat Sade.",
+      "Hari 1 - Mengunjungi Pantai Kuta Mandalika.",
+      "Hari 1 - Makan siang di kawasan Pantai Kuta Mandalika.",
+      "Hari 1 - Mengunjungi kawasan Sirkuit Mandalika.",
+      "Hari 1 - Mengunjungi Pantai Tanjung Aan.",
+      "Hari 1 - Menikmati matahari terbenam di Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Perjalanan menuju Sekotong dan menaiki private boat.",
+      "Hari 2 - Snorkeling dan bersantai di Gili Nanggu.",
+      "Hari 2 - Makan siang di Gili Sudak.",
+      "Hari 2 - Mengunjungi Gili Kedis.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Mengunjungi Pura Batu Bolong.",
+      "Hari 3 - Mengunjungi Villa Hantu.",
+      "Hari 3 - Berhenti di Bukit Malimbu atau Bukit Malaka.",
+      "Hari 3 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 3 - Makan siang dan acara bebas di Gili Trawangan.",
+      "Hari 3 - Kembali ke Lombok menggunakan private speedboat.",
+      "Hari 3 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi di hotel.",
+      "Hari 4 - Mengunjungi Desa Senaru.",
+      "Hari 4 - Trekking ke Air Terjun Sendang Gile.",
+      "Hari 4 - Trekking ke Air Terjun Tiu Kelep.",
+      "Hari 4 - Makan siang di restoran lokal.",
+      "Hari 4 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 4 - Makan malam dan kembali ke hotel.",
+      "Hari 5 - Sarapan pagi di hotel.",
+      "Hari 5 - Mengunjungi Gili Pasir.",
+      "Hari 5 - Mengunjungi Pink Beach 1.",
+      "Hari 5 - Makan siang di Pink Beach.",
+      "Hari 5 - Snorkeling di Gili Petelu.",
+      "Hari 5 - Mengunjungi Pink Beach 2.",
+      "Hari 5 - Mengunjungi Pink Beach 3.",
+      "Hari 5 - Makan malam dan kembali ke hotel.",
+      "Hari 6 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 6 - Check-out hotel.",
+      "Hari 6 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek.",
+      "Hari 6 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf, atau bus sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan.",
+      "Private boat ke Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 3289000,
+        "4-5": 2434000,
+        "6-10": 2402000,
+        "11-15": 2053000,
+        "16-20": 1923000,
+        "21-34": 1802000,
+        "35-66": 1667000,
+        "67-101": 1486000,
+        "102-150": 1393000,
+        ">151": 1302000
+      },
+      "hotel2": {
+        "2-3": 3914000,
+        "4-5": 3059000,
+        "6-10": 3027000,
+        "11-15": 2678000,
+        "16-20": 2548000,
+        "21-34": 2427000,
+        "35-66": 2292000,
+        "67-101": 2111000,
+        "102-150": 2018000,
+        ">151": 1927000
+      },
+      "hotel3": {
+        "2-3": 4316000,
+        "4-5": 3514000,
+        "6-10": 3482000,
+        "11-15": 3151000,
+        "16-20": 3003000,
+        "21-34": 2882000,
+        "35-66": 2747000,
+        "67-101": 2527000,
+        "102-150": 2417000,
+        ">151": 2316000
+      },
+      "hotel4": {
+        "2-3": 5064000,
+        "4-5": 4359000,
+        "6-10": 4327000,
+        "11-15": 4028000,
+        "16-20": 3848000,
+        "21-34": 3727000,
+        "35-66": 3592000,
+        "67-101": 3301000,
+        "102-150": 3158000,
+        ">151": 3037000
+      },
+      "hotel5": {
+        "2-3": 6933000,
+        "4-5": 6472000,
+        "6-10": 6439000,
+        "11-15": 6222000,
+        "16-20": 5960000,
+        "21-34": 5840000,
+        "35-66": 5705000,
+        "67-101": 5234000,
+        "102-150": 5010000,
+        ">151": 4841000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-6-hari-5-malam-mandalika-gili-nanggu-pink-beach",
+    "locale": "en",
+    "title": "6-Day Lombok Tour Package – Mandalika, Gili Nanggu, Gili Trawangan & Pink Beach",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "6 Days 5 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "6 Days 5 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 6-day, 5-night Lombok tour for a morning or midday arrival, covering Mandalika, Gili Nanggu, Gili Trawangan, Sendang Gile and Tiu Kelep waterfalls, and Pink Beach.",
+    "highlights": [
+      "Mandalika tour immediately upon arrival.",
+      "Snorkeling at Gili Nanggu by private boat.",
+      "Travel to Gili Trawangan by private speedboat.",
+      "Trek to Sendang Gile and Tiu Kelep waterfalls.",
+      "Visit Gili Pasir and three Pink Beach areas.",
+      "Private tour without joining other participants."
+    ],
+    "itinerary": [
+      "Day 1 - Penjemputan di bandara atau pelabuhan.",
+      "Day 1 - Traditional Lombok scarf welcoming ceremony.",
+      "Day 1 - Visit Sukarare Weaving Village.",
+      "Day 1 - Visit Sade Traditional Village.",
+      "Day 1 - Visit Kuta Mandalika Beach.",
+      "Day 1 - Lunch in the Kuta Mandalika Beach area.",
+      "Day 1 - Visit the Mandalika Circuit area.",
+      "Day 1 - Visit Tanjung Aan Beach.",
+      "Day 1 - Enjoy sunset at Merese Hill.",
+      "Day 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Day 2 - Breakfast at the hotel.",
+      "Day 2 - Travel to Sekotong and board a private boat.",
+      "Day 2 - Snorkel and relax on Gili Nanggu.",
+      "Day 2 - Lunch on Gili Sudak.",
+      "Day 2 - Visit Gili Kedis.",
+      "Day 2 - Dinner and return to the hotel.",
+      "Day 3 - Breakfast at the hotel.",
+      "Day 3 - Visit Batu Bolong Temple.",
+      "Day 3 - Visit Villa Hantu.",
+      "Day 3 - Stop at Malimbu Hill or Malaka Hill.",
+      "Day 3 - Travel to Gili Trawangan by private speedboat.",
+      "Day 3 - Lunch and free time on Gili Trawangan.",
+      "Day 3 - Return to Lombok by private speedboat.",
+      "Day 3 - Visit a pearl craft center and Lombok souvenir shop.",
+      "Day 3 - Dinner in Senggigi and return to the hotel.",
+      "Day 4 - Breakfast at the hotel.",
+      "Day 4 - Visit Senaru Village.",
+      "Day 4 - Trek to Sendang Gile Waterfall.",
+      "Day 4 - Trek to Tiu Kelep Waterfall.",
+      "Day 4 - Lunch at a local restaurant.",
+      "Day 4 - Stop at Pusuk Monkey Forest.",
+      "Day 4 - Dinner and return to the hotel.",
+      "Day 5 - Breakfast at the hotel.",
+      "Day 5 - Mengunjungi Gili Pasir.",
+      "Day 5 - Mengunjungi Pink Beach 1.",
+      "Day 5 - Makan siang di Pink Beach.",
+      "Day 5 - Snorkeling di Gili Petelu.",
+      "Day 5 - Mengunjungi Pink Beach 2.",
+      "Day 5 - Mengunjungi Pink Beach 3.",
+      "Day 5 - Dinner and return to the hotel.",
+      "Day 6 - Breakfast and free time at the hotel.",
+      "Day 6 - Hotel check-out.",
+      "Day 6 - Optional visit to the Lombok Islamic Center or Banyumulek Village.",
+      "Day 6 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation by Avanza, BR-V, Innova, Almaz, Hiace, Elf, or bus according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan.",
+      "Private boat to Gili Nanggu.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 3289000,
+        "4-5": 2434000,
+        "6-10": 2402000,
+        "11-15": 2053000,
+        "16-20": 1923000,
+        "21-34": 1802000,
+        "35-66": 1667000,
+        "67-101": 1486000,
+        "102-150": 1393000,
+        ">151": 1302000
+      },
+      "hotel2": {
+        "2-3": 3914000,
+        "4-5": 3059000,
+        "6-10": 3027000,
+        "11-15": 2678000,
+        "16-20": 2548000,
+        "21-34": 2427000,
+        "35-66": 2292000,
+        "67-101": 2111000,
+        "102-150": 2018000,
+        ">151": 1927000
+      },
+      "hotel3": {
+        "2-3": 4316000,
+        "4-5": 3514000,
+        "6-10": 3482000,
+        "11-15": 3151000,
+        "16-20": 3003000,
+        "21-34": 2882000,
+        "35-66": 2747000,
+        "67-101": 2527000,
+        "102-150": 2417000,
+        ">151": 2316000
+      },
+      "hotel4": {
+        "2-3": 5064000,
+        "4-5": 4359000,
+        "6-10": 4327000,
+        "11-15": 4028000,
+        "16-20": 3848000,
+        "21-34": 3727000,
+        "35-66": 3592000,
+        "67-101": 3301000,
+        "102-150": 3158000,
+        ">151": 3037000
+      },
+      "hotel5": {
+        "2-3": 6933000,
+        "4-5": 6472000,
+        "6-10": 6439000,
+        "11-15": 6222000,
+        "16-20": 5960000,
+        "21-34": 5840000,
+        "35-66": 5705000,
+        "67-101": 5234000,
+        "102-150": 5010000,
+        ">151": 4841000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-6-hari-5-malam-mandalika-gili-nanggu-pink-beach",
+    "locale": "ar",
+    "title": "باقة سياحية إلى لومبوك لمدة 6 أيام – مانداليكا وجيلي نانغو وجيلي تراوانغان وشاطئ بينك",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "باقة 6 أيام و5 ليالٍ",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "6 أيام و5 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 6 أيام و5 ليالٍ تشمل مانداليكا وجيلي نانغو وجيلي تراوانغان وشلالي سيندانغ غيلي وتيو كيليب وشاطئ بينك.",
+    "highlights": [
+      "جولة مانداليكا فور الوصول.",
+      "الغطس في جيلي نانغو بقارب خاص.",
+      "الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "المشي إلى شلالي سيندانغ غيلي وتيو كيليب.",
+      "زيارة جيلي باسير وثلاث مناطق من شاطئ بينك.",
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين."
+    ],
+    "itinerary": [
+      "اليوم 1 - Penjemputan di bandara atau pelabuhan.",
+      "اليوم 1 - Pengalungan selendang khas Lombok.",
+      "اليوم 1 - Mengunjungi Desa Tenun Sukarare.",
+      "اليوم 1 - Mengunjungi Desa Adat Sade.",
+      "اليوم 1 - Mengunjungi Pantai Kuta Mandalika.",
+      "اليوم 1 - Makan siang di kawasan Pantai Kuta Mandalika.",
+      "اليوم 1 - Mengunjungi kawasan Sirkuit Mandalika.",
+      "اليوم 1 - Mengunjungi Pantai Tanjung Aan.",
+      "اليوم 1 - Menikmati matahari terbenam di Bukit Merese.",
+      "اليوم 1 - Makan malam, check-in hotel, dan istirahat.",
+      "اليوم 2 - Sarapan pagi di hotel.",
+      "اليوم 2 - Perjalanan menuju Sekotong dan menaiki private boat.",
+      "اليوم 2 - Snorkeling dan bersantai di Gili Nanggu.",
+      "اليوم 2 - Makan siang di Gili Sudak.",
+      "اليوم 2 - Mengunjungi Gili Kedis.",
+      "اليوم 2 - Makan malam dan kembali ke hotel.",
+      "اليوم 3 - Sarapan pagi di hotel.",
+      "اليوم 3 - Mengunjungi Pura Batu Bolong.",
+      "اليوم 3 - Mengunjungi Villa Hantu.",
+      "اليوم 3 - Berhenti di Bukit Malimbu atau Bukit Malaka.",
+      "اليوم 3 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "اليوم 3 - Makan siang dan acara bebas di Gili Trawangan.",
+      "اليوم 3 - Kembali ke Lombok menggunakan private speedboat.",
+      "اليوم 3 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "اليوم 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "اليوم 4 - Sarapan pagi di hotel.",
+      "اليوم 4 - Mengunjungi Desa Senaru.",
+      "اليوم 4 - Trekking ke Air Terjun Sendang Gile.",
+      "اليوم 4 - Trekking ke Air Terjun Tiu Kelep.",
+      "اليوم 4 - Makan siang di restoran lokal.",
+      "اليوم 4 - Berhenti di Hutan Monyet Pusuk.",
+      "اليوم 4 - Makan malam dan kembali ke hotel.",
+      "اليوم 5 - Sarapan pagi di hotel.",
+      "اليوم 5 - Mengunjungi Gili Pasir.",
+      "اليوم 5 - Mengunjungi Pink Beach 1.",
+      "اليوم 5 - Makan siang di Pink Beach.",
+      "اليوم 5 - Snorkeling di Gili Petelu.",
+      "اليوم 5 - Mengunjungi Pink Beach 2.",
+      "اليوم 5 - Mengunjungi Pink Beach 3.",
+      "اليوم 5 - Makan malam dan kembali ke hotel.",
+      "اليوم 6 - Sarapan pagi dan acara bebas di hotel.",
+      "اليوم 6 - Check-out hotel.",
+      "اليوم 6 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek.",
+      "اليوم 6 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "مواصلات مكيفة باستخدام أفانزا أو BR-V أو إينوفا أو ألماز أو هايس أو إلف أو حافلة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان.",
+      "قارب خاص إلى جيلي نانغو.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 3289000,
+        "4-5": 2434000,
+        "6-10": 2402000,
+        "11-15": 2053000,
+        "16-20": 1923000,
+        "21-34": 1802000,
+        "35-66": 1667000,
+        "67-101": 1486000,
+        "102-150": 1393000,
+        ">151": 1302000
+      },
+      "hotel2": {
+        "2-3": 3914000,
+        "4-5": 3059000,
+        "6-10": 3027000,
+        "11-15": 2678000,
+        "16-20": 2548000,
+        "21-34": 2427000,
+        "35-66": 2292000,
+        "67-101": 2111000,
+        "102-150": 2018000,
+        ">151": 1927000
+      },
+      "hotel3": {
+        "2-3": 4316000,
+        "4-5": 3514000,
+        "6-10": 3482000,
+        "11-15": 3151000,
+        "16-20": 3003000,
+        "21-34": 2882000,
+        "35-66": 2747000,
+        "67-101": 2527000,
+        "102-150": 2417000,
+        ">151": 2316000
+      },
+      "hotel4": {
+        "2-3": 5064000,
+        "4-5": 4359000,
+        "6-10": 4327000,
+        "11-15": 4028000,
+        "16-20": 3848000,
+        "21-34": 3727000,
+        "35-66": 3592000,
+        "67-101": 3301000,
+        "102-150": 3158000,
+        ">151": 3037000
+      },
+      "hotel5": {
+        "2-3": 6933000,
+        "4-5": 6472000,
+        "6-10": 6439000,
+        "11-15": 6222000,
+        "16-20": 5960000,
+        "21-34": 5840000,
+        "35-66": 5705000,
+        "67-101": 5234000,
+        "102-150": 5010000,
+        ">151": 4841000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-6-hari-5-malam-mandalika-gili-nanggu-pink-beach",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 6 Hari 5 Malam – Mandalika, Gili Nanggu, Gili Trawangan & Pantai Pink",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "Pakej 6 Hari 5 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "6 Hari 5 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok selama 6 hari 5 malam untuk ketibaan pagi atau tengah hari, merangkumi Mandalika, Gili Nanggu, Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep serta Pantai Pink.",
+    "highlights": [
+      "Lawatan Mandalika terus pada hari ketibaan.",
+      "Snorkeling di Gili Nanggu dengan bot persendirian.",
+      "Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Melawat Gili Pasir dan tiga kawasan Pantai Pink.",
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan di bandara atau pelabuhan.",
+      "Hari 1 - Pengalungan selendang khas Lombok.",
+      "Hari 1 - Melawat Desa Tenun Sukarare.",
+      "Hari 1 - Melawat Desa Adat Sade.",
+      "Hari 1 - Melawat Pantai Kuta Mandalika.",
+      "Hari 1 - Makan tengah hari di kawasan Pantai Kuta Mandalika.",
+      "Hari 1 - Melawat kawasan Sirkuit Mandalika.",
+      "Hari 1 - Melawat Pantai Tanjung Aan.",
+      "Hari 1 - Menikmati matahari terbenam di Bukit Merese.",
+      "Hari 1 - Makan malam, check-in hotel, dan istirahat.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Perjalanan menuju Sekotong dan menaiki private boat.",
+      "Hari 2 - Snorkeling dan bersantai di Gili Nanggu.",
+      "Hari 2 - Makan tengah hari di Gili Sudak.",
+      "Hari 2 - Melawat Gili Kedis.",
+      "Hari 2 - Makan malam dan kembali ke hotel.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Melawat Pura Batu Bolong.",
+      "Hari 3 - Melawat Villa Hantu.",
+      "Hari 3 - Berhenti di Bukit Malimbu atau Bukit Malaka.",
+      "Hari 3 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 3 - Makan tengah hari dan acara bebas di Gili Trawangan.",
+      "Hari 3 - Kembali ke Lombok menggunakan private speedboat.",
+      "Hari 3 - Melawat pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "Hari 3 - Makan malam di Senggigi dan kembali ke hotel.",
+      "Hari 4 - Sarapan pagi di hotel.",
+      "Hari 4 - Melawat Desa Senaru.",
+      "Hari 4 - Trekking ke Air Terjun Sendang Gile.",
+      "Hari 4 - Trekking ke Air Terjun Tiu Kelep.",
+      "Hari 4 - Makan tengah hari di restoran lokal.",
+      "Hari 4 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 4 - Makan malam dan kembali ke hotel.",
+      "Hari 5 - Sarapan pagi di hotel.",
+      "Hari 5 - Melawat Gili Pasir.",
+      "Hari 5 - Melawat Pink Beach 1.",
+      "Hari 5 - Makan tengah hari di Pink Beach.",
+      "Hari 5 - Snorkeling di Gili Petelu.",
+      "Hari 5 - Melawat Pink Beach 2.",
+      "Hari 5 - Melawat Pink Beach 3.",
+      "Hari 5 - Makan malam dan kembali ke hotel.",
+      "Hari 6 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 6 - Check-out hotel.",
+      "Hari 6 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek.",
+      "Hari 6 - Penghantaran ke Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf atau bas mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan.",
+      "Bot persendirian ke Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 3289000,
+        "4-5": 2434000,
+        "6-10": 2402000,
+        "11-15": 2053000,
+        "16-20": 1923000,
+        "21-34": 1802000,
+        "35-66": 1667000,
+        "67-101": 1486000,
+        "102-150": 1393000,
+        ">151": 1302000
+      },
+      "hotel2": {
+        "2-3": 3914000,
+        "4-5": 3059000,
+        "6-10": 3027000,
+        "11-15": 2678000,
+        "16-20": 2548000,
+        "21-34": 2427000,
+        "35-66": 2292000,
+        "67-101": 2111000,
+        "102-150": 2018000,
+        ">151": 1927000
+      },
+      "hotel3": {
+        "2-3": 4316000,
+        "4-5": 3514000,
+        "6-10": 3482000,
+        "11-15": 3151000,
+        "16-20": 3003000,
+        "21-34": 2882000,
+        "35-66": 2747000,
+        "67-101": 2527000,
+        "102-150": 2417000,
+        ">151": 2316000
+      },
+      "hotel4": {
+        "2-3": 5064000,
+        "4-5": 4359000,
+        "6-10": 4327000,
+        "11-15": 4028000,
+        "16-20": 3848000,
+        "21-34": 3727000,
+        "35-66": 3592000,
+        "67-101": 3301000,
+        "102-150": 3158000,
+        ">151": 3037000
+      },
+      "hotel5": {
+        "2-3": 6933000,
+        "4-5": 6472000,
+        "6-10": 6439000,
+        "11-15": 6222000,
+        "16-20": 5960000,
+        "21-34": 5840000,
+        "35-66": 5705000,
+        "67-101": 5234000,
+        "102-150": 5010000,
+        ">151": 4841000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-tour-lombok-6-hari-5-malam-mandalika-gili-nanggu-pink-beach",
+    "locale": "zh",
+    "title": "龙目岛6天5晚旅游套餐－曼达利卡、吉利南古、吉利特拉旺安与粉红海滩",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "6天5晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "6天5晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛6天5晚私人旅游套餐，适合早上或中午抵达，涵盖曼达利卡、吉利南古、吉利特拉旺安、仙达吉拉瀑布、蒂乌克勒普瀑布和粉红海滩。",
+    "highlights": [
+      "抵达当天直接游览曼达利卡。",
+      "乘私人船在吉利南古浮潜。",
+      "乘私人快艇前往吉利特拉旺安。",
+      "徒步游览仙达吉拉瀑布和蒂乌克勒普瀑布。",
+      "游览吉利帕希尔及三个粉红海滩区域。",
+      "私人包团，不与其他游客拼团。"
+    ],
+    "itinerary": [
+      "第1天 - Penjemputan di bandara atau pelabuhan.",
+      "第1天 - Pengalungan selendang khas Lombok.",
+      "第1天 - Mengunjungi Desa Tenun Sukarare.",
+      "第1天 - Mengunjungi Desa Adat Sade.",
+      "第1天 - Mengunjungi Pantai Kuta Mandalika.",
+      "第1天 - Makan siang di kawasan Pantai Kuta Mandalika.",
+      "第1天 - Mengunjungi kawasan Sirkuit Mandalika.",
+      "第1天 - Mengunjungi Pantai Tanjung Aan.",
+      "第1天 - Menikmati matahari terbenam di Bukit Merese.",
+      "第1天 - Makan malam, check-in hotel, dan istirahat.",
+      "第2天 - Sarapan pagi di hotel.",
+      "第2天 - Perjalanan menuju Sekotong dan menaiki private boat.",
+      "第2天 - Snorkeling dan bersantai di Gili Nanggu.",
+      "第2天 - Makan siang di Gili Sudak.",
+      "第2天 - Mengunjungi Gili Kedis.",
+      "第2天 - Makan malam dan kembali ke hotel.",
+      "第3天 - Sarapan pagi di hotel.",
+      "第3天 - Mengunjungi Pura Batu Bolong.",
+      "第3天 - Mengunjungi Villa Hantu.",
+      "第3天 - Berhenti di Bukit Malimbu atau Bukit Malaka.",
+      "第3天 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "第3天 - Makan siang dan acara bebas di Gili Trawangan.",
+      "第3天 - Kembali ke Lombok menggunakan private speedboat.",
+      "第3天 - Mengunjungi pusat kerajinan mutiara dan oleh-oleh khas Lombok.",
+      "第3天 - Makan malam di Senggigi dan kembali ke hotel.",
+      "第4天 - Sarapan pagi di hotel.",
+      "第4天 - Mengunjungi Desa Senaru.",
+      "第4天 - Trekking ke Air Terjun Sendang Gile.",
+      "第4天 - Trekking ke Air Terjun Tiu Kelep.",
+      "第4天 - Makan siang di restoran lokal.",
+      "第4天 - Berhenti di Hutan Monyet Pusuk.",
+      "第4天 - Makan malam dan kembali ke hotel.",
+      "第5天 - Sarapan pagi di hotel.",
+      "第5天 - Mengunjungi Gili Pasir.",
+      "第5天 - Mengunjungi Pink Beach 1.",
+      "第5天 - Makan siang di Pink Beach.",
+      "第5天 - Snorkeling di Gili Petelu.",
+      "第5天 - Mengunjungi Pink Beach 2.",
+      "第5天 - Mengunjungi Pink Beach 3.",
+      "第5天 - Makan malam dan kembali ke hotel.",
+      "第6天 - Sarapan pagi dan acara bebas di hotel.",
+      "第6天 - Check-out hotel.",
+      "第6天 - Kunjungan opsional ke Islamic Center Lombok atau Desa Banyumulek.",
+      "第6天 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "根据团队人数安排Avanza、BR-V、Innova、Almaz、Hiace、Elf或巴士等空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。",
+      "前往吉利南古的私人船只。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 3289000,
+        "4-5": 2434000,
+        "6-10": 2402000,
+        "11-15": 2053000,
+        "16-20": 1923000,
+        "21-34": 1802000,
+        "35-66": 1667000,
+        "67-101": 1486000,
+        "102-150": 1393000,
+        ">151": 1302000
+      },
+      "hotel2": {
+        "2-3": 3914000,
+        "4-5": 3059000,
+        "6-10": 3027000,
+        "11-15": 2678000,
+        "16-20": 2548000,
+        "21-34": 2427000,
+        "35-66": 2292000,
+        "67-101": 2111000,
+        "102-150": 2018000,
+        ">151": 1927000
+      },
+      "hotel3": {
+        "2-3": 4316000,
+        "4-5": 3514000,
+        "6-10": 3482000,
+        "11-15": 3151000,
+        "16-20": 3003000,
+        "21-34": 2882000,
+        "35-66": 2747000,
+        "67-101": 2527000,
+        "102-150": 2417000,
+        ">151": 2316000
+      },
+      "hotel4": {
+        "2-3": 5064000,
+        "4-5": 4359000,
+        "6-10": 4327000,
+        "11-15": 4028000,
+        "16-20": 3848000,
+        "21-34": 3727000,
+        "35-66": 3592000,
+        "67-101": 3301000,
+        "102-150": 3158000,
+        ">151": 3037000
+      },
+      "hotel5": {
+        "2-3": 6933000,
+        "4-5": 6472000,
+        "6-10": 6439000,
+        "11-15": 6222000,
+        "16-20": 5960000,
+        "21-34": 5840000,
+        "35-66": 5705000,
+        "67-101": 5234000,
+        "102-150": 5010000,
+        ">151": 4841000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
     "slug": "paket-wisata-air-terjun-sendang-gile-tiu-kelep",
     "locale": "id",
     "title": "Paket Wisata Air Terjun Sendang Gile & Tiu Kelep",
@@ -45012,7 +60592,7 @@ export const tourPackagesData = [
     "title": "لومبوك 5 أيام و4 ليالٍ - جزر جيلي نانغو وجيلي ترافانغان والشلالات",
     "region": "lombok",
     "collectionSlug": "5-hari-4-malam",
-    "collectionTitle": "Paket 5 Hari 4 Malam",
+    "collectionTitle": "باقة 5 أيام و4 ليالٍ",
     "category": "باكيجات سياحة لومبوك",
     "duration": "5 أيام و4 ليالٍ",
     "images": [
@@ -45745,7 +61325,7 @@ export const tourPackagesData = [
     "title": "جولة لومبوك 6 أيام و5 ليالٍ - جيلي نانغو وجيلي ترافانغان والشلالات وشاطئ الوردي",
     "region": "lombok",
     "collectionSlug": "6-hari-5-malam",
-    "collectionTitle": "Paket 6 Hari 5 Malam",
+    "collectionTitle": "باقة 6 أيام و5 ليالٍ",
     "category": "باكيجات سياحة لومبوك",
     "duration": "6 أيام و5 ليالٍ",
     "images": [
@@ -46167,6 +61747,856 @@ export const tourPackagesData = [
         "36-50": 5234000,
         "51-100": 5010000,
         ">151": 4841000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
+  },
+  {
+    "slug": "paket-wisata-lombok-6-hari-5-malam-pink-beach-mandalika-gili",
+    "locale": "id",
+    "title": "Paket Tour Lombok 6 Hari 5 Malam – Pink Beach, Mandalika, Gili Trawangan & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "Paket 6 Hari 5 Malam",
+    "category": "Paket Wisata Lombok",
+    "duration": "6 Hari 5 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Paket private tour Lombok selama 6 hari 5 malam yang dirancang untuk kedatangan sore atau malam dan kepulangan pagi atau siang. Perjalanan mencakup Pink Beach, Mandalika, Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, transportasi, akomodasi sesuai pilihan, makanan, serta tiket masuk objek wisata.",
+    "highlights": [
+      "Private tour tanpa bergabung dengan peserta lain.",
+      "Mengunjungi Gili Pasir dan tiga kawasan Pink Beach.",
+      "Snorkeling di Gili Petelu dengan peralatan dan kamera bawah air.",
+      "Menjelajahi Desa Sukarare, Desa Sade, dan kawasan Mandalika.",
+      "Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Pilihan kunjungan gratis ke Islamic Center Lombok atau Desa Banyumulek pada hari terakhir."
+    ],
+    "itinerary": [
+      "Hari 1 - Penjemputan dan penyambutan di Bandara Internasional Lombok.",
+      "Hari 1 - Pengalungan selendang khas Lombok.",
+      "Hari 1 - Makan malam di restoran lokal.",
+      "Hari 1 - Perjalanan menuju hotel.",
+      "Hari 1 - Check-in hotel dan istirahat.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Perjalanan menuju kawasan Pink Beach.",
+      "Hari 2 - Mengunjungi Gili Pasir yang muncul saat air laut surut.",
+      "Hari 2 - Mengunjungi Pink Beach 1.",
+      "Hari 2 - Makan siang dengan hidangan seafood di Pink Beach.",
+      "Hari 2 - Snorkeling di Gili Petelu.",
+      "Hari 2 - Mengunjungi Pink Beach 2.",
+      "Hari 2 - Mengunjungi Pink Beach 3.",
+      "Hari 2 - Kembali menuju pelabuhan.",
+      "Hari 2 - Makan malam di restoran lokal di kawasan Senggigi atau Mataram.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Mengunjungi Desa Tenun Sukarare.",
+      "Hari 3 - Melihat proses pembuatan kain tenun tradisional.",
+      "Hari 3 - Mencoba pakaian khas Lombok untuk sesi foto.",
+      "Hari 3 - Mengunjungi Desa Adat Sade.",
+      "Hari 3 - Mengunjungi Pantai Kuta Mandalika.",
+      "Hari 3 - Makan siang di kawasan Pantai Kuta Mandalika.",
+      "Hari 3 - Mengunjungi kawasan Sirkuit Mandalika.",
+      "Hari 3 - Berfoto di tribun dan lokasi ikonik Mandalika apabila akses tersedia.",
+      "Hari 3 - Mengunjungi Pantai Tanjung Aan.",
+      "Hari 3 - Menikmati panorama dan matahari terbenam di Bukit Merese.",
+      "Hari 3 - Makan malam di restoran lokal.",
+      "Hari 3 - Kembali ke hotel dan acara bebas.",
+      "Hari 4 - Sarapan pagi di hotel.",
+      "Hari 4 - Mengunjungi Pura Batu Bolong.",
+      "Hari 4 - Mengunjungi Villa Hantu.",
+      "Hari 4 - Berhenti di Bukit Malimbu atau Bukit Malaka.",
+      "Hari 4 - Menyeberang ke Gili Trawangan menggunakan private speedboat.",
+      "Hari 4 - Makan siang di Gili Trawangan.",
+      "Hari 4 - Acara bebas untuk menjelajahi Gili Trawangan.",
+      "Hari 4 - Kembali ke Lombok menggunakan private speedboat.",
+      "Hari 4 - Mengunjungi tempat kerajinan mutiara.",
+      "Hari 4 - Mengunjungi pusat oleh-oleh khas Lombok.",
+      "Hari 4 - Makan malam di kawasan Senggigi.",
+      "Hari 4 - Kembali ke hotel dan acara bebas.",
+      "Hari 5 - Sarapan pagi di hotel.",
+      "Hari 5 - Perjalanan menuju Desa Senaru di kaki Gunung Rinjani.",
+      "Hari 5 - Trekking menuju Air Terjun Sendang Gile.",
+      "Hari 5 - Trekking menuju Air Terjun Tiu Kelep.",
+      "Hari 5 - Menikmati suasana hutan dan kolam alami di kawasan air terjun.",
+      "Hari 5 - Makan siang di restoran lokal.",
+      "Hari 5 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 5 - Makan malam di restoran lokal.",
+      "Hari 5 - Kembali ke hotel dan acara bebas.",
+      "Hari 6 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 6 - Check-out hotel.",
+      "Hari 6 - Kunjungan opsional ke Islamic Center Lombok apabila waktu memungkinkan.",
+      "Hari 6 - Kunjungan opsional ke Desa Banyumulek apabila waktu memungkinkan.",
+      "Hari 6 - Pengantaran menuju Bandara Internasional Lombok."
+    ],
+    "includes": [
+      "Transportasi ber-AC menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf, atau bus sesuai jumlah peserta.",
+      "Driver wisata.",
+      "Bahan bakar kendaraan.",
+      "Tour leader untuk grup.",
+      "Pemandu wisata HPI untuk grup.",
+      "Hotel sesuai pilihan.",
+      "Sarapan pagi di hotel.",
+      "Makan siang.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk seluruh objek wisata dalam itinerary.",
+      "Private speedboat ke Gili Trawangan.",
+      "Private boat ke Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket pesawat.",
+      "Keperluan pribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 3059000,
+        "4-5": 2262000,
+        "6-10": 2226000,
+        "11-15": 1899000,
+        "16-20": 1835000,
+        "21-34": 1698000,
+        "35-66": 1584000,
+        "67-101": 1394000,
+        "102-150": 1310000,
+        ">151": 1223000
+      },
+      "hotel2": {
+        "2-3": 3684000,
+        "4-5": 2887000,
+        "6-10": 2851000,
+        "11-15": 2524000,
+        "16-20": 2460000,
+        "21-34": 2328000,
+        "35-66": 2209000,
+        "67-101": 2019000,
+        "102-150": 1935000,
+        ">151": 1848000
+      },
+      "hotel3": {
+        "2-3": 4086000,
+        "4-5": 3342000,
+        "6-10": 3306000,
+        "11-15": 2997000,
+        "16-20": 2915000,
+        "21-34": 2778000,
+        "35-66": 2664000,
+        "67-101": 2436000,
+        "102-150": 2334000,
+        ">151": 2236000
+      },
+      "hotel4": {
+        "2-3": 4834000,
+        "4-5": 4187000,
+        "6-10": 4151000,
+        "11-15": 3874000,
+        "16-20": 3760000,
+        "21-34": 3623000,
+        "35-66": 3509000,
+        "67-101": 3209000,
+        "102-150": 3075000,
+        ">151": 2958000
+      },
+      "hotel5": {
+        "2-3": 6703000,
+        "4-5": 6300000,
+        "6-10": 6264000,
+        "11-15": 6068000,
+        "16-20": 5872000,
+        "21-34": 5736000,
+        "35-66": 5621000,
+        "67-101": 5143000,
+        "102-150": 4928000,
+        ">151": 4761000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
+  },
+  {
+    "slug": "paket-wisata-lombok-6-hari-5-malam-pink-beach-mandalika-gili",
+    "locale": "en",
+    "title": "6-Day Lombok Tour Package – Pink Beach, Mandalika, Gili Trawangan & Waterfalls",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "6 Days 5 Nights Package",
+    "category": "Lombok Tour Package",
+    "duration": "6 Days 5 Nights",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "A private 6-day, 5-night Lombok tour designed for an afternoon or evening arrival and a morning or midday departure. The journey covers Pink Beach, Mandalika, Gili Trawangan, Sendang Gile and Tiu Kelep waterfalls, with transportation, selected accommodation, meals, and attraction entrance tickets included.",
+    "highlights": [
+      "Private tour without joining other participants.",
+      "Visit Gili Pasir and three Pink Beach areas.",
+      "Snorkel at Gili Petelu with equipment and an underwater camera.",
+      "Explore Sukarare Village, Sade Village, and the Mandalika area.",
+      "Travel to Gili Trawangan by private speedboat.",
+      "Trek to Sendang Gile and Tiu Kelep waterfalls.",
+      "Complimentary optional visit to the Lombok Islamic Center or Banyumulek Village on the final day."
+    ],
+    "itinerary": [
+      "Day 1 - Pickup and welcome at Lombok International Airport.",
+      "Day 1 - Traditional Lombok scarf welcoming ceremony.",
+      "Day 1 - Dinner at a local restaurant.",
+      "Day 1 - Transfer to the hotel.",
+      "Day 1 - Hotel check-in and rest.",
+      "Day 2 - Breakfast at the hotel.",
+      "Day 2 - Travel to the Pink Beach area.",
+      "Day 2 - Visit Gili Pasir, which appears during low tide.",
+      "Day 2 - Visit Pink Beach 1.",
+      "Day 2 - Seafood lunch at Pink Beach.",
+      "Day 2 - Snorkeling at Gili Petelu.",
+      "Day 2 - Visit Pink Beach 2.",
+      "Day 2 - Visit Pink Beach 3.",
+      "Day 2 - Return to the harbor.",
+      "Day 2 - Dinner at a local restaurant in Senggigi or Mataram.",
+      "Day 2 - Return to the hotel and enjoy free time.",
+      "Day 3 - Breakfast at the hotel.",
+      "Day 3 - Visit Sukarare Weaving Village.",
+      "Day 3 - Observe the traditional weaving process.",
+      "Day 3 - Wear traditional Lombok clothing for a photo session.",
+      "Day 3 - Visit Sade Traditional Village.",
+      "Day 3 - Visit Kuta Mandalika Beach.",
+      "Day 3 - Lunch in the Kuta Mandalika Beach area.",
+      "Day 3 - Visit the Mandalika Circuit area.",
+      "Day 3 - Take photos at the grandstand and iconic Mandalika locations when access is available.",
+      "Day 3 - Visit Tanjung Aan Beach.",
+      "Day 3 - Enjoy panoramic views and sunset at Merese Hill.",
+      "Day 3 - Dinner at a local restaurant.",
+      "Day 3 - Return to the hotel and enjoy free time.",
+      "Day 4 - Breakfast at the hotel.",
+      "Day 4 - Visit Batu Bolong Temple.",
+      "Day 4 - Visit the abandoned Villa Hantu.",
+      "Day 4 - Stop at Malimbu Hill or Malaka Hill.",
+      "Day 4 - Travel to Gili Trawangan by private speedboat.",
+      "Day 4 - Lunch on Gili Trawangan.",
+      "Day 4 - Free time to explore Gili Trawangan.",
+      "Day 4 - Return to Lombok by private speedboat.",
+      "Day 4 - Visit a pearl craft center.",
+      "Day 4 - Visit a Lombok souvenir center.",
+      "Day 4 - Dinner in the Senggigi area.",
+      "Day 4 - Return to the hotel and enjoy free time.",
+      "Day 5 - Breakfast at the hotel.",
+      "Day 5 - Travel to Senaru Village at the foot of Mount Rinjani.",
+      "Day 5 - Trek to Sendang Gile Waterfall.",
+      "Day 5 - Trek to Tiu Kelep Waterfall.",
+      "Day 5 - Enjoy the forest surroundings and natural pools in the waterfall area.",
+      "Day 5 - Lunch at a local restaurant.",
+      "Day 5 - Stop at Pusuk Monkey Forest.",
+      "Day 5 - Dinner at a local restaurant.",
+      "Day 5 - Return to the hotel and enjoy free time.",
+      "Day 6 - Breakfast and free time at the hotel.",
+      "Day 6 - Hotel check-out.",
+      "Day 6 - Optional visit to the Lombok Islamic Center if time permits.",
+      "Day 6 - Optional visit to Banyumulek Village if time permits.",
+      "Day 6 - Transfer to Lombok International Airport."
+    ],
+    "includes": [
+      "Air-conditioned transportation by Avanza, BR-V, Innova, Almaz, Hiace, Elf, or bus according to group size.",
+      "Tour driver.",
+      "Vehicle fuel.",
+      "Tour leader for groups.",
+      "Licensed HPI tour guide for groups.",
+      "Hotel according to the selected option.",
+      "Daily breakfast at the hotel.",
+      "Lunch.",
+      "Dinner.",
+      "Daily mineral water.",
+      "Entrance tickets to all attractions listed in the itinerary.",
+      "Private speedboat to Gili Trawangan.",
+      "Private boat to Gili Nanggu.",
+      "Snorkeling equipment.",
+      "Underwater GoPro Hero camera."
+    ],
+    "excludes": [
+      "Airfare.",
+      "Personal expenses."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 3059000,
+        "4-5": 2262000,
+        "6-10": 2226000,
+        "11-15": 1899000,
+        "16-20": 1835000,
+        "21-34": 1698000,
+        "35-66": 1584000,
+        "67-101": 1394000,
+        "102-150": 1310000,
+        ">151": 1223000
+      },
+      "hotel2": {
+        "2-3": 3684000,
+        "4-5": 2887000,
+        "6-10": 2851000,
+        "11-15": 2524000,
+        "16-20": 2460000,
+        "21-34": 2328000,
+        "35-66": 2209000,
+        "67-101": 2019000,
+        "102-150": 1935000,
+        ">151": 1848000
+      },
+      "hotel3": {
+        "2-3": 4086000,
+        "4-5": 3342000,
+        "6-10": 3306000,
+        "11-15": 2997000,
+        "16-20": 2915000,
+        "21-34": 2778000,
+        "35-66": 2664000,
+        "67-101": 2436000,
+        "102-150": 2334000,
+        ">151": 2236000
+      },
+      "hotel4": {
+        "2-3": 4834000,
+        "4-5": 4187000,
+        "6-10": 4151000,
+        "11-15": 3874000,
+        "16-20": 3760000,
+        "21-34": 3623000,
+        "35-66": 3509000,
+        "67-101": 3209000,
+        "102-150": 3075000,
+        ">151": 2958000
+      },
+      "hotel5": {
+        "2-3": 6703000,
+        "4-5": 6300000,
+        "6-10": 6264000,
+        "11-15": 6068000,
+        "16-20": 5872000,
+        "21-34": 5736000,
+        "35-66": 5621000,
+        "67-101": 5143000,
+        "102-150": 4928000,
+        ">151": 4761000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
+  },
+  {
+    "slug": "paket-wisata-lombok-6-hari-5-malam-pink-beach-mandalika-gili",
+    "locale": "ar",
+    "title": "باقة سياحية إلى لومبوك لمدة 6 أيام – شاطئ بينك ومانداليكا وجيلي تراوانغان والشلالات",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "باقة 6 أيام و5 ليالٍ",
+    "category": "باقة سياحية في لومبوك",
+    "duration": "6 أيام و5 ليالٍ",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "جولة خاصة في لومبوك لمدة 6 أيام و5 ليالٍ، مصممة للوصول مساءً أو ليلاً والمغادرة صباحاً أو ظهراً. تشمل الرحلة شاطئ بينك، ومنطقة مانداليكا، وجزيرة جيلي تراوانغان، وشلالي سيندانغ غيلي وتيو كيليب، بالإضافة إلى المواصلات والإقامة المختارة والوجبات وتذاكر دخول المواقع السياحية.",
+    "highlights": [
+      "جولة خاصة دون الانضمام إلى مشاركين آخرين.",
+      "زيارة جيلي باسير وثلاث مناطق من شاطئ بينك.",
+      "الغطس في جيلي بيتيلو مع المعدات وكاميرا للتصوير تحت الماء.",
+      "استكشاف قرية سوكاراري وقرية سادي ومنطقة مانداليكا.",
+      "الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "المشي إلى شلالي سيندانغ غيلي وتيو كيليب.",
+      "زيارة اختيارية مجانية إلى المركز الإسلامي في لومبوك أو قرية بانيوموليك في اليوم الأخير."
+    ],
+    "itinerary": [
+      "اليوم 1 - الاستقبال والترحيب في مطار لومبوك الدولي.",
+      "اليوم 1 - مراسم ترحيب بوشاح لومبوك التقليدي.",
+      "اليوم 1 - تناول العشاء في مطعم محلي.",
+      "اليوم 1 - الانتقال إلى الفندق.",
+      "اليوم 1 - تسجيل الدخول إلى الفندق والراحة.",
+      "اليوم 2 - تناول الإفطار في الفندق.",
+      "اليوم 2 - التوجه إلى منطقة شاطئ بينك.",
+      "اليوم 2 - زيارة جيلي باسير التي تظهر عند انخفاض المد.",
+      "اليوم 2 - زيارة شاطئ بينك 1.",
+      "اليوم 2 - تناول غداء من المأكولات البحرية في شاطئ بينك.",
+      "اليوم 2 - الغطس في جيلي بيتيلو.",
+      "اليوم 2 - زيارة شاطئ بينك 2.",
+      "اليوم 2 - زيارة شاطئ بينك 3.",
+      "اليوم 2 - العودة إلى الميناء.",
+      "اليوم 2 - تناول العشاء في مطعم محلي في سينغيغي أو ماتارام.",
+      "اليوم 2 - العودة إلى الفندق ووقت حر.",
+      "اليوم 3 - تناول الإفطار في الفندق.",
+      "اليوم 3 - زيارة قرية سوكاراري للنسيج.",
+      "اليوم 3 - مشاهدة عملية صناعة المنسوجات التقليدية.",
+      "اليوم 3 - ارتداء ملابس لومبوك التقليدية لجلسة تصوير.",
+      "اليوم 3 - زيارة قرية سادي التقليدية.",
+      "اليوم 3 - زيارة شاطئ كوتا مانداليكا.",
+      "اليوم 3 - تناول الغداء في منطقة شاطئ كوتا مانداليكا.",
+      "اليوم 3 - زيارة منطقة حلبة مانداليكا.",
+      "اليوم 3 - التقاط الصور في المدرجات والمواقع الشهيرة في مانداليكا عند توفر الدخول.",
+      "اليوم 3 - زيارة شاطئ تانجونغ آن.",
+      "اليوم 3 - الاستمتاع بالمناظر البانورامية وغروب الشمس في تل ميريسي.",
+      "اليوم 3 - تناول العشاء في مطعم محلي.",
+      "اليوم 3 - العودة إلى الفندق ووقت حر.",
+      "اليوم 4 - تناول الإفطار في الفندق.",
+      "اليوم 4 - زيارة معبد باتو بولونغ.",
+      "اليوم 4 - زيارة فيلا هانتو المهجورة.",
+      "اليوم 4 - التوقف عند تل ماليمبو أو تل مالاكا.",
+      "اليوم 4 - الانتقال إلى جيلي تراوانغان بقارب سريع خاص.",
+      "اليوم 4 - تناول الغداء في جيلي تراوانغان.",
+      "اليوم 4 - وقت حر لاستكشاف جيلي تراوانغان.",
+      "اليوم 4 - العودة إلى لومبوك بقارب سريع خاص.",
+      "اليوم 4 - زيارة مركز للحرف اليدوية المصنوعة من اللؤلؤ.",
+      "اليوم 4 - زيارة مركز لشراء هدايا لومبوك التذكارية.",
+      "اليوم 4 - تناول العشاء في منطقة سينغيغي.",
+      "اليوم 4 - العودة إلى الفندق ووقت حر.",
+      "اليوم 5 - تناول الإفطار في الفندق.",
+      "اليوم 5 - التوجه إلى قرية سينارو عند سفح جبل رينجاني.",
+      "اليوم 5 - المشي إلى شلال سيندانغ غيلي.",
+      "اليوم 5 - المشي إلى شلال تيو كيليب.",
+      "اليوم 5 - الاستمتاع بالغابة والبرك الطبيعية في منطقة الشلالات.",
+      "اليوم 5 - تناول الغداء في مطعم محلي.",
+      "اليوم 5 - التوقف عند غابة بوسوك للقرود.",
+      "اليوم 5 - تناول العشاء في مطعم محلي.",
+      "اليوم 5 - العودة إلى الفندق ووقت حر.",
+      "اليوم 6 - تناول الإفطار والاستمتاع بوقت حر في الفندق.",
+      "اليوم 6 - تسجيل الخروج من الفندق.",
+      "اليوم 6 - زيارة اختيارية إلى المركز الإسلامي في لومبوك إذا سمح الوقت.",
+      "اليوم 6 - زيارة اختيارية إلى قرية بانيوموليك إذا سمح الوقت.",
+      "اليوم 6 - الانتقال إلى مطار لومبوك الدولي."
+    ],
+    "includes": [
+      "مواصلات مكيفة باستخدام أفانزا أو BR-V أو إينوفا أو ألماز أو هايس أو إلف أو حافلة حسب حجم المجموعة.",
+      "سائق للجولة.",
+      "وقود المركبة.",
+      "قائد جولة للمجموعات.",
+      "مرشد سياحي معتمد من HPI للمجموعات.",
+      "الفندق حسب الخيار المحدد.",
+      "إفطار يومي في الفندق.",
+      "الغداء.",
+      "العشاء.",
+      "مياه معدنية يومياً.",
+      "تذاكر دخول جميع المواقع السياحية المذكورة في البرنامج.",
+      "قارب سريع خاص إلى جيلي تراوانغان.",
+      "قارب خاص إلى جيلي نانغو.",
+      "معدات الغطس.",
+      "كاميرا GoPro Hero للتصوير تحت الماء."
+    ],
+    "excludes": [
+      "تذاكر الطيران.",
+      "المصاريف الشخصية."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 3059000,
+        "4-5": 2262000,
+        "6-10": 2226000,
+        "11-15": 1899000,
+        "16-20": 1835000,
+        "21-34": 1698000,
+        "35-66": 1584000,
+        "67-101": 1394000,
+        "102-150": 1310000,
+        ">151": 1223000
+      },
+      "hotel2": {
+        "2-3": 3684000,
+        "4-5": 2887000,
+        "6-10": 2851000,
+        "11-15": 2524000,
+        "16-20": 2460000,
+        "21-34": 2328000,
+        "35-66": 2209000,
+        "67-101": 2019000,
+        "102-150": 1935000,
+        ">151": 1848000
+      },
+      "hotel3": {
+        "2-3": 4086000,
+        "4-5": 3342000,
+        "6-10": 3306000,
+        "11-15": 2997000,
+        "16-20": 2915000,
+        "21-34": 2778000,
+        "35-66": 2664000,
+        "67-101": 2436000,
+        "102-150": 2334000,
+        ">151": 2236000
+      },
+      "hotel4": {
+        "2-3": 4834000,
+        "4-5": 4187000,
+        "6-10": 4151000,
+        "11-15": 3874000,
+        "16-20": 3760000,
+        "21-34": 3623000,
+        "35-66": 3509000,
+        "67-101": 3209000,
+        "102-150": 3075000,
+        ">151": 2958000
+      },
+      "hotel5": {
+        "2-3": 6703000,
+        "4-5": 6300000,
+        "6-10": 6264000,
+        "11-15": 6068000,
+        "16-20": 5872000,
+        "21-34": 5736000,
+        "35-66": 5621000,
+        "67-101": 5143000,
+        "102-150": 4928000,
+        ">151": 4761000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
+  },
+  {
+    "slug": "paket-wisata-lombok-6-hari-5-malam-pink-beach-mandalika-gili",
+    "locale": "ms",
+    "title": "Pakej Lawatan Lombok 6 Hari 5 Malam – Pantai Pink, Mandalika, Gili Trawangan & Air Terjun",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "Pakej 6 Hari 5 Malam",
+    "category": "Pakej Pelancongan Lombok",
+    "duration": "6 Hari 5 Malam",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "Pakej lawatan persendirian Lombok selama 6 hari 5 malam yang direka untuk ketibaan pada waktu petang atau malam dan penerbangan pulang pada waktu pagi atau tengah hari. Perjalanan merangkumi Pantai Pink, Mandalika, Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, termasuk pengangkutan, penginapan pilihan, makanan dan tiket masuk tempat pelancongan.",
+    "highlights": [
+      "Lawatan persendirian tanpa digabungkan dengan peserta lain.",
+      "Melawat Gili Pasir dan tiga kawasan Pantai Pink.",
+      "Snorkeling di Gili Petelu dengan peralatan dan kamera bawah air.",
+      "Meneroka Kampung Sukarare, Kampung Sade dan kawasan Mandalika.",
+      "Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Trekking ke Air Terjun Sendang Gile dan Tiu Kelep.",
+      "Lawatan pilihan percuma ke Islamic Center Lombok atau Kampung Banyumulek pada hari terakhir."
+    ],
+    "itinerary": [
+      "Hari 1 - Dijemput dan disambut di Lapangan Terbang Antarabangsa Lombok.",
+      "Hari 1 - Upacara sambutan dengan selendang tradisional Lombok.",
+      "Hari 1 - Makan malam di restoran tempatan.",
+      "Hari 1 - Perjalanan ke hotel.",
+      "Hari 1 - Daftar masuk hotel dan berehat.",
+      "Hari 2 - Sarapan pagi di hotel.",
+      "Hari 2 - Perjalanan ke kawasan Pantai Pink.",
+      "Hari 2 - Melawat Gili Pasir yang muncul ketika air laut surut.",
+      "Hari 2 - Melawat Pantai Pink 1.",
+      "Hari 2 - Makan tengah hari makanan laut di Pantai Pink.",
+      "Hari 2 - Snorkeling di Gili Petelu.",
+      "Hari 2 - Melawat Pantai Pink 2.",
+      "Hari 2 - Melawat Pantai Pink 3.",
+      "Hari 2 - Kembali ke pelabuhan.",
+      "Hari 2 - Makan malam di restoran tempatan di Senggigi atau Mataram.",
+      "Hari 2 - Kembali ke hotel dan acara bebas.",
+      "Hari 3 - Sarapan pagi di hotel.",
+      "Hari 3 - Melawat Kampung Tenun Sukarare.",
+      "Hari 3 - Melihat proses pembuatan kain tenun tradisional.",
+      "Hari 3 - Memakai pakaian tradisional Lombok untuk sesi bergambar.",
+      "Hari 3 - Melawat Kampung Tradisional Sade.",
+      "Hari 3 - Melawat Pantai Kuta Mandalika.",
+      "Hari 3 - Makan tengah hari di kawasan Pantai Kuta Mandalika.",
+      "Hari 3 - Melawat kawasan Litar Mandalika.",
+      "Hari 3 - Bergambar di grandstand dan lokasi ikonik Mandalika jika akses dibuka.",
+      "Hari 3 - Melawat Pantai Tanjung Aan.",
+      "Hari 3 - Menikmati panorama dan matahari terbenam di Bukit Merese.",
+      "Hari 3 - Makan malam di restoran tempatan.",
+      "Hari 3 - Kembali ke hotel dan acara bebas.",
+      "Hari 4 - Sarapan pagi di hotel.",
+      "Hari 4 - Melawat Pura Batu Bolong.",
+      "Hari 4 - Melawat Villa Hantu.",
+      "Hari 4 - Berhenti di Bukit Malimbu atau Bukit Malaka.",
+      "Hari 4 - Menyeberang ke Gili Trawangan dengan bot laju persendirian.",
+      "Hari 4 - Makan tengah hari di Gili Trawangan.",
+      "Hari 4 - Masa bebas untuk meneroka Gili Trawangan.",
+      "Hari 4 - Kembali ke Lombok dengan bot laju persendirian.",
+      "Hari 4 - Melawat pusat kraftangan mutiara.",
+      "Hari 4 - Melawat pusat cenderamata khas Lombok.",
+      "Hari 4 - Makan malam di kawasan Senggigi.",
+      "Hari 4 - Kembali ke hotel dan acara bebas.",
+      "Hari 5 - Sarapan pagi di hotel.",
+      "Hari 5 - Perjalanan ke Kampung Senaru di kaki Gunung Rinjani.",
+      "Hari 5 - Trekking ke Air Terjun Sendang Gile.",
+      "Hari 5 - Trekking ke Air Terjun Tiu Kelep.",
+      "Hari 5 - Menikmati suasana hutan dan kolam semula jadi di kawasan air terjun.",
+      "Hari 5 - Makan tengah hari di restoran tempatan.",
+      "Hari 5 - Berhenti di Hutan Monyet Pusuk.",
+      "Hari 5 - Makan malam di restoran tempatan.",
+      "Hari 5 - Kembali ke hotel dan acara bebas.",
+      "Hari 6 - Sarapan pagi dan acara bebas di hotel.",
+      "Hari 6 - Daftar keluar hotel.",
+      "Hari 6 - Lawatan pilihan ke Islamic Center Lombok jika masa mengizinkan.",
+      "Hari 6 - Lawatan pilihan ke Kampung Banyumulek jika masa mengizinkan.",
+      "Hari 6 - Penghantaran ke Lapangan Terbang Antarabangsa Lombok."
+    ],
+    "includes": [
+      "Pengangkutan berhawa dingin menggunakan Avanza, BR-V, Innova, Almaz, Hiace, Elf atau bas mengikut saiz kumpulan.",
+      "Pemandu pelancong kenderaan.",
+      "Bahan api kenderaan.",
+      "Ketua lawatan untuk kumpulan.",
+      "Pemandu pelancong HPI berlesen untuk kumpulan.",
+      "Hotel mengikut pilihan.",
+      "Sarapan pagi setiap hari di hotel.",
+      "Makan tengah hari.",
+      "Makan malam.",
+      "Air mineral setiap hari.",
+      "Tiket masuk ke semua tempat pelancongan dalam jadual perjalanan.",
+      "Bot laju persendirian ke Gili Trawangan.",
+      "Bot persendirian ke Gili Nanggu.",
+      "Peralatan snorkeling.",
+      "Kamera GoPro Hero bawah air."
+    ],
+    "excludes": [
+      "Tiket penerbangan.",
+      "Perbelanjaan peribadi."
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 3059000,
+        "4-5": 2262000,
+        "6-10": 2226000,
+        "11-15": 1899000,
+        "16-20": 1835000,
+        "21-34": 1698000,
+        "35-66": 1584000,
+        "67-101": 1394000,
+        "102-150": 1310000,
+        ">151": 1223000
+      },
+      "hotel2": {
+        "2-3": 3684000,
+        "4-5": 2887000,
+        "6-10": 2851000,
+        "11-15": 2524000,
+        "16-20": 2460000,
+        "21-34": 2328000,
+        "35-66": 2209000,
+        "67-101": 2019000,
+        "102-150": 1935000,
+        ">151": 1848000
+      },
+      "hotel3": {
+        "2-3": 4086000,
+        "4-5": 3342000,
+        "6-10": 3306000,
+        "11-15": 2997000,
+        "16-20": 2915000,
+        "21-34": 2778000,
+        "35-66": 2664000,
+        "67-101": 2436000,
+        "102-150": 2334000,
+        ">151": 2236000
+      },
+      "hotel4": {
+        "2-3": 4834000,
+        "4-5": 4187000,
+        "6-10": 4151000,
+        "11-15": 3874000,
+        "16-20": 3760000,
+        "21-34": 3623000,
+        "35-66": 3509000,
+        "67-101": 3209000,
+        "102-150": 3075000,
+        ">151": 2958000
+      },
+      "hotel5": {
+        "2-3": 6703000,
+        "4-5": 6300000,
+        "6-10": 6264000,
+        "11-15": 6068000,
+        "16-20": 5872000,
+        "21-34": 5736000,
+        "35-66": 5621000,
+        "67-101": 5143000,
+        "102-150": 4928000,
+        ">151": 4761000
+      }
+    },
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
+  },
+  {
+    "slug": "paket-wisata-lombok-6-hari-5-malam-pink-beach-mandalika-gili",
+    "locale": "zh",
+    "title": "龙目岛6天5晚旅游套餐－粉红海滩、曼达利卡、吉利特拉旺安与瀑布",
+    "region": "lombok",
+    "collectionSlug": "6-hari-5-malam",
+    "collectionTitle": "6天5晚套餐",
+    "category": "龙目岛旅游套餐",
+    "duration": "6天5晚",
+    "images": [
+      "destinations/lombok.webp"
+    ],
+    "summary": "龙目岛6天5晚私人旅游套餐，适合傍晚或夜间抵达，并于早上或中午返程。行程包括粉红海滩、曼达利卡、吉利特拉旺安、仙达吉拉瀑布和蒂乌克勒普瀑布，并包含交通、所选酒店、餐饮及景点门票。",
+    "highlights": [
+      "私人包团，不与其他游客拼团。",
+      "游览吉利帕希尔及三个粉红海滩区域。",
+      "在吉利佩特鲁浮潜，并提供浮潜设备和水下相机。",
+      "探索苏卡拉拉村、萨德村和曼达利卡地区。",
+      "乘坐私人快艇前往吉利特拉旺安。",
+      "徒步游览仙达吉拉瀑布和蒂乌克勒普瀑布。",
+      "最后一天可免费选择参观龙目岛伊斯兰中心或班尤穆勒克村。"
+    ],
+    "itinerary": [
+      "第1天 - 在龙目国际机场接机并欢迎抵达。",
+      "第1天 - 举行龙目岛传统围巾欢迎仪式。",
+      "第1天 - 在当地餐厅享用晚餐。",
+      "第1天 - 前往酒店。",
+      "第1天 - 办理酒店入住并休息。",
+      "第2天 - 在酒店享用早餐。",
+      "第2天 - 前往粉红海滩区域。",
+      "第2天 - 游览退潮时出现的吉利帕希尔。",
+      "第2天 - 游览粉红海滩1。",
+      "第2天 - 在粉红海滩享用海鲜午餐。",
+      "第2天 - 在吉利佩特鲁浮潜。",
+      "第2天 - 游览粉红海滩2。",
+      "第2天 - 游览粉红海滩3。",
+      "第2天 - 返回码头。",
+      "第2天 - 在圣吉吉或马塔兰的当地餐厅享用晚餐。",
+      "第2天 - 返回酒店并自由活动。",
+      "第3天 - 在酒店享用早餐。",
+      "第3天 - 游览苏卡拉拉织布村。",
+      "第3天 - 参观传统织布制作过程。",
+      "第3天 - 穿龙目岛传统服装拍照。",
+      "第3天 - 游览萨德传统村落。",
+      "第3天 - 游览库塔曼达利卡海滩。",
+      "第3天 - 在库塔曼达利卡海滩区域享用午餐。",
+      "第3天 - 游览曼达利卡赛道区域。",
+      "第3天 - 在开放的情况下前往看台及曼达利卡标志性地点拍照。",
+      "第3天 - 游览丹绒安海滩。",
+      "第3天 - 在梅雷塞山欣赏全景和日落。",
+      "第3天 - 在当地餐厅享用晚餐。",
+      "第3天 - 返回酒店并自由活动。",
+      "第4天 - 在酒店享用早餐。",
+      "第4天 - 游览巴图博隆寺。",
+      "第4天 - 游览废弃的幽灵别墅。",
+      "第4天 - 在马林布山或马拉卡山停留。",
+      "第4天 - 乘坐私人快艇前往吉利特拉旺安。",
+      "第4天 - 在吉利特拉旺安享用午餐。",
+      "第4天 - 自由探索吉利特拉旺安。",
+      "第4天 - 乘坐私人快艇返回龙目岛。",
+      "第4天 - 参观珍珠工艺中心。",
+      "第4天 - 参观龙目岛特色纪念品中心。",
+      "第4天 - 在圣吉吉地区享用晚餐。",
+      "第4天 - 返回酒店并自由活动。",
+      "第5天 - 在酒店享用早餐。",
+      "第5天 - 前往林贾尼火山脚下的塞纳鲁村。",
+      "第5天 - 徒步前往仙达吉拉瀑布。",
+      "第5天 - 徒步前往蒂乌克勒普瀑布。",
+      "第5天 - 欣赏瀑布区域的森林环境和天然水潭。",
+      "第5天 - 在当地餐厅享用午餐。",
+      "第5天 - 在普苏克猴林停留。",
+      "第5天 - 在当地餐厅享用晚餐。",
+      "第5天 - 返回酒店并自由活动。",
+      "第6天 - 在酒店享用早餐并自由活动。",
+      "第6天 - 办理酒店退房。",
+      "第6天 - 时间允许时可选择参观龙目岛伊斯兰中心。",
+      "第6天 - 时间允许时可选择参观班尤穆勒克村。",
+      "第6天 - 送往龙目国际机场。"
+    ],
+    "includes": [
+      "根据团队人数安排Avanza、BR-V、Innova、Almaz、Hiace、Elf或巴士等空调车辆。",
+      "旅游司机。",
+      "车辆燃油。",
+      "团队领队。",
+      "团队HPI持证导游。",
+      "所选酒店住宿。",
+      "酒店每日早餐。",
+      "午餐。",
+      "晚餐。",
+      "每日矿泉水。",
+      "行程中所有景点的门票。",
+      "前往吉利特拉旺安的私人快艇。",
+      "前往吉利南古的私人船只。",
+      "浮潜设备。",
+      "GoPro Hero水下相机。"
+    ],
+    "excludes": [
+      "机票。",
+      "个人消费。"
+    ],
+    "priceList": {
+      "withoutHotel": {
+        "2-3": 3059000,
+        "4-5": 2262000,
+        "6-10": 2226000,
+        "11-15": 1899000,
+        "16-20": 1835000,
+        "21-34": 1698000,
+        "35-66": 1584000,
+        "67-101": 1394000,
+        "102-150": 1310000,
+        ">151": 1223000
+      },
+      "hotel2": {
+        "2-3": 3684000,
+        "4-5": 2887000,
+        "6-10": 2851000,
+        "11-15": 2524000,
+        "16-20": 2460000,
+        "21-34": 2328000,
+        "35-66": 2209000,
+        "67-101": 2019000,
+        "102-150": 1935000,
+        ">151": 1848000
+      },
+      "hotel3": {
+        "2-3": 4086000,
+        "4-5": 3342000,
+        "6-10": 3306000,
+        "11-15": 2997000,
+        "16-20": 2915000,
+        "21-34": 2778000,
+        "35-66": 2664000,
+        "67-101": 2436000,
+        "102-150": 2334000,
+        ">151": 2236000
+      },
+      "hotel4": {
+        "2-3": 4834000,
+        "4-5": 4187000,
+        "6-10": 4151000,
+        "11-15": 3874000,
+        "16-20": 3760000,
+        "21-34": 3623000,
+        "35-66": 3509000,
+        "67-101": 3209000,
+        "102-150": 3075000,
+        ">151": 2958000
+      },
+      "hotel5": {
+        "2-3": 6703000,
+        "4-5": 6300000,
+        "6-10": 6264000,
+        "11-15": 6068000,
+        "16-20": 5872000,
+        "21-34": 5736000,
+        "35-66": 5621000,
+        "67-101": 5143000,
+        "102-150": 4928000,
+        ">151": 4761000
       }
     },
     "priceListLabels": {

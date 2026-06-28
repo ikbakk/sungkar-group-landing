@@ -39,6 +39,8 @@ const COL_TITLE_EN = {
   "Paket 2 Hari 1 Malam": "2 Days 1 Night Package",
   "Paket 3 Hari 2 Malam": "3 Days 2 Nights Package",
   "Paket 4 Hari 3 Malam": "4 Days 3 Nights Package",
+  "Paket 5 Hari 4 Malam": "5 Days 4 Nights Package",
+  "Paket 6 Hari 5 Malam": "6 Days 5 Nights Package",
 };
 
 const COL_TITLE_MS = {
@@ -46,6 +48,8 @@ const COL_TITLE_MS = {
   "Paket 2 Hari 1 Malam": "Pakej 2 Hari 1 Malam",
   "Paket 3 Hari 2 Malam": "Pakej 3 Hari 2 Malam",
   "Paket 4 Hari 3 Malam": "Pakej 4 Hari 3 Malam",
+  "Paket 5 Hari 4 Malam": "Pakej 5 Hari 4 Malam",
+  "Paket 6 Hari 5 Malam": "Pakej 6 Hari 5 Malam",
 };
 
 const COL_TITLE_AR = {
@@ -53,6 +57,8 @@ const COL_TITLE_AR = {
   "Paket 2 Hari 1 Malam": "باقة يومين وليلة",
   "Paket 3 Hari 2 Malam": "باقة 3 أيام وليلتين",
   "Paket 4 Hari 3 Malam": "باقة 4 أيام و 3 ليال",
+  "Paket 5 Hari 4 Malam": "باقة 5 أيام و4 ليالٍ",
+  "Paket 6 Hari 5 Malam": "باقة 6 أيام و5 ليالٍ",
 };
 
 const COL_TITLE_ZH = {
@@ -60,6 +66,8 @@ const COL_TITLE_ZH = {
   "Paket 2 Hari 1 Malam": "两天一晚套餐",
   "Paket 3 Hari 2 Malam": "三天两晚套餐",
   "Paket 4 Hari 3 Malam": "四天三晚套餐",
+  "Paket 5 Hari 4 Malam": "5天4晚套餐",
+  "Paket 6 Hari 5 Malam": "6天5晚套餐",
 };
 
 const COL_TITLE_MAP = {
