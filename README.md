@@ -21,8 +21,9 @@ Multi-language landing site for Sungkar Group — Lombok tour operator. 268 page
 | Command                      | Action                                                                                                        |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `npm run validate:structured`| Validate structured JSON source completeness and shape                                                        |
-| `npm run images:barrel`      | Regenerate `src/assets/images/index.ts`                                                                       |
-| `npm run generate:og-images` | Generate OG placeholder images for all page types                                                             |
+| `npm run images`             | Regenerate `src/assets/images/index.ts`                                                                       |
+| `npm run og-images`          | Generate OG placeholder images for all page types                                                             |
+| `npm run generate:template`  | Interactive CLI to scaffold new content templates                                                             |
 
 ### Validation & Formatting
 

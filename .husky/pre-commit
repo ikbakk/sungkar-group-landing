@@ -19,7 +19,7 @@ fi
 
 # Regenerate image barrel file
 echo "🔍 Generating image barrel..."
-npm run images:barrel
+npm run images
 
 # Run image validation
 echo "🔍 Validating images..."
