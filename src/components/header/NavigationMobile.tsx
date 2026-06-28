@@ -80,14 +80,14 @@ export default function NavigationMobile({ items, locale = "id" }: Props) {
             className="
               rounded-full
               border
-              border-white/20
-              bg-white/10
+              border-border
+              bg-white/80
               px-4
               py-2
               text-sm
               font-medium
-              text-white
-              backdrop-blur-md
+              text-foreground
+              shadow-sm
             "
           >
             {strings.menu}
