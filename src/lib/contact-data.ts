@@ -45,6 +45,13 @@ export interface FormField {
   options?: string[];
 }
 
+export const socialLinks: BusinessInfo["socialLinks"] = {
+  instagram: "https://www.instagram.com/tour_lombok/reels/",
+  youtube: "https://www.youtube.com/@sungkargroup1",
+  facebook: "https://www.facebook.com/sungkartrans",
+  tiktok: "https://www.tiktok.com/@tourdilombok",
+};
+
 export const businessInfo: BusinessInfo = {
   name: "Sungkar Group Indonesia",
   description:
@@ -63,10 +70,7 @@ export const businessInfo: BusinessInfo = {
     latitude: -8.5645579,
     longitude: 116.0815306,
   },
-  socialLinks: {
-    instagram: "https://www.instagram.com/tour_lombok/reels/",
-    youtube: "https://www.youtube.com/@sungkargroup1",
-  },
+  socialLinks,
 };
 
 export const contactMethods: ContactMethod[] = [

@@ -1,6 +1,7 @@
 ---
 import FooterBlock from "@/components/blocks/FooterBlock.astro";
 import { getFooterStrings } from "@/lib/i18n";
+import { businessInfo } from "@/lib/contact-data";
 
 interface Props {
   locale?: string | undefined;
@@ -9,6 +10,30 @@ interface Props {
 const { locale = "id" } = Astro.props as Props;
 const currentYear = new Date().getFullYear();
 const footerStrings = getFooterStrings(locale);
+const footerSocials = [
+  {
+    label: footerStrings.footer.instagram,
+    href: businessInfo.socialLinks.instagram,
+    icon: "instagram",
+  },
+  {
+    label: footerStrings.footer.youtube,
+    href: businessInfo.socialLinks.youtube,
+    icon: "youtube",
+  },
+  {
+    label: footerStrings.footer.facebook,
+    href: businessInfo.socialLinks.facebook,
+    icon: "facebook",
+  },
+  {
+    label: footerStrings.footer.tiktok,
+    href: businessInfo.socialLinks.tiktok,
+    icon: "tiktok",
+  },
+].filter((social): social is { label: string; href: string; icon: string } =>
+  Boolean(social.href),
+);
 ---
 
 <FooterBlock
@@ -16,28 +41,7 @@ const footerStrings = getFooterStrings(locale);
   brandName={footerStrings.footer.brandName}
   brandHref="/"
   description={footerStrings.footer.description}
-  socials={[
-    {
-      label: footerStrings.footer.instagram,
-      href: "https://www.instagram.com/tour_lombok/reels/",
-      icon: "instagram",
-    },
-    {
-      label: footerStrings.footer.youtube,
-      href: "https://www.youtube.com/@sungkargroup1",
-      icon: "youtube",
-    },
-    {
-      label: footerStrings.footer.facebook,
-      href: "https://www.facebook.com/sungkartrans",
-      icon: "facebook",
-    },
-    {
-      label: footerStrings.footer.tiktok,
-      href: "https://www.tiktok.com/@tourdilombok",
-      icon: "tiktok",
-    },
-  ]}
+  socials={footerSocials}
   columns={[
     {
       title: footerStrings.footer.navigation,

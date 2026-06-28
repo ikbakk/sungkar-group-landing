@@ -1,6 +1,8 @@
 // Contact Data Layer
 // Separates business logic and data from presentation components
 
+import { socialLinks } from "@/lib/contact-data";
+
 export interface ContactMethod {
   id: string;
   title: string;
@@ -63,10 +65,7 @@ export const businessInfo: BusinessInfo = {
     latitude: -8.5645579,
     longitude: 116.0815306,
   },
-  socialLinks: {
-    instagram: "https://www.instagram.com/sungkargroup",
-    youtube: "https://www.youtube.com/@sungkargroup1",
-  },
+  socialLinks,
 };
 
 export const contactMethods: ContactMethod[] = [
