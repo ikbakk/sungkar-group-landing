@@ -3,723 +3,953 @@
 
 export const destinationsData = [
   {
-    slug: "gili-air",
-    locale: "id",
-    title: "Gili Air",
-    region: "Kepulauan Gili",
-    image: "destinations/gili.webp",
-    gallery: [
+    "slug": "gili-air",
+    "locale": "id",
+    "title": "Gili Air",
+    "region": "Kepulauan Gili",
+    "image": "destinations/gili.webp",
+    "gallery": [
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
+      "gallery/kuta-beach.webp"
+    ],
+    "summary": "Versi yang lebih tenang dari Gili dengan banyak ruang untuk berjalan santai dan snorkeling singkat.",
+    "thingsToDo": [
+      "Waktu pantai tenang",
+      "Snorkeling",
+      "Singgah sunset"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-air",
+    "locale": "en",
+    "title": "Gili Air",
+    "region": "Kepulauan Gili",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach.webp"
+    ],
+    "summary": "A quieter version of Gili with plenty of space for leisurely walks and short snorkeling.",
+    "thingsToDo": [
+      "Relaxed beach time",
+      "Snorkeling",
+      "Sunset stop"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-air",
+    "locale": "ar",
+    "title": "غيلي إير",
+    "region": "جزر جيلي",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach.webp"
+    ],
+    "summary": "نسخة أكثر هدوءاً من جيلي مع مساحة كبيرة للمشي الترفيهي والغطس القصير.",
+    "thingsToDo": [
+      "وقت شاطئ مريح",
+      "الغطس",
+      "محطة الغروب"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-air",
+    "locale": "ms",
+    "title": "Gili Air",
+    "region": "Kepulauan Gili",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach.webp"
+    ],
+    "summary": "Versi lebih tenang Gili dengan ruang yang banyak untuk berjalan santai dan snorkeling ringkas.",
+    "thingsToDo": [
+      "Masa pantai santai",
+      "Snorkeling",
+      "Titik matahari terbenam"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-air",
+    "locale": "zh",
+    "title": "Gili Air",
+    "region": "吉利群岛",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach.webp"
+    ],
+    "summary": "更安静的吉利版本，有充足的空间供悠闲散步和短途浮潜。",
+    "thingsToDo": [
+      "放松海滩时光",
+      "浮潜",
+      "日落停留"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-meno",
+    "locale": "id",
+    "title": "Gili Meno",
+    "region": "Kepulauan Gili",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach-2.webp"
+    ],
+    "summary": "Pulau paling sunyi untuk traveler yang ingin suasana privat dan sederhana.",
+    "thingsToDo": [
+      "Pantai tenang",
+      "Snorkeling",
+      "Tempo santai"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-meno",
+    "locale": "en",
+    "title": "Gili Meno",
+    "region": "Kepulauan Gili",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach-2.webp"
+    ],
+    "summary": "The quietest island for travelers seeking a private and simple atmosphere.",
+    "thingsToDo": [
+      "Quiet beach",
+      "Snorkeling",
+      "Relaxed pace"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-meno",
+    "locale": "ar",
+    "title": "غيلي مينو",
+    "region": "جزر جيلي",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach-2.webp"
+    ],
+    "summary": "أهدأ جزيرة للمسافرين الباحثين عن أجواء خاصة وبسيطة.",
+    "thingsToDo": [
+      "شاطئ هادئ",
+      "الغطس",
+      "وتيرة مريحة"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-meno",
+    "locale": "ms",
+    "title": "Gili Meno",
+    "region": "Kepulauan Gili",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach-2.webp"
+    ],
+    "summary": "Pulau paling tenang untuk pelancong yang mencari suasana persendirian dan sederhana.",
+    "thingsToDo": [
+      "Pantai sepi",
+      "Snorkeling",
+      "Tempo santai"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-meno",
+    "locale": "zh",
+    "title": "Gili Meno",
+    "region": "吉利群岛",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/kuta-beach-2.webp"
+    ],
+    "summary": "最安静的岛屿，适合寻求私密和简约氛围的旅行者。",
+    "thingsToDo": [
+      "安静海滩",
+      "浮潜",
+      "放松节奏"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-trawangan",
+    "locale": "id",
+    "title": "Gili Trawangan",
+    "region": "Kepulauan Gili",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp"
+    ],
+    "summary": "Pulau yang paling mudah untuk jelajah pulau, snorkeling, dan ritme liburan pantai.",
+    "thingsToDo": [
+      "Snorkeling",
+      "Jelajah pulau",
+      "Waktu pantai"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-trawangan",
+    "locale": "en",
+    "title": "Gili Trawangan",
+    "region": "Kepulauan Gili",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp"
+    ],
+    "summary": "The easiest island for island exploration, snorkeling, and beach vacation rhythm.",
+    "thingsToDo": [
+      "Snorkeling",
+      "Island exploration",
+      "Beach time"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-trawangan",
+    "locale": "ar",
+    "title": "غيلي تراوانغان",
+    "region": "جزر جيلي",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp"
+    ],
+    "summary": "الجزيرة الأسهل لاستكشاف الجزر، الغطس، وإيقاع عطلة الشاطئ.",
+    "thingsToDo": [
+      "الغطس",
+      "استكشاف الجزر",
+      "وقت الشاطئ"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-trawangan",
+    "locale": "ms",
+    "title": "Gili Trawangan",
+    "region": "Kepulauan Gili",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp"
+    ],
+    "summary": "Pulau paling mudah untuk menjelajah pulau, snorkeling, dan ritma pelancongan pantai.",
+    "thingsToDo": [
+      "Snorkeling",
+      "Jelajah pulau",
+      "Masa pantai"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "gili-trawangan",
+    "locale": "zh",
+    "title": "Gili Trawangan",
+    "region": "吉利群岛",
+    "image": "destinations/gili.webp",
+    "gallery": [
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp"
+    ],
+    "summary": "最便利的岛屿，适合岛屿探索、浮潜和海滩度假。",
+    "thingsToDo": [
+      "浮潜",
+      "岛屿探索",
+      "海滩时光"
+    ],
+    "packages": [
+      "snorkeling-gili-escape"
+    ]
+  },
+  {
+    "slug": "kuta-lombok",
+    "locale": "id",
+    "title": "Kuta Lombok",
+    "region": "Selatan Lombok",
+    "image": "destinations/lombok.webp",
+    "gallery": [
       "gallery/kuta-beach.webp",
-    ],
-    summary:
-      "Versi yang lebih tenang dari Gili dengan banyak ruang untuk berjalan santai dan snorkeling singkat.",
-    thingsToDo: ["Waktu pantai tenang", "Snorkeling", "Singgah sunset"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-air",
-    locale: "en",
-    title: "Gili Air",
-    region: "Kepulauan Gili",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/kuta-beach.webp",
-    ],
-    summary:
-      "A quieter version of Gili with plenty of space for leisurely walks and short snorkeling.",
-    thingsToDo: ["Relaxed beach time", "Snorkeling", "Sunset stop"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-air",
-    locale: "ar",
-    title: "غيلي إير",
-    region: "جزر جيلي",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/kuta-beach.webp",
-    ],
-    summary:
-      "نسخة أكثر هدوءاً من جيلي مع مساحة كبيرة للمشي الترفيهي والغطس القصير.",
-    thingsToDo: ["وقت شاطئ مريح", "الغطس", "محطة الغروب"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-air",
-    locale: "ms",
-    title: "Gili Air",
-    region: "Kepulauan Gili",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/kuta-beach.webp",
-    ],
-    summary:
-      "Versi lebih tenang Gili dengan ruang yang banyak untuk berjalan santai dan snorkeling ringkas.",
-    thingsToDo: ["Masa pantai santai", "Snorkeling", "Titik matahari terbenam"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-air",
-    locale: "zh",
-    title: "Gili Air",
-    region: "吉利群岛",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/kuta-beach.webp",
-    ],
-    summary: "更安静的吉利版本，有充足的空间供悠闲散步和短途浮潜。",
-    thingsToDo: ["放松海滩时光", "浮潜", "日落停留"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-meno",
-    locale: "id",
-    title: "Gili Meno",
-    region: "Kepulauan Gili",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
       "gallery/kuta-beach-2.webp",
+      "hero/hero-lombok.webp"
     ],
-    summary:
-      "Pulau paling sunyi untuk traveler yang ingin suasana privat dan sederhana.",
-    thingsToDo: ["Pantai tenang", "Snorkeling", "Tempo santai"],
-    packages: ["snorkeling-gili-escape"],
+    "summary": "Garis pantai yang luas, akses ke banyak singgah pantai, dan tempo liburan yang santai.",
+    "thingsToDo": [
+      "Jelajah pantai",
+      "Titik matahari terbenam",
+      "Kafe lokal"
+    ],
+    "packages": [
+      "3d2n-lombok-signature",
+      "village-culture-experience"
+    ]
   },
   {
-    slug: "gili-meno",
-    locale: "en",
-    title: "Gili Meno",
-    region: "Kepulauan Gili",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/kuta-beach-2.webp",
-    ],
-    summary:
-      "The quietest island for travelers seeking a private and simple atmosphere.",
-    thingsToDo: ["Quiet beach", "Snorkeling", "Relaxed pace"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-meno",
-    locale: "ar",
-    title: "غيلي مينو",
-    region: "جزر جيلي",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/kuta-beach-2.webp",
-    ],
-    summary: "أهدأ جزيرة للمسافرين الباحثين عن أجواء خاصة وبسيطة.",
-    thingsToDo: ["شاطئ هادئ", "الغطس", "وتيرة مريحة"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-meno",
-    locale: "ms",
-    title: "Gili Meno",
-    region: "Kepulauan Gili",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/kuta-beach-2.webp",
-    ],
-    summary:
-      "Pulau paling tenang untuk pelancong yang mencari suasana persendirian dan sederhana.",
-    thingsToDo: ["Pantai sepi", "Snorkeling", "Tempo santai"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-meno",
-    locale: "zh",
-    title: "Gili Meno",
-    region: "吉利群岛",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/kuta-beach-2.webp",
-    ],
-    summary: "最安静的岛屿，适合寻求私密和简约氛围的旅行者。",
-    thingsToDo: ["安静海滩", "浮潜", "放松节奏"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-trawangan",
-    locale: "id",
-    title: "Gili Trawangan",
-    region: "Kepulauan Gili",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-    ],
-    summary:
-      "Pulau yang paling mudah untuk jelajah pulau, snorkeling, dan ritme liburan pantai.",
-    thingsToDo: ["Snorkeling", "Jelajah pulau", "Waktu pantai"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-trawangan",
-    locale: "en",
-    title: "Gili Trawangan",
-    region: "Kepulauan Gili",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-    ],
-    summary:
-      "The easiest island for island exploration, snorkeling, and beach vacation rhythm.",
-    thingsToDo: ["Snorkeling", "Island exploration", "Beach time"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-trawangan",
-    locale: "ar",
-    title: "غيلي تراوانغان",
-    region: "جزر جيلي",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-    ],
-    summary: "الجزيرة الأسهل لاستكشاف الجزر، الغطس، وإيقاع عطلة الشاطئ.",
-    thingsToDo: ["الغطس", "استكشاف الجزر", "وقت الشاطئ"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-trawangan",
-    locale: "ms",
-    title: "Gili Trawangan",
-    region: "Kepulauan Gili",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-    ],
-    summary:
-      "Pulau paling mudah untuk menjelajah pulau, snorkeling, dan ritma pelancongan pantai.",
-    thingsToDo: ["Snorkeling", "Jelajah pulau", "Masa pantai"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "gili-trawangan",
-    locale: "zh",
-    title: "Gili Trawangan",
-    region: "吉利群岛",
-    image: "destinations/gili.webp",
-    gallery: [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-    ],
-    summary: "最便利的岛屿，适合岛屿探索、浮潜和海滩度假。",
-    thingsToDo: ["浮潜", "岛屿探索", "海滩时光"],
-    packages: ["snorkeling-gili-escape"],
-  },
-  {
-    slug: "kuta-lombok",
-    locale: "id",
-    title: "Kuta Lombok",
-    region: "Selatan Lombok",
-    image: "destinations/lombok.webp",
-    gallery: [
+    "slug": "kuta-lombok",
+    "locale": "en",
+    "title": "Kuta Lombok",
+    "region": "Selatan Lombok",
+    "image": "destinations/lombok.webp",
+    "gallery": [
       "gallery/kuta-beach.webp",
       "gallery/kuta-beach-2.webp",
-      "hero/hero-lombok.webp",
+      "hero/hero-lombok.webp"
     ],
-    summary:
-      "Garis pantai yang luas, akses ke banyak singgah pantai, dan tempo liburan yang santai.",
-    thingsToDo: ["Jelajah pantai", "Titik matahari terbenam", "Kafe lokal"],
-    packages: ["3d2n-lombok-signature", "village-culture-experience"],
+    "summary": "Expansive coastline, access to many beach stops, and a relaxing vacation pace.",
+    "thingsToDo": [
+      "Beach exploration",
+      "Sunset spots",
+      "Local cafes"
+    ],
+    "packages": [
+      "3d2n-lombok-signature",
+      "village-culture-experience"
+    ]
   },
   {
-    slug: "kuta-lombok",
-    locale: "en",
-    title: "Kuta Lombok",
-    region: "Selatan Lombok",
-    image: "destinations/lombok.webp",
-    gallery: [
+    "slug": "kuta-lombok",
+    "locale": "ar",
+    "title": "كوتا لومبوك",
+    "region": "جنوب لومبوك",
+    "image": "destinations/lombok.webp",
+    "gallery": [
       "gallery/kuta-beach.webp",
       "gallery/kuta-beach-2.webp",
-      "hero/hero-lombok.webp",
+      "hero/hero-lombok.webp"
     ],
-    summary:
-      "Expansive coastline, access to many beach stops, and a relaxing vacation pace.",
-    thingsToDo: ["Beach exploration", "Sunset spots", "Local cafes"],
-    packages: ["3d2n-lombok-signature", "village-culture-experience"],
+    "summary": "ساحل واسع، وصول إلى العديد من محطات الشاطئ، ووتيرة عطلة مريحة.",
+    "thingsToDo": [
+      "استكشاف الشاطئ",
+      "مواقع الغروب",
+      "مقاهي محلية"
+    ],
+    "packages": [
+      "3d2n-lombok-signature",
+      "village-culture-experience"
+    ]
   },
   {
-    slug: "kuta-lombok",
-    locale: "ar",
-    title: "كوتا لومبوك",
-    region: "جنوب لومبوك",
-    image: "destinations/lombok.webp",
-    gallery: [
+    "slug": "kuta-lombok",
+    "locale": "ms",
+    "title": "Kuta Lombok",
+    "region": "Selatan Lombok",
+    "image": "destinations/lombok.webp",
+    "gallery": [
       "gallery/kuta-beach.webp",
       "gallery/kuta-beach-2.webp",
-      "hero/hero-lombok.webp",
+      "hero/hero-lombok.webp"
     ],
-    summary: "ساحل واسع، وصول إلى العديد من محطات الشاطئ، ووتيرة عطلة مريحة.",
-    thingsToDo: ["استكشاف الشاطئ", "مواقع الغروب", "مقاهي محلية"],
-    packages: ["3d2n-lombok-signature", "village-culture-experience"],
+    "summary": "Pesisir luas, akses ke banyak pantai, dan tempo pelancongan yang santai.",
+    "thingsToDo": [
+      "Jelajah pantai",
+      "Titik matahari terbenam",
+      "Kedai tempatan"
+    ],
+    "packages": [
+      "3d2n-lombok-signature",
+      "village-culture-experience"
+    ]
   },
   {
-    slug: "kuta-lombok",
-    locale: "ms",
-    title: "Kuta Lombok",
-    region: "Selatan Lombok",
-    image: "destinations/lombok.webp",
-    gallery: [
+    "slug": "kuta-lombok",
+    "locale": "zh",
+    "title": "Kuta Lombok",
+    "region": "龙目岛南部",
+    "image": "destinations/lombok.webp",
+    "gallery": [
       "gallery/kuta-beach.webp",
       "gallery/kuta-beach-2.webp",
-      "hero/hero-lombok.webp",
+      "hero/hero-lombok.webp"
     ],
-    summary:
-      "Pesisir luas, akses ke banyak pantai, dan tempo pelancongan yang santai.",
-    thingsToDo: ["Jelajah pantai", "Titik matahari terbenam", "Kedai tempatan"],
-    packages: ["3d2n-lombok-signature", "village-culture-experience"],
+    "summary": "广阔的海岸线，可前往多个海滩景点，享受轻松的度假节奏。",
+    "thingsToDo": [
+      "探索海滩",
+      "日落观赏点",
+      "当地咖啡厅"
+    ],
+    "packages": [
+      "3d2n-lombok-signature",
+      "village-culture-experience"
+    ]
   },
   {
-    slug: "kuta-lombok",
-    locale: "zh",
-    title: "Kuta Lombok",
-    region: "龙目岛南部",
-    image: "destinations/lombok.webp",
-    gallery: [
-      "gallery/kuta-beach.webp",
-      "gallery/kuta-beach-2.webp",
-      "hero/hero-lombok.webp",
-    ],
-    summary: "广阔的海岸线，可前往多个海滩景点，享受轻松的度假节奏。",
-    thingsToDo: ["探索海滩", "日落观赏点", "当地咖啡厅"],
-    packages: ["3d2n-lombok-signature", "village-culture-experience"],
-  },
-  {
-    slug: "rinjani",
-    locale: "id",
-    title: "Rinjani",
-    region: "Area pegunungan",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "rinjani",
+    "locale": "id",
+    "title": "Rinjani",
+    "region": "Area pegunungan",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "gallery/tour-snorkeling.webp",
-      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach.webp"
     ],
-    summary:
-      "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang jadi alasan banyak tamu datang.",
-    thingsToDo: [
+    "summary": "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang jadi alasan banyak tamu datang.",
+    "thingsToDo": [
       "Titik pandang indah",
       "Dukungan trekking",
-      "Rute matahari terbit",
+      "Rute matahari terbit"
     ],
-    packages: ["3d2n-lombok-signature"],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "rinjani",
-    locale: "en",
-    title: "Rinjani",
-    region: "Area pegunungan",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "rinjani",
+    "locale": "en",
+    "title": "Rinjani",
+    "region": "Area pegunungan",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "gallery/tour-snorkeling.webp",
-      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach.webp"
     ],
-    summary:
-      "Dramatic peak, mountain air, and sunrise experiences that bring many guests here.",
-    thingsToDo: ["Scenic viewpoints", "Trekking support", "Sunrise routes"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "Dramatic peak, mountain air, and sunrise experiences that bring many guests here.",
+    "thingsToDo": [
+      "Scenic viewpoints",
+      "Trekking support",
+      "Sunrise routes"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "rinjani",
-    locale: "ar",
-    title: "رينجاني",
-    region: "منطقة جبلية",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "rinjani",
+    "locale": "ar",
+    "title": "رينجاني",
+    "region": "منطقة جبلية",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "gallery/tour-snorkeling.webp",
-      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach.webp"
     ],
-    summary:
-      "قمة درامية، هواء جبلي، وتجارب شروق تجلب العديد من الضيوف إلى هنا.",
-    thingsToDo: ["نقاط مراقبة خلابة", "دعم التخييم", "مسارات الشروق"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "قمة درامية، هواء جبلي، وتجارب شروق تجلب العديد من الضيوف إلى هنا.",
+    "thingsToDo": [
+      "نقاط مراقبة خلابة",
+      "دعم التخييم",
+      "مسارات الشروق"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "rinjani",
-    locale: "ms",
-    title: "Rinjani",
-    region: "Area pegunungan",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "rinjani",
+    "locale": "ms",
+    "title": "Rinjani",
+    "region": "Area pegunungan",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "gallery/tour-snorkeling.webp",
-      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach.webp"
     ],
-    summary:
-      "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang menarik ramai pelancong.",
-    thingsToDo: [
+    "summary": "Puncak dramatis, udara pegunungan, dan pengalaman matahari terbit yang menarik ramai pelancong.",
+    "thingsToDo": [
       "Titik pandang senja",
       "Sokongan mendaki",
-      "Jalur matahari terbit",
+      "Jalur matahari terbit"
     ],
-    packages: ["3d2n-lombok-signature"],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "rinjani",
-    locale: "zh",
-    title: "Rinjani",
-    region: "山区",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "rinjani",
+    "locale": "zh",
+    "title": "Rinjani",
+    "region": "山区",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "gallery/tour-snorkeling.webp",
-      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach.webp"
     ],
-    summary: "壮丽的山峰、高山空气和日出体验，吸引众多游客前来。",
-    thingsToDo: ["观景台", "徒步支持", "日出路线"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "壮丽的山峰、高山空气和日出体验，吸引众多游客前来。",
+    "thingsToDo": [
+      "观景台",
+      "徒步支持",
+      "日出路线"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "sembalun",
-    locale: "id",
-    title: "Sembalun",
-    region: "Koridor pegunungan",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "sembalun",
+    "locale": "id",
+    "title": "Sembalun",
+    "region": "Koridor pegunungan",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "hero/hero-lombok.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/tour-snorkeling.webp"
     ],
-    summary:
-      "Koridor pegunungan yang sering dipakai sebagai titik awal menuju pengalaman Rinjani.",
-    thingsToDo: [
+    "summary": "Koridor pegunungan yang sering dipakai sebagai titik awal menuju pengalaman Rinjani.",
+    "thingsToDo": [
       "Pemandangan dataran tinggi",
       "Perjalanan matahari terbit",
-      "Singgah kebun lokal",
+      "Singgah kebun lokal"
     ],
-    packages: ["3d2n-lombok-signature"],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "sembalun",
-    locale: "en",
-    title: "Sembalun",
-    region: "Koridor pegunungan",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "sembalun",
+    "locale": "en",
+    "title": "Sembalun",
+    "region": "Koridor pegunungan",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "hero/hero-lombok.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/tour-snorkeling.webp"
     ],
-    summary:
-      "Mountain corridor commonly used as a starting point for the Rinjani experience.",
-    thingsToDo: ["Highland views", "Sunrise journey", "Local farm stops"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "Mountain corridor commonly used as a starting point for the Rinjani experience.",
+    "thingsToDo": [
+      "Highland views",
+      "Sunrise journey",
+      "Local farm stops"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "sembalun",
-    locale: "ar",
-    title: "سيمبالون",
-    region: "ممر الجبال",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "sembalun",
+    "locale": "ar",
+    "title": "سيمبالون",
+    "region": "ممر الجبال",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "hero/hero-lombok.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/tour-snorkeling.webp"
     ],
-    summary: "ممر جبلي يستخدم عادة كنقطة انطلاق لتجربة رينجاني.",
-    thingsToDo: ["مناظر المرتفعات", "رحلة الشروق", "محطات المزارع المحلية"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "ممر جبلي يستخدم عادة كنقطة انطلاق لتجربة رينجاني.",
+    "thingsToDo": [
+      "مناظر المرتفعات",
+      "رحلة الشروق",
+      "محطات المزارع المحلية"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "sembalun",
-    locale: "ms",
-    title: "Sembalun",
-    region: "Koridor pegunungan",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "sembalun",
+    "locale": "ms",
+    "title": "Sembalun",
+    "region": "Koridor pegunungan",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "hero/hero-lombok.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/tour-snorkeling.webp"
     ],
-    summary:
-      "Koridor pegunungan yang biasa digunakan sebagai titik permulaan pengalaman Rinjani.",
-    thingsToDo: [
+    "summary": "Koridor pegunungan yang biasa digunakan sebagai titik permulaan pengalaman Rinjani.",
+    "thingsToDo": [
       "Pemandangan pegunungan",
       "Perjalanan matahari terbit",
-      "Lawatan ladang tempatan",
+      "Lawatan ladang tempatan"
     ],
-    packages: ["3d2n-lombok-signature"],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "sembalun",
-    locale: "zh",
-    title: "Sembalun",
-    region: "山区走廊",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "sembalun",
+    "locale": "zh",
+    "title": "Sembalun",
+    "region": "山区走廊",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "hero/hero-lombok.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/tour-snorkeling.webp"
     ],
-    summary: "山区走廊，通常作为林贾尼体验的起点。",
-    thingsToDo: ["高地景观", "日出之旅", "当地农场停留"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "山区走廊，通常作为林贾尼体验的起点。",
+    "thingsToDo": [
+      "高地景观",
+      "日出之旅",
+      "当地农场停留"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "senaru",
-    locale: "id",
-    title: "Senaru",
-    region: "Akses Rinjani",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "senaru",
+    "locale": "id",
+    "title": "Senaru",
+    "region": "Akses Rinjani",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "gallery/tour-cultural.webp",
-      "gallery/kuta-beach-2.webp",
+      "gallery/kuta-beach-2.webp"
     ],
-    summary:
-      "Gerbang yang dekat dengan air terjun, jalur trekking, dan atmosfer pegunungan yang khas.",
-    thingsToDo: ["Air terjun", "Dukungan trek", "Menginap di dataran tinggi"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "Gerbang yang dekat dengan air terjun, jalur trekking, dan atmosfer pegunungan yang khas.",
+    "thingsToDo": [
+      "Air terjun",
+      "Dukungan trek",
+      "Menginap di dataran tinggi"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "senaru",
-    locale: "en",
-    title: "Senaru",
-    region: "Akses Rinjani",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "senaru",
+    "locale": "en",
+    "title": "Senaru",
+    "region": "Akses Rinjani",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "gallery/tour-cultural.webp",
-      "gallery/kuta-beach-2.webp",
+      "gallery/kuta-beach-2.webp"
     ],
-    summary:
-      "Gateway close to waterfalls, trekking trails, and a distinctive mountain atmosphere.",
-    thingsToDo: ["Waterfalls", "Trek support", "Highland stay"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "Gateway close to waterfalls, trekking trails, and a distinctive mountain atmosphere.",
+    "thingsToDo": [
+      "Waterfalls",
+      "Trek support",
+      "Highland stay"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "senaru",
-    locale: "ar",
-    title: "سينارو",
-    region: "وصول رينجاني",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "senaru",
+    "locale": "ar",
+    "title": "سينارو",
+    "region": "وصول رينجاني",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "gallery/tour-cultural.webp",
-      "gallery/kuta-beach-2.webp",
+      "gallery/kuta-beach-2.webp"
     ],
-    summary: "بوابة قريبة من الشلالات، ممرات التخييم، وأجواء جبلية مميزة.",
-    thingsToDo: ["الشلالات", "دعم التخييم", "إقامة في المرتفعات"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "بوابة قريبة من الشلالات، ممرات التخييم، وأجواء جبلية مميزة.",
+    "thingsToDo": [
+      "الشلالات",
+      "دعم التخييم",
+      "إقامة في المرتفعات"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "senaru",
-    locale: "ms",
-    title: "Senaru",
-    region: "Akses Rinjani",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "senaru",
+    "locale": "ms",
+    "title": "Senaru",
+    "region": "Akses Rinjani",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "gallery/tour-cultural.webp",
-      "gallery/kuta-beach-2.webp",
+      "gallery/kuta-beach-2.webp"
     ],
-    summary:
-      "Gerbang dekat air terjun, laluan mendaki, dan suasana pegunungan yang khas.",
-    thingsToDo: ["Air terjun", "Sokongan mendaki", "Menginap di pegunungan"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "Gerbang dekat air terjun, laluan mendaki, dan suasana pegunungan yang khas.",
+    "thingsToDo": [
+      "Air terjun",
+      "Sokongan mendaki",
+      "Menginap di pegunungan"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "senaru",
-    locale: "zh",
-    title: "Senaru",
-    region: "林贾尼入口",
-    image: "destinations/rinjani.webp",
-    gallery: [
+    "slug": "senaru",
+    "locale": "zh",
+    "title": "Senaru",
+    "region": "林贾尼入口",
+    "image": "destinations/rinjani.webp",
+    "gallery": [
       "destinations/rinjani.webp",
       "gallery/tour-cultural.webp",
-      "gallery/kuta-beach-2.webp",
+      "gallery/kuta-beach-2.webp"
     ],
-    summary: "靠近瀑布、徒步路线的大门，拥有独特的高山氛围。",
-    thingsToDo: ["瀑布", "徒步支持", "高地住宿"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "靠近瀑布、徒步路线的大门，拥有独特的高山氛围。",
+    "thingsToDo": [
+      "瀑布",
+      "徒步支持",
+      "高地住宿"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "sumbawa",
-    locale: "id",
-    title: "Sumbawa",
-    region: "Pulau luar",
-    image: "destinations/sumbawa.webp",
-    gallery: [
+    "slug": "sumbawa",
+    "locale": "id",
+    "title": "Sumbawa",
+    "region": "Pulau luar",
+    "image": "destinations/sumbawa.webp",
+    "gallery": [
       "destinations/sumbawa.webp",
       "gallery/whaleshark.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/tour-snorkeling.webp"
     ],
-    summary:
-      "Pilihan destinasi yang lebih sepi dengan karakter alam terbuka dan garis pantai yang kuat.",
-    thingsToDo: ["Pantai tenang", "Rute perjalanan", "Singgah lanskap"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "Pilihan destinasi yang lebih sepi dengan karakter alam terbuka dan garis pantai yang kuat.",
+    "thingsToDo": [
+      "Pantai tenang",
+      "Rute perjalanan",
+      "Singgah lanskap"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "sumbawa",
-    locale: "en",
-    title: "Sumbawa",
-    region: "Pulau luar",
-    image: "destinations/sumbawa.webp",
-    gallery: [
+    "slug": "sumbawa",
+    "locale": "en",
+    "title": "Sumbawa",
+    "region": "Pulau luar",
+    "image": "destinations/sumbawa.webp",
+    "gallery": [
       "destinations/sumbawa.webp",
       "gallery/whaleshark.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/tour-snorkeling.webp"
     ],
-    summary:
-      "A quieter destination option with open nature character and strong coastlines.",
-    thingsToDo: ["Quiet beach", "Travel routes", "Landscape stops"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "A quieter destination option with open nature character and strong coastlines.",
+    "thingsToDo": [
+      "Quiet beach",
+      "Travel routes",
+      "Landscape stops"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "sumbawa",
-    locale: "ar",
-    title: "سومباوا",
-    region: "جزيرة خارجية",
-    image: "destinations/sumbawa.webp",
-    gallery: [
+    "slug": "sumbawa",
+    "locale": "ar",
+    "title": "سومباوا",
+    "region": "جزيرة خارجية",
+    "image": "destinations/sumbawa.webp",
+    "gallery": [
       "destinations/sumbawa.webp",
       "gallery/whaleshark.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/tour-snorkeling.webp"
     ],
-    summary: "خيار وجهة أكثر هدوءاً بطبيعة مفتوحة وسواحل قوية.",
-    thingsToDo: ["شاطئ هادئ", "مسارات السفر", "محطات المناظر"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "خيار وجهة أكثر هدوءاً بطبيعة مفتوحة وسواحل قوية.",
+    "thingsToDo": [
+      "شاطئ هادئ",
+      "مسارات السفر",
+      "محطات المناظر"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "sumbawa",
-    locale: "ms",
-    title: "Sumbawa",
-    region: "Pulau luar",
-    image: "destinations/sumbawa.webp",
-    gallery: [
+    "slug": "sumbawa",
+    "locale": "ms",
+    "title": "Sumbawa",
+    "region": "Pulau luar",
+    "image": "destinations/sumbawa.webp",
+    "gallery": [
       "destinations/sumbawa.webp",
       "gallery/whaleshark.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/tour-snorkeling.webp"
     ],
-    summary:
-      "Pilihan destinasi yang lebih tenang dengan watak alam terbuka dan garis pantai yang kukuh.",
-    thingsToDo: ["Pantai sepi", "Laluan perjalanan", "Titik lanskap"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "Pilihan destinasi yang lebih tenang dengan watak alam terbuka dan garis pantai yang kukuh.",
+    "thingsToDo": [
+      "Pantai sepi",
+      "Laluan perjalanan",
+      "Titik lanskap"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "sumbawa",
-    locale: "zh",
-    title: "Sumbawa",
-    region: "外岛",
-    image: "destinations/sumbawa.webp",
-    gallery: [
+    "slug": "sumbawa",
+    "locale": "zh",
+    "title": "Sumbawa",
+    "region": "外岛",
+    "image": "destinations/sumbawa.webp",
+    "gallery": [
       "destinations/sumbawa.webp",
       "gallery/whaleshark.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/tour-snorkeling.webp"
     ],
-    summary: "更安静的目的地选择，拥有开阔的自然风貌和壮丽的海岸线。",
-    thingsToDo: ["安静海滩", "旅行路线", "景观停留"],
-    packages: ["3d2n-lombok-signature"],
+    "summary": "更安静的目的地选择，拥有开阔的自然风貌和壮丽的海岸线。",
+    "thingsToDo": [
+      "安静海滩",
+      "旅行路线",
+      "景观停留"
+    ],
+    "packages": [
+      "3d2n-lombok-signature"
+    ]
   },
   {
-    slug: "tetebatu",
-    locale: "id",
-    title: "Tetebatu",
-    region: "Timur Lombok",
-    image: "destinations/lombok.webp",
-    gallery: [
+    "slug": "tetebatu",
+    "locale": "id",
+    "title": "Tetebatu",
+    "region": "Timur Lombok",
+    "image": "destinations/lombok.webp",
+    "gallery": [
       "gallery/tour-cultural.webp",
       "hero/hero-lombok.webp",
-      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach.webp"
     ],
-    summary:
-      "Desa pegunungan yang lebih tenang dengan lanskap hijau dan ritme kunjungan yang pelan.",
-    thingsToDo: ["Jalan desa", "Terasering padi", "Singgah air terjun"],
-    packages: ["village-culture-experience"],
+    "summary": "Desa pegunungan yang lebih tenang dengan lanskap hijau dan ritme kunjungan yang pelan.",
+    "thingsToDo": [
+      "Jalan desa",
+      "Terasering padi",
+      "Singgah air terjun"
+    ],
+    "packages": [
+      "village-culture-experience"
+    ]
   },
   {
-    slug: "tetebatu",
-    locale: "en",
-    title: "Tetebatu",
-    region: "Timur Lombok",
-    image: "destinations/lombok.webp",
-    gallery: [
+    "slug": "tetebatu",
+    "locale": "en",
+    "title": "Tetebatu",
+    "region": "Timur Lombok",
+    "image": "destinations/lombok.webp",
+    "gallery": [
       "gallery/tour-cultural.webp",
       "hero/hero-lombok.webp",
-      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach.webp"
     ],
-    summary:
-      "A quieter mountain village with green landscapes and a slow visit pace.",
-    thingsToDo: ["Village walk", "Rice terraces", "Waterfall stops"],
-    packages: ["village-culture-experience"],
+    "summary": "A quieter mountain village with green landscapes and a slow visit pace.",
+    "thingsToDo": [
+      "Village walk",
+      "Rice terraces",
+      "Waterfall stops"
+    ],
+    "packages": [
+      "village-culture-experience"
+    ]
   },
   {
-    slug: "tetebatu",
-    locale: "ar",
-    title: "تيتابتو",
-    region: "شرق لومبوك",
-    image: "destinations/lombok.webp",
-    gallery: [
+    "slug": "tetebatu",
+    "locale": "ar",
+    "title": "تيتابتو",
+    "region": "شرق لومبوك",
+    "image": "destinations/lombok.webp",
+    "gallery": [
       "gallery/tour-cultural.webp",
       "hero/hero-lombok.webp",
-      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach.webp"
     ],
-    summary: "قرية جبلية أكثر هدوءاً مع مناظر خضراء ووتيرة زيارة بطيئة.",
-    thingsToDo: ["جولة في القرية", "مدرجات الأرز", "محطات الشلالات"],
-    packages: ["village-culture-experience"],
+    "summary": "قرية جبلية أكثر هدوءاً مع مناظر خضراء ووتيرة زيارة بطيئة.",
+    "thingsToDo": [
+      "جولة في القرية",
+      "مدرجات الأرز",
+      "محطات الشلالات"
+    ],
+    "packages": [
+      "village-culture-experience"
+    ]
   },
   {
-    slug: "tetebatu",
-    locale: "ms",
-    title: "Tetebatu",
-    region: "Timur Lombok",
-    image: "destinations/lombok.webp",
-    gallery: [
+    "slug": "tetebatu",
+    "locale": "ms",
+    "title": "Tetebatu",
+    "region": "Timur Lombok",
+    "image": "destinations/lombok.webp",
+    "gallery": [
       "gallery/tour-cultural.webp",
       "hero/hero-lombok.webp",
-      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach.webp"
     ],
-    summary:
-      "Desa pegunungan yang tenang dengan lanskap hijau dan tempo lawatan yang perlahan.",
-    thingsToDo: ["Jalan kampung", "Sawah terasering", "Air terjun"],
-    packages: ["village-culture-experience"],
+    "summary": "Desa pegunungan yang tenang dengan lanskap hijau dan tempo lawatan yang perlahan.",
+    "thingsToDo": [
+      "Jalan kampung",
+      "Sawah terasering",
+      "Air terjun"
+    ],
+    "packages": [
+      "village-culture-experience"
+    ]
   },
   {
-    slug: "tetebatu",
-    locale: "zh",
-    title: "Tetebatu",
-    region: "龙目岛东部",
-    image: "destinations/lombok.webp",
-    gallery: [
+    "slug": "tetebatu",
+    "locale": "zh",
+    "title": "Tetebatu",
+    "region": "龙目岛东部",
+    "image": "destinations/lombok.webp",
+    "gallery": [
       "gallery/tour-cultural.webp",
       "hero/hero-lombok.webp",
-      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach.webp"
     ],
-    summary: "一个更安静的山区村庄，绿意盎然，节奏悠闲。",
-    thingsToDo: ["村庄漫步", "梯田观光", "瀑布停留"],
-    packages: ["village-culture-experience"],
-  },
+    "summary": "一个更安静的山区村庄，绿意盎然，节奏悠闲。",
+    "thingsToDo": [
+      "村庄漫步",
+      "梯田观光",
+      "瀑布停留"
+    ],
+    "packages": [
+      "village-culture-experience"
+    ]
+  }
 ];
