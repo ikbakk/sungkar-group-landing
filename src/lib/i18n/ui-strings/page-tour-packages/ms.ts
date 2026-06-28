@@ -16,6 +16,7 @@ const strings = {
     location: "Lokasi",
     statsLabel: "Statistik",
     viewPackageDetail: "Lihat Butiran Pakej",
+    startingFrom: "Bermula dari",
     packagesAvailable: "{n} pakej tersedia",
     morePackages: "+{n} lagi pakej",
     itineraryLabel: "Perjalanan",

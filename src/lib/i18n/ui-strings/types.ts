@@ -127,6 +127,7 @@ export interface UIStrings {
     location: string;
     statsLabel: string;
     viewPackageDetail: string;
+    startingFrom: string;
     packagesAvailable: string;
     morePackages: string;
     itineraryLabel: string;

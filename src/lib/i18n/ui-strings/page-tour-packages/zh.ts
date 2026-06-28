@@ -17,6 +17,7 @@ const strings = {
     location: "\u5730\u70B9",
     statsLabel: "\u7EDF\u8BA1",
     viewPackageDetail: "\u67E5\u770B\u5957\u9910\u8BE6\u60C5",
+    startingFrom: "\u8D77\u4EF7",
     packagesAvailable: "\u6709{n}\u4E2A\u5957\u9910",
     morePackages: "+{n}\u4E2A\u66F4\u591A\u5957\u9910",
     itineraryLabel: "\u884C\u7A0B",

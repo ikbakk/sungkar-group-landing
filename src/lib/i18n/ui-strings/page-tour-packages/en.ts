@@ -15,6 +15,7 @@ const strings = {
     location: "Location",
     statsLabel: "Statistics",
     viewPackageDetail: "View Package Details",
+    startingFrom: "From",
     packagesAvailable: "{n} packages available",
     morePackages: "+{n} more packages",
     itineraryLabel: "Journey",

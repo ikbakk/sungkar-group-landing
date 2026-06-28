@@ -23,6 +23,7 @@ const strings = {
     statsLabel: "\u0625\u062D\u0635\u0627\u0621\u064A\u0627\u062A",
     viewPackageDetail:
       "\u0639\u0631\u0636 \u062A\u0641\u0627\u0635\u064A\u0644 \u0627\u0644\u0628\u0627\u0642\u0629",
+    startingFrom: "\u064A\u0628\u062F\u0623 \u0645\u0646",
     packagesAvailable:
       "{n} \u0628\u0627\u0642\u0629 \u0645\u062A\u0627\u062D\u0629",
     morePackages:
