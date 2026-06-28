@@ -12,7 +12,7 @@ import yaml from "yaml";
 import { toPackageFrontmatter } from "./lib/tour-package-normalizer.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = join(__dirname, "data");
+const DATA_DIR = join(__dirname, "..", "data");
 const PACKAGES_DIR = join(DATA_DIR, "packages");
 const ROOT = join(__dirname, "..", "src/content/tourPackages");
 const LOCALES = ["id", "en", "ar", "ms", "zh"];

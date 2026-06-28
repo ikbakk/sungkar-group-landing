@@ -20,11 +20,7 @@ Multi-language landing site for Sungkar Group — Lombok tour operator. 268 page
 
 | Command                      | Action                                                                                                        |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `npm run content:build`      | Generate normalized runtime content into `src/generated/content/*`                                            |
-| `npm run content:watch`      | Watch `scripts/data/` and regenerate normalized runtime content                                               |
-| `npm run generate:tours`     | JSON in `scripts/data/packages/*/` → `src/content/tourPackages/{slug}/{locale}.mdx`                           |
-| `npm run generate:content`   | JSON in `scripts/data/{accommodations,car-rental,destinations}/*/` → `src/content/{type}/{slug}/{locale}.mdx` |
-| `npm run generate:all`       | Both of the above                                                                                             |
+| `npm run validate:structured`| Validate structured JSON source completeness and shape                                                        |
 | `npm run images:barrel`      | Regenerate `src/assets/images/index.ts`                                                                       |
 | `npm run generate:og-images` | Generate OG placeholder images for all page types                                                             |
 
@@ -36,7 +32,6 @@ Multi-language landing site for Sungkar Group — Lombok tour operator. 268 page
 | `npm run check`               | Astro type checking                                         |
 | `npm run validate`            | Validates blog + guide MDX frontmatter                      |
 | `npm run validate:structured` | Validates structured JSON source completeness and shape     |
-| `npm run validate:build`      | Structured validation + runtime content build + Astro check |
 | `npm run validate:images`     | Validates barrel file image references                      |
 | `npm run check:images`        | Checks blog/guide images exist on disk                      |
 | `npm run format:check`        | Check Prettier formatting (CI gate)                         |

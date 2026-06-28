@@ -10,7 +10,7 @@ import {
 } from "./lib/package-localization.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const PACKAGES_DIR = path.join(__dirname, "data", "packages");
+const PACKAGES_DIR = path.join(__dirname, "..", "data", "packages");
 const LOCALES = ["id", "en", "ar", "ms", "zh"];
 
 function readJson(file) {

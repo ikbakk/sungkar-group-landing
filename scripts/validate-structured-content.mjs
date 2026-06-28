@@ -4,7 +4,7 @@ import path from "node:path";
 import { z } from "zod";
 
 const ROOT = process.cwd();
-const DATA_DIR = path.join(ROOT, "scripts", "data");
+const DATA_DIR = path.join(ROOT, "data");
 const LOCALES = ["id", "en", "ar", "ms", "zh"];
 
 const localeString = z.string().trim().min(1);

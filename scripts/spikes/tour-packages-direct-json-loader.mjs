@@ -4,7 +4,7 @@ import path from "node:path";
 import { normalizePackageLocale } from "../lib/tour-package-normalizer.mjs";
 
 const ROOT = process.cwd();
-const PACKAGES_DIR = path.join(ROOT, "scripts", "data", "packages");
+const PACKAGES_DIR = path.join(ROOT, "data", "packages");
 const LOCALES = ["id", "en", "ar", "ms", "zh"];
 
 const packages = fs

@@ -25,5 +25,4 @@ function shutdown(code = 0) {
 process.on("SIGINT", () => shutdown(0));
 process.on("SIGTERM", () => shutdown(0));
 
-run("npm", ["run", "content:watch"]);
 run("npx", ["astro", "dev", "--host", "0.0.0.0"]);
