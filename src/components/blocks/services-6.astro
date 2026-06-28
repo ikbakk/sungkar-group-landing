@@ -2,6 +2,7 @@
 import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
 import type { ImageSource } from "@/lib/images";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
+import { Button } from "@/components/ui/button";
 
 import { cn } from "@/lib/utils";
 import { Section, SectionContainer } from "@/components/ui/section";
@@ -28,22 +29,82 @@ type Props = {
   }[];
 };
 
-const { class: className, eyebrow, title, description, services } = Astro.props;
+const {
+  class: className,
+  eyebrow,
+  title,
+  description,
+  buttons,
+  services,
+} = Astro.props;
+
+const featuredServices = services.slice(0, 6);
+
+const getCardLayoutClass = (index: number) => {
+  const layouts = [
+    "lg:col-start-1 lg:row-start-1 lg:row-span-2",
+    "lg:col-start-2 lg:row-start-1",
+    "lg:col-start-3 lg:row-start-1",
+    "lg:col-start-2 lg:row-start-2",
+    "lg:col-start-1 lg:row-start-3",
+    "lg:col-start-3 lg:row-start-2 lg:row-span-2",
+  ];
+
+  return layouts[index] ?? "";
+};
 ---
 
 <Section class={cn("section-padding", className)}>
   <SectionContainer>
-    <div class="max-w-2xl">
-      {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
-      <TypographyH2 class="section-title">
-        {title}
-      </TypographyH2>
-      {description && <p class="section-description">{description}</p>}
-    </div>
-    <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div
+      class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between"
+    >
+      <div class="max-w-2xl">
+        {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
+        <TypographyH2 class="section-title">
+          {title}
+        </TypographyH2>
+        {description && <p class="section-description">{description}</p>}
+      </div>
       {
-        services.map((service, index) => {
-          const isLarge = index === 0;
+        buttons?.length && (
+          <div class="flex flex-wrap gap-3 lg:justify-end">
+            {buttons.map(({ href, label, ...button }) => (
+              <Button
+                as="a"
+                href={href}
+                variant={button.variant ?? "outline"}
+                class="group/view-all h-11 rounded-full border-brand-200/80 bg-white/80 px-5 text-brand-900 shadow-sm shadow-black/[0.03] backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-300 hover:bg-brand-50 hover:shadow-md"
+              >
+                <span>{label}</span>
+                <span class="ml-2 flex size-6 items-center justify-center rounded-full bg-brand-600 text-white transition-transform duration-300 group-hover/view-all:translate-x-0.5">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </Button>
+            ))}
+          </div>
+        )
+      }
+    </div>
+    <div
+      class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:auto-rows-[minmax(11rem,1fr)]"
+    >
+      {
+        featuredServices.map((service, index) => {
+          const isLarge = index === 0 || index === 5;
+          const layoutClass = getCardLayoutClass(index);
           const inner = (
             <>
               <OptimizedImage
@@ -105,7 +166,10 @@ const { class: className, eyebrow, title, description, services } = Astro.props;
                 "group/service relative isolate flex flex-col justify-end overflow-hidden rounded-[1.25rem] bg-brand-800 cursor-pointer",
                 "ring-1 ring-black/[0.06] transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]",
                 "hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10",
-                isLarge ? "aspect-[4/5] sm:row-span-2" : "aspect-square",
+                layoutClass,
+                isLarge
+                  ? "min-h-[24rem] sm:row-span-2 lg:aspect-auto lg:min-h-0"
+                  : "aspect-square lg:aspect-auto lg:min-h-[11rem]",
               )}
             >
               {inner}
@@ -115,7 +179,10 @@ const { class: className, eyebrow, title, description, services } = Astro.props;
               class={cn(
                 "group/service relative isolate flex flex-col justify-end overflow-hidden rounded-[1.25rem] bg-brand-800",
                 "ring-1 ring-black/[0.06]",
-                isLarge ? "aspect-[4/5] sm:row-span-2" : "aspect-square",
+                layoutClass,
+                isLarge
+                  ? "min-h-[24rem] sm:row-span-2 lg:aspect-auto lg:min-h-0"
+                  : "aspect-square lg:aspect-auto lg:min-h-[11rem]",
               )}
             >
               {inner}

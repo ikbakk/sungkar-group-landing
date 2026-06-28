@@ -75,9 +75,25 @@ const {
               as="a"
               href={href}
               variant={button.variant ?? (index === 0 ? "default" : "outline")}
+              class="group/view-all h-11 rounded-full border-brand-200/80 bg-white/80 px-5 text-brand-900 shadow-sm shadow-black/[0.03] backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-300 hover:bg-brand-50 hover:shadow-md"
               {...button}
             >
-              {label}
+              <span>{label}</span>
+              <span class="ml-2 flex size-6 items-center justify-center rounded-full bg-brand-600 text-white transition-transform duration-300 group-hover/view-all:translate-x-0.5">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </span>
             </Button>
           ))}
         </div>
