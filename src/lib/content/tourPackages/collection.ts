@@ -1,14 +1,20 @@
 import { tourPackagesData } from "@/generated/content/tour-packages.generated";
+import { safeParse } from "@/lib/errors/content-errors";
+import { generatedTourPackageSchema } from "@/lib/content/generated/schemas";
 import type { TourPackage, Cabin, Region } from "./types";
 import { resolveImages } from "./images";
-
-type EntryData = (typeof tourPackagesData)[number];
 
 export async function getPackages(locale = "id"): Promise<TourPackage[]> {
   return tourPackagesData
     .filter((entry) => entry.locale === locale)
-    .map(
-      (data: EntryData): TourPackage => ({
+    .map((entry): TourPackage => {
+      const data = safeParse(
+        generatedTourPackageSchema,
+        entry,
+        `tour-packages:${entry.slug}:${entry.locale}`,
+      );
+
+      return {
         slug: data.slug,
         title: data.title,
         region: data.region as Region,
@@ -31,18 +37,16 @@ export async function getPackages(locale = "id"): Promise<TourPackage[]> {
           (c): Cabin => ({
             ...c,
             capacity: c.capacity == null ? undefined : String(c.capacity),
-            prices: c.prices as Record<string, string>,
+            prices: c.prices ?? {},
             images: resolveImages(c.images),
           }),
         ),
         durationLabels: data.durationLabels,
-        priceList: data.priceList as
-          | Record<string, Record<string, number>>
-          | undefined,
+        priceList: data.priceList,
         priceListLabels: data.priceListLabels,
         additionalServices: data.additionalServices,
         dontForgetToBring: data.dontForgetToBring,
         termsAndConditions: data.termsAndConditions,
-      }),
-    );
+      };
+    });
 }
