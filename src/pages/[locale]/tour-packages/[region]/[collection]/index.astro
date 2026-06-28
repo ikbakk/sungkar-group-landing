@@ -1,14 +1,8 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro";
-import PageHeader from "@/components/site/PageHeader.astro";
-import SectionContainer from "@/layouts/SectionContainer.astro";
-import PackageCard from "@/components/cards/PackageCard.astro";
-
+import PackageCollectionPage from "@/components/pages/PackageCollectionPage.astro";
 import { getPackages } from "@/lib/content/tourPackages/collection";
-import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
-
-import { loadContent } from "@/lib/i18n/loader";
-import { getGlobalStrings, NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { type RegionKey as Region } from "@/lib/regions";
 
 export async function getStaticPaths() {
   const paths = [];
@@ -36,64 +30,15 @@ export async function getStaticPaths() {
 }
 
 const { locale, region, collection } = Astro.params;
-const r = region as Region;
-const globalStrings = getGlobalStrings(locale!);
-const pageModule = await loadContent(locale!, "packagePage");
-const { packagePageContent } = pageModule;
-
 const packages = await getPackages(locale!);
 const collectionPackages = packages.filter(
-  (pkg) => pkg.region === r && pkg.collectionSlug === collection,
+  (pkg) => pkg.region === region && pkg.collectionSlug === collection,
 );
-
-const collectionTitle = collectionPackages[0]?.collectionTitle ?? "";
-const regionTitle = packagePageContent.regions[r].title;
-const normalizedCollectionTitle = collectionTitle.toLowerCase();
-const collectionSeoTitle = normalizedCollectionTitle.includes(
-  regionTitle.toLowerCase(),
-)
-  ? collectionTitle
-  : `${collectionTitle} ${regionTitle}`;
-const collectionDescription = packagePageContent.regions[r].description;
-
-const breadcrumbs = [
-  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
-  {
-    label: globalStrings.breadcrumb.tourPackages,
-    href: `/${locale}/tour-packages`,
-  },
-  { label: REGION_LABEL[r], href: `/${locale}/tour-packages/${r}` },
-  { label: collectionTitle },
-];
 ---
 
-<MainLayout
-  title={collectionSeoTitle}
-  description={collectionDescription}
-  canonical={`/${locale}/tour-packages/${r}/${collection}`}
-  locale={locale}
->
-  <PageHeader
-    eyebrow={packagePageContent.regions[r].title}
-    title={collectionTitle}
-    description={collectionDescription}
-    breadcrumbs={breadcrumbs}
-  />
-
-  <SectionContainer background="bg-surface-soft">
-    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {
-        collectionPackages.map((tour, i) => (
-          <PackageCard
-            tour={tour}
-            locale={locale}
-            moreCountLabel={globalStrings.common.moreCount}
-            viewPackageDetailLabel={globalStrings.common.viewDetail}
-            loading={i < 3 ? "eager" : "lazy"}
-            fetchpriority={i === 0 ? "high" : "auto"}
-          />
-        ))
-      }
-    </div>
-  </SectionContainer>
-</MainLayout>
+<PackageCollectionPage
+  locale={locale!}
+  region={region as Region}
+  collection={collection!}
+  packages={collectionPackages}
+/>

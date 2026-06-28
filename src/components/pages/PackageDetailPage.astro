@@ -1,0 +1,368 @@
+---
+import { TypographyH2 } from "@/components/ui/typography";
+import MainLayout from "@/layouts/MainLayout.astro";
+import OptimizedImage from "@/components/ui/OptimizedImage.astro";
+import StructuredData from "@/components/seo/StructuredData.astro";
+import {
+  generateServiceSchema,
+  generateBreadcrumbSchema,
+  generateFAQPageSchema,
+} from "@/lib/schemas";
+import { SITE_URL } from "@/lib/site-config";
+
+import type { TourPackage } from "@/lib/content/tourPackages/types";
+import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
+
+import PageHeader from "@/components/site/PageHeader.astro";
+import PackageItinerary from "@/components/packages/PackageItinerary.astro";
+import PackageIncludesExcludes from "@/components/packages/PackageIncludesExcludes.astro";
+import BoatSpecsSection from "@/components/packages/BoatSpecsSection.astro";
+import CabinsSection from "@/components/packages/CabinsSection.astro";
+import PackagePricingSection from "@/components/packages/PackagePricingSection.astro";
+import PackageTandC from "@/components/packages/PackageTandC.astro";
+import PackageGallery from "@/components/packages/PackageGallery";
+import FaqSection from "@/components/site/Faq.astro";
+import RelatedLinkCardsSection from "@/components/site/RelatedLinkCardsSection.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import ScaleIn from "@/components/ui/ScaleIn.astro";
+import WhatsAppForm from "@/components/contact/WhatsAppForm.astro";
+import { paketWisataFormFields as idPaketWisataFormFields } from "@/lib/contact-data";
+import { paketWisataFormFields as enPaketWisataFormFields } from "@/lib/i18n/en/shared/contact-data";
+import { paketWisataFormFields as arPaketWisataFormFields } from "@/lib/i18n/ar/shared/contact-data";
+import { paketWisataFormFields as msPaketWisataFormFields } from "@/lib/i18n/ms/shared/contact-data";
+import { paketWisataFormFields as zhPaketWisataFormFields } from "@/lib/i18n/zh/shared/contact-data";
+
+import { loadContent, loadFaq } from "@/lib/i18n/loader";
+import { getPackageDetailStrings } from "@/lib/i18n";
+import { localizeHref } from "@/lib/i18n/localize";
+import { getImageSrc } from "@/lib/images";
+
+interface Props {
+  locale: string;
+  tour: TourPackage;
+}
+
+const { locale, tour } = Astro.props as Props;
+const uiStrings = getPackageDetailStrings(locale);
+const paketWisataFormFields =
+  locale === "en"
+    ? enPaketWisataFormFields
+    : locale === "ar"
+      ? arPaketWisataFormFields
+      : locale === "ms"
+        ? msPaketWisataFormFields
+        : locale === "zh"
+          ? zhPaketWisataFormFields
+          : idPaketWisataFormFields;
+const isDefaultLocale = locale === "id";
+
+const r = tour.region as Region;
+
+const packageHeroImage = tour.images[0];
+const packagePath = isDefaultLocale
+  ? `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`
+  : `/${locale}/tour-packages/${tour.region}/${tour.collectionSlug}/${tour.slug}`;
+const packageUrl = `${SITE_URL}${packagePath}`;
+const absoluteImageUrl = new URL(
+  getImageSrc(packageHeroImage),
+  SITE_URL,
+).toString();
+
+const serviceSchema = generateServiceSchema(
+  tour.title,
+  tour.summary,
+  uiStrings.common.contactForPrice,
+  absoluteImageUrl,
+  packageUrl,
+  tour.category,
+  tour.duration,
+);
+
+const faqModule = await loadFaq(locale, "package");
+const { packageFaq } = faqModule;
+const pageModule = await loadContent(locale, "packagePage");
+const { packagePageContent } = pageModule;
+
+const faqSchema = generateFAQPageSchema(packageFaq);
+
+const breadcrumbItems = [
+  { name: uiStrings.breadcrumb.home, url: "/" },
+  {
+    name: uiStrings.breadcrumb.tourPackages,
+    url: isDefaultLocale ? "/paket-wisata" : `/${locale}/tour-packages`,
+  },
+  {
+    name: REGION_LABEL[r],
+    url: isDefaultLocale
+      ? `/paket-wisata/${tour.region}`
+      : `/${locale}/tour-packages/${tour.region}`,
+  },
+  {
+    name: tour.collectionTitle,
+    url: isDefaultLocale
+      ? `/paket-wisata/${tour.region}/${tour.collectionSlug}`
+      : `/${locale}/tour-packages/${tour.region}/${tour.collectionSlug}`,
+  },
+  {
+    name: tour.title,
+    url: isDefaultLocale
+      ? `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`
+      : `/${locale}/tour-packages/${tour.region}/${tour.collectionSlug}/${tour.slug}`,
+  },
+];
+
+const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
+
+const itineraryByDay = Object.entries(
+  tour.itinerary.reduce((acc: Record<string, string[]>, item: string) => {
+    const [day, ...rest] = item.split(" - ");
+    const description = rest.join(" - ");
+    if (!acc[day]) {
+      acc[day] = [];
+    }
+    acc[day].push(description);
+    return acc;
+  }, {}),
+);
+
+const relatedContent = isDefaultLocale
+  ? packagePageContent.relatedContent.slice(0, 3)
+  : packagePageContent.relatedContent
+      .slice(0, 3)
+      .map((item: (typeof packagePageContent.relatedContent)[number]) => ({
+        ...item,
+        href: localizeHref(item.href, locale) || item.href,
+      }));
+---
+
+<MainLayout
+  title={tour.title}
+  description={tour.summary}
+  canonical={packagePath}
+  image={packageHeroImage}
+  imageAlt={tour.title}
+  locale={locale}
+>
+  <StructuredData schema={serviceSchema} />
+  <StructuredData schema={breadcrumbSchema} />
+  <StructuredData schema={faqSchema} />
+
+  <PageHeader
+    title={tour.title}
+    description={tour.summary}
+    breadcrumbs={[
+      {
+        label: uiStrings.breadcrumb.home,
+        href: isDefaultLocale ? "/" : `/${locale}`,
+      },
+      {
+        label: uiStrings.breadcrumb.tourPackages,
+        href: isDefaultLocale ? "/paket-wisata" : `/${locale}/tour-packages`,
+      },
+      {
+        label: REGION_LABEL[r],
+        href: isDefaultLocale
+          ? `/paket-wisata/${tour.region}`
+          : `/${locale}/tour-packages/${tour.region}`,
+      },
+      {
+        label: tour.collectionTitle,
+        href: isDefaultLocale
+          ? `/paket-wisata/${tour.region}/${tour.collectionSlug}`
+          : `/${locale}/tour-packages/${tour.region}/${tour.collectionSlug}`,
+      },
+      { label: tour.title },
+    ]}
+    image={packageHeroImage}
+    imageAlt={tour.title}
+    stats={[
+      { label: uiStrings.paketWisata.duration, value: tour.duration },
+      { label: uiStrings.paketWisata.category, value: tour.category },
+      { label: uiStrings.paketWisata.location, value: REGION_LABEL[r] },
+    ]}
+  />
+
+  <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+    <PackageItinerary
+      itineraryByDay={itineraryByDay}
+      locale={locale}
+      durationLabels={tour.durationLabels}
+    />
+  </SectionContainer>
+
+  {
+    tour.boatName && (
+      <SectionContainer background="bg-white" padding="py-16 sm:py-20">
+        <BoatSpecsSection
+          boatName={tour.boatName}
+          boatType={tour.boatType}
+          boatCapacity={tour.boatCapacity}
+          specs={tour.boatSpecs}
+          locale={locale}
+        />
+      </SectionContainer>
+    )
+  }
+
+  {
+    tour.priceList && (
+      <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+        <PackagePricingSection
+          priceList={tour.priceList}
+          locale={locale}
+          durationLabels={tour.durationLabels}
+          priceListLabels={tour.priceListLabels}
+        />
+      </SectionContainer>
+    )
+  }
+
+  {
+    tour.cabins && tour.cabins.length > 0 && (
+      <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+        <CabinsSection
+          cabins={tour.cabins}
+          locale={locale}
+          durationLabels={tour.durationLabels}
+          priceList={tour.priceList}
+          showPrice={!tour.priceList}
+        />
+      </SectionContainer>
+    )
+  }
+
+  <SectionContainer background="bg-white" padding="py-16 sm:py-20">
+    <PackageIncludesExcludes tour={tour} locale={locale} />
+  </SectionContainer>
+
+  {
+    tour.termsAndConditions && (
+      <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+        <PackageTandC content={tour.termsAndConditions} locale={locale} />
+      </SectionContainer>
+    )
+  }
+
+  <SectionContainer background="bg-surface-soft" padding="py-16 sm:py-20">
+    <div class="mx-auto max-w-3xl text-center">
+      <div
+        class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
+      >
+        {uiStrings.gallery.title}
+      </div>
+      <TypographyH2 class="mt-2 text-3xl leading-tight sm:text-4xl">
+        {uiStrings.gallery.photos}
+      </TypographyH2>
+    </div>
+
+    <div class="mt-10">
+      <Carousel
+        opts={{ loop: true, align: "center" }}
+        class="mx-auto max-w-3xl"
+      >
+        <CarouselContent>
+          {
+            tour.images.map((img, i) => (
+              <CarouselItem>
+                <ScaleIn enhance duration={500} once>
+                  <button
+                    type="button"
+                    data-image-index={i}
+                    class="group cursor-zoom-in overflow-hidden rounded-xl"
+                  >
+                    <div class="aspect-[4/3]">
+                      <OptimizedImage
+                        src={img}
+                        alt=""
+                        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    </div>
+                  </button>
+                </ScaleIn>
+              </CarouselItem>
+            ))
+          }
+        </CarouselContent>
+        <CarouselPrevious class="left-2 md:-left-12 bg-background" />
+        <CarouselNext class="right-2 md:-right-12 bg-background" />
+      </Carousel>
+    </div>
+
+    <PackageGallery images={tour.images} client:only="react" />
+  </SectionContainer>
+
+  <SectionContainer background="bg-white" padding="py-16 sm:py-20">
+    <div class="grid gap-12 lg:grid-cols-2 lg:items-start">
+      <div class="pt-8">
+        <div class="mb-8">
+          <div
+            class="text-sm font-medium uppercase tracking-[0.28em] text-brand-700"
+          >
+            {uiStrings.cta.book}
+          </div>
+          <TypographyH2 class="mt-2 text-3xl leading-tight">
+            {uiStrings.paketWisata.readyToStart}
+          </TypographyH2>
+        </div>
+        <WhatsAppForm
+          context="paket-wisata"
+          fields={paketWisataFormFields}
+          mode="section"
+          itemName={tour.title}
+          region={REGION_LABEL[r]}
+          locale={locale}
+        />
+      </div>
+      <FaqSection
+        eyebrow={uiStrings.faq.sectionTitle}
+        title={uiStrings.faq.sectionTitle}
+        items={packageFaq}
+        variant="card"
+      />
+    </div>
+  </SectionContainer>
+
+  {
+    isDefaultLocale ? (
+      <SectionContainer background="bg-white" padding="py-14 sm:py-16">
+        <RelatedLinkCardsSection
+          title={packagePageContent.detailLinksTitle}
+          buttonLabel={uiStrings.common.learnMore}
+          items={relatedContent}
+        />
+      </SectionContainer>
+    ) : null
+  }
+
+  <SectionContainer background="bg-surface-soft" padding="py-12">
+    <div class="flex flex-wrap justify-center gap-2">
+      {
+        tour.highlights.map((item) => (
+          <span class="inline-flex items-center rounded-full border border-brand-200 bg-brand-50 px-3.5 py-1.5 text-sm font-medium text-brand-700">
+            {item}
+          </span>
+        ))
+      }
+    </div>
+  </SectionContainer>
+
+  {
+    !isDefaultLocale ? (
+      <SectionContainer background="bg-white" padding="py-14 sm:py-16">
+        <RelatedLinkCardsSection
+          title={packagePageContent.detailLinksTitle}
+          buttonLabel={uiStrings.common.learnMore}
+          items={relatedContent}
+        />
+      </SectionContainer>
+    ) : null
+  }
+</MainLayout>

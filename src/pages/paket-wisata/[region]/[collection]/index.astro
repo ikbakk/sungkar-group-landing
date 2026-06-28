@@ -1,13 +1,7 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro";
-import PageHeader from "@/components/site/PageHeader.astro";
-import SectionContainer from "@/layouts/SectionContainer.astro";
-import PackageCard from "@/components/cards/PackageCard.astro";
-
+import PackageCollectionPage from "@/components/pages/PackageCollectionPage.astro";
 import { getPackages } from "@/lib/content/tourPackages/collection";
-import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
-
-import { getGlobalStrings, getTourPackagesPageStrings } from "@/lib/i18n";
+import { type RegionKey as Region } from "@/lib/regions";
 
 export async function getStaticPaths() {
   const idPackages = await getPackages("id");
@@ -34,62 +28,15 @@ export async function getStaticPaths() {
 
 const locale = "id";
 const { region, collection } = Astro.params;
-const r = region as Region;
-const globalStrings = getGlobalStrings(locale);
-const packageStrings = getTourPackagesPageStrings(locale);
-
 const packages = await getPackages(locale);
 const collectionPackages = packages.filter(
-  (pkg) => pkg.region === r && pkg.collectionSlug === collection,
+  (pkg) => pkg.region === region && pkg.collectionSlug === collection,
 );
-
-const collectionTitle = collectionPackages[0]?.collectionTitle ?? "";
-const regionLabel = REGION_LABEL[r];
-const normalizedCollectionTitle = collectionTitle.toLowerCase();
-const collectionSeoTitle = normalizedCollectionTitle.includes(
-  regionLabel.toLowerCase(),
-)
-  ? collectionTitle
-  : `${collectionTitle} ${regionLabel}`;
-const collectionDescription = `Temukan pilihan ${collectionSeoTitle} dari Sungkar Group, lengkap dengan rute, durasi, aktivitas utama, dan opsi konsultasi itinerary sesuai kebutuhan perjalanan Anda.`;
-
-const breadcrumbs = [
-  { label: globalStrings.breadcrumb.home, href: "/" },
-  { label: globalStrings.breadcrumb.tourPackages, href: "/paket-wisata" },
-  { label: regionLabel, href: `/paket-wisata/${r}` },
-  { label: collectionTitle },
-];
 ---
 
-<MainLayout
-  title={collectionSeoTitle}
-  description={collectionDescription}
-  canonical={`/paket-wisata/${r}/${collection}`}
+<PackageCollectionPage
   locale={locale}
->
-  <PageHeader
-    eyebrow={packageStrings.paketWisata.eyebrow}
-    title={collectionTitle}
-    description={collectionDescription}
-    breadcrumbs={breadcrumbs}
-  />
-
-  <SectionContainer background="bg-surface-soft">
-    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {
-        collectionPackages.map((tour, i) => (
-          <PackageCard
-            tour={tour}
-            locale={locale}
-            moreCountLabel={globalStrings.common.moreCount}
-            viewPackageDetailLabel={
-              packageStrings.paketWisata.viewPackageDetail
-            }
-            loading={i < 3 ? "eager" : "lazy"}
-            fetchpriority={i === 0 ? "high" : "auto"}
-          />
-        ))
-      }
-    </div>
-  </SectionContainer>
-</MainLayout>
+  region={region as Region}
+  collection={collection!}
+  packages={collectionPackages}
+/>
