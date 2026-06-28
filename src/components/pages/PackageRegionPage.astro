@@ -1,0 +1,141 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+
+import type { TourPackage, Region } from "@/lib/content/tourPackages/types";
+import { REGION_LABEL, type RegionKey } from "@/lib/regions";
+
+import { loadContent } from "@/lib/i18n/loader";
+import { getGlobalStrings, getTourPackagesPageStrings } from "@/lib/i18n";
+
+import CollectionCard from "@/components/packages/CollectionCard.astro";
+
+interface Props {
+  locale: string;
+  region: Region;
+  packages: TourPackage[];
+}
+
+type CCard = {
+  slug: string;
+  title: string;
+  packages: TourPackage[];
+};
+
+const { locale, region, packages } = Astro.props as Props;
+const isDefaultLocale = locale === "id";
+const r = region as RegionKey;
+const globalStrings = getGlobalStrings(locale);
+const packageStrings = getTourPackagesPageStrings(locale);
+const pageModule = await loadContent(locale, "packagePage");
+const { packagePageContent } = pageModule;
+
+const collections = Object.values(
+  packages.reduce<Record<string, CCard>>((acc, pkg) => {
+    if (!acc[pkg.collectionSlug]) {
+      acc[pkg.collectionSlug] = {
+        slug: pkg.collectionSlug,
+        title: pkg.collectionTitle,
+        packages: [],
+      };
+    }
+    acc[pkg.collectionSlug].packages.push(pkg);
+    return acc;
+  }, {}),
+).sort((a, b) => a.title.localeCompare(b.title));
+
+const REGION_SEO: Record<RegionKey, { title: string; description: string }> = {
+  lombok: {
+    title: "Paket Wisata Lombok",
+    description:
+      "Pilih paket wisata Lombok untuk pantai Mandalika, Gili Trawangan, Gili Nanggu, desa budaya Sasak, air terjun, dan rute private tour fleksibel.",
+  },
+  sumbawa: {
+    title: "Paket Wisata Sumbawa",
+    description:
+      "Temukan paket wisata Sumbawa untuk whale shark Teluk Saleh, Moyo, Kenawa, Sangiang, dan perjalanan laut dari Lombok dengan open trip atau private trip.",
+  },
+  "labuan-bajo": {
+    title: "Paket Wisata Labuan Bajo",
+    description:
+      "Jelajahi paket wisata Labuan Bajo untuk rute darat Flores, city tour, bukit, pantai, dan itinerary nyaman sebelum atau sesudah sailing Komodo.",
+  },
+  "sailing-labuan-bajo": {
+    title: "Sailing Labuan Bajo",
+    description:
+      "Bandingkan paket sailing Labuan Bajo ke Komodo, Padar, Pink Beach, Manta Point, dan Taka Makassar dengan pilihan open trip atau private phinisi.",
+  },
+  "lombok-to-bajo": {
+    title: "Paket Lombok ke Labuan Bajo",
+    description:
+      "Rencanakan perjalanan laut dari Lombok ke Labuan Bajo melewati pulau-pulau eksotis, snorkeling, dan destinasi bahari terbaik Nusa Tenggara.",
+  },
+  "lombok-bajo": {
+    title: "Paket Lombok - Labuan Bajo",
+    description:
+      "Pilih paket lintas pulau Lombok dan Labuan Bajo dengan opsi keberangkatan dua arah, kapal phinisi, open trip, dan private charter.",
+  },
+};
+
+const regionSeo = REGION_SEO[r];
+const pageTitle = isDefaultLocale
+  ? regionSeo.title
+  : packagePageContent.regions[r].title;
+const pageDescription = isDefaultLocale
+  ? regionSeo.description
+  : packagePageContent.regions[r].description;
+const pageEyebrow = isDefaultLocale
+  ? packageStrings.paketWisata.eyebrow
+  : packagePageContent.regions[r].title;
+const breadcrumbs = isDefaultLocale
+  ? [
+      { label: globalStrings.breadcrumb.home, href: "/" },
+      { label: globalStrings.breadcrumb.tourPackages, href: "/paket-wisata" },
+      { label: REGION_LABEL[r] },
+    ]
+  : [
+      { label: globalStrings.breadcrumb.home, href: `/${locale}` },
+      {
+        label: globalStrings.breadcrumb.tourPackages,
+        href: `/${locale}/tour-packages`,
+      },
+      { label: REGION_LABEL[r] },
+    ];
+const canonicalPath = isDefaultLocale
+  ? `/paket-wisata/${r}`
+  : `/${locale}/tour-packages/${r}`;
+---
+
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+  canonical={canonicalPath}
+  image={packages[0]?.images[0]}
+  locale={locale}
+>
+  <PageHeader
+    eyebrow={pageEyebrow}
+    title={pageTitle}
+    description={pageDescription}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <SectionContainer background="bg-surface-soft">
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {
+        collections.map((collection) => (
+          <CollectionCard
+            collection={collection}
+            region={r}
+            locale={locale}
+            packagesAvailableLabel={
+              packageStrings.paketWisata.packagesAvailable
+            }
+            morePackagesLabel={packageStrings.paketWisata.morePackages}
+          />
+        ))
+      }
+    </div>
+  </SectionContainer>
+</MainLayout>

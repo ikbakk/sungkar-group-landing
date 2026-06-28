@@ -10,7 +10,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = join(__dirname, "data");
+const DATA_DIR = join(__dirname, "..", "data");
 const CONTENT_DIR = join(__dirname, "..", "src", "content");
 
 const LOCALES = ["id", "en", "ar", "ms", "zh"];

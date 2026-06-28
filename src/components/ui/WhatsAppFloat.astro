@@ -1,9 +1,12 @@
 ---
 // WhatsApp floating action button
+import { businessInfo } from "@/lib/contact-data";
+
+const whatsappNumber = businessInfo.whatsapp.replace(/\D/g, "");
 ---
 
 <a
-  href="https://wa.me/6281234567890"
+  href={`https://wa.me/${whatsappNumber}`}
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat with us on WhatsApp"

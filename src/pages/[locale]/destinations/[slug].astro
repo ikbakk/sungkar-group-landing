@@ -1,161 +1,29 @@
 ---
-import { TypographyH2 } from "@/components/ui/typography";
-import MainLayout from "@/layouts/MainLayout.astro";
-import PageHeader from "@/components/site/PageHeader.astro";
-import StructuredData from "@/components/seo/StructuredData.astro";
-import SectionContainer from "@/layouts/SectionContainer.astro";
-import FaqSection from "@/components/site/Faq.astro";
-import DestinationDetailPanel from "@/components/destinations/DestinationDetailPanel.astro";
-import DestinationGallery from "@/components/destinations/DestinationGallery.astro";
-import PackageCard from "@/components/cards/PackageCard.astro";
-import {
-  generateTouristAttractionSchema,
-  generateBreadcrumbSchema,
-  generateFAQPageSchema,
-} from "@/lib/schemas";
-import { SITE_URL } from "@/lib/site-config";
+import DestinationDetailPage from "@/components/pages/DestinationDetailPage.astro";
 import { getDestinations } from "@/lib/content/destinations/collection";
-import { getPackages } from "@/lib/content/tourPackages/collection";
-
-import { loadContent } from "@/lib/i18n/loader";
-import {
-  getFaqPageStrings,
-  getGlobalStrings,
-  getTourPackagesPageStrings,
-  NON_DEFAULT_LOCALES,
-} from "@/lib/i18n";
-import { getImageSrc } from "@/lib/images";
+import { NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
 export async function getStaticPaths() {
   const paths = [];
-  const allDestinations = await getDestinations("id");
+  const baseDestinations = await getDestinations("id");
   for (const locale of NON_DEFAULT_LOCALES) {
-    for (const destination of allDestinations) {
-      paths.push({ params: { locale, slug: destination.slug } });
+    const localeDestinations = await getDestinations(locale);
+    for (const baseDestination of baseDestinations) {
+      const destination = localeDestinations.find(
+        (item) => item.slug === baseDestination.slug,
+      );
+      if (!destination) continue;
+      paths.push({
+        params: { locale, slug: baseDestination.slug },
+        props: { destination },
+      });
     }
   }
   return paths;
 }
 
-const { locale, slug } = Astro.params;
-const globalStrings = getGlobalStrings(locale!);
-const faqStrings = getFaqPageStrings(locale!);
-const packageStrings = getTourPackagesPageStrings(locale!);
-
-const pageModule = await loadContent(locale!, "destinationsPage");
-const { destinationsPageContent } = pageModule;
-
-const allDestinationsLocal = await getDestinations(locale!);
-const destination = allDestinationsLocal.find((d) => d.slug === slug)!;
-
-const packages = await getPackages(locale!);
-const relatedPackages = packages.filter((tour) =>
-  destination.packages.includes(tour.slug),
-);
-
-const destinationHeroImage = destination.gallery[0] ?? destination.image;
-const absoluteImageUrl = new URL(
-  getImageSrc(destinationHeroImage),
-  SITE_URL,
-).toString();
-
-const canonicalPath = `/${locale}/destinations/${destination.slug}`;
-const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
-const touristAttractionSchema = generateTouristAttractionSchema(
-  destination.title,
-  destination.summary,
-  absoluteImageUrl,
-  canonicalUrl,
-  destination.region,
-);
-
-const breadcrumbItems = [
-  { name: globalStrings.breadcrumb.home, url: "/" },
-  {
-    name: globalStrings.breadcrumb.destinations,
-    url: `/${locale}/destinations`,
-  },
-  {
-    name: destination.title,
-    url: `/${locale}/destinations/${destination.slug}`,
-  },
-];
-
-const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, SITE_URL);
-
-const faqSchema = generateFAQPageSchema(destinationsPageContent.faq);
-const metaDescription = `${destination.title} - ${destination.summary}`;
+const { locale } = Astro.params;
+const { destination } = Astro.props;
 ---
 
-<MainLayout
-  title={destination.title}
-  description={metaDescription}
-  canonical={canonicalPath}
-  image={destinationHeroImage}
-  locale={locale}
->
-  <StructuredData schema={touristAttractionSchema} />
-  <StructuredData schema={breadcrumbSchema} />
-  <StructuredData schema={faqSchema} />
-
-  <PageHeader
-    eyebrow={destinationsPageContent.detail.headline}
-    title={destination.title}
-    description={destination.summary}
-    breadcrumbs={[
-      { label: globalStrings.breadcrumb.home, href: `/${locale}` },
-      {
-        label: globalStrings.breadcrumb.destinations,
-        href: `/${locale}/destinations`,
-      },
-      { label: destination.title },
-    ]}
-    image={destinationHeroImage}
-    imageAlt={destination.title}
-  />
-
-  <SectionContainer background="bg-surface-soft" padding="py-16 lg:py-24">
-    <DestinationDetailPanel
-      destination={destination}
-      content={destinationsPageContent.detail}
-    />
-  </SectionContainer>
-
-  {
-    relatedPackages.length > 0 && (
-      <SectionContainer background="bg-background" padding="py-16 lg:py-24">
-        <TypographyH2 class="text-3xl leading-tight tracking-tight sm:text-4xl">
-          {destinationsPageContent.detail.relatedPackagesTitle}
-        </TypographyH2>
-        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {relatedPackages.map((tour) => (
-            <PackageCard
-              tour={tour}
-              locale={locale}
-              moreCountLabel={globalStrings.common.moreCount}
-              viewPackageDetailLabel={
-                packageStrings.paketWisata.viewPackageDetail
-              }
-            />
-          ))}
-        </div>
-      </SectionContainer>
-    )
-  }
-
-  <DestinationGallery
-    class="bg-surface-soft"
-    title={destinationsPageContent.detail.galleryTitle}
-    images={destination.gallery}
-    emptyText={destinationsPageContent.detail.emptyGallery}
-  />
-
-  <SectionContainer background="bg-background" padding="py-16 lg:py-24">
-    <FaqSection
-      eyebrow={faqStrings.faq.sectionTitle}
-      title={destinationsPageContent.detail.faqTitle}
-      items={destinationsPageContent.faq}
-      variant="card"
-    />
-  </SectionContainer>
-</MainLayout>
+<DestinationDetailPage destination={destination} locale={locale!} />

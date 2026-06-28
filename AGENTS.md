@@ -14,7 +14,7 @@
 - `npm run astro -- <command>` runs Astro CLI utilities, such as `npm run astro -- --help`.
 - `npm test` runs vitest (config: `vitest.config.ts`; tests in `tests/`).
 - `npm run format` runs Prettier auto-format; `npm run format:check` checks formatting in CI.
-- `npm run images:barrel` regenerates `src/assets/images/index.ts` after adding images.
+- `npm run images` regenerates `src/assets/images/index.ts` after adding images.
 
 ## Coding Style & Naming Conventions
 
@@ -31,7 +31,7 @@
 
 - Use `npm test` to run vitest (config: `vitest.config.ts`; test files in `tests/`).
 - Use `npm run check` for Astro type checking.
-- Pre-commit hook (husky) runs: `npm test && npm run check && npm run images:barrel && npm run validate:images`. Run `npm run build` and `npm run format:check` before pushing.
+- Pre-commit hook (husky) runs: `npm test && npm run check && npm run images && npm run validate:images`. Run `npm run build` and `npm run format:check` before pushing.
 - Tests use `@/` path alias via vitest config — same as app code.
 - Test files in `tests/` — use descriptive names like `schemas.test.ts`, `data.test.ts`.
 
@@ -73,9 +73,8 @@ src/content/tourPackages/**/*.mdx       ← GENERATED — never edit manually
 src/components/packages/*.astro         ← UI reads from collection.ts
 ```
 
-- **MDX files under `src/content/tourPackages/` are auto-generated.** Any manual edits will be overwritten the next time the generator runs.
-- **To change content**, edit the JSON source files in `scripts/data/packages/*/main.json` or `scripts/data/packages/*/locales.json`, then run `node scripts/generate-tour-mdx.mjs`.
-- The same pattern applies to accommodations (`scripts/data/accommodations/`) and car rental (`scripts/data/car-rental/`), using `node scripts/generate-content-mdx.mjs`.
+- **MDX files under `src/content/tourPackages/` are generated.** To change content, edit the JSON source files in `data/packages/*/main.json` or `data/packages/*/locales.json`, then run `node scripts/generate-tour-mdx.mjs`.
+- The same pattern applies to accommodations (`data/accommodations/`) and car rental (`data/car-rental/`), using `node scripts/generate-content-mdx.mjs`.
 
 **Template generator**: `npm run generate:template` runs `scripts/generate-data-template.mjs` — an interactive CLI that scaffolds correct `main.json` + `locales.json` templates with validated enums from the source-of-truth constants files.
 
@@ -87,9 +86,9 @@ Navigation uses `createNavigation(packages)` factory functions in each locale's 
 npm run generate:template
 ```
 
-Select the content type, answer the prompts, and a correctly-structured template is created. Then edit the generated files and run the appropriate generator command.
+Select the content type, answer the prompts, and a correctly-structured template is created inside `data/`. Then edit the generated files and run the appropriate MDX generator command.
 
 **Without template generator:**
 
-1. **Tour packages**: Create `scripts/data/packages/{slug}/main.json` (shared fields) and `scripts/data/packages/{slug}/locales.json` (locale blocks), then run `node scripts/generate-tour-mdx.mjs`.
-2. **Accommodations / Car rental / Destinations**: Create `scripts/data/{type}/{slug}/main.json` and `scripts/data/{type}/{slug}/locales.json`, then run `node scripts/generate-content-mdx.mjs`.
+1. **Tour packages**: Create `data/packages/{slug}/main.json` (shared fields) and `data/packages/{slug}/locales.json` (locale blocks), then run `node scripts/generate-tour-mdx.mjs`.
+2. **Accommodations / Car rental / Destinations**: Create `data/{type}/{slug}/main.json` and `data/{type}/{slug}/locales.json`, then run `node scripts/generate-content-mdx.mjs`.

@@ -1,65 +1,14 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro";
-import PageHeader from "@/components/site/PageHeader.astro";
-import SectionContainer from "@/layouts/SectionContainer.astro";
-import { BlogCard } from "@/components/blog";
+import BlogIndexPage from "@/components/pages/BlogIndexPage.astro";
 import { getBlogPosts } from "@/lib/content/blog";
-
-import {
-  getBlogPageStrings,
-  getGlobalStrings,
-  getTravelGuidesPageStrings,
-  NON_DEFAULT_LOCALES,
-} from "@/lib/i18n";
+import { NON_DEFAULT_LOCALES } from "@/lib/i18n";
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
 }
 
 const { locale } = Astro.params;
-const globalStrings = getGlobalStrings(locale!);
-const blogStrings = getBlogPageStrings(locale!);
-const guideStrings = getTravelGuidesPageStrings(locale!);
 const posts = await getBlogPosts(locale!);
-const description = blogStrings.blogSection.description;
-
-const homeHref = `/${locale}`;
-const breadcrumbs = [
-  { label: globalStrings.breadcrumb.home, href: homeHref },
-  { label: globalStrings.breadcrumb.blog },
-];
 ---
 
-<MainLayout
-  title={`${globalStrings.page.blog} - Sungkar Group`}
-  description={description}
-  canonical={`/${locale}/blog`}
-  locale={locale}
->
-  <PageHeader
-    eyebrow={globalStrings.page.blog}
-    title={globalStrings.page.blog}
-    description={description}
-    breadcrumbs={breadcrumbs}
-  />
-
-  <SectionContainer background="bg-background">
-    {
-      posts.length > 0 ? (
-        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <BlogCard
-              post={post}
-              locale={locale}
-              readingTimeLabel={guideStrings.guides.readingTime}
-            />
-          ))}
-        </div>
-      ) : (
-        <div class="py-16 text-center">
-          <p class="text-text-muted">{blogStrings.blogSection.emptyState}</p>
-        </div>
-      )
-    }
-  </SectionContainer>
-</MainLayout>
+<BlogIndexPage locale={locale!} posts={posts} />

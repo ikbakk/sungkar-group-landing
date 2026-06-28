@@ -49,7 +49,7 @@ describe("Transmission parser", () => {
 
 describe("Template output exists (after generation)", () => {
   it("verify packages data dirs exist with correct structure", () => {
-    const packagesDir = resolve(ROOT, "scripts/data/packages");
+    const packagesDir = resolve(ROOT, "data/packages");
     expect(existsSync(packagesDir)).toBe(true);
     const dirs = readdirSync(packagesDir, { withFileTypes: true })
       .filter((d) => d.isDirectory())
@@ -62,7 +62,7 @@ describe("Template output exists (after generation)", () => {
   });
 
   it("verify accommodations data dirs exist with correct structure", () => {
-    const dir = resolve(ROOT, "scripts/data/accommodations");
+    const dir = resolve(ROOT, "data/accommodations");
     if (!existsSync(dir)) return;
     const dirs = readdirSync(dir, { withFileTypes: true })
       .filter((d) => d.isDirectory())
@@ -74,7 +74,7 @@ describe("Template output exists (after generation)", () => {
   });
 
   it("verify car-rental data dirs exist with correct structure", () => {
-    const dir = resolve(ROOT, "scripts/data/car-rental");
+    const dir = resolve(ROOT, "data/car-rental");
     if (!existsSync(dir)) return;
     const dirs = readdirSync(dir, { withFileTypes: true })
       .filter((d) => d.isDirectory())
@@ -86,7 +86,7 @@ describe("Template output exists (after generation)", () => {
   });
 
   it("verify destinations data dirs exist with correct structure", () => {
-    const dir = resolve(ROOT, "scripts/data/destinations");
+    const dir = resolve(ROOT, "data/destinations");
     if (!existsSync(dir)) return;
     const dirs = readdirSync(dir, { withFileTypes: true })
       .filter((d) => d.isDirectory())
@@ -100,7 +100,7 @@ describe("Template output exists (after generation)", () => {
 
 describe("Generated JSON validity", () => {
   it("all package main.json files are valid JSON", () => {
-    const dir = resolve(ROOT, "scripts/data/packages");
+    const dir = resolve(ROOT, "data/packages");
     const dirs = readdirSync(dir, { withFileTypes: true })
       .filter((d) => d.isDirectory())
       .map((d) => d.name);

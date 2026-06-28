@@ -18,24 +18,24 @@ Multi-language landing site for Sungkar Group — Lombok tour operator. 268 page
 
 ### Content Generation
 
-| Command                      | Action                                                                                                          |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `npm run generate:tours`     | JSON in `scripts/data/*.json` → `src/content/tourPackages/{slug}/{locale}.mdx`                                  |
-| `npm run generate:content`   | JSON in `scripts/data/{accommodations,car-rental,destinations}.json` → `src/content/{type}/{slug}/{locale}.mdx` |
-| `npm run generate:all`       | Both of the above                                                                                               |
-| `npm run images:barrel`      | Regenerate `src/assets/images/index.ts`                                                                         |
-| `npm run generate:og-images` | Generate OG placeholder images for all page types                                                               |
+| Command                      | Action                                                                                                        |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `npm run validate:structured`| Validate structured JSON source completeness and shape                                                        |
+| `npm run images`             | Regenerate `src/assets/images/index.ts`                                                                       |
+| `npm run og-images`          | Generate OG placeholder images for all page types                                                             |
+| `npm run generate:template`  | Interactive CLI to scaffold new content templates                                                             |
 
 ### Validation & Formatting
 
-| Command                   | Action                                                     |
-| ------------------------- | ---------------------------------------------------------- |
-| `npm test`                | Vitest — validates all MDX frontmatter against Zod schemas |
-| `npm run check`           | Astro type checking                                        |
-| `npm run validate`        | Validates blog + guide MDX frontmatter                     |
-| `npm run validate:images` | Validates barrel file image references                     |
-| `npm run check:images`    | Checks blog/guide images exist on disk                     |
-| `npm run format:check`    | Check Prettier formatting (CI gate)                        |
+| Command                       | Action                                                      |
+| ----------------------------- | ----------------------------------------------------------- |
+| `npm test`                    | Vitest — validates all MDX frontmatter against Zod schemas  |
+| `npm run check`               | Astro type checking                                         |
+| `npm run validate`            | Validates blog + guide MDX frontmatter                      |
+| `npm run validate:structured` | Validates structured JSON source completeness and shape     |
+| `npm run validate:images`     | Validates barrel file image references                      |
+| `npm run check:images`        | Checks blog/guide images exist on disk                      |
+| `npm run format:check`        | Check Prettier formatting (CI gate)                         |
 
 ## Architecture
 
@@ -168,6 +168,7 @@ Verify with [Google Rich Results Test](https://search.google.com/test/rich-resul
 
 - [ ] `npm test` — all 1,101 passing
 - [ ] `npm run check` — 0 type errors
+- [ ] `npm run validate:structured` — structured content source is complete
 - [ ] `npm run validate:images` — all images referenced
 - [ ] `npm run build` — 0 errors, all pages generated
 - [ ] Check `dist/sitemap-index.xml` — all expected URLs present

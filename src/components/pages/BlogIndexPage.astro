@@ -1,0 +1,67 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import { BlogCard } from "@/components/blog";
+import type { BlogPostMeta } from "@/lib/content/blog";
+
+import {
+  getBlogPageStrings,
+  getGlobalStrings,
+  getTravelGuidesPageStrings,
+} from "@/lib/i18n";
+
+interface Props {
+  locale: string;
+  posts: BlogPostMeta[];
+}
+
+const { locale, posts } = Astro.props as Props;
+const isDefaultLocale = locale === "id";
+const globalStrings = getGlobalStrings(locale);
+const blogStrings = getBlogPageStrings(locale);
+const guideStrings = getTravelGuidesPageStrings(locale);
+const description = blogStrings.blogSection.description;
+const breadcrumbs = [
+  {
+    label: globalStrings.breadcrumb.home,
+    href: isDefaultLocale ? "/" : `/${locale}`,
+  },
+  { label: globalStrings.breadcrumb.blog },
+];
+const canonicalPath = isDefaultLocale ? "/blog" : `/${locale}/blog`;
+---
+
+<MainLayout
+  title={`${globalStrings.page.blog} - Sungkar Group`}
+  description={description}
+  canonical={canonicalPath}
+  locale={locale}
+>
+  <PageHeader
+    eyebrow={globalStrings.page.blog}
+    title={globalStrings.page.blog}
+    description={description}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <SectionContainer background="bg-background">
+    {
+      posts.length > 0 ? (
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post) => (
+            <BlogCard
+              post={post}
+              locale={locale}
+              readingTimeLabel={guideStrings.guides.readingTime}
+            />
+          ))}
+        </div>
+      ) : (
+        <div class="py-16 text-center">
+          <p class="text-text-muted">{blogStrings.blogSection.emptyState}</p>
+        </div>
+      )
+    }
+  </SectionContainer>
+</MainLayout>

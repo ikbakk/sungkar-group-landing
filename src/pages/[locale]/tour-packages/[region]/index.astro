@@ -1,25 +1,8 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro";
-import PageHeader from "@/components/site/PageHeader.astro";
-import SectionContainer from "@/layouts/SectionContainer.astro";
-
+import PackageRegionPage from "@/components/pages/PackageRegionPage.astro";
 import { getPackages } from "@/lib/content/tourPackages/collection";
-import { REGION_LABEL, type RegionKey as Region } from "@/lib/regions";
-
-import { loadContent } from "@/lib/i18n/loader";
-import {
-  getGlobalStrings,
-  getTourPackagesPageStrings,
-  NON_DEFAULT_LOCALES,
-} from "@/lib/i18n";
-
-import CollectionCard from "@/components/packages/CollectionCard.astro";
-
-type CCard = {
-  slug: string;
-  title: string;
-  packages: typeof regionPackages;
-};
+import { NON_DEFAULT_LOCALES } from "@/lib/i18n";
+import { type RegionKey as Region } from "@/lib/regions";
 
 export function getStaticPaths() {
   const regions: Region[] = [
@@ -40,69 +23,12 @@ export function getStaticPaths() {
 }
 
 const { locale, region } = Astro.params;
-const r = region as Region;
-const globalStrings = getGlobalStrings(locale!);
-const packageStrings = getTourPackagesPageStrings(locale!);
-const pageModule = await loadContent(locale!, "packagePage");
-const { packagePageContent } = pageModule;
-
 const packages = await getPackages(locale!);
-const regionPackages = packages.filter((pkg) => pkg.region === r);
-
-const collections = Object.values(
-  regionPackages.reduce<Record<string, CCard>>((acc, pkg) => {
-    if (!acc[pkg.collectionSlug]) {
-      acc[pkg.collectionSlug] = {
-        slug: pkg.collectionSlug,
-        title: pkg.collectionTitle,
-        packages: [],
-      };
-    }
-    acc[pkg.collectionSlug].packages.push(pkg);
-    return acc;
-  }, {}),
-).sort((a, b) => a.title.localeCompare(b.title));
-
-const breadcrumbs = [
-  { label: globalStrings.breadcrumb.home, href: `/${locale}` },
-  {
-    label: globalStrings.breadcrumb.tourPackages,
-    href: `/${locale}/tour-packages`,
-  },
-  { label: REGION_LABEL[r] },
-];
+const regionPackages = packages.filter((pkg) => pkg.region === region);
 ---
 
-<!-- FIX: Description on main layout still use hardcode -->
-<MainLayout
-  title={packagePageContent.regions[r].title}
-  description={packagePageContent.regions[r].description}
-  canonical={`/${locale}/tour-packages/${r}`}
-  image={regionPackages[0]?.images[0]}
-  locale={locale}
->
-  <PageHeader
-    eyebrow={packagePageContent.regions[r].title}
-    title={packagePageContent.regions[r].title}
-    description={packagePageContent.regions[r].description}
-    breadcrumbs={breadcrumbs}
-  />
-
-  <SectionContainer background="bg-surface-soft">
-    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {
-        collections.map((collection) => (
-          <CollectionCard
-            collection={collection}
-            region={r}
-            locale={locale}
-            packagesAvailableLabel={
-              packageStrings.paketWisata.packagesAvailable
-            }
-            morePackagesLabel={packageStrings.paketWisata.morePackages}
-          />
-        ))
-      }
-    </div>
-  </SectionContainer>
-</MainLayout>
+<PackageRegionPage
+  locale={locale!}
+  region={region as Region}
+  packages={regionPackages}
+/>

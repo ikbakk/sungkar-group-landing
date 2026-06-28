@@ -1,0 +1,98 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import PageHeader from "@/components/site/PageHeader.astro";
+import SectionContainer from "@/layouts/SectionContainer.astro";
+import PackageCard from "@/components/cards/PackageCard.astro";
+
+import type { TourPackage, Region } from "@/lib/content/tourPackages/types";
+import { REGION_LABEL, type RegionKey } from "@/lib/regions";
+
+import { loadContent } from "@/lib/i18n/loader";
+import { getGlobalStrings, getTourPackagesPageStrings } from "@/lib/i18n";
+
+interface Props {
+  locale: string;
+  region: Region;
+  collection: string;
+  packages: TourPackage[];
+}
+
+const { locale, region, collection, packages } = Astro.props as Props;
+const isDefaultLocale = locale === "id";
+const r = region as RegionKey;
+const globalStrings = getGlobalStrings(locale);
+const packageStrings = getTourPackagesPageStrings(locale);
+const pageModule = await loadContent(locale, "packagePage");
+const { packagePageContent } = pageModule;
+
+const collectionTitle = packages[0]?.collectionTitle ?? "";
+const regionLabel = REGION_LABEL[r];
+const regionTitle = packagePageContent.regions[r].title;
+const normalizedCollectionTitle = collectionTitle.toLowerCase();
+const collectionSeoTitle = isDefaultLocale
+  ? normalizedCollectionTitle.includes(regionLabel.toLowerCase())
+    ? collectionTitle
+    : `${collectionTitle} ${regionLabel}`
+  : normalizedCollectionTitle.includes(regionTitle.toLowerCase())
+    ? collectionTitle
+    : `${collectionTitle} ${regionTitle}`;
+const collectionDescription = isDefaultLocale
+  ? `Temukan pilihan ${collectionSeoTitle} dari Sungkar Group, lengkap dengan rute, durasi, aktivitas utama, dan opsi konsultasi itinerary sesuai kebutuhan perjalanan Anda.`
+  : packagePageContent.regions[r].description;
+const breadcrumbs = isDefaultLocale
+  ? [
+      { label: globalStrings.breadcrumb.home, href: "/" },
+      { label: globalStrings.breadcrumb.tourPackages, href: "/paket-wisata" },
+      { label: regionLabel, href: `/paket-wisata/${r}` },
+      { label: collectionTitle },
+    ]
+  : [
+      { label: globalStrings.breadcrumb.home, href: `/${locale}` },
+      {
+        label: globalStrings.breadcrumb.tourPackages,
+        href: `/${locale}/tour-packages`,
+      },
+      { label: regionLabel, href: `/${locale}/tour-packages/${r}` },
+      { label: collectionTitle },
+    ];
+const canonicalPath = isDefaultLocale
+  ? `/paket-wisata/${r}/${collection}`
+  : `/${locale}/tour-packages/${r}/${collection}`;
+const pageEyebrow = isDefaultLocale
+  ? packageStrings.paketWisata.eyebrow
+  : packagePageContent.regions[r].title;
+const viewPackageDetailLabel = isDefaultLocale
+  ? packageStrings.paketWisata.viewPackageDetail
+  : globalStrings.common.viewDetail;
+---
+
+<MainLayout
+  title={collectionSeoTitle}
+  description={collectionDescription}
+  canonical={canonicalPath}
+  locale={locale}
+>
+  <PageHeader
+    eyebrow={pageEyebrow}
+    title={collectionTitle}
+    description={collectionDescription}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <SectionContainer background="bg-surface-soft">
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {
+        packages.map((tour, i) => (
+          <PackageCard
+            tour={tour}
+            locale={locale}
+            moreCountLabel={globalStrings.common.moreCount}
+            viewPackageDetailLabel={viewPackageDetailLabel}
+            loading={i < 3 ? "eager" : "lazy"}
+            fetchpriority={i === 0 ? "high" : "auto"}
+          />
+        ))
+      }
+    </div>
+  </SectionContainer>
+</MainLayout>
