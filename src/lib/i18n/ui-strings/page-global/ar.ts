@@ -36,6 +36,13 @@ const strings = {
     youtube: "\u064A\u0648\u062A\u064A\u0648\u0628",
     facebook: "\u0641\u064A\u0633\u0628\u0648\u0643",
     tiktok: "\u062A\u064A\u0643 \u062A\u0648\u0643",
+    licensedTourOperator: "\u0645شغل \u0633ياحة \u0645ضمون",
+    ratingOnGoogle: "\u062Aقييم 4.9 \u0641ي Google",
+    secureBooking: "\u062Dجز \u0623من",
+    support247: "\u062Fعم 24/7",
+    subscribeForTips: "\u0627شترك \u0644نصائح \u0627لسفر",
+    yourEmail: "\u0628ريدة \u0627لإلكترونية",
+    subscribe: "\u0627شترك",
   },
   breadcrumb: {
     home: "\u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629",

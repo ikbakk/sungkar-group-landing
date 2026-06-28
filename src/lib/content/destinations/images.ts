@@ -16,9 +16,7 @@ const registry: Record<string, ImageSource> = {
 };
 
 export function resolveImage(path: string): ImageSource {
-  return (
-    registry[path] ?? (path.startsWith("packages/") ? `/images/${path}` : path)
-  );
+  return registry[path] ?? path;
 }
 
 export function resolveImages(paths: string[]): ImageSource[] {

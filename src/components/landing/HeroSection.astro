@@ -19,14 +19,70 @@ const { eyebrow, title, description, primaryAction, secondaryAction, image } =
 <style is:global>
   @media (prefers-reduced-motion: no-preference) {
     .hero-content {
-      animation: hero-enter 700ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation: hero-enter 900ms cubic-bezier(0.32, 0.72, 0, 1) forwards;
     }
 
     @keyframes hero-enter {
       from {
         opacity: 0;
-        transform: translateY(24px);
+        transform: translateY(32px);
+        filter: blur(8px);
       }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+      }
+    }
+
+    .hero-eyebrow {
+      animation: hero-eyebrow 700ms cubic-bezier(0.32, 0.72, 0, 1) 200ms
+        forwards;
+      opacity: 0;
+      transform: translateY(12px);
+    }
+
+    @keyframes hero-eyebrow {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-title-line {
+      animation: hero-line 800ms cubic-bezier(0.32, 0.72, 0, 1) forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    @keyframes hero-line {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-desc {
+      animation: hero-desc 800ms cubic-bezier(0.32, 0.72, 0, 1) 300ms forwards;
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    @keyframes hero-desc {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-actions {
+      animation: hero-actions 800ms cubic-bezier(0.32, 0.72, 0, 1) 450ms
+        forwards;
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    @keyframes hero-actions {
       to {
         opacity: 1;
         transform: translateY(0);
@@ -34,18 +90,18 @@ const { eyebrow, title, description, primaryAction, secondaryAction, image } =
     }
 
     .scroll-indicator {
-      animation: scroll-hint 2.5s ease-in-out infinite;
+      animation: scroll-hint 2.8s cubic-bezier(0.32, 0.72, 0, 1) infinite;
     }
 
     @keyframes scroll-hint {
       0%,
       100% {
-        opacity: 0.35;
+        opacity: 0.3;
         transform: translateY(0);
       }
       50% {
-        opacity: 0.8;
-        transform: translateY(6px);
+        opacity: 0.7;
+        transform: translateY(8px);
       }
     }
   }
@@ -53,7 +109,7 @@ const { eyebrow, title, description, primaryAction, secondaryAction, image } =
 
 <section
   aria-label="Hero"
-  class="relative flex min-h-dvh items-end overflow-hidden bg-brand-900 pt-24"
+  class="relative flex min-h-dvh items-end overflow-hidden bg-brand-900 pt-28 sm:pt-32"
 >
   <div class="absolute inset-0 overflow-hidden">
     <OptimizedImage
@@ -68,63 +124,113 @@ const { eyebrow, title, description, primaryAction, secondaryAction, image } =
     />
   </div>
   <div
-    class="absolute inset-0 bg-linear-to-t from-brand-900/85 via-brand-800/35 to-transparent"
+    class="absolute inset-0 bg-linear-to-t from-brand-900/90 via-brand-800/40 to-brand-900/10"
+  >
+  </div>
+  <!-- Subtle grain texture overlay -->
+  <div
+    class="absolute inset-0 opacity-[0.03] mix-blend-overlay pointer-events-none"
+    style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 256 256%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%224%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/%3E%3C/svg%3E'); background-repeat: repeat; background-size: 256px 256px;"
   >
   </div>
   <div
-    class="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 sm:pb-20 lg:pb-28 lg:px-8"
+    class="relative z-10 mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 sm:pb-24 lg:pb-32 lg:px-8"
   >
-    <div class="max-w-2xl hero-content">
-      <TypographyP
-        class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-brand-200 sm:text-sm"
-      >
-        <span class="size-1.5 rounded-full bg-amber-400" aria-hidden="true"
-        ></span>
-        {eyebrow}
-      </TypographyP>
-      <TypographyH1
-        class="mt-4 text-4xl leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl"
-      >
-        {title}
-      </TypographyH1>
-      <TypographyP
-        class="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg"
-      >
-        {description}
-      </TypographyP>
-      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+    <div class="max-w-3xl">
+      <div class="hero-eyebrow">
+        <span
+          class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-100 ring-1 ring-white/15 backdrop-blur-sm"
+        >
+          <span class="size-1.5 rounded-full bg-warm-400" aria-hidden="true"
+          ></span>
+          {eyebrow}
+        </span>
+      </div>
+      <div class="hero-content">
+        <TypographyH1
+          class="mt-6 text-4xl leading-[1.05] tracking-[-0.025em] text-white sm:text-5xl lg:text-6xl xl:text-7xl"
+          style="font-family: var(--font-heading);"
+        >
+          {title}
+        </TypographyH1>
+      </div>
+      <div class="hero-desc">
+        <TypographyP
+          class="mt-5 max-w-xl text-base leading-7 text-white/70 sm:text-lg sm:leading-8"
+        >
+          {description}
+        </TypographyP>
+      </div>
+      <div class="hero-actions mt-8 flex flex-col gap-3 sm:flex-row">
         <a
           href={primaryAction.href}
-          class="inline-flex items-center justify-center rounded-lg bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
+          class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-brand-800 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:shadow-lg hover:shadow-white/10 active:scale-[0.97]"
         >
           {primaryAction.label}
+          <span
+            class="flex h-7 w-7 items-center justify-center rounded-full bg-brand-50 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:bg-brand-100"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M7 17L17 7"></path><path d="M7 7h10v10"></path>
+            </svg>
+          </span>
         </a>
         <a
           href={secondaryAction.href}
-          class="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
+          class="group inline-flex items-center justify-center gap-2.5 rounded-full px-7 py-3.5 text-sm font-semibold text-white ring-1 ring-white/25 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:ring-white/40 hover:bg-white/10 active:scale-[0.97]"
         >
           {secondaryAction.label}
+          <span
+            class="flex h-7 w-7 items-center justify-center rounded-full bg-white/10 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:bg-white/15"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </span>
         </a>
       </div>
     </div>
   </div>
   <div
-    class="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 scroll-indicator"
+    class="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 scroll-indicator"
     aria-hidden="true"
   >
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="size-5 text-white/40"
-    >
-      <path d="M6 9l6 6 6-6"></path>
-    </svg>
+    <div class="flex flex-col items-center gap-2">
+      <span class="text-[10px] uppercase tracking-[0.2em] text-white/30"
+        >Scroll</span
+      >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="text-white/30"
+      >
+        <path d="M6 9l6 6 6-6"></path>
+      </svg>
+    </div>
   </div>
 </section>
 

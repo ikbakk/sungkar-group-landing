@@ -43,7 +43,7 @@ const {
 const uiStrings = t(locale);
 ---
 
-<Section class={cn("", className)}>
+<Section class={cn("section-padding", className)}>
   <SectionContainer class="gap-12">
     <div
       class={cn(
@@ -53,16 +53,12 @@ const uiStrings = t(locale);
       )}
     >
       {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
-      <TypographyH2
-        class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl"
-      >
+      <TypographyH2 class="section-title">
         {title}
       </TypographyH2>
       {
         description && (
-          <p class="text-muted-foreground mt-4 text-base leading-relaxed text-balance">
-            {description}
-          </p>
+          <p class="section-description text-balance">{description}</p>
         )
       }
       {
@@ -84,31 +80,42 @@ const uiStrings = t(locale);
         )
       }
     </div>
-    <div
-      class="ring-foreground/10 bg-border grid gap-px overflow-hidden rounded-xl ring-1 ring-inset sm:grid-cols-2 lg:grid-cols-4"
-    >
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
       {
         services.map((service) => (
-          <div class="bg-background group/service hover:bg-accent/30 relative flex flex-col gap-4 p-7 transition-colors">
-            <div class="bg-primary/10 text-primary ring-primary/15 flex size-10 items-center justify-center rounded-lg ring-1 transition-transform ring-inset group-hover/service:scale-105">
+          <div class="section-card group/service flex flex-col gap-4 p-7">
+            <div class="bg-brand-50 text-brand-600 ring-brand-100 flex size-11 items-center justify-center rounded-2xl ring-1 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover/service:scale-105">
               <Icon name={service.icon ?? "layout-grid"} class="size-5" />
             </div>
-            <TypographyH3 class="text-base tracking-tight">
+            <TypographyH3
+              class="text-base font-semibold tracking-tight"
+              style="font-family: var(--font-heading);"
+            >
               {service.title}
             </TypographyH3>
-            <p class="text-muted-foreground text-sm leading-relaxed">
+            <p class="text-text-muted text-sm leading-relaxed">
               {service.description}
             </p>
             {service.href && (
               <a
                 href={service.href}
-                class="text-primary mt-auto inline-flex items-center gap-1.5 text-sm font-medium"
+                class="text-brand-600 mt-auto inline-flex items-center gap-1.5 text-sm font-medium transition-all duration-300 hover:gap-2.5"
               >
                 {linkText || uiStrings.common.learnMore}
-                <Icon
-                  name="arrow-right"
-                  class="size-3.5 transition-transform group-hover/service:translate-x-1"
-                />
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="transition-transform duration-300 group-hover/service:translate-x-0.5"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
               </a>
             )}
           </div>

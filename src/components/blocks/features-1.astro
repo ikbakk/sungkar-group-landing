@@ -36,10 +36,10 @@ const {
 } = Astro.props;
 ---
 
-<Section class={cn("", className)}>
+<Section class={cn("section-padding", className)}>
   <SectionContainer
     class={cn(
-      "gap-6",
+      "gap-8",
       alignment === "left" && "items-start text-left",
       alignment === "right" && "items-end text-right",
       alignment === "center" && "items-center text-center",
@@ -47,20 +47,16 @@ const {
   >
     <div
       class={cn(
-        "flex flex-col gap-4",
-        alignment === "center" && "items-center max-w-2xl",
+        "flex flex-col gap-4 max-w-2xl",
+        alignment === "center" && "items-center",
+        alignment === "right" && "items-end",
       )}
     >
       {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
-      <TypographyH2 class="text-4xl leading-tight tracking-tight sm:text-5xl">
+      <TypographyH2 class="section-title">
         {title}
       </TypographyH2>
-      <p
-        class={cn(
-          "text-muted-foreground text-lg leading-relaxed text-balance line-clamp-2",
-          alignment === "center" && "max-w-2xl",
-        )}
-      >
+      <p class="section-description text-balance">
         {description}
       </p>
     </div>
@@ -89,31 +85,47 @@ const {
     }
   </SectionContainer>
   <SectionContainer>
-    <div class="grid gap-6 sm:grid-cols-2">
+    <div class="grid gap-5 sm:grid-cols-2">
       {
         features.map((feature) => (
-          <div class="group/feature hover:bg-muted/40 flex flex-col gap-4 rounded-xl border p-6 transition-colors">
-            <div class="bg-primary/10 text-primary flex size-10 items-center justify-center rounded-lg">
+          <a
+            href={feature.href}
+            class="group/feature section-card-interactive flex flex-col gap-4 p-7"
+          >
+            <div class="bg-brand-50 text-brand-600 flex size-11 items-center justify-center rounded-2xl ring-1 ring-brand-100">
               <Icon name={feature.icon} class="size-5" />
             </div>
-            <div class="flex flex-col gap-1.5">
-              <TypographyH3 class="text-foreground text-base">
+            <div class="flex flex-col gap-2">
+              <TypographyH3
+                class="text-foreground text-lg font-semibold"
+                style="font-family: var(--font-heading);"
+              >
                 {feature.title}
               </TypographyH3>
-              <p class="text-muted-foreground text-sm leading-relaxed">
+              <p class="text-text-muted text-sm leading-relaxed">
                 {feature.description}
               </p>
             </div>
             {feature.href && feature.linkText && (
-              <a
-                href={feature.href}
-                class="text-primary mt-auto inline-flex items-center gap-1 text-sm font-medium hover:underline"
-              >
+              <span class="mt-auto inline-flex items-center gap-1.5 text-sm font-medium text-brand-600 transition-all duration-300 group-hover/feature:gap-2.5">
                 {feature.linkText}
-                <Icon name="arrow-right" class="size-3.5" />
-              </a>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="transition-transform duration-300 group-hover/feature:translate-x-0.5"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </span>
             )}
-          </div>
+          </a>
         ))
       }
     </div>
