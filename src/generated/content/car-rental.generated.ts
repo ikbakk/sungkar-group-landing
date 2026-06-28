@@ -367,7 +367,7 @@ export const carRentalData = [
       "Executive Transport"
     ],
     "description": "Sewa Toyota Alphard Lombok dengan fasilitas premium dan kabin mewah. Pilihan terbaik untuk tamu VIP, pejabat, dan kebutuhan transportasi eksklusif.",
-    "imageTop": "vehicles/toyota-alphard.webp",
+    "imageTop": "vehicles/toyota-alphard-card.webp",
     "imageBottom": "vehicles/toyota-alphard.webp"
   },
   {
@@ -390,7 +390,7 @@ export const carRentalData = [
       "Executive Transport"
     ],
     "description": "Rent a Toyota Alphard in Lombok with premium facilities and a luxurious cabin. The best choice for VIP guests, officials, and exclusive transportation needs.",
-    "imageTop": "vehicles/toyota-alphard.webp",
+    "imageTop": "vehicles/toyota-alphard-card.webp",
     "imageBottom": "vehicles/toyota-alphard.webp"
   },
   {
@@ -413,7 +413,7 @@ export const carRentalData = [
       "نقل تنفيذي"
     ],
     "description": "استأجر تويوتا ألفارد في لومبوك بمرافق متميزة ومقصورة فاخرة. الخيار الأفضل للضيوف المميزين، المسؤولين، واحتياجات النقل الحصرية.",
-    "imageTop": "vehicles/toyota-alphard.webp",
+    "imageTop": "vehicles/toyota-alphard-card.webp",
     "imageBottom": "vehicles/toyota-alphard.webp"
   },
   {
@@ -436,7 +436,7 @@ export const carRentalData = [
       "Executive Transport"
     ],
     "description": "Sewa Toyota Alphard di Lombok dengan kemudahan premium dan kabin mewah. Pilihan terbaik untuk tetamu VIP, pegawai, dan keperluan pengangkutan eksklusif.",
-    "imageTop": "vehicles/toyota-alphard.webp",
+    "imageTop": "vehicles/toyota-alphard-card.webp",
     "imageBottom": "vehicles/toyota-alphard.webp"
   },
   {
@@ -459,7 +459,7 @@ export const carRentalData = [
       "行政接送"
     ],
     "description": "在龙目岛租用丰田Alphard，配备高级设施和豪华车厢。VIP客人、官员和专属交通需求的最佳选择。",
-    "imageTop": "vehicles/toyota-alphard.webp",
+    "imageTop": "vehicles/toyota-alphard-card.webp",
     "imageBottom": "vehicles/toyota-alphard.webp"
   },
   {
@@ -482,8 +482,8 @@ export const carRentalData = [
       "Perjalanan harian"
     ],
     "description": "Sewa Toyota Avanza Lombok dengan driver profesional. Cocok untuk wisata keluarga, perjalanan bisnis, city tour, dan transfer bandara dengan kapasitas hingga 7 penumpang.",
-    "imageTop": "vehicles/toyota-avanza.webp",
-    "imageBottom": "vehicles/toyota-avanza-side.webp"
+    "imageTop": "vehicles/toyota-avanza-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-avanza-lombok",
@@ -505,8 +505,8 @@ export const carRentalData = [
       "Perjalanan harian"
     ],
     "description": "Rent a Toyota Avanza in Lombok with a professional driver. Suitable for family tours, business trips, city tours, and airport transfers with capacity for up to 7 passengers.",
-    "imageTop": "vehicles/toyota-avanza.webp",
-    "imageBottom": "vehicles/toyota-avanza-side.webp"
+    "imageTop": "vehicles/toyota-avanza-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-avanza-lombok",
@@ -528,8 +528,8 @@ export const carRentalData = [
       "سفر يومي"
     ],
     "description": "استأجر تويوتا أڤانزا في لومبوك مع سائق محترف. مناسب للجولات العائلية، رحلات العمل، جولات المدينة، ونقل المطار بسعة تصل إلى 7 ركاب.",
-    "imageTop": "vehicles/toyota-avanza.webp",
-    "imageBottom": "vehicles/toyota-avanza-side.webp"
+    "imageTop": "vehicles/toyota-avanza-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-avanza-lombok",
@@ -551,8 +551,8 @@ export const carRentalData = [
       "Perjalanan harian"
     ],
     "description": "Sewa Toyota Avanza di Lombok dengan pemandu profesional. Sesuai untuk pelancongan keluarga, perjalanan perniagaan, city tour, dan pertukaran lapangan terbang dengan kapasiti sehingga 7 penumpang.",
-    "imageTop": "vehicles/toyota-avanza.webp",
-    "imageBottom": "vehicles/toyota-avanza-side.webp"
+    "imageTop": "vehicles/toyota-avanza-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-avanza-lombok",
@@ -574,8 +574,8 @@ export const carRentalData = [
       "一日游"
     ],
     "description": "在龙目岛租用丰田Avanza，配备专业司机。适合家庭旅游、商务旅行、城市观光和机场接送，最多可容纳7名乘客。",
-    "imageTop": "vehicles/toyota-avanza.webp",
-    "imageBottom": "vehicles/toyota-avanza-side.webp"
+    "imageTop": "vehicles/toyota-avanza-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-fortuner-gr-lombok",
@@ -597,8 +597,8 @@ export const carRentalData = [
       "Premium Vacation"
     ],
     "description": "Sewa Toyota Fortuner GR Lombok dengan tampilan mewah dan kenyamanan premium. Cocok untuk tamu VIP, perjalanan bisnis, maupun wisata eksklusif.",
-    "imageTop": "vehicles/toyota-fortuner-gr.webp",
-    "imageBottom": "vehicles/toyota-fortuner-gr.webp"
+    "imageTop": "vehicles/toyota-fortuner-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-fortuner-gr-lombok",
@@ -620,8 +620,8 @@ export const carRentalData = [
       "Premium Vacation"
     ],
     "description": "Rent a Toyota Fortuner GR in Lombok with a luxurious appearance and premium comfort. Suitable for VIP guests, business trips, and exclusive tours.",
-    "imageTop": "vehicles/toyota-fortuner-gr.webp",
-    "imageBottom": "vehicles/toyota-fortuner-gr.webp"
+    "imageTop": "vehicles/toyota-fortuner-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-fortuner-gr-lombok",
@@ -643,8 +643,8 @@ export const carRentalData = [
       "عطلة فاخرة"
     ],
     "description": "استأجر تويوتا فورتشنر GR في لومبوك بمظهر فاخر وراحة متميزة. مناسب للضيوف المميزين، رحلات العمل، والجولات الحصرية.",
-    "imageTop": "vehicles/toyota-fortuner-gr.webp",
-    "imageBottom": "vehicles/toyota-fortuner-gr.webp"
+    "imageTop": "vehicles/toyota-fortuner-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-fortuner-gr-lombok",
@@ -666,8 +666,8 @@ export const carRentalData = [
       "Premium Vacation"
     ],
     "description": "Sewa Toyota Fortuner GR di Lombok dengan penampilan mewah dan kesenangan premium. Sesuai untuk tetamu VIP, perjalanan perniagaan, dan pelancongan eksklusif.",
-    "imageTop": "vehicles/toyota-fortuner-gr.webp",
-    "imageBottom": "vehicles/toyota-fortuner-gr.webp"
+    "imageTop": "vehicles/toyota-fortuner-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-fortuner-gr-lombok",
@@ -689,8 +689,8 @@ export const carRentalData = [
       "高端度假"
     ],
     "description": "在龙目岛租用丰田Fortuner GR，外观豪华，舒适高端。适合VIP客人、商务差旅和专属旅行。",
-    "imageTop": "vehicles/toyota-fortuner-gr.webp",
-    "imageBottom": "vehicles/toyota-fortuner-gr.webp"
+    "imageTop": "vehicles/toyota-fortuner-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-hiace-commuter-lombok",
@@ -712,8 +712,8 @@ export const carRentalData = [
       "Corporate Trip"
     ],
     "description": "Sewa Toyota Hiace Commuter Lombok untuk rombongan wisata, gathering perusahaan, dan perjalanan grup dengan kapasitas hingga 14 penumpang.",
-    "imageTop": "vehicles/toyota-hiace-commuter.webp",
-    "imageBottom": "vehicles/rental.webp"
+    "imageTop": "vehicles/toyota-hiace-commuter-card.webp",
+    "imageBottom": "vehicles/toyota-hiace-commuter.webp"
   },
   {
     "slug": "toyota-hiace-commuter-lombok",
@@ -735,8 +735,8 @@ export const carRentalData = [
       "Corporate Trip"
     ],
     "description": "Rent a Toyota Hiace Commuter in Lombok for tour groups, company gatherings, and group travel with capacity for up to 14 passengers.",
-    "imageTop": "vehicles/toyota-hiace-commuter.webp",
-    "imageBottom": "vehicles/rental.webp"
+    "imageTop": "vehicles/toyota-hiace-commuter-card.webp",
+    "imageBottom": "vehicles/toyota-hiace-commuter.webp"
   },
   {
     "slug": "toyota-hiace-commuter-lombok",
@@ -758,8 +758,8 @@ export const carRentalData = [
       "رحلة شركات"
     ],
     "description": "استأجر تويوتا هيايس كوميوتر في لومبوك للجولات الجماعية، تجمعات الشركات، والسفر الجماعي بسعة تصل إلى 14 راكباً.",
-    "imageTop": "vehicles/toyota-hiace-commuter.webp",
-    "imageBottom": "vehicles/rental.webp"
+    "imageTop": "vehicles/toyota-hiace-commuter-card.webp",
+    "imageBottom": "vehicles/toyota-hiace-commuter.webp"
   },
   {
     "slug": "toyota-hiace-commuter-lombok",
@@ -781,8 +781,8 @@ export const carRentalData = [
       "Corporate Trip"
     ],
     "description": "Sewa Toyota Hiace Commuter di Lombok untuk kumpulan pelancongan, berkumpul syarikat, dan perjalanan kumpulan dengan kapasiti sehingga 14 penumpang.",
-    "imageTop": "vehicles/toyota-hiace-commuter.webp",
-    "imageBottom": "vehicles/rental.webp"
+    "imageTop": "vehicles/toyota-hiace-commuter-card.webp",
+    "imageBottom": "vehicles/toyota-hiace-commuter.webp"
   },
   {
     "slug": "toyota-hiace-commuter-lombok",
@@ -804,8 +804,8 @@ export const carRentalData = [
       "企业出行"
     ],
     "description": "在龙目岛租用丰田Hiace Commuter，适合旅游团、公司聚会和团体出行，最多可容纳14名乘客。",
-    "imageTop": "vehicles/toyota-hiace-commuter.webp",
-    "imageBottom": "vehicles/rental.webp"
+    "imageTop": "vehicles/toyota-hiace-commuter-card.webp",
+    "imageBottom": "vehicles/toyota-hiace-commuter.webp"
   },
   {
     "slug": "toyota-hiace-premio-lombok",
@@ -827,8 +827,8 @@ export const carRentalData = [
       "Family Vacation"
     ],
     "description": "Sewa Toyota Hiace Premio Lombok dengan interior lebih nyaman dan modern. Cocok untuk perjalanan rombongan yang mengutamakan kenyamanan.",
-    "imageTop": "vehicles/toyota-hiace-premio.webp",
-    "imageBottom": "vehicles/toyota-hiace-commuter.webp"
+    "imageTop": "vehicles/toyota-hiace-premio-card.webp",
+    "imageBottom": "vehicles/toyota-hiace-premio.webp"
   },
   {
     "slug": "toyota-hiace-premio-lombok",
@@ -850,8 +850,8 @@ export const carRentalData = [
       "Family Vacation"
     ],
     "description": "Rent a Toyota Hiace Premio in Lombok with a more comfortable and modern interior. Suitable for group trips that prioritize comfort.",
-    "imageTop": "vehicles/toyota-hiace-premio.webp",
-    "imageBottom": "vehicles/toyota-hiace-commuter.webp"
+    "imageTop": "vehicles/toyota-hiace-premio-card.webp",
+    "imageBottom": "vehicles/toyota-hiace-premio.webp"
   },
   {
     "slug": "toyota-hiace-premio-lombok",
@@ -873,8 +873,8 @@ export const carRentalData = [
       "عطلة عائلية"
     ],
     "description": "استأجر تويوتا هيايس بريميو في لومبوك بتصميم داخلي أكثر راحة وحداثة. مناسب للرحلات الجماعية التي تعطي الأولوية للراحة.",
-    "imageTop": "vehicles/toyota-hiace-premio.webp",
-    "imageBottom": "vehicles/toyota-hiace-commuter.webp"
+    "imageTop": "vehicles/toyota-hiace-premio-card.webp",
+    "imageBottom": "vehicles/toyota-hiace-premio.webp"
   },
   {
     "slug": "toyota-hiace-premio-lombok",
@@ -896,8 +896,8 @@ export const carRentalData = [
       "Family Vacation"
     ],
     "description": "Sewa Toyota Hiace Premio di Lombok dengan interior yang lebih selesa dan moden. Sesuai untuk perjalanan kumpulan yang mengutamakan kesenangan.",
-    "imageTop": "vehicles/toyota-hiace-premio.webp",
-    "imageBottom": "vehicles/toyota-hiace-commuter.webp"
+    "imageTop": "vehicles/toyota-hiace-premio-card.webp",
+    "imageBottom": "vehicles/toyota-hiace-premio.webp"
   },
   {
     "slug": "toyota-hiace-premio-lombok",
@@ -919,8 +919,8 @@ export const carRentalData = [
       "家庭度假"
     ],
     "description": "在龙目岛租用丰田Hiace Premio，内饰更舒适现代。适合注重舒适度的团体出行。",
-    "imageTop": "vehicles/toyota-hiace-premio.webp",
-    "imageBottom": "vehicles/toyota-hiace-commuter.webp"
+    "imageTop": "vehicles/toyota-hiace-premio-card.webp",
+    "imageBottom": "vehicles/toyota-hiace-premio.webp"
   },
   {
     "slug": "toyota-innova-reborn-lombok",
@@ -942,8 +942,8 @@ export const carRentalData = [
       "Wisata premium"
     ],
     "description": "Sewa Toyota Innova Reborn di Lombok dengan kabin luas dan nyaman. Ideal untuk perjalanan keluarga, rombongan kecil, maupun wisata premium di Pulau Lombok.",
-    "imageTop": "vehicles/toyota-innova-reborn.webp",
-    "imageBottom": "vehicles/toyota-innova-reborn-diesel.webp"
+    "imageTop": "vehicles/toyota-innova-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-innova-reborn-lombok",
@@ -965,8 +965,8 @@ export const carRentalData = [
       "Wisata premium"
     ],
     "description": "Rent a Toyota Innova Reborn in Lombok with a spacious and comfortable cabin. Ideal for family trips, small groups, and premium tours on Lombok Island.",
-    "imageTop": "vehicles/toyota-innova-reborn.webp",
-    "imageBottom": "vehicles/toyota-innova-reborn-diesel.webp"
+    "imageTop": "vehicles/toyota-innova-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-innova-reborn-lombok",
@@ -988,8 +988,8 @@ export const carRentalData = [
       "سياحة فاخرة"
     ],
     "description": "استأجر تويوتا إنوفا ريبورن في لومبوك مع مقصورة واسعة ومريحة. مثالي للرحلات العائلية، المجموعات الصغيرة، والجولات الفاخرة في جزيرة لومبوك.",
-    "imageTop": "vehicles/toyota-innova-reborn.webp",
-    "imageBottom": "vehicles/toyota-innova-reborn-diesel.webp"
+    "imageTop": "vehicles/toyota-innova-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-innova-reborn-lombok",
@@ -1011,8 +1011,8 @@ export const carRentalData = [
       "Pelancongan premium"
     ],
     "description": "Sewa Toyota Innova Reborn di Lombok dengan kabin yang luas dan selesa. Ideal untuk perjalanan keluarga, kumpulan kecil, dan pelancongan premium di Pulau Lombok.",
-    "imageTop": "vehicles/toyota-innova-reborn.webp",
-    "imageBottom": "vehicles/toyota-innova-reborn-diesel.webp"
+    "imageTop": "vehicles/toyota-innova-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-innova-reborn-lombok",
@@ -1034,8 +1034,8 @@ export const carRentalData = [
       "高端旅行"
     ],
     "description": "在龙目岛租用丰田Innova Reborn，车厢宽敞舒适。适合家庭出游、小团体和龙目岛高端旅行。",
-    "imageTop": "vehicles/toyota-innova-reborn.webp",
-    "imageBottom": "vehicles/toyota-innova-reborn-diesel.webp"
+    "imageTop": "vehicles/toyota-innova-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-innova-zenix-lombok",
@@ -1057,8 +1057,8 @@ export const carRentalData = [
       "Premium Family Tour"
     ],
     "description": "Sewa Toyota Innova Zenix Lombok dengan kenyamanan premium, interior modern, dan performa terbaik untuk perjalanan wisata maupun bisnis.",
-    "imageTop": "vehicles/toyota-innova-zenix.webp",
-    "imageBottom": "vehicles/toyota-innova-zenix.webp"
+    "imageTop": "vehicles/toyota-innova-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-innova-zenix-lombok",
@@ -1080,8 +1080,8 @@ export const carRentalData = [
       "Premium Family Tour"
     ],
     "description": "Rent a Toyota Innova Zenix in Lombok with premium comfort, modern interior, and top performance for both leisure and business travel.",
-    "imageTop": "vehicles/toyota-innova-zenix.webp",
-    "imageBottom": "vehicles/toyota-innova-zenix.webp"
+    "imageTop": "vehicles/toyota-innova-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-innova-zenix-lombok",
@@ -1103,8 +1103,8 @@ export const carRentalData = [
       "جولة عائلية فاخرة"
     ],
     "description": "استأجر تويوتا إنوفا زينيكس في لومبوك مع راحة فاخرة، مقصورة حديثة، وأداء عالٍ للسفر الترفيهي والعملية.",
-    "imageTop": "vehicles/toyota-innova-zenix.webp",
-    "imageBottom": "vehicles/toyota-innova-zenix.webp"
+    "imageTop": "vehicles/toyota-innova-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-innova-zenix-lombok",
@@ -1126,8 +1126,8 @@ export const carRentalData = [
       "Premium Family Tour"
     ],
     "description": "Sewa Toyota Innova Zenix di Lombok dengan kesenangan premium, interior moden, dan prestasi terbaik untuk pelancongan rehat dan perniagaan.",
-    "imageTop": "vehicles/toyota-innova-zenix.webp",
-    "imageBottom": "vehicles/toyota-innova-zenix.webp"
+    "imageTop": "vehicles/toyota-innova-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   },
   {
     "slug": "toyota-innova-zenix-lombok",
@@ -1149,7 +1149,7 @@ export const carRentalData = [
       "高级家庭游"
     ],
     "description": "在龙目岛租用丰田Innova Zenix，享受高级舒适、现代内饰和卓越性能，适合休闲和商务出行。",
-    "imageTop": "vehicles/toyota-innova-zenix.webp",
-    "imageBottom": "vehicles/toyota-innova-zenix.webp"
+    "imageTop": "vehicles/toyota-innova-card.webp",
+    "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp"
   }
 ];

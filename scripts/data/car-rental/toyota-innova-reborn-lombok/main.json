@@ -4,7 +4,7 @@
   "pricePerDay": "Rp 800.000",
   "seats": 7,
   "transmission": "Manual",
-  "imageTop": "vehicles/toyota-innova-reborn.webp",
-  "imageBottom": "vehicles/toyota-innova-reborn-diesel.webp",
+  "imageTop": "vehicles/toyota-innova-card.webp",
+  "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp",
   "_type": "carRental"
 }

@@ -4,7 +4,7 @@
   "pricePerDay": "Rp 1.500.000",
   "seats": 7,
   "transmission": "Automatic",
-  "imageTop": "vehicles/toyota-innova-zenix.webp",
-  "imageBottom": "vehicles/toyota-innova-zenix.webp",
+  "imageTop": "vehicles/toyota-innova-card.webp",
+  "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp",
   "_type": "carRental"
 }

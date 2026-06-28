@@ -4,7 +4,7 @@
   "pricePerDay": "Rp 1.500.000",
   "seats": 12,
   "transmission": "Manual",
-  "imageTop": "vehicles/toyota-hiace-premio.webp",
-  "imageBottom": "vehicles/toyota-hiace-commuter.webp",
+  "imageTop": "vehicles/toyota-hiace-premio-card.webp",
+  "imageBottom": "vehicles/toyota-hiace-premio.webp",
   "_type": "carRental"
 }

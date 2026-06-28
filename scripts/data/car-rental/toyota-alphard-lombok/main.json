@@ -4,7 +4,7 @@
   "pricePerDay": "Rp 3.500.000",
   "seats": 6,
   "transmission": "Automatic",
-  "imageTop": "vehicles/toyota-alphard.webp",
+  "imageTop": "vehicles/toyota-alphard-card.webp",
   "imageBottom": "vehicles/toyota-alphard.webp",
   "_type": "carRental"
 }

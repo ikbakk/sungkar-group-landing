@@ -4,7 +4,7 @@
   "pricePerDay": "Rp 1.500.000",
   "seats": 7,
   "transmission": "Automatic",
-  "imageTop": "vehicles/toyota-fortuner-gr.webp",
-  "imageBottom": "vehicles/toyota-fortuner-gr.webp",
+  "imageTop": "vehicles/toyota-fortuner-card.webp",
+  "imageBottom": "vehicles/toyota-avanza-fortuner-innova-group.webp",
   "_type": "carRental"
 }
