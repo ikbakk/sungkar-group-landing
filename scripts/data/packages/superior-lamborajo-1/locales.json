@@ -129,6 +129,157 @@
       "Pembatalan oleh tamu tidak dapat dikembalikan, tetapi pemesanan dapat dialihkan kepada orang lain.",
       "Pembatalan akibat larangan otoritas pelabuhan, pemerintah, cuaca, keadaan kahar, bencana alam, terorisme, ketidakstabilan politik, atau kejadian eksternal lain dapat dijadwalkan ulang atau dikembalikan penuh.",
       "Apabila operator kapal membatalkan perjalanan karena alasan yang tidak dapat dihindari, operator akan menyediakan kapal pengganti dengan harga atau kelas yang sama atau memberikan pengembalian dana penuh."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "26 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "5 Meter"
+      },
+      {
+        "label": "Kecepatan Jelajah",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasitas Air Tawar",
+        "value": "8000 Liter"
+      },
+      {
+        "label": "Kapasitas Bahan Bakar",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Mesin",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "Generator",
+        "value": "PS120-30 kVA, PS120-22 kVA"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+      },
+      {
+        "label": "Speedboat",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin dengan AC, 2 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "Jumlah Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin 1 (Main Deck)",
+        "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Share Cabin 2 (Main Deck)",
+        "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Share Cabin 3 (Main Deck)",
+        "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/841-sve04615-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/842-sve04618-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean (Main Deck)",
+        "description": "Queen Bed dan 2 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/844-sve04627-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/845-sve04630-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/846-sve04633-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 1 (Upper Deck)",
+        "description": "Queen Bed dan 2 extra single bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/848-sve04710-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/849-sve08662-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/850-sve08665-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Upper Deck)",
+        "description": "Queen Bed dan 2 extra single bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/857-sve08493-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/858-sve08496-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/859-sve08499-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "en": {
@@ -261,6 +412,157 @@
       "Guest cancellations are non-refundable, but the booking may be transferred to another person.",
       "Cancellations caused by harbor authority or government restrictions, weather, force majeure, natural disasters, terrorism, political instability, or other external events may be rescheduled or fully refunded.",
       "If the boat operator cancels for unavoidable reasons, a replacement vessel of the same price or class will be provided, or a full refund will be issued."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Boat Length",
+        "value": "26 Meter"
+      },
+      {
+        "label": "Boat Width",
+        "value": "5 Meter"
+      },
+      {
+        "label": "Cruising Speed",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Fresh Water Capacity",
+        "value": "8000 Liter"
+      },
+      {
+        "label": "Fuel Capacity",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Engine",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "Generator",
+        "value": "PS120-30 kVA, PS120-22 kVA"
+      },
+      {
+        "label": "Navigation",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Safety Equipment",
+        "value": "Life Raft, Life Jackets, Ring Buoys, Fire Extinguisher, First Aid Kit"
+      },
+      {
+        "label": "Speedboat",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Cabins",
+        "value": "6 Kabin dengan AC, 2 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "Cabins",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin 1 (Main Deck)",
+        "description": "4 single bunk bed, private bathroom, AC, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Share Cabin 2 (Main Deck)",
+        "description": "4 single bunk bed, private bathroom, AC, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Share Cabin 3 (Main Deck)",
+        "description": "4 single bunk bed, private bathroom, AC, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/841-sve04615-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/842-sve04618-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean (Main Deck)",
+        "description": "Queen Bed and 2 single bunk bed, private bathroom, AC, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/844-sve04627-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/845-sve04630-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/846-sve04633-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 1 (Upper Deck)",
+        "description": "Queen Bed and 2 extra single bed, private bathroom, AC, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/848-sve04710-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/849-sve08662-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/850-sve08665-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Upper Deck)",
+        "description": "Queen Bed and 2 extra single bed, private bathroom, AC, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/857-sve08493-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/858-sve08496-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/859-sve08499-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ms": {
@@ -393,6 +695,157 @@
       "Pembatalan oleh tetamu tidak akan dikembalikan, tetapi tempahan boleh dipindahkan kepada orang lain.",
       "Pembatalan akibat larangan pihak pelabuhan atau kerajaan, cuaca, keadaan luar jangka, bencana alam, keganasan, ketidakstabilan politik, atau kejadian luar lain boleh dijadualkan semula atau dikembalikan sepenuhnya.",
       "Jika operator kapal membatalkan perjalanan atas sebab yang tidak dapat dielakkan, kapal gantian dengan harga atau kelas yang sama akan disediakan atau bayaran balik penuh akan diberikan."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "26 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "5 Meter"
+      },
+      {
+        "label": "Kelajuan Pelayaran",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasiti Air Tawar",
+        "value": "8000 Liter"
+      },
+      {
+        "label": "Kapasiti Bahan Api",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Enjin",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "Generator",
+        "value": "PS120-30 kVA, PS120-22 kVA"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Keselamatan, Pelampung Cincin, Alat Pemadam Kebakaran, Peti P3K"
+      },
+      {
+        "label": "Bot Laju",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin dengan AC, 2 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "Bilangan Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin 1 (Main Deck)",
+        "description": "4 single bunk bed, bilik mandi peribadi, AC, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Share Cabin 2 (Main Deck)",
+        "description": "4 single bunk bed, bilik mandi peribadi, AC, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Share Cabin 3 (Main Deck)",
+        "description": "4 single bunk bed, bilik mandi peribadi, AC, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/841-sve04615-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/842-sve04618-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean (Main Deck)",
+        "description": "Queen Bed dan 2 single bunk bed, bilik mandi peribadi, AC, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/844-sve04627-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/845-sve04630-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/846-sve04633-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 1 (Upper Deck)",
+        "description": "Queen Bed dan 2 extra single bed, bilik mandi peribadi, AC, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/848-sve04710-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/849-sve08662-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/850-sve08665-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Upper Deck)",
+        "description": "Queen Bed dan 2 extra single bed, bilik mandi peribadi, AC, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/857-sve08493-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/858-sve08496-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/859-sve08499-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ar": {
@@ -525,13 +978,169 @@
       "إلغاء الضيف غير قابل للاسترداد، ولكن يمكن نقل الحجز إلى شخص آخر.",
       "يمكن إعادة جدولة الرحلة أو استرداد قيمتها كاملة عند الإلغاء بسبب قيود سلطات الميناء أو الحكومة أو الطقس أو القوة القاهرة أو الكوارث الطبيعية أو الإرهاب أو عدم الاستقرار السياسي أو الأحداث الخارجية الأخرى.",
       "إذا ألغى مشغل السفينة الرحلة لأسباب لا يمكن تجنبها، فسيتم توفير سفينة بديلة بالسعر أو الفئة نفسها أو إصدار استرداد كامل."
+    ],
+    "boatSpecs": [
+      {
+        "label": "طول القارب",
+        "value": "26 Meter"
+      },
+      {
+        "label": "عرض القارب",
+        "value": "5 Meter"
+      },
+      {
+        "label": "سرعة الإبحار",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "سعة المياه العذبة",
+        "value": "8000 Liter"
+      },
+      {
+        "label": "سعة الوقود",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "محرك",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "مولد",
+        "value": "PS120-30 kVA, PS120-22 kVA"
+      },
+      {
+        "label": "ملاحة",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "راديو",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "معدات السلامة",
+        "value": "طوف نجاة، سترات النجاة، عوامات دائرية، طفاية حريق، عدة إسعافات أولية"
+      },
+      {
+        "label": "زورق سريع",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "مقصورات",
+        "value": "6 Kabin dengan AC, 2 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "عدد المقصورات",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin 1 (Main Deck)",
+        "description": "4 single bunk bed, حمام خاص, AC, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Share Cabin 2 (Main Deck)",
+        "description": "4 single bunk bed, حمام خاص, AC, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Share Cabin 3 (Main Deck)",
+        "description": "4 single bunk bed, حمام خاص, AC, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/841-sve04615-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/842-sve04618-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean (Main Deck)",
+        "description": "Queen Bed و 2 single bunk bed, حمام خاص, AC, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/844-sve04627-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/845-sve04630-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/846-sve04633-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 1 (Upper Deck)",
+        "description": "Queen Bed و 2 extra single bed, حمام خاص, AC, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/848-sve04710-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/849-sve08662-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/850-sve08665-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Upper Deck)",
+        "description": "Queen Bed و 2 extra single bed, حمام خاص, AC, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/857-sve08493-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/858-sve08496-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/859-sve08499-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "zh": {
     "title": "Lamborajo 1 - 高级菲尼西帆船（私人包船）",
     "collectionTitle": "Private Trip Superior Phinisi",
     "category": "拉布安巴焦高级帆船套餐（私人）",
-    "durationOptions": ["1天（全天）", "2天1夜", "3天2夜", "4天3夜"],
+    "durationOptions": [
+      "1天（全天）",
+      "2天1夜",
+      "3天2夜",
+      "4天3夜"
+    ],
     "summary": "乘坐Lamborajo 1在拉布安巴焦和科莫多国家公园体验私人包船。该高级菲尼西帆船最多可容纳24位客人，设有6间空调客舱。",
     "highlights": [
       "高级菲尼西帆船最多可容纳24位客人",
@@ -652,6 +1261,157 @@
       "客人取消预订不予退款，但可将预订转让给其他人。",
       "因港口管理部门或政府限制、天气、不可抗力、自然灾害、恐怖主义、政治不稳定或其他外部事件导致取消时，可重新安排日期或获得全额退款。",
       "如船方因无法避免的原因取消行程，将提供相同价格或等级的替代船只，或给予全额退款。"
+    ],
+    "boatSpecs": [
+      {
+        "label": "船长",
+        "value": "26 Meter"
+      },
+      {
+        "label": "船宽",
+        "value": "5 Meter"
+      },
+      {
+        "label": "巡航速度",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "淡水容量",
+        "value": "8000 Liter"
+      },
+      {
+        "label": "燃料容量",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "发动机",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "发电机",
+        "value": "PS120-30 kVA, PS120-22 kVA"
+      },
+      {
+        "label": "导航",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "无线电",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "安全设备",
+        "value": "救生筏、救生衣、救生圈、灭火器、急救箱"
+      },
+      {
+        "label": "快艇",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "客舱",
+        "value": "6 Kabin dengan AC, 2 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "客舱数量",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin 1 (Main Deck)",
+        "description": "4 single bunk bed, 私人浴室, AC, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Share Cabin 2 (Main Deck)",
+        "description": "4 single bunk bed, 私人浴室, AC, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Share Cabin 3 (Main Deck)",
+        "description": "4 single bunk bed, 私人浴室, AC, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/841-sve04615-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/842-sve04618-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean (Main Deck)",
+        "description": "Queen Bed 和 2 single bunk bed, 私人浴室, AC, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/844-sve04627-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/845-sve04630-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/846-sve04633-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 1 (Upper Deck)",
+        "description": "Queen Bed 和 2 extra single bed, 私人浴室, AC, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/848-sve04710-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/849-sve08662-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/850-sve08665-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Upper Deck)",
+        "description": "Queen Bed 和 2 extra single bed, 私人浴室, AC, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/857-sve08493-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/858-sve08496-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/859-sve08499-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   }
 }

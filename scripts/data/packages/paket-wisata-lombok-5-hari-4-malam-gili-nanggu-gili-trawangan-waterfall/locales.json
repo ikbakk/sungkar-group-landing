@@ -56,7 +56,14 @@
       "Tip guide dan crew",
       "Sewa sepeda di Gili Trawangan",
       "Aktivitas di luar program"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
   },
   "en": {
     "title": "Lombok 5 Days 4 Nights Gili Nanggu, Gili Trawangan & Waterfall Tour",
@@ -115,11 +122,18 @@
       "Guide and crew tips",
       "Bicycle rental in Gili Trawangan",
       "Activities outside the program"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
   },
   "ar": {
     "title": "لومبوك 5 أيام و4 ليالٍ - جزر جيلي نانغو وجيلي ترافانغان والشلالات",
-    "collectionTitle": "Paket 5 Hari 4 Malam",
+    "collectionTitle": "باقة 5 أيام و4 ليالٍ",
     "category": "باكيجات سياحة لومبوك",
     "duration": "5 أيام و4 ليالٍ",
     "summary": "باقة سياحية في لومبوك لمدة 5 أيام و4 ليالٍ تجمع بين جولة مانداليكا، وجيلي نانغو، وجيلي ترافانغان، وجولة الشلالات في رحلة خاصة مريحة وكاملة.",
@@ -174,7 +188,14 @@
       "إكراميات المرشد والطاقم",
       "استئجار دراجة في جيلي ترافانغان",
       "الأنشطة خارج البرنامج"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
   },
   "ms": {
     "title": "Pakej Lombok 5 Hari 4 Malam Gili Nanggu, Gili Trawangan & Air Terjun",
@@ -233,7 +254,14 @@
       "Tip pemandu dan kru",
       "Sewa basikal di Gili Trawangan",
       "Aktiviti di luar program"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
   },
   "zh": {
     "title": "龙目岛5天4晚吉利南古、吉利特拉旺岸与瀑布之旅",
@@ -292,6 +320,13 @@
       "导游及船员小费",
       "吉利特拉旺岸自行车租赁",
       "行程外活动"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
   }
 }

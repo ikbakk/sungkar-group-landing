@@ -45,6 +45,9 @@ const packageLocaleSchema = z
     additionalServices: localeArray.optional(),
     dontForgetToBring: localeArray.optional(),
     termsAndConditions: localeArray.optional(),
+    boatSpecs: z.array(z.object({ label: localeString, value: localeString })).optional(),
+    cabins: z.array(z.record(z.string(), z.unknown())).optional(),
+    priceListLabels: z.record(z.string(), localeString).optional(),
   })
   .superRefine((value, ctx) => {
     if (!value.duration && !value.durationOptions) {

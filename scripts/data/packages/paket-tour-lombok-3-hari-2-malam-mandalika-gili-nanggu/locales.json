@@ -58,11 +58,18 @@
     "excludes": [
       "Tiket pesawat.",
       "Keperluan pribadi."
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
   },
   "en": {
     "title": "3-Day Lombok Tour Package – Mandalika & Gili Nanggu",
-    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "collectionTitle": "3 Days 2 Nights Package",
     "category": "Lombok Tour Package",
     "duration": "3 Days 2 Nights",
     "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
@@ -119,11 +126,18 @@
     "excludes": [
       "Airfare.",
       "Personal expenses."
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
   },
   "ms": {
     "title": "Pakej Lawatan Lombok 3 Hari 2 Malam – Mandalika & Gili Nanggu",
-    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "collectionTitle": "Pakej 3 Hari 2 Malam",
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
@@ -180,11 +194,18 @@
     "excludes": [
       "Tiket penerbangan.",
       "Perbelanjaan peribadi."
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
   },
   "ar": {
     "title": "باقة لومبوك 3 أيام – مانداليكا وجيلي نانغو",
-    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "collectionTitle": "باقة 3 أيام وليلتين",
     "category": "باقة سياحية في لومبوك",
     "duration": "3 أيام وليلتان",
     "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
@@ -241,11 +262,18 @@
     "excludes": [
       "تذاكر الطيران.",
       "المصاريف الشخصية."
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
   },
   "zh": {
     "title": "龙目岛3天2晚旅游套餐－曼达利卡与吉利南古",
-    "collectionTitle": "Paket 3 Hari 2 Malam",
+    "collectionTitle": "三天两晚套餐",
     "category": "龙目岛旅游套餐",
     "duration": "3天2晚",
     "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
@@ -302,6 +330,13 @@
     "excludes": [
       "机票。",
       "个人消费。"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
   }
 }

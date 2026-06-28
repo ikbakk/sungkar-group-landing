@@ -129,6 +129,164 @@
       "Pembatalan oleh tamu tidak dapat dikembalikan, tetapi pemesanan dapat dialihkan kepada orang lain.",
       "Pembatalan akibat larangan otoritas pelabuhan, pemerintah, cuaca, keadaan kahar, bencana alam, terorisme, ketidakstabilan politik, atau kejadian eksternal lain dapat dijadwalkan ulang atau dikembalikan penuh.",
       "Apabila operator kapal membatalkan perjalanan karena alasan yang tidak dapat dihindari, operator akan menyediakan kapal pengganti dengan harga atau kelas yang sama atau memberikan pengembalian dana penuh."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "26 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "4,6 Meter"
+      },
+      {
+        "label": "Kecepatan Jelajah",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasitas Air Tawar",
+        "value": "6000 Liter"
+      },
+      {
+        "label": "Kapasitas Bahan Bakar",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Mesin",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "Generator",
+        "value": "30 kVA, Emergency 7500 Watt"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+      },
+      {
+        "label": "Speedboat",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin dengan AC, 3 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "Jumlah Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin (Lower Deck)",
+        "description": "2 queen bed dan single bed, kamar mandi pribadi, AC, kapasitas 1-5 orang.",
+        "capacity": "1-5",
+        "images": [
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/146-sve08906.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/147-sve08908.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/148-sve08909.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/149-sve08910.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Cabin 1 (Lower Deck)",
+        "description": "Queen Bed dan single bed, kamar mandi pribadi, AC, kapasitas 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Cabin 2 (Lower Deck)",
+        "description": "Queen Bed dan single bed, kamar mandi pribadi, AC, kapasitas 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean (Main Deck)",
+        "description": "Queen Bed dan extra bed, kamar mandi pribadi, AC, kapasitas 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/155-sve08928.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/156-sve08929.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/157-sve08930.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/158-sve08931.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Upper Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Upper Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "en": {
@@ -261,6 +419,164 @@
       "Guest cancellations are non-refundable, but the booking may be transferred to another person.",
       "Cancellations caused by harbor authority or government restrictions, weather, force majeure, natural disasters, terrorism, political instability, or other external events may be rescheduled or fully refunded.",
       "If the boat operator cancels for unavoidable reasons, a replacement vessel of the same price or class will be provided, or a full refund will be issued."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Boat Length",
+        "value": "26 Meter"
+      },
+      {
+        "label": "Boat Width",
+        "value": "4,6 Meter"
+      },
+      {
+        "label": "Cruising Speed",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Fresh Water Capacity",
+        "value": "6000 Liter"
+      },
+      {
+        "label": "Fuel Capacity",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Engine",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "Generator",
+        "value": "30 kVA, Emergency 7500 Watt"
+      },
+      {
+        "label": "Navigation",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Safety Equipment",
+        "value": "Life Raft, Life Jackets, Ring Buoys, Fire Extinguisher, First Aid Kit"
+      },
+      {
+        "label": "Speedboat",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Cabins",
+        "value": "6 Kabin dengan AC, 3 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "Cabins",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin (Lower Deck)",
+        "description": "2 queen bed and single bed, private bathroom, AC, capacity 1-5 pax.",
+        "capacity": "1-5",
+        "images": [
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/146-sve08906.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/147-sve08908.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/148-sve08909.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/149-sve08910.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Cabin 1 (Lower Deck)",
+        "description": "Queen Bed and single bed, private bathroom, AC, capacity 1-3 pax.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Cabin 2 (Lower Deck)",
+        "description": "Queen Bed and single bed, private bathroom, AC, capacity 1-3 pax.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean (Main Deck)",
+        "description": "Queen Bed and extra bed, private bathroom, AC, capacity 1-3 pax.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/155-sve08928.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/156-sve08929.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/157-sve08930.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/158-sve08931.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Upper Deck)",
+        "description": "Queen Bed, private bathroom, AC, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Upper Deck)",
+        "description": "Queen Bed, private bathroom, AC, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ms": {
@@ -393,6 +709,164 @@
       "Pembatalan oleh tetamu tidak akan dikembalikan, tetapi tempahan boleh dipindahkan kepada orang lain.",
       "Pembatalan akibat larangan pihak pelabuhan atau kerajaan, cuaca, keadaan luar jangka, bencana alam, keganasan, ketidakstabilan politik, atau kejadian luar lain boleh dijadualkan semula atau dikembalikan sepenuhnya.",
       "Jika operator kapal membatalkan perjalanan atas sebab yang tidak dapat dielakkan, kapal gantian dengan harga atau kelas yang sama akan disediakan atau bayaran balik penuh akan diberikan."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "26 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "4,6 Meter"
+      },
+      {
+        "label": "Kelajuan Pelayaran",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasiti Air Tawar",
+        "value": "6000 Liter"
+      },
+      {
+        "label": "Kapasiti Bahan Api",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Enjin",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "Generator",
+        "value": "30 kVA, Emergency 7500 Watt"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Keselamatan, Pelampung Cincin, Alat Pemadam Kebakaran, Peti P3K"
+      },
+      {
+        "label": "Bot Laju",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin dengan AC, 3 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "Bilangan Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin (Lower Deck)",
+        "description": "2 queen bed dan single bed, bilik mandi peribadi, AC, kapasiti 1-5 orang.",
+        "capacity": "1-5",
+        "images": [
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/146-sve08906.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/147-sve08908.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/148-sve08909.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/149-sve08910.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Cabin 1 (Lower Deck)",
+        "description": "Queen Bed dan single bed, bilik mandi peribadi, AC, kapasiti 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Cabin 2 (Lower Deck)",
+        "description": "Queen Bed dan single bed, bilik mandi peribadi, AC, kapasiti 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean (Main Deck)",
+        "description": "Queen Bed dan extra bed, bilik mandi peribadi, AC, kapasiti 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/155-sve08928.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/156-sve08929.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/157-sve08930.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/158-sve08931.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Upper Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Upper Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ar": {
@@ -525,13 +999,176 @@
       "إلغاء الضيف غير قابل للاسترداد، ولكن يمكن نقل الحجز إلى شخص آخر.",
       "يمكن إعادة جدولة الرحلة أو استرداد قيمتها كاملة عند الإلغاء بسبب قيود سلطات الميناء أو الحكومة أو الطقس أو القوة القاهرة أو الكوارث الطبيعية أو الإرهاب أو عدم الاستقرار السياسي أو الأحداث الخارجية الأخرى.",
       "إذا ألغى مشغل السفينة الرحلة لأسباب لا يمكن تجنبها، فسيتم توفير سفينة بديلة بالسعر أو الفئة نفسها أو إصدار استرداد كامل."
+    ],
+    "boatSpecs": [
+      {
+        "label": "طول القارب",
+        "value": "26 Meter"
+      },
+      {
+        "label": "عرض القارب",
+        "value": "4,6 Meter"
+      },
+      {
+        "label": "سرعة الإبحار",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "سعة المياه العذبة",
+        "value": "6000 Liter"
+      },
+      {
+        "label": "سعة الوقود",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "محرك",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "مولد",
+        "value": "30 kVA, Emergency 7500 Watt"
+      },
+      {
+        "label": "ملاحة",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "راديو",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "معدات السلامة",
+        "value": "طوف نجاة، سترات النجاة، عوامات دائرية، طفاية حريق، عدة إسعافات أولية"
+      },
+      {
+        "label": "زورق سريع",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "مقصورات",
+        "value": "6 Kabin dengan AC, 3 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "عدد المقصورات",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin (Lower Deck)",
+        "description": "2 queen bed و single bed, حمام خاص, AC, سعة 1-5 أشخاص.",
+        "capacity": "1-5",
+        "images": [
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/146-sve08906.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/147-sve08908.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/148-sve08909.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/149-sve08910.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Cabin 1 (Lower Deck)",
+        "description": "Queen Bed و single bed, حمام خاص, AC, سعة 1-3 أشخاص.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Cabin 2 (Lower Deck)",
+        "description": "Queen Bed و single bed, حمام خاص, AC, سعة 1-3 أشخاص.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean (Main Deck)",
+        "description": "Queen Bed و extra bed, حمام خاص, AC, سعة 1-3 أشخاص.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/155-sve08928.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/156-sve08929.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/157-sve08930.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/158-sve08931.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Upper Deck)",
+        "description": "Queen Bed, حمام خاص, AC, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Upper Deck)",
+        "description": "Queen Bed, حمام خاص, AC, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "zh": {
     "title": "Almadira - 高级菲尼西帆船（私人包船）",
     "collectionTitle": "Private Trip Superior Phinisi",
     "category": "拉布安巴焦高级帆船套餐（私人）",
-    "durationOptions": ["1天（全天）", "2天1夜", "3天2夜", "4天3夜"],
+    "durationOptions": [
+      "1天（全天）",
+      "2天1夜",
+      "3天2夜",
+      "4天3夜"
+    ],
     "summary": "乘坐Almadira在拉布安巴焦和科莫多国家公园体验私人包船。该高级菲尼西帆船最多可容纳18位客人，设有6间空调客舱。",
     "highlights": [
       "高级菲尼西帆船最多可容纳18位客人",
@@ -652,6 +1289,164 @@
       "客人取消预订不予退款，但可将预订转让给其他人。",
       "因港口管理部门或政府限制、天气、不可抗力、自然灾害、恐怖主义、政治不稳定或其他外部事件导致取消时，可重新安排日期或获得全额退款。",
       "如船方因无法避免的原因取消行程，将提供相同价格或等级的替代船只，或给予全额退款。"
+    ],
+    "boatSpecs": [
+      {
+        "label": "船长",
+        "value": "26 Meter"
+      },
+      {
+        "label": "船宽",
+        "value": "4,6 Meter"
+      },
+      {
+        "label": "巡航速度",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "淡水容量",
+        "value": "6000 Liter"
+      },
+      {
+        "label": "燃料容量",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "发动机",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "发电机",
+        "value": "30 kVA, Emergency 7500 Watt"
+      },
+      {
+        "label": "导航",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "无线电",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "安全设备",
+        "value": "救生筏、救生衣、救生圈、灭火器、急救箱"
+      },
+      {
+        "label": "快艇",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "客舱",
+        "value": "6 Kabin dengan AC, 3 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "客舱数量",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin (Lower Deck)",
+        "description": "2 queen bed 和 single bed, 私人浴室, AC, 容纳 1-5 人.",
+        "capacity": "1-5",
+        "images": [
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/146-sve08906.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/147-sve08908.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/148-sve08909.webp",
+          "packages/almadira/cabins/cabin-3-share-queenbed-queenbed-single/149-sve08910.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Cabin 1 (Lower Deck)",
+        "description": "Queen Bed 和 single bed, 私人浴室, AC, 容纳 1-3 人.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Cabin 2 (Lower Deck)",
+        "description": "Queen Bed 和 single bed, 私人浴室, AC, 容纳 1-3 人.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/136-sve08914.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/137-sve08915.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/138-sve08916.webp",
+          "packages/almadira/cabins/cabin-1-2-share-private-queenbed-single-bed/139-sve08917.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean (Main Deck)",
+        "description": "Queen Bed 和 extra bed, 私人浴室, AC, 容纳 1-3 人.",
+        "capacity": "1-3",
+        "images": [
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/155-sve08928.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/156-sve08929.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/157-sve08930.webp",
+          "packages/almadira/cabins/cabin-6-master-ocean-queenbed-extra-queen-bed-private-bathroom/158-sve08931.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Upper Deck)",
+        "description": "Queen Bed, 私人浴室, AC, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Upper Deck)",
+        "description": "Queen Bed, 私人浴室, AC, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/150-gopr7427-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/151-gopr7428-hdr.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/152-gopr7431.webp",
+          "packages/almadira/cabins/cabin-4-5-deluxe-ocean-upper-deck-queen-bed-bathroom/153-gopr7432-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   }
 }

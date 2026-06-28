@@ -70,6 +70,108 @@
       "Perubahan jadwal maksimal 30 hari sebelum perjalanan.",
       "Pembatalan oleh tamu tidak dapat dikembalikan, tetapi pemesanan dapat dialihkan kepada orang lain.",
       "Rute perjalanan dapat berubah karena cuaca, kondisi laut, dan kebijakan otoritas setempat."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "23 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "4 Meter"
+      },
+      {
+        "label": "Kecepatan Jelajah",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin",
+        "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Private Double",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax"
+        }
+      },
+      {
+        "name": "Private Triple",
+        "description": "Queen Bed + Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.050.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.050.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.450.000/pax"
+        }
+      }
     ]
   },
   "en": {
@@ -143,6 +245,108 @@
       "Rescheduling is permitted no later than 30 days before departure.",
       "Guest cancellations are non-refundable, but the booking may be transferred to another person.",
       "The route may change due to weather, sea conditions, and local authority policies."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Boat Length",
+        "value": "23 Meter"
+      },
+      {
+        "label": "Boat Width",
+        "value": "4 Meter"
+      },
+      {
+        "label": "Cruising Speed",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Cabins",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin",
+        "description": "4x Single Bunk Bed, private bathroom, AC, berada di Main Deck, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Private Double",
+        "description": "Queen Bed, private bathroom, AC, berada di Main Deck, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax"
+        }
+      },
+      {
+        "name": "Private Triple",
+        "description": "Queen Bed + Single Bunk Bed, private bathroom, AC, berada di Main Deck, capacity 1-3 pax.",
+        "capacity": "1-3",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1",
+        "description": "Queen Bed, private bathroom, AC, berada di Main Deck, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.050.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2",
+        "description": "Queen Bed, private bathroom, AC, berada di Main Deck, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.050.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean",
+        "description": "Queen Bed, private bathroom, AC, berada di Upper Deck, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.450.000/pax"
+        }
+      }
     ]
   },
   "ms": {
@@ -216,6 +420,108 @@
       "Penjadualan semula dibenarkan selewat-lewatnya 30 hari sebelum perjalanan.",
       "Pembatalan oleh tetamu tidak akan dikembalikan, tetapi tempahan boleh dipindahkan kepada orang lain.",
       "Laluan boleh berubah akibat cuaca, keadaan laut, dan dasar pihak berkuasa tempatan."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "23 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "4 Meter"
+      },
+      {
+        "label": "Kelajuan Pelayaran",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin",
+        "description": "4x Single Bunk Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Private Double",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax"
+        }
+      },
+      {
+        "name": "Private Triple",
+        "description": "Queen Bed + Single Bunk Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.050.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.050.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di Upper Deck, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.450.000/pax"
+        }
+      }
     ]
   },
   "ar": {
@@ -289,6 +595,108 @@
       "يسمح بتغيير الموعد قبل الرحلة بمدة لا تقل عن 30 يومًا.",
       "إلغاء الضيف غير قابل للاسترداد، ولكن يمكن نقل الحجز إلى شخص آخر.",
       "قد يتغير المسار بسبب الطقس وحالة البحر وسياسات السلطات المحلية."
+    ],
+    "boatSpecs": [
+      {
+        "label": "طول القارب",
+        "value": "23 Meter"
+      },
+      {
+        "label": "عرض القارب",
+        "value": "4 Meter"
+      },
+      {
+        "label": "سرعة الإبحار",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "مقصورات",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin",
+        "description": "4x Single Bunk Bed, حمام خاص, AC, berada di Main Deck, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Private Double",
+        "description": "Queen Bed, حمام خاص, AC, berada di Main Deck, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax"
+        }
+      },
+      {
+        "name": "Private Triple",
+        "description": "Queen Bed + Single Bunk Bed, حمام خاص, AC, berada di Main Deck, سعة 1-3 أشخاص.",
+        "capacity": "1-3",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1",
+        "description": "Queen Bed, حمام خاص, AC, berada di Main Deck, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.050.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2",
+        "description": "Queen Bed, حمام خاص, AC, berada di Main Deck, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.050.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean",
+        "description": "Queen Bed, حمام خاص, AC, berada di Upper Deck, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.450.000/pax"
+        }
+      }
     ]
   },
   "zh": {
@@ -362,6 +770,108 @@
       "改期最迟须在出发前30天办理。",
       "客人取消预订不予退款，但可将预订转让给其他人。",
       "路线可能因天气、海况和当地主管部门政策而调整。"
+    ],
+    "boatSpecs": [
+      {
+        "label": "船长",
+        "value": "23 Meter"
+      },
+      {
+        "label": "船宽",
+        "value": "4 Meter"
+      },
+      {
+        "label": "巡航速度",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "客舱",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin",
+        "description": "4x Single Bunk Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Private Double",
+        "description": "Queen Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax"
+        }
+      },
+      {
+        "name": "Private Triple",
+        "description": "Queen Bed + Single Bunk Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-3 人.",
+        "capacity": "1-3",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1",
+        "description": "Queen Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.050.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2",
+        "description": "Queen Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.050.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean",
+        "description": "Queen Bed, 私人浴室, AC, berada di Upper Deck, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.450.000/pax"
+        }
+      }
     ]
   }
 }

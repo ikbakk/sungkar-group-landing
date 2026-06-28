@@ -130,6 +130,198 @@
       "Pembatalan oleh tamu tidak dapat dikembalikan, tetapi pemesanan dapat dialihkan kepada orang lain.",
       "Pembatalan akibat larangan otoritas pelabuhan, pemerintah, cuaca, keadaan kahar, bencana alam, terorisme, ketidakstabilan politik, atau kejadian eksternal lain dapat dijadwalkan ulang atau dikembalikan penuh.",
       "Apabila operator kapal membatalkan perjalanan karena alasan yang tidak dapat dihindari, operator akan menyediakan kapal pengganti dengan harga atau kelas yang sama atau memberikan pengembalian dana penuh."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "32 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "5,6 Meter"
+      },
+      {
+        "label": "Kecepatan Jelajah",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasitas Air Tawar",
+        "value": "7000 Liter"
+      },
+      {
+        "label": "Kapasitas Bahan Bakar",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Mesin",
+        "value": "Mitsubishi 6D22 Cylinder"
+      },
+      {
+        "label": "Generator",
+        "value": "Double PS120"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+      },
+      {
+        "label": "Speedboat",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "8 Kabin dengan AC dan Kamar Mandi Pribadi"
+      },
+      {
+        "label": "Jumlah Kabin",
+        "value": "8 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Master Ocean 1 (Main Deck)",
+        "description": "Queen Bed dan extra bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/hatira-hela/cabins/1-master-1-main-deck/633-hatirah-master1-1.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/634-hatirah-master1-2.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/635-hatirah-master1-3.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/636-hatirah-master1-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Main Deck)",
+        "description": "Queen Bed dan extra bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/hatira-hela/cabins/2-master-2-main-deck/640-hatirah-master2-1.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/641-hatirah-master2-10.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/642-hatirah-master2-11.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/643-hatirah-master2-2.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 3 (Main Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/662-hatirah-deluxe5-1.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/663-hatirah-deluxe5-2.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/664-hatirah-deluxe5-3.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/665-hatirah-deluxe5-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 4 (Main Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/667-dji-20250224162030-0020-d-wilartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/668-dji-20250224162030-0020-d-wilartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/669-dji-20250224162030-0020-d-wilartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/670-dji-20250224162030-0020-d-wilartboard-1-copy-5.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 5 (Main Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/673-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/674-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/675-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/676-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 6 (Upper Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 7 (Upper Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 8 (Upper Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "en": {
@@ -263,6 +455,198 @@
       "Guest cancellations are non-refundable, but the booking may be transferred to another person.",
       "Cancellations caused by harbor authority or government restrictions, weather, force majeure, natural disasters, terrorism, political instability, or other external events may be rescheduled or fully refunded.",
       "If the boat operator cancels for unavoidable reasons, a replacement vessel of the same price or class will be provided, or a full refund will be issued."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Boat Length",
+        "value": "32 Meter"
+      },
+      {
+        "label": "Boat Width",
+        "value": "5,6 Meter"
+      },
+      {
+        "label": "Cruising Speed",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Fresh Water Capacity",
+        "value": "7000 Liter"
+      },
+      {
+        "label": "Fuel Capacity",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Engine",
+        "value": "Mitsubishi 6D22 Cylinder"
+      },
+      {
+        "label": "Generator",
+        "value": "Double PS120"
+      },
+      {
+        "label": "Navigation",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Safety Equipment",
+        "value": "Life Raft, Life Jackets, Ring Buoys, Fire Extinguisher, First Aid Kit"
+      },
+      {
+        "label": "Speedboat",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Cabins",
+        "value": "8 Kabin dengan AC dan Kamar Mandi Pribadi"
+      },
+      {
+        "label": "Cabins",
+        "value": "8 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Master Ocean 1 (Main Deck)",
+        "description": "Queen Bed and extra bed, private bathroom, AC, berada di dek utama, capacity 1-3 pax.",
+        "capacity": "1-3",
+        "images": [
+          "packages/hatira-hela/cabins/1-master-1-main-deck/633-hatirah-master1-1.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/634-hatirah-master1-2.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/635-hatirah-master1-3.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/636-hatirah-master1-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Main Deck)",
+        "description": "Queen Bed and extra bed, private bathroom, AC, berada di dek utama, capacity 1-3 pax.",
+        "capacity": "1-3",
+        "images": [
+          "packages/hatira-hela/cabins/2-master-2-main-deck/640-hatirah-master2-1.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/641-hatirah-master2-10.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/642-hatirah-master2-11.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/643-hatirah-master2-2.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 3 (Main Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek utama, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/662-hatirah-deluxe5-1.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/663-hatirah-deluxe5-2.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/664-hatirah-deluxe5-3.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/665-hatirah-deluxe5-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 4 (Main Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek utama, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/667-dji-20250224162030-0020-d-wilartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/668-dji-20250224162030-0020-d-wilartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/669-dji-20250224162030-0020-d-wilartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/670-dji-20250224162030-0020-d-wilartboard-1-copy-5.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 5 (Main Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek utama, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/673-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/674-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/675-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/676-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 6 (Upper Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek atas, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 7 (Upper Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek atas, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 8 (Upper Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek atas, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ms": {
@@ -396,6 +780,198 @@
       "Pembatalan oleh tetamu tidak akan dikembalikan, tetapi tempahan boleh dipindahkan kepada orang lain.",
       "Pembatalan akibat larangan pihak pelabuhan atau kerajaan, cuaca, keadaan luar jangka, bencana alam, keganasan, ketidakstabilan politik, atau kejadian luar lain boleh dijadualkan semula atau dikembalikan sepenuhnya.",
       "Jika operator kapal membatalkan perjalanan atas sebab yang tidak dapat dielakkan, kapal gantian dengan harga atau kelas yang sama akan disediakan atau bayaran balik penuh akan diberikan."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "32 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "5,6 Meter"
+      },
+      {
+        "label": "Kelajuan Pelayaran",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasiti Air Tawar",
+        "value": "7000 Liter"
+      },
+      {
+        "label": "Kapasiti Bahan Api",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Enjin",
+        "value": "Mitsubishi 6D22 Cylinder"
+      },
+      {
+        "label": "Generator",
+        "value": "Double PS120"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Keselamatan, Pelampung Cincin, Alat Pemadam Kebakaran, Peti P3K"
+      },
+      {
+        "label": "Bot Laju",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "8 Kabin dengan AC dan Kamar Mandi Pribadi"
+      },
+      {
+        "label": "Bilangan Kabin",
+        "value": "8 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Master Ocean 1 (Main Deck)",
+        "description": "Queen Bed dan extra bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/hatira-hela/cabins/1-master-1-main-deck/633-hatirah-master1-1.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/634-hatirah-master1-2.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/635-hatirah-master1-3.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/636-hatirah-master1-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Main Deck)",
+        "description": "Queen Bed dan extra bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/hatira-hela/cabins/2-master-2-main-deck/640-hatirah-master2-1.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/641-hatirah-master2-10.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/642-hatirah-master2-11.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/643-hatirah-master2-2.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 3 (Main Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/662-hatirah-deluxe5-1.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/663-hatirah-deluxe5-2.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/664-hatirah-deluxe5-3.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/665-hatirah-deluxe5-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 4 (Main Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/667-dji-20250224162030-0020-d-wilartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/668-dji-20250224162030-0020-d-wilartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/669-dji-20250224162030-0020-d-wilartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/670-dji-20250224162030-0020-d-wilartboard-1-copy-5.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 5 (Main Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/673-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/674-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/675-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/676-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 6 (Upper Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek atas, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 7 (Upper Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek atas, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 8 (Upper Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek atas, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ar": {
@@ -529,13 +1105,210 @@
       "إلغاء الضيف غير قابل للاسترداد، ولكن يمكن نقل الحجز إلى شخص آخر.",
       "يمكن إعادة جدولة الرحلة أو استرداد قيمتها كاملة عند الإلغاء بسبب قيود سلطات الميناء أو الحكومة أو الطقس أو القوة القاهرة أو الكوارث الطبيعية أو الإرهاب أو عدم الاستقرار السياسي أو الأحداث الخارجية الأخرى.",
       "إذا ألغى مشغل السفينة الرحلة لأسباب لا يمكن تجنبها، فسيتم توفير سفينة بديلة بالسعر أو الفئة نفسها أو إصدار استرداد كامل."
+    ],
+    "boatSpecs": [
+      {
+        "label": "طول القارب",
+        "value": "32 Meter"
+      },
+      {
+        "label": "عرض القارب",
+        "value": "5,6 Meter"
+      },
+      {
+        "label": "سرعة الإبحار",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "سعة المياه العذبة",
+        "value": "7000 Liter"
+      },
+      {
+        "label": "سعة الوقود",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "محرك",
+        "value": "Mitsubishi 6D22 Cylinder"
+      },
+      {
+        "label": "مولد",
+        "value": "Double PS120"
+      },
+      {
+        "label": "ملاحة",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "راديو",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "معدات السلامة",
+        "value": "طوف نجاة، سترات النجاة، عوامات دائرية، طفاية حريق، عدة إسعافات أولية"
+      },
+      {
+        "label": "زورق سريع",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "مقصورات",
+        "value": "8 Kabin dengan AC dan Kamar Mandi Pribadi"
+      },
+      {
+        "label": "عدد المقصورات",
+        "value": "8 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Master Ocean 1 (Main Deck)",
+        "description": "Queen Bed و extra bed, حمام خاص, AC, berada di dek utama, سعة 1-3 أشخاص.",
+        "capacity": "1-3",
+        "images": [
+          "packages/hatira-hela/cabins/1-master-1-main-deck/633-hatirah-master1-1.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/634-hatirah-master1-2.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/635-hatirah-master1-3.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/636-hatirah-master1-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Main Deck)",
+        "description": "Queen Bed و extra bed, حمام خاص, AC, berada di dek utama, سعة 1-3 أشخاص.",
+        "capacity": "1-3",
+        "images": [
+          "packages/hatira-hela/cabins/2-master-2-main-deck/640-hatirah-master2-1.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/641-hatirah-master2-10.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/642-hatirah-master2-11.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/643-hatirah-master2-2.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 3 (Main Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek utama, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/662-hatirah-deluxe5-1.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/663-hatirah-deluxe5-2.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/664-hatirah-deluxe5-3.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/665-hatirah-deluxe5-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 4 (Main Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek utama, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/667-dji-20250224162030-0020-d-wilartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/668-dji-20250224162030-0020-d-wilartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/669-dji-20250224162030-0020-d-wilartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/670-dji-20250224162030-0020-d-wilartboard-1-copy-5.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 5 (Main Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek utama, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/673-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/674-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/675-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/676-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 6 (Upper Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek atas, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 7 (Upper Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek atas, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 8 (Upper Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek atas, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "zh": {
     "title": "Hatira Hela - 豪华菲尼西帆船（私人包船）",
     "collectionTitle": "菲尼西豪华包船",
     "category": "拉布安巴焦帆船套餐（私人）",
-    "durationOptions": ["1天（全天）", "2天1夜", "3天2夜", "4天3夜"],
+    "durationOptions": [
+      "1天（全天）",
+      "2天1夜",
+      "3天2夜",
+      "4天3夜"
+    ],
     "summary": "乘坐 Hatira Hela 在拉布安巴焦和科莫多国家公园享受私人航行体验。这是一艘最多可容纳24位客人的豪华菲尼西帆船，配有8间空调客舱和独立浴室。",
     "highlights": [
       "最多可容纳24位客人的豪华菲尼西帆船",
@@ -657,6 +1430,198 @@
       "客人取消预订不予退款，但可将预订转让给其他人。",
       "因港口管理部门或政府限制、天气、不可抗力、自然灾害、恐怖主义、政治不稳定或其他外部事件导致取消时，可重新安排日期或获得全额退款。",
       "如船方因无法避免的原因取消行程，将提供相同价格或等级的替代船只，或给予全额退款。"
+    ],
+    "boatSpecs": [
+      {
+        "label": "船长",
+        "value": "32 Meter"
+      },
+      {
+        "label": "船宽",
+        "value": "5,6 Meter"
+      },
+      {
+        "label": "巡航速度",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "淡水容量",
+        "value": "7000 Liter"
+      },
+      {
+        "label": "燃料容量",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "发动机",
+        "value": "Mitsubishi 6D22 Cylinder"
+      },
+      {
+        "label": "发电机",
+        "value": "Double PS120"
+      },
+      {
+        "label": "导航",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "无线电",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "安全设备",
+        "value": "救生筏、救生衣、救生圈、灭火器、急救箱"
+      },
+      {
+        "label": "快艇",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "客舱",
+        "value": "8 Kabin dengan AC dan Kamar Mandi Pribadi"
+      },
+      {
+        "label": "客舱数量",
+        "value": "8 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Master Ocean 1 (Main Deck)",
+        "description": "Queen Bed 和 extra bed, 私人浴室, AC, berada di dek utama, 容纳 1-3 人.",
+        "capacity": "1-3",
+        "images": [
+          "packages/hatira-hela/cabins/1-master-1-main-deck/633-hatirah-master1-1.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/634-hatirah-master1-2.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/635-hatirah-master1-3.webp",
+          "packages/hatira-hela/cabins/1-master-1-main-deck/636-hatirah-master1-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Main Deck)",
+        "description": "Queen Bed 和 extra bed, 私人浴室, AC, berada di dek utama, 容纳 1-3 人.",
+        "capacity": "1-3",
+        "images": [
+          "packages/hatira-hela/cabins/2-master-2-main-deck/640-hatirah-master2-1.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/641-hatirah-master2-10.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/642-hatirah-master2-11.webp",
+          "packages/hatira-hela/cabins/2-master-2-main-deck/643-hatirah-master2-2.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 3 (Main Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek utama, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/662-hatirah-deluxe5-1.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/663-hatirah-deluxe5-2.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/664-hatirah-deluxe5-3.webp",
+          "packages/hatira-hela/cabins/5-deluxe-5-main-deck/665-hatirah-deluxe5-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 4 (Main Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek utama, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/667-dji-20250224162030-0020-d-wilartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/668-dji-20250224162030-0020-d-wilartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/669-dji-20250224162030-0020-d-wilartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/6-deluxe-6-upper-deck/670-dji-20250224162030-0020-d-wilartboard-1-copy-5.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 5 (Main Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek utama, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/673-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/674-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/675-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/7-deluxe-7-upper-deck/676-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 6 (Upper Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek atas, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 7 (Upper Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek atas, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 8 (Upper Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek atas, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/678-hatiraartboard-1-copy-2.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/679-hatiraartboard-1-copy-3.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/680-hatiraartboard-1-copy-4.webp",
+          "packages/hatira-hela/cabins/8-deluxe-8-upper-deck/681-hatiraartboard-1-copy.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   }
 }

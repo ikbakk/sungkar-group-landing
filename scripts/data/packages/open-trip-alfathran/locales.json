@@ -70,6 +70,110 @@
       "Perubahan jadwal maksimal 30 hari sebelum perjalanan.",
       "Pembatalan oleh tamu tidak dapat dikembalikan, tetapi pemesanan dapat dialihkan kepada orang lain.",
       "Rute perjalanan dapat berubah karena cuaca, kondisi laut, dan kebijakan otoritas setempat."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "27 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "5,5 Meter"
+      },
+      {
+        "label": "Kecepatan Jelajah",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Family Cabin",
+        "description": "2x Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.000.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      },
+      {
+        "name": "Superior Cabin 1",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.600.000/pax"
+        }
+      },
+      {
+        "name": "Superior Cabin 2",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/480-alfathran-0005-wil00889.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/481-alfathran-0006-layer-0.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/482-alfathran-0010-wil00882.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/483-alfathran-0011-wil00881.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.600.000/pax"
+        }
+      },
+      {
+        "name": "Full Ocean",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/495-alfathran-0000-wil00915.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/496-alfathran-0001-wil00914.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/497-alfathran-0002-wil00911.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/498-alfathran-0002-wil00913.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.350.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean",
+        "description": "Queen Bed + Extra Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/502-alfathran-master-ocean-cabin-0000-wil00804.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/503-alfathran-master-ocean-cabin-0006-wil00774.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/504-alfathran-master-ocean-cabin-0007-wil00773.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/505-alfathran-master-ocean-cabin-0009-wil00769.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.750.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean",
+        "description": "Queen Bed + Extra Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/507-alfathran-master-ocean-cabin-0002-wil00789.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/508-alfathran-master-ocean-cabin-0003-wil00786.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/509-alfathran-master-ocean-cabin-0004-wil00783.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/510-alfathran-master-ocean-cabin-0005-wil00779.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 6.050.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      }
     ]
   },
   "en": {
@@ -143,6 +247,110 @@
       "Rescheduling is permitted no later than 30 days before departure.",
       "Guest cancellations are non-refundable, but the booking may be transferred to another person.",
       "The route may change due to weather, sea conditions, and local authority policies."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Boat Length",
+        "value": "27 Meter"
+      },
+      {
+        "label": "Boat Width",
+        "value": "5,5 Meter"
+      },
+      {
+        "label": "Cruising Speed",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Cabins",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Family Cabin",
+        "description": "2x Queen Bed, private bathroom, AC, berada di Lower Deck, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.000.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      },
+      {
+        "name": "Superior Cabin 1",
+        "description": "Queen Bed, private bathroom, AC, berada di Lower Deck, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.600.000/pax"
+        }
+      },
+      {
+        "name": "Superior Cabin 2",
+        "description": "Queen Bed, private bathroom, AC, berada di Lower Deck, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/480-alfathran-0005-wil00889.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/481-alfathran-0006-layer-0.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/482-alfathran-0010-wil00882.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/483-alfathran-0011-wil00881.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.600.000/pax"
+        }
+      },
+      {
+        "name": "Full Ocean",
+        "description": "Queen Bed, private bathroom, AC, berada di Main Deck, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/495-alfathran-0000-wil00915.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/496-alfathran-0001-wil00914.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/497-alfathran-0002-wil00911.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/498-alfathran-0002-wil00913.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.350.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean",
+        "description": "Queen Bed + Extra Bed, private bathroom, AC, berada di Upper Deck, capacity 1-3 pax.",
+        "capacity": "1-3",
+        "images": [
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/502-alfathran-master-ocean-cabin-0000-wil00804.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/503-alfathran-master-ocean-cabin-0006-wil00774.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/504-alfathran-master-ocean-cabin-0007-wil00773.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/505-alfathran-master-ocean-cabin-0009-wil00769.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.750.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean",
+        "description": "Queen Bed + Extra Bed, private bathroom, AC, berada di Upper Deck, capacity 1-3 pax.",
+        "capacity": "1-3",
+        "images": [
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/507-alfathran-master-ocean-cabin-0002-wil00789.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/508-alfathran-master-ocean-cabin-0003-wil00786.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/509-alfathran-master-ocean-cabin-0004-wil00783.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/510-alfathran-master-ocean-cabin-0005-wil00779.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 6.050.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      }
     ]
   },
   "ms": {
@@ -216,6 +424,110 @@
       "Penjadualan semula dibenarkan selewat-lewatnya 30 hari sebelum perjalanan.",
       "Pembatalan oleh tetamu tidak akan dikembalikan, tetapi tempahan boleh dipindahkan kepada orang lain.",
       "Laluan boleh berubah akibat cuaca, keadaan laut, dan dasar pihak berkuasa tempatan."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "27 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "5,5 Meter"
+      },
+      {
+        "label": "Kelajuan Pelayaran",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Family Cabin",
+        "description": "2x Queen Bed, bilik mandi peribadi, AC, berada di Lower Deck, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.000.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      },
+      {
+        "name": "Superior Cabin 1",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di Lower Deck, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.600.000/pax"
+        }
+      },
+      {
+        "name": "Superior Cabin 2",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di Lower Deck, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/480-alfathran-0005-wil00889.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/481-alfathran-0006-layer-0.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/482-alfathran-0010-wil00882.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/483-alfathran-0011-wil00881.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.600.000/pax"
+        }
+      },
+      {
+        "name": "Full Ocean",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/495-alfathran-0000-wil00915.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/496-alfathran-0001-wil00914.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/497-alfathran-0002-wil00911.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/498-alfathran-0002-wil00913.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.350.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean",
+        "description": "Queen Bed + Extra Bed, bilik mandi peribadi, AC, berada di Upper Deck, kapasiti 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/502-alfathran-master-ocean-cabin-0000-wil00804.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/503-alfathran-master-ocean-cabin-0006-wil00774.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/504-alfathran-master-ocean-cabin-0007-wil00773.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/505-alfathran-master-ocean-cabin-0009-wil00769.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.750.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean",
+        "description": "Queen Bed + Extra Bed, bilik mandi peribadi, AC, berada di Upper Deck, kapasiti 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/507-alfathran-master-ocean-cabin-0002-wil00789.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/508-alfathran-master-ocean-cabin-0003-wil00786.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/509-alfathran-master-ocean-cabin-0004-wil00783.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/510-alfathran-master-ocean-cabin-0005-wil00779.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 6.050.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      }
     ]
   },
   "ar": {
@@ -289,6 +601,110 @@
       "يسمح بتغيير الموعد قبل الرحلة بمدة لا تقل عن 30 يومًا.",
       "إلغاء الضيف غير قابل للاسترداد، ولكن يمكن نقل الحجز إلى شخص آخر.",
       "قد يتغير المسار بسبب الطقس وحالة البحر وسياسات السلطات المحلية."
+    ],
+    "boatSpecs": [
+      {
+        "label": "طول القارب",
+        "value": "27 Meter"
+      },
+      {
+        "label": "عرض القارب",
+        "value": "5,5 Meter"
+      },
+      {
+        "label": "سرعة الإبحار",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "مقصورات",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Family Cabin",
+        "description": "2x Queen Bed, حمام خاص, AC, berada di Lower Deck, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.000.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      },
+      {
+        "name": "Superior Cabin 1",
+        "description": "Queen Bed, حمام خاص, AC, berada di Lower Deck, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.600.000/pax"
+        }
+      },
+      {
+        "name": "Superior Cabin 2",
+        "description": "Queen Bed, حمام خاص, AC, berada di Lower Deck, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/480-alfathran-0005-wil00889.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/481-alfathran-0006-layer-0.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/482-alfathran-0010-wil00882.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/483-alfathran-0011-wil00881.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.600.000/pax"
+        }
+      },
+      {
+        "name": "Full Ocean",
+        "description": "Queen Bed, حمام خاص, AC, berada di Main Deck, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/495-alfathran-0000-wil00915.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/496-alfathran-0001-wil00914.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/497-alfathran-0002-wil00911.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/498-alfathran-0002-wil00913.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.350.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean",
+        "description": "Queen Bed + Extra Bed, حمام خاص, AC, berada di Upper Deck, سعة 1-3 أشخاص.",
+        "capacity": "1-3",
+        "images": [
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/502-alfathran-master-ocean-cabin-0000-wil00804.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/503-alfathran-master-ocean-cabin-0006-wil00774.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/504-alfathran-master-ocean-cabin-0007-wil00773.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/505-alfathran-master-ocean-cabin-0009-wil00769.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.750.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean",
+        "description": "Queen Bed + Extra Bed, حمام خاص, AC, berada di Upper Deck, سعة 1-3 أشخاص.",
+        "capacity": "1-3",
+        "images": [
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/507-alfathran-master-ocean-cabin-0002-wil00789.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/508-alfathran-master-ocean-cabin-0003-wil00786.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/509-alfathran-master-ocean-cabin-0004-wil00783.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/510-alfathran-master-ocean-cabin-0005-wil00779.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 6.050.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      }
     ]
   },
   "zh": {
@@ -362,6 +778,110 @@
       "改期最迟须在出发前30天办理。",
       "客人取消预订不予退款，但可将预订转让给其他人。",
       "路线可能因天气、海况和当地主管部门政策而调整。"
+    ],
+    "boatSpecs": [
+      {
+        "label": "船长",
+        "value": "27 Meter"
+      },
+      {
+        "label": "船宽",
+        "value": "5,5 Meter"
+      },
+      {
+        "label": "巡航速度",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "客舱",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Family Cabin",
+        "description": "2x Queen Bed, 私人浴室, AC, berada di Lower Deck, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.000.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      },
+      {
+        "name": "Superior Cabin 1",
+        "description": "Queen Bed, 私人浴室, AC, berada di Lower Deck, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/467-alfathran-lower-deck-0000-wil00840.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/468-alfathran-lower-deck-0003-wil00825.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/469-alfathran-lower-deck-0005-wil00822.webp",
+          "packages/alfathran/cabins/1-superior-family-cabin-lower-deck-2x-queen-bed-2-4pax/470-alfathran-lower-deck-0006-wil00820.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.600.000/pax"
+        }
+      },
+      {
+        "name": "Superior Cabin 2",
+        "description": "Queen Bed, 私人浴室, AC, berada di Lower Deck, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/480-alfathran-0005-wil00889.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/481-alfathran-0006-layer-0.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/482-alfathran-0010-wil00882.webp",
+          "packages/alfathran/cabins/2-superior-cabin-lower-deck-queen-bed-2pax/483-alfathran-0011-wil00881.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.600.000/pax"
+        }
+      },
+      {
+        "name": "Full Ocean",
+        "description": "Queen Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/495-alfathran-0000-wil00915.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/496-alfathran-0001-wil00914.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/497-alfathran-0002-wil00911.webp",
+          "packages/alfathran/cabins/4-full-ocean-main-deck-queen-bed/498-alfathran-0002-wil00913.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.350.000/pax"
+        }
+      },
+      {
+        "name": "Deluxe Ocean",
+        "description": "Queen Bed + Extra Bed, 私人浴室, AC, berada di Upper Deck, 容纳 1-3 人.",
+        "capacity": "1-3",
+        "images": [
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/502-alfathran-master-ocean-cabin-0000-wil00804.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/503-alfathran-master-ocean-cabin-0006-wil00774.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/504-alfathran-master-ocean-cabin-0007-wil00773.webp",
+          "packages/alfathran/cabins/5-deluxe-full-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3pax/505-alfathran-master-ocean-cabin-0009-wil00769.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.750.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean",
+        "description": "Queen Bed + Extra Bed, 私人浴室, AC, berada di Upper Deck, 容纳 1-3 人.",
+        "capacity": "1-3",
+        "images": [
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/507-alfathran-master-ocean-cabin-0002-wil00789.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/508-alfathran-master-ocean-cabin-0003-wil00786.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/509-alfathran-master-ocean-cabin-0004-wil00783.webp",
+          "packages/alfathran/cabins/6-master-ocean-view-upper-deck-queen-bed-extra-single-bed-2-3-pax/510-alfathran-master-ocean-cabin-0005-wil00779.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 6.050.000/pax; additional pax: IDR 3.850.000/pax"
+        }
+      }
     ]
   }
 }

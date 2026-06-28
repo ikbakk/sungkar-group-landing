@@ -76,11 +76,18 @@
       "Asuransi perjalanan",
       "Sewa sepeda di Gili Trawangan",
       "Aktivitas di luar program"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
   },
   "en": {
     "title": "Lombok 4 Days 3 Nights Gili Trawangan & Gili Nanggu",
-    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "collectionTitle": "4 Days 3 Nights Package",
     "category": "Lombok Tour Packages",
     "duration": "4 Days 3 Nights",
     "summary": "A 4-day 3-night Lombok tour package combining adventure to Gili Trawangan and Gili Nanggu with Mandalika exploration. Enjoy snorkeling, sunset at Gili Trawangan, island hopping to Gili Nanggu, Gili Sudak, Gili Kedis, and Sasak cultural tour in one complete and comfortable private trip.",
@@ -155,11 +162,18 @@
       "Travel insurance",
       "Bicycle rental on Gili Trawangan",
       "Activities outside the program"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
   },
   "ms": {
     "title": "Lombok 4 Days 3 Nights Gili Trawangan & Gili Nanggu",
-    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "collectionTitle": "Pakej 4 Hari 3 Malam",
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "summary": "A 4-day 3-night Lombok tour package combining adventure to Gili Trawangan and Gili Nanggu with Mandalika exploration. Enjoy snorkeling, sunset at Gili Trawangan, island hopping to Gili Nanggu, Gili Sudak, Gili Kedis, and Sasak cultural tour in one complete and comfortable private trip.",
@@ -234,11 +248,18 @@
       "Insurans perjalanan",
       "Sewa basikal di Gili Trawangan",
       "Aktiviti di luar program"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
   },
   "ar": {
     "title": "لومبوك 4 أيام و 3 ليالي جيلي تراوانجان وجيلي نانغو",
-    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "collectionTitle": "باقة 4 أيام و 3 ليال",
     "category": "باكيجات سياحة لومبوك",
     "duration": "4 أيام و 3 ليالي",
     "summary": "برنامج سياحة لومبوك 4 أيام و 3 ليالي يجمع بين مغامرة جيلي تراوانجان وجيلي نانغو مع استكشاف مانداليكا. استمتع بالغطس وغروب الشمس في جيلي تراوانجان ورحلة الجزر إلى جيلي نانغو وجيلي سوداك وجيلي كيديس وجولة ثقافة ساساك في رحلة خاصة كاملة ومريحة.",
@@ -313,11 +334,18 @@
       "تأمين السفر",
       "تأجير الدراجات في جيلي تراوانجان",
       "الأنشطة خارج البرنامج"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
   },
   "zh": {
     "title": "龙目岛4天3晚 吉利特拉旺岸和吉利南古",
-    "collectionTitle": "Paket 4 Hari 3 Malam",
+    "collectionTitle": "四天三晚套餐",
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "summary": "龙目岛4天3晚旅游套餐，结合吉利特拉旺岸和吉利南古的冒险与曼达利卡探索。享受浮潜、吉利特拉旺岸的日落、跳岛游到吉利南古、吉利苏达克、吉利克迪斯，以及萨萨克文化之旅。",
@@ -392,6 +420,13 @@
       "旅行保险",
       "吉利特拉旺岸自行车租赁",
       "行程外活动"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
   }
 }

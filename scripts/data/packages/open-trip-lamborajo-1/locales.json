@@ -70,6 +70,103 @@
       "Perubahan jadwal maksimal 30 hari sebelum perjalanan.",
       "Pembatalan oleh tamu tidak dapat dikembalikan, tetapi pemesanan dapat dialihkan kepada orang lain.",
       "Rute perjalanan dapat berubah karena cuaca, kondisi laut, dan kebijakan otoritas setempat."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "26 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "5 Meter"
+      },
+      {
+        "label": "Kecepatan Jelajah",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin 1",
+        "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Share Cabin 2",
+        "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Share Cabin 3",
+        "description": "4x Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/841-sve04615-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/842-sve04618-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Full Ocean",
+        "description": "Queen Bed + 2 Single Bunk Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/844-sve04627-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/845-sve04630-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/846-sve04633-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean 1",
+        "description": "Queen Bed + 2 Extra Single Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/848-sve04710-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/849-sve08662-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/850-sve08665-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean 2",
+        "description": "Queen Bed + 2 Extra Single Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/857-sve08493-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/858-sve08496-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/859-sve08499-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      }
     ]
   },
   "en": {
@@ -143,6 +240,103 @@
       "Rescheduling is permitted no later than 30 days before departure.",
       "Guest cancellations are non-refundable, but the booking may be transferred to another person.",
       "The route may change due to weather, sea conditions, and local authority policies."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Boat Length",
+        "value": "26 Meter"
+      },
+      {
+        "label": "Boat Width",
+        "value": "5 Meter"
+      },
+      {
+        "label": "Cruising Speed",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Cabins",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin 1",
+        "description": "4x Single Bunk Bed, private bathroom, AC, berada di Main Deck, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Share Cabin 2",
+        "description": "4x Single Bunk Bed, private bathroom, AC, berada di Main Deck, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Share Cabin 3",
+        "description": "4x Single Bunk Bed, private bathroom, AC, berada di Main Deck, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/841-sve04615-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/842-sve04618-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Full Ocean",
+        "description": "Queen Bed + 2 Single Bunk Bed, private bathroom, AC, berada di Main Deck, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/844-sve04627-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/845-sve04630-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/846-sve04633-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean 1",
+        "description": "Queen Bed + 2 Extra Single Bed, private bathroom, AC, berada di Upper Deck, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/848-sve04710-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/849-sve08662-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/850-sve08665-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean 2",
+        "description": "Queen Bed + 2 Extra Single Bed, private bathroom, AC, berada di Upper Deck, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/857-sve08493-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/858-sve08496-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/859-sve08499-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      }
     ]
   },
   "ms": {
@@ -216,6 +410,103 @@
       "Penjadualan semula dibenarkan selewat-lewatnya 30 hari sebelum perjalanan.",
       "Pembatalan oleh tetamu tidak akan dikembalikan, tetapi tempahan boleh dipindahkan kepada orang lain.",
       "Laluan boleh berubah akibat cuaca, keadaan laut, dan dasar pihak berkuasa tempatan."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "26 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "5 Meter"
+      },
+      {
+        "label": "Kelajuan Pelayaran",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin 1",
+        "description": "4x Single Bunk Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Share Cabin 2",
+        "description": "4x Single Bunk Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Share Cabin 3",
+        "description": "4x Single Bunk Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/841-sve04615-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/842-sve04618-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Full Ocean",
+        "description": "Queen Bed + 2 Single Bunk Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/844-sve04627-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/845-sve04630-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/846-sve04633-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean 1",
+        "description": "Queen Bed + 2 Extra Single Bed, bilik mandi peribadi, AC, berada di Upper Deck, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/848-sve04710-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/849-sve08662-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/850-sve08665-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean 2",
+        "description": "Queen Bed + 2 Extra Single Bed, bilik mandi peribadi, AC, berada di Upper Deck, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/857-sve08493-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/858-sve08496-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/859-sve08499-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      }
     ]
   },
   "ar": {
@@ -289,6 +580,103 @@
       "يسمح بتغيير الموعد قبل الرحلة بمدة لا تقل عن 30 يومًا.",
       "إلغاء الضيف غير قابل للاسترداد، ولكن يمكن نقل الحجز إلى شخص آخر.",
       "قد يتغير المسار بسبب الطقس وحالة البحر وسياسات السلطات المحلية."
+    ],
+    "boatSpecs": [
+      {
+        "label": "طول القارب",
+        "value": "26 Meter"
+      },
+      {
+        "label": "عرض القارب",
+        "value": "5 Meter"
+      },
+      {
+        "label": "سرعة الإبحار",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "مقصورات",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin 1",
+        "description": "4x Single Bunk Bed, حمام خاص, AC, berada di Main Deck, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Share Cabin 2",
+        "description": "4x Single Bunk Bed, حمام خاص, AC, berada di Main Deck, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Share Cabin 3",
+        "description": "4x Single Bunk Bed, حمام خاص, AC, berada di Main Deck, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/841-sve04615-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/842-sve04618-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Full Ocean",
+        "description": "Queen Bed + 2 Single Bunk Bed, حمام خاص, AC, berada di Main Deck, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/844-sve04627-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/845-sve04630-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/846-sve04633-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean 1",
+        "description": "Queen Bed + 2 Extra Single Bed, حمام خاص, AC, berada di Upper Deck, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/848-sve04710-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/849-sve08662-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/850-sve08665-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean 2",
+        "description": "Queen Bed + 2 Extra Single Bed, حمام خاص, AC, berada di Upper Deck, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/857-sve08493-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/858-sve08496-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/859-sve08499-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      }
     ]
   },
   "zh": {
@@ -362,6 +750,103 @@
       "改期最迟须在出发前30天办理。",
       "客人取消预订不予退款，但可将预订转让给其他人。",
       "路线可能因天气、海况和当地主管部门政策而调整。"
+    ],
+    "boatSpecs": [
+      {
+        "label": "船长",
+        "value": "26 Meter"
+      },
+      {
+        "label": "船宽",
+        "value": "5 Meter"
+      },
+      {
+        "label": "巡航速度",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "客舱",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin 1",
+        "description": "4x Single Bunk Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-1/883-sve04639-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Share Cabin 2",
+        "description": "4x Single Bunk Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/share-bathroom-2/884-sve04645.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Share Cabin 3",
+        "description": "4x Single Bunk Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/840-sve04612-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/841-sve04615-hdr.webp",
+          "packages/lamborajo-1/cabins/3-share-cabin-3-4x-single-bunk-bed/842-sve04618-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.000.000/pax"
+        }
+      },
+      {
+        "name": "Full Ocean",
+        "description": "Queen Bed + 2 Single Bunk Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/843-sve04624-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/844-sve04627-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/845-sve04630-hdr.webp",
+          "packages/lamborajo-1/cabins/4-full-ocean-queenbed-2x-single-bunk-bed/846-sve04633-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 3.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean 1",
+        "description": "Queen Bed + 2 Extra Single Bed, 私人浴室, AC, berada di Upper Deck, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/847-sve04702-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/848-sve04710-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/849-sve08662-hdr.webp",
+          "packages/lamborajo-1/cabins/5-master-ocean-1-queenbed-2x-extra-bed-private-bathroom/850-sve08665-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      },
+      {
+        "name": "Master Ocean 2",
+        "description": "Queen Bed + 2 Extra Single Bed, 私人浴室, AC, berada di Upper Deck, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/856-sve04726-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/857-sve08493-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/858-sve08496-hdr.webp",
+          "packages/lamborajo-1/cabins/6-master-ocean-2-queenbed-2x-extra-bed-private-bathroom/859-sve08499-hdr.webp"
+        ],
+        "prices": {
+          "default": "Minimum 2 pax: IDR 4.550.000/pax; additional pax: IDR 2.750.000/pax"
+        }
+      }
     ]
   }
 }

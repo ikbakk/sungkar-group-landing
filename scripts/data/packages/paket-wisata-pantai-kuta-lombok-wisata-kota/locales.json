@@ -55,7 +55,7 @@
   },
   "en": {
     "title": "Kuta Lombok Beach & City Tour Package",
-    "collectionTitle": "Paket 2 Hari 1 Malam",
+    "collectionTitle": "2 Days 1 Night Package",
     "category": "Lombok Tour Packages",
     "duration": "2 Days 1 Night",
     "summary": "A 2-day 1-night Lombok tour package combining the beauty of Kuta Mandalika Beach, Tanjung Aan Beach, Sasak cultural tour, and historical and religious tours in Mataram City. Suitable for travelers who want to enjoy beaches, culture, cuisine, and Lombok’s iconic attractions in a short time.",
@@ -109,7 +109,7 @@
   },
   "ar": {
     "title": "باڪيت ويازاتا بانتاي كوتا لومبوك دان ويازاتا كوتا",
-    "collectionTitle": "Paket 2 Hari 1 Malam",
+    "collectionTitle": "باقة يومين وليلة",
     "category": "باكيجات سياحة لومبوك",
     "duration": "يومين وليلة",
     "summary": "برنامج رحلة لومبوك لمدة يومين وليلة واحدة يجمع بين جمال شاطئ كوتا مانداليكا وشاطئ تانجونغ آن والجولة الثقافية لشعب ساساك والجولات التاريخية والدينية في مدينة ماتارام. مناسب للمسافرين الذين يرغبون في الاستمتاع بالشواطئ والثقافة والمأكولات في وقت قصير.",
@@ -163,7 +163,7 @@
   },
   "ms": {
     "title": "Kuta Lombok Beach & City Tour Package",
-    "collectionTitle": "Paket 2 Hari 1 Malam",
+    "collectionTitle": "Pakej 2 Hari 1 Malam",
     "category": "Pakej Pelancongan Lombok",
     "duration": "2 Hari 1 Malam",
     "summary": "A 2-day 1-night Lombok tour package combining the beauty of Kuta Mandalika Beach, Tanjung Aan Beach, Sasak cultural tour, and historical and religious tours in Mataram City. Suitable for travelers who want to enjoy beaches, culture, cuisine, and Lombok’s iconic attractions in a short time.",
@@ -217,7 +217,7 @@
   },
   "zh": {
     "title": "库塔龙目岛海滩和城市观光套餐",
-    "collectionTitle": "Paket 2 Hari 1 Malam",
+    "collectionTitle": "两天一晚套餐",
     "category": "龙目岛旅游套餐",
     "duration": "2天1夜",
     "summary": "2天1夜龙目岛旅游套餐，结合库塔曼达利卡海滩、丹戎安海滩的美景、萨萨克文化之旅以及马塔兰市的历史宗教观光。适合希望在短时间内享受海滩、文化、美食的旅行者。",
@@ -261,6 +261,12 @@
       "机场接机",
       "机场送机"
     ],
-    "excludes": ["机票", "景点门票", "个人消费", "旅行保险", "司机和导游小费"]
+    "excludes": [
+      "机票",
+      "景点门票",
+      "个人消费",
+      "旅行保险",
+      "司机和导游小费"
+    ]
   }
 }

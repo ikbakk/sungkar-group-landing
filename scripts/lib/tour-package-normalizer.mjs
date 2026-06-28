@@ -1,10 +1,4 @@
-import {
-  getPriceListLabels,
-  localizeBoatSpecs,
-  localizeCabins,
-  localizeCollectionTitle,
-  normalizePackagePriceList,
-} from "./package-localization.mjs";
+import { normalizePackagePriceList } from "./package-localization.mjs";
 
 export function normalizePackageLocale(pkg, localeKey) {
   const locale = { ...pkg.locales[localeKey], localeKey };
@@ -15,10 +9,7 @@ export function normalizePackageLocale(pkg, localeKey) {
   ordered.region = pkg.region;
   if (pkg.featured) ordered.featured = true;
   ordered.collectionSlug = pkg.collectionSlug;
-  ordered.collectionTitle = localizeCollectionTitle(
-    locale.collectionTitle,
-    localeKey,
-  );
+  ordered.collectionTitle = locale.collectionTitle;
   ordered.category = locale.category;
   if (locale.durationOptions) {
     ordered.duration = locale.durationOptions.join(", ");
@@ -50,13 +41,13 @@ export function normalizePackageLocale(pkg, localeKey) {
   if (pkg.boatName) ordered.boatName = pkg.boatName;
   if (pkg.boatType) ordered.boatType = pkg.boatType;
   if (pkg.boatCapacity) ordered.boatCapacity = pkg.boatCapacity;
-  if (pkg.boatSpecs)
-    ordered.boatSpecs = localizeBoatSpecs(pkg.boatSpecs, localeKey);
-  if (pkg.cabins) ordered.cabins = localizeCabins(pkg.cabins, localeKey);
+  if (locale.boatSpecs) ordered.boatSpecs = locale.boatSpecs;
+  else if (pkg.boatSpecs) ordered.boatSpecs = pkg.boatSpecs;
+  if (locale.cabins) ordered.cabins = locale.cabins;
+  else if (pkg.cabins) ordered.cabins = pkg.cabins;
   if (pkg.priceList) {
     ordered.priceList = normalizePackagePriceList(pkg.priceList);
-    const priceListLabels = getPriceListLabels(pkg.priceListType, localeKey);
-    if (priceListLabels) ordered.priceListLabels = priceListLabels;
+    if (locale.priceListLabels) ordered.priceListLabels = locale.priceListLabels;
   }
   if (locale.additionalServices)
     ordered.additionalServices = locale.additionalServices;

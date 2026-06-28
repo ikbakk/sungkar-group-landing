@@ -160,6 +160,194 @@
       "Sunblock",
       "Kacamata hitam",
       "Minuman ringan/minuman beralkohol"
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "30m"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "6.5m"
+      },
+      {
+        "label": "Kecepatan Jelajah",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasitas Bahan Bakar",
+        "value": "8000 Liter"
+      },
+      {
+        "label": "Kapasitas Air Tawar",
+        "value": "13000 Liter"
+      },
+      {
+        "label": "Mesin",
+        "value": "Mitsubishi 8D C9 Cylinder"
+      },
+      {
+        "label": "Generator",
+        "value": "PS120-30KVA, PS120-22KVA"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+      },
+      {
+        "label": "Speedboat",
+        "value": "6 Meter Fiberglass dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "8 Kabin (AC, Kamar Mandi Pribadi)"
+      },
+      {
+        "label": "Fasilitas Tambahan",
+        "value": "Jacuzzi"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Superior Cabin 1 (Lower Deck)",
+        "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 2 (Lower Deck)",
+        "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Signature Ocean 1 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Signature Ocean 2 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Upper Deck)",
+        "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Upper Deck)",
+        "description": "1x Queen Bed, Kamar Mandi Pribadi, AC, Kapasitas 2 Orang.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 1 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, Kamar Mandi Pribadi, AC, Balkon Pribadi, Kapasitas 2-3 Orang.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "en": {
@@ -323,6 +511,194 @@
       "Sunblock",
       "Sunglasses",
       "Soft drinks/alcoholic beverages"
+    ],
+    "boatSpecs": [
+      {
+        "label": "Boat Length",
+        "value": "30m"
+      },
+      {
+        "label": "Boat Width",
+        "value": "6.5m"
+      },
+      {
+        "label": "Cruising Speed",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Fuel Capacity",
+        "value": "8000 Liter"
+      },
+      {
+        "label": "Fresh Water Capacity",
+        "value": "13000 Liter"
+      },
+      {
+        "label": "Engine",
+        "value": "Mitsubishi 8D C9 Cylinder"
+      },
+      {
+        "label": "Generator",
+        "value": "PS120-30KVA, PS120-22KVA"
+      },
+      {
+        "label": "Navigation",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Safety Equipment",
+        "value": "Life Raft, Life Jackets, Ring Buoys, Fire Extinguisher, First Aid Kit"
+      },
+      {
+        "label": "Speedboat",
+        "value": "6 Meter Fiberglass with Yamaha 15 HP Engine"
+      },
+      {
+        "label": "Cabins",
+        "value": "8 Kabin (AC, Kamar Mandi Pribadi)"
+      },
+      {
+        "label": "Fasilitas Tambahan",
+        "value": "Jacuzzi"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Superior Cabin 1 (Lower Deck)",
+        "description": "1x Queen Bed, private bathroom, AC, capacity 2 pax.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 2 (Lower Deck)",
+        "description": "1x Queen Bed, private bathroom, AC, capacity 2 pax.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Signature Ocean 1 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, private bathroom, AC, private balcony, capacity 2-3 pax.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Signature Ocean 2 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, private bathroom, AC, private balcony, capacity 2-3 pax.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Upper Deck)",
+        "description": "1x Queen Bed, private bathroom, AC, capacity 2 pax.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Upper Deck)",
+        "description": "1x Queen Bed, private bathroom, AC, capacity 2 pax.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 1 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, private bathroom, AC, private balcony, capacity 2-3 pax.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, private bathroom, AC, private balcony, capacity 2-3 pax.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ms": {
@@ -486,6 +862,194 @@
       "Sunblock",
       "Cermin mata hitam",
       "Minuman ringan/minuman beralkohol"
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "30m"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "6.5m"
+      },
+      {
+        "label": "Kelajuan Pelayaran",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasiti Bahan Api",
+        "value": "8000 Liter"
+      },
+      {
+        "label": "Kapasiti Air Tawar",
+        "value": "13000 Liter"
+      },
+      {
+        "label": "Enjin",
+        "value": "Mitsubishi 8D C9 Cylinder"
+      },
+      {
+        "label": "Generator",
+        "value": "PS120-30KVA, PS120-22KVA"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Keselamatan, Pelampung Cincin, Alat Pemadam Kebakaran, Peti P3K"
+      },
+      {
+        "label": "Bot Laju",
+        "value": "6 Meter Fiberglass dengan Enjin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "8 Kabin (AC, Kamar Mandi Pribadi)"
+      },
+      {
+        "label": "Fasilitas Tambahan",
+        "value": "Jacuzzi"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Superior Cabin 1 (Lower Deck)",
+        "description": "1x Queen Bed, bilik mandi peribadi, AC, kapasiti 2 orang.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 2 (Lower Deck)",
+        "description": "1x Queen Bed, bilik mandi peribadi, AC, kapasiti 2 orang.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Signature Ocean 1 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, bilik mandi peribadi, AC, balkon peribadi, kapasiti 2-3 orang.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Signature Ocean 2 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, bilik mandi peribadi, AC, balkon peribadi, kapasiti 2-3 orang.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Upper Deck)",
+        "description": "1x Queen Bed, bilik mandi peribadi, AC, kapasiti 2 orang.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Upper Deck)",
+        "description": "1x Queen Bed, bilik mandi peribadi, AC, kapasiti 2 orang.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 1 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, bilik mandi peribadi, AC, balkon peribadi, kapasiti 2-3 orang.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, bilik mandi peribadi, AC, balkon peribadi, kapasiti 2-3 orang.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ar": {
@@ -649,13 +1213,206 @@
       "واقي الشمس",
       "نظارات شمسية",
       "مشروبات غازية/كحولية"
+    ],
+    "boatSpecs": [
+      {
+        "label": "طول القارب",
+        "value": "30m"
+      },
+      {
+        "label": "عرض القارب",
+        "value": "6.5m"
+      },
+      {
+        "label": "سرعة الإبحار",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "سعة الوقود",
+        "value": "8000 Liter"
+      },
+      {
+        "label": "سعة المياه العذبة",
+        "value": "13000 Liter"
+      },
+      {
+        "label": "محرك",
+        "value": "Mitsubishi 8D C9 Cylinder"
+      },
+      {
+        "label": "مولد",
+        "value": "PS120-30KVA, PS120-22KVA"
+      },
+      {
+        "label": "ملاحة",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "راديو",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "معدات السلامة",
+        "value": "طوف نجاة، سترات النجاة، عوامات دائرية، طفاية حريق، عدة إسعافات أولية"
+      },
+      {
+        "label": "زورق سريع",
+        "value": "6 أمتار من الألياف الزجاجية بمحرك ياماها 15 حصان"
+      },
+      {
+        "label": "مقصورات",
+        "value": "8 Kabin (AC, Kamar Mandi Pribadi)"
+      },
+      {
+        "label": "Fasilitas Tambahan",
+        "value": "Jacuzzi"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Superior Cabin 1 (Lower Deck)",
+        "description": "1x Queen Bed, حمام خاص, AC, سعة 2 أشخاص.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 2 (Lower Deck)",
+        "description": "1x Queen Bed, حمام خاص, AC, سعة 2 أشخاص.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Signature Ocean 1 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, حمام خاص, AC, شرفة خاصة, سعة 2-3 أشخاص.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Signature Ocean 2 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, حمام خاص, AC, شرفة خاصة, سعة 2-3 أشخاص.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Upper Deck)",
+        "description": "1x Queen Bed, حمام خاص, AC, سعة 2 أشخاص.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Upper Deck)",
+        "description": "1x Queen Bed, حمام خاص, AC, سعة 2 أشخاص.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 1 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, حمام خاص, AC, شرفة خاصة, سعة 2-3 أشخاص.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, حمام خاص, AC, شرفة خاصة, سعة 2-3 أشخاص.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "zh": {
     "title": "Maheswari - 豪华Phinisi游船（私人包船）",
     "collectionTitle": "菲尼西豪华包船",
     "category": "拉布安巴焦帆船套餐（私人）",
-    "durationOptions": ["1天（全天）", "2天1晚", "3天2晚", "4天3晚"],
+    "durationOptions": [
+      "1天（全天）",
+      "2天1晚",
+      "3天2晚",
+      "4天3晚"
+    ],
     "summary": "享受与Maheswari豪华Phinisi游船的私人航海体验。该船配有8间空调客舱、宽敞的户外区域、按摩浴缸以及完善的设施，为您提供舒适的体验。适合16-20人的团体，提供灵活的旅行套餐选择。",
     "highlights": [
       "豪华Phinisi游船，配有8间空调客舱",
@@ -807,6 +1564,194 @@
       "防晒霜",
       "太阳眼镜",
       "汽水/酒精饮料"
+    ],
+    "boatSpecs": [
+      {
+        "label": "船长",
+        "value": "30m"
+      },
+      {
+        "label": "船宽",
+        "value": "6.5m"
+      },
+      {
+        "label": "巡航速度",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "燃料容量",
+        "value": "8000 Liter"
+      },
+      {
+        "label": "淡水容量",
+        "value": "13000 Liter"
+      },
+      {
+        "label": "发动机",
+        "value": "Mitsubishi 8D C9 Cylinder"
+      },
+      {
+        "label": "发电机",
+        "value": "PS120-30KVA, PS120-22KVA"
+      },
+      {
+        "label": "导航",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "无线电",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "安全设备",
+        "value": "救生筏、救生衣、救生圈、灭火器、急救箱"
+      },
+      {
+        "label": "快艇",
+        "value": "6米玻璃纤维船体配雅马哈15马力发动机"
+      },
+      {
+        "label": "客舱",
+        "value": "8 Kabin (AC, Kamar Mandi Pribadi)"
+      },
+      {
+        "label": "Fasilitas Tambahan",
+        "value": "Jacuzzi"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Superior Cabin 1 (Lower Deck)",
+        "description": "1x Queen Bed, 私人浴室, AC, 容纳 2 人.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 2 (Lower Deck)",
+        "description": "1x Queen Bed, 私人浴室, AC, 容纳 2 人.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1103-maheswari-superior-7-1.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1104-maheswari-superior-7-2.webp",
+          "packages/maheswari/cabins/7-cabin-7-superior-cabin-lower-deck/1105-maheswari-superior-7-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Signature Ocean 1 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, 私人浴室, AC, 私人阳台, 容纳 2-3 人.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Signature Ocean 2 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, 私人浴室, AC, 私人阳台, 容纳 2-3 人.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1088-maheswari-signatureocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1089-maheswari-signatureocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1090-maheswari-signatureocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/3-cabin-3-signature-ocean-left-side-balcony-main-deck/1091-maheswari-signatureocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Upper Deck)",
+        "description": "1x Queen Bed, 私人浴室, AC, 容纳 2 人.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Upper Deck)",
+        "description": "1x Queen Bed, 私人浴室, AC, 容纳 2 人.",
+        "capacity": 2,
+        "images": [
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1100-maheswari-deluxeocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1101-maheswari-deluxeocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/6-cabin-6-deluxe-ocean-left-side-upper-deck/1102-maheswari-deluxeocean-1-rightside-3.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 1 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, 私人浴室, AC, 私人阳台, 容纳 2-3 人.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1078-maheswari-masterocean-1-leftside-1.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1079-maheswari-masterocean-1-leftside-2.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1080-maheswari-masterocean-1-leftside-3.webp",
+          "packages/maheswari/cabins/1-cabin-1-master-ocean-view-left-side-balcony-upper-deck/1081-maheswari-masterocean-1-leftside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean 2 (Main Deck)",
+        "description": "1x Queen Bed + Extra Bed, 私人浴室, AC, 私人阳台, 容纳 2-3 人.",
+        "capacity": 3,
+        "images": [
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1083-maheswari-masterocean-1-rightside-1.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1084-maheswari-masterocean-1-rightside-2.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1085-maheswari-masterocean-1-rightside-3.webp",
+          "packages/maheswari/cabins/2-cabin-2-master-ocean-view-right-side-balcony-upper-deck/1086-maheswari-masterocean-1-rightside-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   }
 }

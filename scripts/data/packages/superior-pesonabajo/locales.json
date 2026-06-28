@@ -129,6 +129,162 @@
       "Pembatalan oleh tamu tidak dapat dikembalikan, tetapi pemesanan dapat dialihkan kepada orang lain.",
       "Pembatalan akibat larangan otoritas pelabuhan, pemerintah, cuaca, keadaan kahar, bencana alam, terorisme, ketidakstabilan politik, atau kejadian eksternal lain dapat dijadwalkan ulang atau dikembalikan penuh.",
       "Apabila operator kapal membatalkan perjalanan karena alasan yang tidak dapat dihindari, operator akan menyediakan kapal pengganti dengan harga atau kelas yang sama atau memberikan pengembalian dana penuh."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "23 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "4 Meter"
+      },
+      {
+        "label": "Kecepatan Jelajah",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasitas Air Tawar",
+        "value": "5000 Liter"
+      },
+      {
+        "label": "Kapasitas Bahan Bakar",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Mesin",
+        "value": "Yanmar 6 Cylinder TY160"
+      },
+      {
+        "label": "Generator",
+        "value": "30 kVA, Emergency 7500 Watt"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+      },
+      {
+        "label": "Speedboat",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin dengan AC, 3 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "Jumlah Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin (Main Deck)",
+        "description": "4 single bunk bed, kamar mandi pribadi, AC, kapasitas 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Double (Main Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Triple (Main Deck)",
+        "description": "Queen Bed dan single bunk bed, kamar mandi pribadi, AC, kapasitas 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Main Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Main Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean (Upper Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "en": {
@@ -261,6 +417,162 @@
       "Guest cancellations are non-refundable, but the booking may be transferred to another person.",
       "Cancellations caused by harbor authority or government restrictions, weather, force majeure, natural disasters, terrorism, political instability, or other external events may be rescheduled or fully refunded.",
       "If the boat operator cancels for unavoidable reasons, a replacement vessel of the same price or class will be provided, or a full refund will be issued."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Boat Length",
+        "value": "23 Meter"
+      },
+      {
+        "label": "Boat Width",
+        "value": "4 Meter"
+      },
+      {
+        "label": "Cruising Speed",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Fresh Water Capacity",
+        "value": "5000 Liter"
+      },
+      {
+        "label": "Fuel Capacity",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Engine",
+        "value": "Yanmar 6 Cylinder TY160"
+      },
+      {
+        "label": "Generator",
+        "value": "30 kVA, Emergency 7500 Watt"
+      },
+      {
+        "label": "Navigation",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Safety Equipment",
+        "value": "Life Raft, Life Jackets, Ring Buoys, Fire Extinguisher, First Aid Kit"
+      },
+      {
+        "label": "Speedboat",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Cabins",
+        "value": "6 Kabin dengan AC, 3 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "Cabins",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin (Main Deck)",
+        "description": "4 single bunk bed, private bathroom, AC, capacity 1-4 pax.",
+        "capacity": "1-4",
+        "images": [
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Double (Main Deck)",
+        "description": "Queen Bed, private bathroom, AC, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Triple (Main Deck)",
+        "description": "Queen Bed and single bunk bed, private bathroom, AC, capacity 1-3 pax.",
+        "capacity": "1-3",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Main Deck)",
+        "description": "Queen Bed, private bathroom, AC, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Main Deck)",
+        "description": "Queen Bed, private bathroom, AC, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean (Upper Deck)",
+        "description": "Queen Bed, private bathroom, AC, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ms": {
@@ -393,6 +705,162 @@
       "Pembatalan oleh tetamu tidak akan dikembalikan, tetapi tempahan boleh dipindahkan kepada orang lain.",
       "Pembatalan akibat larangan pihak pelabuhan atau kerajaan, cuaca, keadaan luar jangka, bencana alam, keganasan, ketidakstabilan politik, atau kejadian luar lain boleh dijadualkan semula atau dikembalikan sepenuhnya.",
       "Jika operator kapal membatalkan perjalanan atas sebab yang tidak dapat dielakkan, kapal gantian dengan harga atau kelas yang sama akan disediakan atau bayaran balik penuh akan diberikan."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "23 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "4 Meter"
+      },
+      {
+        "label": "Kelajuan Pelayaran",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasiti Air Tawar",
+        "value": "5000 Liter"
+      },
+      {
+        "label": "Kapasiti Bahan Api",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Enjin",
+        "value": "Yanmar 6 Cylinder TY160"
+      },
+      {
+        "label": "Generator",
+        "value": "30 kVA, Emergency 7500 Watt"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Keselamatan, Pelampung Cincin, Alat Pemadam Kebakaran, Peti P3K"
+      },
+      {
+        "label": "Bot Laju",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "6 Kabin dengan AC, 3 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "Bilangan Kabin",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin (Main Deck)",
+        "description": "4 single bunk bed, bilik mandi peribadi, AC, kapasiti 1-4 orang.",
+        "capacity": "1-4",
+        "images": [
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Double (Main Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Triple (Main Deck)",
+        "description": "Queen Bed dan single bunk bed, bilik mandi peribadi, AC, kapasiti 1-3 orang.",
+        "capacity": "1-3",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Main Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Main Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean (Upper Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ar": {
@@ -525,13 +993,174 @@
       "إلغاء الضيف غير قابل للاسترداد، ولكن يمكن نقل الحجز إلى شخص آخر.",
       "يمكن إعادة جدولة الرحلة أو استرداد قيمتها كاملة عند الإلغاء بسبب قيود سلطات الميناء أو الحكومة أو الطقس أو القوة القاهرة أو الكوارث الطبيعية أو الإرهاب أو عدم الاستقرار السياسي أو الأحداث الخارجية الأخرى.",
       "إذا ألغى مشغل السفينة الرحلة لأسباب لا يمكن تجنبها، فسيتم توفير سفينة بديلة بالسعر أو الفئة نفسها أو إصدار استرداد كامل."
+    ],
+    "boatSpecs": [
+      {
+        "label": "طول القارب",
+        "value": "23 Meter"
+      },
+      {
+        "label": "عرض القارب",
+        "value": "4 Meter"
+      },
+      {
+        "label": "سرعة الإبحار",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "سعة المياه العذبة",
+        "value": "5000 Liter"
+      },
+      {
+        "label": "سعة الوقود",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "محرك",
+        "value": "Yanmar 6 Cylinder TY160"
+      },
+      {
+        "label": "مولد",
+        "value": "30 kVA, Emergency 7500 Watt"
+      },
+      {
+        "label": "ملاحة",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "راديو",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "معدات السلامة",
+        "value": "طوف نجاة، سترات النجاة، عوامات دائرية، طفاية حريق، عدة إسعافات أولية"
+      },
+      {
+        "label": "زورق سريع",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "مقصورات",
+        "value": "6 Kabin dengan AC, 3 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "عدد المقصورات",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin (Main Deck)",
+        "description": "4 single bunk bed, حمام خاص, AC, سعة 1-4 أشخاص.",
+        "capacity": "1-4",
+        "images": [
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Double (Main Deck)",
+        "description": "Queen Bed, حمام خاص, AC, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Triple (Main Deck)",
+        "description": "Queen Bed و single bunk bed, حمام خاص, AC, سعة 1-3 أشخاص.",
+        "capacity": "1-3",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Main Deck)",
+        "description": "Queen Bed, حمام خاص, AC, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Main Deck)",
+        "description": "Queen Bed, حمام خاص, AC, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean (Upper Deck)",
+        "description": "Queen Bed, حمام خاص, AC, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "zh": {
     "title": "Pesonabajo - 高级菲尼西帆船（私人包船）",
     "collectionTitle": "Private Trip Superior Phinisi",
     "category": "拉布安巴焦高级帆船套餐（私人）",
-    "durationOptions": ["1天（全天）", "2天1夜", "3天2夜", "4天3夜"],
+    "durationOptions": [
+      "1天（全天）",
+      "2天1夜",
+      "3天2夜",
+      "4天3夜"
+    ],
     "summary": "乘坐Pesonabajo在拉布安巴焦和科莫多国家公园体验私人包船。该高级菲尼西帆船最多可容纳15位客人，设有6间空调客舱。",
     "highlights": [
       "高级菲尼西帆船最多可容纳15位客人",
@@ -652,6 +1281,162 @@
       "客人取消预订不予退款，但可将预订转让给其他人。",
       "因港口管理部门或政府限制、天气、不可抗力、自然灾害、恐怖主义、政治不稳定或其他外部事件导致取消时，可重新安排日期或获得全额退款。",
       "如船方因无法避免的原因取消行程，将提供相同价格或等级的替代船只，或给予全额退款。"
+    ],
+    "boatSpecs": [
+      {
+        "label": "船长",
+        "value": "23 Meter"
+      },
+      {
+        "label": "船宽",
+        "value": "4 Meter"
+      },
+      {
+        "label": "巡航速度",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "淡水容量",
+        "value": "5000 Liter"
+      },
+      {
+        "label": "燃料容量",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "发动机",
+        "value": "Yanmar 6 Cylinder TY160"
+      },
+      {
+        "label": "发电机",
+        "value": "30 kVA, Emergency 7500 Watt"
+      },
+      {
+        "label": "导航",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "无线电",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "安全设备",
+        "value": "救生筏、救生衣、救生圈、灭火器、急救箱"
+      },
+      {
+        "label": "快艇",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "客舱",
+        "value": "6 Kabin dengan AC, 3 Kamar Mandi Pribadi, dan 2 Kamar Mandi Bersama"
+      },
+      {
+        "label": "客舱数量",
+        "value": "6 Kabin"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Share Cabin (Main Deck)",
+        "description": "4 single bunk bed, 私人浴室, AC, 容纳 1-4 人.",
+        "capacity": "1-4",
+        "images": [
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1366-wil05766-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1367-wil05769-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1368-wil05772-hdr.webp",
+          "packages/pesonabajo/cabins/5-share-cabin-4x-single-bunk-bed/1369-wil05775-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Double (Main Deck)",
+        "description": "Queen Bed, 私人浴室, AC, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Private Triple (Main Deck)",
+        "description": "Queen Bed 和 single bunk bed, 私人浴室, AC, 容纳 1-3 人.",
+        "capacity": "1-3",
+        "images": [
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1363-wil05757-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1364-wil05760-hdr.webp",
+          "packages/pesonabajo/cabins/4-private-double-double-bed/1365-wil05763-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 1 (Main Deck)",
+        "description": "Queen Bed, 私人浴室, AC, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Deluxe Ocean 2 (Main Deck)",
+        "description": "Queen Bed, 私人浴室, AC, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1355-wil05724-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1356-wil05727-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1357-wil05730-hdr.webp",
+          "packages/pesonabajo/cabins/2-3-deluxe-double-queen-bed-private-bathroom/1358-wil05733-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Master Ocean (Upper Deck)",
+        "description": "Queen Bed, 私人浴室, AC, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1348-wil05688-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1349-wil05691-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1350-wil05694-hdr.webp",
+          "packages/pesonabajo/cabins/1-master-ocean-queen-bed-private-bathroom/1351-wil05697-hdr.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   }
 }

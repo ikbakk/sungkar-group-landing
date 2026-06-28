@@ -70,6 +70,142 @@
       "Perubahan jadwal maksimal 30 hari sebelum perjalanan.",
       "Pembatalan oleh tamu tidak dapat dikembalikan, tetapi pemesanan dapat dialihkan kepada orang lain.",
       "Rute perjalanan dapat berubah karena cuaca, kondisi laut, dan kebijakan otoritas setempat."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "29,30 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "7 Meter"
+      },
+      {
+        "label": "Kecepatan Jelajah",
+        "value": "7-11 Knot"
+      },
+      {
+        "label": "Kapasitas Air Tawar",
+        "value": "10000 Liter"
+      },
+      {
+        "label": "Kapasitas Bahan Bakar",
+        "value": "7500 Liter"
+      },
+      {
+        "label": "Mesin",
+        "value": "Mitsubishi 6D22"
+      },
+      {
+        "label": "Generator",
+        "value": "30 kVA, 40 kVA, Emergency 8000 Watt"
+      },
+      {
+        "label": "Navigasi",
+        "value": "Kompas, GPS, AIS, Peta, Radio SSB, VHF Radio, Handy Talky"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Life raft 50 orang, 30 life jacket, 2 fire extinguisher, first aid kit"
+      },
+      {
+        "label": "Speedboat",
+        "value": "1 unit fiberglass dengan mesin Yamaha 40 HP"
+      },
+      {
+        "label": "Jumlah Kabin",
+        "value": "6 Kabin"
+      },
+      {
+        "label": "Fasilitas",
+        "value": "AC cabin, large sundeck, sun chair, bean bag, snorkeling equipment, Bluetooth sound system, indoor dining room, fridge, dispenser, jacuzzi, Starlink WiFi"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Sumbawa Room",
+        "description": "6 single bunk bed, kamar mandi pribadi, kapasitas 1-5 orang.",
+        "capacity": "1-5",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.800.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/035-alfathran-sumbawa-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/036-alfathran-sumbawa-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/037-alfathran-sumbawa-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/038-alfathran-sumbawa-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Gili Room",
+        "description": "Queen bed dan 2 single bunk bed, kamar mandi pribadi, kapasitas 2-4 orang.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 7.050.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/055-alfathran-3-gili-room-1-0004-sve03436.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/056-alfathran-3-gili-room-7.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/057-alfathran-gili-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/058-alfathran-gili-cabin-2.webp"
+        ]
+      },
+      {
+        "name": "Flores Room",
+        "description": "Queen bed dan single bed, kamar mandi pribadi, kapasitas 2-3 orang.",
+        "capacity": "2-3",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 9.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/039-alfathran-3-flores-room-1-0000-sve03548.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/040-alfathran-3-flores-room-1-00055.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/041-alfathran-flores-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/042-alfathran-flores-cabin-2.webp"
+        ]
+      },
+      {
+        "name": "Rinjani Room 01",
+        "description": "2 queen bed, kamar mandi pribadi, kapasitas 2-4 orang.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/050-alfathran-rinjani1-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/051-alfathran-rinjani1-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/052-alfathran-rinjani1-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/053-alfathran-rinjani1-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Rinjani Room 02",
+        "description": "Queen bed dan 2 single bunk bed, kamar mandi pribadi, kapasitas 2-4 orang.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/045-alfathran-rinjani2-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/046-alfathran-rinjani2-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/047-alfathran-rinjani2-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/048-alfathran-rinjani2-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Senggigi Room",
+        "description": "Queen bed dan 3 extra bed, kamar mandi pribadi, balkon pribadi, kapasitas 2-5 orang.",
+        "capacity": "2-5",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 12.050.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
+        ]
+      }
     ]
   },
   "en": {
@@ -143,6 +279,142 @@
       "Rescheduling is permitted no later than 30 days before departure.",
       "Guest cancellations are non-refundable, but the booking may be transferred to another person.",
       "The route may change due to weather, sea conditions, and local authority policies."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Boat Length",
+        "value": "29,30 Meter"
+      },
+      {
+        "label": "Boat Width",
+        "value": "7 Meter"
+      },
+      {
+        "label": "Cruising Speed",
+        "value": "7-11 Knot"
+      },
+      {
+        "label": "Fresh Water Capacity",
+        "value": "10000 Liter"
+      },
+      {
+        "label": "Fuel Capacity",
+        "value": "7500 Liter"
+      },
+      {
+        "label": "Engine",
+        "value": "Mitsubishi 6D22"
+      },
+      {
+        "label": "Generator",
+        "value": "30 kVA, 40 kVA, Emergency 8000 Watt"
+      },
+      {
+        "label": "Navigation",
+        "value": "Kompas, GPS, AIS, Peta, Radio SSB, VHF Radio, Handy Talky"
+      },
+      {
+        "label": "Safety Equipment",
+        "value": "Life raft 50 orang, 30 life jacket, 2 fire extinguisher, first aid kit"
+      },
+      {
+        "label": "Speedboat",
+        "value": "1 unit fiberglass dengan mesin Yamaha 40 HP"
+      },
+      {
+        "label": "Cabins",
+        "value": "6 Kabin"
+      },
+      {
+        "label": "Fasilitas",
+        "value": "AC cabin, large sundeck, sun chair, bean bag, snorkeling equipment, Bluetooth sound system, indoor dining room, fridge, dispenser, jacuzzi, Starlink WiFi"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Sumbawa Room",
+        "description": "6 single bunk bed, private bathroom, capacity 1-5 pax.",
+        "capacity": "1-5",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.800.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/035-alfathran-sumbawa-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/036-alfathran-sumbawa-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/037-alfathran-sumbawa-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/038-alfathran-sumbawa-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Gili Room",
+        "description": "Queen bed and 2 single bunk bed, private bathroom, capacity 2-4 pax.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 7.050.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/055-alfathran-3-gili-room-1-0004-sve03436.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/056-alfathran-3-gili-room-7.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/057-alfathran-gili-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/058-alfathran-gili-cabin-2.webp"
+        ]
+      },
+      {
+        "name": "Flores Room",
+        "description": "Queen bed and single bed, private bathroom, capacity 2-3 pax.",
+        "capacity": "2-3",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 9.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/039-alfathran-3-flores-room-1-0000-sve03548.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/040-alfathran-3-flores-room-1-00055.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/041-alfathran-flores-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/042-alfathran-flores-cabin-2.webp"
+        ]
+      },
+      {
+        "name": "Rinjani Room 01",
+        "description": "2 queen bed, private bathroom, capacity 2-4 pax.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/050-alfathran-rinjani1-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/051-alfathran-rinjani1-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/052-alfathran-rinjani1-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/053-alfathran-rinjani1-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Rinjani Room 02",
+        "description": "Queen bed and 2 single bunk bed, private bathroom, capacity 2-4 pax.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/045-alfathran-rinjani2-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/046-alfathran-rinjani2-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/047-alfathran-rinjani2-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/048-alfathran-rinjani2-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Senggigi Room",
+        "description": "Queen bed and 3 extra bed, private bathroom, private balcony, capacity 2-5 pax.",
+        "capacity": "2-5",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 12.050.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
+        ]
+      }
     ]
   },
   "ms": {
@@ -216,6 +488,142 @@
       "Penjadualan semula dibenarkan selewat-lewatnya 30 hari sebelum perjalanan.",
       "Pembatalan oleh tetamu tidak akan dikembalikan, tetapi tempahan boleh dipindahkan kepada orang lain.",
       "Laluan boleh berubah akibat cuaca, keadaan laut, dan dasar pihak berkuasa tempatan."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "29,30 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "7 Meter"
+      },
+      {
+        "label": "Kelajuan Pelayaran",
+        "value": "7-11 Knot"
+      },
+      {
+        "label": "Kapasiti Air Tawar",
+        "value": "10000 Liter"
+      },
+      {
+        "label": "Kapasiti Bahan Api",
+        "value": "7500 Liter"
+      },
+      {
+        "label": "Enjin",
+        "value": "Mitsubishi 6D22"
+      },
+      {
+        "label": "Generator",
+        "value": "30 kVA, 40 kVA, Emergency 8000 Watt"
+      },
+      {
+        "label": "Navigasi",
+        "value": "Kompas, GPS, AIS, Peta, Radio SSB, VHF Radio, Handy Talky"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Life raft 50 orang, 30 life jacket, 2 fire extinguisher, first aid kit"
+      },
+      {
+        "label": "Bot Laju",
+        "value": "1 unit fiberglass dengan mesin Yamaha 40 HP"
+      },
+      {
+        "label": "Bilangan Kabin",
+        "value": "6 Kabin"
+      },
+      {
+        "label": "Fasilitas",
+        "value": "AC cabin, large sundeck, sun chair, bean bag, snorkeling equipment, Bluetooth sound system, indoor dining room, fridge, dispenser, jacuzzi, Starlink WiFi"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Sumbawa Room",
+        "description": "6 single bunk bed, bilik mandi peribadi, kapasiti 1-5 orang.",
+        "capacity": "1-5",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.800.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/035-alfathran-sumbawa-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/036-alfathran-sumbawa-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/037-alfathran-sumbawa-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/038-alfathran-sumbawa-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Gili Room",
+        "description": "Queen bed dan 2 single bunk bed, bilik mandi peribadi, kapasiti 2-4 orang.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 7.050.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/055-alfathran-3-gili-room-1-0004-sve03436.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/056-alfathran-3-gili-room-7.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/057-alfathran-gili-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/058-alfathran-gili-cabin-2.webp"
+        ]
+      },
+      {
+        "name": "Flores Room",
+        "description": "Queen bed dan single bed, bilik mandi peribadi, kapasiti 2-3 orang.",
+        "capacity": "2-3",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 9.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/039-alfathran-3-flores-room-1-0000-sve03548.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/040-alfathran-3-flores-room-1-00055.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/041-alfathran-flores-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/042-alfathran-flores-cabin-2.webp"
+        ]
+      },
+      {
+        "name": "Rinjani Room 01",
+        "description": "2 queen bed, bilik mandi peribadi, kapasiti 2-4 orang.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/050-alfathran-rinjani1-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/051-alfathran-rinjani1-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/052-alfathran-rinjani1-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/053-alfathran-rinjani1-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Rinjani Room 02",
+        "description": "Queen bed dan 2 single bunk bed, bilik mandi peribadi, kapasiti 2-4 orang.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/045-alfathran-rinjani2-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/046-alfathran-rinjani2-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/047-alfathran-rinjani2-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/048-alfathran-rinjani2-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Senggigi Room",
+        "description": "Queen bed dan 3 extra bed, bilik mandi peribadi, balkon peribadi, kapasiti 2-5 orang.",
+        "capacity": "2-5",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 12.050.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
+        ]
+      }
     ]
   },
   "ar": {
@@ -289,6 +697,142 @@
       "يسمح بتغيير الموعد قبل الرحلة بمدة لا تقل عن 30 يومًا.",
       "إلغاء الضيف غير قابل للاسترداد، ولكن يمكن نقل الحجز إلى شخص آخر.",
       "قد يتغير المسار بسبب الطقس وحالة البحر وسياسات السلطات المحلية."
+    ],
+    "boatSpecs": [
+      {
+        "label": "طول القارب",
+        "value": "29,30 Meter"
+      },
+      {
+        "label": "عرض القارب",
+        "value": "7 Meter"
+      },
+      {
+        "label": "سرعة الإبحار",
+        "value": "7-11 Knot"
+      },
+      {
+        "label": "سعة المياه العذبة",
+        "value": "10000 Liter"
+      },
+      {
+        "label": "سعة الوقود",
+        "value": "7500 Liter"
+      },
+      {
+        "label": "محرك",
+        "value": "Mitsubishi 6D22"
+      },
+      {
+        "label": "مولد",
+        "value": "30 kVA, 40 kVA, Emergency 8000 Watt"
+      },
+      {
+        "label": "ملاحة",
+        "value": "Kompas, GPS, AIS, Peta, Radio SSB, VHF Radio, Handy Talky"
+      },
+      {
+        "label": "معدات السلامة",
+        "value": "Life raft 50 orang, 30 life jacket, 2 fire extinguisher, first aid kit"
+      },
+      {
+        "label": "زورق سريع",
+        "value": "1 unit fiberglass dengan mesin Yamaha 40 HP"
+      },
+      {
+        "label": "عدد المقصورات",
+        "value": "6 Kabin"
+      },
+      {
+        "label": "Fasilitas",
+        "value": "AC cabin, large sundeck, sun chair, bean bag, snorkeling equipment, Bluetooth sound system, indoor dining room, fridge, dispenser, jacuzzi, Starlink WiFi"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Sumbawa Room",
+        "description": "6 single bunk bed, حمام خاص, سعة 1-5 أشخاص.",
+        "capacity": "1-5",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.800.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/035-alfathran-sumbawa-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/036-alfathran-sumbawa-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/037-alfathran-sumbawa-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/038-alfathran-sumbawa-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Gili Room",
+        "description": "Queen bed و 2 single bunk bed, حمام خاص, سعة 2-4 أشخاص.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 7.050.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/055-alfathran-3-gili-room-1-0004-sve03436.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/056-alfathran-3-gili-room-7.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/057-alfathran-gili-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/058-alfathran-gili-cabin-2.webp"
+        ]
+      },
+      {
+        "name": "Flores Room",
+        "description": "Queen bed و single bed, حمام خاص, سعة 2-3 أشخاص.",
+        "capacity": "2-3",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 9.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/039-alfathran-3-flores-room-1-0000-sve03548.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/040-alfathran-3-flores-room-1-00055.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/041-alfathran-flores-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/042-alfathran-flores-cabin-2.webp"
+        ]
+      },
+      {
+        "name": "Rinjani Room 01",
+        "description": "2 queen bed, حمام خاص, سعة 2-4 أشخاص.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/050-alfathran-rinjani1-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/051-alfathran-rinjani1-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/052-alfathran-rinjani1-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/053-alfathran-rinjani1-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Rinjani Room 02",
+        "description": "Queen bed و 2 single bunk bed, حمام خاص, سعة 2-4 أشخاص.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/045-alfathran-rinjani2-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/046-alfathran-rinjani2-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/047-alfathran-rinjani2-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/048-alfathran-rinjani2-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Senggigi Room",
+        "description": "Queen bed و 3 extra bed, حمام خاص, شرفة خاصة, سعة 2-5 أشخاص.",
+        "capacity": "2-5",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 12.050.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
+        ]
+      }
     ]
   },
   "zh": {
@@ -362,6 +906,142 @@
       "改期最迟须在出发前30天办理。",
       "客人取消预订不予退款，但可将预订转让给其他人。",
       "路线可能因天气、海况和当地主管部门政策而调整。"
+    ],
+    "boatSpecs": [
+      {
+        "label": "船长",
+        "value": "29,30 Meter"
+      },
+      {
+        "label": "船宽",
+        "value": "7 Meter"
+      },
+      {
+        "label": "巡航速度",
+        "value": "7-11 Knot"
+      },
+      {
+        "label": "淡水容量",
+        "value": "10000 Liter"
+      },
+      {
+        "label": "燃料容量",
+        "value": "7500 Liter"
+      },
+      {
+        "label": "发动机",
+        "value": "Mitsubishi 6D22"
+      },
+      {
+        "label": "发电机",
+        "value": "30 kVA, 40 kVA, Emergency 8000 Watt"
+      },
+      {
+        "label": "导航",
+        "value": "Kompas, GPS, AIS, Peta, Radio SSB, VHF Radio, Handy Talky"
+      },
+      {
+        "label": "安全设备",
+        "value": "Life raft 50 orang, 30 life jacket, 2 fire extinguisher, first aid kit"
+      },
+      {
+        "label": "快艇",
+        "value": "1 unit fiberglass dengan mesin Yamaha 40 HP"
+      },
+      {
+        "label": "客舱数量",
+        "value": "6 Kabin"
+      },
+      {
+        "label": "Fasilitas",
+        "value": "AC cabin, large sundeck, sun chair, bean bag, snorkeling equipment, Bluetooth sound system, indoor dining room, fridge, dispenser, jacuzzi, Starlink WiFi"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Sumbawa Room",
+        "description": "6 single bunk bed, 私人浴室, 容纳 1-5 人.",
+        "capacity": "1-5",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 5.800.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/035-alfathran-sumbawa-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/036-alfathran-sumbawa-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/037-alfathran-sumbawa-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-11-12-sumbawa-room-sharing-cabin-and-toilet/038-alfathran-sumbawa-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Gili Room",
+        "description": "Queen bed 和 2 single bunk bed, 私人浴室, 容纳 2-4 人.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 7.050.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/055-alfathran-3-gili-room-1-0004-sve03436.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/056-alfathran-3-gili-room-7.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/057-alfathran-gili-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-7-10-gili-room-queen-bed-private-bathroom/058-alfathran-gili-cabin-2.webp"
+        ]
+      },
+      {
+        "name": "Flores Room",
+        "description": "Queen bed 和 single bed, 私人浴室, 容纳 2-3 人.",
+        "capacity": "2-3",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 9.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/039-alfathran-3-flores-room-1-0000-sve03548.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/040-alfathran-3-flores-room-1-00055.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/041-alfathran-flores-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-3-4-flores-room-queen-bed-private-bathroom/042-alfathran-flores-cabin-2.webp"
+        ]
+      },
+      {
+        "name": "Rinjani Room 01",
+        "description": "2 queen bed, 私人浴室, 容纳 2-4 人.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/050-alfathran-rinjani1-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/051-alfathran-rinjani1-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/052-alfathran-rinjani1-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-6-rinjani-01-room-2x-queen-bed/053-alfathran-rinjani1-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Rinjani Room 02",
+        "description": "Queen bed 和 2 single bunk bed, 私人浴室, 容纳 2-4 人.",
+        "capacity": "2-4",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 10.550.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/045-alfathran-rinjani2-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/046-alfathran-rinjani2-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/047-alfathran-rinjani2-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-5-rinjani-02-room-queen-bed-2-extra-single-bed/048-alfathran-rinjani2-cabin-4.webp"
+        ]
+      },
+      {
+        "name": "Senggigi Room",
+        "description": "Queen bed 和 3 extra bed, 私人浴室, 私人阳台, 容纳 2-5 人.",
+        "capacity": "2-5",
+        "prices": {
+          "default": "Minimum 2 pax: IDR 12.050.000/pax; additional pax: IDR 4.550.000/pax"
+        },
+        "images": [
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/029-alfathran-senggigi-cabin-1.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/030-alfathran-senggigi-cabin-2.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/031-alfathran-senggigi-cabin-3.webp",
+          "packages/alfathran-3/cabins/cabin-1-2-senggigi-room-queen-bed-3x-extra-bed-private-bathroom-balcony/032-alfathran-senggigi-cabin-4.webp"
+        ]
+      }
     ]
   }
 }

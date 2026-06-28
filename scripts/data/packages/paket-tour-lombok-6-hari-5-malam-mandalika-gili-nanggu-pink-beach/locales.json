@@ -80,11 +80,18 @@
     "excludes": [
       "Tiket pesawat.",
       "Keperluan pribadi."
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel Bintang 2",
+      "hotel3": "Hotel Bintang 3",
+      "hotel4": "Hotel Bintang 4",
+      "hotel5": "Hotel Bintang 5"
+    }
   },
   "en": {
     "title": "6-Day Lombok Tour Package – Mandalika, Gili Nanggu, Gili Trawangan & Pink Beach",
-    "collectionTitle": "Paket 6 Hari 5 Malam",
+    "collectionTitle": "6 Days 5 Nights Package",
     "category": "Lombok Tour Package",
     "duration": "6 Days 5 Nights",
     "summary": "A private 6-day, 5-night Lombok tour for a morning or midday arrival, covering Mandalika, Gili Nanggu, Gili Trawangan, Sendang Gile and Tiu Kelep waterfalls, and Pink Beach.",
@@ -163,11 +170,18 @@
     "excludes": [
       "Airfare.",
       "Personal expenses."
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Without Hotel",
+      "hotel2": "2-Star Hotel",
+      "hotel3": "3-Star Hotel",
+      "hotel4": "4-Star Hotel",
+      "hotel5": "5-Star Hotel"
+    }
   },
   "ms": {
     "title": "Pakej Lawatan Lombok 6 Hari 5 Malam – Mandalika, Gili Nanggu, Gili Trawangan & Pantai Pink",
-    "collectionTitle": "Paket 6 Hari 5 Malam",
+    "collectionTitle": "Pakej 6 Hari 5 Malam",
     "category": "Pakej Pelancongan Lombok",
     "duration": "6 Hari 5 Malam",
     "summary": "Pakej lawatan persendirian Lombok selama 6 hari 5 malam untuk ketibaan pagi atau tengah hari, merangkumi Mandalika, Gili Nanggu, Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep serta Pantai Pink.",
@@ -246,11 +260,18 @@
     "excludes": [
       "Tiket penerbangan.",
       "Perbelanjaan peribadi."
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "Tanpa Hotel",
+      "hotel2": "Hotel 2 Bintang",
+      "hotel3": "Hotel 3 Bintang",
+      "hotel4": "Hotel 4 Bintang",
+      "hotel5": "Hotel 5 Bintang"
+    }
   },
   "ar": {
     "title": "باقة سياحية إلى لومبوك لمدة 6 أيام – مانداليكا وجيلي نانغو وجيلي تراوانغان وشاطئ بينك",
-    "collectionTitle": "Paket 6 Hari 5 Malam",
+    "collectionTitle": "باقة 6 أيام و5 ليالٍ",
     "category": "باقة سياحية في لومبوك",
     "duration": "6 أيام و5 ليالٍ",
     "summary": "جولة خاصة في لومبوك لمدة 6 أيام و5 ليالٍ تشمل مانداليكا وجيلي نانغو وجيلي تراوانغان وشلالي سيندانغ غيلي وتيو كيليب وشاطئ بينك.",
@@ -329,11 +350,18 @@
     "excludes": [
       "تذاكر الطيران.",
       "المصاريف الشخصية."
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "بدون فندق",
+      "hotel2": "فندق نجمتين",
+      "hotel3": "فندق 3 نجوم",
+      "hotel4": "فندق 4 نجوم",
+      "hotel5": "فندق 5 نجوم"
+    }
   },
   "zh": {
     "title": "龙目岛6天5晚旅游套餐－曼达利卡、吉利南古、吉利特拉旺安与粉红海滩",
-    "collectionTitle": "Paket 6 Hari 5 Malam",
+    "collectionTitle": "6天5晚套餐",
     "category": "龙目岛旅游套餐",
     "duration": "6天5晚",
     "summary": "龙目岛6天5晚私人旅游套餐，适合早上或中午抵达，涵盖曼达利卡、吉利南古、吉利特拉旺安、仙达吉拉瀑布、蒂乌克勒普瀑布和粉红海滩。",
@@ -412,6 +440,13 @@
     "excludes": [
       "机票。",
       "个人消费。"
-    ]
+    ],
+    "priceListLabels": {
+      "withoutHotel": "不含酒店",
+      "hotel2": "二星酒店",
+      "hotel3": "三星酒店",
+      "hotel4": "四星酒店",
+      "hotel5": "五星酒店"
+    }
   }
 }

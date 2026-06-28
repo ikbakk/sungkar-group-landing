@@ -129,6 +129,184 @@
       "Pembatalan oleh tamu tidak dapat dikembalikan, tetapi pemesanan dapat dialihkan kepada orang lain.",
       "Pembatalan akibat larangan otoritas pelabuhan, pemerintah, cuaca, keadaan kahar, bencana alam, terorisme, ketidakstabilan politik, atau kejadian eksternal lain dapat dijadwalkan ulang atau dikembalikan penuh.",
       "Apabila operator kapal membatalkan perjalanan karena alasan yang tidak dapat dihindari, operator akan menyediakan kapal pengganti dengan harga atau kelas yang sama atau memberikan pengembalian dana penuh."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "22 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "4,5 Meter"
+      },
+      {
+        "label": "Kecepatan Jelajah",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasitas Air Tawar",
+        "value": "6000 Liter"
+      },
+      {
+        "label": "Kapasitas Bahan Bakar",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Mesin",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "Generator",
+        "value": "2 Generator dan Genset 8 kVA"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Pelampung, Pelampung Cincin, Alat Pemadam Kebakaran, Kotak P3K"
+      },
+      {
+        "label": "Speedboat",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "7 Kabin dengan AC dan Kamar Mandi Pribadi"
+      },
+      {
+        "label": "Jumlah Kabin",
+        "value": "7 Kabin"
+      },
+      {
+        "label": "Fasilitas Tambahan",
+        "value": "Jacuzzi, Area Dalam dan Luar, Sistem Suara Bluetooth"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Superior Cabin 1 (Lower Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 2 (Lower Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 3 (Lower Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 1 (Main Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 2 (Main Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 3 (Main Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 4 (Main Deck)",
+        "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "en": {
@@ -261,6 +439,184 @@
       "Guest cancellations are non-refundable, but the booking may be transferred to another person.",
       "Cancellations caused by harbor authority or government restrictions, weather, force majeure, natural disasters, terrorism, political instability, or other external events may be rescheduled or fully refunded.",
       "If the boat operator cancels for unavoidable reasons, a replacement vessel of the same price or class will be provided, or a full refund will be issued."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Boat Length",
+        "value": "22 Meter"
+      },
+      {
+        "label": "Boat Width",
+        "value": "4,5 Meter"
+      },
+      {
+        "label": "Cruising Speed",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Fresh Water Capacity",
+        "value": "6000 Liter"
+      },
+      {
+        "label": "Fuel Capacity",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Engine",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "Generator",
+        "value": "2 Generator dan Genset 8 kVA"
+      },
+      {
+        "label": "Navigation",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Safety Equipment",
+        "value": "Life Raft, Life Jackets, Ring Buoys, Fire Extinguisher, First Aid Kit"
+      },
+      {
+        "label": "Speedboat",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Cabins",
+        "value": "7 Kabin dengan AC dan Kamar Mandi Pribadi"
+      },
+      {
+        "label": "Cabins",
+        "value": "7 Kabin"
+      },
+      {
+        "label": "Fasilitas Tambahan",
+        "value": "Jacuzzi, Area Dalam dan Luar, Sistem Suara Bluetooth"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Superior Cabin 1 (Lower Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek bawah, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 2 (Lower Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek bawah, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 3 (Lower Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek bawah, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 1 (Main Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek utama, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 2 (Main Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek utama, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 3 (Main Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek utama, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 4 (Main Deck)",
+        "description": "Queen Bed, private bathroom, AC, berada di dek utama, capacity 1-2 pax.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ms": {
@@ -393,6 +749,184 @@
       "Pembatalan oleh tetamu tidak akan dikembalikan, tetapi tempahan boleh dipindahkan kepada orang lain.",
       "Pembatalan akibat larangan pihak pelabuhan atau kerajaan, cuaca, keadaan luar jangka, bencana alam, keganasan, ketidakstabilan politik, atau kejadian luar lain boleh dijadualkan semula atau dikembalikan sepenuhnya.",
       "Jika operator kapal membatalkan perjalanan atas sebab yang tidak dapat dielakkan, kapal gantian dengan harga atau kelas yang sama akan disediakan atau bayaran balik penuh akan diberikan."
+    ],
+    "boatSpecs": [
+      {
+        "label": "Panjang Kapal",
+        "value": "22 Meter"
+      },
+      {
+        "label": "Lebar Kapal",
+        "value": "4,5 Meter"
+      },
+      {
+        "label": "Kelajuan Pelayaran",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "Kapasiti Air Tawar",
+        "value": "6000 Liter"
+      },
+      {
+        "label": "Kapasiti Bahan Api",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "Enjin",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "Generator",
+        "value": "2 Generator dan Genset 8 kVA"
+      },
+      {
+        "label": "Navigasi",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "Radio",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "Peralatan Keselamatan",
+        "value": "Rakit Penyelamat, Jaket Keselamatan, Pelampung Cincin, Alat Pemadam Kebakaran, Peti P3K"
+      },
+      {
+        "label": "Bot Laju",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "Kabin",
+        "value": "7 Kabin dengan AC dan Kamar Mandi Pribadi"
+      },
+      {
+        "label": "Bilangan Kabin",
+        "value": "7 Kabin"
+      },
+      {
+        "label": "Fasilitas Tambahan",
+        "value": "Jacuzzi, Area Dalam dan Luar, Sistem Suara Bluetooth"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Superior Cabin 1 (Lower Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek bawah, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 2 (Lower Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek bawah, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 3 (Lower Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek bawah, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 1 (Main Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 2 (Main Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 3 (Main Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 4 (Main Deck)",
+        "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-2 orang.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "ar": {
@@ -525,13 +1059,196 @@
       "إلغاء الضيف غير قابل للاسترداد، ولكن يمكن نقل الحجز إلى شخص آخر.",
       "يمكن إعادة جدولة الرحلة أو استرداد قيمتها كاملة عند الإلغاء بسبب قيود سلطات الميناء أو الحكومة أو الطقس أو القوة القاهرة أو الكوارث الطبيعية أو الإرهاب أو عدم الاستقرار السياسي أو الأحداث الخارجية الأخرى.",
       "إذا ألغى مشغل السفينة الرحلة لأسباب لا يمكن تجنبها، فسيتم توفير سفينة بديلة بالسعر أو الفئة نفسها أو إصدار استرداد كامل."
+    ],
+    "boatSpecs": [
+      {
+        "label": "طول القارب",
+        "value": "22 Meter"
+      },
+      {
+        "label": "عرض القارب",
+        "value": "4,5 Meter"
+      },
+      {
+        "label": "سرعة الإبحار",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "سعة المياه العذبة",
+        "value": "6000 Liter"
+      },
+      {
+        "label": "سعة الوقود",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "محرك",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "مولد",
+        "value": "2 Generator dan Genset 8 kVA"
+      },
+      {
+        "label": "ملاحة",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "راديو",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "معدات السلامة",
+        "value": "طوف نجاة، سترات النجاة، عوامات دائرية، طفاية حريق، عدة إسعافات أولية"
+      },
+      {
+        "label": "زورق سريع",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "مقصورات",
+        "value": "7 Kabin dengan AC dan Kamar Mandi Pribadi"
+      },
+      {
+        "label": "عدد المقصورات",
+        "value": "7 Kabin"
+      },
+      {
+        "label": "Fasilitas Tambahan",
+        "value": "Jacuzzi, Area Dalam dan Luar, Sistem Suara Bluetooth"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Superior Cabin 1 (Lower Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek bawah, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 2 (Lower Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek bawah, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 3 (Lower Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek bawah, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 1 (Main Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek utama, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 2 (Main Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek utama, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 3 (Main Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek utama, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 4 (Main Deck)",
+        "description": "Queen Bed, حمام خاص, AC, berada di dek utama, سعة 1-2 أشخاص.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   },
   "zh": {
     "title": "NK Jaya 1 - 豪华菲尼西帆船（私人包船）",
     "collectionTitle": "菲尼西豪华包船",
     "category": "拉布安巴焦帆船套餐（私人）",
-    "durationOptions": ["1天（全天）", "2天1夜", "3天2夜", "4天3夜"],
+    "durationOptions": [
+      "1天（全天）",
+      "2天1夜",
+      "3天2夜",
+      "4天3夜"
+    ],
     "summary": "乘坐NK Jaya 1在拉布安巴焦和科莫多国家公园享受私人航行体验。这是一艘最多可容纳14位客人的豪华菲尼西帆船，配有7间空调客舱和独立浴室。",
     "highlights": [
       "最多可容纳14位客人的豪华菲尼西帆船",
@@ -652,6 +1369,184 @@
       "客人取消预订不予退款，但可将预订转让给其他人。",
       "因港口管理部门或政府限制、天气、不可抗力、自然灾害、恐怖主义、政治不稳定或其他外部事件导致取消时，可重新安排日期或获得全额退款。",
       "如船方因无法避免的原因取消行程，将提供相同价格或等级的替代船只，或给予全额退款。"
+    ],
+    "boatSpecs": [
+      {
+        "label": "船长",
+        "value": "22 Meter"
+      },
+      {
+        "label": "船宽",
+        "value": "4,5 Meter"
+      },
+      {
+        "label": "巡航速度",
+        "value": "7-10 Knot"
+      },
+      {
+        "label": "淡水容量",
+        "value": "6000 Liter"
+      },
+      {
+        "label": "燃料容量",
+        "value": "3000 Liter"
+      },
+      {
+        "label": "发动机",
+        "value": "Mitsubishi 6D16"
+      },
+      {
+        "label": "发电机",
+        "value": "2 Generator dan Genset 8 kVA"
+      },
+      {
+        "label": "导航",
+        "value": "AIS, Radar, Kompas, GPS, Peta"
+      },
+      {
+        "label": "无线电",
+        "value": "SBB Radio, VHF Radio"
+      },
+      {
+        "label": "安全设备",
+        "value": "救生筏、救生衣、救生圈、灭火器、急救箱"
+      },
+      {
+        "label": "快艇",
+        "value": "Fiberglass 6 Meter dengan Mesin Yamaha 15 HP"
+      },
+      {
+        "label": "客舱",
+        "value": "7 Kabin dengan AC dan Kamar Mandi Pribadi"
+      },
+      {
+        "label": "客舱数量",
+        "value": "7 Kabin"
+      },
+      {
+        "label": "Fasilitas Tambahan",
+        "value": "Jacuzzi, Area Dalam dan Luar, Sistem Suara Bluetooth"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Superior Cabin 1 (Lower Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek bawah, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 2 (Lower Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek bawah, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Superior Cabin 3 (Lower Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek bawah, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/333-nkj1-36-0003-wil02365.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/334-nkj1-36-0004-wil02362.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/335-nkj1-36-0005-wil02359.webp",
+          "packages/nk-jaya-1/cabins/5-cabin-5-superior-cabin/336-nkj1-36-0006-wil02356.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 1 (Main Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek utama, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/315-nkj1-11.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/316-nkj1-12.webp",
+          "packages/nk-jaya-1/cabins/1-cabin-1-full-ocean-view/317-nkj1-13.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 2 (Main Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek utama, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/318-nkj1-1.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/319-nkj1-2.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/320-nkj1-3.webp",
+          "packages/nk-jaya-1/cabins/2-cabin-2-full-ocean-view/321-nkj1-4.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 3 (Main Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek utama, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/323-nkj1-10.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/324-nkj1-6.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/325-nkj1-7.webp",
+          "packages/nk-jaya-1/cabins/3-cabin-3-full-ocean-view/326-nkj1-8.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      },
+      {
+        "name": "Full Ocean 4 (Main Deck)",
+        "description": "Queen Bed, 私人浴室, AC, berada di dek utama, 容纳 1-2 人.",
+        "capacity": "1-2",
+        "images": [
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/328-nkj1-14.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/329-nkj1-15.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/330-nkj1-16.webp",
+          "packages/nk-jaya-1/cabins/4-cabin-4-full-ocean-view/331-nkj1-17.webp"
+        ],
+        "prices": {
+          "1D": "Harga tergantung paket (lihat daftar harga)",
+          "2D1N": "Harga tergantung paket (lihat daftar harga)",
+          "3D2N": "Harga tergantung paket (lihat daftar harga)",
+          "4D3N": "Harga tergantung paket (lihat daftar harga)"
+        }
+      }
     ]
   }
 }
