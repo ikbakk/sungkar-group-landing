@@ -7,6 +7,8 @@ import react from "@astrojs/react";
 
 import sitemap from "@astrojs/sitemap";
 
+import indexnow from "astro-indexnow";
+
 import { SITE_URL } from "./src/lib/site-config";
 import {
   serializeSitemapItem,
@@ -50,6 +52,11 @@ export default defineConfig({
       serialize: serializeSitemapItem,
     }),
     mdx(),
+    indexnow({
+      key: "9a02fa812af84613906d2cc898dc869a",
+      enabled:
+        process.env.NETLIFY === "true" && process.env.CONTEXT === "production",
+    }),
     sitemapLastmodIntegration(),
   ],
 });
