@@ -21,7 +21,6 @@ jobs:
             --no-progress
             --cache
             --max-cache-age 1d
-            --exclude-mail
             --accept 200,206,429
             'src/**/*.astro'
             'src/**/*.md'
