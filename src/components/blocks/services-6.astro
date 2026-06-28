@@ -2,9 +2,9 @@
 import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
 import type { ImageSource } from "@/lib/images";
 import OptimizedImage from "@/components/ui/OptimizedImage.astro";
+import { Button } from "@/components/ui/button";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { Section, SectionContainer } from "@/components/ui/section";
 
 type Props = {
@@ -34,86 +34,157 @@ const {
   eyebrow,
   title,
   description,
-  alignment = "left",
   buttons,
   services,
 } = Astro.props;
+
+const featuredServices = services.slice(0, 6);
+
+const getCardLayoutClass = (index: number) => {
+  const layouts = [
+    "lg:col-start-1 lg:row-start-1 lg:row-span-2",
+    "lg:col-start-2 lg:row-start-1",
+    "lg:col-start-3 lg:row-start-1",
+    "lg:col-start-2 lg:row-start-2",
+    "lg:col-start-1 lg:row-start-3",
+    "lg:col-start-3 lg:row-start-2 lg:row-span-2",
+  ];
+
+  return layouts[index] ?? "";
+};
 ---
 
-<Section class={cn("", className)}>
-  <SectionContainer
-    class="grid gap-8 lg:grid-cols-[20rem_minmax(0,1fr)] lg:items-start"
-  >
+<Section class={cn("section-padding", className)}>
+  <SectionContainer>
     <div
-      class={cn(
-        "lg:sticky lg:top-28",
-        alignment === "center" && "text-center",
-        alignment === "right" && "text-right",
-      )}
+      class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between"
     >
-      {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
-      <TypographyH2
-        class="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl"
-      >
-        {title}
-      </TypographyH2>
-      {
-        description && (
-          <p class="text-muted-foreground mt-4 text-sm leading-relaxed">
-            {description}
-          </p>
-        )
-      }
+      <div class="max-w-2xl">
+        {eyebrow && <p class="section-eyebrow">{eyebrow}</p>}
+        <TypographyH2 class="section-title">
+          {title}
+        </TypographyH2>
+        {description && <p class="section-description">{description}</p>}
+      </div>
       {
         buttons?.length && (
-          <div
-            class={cn(
-              "mt-6 flex flex-wrap gap-3",
-              alignment === "center" && "justify-center",
-              alignment === "right" && "justify-end",
-            )}
-          >
+          <div class="flex flex-wrap gap-3 lg:justify-end">
             {buttons.map(({ href, label, ...button }) => (
-              <Button as="a" href={href} variant={button.variant}>
-                {label}
+              <Button
+                as="a"
+                href={href}
+                variant={button.variant ?? "outline"}
+                class="group/view-all h-11 rounded-full border-brand-200/80 bg-white/80 px-5 text-brand-900 shadow-sm shadow-black/[0.03] backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-300 hover:bg-brand-50 hover:shadow-md"
+              >
+                <span>{label}</span>
+                <span class="ml-2 flex size-6 items-center justify-center rounded-full bg-brand-600 text-white transition-transform duration-300 group-hover/view-all:translate-x-0.5">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5l7 7-7 7" />
+                  </svg>
+                </span>
               </Button>
             ))}
           </div>
         )
       }
     </div>
-    <div class="grid gap-6 sm:grid-cols-2">
+    <div
+      class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:auto-rows-[minmax(11rem,1fr)]"
+    >
       {
-        services.map((service) => {
+        featuredServices.map((service, index) => {
+          const isLarge = index === 0 || index === 5;
+          const layoutClass = getCardLayoutClass(index);
           const inner = (
             <>
               <OptimizedImage
                 src={service.image.src}
                 alt={service.image.alt}
-                class="absolute inset-0 -z-10 size-full object-cover opacity-60 transition-transform duration-500 group-hover/service:scale-105"
+                class={cn(
+                  "absolute inset-0 -z-10 size-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover/service:scale-105",
+                  isLarge ? "opacity-70" : "opacity-60",
+                )}
                 widths={[320, 480, 640]}
                 sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
               />
-              <div class="absolute inset-0 -z-10 bg-linear-to-t from-black/70 to-transparent" />
-              <div class="flex items-end justify-between gap-4 p-5 text-white">
-                <div class="flex flex-col gap-1">
-                  <TypographyH3 class="text-xl">{service.title}</TypographyH3>
-                  <p class="text-sm leading-relaxed text-white/75 line-clamp-4">
-                    {service.description}
-                  </p>
-                </div>
+              <div class="absolute inset-0 -z-10 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
+              <div class="flex flex-col justify-end gap-3 p-6 text-white">
+                <TypographyH3
+                  class={cn(
+                    "font-semibold tracking-[-0.01em]",
+                    isLarge ? "text-2xl" : "text-xl",
+                  )}
+                  style="font-family: var(--font-heading);"
+                >
+                  {service.title}
+                </TypographyH3>
+                <p
+                  class={cn(
+                    "text-sm leading-relaxed text-white/65 line-clamp-3",
+                  )}
+                >
+                  {service.description}
+                </p>
+                {service.href && (
+                  <div class="mt-1">
+                    <span class="group/link inline-flex items-center gap-1.5 text-xs font-medium text-white/80 transition-colors duration-300 hover:text-white">
+                      Explore
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="transition-transform duration-300 group-hover/link:translate-x-0.5"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+                    </span>
+                  </div>
+                )}
               </div>
             </>
           );
           return service.href ? (
             <a
               href={service.href}
-              class="group/service relative isolate flex aspect-square flex-col justify-end overflow-hidden rounded-xl bg-black cursor-pointer"
+              class={cn(
+                "group/service relative isolate flex flex-col justify-end overflow-hidden rounded-[1.25rem] bg-brand-800 cursor-pointer",
+                "ring-1 ring-black/[0.06] transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]",
+                "hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10",
+                layoutClass,
+                isLarge
+                  ? "min-h-[24rem] sm:row-span-2 lg:aspect-auto lg:min-h-0"
+                  : "aspect-square lg:aspect-auto lg:min-h-[11rem]",
+              )}
             >
               {inner}
             </a>
           ) : (
-            <div class="group/service relative isolate flex aspect-square flex-col justify-end overflow-hidden rounded-xl bg-black">
+            <div
+              class={cn(
+                "group/service relative isolate flex flex-col justify-end overflow-hidden rounded-[1.25rem] bg-brand-800",
+                "ring-1 ring-black/[0.06]",
+                layoutClass,
+                isLarge
+                  ? "min-h-[24rem] sm:row-span-2 lg:aspect-auto lg:min-h-0"
+                  : "aspect-square lg:aspect-auto lg:min-h-[11rem]",
+              )}
+            >
               {inner}
             </div>
           );

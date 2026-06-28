@@ -2,6 +2,7 @@
 import Services6Block from "@/components/blocks/services-6.astro";
 import type { ImageSource } from "@/lib/images";
 import type { LandingTourCard as FeaturedTour } from "@/lib/content/landing";
+import { t } from "@/lib/i18n";
 import { localizeHref } from "@/lib/i18n/localize";
 
 interface Props {
@@ -22,6 +23,8 @@ const {
   description,
   featuredTours,
 } = Astro.props as Props;
+
+const uiStrings = t(locale);
 ---
 
 <Services6Block
@@ -30,6 +33,13 @@ const {
   title={title}
   description={description}
   alignment="left"
+  buttons={[
+    {
+      label: `${uiStrings.common.viewAll} ${uiStrings.page.tourPackages}`,
+      href: localizeHref("/paket-wisata", locale) ?? "/paket-wisata",
+      variant: "outline",
+    },
+  ]}
   services={featuredTours.slice(0, 6).map((tour) => ({
     image: { src: tour.image, alt: tour.title },
     title: tour.title,

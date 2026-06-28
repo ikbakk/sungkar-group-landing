@@ -20,6 +20,47 @@ const {
 const mergedStyle = [style, `--sg-scale-in-duration:${duration}ms`]
   .filter(Boolean)
   .join(";");
+
+const scaleInScript = `
+(() => {
+  const el = document.currentScript?.previousElementSibling;
+  if (!(el instanceof HTMLElement) || el.dataset.sgScaleInMounted === "true") {
+    return;
+  }
+
+  el.dataset.sgScaleInMounted = "true";
+  const once = el.dataset.sgScaleInOnce !== "false";
+
+  const show = () => {
+    el.dataset.sgScaleInVisible = "true";
+  };
+
+  const hide = () => {
+    delete el.dataset.sgScaleInVisible;
+  };
+
+  if (!("IntersectionObserver" in window)) {
+    show();
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          show();
+          if (once) observer.disconnect();
+        } else if (!once) {
+          hide();
+        }
+      }
+    },
+    { threshold: 0.15 },
+  );
+
+  observer.observe(el);
+})();
+`;
 ---
 
 <div
@@ -32,48 +73,7 @@ const mergedStyle = [style, `--sg-scale-in-duration:${duration}ms`]
   <slot />
 </div>
 
-{enhance && (
-  <script is:inline>
-    (() => {
-      const el = document.currentScript?.previousElementSibling;
-      if (!(el instanceof HTMLElement) || el.dataset.sgScaleInMounted === "true") {
-        return;
-      }
-
-      el.dataset.sgScaleInMounted = "true";
-      const once = el.dataset.sgScaleInOnce !== "false";
-
-      const show = () => {
-        el.dataset.sgScaleInVisible = "true";
-      };
-
-      const hide = () => {
-        delete el.dataset.sgScaleInVisible;
-      };
-
-      if (!("IntersectionObserver" in window)) {
-        show();
-        return;
-      }
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          for (const entry of entries) {
-            if (entry.isIntersecting) {
-              show();
-              if (once) observer.disconnect();
-            } else if (!once) {
-              hide();
-            }
-          }
-        },
-        { threshold: 0.15 },
-      );
-
-      observer.observe(el);
-    })();
-  </script>
-)}
+{enhance && <script is:inline set:html={scaleInScript} />}
 
 <style>
   [data-sg-scale-in="true"][data-sg-scale-in-mounted="true"] {

@@ -88,11 +88,10 @@ const navigation = pruneNavigation(navModule.createNavigation(packages));
 const headerStrings = getHeaderStrings(locale);
 ---
 
-<header
-  class="fixed top-0 z-50 w-full text-background border-b border-border/80 bg-black/20 backdrop-blur-md"
->
+<header class="fixed top-0 z-50 w-full px-4 pt-4 sm:pt-6">
   <div
-    class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8"
+    class="mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-full bg-white/80 px-4 py-3 ring-1 ring-black/[0.06] backdrop-blur-xl sm:px-6"
+    style="box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.03);"
   >
     <a href={localizeHref("/", locale)} class="flex items-center gap-3">
       <OptimizedImage

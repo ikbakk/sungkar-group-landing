@@ -35,25 +35,31 @@ const cardHref = localizeHref(
   `/paket-wisata/${tour.region}/${tour.collectionSlug}/${tour.slug}`,
   locale,
 );
+
+// Determine tier from collection slug
+const tier = tour.collectionSlug?.includes("luxury")
+  ? "luxury"
+  : tour.collectionSlug?.includes("deluxe")
+    ? "premium"
+    : "standard";
+
+const prices = tour.priceList
+  ? Object.values(tour.priceList).flatMap((priceGroup) =>
+      Object.values(priceGroup),
+    )
+  : [];
+const startingPrice = prices.length > 0 ? Math.min(...prices) : undefined;
 ---
 
-<Card class="group
-      h-fit
-      overflow-hidden
-      py-0">
+<Card
+  class="group h-fit overflow-hidden py-0 transition-shadow duration-300 hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)]"
+>
   <!-- Image -->
-
   <div class="relative overflow-hidden">
     <OptimizedImage
       src={tour.images[0]}
       alt={tour.title}
-      class="aspect-4/3
-          w-full
-          object-cover
-          transition-transform
-          duration-700
-          ease-out
-          group-hover:scale-105"
+      class="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
       loading={loading}
       fetchpriority={fetchpriority}
       widths={[320, 480, 640, 800]}
@@ -61,35 +67,52 @@ const cardHref = localizeHref(
       quality={68}
     />
 
-    <div class="absolute left-4 top-4 font-sans">
-      <Badge class={region.className}>
+    <!-- Region badge -->
+    <div class="absolute left-3 top-3">
+      <Badge class:list={[region.className, "shadow-sm"]}>
         {region.label}
       </Badge>
     </div>
+
+    <!-- Price on image -->
+    {
+      startingPrice && (
+        <div class="absolute bottom-3 right-3">
+          <div class="rounded-lg bg-white/95 px-3 py-1.5 shadow-sm backdrop-blur-sm">
+            <span class="text-xs text-text-muted">Mulai dari</span>
+            <div class="flex items-baseline gap-0.5">
+              <span class="text-[10px] text-text-muted">Rp</span>
+              <span
+                class:list={[
+                  "text-lg font-bold tracking-tight",
+                  tier === "premium"
+                    ? "text-warm-600"
+                    : tier === "luxury"
+                      ? "text-brand-600"
+                      : "text-foreground",
+                ]}
+              >
+                {new Intl.NumberFormat("id-ID").format(startingPrice)}
+              </span>
+            </div>
+          </div>
+        </div>
+      )
+    }
   </div>
 
   <!-- Content -->
-
-  <CardContent class="flex h-full flex-col gap-4 p-6">
+  <CardContent class="flex h-full flex-col gap-3 p-5">
     <div class="flex flex-wrap items-center gap-2">
       <Badge
         variant="outline"
-        class="rounded-full
-            px-3
-            py-1
-            text-xs
-            font-medium"
+        class="rounded-full px-3 py-1 text-xs font-medium"
       >
         {tour.duration}
       </Badge>
-
       <Badge
         variant="secondary"
-        class="rounded-full
-            px-3
-            py-1
-            text-xs
-            font-medium"
+        class="rounded-full px-3 py-1 text-xs font-medium"
       >
         {tour.collectionTitle}
       </Badge>
@@ -97,50 +120,33 @@ const cardHref = localizeHref(
 
     <div>
       <TypographyH3
-        class="text-xl
-            
-            leading-tight
-            text-foreground"
+        class="text-lg leading-snug text-foreground group-hover:text-brand-600 transition-colors"
       >
         {tour.title}
       </TypographyH3>
-
       <p
-        class="mt-3
-            font-sans
-            line-clamp-2
-            text-sm
-            leading-7
-            text-text-muted"
+        class="mt-2 font-sans text-sm leading-relaxed text-text-muted line-clamp-2"
       >
         {tour.summary}
       </p>
     </div>
 
-    <ul class="space-y-2 text-sm font-sans">
+    <ul class="space-y-1.5 text-sm font-sans">
       {
         tour.highlights.slice(0, 3).map((item) => (
-          <li
-            class="
-                flex
-                items-center
-                gap-2
-                text-text-muted
-              "
-          >
+          <li class="flex items-center gap-2 text-text-muted">
             <HugeiconsIcon
               icon={Tick02Icon}
-              size={16}
-              className="shrink-0 text-brand-700"
+              size={14}
+              className="shrink-0 text-brand-500"
             />
-
-            <span>{item}</span>
+            <span class="line-clamp-1">{item}</span>
           </li>
         ))
       }
       {
         tour.highlights.length > 3 && (
-          <li class="text-sm text-text-muted font-sans">
+          <li class="text-xs text-text-muted">
             {moreCountLabel.replace("{n}", String(tour.highlights.length - 3))}
           </li>
         )
@@ -149,7 +155,12 @@ const cardHref = localizeHref(
 
     <div class="mt-auto pt-2">
       <a href={cardHref}>
-        <Button size="lg" class="w-full">{viewPackageDetailLabel}</Button>
+        <Button
+          size="lg"
+          class="w-full bg-brand-600 hover:bg-brand-700 text-white"
+        >
+          {viewPackageDetailLabel}
+        </Button>
       </a>
     </div>
   </CardContent>

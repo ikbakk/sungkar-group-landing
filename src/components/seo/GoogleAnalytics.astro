@@ -18,6 +18,17 @@
 const gaId = import.meta.env.PUBLIC_GA_ID || "G-P3W4KT8E8L";
 const isProduction = import.meta.env.PROD;
 
+const consentDefaultScript = `
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push(['consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied',
+  'wait_for_update': 500
+}]);
+`;
+
 const gtagInitScript = `
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -26,26 +37,22 @@ gtag('config', '${gaId}');
 `;
 ---
 
-{isProduction && gaId && (
-  <>
-    {/*
+{
+  isProduction && gaId && (
+    <>
+      {/*
       Consent Mode v2 defaults — runs synchronously before gtag.js loads
       so consent is established before any tracking data is sent.
     */}
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push(['consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied',
-        'wait_for_update': 500
-      }]);
-    </script>
+      <script is:inline set:html={consentDefaultScript} />
 
-    {/* GA4 gtag.js — main thread */}
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}>
-    </script>
-    <script is:inline set:html={gtagInitScript}></script>
-  </>
-)}
+      {/* GA4 gtag.js — main thread */}
+      <script
+        is:inline
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+      />
+      <script is:inline set:html={gtagInitScript} />
+    </>
+  )
+}

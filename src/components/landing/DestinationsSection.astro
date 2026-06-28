@@ -41,6 +41,13 @@ const icons = ["map-pin", "waves", "mountain", "compass"];
   title={title}
   description={description}
   alignment="right"
+  buttons={[
+    {
+      label: `${uiStrings.common.viewAll} ${uiStrings.page.destinations}`,
+      href: localizeHref("/destinasi", locale) ?? "/destinasi",
+      variant: "outline",
+    },
+  ]}
   features={destinations.slice(0, 4).map((d, i) => ({
     icon: icons[i] ?? "map-pin",
     title: d.title,

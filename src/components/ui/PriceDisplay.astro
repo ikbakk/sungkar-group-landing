@@ -1,0 +1,40 @@
+---
+interface Props {
+  price: number;
+  currency?: string;
+  suffix?: string;
+  tier?: "standard" | "premium" | "luxury";
+  class?: string;
+}
+
+const {
+  price,
+  currency = "Rp",
+  suffix = "/person",
+  tier = "standard",
+  class: className = "",
+} = Astro.props;
+
+const tierColors = {
+  standard: "text-foreground",
+  premium: "text-warm-600",
+  luxury: "text-brand-600",
+};
+
+function formatPrice(n: number): string {
+  return new Intl.NumberFormat("id-ID").format(n);
+}
+---
+
+<div class:list={["font-sans", className]}>
+  <span class="text-xs uppercase tracking-wider text-text-muted"
+    >Mulai dari</span
+  >
+  <div class="flex items-baseline gap-1">
+    <span class="text-sm font-medium text-text-muted">{currency}</span>
+    <span class:list={["text-3xl font-bold tracking-tight", tierColors[tier]]}>
+      {formatPrice(price)}
+    </span>
+  </div>
+  <span class="text-xs text-text-muted">{suffix}</span>
+</div>

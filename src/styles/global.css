@@ -1,18 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/inter";
-@import "@fontsource/playfair-display";
+@import "@fontsource-variable/plus-jakarta-sans";
+@import "@fontsource-variable/cormorant-garamond";
 @import "@fontsource-variable/cairo";
 @import "./sections.css";
 
 /* Pastikan teks tetap terlihat selama font loading (cegah FOIT) */
 @font-face {
-  font-family: "Inter Variable";
+  font-family: "Plus Jakarta Sans Variable";
   font-display: swap;
 }
 @font-face {
-  font-family: "Playfair Display";
+  font-family: "Cormorant Garamond Variable";
   font-display: swap;
 }
 @font-face {
@@ -23,73 +23,107 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #111827;
+  --background: #fafaf7;
+  --foreground: #1a1a1a;
 
   --card: #ffffff;
-  --card-foreground: #111827;
+  --card-foreground: #1a1a1a;
 
   --popover: #ffffff;
-  --popover-foreground: #111827;
+  --popover-foreground: #1a1a1a;
 
-  --primary: #337fb0;
+  --primary: #0a6d8c;
   --primary-foreground: #ffffff;
 
-  --secondary: #f8fafc;
-  --secondary-foreground: #111827;
+  --secondary: #f5f0e8;
+  --secondary-foreground: #1a1a1a;
 
-  --muted: #f8fafc;
-  --muted-foreground: #6b7280;
+  --muted: #f5f0e8;
+  --muted-foreground: #8b7e74;
 
-  --accent: #dff4fb;
-  --accent-foreground: #111827;
+  --accent: #e8f0e9;
+  --accent-foreground: #1a1a1a;
 
-  --destructive: #dc2626;
+  --destructive: #c1292e;
 
-  --border: #e5e7eb;
-  --input: #e5e7eb;
-  --ring: #4298ca;
+  --border: #e5ded4;
+  --input: #e5ded4;
+  --ring: #0a6d8c;
 
-  --chart-1: #4298ca;
-  --chart-2: #337fb0;
-  --chart-3: #63bddf;
-  --chart-4: #8fd4ec;
-  --chart-5: #bde7f6;
+  --chart-1: #0a6d8c;
+  --chart-2: #c67d5b;
+  --chart-3: #85c8d9;
+  --chart-4: #d4a373;
+  --chart-5: #e8dcc8;
 
-  --radius: 0.75rem;
+  --radius: 1rem;
 
   /* Sidebar */
 
   --sidebar: #ffffff;
-  --sidebar-foreground: #111827;
+  --sidebar-foreground: #1a1a1a;
 
-  --sidebar-primary: #337fb0;
+  --sidebar-primary: #0a6d8c;
   --sidebar-primary-foreground: #ffffff;
 
-  --sidebar-accent: #f4fbfe;
-  --sidebar-accent-foreground: #111827;
+  --sidebar-accent: #e8f0e9;
+  --sidebar-accent-foreground: #1a1a1a;
 
-  --sidebar-border: #e5e7eb;
-  --sidebar-ring: #4298ca;
+  --sidebar-border: #e5ded4;
+  --sidebar-ring: #0a6d8c;
 }
 
 @theme inline {
-  --font-heading: "Playfair Display", serif;
-  --font-sans: "Inter Variable", sans-serif;
-  --color-brand-50: #f4fbfe;
-  --color-brand-100: #dff4fb;
-  --color-brand-200: #bde7f6;
-  --color-brand-300: #8fd4ec;
-  --color-brand-400: #63bddf;
-  --color-brand-500: #4298ca;
-  --color-brand-600: #337fb0;
-  --color-brand-700: #2b6890;
-  --color-brand-800: #285575;
-  --color-brand-900: #244962;
+  --font-display: "Cormorant Garamond Variable", serif;
+  --font-heading: "Cormorant Garamond Variable", serif;
+  --font-sans: "Plus Jakarta Sans Variable", sans-serif;
+
+  /* Brand palette (blue/teal - matching logo) */
+  --color-brand-50: #e6f4f9;
+  --color-brand-100: #b8dfe9;
+  --color-brand-200: #85c8d9;
+  --color-brand-300: #52b0c8;
+  --color-brand-400: #2d9ab9;
+  --color-brand-500: #0d84aa;
+  --color-brand-600: #0a6d8c;
+  --color-brand-700: #08576e;
+  --color-brand-800: #054151;
+  --color-brand-900: #032c35;
+
+  /* Warm accent palette (terracotta) */
+  --color-warm-50: #fdf5ee;
+  --color-warm-100: #f8e4d3;
+  --color-warm-200: #f0cba8;
+  --color-warm-300: #e4ad78;
+  --color-warm-400: #d4914e;
+  --color-warm-500: #c67d5b;
+  --color-warm-600: #b56a42;
+  --color-warm-700: #965336;
+  --color-warm-800: #7a432e;
+  --color-warm-900: #5e3424;
+
+  /* Coral accent palette (CTAs, urgency) */
+  --color-coral-50: #fff1ee;
+  --color-coral-100: #ffe0d9;
+  --color-coral-200: #ffc4b5;
+  --color-coral-300: #ffa08a;
+  --color-coral-400: #f47d63;
+  --color-coral-500: #e35f45;
+  --color-coral-600: #c1292e;
+  --color-coral-700: #a12025;
+  --color-coral-800: #831a1e;
+  --color-coral-900: #6b1619;
+
+  /* Service tier colors */
+  --color-tier-standard: #52b0c8;
+  --color-tier-premium: #0a6d8c;
+  --color-tier-luxury: #032c35;
+
+  /* Semantic / surface tokens */
   --color-surface: #ffffff;
-  --color-surface-soft: #f8fafc;
-  --color-text: #111827;
-  --color-text-muted: #6b7280;
+  --color-surface-soft: #f5f0e8;
+  --color-text: #1a1a1a;
+  --color-text-muted: #8b7e74;
   --color-whatsapp: #25d366;
 
   --color-background: var(--background);
@@ -150,7 +184,7 @@
   h5,
   h6 {
     font-family: var(--font-heading);
-    font-weight: 400;
+    font-weight: 500;
   }
 
   button:not(:disabled),
@@ -180,22 +214,40 @@
 @layer components {
   /* Standardized Card Utilities */
   .card-base {
-    @apply rounded-lg border border-border bg-card transition-all duration-300 ease-out;
+    @apply rounded-[1.25rem] ring-1 ring-black/[0.04] bg-card;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.03),
+      0 8px 24px rgba(0, 0, 0, 0.04);
+    transition: all 0.5s cubic-bezier(0.32, 0.72, 0, 1);
   }
 
   .card-hover {
-    @apply hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(17,24,39,0.1)];
+    @apply hover:-translate-y-1.5;
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.04),
+      0 24px 48px rgba(45, 106, 79, 0.08);
   }
 
   .card-interactive {
-    @apply rounded-lg border border-border bg-card transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(17,24,39,0.1)];
+    @apply rounded-[1.25rem] ring-1 ring-black/[0.04] bg-card;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.03),
+      0 8px 24px rgba(0, 0, 0, 0.04);
+    transition: all 0.5s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  .card-interactive:hover {
+    @apply -translate-y-1.5 ring-brand-300/50;
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.04),
+      0 24px 48px rgba(45, 106, 79, 0.08);
   }
 
   .card-hover-border {
-    @apply hover:border-brand-300;
+    @apply hover:ring-brand-200/50;
   }
 
   .card-shadow-base {
-    @apply ring-1 ring-foreground/10;
+    @apply ring-1 ring-black/[0.06];
   }
 }

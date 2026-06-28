@@ -24,6 +24,13 @@ export interface UIStrings {
     youtube: string;
     facebook: string;
     tiktok: string;
+    licensedTourOperator: string;
+    ratingOnGoogle: string;
+    secureBooking: string;
+    support247: string;
+    subscribeForTips: string;
+    yourEmail: string;
+    subscribe: string;
   };
   breadcrumb: {
     home: string;

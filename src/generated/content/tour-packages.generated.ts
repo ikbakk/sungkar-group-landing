@@ -1643,30 +1643,30 @@ export const tourPackagesData = [
       "4D3N": "4 Hari 3 Malam"
     },
     "images": [
-      "hero/gaisan-deluxe.webp",
-      "gallery/gaisan-deluxe-boat-02.webp",
-      "gallery/gaisan-deluxe-boat-03.webp",
-      "gallery/gaisan-deluxe-boat-04.webp",
-      "gallery/gaisan-deluxe-boat-05.webp",
-      "gallery/gaisan-deluxe-boat-06.webp",
-      "gallery/gaisan-deluxe-boat-07.webp",
-      "gallery/gaisan-deluxe-boat-08.webp",
-      "gallery/gaisan-deluxe-boat-09.webp",
-      "gallery/gaisan-deluxe-boat-10.webp",
-      "gallery/gaisan-deluxe-boat-11.webp",
-      "gallery/gaisan-deluxe-boat-12.webp",
-      "gallery/gaisan-deluxe-boat-13.webp",
-      "gallery/gaisan-deluxe-boat-14.webp",
-      "gallery/gaisan-deluxe-boat-15.webp",
-      "gallery/gaisan-deluxe-facility-captain-room.webp",
-      "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-01.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-02.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-03.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-01.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-02.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-03.webp",
-      "gallery/gaisan-deluxe-sundeck.webp"
+      "packages/gaisan/boat/gallery/016-gaisan-deluxe.webp",
+      "packages/gaisan/boat/gallery/001-boat-02.webp",
+      "packages/gaisan/boat/gallery/002-boat-03.webp",
+      "packages/gaisan/boat/gallery/003-boat-04.webp",
+      "packages/gaisan/boat/gallery/004-boat-05.webp",
+      "packages/gaisan/boat/gallery/005-boat-06.webp",
+      "packages/gaisan/boat/gallery/006-boat-07.webp",
+      "packages/gaisan/boat/gallery/007-boat-08.webp",
+      "packages/gaisan/boat/gallery/008-boat-09.webp",
+      "packages/gaisan/boat/gallery/009-boat-10.webp",
+      "packages/gaisan/boat/gallery/010-boat-11.webp",
+      "packages/gaisan/boat/gallery/011-boat-12.webp",
+      "packages/gaisan/boat/gallery/012-boat-13.webp",
+      "packages/gaisan/boat/gallery/013-boat-14.webp",
+      "packages/gaisan/boat/gallery/014-boat-15.webp",
+      "packages/gaisan/facility/captain-room/001-facility-captain-room.webp",
+      "packages/gaisan/facility/indoor-restaurant/001-facility-indoor-restaurant.webp",
+      "packages/gaisan/facility/jacuzzi-01/001-facility-jacuzzi-01.webp",
+      "packages/gaisan/facility/jacuzzi-02/001-facility-jacuzzi-02.webp",
+      "packages/gaisan/facility/jacuzzi-03/001-facility-jacuzzi-03.webp",
+      "packages/gaisan/facility/outdoor-dining-room-01/001-facility-outdoor-dining-room-01.webp",
+      "packages/gaisan/facility/outdoor-dining-room-02/001-facility-outdoor-dining-room-02.webp",
+      "packages/gaisan/facility/outdoor-dining-room-03/001-facility-outdoor-dining-room-03.webp",
+      "packages/gaisan/boat/gallery/015-sundeck.webp"
     ],
     "summary": "Nikmati pengalaman berlayar pribadi di Labuan Bajo dan Taman Nasional Komodo bersama Gaisan, kapal Phinisi Deluxe berkapasitas hingga 19 orang dengan 9 kabin ber-AC dan kamar mandi pribadi.",
     "highlights": [
@@ -1817,10 +1817,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-04.webp"
+          "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+          "packages/gaisan/cabins/superior-cabin-1/002-superior-cabin-1-02.webp",
+          "packages/gaisan/cabins/superior-cabin-1/003-superior-cabin-1-03.webp",
+          "packages/gaisan/cabins/superior-cabin-1/004-superior-cabin-1-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -1834,10 +1834,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-04.webp"
+          "packages/gaisan/cabins/superior-cabin-2/001-superior-cabin-2-01.webp",
+          "packages/gaisan/cabins/superior-cabin-2/002-superior-cabin-2-02.webp",
+          "packages/gaisan/cabins/superior-cabin-2/003-superior-cabin-2-03.webp",
+          "packages/gaisan/cabins/superior-cabin-2/004-superior-cabin-2-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -1851,9 +1851,9 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-03.webp"
+          "packages/gaisan/cabins/superior-cabin-3/001-superior-cabin-3-01.webp",
+          "packages/gaisan/cabins/superior-cabin-3/002-superior-cabin-3-02.webp",
+          "packages/gaisan/cabins/superior-cabin-3/003-superior-cabin-3-03.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -1867,11 +1867,11 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek bawah, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-04.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-05.webp"
+          "packages/gaisan/cabins/superior-cabin-4/001-superior-cabin-4-01.webp",
+          "packages/gaisan/cabins/superior-cabin-4/002-superior-cabin-4-02.webp",
+          "packages/gaisan/cabins/superior-cabin-4/003-superior-cabin-4-03.webp",
+          "packages/gaisan/cabins/superior-cabin-4/004-superior-cabin-4-04.webp",
+          "packages/gaisan/cabins/superior-cabin-4/005-superior-cabin-4-05.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -1885,10 +1885,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-02.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-03.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-04.webp"
+          "packages/gaisan/cabins/signature-ocean-1/001-signature-ocean-1-01.webp",
+          "packages/gaisan/cabins/signature-ocean-1/002-signature-ocean-1-02.webp",
+          "packages/gaisan/cabins/signature-ocean-1/003-signature-ocean-1-03.webp",
+          "packages/gaisan/cabins/signature-ocean-1/004-signature-ocean-1-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -1902,9 +1902,9 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di dek utama, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-02.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-03.webp"
+          "packages/gaisan/cabins/signature-ocean-2/001-signature-ocean-2-01.webp",
+          "packages/gaisan/cabins/signature-ocean-2/002-signature-ocean-2-02.webp",
+          "packages/gaisan/cabins/signature-ocean-2/003-signature-ocean-2-03.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -1918,10 +1918,10 @@ export const tourPackagesData = [
         "description": "Queen Bed dan extra bed, kamar mandi pribadi, AC, berada di dek atas, kapasitas 1-3 orang.",
         "capacity": "1-3",
         "images": [
-          "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-02.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-03.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-04.webp"
+          "packages/gaisan/cabins/deluxe-ocean/001-deluxe-ocean-01.webp",
+          "packages/gaisan/cabins/deluxe-ocean/002-deluxe-ocean-02.webp",
+          "packages/gaisan/cabins/deluxe-ocean/003-deluxe-ocean-03.webp",
+          "packages/gaisan/cabins/deluxe-ocean/004-deluxe-ocean-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -1935,12 +1935,12 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, balkon pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-02.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-03.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-04.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-05.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-06.webp"
+          "packages/gaisan/cabins/master-ocean-1/001-master-ocean-1-01.webp",
+          "packages/gaisan/cabins/master-ocean-1/002-master-ocean-1-02.webp",
+          "packages/gaisan/cabins/master-ocean-1/003-master-ocean-1-03.webp",
+          "packages/gaisan/cabins/master-ocean-1/004-master-ocean-1-04.webp",
+          "packages/gaisan/cabins/master-ocean-1/005-master-ocean-1-05.webp",
+          "packages/gaisan/cabins/master-ocean-1/006-master-ocean-1-06.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -1954,11 +1954,11 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, balkon pribadi, AC, berada di dek atas, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-02.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-03.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-04.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-05.webp"
+          "packages/gaisan/cabins/master-ocean-2/001-master-ocean-2-01.webp",
+          "packages/gaisan/cabins/master-ocean-2/002-master-ocean-2-02.webp",
+          "packages/gaisan/cabins/master-ocean-2/003-master-ocean-2-03.webp",
+          "packages/gaisan/cabins/master-ocean-2/004-master-ocean-2-04.webp",
+          "packages/gaisan/cabins/master-ocean-2/005-master-ocean-2-05.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2038,30 +2038,30 @@ export const tourPackagesData = [
       "4D3N": "4 Days 3 Nights"
     },
     "images": [
-      "hero/gaisan-deluxe.webp",
-      "gallery/gaisan-deluxe-boat-02.webp",
-      "gallery/gaisan-deluxe-boat-03.webp",
-      "gallery/gaisan-deluxe-boat-04.webp",
-      "gallery/gaisan-deluxe-boat-05.webp",
-      "gallery/gaisan-deluxe-boat-06.webp",
-      "gallery/gaisan-deluxe-boat-07.webp",
-      "gallery/gaisan-deluxe-boat-08.webp",
-      "gallery/gaisan-deluxe-boat-09.webp",
-      "gallery/gaisan-deluxe-boat-10.webp",
-      "gallery/gaisan-deluxe-boat-11.webp",
-      "gallery/gaisan-deluxe-boat-12.webp",
-      "gallery/gaisan-deluxe-boat-13.webp",
-      "gallery/gaisan-deluxe-boat-14.webp",
-      "gallery/gaisan-deluxe-boat-15.webp",
-      "gallery/gaisan-deluxe-facility-captain-room.webp",
-      "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-01.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-02.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-03.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-01.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-02.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-03.webp",
-      "gallery/gaisan-deluxe-sundeck.webp"
+      "packages/gaisan/boat/gallery/016-gaisan-deluxe.webp",
+      "packages/gaisan/boat/gallery/001-boat-02.webp",
+      "packages/gaisan/boat/gallery/002-boat-03.webp",
+      "packages/gaisan/boat/gallery/003-boat-04.webp",
+      "packages/gaisan/boat/gallery/004-boat-05.webp",
+      "packages/gaisan/boat/gallery/005-boat-06.webp",
+      "packages/gaisan/boat/gallery/006-boat-07.webp",
+      "packages/gaisan/boat/gallery/007-boat-08.webp",
+      "packages/gaisan/boat/gallery/008-boat-09.webp",
+      "packages/gaisan/boat/gallery/009-boat-10.webp",
+      "packages/gaisan/boat/gallery/010-boat-11.webp",
+      "packages/gaisan/boat/gallery/011-boat-12.webp",
+      "packages/gaisan/boat/gallery/012-boat-13.webp",
+      "packages/gaisan/boat/gallery/013-boat-14.webp",
+      "packages/gaisan/boat/gallery/014-boat-15.webp",
+      "packages/gaisan/facility/captain-room/001-facility-captain-room.webp",
+      "packages/gaisan/facility/indoor-restaurant/001-facility-indoor-restaurant.webp",
+      "packages/gaisan/facility/jacuzzi-01/001-facility-jacuzzi-01.webp",
+      "packages/gaisan/facility/jacuzzi-02/001-facility-jacuzzi-02.webp",
+      "packages/gaisan/facility/jacuzzi-03/001-facility-jacuzzi-03.webp",
+      "packages/gaisan/facility/outdoor-dining-room-01/001-facility-outdoor-dining-room-01.webp",
+      "packages/gaisan/facility/outdoor-dining-room-02/001-facility-outdoor-dining-room-02.webp",
+      "packages/gaisan/facility/outdoor-dining-room-03/001-facility-outdoor-dining-room-03.webp",
+      "packages/gaisan/boat/gallery/015-sundeck.webp"
     ],
     "summary": "Enjoy a private sailing experience around Labuan Bajo and Komodo National Park aboard Gaisan, a Private Trip Deluxe Phinisi accommodating up to 19 guests with 9 air-conditioned cabins and private bathrooms.",
     "highlights": [
@@ -2212,10 +2212,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di dek bawah, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-04.webp"
+          "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+          "packages/gaisan/cabins/superior-cabin-1/002-superior-cabin-1-02.webp",
+          "packages/gaisan/cabins/superior-cabin-1/003-superior-cabin-1-03.webp",
+          "packages/gaisan/cabins/superior-cabin-1/004-superior-cabin-1-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2229,10 +2229,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di dek bawah, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-04.webp"
+          "packages/gaisan/cabins/superior-cabin-2/001-superior-cabin-2-01.webp",
+          "packages/gaisan/cabins/superior-cabin-2/002-superior-cabin-2-02.webp",
+          "packages/gaisan/cabins/superior-cabin-2/003-superior-cabin-2-03.webp",
+          "packages/gaisan/cabins/superior-cabin-2/004-superior-cabin-2-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2246,9 +2246,9 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di dek bawah, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-03.webp"
+          "packages/gaisan/cabins/superior-cabin-3/001-superior-cabin-3-01.webp",
+          "packages/gaisan/cabins/superior-cabin-3/002-superior-cabin-3-02.webp",
+          "packages/gaisan/cabins/superior-cabin-3/003-superior-cabin-3-03.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2262,11 +2262,11 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di dek bawah, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-04.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-05.webp"
+          "packages/gaisan/cabins/superior-cabin-4/001-superior-cabin-4-01.webp",
+          "packages/gaisan/cabins/superior-cabin-4/002-superior-cabin-4-02.webp",
+          "packages/gaisan/cabins/superior-cabin-4/003-superior-cabin-4-03.webp",
+          "packages/gaisan/cabins/superior-cabin-4/004-superior-cabin-4-04.webp",
+          "packages/gaisan/cabins/superior-cabin-4/005-superior-cabin-4-05.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2280,10 +2280,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di dek utama, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-02.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-03.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-04.webp"
+          "packages/gaisan/cabins/signature-ocean-1/001-signature-ocean-1-01.webp",
+          "packages/gaisan/cabins/signature-ocean-1/002-signature-ocean-1-02.webp",
+          "packages/gaisan/cabins/signature-ocean-1/003-signature-ocean-1-03.webp",
+          "packages/gaisan/cabins/signature-ocean-1/004-signature-ocean-1-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2297,9 +2297,9 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di dek utama, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-02.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-03.webp"
+          "packages/gaisan/cabins/signature-ocean-2/001-signature-ocean-2-01.webp",
+          "packages/gaisan/cabins/signature-ocean-2/002-signature-ocean-2-02.webp",
+          "packages/gaisan/cabins/signature-ocean-2/003-signature-ocean-2-03.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2313,10 +2313,10 @@ export const tourPackagesData = [
         "description": "Queen Bed and extra bed, private bathroom, AC, berada di dek atas, capacity 1-3 pax.",
         "capacity": "1-3",
         "images": [
-          "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-02.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-03.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-04.webp"
+          "packages/gaisan/cabins/deluxe-ocean/001-deluxe-ocean-01.webp",
+          "packages/gaisan/cabins/deluxe-ocean/002-deluxe-ocean-02.webp",
+          "packages/gaisan/cabins/deluxe-ocean/003-deluxe-ocean-03.webp",
+          "packages/gaisan/cabins/deluxe-ocean/004-deluxe-ocean-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2330,12 +2330,12 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, private balcony, AC, berada di dek atas, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-02.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-03.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-04.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-05.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-06.webp"
+          "packages/gaisan/cabins/master-ocean-1/001-master-ocean-1-01.webp",
+          "packages/gaisan/cabins/master-ocean-1/002-master-ocean-1-02.webp",
+          "packages/gaisan/cabins/master-ocean-1/003-master-ocean-1-03.webp",
+          "packages/gaisan/cabins/master-ocean-1/004-master-ocean-1-04.webp",
+          "packages/gaisan/cabins/master-ocean-1/005-master-ocean-1-05.webp",
+          "packages/gaisan/cabins/master-ocean-1/006-master-ocean-1-06.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2349,11 +2349,11 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, private balcony, AC, berada di dek atas, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-02.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-03.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-04.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-05.webp"
+          "packages/gaisan/cabins/master-ocean-2/001-master-ocean-2-01.webp",
+          "packages/gaisan/cabins/master-ocean-2/002-master-ocean-2-02.webp",
+          "packages/gaisan/cabins/master-ocean-2/003-master-ocean-2-03.webp",
+          "packages/gaisan/cabins/master-ocean-2/004-master-ocean-2-04.webp",
+          "packages/gaisan/cabins/master-ocean-2/005-master-ocean-2-05.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2433,30 +2433,30 @@ export const tourPackagesData = [
       "4D3N": "4 أيام و3 ليالٍ"
     },
     "images": [
-      "hero/gaisan-deluxe.webp",
-      "gallery/gaisan-deluxe-boat-02.webp",
-      "gallery/gaisan-deluxe-boat-03.webp",
-      "gallery/gaisan-deluxe-boat-04.webp",
-      "gallery/gaisan-deluxe-boat-05.webp",
-      "gallery/gaisan-deluxe-boat-06.webp",
-      "gallery/gaisan-deluxe-boat-07.webp",
-      "gallery/gaisan-deluxe-boat-08.webp",
-      "gallery/gaisan-deluxe-boat-09.webp",
-      "gallery/gaisan-deluxe-boat-10.webp",
-      "gallery/gaisan-deluxe-boat-11.webp",
-      "gallery/gaisan-deluxe-boat-12.webp",
-      "gallery/gaisan-deluxe-boat-13.webp",
-      "gallery/gaisan-deluxe-boat-14.webp",
-      "gallery/gaisan-deluxe-boat-15.webp",
-      "gallery/gaisan-deluxe-facility-captain-room.webp",
-      "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-01.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-02.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-03.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-01.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-02.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-03.webp",
-      "gallery/gaisan-deluxe-sundeck.webp"
+      "packages/gaisan/boat/gallery/016-gaisan-deluxe.webp",
+      "packages/gaisan/boat/gallery/001-boat-02.webp",
+      "packages/gaisan/boat/gallery/002-boat-03.webp",
+      "packages/gaisan/boat/gallery/003-boat-04.webp",
+      "packages/gaisan/boat/gallery/004-boat-05.webp",
+      "packages/gaisan/boat/gallery/005-boat-06.webp",
+      "packages/gaisan/boat/gallery/006-boat-07.webp",
+      "packages/gaisan/boat/gallery/007-boat-08.webp",
+      "packages/gaisan/boat/gallery/008-boat-09.webp",
+      "packages/gaisan/boat/gallery/009-boat-10.webp",
+      "packages/gaisan/boat/gallery/010-boat-11.webp",
+      "packages/gaisan/boat/gallery/011-boat-12.webp",
+      "packages/gaisan/boat/gallery/012-boat-13.webp",
+      "packages/gaisan/boat/gallery/013-boat-14.webp",
+      "packages/gaisan/boat/gallery/014-boat-15.webp",
+      "packages/gaisan/facility/captain-room/001-facility-captain-room.webp",
+      "packages/gaisan/facility/indoor-restaurant/001-facility-indoor-restaurant.webp",
+      "packages/gaisan/facility/jacuzzi-01/001-facility-jacuzzi-01.webp",
+      "packages/gaisan/facility/jacuzzi-02/001-facility-jacuzzi-02.webp",
+      "packages/gaisan/facility/jacuzzi-03/001-facility-jacuzzi-03.webp",
+      "packages/gaisan/facility/outdoor-dining-room-01/001-facility-outdoor-dining-room-01.webp",
+      "packages/gaisan/facility/outdoor-dining-room-02/001-facility-outdoor-dining-room-02.webp",
+      "packages/gaisan/facility/outdoor-dining-room-03/001-facility-outdoor-dining-room-03.webp",
+      "packages/gaisan/boat/gallery/015-sundeck.webp"
     ],
     "summary": "استمتع برحلة إبحار خاصة حول لابوان باجو ومتنزه كومودو الوطني على متن Gaisan، وهي سفينة فينيسي ديلوكس تستوعب حتى 19 ضيفًا وتضم 9 كبائن مكيفة بحمامات خاصة.",
     "highlights": [
@@ -2607,10 +2607,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di dek bawah, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-04.webp"
+          "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+          "packages/gaisan/cabins/superior-cabin-1/002-superior-cabin-1-02.webp",
+          "packages/gaisan/cabins/superior-cabin-1/003-superior-cabin-1-03.webp",
+          "packages/gaisan/cabins/superior-cabin-1/004-superior-cabin-1-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2624,10 +2624,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di dek bawah, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-04.webp"
+          "packages/gaisan/cabins/superior-cabin-2/001-superior-cabin-2-01.webp",
+          "packages/gaisan/cabins/superior-cabin-2/002-superior-cabin-2-02.webp",
+          "packages/gaisan/cabins/superior-cabin-2/003-superior-cabin-2-03.webp",
+          "packages/gaisan/cabins/superior-cabin-2/004-superior-cabin-2-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2641,9 +2641,9 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di dek bawah, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-03.webp"
+          "packages/gaisan/cabins/superior-cabin-3/001-superior-cabin-3-01.webp",
+          "packages/gaisan/cabins/superior-cabin-3/002-superior-cabin-3-02.webp",
+          "packages/gaisan/cabins/superior-cabin-3/003-superior-cabin-3-03.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2657,11 +2657,11 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di dek bawah, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-04.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-05.webp"
+          "packages/gaisan/cabins/superior-cabin-4/001-superior-cabin-4-01.webp",
+          "packages/gaisan/cabins/superior-cabin-4/002-superior-cabin-4-02.webp",
+          "packages/gaisan/cabins/superior-cabin-4/003-superior-cabin-4-03.webp",
+          "packages/gaisan/cabins/superior-cabin-4/004-superior-cabin-4-04.webp",
+          "packages/gaisan/cabins/superior-cabin-4/005-superior-cabin-4-05.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2675,10 +2675,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di dek utama, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-02.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-03.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-04.webp"
+          "packages/gaisan/cabins/signature-ocean-1/001-signature-ocean-1-01.webp",
+          "packages/gaisan/cabins/signature-ocean-1/002-signature-ocean-1-02.webp",
+          "packages/gaisan/cabins/signature-ocean-1/003-signature-ocean-1-03.webp",
+          "packages/gaisan/cabins/signature-ocean-1/004-signature-ocean-1-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2692,9 +2692,9 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di dek utama, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-02.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-03.webp"
+          "packages/gaisan/cabins/signature-ocean-2/001-signature-ocean-2-01.webp",
+          "packages/gaisan/cabins/signature-ocean-2/002-signature-ocean-2-02.webp",
+          "packages/gaisan/cabins/signature-ocean-2/003-signature-ocean-2-03.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2708,10 +2708,10 @@ export const tourPackagesData = [
         "description": "Queen Bed و extra bed, حمام خاص, AC, berada di dek atas, سعة 1-3 أشخاص.",
         "capacity": "1-3",
         "images": [
-          "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-02.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-03.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-04.webp"
+          "packages/gaisan/cabins/deluxe-ocean/001-deluxe-ocean-01.webp",
+          "packages/gaisan/cabins/deluxe-ocean/002-deluxe-ocean-02.webp",
+          "packages/gaisan/cabins/deluxe-ocean/003-deluxe-ocean-03.webp",
+          "packages/gaisan/cabins/deluxe-ocean/004-deluxe-ocean-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2725,12 +2725,12 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, شرفة خاصة, AC, berada di dek atas, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-02.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-03.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-04.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-05.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-06.webp"
+          "packages/gaisan/cabins/master-ocean-1/001-master-ocean-1-01.webp",
+          "packages/gaisan/cabins/master-ocean-1/002-master-ocean-1-02.webp",
+          "packages/gaisan/cabins/master-ocean-1/003-master-ocean-1-03.webp",
+          "packages/gaisan/cabins/master-ocean-1/004-master-ocean-1-04.webp",
+          "packages/gaisan/cabins/master-ocean-1/005-master-ocean-1-05.webp",
+          "packages/gaisan/cabins/master-ocean-1/006-master-ocean-1-06.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2744,11 +2744,11 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, شرفة خاصة, AC, berada di dek atas, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-02.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-03.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-04.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-05.webp"
+          "packages/gaisan/cabins/master-ocean-2/001-master-ocean-2-01.webp",
+          "packages/gaisan/cabins/master-ocean-2/002-master-ocean-2-02.webp",
+          "packages/gaisan/cabins/master-ocean-2/003-master-ocean-2-03.webp",
+          "packages/gaisan/cabins/master-ocean-2/004-master-ocean-2-04.webp",
+          "packages/gaisan/cabins/master-ocean-2/005-master-ocean-2-05.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -2828,30 +2828,30 @@ export const tourPackagesData = [
       "4D3N": "4 Hari 3 Malam"
     },
     "images": [
-      "hero/gaisan-deluxe.webp",
-      "gallery/gaisan-deluxe-boat-02.webp",
-      "gallery/gaisan-deluxe-boat-03.webp",
-      "gallery/gaisan-deluxe-boat-04.webp",
-      "gallery/gaisan-deluxe-boat-05.webp",
-      "gallery/gaisan-deluxe-boat-06.webp",
-      "gallery/gaisan-deluxe-boat-07.webp",
-      "gallery/gaisan-deluxe-boat-08.webp",
-      "gallery/gaisan-deluxe-boat-09.webp",
-      "gallery/gaisan-deluxe-boat-10.webp",
-      "gallery/gaisan-deluxe-boat-11.webp",
-      "gallery/gaisan-deluxe-boat-12.webp",
-      "gallery/gaisan-deluxe-boat-13.webp",
-      "gallery/gaisan-deluxe-boat-14.webp",
-      "gallery/gaisan-deluxe-boat-15.webp",
-      "gallery/gaisan-deluxe-facility-captain-room.webp",
-      "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-01.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-02.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-03.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-01.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-02.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-03.webp",
-      "gallery/gaisan-deluxe-sundeck.webp"
+      "packages/gaisan/boat/gallery/016-gaisan-deluxe.webp",
+      "packages/gaisan/boat/gallery/001-boat-02.webp",
+      "packages/gaisan/boat/gallery/002-boat-03.webp",
+      "packages/gaisan/boat/gallery/003-boat-04.webp",
+      "packages/gaisan/boat/gallery/004-boat-05.webp",
+      "packages/gaisan/boat/gallery/005-boat-06.webp",
+      "packages/gaisan/boat/gallery/006-boat-07.webp",
+      "packages/gaisan/boat/gallery/007-boat-08.webp",
+      "packages/gaisan/boat/gallery/008-boat-09.webp",
+      "packages/gaisan/boat/gallery/009-boat-10.webp",
+      "packages/gaisan/boat/gallery/010-boat-11.webp",
+      "packages/gaisan/boat/gallery/011-boat-12.webp",
+      "packages/gaisan/boat/gallery/012-boat-13.webp",
+      "packages/gaisan/boat/gallery/013-boat-14.webp",
+      "packages/gaisan/boat/gallery/014-boat-15.webp",
+      "packages/gaisan/facility/captain-room/001-facility-captain-room.webp",
+      "packages/gaisan/facility/indoor-restaurant/001-facility-indoor-restaurant.webp",
+      "packages/gaisan/facility/jacuzzi-01/001-facility-jacuzzi-01.webp",
+      "packages/gaisan/facility/jacuzzi-02/001-facility-jacuzzi-02.webp",
+      "packages/gaisan/facility/jacuzzi-03/001-facility-jacuzzi-03.webp",
+      "packages/gaisan/facility/outdoor-dining-room-01/001-facility-outdoor-dining-room-01.webp",
+      "packages/gaisan/facility/outdoor-dining-room-02/001-facility-outdoor-dining-room-02.webp",
+      "packages/gaisan/facility/outdoor-dining-room-03/001-facility-outdoor-dining-room-03.webp",
+      "packages/gaisan/boat/gallery/015-sundeck.webp"
     ],
     "summary": "Nikmati pelayaran persendirian di sekitar Labuan Bajo dan Taman Negara Komodo bersama Gaisan, sebuah Phinisi Deluxe untuk sehingga 19 tetamu dengan 9 kabin berhawa dingin dan bilik mandi peribadi.",
     "highlights": [
@@ -3002,10 +3002,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek bawah, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-04.webp"
+          "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+          "packages/gaisan/cabins/superior-cabin-1/002-superior-cabin-1-02.webp",
+          "packages/gaisan/cabins/superior-cabin-1/003-superior-cabin-1-03.webp",
+          "packages/gaisan/cabins/superior-cabin-1/004-superior-cabin-1-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3019,10 +3019,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek bawah, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-04.webp"
+          "packages/gaisan/cabins/superior-cabin-2/001-superior-cabin-2-01.webp",
+          "packages/gaisan/cabins/superior-cabin-2/002-superior-cabin-2-02.webp",
+          "packages/gaisan/cabins/superior-cabin-2/003-superior-cabin-2-03.webp",
+          "packages/gaisan/cabins/superior-cabin-2/004-superior-cabin-2-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3036,9 +3036,9 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek bawah, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-03.webp"
+          "packages/gaisan/cabins/superior-cabin-3/001-superior-cabin-3-01.webp",
+          "packages/gaisan/cabins/superior-cabin-3/002-superior-cabin-3-02.webp",
+          "packages/gaisan/cabins/superior-cabin-3/003-superior-cabin-3-03.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3052,11 +3052,11 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek bawah, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-04.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-05.webp"
+          "packages/gaisan/cabins/superior-cabin-4/001-superior-cabin-4-01.webp",
+          "packages/gaisan/cabins/superior-cabin-4/002-superior-cabin-4-02.webp",
+          "packages/gaisan/cabins/superior-cabin-4/003-superior-cabin-4-03.webp",
+          "packages/gaisan/cabins/superior-cabin-4/004-superior-cabin-4-04.webp",
+          "packages/gaisan/cabins/superior-cabin-4/005-superior-cabin-4-05.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3070,10 +3070,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-02.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-03.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-04.webp"
+          "packages/gaisan/cabins/signature-ocean-1/001-signature-ocean-1-01.webp",
+          "packages/gaisan/cabins/signature-ocean-1/002-signature-ocean-1-02.webp",
+          "packages/gaisan/cabins/signature-ocean-1/003-signature-ocean-1-03.webp",
+          "packages/gaisan/cabins/signature-ocean-1/004-signature-ocean-1-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3087,9 +3087,9 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di dek utama, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-02.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-03.webp"
+          "packages/gaisan/cabins/signature-ocean-2/001-signature-ocean-2-01.webp",
+          "packages/gaisan/cabins/signature-ocean-2/002-signature-ocean-2-02.webp",
+          "packages/gaisan/cabins/signature-ocean-2/003-signature-ocean-2-03.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3103,10 +3103,10 @@ export const tourPackagesData = [
         "description": "Queen Bed dan extra bed, bilik mandi peribadi, AC, berada di dek atas, kapasiti 1-3 orang.",
         "capacity": "1-3",
         "images": [
-          "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-02.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-03.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-04.webp"
+          "packages/gaisan/cabins/deluxe-ocean/001-deluxe-ocean-01.webp",
+          "packages/gaisan/cabins/deluxe-ocean/002-deluxe-ocean-02.webp",
+          "packages/gaisan/cabins/deluxe-ocean/003-deluxe-ocean-03.webp",
+          "packages/gaisan/cabins/deluxe-ocean/004-deluxe-ocean-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3120,12 +3120,12 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, balkon peribadi, AC, berada di dek atas, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-02.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-03.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-04.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-05.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-06.webp"
+          "packages/gaisan/cabins/master-ocean-1/001-master-ocean-1-01.webp",
+          "packages/gaisan/cabins/master-ocean-1/002-master-ocean-1-02.webp",
+          "packages/gaisan/cabins/master-ocean-1/003-master-ocean-1-03.webp",
+          "packages/gaisan/cabins/master-ocean-1/004-master-ocean-1-04.webp",
+          "packages/gaisan/cabins/master-ocean-1/005-master-ocean-1-05.webp",
+          "packages/gaisan/cabins/master-ocean-1/006-master-ocean-1-06.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3139,11 +3139,11 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, balkon peribadi, AC, berada di dek atas, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-02.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-03.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-04.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-05.webp"
+          "packages/gaisan/cabins/master-ocean-2/001-master-ocean-2-01.webp",
+          "packages/gaisan/cabins/master-ocean-2/002-master-ocean-2-02.webp",
+          "packages/gaisan/cabins/master-ocean-2/003-master-ocean-2-03.webp",
+          "packages/gaisan/cabins/master-ocean-2/004-master-ocean-2-04.webp",
+          "packages/gaisan/cabins/master-ocean-2/005-master-ocean-2-05.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3223,30 +3223,30 @@ export const tourPackagesData = [
       "4D3N": "4天3夜"
     },
     "images": [
-      "hero/gaisan-deluxe.webp",
-      "gallery/gaisan-deluxe-boat-02.webp",
-      "gallery/gaisan-deluxe-boat-03.webp",
-      "gallery/gaisan-deluxe-boat-04.webp",
-      "gallery/gaisan-deluxe-boat-05.webp",
-      "gallery/gaisan-deluxe-boat-06.webp",
-      "gallery/gaisan-deluxe-boat-07.webp",
-      "gallery/gaisan-deluxe-boat-08.webp",
-      "gallery/gaisan-deluxe-boat-09.webp",
-      "gallery/gaisan-deluxe-boat-10.webp",
-      "gallery/gaisan-deluxe-boat-11.webp",
-      "gallery/gaisan-deluxe-boat-12.webp",
-      "gallery/gaisan-deluxe-boat-13.webp",
-      "gallery/gaisan-deluxe-boat-14.webp",
-      "gallery/gaisan-deluxe-boat-15.webp",
-      "gallery/gaisan-deluxe-facility-captain-room.webp",
-      "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-01.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-02.webp",
-      "gallery/gaisan-deluxe-facility-jacuzzi-03.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-01.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-02.webp",
-      "gallery/gaisan-deluxe-facility-outdoor-dining-room-03.webp",
-      "gallery/gaisan-deluxe-sundeck.webp"
+      "packages/gaisan/boat/gallery/016-gaisan-deluxe.webp",
+      "packages/gaisan/boat/gallery/001-boat-02.webp",
+      "packages/gaisan/boat/gallery/002-boat-03.webp",
+      "packages/gaisan/boat/gallery/003-boat-04.webp",
+      "packages/gaisan/boat/gallery/004-boat-05.webp",
+      "packages/gaisan/boat/gallery/005-boat-06.webp",
+      "packages/gaisan/boat/gallery/006-boat-07.webp",
+      "packages/gaisan/boat/gallery/007-boat-08.webp",
+      "packages/gaisan/boat/gallery/008-boat-09.webp",
+      "packages/gaisan/boat/gallery/009-boat-10.webp",
+      "packages/gaisan/boat/gallery/010-boat-11.webp",
+      "packages/gaisan/boat/gallery/011-boat-12.webp",
+      "packages/gaisan/boat/gallery/012-boat-13.webp",
+      "packages/gaisan/boat/gallery/013-boat-14.webp",
+      "packages/gaisan/boat/gallery/014-boat-15.webp",
+      "packages/gaisan/facility/captain-room/001-facility-captain-room.webp",
+      "packages/gaisan/facility/indoor-restaurant/001-facility-indoor-restaurant.webp",
+      "packages/gaisan/facility/jacuzzi-01/001-facility-jacuzzi-01.webp",
+      "packages/gaisan/facility/jacuzzi-02/001-facility-jacuzzi-02.webp",
+      "packages/gaisan/facility/jacuzzi-03/001-facility-jacuzzi-03.webp",
+      "packages/gaisan/facility/outdoor-dining-room-01/001-facility-outdoor-dining-room-01.webp",
+      "packages/gaisan/facility/outdoor-dining-room-02/001-facility-outdoor-dining-room-02.webp",
+      "packages/gaisan/facility/outdoor-dining-room-03/001-facility-outdoor-dining-room-03.webp",
+      "packages/gaisan/boat/gallery/015-sundeck.webp"
     ],
     "summary": "乘坐Gaisan在拉布安巴焦和科莫多国家公园享受私人航行体验。这是一艘最多可容纳19位客人的豪华菲尼西帆船，配有9间空调客舱和独立浴室。",
     "highlights": [
@@ -3397,10 +3397,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di dek bawah, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-04.webp"
+          "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+          "packages/gaisan/cabins/superior-cabin-1/002-superior-cabin-1-02.webp",
+          "packages/gaisan/cabins/superior-cabin-1/003-superior-cabin-1-03.webp",
+          "packages/gaisan/cabins/superior-cabin-1/004-superior-cabin-1-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3414,10 +3414,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di dek bawah, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-04.webp"
+          "packages/gaisan/cabins/superior-cabin-2/001-superior-cabin-2-01.webp",
+          "packages/gaisan/cabins/superior-cabin-2/002-superior-cabin-2-02.webp",
+          "packages/gaisan/cabins/superior-cabin-2/003-superior-cabin-2-03.webp",
+          "packages/gaisan/cabins/superior-cabin-2/004-superior-cabin-2-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3431,9 +3431,9 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di dek bawah, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-03.webp"
+          "packages/gaisan/cabins/superior-cabin-3/001-superior-cabin-3-01.webp",
+          "packages/gaisan/cabins/superior-cabin-3/002-superior-cabin-3-02.webp",
+          "packages/gaisan/cabins/superior-cabin-3/003-superior-cabin-3-03.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3447,11 +3447,11 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di dek bawah, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-02.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-03.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-04.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-05.webp"
+          "packages/gaisan/cabins/superior-cabin-4/001-superior-cabin-4-01.webp",
+          "packages/gaisan/cabins/superior-cabin-4/002-superior-cabin-4-02.webp",
+          "packages/gaisan/cabins/superior-cabin-4/003-superior-cabin-4-03.webp",
+          "packages/gaisan/cabins/superior-cabin-4/004-superior-cabin-4-04.webp",
+          "packages/gaisan/cabins/superior-cabin-4/005-superior-cabin-4-05.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3465,10 +3465,10 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di dek utama, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-02.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-03.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-04.webp"
+          "packages/gaisan/cabins/signature-ocean-1/001-signature-ocean-1-01.webp",
+          "packages/gaisan/cabins/signature-ocean-1/002-signature-ocean-1-02.webp",
+          "packages/gaisan/cabins/signature-ocean-1/003-signature-ocean-1-03.webp",
+          "packages/gaisan/cabins/signature-ocean-1/004-signature-ocean-1-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3482,9 +3482,9 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di dek utama, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-02.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-03.webp"
+          "packages/gaisan/cabins/signature-ocean-2/001-signature-ocean-2-01.webp",
+          "packages/gaisan/cabins/signature-ocean-2/002-signature-ocean-2-02.webp",
+          "packages/gaisan/cabins/signature-ocean-2/003-signature-ocean-2-03.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3498,10 +3498,10 @@ export const tourPackagesData = [
         "description": "Queen Bed 和 extra bed, 私人浴室, AC, berada di dek atas, 容纳 1-3 人.",
         "capacity": "1-3",
         "images": [
-          "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-02.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-03.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-04.webp"
+          "packages/gaisan/cabins/deluxe-ocean/001-deluxe-ocean-01.webp",
+          "packages/gaisan/cabins/deluxe-ocean/002-deluxe-ocean-02.webp",
+          "packages/gaisan/cabins/deluxe-ocean/003-deluxe-ocean-03.webp",
+          "packages/gaisan/cabins/deluxe-ocean/004-deluxe-ocean-04.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3515,12 +3515,12 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, 私人阳台, AC, berada di dek atas, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-02.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-03.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-04.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-05.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-06.webp"
+          "packages/gaisan/cabins/master-ocean-1/001-master-ocean-1-01.webp",
+          "packages/gaisan/cabins/master-ocean-1/002-master-ocean-1-02.webp",
+          "packages/gaisan/cabins/master-ocean-1/003-master-ocean-1-03.webp",
+          "packages/gaisan/cabins/master-ocean-1/004-master-ocean-1-04.webp",
+          "packages/gaisan/cabins/master-ocean-1/005-master-ocean-1-05.webp",
+          "packages/gaisan/cabins/master-ocean-1/006-master-ocean-1-06.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -3534,11 +3534,11 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, 私人阳台, AC, berada di dek atas, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-02.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-03.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-04.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-05.webp"
+          "packages/gaisan/cabins/master-ocean-2/001-master-ocean-2-01.webp",
+          "packages/gaisan/cabins/master-ocean-2/002-master-ocean-2-02.webp",
+          "packages/gaisan/cabins/master-ocean-2/003-master-ocean-2-03.webp",
+          "packages/gaisan/cabins/master-ocean-2/004-master-ocean-2-04.webp",
+          "packages/gaisan/cabins/master-ocean-2/005-master-ocean-2-05.webp"
         ],
         "prices": {
           "1D": "Harga tergantung paket (lihat daftar harga)",
@@ -25922,11 +25922,11 @@ export const tourPackagesData = [
     "category": "Paket Open Trip Labuan Bajo",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "hero/gaisan-deluxe.webp",
-      "gallery/gaisan-deluxe-boat-02.webp",
-      "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
-      "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-      "gallery/gaisan-deluxe-sundeck.webp"
+      "packages/gaisan/boat/gallery/016-gaisan-deluxe.webp",
+      "packages/gaisan/boat/gallery/001-boat-02.webp",
+      "packages/gaisan/facility/indoor-restaurant/001-facility-indoor-restaurant.webp",
+      "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+      "packages/gaisan/boat/gallery/015-sundeck.webp"
     ],
     "summary": "Open trip 3 hari 2 malam menjelajahi destinasi utama Taman Nasional Komodo dengan kapal Phinisi, kabin ber-AC, kru kapal, makanan, snorkeling, guide lokal, dan dokumentasi perjalanan.",
     "highlights": [
@@ -26002,8 +26002,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-02.webp"
+          "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+          "packages/gaisan/cabins/superior-cabin-1/002-superior-cabin-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26014,8 +26014,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-02.webp"
+          "packages/gaisan/cabins/superior-cabin-2/001-superior-cabin-2-01.webp",
+          "packages/gaisan/cabins/superior-cabin-2/002-superior-cabin-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26026,8 +26026,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-02.webp"
+          "packages/gaisan/cabins/superior-cabin-3/001-superior-cabin-3-01.webp",
+          "packages/gaisan/cabins/superior-cabin-3/002-superior-cabin-3-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26038,8 +26038,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di Lower Deck, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-02.webp"
+          "packages/gaisan/cabins/superior-cabin-4/001-superior-cabin-4-01.webp",
+          "packages/gaisan/cabins/superior-cabin-4/002-superior-cabin-4-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26050,8 +26050,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-02.webp"
+          "packages/gaisan/cabins/signature-ocean-1/001-signature-ocean-1-01.webp",
+          "packages/gaisan/cabins/signature-ocean-1/002-signature-ocean-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.750.000/pax"
@@ -26062,8 +26062,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di Main Deck, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-02.webp"
+          "packages/gaisan/cabins/signature-ocean-2/001-signature-ocean-2-01.webp",
+          "packages/gaisan/cabins/signature-ocean-2/002-signature-ocean-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.750.000/pax"
@@ -26074,8 +26074,8 @@ export const tourPackagesData = [
         "description": "Queen Bed + Extra Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-3 orang.",
         "capacity": "1-3",
         "images": [
-          "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-02.webp"
+          "packages/gaisan/cabins/deluxe-ocean/001-deluxe-ocean-01.webp",
+          "packages/gaisan/cabins/deluxe-ocean/002-deluxe-ocean-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.250.000/pax; additional pax: IDR 3.850.000/pax"
@@ -26086,8 +26086,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-02.webp"
+          "packages/gaisan/cabins/master-ocean-1/001-master-ocean-1-01.webp",
+          "packages/gaisan/cabins/master-ocean-1/002-master-ocean-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 6.250.000/pax"
@@ -26098,8 +26098,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, kamar mandi pribadi, AC, berada di Upper Deck, kapasitas 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-02.webp"
+          "packages/gaisan/cabins/master-ocean-2/001-master-ocean-2-01.webp",
+          "packages/gaisan/cabins/master-ocean-2/002-master-ocean-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 6.250.000/pax"
@@ -26137,11 +26137,11 @@ export const tourPackagesData = [
     "category": "Labuan Bajo Open Trip Package",
     "duration": "3 Days 2 Nights",
     "images": [
-      "hero/gaisan-deluxe.webp",
-      "gallery/gaisan-deluxe-boat-02.webp",
-      "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
-      "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-      "gallery/gaisan-deluxe-sundeck.webp"
+      "packages/gaisan/boat/gallery/016-gaisan-deluxe.webp",
+      "packages/gaisan/boat/gallery/001-boat-02.webp",
+      "packages/gaisan/facility/indoor-restaurant/001-facility-indoor-restaurant.webp",
+      "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+      "packages/gaisan/boat/gallery/015-sundeck.webp"
     ],
     "summary": "A 3-day, 2-night open trip exploring the main destinations of Komodo National Park aboard a Phinisi with air-conditioned cabins, crew, meals, snorkeling, a local guide, and trip documentation.",
     "highlights": [
@@ -26217,8 +26217,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di Lower Deck, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-02.webp"
+          "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+          "packages/gaisan/cabins/superior-cabin-1/002-superior-cabin-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26229,8 +26229,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di Lower Deck, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-02.webp"
+          "packages/gaisan/cabins/superior-cabin-2/001-superior-cabin-2-01.webp",
+          "packages/gaisan/cabins/superior-cabin-2/002-superior-cabin-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26241,8 +26241,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di Lower Deck, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-02.webp"
+          "packages/gaisan/cabins/superior-cabin-3/001-superior-cabin-3-01.webp",
+          "packages/gaisan/cabins/superior-cabin-3/002-superior-cabin-3-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26253,8 +26253,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di Lower Deck, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-02.webp"
+          "packages/gaisan/cabins/superior-cabin-4/001-superior-cabin-4-01.webp",
+          "packages/gaisan/cabins/superior-cabin-4/002-superior-cabin-4-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26265,8 +26265,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di Main Deck, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-02.webp"
+          "packages/gaisan/cabins/signature-ocean-1/001-signature-ocean-1-01.webp",
+          "packages/gaisan/cabins/signature-ocean-1/002-signature-ocean-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.750.000/pax"
@@ -26277,8 +26277,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di Main Deck, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-02.webp"
+          "packages/gaisan/cabins/signature-ocean-2/001-signature-ocean-2-01.webp",
+          "packages/gaisan/cabins/signature-ocean-2/002-signature-ocean-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.750.000/pax"
@@ -26289,8 +26289,8 @@ export const tourPackagesData = [
         "description": "Queen Bed + Extra Bed, private bathroom, AC, berada di Upper Deck, capacity 1-3 pax.",
         "capacity": "1-3",
         "images": [
-          "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-02.webp"
+          "packages/gaisan/cabins/deluxe-ocean/001-deluxe-ocean-01.webp",
+          "packages/gaisan/cabins/deluxe-ocean/002-deluxe-ocean-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.250.000/pax; additional pax: IDR 3.850.000/pax"
@@ -26301,8 +26301,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di Upper Deck, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-02.webp"
+          "packages/gaisan/cabins/master-ocean-1/001-master-ocean-1-01.webp",
+          "packages/gaisan/cabins/master-ocean-1/002-master-ocean-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 6.250.000/pax"
@@ -26313,8 +26313,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, private bathroom, AC, berada di Upper Deck, capacity 1-2 pax.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-02.webp"
+          "packages/gaisan/cabins/master-ocean-2/001-master-ocean-2-01.webp",
+          "packages/gaisan/cabins/master-ocean-2/002-master-ocean-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 6.250.000/pax"
@@ -26352,11 +26352,11 @@ export const tourPackagesData = [
     "category": "باقة رحلة جماعية مفتوحة في لابوان باجو",
     "duration": "3 أيام وليلتان",
     "images": [
-      "hero/gaisan-deluxe.webp",
-      "gallery/gaisan-deluxe-boat-02.webp",
-      "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
-      "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-      "gallery/gaisan-deluxe-sundeck.webp"
+      "packages/gaisan/boat/gallery/016-gaisan-deluxe.webp",
+      "packages/gaisan/boat/gallery/001-boat-02.webp",
+      "packages/gaisan/facility/indoor-restaurant/001-facility-indoor-restaurant.webp",
+      "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+      "packages/gaisan/boat/gallery/015-sundeck.webp"
     ],
     "summary": "رحلة جماعية مفتوحة لمدة 3 أيام وليلتين لاستكشاف أهم وجهات متنزه كومودو الوطني على متن فينيسي مع كبائن مكيفة وطاقم ووجبات وغطس ومرشد محلي وتوثيق للرحلة.",
     "highlights": [
@@ -26432,8 +26432,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di Lower Deck, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-02.webp"
+          "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+          "packages/gaisan/cabins/superior-cabin-1/002-superior-cabin-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26444,8 +26444,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di Lower Deck, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-02.webp"
+          "packages/gaisan/cabins/superior-cabin-2/001-superior-cabin-2-01.webp",
+          "packages/gaisan/cabins/superior-cabin-2/002-superior-cabin-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26456,8 +26456,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di Lower Deck, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-02.webp"
+          "packages/gaisan/cabins/superior-cabin-3/001-superior-cabin-3-01.webp",
+          "packages/gaisan/cabins/superior-cabin-3/002-superior-cabin-3-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26468,8 +26468,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di Lower Deck, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-02.webp"
+          "packages/gaisan/cabins/superior-cabin-4/001-superior-cabin-4-01.webp",
+          "packages/gaisan/cabins/superior-cabin-4/002-superior-cabin-4-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26480,8 +26480,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di Main Deck, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-02.webp"
+          "packages/gaisan/cabins/signature-ocean-1/001-signature-ocean-1-01.webp",
+          "packages/gaisan/cabins/signature-ocean-1/002-signature-ocean-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.750.000/pax"
@@ -26492,8 +26492,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di Main Deck, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-02.webp"
+          "packages/gaisan/cabins/signature-ocean-2/001-signature-ocean-2-01.webp",
+          "packages/gaisan/cabins/signature-ocean-2/002-signature-ocean-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.750.000/pax"
@@ -26504,8 +26504,8 @@ export const tourPackagesData = [
         "description": "Queen Bed + Extra Bed, حمام خاص, AC, berada di Upper Deck, سعة 1-3 أشخاص.",
         "capacity": "1-3",
         "images": [
-          "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-02.webp"
+          "packages/gaisan/cabins/deluxe-ocean/001-deluxe-ocean-01.webp",
+          "packages/gaisan/cabins/deluxe-ocean/002-deluxe-ocean-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.250.000/pax; additional pax: IDR 3.850.000/pax"
@@ -26516,8 +26516,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di Upper Deck, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-02.webp"
+          "packages/gaisan/cabins/master-ocean-1/001-master-ocean-1-01.webp",
+          "packages/gaisan/cabins/master-ocean-1/002-master-ocean-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 6.250.000/pax"
@@ -26528,8 +26528,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, حمام خاص, AC, berada di Upper Deck, سعة 1-2 أشخاص.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-02.webp"
+          "packages/gaisan/cabins/master-ocean-2/001-master-ocean-2-01.webp",
+          "packages/gaisan/cabins/master-ocean-2/002-master-ocean-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 6.250.000/pax"
@@ -26567,11 +26567,11 @@ export const tourPackagesData = [
     "category": "Pakej Open Trip Labuan Bajo",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "hero/gaisan-deluxe.webp",
-      "gallery/gaisan-deluxe-boat-02.webp",
-      "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
-      "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-      "gallery/gaisan-deluxe-sundeck.webp"
+      "packages/gaisan/boat/gallery/016-gaisan-deluxe.webp",
+      "packages/gaisan/boat/gallery/001-boat-02.webp",
+      "packages/gaisan/facility/indoor-restaurant/001-facility-indoor-restaurant.webp",
+      "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+      "packages/gaisan/boat/gallery/015-sundeck.webp"
     ],
     "summary": "Open trip 3 hari 2 malam meneroka destinasi utama Taman Negara Komodo dengan Phinisi, kabin berhawa dingin, kru, makanan, snorkeling, pemandu tempatan, dan dokumentasi perjalanan.",
     "highlights": [
@@ -26647,8 +26647,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di Lower Deck, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-02.webp"
+          "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+          "packages/gaisan/cabins/superior-cabin-1/002-superior-cabin-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26659,8 +26659,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di Lower Deck, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-02.webp"
+          "packages/gaisan/cabins/superior-cabin-2/001-superior-cabin-2-01.webp",
+          "packages/gaisan/cabins/superior-cabin-2/002-superior-cabin-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26671,8 +26671,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di Lower Deck, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-02.webp"
+          "packages/gaisan/cabins/superior-cabin-3/001-superior-cabin-3-01.webp",
+          "packages/gaisan/cabins/superior-cabin-3/002-superior-cabin-3-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26683,8 +26683,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di Lower Deck, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-02.webp"
+          "packages/gaisan/cabins/superior-cabin-4/001-superior-cabin-4-01.webp",
+          "packages/gaisan/cabins/superior-cabin-4/002-superior-cabin-4-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26695,8 +26695,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-02.webp"
+          "packages/gaisan/cabins/signature-ocean-1/001-signature-ocean-1-01.webp",
+          "packages/gaisan/cabins/signature-ocean-1/002-signature-ocean-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.750.000/pax"
@@ -26707,8 +26707,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di Main Deck, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-02.webp"
+          "packages/gaisan/cabins/signature-ocean-2/001-signature-ocean-2-01.webp",
+          "packages/gaisan/cabins/signature-ocean-2/002-signature-ocean-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.750.000/pax"
@@ -26719,8 +26719,8 @@ export const tourPackagesData = [
         "description": "Queen Bed + Extra Bed, bilik mandi peribadi, AC, berada di Upper Deck, kapasiti 1-3 orang.",
         "capacity": "1-3",
         "images": [
-          "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-02.webp"
+          "packages/gaisan/cabins/deluxe-ocean/001-deluxe-ocean-01.webp",
+          "packages/gaisan/cabins/deluxe-ocean/002-deluxe-ocean-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.250.000/pax; additional pax: IDR 3.850.000/pax"
@@ -26731,8 +26731,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di Upper Deck, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-02.webp"
+          "packages/gaisan/cabins/master-ocean-1/001-master-ocean-1-01.webp",
+          "packages/gaisan/cabins/master-ocean-1/002-master-ocean-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 6.250.000/pax"
@@ -26743,8 +26743,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, bilik mandi peribadi, AC, berada di Upper Deck, kapasiti 1-2 orang.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-02.webp"
+          "packages/gaisan/cabins/master-ocean-2/001-master-ocean-2-01.webp",
+          "packages/gaisan/cabins/master-ocean-2/002-master-ocean-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 6.250.000/pax"
@@ -26782,11 +26782,11 @@ export const tourPackagesData = [
     "category": "拉布安巴焦拼团套餐",
     "duration": "3天2夜",
     "images": [
-      "hero/gaisan-deluxe.webp",
-      "gallery/gaisan-deluxe-boat-02.webp",
-      "gallery/gaisan-deluxe-facility-indoor-restaurant.webp",
-      "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-      "gallery/gaisan-deluxe-sundeck.webp"
+      "packages/gaisan/boat/gallery/016-gaisan-deluxe.webp",
+      "packages/gaisan/boat/gallery/001-boat-02.webp",
+      "packages/gaisan/facility/indoor-restaurant/001-facility-indoor-restaurant.webp",
+      "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+      "packages/gaisan/boat/gallery/015-sundeck.webp"
     ],
     "summary": "3天2夜科莫多国家公园拼团行程，乘坐菲尼西帆船游览主要目的地，包含空调客舱、船员、餐食、浮潜、当地导游和行程拍摄。",
     "highlights": [
@@ -26862,8 +26862,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di Lower Deck, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-1-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-1-02.webp"
+          "packages/gaisan/cabins/superior-cabin-1/001-superior-cabin-1-01.webp",
+          "packages/gaisan/cabins/superior-cabin-1/002-superior-cabin-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26874,8 +26874,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di Lower Deck, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-2-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-2-02.webp"
+          "packages/gaisan/cabins/superior-cabin-2/001-superior-cabin-2-01.webp",
+          "packages/gaisan/cabins/superior-cabin-2/002-superior-cabin-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26886,8 +26886,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di Lower Deck, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-3-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-3-02.webp"
+          "packages/gaisan/cabins/superior-cabin-3/001-superior-cabin-3-01.webp",
+          "packages/gaisan/cabins/superior-cabin-3/002-superior-cabin-3-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26898,8 +26898,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di Lower Deck, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-superior-cabin-4-01.webp",
-          "gallery/gaisan-deluxe-superior-cabin-4-02.webp"
+          "packages/gaisan/cabins/superior-cabin-4/001-superior-cabin-4-01.webp",
+          "packages/gaisan/cabins/superior-cabin-4/002-superior-cabin-4-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 4.550.000/pax"
@@ -26910,8 +26910,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-1-02.webp"
+          "packages/gaisan/cabins/signature-ocean-1/001-signature-ocean-1-01.webp",
+          "packages/gaisan/cabins/signature-ocean-1/002-signature-ocean-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.750.000/pax"
@@ -26922,8 +26922,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di Main Deck, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-signature-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-signature-ocean-2-02.webp"
+          "packages/gaisan/cabins/signature-ocean-2/001-signature-ocean-2-01.webp",
+          "packages/gaisan/cabins/signature-ocean-2/002-signature-ocean-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.750.000/pax"
@@ -26934,8 +26934,8 @@ export const tourPackagesData = [
         "description": "Queen Bed + Extra Bed, 私人浴室, AC, berada di Upper Deck, 容纳 1-3 人.",
         "capacity": "1-3",
         "images": [
-          "gallery/gaisan-deluxe-deluxe-ocean-01.webp",
-          "gallery/gaisan-deluxe-deluxe-ocean-02.webp"
+          "packages/gaisan/cabins/deluxe-ocean/001-deluxe-ocean-01.webp",
+          "packages/gaisan/cabins/deluxe-ocean/002-deluxe-ocean-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 5.250.000/pax; additional pax: IDR 3.850.000/pax"
@@ -26946,8 +26946,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di Upper Deck, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-1-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-1-02.webp"
+          "packages/gaisan/cabins/master-ocean-1/001-master-ocean-1-01.webp",
+          "packages/gaisan/cabins/master-ocean-1/002-master-ocean-1-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 6.250.000/pax"
@@ -26958,8 +26958,8 @@ export const tourPackagesData = [
         "description": "Queen Bed, 私人浴室, AC, berada di Upper Deck, 容纳 1-2 人.",
         "capacity": "1-2",
         "images": [
-          "gallery/gaisan-deluxe-master-ocean-2-01.webp",
-          "gallery/gaisan-deluxe-master-ocean-2-02.webp"
+          "packages/gaisan/cabins/master-ocean-2/001-master-ocean-2-01.webp",
+          "packages/gaisan/cabins/master-ocean-2/002-master-ocean-2-02.webp"
         ],
         "prices": {
           "default": "Minimum 2 pax: IDR 6.250.000/pax"

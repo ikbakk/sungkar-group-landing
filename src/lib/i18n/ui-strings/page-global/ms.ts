@@ -27,6 +27,13 @@ const strings = {
     youtube: "YouTube",
     facebook: "Facebook",
     tiktok: "TikTok",
+    licensedTourOperator: "Pengendali Pelancongan Berlesen",
+    ratingOnGoogle: "Penilaian 4.9 di Google",
+    secureBooking: "Tempahan Selamat",
+    support247: "Sokongan 24/7",
+    subscribeForTips: "Langgan tips pelancongan",
+    yourEmail: "E-mel anda",
+    subscribe: "Langgan",
   },
   breadcrumb: {
     home: "Laman Utama",

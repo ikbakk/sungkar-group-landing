@@ -26,6 +26,13 @@ const strings = {
     youtube: "YouTube",
     facebook: "Facebook",
     tiktok: "TikTok",
+    licensedTourOperator: "Licensed Tour Operator",
+    ratingOnGoogle: "4.9 Rating on Google",
+    secureBooking: "Secure Booking",
+    support247: "24/7 Support",
+    subscribeForTips: "Subscribe for travel tips",
+    yourEmail: "Your email",
+    subscribe: "Subscribe",
   },
   breadcrumb: {
     home: "Home",

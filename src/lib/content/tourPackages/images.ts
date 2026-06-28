@@ -61,12 +61,7 @@ const registry: Record<string, ImageSource> = {
   "legality/sk.webp": LEGALITY.sk,
 };
 
-function toStaticImageUrl(assetPath: string): string {
-  return `/images/${assetPath}`;
-}
-
 function resolveFallbackImage(assetPath: string): ImageSource | undefined {
-  if (assetPath.startsWith("packages/")) return toStaticImageUrl(assetPath);
   if (assetPath.startsWith("hero/")) {
     if (assetPath.includes("sumbawa")) return GALLERY.whaleshark;
     if (assetPath.includes("lombok")) return HERO.heroLombok;
@@ -99,6 +94,10 @@ function resolveFallbackImage(assetPath: string): ImageSource | undefined {
 }
 
 export function resolveImage(assetPath: string): ImageSource {
+  if (assetPath.startsWith("packages/")) {
+    return `/images/${assetPath}`;
+  }
+
   return registry[assetPath] ?? resolveFallbackImage(assetPath) ?? assetPath;
 }
 

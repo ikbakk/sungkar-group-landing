@@ -1,6 +1,7 @@
 ---
 import Header from "@/components/header/Header.astro";
 import Footer from "@/components/site/Footer.astro";
+import WhatsAppFloat from "@/components/ui/WhatsAppFloat.astro";
 import CookieConsentBanner from "@/components/site/CookieConsentBanner";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics.astro";
 import SEOMeta from "@/components/seo/SEOMeta.astro";
@@ -123,6 +124,7 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
 
     <Footer locale={currentLocale} />
 
+    <WhatsAppFloat />
     <CookieConsentBanner locale={currentLocale as Locale} client:idle />
   </body>
 </html>
