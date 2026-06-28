@@ -4,7 +4,16 @@
   "featured": false,
   "collectionSlug": "4-hari-3-malam",
   "priceListType": "landHotelTier",
-  "images": ["destinations/lombok.webp"],
+  "images": [
+    "gallery/gili-meno.webp",
+    "gallery/tour-snorkeling.webp",
+    "gallery/g-snorkel.webp",
+    "destinations/gili.webp",
+    "gallery/gili-tangkong.webp",
+    "gallery/kuta-mandalika-aerial.webp",
+    "gallery/kuta-beach.webp",
+    "gallery/kuta-beach-2.webp"
+  ],
   "priceList": {
     "withoutHotel": {
       "2-3": 1930000,

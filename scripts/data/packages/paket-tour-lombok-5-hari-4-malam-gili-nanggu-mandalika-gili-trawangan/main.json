@@ -4,7 +4,16 @@
   "featured": false,
   "collectionSlug": "5-hari-4-malam",
   "priceListType": "landHotelTier",
-  "images": ["destinations/lombok.webp"],
+  "images": [
+    "gallery/gili-nanggu-shore.webp",
+    "gallery/gili-nanggu-snorkeling.webp",
+    "gallery/gili-nanggu-boat.webp",
+    "destinations/gili.webp",
+    "gallery/gili-meno.webp",
+    "gallery/gili-tangkong.webp",
+    "gallery/kuta-mandalika-aerial.webp",
+    "gallery/kuta-beach.webp"
+  ],
   "priceList": {
     "withoutHotel": {
       "2-3": 2427000,

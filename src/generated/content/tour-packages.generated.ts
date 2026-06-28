@@ -34389,7 +34389,10 @@ export const tourPackagesData = [
     "duration": "4 Hari 3 Malam",
     "images": [
       "gallery/mandalika-circuit.webp",
-      "gallery/mandalika-circuit.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/g-merese-2.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "destinations/lombok.webp"
     ],
     "summary": "Open trip MotoGP Mandalika 2026 paket 4 hari 3 malam. Saksikan langsung seru dan menegangkannya ajang balap motor paling bergengsi di dunia di Pertamina Mandalika International Street Circuit. Nikmati juga keindahan Mandalika, Pantai Kuta, dan Tanjung Aan selama kunjungan Anda.",
@@ -34453,7 +34456,10 @@ export const tourPackagesData = [
     "duration": "4 Days 3 Nights",
     "images": [
       "gallery/mandalika-circuit.webp",
-      "gallery/mandalika-circuit.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/g-merese-2.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "destinations/lombok.webp"
     ],
     "summary": "MotoGP Mandalika 2026 open trip 4 days 3 nights package. Witness the excitement of the world's most prestigious motorcycle racing event at the Pertamina Mandalika International Street Circuit. Enjoy the beauty of Mandalika, Kuta Beach, and Tanjung Aan during your visit.",
@@ -34517,7 +34523,10 @@ export const tourPackagesData = [
     "duration": "4 أيام و 3 ليالي",
     "images": [
       "gallery/mandalika-circuit.webp",
-      "gallery/mandalika-circuit.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/g-merese-2.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "destinations/lombok.webp"
     ],
     "summary": "رحلة مفتوحة MotoGP مانداليكا 2026 باقة 4 أيام و 3 ليالي. شاهد بنفسك إثارة سباق الدراجات النارية الأكثر شهرة في العالم في حلبة بيرتامينا مانداليكا الدولية. استمتع أيضاً بجمال مانداليكا وشاطئ كوتا وتانجونغ آن خلال زيارتك.",
@@ -34581,7 +34590,10 @@ export const tourPackagesData = [
     "duration": "4 Hari 3 Malam",
     "images": [
       "gallery/mandalika-circuit.webp",
-      "gallery/mandalika-circuit.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/g-merese-2.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "destinations/lombok.webp"
     ],
     "summary": "Open trip MotoGP Mandalika 2026 pakej 4 hari 3 malam. Saksikan sendiri keseruan acara perlumbaan motosikal paling berprestij di dunia di Pertamina Mandalika International Street Circuit. Nikmati juga keindahan Mandalika, Pantai Kuta, dan Tanjung Aan lawatan anda.",
@@ -34645,7 +34657,10 @@ export const tourPackagesData = [
     "duration": "4天3晚",
     "images": [
       "gallery/mandalika-circuit.webp",
-      "gallery/mandalika-circuit.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/g-merese-2.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "destinations/lombok.webp"
     ],
     "summary": "2026曼达利卡MotoGP开放团4天3晚套餐。在 Pertamina Mandalika International Street Circuit 亲眼见证世界最负盛名的摩托车赛事。同时欣赏曼达利卡、库塔海滩和丹戎安海滩的美景。",
@@ -41242,7 +41257,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 3 hari 2 malam dengan eksplorasi Gili Trawangan dan Mandalika.",
     "highlights": [
@@ -41378,7 +41400,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "3 Days 2 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
     "highlights": [
@@ -41514,7 +41543,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "3 أيام وليلتان",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -41650,7 +41686,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
     "highlights": [
@@ -41786,7 +41829,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "3天2晚",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -41922,7 +41972,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 3 hari 2 malam dengan Mandalika, Gili Nanggu, Gili Sudak, dan Gili Kedis.",
     "highlights": [
@@ -42059,7 +42116,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "3 Days 2 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
     "highlights": [
@@ -42196,7 +42260,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "3 أيام وليلتان",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -42333,7 +42404,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
     "highlights": [
@@ -42470,7 +42548,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "3天2晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -42607,7 +42692,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 3 hari 2 malam untuk kedatangan pagi atau siang, mencakup Mandalika dan Gili Trawangan.",
     "highlights": [
@@ -42743,7 +42835,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "3 Days 2 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
     "highlights": [
@@ -42879,7 +42978,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "3 أيام وليلتان",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -43015,7 +43121,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
     "highlights": [
@@ -43151,7 +43264,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "3天2晚",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -43287,7 +43407,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 3 hari 2 malam dengan Mandalika, Gili Trawangan, dan City Tour sebelum keberangkatan.",
     "highlights": [
@@ -43423,7 +43550,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "3 Days 2 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
     "highlights": [
@@ -43559,7 +43693,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "3 أيام وليلتان",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -43695,7 +43836,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
     "highlights": [
@@ -43831,7 +43979,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "3天2晚",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -43967,7 +44122,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 3 hari 2 malam dengan Mandalika, Pink Beach, Gili Pasir, dan snorkeling di Gili Petelu.",
     "highlights": [
@@ -44104,7 +44266,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "3 Days 2 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
     "highlights": [
@@ -44241,7 +44410,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "3 أيام وليلتان",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -44378,7 +44554,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
     "highlights": [
@@ -44515,7 +44698,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "3天2晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -44652,7 +44842,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 3 hari 2 malam untuk kedatangan pagi atau siang, mencakup Mandalika dan snorkeling tiga Gili.",
     "highlights": [
@@ -44792,7 +44989,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "3 Days 2 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
     "highlights": [
@@ -44932,7 +45136,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "3 أيام وليلتان",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -45072,7 +45283,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
     "highlights": [
@@ -45212,7 +45430,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "3天2晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -45352,7 +45577,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 3 hari 2 malam dengan Mandalika, snorkeling tiga Gili, dan City Tour sebelum keberangkatan.",
     "highlights": [
@@ -45492,7 +45724,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "3 Days 2 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
     "highlights": [
@@ -45632,7 +45871,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "3 أيام وليلتان",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -45772,7 +46018,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
     "highlights": [
@@ -45912,7 +46165,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "3天2晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -46052,7 +46312,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 3 hari 2 malam dengan snorkeling Gili Meno, Gili Air, Gili Trawangan, dan Mandalika.",
     "highlights": [
@@ -46192,7 +46459,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "3 Days 2 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 3-day, 2-night Lombok tour covering the destinations and activities listed in the itinerary.",
     "highlights": [
@@ -46332,7 +46606,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "3 أيام وليلتان",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 3 أيام وليلتين تشمل الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -46472,7 +46753,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 3 hari 2 malam yang merangkumi destinasi dan aktiviti dalam jadual perjalanan.",
     "highlights": [
@@ -46612,7 +46900,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "3天2晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛3天2晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -46752,7 +47047,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 4 hari 3 malam dengan City Tour, eksplorasi Gili Trawangan, dan Mandalika.",
     "highlights": [
@@ -46894,7 +47196,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "4 Days 3 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 4-day, 3-night Lombok tour covering City Tour, eksplorasi Gili Trawangan, dan Mandalika.",
     "highlights": [
@@ -47036,7 +47345,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "4 أيام و3 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -47178,7 +47494,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi City Tour, eksplorasi Gili Trawangan, dan Mandalika.",
     "highlights": [
@@ -47320,7 +47643,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -47462,7 +47792,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 4 hari 3 malam dengan City Tour, snorkeling Gili Meno, Gili Air, Gili Trawangan, dan Mandalika.",
     "highlights": [
@@ -47608,7 +47945,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "4 Days 3 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 4-day, 3-night Lombok tour covering City Tour, snorkeling Gili Meno, Gili Air, Gili Trawangan, dan Mandalika.",
     "highlights": [
@@ -47754,7 +48098,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "4 أيام و3 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -47900,7 +48251,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi City Tour, snorkeling Gili Meno, Gili Air, Gili Trawangan, dan Mandalika.",
     "highlights": [
@@ -48046,7 +48404,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -48192,7 +48557,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Private tour Lombok 4 hari 3 malam untuk kedatangan pagi atau siang, mencakup Mandalika, Gili Nanggu, Gili Sudak, Gili Kedis, dan Gili Trawangan.",
     "highlights": [
@@ -48336,7 +48708,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "4 Days 3 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 4-day, 3-night Lombok tour for a morning or midday arrival, covering Mandalika, Gili Nanggu, Gili Sudak, Gili Kedis, dan Gili Trawangan.",
     "highlights": [
@@ -48480,7 +48859,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "4 أيام و3 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -48624,7 +49010,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam untuk ketibaan pagi atau tengah hari, merangkumi Mandalika, Gili Nanggu, Gili Sudak, Gili Kedis, dan Gili Trawangan.",
     "highlights": [
@@ -48768,7 +49161,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -48912,7 +49312,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika dan eksplorasi Gili Trawangan menggunakan private speedboat.",
     "highlights": [
@@ -49054,7 +49461,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "4 Days 3 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 4-day, 3-night Lombok tour covering Mandalika dan eksplorasi Gili Trawangan menggunakan private speedboat.",
     "highlights": [
@@ -49196,7 +49610,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "4 أيام و3 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -49338,7 +49759,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika dan eksplorasi Gili Trawangan menggunakan private speedboat.",
     "highlights": [
@@ -49480,7 +49908,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
-      "destinations/lombok.webp"
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -49622,7 +50057,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika, eksplorasi Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -49764,7 +50206,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "4 Days 3 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 4-day, 3-night Lombok tour covering Mandalika, eksplorasi Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -49906,7 +50355,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "4 أيام و3 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -50048,7 +50504,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika, eksplorasi Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -50190,7 +50653,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -50332,7 +50802,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika, eksplorasi Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
     "highlights": [
@@ -50474,7 +50951,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "4 Days 3 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 4-day, 3-night Lombok tour covering Mandalika, eksplorasi Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
     "highlights": [
@@ -50616,7 +51100,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "4 أيام و3 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -50758,7 +51249,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika, eksplorasi Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
     "highlights": [
@@ -50900,7 +51398,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -51042,7 +51547,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Private tour Lombok 4 hari 3 malam untuk kedatangan pagi atau siang, mencakup Mandalika, Pink Beach, Gili Petelu, dan Gili Trawangan.",
     "highlights": [
@@ -51186,7 +51698,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "4 Days 3 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 4-day, 3-night Lombok tour for a morning or midday arrival, covering Mandalika, Pink Beach, Gili Petelu, dan Gili Trawangan.",
     "highlights": [
@@ -51330,7 +51849,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "4 أيام و3 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -51474,7 +52000,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam untuk ketibaan pagi atau tengah hari, merangkumi Mandalika, Pink Beach, Gili Petelu, dan Gili Trawangan.",
     "highlights": [
@@ -51618,7 +52151,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -51762,7 +52302,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika, snorkeling Gili Meno, Gili Air, dan Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -51908,7 +52455,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "4 Days 3 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 4-day, 3-night Lombok tour covering Mandalika, snorkeling Gili Meno, Gili Air, dan Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -52054,7 +52608,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "4 أيام و3 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -52200,7 +52761,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika, snorkeling Gili Meno, Gili Air, dan Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -52346,7 +52914,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -52492,7 +53067,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika, snorkeling tiga Gili, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
     "highlights": [
@@ -52638,7 +53220,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "4 Days 3 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 4-day, 3-night Lombok tour covering Mandalika, snorkeling tiga Gili, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
     "highlights": [
@@ -52784,7 +53373,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "4 أيام و3 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -52930,7 +53526,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika, snorkeling tiga Gili, Air Terjun Sendang Gile dan Tiu Kelep, serta City Tour sebelum keberangkatan.",
     "highlights": [
@@ -53076,7 +53679,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -53222,7 +53832,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "destinations/gili.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp"
     ],
     "summary": "Private tour Lombok 4 hari 3 malam dengan Mandalika dan snorkeling tiga Gili menggunakan private glass-bottom boat.",
     "highlights": [
@@ -53368,7 +53985,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "4 Days 3 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "destinations/gili.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp"
     ],
     "summary": "A private 4-day, 3-night Lombok tour covering Mandalika dan snorkeling tiga Gili menggunakan private glass-bottom boat.",
     "highlights": [
@@ -53514,7 +54138,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "4 أيام و3 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "destinations/gili.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 4 أيام و3 ليالٍ تشمل أبرز الوجهات والأنشطة المذكورة في البرنامج.",
     "highlights": [
@@ -53660,7 +54291,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "destinations/gili.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok 4 hari 3 malam merangkumi Mandalika dan snorkeling tiga Gili menggunakan private glass-bottom boat.",
     "highlights": [
@@ -53806,7 +54444,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "destinations/gili.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp"
     ],
     "summary": "龙目岛4天3晚私人旅游套餐，涵盖行程中列出的主要景点与活动。",
     "highlights": [
@@ -53952,7 +54597,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Private tour Lombok 5 hari 4 malam dengan snorkeling Gili Nanggu, Mandalika, dan eksplorasi Gili Trawangan.",
     "highlights": [
@@ -54096,7 +54748,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "5 Days 4 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 5-day Lombok tour covering snorkeling at Gili Nanggu, Mandalika, and Gili Trawangan.",
     "highlights": [
@@ -54240,7 +54899,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "5 أيام و4 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 5 أيام تشمل الغطس في جيلي نانغو ومانداليكا وجيلي تراوانغان.",
     "highlights": [
@@ -54384,7 +55050,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Lawatan persendirian Lombok 5 hari merangkumi snorkeling di Gili Nanggu, Mandalika dan Gili Trawangan.",
     "highlights": [
@@ -54528,7 +55201,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "5天4晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛5天私人行程，涵盖吉利南古浮潜、曼达利卡和吉利特拉旺安。",
     "highlights": [
@@ -54672,7 +55352,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp"
     ],
     "summary": "Private tour Lombok 5 hari 4 malam untuk kedatangan pagi atau siang, mencakup Mandalika, Gili Nanggu, Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -54816,7 +55503,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "5 Days 4 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp"
     ],
     "summary": "A private 5-day Lombok tour for a morning or midday arrival, covering Mandalika, Gili Nanggu, Gili Trawangan, and Sendang Gile and Tiu Kelep waterfalls.",
     "highlights": [
@@ -54960,7 +55654,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "5 أيام و4 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 5 أيام تشمل مانداليكا وجيلي نانغو وجيلي تراوانغان وشلالي سيندانغ غيلي وتيو كيليب.",
     "highlights": [
@@ -55104,7 +55805,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp"
     ],
     "summary": "Lawatan persendirian Lombok 5 hari untuk ketibaan pagi atau tengah hari, merangkumi Mandalika, Gili Nanggu, Gili Trawangan serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -55248,7 +55956,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "5天4晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp"
     ],
     "summary": "龙目岛5天私人行程，适合早上或中午抵达，涵盖曼达利卡、吉利南古、吉利特拉旺安、仙达吉拉瀑布和蒂乌克勒普瀑布。",
     "highlights": [
@@ -55392,7 +56107,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Private tour Lombok 5 hari 4 malam dengan Mandalika, eksplorasi Gili Trawangan menggunakan private speedboat, serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -55534,7 +56256,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "5 Days 4 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 5-day Lombok tour covering Mandalika, Gili Trawangan by private speedboat, and Sendang Gile and Tiu Kelep waterfalls.",
     "highlights": [
@@ -55676,7 +56405,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "5 أيام و4 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 5 أيام تشمل مانداليكا وجيلي تراوانغان بقارب سريع خاص وشلالي سيندانغ غيلي وتيو كيليب.",
     "highlights": [
@@ -55818,7 +56554,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Lawatan persendirian Lombok 5 hari merangkumi Mandalika, Gili Trawangan dengan bot laju persendirian serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -55960,7 +56703,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "5天4晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛5天私人行程，涵盖曼达利卡、私人快艇前往吉利特拉旺安，以及仙达吉拉和蒂乌克勒普瀑布。",
     "highlights": [
@@ -56102,7 +56852,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Private tour Lombok 5 hari 4 malam dengan Pink Beach, Gili Petelu, Mandalika, dan Gili Trawangan.",
     "highlights": [
@@ -56246,7 +57003,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "5 Days 4 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 5-day Lombok tour covering Pink Beach, Gili Petelu, Mandalika, and Gili Trawangan.",
     "highlights": [
@@ -56390,7 +57154,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "5 أيام و4 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 5 أيام تشمل شاطئ بينك وجيلي بيتيلو ومانداليكا وجيلي تراوانغان.",
     "highlights": [
@@ -56534,7 +57305,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Lawatan persendirian Lombok 5 hari merangkumi Pantai Pink, Gili Petelu, Mandalika dan Gili Trawangan.",
     "highlights": [
@@ -56678,7 +57456,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "5天4晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛5天私人行程，涵盖粉红海滩、吉利佩特鲁、曼达利卡和吉利特拉旺安。",
     "highlights": [
@@ -56822,7 +57607,13 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "destinations/gili.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Private tour Lombok 5 hari 4 malam dengan Mandalika, snorkeling tiga Gili menggunakan glass-bottom boat, serta wisata air terjun Senaru.",
     "highlights": [
@@ -56968,7 +57759,13 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "5 Days 4 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "destinations/gili.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 5-day Lombok tour covering Mandalika, three-island snorkeling by glass-bottom boat, and the Senaru waterfalls.",
     "highlights": [
@@ -57114,7 +57911,13 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "5 أيام و4 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "destinations/gili.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 5 أيام تشمل مانداليكا والغطس في ثلاث جزر بقارب ذي قاع زجاجي وشلالات سينارو.",
     "highlights": [
@@ -57260,7 +58063,13 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "destinations/gili.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Lawatan persendirian Lombok 5 hari merangkumi Mandalika, snorkeling tiga Gili dengan bot kaca dasar dan air terjun Senaru.",
     "highlights": [
@@ -57406,7 +58215,13 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "5天4晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-meno.webp",
+      "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
+      "destinations/gili.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛5天私人行程，涵盖曼达利卡、三岛玻璃底船浮潜及塞纳鲁瀑布。",
     "highlights": [
@@ -57552,7 +58367,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "6 Hari 5 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Paket private tour Lombok selama 6 hari 5 malam untuk kedatangan sore atau malam, mencakup Gili Nanggu, Mandalika, Gili Trawangan, serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -57711,7 +58533,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "6 Days 5 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 6-day, 5-night Lombok tour for an afternoon or evening arrival, covering Gili Nanggu, Mandalika, Gili Trawangan, and the Sendang Gile and Tiu Kelep waterfalls.",
     "highlights": [
@@ -57870,7 +58699,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "6 أيام و5 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 6 أيام و5 ليالٍ تشمل جيلي نانغو ومانداليكا وجيلي تراوانغان وشلالي سيندانغ غيلي وتيو كيليب.",
     "highlights": [
@@ -58029,7 +58865,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "6 Hari 5 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok selama 6 hari 5 malam untuk ketibaan petang atau malam, merangkumi Gili Nanggu, Mandalika, Gili Trawangan serta Air Terjun Sendang Gile dan Tiu Kelep.",
     "highlights": [
@@ -58188,7 +59031,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "6天5晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "destinations/gili.webp",
+      "gallery/gili-meno.webp",
+      "gallery/gili-tangkong.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛6天5晚私人旅游套餐，涵盖吉利南古、曼达利卡、吉利特拉旺安、仙达吉拉瀑布和蒂乌克勒普瀑布。",
     "highlights": [
@@ -58347,7 +59197,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "6 Hari 5 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Paket private tour Lombok selama 6 hari 5 malam untuk kedatangan pagi atau siang, mencakup Mandalika, Gili Nanggu, Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, serta Pink Beach.",
     "highlights": [
@@ -58506,7 +59363,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "6 Days 5 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "A private 6-day, 5-night Lombok tour for a morning or midday arrival, covering Mandalika, Gili Nanggu, Gili Trawangan, Sendang Gile and Tiu Kelep waterfalls, and Pink Beach.",
     "highlights": [
@@ -58665,7 +59529,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "6 أيام و5 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 6 أيام و5 ليالٍ تشمل مانداليكا وجيلي نانغو وجيلي تراوانغان وشلالي سيندانغ غيلي وتيو كيليب وشاطئ بينك.",
     "highlights": [
@@ -58824,7 +59695,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "6 Hari 5 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok selama 6 hari 5 malam untuk ketibaan pagi atau tengah hari, merangkumi Mandalika, Gili Nanggu, Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep serta Pantai Pink.",
     "highlights": [
@@ -58983,7 +59861,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "6天5晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp"
     ],
     "summary": "龙目岛6天5晚私人旅游套餐，适合早上或中午抵达，涵盖曼达利卡、吉利南古、吉利特拉旺安、仙达吉拉瀑布、蒂乌克勒普瀑布和粉红海滩。",
     "highlights": [
@@ -59143,8 +60028,11 @@ export const tourPackagesData = [
     "duration": "1 Hari",
     "images": [
       "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
       "gallery/g-waterfall-1.webp",
-      "destinations/rinjani.webp"
+      "gallery/senaru-village.webp",
+      "gallery/senaru-scenery.webp"
     ],
     "summary": "Paket wisata Air Terjun Sendang Gile dan Tiu Kelep yang mengajak Anda menjelajahi keindahan alam Lombok Utara di kaki Gunung Rinjani. Nikmati suasana Hutan Wisata Baun Pusuk, wisata budaya Desa Senaru, Masjid Kuno Bayan Beleq, serta kesegaran dua air terjun paling populer di Lombok dalam satu perjalanan yang nyaman dan berkesan.",
     "highlights": [
@@ -59195,8 +60083,11 @@ export const tourPackagesData = [
     "duration": "1 Day",
     "images": [
       "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
       "gallery/g-waterfall-1.webp",
-      "destinations/rinjani.webp"
+      "gallery/senaru-village.webp",
+      "gallery/senaru-scenery.webp"
     ],
     "summary": "Sendang Gile and Tiu Kelep Waterfall tour package that takes you to explore the natural beauty of North Lombok at the foot of Mount Rinjani. Enjoy the atmosphere of Baun Pusuk Tourist Forest, the cultural tour of Senaru Village, the ancient Bayan Beleq Mosque, and the freshness of Lombok’s two most popular waterfalls in one comfortable and memorable journey.",
     "highlights": [
@@ -59247,8 +60138,11 @@ export const tourPackagesData = [
     "duration": "1 يوم",
     "images": [
       "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
       "gallery/g-waterfall-1.webp",
-      "destinations/rinjani.webp"
+      "gallery/senaru-village.webp",
+      "gallery/senaru-scenery.webp"
     ],
     "summary": "برنامج سياحة شلالاتاندانغ جيلي و تيو كيليب يأخذك لاستكشاف الجمال الطبيعي لشمال لومبوك عند سفح جبل رينجاني. استمتع بأجواء غابة باون بوسوك السياحية، الجولة الثقافية في قرية سينارو، المسجد العتيق بايان بيليك، وانتعاش أشهر شلالين في لومبوك في رحلة مريحة ولا تُنسى.",
     "highlights": [
@@ -59299,8 +60193,11 @@ export const tourPackagesData = [
     "duration": "1 Hari",
     "images": [
       "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
       "gallery/g-waterfall-1.webp",
-      "destinations/rinjani.webp"
+      "gallery/senaru-village.webp",
+      "gallery/senaru-scenery.webp"
     ],
     "summary": "Sendang Gile and Tiu Kelep Waterfall tour package that takes you to explore the natural beauty of North Lombok at the foot of Mount Rinjani. Enjoy the atmosphere of Baun Pusuk Tourist Forest, the cultural tour of Senaru Village, the ancient Bayan Beleq Mosque, and the freshness of Lombok’s two most popular waterfalls in one comfortable and memorable journey.",
     "highlights": [
@@ -59351,8 +60248,11 @@ export const tourPackagesData = [
     "duration": "1天",
     "images": [
       "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
       "gallery/g-waterfall-1.webp",
-      "destinations/rinjani.webp"
+      "gallery/senaru-village.webp",
+      "gallery/senaru-scenery.webp"
     ],
     "summary": "森当吉莱和蒂乌克勒普瀑布旅游套餐，带您探索林贾尼山脚下北龙目岛的自然美景。享受巴温普苏克旅游森林的氛围、塞纳鲁村的文化之旅、古老的巴扬贝莱克清真寺，以及龙目岛两个最受欢迎的瀑布。",
     "highlights": [
@@ -59405,9 +60305,9 @@ export const tourPackagesData = [
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/gili-tangkong.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -59544,9 +60444,9 @@ export const tourPackagesData = [
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/gili-tangkong.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -59683,9 +60583,9 @@ export const tourPackagesData = [
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/gili-tangkong.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -59822,9 +60722,9 @@ export const tourPackagesData = [
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/gili-tangkong.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -59961,9 +60861,9 @@ export const tourPackagesData = [
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/gili-tangkong.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -60097,11 +60997,13 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "gallery/gili-tangkong.webp",
-      "destinations/gili.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
     "summary": "Paket wisata Lombok 3 hari 2 malam yang menggabungkan keindahan Pantai Kuta Mandalika, Pantai Tanjung Aan, budaya Suku Sasak, serta island hopping ke Gili Nanggu, Gili Sudak, Gili Tangkong, dan Gili Kedis. Nikmati pengalaman snorkeling di perairan jernih Lombok Barat, wisata pantai eksotis, serta kuliner khas Lombok dalam perjalanan private yang nyaman dan fleksibel.",
@@ -60180,11 +61082,13 @@ export const tourPackagesData = [
     "category": "Lombok Tour Packages",
     "duration": "3 Days 2 Nights",
     "images": [
-      "gallery/gili-tangkong.webp",
-      "destinations/gili.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
     "summary": "A 3-day 2-night Lombok tour package combining the beauty of Kuta Mandalika Beach, Tanjung Aan Beach, Sasak culture, and island hopping to Gili Nanggu, Gili Sudak, Gili Tangkong, and Gili Kedis. Enjoy snorkeling in the clear waters of West Lombok, exotic beach tours, and Lombok’s signature cuisine in a comfortable and flexible private trip.",
@@ -60263,11 +61167,13 @@ export const tourPackagesData = [
     "category": "باكيجات سياحة لومبوك",
     "duration": "3 أيام وليلتين",
     "images": [
-      "gallery/gili-tangkong.webp",
-      "destinations/gili.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
     "summary": "Paket wisata Lombok 3 hari 2 malam yang menggabungkan keindahan Pantai Kuta Mandalika, Pantai Tanjung Aan, budaya Suku Sasak, serta island hopping ke Gili Nanggu, Gili Sudak, Gili Tangkong, dan Gili Kedis. Nikmati pengalaman snorkeling di perairan jernih Lombok Barat, wisata pantai eksotis, serta kuliner khas Lombok dalam perjalanan private yang nyaman dan fleksibel.",
@@ -60346,11 +61252,13 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "gallery/gili-tangkong.webp",
-      "destinations/gili.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
     "summary": "A 3-day 2-night Lombok tour package combining the beauty of Kuta Mandalika Beach, Tanjung Aan Beach, Sasak culture, and island hopping to Gili Nanggu, Gili Sudak, Gili Tangkong, and Gili Kedis. Enjoy snorkeling in the clear waters of West Lombok, exotic beach tours, and Lombok’s signature cuisine in a comfortable and flexible private trip.",
@@ -60429,11 +61337,13 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "3天2晚",
     "images": [
-      "gallery/gili-tangkong.webp",
-      "destinations/gili.webp",
-      "gallery/tour-snorkeling.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
     "summary": "Paket wisata Lombok 3 hari 2 malam yang menggabungkan keindahan Pantai Kuta Mandalika, Pantai Tanjung Aan, budaya Suku Sasak, serta island hopping ke Gili Nanggu, Gili Sudak, Gili Tangkong, dan Gili Kedis. Nikmati pengalaman snorkeling di perairan jernih Lombok Barat, wisata pantai eksotis, serta kuliner khas Lombok dalam perjalanan private yang nyaman dan fleksibel.",
@@ -60513,11 +61423,11 @@ export const tourPackagesData = [
     "duration": "3 Hari 2 Malam",
     "images": [
       "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
       "gallery/tanjung-ringgit-lombok.webp",
-      "gallery/gili-tangkong.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-2.webp",
-      "gallery/mandalika-circuit.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -60602,11 +61512,11 @@ export const tourPackagesData = [
     "duration": "3 Days 2 Nights",
     "images": [
       "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
       "gallery/tanjung-ringgit-lombok.webp",
-      "gallery/gili-tangkong.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-2.webp",
-      "gallery/mandalika-circuit.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -60691,11 +61601,11 @@ export const tourPackagesData = [
     "duration": "3 أيام وليلتين",
     "images": [
       "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
       "gallery/tanjung-ringgit-lombok.webp",
-      "gallery/gili-tangkong.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-2.webp",
-      "gallery/mandalika-circuit.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -60780,11 +61690,11 @@ export const tourPackagesData = [
     "duration": "3 Hari 2 Malam",
     "images": [
       "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
       "gallery/tanjung-ringgit-lombok.webp",
-      "gallery/gili-tangkong.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-2.webp",
-      "gallery/mandalika-circuit.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -60869,11 +61779,11 @@ export const tourPackagesData = [
     "duration": "3天2晚",
     "images": [
       "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
       "gallery/tanjung-ringgit-lombok.webp",
-      "gallery/gili-tangkong.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-2.webp",
-      "gallery/mandalika-circuit.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -60958,11 +61868,12 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -61124,11 +62035,12 @@ export const tourPackagesData = [
     "category": "Lombok Tour Packages",
     "duration": "3 Days 2 Nights",
     "images": [
-      "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -61290,11 +62202,12 @@ export const tourPackagesData = [
     "category": "باكيجات سياحة لومبوك",
     "duration": "3 أيام وليلتان",
     "images": [
-      "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -61456,11 +62369,12 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "3 Hari 2 Malam",
     "images": [
-      "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -61622,11 +62536,12 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "3天2夜",
     "images": [
-      "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/tour-snorkeling.webp",
+      "gallery/g-snorkel.webp",
       "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -61787,12 +62702,12 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/gili-tangkong.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-beach.webp",
-      "gallery/g-merese-1.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -61954,12 +62869,12 @@ export const tourPackagesData = [
     "category": "Lombok Tour Packages",
     "duration": "4 Days 3 Nights",
     "images": [
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/gili-tangkong.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-beach.webp",
-      "gallery/g-merese-1.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -62121,12 +63036,12 @@ export const tourPackagesData = [
     "category": "باكيجات سياحة لومبوك",
     "duration": "4 أيام و 3 ليالي",
     "images": [
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/gili-tangkong.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-beach.webp",
-      "gallery/g-merese-1.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -62288,12 +63203,12 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "4 Hari 3 Malam",
     "images": [
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/gili-tangkong.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-beach.webp",
-      "gallery/g-merese-1.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -62455,12 +63370,12 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "4天3晚",
     "images": [
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "destinations/gili.webp",
       "gallery/gili-meno.webp",
       "gallery/gili-tangkong.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-beach.webp",
-      "gallery/g-merese-1.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp"
     ],
@@ -62622,14 +63537,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
-      "gallery/g-waterfall-1.webp",
-      "gallery/sasak-village.webp",
-      "gallery/sukarara-village.webp"
+      "gallery/gili-meno.webp"
     ],
     "summary": "Paket wisata Lombok 5 hari 4 malam yang memadukan Mandalika Tour, Gili Nanggu, Gili Trawangan, dan Waterfall Tour dalam satu perjalanan private yang nyaman dan lengkap.",
     "highlights": [
@@ -62769,14 +63684,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Packages",
     "duration": "5 Days 4 Nights",
     "images": [
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
-      "gallery/g-waterfall-1.webp",
-      "gallery/sasak-village.webp",
-      "gallery/sukarara-village.webp"
+      "gallery/gili-meno.webp"
     ],
     "summary": "A 5-day 4-night Lombok tour package that combines Mandalika Tour, Gili Nanggu, Gili Trawangan, and a Waterfall Tour in one comfortable private trip.",
     "highlights": [
@@ -62916,14 +63831,14 @@ export const tourPackagesData = [
     "category": "باكيجات سياحة لومبوك",
     "duration": "5 أيام و4 ليالٍ",
     "images": [
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
-      "gallery/g-waterfall-1.webp",
-      "gallery/sasak-village.webp",
-      "gallery/sukarara-village.webp"
+      "gallery/gili-meno.webp"
     ],
     "summary": "باقة سياحية في لومبوك لمدة 5 أيام و4 ليالٍ تجمع بين جولة مانداليكا، وجيلي نانغو، وجيلي ترافانغان، وجولة الشلالات في رحلة خاصة مريحة وكاملة.",
     "highlights": [
@@ -63063,14 +63978,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "5 Hari 4 Malam",
     "images": [
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
-      "gallery/g-waterfall-1.webp",
-      "gallery/sasak-village.webp",
-      "gallery/sukarara-village.webp"
+      "gallery/gili-meno.webp"
     ],
     "summary": "Pakej pelancongan Lombok 5 hari 4 malam yang menggabungkan Mandalika Tour, Gili Nanggu, Gili Trawangan, dan Waterfall Tour dalam satu perjalanan private yang selesa.",
     "highlights": [
@@ -63210,14 +64125,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "5天4晚",
     "images": [
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp",
+      "gallery/gili-nanggu-boat.webp",
       "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
-      "gallery/g-waterfall-1.webp",
-      "gallery/sasak-village.webp",
-      "gallery/sukarara-village.webp"
+      "gallery/gili-meno.webp"
     ],
     "summary": "这是一款龙目岛5天4晚私人旅游套餐，融合了曼达利卡、吉利南古、吉利特拉旺岸以及瀑布行程，轻松舒适且内容完整。",
     "highlights": [
@@ -63357,14 +64272,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "6 Hari 5 Malam",
     "images": [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
-      "gallery/g-waterfall-1.webp",
       "gallery/pink-beach-lombok.webp",
-      "gallery/sasak-village.webp"
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp"
     ],
     "summary": "Paket wisata Lombok 6 hari 5 malam yang menggabungkan Mandalika Tour, Gili Nanggu, Gili Trawangan, Waterfall Tour, dan Pantai Pink Tour dalam satu perjalanan private yang lengkap.",
     "highlights": [
@@ -63503,14 +64418,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Packages",
     "duration": "6 Days 5 Nights",
     "images": [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
-      "gallery/g-waterfall-1.webp",
       "gallery/pink-beach-lombok.webp",
-      "gallery/sasak-village.webp"
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp"
     ],
     "summary": "A 6-day 5-night Lombok private tour package combining Mandalika, Gili Nanggu, Gili Trawangan, a waterfall tour, and Pink Beach in one complete trip.",
     "highlights": [
@@ -63649,14 +64564,14 @@ export const tourPackagesData = [
     "category": "باكيجات سياحة لومبوك",
     "duration": "6 أيام و5 ليالٍ",
     "images": [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
-      "gallery/g-waterfall-1.webp",
       "gallery/pink-beach-lombok.webp",
-      "gallery/sasak-village.webp"
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp"
     ],
     "summary": "باقة سياحية خاصة في لومبوك لمدة 6 أيام و5 ليالٍ تجمع بين مانداليكا، جيلي نانغو، جيلي ترافانغان، جولة الشلالات، وشاطئ الوردي في رحلة كاملة.",
     "highlights": [
@@ -63795,14 +64710,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "6 Hari 5 Malam",
     "images": [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
-      "gallery/g-waterfall-1.webp",
       "gallery/pink-beach-lombok.webp",
-      "gallery/sasak-village.webp"
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp"
     ],
     "summary": "Pakej pelancongan Lombok 6 hari 5 malam yang menggabungkan Mandalika, Gili Nanggu, Gili Trawangan, Waterfall Tour, dan Pantai Pink dalam satu perjalanan private yang lengkap.",
     "highlights": [
@@ -63941,14 +64856,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "6天5晚",
     "images": [
-      "destinations/gili.webp",
-      "gallery/gili-meno.webp",
-      "gallery/tour-snorkeling.webp",
-      "gallery/kuta-mandalika-aerial.webp",
-      "gallery/g-merese-1.webp",
-      "gallery/g-waterfall-1.webp",
       "gallery/pink-beach-lombok.webp",
-      "gallery/sasak-village.webp"
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/tiu-kelep-waterfall.webp",
+      "gallery/senaru-waterfall-commons.webp",
+      "gallery/senaru-tiu-kelep.webp",
+      "gallery/gili-nanggu-shore.webp",
+      "gallery/gili-nanggu-snorkeling.webp"
     ],
     "summary": "这是一款龙目岛6天5晚私人旅游套餐，融合了曼达利卡、吉利南古、吉利特拉旺岸、瀑布行程和粉红沙滩，内容完整且轻松舒适。",
     "highlights": [
@@ -64087,7 +65002,14 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "6 Hari 5 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Paket private tour Lombok selama 6 hari 5 malam yang dirancang untuk kedatangan sore atau malam dan kepulangan pagi atau siang. Perjalanan mencakup Pink Beach, Mandalika, Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, transportasi, akomodasi sesuai pilihan, makanan, serta tiket masuk objek wisata.",
     "highlights": [
@@ -64247,7 +65169,14 @@ export const tourPackagesData = [
     "category": "Lombok Tour Package",
     "duration": "6 Days 5 Nights",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "A private 6-day, 5-night Lombok tour designed for an afternoon or evening arrival and a morning or midday departure. The journey covers Pink Beach, Mandalika, Gili Trawangan, Sendang Gile and Tiu Kelep waterfalls, with transportation, selected accommodation, meals, and attraction entrance tickets included.",
     "highlights": [
@@ -64407,7 +65336,14 @@ export const tourPackagesData = [
     "category": "باقة سياحية في لومبوك",
     "duration": "6 أيام و5 ليالٍ",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "جولة خاصة في لومبوك لمدة 6 أيام و5 ليالٍ، مصممة للوصول مساءً أو ليلاً والمغادرة صباحاً أو ظهراً. تشمل الرحلة شاطئ بينك، ومنطقة مانداليكا، وجزيرة جيلي تراوانغان، وشلالي سيندانغ غيلي وتيو كيليب، بالإضافة إلى المواصلات والإقامة المختارة والوجبات وتذاكر دخول المواقع السياحية.",
     "highlights": [
@@ -64567,7 +65503,14 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "6 Hari 5 Malam",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "Pakej lawatan persendirian Lombok selama 6 hari 5 malam yang direka untuk ketibaan pada waktu petang atau malam dan penerbangan pulang pada waktu pagi atau tengah hari. Perjalanan merangkumi Pantai Pink, Mandalika, Gili Trawangan, Air Terjun Sendang Gile dan Tiu Kelep, termasuk pengangkutan, penginapan pilihan, makanan dan tiket masuk tempat pelancongan.",
     "highlights": [
@@ -64727,7 +65670,14 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "6天5晚",
     "images": [
-      "destinations/lombok.webp"
+      "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
+      "gallery/tanjung-ringgit-lombok.webp",
+      "gallery/kuta-mandalika-aerial.webp",
+      "gallery/kuta-beach.webp",
+      "gallery/kuta-beach-2.webp",
+      "gallery/sasak-village.webp",
+      "gallery/sukarara-village.webp"
     ],
     "summary": "龙目岛6天5晚私人旅游套餐，适合傍晚或夜间抵达，并于早上或中午返程。行程包括粉红海滩、曼达利卡、吉利特拉旺安、仙达吉拉瀑布和蒂乌克勒普瀑布，并包含交通、所选酒店、餐饮及景点门票。",
     "highlights": [
@@ -64888,11 +65838,12 @@ export const tourPackagesData = [
     "category": "Paket Wisata Lombok",
     "duration": "1 Hari",
     "images": [
+      "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
       "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp",
-      "gallery/tour-cultural.webp"
+      "gallery/g-sukarara.webp"
     ],
     "summary": "Paket wisata Pantai Kuta Lombok yang menggabungkan keindahan pantai pasir putih dengan wisata budaya Suku Sasak. Jelajahi Desa Banyumulek, Desa Sukarara, Desa Sade, Pantai Kuta Lombok, dan Pantai Tanjung Aan dalam satu hari penuh bersama layanan private tour yang nyaman.",
     "highlights": [
@@ -64943,11 +65894,12 @@ export const tourPackagesData = [
     "category": "Lombok Tour Packages",
     "duration": "1 Day",
     "images": [
+      "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
       "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp",
-      "gallery/tour-cultural.webp"
+      "gallery/g-sukarara.webp"
     ],
     "summary": "Kuta Lombok beach tour package combining white sand beach beauty with Sasak cultural tour. Explore Banyumulek Village, Sukarara Village, Sade Village, Kuta Lombok Beach, and Tanjung Aan Beach in one full day with comfortable private tour service.",
     "highlights": [
@@ -64998,11 +65950,12 @@ export const tourPackagesData = [
     "category": "باكيجات سياحة لومبوك",
     "duration": "1 يوم",
     "images": [
+      "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
       "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp",
-      "gallery/tour-cultural.webp"
+      "gallery/g-sukarara.webp"
     ],
     "summary": "برنامج سياحة شاطئ كوتا لومبوك يجمع بين جمال الشاطئ الرملي الأبيض وجولة ثقافية في قرى ساساك. استكشف قرية بانيوموليك وقرية سوكارارا وقرية سادي وشاطئ كوتا لومبوك وشاطئ تانجونغ آن في يوم كامل مع خدمة جولة خاصة مريحة.",
     "highlights": [
@@ -65053,11 +66006,12 @@ export const tourPackagesData = [
     "category": "Pakej Pelancongan Lombok",
     "duration": "1 Hari",
     "images": [
+      "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
       "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp",
-      "gallery/tour-cultural.webp"
+      "gallery/g-sukarara.webp"
     ],
     "summary": "Kuta Lombok beach tour package combining white sand beach beauty with Sasak cultural tour. Explore Banyumulek Village, Sukarara Village, Sade Village, Kuta Lombok Beach, and Tanjung Aan Beach in one full day with comfortable private tour service.",
     "highlights": [
@@ -65108,11 +66062,12 @@ export const tourPackagesData = [
     "category": "龙目岛旅游套餐",
     "duration": "1天",
     "images": [
+      "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
       "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp",
-      "gallery/tour-cultural.webp"
+      "gallery/g-sukarara.webp"
     ],
     "summary": "库塔龙目岛海滩旅游套餐，结合白沙滩美景和萨萨克文化之旅。在舒适私人团服务中，一天内探索巴纽穆莱克村、苏卡拉腊村、萨德村、库塔龙目岛海滩和丹戎安海滩。",
     "highlights": [
@@ -65164,10 +66119,10 @@ export const tourPackagesData = [
     "images": [
       "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
-      "gallery/mataram-islamic-center.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp",
-      "gallery/mandalika-circuit.webp"
+      "gallery/g-sukarara.webp"
     ],
     "summary": "Paket wisata Lombok 2 hari 1 malam yang menggabungkan keindahan Pantai Kuta Mandalika, Pantai Tanjung Aan, wisata budaya Suku Sasak, serta wisata sejarah dan religi di Kota Mataram. Cocok bagi wisatawan yang ingin menikmati pantai, budaya, kuliner, dan ikon wisata Lombok dalam waktu singkat.",
     "highlights": [
@@ -65230,10 +66185,10 @@ export const tourPackagesData = [
     "images": [
       "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
-      "gallery/mataram-islamic-center.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp",
-      "gallery/mandalika-circuit.webp"
+      "gallery/g-sukarara.webp"
     ],
     "summary": "A 2-day 1-night Lombok tour package combining the beauty of Kuta Mandalika Beach, Tanjung Aan Beach, Sasak cultural tour, and historical and religious tours in Mataram City. Suitable for travelers who want to enjoy beaches, culture, cuisine, and Lombok’s iconic attractions in a short time.",
     "highlights": [
@@ -65296,10 +66251,10 @@ export const tourPackagesData = [
     "images": [
       "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
-      "gallery/mataram-islamic-center.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp",
-      "gallery/mandalika-circuit.webp"
+      "gallery/g-sukarara.webp"
     ],
     "summary": "برنامج رحلة لومبوك لمدة يومين وليلة واحدة يجمع بين جمال شاطئ كوتا مانداليكا وشاطئ تانجونغ آن والجولة الثقافية لشعب ساساك والجولات التاريخية والدينية في مدينة ماتارام. مناسب للمسافرين الذين يرغبون في الاستمتاع بالشواطئ والثقافة والمأكولات في وقت قصير.",
     "highlights": [
@@ -65362,10 +66317,10 @@ export const tourPackagesData = [
     "images": [
       "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
-      "gallery/mataram-islamic-center.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp",
-      "gallery/mandalika-circuit.webp"
+      "gallery/g-sukarara.webp"
     ],
     "summary": "A 2-day 1-night Lombok tour package combining the beauty of Kuta Mandalika Beach, Tanjung Aan Beach, Sasak cultural tour, and historical and religious tours in Mataram City. Suitable for travelers who want to enjoy beaches, culture, cuisine, and Lombok’s iconic attractions in a short time.",
     "highlights": [
@@ -65428,10 +66383,10 @@ export const tourPackagesData = [
     "images": [
       "gallery/kuta-mandalika-aerial.webp",
       "gallery/kuta-beach.webp",
-      "gallery/mataram-islamic-center.webp",
+      "gallery/kuta-beach-2.webp",
       "gallery/sasak-village.webp",
       "gallery/sukarara-village.webp",
-      "gallery/mandalika-circuit.webp"
+      "gallery/g-sukarara.webp"
     ],
     "summary": "2天1夜龙目岛旅游套餐，结合库塔曼达利卡海滩、丹戎安海滩的美景、萨萨克文化之旅以及马塔兰市的历史宗教观光。适合希望在短时间内享受海滩、文化、美食的旅行者。",
     "highlights": [
@@ -65493,6 +66448,7 @@ export const tourPackagesData = [
     "duration": "2 Hari 1 Malam",
     "images": [
       "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
       "gallery/tanjung-ringgit-lombok.webp",
       "gallery/tour-snorkeling.webp",
       "destinations/lombok.webp"
@@ -65561,6 +66517,7 @@ export const tourPackagesData = [
     "duration": "2 Days 1 Night",
     "images": [
       "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
       "gallery/tanjung-ringgit-lombok.webp",
       "gallery/tour-snorkeling.webp",
       "destinations/lombok.webp"
@@ -65629,6 +66586,7 @@ export const tourPackagesData = [
     "duration": "يومين وليلة",
     "images": [
       "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
       "gallery/tanjung-ringgit-lombok.webp",
       "gallery/tour-snorkeling.webp",
       "destinations/lombok.webp"
@@ -65697,6 +66655,7 @@ export const tourPackagesData = [
     "duration": "2 Hari 1 Malam",
     "images": [
       "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
       "gallery/tanjung-ringgit-lombok.webp",
       "gallery/tour-snorkeling.webp",
       "destinations/lombok.webp"
@@ -65765,6 +66724,7 @@ export const tourPackagesData = [
     "duration": "2天1夜",
     "images": [
       "gallery/pink-beach-lombok.webp",
+      "gallery/pink-beach-tangsi-commons.webp",
       "gallery/tanjung-ringgit-lombok.webp",
       "gallery/tour-snorkeling.webp",
       "destinations/lombok.webp"

@@ -1,0 +1,57 @@
+{
+  "id": {
+    "title": "Gili Nanggu",
+    "region": "Lombok Barat Daya",
+    "summary": "Pulau kecil di barat daya Lombok yang populer untuk island hopping, snorkeling, dan suasana pantai yang tenang.",
+    "thingsToDo": ["Island hopping", "Snorkeling", "Santai di pantai"],
+    "packages": [
+      "paket-tour-lombok-3-hari-2-malam-mandalika-gili-nanggu",
+      "paket-tour-lombok-4-hari-3-malam-mandalika-gili-nanggu-gili-trawangan",
+      "paket-tour-lombok-5-hari-4-malam-gili-nanggu-mandalika-gili-trawangan"
+    ]
+  },
+  "en": {
+    "title": "Gili Nanggu",
+    "region": "Southwest Lombok",
+    "summary": "A small island off southwest Lombok popular for island hopping, snorkeling, and a calm beach atmosphere.",
+    "thingsToDo": ["Island hopping", "Snorkeling", "Beach relaxation"],
+    "packages": [
+      "paket-tour-lombok-3-hari-2-malam-mandalika-gili-nanggu",
+      "paket-tour-lombok-4-hari-3-malam-mandalika-gili-nanggu-gili-trawangan",
+      "paket-tour-lombok-5-hari-4-malam-gili-nanggu-mandalika-gili-trawangan"
+    ]
+  },
+  "ar": {
+    "title": "جيلي نانغو",
+    "region": "جنوب غرب لومبوك",
+    "summary": "جزيرة صغيرة في جنوب غرب لومبوك تشتهر بالتنقل بين الجزر والغطس وأجواء الشاطئ الهادئة.",
+    "thingsToDo": ["التنقل بين الجزر", "الغطس", "الاسترخاء على الشاطئ"],
+    "packages": [
+      "paket-tour-lombok-3-hari-2-malam-mandalika-gili-nanggu",
+      "paket-tour-lombok-4-hari-3-malam-mandalika-gili-nanggu-gili-trawangan",
+      "paket-tour-lombok-5-hari-4-malam-gili-nanggu-mandalika-gili-trawangan"
+    ]
+  },
+  "ms": {
+    "title": "Gili Nanggu",
+    "region": "Barat Daya Lombok",
+    "summary": "Pulau kecil di barat daya Lombok yang popular untuk island hopping, snorkeling, dan suasana pantai yang tenang.",
+    "thingsToDo": ["Island hopping", "Snorkeling", "Santai di pantai"],
+    "packages": [
+      "paket-tour-lombok-3-hari-2-malam-mandalika-gili-nanggu",
+      "paket-tour-lombok-4-hari-3-malam-mandalika-gili-nanggu-gili-trawangan",
+      "paket-tour-lombok-5-hari-4-malam-gili-nanggu-mandalika-gili-trawangan"
+    ]
+  },
+  "zh": {
+    "title": "吉利南古",
+    "region": "龙目岛西南部",
+    "summary": "位于龙目岛西南侧的小岛，以跳岛游、浮潜和宁静海滩氛围著称。",
+    "thingsToDo": ["跳岛游", "浮潜", "海滩放松"],
+    "packages": [
+      "paket-tour-lombok-3-hari-2-malam-mandalika-gili-nanggu",
+      "paket-tour-lombok-4-hari-3-malam-mandalika-gili-nanggu-gili-trawangan",
+      "paket-tour-lombok-5-hari-4-malam-gili-nanggu-mandalika-gili-trawangan"
+    ]
+  }
+}

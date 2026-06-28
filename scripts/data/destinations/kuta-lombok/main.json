@@ -1,10 +1,13 @@
 {
   "slug": "kuta-lombok",
   "_type": "destinations",
-  "image": "destinations/lombok.webp",
+  "image": "gallery/kuta-mandalika-aerial.webp",
   "gallery": [
+    "gallery/kuta-mandalika-aerial.webp",
     "gallery/kuta-beach.webp",
     "gallery/kuta-beach-2.webp",
-    "hero/hero-lombok.webp"
+    "gallery/g-merese-1.webp",
+    "gallery/g-merese-2.webp",
+    "gallery/mandalika-circuit.webp"
   ]
 }

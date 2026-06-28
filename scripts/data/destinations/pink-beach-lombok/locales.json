@@ -1,0 +1,57 @@
+{
+  "id": {
+    "title": "Pink Beach Lombok",
+    "region": "Lombok Timur",
+    "summary": "Pantai berpasir merah muda di timur Lombok yang terkenal untuk snorkeling, island hopping, dan panorama laut yang dramatis.",
+    "thingsToDo": ["Snorkeling", "Naik perahu", "Menikmati panorama pantai"],
+    "packages": [
+      "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+      "paket-tour-lombok-4-hari-3-malam-mandalika-pink-beach-gili-trawangan",
+      "paket-tour-lombok-5-hari-4-malam-pink-beach-mandalika-gili-trawangan"
+    ]
+  },
+  "en": {
+    "title": "Pink Beach Lombok",
+    "region": "East Lombok",
+    "summary": "A pink-sand beach in east Lombok known for snorkeling, boat trips, and dramatic coastal scenery.",
+    "thingsToDo": ["Snorkeling", "Boat trip", "Enjoy coastal views"],
+    "packages": [
+      "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+      "paket-tour-lombok-4-hari-3-malam-mandalika-pink-beach-gili-trawangan",
+      "paket-tour-lombok-5-hari-4-malam-pink-beach-mandalika-gili-trawangan"
+    ]
+  },
+  "ar": {
+    "title": "شاطئ بينك لومبوك",
+    "region": "شرق لومبوك",
+    "summary": "شاطئ رملي وردي في شرق لومبوك يشتهر بالغطس ورحلات القوارب والمشاهد الساحلية الدرامية.",
+    "thingsToDo": ["الغطس", "رحلة بالقارب", "الاستمتاع بالمناظر الساحلية"],
+    "packages": [
+      "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+      "paket-tour-lombok-4-hari-3-malam-mandalika-pink-beach-gili-trawangan",
+      "paket-tour-lombok-5-hari-4-malam-pink-beach-mandalika-gili-trawangan"
+    ]
+  },
+  "ms": {
+    "title": "Pantai Pink Lombok",
+    "region": "Lombok Timur",
+    "summary": "Pantai berpasir merah jambu di timur Lombok yang terkenal untuk snorkeling, lawatan bot, dan panorama pesisir dramatik.",
+    "thingsToDo": ["Snorkeling", "Lawatan bot", "Nikmati pemandangan pantai"],
+    "packages": [
+      "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+      "paket-tour-lombok-4-hari-3-malam-mandalika-pink-beach-gili-trawangan",
+      "paket-tour-lombok-5-hari-4-malam-pink-beach-mandalika-gili-trawangan"
+    ]
+  },
+  "zh": {
+    "title": "龙目岛粉红海滩",
+    "region": "龙目岛东部",
+    "summary": "位于龙目岛东部的粉色沙滩，以浮潜、乘船出海和壮观海岸景色而闻名。",
+    "thingsToDo": ["浮潜", "乘船出海", "欣赏海岸风景"],
+    "packages": [
+      "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+      "paket-tour-lombok-4-hari-3-malam-mandalika-pink-beach-gili-trawangan",
+      "paket-tour-lombok-5-hari-4-malam-pink-beach-mandalika-gili-trawangan"
+    ]
+  }
+}

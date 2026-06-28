@@ -1,10 +1,13 @@
 {
   "slug": "senaru",
   "_type": "destinations",
-  "image": "destinations/rinjani.webp",
+  "image": "gallery/tiu-kelep-waterfall.webp",
   "gallery": [
-    "destinations/rinjani.webp",
-    "gallery/tour-cultural.webp",
-    "gallery/kuta-beach-2.webp"
+    "gallery/tiu-kelep-waterfall.webp",
+    "gallery/senaru-waterfall-commons.webp",
+    "gallery/senaru-tiu-kelep.webp",
+    "gallery/g-waterfall-1.webp",
+    "gallery/senaru-village.webp",
+    "gallery/senaru-scenery.webp"
   ]
 }

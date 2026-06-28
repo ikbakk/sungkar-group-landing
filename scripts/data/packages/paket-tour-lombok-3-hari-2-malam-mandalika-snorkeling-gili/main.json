@@ -4,7 +4,16 @@
   "featured": false,
   "collectionSlug": "3-hari-2-malam",
   "priceListType": "landHotelTier",
-  "images": ["destinations/lombok.webp"],
+  "images": [
+    "gallery/gili-meno.webp",
+    "gallery/tour-snorkeling.webp",
+    "gallery/g-snorkel.webp",
+    "gallery/kuta-mandalika-aerial.webp",
+    "gallery/kuta-beach.webp",
+    "gallery/kuta-beach-2.webp",
+    "gallery/sasak-village.webp",
+    "gallery/sukarara-village.webp"
+  ],
   "priceList": {
     "withoutHotel": {
       "2-3": 1608000,

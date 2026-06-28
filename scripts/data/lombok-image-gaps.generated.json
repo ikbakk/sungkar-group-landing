@@ -1,0 +1,30 @@
+{
+  "status": "post-reuse-gap-analysis",
+  "readyPools": [
+    "mandalika-core",
+    "city-culture",
+    "gili-islands",
+    "gili-snorkeling",
+    "motogp-mandalika"
+  ],
+  "gaps": [
+    {
+      "pool": "gili-southwest",
+      "why": "Only one clearly southwest-islands-specific asset exists in-repo (`gallery/gili-tangkong.webp`). The rest are generic snorkeling/Gili fillers.",
+      "needs": ["gili-nanggu", "gili-sudak", "gili-kedis"],
+      "targetAdditionalImages": 3
+    },
+    {
+      "pool": "pink-beach-east",
+      "why": "Only `pink-beach-lombok` and `tanjung-ringgit-lombok` are location-specific in-repo today.",
+      "needs": ["pink-beach-east-lombok", "tanjung-ringgit"],
+      "targetAdditionalImages": 3
+    },
+    {
+      "pool": "waterfalls-north",
+      "why": "Only `tiu-kelep-waterfall` and `g-waterfall-1` are waterfall-specific in-repo today, with `destinations/rinjani.webp` as a generic fallback.",
+      "needs": ["sendang-gile", "tiu-kelep", "senaru"],
+      "targetAdditionalImages": 3
+    }
+  ]
+}

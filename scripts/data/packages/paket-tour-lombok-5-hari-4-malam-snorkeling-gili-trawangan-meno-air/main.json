@@ -4,7 +4,15 @@
   "featured": false,
   "collectionSlug": "5-hari-4-malam",
   "priceListType": "landHotelTier",
-  "images": ["destinations/lombok.webp"],
+  "images": [
+    "gallery/gili-meno.webp",
+    "gallery/tour-snorkeling.webp",
+    "gallery/g-snorkel.webp",
+    "destinations/gili.webp",
+    "gallery/gili-tangkong.webp",
+    "gallery/sasak-village.webp",
+    "gallery/sukarara-village.webp"
+  ],
   "priceList": {
     "withoutHotel": {
       "2-3": 2496000,

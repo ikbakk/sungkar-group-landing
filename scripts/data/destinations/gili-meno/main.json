@@ -1,10 +1,13 @@
 {
   "slug": "gili-meno",
   "_type": "destinations",
-  "image": "destinations/gili.webp",
+  "image": "gallery/gili-meno.webp",
   "gallery": [
-    "destinations/gili.webp",
     "gallery/gili-meno.webp",
-    "gallery/kuta-beach-2.webp"
+    "gallery/tour-snorkeling.webp",
+    "gallery/g-snorkel.webp",
+    "gallery/g-snorkel-2.webp",
+    "gallery/g-snorkel-3.webp",
+    "gallery/g-snorkel-4.webp"
   ]
 }

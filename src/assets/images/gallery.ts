@@ -1,6 +1,15 @@
 import giliMeno from "./gallery/gili-meno.webp";
+import giliTangkong from "./gallery/gili-tangkong.webp";
 import kutaBeach from "./gallery/kuta-beach.webp";
 import kutaBeach2 from "./gallery/kuta-beach-2.webp";
+import kutaMandalikaAerial from "./gallery/kuta-mandalika-aerial.webp";
+import mandalikaCircuit from "./gallery/mandalika-circuit.webp";
+import mataramIslamicCenter from "./gallery/mataram-islamic-center.webp";
+import pinkBeachLombok from "./gallery/pink-beach-lombok.webp";
+import sasakVillage from "./gallery/sasak-village.webp";
+import sukararaVillage from "./gallery/sukarara-village.webp";
+import tanjungRinggitLombok from "./gallery/tanjung-ringgit-lombok.webp";
+import tiuKelepWaterfall from "./gallery/tiu-kelep-waterfall.webp";
 import tourCultural from "./gallery/tour-cultural.webp";
 import tourSnorkeling from "./gallery/tour-snorkeling.webp";
 import whaleshark from "./gallery/whaleshark.webp";
@@ -25,14 +34,31 @@ import gSnorkel4 from "./gallery/g-snorkel-4.webp";
 import gSnorkel5 from "./gallery/g-snorkel-5.webp";
 import gSnorkel6 from "./gallery/g-snorkel-6.webp";
 import gSnorkel7 from "./gallery/g-snorkel-7.webp";
+import giliNangguBoat from "./gallery/gili-nanggu-boat.webp";
+import giliNangguShore from "./gallery/gili-nanggu-shore.webp";
+import giliNangguSnorkeling from "./gallery/gili-nanggu-snorkeling.webp";
+import pinkBeachTangsiCommons from "./gallery/pink-beach-tangsi-commons.webp";
+import senaruScenery from "./gallery/senaru-scenery.webp";
+import senaruTiuKelep from "./gallery/senaru-tiu-kelep.webp";
+import senaruVillage from "./gallery/senaru-village.webp";
+import senaruWaterfallCommons from "./gallery/senaru-waterfall-commons.webp";
 import gSukarara from "./gallery/g-sukarara.webp";
 import gSukarara2 from "./gallery/g-sukarara-2.webp";
 import gWaterfall1 from "./gallery/g-waterfall-1.webp";
 
 export const GALLERY = {
   giliMeno,
+  giliTangkong,
   kutaBeach,
   kutaBeach2,
+  kutaMandalikaAerial,
+  mandalikaCircuit,
+  mataramIslamicCenter,
+  pinkBeachLombok,
+  sasakVillage,
+  sukararaVillage,
+  tanjungRinggitLombok,
+  tiuKelepWaterfall,
   tourCultural,
   tourSnorkeling,
   whaleshark,
@@ -57,6 +83,14 @@ export const GALLERY = {
   gSnorkel5,
   gSnorkel6,
   gSnorkel7,
+  giliNangguBoat,
+  giliNangguShore,
+  giliNangguSnorkeling,
+  pinkBeachTangsiCommons,
+  senaruScenery,
+  senaruTiuKelep,
+  senaruVillage,
+  senaruWaterfallCommons,
   gSukarara,
   gSukarara2,
   gWaterfall1,

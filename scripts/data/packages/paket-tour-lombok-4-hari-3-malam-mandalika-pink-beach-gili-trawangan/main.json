@@ -4,7 +4,16 @@
   "featured": false,
   "collectionSlug": "4-hari-3-malam",
   "priceListType": "landHotelTier",
-  "images": ["destinations/lombok.webp"],
+  "images": [
+    "gallery/pink-beach-lombok.webp",
+    "gallery/pink-beach-tangsi-commons.webp",
+    "gallery/tanjung-ringgit-lombok.webp",
+    "destinations/gili.webp",
+    "gallery/gili-meno.webp",
+    "gallery/gili-tangkong.webp",
+    "gallery/kuta-mandalika-aerial.webp",
+    "gallery/kuta-beach.webp"
+  ],
   "priceList": {
     "withoutHotel": {
       "2-3": 2171000,

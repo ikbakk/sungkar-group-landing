@@ -5,14 +5,14 @@
   "collectionSlug": "6-hari-5-malam",
   "priceListType": "landHotelTier",
   "images": [
-    "destinations/gili.webp",
-    "gallery/gili-meno.webp",
-    "gallery/tour-snorkeling.webp",
-    "gallery/kuta-mandalika-aerial.webp",
-    "gallery/g-merese-1.webp",
-    "gallery/g-waterfall-1.webp",
     "gallery/pink-beach-lombok.webp",
-    "gallery/sasak-village.webp"
+    "gallery/pink-beach-tangsi-commons.webp",
+    "gallery/tanjung-ringgit-lombok.webp",
+    "gallery/tiu-kelep-waterfall.webp",
+    "gallery/senaru-waterfall-commons.webp",
+    "gallery/senaru-tiu-kelep.webp",
+    "gallery/gili-nanggu-shore.webp",
+    "gallery/gili-nanggu-snorkeling.webp"
   ],
   "priceList": {
     "withoutHotel": {

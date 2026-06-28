@@ -4,7 +4,16 @@
   "featured": false,
   "collectionSlug": "6-hari-5-malam",
   "priceListType": "landHotelTier",
-  "images": ["destinations/lombok.webp"],
+  "images": [
+    "gallery/pink-beach-lombok.webp",
+    "gallery/pink-beach-tangsi-commons.webp",
+    "gallery/tanjung-ringgit-lombok.webp",
+    "gallery/kuta-mandalika-aerial.webp",
+    "gallery/kuta-beach.webp",
+    "gallery/kuta-beach-2.webp",
+    "gallery/sasak-village.webp",
+    "gallery/sukarara-village.webp"
+  ],
   "priceList": {
     "withoutHotel": {
       "2-3": 3059000,

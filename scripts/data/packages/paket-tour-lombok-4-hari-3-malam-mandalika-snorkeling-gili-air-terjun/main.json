@@ -4,7 +4,16 @@
   "featured": false,
   "collectionSlug": "4-hari-3-malam",
   "priceListType": "landHotelTier",
-  "images": ["destinations/lombok.webp"],
+  "images": [
+    "gallery/tiu-kelep-waterfall.webp",
+    "gallery/senaru-waterfall-commons.webp",
+    "gallery/senaru-tiu-kelep.webp",
+    "gallery/gili-meno.webp",
+    "gallery/tour-snorkeling.webp",
+    "gallery/g-snorkel.webp",
+    "gallery/kuta-mandalika-aerial.webp",
+    "gallery/kuta-beach.webp"
+  ],
   "priceList": {
     "withoutHotel": {
       "2-3": 2125000,

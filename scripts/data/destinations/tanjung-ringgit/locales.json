@@ -1,0 +1,73 @@
+{
+  "id": {
+    "title": "Tanjung Ringgit",
+    "region": "Lombok Timur",
+    "summary": "Tanjung berbukit di timur Lombok dengan tebing dramatis, pemandangan laut lepas, dan akses ke kawasan Pink Beach.",
+    "thingsToDo": [
+      "Menikmati panorama laut",
+      "Jelajah tebing",
+      "Akses boat trip ke Pink Beach"
+    ],
+    "packages": [
+      "paket-wisata-pantai-pink-tanjung-ringgit-2-hari-1-malam",
+      "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+      "paket-tour-lombok-6-hari-5-malam-mandalika-gili-nanggu-pink-beach"
+    ]
+  },
+  "en": {
+    "title": "Tanjung Ringgit",
+    "region": "East Lombok",
+    "summary": "A hilly cape in east Lombok with dramatic cliffs, open-sea views, and access toward the Pink Beach area.",
+    "thingsToDo": [
+      "Enjoy sea panoramas",
+      "Explore the cliffs",
+      "Boat access toward Pink Beach"
+    ],
+    "packages": [
+      "paket-wisata-pantai-pink-tanjung-ringgit-2-hari-1-malam",
+      "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+      "paket-tour-lombok-6-hari-5-malam-mandalika-gili-nanggu-pink-beach"
+    ]
+  },
+  "ar": {
+    "title": "تانجونغ رينغيت",
+    "region": "شرق لومبوك",
+    "summary": "رأس جبلي في شرق لومبوك يتميز بمنحدرات درامية وإطلالات على البحر المفتوح ووصول إلى منطقة شاطئ بينك.",
+    "thingsToDo": [
+      "الاستمتاع بإطلالات البحر",
+      "استكشاف المنحدرات",
+      "الوصول بالقارب إلى شاطئ بينك"
+    ],
+    "packages": [
+      "paket-wisata-pantai-pink-tanjung-ringgit-2-hari-1-malam",
+      "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+      "paket-tour-lombok-6-hari-5-malam-mandalika-gili-nanggu-pink-beach"
+    ]
+  },
+  "ms": {
+    "title": "Tanjung Ringgit",
+    "region": "Lombok Timur",
+    "summary": "Tanjung berbukit di timur Lombok dengan tebing dramatik, pemandangan laut terbuka, dan akses ke kawasan Pantai Pink.",
+    "thingsToDo": [
+      "Nikmati panorama laut",
+      "Jelajah tebing",
+      "Akses bot ke Pantai Pink"
+    ],
+    "packages": [
+      "paket-wisata-pantai-pink-tanjung-ringgit-2-hari-1-malam",
+      "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+      "paket-tour-lombok-6-hari-5-malam-mandalika-gili-nanggu-pink-beach"
+    ]
+  },
+  "zh": {
+    "title": "丹戎灵吉特",
+    "region": "龙目岛东部",
+    "summary": "位于龙目岛东部的丘陵海角，拥有壮观悬崖、开阔海景，并可前往粉红海滩区域。",
+    "thingsToDo": ["欣赏海景全景", "探索悬崖", "乘船前往粉红海滩"],
+    "packages": [
+      "paket-wisata-pantai-pink-tanjung-ringgit-2-hari-1-malam",
+      "paket-tour-lombok-3-hari-2-malam-mandalika-pink-beach",
+      "paket-tour-lombok-6-hari-5-malam-mandalika-gili-nanggu-pink-beach"
+    ]
+  }
+}
