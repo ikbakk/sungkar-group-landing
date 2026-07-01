@@ -52,27 +52,38 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt, stats } =
       <div class="absolute inset-0 bg-linear-to-t from-black/80 via-black/50 to-black/20" />
 
       <div class="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-4 pb-10 pt-32 sm:px-6 md:pt-32 lg:pb-14 lg:px-8">
-        <Breadcrumb class="mb-8">
-          <BreadcrumbList class="flex-wrap">
-            {breadcrumbs.map((crumb, index) => (
-              <BreadcrumbItem class="shrink-0 whitespace-nowrap">
-                {crumb.href ? (
-                  <BreadcrumbLink
-                    href={crumb.href}
-                    class="text-white/70 transition-colors hover:text-white"
-                  >
-                    {crumb.label}
-                  </BreadcrumbLink>
-                ) : (
-                  <BreadcrumbPage class="font-semibold text-white">
-                    {crumb.label}
-                  </BreadcrumbPage>
-                )}
-                {index < breadcrumbs.length - 1 && (
-                  <BreadcrumbSeparator class="text-white/30" />
-                )}
-              </BreadcrumbItem>
-            ))}
+        <Breadcrumb class="mb-8 min-w-0">
+          <BreadcrumbList class="w-full min-w-0 flex-wrap">
+            {breadcrumbs.map((crumb, index) => {
+              const isCurrent = index === breadcrumbs.length - 1;
+
+              return (
+                <BreadcrumbItem
+                  class={
+                    isCurrent
+                      ? "min-w-0 max-w-full"
+                      : "shrink-0 whitespace-nowrap"
+                  }
+                >
+                  {index > 0 && <BreadcrumbSeparator class="text-white/30" />}
+                  {crumb.href ? (
+                    <BreadcrumbLink
+                      href={crumb.href}
+                      class="text-white/70 transition-colors hover:text-white"
+                    >
+                      {crumb.label}
+                    </BreadcrumbLink>
+                  ) : (
+                    <BreadcrumbPage
+                      class="min-w-0 whitespace-normal break-words font-semibold text-white"
+                      title={crumb.label}
+                    >
+                      {crumb.label}
+                    </BreadcrumbPage>
+                  )}
+                </BreadcrumbItem>
+              );
+            })}
           </BreadcrumbList>
         </Breadcrumb>
 
@@ -109,22 +120,35 @@ const { eyebrow, title, description, breadcrumbs, image, imageAlt, stats } =
   ) : (
     <section class="bg-white">
       <div class="mx-auto max-w-7xl px-4 pt-32 pb-8 sm:px-6 lg:px-8 lg:pt-32">
-        <Breadcrumb class="font-sans">
-          <BreadcrumbList>
-            {breadcrumbs.map((crumb, index) => (
-              <BreadcrumbItem>
-                {crumb.href ? (
-                  <BreadcrumbLink href={crumb.href}>
-                    {crumb.label}
-                  </BreadcrumbLink>
-                ) : (
-                  <BreadcrumbPage class="font-semibold">
-                    {crumb.label}
-                  </BreadcrumbPage>
-                )}
-                {index < breadcrumbs.length - 1 && <BreadcrumbSeparator />}
-              </BreadcrumbItem>
-            ))}
+        <Breadcrumb class="min-w-0 font-sans">
+          <BreadcrumbList class="w-full min-w-0 flex-wrap">
+            {breadcrumbs.map((crumb, index) => {
+              const isCurrent = index === breadcrumbs.length - 1;
+
+              return (
+                <BreadcrumbItem
+                  class={
+                    isCurrent
+                      ? "min-w-0 max-w-full"
+                      : "shrink-0 whitespace-nowrap"
+                  }
+                >
+                  {index > 0 && <BreadcrumbSeparator />}
+                  {crumb.href ? (
+                    <BreadcrumbLink href={crumb.href}>
+                      {crumb.label}
+                    </BreadcrumbLink>
+                  ) : (
+                    <BreadcrumbPage
+                      class="min-w-0 whitespace-normal break-words font-semibold"
+                      title={crumb.label}
+                    >
+                      {crumb.label}
+                    </BreadcrumbPage>
+                  )}
+                </BreadcrumbItem>
+              );
+            })}
           </BreadcrumbList>
         </Breadcrumb>
 
