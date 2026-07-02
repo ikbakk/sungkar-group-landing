@@ -178,4 +178,26 @@ export const landingVideo = {
   embedUrl: "https://www.youtube.com/embed/HgicK9YpopU?si=m7IlfX-QXJVB0mVC",
 } as const;
 
+export const landingReels = {
+  eyebrow: "Instagram Reels",
+
+  title: "See real moments from our trips",
+
+  description:
+    "Catch authentic travel moments, destination highlights, and the vibe you can expect on your journey with Sungkar Group.",
+
+  ctaLabel: "Follow on Instagram",
+
+  ctaHref:
+    businessInfo.socialLinks.instagram ??
+    "https://www.instagram.com/tour_lombok/",
+
+  reels: [
+    { url: "https://www.instagram.com/reel/DZUQ_-9zibN/" },
+    { url: "https://www.instagram.com/reel/DWxxbfbEw4j/" },
+    { url: "https://www.instagram.com/reel/DB7V1JxMpiu/" },
+    { url: "https://www.instagram.com/reel/DSccM5jEmEG/" },
+  ],
+} as const;
+
 export const landingBackgroundImage = HERO.hero;

@@ -1,6 +1,7 @@
 ---
 import HeroSection from "./HeroSection.astro";
 import VideoSection from "./VideoSection.astro";
+import ReelsSection from "./ReelsSection.astro";
 import FeaturedSection from "./FeaturedSection.astro";
 import DestinationsSection from "./DestinationsSection.astro";
 import TransportSection from "./TransportSection.astro";
@@ -45,6 +46,7 @@ interface Props {
   };
   testimonials: any;
   video: any;
+  reels: any;
   backgroundImage: any;
 }
 
@@ -56,6 +58,7 @@ const {
   transport,
   testimonials,
   video,
+  reels,
   backgroundImage,
 } = Astro.props;
 ---
@@ -107,4 +110,12 @@ const {
   ctaHref={video.ctaHref}
   embedUrl={video.embedUrl}
   alignment="left"
+/>
+<ReelsSection
+  eyebrow={reels.eyebrow}
+  title={reels.title}
+  description={reels.description}
+  ctaLabel={reels.ctaLabel}
+  ctaHref={reels.ctaHref}
+  reels={reels.reels}
 />

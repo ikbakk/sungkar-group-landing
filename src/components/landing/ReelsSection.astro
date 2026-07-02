@@ -1,0 +1,112 @@
+---
+import { cn } from "@/lib/utils";
+import { Section, SectionContainer } from "@/components/ui/section";
+
+interface ReelItem {
+  url: string;
+}
+
+interface Props {
+  class?: string;
+  eyebrow: string;
+  title: string;
+  description: string;
+  ctaLabel: string;
+  ctaHref: string;
+  reels: ReelItem[];
+}
+
+const {
+  class: className,
+  eyebrow,
+  title,
+  description,
+  ctaLabel,
+  ctaHref,
+  reels,
+} = Astro.props;
+---
+
+<Section class={cn("section-padding bg-surface-soft", className)}>
+  <SectionContainer class="grid gap-12 lg:grid-cols-2">
+    <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-4">
+        <p class="section-eyebrow w-fit">{eyebrow}</p>
+        <h2 class="section-title">{title}</h2>
+        <p class="section-description text-balance">{description}</p>
+      </div>
+      <a
+        href={ctaHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-magnetic-primary w-fit"
+      >
+        {ctaLabel}
+        <span class="btn-icon-circle">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M7 17L17 7"></path>
+            <path d="M7 7h10v10"></path>
+          </svg>
+        </span>
+      </a>
+    </div>
+    <div class="reels-masonry columns-1 gap-3 sm:columns-2 sm:gap-4">
+      {
+        reels.map((reel) => (
+          <div
+            class="mb-3 w-full break-inside-avoid overflow-hidden rounded-[1.25rem] ring-1 ring-black/[0.04] sm:mb-4"
+          >
+            <blockquote
+              class="instagram-media"
+              data-instgrm-captioned
+              data-instgrm-permalink={reel.url}
+              data-instgrm-version="14"
+            >
+              <a
+                href={reel.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on Instagram
+              </a>
+            </blockquote>
+          </div>
+        ))
+      }
+    </div>
+  </SectionContainer>
+</Section>
+
+<script is:inline>
+  (function () {
+    if (!document.querySelector('script[src*="instagram.com/embed.js"]')) {
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "//www.instagram.com/embed.js";
+      document.body.appendChild(s);
+    } else if (typeof instgrm !== "undefined" && instgrm.Embeds) {
+      try {
+        instgrm.Embeds.process();
+      } catch (_) {}
+    }
+  })();
+</script>
+
+<style is:global>
+  .reels-masonry .instagram-media,
+  .reels-masonry .instagram-media-rendered {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+</style>

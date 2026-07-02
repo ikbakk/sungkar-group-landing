@@ -177,4 +177,26 @@ export const landingVideo = {
   embedUrl: "https://www.youtube.com/embed/HgicK9YpopU?si=m7IlfX-QXJVB0mVC",
 } as const;
 
+export const landingReels = {
+  eyebrow: "مقاطع إنستغرام",
+
+  title: "شاهد لحظات حقيقية من رحلاتنا",
+
+  description:
+    "التقط لحظات سفر حقيقية، وأبرز الوجهات، والأجواء التي يمكنك توقعها في رحلتك مع مجموعة سونغكار.",
+
+  ctaLabel: "تابعنا على إنستغرام",
+
+  ctaHref:
+    businessInfo.socialLinks.instagram ??
+    "https://www.instagram.com/tour_lombok/",
+
+  reels: [
+    { url: "https://www.instagram.com/reel/DZUQ_-9zibN/" },
+    { url: "https://www.instagram.com/reel/DWxxbfbEw4j/" },
+    { url: "https://www.instagram.com/reel/DB7V1JxMpiu/" },
+    { url: "https://www.instagram.com/reel/DSccM5jEmEG/" },
+  ],
+} as const;
+
 export const landingBackgroundImage = HERO.hero;
