@@ -34,3 +34,7 @@ pnpm-debug.log*
 plans/
 resource/
 PLAN.md
+
+# coding agent local state
+.crew/
+.astro-indexnow-cache.json
