@@ -47,7 +47,8 @@ export function normalizePackageLocale(pkg, localeKey) {
   else if (pkg.cabins) ordered.cabins = pkg.cabins;
   if (pkg.priceList) {
     ordered.priceList = normalizePackagePriceList(pkg.priceList);
-    if (locale.priceListLabels) ordered.priceListLabels = locale.priceListLabels;
+    if (locale.priceListLabels)
+      ordered.priceListLabels = locale.priceListLabels;
   }
   if (locale.additionalServices)
     ordered.additionalServices = locale.additionalServices;

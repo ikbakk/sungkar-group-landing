@@ -18,24 +18,24 @@ Multi-language landing site for Sungkar Group — Lombok tour operator. 268 page
 
 ### Content Generation
 
-| Command                      | Action                                                                                                        |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `npm run validate:structured`| Validate structured JSON source completeness and shape                                                        |
-| `npm run images`             | Regenerate `src/assets/images/index.ts`                                                                       |
-| `npm run og-images`          | Generate OG placeholder images for all page types                                                             |
-| `npm run generate:template`  | Interactive CLI to scaffold new content templates                                                             |
+| Command                       | Action                                                 |
+| ----------------------------- | ------------------------------------------------------ |
+| `npm run validate:structured` | Validate structured JSON source completeness and shape |
+| `npm run images`              | Regenerate `src/assets/images/index.ts`                |
+| `npm run og-images`           | Generate OG placeholder images for all page types      |
+| `npm run generate:template`   | Interactive CLI to scaffold new content templates      |
 
 ### Validation & Formatting
 
-| Command                       | Action                                                      |
-| ----------------------------- | ----------------------------------------------------------- |
-| `npm test`                    | Vitest — validates all MDX frontmatter against Zod schemas  |
-| `npm run check`               | Astro type checking                                         |
-| `npm run validate`            | Validates blog + guide MDX frontmatter                      |
-| `npm run validate:structured` | Validates structured JSON source completeness and shape     |
-| `npm run validate:images`     | Validates barrel file image references                      |
-| `npm run check:images`        | Checks blog/guide images exist on disk                      |
-| `npm run format:check`        | Check Prettier formatting (CI gate)                         |
+| Command                       | Action                                                     |
+| ----------------------------- | ---------------------------------------------------------- |
+| `npm test`                    | Vitest — validates all MDX frontmatter against Zod schemas |
+| `npm run check`               | Astro type checking                                        |
+| `npm run validate`            | Validates blog + guide MDX frontmatter                     |
+| `npm run validate:structured` | Validates structured JSON source completeness and shape    |
+| `npm run validate:images`     | Validates barrel file image references                     |
+| `npm run check:images`        | Checks blog/guide images exist on disk                     |
+| `npm run format:check`        | Check Prettier formatting (CI gate)                        |
 
 ## Architecture
 

@@ -49,23 +49,22 @@ describe("component hardcoded strings", () => {
 
   it.each(
     files.filter(
-      (f) => !isUiPrimitive(relative(COMPONENTS_DIR, f)) && !isStyleOnly(relative(COMPONENTS_DIR, f)),
+      (f) =>
+        !isUiPrimitive(relative(COMPONENTS_DIR, f)) &&
+        !isStyleOnly(relative(COMPONENTS_DIR, f)),
     ),
-  )(
-    "%s uses t() or receives text as props",
-    (filePath) => {
-      const content = readFileSync(filePath, "utf-8");
-      const allowed =
-        usesTranslation(content) ||
-        usesLoadContent(content) ||
-        usesSlot(content) ||
-        usesAppInfra(content) ||
-        hasAnyPropsString(content);
-      if (!allowed) {
-        expect(allowed).toBe(true);
-      }
-    },
-  );
+  )("%s uses t() or receives text as props", (filePath) => {
+    const content = readFileSync(filePath, "utf-8");
+    const allowed =
+      usesTranslation(content) ||
+      usesLoadContent(content) ||
+      usesSlot(content) ||
+      usesAppInfra(content) ||
+      hasAnyPropsString(content);
+    if (!allowed) {
+      expect(allowed).toBe(true);
+    }
+  });
 
   const KNOWN_BAD_PATTERNS = [
     { pattern: "Kembali ke Atas", label: "backToTop hardcoded" },
