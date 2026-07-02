@@ -2,11 +2,14 @@ import { defineCollection } from "astro:content";
 import { z } from "zod";
 import { glob } from "astro/loaders";
 
+const seoTitle = z.string().trim().min(5).max(120);
+const seoDescription = z.string().trim().min(15).max(160);
+
 const blog = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/blog" }),
   schema: z.object({
-    title: z.string(),
-    description: z.string(),
+    title: seoTitle,
+    description: seoDescription,
     publishDate: z.coerce.date(),
     tags: z.array(z.string()),
     readingTime: z.number(),
@@ -20,8 +23,8 @@ const blog = defineCollection({
 const guides = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/guides" }),
   schema: z.object({
-    title: z.string(),
-    description: z.string(),
+    title: seoTitle,
+    description: seoDescription,
     region: z.enum(["lombok", "sumbawa", "labuan-bajo", "general"]),
     readingTime: z.number(),
     keyTakeaways: z.array(z.string()),

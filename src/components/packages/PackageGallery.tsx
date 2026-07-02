@@ -7,17 +7,26 @@ interface Props {
   images: ImageSource[];
   initialIndex?: number;
   locale?: string;
+  altBase?: string;
 }
 
 export default function PackageGallery({
   images,
   initialIndex = 0,
   locale = "id",
+  altBase,
 }: Props) {
   const uiStrings = t(locale);
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState(initialIndex);
   const touchStartX = useRef(0);
+  const getImageAlt = useCallback(
+    (index: number) =>
+      altBase
+        ? `${altBase} - ${uiStrings.gallery.photos} ${index + 1}`
+        : `${uiStrings.gallery.photos} ${index + 1}`,
+    [altBase, uiStrings.gallery.photos],
+  );
 
   const prev = useCallback(() => {
     setCurrent((c) => (c === 0 ? images.length - 1 : c - 1));
@@ -132,7 +141,7 @@ export default function PackageGallery({
           >
             <img
               src={getImageSrc(images[current])}
-              alt={`${uiStrings.gallery.photos} ${current + 1}`}
+              alt={getImageAlt(current)}
               className="max-h-[70vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
             />
           </div>
@@ -173,7 +182,7 @@ export default function PackageGallery({
                 >
                   <img
                     src={getImageSrc(img)}
-                    alt=""
+                    alt={getImageAlt(i)}
                     className="h-full w-full object-cover"
                   />
                 </button>

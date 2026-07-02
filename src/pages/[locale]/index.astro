@@ -3,7 +3,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import LandingPage from "@/components/landing/LandingPage.astro";
 import { loadContent } from "@/lib/i18n/loader";
 import { getGlobalStrings, NON_DEFAULT_LOCALES } from "@/lib/i18n";
-import { BRAND } from "@/assets/images";
+import { OG } from "@/assets/images";
 import { getDestinations } from "@/lib/content/destinations/collection";
 import { toLandingDestinationCard } from "@/lib/content/landing";
 import { getPackages } from "@/lib/content/tourPackages/collection";
@@ -54,7 +54,7 @@ const landingDestinations = {
   title={landingHero.title}
   description={landingHero.description}
   canonical={"/" + locale}
-  image={BRAND.ogHome}
+  image={OG.home}
   imageAlt={globalStrings.common.imageAltSunset}
   locale={locale}
 >

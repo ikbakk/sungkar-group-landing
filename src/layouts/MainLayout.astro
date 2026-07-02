@@ -12,6 +12,7 @@ import type { Locale } from "@/lib/i18n";
 import {
   generateOrganizationSchema,
   generateWebsiteSchema,
+  graphSchema,
 } from "@/lib/schemas";
 
 import { getPageOGMetadata } from "@/lib/og-metadata";
@@ -64,9 +65,10 @@ const pageImageAlt = imageAlt ?? pathOGMetadata.imageAlt;
 
 const siteUrl = SITE_URL;
 
-const organizationSchema = generateOrganizationSchema(siteUrl);
-
-const websiteSchema = generateWebsiteSchema(siteUrl);
+const siteGraphSchema = graphSchema([
+  generateOrganizationSchema(siteUrl),
+  generateWebsiteSchema(siteUrl),
+]);
 ---
 
 <html lang={currentLocale} dir={isRTL(currentLocale) ? "rtl" : "ltr"}>
@@ -93,8 +95,7 @@ const websiteSchema = generateWebsiteSchema(siteUrl);
       href="/feed.xml"
     />
 
-    <StructuredData schema={organizationSchema} />
-    <StructuredData schema={websiteSchema} />
+    <StructuredData schema={siteGraphSchema} />
 
     <GoogleAnalytics />
     <MicrosoftClarity />

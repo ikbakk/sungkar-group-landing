@@ -66,7 +66,7 @@
  * 4. IMAGE BEST PRACTICES:
  *    - Use ImageMetadata type from astro for all images
  *    - Images are automatically converted to WebP (80% quality)
- *    - OG image standard: 1200x630px (aspect ratio 1.91:1)
+ *    - OG image standard: 1200x675px (16:9 aspect ratio)
  *    - Twitter card: 16:9 or 1:1 aspect ratios work best
  *    - Keep file size < 2MB for social media compliance
  *

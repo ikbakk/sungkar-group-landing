@@ -59,7 +59,7 @@ const robotsContent = noIndex
 
 const ogImageUrl = ogImage
   ? typeof ogImage === "string"
-    ? ogImage
+    ? new URL(ogImage, SITE_URL).toString()
     : new URL(ogImage.src, SITE_URL).toString()
   : undefined;
 

@@ -21,12 +21,36 @@ export interface FAQItem {
   answer: string;
 }
 
+export function schemaId(url: string, fragment: string) {
+  const absoluteUrl = new URL(url);
+  absoluteUrl.hash = fragment;
+  return absoluteUrl.toString();
+}
+
+export function graphSchema(items: unknown[]) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": items.map((item) => {
+      if (item && typeof item === "object" && "@context" in item) {
+        const { "@context": _context, ...rest } = item as Record<
+          string,
+          unknown
+        >;
+        return rest;
+      }
+
+      return item;
+    }),
+  };
+}
+
 // Organization Schema
 // NOTE: Image URLs (logo) should be absolute. If using a CDN, replace siteUrl with CDN_ORIGIN for image fields.
 export function generateOrganizationSchema(siteUrl: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": schemaId(siteUrl, "organization"),
     name: "Sungkar Group",
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
@@ -57,6 +81,7 @@ export function generateLocalBusinessSchema(siteUrl: string) {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": schemaId(siteUrl, "localbusiness"),
     name: "Sungkar Group",
     image: `${siteUrl}/logo.png`,
     description:
@@ -88,6 +113,7 @@ export function generateBreadcrumbSchema(
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "@id": schemaId(`${siteUrl}${items.at(-1)?.url ?? "/"}`, "breadcrumb"),
     itemListElement: items.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -126,6 +152,7 @@ export function generateTouristAttractionSchema(
   return {
     "@context": "https://schema.org",
     "@type": "TouristAttraction",
+    "@id": schemaId(url, "tourist-attraction"),
     name: title,
     description: description,
     image: image,
@@ -159,12 +186,16 @@ export function generateProductSchema(
   return {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": schemaId(url, "product"),
 
     name,
     description,
     image,
 
     url,
+    provider: {
+      "@id": schemaId(new URL(url).origin, "organization"),
+    },
 
     offers: {
       "@type": "Offer",
@@ -205,12 +236,16 @@ export function generateServiceSchema(
   return {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": schemaId(url, "service"),
 
     name,
     description,
     image,
     url,
     serviceType,
+    provider: {
+      "@id": schemaId(new URL(url).origin, "organization"),
+    },
 
     areaServed: {
       "@type": "Place",
@@ -270,6 +305,7 @@ export function generateArticleSchema(
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": schemaId(url, "article"),
     headline: title,
     description: description,
     image: image,
@@ -277,6 +313,7 @@ export function generateArticleSchema(
     datePublished: datePublished,
     dateModified: dateModified || datePublished,
     author: {
+      "@id": schemaId(siteUrl, "organization"),
       "@type": "Organization",
       name: businessInfo.name,
     },
@@ -296,10 +333,14 @@ export function generateWebsiteSchema(siteUrl: string) {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": schemaId(siteUrl, "website"),
     url: siteUrl,
     name: "Sungkar Group",
     description:
       "Operator wisata Lombok berbasis lokal untuk tur pribadi, destinasi, transportasi, ulasan, dan panduan wisata.",
+    publisher: {
+      "@id": schemaId(siteUrl, "organization"),
+    },
   };
 }
 
@@ -328,6 +369,7 @@ export function generateContactPageSchema(
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": schemaId(url, "contact-page"),
     name: businessInfo.name,
     url,
     telephone: businessInfo.phone,
@@ -377,4 +419,5 @@ export type SchemaObject = ReturnType<
   | typeof generateArticleSchema
   | typeof generateWebsiteSchema
   | typeof generateContactPageSchema
+  | typeof graphSchema
 >;

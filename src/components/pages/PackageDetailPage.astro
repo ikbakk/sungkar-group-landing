@@ -280,7 +280,7 @@ const relatedContent = isDefaultLocale
                     <div class="aspect-[4/3]">
                       <OptimizedImage
                         src={img}
-                        alt=""
+                        alt={`${tour.title} - ${uiStrings.gallery.photos} ${i + 1}`}
                         class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         loading="lazy"
                       />
@@ -296,7 +296,12 @@ const relatedContent = isDefaultLocale
       </Carousel>
     </div>
 
-    <PackageGallery images={tour.images} client:only="react" />
+    <PackageGallery
+      images={tour.images}
+      locale={locale}
+      altBase={tour.title}
+      client:only="react"
+    />
   </SectionContainer>
 
   <SectionContainer background="bg-white" padding="py-16 sm:py-20">

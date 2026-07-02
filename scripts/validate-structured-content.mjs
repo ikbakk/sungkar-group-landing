@@ -8,6 +8,8 @@ const DATA_DIR = path.join(ROOT, "data");
 const LOCALES = ["id", "en", "ar", "ms", "zh"];
 
 const localeString = z.string().trim().min(1);
+const seoTitleString = z.string().trim().min(2).max(120);
+const seoDescriptionString = z.string().trim().min(15);
 const localeArray = z.array(localeString);
 const itinerarySchema = z.union([
   z.array(localeString).min(1),
@@ -32,12 +34,12 @@ const packageMainSchema = z.object({
 
 const packageLocaleSchema = z
   .object({
-    title: localeString,
+    title: seoTitleString,
     collectionTitle: localeString,
     category: localeString,
     duration: localeString.optional(),
     durationOptions: localeArray.optional(),
-    summary: localeString,
+    summary: seoDescriptionString,
     highlights: localeArray.min(1),
     itinerary: itinerarySchema,
     includes: localeArray,
@@ -45,7 +47,9 @@ const packageLocaleSchema = z
     additionalServices: localeArray.optional(),
     dontForgetToBring: localeArray.optional(),
     termsAndConditions: localeArray.optional(),
-    boatSpecs: z.array(z.object({ label: localeString, value: localeString })).optional(),
+    boatSpecs: z
+      .array(z.object({ label: localeString, value: localeString }))
+      .optional(),
     cabins: z.array(z.record(z.string(), z.unknown())).optional(),
     priceListLabels: z.record(z.string(), localeString).optional(),
   })
@@ -64,10 +68,10 @@ const accommodationMainSchema = z.object({
   image: localeString,
 });
 const accommodationLocaleSchema = z.object({
-  name: localeString,
+  name: seoTitleString,
   perks: localeArray,
   regionalHighlights: localeArray,
-  description: localeString,
+  description: seoDescriptionString,
 });
 
 const carRentalMainSchema = z.object({
@@ -79,10 +83,10 @@ const carRentalMainSchema = z.object({
   imageBottom: localeString,
 });
 const carRentalLocaleSchema = z.object({
-  name: localeString,
+  name: seoTitleString,
   features: localeArray,
   bestFor: localeArray,
-  description: localeString,
+  description: seoDescriptionString,
 });
 
 const destinationMainSchema = z.object({
@@ -90,9 +94,9 @@ const destinationMainSchema = z.object({
   gallery: localeArray,
 });
 const destinationLocaleSchema = z.object({
-  title: localeString,
+  title: seoTitleString,
   region: localeString,
-  summary: localeString,
+  summary: seoDescriptionString,
   thingsToDo: localeArray,
   packages: localeArray,
 });
