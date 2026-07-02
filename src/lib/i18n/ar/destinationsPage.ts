@@ -14,7 +14,19 @@ export const destinationsPageContent = {
       title: "وجهات السفر في لومبوك",
       description:
         "شواطئ رملية بيضاء، قرى ساساك التقليدية، وشلالات مخفية. كوتا لومبوك هي قاعدة انطلاق شعبية للوصول السهل إلى شواطئ الساحل الجنوبي والثقافة المحلية.",
-      destinationSlugs: ["kuta-lombok", "tetebatu"],
+      destinationSlugs: [
+        "kuta-lombok",
+        "mandalika",
+        "pantai-tanjung-aan",
+        "bukit-merese",
+        "desa-sukarara",
+        "desa-sade",
+        "senggigi",
+        "tetebatu",
+        "pink-beach-lombok",
+        "tanjung-ringgit",
+        "gili-pasir",
+      ],
       intro:
         "اختر وجهات في لومبوك لمزيج من الشواطئ، والثقافة، والمسارات اليومية المرنة.",
     },
@@ -24,7 +36,14 @@ export const destinationsPageContent = {
       title: "جزر جيلي: تراوانغان، إير، مينو",
       description:
         "ثلاث جزر استوائية بمياه صافية للغطس، والغوص، وقفز الجزر. غيلي تراوانغان للحياة الليلية، غيلي إير للتوازن، غيلي مينو للهدوء التام.",
-      destinationSlugs: ["gili-trawangan", "gili-air", "gili-meno"],
+      destinationSlugs: [
+        "gili-trawangan",
+        "gili-air",
+        "gili-meno",
+        "gili-nanggu",
+        "gili-sudak",
+        "gili-kedis",
+      ],
       intro:
         "مسارات جزرية مثالية للغطس، وقفز الجزر، ووتيرة عطلة أكثر استرخاءً.",
     },
@@ -34,8 +53,17 @@ export const destinationsPageContent = {
       title: "جبل رينجاني والمناطق الجبلية",
       description:
         "ممرات رينجاني عبر سيمبالون أو سينارو، ينابيع ساخنة، ومناظر بحيرة سيغارا أناك. مثالي للمغامرات متعددة الأيام وتجارب الطبيعة الدرامية.",
-      destinationSlugs: ["sembalun", "rinjani", "senaru"],
+      destinationSlugs: ["sembalun", "rinjani", "senaru", "air-terjun-senaru"],
       intro: "وجهات بأجواء المرتفعات والوصول إلى تجارب طبيعة أكثر دراماتيكية.",
+    },
+    {
+      id: "sumbawa",
+      label: "Sumbawa",
+      title: "وجهات سومباوا",
+      description:
+        "الجزيرة شرق لومبوك بمعالم طبيعية أكثر هدوءاً، قرش الحوت في خليج صالح، أمواج عالمية في ليكي بيك، ومغامرات بعيدة عن المسار المطروق.",
+      destinationSlugs: ["sumbawa"],
+      intro: "استكشف سومباوا لتجارب طبيعة أكثر برية وأقل استكشافاً.",
     },
   ],
   faq: [
@@ -77,6 +105,11 @@ export const destinationsPageContent = {
     activitiesTitle: "أشياء للقيام بها",
     relatedPackagesTitle: "برامج ذات صلة",
     summaryTitle: "الملخص",
+    descriptionTitle: "عن هذه الوجهة",
+    highlightsTitle: "أبرز المعالم",
+    bestTimeToVisitTitle: "أفضل وقت للزيارة",
+    howToGetThereTitle: "كيفية الوصول",
+    localTipsTitle: "نصائح محلية",
     transportTitle: "النقل",
     transportDescription:
       "يمكن تعديل نقاط الاستقبال للمطار، الميناء، أو الممر الفندقي القريب.",

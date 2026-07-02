@@ -27,6 +27,11 @@ export async function getDestinations(locale = "id"): Promise<Destination[]> {
         summary: data.summary,
         thingsToDo: data.thingsToDo,
         packages: data.packages,
+        description: data.description,
+        highlights: data.highlights ?? [],
+        bestTimeToVisit: data.bestTimeToVisit,
+        howToGetThere: data.howToGetThere,
+        localTips: data.localTips ?? [],
       };
     });
 }

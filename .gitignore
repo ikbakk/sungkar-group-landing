@@ -38,3 +38,10 @@ PLAN.md
 # coding agent local state
 .crew/
 .astro-indexnow-cache.json
+
+/.crew/
+/.crew
+!.crew/artifacts/
+!.crew/graphs/
+!.crew/artifacts/.gitkeep
+!.crew/graphs/.gitkeep

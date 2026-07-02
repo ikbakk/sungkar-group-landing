@@ -14,7 +14,19 @@ export const destinationsPageContent = {
       title: "龙目岛旅游目的地",
       description:
         "白色沙滩、传统萨萨克村落和隐藏的瀑布。库塔龙目岛是前往南海岸海滩和体验当地文化的热门基地。",
-      destinationSlugs: ["kuta-lombok", "tetebatu"],
+      destinationSlugs: [
+        "kuta-lombok",
+        "mandalika",
+        "pantai-tanjung-aan",
+        "bukit-merese",
+        "desa-sukarara",
+        "desa-sade",
+        "senggigi",
+        "tetebatu",
+        "pink-beach-lombok",
+        "tanjung-ringgit",
+        "gili-pasir",
+      ],
       intro: "选择龙目岛的目的地，享受海滩、文化和灵活的日游路线的完美组合。",
     },
     {
@@ -23,7 +35,14 @@ export const destinationsPageContent = {
       title: "吉利群岛：特拉旺安、艾尔、梅诺",
       description:
         "三个热带岛屿，拥有清澈的海水，适合浮潜、潜水和跳岛游。吉利特拉旺安享受夜生活，吉利艾尔体验平衡，吉利梅诺寻求完全宁静。",
-      destinationSlugs: ["gili-trawangan", "gili-air", "gili-meno"],
+      destinationSlugs: [
+        "gili-trawangan",
+        "gili-air",
+        "gili-meno",
+        "gili-nanggu",
+        "gili-sudak",
+        "gili-kedis",
+      ],
       intro: "岛屿路线非常适合浮潜、跳岛游以及更轻松的度假节奏。",
     },
     {
@@ -32,8 +51,17 @@ export const destinationsPageContent = {
       title: "林贾尼山和山区",
       description:
         "通过森巴伦或塞纳鲁的林贾尼徒步路线、温泉以及塞加拉阿纳克火山口的壮丽景色。非常适合多日探险和壮观的自然体验。",
-      destinationSlugs: ["sembalun", "rinjani", "senaru"],
+      destinationSlugs: ["sembalun", "rinjani", "senaru", "air-terjun-senaru"],
       intro: "高原氛围的目的地，可享受更壮丽的自然体验。",
+    },
+    {
+      id: "sumbawa",
+      label: "Sumbawa",
+      title: "松巴哇岛目的地",
+      description:
+        "龙目岛以东的岛屿，拥有更宁静的自然景观、萨利赫湾的鲸鲨、世界级的海浪，以及远离常规路线的探险。",
+      destinationSlugs: ["sumbawa"],
+      intro: "探索松巴哇，体验更原始、更少人知晓的自然探险。",
     },
   ],
   faq: [
@@ -75,6 +103,11 @@ export const destinationsPageContent = {
     activitiesTitle: "活动",
     relatedPackagesTitle: "相关套餐",
     summaryTitle: "简介",
+    descriptionTitle: "关于此目的地",
+    highlightsTitle: "主要亮点",
+    bestTimeToVisitTitle: "最佳游览时间",
+    howToGetThereTitle: "如何到达",
+    localTipsTitle: "当地提示",
     transportTitle: "交通",
     transportDescription: "接送点可调整至机场、港口或附近酒店区域。",
     transportNote: "对于有多目的地的行程，每日司机服务是最灵活的选择。",

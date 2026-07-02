@@ -9,4 +9,9 @@ export type Destination = {
   summary: string;
   thingsToDo: string[];
   packages: string[];
+  description?: string;
+  highlights?: string[];
+  bestTimeToVisit?: string;
+  howToGetThere?: string;
+  localTips?: string[];
 };

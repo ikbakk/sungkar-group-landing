@@ -14,7 +14,19 @@ export const destinationsPageContent = {
       title: "Destinasi Wisata Lombok",
       description:
         "Pantai pasir putih, desa Sasak tradisional, dan air terjun tersembunyi. Kuta Lombok menjadi basecamp populer untuk akses mudah ke pantai selatan dan budaya lokal.",
-      destinationSlugs: ["kuta-lombok", "tetebatu"],
+      destinationSlugs: [
+        "kuta-lombok",
+        "mandalika",
+        "pantai-tanjung-aan",
+        "bukit-merese",
+        "desa-sukarara",
+        "desa-sade",
+        "senggigi",
+        "tetebatu",
+        "pink-beach-lombok",
+        "tanjung-ringgit",
+        "gili-pasir",
+      ],
       intro:
         "Pilih destinasi di Lombok untuk kombinasi pantai, budaya, dan rute harian yang fleksibel.",
     },
@@ -24,7 +36,14 @@ export const destinationsPageContent = {
       title: "Kepulauan Gili: Trawangan, Air, Meno",
       description:
         "Tiga pulau tropis dengan air jernih untuk snorkeling, diving, dan island hopping. Gili Trawangan untuk nightlife, Gili Air untuk keseimbangan, Gili Meno untuk kedamaian total.",
-      destinationSlugs: ["gili-trawangan", "gili-air", "gili-meno"],
+      destinationSlugs: [
+        "gili-trawangan",
+        "gili-air",
+        "gili-meno",
+        "gili-nanggu",
+        "gili-sudak",
+        "gili-kedis",
+      ],
       intro:
         "Rute pulau yang cocok untuk snorkeling, island hopping, dan tempo liburan yang lebih santai.",
     },
@@ -34,9 +53,19 @@ export const destinationsPageContent = {
       title: "Gunung Rinjani & Area Pegunungan",
       description:
         "Pendakian Rinjani via Sembalun atau Senaru, mata air panas, dan pemandangan kawah segara anak. Cocok untuk petualangan multi-hari dan pengalaman alam dramatis.",
-      destinationSlugs: ["sembalun", "rinjani", "senaru"],
+      destinationSlugs: ["sembalun", "rinjani", "senaru", "air-terjun-senaru"],
       intro:
         "Destinasi dengan nuansa dataran tinggi dan akses ke pengalaman alam yang lebih dramatis.",
+    },
+    {
+      id: "sumbawa",
+      label: "Sumbawa",
+      title: "Destinasi Wisata Sumbawa",
+      description:
+        "Pulau di timur Lombok dengan wisata alam yang lebih sepi, whale shark di Teluk Saleh, ombak kelas dunia di Lakey Peak, dan petualangan off-the-beaten-path.",
+      destinationSlugs: ["sumbawa"],
+      intro:
+        "Jelajahi Sumbawa untuk pengalaman alam yang lebih liar dan belum banyak terjamah.",
     },
   ],
   faq: [
@@ -81,6 +110,11 @@ export const destinationsPageContent = {
     activitiesTitle: "Yang bisa dilakukan",
     relatedPackagesTitle: "Paket terkait",
     summaryTitle: "Ringkasan",
+    descriptionTitle: "Tentang Destinasi",
+    highlightsTitle: "Sorotan Utama",
+    bestTimeToVisitTitle: "Waktu Terbaik Berkunjung",
+    howToGetThereTitle: "Cara Menuju Lokasi",
+    localTipsTitle: "Tips Lokal",
     transportTitle: "Transportasi",
     transportDescription:
       "Titik penjemputan bisa disesuaikan dengan bandara, pelabuhan, atau koridor hotel terdekat.",

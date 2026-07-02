@@ -62,6 +62,11 @@ export const generatedDestinationSchema = z.object({
   summary: z.string().min(1),
   thingsToDo: z.array(z.string()),
   packages: z.array(z.string()),
+  description: z.string().optional(),
+  highlights: z.array(z.string()).optional(),
+  bestTimeToVisit: z.string().optional(),
+  howToGetThere: z.string().optional(),
+  localTips: z.array(z.string()).optional(),
 });
 
 export const generatedAccommodationSchema = z.object({
