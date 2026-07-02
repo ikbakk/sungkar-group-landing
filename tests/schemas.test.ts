@@ -68,6 +68,11 @@ describe("generateOrganizationSchema", () => {
     ]);
   });
 
+  it("uses an existing public logo asset", () => {
+    const result = generateOrganizationSchema(SITE_URL);
+    expect(result.logo).toBe(`${SITE_URL}/logo.webp`);
+  });
+
   it("uses real social links (no mock URLs)", () => {
     const result = generateOrganizationSchema(SITE_URL);
     expect(result.sameAs).not.toContain(

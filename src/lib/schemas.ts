@@ -44,16 +44,24 @@ export function graphSchema(items: unknown[]) {
   };
 }
 
+const SCHEMA_LOGO_PATH = "/logo.webp";
+
+function getSchemaLogoUrl(siteUrl: string) {
+  return new URL(SCHEMA_LOGO_PATH, siteUrl).toString();
+}
+
 // Organization Schema
 // NOTE: Image URLs (logo) should be absolute. If using a CDN, replace siteUrl with CDN_ORIGIN for image fields.
 export function generateOrganizationSchema(siteUrl: string) {
+  const logoUrl = getSchemaLogoUrl(siteUrl);
+
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": schemaId(siteUrl, "organization"),
     name: "Sungkar Group",
     url: siteUrl,
-    logo: `${siteUrl}/logo.png`,
+    logo: logoUrl,
     description:
       "Operator wisata Lombok berbasis lokal untuk tur pribadi, destinasi, transportasi, ulasan, dan panduan wisata.",
     sameAs: Object.values(businessInfo.socialLinks),
@@ -78,12 +86,14 @@ export function generateOrganizationSchema(siteUrl: string) {
 // LocalBusiness Schema
 // NOTE: Image URLs (logo) should be absolute. If using a CDN, replace siteUrl with CDN_ORIGIN for image fields.
 export function generateLocalBusinessSchema(siteUrl: string) {
+  const logoUrl = getSchemaLogoUrl(siteUrl);
+
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": schemaId(siteUrl, "localbusiness"),
     name: "Sungkar Group",
-    image: `${siteUrl}/logo.png`,
+    image: logoUrl,
     description:
       "Operator wisata Lombok dengan layanan tur pribadi, transportasi, dan panduan wisata lokal.",
     address: {
@@ -302,6 +312,8 @@ export function generateArticleSchema(
   datePublished: string,
   dateModified?: string,
 ) {
+  const logoUrl = getSchemaLogoUrl(siteUrl);
+
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -322,7 +334,7 @@ export function generateArticleSchema(
       name: "Sungkar Group",
       logo: {
         "@type": "ImageObject",
-        url: `${siteUrl}/logo.png`,
+        url: logoUrl,
       },
     },
   };

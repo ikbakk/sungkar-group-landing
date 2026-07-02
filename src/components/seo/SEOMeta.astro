@@ -167,12 +167,14 @@ const defaultUrl =
 <!-- Twitter -->
 
 <meta name="twitter:card" content={twitterCard} />
+<meta name="twitter:title" content={pageTitle} />
+<meta name="twitter:description" content={metaDescription} />
 
-<!-- Mobile -->
-
-<meta name="apple-mobile-web-app-capable" content="yes" />
-
-<meta
-  name="apple-mobile-web-app-status-bar-style"
-  content="black-translucent"
-/>
+{
+  ogImageUrl && (
+    <>
+      <meta name="twitter:image" content={ogImageUrl} />
+      <meta name="twitter:image:alt" content={ogImageAlt} />
+    </>
+  )
+}
