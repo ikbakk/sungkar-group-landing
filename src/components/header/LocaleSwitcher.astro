@@ -22,8 +22,10 @@ const otherLocales = LOCALES.filter((l) => l !== locale);
 <div class="relative group">
   <Button
     variant="ghost"
-    class="flex items-center gap-1 rounded-lg border border-white/20 bg-white/10 px-3 py-1.5 text-sm font-medium text-white/90 backdrop-blur-md transition-colors hover:bg-white/20"
+    class="flex items-center gap-1 rounded-lg border border-white/20 bg-white/10 px-3 py-1.5 text-sm font-medium text-white/90 backdrop-blur-md transition-colors hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
     aria-label={uiStrings.header.language}
+    aria-haspopup="true"
+    aria-controls="locale-switcher-menu"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -43,13 +45,14 @@ const otherLocales = LOCALES.filter((l) => l !== locale);
   </Button>
 
   <div
-    class="absolute inset-e-0 top-full z-50 mt-1 hidden w-44 rounded-lg border border-border bg-white p-1 shadow-lg group-hover:block before:absolute before:-top-1.5 before:left-0 before:right-0 before:h-1.5 before:content-['']"
+    id="locale-switcher-menu"
+    class="absolute inset-e-0 top-full z-50 mt-1 hidden w-44 rounded-lg border border-border bg-white p-1 shadow-lg group-hover:block group-focus-within:block before:absolute before:-top-1.5 before:left-0 before:right-0 before:h-1.5 before:content-['']"
   >
     {
       otherLocales.map((l) => (
         <a
           href={getLocalizedPath(currentPath, l)}
-          class="block rounded-md px-3 py-2 text-sm text-foreground transition-colors hover:bg-accent"
+          class="block rounded-md px-3 py-2 text-sm text-foreground transition-colors hover:bg-accent focus-visible:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
         >
           <span class="font-medium">{LOCALE_SHORT_LABELS[l as Locale]}</span>
           <span class="ml-2 text-muted-foreground">

@@ -119,9 +119,16 @@ const siteGraphSchema = graphSchema([
   </head>
 
   <body>
+    <a
+      href="#content"
+      class="fixed left-4 top-4 z-[100] -translate-y-20 rounded-md bg-white px-4 py-2 text-sm font-semibold text-brand-900 shadow-lg transition-transform focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-brand-500"
+    >
+      Skip to main content
+    </a>
+
     <Header locale={currentLocale} />
 
-    <main id="content">
+    <main id="content" tabindex="-1">
       <slot />
     </main>
 
