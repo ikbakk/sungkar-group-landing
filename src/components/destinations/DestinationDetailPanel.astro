@@ -85,7 +85,9 @@ const { destination, content } = Astro.props;
           <ul class="mt-5 grid gap-3 sm:grid-cols-2">
             {destination.highlights.map((item) => (
               <li class="flex items-start gap-3 rounded-xl border border-border bg-surface-soft p-4 text-sm text-foreground">
-                <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-600 text-xs font-bold text-white">✓</span>
+                <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-600 text-xs font-bold text-white">
+                  ✓
+                </span>
                 {item}
               </li>
             ))}
