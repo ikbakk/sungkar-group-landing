@@ -3,10 +3,15 @@ import { t } from "@/lib/i18n/ui-strings";
 import type { Locale } from "@/lib/i18n";
 import { localizeHref } from "@/lib/i18n/localize";
 
-// Extend Window to include the Google dataLayer
+// Extend Window to include analytics globals/events
 declare global {
   interface Window {
     dataLayer: unknown[];
+    clarity?: (...args: unknown[]) => void;
+  }
+
+  interface WindowEventMap {
+    "sg:cookie-consent": CustomEvent<ConsentState>;
   }
 }
 
@@ -42,6 +47,13 @@ function applyConsent(state: ConsentState) {
   // Push consent update to the dataLayer (forwarded to Partytown worker)
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push(["consent", "update", state]);
+
+  // Notify scripts that are gated until consent (for example Microsoft Clarity)
+  window.dispatchEvent(new CustomEvent("sg:cookie-consent", { detail: state }));
+
+  if (typeof window.clarity === "function") {
+    window.clarity("consent", state.analytics_storage === "granted");
+  }
 }
 
 interface Props {
